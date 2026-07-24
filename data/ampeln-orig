@@ -6,6 +6,12 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260724
+#: source_id: planb2026:13.50648522,52.4465611,27.07.2026, ("Sicherung gemäß Vz.-plan", bis 13.08.2026)
+#: next_check: 2026-08-13 (planb)
+#: valid: 20260727-20260813
+Königsheideweg: Regelung mit Baustellenampel zwischen Redwitzgang und Sterndamm/Schöneweide	X::inwork::alternating 17266,4720
+# 
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_347631
 #: source_id: bvg2024:194#HIM_FREETEXT_347630
 #: source_id: bvg2024:194#HIM_FREETEXT_348289
@@ -26,14 +32,15 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026)
+#: last_checked: 2026-07-23 (mapillary)
 #: next_check: 2026-09-04
 #: valid: -20260904
-Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8660,18679
+Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,18585
 # 
 #: next_check_id: WOLLANK-2024
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7373 (Antrag auf Verstetigung)
 #: source_id: planb2026:13.38387014,52.57273303,15.06.2026, ("Gegenverkehrsanlage (LZA)", bis 04.09.2026)
-#: last_checked: 2026-06-02 (BVV-Drucksache)
+#: last_checked: 2026-07-23 (mapillary)
 #: next_check: 2026-09-04 (planb)
 # REMOVED --- #: next_check: 2026-12-31
 Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724

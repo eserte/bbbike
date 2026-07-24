@@ -31,7 +31,7 @@
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
 #: source_id: planb2026:13.46470153,52.51022419,02.12.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
-#: last_checked: 2026-07-17
+#: last_checked: 2026-07-24
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2026-08-31 (planb)
 # REMOVED --- #: valid: -20250630
@@ -1255,10 +1255,11 @@ Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hoch
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ml3ex3sqks2i (nur der östliche Strang der Ontarioseestr. betroffen?)
 #: by: https://www.entwicklungsstadt.de/autohaus-abriss-am-tierpark-was-in-lichtenberg-gebaut-wird/ (Fertigstellung November 2027)
 #: source_id: LMS-BR:407167/72 viz2021:13.52329,52.49559,05.05.2026,07:00 (bis 31.05.2027)
+#: source_id: planb2026:13.52339081,52.4953266,18.03.2026, ("Fahrstreifen-Reduzierung" in der Sewanstr., bis 31.05.2027)
 #: note: außerdem ist die Einbahnstraßenregelung in der restlichen Ontarioseestr. aufgehoben, aber eher geringer verkehrlicher Wert für den Radverkehr
 #: last_checked: 2026-06-24
 #: check_frequency: 120d
-#: next_check: 2027-05-31
+#: next_check: 2027-05-31 (VIZ-Verkehrsmeldung, planb)
 # REMOVED (Fertigstellungsdatum von entwicklungsstadt nehmen) --- #: valid: -20270531
 #: valid: -20271130
 Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10024

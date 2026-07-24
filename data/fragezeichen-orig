@@ -568,7 +568,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: osm_watch: way id="4632077" version="36"
 #: osm_watch: note 4459974 3
 #: XXX infravelo-Planung: nördlich Thulestr. geschützte Radfahrstreifen, südlich ohne Protektion; außerdem Umbau der Kreuzung Stahlheimer Straße/Wisbyer Straße, so dass auch eine "legale" Fahrtmöglichkeit von Süd nach Nord besteht
-#: last_checked: 2026-06-24 (mapillary)
+#: last_checked: 2026-07-23 (mapillary)
 #: check_frequency: 150d
 # REMOVED --- #: next_check: 2028-12-31 (infravelo)
 #: next_check: 2026-12-31 (Tsp: 1. BA)
@@ -2209,7 +2209,7 @@ Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angeleg
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/mobilitaetsgesetz-soll-bei-sanierung-der-strasse-vor-schoenholz-beruecksichtigt-werden_a275842
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsentwurf_strasse-vor-schoenholz_stand-okt-2019.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.625926.php
-#: last_checked: 2026-05-18 (mapillary) vvv
+#: last_checked: 2026-07-23 (mapillary) vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
 #: osm_watch: way id="102532387" version="23"
@@ -3219,14 +3219,15 @@ Hermannstr. (Werbellinstr. - Hermannplatz): Planung eines geschützten Radfahrstr
 # REMOVED --- #: by: https://nitter.cz/SenUMVKBerlin/status/1565625632045801474#m --- Hermannstr.: Radspuren haben Poller bekommen, wo genau?	? 12510,6508 12470,6586 12448,6646 12422,6715 12395,6785 12388,6806 12375,6842 12362,6881 12347,6923 12342,6936 12317,7007 12304,7039 12291,7074 12259,7164 12244,7205 12221,7271 12185,7381
 # 
 #: next_check_id: THOMAS-2025
-#: osm_watch: note 4350623 4
+#: osm_watch[closed]: note 4350623 4
 #: osm_watch: way id="163379148" version="37"
 #: osm_watch: way id="1323798537" version="1"
 #: osm_watch: way id="297060623" version="20"
 #: osm_watch: way id="297059847" version="24"
+#: note: laut SGA Neukölln (osm note) wird die Planung nicht mehr weiter verfolgt -> check_frequency von 30d auf 720d hochgesetzt.
 #: last_checked: 2026-07-16
-#: check_frequency: 30d
-#: next_check: 2026-12-31 (mobilitaetsrat, infravelo (zur Ampel))
+#: check_frequency: 720d
+# REMOVED (s.o.) --- #: next_check: 2026-12-31 (mobilitaetsrat, infravelo (zur Ampel))
 Thomasstr.: wird die Straße zur Fahrradstraße?	? 12185,7381 12368,7423 12564,7467 12685,7497 12787,7546 12918,7600 12972,7602
 # 
 #: by: https://www.infravelo.de/projekt/werbellinstrasse-1/ (4. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 2. Quartal 2026) (3. Quartal 2026 - 3. Quartal 2026)
@@ -5378,7 +5379,7 @@ Müggelseedamm: Planung einer Fußgängerampel	?::projected 25817,4802 25803,4823 2
 #: osm_watch: way id="24680768" version="33"
 #: osm_watch: way id="478039700" version="23"
 #: osm_watch: way id="1443941015" version="1"
-#: last_checked: 2026-02-07 (mapillary)
+#: last_checked: 2026-07-23 (mapillary)
 #: check_frequency: 180d
 Hermann-Hesse-Str.: wird es hier Radverkehrsanlagen (z.B. neue Radspuren) geben?	? 9487,18887 9681,19179 9811,19302
 # 
@@ -5394,7 +5395,7 @@ Hermann-Hesse-Str.: wird es hier Radverkehrsanlagen (z.B. neue Radspuren) geben?
 #: osm_watch: way id="297138724" version="19"
 #: osm_watch: way id="4764689" version="39"
 #: XXX außerdem Fahrradstraßen in den angrenzenden Nebenstraßen + Waldstr.
-#: last_checked: 2026-07-11 (mapillary)
+#: last_checked: 2026-07-23 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2027-12-31 (infravelo, pardok)
 Hermann-Hesse-Str.: geschützte Radfahrstreifen geplant	?::projected 9870,19360 9936,19402 9982,19413 10002,19418 10014,19421 10228,19480 10250,19504 10257,19542
@@ -6469,7 +6470,7 @@ Märkische Allee: Radverkehrsanlagen werden entstehen, evtl. als PBL	?::projected
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mqiwmfg2sc2l (Engstelle auf der Fahrbahn zwischen Bahnbrücke und Teltower Str.)
 #: source_id: LMS-BR:402645/72 viz2021:13.23263,52.52769, (unspezifizierte Tiefbauarbeiten, bis 15.05.2026) (bis 05.06.2026) (bis 12.06.2026) (bis 15.06.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:406301/72 viz2021:13.23182,52.52771,28.04.2026,07:00 (Leitungsarbeiten, bis 15.05.2026) (bis 19.06.2026) (bis 04.09.2026)
-#: source_id: LMS-BR:415652/72 viz2021:13.222558,52.528793,13.07.2026,07:00 (Verengung, bis 24.07.2026)
+#: source_id: LMS-BR:415652/72 viz2021:13.222558,52.528793,13.07.2026,07:00 (Verengung, bis 24.07.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:m45#HIM_FREETEXT_348911
 #: last_checked: 2026-04-01 (mapillary) vvv
 #: check_frequency: 180d vvv
@@ -9642,7 +9643,7 @@ Hauptstr. (Nebenarm): soll als verkehrsberuhigter Bereich ausgewiesen werden	?::
 #: osm_watch: way id="1461976081" version="1"
 #: osm_watch[closed]: note 4598098 4
 # REMOVED (landuse -> building, keine Beobachtung mehr sinnvoll) --- #: osm_watch: way id="234861531" version="4"
-#: last_checked: 2025-10-06 (mapillary)
+#: last_checked: 2026-07-23 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-09-15
 # REMOVED (realisiert) --- Rubinweg: neue Privatstraße entsteht	?::inwork 11495,20364 11543,20272
@@ -9735,7 +9736,7 @@ Königsheideweg/Johannisthaler Chaussee: entsteht hier eine Ampel?	?::projected 1
 #: next_check_id: WEGAMFLIESSGRABEN-2023
 #: by: http://www.infravelo.de/projekt/weg-am-fliessgraben/ (3. Quartal 2023 - 4. Quartal 2026)
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html (Zweirichtungsradweg, 370m --- diese Länge passt aber nur, wenn der bereits fertiggestellte Abschnitt zugezählt wird)
-#: last_checked: 2026-02-07 (mapillary)
+#: last_checked: 2026-07-23 (mapillary)
 #: next_check: 2026-12-31
 Heinersdorfer Str.: was für eine Art RVA wird hier entstehen?	?::projected 13584,20628 13586,20649 13590,20705
 # 
@@ -10046,6 +10047,7 @@ S-Bhf. Zehlendorf, Neubau der Eisenbahnüberführung: mögliche bauzeitliche Einsch
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25975.pdf (Baubeginn Februar 2026, beidseitig)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1693776.php (Fahrbahnsanierungsarbeiten bis 31.12.2026, keine Einschränkungen für den Radverkehr)
+#: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierung-an-der-schlossstrasse-in-charlottenburg/ (bis 31.07.2026)
 #: source_id: bvg2024:309#HIM_FREETEXT_349190 (Umleitung)
 #: source_id: LMS-BR:416445/72 viz2021:13.29705,52.51343,20.07.2026,07:00 (bis 28.07.2026)
 #: source_id: planb2026:13.29706087,52.51041564,20.07.2026,00:00 ("Fahrstreifen-Reduzierung", bis 04.08.2026)
@@ -10138,6 +10140,22 @@ Bendastr., Britzkestr., Rungiusstr.: mögliche neue Fahrradstraße	?::projected 12
 #: by: https://www.infravelo.de/projekt/wilhelm-kuhr-strasse/ (3. Quartal 2026 - 3. Quartal 2026)
 #: next_check: 2026-09-30 (infravelo)
 Wilhelm-Kuhr-Str.: Kopfsteinpflaster wird durch Asphalt ersetzt	? 9776,18125 9803,18131 9831,18181 9893,18179
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_31_2001_2076_online.pdf (Teileinziehung von öffentlichem Straßenland)
+#: last_checked: 2026-07-24 (Amtsblatt)
+#: check_frequency: 30d
+Koppenplatz/Auguststr.: wo genau wird die eingezogene Fläche sein? wann wird abgesperrt?	? 9946,13550 9961,13502 10026,13521
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_31_2001_2076_online.pdf (Teileinziehung von öffentlichem Straßenland)
+#: XXX verkehrsberuhigten Bereich dann entfernen
+#: last_checked: 2026-07-24 (Amtsblatt)
+#: check_frequency: 30d
+Stuttgarter Str.: Teileinziehung geplant	? 13663,8011 13633,8036 13554,8101
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_31_2001_2076_online.pdf (Teileinziehung von öffentlichem Straßenland)
+#: last_checked: 2026-07-24 (Amtsblatt)
+#: check_frequency: 30d
+Rohrdommelweg: Teileinziehung geplant	? 15220,3840 15179,3901
 # 
 ######################################################################
 #

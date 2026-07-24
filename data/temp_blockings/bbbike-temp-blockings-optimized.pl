@@ -1028,21 +1028,7 @@ Londoner Str.: Richtung Müllerstr. gesperrt	q4::inwork; 5847,17018 5772,16919
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mqisukt2rk2l (bis 24.7.2026)
-#: source_id: bvg2024:m29#HIM_FREETEXT_349587
-#: source_id: bvg2024:m29#HIM_FREETEXT_349580
-#: source_id: planb2026:13.43057602,52.49559246,13.07.2026,06:00 (Fläche sieht nach einer Sperrung des Kreuzungsbereichs aus, "Vollsperrung beider Fahrbahnen", bis 24.07.2026)
-Reichenberger Str.: Bauarbeiten im Kreuzungsbereich	q2::inwork 12048,10097 12229,10014 12398,9938
-Ohlauer Str.: Bauarbeiten im Kreuzungsbereich	q2::inwork 12341,10218 12229,10014 12116,9825
-# REMOVED (alt) ---	1::inwork 12398,9938 12556,9862 12714,9792 12834,9738
-',
-         'from' => 1783893600,
-         'id' => 1563,
-         'text' => 'Reichenberger Str./Lausitzer Str.: Bauarbeiten im Kreuzungsbereich, vom 13.07.2026 bis 24.07.2026',
-         'type' => 'handicap',
-         'until' => 1784901600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3860,10 +3846,12 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
 #: osm_watch[closed]: note 4210973 7
 #: osm_watch: note 5200739 2
 #: osm_watch: node id="27306736" version="13"
+#: osm_watch: way id="523767869" version="8"
+#: osm_watch: way id="1191374477" version="6"
 # REMOVED --- #: osm_watch: node id="3005701527" version="3"
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2026-05-25 (mapillary)
+#: last_checked: 2026-06-16 (osm changeset)
 #: check_frequency: 60d
 #: next_check: 2026-10-09 (VIZ-Verkehrsmeldung)
 	2::inwork 3233,12757 3332,12742
@@ -4792,6 +4780,7 @@ Jahnstr.	q3::inwork; 13027,6168 13227,6209
 #: source_id: viz2021:13.452222,52.471093,13.05.2024,07:00 (bis 11.12.2025) (inaktiv)
 #: source_id: LMS-BR:392162/72 viz2021:13.45219,52.47105, viz2021:13.45133,52.47198, (Niemetzstr., bis 30.07.2027)
 #: source_id: LMS-BR:333172/72 viz2021:13.45047,52.47074,13.05.2024,07:00 viz2021:13.45047,52.47074, (Saalestr., bis 11.12.2025) (bis 30.07.2026) (bis 30.07.2027)
+#: source_id: planb2026:13.45297537,52.47019581,29.04.2024, ("Vollsperrung beider Fahrbahnen", bis 30.07.2027)
 #: also_indoor: traffic (B,H(unvollständig),G)
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
@@ -4799,7 +4788,7 @@ Jahnstr.	q3::inwork; 13027,6168 13227,6209
 #: note: Ende Mitte 2026 oder Mitte 2027?
 #: last_checked: 2026-07-15 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2027-07-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-07-30 (VIZ-Verkehrsmeldung, planb) vvv
 #: historical_note: bis 2024-05-13 nur q4
 #: osm_watch: way id="31824547" version="28"
 Niemetzstr.: provisorischer asphaltierter Gehweg auf der westlichen Straßenseite existiert	q4::inwork 13797,7267 13762,7321
@@ -5893,10 +5882,12 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: osm_watch: note 5085082 5
 #: osm_watch: way id="31525839" version="18"
 #: source_id: bvg2024:396#HIM_FREETEXT_309001 (zwischenzeitlich entfernt)
+#: source_id: planb2026:13.50989979,52.49288278,01.12.2025,06:00 (Hönower Weg im gesperrten Abschnitt: "Vollsperrung beider Fahrbahnen", bis 29.08.2026)
+#: source_id: planb2026:13.50856246,52.49155942,20.04.2026,07:00 (westlich Neuer Feldweg: "Fahrbahneinengung", bis 26.02.2027)
 #: last_checked: 2026-07-18 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
-#: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr)
+#: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr; mittlerweile aber doch wieder Radfahren-verboten-Schilder)
 Hönower Weg	2::inwork 17383,9719 17471,9688
 östliche Dolgenseestr.	2::inwork 17471,9688 17480,9721
 #: next_check ^^^
@@ -7407,21 +7398,7 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: source_id: viz2021:13.29634,52.51568,31.03.2025,07:00 (bis 06.06.2025) (inaktiv) ---	q4::inwork 3088,12094 2920,12070
-# REMOVED --- #: source_id: viz2021:13.29405,52.51552,02.06.2025,07:00 (bis 06.06.2025) (inaktiv) --- #: source_id: adac:8174832 (bis voraussichtlich 06.06.2025) (inaktiv) ---	q4::inwork 2920,12070 2686,12051
-#: source_id: LMS-BR:398542/72 viz2021:13.29634,52.51568,09.02.2026,07:00 (Einbahnstraße, aber in welche Richtung? bis 30.06.2026) (inaktiv)
-# REMOVED ---	q4::inwork; 2920,12070 3088,12094
-#: source_id: LMS-BR:412907/72 viz2021:13.28778,52.51516,22.06.2026,07:00 (bis 10.07.2026) (bis 24.07.2026)
-#: source_id: planb2026:13.28793553,52.51519061,22.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 24.07.2026)
-Seelingstr.: zwischen Sophie-Charlotten-Str. und Danckelmannstr.	q4::inwork 2485,12032 2686,12051
-',
-         'from' => 1770591600,
-         'id' => 4290,
-         'text' => 'Seelingstr.: Bauarbeiten, Sperrung, bis Ende Juli 2026',
-         'type' => 'handicap',
-         'until' => 1784905200
-       },
+       undef,
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
 #: by: https://www.entwicklungsstadt.de/marzahner-chaussee-rohbauarbeiten-fuer-neue-wohnungen-kommen-voran/ (Fertigstellung: geplant bis 2027)
@@ -8448,7 +8425,9 @@ Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q
          'data' => '#: next_check_id: HUFELAND-2025
 #: source_id: viz2021:13.42956,52.533,13.10.2025,07:00 (bis 21.10.2025) (inaktiv)
 #: source_id: planb2026:13.43737859,52.52968831,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 10.09.2026)
+#: source_id: LMS-BR:416895/72 viz2021:13.42956,52.533,24.07.2026,07:00 (bis 10.09.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260723
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrejch5oai2e
 #: note: widersprüchliche Angaben: laut VIZ-Verkehrsübersicht ab 24.7.2026 und der Radverkehr ist auch betroffen, laut planb Start bereits am 23.7.2026, laut Pressemitteilung ab 29.7.2026 und es wird nur der Kfz-Verkehr erwähnt
 Hufelandstr.: Bau einer Fahrradstraße	q4::inwork 12077,14186 12228,14083 12361,13985 12478,13903 12582,13834 12578,13800
 Bötzowstr.: Kreuzungsbereich vermutlich betroffen	q3::inwork 12280,13880 12361,13985 12423,14066
@@ -8619,7 +8598,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: note: planb-Eintrag meint "Gegenverkehrsanlage (LZA)", was wohl falsch ist
 #: osm_watch: way id="1529028638" version="1"
 #: source_id: planb2026:13.37428795,52.47883267,27.10.2025,06:00 ("Gegenverkehrsanlage (LZA)" (???), bis 24.07.2026)
-#: also_indoor: traffic (re-G,ex-T,W[mittlerweile richtige Lage],no-H)
+#: also_indoor: traffic (ex-G,ex-T,ex-W[mittlerweile richtige Lage],no-H)
 #: add_fragezeichen: Besteht die Sperrung weiterhin?
 #: last_checked: 2026-07-07
 # REMOVED --- #: check_frequency: 14d (traffic)
@@ -8850,7 +8829,7 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 #: osm_watch: note 5142999 2
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
 #: note: Ausschilderung am westlichen Ende: Verbot für Fahrzeuge aller Art, Anwohner frei
-#: last_checked: 2026-07-11
+#: last_checked: 2026-07-24 (traffic)
 #: check_frequency: 14d (traffic)
 	2::inwork 20285,-2775 20875,-2584
 ',
@@ -9506,11 +9485,11 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (T,re-G[noch länger],re-H,no-W)
+         'data' => '#: also_indoor: traffic (T,re-G[noch länger],ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: source_id: planb2026:13.32567635,52.42505107,09.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.07.2026)
 #: source_id: planb2026:13.3249997,52.42487496,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", unklar, ist als "Brauerstr." bezeichnet; bis 04.12.2026)
-#: last_checked: 2026-07-23 (traffic)
+#: last_checked: 2026-07-24 (traffic)
 #: check_frequency: 7d (traffic)
 #: next_check: 2026-07-24 (planb)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -9923,8 +9902,8 @@ Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
          'data' => '#: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
 #: source_id: planb2026:13.58344295,52.5238279,15.06.2026,07:00 (bis 24.07.2026)
-#: also_indoor: traffic (G,T,no-H,no-W)
-#: last_checked: 2026-07-17 (traffic) vvv
+#: also_indoor: traffic (G,ex-T,no-H,no-W)
+#: last_checked: 2026-07-24 (traffic) vvv
 #: check_frequency: 7d (traffic) vvv
 #: next_check: 2026-07-24 (planb) vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
@@ -10055,9 +10034,10 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1686570.php (Dauer voraussichtlich 6-8 Wochen, ab 25.6.2026)
 #: source_id: LMS-BR:412912/72 viz2021:13.303754,52.509885,22.06.2026,07:00 (hier bis Wilmersdorfer Str., bis 31.07.2026) (bis 31.08.2026)
 #: source_id: LMS-BR:414997/72 viz2021:13.30344,52.50987,07.07.2026,07:00 (bis 31.07.2026) (bis 31.08.2026)
-#: source_id: planb2026:13.30315166,52.51114636,22.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.07.2026)
+#: source_id: planb2026:13.30315166,52.51114636,22.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.07.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.30315166,52.51114636,07.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
 #: also_indoor: traffic (no-G,no-T,H,W)
-#: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-31 (VIZ-Verkehrsmeldung, planb)
 Schillerstr.	q4::inwork 3522,11447 3571,11451
 Schillerstr. (kurzer Abschnitt)	q3::inwork 3571,11451 3717,11462
 Rückertstr.	q4::inwork 3569,11473 3571,11451
@@ -10204,9 +10184,9 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
          'data' => '#: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-berlin-friedrichshain-frankfurter-allee-bleibt-bis-ende-der-sommerferien-teilweise-gesperrt-15810152.html
 #: by: https://www.berliner-zeitung.de/article/berlin-frankfurter-allee-gesperrt-stau-verkehr-friedrichshain-mitte-10172820
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
-# REMOVED (vorfristig entfernt) --- #: source_id: planb2026:5138 (bis 25.09.2026)
+# REMOVED (fälschlicherweise vorfristig entfernt) --- #: source_id: planb2026:5138 (bis 25.09.2026)
 #: priority: #A
-#: last_checked: 2026-07-18 vvv
+#: last_checked: 2026-07-24 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung, planb) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207
@@ -10358,6 +10338,7 @@ Almstadtstr.: Anbindung an die Rosa-Luxemburg-Str. gesperrt, Umwege	q4::inwork 1
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~14-07-2026-l-70-zwischen-kummersdorf-gut-und-sperenberg-ab-august-vollgesperrt
 #: source_id: LS/222-W/26/094 (3.8.2026 bis 31.10.2026)
+#: source_id: LS/222-W/26/095 (3.8.2026 bis 31.10.2026)
 #: XXX außerdem Bau eines Radwegs (nicht die gesamte Strecke, nur 1km)
 #: next_check: 2026-10-31 (Verkehrsmeldung, ls.brandenburg)
 	2::inwork 9300,-34066 9068,-34115 8564,-34625 8340,-34842 8218,-34884 7351,-35307 5971,-35320 5765,-35529 5865,-35773 5750,-36364
@@ -10380,7 +10361,7 @@ Almstadtstr.: Anbindung an die Rosa-Luxemburg-Str. gesperrt, Umwege	q4::inwork 1
 #: source_id: planb2026:13.42048743,52.50798798,11.07.2026, ("Vollsperrung beider Fahrbahnen", bis 30.10.2026)
 #: XXX Nach den Bauarbeiten müssen vermutlich gesperrt_car-orig-Einträge erzeugt werden.
 #: last_checked: 2026-07-16
-#: check_frequency: 10d
+#: check_frequency: 11d
 #: next_check: 2026-10-30 (planb)
 # REMOVED --- #: next_check: 2026-11-30 (BA-Pressemitteilung)
 Michaelkirchplatz	q4::inwork 11491,11396 11458,11394 11451,11378 11507,11355 11514,11372 11491,11396
@@ -10553,6 +10534,29 @@ Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung	2::inwork 1
          'text' => 'Weinmeisterhornweg: Bauarbeiten, Sperrung zwischen Wilhemstr. und Folkungerstr., 27.7.2026 bis 1.8.2026',
          'type' => 'handicap',
          'until' => 1785621599
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260724
+	2::inwork -8445,12092 -8599,11272
+',
+         'from' => 1785016800,
+         'id' => 4693,
+         'text' => 'Staakener Weg: Baustelle, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 27.07.2026 bis Mitte August 2026',
+         'type' => 'gesperrt',
+         'until' => 1786831199
+       },
+       {
+         'data' => '#: also_indoor: traffic (G,no-T,no-H,no-W)
+#: source_id: planb2026:13.42333831,52.55507567,02.03.2026,06:00 ("Sicherung gemäß Vz.-plan", ist das diese Baustelle? bis 31.12.2026)
+#: last_checked: 2026-07-23 (mapillary)
+#: check_frequency: 14d (traffic)
+	q4::inwork 11534,16622 11630,16623
+',
+         'from' => undef,
+         'id' => 4694,
+         'text' => 'Thulestr.: Bauarbeiten zwischen Neumannstr. und Kurze Str., Sperrung, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
