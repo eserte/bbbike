@@ -19,7 +19,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.60;
+$VERSION = 2.61;
 
 use BBBikeUtil qw(bbbike_aux_dir module_exists deg2rad);
 
@@ -2480,8 +2480,8 @@ sub showmap_url_bbviewer {
     my(%args) = @_;
     my $layers = delete $args{layers} || 'verkehrsstaerke';
     my $layerids = {
-		    'verkehrsstaerke-2015' => '10021,2062,22,10,11,7,8,5,6',
-		    'verkehrsstaerke-2021' => '10021,2062,10,7,5,11,8,6,33',
+		    'verkehrsstaerke-2015' => '239,2062,22,10,11,7,8,5,6',
+		    'verkehrsstaerke-2021' => '239,2062,10,7,5,11,8,6,33',
 		    flurstuecke            => '291-bg,9001,9000,159,149',
 		    dop20c                 => '3000',
 		   }->{$layers};
