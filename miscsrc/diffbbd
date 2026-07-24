@@ -196,6 +196,7 @@ sub process {
 				  'category_color.added_line'    => ['#40c040'],
 				  'line_arrow.changed_point'     => ['last'],
 				  'encoding'                     => [$encoding],
+				  ($s1->get_global_directive('map') ? (map => [$s1->get_global_directive('map')]) : ()),
 				});
     $out->write($o);
 }
