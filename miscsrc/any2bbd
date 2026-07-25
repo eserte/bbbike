@@ -19,9 +19,11 @@ use lib ("$FindBin::RealBin/..",
 use Hash::Util qw(lock_keys);
 
 use Archive::Zip qw(:ERROR_CODES);
+use Encode qw(decode);
 use File::Temp qw(tempfile);
 use File::Basename qw(basename dirname);
 use Getopt::Long;
+use I18N::Langinfo qw(langinfo CODESET);
 
 use Strassen::Gpsman;
 use Strassen::Core;
@@ -32,6 +34,11 @@ use Strassen::MultiStrassen;
 # Note: if using any2bbd with -info ... and -append, then make sure that the
 # first file wrote a global directive preamble. The easiest is to call any2bbd
 # first without any files in non-append mode.
+
+my $codeset = langinfo(CODESET());
+$codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
+
+@ARGV = map { decode $codeset, $_ } @ARGV;
 
 my %opt;
 
@@ -47,6 +54,7 @@ GetOptions(\%opt,
 	   "info=s",
 	   "noempty",
 	   "geojson-name=s",
+	   "name-sep=s",
 	   "v+",
 	  )
     or die <<EOF;
@@ -57,7 +65,7 @@ usage: $0 [-i inputformat] -o outfile [-a|-append]
     [-info file]
     [-infotobbd]
     [-noempty]
-    [-geojson-name ...]
+    [-geojson-name ...] [-name-sep ...]
     [-v [-v ...]]
 EOF
 
@@ -83,6 +91,8 @@ if ($opt{'geojson-name'}) {
 	push @defs, \%def;
     }
 
+    my $name_sep = defined $opt{'name-sep'} ? $opt{'name-sep'} : ' ';
+
     my %warn_once;
     $namecb = sub {
 	my $start_cursor = shift;
@@ -105,7 +115,7 @@ if ($opt{'geojson-name'}) {
 	    }
 	}
 	if (@names) {
-	    join(' ', @names);
+	    join($name_sep, @names);
 	} else {
 	    '';
 	}
