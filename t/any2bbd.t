@@ -10,9 +10,7 @@ use utf8;
 use FindBin;
 use File::Temp ();
 use Test::More;
-
 use Encode qw(decode);
-use I18N::Langinfo qw(langinfo CODESET);
 
 BEGIN {
     if (!eval q{ use IPC::Run qw(run); 1 }) {
@@ -21,9 +19,6 @@ BEGIN {
 }
 
 plan 'no_plan';
-
-my $codeset = langinfo(CODESET());
-$codeset = lc $codeset; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
 
 my $any2bbd = "$FindBin::RealBin/../miscsrc/any2bbd";
 my @basecmd = ($^X, $any2bbd);
@@ -156,9 +151,13 @@ EOF
 	like $err, qr{.*_any2bbd\.geojson\.\.\. OK \(Strassen::GeoJSON\)}, 'expected diagnostics';
     }
 
-    {
+ SKIP: {
+	skip "No reliable locale handling on Windows", 3
+	    if $^O eq 'MSWin32';
+	local $ENV{LC_ALL} = 'C.UTF-8'; # explicitly specify encoding here, because of the "¦"
+	delete local $ENV{LANG};
 	ok run [@basecmd, '-name-sep', '¦', '-geojson-name', 'street=.properties.street date=.properties.date', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
-	$out = decode $codeset, $out; # need to handle utf-8 here, because of the "¦"
+	$out = decode 'utf-8', $out;
 	is $out, <<"EOF", 'expected geojson -> bbd conversion result with concatenated properties and custom separator';
 #: map: polar
 #: encoding: utf-8
