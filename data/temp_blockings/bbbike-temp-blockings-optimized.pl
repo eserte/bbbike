@@ -4861,12 +4861,12 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: osm_watch: way id="975241319" version="10"
 # REMOVED --- #: osm_watch: way id="970452276" version="9"
 #: osm_watch[closed]: note 5093384 7
-#: source_id: planb2026:13.4396586,52.47929897,27.05.2024,07:00 ("Fahrstreifen-Reduzierung", bis 31.07.2026)
+#: source_id: planb2026:13.4396586,52.47929897,27.05.2024,07:00 ("Fahrstreifen-Reduzierung", bis 31.07.2026) (bis 30.09.2026)
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
 #: last_checked: 2026-07-22 (mapillary)
 #: check_frequency: 14d
-#: next_check: 2026-07-31 (planb)
+#: next_check: 2026-09-30 (planb)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
 # REMOVED ---	q4::inwork 12873,8218 12911,8232
 ',
@@ -5884,10 +5884,10 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: bvg2024:396#HIM_FREETEXT_309001 (zwischenzeitlich entfernt)
 #: source_id: planb2026:13.50989979,52.49288278,01.12.2025,06:00 (Hönower Weg im gesperrten Abschnitt: "Vollsperrung beider Fahrbahnen", bis 29.08.2026)
 #: source_id: planb2026:13.50856246,52.49155942,20.04.2026,07:00 (westlich Neuer Feldweg: "Fahrbahneinengung", bis 26.02.2027)
-#: last_checked: 2026-07-18 vvv
+#: last_checked: 2026-07-25 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
-#: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr; mittlerweile aber doch wieder Radfahren-verboten-Schilder)
+#: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr; mittlerweile (2026-07-18) aber doch wieder Radfahren-verboten-Schilder; 2026-07-25: nur noch Umleitungsschilder, keine Radfahren-verboten-Schilder mehr)
 Hönower Weg	2::inwork 17383,9719 17471,9688
 östliche Dolgenseestr.	2::inwork 17471,9688 17480,9721
 #: next_check ^^^
@@ -7026,7 +7026,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 #: source_id: planb2026:13.36006937,52.47725114,18.11.2024,07:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026)
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 1
-#: last_checked: 2026-07-07
+#: last_checked: 2026-07-24 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2026-08-31 (planb)
 # REMOVED --- #: next_check: 2026-11-30 (Pressemitteilung)
@@ -7110,9 +7110,9 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
          'data' => '#: also_indoor: traffic (re-G[nur noch ein Stummel],W,ex-T,ex-A)
 #: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
 #: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026?
-#: source_id: planb2026:13.37232419,52.48441245,16.12.2024,06:00 ("Sperrung einer Fahrtrichtung", bis 21.08.2026)
+#: source_id: planb2026:13.37232419,52.48441245,16.12.2024,06:00 ("Sperrung einer Fahrtrichtung" (allerdings zu lang), bis 21.08.2026)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2026-07-07
+#: last_checked: 2026-07-25
 #: check_frequency: 30d
 #: next_check: 2026-08-21 (planb)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
@@ -8047,18 +8047,18 @@ Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,127
 #: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: XXX im Zusammenhang mit den Arbeiten an der Ampel
 #: note: Überquerungsmöglichkeit nun ca. 30m südlich der Kreuzung
-#: last_checked: 2026-07-22 (mapillary)
+#: last_checked: 2026-07-25
 #: check_frequency: 21d
 #: next_check: 2026-09-15 (planb)
 # REMOVED --- #: next_check: 2026-12-31 (infravelo, mobilitaetsrat)
-Kirchhofweg: Umwege vor der Hermannstr./Thomasstr.	q3::inwork 11687,7284 12185,7381
+Kirchhofweg: Umwege vor der Hermannstr./Thomasstr.	q2::inwork 11687,7284 12185,7381
 # REMOVED #: note: kurzer Abschnitt gesperrt (~40m) + Bordsteine, deshalb q3 --- Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
 # REMOVED (alte Meldung) --- #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg --- #: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
 # REMOVED (nicht mehr) --- Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 ',
          'from' => undef,
          'id' => 4391,
-         'text' => 'Kirchhofweg: Bauarbeiten vor der Hermannstr., Umwege, Ende der Bauarbeiten unbekannt',
+         'text' => 'Kirchhofweg: Bauarbeiten vor der Hermannstr., Umwege, voraussichtlich bis Mitte September 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8213,7 +8213,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: source_id: planb2026:13.4564232,52.50244969,01.06.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-23 vvv
+#: last_checked: 2026-07-25 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2026-08-31 (planb) vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
@@ -8250,7 +8250,7 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
 #: source_id: planb2026:13.38205024,52.4838886,28.10.2025,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.07.2026)
 #: note: laut Baustellenschild der Wasserbetriebe bis Mai 2026
 #: add_fragezeichen: Besteht die Sperrung weiterhin? vvv
-#: last_checked: 2026-07-20 (traffic) vvv
+#: last_checked: 2026-07-25 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-07-31 (planb) vvv
 #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026; mittlerweile bis 30.04.2026 (aber bereits obsolet)
@@ -8300,9 +8300,9 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
 #: source_id: LMS-BR:415346/72 viz2021:13.38557,52.47199, (zwischen Te-Damm und Schulenburgring (tatsächlich?), bis 08.05.2027)
 #: source_id: planb2026:13.37904221,52.47572048,26.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 01.09.2026)
 #: add_fragezeichen: Sind die Straßen weiterhin gesperrt? vvv
-#: last_checked: 2026-07-07 vvv
+#: last_checked: 2026-07-25 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2026-08-31 vvv
+#: next_check: 2026-09-01 (VIZ-Verkehrsmeldung, planb) vvv
 Manfred-von-Richthofen-Str.: Fahrbahn Richtung Süden gesperrt	q4::inwork; 8731,7956 8757,7841 8796,7751
 Manfred-von-Richthofen-Str./Rumeyplan: Sperrungen im Kreuzungsbereich	q4::inwork 8812,7730 8796,7751
 Manfred-von-Richthofen-Str.: Sperrungen im Kreuzungsbereich	q3::inwork 8796,7751 8757,7841
@@ -8326,7 +8326,7 @@ Rumeyplan: südliche Fahrbahn gesperrt	q4::inwork 8812,7730 8907,7773 8895,7797
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: add_fragezeichen: Ist der Schreiberring weiterhin gesperrt?
 #: source_id: planb2026:13.37724442,52.48018571,15.06.2026,06:00 ("Fahrstreifen-Reduzierung", bis 13.08.2026)
-#: last_checked: 2026-07-07
+#: last_checked: 2026-07-24 (mapillary)
 #: next_check: 2026-08-13 (planb)
 Schreiberring	q4::inwork 8561,8252 8666,8305
 # REMOVED --- #: also_indoor: traffic (ex-T,G)
@@ -8592,25 +8592,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
        },
        undef,
        undef,
-       {
-         'data' => '#: note: erste Halteverbotsschilder bis 15.12.2025, mittlerweile bis 28.02.2026, mittlerweile bis 31.05.2026 (nicht mehr erneuert)
-#: note: laut Baustellenschild der Wasserbetriebe bis 2027 (!) (vielleicht nur allgemein Bauarbeiten in der Gegend?)
-#: note: planb-Eintrag meint "Gegenverkehrsanlage (LZA)", was wohl falsch ist
-#: osm_watch: way id="1529028638" version="1"
-#: source_id: planb2026:13.37428795,52.47883267,27.10.2025,06:00 ("Gegenverkehrsanlage (LZA)" (???), bis 24.07.2026)
-#: also_indoor: traffic (ex-G,ex-T,ex-W[mittlerweile richtige Lage],no-H)
-#: add_fragezeichen: Besteht die Sperrung weiterhin?
-#: last_checked: 2026-07-07
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: next_check: 2026-07-24 (planb)
-	q4::inwork 8265,8092 8259,8265 8276,8295
-',
-         'from' => 1762538105,
-         'id' => 4494,
-         'text' => 'Gontermannstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -9358,10 +9340,10 @@ Westerwaldstr.: Einbahnstraßenregelung	q4::inwork; -5036,15625 -5023,15688
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1660792.php (1600m, also wesentlich länger als die Kastanienallee, bis Ende Oktober 2026)
 #: by: https://www.nbb-netzgesellschaft.de/presse/pressemitteilungen/beitrag/erneuerung-der-gasleitung-schont-vegetation-am-europa-radweg/
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article411719447/berlin-baustelle-mitten-durch-die-wuhlheide-behindert-besucher-monatelang.html
-#: osm_watch: way id="10856020" version="52"
-#: osm_watch: note 5250307 2
+#: osm_watch: way id="10856020" version="53"
+#: osm_watch[closed]: note 5250307 2
 #: priority: #A
-#: last_checked: 2026-07-18 vvv
+#: last_checked: 2026-07-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (BA TK, nbb netzgesellschaft) vvv
 Kastanienallee	2::inwork 18437,7752 19045,6959
@@ -9380,7 +9362,8 @@ Baustelleneinrichtungsfläche	2::inwork 19045,6959 19080,6986
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe dauern die Bauarbeiten im Bauabschnitt Böhmische Straße zwischen Kanner Straße und Niemetzstraße von März 2026 bis Mai 2027 -> erwartete Änderungen des aktuell gesperrten Abschnitts
 #: XXX Wandern die Bauarbeiten bald in die Böhmische Straße?
 #: also_indoor: traffic (G[zu kurz],T[zu lang],no-H,no-A,no-W)
-#: source_id: planb2026:13.44612533,52.47235569,18.05.2026, (Böhmische Str., "Vollsperrung beider Fahrbahnen", bis 28.08.2026, vor Ort aber ohne Bauarbeiten in den Randbereichen ohne Sperrung)
+#: source_id: planb2026:13.44612533,52.47235569,18.05.2026, (Böhmische Str., "Vollsperrung beider Fahrbahnen", bis 28.08.2026, vor Ort aber ohne Bauarbeiten in den Randbereichen ohne Sperrung) (inaktiv)
+#: source_id: planb2026:13.44582437,52.47232182,18.05.2026, (gleicher Datensatz, veränderte Fläche, "Vollsperrung beider Fahrbahnen", bis 28.08.2026)
 #: source_id: planb2026:13.44938415,52.47396792,01.08.2026, ("Vollsperrung beider Fahrbahnen", bis 30.08.2026)
 #: last_checked: 2026-07-21 vvv
 #: check_frequency: 30d vvv
@@ -9431,11 +9414,13 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mk2ovdyy3s2p
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiagfo5b3th22qpmdtsb3lvk57qcmjmcv777fefzyf3fdt5lcm62sa
 #: source_id: LMS-BR:405614/72 viz2021:13.5281,52.46354,22.04.2026,07:00 (bis 31.03.2027)
-	q4::inwork 18700,6604 18771,6699
+#: source_id: planb2026:13.52740438,52.46387925,15.04.2026,07:00 ("Fahrstreifen-Reduzierung" (An der Wuhlheide), bis 31.03.2027)
+#: note: Länge etwa 30m, kann am Wochenende/außerhalb der Arbeitszeiten offen sein, deshalb: q4 -> q3
+	q3::inwork 18700,6604 18771,6699
 ',
          'from' => 1776722400,
          'id' => 4589,
-         'text' => 'Firlstr.: Bauarbeiten, die Anbindung zur An der Wuhlheide ist unterbrochen, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis Ende März 2027',
+         'text' => 'Firlstr.: Bauarbeiten, die Anbindung zur An der Wuhlheide ist gesperrt, voraussichtlich bis Ende März 2027',
          'type' => 'handicap',
          'until' => 1806530399
        },
@@ -9485,13 +9470,14 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (T,re-G[noch länger],ex-H,no-W)
+         'data' => '#: also_indoor: traffic (ex-T,re-G[noch länger],ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: source_id: planb2026:13.32567635,52.42505107,09.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.07.2026)
+#: XXX Oder sind die Bauarbeiten nun zur Brauerstr. gewandert?
+#: source_id: planb2026:13.32567635,52.42505107,09.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.07.2026) (inaktiv)
 #: source_id: planb2026:13.3249997,52.42487496,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", unklar, ist als "Brauerstr." bezeichnet; bis 04.12.2026)
-#: last_checked: 2026-07-24 (traffic)
-#: check_frequency: 7d (traffic)
-#: next_check: 2026-07-24 (planb)
+#: last_checked: 2026-07-25 (traffic)
+#: check_frequency: 3d (traffic)
+# REMOVED --- #: next_check: 2026-07-24 (planb)
 	q4::inwork 5220,2030 5277,2054 5376,2097
 ',
          'from' => undef,
@@ -9699,16 +9685,17 @@ Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660
        {
          'data' => '#: also_indoor: traffic (T,G,W)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: osm_watch: note 5292595 2
+#: osm_watch: note 5292595 3
 #: source_id: planb2026:13.37453115,52.47872517,23.02.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
-#: last_checked: 2026-07-07
+#: last_checked: 2026-07-25
 #: check_frequency: 21d (traffic)
 #: next_check: 2026-08-31 (planb)
 Wünsthoffstr.: Sperrung der Fahrbahn	q4::inwork 8461,8084 8519,8088 8620,8095
 #: also_indoor: traffic (no-T,no-G,W[fälschlicherweise Komplettsperrung])
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
-#: osm_watch: note 5292048 1
-#: last_checked: 2026-07-07
+#: osm_watch[closed]: note 5292048 1
+#: osm_watch: way id="168967374" version="11"
+#: last_checked: 2026-07-25
 #: check_frequency: 21d (traffic)
 Wünsthoffstr.: Einbahnstraßenregelung	q4::inwork; 8461,8097 8265,8092
 ',
@@ -9729,23 +9716,7 @@ Wünsthoffstr.: Einbahnstraßenregelung	q4::inwork; 8461,8097 8265,8092
          'type' => 'gesperrt',
          'until' => 1786730400
        },
-       {
-         'data' => '#: source_id: LMS-BR:410347/72 viz2021:13.2583,52.51823,01.06.2026,06:00 (bis 24.07.2026)
-#: source_id: planb2026:13.25843321,52.51826711,01.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 24.07.2026)
-Altenburger Allee	q4::inwork 481,12319 543,12379 626,12417
-#: source_id: LMS-BR:410345/72 viz2021:13.26264,52.52023,01.06.2026,06:00 (bis 24.07.2026)
-#: source_id: planb2026:13.26043671,52.51906089,01.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 24.07.2026)
-Reußallee	q4::inwork 626,12417 616,12498 618,12563
-#: source_id: LMS-BR:410352/72 viz2021:13.26045,52.51901,01.06.2026,06:00 (bis 24.07.2026)
-#: source_id: planb2026:13.26236445,52.52021081,01.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 24.07.2026)
-Gotha-Allee	q4::inwork 765,12564 618,12563
-',
-         'from' => 1780200000,
-         'id' => 4622,
-         'text' => 'Altenburger Allee, Reußallee, Gotha-Allee: Sperrung, evtl. ist auch der Radverkehr betroffen, vom 01.06.2026 06:00 bis 24.07.2026 20:00',
-         'type' => 'handicap',
-         'until' => 1784916000
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:410346/72 viz2021:13.371186,52.584284,01.06.2026,06:00 (bis 31.07.2026)
 	q4::inwork 8231,19806 8043,19725 8030,19762 8000,19819
@@ -9901,14 +9872,14 @@ Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
        {
          'data' => '#: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
-#: source_id: planb2026:13.58344295,52.5238279,15.06.2026,07:00 (bis 24.07.2026)
+#: source_id: planb2026:13.58344295,52.5238279,15.06.2026,07:00 (bis 24.07.2026) (inaktiv)
 #: also_indoor: traffic (G,ex-T,no-H,no-W)
-#: last_checked: 2026-07-24 (traffic) vvv
-#: check_frequency: 7d (traffic) vvv
-#: next_check: 2026-07-24 (planb) vvv
+#: last_checked: 2026-07-25 (traffic) vvv
+#: check_frequency: 3d (traffic) vvv
+# REMOVED --- #: next_check: 2026-07-24 (planb) vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
 	q4::inwork 22717,13278 22563,13340 22594,13408
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -10555,6 +10526,44 @@ Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung	2::inwork 1
          'from' => undef,
          'id' => 4694,
          'text' => 'Thulestr.: Bauarbeiten zwischen Neumannstr. und Kurze Str., Sperrung, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
+#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/verkehrsberuhigung-in-der-gartenstadt-bleibt-schwierig_a202537#gallery=null (für 2020 geplant)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (Erwähnung)
+#: by: https://www.berliner-woche.de/tempelhof/c-bauen/rund-um-den-wichtigen-verkehrsknotenpunkt-soll-es-schoener-werden_a295108 (Baubeginn 2022? MvR-Str. soll Radspuren bekommen)
+#: by: https://abendblatt-berlin.de/2020/12/03/tempelhof-kreuzberg-der-platz-der-luftbruecke-wird-gruener/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1025759.php (Beteiligungsveranstaltung)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1027810.php
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/umgestaltung-des-platz-der-luftbr%C3%BCcke.1186/#post-18304
+#: by: https://berliner-abendblatt.de/2022/05/11/platz-der-luftbruecke/ (Baustart Ende 2023, Teilfertigstellung 2025)
+#: by: https://www.morgenpost.de/berlin/article408491954/platz-der-luftbruecke-wird-zur-naechsten-berliner-gross-baustelle.html (Erwähnung, Baustart (wo genau?) im Herbst 2025)
+#: by: https://www.entwicklungsstadt.de/neugestaltung-am-platz-der-luftbruecke-beginnt-2025-endlich-der-umbau/
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1592352.php (Informationsveranstaltung)
+#: by: https://gruen-berlin.de/projekte/urbane-freiraeume/platz-der-luftbruecke/planung-entwicklung (Fahrradschutzstreifen zwischen Schulenburgring und Te-Damm, ab 2026)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-3#post-26650
+#: by: https://www.entwicklungsstadt.de/zwischen-klimaanpassung-und-verkehrsrealitaet-berlins-plaetze-im-wandel/
+#: by: https://www.entwicklungsstadt.de/endlich-baustart-platz-der-luftbruecke-wird-neu-gestaltet-was-geplant-ist/ (Bauarbeiten ab 20.3.2026)
+#: by: https://gruen-berlin.de/pressemitteilung/baustart-fuer-ein-lebenswertes-und-nachhaltiges-quartier-am-platz-der-luftbruecke
+#: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/damit-der-historisch-bedeutsame-ort-im-21-jahrhundert-ankommt-umbauarbeiten-am-platz-der-luftbrucke-in-tempelhof-gestartet-15382515.html
+#: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article411511492/baustart-am-platz-der-luftbruecke-mamC2ADmutC2ADproC2ADjekt-an-historischem-ort.html
+#: by: https://www.entwicklungsstadt.de/mehr-gruen-mehr-raum-bauarbeiten-am-platz-der-luftbruecke-gestartet/ (erster Bauabschnitt bis Anfang 2028)
+#: by: https://www.entwicklungsstadt.de/luftbruecke-am-flughafen-tempelhof-geschichte-und-umbau/
+#: source_id: planb2026:13.38263329,52.48208211,21.04.2026,07:00 ("Fahrbahneinengung", bis 14.09.2026)
+#: osm_watch: note 5278398 4
+#: osm_watch: way id="1152289359" version="3"
+#: also_indoor: traffic (G[zu kurz],T[zu lang],H[zu kurz],W[zu kurz])
+#: last_checked: 2026-07-25
+#: check_frequency: 90d
+#: next_check: 2026-09-14 (planb)
+Manfred-von-Richthofen-Str.	q4::inwork; 9229,8718 9158,8706 9093,8665 9011,8605
+',
+         'from' => undef,
+         'id' => 4695,
+         'text' => 'Manfred-von-Richthofen-Str.: zwischen Tempelhofer Damm und Schulenburgring Richtung Südwesten wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        }

@@ -43,6 +43,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine, Umwege	q4::inwork 5669,10704 5782,10884
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
+Sieversufer: Wasserrohrbruch, kurzer Abschnitt der Fahrbahn gesperrt	q2::inwork 13430,6086 13636,6185
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
@@ -1819,7 +1820,8 @@ Veilchenblütenweg: schmale Straße	q1 11664,21246 11656,21309
 (Welzower Steig - Senftenberger Ring): kurvenreich	q1 6621,21638 6676,21647 6722,21722
 (Gertrudstr. - Wanderweg): eng	q3 4749,24020 4754,23998
 Im Brachfeldwinkel: einige Fußgänger	q1 3024,21286 3068,21150
-Stelzenweg, Straße 26a: zahlreiche Bodenschwellen, mit Normalrad gut umfahrbar	q0 15464,3936 15362,4023 15183,4157 15028,4272 14967,4317 14805,4440 14651,4554 14616,4581
+Stelzenweg, Straße 26a: zahlreiche Bodenschwellen, mit Normalrad gut umfahrbar	q0 15362,4023 15183,4157 15028,4272 14967,4317 14805,4440 14651,4554 14616,4581
+(Stelzenweg - Uferweg): schmale Straße	q0 15183,4157 15280,4301 15338,4341
 (Unterführung Seehofstr.): Fußgänger	q1 1145,2898 1126,2879 1093,2866
 Rütli-Campus: einige Fußgänger, Schulgelände	q3 12526,9125 12554,9178 12592,9249
 (Ossastr. - Rütlistr.): einige Fußgänger, Schulgelände	q2 12623,9134 12554,9178

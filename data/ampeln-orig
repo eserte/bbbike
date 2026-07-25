@@ -14,7 +14,7 @@ Königsheideweg: Regelung mit Baustellenampel zwischen Redwitzgang und Sterndamm/
 # 
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_347631
 #: source_id: bvg2024:194#HIM_FREETEXT_347630
-#: source_id: bvg2024:194#HIM_FREETEXT_348289
+#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_348289
 #: source_id: LMS-BR:415149/72 viz2021:13.4754,52.50199, (bis 16.12.2026)
 #: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
 #: note: Länge der Gegenverkehrsregelung: 150m
@@ -4574,13 +4574,16 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: osm_watch: node id="8656381176" version="5"
 #: osm_watch: node id="8740310061" version="4"
 #: osm_watch: node id="8740310063" version="4"
+#: osm_watch: note 5409312 1
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
-#: last_checked: 2026-07-22 (mapillary)
+#: XXX laut osm note von SGA Neukölln bis Ende August 2026
+#: last_checked: 2026-07-25
 #: check_frequency: 30d
-#: next_check: 2026-09-30 (infravelo)
+#: next_check: 2026-08-31 (osm note)
+# REMOVED --- #: next_check: 2026-09-30 (infravelo)
 	X::inwork 12185,7381
 # 
 #: note: Anforderungsampel für Radfahrer in der Relation Brachvogelstr. - Mittenwalder Str.

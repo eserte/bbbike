@@ -339,7 +339,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2026-07-10
+#: last_checked: 2026-07-25
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -997,7 +997,8 @@ Calvinstr.: Kopfsteinpflaster	Q2 6775,12661 6802,12797 6860,13093
 # 
 #: next_check_id: ALTPICHELSDORF-2026
 #: XXX wiederherstellen: Alt-Pichelsdorf: Kopfsteinpflaster	Q2- -3692,11681 -3657,11631 -3606,11532
-#: source_id: planb2026:13.20005325,52.5115172,03.02.2026,07:00 ("Haltverbote", bis 03.11.2028)
+#: source_id: planb2026:13.20005325,52.5115172,03.02.2026,07:00 ("Haltverbote", bis 03.11.2028) (inaktiv)
+#: source_id: planb2026:13.20091183,52.51198316,20.02.2026,07:00 (gleicher Eintrag, veränderte Fläche/Startdatum, "Haltverbote", bis 03.11.2028)
 #: last_checked: 2026-07-08
 #: next_check: 2028-11-03 (planb)
 Alt-Pichelsdorf: provisorisch asphaltiert	Q0 -3692,11681 -3657,11631 -3606,11532
@@ -3022,11 +3023,11 @@ Delfter Ufer: guter Asphalt	Q0 14270,5572 14323,5455 14340,5406
 Fenchelweg: glattes Kopfsteinpflaster	Q1 15585,4139 15695,4051 15859,3924 15872,3888
 Fenchelweg: Beton	Q0- 15872,3888 15860,3838 15838,3754 15791,3686 15737,3609 15674,3528 15611,3448 15500,3299 15410,3179
 (Mauerweg Rudow): Asphalt	Q0 17236,-602 17933,-428 18121,-374
-(Weg an der Teltowkanalautobahn - Johannisthaler Chaussee, Rampe): gutes Pflaster	Q0 15768,4102 15640,4222
+(Weg an der Teltowkanalautobahn - Johannisthaler Chaussee, Rampe): gutes Verbundsteinpflaster	Q0- 15768,4102 15640,4222
 #: note: stellenweise schon einige leichte Hebungen durch Wurzeln
 (Weg an der Teltowkanalautobahn): Asphalt	Q0 14164,5936 14308,5627 14388,5429 14544,5123 14703,4930 14802,4842 15768,4102 16518,3529 16797,3321
 (Weg an der Teltowkanalautobahn): Asphalt	Q0+ 16797,3321 17524,2765 17773,2621 18034,2526
-(Weg an der Teltowkanalautobahn - Stubenrauchstr., Rampe): Verbundsteinpflaster	Q0 16797,3321 16964,3210
+(Weg an der Teltowkanalautobahn - Stubenrauchstr., Rampe): Verbundsteinpflaster	Q0- 16797,3321 16964,3210
 (Autobahnzubringer): sehr guter Asphalt	Q0 18034,2526 18247,2490 18484,2471
 #: by: Erik Thon
 #: corrected_by: srt
@@ -6571,6 +6572,7 @@ Männertreuweg: Beton	Q0- 16631,3292 16599,3316 16473,3417 16340,3517
 Sauerdornweg: Beton	Q0- 16420,3353 16473,3417 16488,3440
 Sauerdornweg - Uferweg am Teltowkanal: Beton	Q0- 16488,3440 16497,3453 16500,3458 16503,3464
 Stelzenweg: Asphalt	Q0 15464,3936 15362,4023 15183,4157 15028,4272
+(Stelzenweg - Uferweg): Asphalt	Q0 15183,4157 15280,4301 15338,4341
 Straße 26a: Asphalt mit Schäden	Q1 15028,4272 14967,4317 14805,4440 14651,4554 14616,4581
 (Straße 26a - Parchimer Allee): Asphalt	Q0- 14616,4581 14602,4576 14581,4584 14532,4524 14529,4530 14499,4584 14475,4635
 (Parchimer Allee - Rohrdommelweg): Asphalt	Q0 14398,4541 14448,4501 14709,4307 14958,4119 15179,3901
@@ -7646,7 +7648,7 @@ Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 1945
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19590,7770 19537,7693
 #: osm_watch: way id="156650954" version="17"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2026-07-18
+#: last_checked: 2026-07-25
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19605,7746 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -9398,7 +9400,7 @@ Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8
 #: next_check_id: MUSSEHL-2025
 #: note: kein "add_fragezeichen", unklares Ende der Bauarbeiten
 #: XXX: Ist die Qualität nach den Bauarbeiten besser geworden?
-#: last_checked: 2026-07-20 (traffic)
+#: last_checked: 2026-07-25
 #: check_frequency: 30d
 #: next_check: 2026-07-31 (planb)
 Mussehlstr.: Asphalt über Beton, einige Schäden	Q0- 8982,8781 8926,8682 8842,8561

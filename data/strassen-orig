@@ -3811,6 +3811,9 @@ Ampferweg	NN 16042,2280 16028,2261
 Orchideenweg	N 15510,3778 15737,3609 16048,3378 16221,3248 16618,2965 16541,2866
 Kleiberweg	N 15239,3815 15362,4023
 Stelzenweg	N 15464,3936 15362,4023 15183,4157 15028,4272
+#: note: bei osm "Hochspannungsweg"
+#: osm.highway: service
+(Stelzenweg - Uferweg)	N 15183,4157 15280,4301 15338,4341
 Straße 26a	N 15028,4272 14967,4317 14805,4440 14651,4554 14616,4581
 (Straße 26a - Parchimer Allee)	N 14616,4581 14602,4576 14581,4584 14532,4524 14529,4530 14499,4584 14475,4635
 #: alias: Schollenweg
@@ -6401,7 +6404,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein (nur einmal gesehen, meistens frei)
 #: osm_watch: way id="33712134" version="10"
-#: last_checked: 2026-06-10
+#: last_checked: 2026-07-25
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18441,4600 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -16179,7 +16182,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2026-07-18
+#: last_checked: 2026-07-25
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16575,7 +16578,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2026-07-18
+#: last_checked: 2026-07-25
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
