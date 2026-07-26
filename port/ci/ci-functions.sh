@@ -558,9 +558,7 @@ install_perl_dependencies() {
 
 	if [ "$CPAN_INSTALLER" = "cpanm" ]
 	then
-	    # There is at least Apache::Session which adds unwanted dependencies
-	    # if the TRAVIS environment variable is set, so unset it here.
-	    TRAVIS= cpanm --quiet --installdeps --notest .
+	    cpanm --quiet --installdeps --notest .
 	else
 	    if ! which cpm >/dev/null 2>&1
 	    then
@@ -571,9 +569,7 @@ install_perl_dependencies() {
 	        sudo chmod +x /usr/local/bin/cpm
 	    fi
 	    cpm --version
-	    # There is at least Apache::Session which adds unwanted dependencies
-	    # if the TRAVIS environment variable is set, so unset it here.
-	    if ! TRAVIS= cpm $PERL_CPM_OPT install -g -v; then cat ~/.perl-cpm/build.log; false; fi
+	    if ! cpm $PERL_CPM_OPT install -g -v; then cat ~/.perl-cpm/build.log; false; fi
 	fi
     fi
 }

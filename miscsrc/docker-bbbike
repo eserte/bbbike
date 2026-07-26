@@ -689,7 +689,7 @@ EOF
     # Emulate .travis.yml
     $dockerfile .= <<EOF;
 ENV CI_BUILD_DIR /bbbike
-ENV TRAVIS true
+ENV BBBIKE_CI true
 WORKDIR bbbike
 
 # "-e" -> init_travis must not be run anymore

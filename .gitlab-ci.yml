@@ -4,7 +4,7 @@ stages:
 runit:
   stage: build-test
   script:
-    - export TRAVIS=true
+    - export BBBIKE_CI=true
     - export USE_SYSTEM_PERL=1
     - export USE_MODPERL=1
     - printf "deb http://deb.debian.org/debian buster main contrib non-free\ndeb http://deb.debian.org/debian buster-updates main contrib non-free\n" > /etc/apt/sources.list.d/nonfree.list

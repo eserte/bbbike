@@ -109,8 +109,8 @@ for my $url (@urls) {
 	    }
 	    my $stderr = join("", <$errfh>);
 	    if (!@listing) {
-		if ($stderr =~ /probably openssl is too old/ && ($ENV{TRAVIS}||'') eq 'true' && ($ENV{CODENAME}||'') =~ m{^(precise|trusty)$}) {
-		    diag "Known failure on precise+trusty (openssl problem), skip rest of tests";
+		if ($stderr =~ /probably openssl is too old/ && ($ENV{CODENAME}||'') =~ m{^(precise|trusty)$}) {
+		    diag "Known failure on precise+trusty (openssl tool old?), skip rest of tests";
 		    exit 0;
 		} elsif ($stderr =~ /500 Can't connect to download.bbbike.org:443/ && ($ENV{CODENAME}||'') =~ m{^(trusty)$}) {
 		    diag "Known failure on trusty (openssl too old?), skip rest of tests";

@@ -457,7 +457,7 @@ sub build_prereq {
 		next if ($_->[REQTABLE_REQ] & $type) == 0;
 	    }
 	    if ( # XXX actually, check for "batch environment where difficult modules cannot be installed easily"
-		($ENV{TRAVIS}||'') eq 'true' #    travis
+		($ENV{BBBIKE_CI}||'') eq 'true' # some CI system
 		|| $ENV{BBBIKE_DOCKER}       # or miscsrc/docker-bbbike
 		|| -f "/.dockerenv"          # or docker
 	       ) {
@@ -465,7 +465,7 @@ sub build_prereq {
 							Image::Magick # needs exact matching imagemagick library version
 						    )$}x;
 	    }
-	    if (($ENV{TRAVIS}||'') eq 'true' && $ENV{USE_MODPERL}) {
+	    if (($ENV{BBBIKE_CI}||'') eq 'true' && $ENV{USE_MODPERL}) {
 		# Don't install exclusive Plack dependencies for a modperl testing environment
 		next if $_->[REQTABLE_REQ] == REQ_BBBIKE_PSGI;
 	    }
@@ -624,7 +624,7 @@ ext:
 }
 
 sub MY::test {
-    my $is_ci = ($ENV{TRAVIS}||'') eq 'true' || ($ENV{GITHUB_WORKFLOW}||'') ne '';
+    my $is_ci = ($ENV{BBBIKE_CI}||'') eq 'true' || ($ENV{GITHUB_WORKFLOW}||'') ne '';
 
     my $bbbike_test_for_live_setting = '';
     if (!exists $ENV{BBBIKE_TEST_FOR_LIVE} && $is_ci) {
