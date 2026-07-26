@@ -1413,6 +1413,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
 #: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026)
 #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
+#: source_id: planb2026:13.42324439,52.52777598,03.02.2026, ("Sperrung einer Fahrtrichtung", bis 31.07.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
 #: by: https://viz.berlin.de/aktuelle-meldungen/greifswalder-strasse-stadtauswarts-rohrschaden/
 #: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-prenzlauer-berg-greifswalder-strasse-weiterhin-gesperrt--dauer-unklar-15205719.html
@@ -1428,7 +1429,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: last_checked: 2026-07-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
-#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung, planb) vvv
 Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
 # REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
 # REMOVED --- #: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig, ohne Überholverbotschilder
@@ -1487,7 +1488,7 @@ Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind fü
 #: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, (bis 04.06.2026) (bis 07.07.2026) (bis 07.08.2026)
 # REMOVED (vorfristig inaktiv) --- #: source_id: planb2026:175 (bis 07.08.2026)
 #: last_checked: 2026-07-08
-#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung, planb)
+#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung, ex-planb)
 #: valid: -20260807
 Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahrer frei	q3::inwork 10495,17658 10573,17566
 # 

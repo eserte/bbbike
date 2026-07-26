@@ -16,10 +16,11 @@ Königsheideweg: Regelung mit Baustellenampel zwischen Redwitzgang und Sterndamm/
 #: source_id: bvg2024:194#HIM_FREETEXT_347630
 #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_348289
 #: source_id: LMS-BR:415149/72 viz2021:13.4754,52.50199, (bis 16.12.2026)
+#: source_id: planb2026:13.47841638,52.50180555,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026)
 #: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
 #: note: Länge der Gegenverkehrsregelung: 150m
-#: last_checked: 2026-07-10
-#: next_check: 2026-12-16 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-07-26
+#: next_check: 2026-12-16 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20261216
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 # 
@@ -53,10 +54,10 @@ Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 #: valid: -20260828
 Siemensstr./Borstellstr.	X::inwork 6219,4336
 # 
-#: next_check_id: AUGUSTEVIKTORIAALLEE-2026
-#: last_checked: 2026-07-07 (traffic)
-#: check_frequency: 21d (traffic)
-Auguste-Viktoria-Allee/General-Barby-Str.: Gegenverkehrsregelung	X::inwork::alternating 4414,18243
+# REMOVED --- #: next_check_id: AUGUSTEVIKTORIAALLEE-2026
+# REMOVED --- #: last_checked: 2026-07-07 (traffic)
+# REMOVED --- #: check_frequency: 21d (traffic)
+# REMOVED --- Auguste-Viktoria-Allee/General-Barby-Str.: Gegenverkehrsregelung	X::inwork::alternating 4414,18243
 # 
 #: next_check_id: GNEISENAU-2026
 #: note: eigentlich knapp östlich der Kreuzung; baustellenbedingt muss auch der Radverkehr im Zuge der Schleiermacherstr. die Ampel benutzen
@@ -545,7 +546,7 @@ Gegenverkehrsregelung	X::inwork::alternating 18587,16834
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-07-22
+#: last_checked: 2026-07-26
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431

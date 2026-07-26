@@ -220,7 +220,7 @@ Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
 #: source_id: bvg2024:194#HIM_FREETEXT_341095 (Umleitung, evtl. gibt es hier Bauarbeiten?) (-> nichts gesehen)
-#: last_checked: 2026-07-10 vvv
+#: last_checked: 2026-07-26 vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
@@ -4491,7 +4491,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-07-18
+#: last_checked: 2026-07-26
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4563,7 +4563,7 @@ Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11
 # 
 #: osm_watch[closed]: note 4165928 1
 #: source_id: planb2026:13.50265147,52.50227465,11.05.2026, ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
-#: last_checked: 2026-06-30
+#: last_checked: 2026-07-26
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
 Delbrückstr.: Baustellenfläche, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
@@ -4768,7 +4768,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
 #: last_checked: 2026-07-19 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 21d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
 # REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
@@ -4931,7 +4931,7 @@ Paul-und-Paula-Promenade: wird gebaut	2::inwork 14886,10748 14909,10732 14984,10
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12521 (Anfrage)
 #: by: https://entwicklungsstadt.de/regierungsviertel-hier-waechst-die-erweiterung-des-bundeskanzleramtes/
 #: by: https://www.entwicklungsstadt.de/erweiterung-des-bundeskanzleramtes-baukoerper-steht-neue-bruecke-wartet-auf-ihren-einbau/
-#: last_checked: 2026-07-16 (luftbildsuche) vvv
+#: last_checked: 2026-07-25 (daf) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: osm_watch: way id="1357789475" version="6"
@@ -5299,7 +5299,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,1015
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 # REMOVED (keine Updates mehr) --- #: also_indoor: webcam https://portal1915.webcam-profi.de/
 #: last_checked: 2026-05-02 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 120d vvv
 #: next_check: 2027-04-15 (jtre.de, entwicklungsstadt (Frühjahr 2027)) vvv
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
 George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgersteig frei	2s:q4:inwork 7446,14403 7529,14274

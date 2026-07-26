@@ -297,7 +297,8 @@ Rüdersdorfer Str.: Asphalt	Q0 13295,11792 13173,11788 13161,11795 13066,11854
 Kaskelstr.: relativ glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15763,10963
 Spittastr.: mäßiges Kopfsteinpflaster	Q2 15447,10883 15509,11058 15578,11241
 Geusenstr.: mäßiges Kopfsteinpflaster	Q2+ 15586,11030 15560,10946 15541,10892
-Türrschmidtstr.: glattes Kopfsteinpflaster	Q1- 15279,10862 15355,10875 15447,10883 15541,10892
+#: historical_note: früher mit glattes Kopfsteinpflaster, Q1- getaggt --- entweder war das immer zu gut oder die Qualität hat mit der Zeit nachgelassen
+Türrschmidtstr.: verfugtes Kopfsteinpflaster	Q2+ 15279,10862 15355,10875 15447,10883 15541,10892
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2- 15541,10892 15626,10915
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15626,10915 15649,10922 15763,10963
 Giselastr.: mäßiges Kopfsteinpflaster	Q2 16367,11341 16338,11308 16311,11226 16273,11113 16227,10991
@@ -7080,7 +7081,7 @@ Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
 #: osm_watch: way id="4689097" version="34"
 #: XXX Wird hier die Fahrbahn saniert?
-#: last_checked: 2026-05-03
+#: last_checked: 2026-07-26
 #: check_frequency: 180d
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
@@ -14234,6 +14235,7 @@ Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 82
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-in-reinickendorf-neue-details-verschaerfen-debatte/
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-streit-um-116-baeume-und-neuen-radweg/
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-116-baeume-ein-radweg-protest-vorm-rathaus/
+#: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-vor-dem-umbau-buerger-kaempfen-weiter-gegen-baumfaellungen/
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: last_checked: 2026-06-07 vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv

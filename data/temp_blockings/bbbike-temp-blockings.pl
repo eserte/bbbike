@@ -1052,11 +1052,11 @@ EOF
 	2 2624,1704 2824,1273
 EOF
      },
-     { from  => $isodate2epoch->("2025-09-05 00:00:00"), # $isodate2epoch->("2024-09-06 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-09-07 23:59:59"), # $isodate2epoch->("2024-09-08 23:59:59"),
+     { from  => $isodate2epoch->("2026-09-04 00:00:00"), # $isodate2epoch->("2024-09-06 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-09-06 23:59:59"), # $isodate2epoch->("2024-09-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8, start => "2021-10-25T00:00:00"]],
-       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (06.09.2025 bis 07.09.2025)',
+       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (05.09.2026 bis 06.09.2026)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.hier-in-rudow.de/meilenfeste.html
@@ -24774,14 +24774,14 @@ EOF
      { from  => $isodate2epoch->("2025-09-19 00:00:00"), # $isodate2epoch->("2024-09-13 00:00:00"),
        until => $isodate2epoch->("2025-09-20 21:00:00"), # $isodate2epoch->("2024-09-14 21:00:00"),
        periodic => 1,
-       recurrences => [["yearly", days => 31, months => 8, start => "2021-10-25T00:00:00"]], # 2021 scheint nichts stattzufinden
+       recurrences => [["yearly", days => 31, months => 8, start => "2026-10-25T00:00:00"]], # 2021 scheint nichts stattzufinden, 2026 auch nicht
        text  => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 20. September 2025, voraussichtlich 12 bis 21 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.turmstrasse.de/aktuelles
 #: by: https://www.gratis-in-berlin.de/festivals/item/2056177-moabiter-kiezfest-2022
 #: by: https://www.gratis-in-berlin.de/images/stories/tipps/l_plakat_kiezfest_2022_dina4_2.jpg
-#: by: https://www.turmstrasse.de/mitgestalten/kiezfest
+#: by: https://www.turmstrasse.de/mitgestalten/kiezfest (findet 2026 nicht statt)
 # REMOVED --- : tempex YYYY09 & sa2 & T14-T18
 # REMOVED --- : tempex YYYY09 & sa3 & T14-T18
 # REMOVED --- : tempex YYYY09 & sa1 & T12-T21
@@ -48575,7 +48575,7 @@ EOF
 #: osm_watch: way id="1374232475" version="6"
 #: osm_watch[closed]: note 4693093 1
 #: XXX der östliche Abschnitt des Merler Wegs wird asphaltiert
-#: also_indoor: traffic (ex-H,G,no-T)
+#: also_indoor: traffic (ex-H,ex-G,no-T)
 #: add_fragezeichen: Ist die Merler Straße weiterhin gesperrt?
 #: last_checked: 2026-06-16 (mapillary)
 #: check_frequency: 45d
@@ -48859,7 +48859,8 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 Gellertstr.: an der Radickestr. gesperrt	q4::inwork 20148,3490 20237,3392
 # 
 #: also_indoor: traffic (no-G,T,no-H,ex-W)
-#: last_checked: 2026-07-13 (traffic)
+#: source_id: planb2026:-
+#: last_checked: 2026-07-26 (traffic)
 #: check_frequency: 14d (traffic)
 Friedenstr.: Abschnitt der Fahrbahn gesperrt	q4::inwork 20366,3480 20219,3661
 # 
@@ -49409,10 +49410,11 @@ EOF
        data  => <<EOF,
 #: next_check_id: WOENNICH-2026
 #: also_indoor: traffic (none)
+#: source_id: planb2026:13.50005796,52.50966566,25.11.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026)
 #: note: Halteverbotsschilder ursprünglich bis 31.03.2026, mittlerweile 30.09.2026
-#: last_checked: 2026-03-30
+#: last_checked: 2026-07-26
 #: check_frequency: 120d
-#: next_check: 2026-09-30 (Halteverbotsschilder)
+#: next_check: 2026-09-30 (Halteverbotsschilder, planb)
 	q4::inwork 16915,11634 16957,11726
 EOF
      },
@@ -51814,7 +51816,7 @@ EOF
 #: source_id: planb2026:13.40286546,52.52137057,08.09.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 28.08.2026)
 #: also_indoor: traffic (none)
 #: note: zurzeit noch Absperrung mit nur etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße
-#: last_checked: 2026-07-09
+#: last_checked: 2026-07-25 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2028-08-28 (planb)
 	q4::inwork; 10308,12859 10260,12831 10166,12777
@@ -53980,7 +53982,8 @@ EOF
        until => $isodate2epoch->("2026-08-14 18:00:00"), # 1783375200, # 2026-07-07 00:00
        dont_check_date => 1,
 #      text  => 'Radickestr.: Bauarbeiten zwischen Nipkowstr. und Zinsgutstr., Sperrung der Fahrbahn, geplant vom 22.6.2026 bis 17.7.2026, weitere Bauarbeiten bis 14.08.2026',
-       text  => 'Radickestr.: Bauarbeiten im Kreuzungsbereich Nipkowstr., mögliche Sperrung der Fahrbahn, geplant vom 13.7.2026 bis 27.07.2026, weitere Bauarbeiten bis 14.08.2026',
+#      text  => 'Radickestr.: Bauarbeiten im Kreuzungsbereich Nipkowstr., mögliche Sperrung der Fahrbahn, geplant vom 13.7.2026 bis 27.07.2026, weitere Bauarbeiten bis 14.08.2026',
+       text  => 'Radickestr.: Bauarbeiten, mögliche Sperrung der Fahrbahn, geplant bis 14.08.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: RADICKE-2026
@@ -53988,13 +53991,14 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1688283.php (bis 8.7.2026)
 #: by: https://www.aktives-adlershof.de/fileadmin/_processed_/d/a/csm_260707_Bauinfo_Radickestra%C3%9Fe_5_red_c7f704934c.png (bis 13.7.2026)
 #: by: https://www.aktives-adlershof.de/aktuelles?date=20260713 (Verzögerung bis 17.7.2026)
-#: next_check: 2026-07-26 (nächster BA) vvv
+#: source_id: planb2026:-
+#: next_check: 2026-07-27 vvv
 #	q4::inwork 20861,3814 20835,3795 20776,3753 20683,3693 20592,3633 20499,3572
 #	q4::inwork 20835,3795 20845,3825
-#: valid: -20260727
+# REMOVED (schon beendet oder nicht?) --- #: valid: -20260727
 Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
-# XXX --- #: valid: 20260727-20260814
-# XXX --- Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
+# REMOVED (schon angefangen?) --- #: valid: 20260727-20260814
+Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
 #: next_check ^^^
 EOF
      },
@@ -54008,7 +54012,7 @@ EOF
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
 #: source_id: planb2026:13.58344295,52.5238279,15.06.2026,07:00 (bis 24.07.2026) (inaktiv)
 #: also_indoor: traffic (G,ex-T,no-H,no-W)
-#: last_checked: 2026-07-25 (traffic) vvv
+#: last_checked: 2026-07-26 (traffic) vvv
 #: check_frequency: 3d (traffic) vvv
 # REMOVED --- #: next_check: 2026-07-24 (planb) vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232

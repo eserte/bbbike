@@ -1,6 +1,469 @@
-$#temp_blocking = 548;
+$#temp_blocking = 111;
 push @temp_blocking,
 (
+       {
+         'data' => '#: by: http://www.hier-in-rudow.de/meilenfeste.html
+#: by: https://ag-rudow.berlin/veranstaltung/rudower-septembermeile-2/
+#: by: https://www.berlin.de/events/5983501-2229501-rudower-septembermeile.html
+#: source_id: viz2021:13.49573,52.4177,06.09.2024,19:00 (bis 08.09.2024) (inaktiv)
+#: source_id: viz2021:13.49469,52.42125,05.09.2025,19:00 (bis 07.09.2025) (inaktiv)
+Alt-Rudow	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
+Krokusstr.	2::temp 16610,1715 16767,1831
+',
+         'from' => 1788472800,
+         'id' => 112,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              8,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (05.09.2026 bis 06.09.2026)',
+         'type' => 'gesperrt',
+         'until' => 1788731999
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'data' => '# REMOVED --- #: source_id: INKO_83663 (inaktiv)
 # REMOVED ---	2::inwork 5772,16919 5847,17018 5953,17131 6051,17269 6091,17346 6126,17448
@@ -1994,201 +2457,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://csd-berlin.de/event-info-en/
-#: by: https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/gesamte-innenstadt-verkehrseinschrankungen-zum-christopher-street-day
-#: by: https://csd-berlin.de/ (24.7.2021, Route steht noch nicht fest)
-#: by: https://csd-berlin.de/csd-berlin-2021/demo-route-2/
-#: by: https://csd-berlin.de/demo-route-finale-2022/
-#: by: https://berliner-abendblatt.de/2022/07/13/hunderttausende-bei-csd-parade-am-23-juli-erwartet/
-#: by: https://csd-berlin.de/csd-berlin-2023/route-finale
-#: by: https://csd-berlin.de/route-finale
-#: by: https://www.berlin.de/events/3889775-2229501-pride-village-csd-finale.html
-#: source_id: viz2021:13.3899,52.51036,21.07.2023,19:32 (bis 22.07.2023) (inaktiv)
-	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8217,11455 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396
-	2::temp 7033,10396 6937,10407 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6685,10690 6740,10755 6824,10904
-# Route via Karl-Heinrich-Ulrichs-Str.	2::temp 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904
-Route via An der Urania	2::temp 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6826,11479 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6812,12057 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
-	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8546,12279 8570,12302
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165
-	3 8573,11404 8542,11502 8548,11571
-	3 8573,11404 8542,11502 8442,11555
-	3 9997,11713 10000,11691 9992,11682
-	3 8743,11489 8740,11524 8736,11557
-	3 7103,11247 6851,11346 6692,11365
-	3 6716,11439 6826,11479 6914,11487
-	3 6716,11439 6826,11479 6789,11499 6750,11550
-	3 9456,11513 9444,11616 9432,11702
-	3 8119,12414 8068,12237 8055,12186 8049,12140
-	3 8049,12140 8055,12186 8068,12237 8119,12414
-	3 8630,12310 8637,12258 8641,12227 8643,12208
-	3 6841,11114 6880,11110 7004,11168 7115,11220
-	3 6742,11099 6873,11011 7002,11034
-	3 8232,11414 8217,11455 8172,11679
-	3 8548,11571 8542,11502 8442,11555
-	3 8548,11571 8542,11502 8573,11404
-	3 7444,10479 7633,10394 7744,10372
-	3 7698,10147 7579,10183 7526,9969
-	3 8327,12174 8344,12221 8391,12389
-	3 7002,11034 6873,11011 6742,11099
-	3 8643,12208 8641,12227 8637,12258 8630,12310
-	3 7744,10372 7633,10394 7444,10479
-	3 9581,11523 9569,11631 9559,11715
-	3 9331,11497 9268,11590 9234,11683
-	3 9000,11727 9058,11564 9155,11283
-	3 6164,11947 6642,12010 6550,11954
-	3 8502,12226 8538,12245 8522,12187
-	3 8104,11037 7980,11070 7747,11075
-	3 7031,12320 7288,12156 7383,12095 7429,12070
-	3 9155,11283 9058,11564 9000,11727
-	3 7963,10716 7820,10768 7534,10850
-	3 7534,10850 7820,10768 7963,10716
-	3 8102,11099 8000,11137 7828,11133
-	3 6540,11754 6778,11742 6980,11790
-	3 8592,11541 8596,11508 8599,11474
-	3 7822,12201 7816,12150 7823,12120
-	3 8442,11555 8542,11502 8548,11571
-	3 8442,11555 8542,11502 8573,11404
-	3 7033,10328 7033,10396 6937,10407
-	3 7033,10328 7033,10396 7227,10489
-# Karl-Heinrich-Ulrichs-Str./Kurfürstenstr.	3 7110,10613 6972,10665 6818,10725
-# Karl-Heinrich-Ulrichs-Str./Kurfürstenstr.	3 6818,10725 6972,10665 7110,10613
-An der Urania/Kurfürstenstr.	3 6607,10801 6740,10755 6818,10725
-An der Urania/Kurfürstenstr.	3 6818,10725 6740,10755 6607,10801
-Eisenacher Str./Courbièrestr.	3 6719,10347 6753,10446 6743,10615
-Eisenacher Str./Courbièrestr.	3 6743,10615 6753,10446 6719,10347
-# Wichmannstr./Schillstr.	3 6681,10959 6824,10904 6740,10755
-# Wichmannstr./Schillstr.	3 6740,10755 6824,10904 6681,10959
-Wichmannstr./Lützowplatz	3 6681,10959 6824,10904 6918,10858
-Wichmannstr./Lützowplatz	3 6918,10858 6824,10904 6681,10959
-	3 7429,10366 7413,10244 7384,10127
-	3 7429,12070 7383,12095 7288,12156 7031,12320
-	3 7384,10127 7413,10244 7429,10366
-	3 6750,11550 6789,11499 6826,11479 6716,11439
-	3 6750,11550 6789,11499 6826,11479 6914,11487
-	3 7849,10488 7689,10514 7478,10612
-	3 7115,11220 7004,11168 6880,11110 6841,11114
-	3 8391,12389 8344,12221 8327,12174
-	3 8736,11557 8740,11524 8743,11489
-	3 6980,11790 6778,11742 6540,11754
-	3 6679,11602 6809,11570 6869,11567
-	3 7823,12120 7816,12150 7822,12201
-	3 7828,11133 8000,11137 8102,11099
-	3 9559,11715 9569,11631 9581,11523
-	3 7526,9969 7579,10183 7698,10147
-	3 8522,12187 8538,12245 8502,12226
-	3 6692,11365 6851,11346 7103,11247
-	3 9234,11683 9268,11590 9331,11497
-	3 7209,10205 7238,10299 7275,10418
-	3 7275,10418 7238,10299 7209,10205
-	3 8599,11474 8596,11508 8592,11541
-	3 7478,10612 7689,10514 7849,10488
-	3 7747,11075 7980,11070 8104,11037
-	3 6937,10407 7033,10396 7033,10328
-	3 6937,10407 7033,10396 7227,10489
-	3 6914,11487 6826,11479 6789,11499 6750,11550
-	3 6914,11487 6826,11479 6716,11439
-	3 9992,11682 10000,11691 9997,11713
-	3 6869,11567 6809,11570 6679,11602
-	3 6550,11954 6642,12010 6164,11947
-	3 8172,11679 8217,11455 8232,11414
-	3 9692,11732 9701,11656 9702,11647
-	3 9432,11702 9444,11616 9456,11513
-	3 7227,10489 7033,10396 6937,10407
-	3 7227,10489 7033,10396 7033,10328
-	3 9702,11647 9701,11656 9692,11732
-# REMOVED ---	2::temp 6744,11936 6809,11979 6828,12031 6812,12057 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6778,11742 6809,11570 6826,11479 6851,11346 6880,11110 6882,11061 6873,11011 6824,10904 6740,10755 6685,10690 6532,10529 6494,10440
-# REMOVED ---	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8747,11525 8740,11524 8596,11508 8542,11502 8548,11571 8553,11630 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-# REMOVED ---	3 8592,11541 8596,11508 8599,11474
-# REMOVED ---	3 9992,11682 10000,11691 9997,11713
-# REMOVED ---	3 6841,11114 6880,11110 7004,11168 7115,11220
-# REMOVED ---	3 9234,11683 9268,11590 9331,11497
-# REMOVED ---	3 6550,11954 6642,12010 6164,11947
-# REMOVED ---	3 7002,11034 6873,11011 6742,11099
-# REMOVED ---	3 7031,12320 7288,12156 7383,12095 7429,12070
-# REMOVED ---	3 8481,11638 8553,11638 8743,11663
-# REMOVED ---	3 6869,11567 6809,11570 6679,11602
-# REMOVED ---	3 9331,11497 9268,11590 9234,11683
-# REMOVED ---	3 8599,11474 8596,11508 8592,11541
-# REMOVED ---	3 6540,11754 6778,11742 6980,11790
-# REMOVED ---	3 6750,11550 6789,11499 6826,11479 6914,11487
-# REMOVED ---	3 6750,11550 6789,11499 6826,11479 6716,11439
-# REMOVED ---	3 9432,11702 9444,11616 9456,11513
-# REMOVED ---	3 6742,11099 6873,11011 7002,11034
-# REMOVED ---	3 8327,12174 8344,12221 8391,12389
-# REMOVED ---	3 8546,12279 8538,12245 8592,12252
-# REMOVED ---	3 8546,12279 8538,12245 8502,12226
-# REMOVED ---	3 8546,12279 8538,12245 8522,12187
-# REMOVED ---	3 7823,12120 7816,12150 7822,12201
-# REMOVED ---	3 8119,12414 8068,12237 8055,12186 8049,12140
-# REMOVED ---	3 7429,12070 7383,12095 7288,12156 7031,12320
-# REMOVED ---	3 8391,12389 8344,12221 8327,12174
-# REMOVED ---	3 6980,11790 6778,11742 6540,11754
-# REMOVED ---	3 8743,11663 8553,11638 8481,11638
-# REMOVED ---	3 8442,11555 8542,11502 8479,11493
-# REMOVED ---	3 8442,11555 8542,11502 8573,11404
-# REMOVED ---	3 9702,11647 9701,11656 9692,11732
-# REMOVED ---	3 7115,11220 7004,11168 6880,11110 6841,11114
-# REMOVED ---	3 7822,12201 7816,12150 7823,12120
-# REMOVED ---	3 6692,11365 6851,11346 7103,11247
-# REMOVED ---	3 6607,10801 6740,10755 6818,10725
-# REMOVED ---	3 6679,11602 6809,11570 6869,11567
-# REMOVED ---	3 7103,11247 6851,11346 6692,11365
-# REMOVED ---	3 6918,10858 6824,10904 6681,10959
-# REMOVED ---	3 9581,11523 9569,11631 9559,11715
-# REMOVED ---	3 6636,10492 6602,10504 6532,10529 6468,10550
-# REMOVED ---	3 9456,11513 9444,11616 9432,11702
-# REMOVED ---	3 8736,11557 8740,11524 8743,11489
-# REMOVED ---	3 8743,11489 8740,11524 8736,11557
-# REMOVED ---	3 8489,11782 8571,11846 8501,11815
-# REMOVED ---	3 8522,12187 8538,12245 8502,12226
-# REMOVED ---	3 8522,12187 8538,12245 8592,12252
-# REMOVED ---	3 8522,12187 8538,12245 8546,12279
-# REMOVED ---	3 8502,12226 8538,12245 8522,12187
-# REMOVED ---	3 8502,12226 8538,12245 8592,12252
-# REMOVED ---	3 8502,12226 8538,12245 8546,12279
-# REMOVED ---	3 8573,11404 8542,11502 8442,11555
-# REMOVED ---	3 8573,11404 8542,11502 8479,11493
-# REMOVED ---	3 8479,11493 8542,11502 8442,11555
-# REMOVED ---	3 8479,11493 8542,11502 8573,11404
-# REMOVED ---	3 8501,11815 8571,11846 8489,11782
-# REMOVED ---	3 6681,10959 6824,10904 6918,10858
-# REMOVED ---	3 9559,11715 9569,11631 9581,11523
-# REMOVED ---	3 9000,11727 9058,11564 9155,11283
-# REMOVED ---	3 9155,11283 9058,11564 9000,11727
-# REMOVED ---	3 6914,11487 6826,11479 6789,11499 6750,11550
-# REMOVED ---	3 6914,11487 6826,11479 6716,11439
-# REMOVED ---	3 9997,11713 10000,11691 9992,11682
-# REMOVED ---	3 6818,10725 6740,10755 6607,10801
-# REMOVED ---	3 8592,12252 8538,12245 8546,12279
-# REMOVED ---	3 8592,12252 8538,12245 8502,12226
-# REMOVED ---	3 8592,12252 8538,12245 8522,12187
-# REMOVED ---	3 6164,11947 6642,12010 6550,11954
-# REMOVED ---	3 6468,10550 6532,10529 6602,10504 6636,10492
-# REMOVED ---	3 9692,11732 9701,11656 9702,11647
-# REMOVED ---	3 8049,12140 8055,12186 8068,12237 8119,12414
-# REMOVED ---	3 6716,11439 6826,11479 6789,11499 6750,11550
-# REMOVED ---	3 6716,11439 6826,11479 6914,11487
-',
-         'from' => 1784844000,
-         'id' => 2083,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              6,
-                              'start',
-                              '2020-07-30T00:00:00'
-                            ]
-                          ],
-         'text' => 'CSD am 25.07.2026',
-         'type' => 'gesperrt',
-         'until' => 1785016799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7414,7 +7683,7 @@ Gladauer Str.: Fußgänger können wohl passieren	q3::inwork 20354,11500 20346,1133
 #: osm_watch: way id="1374232475" version="6"
 #: osm_watch[closed]: note 4693093 1
 #: XXX der östliche Abschnitt des Merler Wegs wird asphaltiert
-#: also_indoor: traffic (ex-H,G,no-T)
+#: also_indoor: traffic (ex-H,ex-G,no-T)
 #: add_fragezeichen: Ist die Merler Straße weiterhin gesperrt?
 #: last_checked: 2026-06-16 (mapillary)
 #: check_frequency: 45d
@@ -7602,7 +7871,8 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 Gellertstr.: an der Radickestr. gesperrt	q4::inwork 20148,3490 20237,3392
 # 
 #: also_indoor: traffic (no-G,T,no-H,ex-W)
-#: last_checked: 2026-07-13 (traffic)
+#: source_id: planb2026:-
+#: last_checked: 2026-07-26 (traffic)
 #: check_frequency: 14d (traffic)
 Friedenstr.: Abschnitt der Fahrbahn gesperrt	q4::inwork 20366,3480 20219,3661
 # 
@@ -7783,10 +8053,11 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
        {
          'data' => '#: next_check_id: WOENNICH-2026
 #: also_indoor: traffic (none)
+#: source_id: planb2026:13.50005796,52.50966566,25.11.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026)
 #: note: Halteverbotsschilder ursprünglich bis 31.03.2026, mittlerweile 30.09.2026
-#: last_checked: 2026-03-30
+#: last_checked: 2026-07-26
 #: check_frequency: 120d
-#: next_check: 2026-09-30 (Halteverbotsschilder)
+#: next_check: 2026-09-30 (Halteverbotsschilder, planb)
 	q4::inwork 16915,11634 16957,11726
 ',
          'from' => undef,
@@ -8564,7 +8835,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: source_id: planb2026:13.40286546,52.52137057,08.09.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 28.08.2026)
 #: also_indoor: traffic (none)
 #: note: zurzeit noch Absperrung mit nur etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße
-#: last_checked: 2026-07-09
+#: last_checked: 2026-07-25 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2028-08-28 (planb)
 	q4::inwork; 10308,12859 10260,12831 10166,12777
@@ -9853,19 +10124,20 @@ Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1688283.php (bis 8.7.2026)
 #: by: https://www.aktives-adlershof.de/fileadmin/_processed_/d/a/csm_260707_Bauinfo_Radickestra%C3%9Fe_5_red_c7f704934c.png (bis 13.7.2026)
 #: by: https://www.aktives-adlershof.de/aktuelles?date=20260713 (Verzögerung bis 17.7.2026)
-#: next_check: 2026-07-26 (nächster BA) vvv
+#: source_id: planb2026:-
+#: next_check: 2026-07-27 vvv
 #	q4::inwork 20861,3814 20835,3795 20776,3753 20683,3693 20592,3633 20499,3572
 #	q4::inwork 20835,3795 20845,3825
-#: valid: -20260727
+# REMOVED (schon beendet oder nicht?) --- #: valid: -20260727
 Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
-# XXX --- #: valid: 20260727-20260814
-# XXX --- Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
+# REMOVED (schon angefangen?) --- #: valid: 20260727-20260814
+Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
 #: next_check ^^^
 ',
          'dont_check_date' => 1,
          'from' => 1783893600,
          'id' => 4638,
-         'text' => 'Radickestr.: Bauarbeiten im Kreuzungsbereich Nipkowstr., mögliche Sperrung der Fahrbahn, geplant vom 13.7.2026 bis 27.07.2026, weitere Bauarbeiten bis 14.08.2026',
+         'text' => 'Radickestr.: Bauarbeiten, mögliche Sperrung der Fahrbahn, geplant bis 14.08.2026',
          'type' => 'handicap',
          'until' => 1786723200
        },
@@ -9874,7 +10146,7 @@ Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
 #: source_id: planb2026:13.58344295,52.5238279,15.06.2026,07:00 (bis 24.07.2026) (inaktiv)
 #: also_indoor: traffic (G,ex-T,no-H,no-W)
-#: last_checked: 2026-07-25 (traffic) vvv
+#: last_checked: 2026-07-26 (traffic) vvv
 #: check_frequency: 3d (traffic) vvv
 # REMOVED --- #: next_check: 2026-07-24 (planb) vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
@@ -10431,15 +10703,7 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
          'type' => 'gesperrt',
          'until' => 1788213599
        },
-       {
-         'data' => '	2::inwork 17540,12222 17485,12240
-',
-         'from' => 1784412000,
-         'id' => 4687,
-         'text' => 'Am Städtischen Zentralfriedhof: Bauarbeiten, komplett gesperrt, 20.7.2026 bis 25.7.2026',
-         'type' => 'gesperrt',
-         'until' => 1785016800
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1640934.php (zum möglichen Uferweg Baumschulenstraße-Köpenicker Landstraße)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1644291.php (vorbereitende Rodungen bis 1.3.2026)
