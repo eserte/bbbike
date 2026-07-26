@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021,2022,2023,2024,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021,2022,2023,2024,2025,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # better: use auto-loading
@@ -1974,68 +1973,76 @@ sub click_info {
     }
 
     if (@tags) {
-	my $abk = $tags[0];
-	my $pos = $tags[3];
-	# XXX p_file is not supported (yet)
-	my $str_filename;
-	my $filetype = "str";
-	my $name;
-	if ($abk =~ /^[wi]$/) { # exception because of
-                                # _get_wasser_obj, include also _i_slands
-	    if ($main::wasserstadt) {
-		$str_filename = $o->str_file->{"w"};
-	    }
-	    if ($main::wasserumland) {
-		if ($str_filename) {
-		    main::status_message("Ambigous. Please select only *one* Gewässer region", "die");
-		}
-		$str_filename = "wasserumland";
-	    }
-	    if ($main::str_far_away{"w"}) {
-		if ($str_filename) {
-		    main::status_message("Ambigous. Please select only *one* Gewässer region", "die");
-		}
-		$str_filename = "wasserumland2";
-	    }
-	} elsif ($abk eq 'l' && 0) { # exception because of _get_landstr_obj
-	    # XXX NYI
-	} elsif (exists $o->str_file->{$abk}) {
-	    $str_filename = $o->str_file->{$abk};
-	} elsif ($abk =~ /^v-SW/ && exists $o->str_file->{"v"}) {
-	    $str_filename = $o->str_file->{$abk};
-	} elsif ($abk =~ m{^temp_sperre(?:_s)?$}) {
-	    my $info = main::get_temp_blockings_files();
-	    $str_filename = $info->{file};
-	    $filetype = "temp_blockings";
-	    $name = $tags[2];
-	} elsif ($abk =~ /^(.*)-fg$/ && exists $o->p_file->{$1}) {
-	    $str_filename = $o->p_file->{$1};
-	    $pos = $tags[4];
-	} elsif ($abk =~ /^(.*)-img$/ && exists $o->p_file->{$1}) {
-	    $str_filename = $o->p_file->{$1};
-	    $pos = $tags[3]; # XXX inconsistency! why is position in ...-img at index 3 and in -fg at index 4?
-	}
-	if ($str_filename) {
-	    my $ret = LinePartInfo->new;
-	    $ret->basefile($str_filename);
-	    $pos =~ s/^.*-//;
-	    $ret->line($pos);
-	    $ret->filetype($filetype);
-	    $ret->name($name) if defined $name;
-	    return $ret;
-	}
-
-	if (exists $o->p_file->{$abk} && defined $pos) {
-#XXX _get_orte_obj exception not handled
-	    my $ret = LinePartInfo->new;
-	    $ret->basefile($o->p_file->{$abk});
-	    $pos =~ s/^.*-//;
-	    $ret->line($pos);
-	    $ret->filetype("p");
-	    return $ret;
-	}
-	warn "Tags not recognized: @tags\n";
+	$o->click_info_from_tags(\@tags);
+    } else {
+	undef;
     }
+}
+
+sub click_info_from_tags {
+    my($o, $tags_ref) = @_;
+    my @tags = @$tags_ref;
+    my $abk = $tags[0];
+    my $pos = $tags[3];
+    # XXX p_file is not supported (yet)
+    my $str_filename;
+    my $filetype = "str";
+    my $name;
+    if ($abk =~ /^[wi]$/) { # exception because of
+			    # _get_wasser_obj, include also _i_slands
+	if ($main::wasserstadt) {
+	    $str_filename = $o->str_file->{"w"};
+	}
+	if ($main::wasserumland) {
+	    if ($str_filename) {
+		main::status_message("Ambigous. Please select only *one* Gewässer region", "die");
+	    }
+	    $str_filename = "wasserumland";
+	}
+	if ($main::str_far_away{"w"}) {
+	    if ($str_filename) {
+		main::status_message("Ambigous. Please select only *one* Gewässer region", "die");
+	    }
+	    $str_filename = "wasserumland2";
+	}
+    } elsif ($abk eq 'l' && 0) { # exception because of _get_landstr_obj
+	# XXX NYI
+    } elsif (exists $o->str_file->{$abk}) {
+	$str_filename = $o->str_file->{$abk};
+    } elsif ($abk =~ /^v-SW/ && exists $o->str_file->{"v"}) {
+	$str_filename = $o->str_file->{$abk};
+    } elsif ($abk =~ m{^temp_sperre(?:_s)?$}) {
+	my $info = main::get_temp_blockings_files();
+	$str_filename = $info->{file};
+	$filetype = "temp_blockings";
+	$name = $tags[2];
+    } elsif ($abk =~ /^(.*)-fg$/ && exists $o->p_file->{$1}) {
+	$str_filename = $o->p_file->{$1};
+	$pos = $tags[4];
+    } elsif ($abk =~ /^(.*)-img$/ && exists $o->p_file->{$1}) {
+	$str_filename = $o->p_file->{$1};
+	$pos = $tags[3]; # XXX inconsistency! why is position in ...-img at index 3 and in -fg at index 4?
+    }
+    if ($str_filename) {
+	my $ret = LinePartInfo->new;
+	$ret->basefile($str_filename);
+	$pos =~ s/^.*-//;
+	$ret->line($pos);
+	$ret->filetype($filetype);
+	$ret->name($name) if defined $name;
+	return $ret;
+    }
+
+    if (exists $o->p_file->{$abk} && defined $pos) {
+#XXX _get_orte_obj exception not handled
+	my $ret = LinePartInfo->new;
+	$ret->basefile($o->p_file->{$abk});
+	$pos =~ s/^.*-//;
+	$ret->line($pos);
+	$ret->filetype("p");
+	return $ret;
+    }
+    warn "Tags not recognized: @tags\n";
     undef;
 }
 
@@ -2043,8 +2050,8 @@ sub click_info {
 use vars qw(%click_readonly_warning_seen);
 
 sub click {
-    my $o = shift;
-    my $click_info = $o->click_info;
+    my($o, $tags_ref) = @_;
+    my $click_info = $tags_ref ? $o->click_info_from_tags($tags_ref) : $o->click_info;
     die "No (str or p) line recognised" if !$click_info;
 
 #XXX del (no more extra handling here):

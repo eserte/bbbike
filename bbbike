@@ -14207,6 +14207,8 @@ sub show_info {
     return if !@tags || !defined $tags[0];
     my($base_tag, $is_p);
 
+    my @orig_tags = @tags;
+
     my $in_2nd_pass = 0;
     my $recursion_breaker=0;#XXX
     my @above_tags;
@@ -14514,6 +14516,12 @@ sub show_info {
 		'taginactive',
 		-background => 'grey80',
 	    );
+	    $info_text->tagConfigure(
+		'buttonlike',
+		-borderwidth => 0,
+		-relief => 'solid',
+		-background => 'grey80',
+	    );
 	    toplevel_checker($info_top);
 	} else {
 	    $info_top = $toplevel{$tl_tag};
@@ -14569,6 +14577,7 @@ sub show_info {
 	my $linkcount = 1;
 
 	my $need_newline;
+	my $had_name = 0;
 	if (defined $name && $name !~ m{^\s*$}) {
 	    $info_text->insert("end", M("Name")."\n", "bold");
 
@@ -14592,7 +14601,7 @@ sub show_info {
 	    }
 
 	    if (!$url) {
-		$info_text->insert("end", "$name\n");
+		$info_text->insert("end", "$name");
 	    } else {
 		$info_text->insert("end", $name, "link$linkcount");
 
@@ -14613,10 +14622,30 @@ sub show_info {
 
 		$show_url->($linkcount, $url, $www_link_menu);
 		$linkcount++;
-		$info_text->insert("end", "\n");
 	    }
 	    $need_newline++;
+	    $had_name++;
 	}
+
+	if ($advanced && @orig_tags) {
+	    if ($had_name) {
+		$info_text->insert('end', " ");
+	    } else {
+		$need_newline++; # otherwise too densely packed
+	    }
+	    $info_text->insert('end', "Edit", ["link$linkcount", 'buttonlike']);
+	    $info_text->insert('end', "\n");
+	    $info_text->tagBind
+		("link$linkcount", "<ButtonRelease-1>" => sub {
+		     require BBBikeEdit;
+		     my $e = BBBikeEdit->create;
+		     $e->click(\@orig_tags);
+		 });
+	    $linkcount++;
+	} else {
+	    $info_text->insert('end', "\n");
+	}
+
 	if ((grep { $_ eq 'b-fg' } @tags) && defined $name && $name !~ m{^\s*$} && defined $city && $city eq 'Berlin') {
 	    (my $bhf_name = $name) =~ s{[ ]}{-}g;
 	    $bhf_name =~ s{[()]}{}g;
@@ -14645,7 +14674,7 @@ sub show_info {
 	}
 
 	my $write_txt_and_tag = sub {
-	    my(@txt_and_tag) = @_;
+	    my(@txt_and_tag, %opts) = @_;
 	    for (my $i=0; $i<=$#txt_and_tag; $i+=2) {
 		my($txt, $tag) = @txt_and_tag[$i, $i+1];
 		for my $txtline (split /\n/, $txt) {
