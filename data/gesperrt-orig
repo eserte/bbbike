@@ -4389,7 +4389,7 @@ Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
 #: osm_watch: way id="423457085" version="17"
 #: source_id: planb2026:13.36504453,52.53376599,11.08.2025,06:00 ("Fahrstreifen-Reduzierung", bis 30.07.2027)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
-#: last_checked: 2026-07-13 (daf) vvv
+#: last_checked: 2026-07-26 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-03-15 (entwicklungsstadt) vvv
 #: osm_watch: way id="752856111" version="16"
@@ -4735,7 +4735,7 @@ Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 1
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2026-07-08
+#: last_checked: 2026-07-26 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -5298,7 +5298,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 # REMOVED (keine Updates mehr) --- #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2026-05-02 vvv
+#: last_checked: 2026-07-26 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-04-15 (jtre.de, entwicklungsstadt (Frühjahr 2027)) vvv
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
@@ -5627,7 +5627,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2026-07-02 vvv
+#: last_checked: 2026-07-26 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188 (inaktiv)
 #: osm_watch: way id="593108603" version="3"

@@ -1027,15 +1027,17 @@ Invalidenstr. Richtung Osten vor Scharnhorststr.	CS; 8358,13562 8453,13611
 #: note: 2026-04-15 + 2026-05-16 noch nicht eingeschaltet gewesen; am 2026-06-24 eingeschaltet
 Invalidenstr. Richtung Osten vor Schwarzer Weg	CS; 8539,13654 8572,13671
 #: note: 2026-05-08 noch nicht eingeschaltet gewesen
-Invalidenstr. Richtung Osten vor Chauseestr.	CS; 8841,13800 8935,13844
+Invalidenstr. Richtung Osten vor Chauseestr.	CS; 8841,13800 8898,13827 8935,13844
 #: note: 2026-04-11 noch nicht eingeschaltet gewesen; am 2026-07-02 eingeschaltet
 Invalidenstr. Richtung Osten vor Caroline-Michaelis-Str.	CS; 8974,13864 9046,13900 9085,13919 9148,13944
-#: note: 2026-02-11 + 2026-03-03 + 2026-04-05 + 2026-04-12 + 2026-04-15 + 2026-05-16 + 2026-05-27 noch nicht eingeschaltet gewesen
-Invalidenstr. Richtung Westen vor Alexanderufer	CS; 8453,13611 8358,13562 8332,13548
 #: note: 2026-02-27 + 2026-03-09 + 2026-04-05 + 2026-05-02 noch nicht eingeschaltet gewesen; am 2026-05-19 eingeschaltet
 Invalidenstr. Richtung Westen vor Caroline-Michaelis-Str.	CS; 9223,13957 9189,13953 9148,13944
-#: note: 2026-02-27 + 2026-04-05 noch nicht eingeschaltet gewesen; am 2026-05-19 eingeschaltet
+#: note: 2026-02-27 + 2026-04-05 noch nicht eingeschaltet gewesen; am 2026-05-19 eingeschaltet; am 2026-07-26 nicht eingeschaltet
 Invalidenstr. Richtung Westen vor Chausseestr.	CS; 9046,13900 8974,13864 8935,13844
+#: note: 2026-07-26 eingeschaltet gewesen
+Invalidenstr. Richtung Westen vor Hessische Str.	CS; 8898,13827 8841,13800 8685,13728
+#: note: 2026-02-11 + 2026-03-03 + 2026-04-05 + 2026-04-12 + 2026-04-15 + 2026-05-16 + 2026-05-27 + 2026-07-26 noch nicht eingeschaltet gewesen
+Invalidenstr. Richtung Westen vor Alexanderufer	CS; 8453,13611 8358,13562 8332,13548
 #: note: 2026-05-16 + 2026-06-07 noch nicht eingeschaltet gewesen
 Scharnhorststr. Richtung Süden vor Invalidenstr.	CS; 8355,13771 8408,13684 8453,13611
 # 
@@ -1934,7 +1936,7 @@ Hochspannungsweg: nicht ausgeschildert, Feuerwehrzufahrt zum Britzer Garten	CP; 
 #: next_check_id: HANSPETERSPLATZ-2022
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1128830.php (Benennung eines Platzes nach Hans Peters)
 #: XXX wann wird der Platz ausgeschildert?
-#: last_checked: 2026-07-02
+#: last_checked: 2026-07-26 (mapillary)
 #: check_frequency: 60d
 Hans-Peters-Platz: nicht ausgeschildert	CS 7739,14119 7679,14030
 # 

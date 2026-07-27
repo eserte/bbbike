@@ -20198,7 +20198,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017330',
        data  => <<EOF,
-	q4::inwork; 9383,13986 9285,13965 9274,13963 9223,13957 9189,13953 9148,13944 9085,13919 9046,13900 8974,13864 8935,13844 8841,13800 8685,13728
+	q4::inwork; 9383,13986 9285,13965 9274,13963 9223,13957 9189,13953 9148,13944 9085,13919 9046,13900 8974,13864 8935,13844 8898,13827 8841,13800 8685,13728
 EOF
      },
      { from  => 1308261600, # 2011-06-17 00:00
@@ -25449,7 +25449,7 @@ EOF
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5540.html',
        data  => <<EOF,
 	q3::inwork 8870,13926 8935,13844
-	q2::inwork; 8935,13844 8841,13800
+	q2::inwork; 8935,13844 8898,13827 8841,13800
 EOF
      },
      { from  => 1427752800, # 2015-03-31 00:00
@@ -42032,13 +42032,14 @@ Ziegelstr.	q4::inwork; 9401,13072 9269,13060
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2025-08-17 00:00:00"), # $isodate2epoch->("2024-10-22 00:00:00"), # $isodate2epoch->("2023-08-27 00:00:00"),
-       until => $isodate2epoch->("2025-11-10 04:00:00"), # 1720624227, # undef, # $isodate2epoch->("2023-10-09 18:00:00"),
+     { from  => $isodate2epoch->("2026-08-09 00:00:00"), # $isodate2epoch->("2025-08-17 00:00:00"), # $isodate2epoch->("2024-10-22 00:00:00"), # $isodate2epoch->("2023-08-27 00:00:00"),
+       until => $isodate2epoch->("2026-08-31 18:00:00"), # $isodate2epoch->("2025-11-10 04:00:00"), # 1720624227, # undef, # $isodate2epoch->("2023-10-09 18:00:00"),
 #      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick, Ende der Einschränkungen unbekannt',
 #      text  => 'Bahnhof Köpenick: Einbahnstraßenregelung am Forum Köpenick und in der Parrisiusstr., Ende der Einschränkungen unbekannt',
 #      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, außerdem Sperrung der Durchfahrt zu Am Bahndamm und Einbahnstraßenregelung im Elcknerplatz, am Forum Köpenick und in der Parrisiusstr., vom 28.08.2023 bis voraussichtlich 09.10.2023',
 #      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 23.10.2024 bis voraussichtlich 04.11.2024',
-       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 18.08.2025 6:00 Uhr bis 10.11.2025',
+#      text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 18.08.2025 6:00 Uhr bis 10.11.2025',
+       text  => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 10.08.2026 6:00 Uhr bis 31.08.2026 18:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RBAHNHOFKOEPENICK-2022
@@ -42058,6 +42059,7 @@ EOF
 #: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/bahnhofstrasse-bahnhof-kopenick/ (vom 18. August 2025, ca. 06:00 Uhr bis zum 10. November 2025)
 #: by[nocache]: https://archive.ph/VXh5h
 #: by: https://www.tagesspiegel.de/berlin/gilt-fur-autos-fussganger-und-fahrrader-kopenicker-bahnhofstrasse-fur-fast-drei-monate-voll-gesperrt-14181980.html
+#: by: https://www.entwicklungsstadt.de/bahnhofstrasse-dicht-drei-wochen-vollsperrung-in-koepenick/
 # REMOVED --- #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id[inactive]: bvg2021:269#BVG326513_0
 #: source_id[inactive]: bvg2021:63#BVG326792_0
@@ -42068,7 +42070,7 @@ EOF
 #: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024) (inaktiv)
 #: source_id: viz2021:13.57927,52.458482,18.08.2025,06:00 (bis 10.11.2025) (inaktiv)
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-11-10 vvv
-Bahnbrücke	q4::inwork 22431,6068 22467,6135
+Bahnbrücke Bhf. Köpenick	q4::inwork 22431,6068 22467,6135
 # REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
 # REMOVED (nicht mehr) --- Elcknerplatz	q3::inwork; 22431,6068 22478,6048
 # REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
@@ -46140,7 +46142,7 @@ EOF
 #: note: in diesem Abschnitt etwa 40m betroffen, hier noch nicht ganz so eng, davor verlegte Straßenbahnhaltestelle
 	q2::inwork; 8685,13728 8841,13800
 #: XXX_prog: eigentlich q4+::inwork;
-	q4::inwork; 8841,13800 8935,13844
+	q4::inwork; 8841,13800 8898,13827 8935,13844
 EOF
      },
      { from  => 1723352400, # 2024-08-11 07:00
@@ -49411,6 +49413,7 @@ EOF
 #: next_check_id: WOENNICH-2026
 #: also_indoor: traffic (none)
 #: source_id: planb2026:13.50005796,52.50966566,25.11.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026)
+#: osm_watch: note 4806167 2
 #: note: Halteverbotsschilder ursprünglich bis 31.03.2026, mittlerweile 30.09.2026
 #: last_checked: 2026-07-26
 #: check_frequency: 120d
@@ -50197,7 +50200,8 @@ EOF
      { from  => 1751954400, # 2025-07-08 08:00
        until => $isodate2epoch->("2026-10-28 23:59:59"), # $isodate2epoch->("2026-05-12 18:00:00"),
 #      text  => 'Schiffbauerdamm: Bauarbeiten zwischen Luisenstr. und Albrechtstr., Sperrung der Fahrbahn, Richtung Westen ist der Gehweg für Radfahrer frei, bis Mitte 2026',
-       text  => 'Schiffbauerdamm: Bauarbeiten zwischen Luisenstr. und Albrechtstr., Sperrung der Fahrbahn, Richtung Westen ist der Gehweg für Radfahrer frei, bis Ende Oktober 2026',
+#      text  => 'Schiffbauerdamm: Bauarbeiten zwischen Luisenstr. und Albrechtstr., Sperrung der Fahrbahn, Richtung Westen ist der Gehweg für Radfahrer frei, bis Ende Oktober 2026',
+       text  => 'Schiffbauerdamm: Bauarbeiten zwischen Luisenstr. und Albrechtstr., Sperrung der Fahrbahn, bis Ende Oktober 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: SCHIFFBAUERDAMM-2025
@@ -50209,12 +50213,13 @@ EOF
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-07-02 vvv
+#: last_checked: 2026-07-26 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
-Schiffbauerdamm, Richtung Osten	q4::inwork; 8752,12647 8870,12647 9025,12727
-Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,12727 8870,12647 8752,12647
+Schiffbauerdamm, Richtung Osten: nur für Fußgänger	q4::inwork; 8752,12647 8870,12647 9025,12727
+#: historical_note: anfangs noch Gehweg für Radfahrer frei, q3::inwork; 
+Schiffbauerdamm, Richtung Westen: nur für Fußgänger	q4::inwork; 9025,12727 8870,12647 8752,12647
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -53477,7 +53482,7 @@ EOF
 #: XXX Oder sind die Bauarbeiten nun zur Brauerstr. gewandert?
 #: source_id: planb2026:13.32567635,52.42505107,09.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.07.2026) (inaktiv)
 #: source_id: planb2026:13.3249997,52.42487496,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", unklar, ist als "Brauerstr." bezeichnet; bis 04.12.2026)
-#: last_checked: 2026-07-25 (traffic)
+#: last_checked: 2026-07-27 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-07-24 (planb)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -54012,7 +54017,7 @@ EOF
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
 #: source_id: planb2026:13.58344295,52.5238279,15.06.2026,07:00 (bis 24.07.2026) (inaktiv)
 #: also_indoor: traffic (G,ex-T,no-H,no-W)
-#: last_checked: 2026-07-26 (traffic) vvv
+#: last_checked: 2026-07-27 (traffic) vvv
 #: check_frequency: 3d (traffic) vvv
 # REMOVED --- #: next_check: 2026-07-24 (planb) vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
@@ -54353,7 +54358,7 @@ EOF
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 # REMOVED (fälschlicherweise vorfristig entfernt) --- #: source_id: planb2026:5138 (bis 25.09.2026)
 #: priority: #A
-#: last_checked: 2026-07-24 vvv
+#: last_checked: 2026-07-27 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung, planb) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207
@@ -54636,8 +54641,8 @@ EOF
        text  => 'Brandenburger Tor: Engstelle, vom 22.07.2026 bis voraussichtlich 27.07.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:416688/72 viz2021:13.35107,52.51429,22.07.2026,06:00 (bis 27.07.2026)
-#: source_id: LMS-BR:416689/72 viz2021:13.36975,52.51584,22.07.2026,06:00 (bis 27.07.2026)
+#: source_id: LMS-BR:416688/72 viz2021:13.35107,52.51429,22.07.2026,06:00 (bis 27.07.2026) (inaktiv)
+#: source_id: LMS-BR:416689/72 viz2021:13.36975,52.51584,22.07.2026,06:00 (bis 27.07.2026) (inaktiv)
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin/berlin-hotel-adlon
 #: note: Vorbereitung für den CSD
 	q4::inwork 8637,12258 8592,12252 8538,12245
@@ -54678,6 +54683,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260724
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrm4u2z75s26
 	2::inwork -8445,12092 -8599,11272
 EOF
      },
@@ -54728,6 +54734,16 @@ EOF
 #: check_frequency: 90d
 #: next_check: 2026-09-14 (planb)
 Manfred-von-Richthofen-Str.	q4::inwork; 9229,8718 9158,8706 9093,8665 9011,8605
+EOF
+     },
+     { from  => 1785042000, # 2026-07-26 07:00
+       until => 1806505200, # 2027-03-31 17:00
+       text  => 'Bettinastraße: Bauarbeiten zwischen Fontanestr. und Douglasstr., Einbahnstraßenregelung, evtl. ist auch der Radverkehr betroffen, vom 27.07.2026 07:00 bis 31.03.2027 17:00',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: LMS-BR:417239/72 viz2021:13.26379,52.48603,27.07.2026,07:00 (bis 31.03.2027)
+#: source_id: planb2026:13.26362055,52.48600691,27.07.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.03.2027)
+	q4::inwork; 926,8752 759,8712
 EOF
      },
     );

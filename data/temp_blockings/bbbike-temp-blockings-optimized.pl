@@ -6307,7 +6307,49 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
+#: next_check_id: BAHNHOFSTRKOEPENICK-2022
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
+#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
+#: by: https://viz.berlin.de/2023/08/bahnhofstr/
+#: by: https://www.youtube.com/watch?v=Y73X25IYfTM
+#: by: https://viz.berlin.de/2023/10/verkehrsvorschau-091023/ ("wird am Abend aufgehoben")
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (nächste Sperrungen: 23.10.2024-04.11.2024 + 18.6.2025-7.7.2025)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1495775.php
+#: by: https://forum-koepenick.de/sperrung-bahnhofstrasse-koepenick-bauarbeiten-umleitungen (nächste Sperrungen: 19.06.-07.07.2025 und 29.07.-08.08.2025)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/kiezkamera-treptow-kopenick-brunnensaison-mullproblem-kasernenabriss-und-mehr-13591522.html
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409203271/bahnhofstrasse-koepenick-angekuendigte-sperrung-verschoben.html (von 18.7.2025 (!) auf 18.8.2025 verschoben, Dauer unklar)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html
+#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/bahnhofstrasse-bahnhof-kopenick/ (vom 18. August 2025, ca. 06:00 Uhr bis zum 10. November 2025)
+#: by[nocache]: https://archive.ph/VXh5h
+#: by: https://www.tagesspiegel.de/berlin/gilt-fur-autos-fussganger-und-fahrrader-kopenicker-bahnhofstrasse-fur-fast-drei-monate-voll-gesperrt-14181980.html
+#: by: https://www.entwicklungsstadt.de/bahnhofstrasse-dicht-drei-wochen-vollsperrung-in-koepenick/
+# REMOVED --- #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
+#: source_id[inactive]: bvg2021:269#BVG326513_0
+#: source_id[inactive]: bvg2021:63#BVG326792_0
+#: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
+#: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
+#: source_id[inactive]: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
+#: source_id[inactive]: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
+#: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024) (inaktiv)
+#: source_id: viz2021:13.57927,52.458482,18.08.2025,06:00 (bis 10.11.2025) (inaktiv)
+# REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-11-10 vvv
+Bahnbrücke Bhf. Köpenick	q4::inwork 22431,6068 22467,6135
+# REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
+# REMOVED (nicht mehr) --- Elcknerplatz	q3::inwork; 22431,6068 22478,6048
+# REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
+# REMOVED (nicht mehr) --- Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
+# REMOVED --- #: osm_watch: way id="25663270" version="21" --- Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+',
+         'from' => 1786226400,
+         'id' => 3882,
+         'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 10.08.2026 6:00 Uhr bis 31.08.2026 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1788192000
+       },
        undef,
        undef,
        undef,
@@ -8054,6 +8096,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
          'data' => '#: next_check_id: WOENNICH-2026
 #: also_indoor: traffic (none)
 #: source_id: planb2026:13.50005796,52.50966566,25.11.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026)
+#: osm_watch: note 4806167 2
 #: note: Halteverbotsschilder ursprünglich bis 31.03.2026, mittlerweile 30.09.2026
 #: last_checked: 2026-07-26
 #: check_frequency: 120d
@@ -8256,19 +8299,20 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-07-02 vvv
+#: last_checked: 2026-07-26 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
-Schiffbauerdamm, Richtung Osten	q4::inwork; 8752,12647 8870,12647 9025,12727
-Schiffbauerdamm, Richtung Westen: Gehweg für Radfahrer frei	q3::inwork; 9025,12727 8870,12647 8752,12647
+Schiffbauerdamm, Richtung Osten: nur für Fußgänger	q4::inwork; 8752,12647 8870,12647 9025,12727
+#: historical_note: anfangs noch Gehweg für Radfahrer frei, q3::inwork; 
+Schiffbauerdamm, Richtung Westen: nur für Fußgänger	q4::inwork; 9025,12727 8870,12647 8752,12647
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1751954400,
          'id' => 4383,
-         'text' => 'Schiffbauerdamm: Bauarbeiten zwischen Luisenstr. und Albrechtstr., Sperrung der Fahrbahn, Richtung Westen ist der Gehweg für Radfahrer frei, bis Ende Oktober 2026',
+         'text' => 'Schiffbauerdamm: Bauarbeiten zwischen Luisenstr. und Albrechtstr., Sperrung der Fahrbahn, bis Ende Oktober 2026',
          'type' => 'handicap',
          'until' => 1793228399
        },
@@ -9746,7 +9790,7 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
 #: XXX Oder sind die Bauarbeiten nun zur Brauerstr. gewandert?
 #: source_id: planb2026:13.32567635,52.42505107,09.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.07.2026) (inaktiv)
 #: source_id: planb2026:13.3249997,52.42487496,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", unklar, ist als "Brauerstr." bezeichnet; bis 04.12.2026)
-#: last_checked: 2026-07-25 (traffic)
+#: last_checked: 2026-07-27 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-07-24 (planb)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -10146,7 +10190,7 @@ Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
 #: source_id: planb2026:13.58344295,52.5238279,15.06.2026,07:00 (bis 24.07.2026) (inaktiv)
 #: also_indoor: traffic (G,ex-T,no-H,no-W)
-#: last_checked: 2026-07-26 (traffic) vvv
+#: last_checked: 2026-07-27 (traffic) vvv
 #: check_frequency: 3d (traffic) vvv
 # REMOVED --- #: next_check: 2026-07-24 (planb) vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
@@ -10429,7 +10473,7 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 # REMOVED (fälschlicherweise vorfristig entfernt) --- #: source_id: planb2026:5138 (bis 25.09.2026)
 #: priority: #A
-#: last_checked: 2026-07-24 vvv
+#: last_checked: 2026-07-27 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung, planb) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207
@@ -10725,19 +10769,7 @@ Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung	2::inwork 1
          'type' => 'gesperrt',
          'until' => 1830293999
        },
-       {
-         'data' => '#: source_id: LMS-BR:416688/72 viz2021:13.35107,52.51429,22.07.2026,06:00 (bis 27.07.2026)
-#: source_id: LMS-BR:416689/72 viz2021:13.36975,52.51584,22.07.2026,06:00 (bis 27.07.2026)
-#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin/berlin-hotel-adlon
-#: note: Vorbereitung für den CSD
-	q4::inwork 8637,12258 8592,12252 8538,12245
-',
-         'from' => 1784606400,
-         'id' => 4689,
-         'text' => 'Brandenburger Tor: Engstelle, vom 22.07.2026 bis voraussichtlich 27.07.2026',
-         'type' => 'handicap',
-         'until' => 1785146400
-       },
+       undef,
        {
          'data' => '#: source_id: LS/221-F/26/119 (bis 14.08.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~17-07-2026-l-23-beseitigung-des-bahnuebergangs-am-bahnhof-fangschleuse
@@ -10772,6 +10804,7 @@ Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung	2::inwork 1
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260724
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrm4u2z75s26
 	2::inwork -8445,12092 -8599,11272
 ',
          'from' => 1785016800,
@@ -10830,6 +10863,17 @@ Manfred-von-Richthofen-Str.	q4::inwork; 9229,8718 9158,8706 9093,8665 9011,8605
          'text' => 'Manfred-von-Richthofen-Str.: zwischen Tempelhofer Damm und Schulenburgring Richtung Südwesten wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: LMS-BR:417239/72 viz2021:13.26379,52.48603,27.07.2026,07:00 (bis 31.03.2027)
+#: source_id: planb2026:13.26362055,52.48600691,27.07.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.03.2027)
+	q4::inwork; 926,8752 759,8712
+',
+         'from' => 1785042000,
+         'id' => 4696,
+         'text' => 'Bettinastraße: Bauarbeiten zwischen Fontanestr. und Douglasstr., Einbahnstraßenregelung, evtl. ist auch der Radverkehr betroffen, vom 27.07.2026 07:00 bis 31.03.2027 17:00',
+         'type' => 'handicap',
+         'until' => 1806505200
        }
      
 );

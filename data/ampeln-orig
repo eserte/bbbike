@@ -6,11 +6,13 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
-#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260724
-#: source_id: planb2026:13.50648522,52.4465611,27.07.2026, ("Sicherung gemäß Vz.-plan", bis 13.08.2026)
-#: next_check: 2026-08-13 (planb)
-#: valid: 20260727-20260813
-Königsheideweg: Regelung mit Baustellenampel zwischen Redwitzgang und Sterndamm/Schöneweide	X::inwork::alternating 17266,4720
+# REMOVED (möglicherweise an der Kreuzung Sterndamm, Erweiterung der bestehenden Ampelanlage) --- #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260724
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrm3orm7ck26
+# REMOVED --- #: source_id: planb2026:13.50648522,52.4465611,27.07.2026, ("Sicherung gemäß Vz.-plan", bis 13.08.2026)
+# REMOVED --- #: source_id: LMS-BR:417243/72 viz2021:13.50277,52.44716,27.07.2026,07:00 (bis 13.08.2026)
+# REMOVED --- #: next_check: 2026-08-13 (planb)
+# REMOVED --- #: valid: 20260727-20260813
+# REMOVED --- Königsheideweg: Regelung mit Baustellenampel zwischen Redwitzgang und Sterndamm/Schöneweide	X::inwork::alternating 17266,4720
 # 
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_347631
 #: source_id: bvg2024:194#HIM_FREETEXT_347630
@@ -166,9 +168,8 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 #: next_check_id: SCHIFFBAUERDAMM-2025
 #: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026) (inaktiv)
 #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
-#: last_checked: 2026-07-02
+#: last_checked: 2026-07-26 (mapillary)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder)
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung)
 #: valid: -20261028
 Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12647
