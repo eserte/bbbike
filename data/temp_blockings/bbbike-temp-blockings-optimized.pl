@@ -2698,7 +2698,38 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
+#: by: https://www.wollenschlaeger-berlin.de/51-fest-an-der-panke/
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1226411.php (evtl. nur auf der Nordseite?)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1345861.php (findet 2023 nicht statt)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6806 (Anfrage)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/hinweise/artikel.1226093.php
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1484601.php
+#: by: https://www.visitberlin.de/de/event/fest-der-panke
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1697936.php
+#: source_id: viz2021:13.40899,52.57098,12.09.2025,08:00 (bis 14.09.2025) (inaktiv)
+	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
+	2::temp 10602,18382 10562,18506 10532,18601
+',
+         'from' => 1789077600,
+         'id' => 2281,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              9,
+                              'start',
+                              '2023-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (12.09.2026-13.09.2026)',
+         'type' => 'gesperrt',
+         'until' => 1789336799
+       },
        undef,
        undef,
        undef,
@@ -3862,7 +3893,7 @@ Fußgängerschutztunnel	q4::inwork 3828,12697 3981,12709 4071,12720
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr (früher auch q4::inwork), aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2026-06-26
+#: last_checked: 2026-07-28
 #: check_frequency: 30d
 	q4 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -5866,9 +5897,9 @@ Sennheimer Str., Königsbacher Zeile bis Schönfließer Str.	q4::inwork 2519,25772 
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: note: in einem YouTube-Video vom 4.12.2026 kein Radfahren-verboten-Schild mehr zu sehen
 #: osm_watch: way id="37861386" version="34"
-#: osm_watch: way id="1231148375" version="12"
+#: osm_watch: way id="1231148375" version="13"
 #: priority: #B
-#: last_checked: 2026-06-12 (osm)
+#: last_checked: 2026-07-27 (osm)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-08-18 (nächste Sperrung der Bahnhofstr., siehe anderen temp-blockings-Eintrag, evtl. diesen Eintrag zeitweise deaktivieren)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ-Verkehrsmeldung)
@@ -6078,18 +6109,18 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
          'data' => '#: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.36722,52.52237,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
-#: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026)
+#: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026) (bis 21.08.2026)
 #: note: ein Gehweg, Radfahrer frei-Schild steht am falschen Ende, nämlich am südlichen; mittlerweile (Ende September 2023, Mitte Dezember 2023, September 2024) ist das Schild weg
 #: last_checked: 2026-07-06 (architektur-urbanistik)
 #: check_frequency: 180d
-#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-21 (VIZ-Verkehrsmeldung)
 	q3::inwork; 7872,13022 7873,12927
 ',
          'from' => 1683010800,
          'id' => 3800,
-         'text' => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, geplant bis Ende Juli 2026',
+         'text' => 'Katharina-Paulus-Str.: Einbahnstraßenregelung, offen Richtung Norden, geplant bis Ende August 2026',
          'type' => 'handicap',
-         'until' => 1785535199
+         'until' => 1787349599
        },
        {
          'data' => '#: next_check_id: WILTBERG-2022
@@ -6326,6 +6357,8 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: by[nocache]: https://archive.ph/VXh5h
 #: by: https://www.tagesspiegel.de/berlin/gilt-fur-autos-fussganger-und-fahrrader-kopenicker-bahnhofstrasse-fur-fast-drei-monate-voll-gesperrt-14181980.html
 #: by: https://www.entwicklungsstadt.de/bahnhofstrasse-dicht-drei-wochen-vollsperrung-in-koepenick/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697866.php
+#: by: https://viz.berlin.de/aktuelle-meldungen/umbau-bahnhof-kopenick-sperrung-der-bahnhofstrasse-ab-10-august/
 # REMOVED --- #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id[inactive]: bvg2021:269#BVG326513_0
 #: source_id[inactive]: bvg2021:63#BVG326792_0
@@ -6335,6 +6368,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: source_id[inactive]: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
 #: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024) (inaktiv)
 #: source_id: viz2021:13.57927,52.458482,18.08.2025,06:00 (bis 10.11.2025) (inaktiv)
+#: source_id: bvg2024:x69#48fe4f2d-7c2c-468f-a810-941ed4ac83ad (2026-08-10 bis 2026-08-31)
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-11-10 vvv
 Bahnbrücke Bhf. Köpenick	q4::inwork 22431,6068 22467,6135
 # REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
@@ -6872,7 +6906,24 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: KELTENSTEIG-2026
+#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024) (bis 25.07.2024) (bis 12.08.2024) (inaktiv)
+#: source_id: planb2026:13.54669682,52.41850813,11.06.2024, ("Vollsperrung beider Fahrbahnen", bis 10.09.2026)
+# REMOVED (alte Bauarbeiten) --- #: note: bei rbb mittlerweile bis 30.09.2024, go with rbb --- #: note: Länge der Baustelle: etwa 40m
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1800742824524259711
+#: by: https://pbs.twimg.com/media/GPzFCzlWcAAoKgR?format=jpg&name=large
+#: by: https://pbs.twimg.com/media/GUh0blsWoAAR-uT?format=jpg&name=large (nicht mehr gesperrt)
+#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260728 (neue Sperrung)
+	q3::inwork 20302,1613 20366,1479
+',
+         'dont_check_date' => 1,
+         'from' => 1785189600,
+         'id' => 4087,
+         'text' => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 29.07.2026 bis Mitte September 2026',
+         'type' => 'handicap',
+         'until' => 1789077599
+       },
        undef,
        undef,
        undef,
@@ -6908,7 +6959,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-07-14 vvv
+#: last_checked: 2026-07-28 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -7029,7 +7080,7 @@ Wolziger Zeile: Treppe	2::inwork 10391,-2624 10400,-2629 10420,-2644
 #: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025) (inaktiv)
 #: source_id: adac:969740805 (bis 12.12.2025) (neue ID -> inaktiv)
 #: source_id: adac:794067672 (bis 12.12.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026) (bis 19.06.2026) (bis 31.07.2026)
+#: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026) (bis 19.06.2026) (bis 31.07.2026) (bis 14.08.2026)
 #: source_id: planb2026:13.3159967,52.43456243,18.06.2026, ("Vollsperrung beider Fahrbahnen", Bäkestraße, bis 14.08.2026)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
@@ -7037,7 +7088,7 @@ Wolziger Zeile: Treppe	2::inwork 10391,-2624 10400,-2629 10420,-2644
 #: add_fragezeichen: Hat die Sperrung des Teltowkanaluferwegs und der Bäkebrücke begonnen? vvv
 #: last_checked: 2026-05-30 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-08-14 (VIZ-Verkehrsmeldung, planb) vvv
 #: osm_watch: way id="5363433" version="28"
 #: osm_watch[closed]: note 4442541 4
 #: osm_watch: note 4825689 4
@@ -7060,7 +7111,7 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
 ',
          'from' => 1750024800,
          'id' => 4110,
-         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., geplant bis Ende Juli 2026',
+         'text' => 'Teltowkanaluferweg/Bäkebrücke: Komplettsperrung des Uferweges zwischen Bäkebrücke und Emil-Schulz-Brücke, außerdem Sperrung der Fahrbahn in der Bäkestr., geplant bis Mitte August 2026',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -8427,12 +8478,13 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1587005.php
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10135 (Antrag)
 # REMOVED --- #: XXX Wird es während der Bauarbeiten zu Sperrungen kommen?
+#: note: Halteverbotsschilder bis 15.05.2026; Baustellenschild bis 10.2026
 #: also_indoor: traffic (G[zu kurz?],T[nur Barbarossastr],no-W)
+#: source_id: planb2026:13.34975265,52.49392112,21.07.2025,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 #: osm_watch: note 4895287 6
 #: last_checked: 2026-07-07 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (Baustellenschild) vvv
-#: note: Halteverbotsschilder bis 15.05.2026; Baustellenschild bis 10.2026
 Barbarossaplatz	q4::inwork 6731,9559 6747,9531 6727,9497 6694,9537
 Barbarossastr.: östliche Zufahrt, etwa 30-40m der Fahrbahn sind gesperrt	q3::inwork 6747,9531 6860,9529
 Eisenacher Str.	q4::inwork 6727,9497 6724,9457
@@ -9458,8 +9510,8 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm6ljzf5k2g
 #: source_id: LMS-BR:401270/72 viz2021:13.38605,52.51546,09.03.2026,07:00 (westliche Behrenstr., bis 17.07.2026) (bis 12.01.2027)
-#: source_id: LMS-BR:401276/72 viz2021:13.38904,52.51565,09.03.2026,07:00 (östliche Behrenstr., auch für den Radverkehr relevant, bis 17.07.2026) (bis 31.07.2026)
-#: source_id: LMS-BR:401277/72 viz2021:13.38623,52.51459,09.03.2026,07:00 (Glinkastr., bis 17.07.2026) (bis 31.07.2026)
+#: source_id: LMS-BR:401276/72 viz2021:13.38904,52.51565,09.03.2026,07:00 (östliche Behrenstr., auch für den Radverkehr relevant, bis 17.07.2026) (bis 31.07.2026) (bis 28.08.2026)
+#: source_id: LMS-BR:401277/72 viz2021:13.38623,52.51459,09.03.2026,07:00 (Glinkastr., bis 17.07.2026) (bis 31.07.2026) (bis 28.08.2026)
 #: note: Bauarbeiten bis Mitte Juli 2026, es wird nur der Autoverkehr genannt
 # REMOVED --- #: next_check: 2026-03-09 (VIZ)
 # REMOVED (für Radfahrer existiert eine Furt) --- Behrenstr.: gilt die Sperrung auch für Radfahrer?	?::inwork 9164,12172 9064,12156 9054,12154 8861,12125
@@ -9855,9 +9907,10 @@ Abzweig Tempelberg - Abzweig Hasenwinkel: 2. BA	2::inwork 63733,4724 63615,3868 
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260512 (nur Kfz-Verkehr betroffen, vier Wochen)
 #: by: https://fahrinfo.vbb.de/him-uploads/1779179333882_Kartenausschnitt_Tauentzienstr_.jpg (Umleitung des Busverkehrs)
 #: source_id: LMS-BR:407953/72 viz2021:13.339174,52.503283,12.05.2026,10:00 (bis 09.06.2026) (bis 31.07.2026) (bis 31.12.2026)
-#: source_id: bvg2024:m19#HIM_FREETEXT_336720 (war zwischenzeitlich gelöscht)
+#: source_id[inactive]: bvg2024:m19#HIM_FREETEXT_336720 (war zwischenzeitlich gelöscht, 2x)
 #: source_id: bvg2024:m19#HIM_FREETEXT_336928 (war zwischenzeitlich gelöscht)
 #: source_id: bvg2024:m46#HIM_FREETEXT_336722 (war zwischenzeitlich gelöscht)
+#: source_id: bvg2024:m19#HIM_FREETEXT_352370
 #: source_id: planb2026:13.33931677,52.50309097,23.07.2026, ("Sperrung einer Fahrtrichtung", 23.07.2026 bis 31.12.2026)
 #: also_indoor: traffic (T,G[mittlerweile],H,W)
 #: traffic_note: Durch den Umleitungsverkehr Stauungen im umliegenden Straßennetz. Gesehen 2026-05-12 Tue 17:39 Nürnberger Str. Richtung SW 6\'
@@ -10089,9 +10142,10 @@ Wünsthoffstr.: Einbahnstraßenregelung	q4::inwork; 8461,8097 8265,8092
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G[mittlerweile],T,no-W,H[mittlerweile])
-#: source_id: planb2026:-
-#: last_checked: 2026-07-21 (traffic)
-#: check_frequency: 14d (traffic)
+#: source_id: planb2026:13.33831777,52.60234858,23.03.2026, (verspätet eingefügt, "Vollsperrung beider Fahrbahnen", bis 28.08.2026)
+#: last_checked: 2026-07-28 (traffic)
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: next_check: 2026-08-28 (planb)
 	q4::inwork 5552,21824 5665,21733
 ',
          'from' => undef,
@@ -10259,16 +10313,17 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mov62s6ock26 (hier bis 31.07.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierungsarbeiten-auf-der-olbersstrasse-in-charlottenburg/
 #: source_id: LMS-BR:412913/72 viz2021:13.30654,52.52884,22.06.2026,07:00 (bis 17.07.2026) (bis 31.07.2026)
-#: source_id: LMS-BR:414995/72 viz2021:13.29643,52.52933,07.07.2026,07:00 (Tegeler Weg bis Kamminer Str., bis 17.07.2026) (bis 31.08.2026) (bis 31.07.2026)
+#: source_id: LMS-BR:414995/72 viz2021:13.29643,52.52933,07.07.2026,07:00 (Tegeler Weg bis Kamminer Str., bis 17.07.2026) (bis 31.08.2026) (bis 31.07.2026) (bis 05.08.2026)
 #: source_id: planb2026:13.30532259,52.52882726,06.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 31.07.2026)
-#: next_check: 2026-07-31 (planb, nun auch beide VIZ-Verkehrsmeldungen)
+# REMOVED --- #: next_check: 2026-07-31 (planb, nun auch beide VIZ-Verkehrsmeldungen)
+#: next_check: 2026-08-05 (eine der beiden VIZ-Verkehrsmeldungen)
 	q4::inwork; 3038,13612 3211,13631 3280,13625 3365,13609 3395,13605 3442,13595 3522,13577 3642,13548 3739,13563
 ',
          'from' => 1781992800,
          'id' => 4645,
-         'text' => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.6.2026 bis 31.7.2026',
+         'text' => 'Olbersstr.: Fahrbahnsanierung, Einbahnstraßenregelung, offen Richtung Westen, evtl. ist der Radverkehr betroffen, 22.06.2026 bis 05.08.2026',
          'type' => 'handicap',
-         'until' => 1785535199
+         'until' => 1785967199
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~12-06-2026-b246-erneuerung-ortsdurchfahrt-klein-glien
@@ -10728,7 +10783,9 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
        },
        {
          'data' => '#: source_id: LMS-BR:416449/72 viz2021:13.4355,52.51475,20.07.2026,07:00 (bis 29.08.2026)
-	q4::inwork 12450,11980 12532,12150
+#: source_id: planb2026:13.43554035,52.51462551,20.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", etwa 40m lang, bis 29.08.2026)
+#: note: wegen der Kürze der Baustelle: q4 -> q3
+	q3::inwork 12450,11980 12532,12150
 ',
          'from' => 1784498400,
          'id' => 4685,

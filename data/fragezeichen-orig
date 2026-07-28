@@ -524,7 +524,7 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: osm_watch: way id="36993524" version="21"
 #: osm_watch: way id="1335038735" version="3"
 #: osm_watch: way id="1432567951" version="2"
-#: last_checked: 2026-07-05 (mapillary)
+#: last_checked: 2026-07-27 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-06-30 (entwicklungsstadt, Bauarbeiten 2. Quartal 2026)
 Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904,20596 9027,20603 9073,20606 9162,20613 9175,20613 9227,20617 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
@@ -1471,7 +1471,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: source_id[inactive]: bvg2024:156#HIM_FREETEXT_314202
 #: source_id[inactive]: bvg2024:259#HIM_FREETEXT_314203
 #: source_id: bvg2024:m4#457a81e9-1a37-4a8a-a771-1ea228171f72 (Gleisbauarbeiten bis 2026-07-27)
-#: source_id: planb2026:13.49223129,52.55866135,08.09.2025, (bis 27.07.2026)
+#: source_id: planb2026:13.49223129,52.55866135,08.09.2025, (bis 27.07.2026) (inaktiv)
 #: XXX Fertigstellung laut osm note sogar erst Anfang 2027
 #: last_checked: 2026-07-22
 # REMOVED --- #: check_frequency: 30d
@@ -1878,12 +1878,12 @@ Marzahner Chaussee: Hochbordradweg entsteht	?::inwork; 19192,13350 19198,13272 1
 #: osm_watch: way id="147432180" version="17"
 #: osm_watch: way id="25630356" version="33"
 #: osm_watch: way id="82456679" version="18"
-#: last_checked: 2026-07-18 (mapillary)
+#: last_checked: 2026-07-27 (mapillary)
 # REMOVED --- #: check_frequency: 150d (ab Sommer 2025 ggfs. anpassen)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-06-30 (zukunft-residenzstrasse)
 Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::projected 7602,17399 7579,17532 7572,17558
-#: last_checked: 2026-07-18 (mapillary)
+#: last_checked: 2026-07-27 (mapillary)
 #: check_frequency: 360d (keine bekannte Planung)
 #: next_check: 2028-12-31 (infravelo) 
 Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::projected 7572,17558 7533,17673 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257 7291,18392 7269,18460 7233,18562 7198,18575
@@ -3235,7 +3235,7 @@ Thomasstr.: wird die Straße zur Fahrradstraße?	? 12185,7381 12368,7423 12564,746
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2026/pressemitteilung.1697694.php (Beginn der Bauarbeiten, kein Endedatum)
 #: by: https://www.entwicklungsstadt.de/300-meter-bis-zum-lueckenschluss-radstreifen-in-der-werbellinstrasse-wird-ergaenzt/
 #: source_id: planb2026:13.43729985,52.47898915,26.07.2026, ("Fahrbahneinengung", 26.07.2026 bis 31.07.2026)
-#: source_id: bvg2024:m43#HIM_FREETEXT_352010 (2026-07-28 bis 2026-07-30)
+#: source_id: bvg2024:m43#HIM_FREETEXT_352010 (2026-07-28 bis 2026-07-30) (mittlerweile bis 2026-07-31)
 #: last_checked: 2026-07-24 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2026-07-28 (BVG)
@@ -5740,7 +5740,7 @@ Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 150
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2026-07-14
+#: last_checked: 2026-07-28
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
@@ -7289,7 +7289,7 @@ Friedrich-Wilhelm-Platz: Radstreifen	?::projected 5352,7428 5357,7391 5364,7330 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile für beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2026-07-13
+#: last_checked: 2026-07-28
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -7624,7 +7624,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: note 4669630 2
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2026-07-19
+#: last_checked: 2026-07-28
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7815,7 +7815,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-07-19
+#: last_checked: 2026-07-28
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8365,7 +8365,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-07-16
+#: last_checked: 2026-07-28
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8994,7 +8994,7 @@ Radickestr.: Fahrradstraße entsteht	?::inwork 20499,3572 20592,3633 20683,3693 2
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6897
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6938 (Vorlage zur Kenntnisnahme)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/nach-ossietzkyplatz-und-ossietzkystrasse-nanu-warum-wird-auch-noch-diese-berliner-strasse-nach-ossietzky-benannt-12007403.html
-#: last_checked: 2026-07-11 (mapillary)
+#: last_checked: 2026-07-27 (mapillary)
 #: check_frequency: 90d
 Mittelstr. (Rosenthal): Umbenennungsabsicht, neuer Name Maud-von-Ossietzky-Straße	? 9911,20664 10114,20732
 # 
@@ -9092,6 +9092,7 @@ Weserstr.: Einbahnstraße für Kfz in Vorbereitung	? 14475,11778 14550,11732
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/beim-abriss-des-jahn-stadions-entdeckt-kritik-nach-erneutem-asbest-fund-am-berliner-mauerpark-15514525.html
 #: by: https://www.entwicklungsstadt.de/jahnsportpark-ausbau-des-kleinen-stadions-fuer-hockey-geplant/
 #: by: https://www.entwicklungsstadt.de/wird-der-jahnsportpark-zur-hitzefalle-streit-um-die-sportwiese/
+#: by: https://www.entwicklungsstadt.de/naechster-schritt-fuer-den-jahnsportpark-drei-millionen-euro-fuer-neue-sportwiese/
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: last_checked: 2026-06-18 vvv
@@ -9185,7 +9186,7 @@ Blaschkoallee/Onkel-Bräsig-Str./Riesestr.: vermutlich entsteht hier eine Ampel	?
 Westfälische Str./Bielefelder Str.: vermutlich entsteht hier 2025 eine Ampel	? 3849,9582 3813,9566 3772,9550
 # 
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025)
-#: last_checked: 2026-07-13
+#: last_checked: 2026-07-28
 #: check_frequency: 120d
 # REMOVED (2025 wohl nicht) --- #: next_check: 2025-12-31 (Tsp)
 Französische Str./Markgrafenstr.: neue Ampel sollte 2025 entstehen	? 9624,12153 9645,12133 9671,12109
@@ -9336,10 +9337,11 @@ Neues Ufer: verkehrsberuhigter Bereich geplant	? 4283,13660 4363,13336
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8116 (Antrag)
 #: by: https://stadtundland.de/bauen/neubau/treptow-koepenick/in-planung/kaserne-hessenwinkel (Baubeginn: Anfang der 2030er Jahre)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/bebauung-ja-aber-nicht-so-burgerverein-will-lost-place-in-treptow-kopenick-retten-14548850.html
+#: by: https://www.entwicklungsstadt.de/lost-place-im-berliner-osten-ddr-kaserne-hessenwinkel-soll-wohnquartier-werden/ (Baubeginn: etwa 2030)
 #: XXX geplant sind: Verlängerung der Wolfgang-Steinitz-Str., N-S-Anbindung zum Fürstenwalder Damm, Quartiersplatz
 #: last_checked: 2025-06-18
 #: check_frequency: 1000d
-#: next_check: 2030-06-01 (stadtundland website)
+#: next_check: 2030-06-01 (stadtundland website + entwicklungsstadt: Baubeginn)
 Bebauungsplan 9-100 VE: neue Straßen werden entstehen	? 31965,2966 32179,2947 32195,3182
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-03-2026-l-25-in-prenzlau (bis Mitte Dezember 2026)
@@ -9694,6 +9696,7 @@ Cecilienstr.: wird hier ein Zebrastreifen angelegt?	? 21956,13665 21918,13720 21
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/grobes-pflaster-glattgefrast--und-jetzt-arbeiten-fur-neue-fahrradstrasse-in-prenzlauer-berg-stecken-fest-15857214.html
 #: by: https://www.entwicklungsstadt.de/hufelandstrasse-wird-fahrradstrasse-zweite-bauphase-startet-ende-juli/
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1696780.php (Bauarbeiten ab 29. Juli 2026, Dauer 5 Wochen)
+#: by: https://www.morgenpost.de/berlin/article412653901/hufelandstrasse-wird-fahrradstrasse-neue-bauphase-startet-ende-juli.html
 #: osm_watch: way id="4615063" version="42"
 #: osm_watch: note 5010352 6
 #: last_checked: 2026-06-29
@@ -9928,7 +9931,7 @@ Rathenow: nach den Bauarbeiten mit Radschutzstreifen	? -62108,21448 -62111,21747
 #: osm_watch: way id="1151333062" version="4"
 #: osm_watch: way id="23755731" version="17"
 #: osm_watch: note 3954722 6
-#: last_checked: 2026-07-14
+#: last_checked: 2026-07-28
 #: check_frequency: 120d
 #: next_check: 2027-06-30 (infravelo)
 Charlottenstr.: mögliche Fortführung der Fahrradstraße	? 9569,11631 9581,11523 9593,11424 9603,11328
@@ -10022,10 +10025,12 @@ S-Bhf. Zehlendorf, Neubau der Eisenbahnüberführung: mögliche bauzeitliche Einsch
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1693776.php (Fahrbahnsanierungsarbeiten bis 31.12.2026, keine Einschränkungen für den Radverkehr)
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierung-an-der-schlossstrasse-in-charlottenburg/ (bis 31.07.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrm3dppct226
-#: source_id: bvg2024:309#HIM_FREETEXT_349190 (Umleitung)
-#: source_id: LMS-BR:416445/72 viz2021:13.29705,52.51343,20.07.2026,07:00 (bis 28.07.2026)
-#: source_id: planb2026:13.29706087,52.51041564,20.07.2026,00:00 ("Fahrstreifen-Reduzierung", bis 04.08.2026)
+#: source_id: bvg2024:309#HIM_FREETEXT_349190 (Umleitung) (bis 2026-08-15)
+#: source_id: LMS-BR:416445/72 viz2021:13.29705,52.51343,20.07.2026,07:00 (bis 28.07.2026) (inaktiv)
+#: source_id: planb2026:13.29706087,52.51041564,20.07.2026,00:00 ("Fahrstreifen-Reduzierung", bis 04.08.2026) (inaktiv)
 #: source_id: LMS-BR:417241/72 viz2021:13.29572,52.51949,27.07.2026,07:00 (bis 31.07.2026)
+#: source_id: planb2026:13.29837253,52.5169362,20.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 28.07.2026)
+#: source_id: planb2026:13.296073,52.51776001,28.07.2026,06:00 ("Fahrstreifen-Reduzierung", bis 31.07.2026)
 #: XXX Hier gibt es allerdings schon einen Radfahrstreifen --- vielleicht Verbreiterung, Protektion oder Grünbeschichtung?
 #: XXX Länge laut Tsp 667m, das würde für eine Realisierung bis Knobelsdorffstr. sprechen.
 #: note: südlich der Knobelsdorffstr. bereits beidseitig verbreitert, nördlich auf der Westseite weitgehend fertig, auf der Ostseite noch nicht begonnen
@@ -10091,6 +10096,7 @@ Koloniestr.: Einbahnstraßenregelung (hoffentlich nur für Kfz) geplant	?; 8503,16
 #: by: https://www.entwicklungsstadt.de/kiezblocks-in-berlin-mitte-bezirk-und-senat-einigen-sich-auf-vier-projekte/ (Realisierung ab 2026, wo genau?)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1694863.php
 #: by: https://kiezblocks-mitte.de/alle-kieze/stephankiez/ (2026?)
+#: source_id: planb2026:13.35392933,52.53460016,05.08.2026,07:00 ("Vollsperrung beider Fahrbahnen" (vielleicht im Zusammenhang mit der geplanten Einbahnstraßenregelung?), bis 03.09.2026)
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt) vvv
 #: last_checked: 2026-07-26 (mapillary) vvv
@@ -12750,6 +12756,7 @@ Schumacher-Quartier: neues Viertel entsteht	?::projected 3976,17559 4849,17312 4
 #: by: https://www.tagesspiegel.de/berlin/urban-tech-republic-und-wohnquartier-auf-dem-ex-flughafen-tegel-entsteht-ein-quartier-der-zukunft-15854146.html
 #: by: https://www.entwicklungsstadt.de/berlin-txl-was-geplant-ist-und-was-wann-umgesetzt-wird/
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1697743.php
+#: by: https://www.entwicklungsstadt.de/spatenstich-am-ex-flughafen-tegel-der-umbau-des-terminal-a-zum-bht-campus-beginnt/
 #: XXX werden die alten Zufahrtstraßen während der Bauarbeiten noch benutzbar sein?
 #: last_checked: 2026-06-07
 #: check_frequency: 720d
@@ -13009,7 +13016,7 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlins-neue-bvg-linie-endlich-rollt-der-bus-ins-riesige-neubaugebiet-15476762.html
 #: by: https://www.entwicklungsstadt.de/das-neue-gartenfeld-wohnquartier-waechst-sichtbar-infrastruktur-holt-auf/
 #: by: https://www.entwicklungsstadt.de/das-neue-gartenfeld-belgienhalle-wird-neues-zentrum/
-#: source_id: LMS-BR:402041/72 viz2021:13.247943,52.548911,17.03.2026,07:00 (Bauarbeiten in der Gartenfelder Str., bis 31.07.2026)
+#: source_id: LMS-BR:402041/72 viz2021:13.247943,52.548911,17.03.2026,07:00 (Bauarbeiten in der Gartenfelder Str., bis 31.07.2026) (bis 30.09.2026)
 #: osm_watch: relation id="10290512" version="8"
 #: osm_watch: way id="1306187830" version="31"
 #: osm_watch: way id="1294762943" version="24"
@@ -13122,6 +13129,8 @@ Rhenaniabrücke: Neubau geplant	?::projected -1095,15865 -1006,15833
 #: by: https://s1.directupload.eu/images/260319/344lrrry.jpg (evtl. auch ein Weg hinter den Häusern zur Ehrenbergstr.?)
 #: by: https://www.entwicklungsstadt.de/rudolfstrasse-an-der-warschauer-bruecke-so-koennte-das-geplante-167-meter-hohe-hochhaus-aussehen/
 #: by: https://www.entwicklungsstadt.de/warschauer-bruecke-hochhaus-rudolfstrasse/
+#: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/umstrittenes-hochhaus-projekt-an-warschauer-brucke-finanzsenator-evers-drangt-auf-baurecht-noch-vor-berlin-wahl-15866391.html
+#: by: https://www.entwicklungsstadt.de/hochhaus-an-der-warschauer-bruecke-baurecht-vor-der-berlin-wahl/
 #: last_checked: 2025-07-12
 #: check_frequency: 720d
 Tamara-Danz-Str. - Rudolfstr.: wird hier eine Fuß- und Radwegverbindung entstehen?	? 13540,11148 13527,11110

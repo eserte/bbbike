@@ -4111,12 +4111,6 @@ Drängelgitter	BNP:3::trailer=10 5829,7827
 #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
 Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18065,13496
 # 
-#: source_id: planb2026:13.39770515,52.51708189,13.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 15.08.2026)
-#: last_checked: 2026-07-13
-#: check_frequency: 7d
-#: next_check: 2026-08-15 (planb)
-An der Kommandantur: Gerüstbauarbeiten, Straße gesperrt	2::inwork 9943,12364 9996,12372
-# 
 #: next_check_id: GOERLITZERBRUECKEN-2026
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1663549.php
 #: by: https://www.entwicklungsstadt.de/schliessung-der-goerlitzer-bruecken-treptow-koepenick-fordert-loesung/
@@ -4665,7 +4659,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="4612427" version="23"
 #: source_id: planb2026:13.41545231,52.51320684,25.03.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2027)
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-07-14
+#: last_checked: 2026-07-28
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2027-06-30 (entwicklungsstadt)
 #: next_check: 2027-12-31 (planb)
@@ -4956,7 +4950,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-07-09
+#: last_checked: 2026-07-28
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -5102,7 +5096,7 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: by: https://www.entwicklungsstadt.de/bernhard-lichtenberg-haus-am-bebelplatz-fassadenarbeiten-am-neubau-sichtbar/
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=799674#post799674
 #: osm_watch: way id="28120501" version="15"
-#: last_checked: 2026-07-13
+#: last_checked: 2026-07-28
 #: check_frequency: 90d
 #: next_check: 2026-09-01 (erzbistumberlin)
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144

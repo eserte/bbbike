@@ -87,7 +87,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
-#: last_checked: 2026-07-08
+#: last_checked: 2026-07-28
 #: next_check: 2027-01-12
 #: valid: -20270112
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
@@ -486,10 +486,11 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # REMOVED --- #: source_id: viz2021:13.209709,52.603468,24.07.2023,08:00 (bis 24.11.2023) (inaktiv) (bis 16.02.2024) (inaktiv) --- #: next_check: 2024-02-16 --- #: valid: -20240216 --- Alt-Heiligensee: Gegenverkehrsregelung	X::inwork::alternating -3020,21786
 # REMOVED --- #: next_check_id: PISTORIUS-2023 --- #: source_id: viz2021:13.44623,52.55365,19.06.2023,08:00 (bis 28.07.2023, Gesamtbaumaßnahme bis Ende 10/2023) (bis 13.08.2023) (bis 14.08.2023) (bis 20.10.2023) (bis 17.11.2023) (bis 27.11.2023) (inaktiv) --- #: last_checked: 2023-11-23 --- #: next_check: 2023-11-27 --- #: valid: -20231127 --- Roelckestr./Gäblerstr.	X::inwork 13272,16672
 # 
+#: next_check_id: KELTENSTEIG-2026
 # REMOVED --- #: source_id: viz2021:13.54658,52.41878,11.07.2023,09:00 (bis 30.09.2024) (inaktiv)
-# REMOVED --- #: next_check: 2024-09-30
-# REMOVED --- #: valid: -20240930
-# REMOVED --- Gegenverkehrsregelung	X::inwork::alternating 20302,1613
+#: next_check: 2026-09-10 (planb)
+#: valid: -20260910
+Gegenverkehrsregelung	X::inwork::alternating 20302,1613
 # 
 # REMOVED --- #: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv) --- #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv) --- #: source_id: viz2021:13.56243,52.41416,15.01.2024,09:14 (bis 09.02.2024) (inaktiv) --- #: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv) (bis 12.12.2023) (bis 15.01.2024) (bis 09.02.2024) (inaktiv) --- #: next_check: 2024-02-09 --- #: valid: -20240209 --- Am Falkenberg	X::inwork 21497,1042
 # 
@@ -507,15 +508,15 @@ Gegenverkehrsregelung	X::inwork::alternating 18587,16834
 # 
 #: next_check_id: KATHARINAPAULUS-2023
 #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
-#: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026)
-#: source_id: LMS-BR:403519/72 viz2021:13.36807,52.52228,01.04.2026,07:00 (Verengung, bis 31.07.2026)
+#: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026) (bis 21.08.2026)
+#: source_id: LMS-BR:403519/72 viz2021:13.36807,52.52228,01.04.2026,07:00 (Verengung, bis 31.07.2026) (bis 21.08.2026)
 #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
 #: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/
 #: last_checked: 2026-06-24
 #: check_frequency: 180d
-#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-08-21 (VIZ-Verkehrsmeldung)
 # REMOVED (verschoben)	X::inwork 7873,12927
 	F::inwork 7822,12937
 # 

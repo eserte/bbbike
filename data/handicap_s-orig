@@ -87,7 +87,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="33"
 #: osm_watch: way id="1072662717" version="37"
-#: last_checked: 2026-07-24 (osm)
+#: last_checked: 2026-07-28
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -420,16 +420,24 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
+#: source_id: planb2026:13.39770515,52.51708189,13.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 15.08.2026)
+#: note: nur der südliche Bürgersteig ist frei
+#: historical_note: anfang war die komplette Straße gesperrt
+#: last_checked: 2026-07-28
+#: check_frequency: 21d
+#: next_check: 2026-08-15 (planb)
+An der Kommandantur: Gerüstbauarbeiten, Fahrbahn gesperrt	q4::inwork 9943,12364 9996,12372
+# 
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
 #: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026)
-#: last_checked: 2026-07-14
-#: check_frequency: 7d
+#: last_checked: 2026-07-28
+#: check_frequency: 21d
 #: next_check: 2026-08-14 (planb)
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-07-14
+#: last_checked: 2026-07-28
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -7816,10 +7824,10 @@ Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,33
 #: next_check_id: BAEKEBRUECKE-2022
 #: note: Bei Sperrungen des Teltowkanaluferwegs ist hier die offizielle Umleitung für Fußgänger und *Radfahrer*, trotz Grünanlage.
 #: last_checked: 2026-05-30 (parallele Sperrung gesehen) vvv
-#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
-#: valid: !20250617-20260731
+#: next_check: 2026-08-14 (VIZ-Verkehrsmeldung) vvv
+#: valid: !20250617-20260814
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4328,2652 4659,3065
-#: valid: 20250617-20260731
+#: valid: 20250617-20260814
 Eduard-Spranger-Promenade: Grünanlage, aber offizielle Umleitung für den Radverkehr	q1 4317,2638 4328,2652 4659,3065
 #: next_check ^^^
 #: last_checked ^^^

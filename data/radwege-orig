@@ -1941,13 +1941,13 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2026-07-08 (osm) vvv
+#: last_checked: 2026-07-27 (osm) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, Suggestivstreifen ist nicht der Rede Wert, Tempo 20 + Radfahrüberholverbot, früher:	RW2;
-#: osm_watch: way id="910439501" version="24"
+#: osm_watch: way id="910439501" version="25"
 #: osm_watch: note 3599331 7
 	RW0; 22467,6135 22431,6068
 # REMOVED --- #: next_check ^^^
@@ -1977,14 +1977,14 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: by: https://www.entwicklungsstadt.de/estrel-hochhaus-baustelle/
 #: by: https://www.entwicklungsstadt.de/neukoellner-hotelhochhaus-endphase-der-fassadenarbeiten-am-estrel-tower/
 #: by: https://www.estreltower.com/webcam (alternative Webcam-URL)
-#: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 (bis 31.03.2026) (bis 31.07.2026)
+#: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 (bis 31.03.2026) (bis 31.07.2026) (bis 30.11.2026)
 #: source_id: planb2026:13.4587988,52.4724106,01.10.2025,07:00 ("Fahrstreifen-Reduzierung", bis 30.11.2026)
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren -> mittlerweile ist der Bürgersteig + Radweg wieder offen, wird noch die Busspur kommen?
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-07-21 (webcam)
-#: check_frequency: 14d
-#: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-07-28 (webcam)
+#: check_frequency: 21d
+#: next_check: 2026-11-30 (VIZ-Verkehrsmeldung)
 	RW1; 14174,7505 14305,7415
 #: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) gab es eine Busspur mit Fahrrad frei
 neues Verbundsteinpflaster	RW2; 14305,7415 14323,7403 14334,7395 14369,7376
@@ -2369,7 +2369,7 @@ Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,116
 	RW3; 10133,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
 #: next_check_id: GERTRAUDENBRUECKE-2025
-#: last_checked: 2026-07-14 vvv
+#: last_checked: 2026-07-28 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
 #: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
@@ -2450,7 +2450,7 @@ Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
-#: last_checked: 2026-07-14
+#: last_checked: 2026-07-28
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
@@ -3190,7 +3190,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-06-26 vvv
+#: last_checked: 2026-07-28 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3372,7 +3372,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_222564
 #: source_id[inactive]: bvg2024:HIM_FREETEXT_247779
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026) (inaktiv)
-#: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026)
+#: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026) (bis 31.10.2026)
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
@@ -8528,7 +8528,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", bis 22.10.2026)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-07-23
+#: last_checked: 2026-07-28
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
