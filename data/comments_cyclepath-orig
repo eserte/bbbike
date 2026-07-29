@@ -719,7 +719,7 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 26300,-11727 26178,-1166
 #: by: osm
 	RW3;RW3 26300,-11727 26327,-11708 26386,-11705 26400,-11718
 asphaltiert	RW2;RW8 26466,-10409 26789,-10357
-Verbundsteinpflaster	RW2;RW2 31843,-536 32051,-544 32128,-548 32138,-858
+Verbundsteinpflaster	RW2;RW2 31651,-530 31843,-536 32051,-544 32128,-548 32130,-604 32138,-858
 Verbundsteinpflaster	RW2;RW8 32138,-858 32168,-981 32266,-1004 32778,-1044 32914,-1115 33326,-1341
 Verbundsteinpflaster	RW2;RW2 31171,-3550 30934,-3651 30893,-3670 30785,-3681 30721,-3689 30660,-3645
 	RW1;RW1 30660,-3645 30690,-3521
@@ -762,7 +762,9 @@ gemeinsamer Rad- und Gehweg	RW1;RW1 30495,7350 30529,7009 30557,6731 30602,6366 
 	RW6;RW6 -14974,988 -14992,927
 	RW6;RW6 -15001,891 -14870,850
 	RW3; -14653,232 -14663,310 -14676,418
-Asphalt	RW8;RW2 40270,-3790 39341,-1057
+#: note: nicht durchgängig ausgeschildert; abschnittsweise Berg- und Talfahrt
+Asphalt, teilweise mit Unebenenheiten	RW8;RW2 40278,-3816 40449,-3826 40506,-3829 40762,-3650 41014,-3494 41095,-3344 41149,-3324 41180,-3302 41244,-3173
+Asphalt	RW8;RW2 40278,-3816 40270,-3790 39341,-1057
 Asphalt	RW8;RW2 39341,-1057 39264,-832 39259,574
 Verbundsteinpflaster	RW8;RW2 39259,574 39259,612 39250,1024 39311,1219 39321,1349 39302,1422
 Asphalt	RW8;RW2 39302,1422 39280,1505
@@ -1581,6 +1583,8 @@ Gehwegplatten (Q1)	RW2;RW8 -88423,-67053 -88736,-67128 -88826,-67144 -89604,-672
 	RW2; -87463,-73416 -87392,-73431 -87314,-73469
 Bürgersteig mit Verbundsteinpflaster, wird wohl normalerweise auch von Radfahrern in beide Richtungen genutzt	RW0; 21764,-4869 21654,-4807 21548,-4786
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 39553,15059 39615,15288 39621,15311
+Verbundsteinpflaster, teilweise schlecht	RW2;RW8 37661,-1285 37545,-1442 37537,-1504 37591,-1666
+Verbundsteinpflaster	RW2;RW2 37591,-1666 37624,-1765 37613,-2204
 ######################### User Contributions #################################
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_oktober_2018_web.pdf (Fahrradstraße geplant)
 #: by: mapillary, osm

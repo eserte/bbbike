@@ -995,6 +995,7 @@ Kreisverkehr	Roundabout 27934,-10286
 Kreisverkehr	Roundabout -67907,-64860
 Kreisverkehr	Roundabout -86811,-75738
 Kreisverkehr	Roundabout 11818,37915
+Kreisverkehr	Roundabout 37330,-2195
 #: XXX_prog ^^^
 #: ignore ^^^
 #: section ^^^
@@ -2178,29 +2179,6 @@ Friedenauer Höhe: nicht ausgeschildert	CS 6293,7875 6263,7894 6178,7899 6126,79
 Straße am Güterbahnhof Wilmersdorf: nicht ausgeschildert	CS 6147,7840 6273,7849
 # 
 Hirzerweg: nicht ausgeschildert	CS 9359,3083 9392,2923 9386,2882 9416,2781
-# 
-#: next_check_id: CLARAMUELLERJAHNKE-2023
-#: by: http://tk.gis-broker.de/metadata/bplan/pdf/XVI-58.pdf
-#: by: https://www.berliner-woche.de/koepenick/c-bauen/400-neue-wohnungen-in-hessenwinkel_a297521 (nicht 100%ig klar, ob dieses Gelände gemeint ist; geplante Fertigstellung: 2023)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/f%C3%BCrstenwalder-allee-324-hessenwinkel.1005/#post-14173
-#: by: https://www.berliner-woche.de/koepenick/c-bauen/baumfaellungen-in-hessenwinkel_a301341
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7010 (Straßenbenennung der Planstraße 5811)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/z18ZZXy3J2ZHtmAHncHKlckhWz5jf80zxBKviUyW/yXbAPpYA/66-Anlagen/01/DRS0017VK.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Straßenbenennung, mit Lageplan)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_04_0173_0236_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.degewo.de/presse/pressemitteilungen/presse/baustart-fuer-35-mehrfamilienhaeuser-im-suedosten-berlins/ (Fertigstellung 2023)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_10_0565_0644_online.pdf (Widmung von öffentlichem Straßenland)
-# REMOVED --- #: XXX außerdem muss die Grünfläche (oder eher Brache hier) verkleinert werden --- #: XXX Bebauungsplan XVI-58: Planstraße --- #: XXX Privatstraße; Name: Clara-Müller-Jahnke-Str. (Berlin.coords.data-Eintrag fehlt, PLZ=12589) --- #: XXX bei osm bereits eingetragen
-# REMOVED (die anderen Watches sind besser) --- #: osm_watch: way id="264953674" version="8"
-# REMOVED (deleted) --- #: osm_watch: way id="1066944414" version="6"
-#: osm_watch: way id="1111504176" version="7"
-#: osm_watch: way id="1259033757" version="4"
-#: add_fragezeichen: Hängen mittlerweile Straßenschilder?
-#: last_checked: 2025-06-18
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2023-12-31
-Clara-Müller-Jahnke-Str.: nicht ausgeschildert	CS 31971,3170 31799,3192 31800,3091 31810,3009 31965,2999
 # 
 Heidelberger Str.: nur als Mauerweg ausgeschildert	CS 13664,9073 13656,9079 13491,9201
 # 

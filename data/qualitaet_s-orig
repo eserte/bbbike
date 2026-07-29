@@ -153,7 +153,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-07-16
+#: last_checked: 2026-07-29
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -204,7 +204,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: osm_watch: way id="102486250" version="31"
 #: osm_watch[closed]: note 4659483 8
 # REMOVED (confirmed) --- #: XXX laut osm note könnte hier mittlerweile das Kopfsteinpflaster geschliffen worden zu sein
-#: last_checked: 2026-07-19
+#: last_checked: 2026-07-29
 #: check_frequency: 180d
 # REMOVED (ehemaliger infravelo-Eintrag) --- #: next_check: 2025-09-30 (infravelo)
 #: historical_note: früher (bis April 2025): mäßiges bis schlechtes Kopfsteinpflaster, Q2-
@@ -340,7 +340,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2026-07-25
+#: last_checked: 2026-07-29
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -4396,7 +4396,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: osm_watch: way id="47159365" version="22"
 #: osm_watch: way id="1090076934" version="5"
 #: osm_watch: way id="1090076933" version="5"
-#: last_checked: 2026-05-31
+#: last_checked: 2026-07-29
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -5328,12 +5328,10 @@ Elsterweg (Wilhelmshagen): Kopfsteinpflaster	Q2 30989,2949 31051,2928
 Elsterweg (Wilhelmshagen): unbefestigte Straße	Q2 31051,2928 31103,2910 31180,2895 31308,2902
 Lerchenweg (Wilhelmshagen): unbefestigte Straße	Q2 31103,2910 31094,2860 31196,2839 31268,2841 31323,2852
 Rotkehlchenweg (Wilhelmshagen): unbefestigte Straße	Q2 31002,3045 31206,2991 31285,2996
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/aktuelle-bauvorhaben-des-strassen-und-gruenflaechenamts-118918.php (Straßenbauarbeiten)
-#: XXX Ändert sich die Fahrbahnbeschaffenheit während der Bauarbeiten?
-#: priority: #C
-#: next_check: 2025-10-31
-Bachstelzenweg (Wilhelmshagen): unbefestigte Straße	Q2 31012,3124 31234,3067
-# REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.973156.php (bis KW 38/2020) --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/uebersicht-ueber-aktuelle-bauvorhaben-118918.php (ab Frühjahr 2021) --- #: XXX Fahrbahnausbau; wird sich die Qualität dabei ändern? --- #: last_checked: 2020-09-23 --- #: next_check: 2020-09-18
+#: historical_note: früher (bis Herbst 2025?) unbefestigte Straße, Q2
+#: note: mit Kies als Füllmaterial, Fahrkomfort reifenabhängig (Q2- bis Q2+)
+Bachstelzenweg (Wilhelmshagen): Rasengittersteine	Q2 31012,3124 31234,3067
+#: historical_note: früher (bis 2020?) unbefestigte Straße
 #: note: mit Kies als Füllmaterial, Fahrkomfort reifenabhängig (Q2- bis Q2+)
 Finkenweg (Wilhelmshagen): Rasengittersteine	Q2 31057,3279 31308,3208 31374,3166 31412,3125 31454,3045 31473,2962 31464,2924
 Kuckuckssteig (Wilhelmshagen): Rasengittersteine	Q2 31366,3404 31337,3334 31329,3278
@@ -8570,7 +8568,7 @@ Hirtschulzstr.: schlechtes Kopfsteinpflaster	Q3 24316,12566 24195,12558 24077,12
 #: by: https://www.tagesspiegel.de/berlin/pendler-sollen-sicherer-zur-s-bahn-kommen-umbau-von-gefahrlichem-tram-anschluss-im-berliner-sudosten-dauert-noch-jahre-11218738.html (Baubeginn 4. Quartal 2026, Bauzeit 6 Monate)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25004.pdf (Klärung der Finanzierung, kein Zeitplan)
 #: XXX Straßenbahnhaltestelle soll auf die Westseite verlegt werden; gemeinsamer Rad- und Gehweg bis zur Schöneicher Str. (Kaphaltestelle?); Kopfsteinpflaster wird durch Asphalt ersetzt; Fußgängerampel vor der Schöneicher Str.
-#: last_checked: 2026-07-09 (mapillary)
+#: last_checked: 2026-07-29
 #: check_frequency: 720d
 # REMOVED --- #: next_check: 2027-06-30 (Tsp (4. Quartal 2026 plus sechs Monate))
 Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25601,6158 25584,6029
@@ -10432,9 +10430,10 @@ Am Oder-Spree-Kanal: Asphalt	Q0 30646,-2732 30629,-2817
 (Fahlenbergbrücke - Sandgrube): guter Waldweg	Q1 30817,43 30770,-13 30745,-66 30233,-293 29503,-611
 (Waldweg zur Sandgrube): Asphalt mit einigen Schäden	Q1+ 29120,271 29208,71
 (Waldweg zur Sandgrube): Asphalt mit einigen Schäden	Q1+ 29208,71 29503,-611 29321,-685 29260,-774 28925,-1143 28886,-1163 28851,-1075
-#: note: Qualität hat sich verschlechtert (2018-07), früher feiner Schotter
-(Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2- 27202,173 27161,156 26666,-54
-(Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2- 26666,-54 26488,-131
+#: historical_note: Qualität hat sich verschlechtert (2018-07), früher feiner Schotter
+#: historical_note: Qualität hat sich vebessert (2026-07), davor Schotterweg, teilweise grober Schotter, Q2-
+(Straße zur Krampenburg - Uferweg am Langen See): feiner Schotter	Q2+ 27202,173 27161,156 26666,-54
+(Straße zur Krampenburg - Uferweg am Langen See): Waldweg	Q2 26666,-54 26488,-131
 #: historical_note: bis Dezember 2024: Asphalt mit leichten Schäden, Q1+
 Kuglerstr.: Asphalt mit leichten Schäden	Q0- 11750,16116 11680,16151
 #: historical_note: bis Herbst 2023: Asphalt mit leichten Schäden, Q1+
@@ -11232,7 +11231,7 @@ Werlseestr. - Am Goldmannpark: Beton	Q0 26199,5643 26239,5659
 #: osm_watch: way id="1085678795" version="4"
 #: osm_watch: way id="384630167" version="6"
 #: XXX wird die Straße hier verbessert (asphaltiert)?
-#: last_checked: 2026-03-11
+#: last_checked: 2026-07-29
 #: check_frequency: 180d
 Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26239,5659 26274,5694 26282,5830
 (Am Goldmannpark - Fürstenwalder Damm): Asphalt	Q0 26282,5830 26294,5923 26424,5924
@@ -34854,5 +34853,8 @@ Einmündungsbereich asphaltiert	Q0 9141,6459
 Einmündungsbereich asphaltiert	Q0 9136,6552
 Kreuzungsbereich asphaltiert	Q0 -3660,15618
 Einmündungsbereich mit unebenem Kleinkopfsteinpflaster	Q2- 16360,15889
+Einmündungsbereich asphaltiert	Q0 31082,3366
+Einmündungsbereich asphaltiert	Q0 31057,3279
+Einmündungsbereich asphaltiert	Q0 31012,3124
 #: ignore ^^^
 #: section ^^^

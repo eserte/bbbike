@@ -376,7 +376,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-07-25 vvv
+#: last_checked: 2026-07-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1455,7 +1455,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-07-23 vvv
+#: last_checked: 2026-07-29 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
@@ -2728,7 +2728,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: osm_watch: way id="142161214" version="25"
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: XXX zurzeit ist ein Abschnitt des Gehwegs wegen Bauarbeiten für das BSR-Hochhaus komplett gesperrt: check_frequency von 120d -> 180d erhöht
-#: last_checked: 2026-07-24 (mapillary)
+#: last_checked: 2026-07-29
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 180d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
@@ -3346,7 +3346,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-07-23 vvv
+#: last_checked: 2026-07-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2026-09-30 (planb) vvv
@@ -3376,7 +3376,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-07-23
+#: last_checked: 2026-07-29
 #: check_frequency: 30d
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 #: next_check: 2026-09-30 (planb)
@@ -3420,7 +3420,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-07-26
+#: last_checked: 2026-07-29
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3431,7 +3431,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-07-26
+#: last_checked: 2026-07-29
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -8253,6 +8253,7 @@ asphaltiertes Straßenbahnkap	RW1; 11666,16260 11698,16311
 	RW6;RW6 22742,5177 22805,5179 22813,5178 22816,5148 22825,5032
 	RW6;RW6 22816,5148 22863,5150
 # 
+#: note: kurzer Abschnitt vor der Ampel Müggelseedamm mit Wurzelhebungen
 asphaltiert	RW1;RW9 26424,5924 26578,5914 26688,5903 26890,5858 27068,5723 27205,5598 28176,5167
 asphaltiert, Gehweg für Radfahrer frei	RW1;RW9 28176,5167 28376,5079
 asphaltiert, gemeinsamer Rad- und Gehweg	RW2; 28376,5079 29089,4759 29653,4490 29714,4461
