@@ -1141,6 +1141,10 @@ Saaleckplatz	1s:q3 5162,1110 5178,1123
 Saaleckplatz	1 5178,1123 5190,1114 5212,1074 5204,1057
 # REMOVED (Tunnel wird zurückgebaut) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1011/nachricht4142.html --- #: note: geschlossen ab 2012-12-01, kein Wiedereröffnungstermin --- Fußgängertunnels Sybel-Waitz-Str.: provisorische Schließung	2 3712,10566 3731,10563 3759,10567 3764,10580
 Meyerinckplatz	1 4030,10575 4007,10559 3981,10590 3997,10607
+#: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=4604 (Freigabe 2026)
+#: XXX Freigabe für den Radverkehr geplant
+#: osm_watch: way id="23712167" version="17"
+#: next_check: 2026-12-31 (BVV-Drucksache)
 Upsalaer Str.	1 11369,16744 11364,16887
 Fritz-Erpenbeck-Ring	1 9717,19692 9697,19758 9708,19779 9785,19807 9864,19793
 #: note: Außerdem (für die Anwohner) eine Einbahnstraße, offen von Waldstr. nach Kuckhoffstr.
@@ -4146,7 +4150,7 @@ Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbaua
 #: by: https://viz.berlin.de/aktuelle-meldungen/gorlitzer-brucken-ab-01-juli-gesperrt/
 #: by: https://www.morgenpost.de/berlin/article412437202/goerlitzer-bruecken-ab-1-juli-gesperrt-so-soll-jetzt-die-rettung-gelingen.html
 #: osm_watch: note 5278957 5
-#: osm_watch: way id="24042478" version="19"
+#: osm_watch: way id="24042478" version="20"
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
@@ -4378,8 +4382,15 @@ Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~22-09-2025-b1-spatenstich-altsaedtischer-bahnhof (Freigabe 2028?)
 #: source_id: LS/223-P/25/102 (bis 21.11.2025) (bis 14.01.2026) (inaktiv)
 #: source_id: LS/223-P/26/004 (bis 31.08.2028)
+#: osm_watch: way id="1445713753" version="3"
+#: osm_watch: way id="1445713753" version="3"
 #: next_check: 2028-08-31 (Verkehrsmeldung)
-Brücke am Altstädtischen Bahnhof	2::inwork -48878,-293 -48735,-304
+Brücke am Altstädtischen Bahnhof (Brandenburg)	2::inwork -48878,-293 -48735,-304
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-07-2026-bauarbeiten-am-altstaedtischen-bahnhof-aenderung-der-verkehrsfuehrung-ab-4-august-2026 (voraussichtlich bis Mai 2027)
+#: osm_watch: way id="293723436" version="8"
+#: osm_watch: way id="4640085" version="37"
+#: next_check: 2027-05-31 (ls.brandenburg site)
+Magdeburger Str. (Brandenburg)	2::inwork -48735,-304 -47897,-353
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=784716#post784716
 #: by: https://entwicklungsstadt.de/europacity-neues-schulz-hotel-entsteht-an-der-heidestrasse-18/ (Eröffnung Anfang 2027)

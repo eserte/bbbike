@@ -21,7 +21,7 @@ Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 # 
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_347631
 #: source_id: bvg2024:194#HIM_FREETEXT_347630
-#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_348289
+#: source_id: bvg2024:194#HIM_FREETEXT_348289 (zwischenzeitlich 1x entfernt)
 #: source_id: LMS-BR:415149/72 viz2021:13.4754,52.50199, (bis 16.12.2026)
 #: source_id: planb2026:13.47841638,52.50180555,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026)
 #: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
@@ -501,16 +501,16 @@ Gegenverkehrsregelung	X::inwork::alternating 20302,1613
 # 
 # REMOVED --- #: source_id: viz2021:13.564461,52.413197,02.06.2023,07:00 (bis 14.08.2023) (inaktiv) --- #: source_id: viz2021:13.563998,52.413404,14.08.2023,10:00 (bis 07.10.2023) (bis 27.10.2023) (bis 08.12.2023) (bis 06.11.2023) (inaktiv) --- #: source_id: viz2021:13.56243,52.41416,15.01.2024,09:14 (bis 09.02.2024) (inaktiv) --- #: source_id: viz2021:13.563998,52.413404,06.11.2023,10:00 (bis 30.11.2023) (inaktiv) (bis 12.12.2023) (bis 15.01.2024) (bis 09.02.2024) (inaktiv) --- #: next_check: 2024-02-09 --- #: valid: -20240209 --- Am Falkenberg	X::inwork 21497,1042
 # 
-#: next_check_id: SGEHRENSEE-2023
-#: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023) (bis 24.09.2024) (bis 06.09.2024) (bis 31.10.2024) (bis 01.11.2024) (inaktiv)
-#: source_id: LMS-BR:415646/72 viz2021:13.525297,52.555515,13.07.2026,07:00 (bis 03.08.2026)
-#: source_id: planb2026:13.52611183,52.55585538,13.07.2026, (bis 03.08.2026)
-#: by: https://marzahn-hellersdorf.com/baustellenampel-am-s-bahnhof-gehrenseestrasse-rueckbau-der-rampe-ist-grund-fuer-verkehrseinschraenkung/
-# REMOVED --- #: note: die dazugehörige S-Bahn-Meldung ist kürzer --- #: last_checked: 2024-05-23 (mapillary) ---
-#: last_checked: 2026-07-22
-#: next_check: 2026-08-03 (VIZ-Verkehrsmeldung, planb)
-#: valid: -20260803
-Gegenverkehrsregelung	X::inwork::alternating 18587,16834
+# REMOVED --- #: next_check_id: SGEHRENSEE-2023
+# REMOVED --- #: source_id: viz2021:13.525188,52.555419,10.07.2023,04:00 (bis 08.12.2023) (bis 24.09.2024) (bis 06.09.2024) (bis 31.10.2024) (bis 01.11.2024) (inaktiv)
+# REMOVED --- #: source_id: LMS-BR:415646/72 viz2021:13.525297,52.555515,13.07.2026,07:00 (bis 03.08.2026) (vorfristig inaktiv)
+# REMOVED --- #: source_id: planb2026:13.52611183,52.55585538,13.07.2026, (bis 03.08.2026)
+# REMOVED --- #: by: https://marzahn-hellersdorf.com/baustellenampel-am-s-bahnhof-gehrenseestrasse-rueckbau-der-rampe-ist-grund-fuer-verkehrseinschraenkung/
+# REMOVED --- # REMOVED --- #: note: die dazugehörige S-Bahn-Meldung ist kürzer --- #: last_checked: 2024-05-23 (mapillary) ---
+# REMOVED --- #: last_checked: 2026-07-22
+# REMOVED --- #: next_check: 2026-08-03 (VIZ-Verkehrsmeldung, planb)
+# REMOVED --- #: valid: -20260803
+# REMOVED --- Gegenverkehrsregelung	X::inwork::alternating 18587,16834
 # REMOVED (frühere Regelung hier) --- Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 # 
 #: next_check_id: KATHARINAPAULUS-2023
@@ -4152,7 +4152,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-07-08 vvv
+#: last_checked: 2026-07-29 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 3

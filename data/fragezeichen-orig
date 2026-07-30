@@ -768,12 +768,13 @@ Alt-Tempelhof/Schönburgstr.: Überquerungshilfe in Planung	?::projected 8961,6662
 #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/buendnis-fordert-radweg-und-organisiert-regelmaessige-demonstrationen_a436799
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10259 (Antrag)
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10354 (Anfrage)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/fahrradstreifen-oder-parkplatze-umgestaltungsplane-fur-berliner-hauptstrasse-vorerst-gescheitert-15885035.html
 #: XXX evtl. gibt's auch nur eine Busspur zwischen Hranitzkystr. und Friedenfelser Str. Richtung Süden, siehe pardok
 #: note: Januar 2025: es gibt eine provisorische Busspur Richtung Süden ab Hanielstr. bis Kurve sowie Richtung Norden ab Emilienstr. bis Bahnstr. (wurde mittlerweile wieder entfernt)
 #: osm_watch: way id="25415937" version="44"
 #: osm_watch: way id="30483116" version="21"
-#: last_checked: 2026-06-13
-#: check_frequency: 180d
+#: last_checked: 2026-07-27 (Tsp)
+#: check_frequency: 360d
 Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 8560,2181 8490,2084 8401,1938 8335,1806 8241,1617 8152,1425 8070,1261 8031,1172 7902,893
 # REMOVED (wahrscheinlich bleibt der Bürgersteigradweg hier) --- Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 7902,893 7884,851 7867,831
 # 
@@ -6082,6 +6083,7 @@ Schönhauser-Allee-Brücke: Neubau	?::projected 10969,15944 10975,16010
 #: by: https://entwicklungsstadt.de/berlins-bruecken-zwischen-abriss-und-neubau-10-projekte-im-ueberblick/ (Fertigstellung 2028)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/plan-fur-neubau-in-berlin-steht-der-clou-dieser-ringbahnbrucke-versteckt-sich-in-den-bogen-15261940.html
 #: by: https://www.entwicklungsstadt.de/umbau-der-schoenfliesser-bruecke-getrennte-wege-fuer-fuss-und-radverkehr-geplant/
+#: by: https://www.entwicklungsstadt.de/neue-schoenfliesser-bruecke-was-sich-fuer-den-kiez-in-prenzlauer-berg-aendern-wird/
 #: also_indoor: url https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/schoenfliesser-bruecke/
 #: note: während der Bauarbeiten bleibt die bestehende Brücke nutzbar
 # REMOVED --- #: next_check: 2024-12-31
@@ -7389,6 +7391,7 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: by: https://www.morgenpost.de/berlin/article411678465/wackelpartie-um-die-u6-fahren-die-u-bahnen-erst-wieder-2027.html
 #: by: https://www.morgenpost.de/bezirke/reinickendorf/article412125523/u6-wird-soll-fruehestens-2027-wieder-bis-alt-tegel-durchfahren.html
 #: by: https://www.entwicklungsstadt.de/dauerbaustelle-bei-der-bvg-wann-faehrt-die-u6-wieder-nach-alt-tegel/ (frühestens 2027)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/erneuerung-des-streckennetzes-u6-sanierung-im-berliner-norden-verzogert-sich-bis-sommer-2027-15897467.html (bis Mitte August 2027?)
 #: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Brückenneubau, bis 30.11.2022) (inaktiv)
 #: source_id: viz2021:13.307035,52.568102,23.02.2023,07:00 (Verschwenkung, bis 13.10.2023) (bis 31.03.2024) (bis 28.03.2024) (bis 31.03.2025) (bis 30.05.2025) (bis 12.06.2025) (bis 31.12.2025) (inaktiv)
 #: source_id[inactive]: bvg2021:u6#BVG311138_0
@@ -7404,7 +7407,8 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-03-20
 # REMOVED --- #: next_check: 2026-12-01 (berliner-zeitung (Ende 2026))
-#: next_check: 2027-03-15 (entwicklungsstadt, MoPo, berliner-zeitung)
+# REMOVED --- #: next_check: 2027-03-15 (entwicklungsstadt, MoPo, berliner-zeitung)
+#: next_check: 2027-08-14 (Tsp)
 Seidelstraßenbrücke: Bauarbeiten	?::inwork 3833,17929 3706,17931 3628,17935 3570,17938
 # 
 #: next_check_id: WOLTERSDORFSTOLPKANAL-2022
@@ -8314,6 +8318,7 @@ Gehrenseebrücke: Neubau vorgesehen, dann vermutlich mit Radwegen	?::projected 18
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~02-07-2025-l-233-in-hennickendorf
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~25-11-2025-b-1-bei-hennickendorf-wieder-frei
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~30-01-2026-b1l233-sperrung-des-abzweigs-zur-berliner-strasse-in-hennickendorf
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~23-07-2026-l233_hennickendorf_fertigstellung-strassenausbau-august-2026
 #: source_id: LS/221-F/24/173 (Vorbereitungsarbeiten, bis 31.12.2024) (bis 31.08.2026) (bis 11.04.2025) (bis 23.05.2025) (bis 04.07.2025) (bis 29.08.2025) (bis 31.10.2025) (bis 19.12.2025) (bis 17.04.2026) (bis 31.08.2026)
 #: source_id: LS/221-F/24/167 (bis 15.11.2024) (inaktiv) (bis 31.12.2024) (bis 31.08.2026) (bis 23.02.2026) (inaktiv) (bis 18.05.2026) (inaktiv)
 #: XXX die Landesstraße wird senkrecht auf die Bundesstraße stoßen, Zweirichtungsradweg auf der östlichen Seite
@@ -8321,7 +8326,7 @@ Gehrenseebrücke: Neubau vorgesehen, dann vermutlich mit Radwegen	?::projected 18
 #: osm_watch: note 4772361 1
 #: last_checked: 2024-10-12 (indoor)
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2026-08-31 (Verkehrsmeldung)
+#: next_check: 2026-08-31 (Verkehrsmeldung, ls.brandenburg site)
 Hennickendorf - B1/Rüdersdorf: Verlegung der Landesstraße, Bau eines Radweges	?::inwork 37644,9869 37621,9843
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=38261
@@ -8598,11 +8603,12 @@ Wublitz: Brückenneubau; alte Brücke wird zum Radweg	?::projected -19987,2459 -20
 #: by: https://www.zossen.de/buerger/meldungen/information-der-deutschen-bahn-bauarbeiten-am-bahnhof-zossen-und-eingeschraenkte-barrierefreiheit/
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden/infobauarbeiten ("2025" als Fertigstellungsjahr gestrichen, voraussichtlich bis 2027)
 #: by: https://www.entwicklungsstadt.de/ausbau-der-strecke-berlin-dresden-inbetriebnahme-verschiebt-sich-auf-2033/ (bis 2027)
+#: by: https://www.berlin-dresden.de/baustellen-tagebuch-reader/baufortschritte-am-bf-zossen-kopie.html
 #: add_fragezeichen: Ist die Fußgänger-Unterführung am Bahnhof Zossen fertiggestellt?
 #: XXX Wird diese Unterführung auch für Radfahrer befahrbar sein?
 #: XXX Anbindung an B96 (Bahnhofsplatz) fehlt bei BBBike noch.
 #: osm_watch: way id="1308462460" version="6"
-#: last_checked: 2026-02-16 (youtube)
+#: last_checked: 2026-07-30 (DB site)
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2027-09-30 (zossen.de website)
 Bhf. Zossen: neue Bahnunterführung	?::inwork 13391,-20703 13391,-20703 13460,-20702
@@ -8945,7 +8951,7 @@ Quartiersweg - Wilhelm-Kabus-Str.: geplanter Geh- und Radweg	?::projected 7639,7
 #: source_id: viz2021:13.575981,52.444348,28.10.2024,07:00 (vermutlich vorbereitende Gleisbauarbeiten in der Müggelheimer Str., bis 24.11.2024) (bis 08.12.2024) (bis 22.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:162#fe73d49a-2471-4d3b-a756-05ec6943ea49 (2024-11-25 - 2024-12-08)
 #: source_id[inactive]: bvg2024:162#dc4f3cec-5359-4dd3-937e-28db262a7b3f (bis 2025-01-13)
-#: source_id[inactive]: bvg2024:27#HIM_FREETEXT_307837 (Haltestellenverlegung ab 01.12.2025) (zwischenzeitlich entfernt, 4x)
+#: source_id: bvg2024:27#HIM_FREETEXT_307837 (Haltestellenverlegung ab 01.12.2025) (zwischenzeitlich entfernt, 4x)
 #: source_id: bvg2024:164#HIM_FREETEXT_307835 (-"-) (zwischenzeitlich entfernt, 2x)
 #: source_id: bvg2024:164#HIM_FREETEXT_307834 (-"-) (zwischenzeitlich entfernt, 2x)
 #: source_id: LMS-BR:400220/72 viz2021:13.5782,52.44641,27.02.2026,07:00 (Lüdersstr., möglicherweise nicht für den Radverkehr, bis 13.03.2026) (inaktiv)
@@ -9020,7 +9026,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1596791.php
-#: last_checked: 2026-07-27 vvv
+#: last_checked: 2026-07-30 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="563341820" version="24"
 #: note: zwischenzeitlich gar keine Einbahnstraßenregelung
@@ -9093,6 +9099,8 @@ Weserstr.: Einbahnstraße für Kfz in Vorbereitung	? 14475,11778 14550,11732
 #: by: https://www.entwicklungsstadt.de/jahnsportpark-ausbau-des-kleinen-stadions-fuer-hockey-geplant/
 #: by: https://www.entwicklungsstadt.de/wird-der-jahnsportpark-zur-hitzefalle-streit-um-die-sportwiese/
 #: by: https://www.entwicklungsstadt.de/naechster-schritt-fuer-den-jahnsportpark-drei-millionen-euro-fuer-neue-sportwiese/
+#: by: https://www.entwicklungsstadt.de/sportwiese-im-jahnsportpark-finanzierung-steht-doch-der-streit-waechst/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/jahn-sportpark-in-prenzlauer-berg-berliner-senat-druckt-beim-stadion-neubau-aufs-tempo-15890930.html
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: last_checked: 2026-06-18 vvv
@@ -9357,7 +9365,9 @@ Güstow - Prenzlau: Bau eines Radwegs	? 37047,101103 37211,101028 37577,100778
 #: by: https://www.schiene.de/news-9529/Bahnhof-Fangschleuse-soll-im-August-2026-in-Betrieb-gehen.html
 #: by: https://www.tagesspiegel.de/potsdam/brandenburg/einsteigen-bitte-bahnhof-fangschleuse-soll-im-august-2026-in-betrieb-gehen-14076101.html
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-10-2025-umgestaltung-der-l-23-am-bahnhof-fangschleuse (Sperrung der L23 ab Ende Juli 2026, Verkehrsfreigabe Dezember 2026)
-#: next_check: 2026-07-31 (ls brb website)
+#: osm_watch: way id="860486098" version="6"
+#: osm_watch: way id="1367158749" version="5"
+#: next_check: 2026-08-14 (osm change description)
 Bahnhof Fangschleuse: Verlegung des Bahnhofs, Bahnübergang wird durch eine Überführung ersetzt	?::inwork 39233,678 39153,615 39239,557
 # 
 #: by: https://www.schwedt.eu/de/189908 (957m, Realisierung 2026-2027)
@@ -9508,7 +9518,7 @@ Bad Belzig: Straßennamen? Qualität? Einbahnstraßen auch für Radfahrer gültig?	? 
 #: osm_watch: note 3954448 15
 #: osm_watch: note 3954746 4
 #: osm_watch: way id="195397561" version="23"
-#: last_checked: 2026-06-29
+#: last_checked: 2026-07-29 (mapillary)
 # REMOVED (während der Gleisbauarbeiten 30d) --- #: check_frequency: 14d
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (mobilitaetsrat)
@@ -9699,7 +9709,7 @@ Cecilienstr.: wird hier ein Zebrastreifen angelegt?	? 21956,13665 21918,13720 21
 #: by: https://www.morgenpost.de/berlin/article412653901/hufelandstrasse-wird-fahrradstrasse-neue-bauphase-startet-ende-juli.html
 #: osm_watch: way id="4615063" version="42"
 #: osm_watch: note 5010352 6
-#: last_checked: 2026-06-29
+#: last_checked: 2026-07-28 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2026-09-10 (planb)
 Hufelandstr.: Fahrradstraße geplant	?::projected 12077,14186 12228,14083 12361,13985 12478,13903 12582,13834 12578,13800
@@ -9863,6 +9873,7 @@ Berliner Str.: Radfahrstreifen in Mittellage, Grünbeschichtung	?::projected 5895
 # 
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neuer-eingang-neue-baume-und-sogar-wasser-das-ist-der-umbau-plan-fur-berlins-geheimste-mauer-oase-15286878.html (Baubeginn Ende 2026/Anfang 2027)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26195.pdf
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20260730 (Umgestaltung des Nassen Dreiecks, Baubeginn Juli 2026, Umbauarbeiten bis Ende 2028)
 #: XXX außerdem werden die bestehenden Pfade befestigt
 #: last_checked: 2026-04-01 (mapillary)
 #: next_check: 2027-01-01 (Tsp)
@@ -10012,7 +10023,7 @@ Thomasiusstr. - Wilsnacker Str.: Fahrradstraße soll realisiert werden	?::project
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksamt/protokolle/2026/2026-01-27_325_532_s_bhf_zehlendorf_top-01pdf.pdf (Sanierung erst 2030?)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksamt/protokolle/2026/2026-02-17_ba_766_1209_baumassnahmen_s_bhf_zldf_top-07pdf.pdf
 #: also_indoor: url https://bauprojekte.deutschebahn.com/p/berlin-zehlendorf/infobauarbeiten
-#: XXX Sperrung des östlichen Personentunnels (ist auch der Radverkehr betroffen?): ab 14. September 2026
+#: XXX Sperrung des östlichen Personentunnels (ist auch der Radverkehr betroffen?): ab 11. September 2026
 #: XXX Sperrung des Teltower Damms: 24. bis 26. Oktober 2026 +  1. bis 2. November 2026
 #: last_checked: 2026-04-22 (mapillary)
 #: check_frequency: 720d
@@ -10025,7 +10036,7 @@ S-Bhf. Zehlendorf, Neubau der Eisenbahnüberführung: mögliche bauzeitliche Einsch
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1693776.php (Fahrbahnsanierungsarbeiten bis 31.12.2026, keine Einschränkungen für den Radverkehr)
 #: by: https://viz.berlin.de/aktuelle-meldungen/fahrbahnsanierung-an-der-schlossstrasse-in-charlottenburg/ (bis 31.07.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrm3dppct226
-#: source_id: bvg2024:309#HIM_FREETEXT_349190 (Umleitung) (bis 2026-08-15)
+#: source_id[inactive]: bvg2024:309#HIM_FREETEXT_349190 (Umleitung) (bis 2026-08-15) (vorfristig inaktiv)
 #: source_id: LMS-BR:416445/72 viz2021:13.29705,52.51343,20.07.2026,07:00 (bis 28.07.2026) (inaktiv)
 #: source_id: planb2026:13.29706087,52.51041564,20.07.2026,00:00 ("Fahrstreifen-Reduzierung", bis 04.08.2026) (inaktiv)
 #: source_id: LMS-BR:417241/72 viz2021:13.29572,52.51949,27.07.2026,07:00 (bis 31.07.2026)
@@ -12320,7 +12331,7 @@ Arnimstr.: hier soll eine Grünfläche entstehen	?::projected 18472,16844 18267,17
 #: last_checked: 2026-06-10 vvv
 #: check_frequency: 270d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
-#: osm_watch: way id="44606576" version="26"
+# REMOVED (deleted) --- #: osm_watch: way id="44606576" version="26"
 # REMOVED --- Bebauungsplan XV-11 (Hasselwerderstr....): Planstraßen sowie ein Uferweg werden entstehen	?::projected 17968,5904 18213,5783
 # REMOVED (-> strassen + temp_blockings) --- (Uferweg)	?::inwork 18192,5931 18118,5953
 #: osm_watch: way id="958828369" version="2"

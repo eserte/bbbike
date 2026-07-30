@@ -31,7 +31,7 @@
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
 #: source_id: planb2026:13.46470153,52.51022419,02.12.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
-#: last_checked: 2026-07-27
+#: last_checked: 2026-07-30
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2026-08-31 (planb)
 # REMOVED --- #: valid: -20250630
@@ -690,7 +690,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: also_indoor: traffic
 #: source_id: planb2026:13.39082309,52.51741878,25.07.2023, ("Sicherung gem‰ﬂ Vz.-plan", bis 31.12.2026)
 #: priority: #B vvv
-#: last_checked: 2026-06-29 vvv
+#: last_checked: 2026-07-29 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt, planb) vvv
 #: osm_watch: way id="153698394" version="19"
@@ -1239,13 +1239,13 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
 (Allee der Kosmonauten/Rhinstr. - am Marzahn-Hohenschˆnhauser Grenzgraben): Fuﬂg‰nger, Bordsteine	q3- 18226,13506 18178,13495 18153,13464 18091,13461 18088,13494 18065,13496
 # 
-#: also_indoor: traffic (G,no-T,no-H,no-W)
-#: source_id: planb2026:13.48262603,52.51414893,11.05.2026,06:00 (hier nur "Fahrbahneinengung", bis 30.07.2026)
-#: last_checked: 2026-07-22
-#: check_frequency: 14d (traffic)
-#: next_check: 2026-07-30 (Halteverbotsschilder, planb)
-#: valid: -20260730
-Rathausstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 15670,12022 15685,12154
+# REMOVED --- #: also_indoor: traffic (ex-G,no-T,no-H,no-W)
+# REMOVED --- #: source_id: planb2026:13.48262603,52.51414893,11.05.2026,06:00 (hier nur "Fahrbahneinengung", bis 30.07.2026)
+# REMOVED --- #: last_checked: 2026-07-30 (traffic)
+# REMOVED --- #: check_frequency: 14d (traffic)
+# REMOVED --- #: next_check: 2026-07-30 (Halteverbotsschilder, planb)
+# REMOVED --- #: valid: -20260730
+# REMOVED --- Rathausstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 15670,12022 15685,12154
 # 
 #: next_check_id: WEISSETAUBE-2025
 #: last_checked: 2026-07-22

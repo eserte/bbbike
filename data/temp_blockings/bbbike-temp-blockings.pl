@@ -38237,26 +38237,27 @@ EOF
 #: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023) (bis 30.9.2023) (bis 31.12.2023) (bis 01.04.2024) (bis 31.05.2024) (bis 31.08.2024) (bis 29.08.2025) (inaktiv)
 #: source_id: adac:1081908618 (Bahnhofstr., bis voraussichtlich 01.03.2026) (neue ID -> inaktiv)
 #: source_id: adac:1089346904 (Goltzstr., bis voraussichtlich 31.03.2026) (neue ID -> inaktiv)
-#: source_id: LMS-BR:376495/72 viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026) (bis 18.05.2026) (bis 31.12.2026)
-#: source_id: LMS-BR:392668/72 viz2021:13.40504,52.38669,09.12.2025,00:00 (Mellener Str. (nicht eingetragen), bis 18.05.2026) (bis 31.12.2026)
+#: source_id: LMS-BR:376495/72 viz2021:13.40071,52.38669,16.07.2025,07:00 (bis 01.03.2026) (bis 18.05.2026) (bis 31.12.2026) (bis 28.06.2030)
+#: source_id: LMS-BR:392668/72 viz2021:13.40504,52.38669,09.12.2025,00:00 (Mellener Str. (nicht eingetragen), bis 18.05.2026) (bis 31.12.2026) (nun eingetragen, bis 31.12.2027)
 #: source_id[inactive]: bvg2024:m76#HIM_FREETEXT_292859
 #: source_id: bvg2024:m76#HIM_FREETEXT_328938
+#: source_id: planb2026:13.40051363,52.38316265,03.06.2024, ("Sperrung einer Fahrtrichtung", bis 31.12.2027)
 # REMOVED (vorfristig entfernt) --- #: source_id: planb2026:268 (bis 31.12.2027)
 #: also_indoor: traffic (G,T,H,W[teilweise])
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
 #: XXX die südliche Mellener Str. wird ab dem 3.8.2026 abgehängt
-#: last_checked: 2026-06-13 vvv
+#: last_checked: 2026-07-30 (VIZ-Verkehrsmeldung) vvv
 #: check_frequency: 60d (traffic) vvv
-# REMOVED --- #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
-#: next_check: 2026-08-02 (Mellener Str. wird gesperrt -> eintragen!) vvv
+#: next_check: 2027-12-31 (planb) vvv
 Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
-# REMOVED (nun mit Freigabe für Radfahrer) --- #: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025) (bis 31.03.2026) (inaktiv) --- #: source_id: LMS-BR:376498/72 viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026) (bis 18.05.2026) (bis 31.12.2026) --- #: note: an der Bahnhofstr. keine Freigabe für Radfahrer, allerdings ab Mellener Str. Richtung Goltzstr. mit Einbahnstraße, Radfahrer beide Richtungen ausgeschildert?! --- Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
+# REMOVED (nun mit Freigabe für Radfahrer) --- #: source_id: viz2021:13.40978,52.38751, (Goltzstr. (alter vergessener Eintrag?), bis 29.08.2025) (bis 31.03.2026) (inaktiv) (bis 28.06.2030) --- #: source_id: LMS-BR:376498/72 viz2021:13.408003,52.386648,16.07.2025,07:00 (Goltzstr., bis 31.03.2026) (bis 18.05.2026) (bis 31.12.2026) --- #: note: an der Bahnhofstr. keine Freigabe für Radfahrer, allerdings ab Mellener Str. Richtung Goltzstr. mit Einbahnstraße, Radfahrer beide Richtungen ausgeschildert?! --- Goltzstr.	q3::inwork; 10983,-2116 10763,-2276
 #: note: laut az-lichtenrade (15. April 2026): Bauarbeiten an der Zescher Straße verzögern sich
 Zescher Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10509,-2128 10513,-2397
 Rehagener Str.: Zufahrt zur Bahnhofstr. nicht möglich	q3::inwork 10631,-2130 10642,-2371
+Mellener Str.	q4::inwork 10756,-2128 10763,-2276
 # 
-# REMOVED (mittlerweile freigegeben?) --- #: source_id: LMS-BR:392667/72 viz2021:13.40053,52.38317,09.12.2025,00:00 (bis 18.05.2026) (bis 31.12.2026)
+# REMOVED (mittlerweile freigegeben?) --- #: source_id: LMS-BR:392667/72 viz2021:13.40053,52.38317,09.12.2025,00:00 (bis 18.05.2026) (bis 31.12.2026) (bis 28.06.2030)
 # REMOVED --- #: note: laut Umleitungsplan (hier: keine Aushname für Radfahrer)
 # REMOVED --- #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9973 (Antrag: Freigabe für Radverkehr)
 # REMOVED --- #: by: https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/?date=20260407 (Freigabe für Radverkehr nach den Osterfeiertagen)
@@ -40317,18 +40318,20 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-07-19 00:00:00"), # 1680148800, # 2023-03-30 06:00
-       until => $isodate2epoch->("2026-07-31 23:59:59"), # 1680548425, # 1682719140, # 2023-04-28 23:59
+       until => $isodate2epoch->("2026-08-20 23:59:59"), # $isodate2epoch->("2026-07-31 23:59:59"), # 1680548425, # 1682719140, # 2023-04-28 23:59
 #      text  => 'Crailsheimer Str.: Bauarbeiten, zwischen Steglitzer Damm und Schünemannweg gesperrt, evtl. sind auch Radfahrer betroffen, vom 31.03.2023 06:00 bis 28.04.2023 23:59',
-       text  => 'Crailsheimer Str.: Bauarbeiten, Sperrung,, vom 20.07.2026 bis 31.07.2026',
+#      text  => 'Crailsheimer Str.: Bauarbeiten, Sperrung, vom 20.07.2026 bis 31.07.2026',
+       text  => 'Crailsheimer Str.: Bauarbeiten, Sperrung, vom 20.07.2026 bis 20.08.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: CRAILSHEIMER-2026
 #: source_id: viz2021:13.354875,52.448856,31.03.2023,06:00 (inaktiv)
 #: source_id: viz2021:13.353735,52.447456,31.03.2023,06:00 (bis 28.04.2023, nur eine Richtung gesperrt, und nur Kfz-Verkehr) (inaktiv)
-#: source_id: LMS-BR:416736/72 viz2021:13.35492,52.44891, (bis 31.07.2026)
+#: source_id: LMS-BR:416736/72 viz2021:13.35492,52.44891, (bis 31.07.2026) (bis 20.08.2026)
 #: source_id: planb2026:13.35395568,52.44460453,20.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.07.2026)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1692148.php (Sperrung im Juli 2026)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1693246.php (bleibt die Einbahnstraße dauerhaft bestehen? auch für den Radverkehr?)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1698730.php (Verlängerung bis zum 20.08.2026)
 	q4::inwork 7205,4741 7166,4643 7118,4540 7115,4505 7127,4441 7138,4379 7143,4350 7171,4200
 EOF
      },
@@ -42759,6 +42762,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="977478749" version="1"
 # aktuelles Bauvorhaben (Botschaft von Bangladesh)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-botschaft-bangladesh-tiergartenstr-neben-canisius-kolleg.1197/#post-24583
+#: source_id: planb2026:13.35625607,52.50931328,03.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 29.08.2026)
 #: osm_watch: way id="46886611" version="11"
 #: also_indoor: traffic (ex-G,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
@@ -42766,6 +42770,7 @@ EOF
 #: note: offiziell gesperrt, Absperrungen können aber weggeschoben sein
 #: last_checked: 2026-05-26 (daf)
 #: check_frequency: 120d
+#: next_check: 2026-08-29 (planb)
 	q3::inwork 7103,11247 7171,11510
 EOF
      },
@@ -44730,7 +44735,7 @@ EOF
 #: source_id: viz2021:13.61963,52.52253,29.04.2025,14:27 (bis 11.06.2025) (inaktiv)
 #: source_id: viz2021:13.620312,52.523169,16.06.2025,10:00 (nach Norden gewandert, bis 04.07.2025) (inaktiv)
 #: source_id: viz2021:13.61963,52.52253,16.06.2025,10:00 (bis 04.07.2025) (inaktiv)
-#: source_id: LMS-BR:414866/72 viz2021:13.62349,52.52659,06.07.2026,07:00 (bis 31.07.2026)
+#: source_id: LMS-BR:414866/72 viz2021:13.62349,52.52659,06.07.2026,07:00 (Eintrag nicht wieder aktiviert!) (bis 31.07.2026) (bis 01.10.2026)
 #: source_id: bvg2024:195#HIM_FREETEXT_348349
 #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1783368339747946939
 #: by: https://pbs.twimg.com/media/GL8M0sRXMAEUDYY?format=jpg&name=large
@@ -45428,6 +45433,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigidihkfou4dn74k7bo4az24iuh4va3us6s3zms2p6euiz2ccsal4
 #: by: https://www.entwicklungsstadt.de/reinickendorf-studentenwohnheim-roedernallee-118-fast-fertig/
 #: by: https://www.entwicklungsstadt.de/wohnungen-fuer-studierende-und-azubis-gesocampus-in-alt-wittenau-vor-dem-start/
+#: by: https://www.entwicklungsstadt.de/roedernallee-in-reinickendorf-neuer-supermarkt-ergaenzt-wohnprojekt-fuer-studierende/
 # REMOVED --- #: last_checked: 2026-03-24 (traffic) --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung)
 #	q3::inwork; 5476,20372 5801,20339
@@ -48043,7 +48049,8 @@ EOF
 #      text  => 'Alt-Köpenick: Bauarbeiten, Fahrbahn zwischen Rosenstr. und Müggelheimer Str. gesperrt, geplant bis November 2025',
 #      text  => 'Alt-Köpenick: Bauarbeiten, Anbindung in Höhe Freiheit gesperrt, voraussichtlich bis zum 13.10.2025',
 #      text  => 'Alt-Köpenick: Bauarbeiten, Anbindung in Höhe Freiheit gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Kietzer Str./Kirchstr. und angrenzende Straßen: Gleisbauarbeiten, Fahrbahn vermutlich gesperrt, voraussichtlich bis Ende August 2026',
+#      text  => 'Kietzer Str./Kirchstr. und angrenzende Straßen: Gleisbauarbeiten, Fahrbahn vermutlich gesperrt, voraussichtlich bis Ende August 2026',
+       text  => 'Kietzer Str./Kirchstr. und angrenzende Straßen: Gleisbauarbeiten, Fahrbahn vermutlich gesperrt, voraussichtlich bis Februar 2027',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ALTSTADTKOEPENICK-2024
@@ -48054,7 +48061,8 @@ EOF
 #: source_id[inactive]: bvg2024:27#c4665bb0-4cbf-4252-b27d-22d10c7f05aa (erweiterter Ersatzverkehr ab S-Bhf. Köpenick, kein Endedatum)
 #: source_id: bvg2024:27#adb66544-e4cc-439f-b123-db70487f427b (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
-#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026) (bis 22.04.2026) (bis 29.06.2026) (bis 2.9.2026)
+#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026) (bis 22.04.2026) (bis 29.06.2026) (bis 02.09.2026)
+#: source_id: planb2026:13.57888323,52.44737601,01.12.2025, ("Vollsperrung beider Fahrbahnen", bis 24.08.2026) (bis 03.02.2027)
 #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
 #: note: einige Halteverbotsschilder bis 15.12.2025, andere ohne Endedatum
 # REMOVED --- #: last_checked: 2025-08-25 (bahninfo-forum) vvv --- #: check_frequency: 45d vvv
@@ -48069,7 +48077,7 @@ EOF
 #: also_indoor: traffic (G,T,H,A,W)
 #: last_checked: 2026-07-18 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-02-03 (planb) vvv
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
 # REMOVED (hier Sackgasse) --- Kietzer Str. - Kirchstr.	q4::inwork 22246,4711 22240,4768 22196,4847
 Jägerstr.: Fahrbahn gesperrt	q4::inwork 22314,4604 22355,4660
@@ -50267,7 +50275,7 @@ EOF
 #: source_id: viz2021:13.33433,52.49857,09.07.2025,07:00 (bis 02.10.2025) (inaktiv)
 #: source_id: LMS-BR:389003/72 viz2021:13.33078,52.49955,05.11.2025,07:00 (bis 19.12.2025) (inaktiv)
 #: source_id: planb2026:13.33429053,52.49865687,05.11.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.07.2026)
-#: also_indoor: traffic (ex-T,G[massiv verkleinert])
+#: also_indoor: traffic (ex-T,ex-G[massiv verkleinert])
 #: last_checked: 2026-07-19
 #: next_check: 2026-07-31 (planb)
 	q4::inwork 5597,10299 5450,10338
@@ -50661,10 +50669,10 @@ EOF
 EOF
      },
      { from  => 1755406800, # 2025-08-17 07:00
-       until => $isodate2epoch->("2026-07-31 23:59:59"), # 1772298000, # 2026-02-28 18:00
+       until => undef, # $isodate2epoch->("2026-07-31 23:59:59"), # 1772298000, # 2026-02-28 18:00
 #      text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung, außerdem Baustelleneinrichtungsfläche in der Kolmarer Str., evtl. sind auch Radfahrer betroffen, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
 #      text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, vom 18.08.2025 07:00 bis 28.02.2026 18:00',
-       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, bis Ende Juli 2026',
+       text  => 'Sredzkistr.: Bauarbeiten zwischen Knaackstr. und Kollwitzstr., Sperrung der Fahrbahn, geplant bis Ende Juli 2026, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:380370/72 viz2021:13.41764,52.53833,18.08.2025,07:00 viz2021:13.41764,52.53833, (östlich Husemannstr., bis 28.02.2026) (bis 29.05.2026) (bis 30.06.2026) (inaktiv)
@@ -51665,9 +51673,12 @@ EOF
 #: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026) (bis 06.07.2026) (bis 21.08.2026) (bis 13.11.2026)
 #: source_id: bvg2024:156#HIM_FREETEXT_303396 (zwischenzeitlich entfernt)
 #: source_id: planb2026:13.45429623,52.56206157,20.10.2025,06:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026)
+#: source_id: planb2026:13.45430719,52.56206198,03.08.2026,06:00 ("Sperrung einer Fahrtrichtung", Verlängerung der Sperrung bis Große Seestr.? 03.08.2026 bis 13.11.2026)
 Amalienstr.: Einbahnstraßenregelung	q4::inwork; 13342,17180 13581,16968
 Wigandstaler Str.: Einfahrt verboten	q3::inwork; 12910,17123 13037,16957
 Gäblerstr.: Anbindung gesperrt	q4::inwork 13057,17120 13129,17024
+#: XXX Verlängerung der Einbahnstraßenregelung?
+#: next_check: 2026-08-03
 Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprigen Gehweg erlaubt	q2::inwork; 13037,16957 13129,17024 13150,17039 13342,17180
 EOF
      },
@@ -51843,7 +51854,7 @@ EOF
 #: source_id: planb2026:13.40286546,52.52137057,08.09.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 28.08.2026)
 #: also_indoor: traffic (none)
 #: note: zurzeit noch Absperrung mit nur etwa 50m Länge, evtl. Baustelleneinrichtungsfläche für die angrenzende Spandauer Str.; noch immer Einbahnstraße
-#: last_checked: 2026-07-25 (mapillary)
+#: last_checked: 2026-07-28 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2028-08-28 (planb)
 	q4::inwork; 10308,12859 10260,12831 10166,12777
@@ -52440,6 +52451,7 @@ EOF
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-05-2026-b102-ragwegsanierung-zwischen-moegelin-und-rathenow
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-06-2026-b102-zwischen-premnitz-und-rathenow
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~08-07-2026-b102-moeglin_radwegsanierung-entlang-b102
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~25-07-2026-radwegsanierung-entlang-der-b-102-abschliessende-arbeiten-bis-mitte-august
 #: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026) (mittlerweile Umleitungsstrecke für Pkw) (vorfristig inaktiv) (bis 17.07.2026) (inaktiv)
 #: source_id: LS/223-P/26/029 (bis 31.08.2026)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
@@ -52918,7 +52930,7 @@ EOF
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: source_id: planb2026:13.42572037,52.53418373,31.03.2025, ("Fahrbahneinengung", bis 01.10.2026)
 #: XXX: Laut Baustellenschild der Wasserbetriebe bis 9/2026
-#: last_checked: 2026-07-08
+#: last_checked: 2026-07-28 (mapillary)
 #: check_frequency: 30d (traffic)
 #: next_check: 2026-09-30
 	q4::inwork; 11821,14317 12077,14186
@@ -53512,7 +53524,7 @@ EOF
 #: XXX Oder sind die Bauarbeiten nun zur Brauerstr. gewandert?
 #: source_id: planb2026:13.32567635,52.42505107,09.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.07.2026) (inaktiv)
 #: source_id: planb2026:13.3249997,52.42487496,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", unklar, ist als "Brauerstr." bezeichnet; bis 04.12.2026)
-#: last_checked: 2026-07-27 (traffic)
+#: last_checked: 2026-07-30 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-07-24 (planb)
 	q4::inwork 5220,2030 5277,2054 5376,2097
@@ -53588,12 +53600,14 @@ EOF
 EOF
      },
      { from  => 1779660000, # 2026-05-25 00:00
-       until => 1788213599, # 2026-08-31 23:59
-       text  => 'Steinhöfel - Heinersdorf: Deckenerneuerung, Sperrung, vom 26. Mai 2026 bis voraussichtlich 31. August 2026',
+       until => $isodate2epoch->("2026-09-30 23:59:59"), # 1788213599, # 2026-08-31 23:59
+#      text  => 'Steinhöfel - Heinersdorf: Deckenerneuerung, Sperrung, vom 26. Mai 2026 bis voraussichtlich 31. August 2026',
+       text  => 'Steinhöfel - Heinersdorf: Deckenerneuerung, Sperrung, vom 26. Mai 2026 bis voraussichtlich September 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-05-2026-l36-zw-steinhoefel-und-heinersdorf
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%2036%20Steinh%C3%B6fel%20-%20Knotenpunkt%20B%205%20Deckenerneuerung%20Karte%2013-05-26-1.pdf
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~25-07-2026-l36_bauende-zwischen-steinhoefel-und-heinersdorf-ende-s09_2026 (Bauende Ende September 2026)
 #: source_id: LS/221-F/26/068 (bis 31.08.2026)
 #: next_check: 2026-07-31 vvv
 ##: note: 1. BA: Ende Mai bis Ende Juni 2026
@@ -53602,9 +53616,9 @@ EOF
 #: note: 2. BA: Ende Juni bis Ende Juli 2026
 #: valid: 20260630-20260731
 Abzweig Tempelberg - Abzweig Hasenwinkel: 2. BA	2::inwork 63733,4724 63615,3868 63284,3141
-##: note: 3. BA: Ende Juli bis Ende August 2026
-##: valid: 20260731-20260831
-#Abzweig Hasenwinkel - Steinhöfel: 3. BA	2::inwork 63284,3141 62739,2290 62537,1608 62452,935 62379,435
+##: note: 3. BA: Ende Juli bis Ende August 2026; mittlerweile: Anfang August bis Ende September 2026
+#: valid: 20260803-20260930
+Abzweig Hasenwinkel - Steinhöfel: 3. BA	2::inwork 63284,3141 62739,2290 62537,1608 62452,935 62379,435
 #: next_check ^^^
 EOF
      },
@@ -53681,9 +53695,10 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:407959/72 viz2021:13.38521,52.49849,12.05.2026,00:00 (bis 19.07.2026) (bis 31.08.2026)
+#: source_id: planb2026:13.38513648,52.49840133,30.04.2026, (bis 31.08.2026) (vorfristig inaktiv)
 #: note: der gesperrte Abschnitt ist schätzungsweise 100m lang, keine Ausnahmen für Radfahrer
 #: priority: #A
-#: last_checked: 2026-07-19
+#: last_checked: 2026-07-29 (mapillary)
 #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
 	q4::inwork; 9146,10284 9111,10090
 EOF
@@ -53727,7 +53742,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mn7cdyvouc2p
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-6-mobilitaetsrat.pdf (hier: bis voraus. Sept. 2026)
-#: source_id: bvg2024:m44#HIM_FREETEXT_339877
+#: source_id[inactive]: bvg2024:m44#HIM_FREETEXT_339877
 #: source_id: LMS-BR:410364/72 viz2021:13.43815,52.41747,01.06.2026,07:00 (bis 31.07.2026) (inaktiv)
 #: source_id: planb2026:13.43818953,52.41757202,26.05.2026,06:30 ("Sperrung einer Fahrtrichtung", bis 31.07.2026)
 #: traffic_note: Ausweichverkehr Richtung Norden über Heideläuferweg mit Stauungen vor der Ampel Buckower Damm
@@ -54041,7 +54056,7 @@ Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1785436682, # undef, # XXX
 #      text  => 'Teterower Ring/Tollensestr.: Wasserrohrbruch, Sperrung der Kreuzung, Ende der Bauarbeiten unbekannt',
        text  => 'Teterower Ring/Tollensestr.: Wasserrohrbruch, Sperrung der Kreuzung, Ende der Bauarbeiten voraussichtlich im Juli 2026',
        type  => 'handicap',
@@ -54049,26 +54064,25 @@ EOF
 #: by: https://marzahn-hellersdorf.com/wasserrohrbruch-in-kaulsdorf-nord-kreuzung-teterower-ring-tollensestrasse-weiter-gesperrt/
 #: by: https://marzahn-hellersdorf.com/update-rohrreparatur-an-der-tollensestrasse-startet-strassensanierung-an-der-kreuzung-dauert-bis-in-den-juli/ (ab 15.6.2026: zwei Wochen + x)
 #: source_id: planb2026:13.58344295,52.5238279,15.06.2026,07:00 (bis 24.07.2026) (inaktiv)
-#: also_indoor: traffic (G,ex-T,no-H,no-W)
-#: last_checked: 2026-07-27 (traffic) vvv
-#: check_frequency: 3d (traffic) vvv
+#: also_indoor: traffic (ex-G,ex-T,no-H,no-W)
+# REMOVED --- #: last_checked: 2026-07-27 (traffic) vvv --- #: check_frequency: 3d (traffic) vvv
 # REMOVED --- #: next_check: 2026-07-24 (planb) vvv
 	q4::inwork 22403,13403 22563,13340 22527,13232
 	q4::inwork 22717,13278 22563,13340 22594,13408
 # REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1774821600, # 2026-03-30 00:00
        until => 1787954400, # 2026-08-29 00:00
-       text  => 'Preysingstr.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 28.08.2026',
+       text  => 'Preysingstr.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis 28.08.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3miau3c4yn22y (hier nur Kfz-Verkehr)
 #: source_id: LMS-BR:403317/72 viz2021:13.35962,52.4251,30.03.2026,07:00 (bis 15.05.2026) (bis 05.06.2026) (bis 13.06.2026) (bis 28.08.2026)
-#: source_id: planb2026:13.36027271,52.42520734,30.03.2026, ("Vollsperrung beider Fahrbahnen", bis 31.07.2026)
-#: next_check: 2026-07-31 (planb (kürzer als bei VIZ))
+#: source_id: planb2026:13.36027271,52.42520734,30.03.2026, ("Vollsperrung beider Fahrbahnen", bis 31.07.2026) (vorfristig inaktiv)
+# REMOVED --- #: next_check: 2026-07-31 (planb (kürzer als bei VIZ))
+#: next_check: 2026-08-28 (VIZ-Verkehrsmeldung)
 Preysingstr.	q4::inwork 7721,2137 7650,2112 7581,2092
 EOF
      },
@@ -54590,6 +54604,7 @@ EOF
        text  => 'Schmölln - Grünz: Erneuerung Durchlass, Sperrung, 03.08.2026 06:00 Uhr bis 18.12.2026 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-07-2026-l25_zw-schmoelln-und-gruenz_ersatzneubau-durchlass-ueber-die-randow
 #: source_id: LS/221-E/26/072 (bis 18.12.2026)
 	2::inwork 57042,99574 57512,99290
 EOF
@@ -54779,6 +54794,42 @@ EOF
 #: source_id: LMS-BR:417239/72 viz2021:13.26379,52.48603,27.07.2026,07:00 (bis 31.03.2027)
 #: source_id: planb2026:13.26362055,52.48600691,27.07.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.03.2027)
 	q4::inwork; 926,8752 759,8712
+EOF
+     },
+     { from  => $isodate2epoch->("2026-05-26 00:00:00"),
+       until => $isodate2epoch->("2026-09-30 17:00:00"),
+       text  => 'Wehnertstr.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 30.09.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (T,G)
+#: source_id: planb2026:13.37772529,52.4176902,26.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026)
+	q4::inwork 8827,1289 8822,1238
+EOF
+     },
+     { from  => $isodate2epoch->("2026-07-30 00:00:00"),
+       until => undef,
+       text  => 'Manetstr.: Gasaustritt, Sperrung der Straße, evtl. ist auch der Radverkehr betroffen',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.tagesspiegel.de/berlin/strassensperrung-und-tram-umleitung-gasleitung-in-berlin-lichtenberg-bei-bauarbeiten-beschadigt-15899632.html
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrutcn2mlc2o
+#: source_id: LMS-BR:417708/72 viz2021:13.49374,52.54476,
+#: also_indoor: traffic (T,G)
+#: last_checked: 2026-07-30 (VIZ, Tsp, traffic)
+#: check_frequency: 3d
+Manetstr.	2::inwork 16251,15629 16412,15559
+# REMOVED (hier nicht mehr) --- Konrad-Wolf-Str.: Leitungsbauarbeiten, mögliche Sperrung der Straße, auch für Radfahrer?	? 16497,15636 16445,15590 16412,15559 16386,15536 16356,15508 16331,15486 16263,15427 16218,15386
+EOF
+     },
+     { from  => $isodate2epoch->("2026-07-30 00:00:00"),
+       until => $isodate2epoch->("2026-08-06 23:59:59"),
+       text  => 'Straße der Pariser Kommune: unter den Bahnbrücken Wasserrohrbruch, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 06.08.2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mru7mnwbis2c (bis voraussichtlich 06.08.2026)
+#: source_id: LMS-BR:417655/72 viz2021:13.435584,52.509123, (bis 06.08.2026)
+#: also_indoor: traffic (T,no-G)
+Straße der Pariser Kommune: unter den Bahnbrücken Wasserrohrbruch, Sperrung, auch für Radfahrer?	2::inwork 12645,11673 12543,11521
 EOF
      },
     );
