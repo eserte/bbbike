@@ -4192,7 +4192,7 @@ Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119
 # 
 #: source_id: LMS-BR:410555/72 viz2021:13.37994,52.52093, (bis 21.12.2028)
 #: XXX Es gibt zwar eine offizielle Umleitungsstrecke auch für Radfahrer zur Margarete-Steffin-Str., aber diese führt über eine Wiese (!)
-#: last_checked: 2026-07-02
+#: last_checked: 2026-07-31
 #: check_frequency: 120d
 #: next_check: 2028-12-21
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12780
@@ -4694,42 +4694,6 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 #: next_check: 2026-12-31 (planb)
 Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 # 
-#: next_check_id: AMWIEZENERBAHNHOF-2024
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
-#: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
-#: by: https://www.deutsches-architekturforum.de/thread/3986-bauprojekte-am-wriezener-bahnhof-friedrichshain/?postID=767122#post767122
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Grundstücksnummerierungen)
-#: by: https://edge.tech/de/buildings/edge-friedrichspark-berlin (Fertigstellung Q1 2026)
-#: by: https://edge.tech/portfolio/friedrichspark (Fertigstellung weiterhin Q1 2026)
-#: by: https://entwicklungsstadt.de/neubauprojekt-an-der-strasse-der-pariser-kommune-nach-abriss-des-plattenbaus-startet-das-bauvorhaben/
-#: by: https://entwicklungsstadt.de/buerokomplex-edge-friedrichspark-installation-der-fassade-beginnt/
-#: by: https://entwicklungsstadt.de/friedrichshain-kreuzberg-fuenf-stadtentwicklungsprojekte-im-ueberblick/
-#: by: https://entwicklungsstadt.de/edge-friedrichspark-markante-fassade-praegt-neuen-buerokomplex-in-friedrichshain/
-#: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-so-soll-der-neubau-in-friedrichshain-aussehen/
-#: by: https://www.entwicklungsstadt.de/baustellen-update-am-ostbahnhof-edge-friedrichspark-nimmt-gestalt-an/ (im Laufe des Jahres 2026 bezugsfertig)
-#: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-b-yard-baustelle-im-ueberblick/ ("B.YARD", Fertigstellung: Ende 2027/Anfang 2028)
-#: by: https://www.entwicklungsstadt.de/edge-friedrichspark-am-ostbahnhof-commerzbank-wird-ankermieter/
-#: by: https://www.entwicklungsstadt.de/b-yard-im-bau-60-wohnungen-und-kulturflaechen-entstehen-am-ostbahnhof/
-#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/90-millionen-projekt-in-berlin-riesiges-burogebaude-entsteht-am-ostbahnhof-15791460.html
-#: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
-#: also_indoor: traffic (B)
-#: osm_watch: way id="1120450475" version="6"
-#: osm_watch: note 4180739 2
-#: source_id: planb2026:13.44213814,52.51076044,05.01.2026,06:00 ("Gehwegvollsperrung", Wriezener Karree, bis 30.07.2026)
-#: source_id: planb2026:13.43879907,52.51156593,14.04.2026, ("Fahrstreifen-Verschwenkung", Straße der Pariser Kommune, bis 31.03.2028)
-#: last_checked: 2026-07-07 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2026-07-30 (planb) vvv
-# REMOVED --- #: next_check: 2028-03-31 (entwicklungsstadt, planb) vvv
-#: osm_watch: way id="1054783030" version="9"
-Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q3:inwork 12758,11915 12788,11898
-Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q4:inwork 12788,11898 12944,11760 12993,11717 12986,11699 12959,11631
-#: osm_watch: way id="154381294" version="22"
-Wriezener Karree: Einbahnstraßenregelung	1s:q4:inwork 12959,11631 12728,11850
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
 # REMOVED --- #: next_check_id: ALTFRIEDRICHSFELDE-2024 --- #: last_checked: 2024-08-08 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2024-08-31 --- #: valid: -20240831 --- Alt-Friedrichsfelde: Sperrung des Radwegs	1::inwork 19389,11761 19092,11776 19004,11780 18853,11780
 # 
 #: next_check_id: VIRCHOW-2023
@@ -5132,7 +5096,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: osm_watch: way id="945966258" version="3"
 #: osm_watch[closed]: note 5077509 1
 #: also_indoor: traffic (ex-H,ex-G,ex-B[alle falsch])
-#: last_checked: 2026-07-02
+#: last_checked: 2026-07-31
 #: check_frequency: 120d
 #: next_check: 2026-09-30 (Baustellenschild)
 # REMOVED --- Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -5145,7 +5109,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: source_id: planb2026:13.43551948,52.50901002,01.04.2026, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
-#: last_checked: 2026-07-16
+#: last_checked: 2026-07-31
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (Tsp, planb)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673

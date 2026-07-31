@@ -1101,9 +1101,10 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauersperrung-uber-hunderte-meter-millionen-radstreifen-in-der-schonhauser-allee-in-berlin-kaum-nutzbar-15484732.html
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026)
+#: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026)
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2026-06-23 (mapillary) vvv
-#: next_check: 2026-09-10 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2026-07-31 vvv
+#: next_check: 2026-11-30 (planb) vvv
 #: XXX nach den Bauarbeiten wiederherstellen: Radspur, niedrige Protektion	RW4;
 provisorische Radwegführung über Hochbord	RW2; 10925,15581 10917,15525
 provisorische Radwegführung über Hochbord	RW2; 10917,15525 10902,15422
@@ -7267,7 +7268,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-07-08 vvv
+#: last_checked: 2026-07-31 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -7645,10 +7646,10 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: source_id: planb2026:13.57928174,52.45848464,01.03.2023, ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
+#: source_id: planb2026:13.57928174,52.45848464,01.03.2023, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (vorfristig inaktiv)
 #: last_checked: 2026-05-31
 #: check_frequency: 150d
-#: next_check: 2026-08-31 (planb)
+#: next_check: 2026-08-31 (ex-planb)
 	RW0; 22365,6149 22467,6135
 # 
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
@@ -8218,7 +8219,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2026-07-11 (mapillary) vvv
+#: last_checked: 2026-07-31 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015

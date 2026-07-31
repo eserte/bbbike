@@ -54,7 +54,7 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-07-15 vvv
+#: last_checked: 2026-07-31 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="14"
@@ -131,7 +131,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-07-16 vvv
+#: last_checked: 2026-07-31 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (Tsp, planb) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -431,7 +431,7 @@ An der Kommandantur: Gerüstbauarbeiten, Fahrbahn gesperrt	q4::inwork 9943,12364 
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
 #: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026)
-#: last_checked: 2026-07-28
+#: last_checked: 2026-07-31
 #: check_frequency: 21d
 #: next_check: 2026-08-14 (planb)
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
@@ -556,7 +556,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
 #: source_id: planb2026:13.38375056,52.51772337,26.11.2017, ("Fahrstreifen-Reduzierung", bis 30.04.2028)
-#: last_checked: 2026-07-08 vvv
+#: last_checked: 2026-07-31 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
