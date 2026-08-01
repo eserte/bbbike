@@ -595,7 +595,7 @@ sub calculate_prio {
 
     my $desc = $record->{desc} || "";
 
-    if ($desc =~ /Vollsperrung|Sperrung einer Fahrtrichtung/i) {
+    if ($desc =~ /Vollsperrung.*Fahrbahn|Sperrung einer Fahrtrichtung/i) {
         $prio += 30;
     }
     if ($desc =~ /keine Fahrbahn-Einschr|Haltverbot/i) {
