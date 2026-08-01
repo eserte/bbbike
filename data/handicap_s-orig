@@ -54,13 +54,13 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-07-31 vvv
+#: last_checked: 2026-08-01 (osm) vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="1083527067" version="14"
+#: osm_watch: way id="1083527067" version="15"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="182614432" version="27"
+#: osm_watch: way id="182614432" version="28"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="114684413" version="25"
@@ -1428,7 +1428,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
 #: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026)
 #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
-#: source_id: planb2026:13.42324439,52.52777598,03.02.2026, ("Sperrung einer Fahrtrichtung", bis 31.07.2026)
+#: source_id: planb2026:13.42324439,52.52777598,03.02.2026, ("Sperrung einer Fahrtrichtung", bis 31.07.2026) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
 #: by: https://viz.berlin.de/aktuelle-meldungen/greifswalder-strasse-stadtauswarts-rohrschaden/
 #: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-prenzlauer-berg-greifswalder-strasse-weiterhin-gesperrt--dauer-unklar-15205719.html
@@ -1575,9 +1575,10 @@ Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahre
 #: note: laut VIZ-Verkehrsmeldung ist nur der Kfz-Verkehr betroffen; bis zur Baseler Str. gibt's auch einen Hochbordradweg
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lycdxxhmxk2c (nur Kfz-Verkehr)
 #: source_id: LMS-BR:382669/72 viz2021:13.29708,52.43252,08.09.2025,07:00 viz2021:13.29708,52.43252, (hier keine Einschränkung auf den Kfz-Verkehr, bis 09.01.2026) (bis 30.01.2026) (bis 01.03.026) (bis 04.09.2026)
-#: source_id: planb2026:13.30225823,52.43231703,06.07.2026,07:00 (hier: "keine Fahrbahn-Einschränkung", bis 31.07.2026)
+#: source_id: planb2026:13.30225823,52.43231703,06.07.2026,07:00 (hier: "keine Fahrbahn-Einschränkung", bis 31.07.2026) (inaktiv)
+#: source_id: planb2026:13.29499928,52.43257687,08.09.2025, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
 #: last_checked: 2026-05-09 vvv
-#: next_check: 2026-09-04 vvv
+#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung, planb) vvv
 #: valid: -20260904 vvv
 # REMOVED (Baustelle ist gewandert) --- Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	DH:h=q2,294 3313,2842 3171,2848 3025,2858 3019,2858
 #: note: auf der Fahrbahn gilt eine Einbahnstraßenregelung, frei Richtung Osten

@@ -376,7 +376,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-07-29 vvv
+#: last_checked: 2026-08-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1548,14 +1548,14 @@ Verbundsteinpflaster mit deutlichen Unebenheiten	RW2; 3910,6949 3784,6985 3688,7
 	RW1; 4672,8031 4581,8048 4461,8105
 #: XXX hier ist ein Zweirichtungsradweg geplant
 #: by: https://api.fixmyberlin.de/api/plannings/216
-#: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2026 - 4. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2027 - 4. Quartal 2027)
 #: note: früher infravelo-Projekt "detmolder-strasse"
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-11_-sitzung-am-26_03_2025.pdf (nach den Bauarbeiten der Wasserbetriebe 2026)
 #: by: https://www.tagesspiegel.de/berlin/kaum-noch-neue-radwege-in-berlin-ausbau-stockt-fordermittel-verfallen-15506512.html (2026)
 #: osm_watch: way id="963841938" version="11"
 #: last_checked: 2025-12-29
-#: check_frequency: 360d
-#: next_check: 2026-12-31
+#: check_frequency: 540d
+#: next_check: 2027-12-31 (infravelo)
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4786,8007 4711,8013
 # REMOVED (es gibt nun wieder eine provisorische Radspur) --- #: by: https://www.deutsches-architekturforum.de/thread/14397-jaho-berlin-mitte-in-planung/?postID=723414#post723414 --- #: by: https://www.art-invest.de/projekt/jaho-berlin/ (Fertigstellung: 2025) --- #: source_id: viz2021:13.418119,52.51549,23.08.2022,05:00 (bis 23.10.2022) --- #: XXX Einschränkung wegen Hochbauarbeiten (JaHo) --- #: XXX früher: geschützter Radstreifen, Grünbeschichtung, RW4; --- #: last_checked: 2022-09-20 --- #: check_frequency: 60d --- #: next_check: 2025-01-01
@@ -1855,11 +1855,11 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="823635969" version="33"
-#: osm_watch: way id="4615746" version="58"
+#: osm_watch: way id="823635969" version="34"
+#: osm_watch: way id="4615746" version="59"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-07-15 vvv
+#: last_checked: 2026-08-01 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -2230,7 +2230,7 @@ Busspur ist immer gültig	RW5; 7795,8765 8008,8771
 geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,8773 8209,8773 8298,8774
 # 
 #: note: Detmolder Str.
-#: by: https://www.infravelo.de/projekt/detmolder-strasse/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2026) (Planung -> Vorgesehen) (wieder in Planung) (3. Quartal 2028 - 4. Quartal 2028)
+#: by: https://www.infravelo.de/projekt/detmolder-strasse/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2026) (Planung -> Vorgesehen) (wieder in Planung) (3. Quartal 2028 - 4. Quartal 2028) (Planung -> Vorgesehen)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25975.pdf (Erwähnung)
 #: note: früher infravelo-Projekt "detmolder-strasse-1"
 #: XXX Sanierung der Radwege vvv
@@ -3347,7 +3347,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-07-29 vvv
+#: last_checked: 2026-08-01 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2026-09-30 (planb) vvv
@@ -3377,7 +3377,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-07-29
+#: last_checked: 2026-08-01
 #: check_frequency: 30d
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 #: next_check: 2026-09-30 (planb)
@@ -7646,10 +7646,10 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
 #: osm_watch: way id="1163982841" version="3"
 #: osm_watch: way id="408367258" version="5"
-#: source_id: planb2026:13.57928174,52.45848464,01.03.2023, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.57928174,52.45848464,01.03.2023, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (vorfristig inaktiv) (bis 01.03.2027)
 #: last_checked: 2026-05-31
 #: check_frequency: 150d
-#: next_check: 2026-08-31 (ex-planb)
+#: next_check: 2027-03-01 (planb)
 	RW0; 22365,6149 22467,6135
 # 
 	RW6;RW6 21473,10369 21542,10398 21549,10404 21539,10435
@@ -9121,7 +9121,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
 #: note: zwischen Krumme Str. und Wilmersdorfer Str. Richtung Westen praktisch keine Radspur mehr
-#: last_checked: 2026-06-29 vvv
+#: last_checked: 2026-07-31 (mapillary) vvv
 #: check_frequency: 45d vvv
 #: next_check: 2026-09-01 (Tsp: Rückbau?) vvv
 #: note: Kantstr., Richtung Osten
@@ -9915,7 +9915,7 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 # 
 	RW7;RW7 8140,15859 8194,15960 8245,16064 8346,16283 8446,16386
 # 
-	RW7;RW7 18660,9599 18626,9406 18586,9172 18548,8942 18518,8778
+	RW7;RW7 18807,9746 18781,9744 18687,9736 18685,9719 18660,9599 18626,9406 18586,9172 18548,8942 18518,8778
 # 
 	RW7;RW7 13357,9313 13489,9456
 # 

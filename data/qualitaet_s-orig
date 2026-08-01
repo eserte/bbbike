@@ -297,8 +297,8 @@ Rüdersdorfer Str.: Asphalt	Q0 13295,11792 13173,11788 13161,11795 13066,11854
 Kaskelstr.: relativ glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15763,10963
 Spittastr.: mäßiges Kopfsteinpflaster	Q2 15447,10883 15509,11058 15578,11241
 Geusenstr.: mäßiges Kopfsteinpflaster	Q2+ 15586,11030 15560,10946 15541,10892
-#: historical_note: früher mit glattes Kopfsteinpflaster, Q1- getaggt --- entweder war das immer zu gut oder die Qualität hat mit der Zeit nachgelassen
-Türrschmidtstr.: verfugtes Kopfsteinpflaster	Q2+ 15279,10862 15355,10875 15447,10883 15541,10892
+#: note: Qualität ist zwischen Q2+ und Q1-
+Türrschmidtstr.: verfugtes Kopfsteinpflaster	Q1- 15279,10862 15355,10875 15447,10883 15541,10892
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2- 15541,10892 15626,10915
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15626,10915 15649,10922 15763,10963
 Giselastr.: mäßiges Kopfsteinpflaster	Q2 16367,11341 16338,11308 16311,11226 16273,11113 16227,10991
@@ -355,7 +355,7 @@ Halker Zeile: Asphalt	Q0 10282,-280 10379,-551 10473,-799
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 18773,10028
 #: osm_watch: way id="1379412008" version="1"
 #: XXX nach den Bauarbeiten vermutlich wieder: sehr guter Asphalt, Q0
-#: last_checked: 2026-07-18
+#: last_checked: 2026-08-01
 #: check_frequency: 60d
 Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
@@ -3583,14 +3583,14 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: next_check_id: DRESDNERBAHN-2021
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
-#: source_id: planb2026:13.36507111,52.44628677,20.07.2026,07:00 ("keine Fahrbahn-Einschränkung", bis 31.07.2026)
+#: source_id: planb2026:13.36507111,52.44628677,20.07.2026,07:00 ("keine Fahrbahn-Einschränkung", bis 31.07.2026) (bis 14.08.2026)
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 # REMOVED --- #: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
 #: osm_watch: way id="30893534" version="30"
 #: osm_watch: way id="1155399359" version="5"
 #: last_checked: 2026-06-13
 #: check_frequency: 60d
-#: next_check: 2026-07-31 (planb)
+#: next_check: 2026-08-14 (planb)
 Am Teltowkanal: Asphalt	Q0 7911,4465 7866,4419 7769,4315
 # 
 Am Teltowkanal: Verbundsteinpflaster	Q1 7769,4315 7724,4270
@@ -6724,12 +6724,15 @@ Am Tierpark [zur Nebenfahrbahn]: Beton	Q1+ 18263,11393 18304,11407
 Am Tierpark [Nebenfahrbahn]: Beton	Q1+ 18304,11407 18272,11552 18264,11596 18285,11637
 Am Tierpark [Wohngebiet]: Beton	Q1+ 18304,11407 18399,11423
 Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q1 18285,11637 18329,11654 18381,11655 18520,11662
-Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18317,11734 18382,11740 18461,11767 18600,11814 18716,11810 18717,11821 18717,11835 18719,11903
+Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18317,11734 18382,11740
+Alt-Friedrichsfelde [Wohngebiet]: Asphalt mit einigen Unebenheiten	Q1+ 18382,11740 18461,11767 18600,11814 18716,11810 18717,11821
+Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18717,11821 18717,11835 18719,11903
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18717,11821 18574,11833 18525,11806 18453,11804 18461,11767
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18717,11835 18730,11834
 Alt-Friedrichsfelde [Wohngebiet]: Verbundsteinpflaster	Q1+ 18730,11834 18896,11824
 (Alt-Friedrichsfelde - Gensinger Str.): Verbundsteinpflaster	Q1 18717,11821 18825,11816 18896,11824 18910,11826
-(Alt-Friedrichsfelde - Gensinger Str.): Beton	Q0- 18910,11826 19048,11815 19138,11815
+#: historical_note: früher (bis 2026) mit Q0- getaggt, ist es schlechter geworden?
+(Alt-Friedrichsfelde - Gensinger Str.): Beton mit Unebenheiten	Q1 18910,11826 19048,11815 19138,11815
 Köpitzer Str.: Beton	Q1+ 18272,11552 18326,11573
 #: note: kurzer Betonabschnitt
 Köpitzer Str.: Asphalt	Q0- 18326,11573 18390,11597 18381,11655
@@ -7071,7 +7074,7 @@ Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
 #: osm_watch: way id="4689097" version="34"
 #: XXX Wird hier die Fahrbahn saniert?
-#: last_checked: 2026-07-26
+#: last_checked: 2026-08-01
 #: check_frequency: 180d
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
@@ -7091,10 +7094,11 @@ Scharfe Lanke: Asphalt	Q0 -4255,11600 -4246,11438 -4245,11400
 #: by: https://www.berlin.de/b-intern.de/ba/spandau/_assets/politik-und-verwaltung/dokumente/plan_3_folkungerstrasse_gatower_strasse.pdf
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022, hier: von Wilhemstr. bis Gatower Str.)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
-#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1696984.php
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1696984.php (Fahrbahnflächenerneuerung)
 #: source_id: viz2021:13.17159,52.51104,15.01.2024,09:13 (bis 29.02.2024) (inaktiv)
 #: source_id: viz2021:13.172174,52.511623,16.08.2023,13:00 (Erdgasleitungssanierung, bis 29.02.2024) (bis 29.03.2024) (inaktiv)
 #: XXX geplanter Straßenausbau; evtl. wird dabei die Asphaltierung verbessert
+#: add_fragezeichen: Wurde die Fahrbahn mittlerweile erneuert?
 #: osm_watch: note 3653798 2
 #: last_checked: 2026-06-25 (mapillary)
 #: check_frequency: 180d

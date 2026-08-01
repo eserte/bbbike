@@ -142,7 +142,7 @@ Rüdersdorfer Str.: Asphalt	Q0 13295,11792 13173,11788 13161,11795 13066,11854
 Kaskelstr.: relativ glattes Kopfsteinpflaster	Q1 15359,11115 15434,11086 15509,11058 15586,11030 15763,10963
 Spittastr.: mäßiges Kopfsteinpflaster	Q2 15447,10883 15509,11058 15578,11241
 Geusenstr.: mäßiges Kopfsteinpflaster	Q2 15586,11030 15560,10946 15541,10892
-Türrschmidtstr.: verfugtes Kopfsteinpflaster	Q2 15279,10862 15355,10875 15447,10883 15541,10892
+Türrschmidtstr.: verfugtes Kopfsteinpflaster	Q1 15279,10862 15355,10875 15447,10883 15541,10892
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15541,10892 15626,10915
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15626,10915 15649,10922 15763,10963
 Giselastr.: mäßiges Kopfsteinpflaster	Q2 16367,11341 16338,11308 16311,11226 16273,11113 16227,10991
@@ -5212,12 +5212,14 @@ Am Tierpark [zur Nebenfahrbahn]: Beton	Q1 18263,11393 18304,11407
 Am Tierpark [Nebenfahrbahn]: Beton	Q1 18304,11407 18272,11552 18264,11596 18285,11637
 Am Tierpark [Wohngebiet]: Beton	Q1 18304,11407 18399,11423
 Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q1 18285,11637 18329,11654 18381,11655 18520,11662
-Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 18317,11734 18382,11740 18461,11767 18600,11814 18716,11810 18717,11821 18717,11835 18719,11903
+Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 18317,11734 18382,11740
+Alt-Friedrichsfelde [Wohngebiet]: Asphalt mit einigen Unebenheiten	Q1 18382,11740 18461,11767 18600,11814 18716,11810 18717,11821
+Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 18717,11821 18717,11835 18719,11903
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 18717,11821 18574,11833 18525,11806 18453,11804 18461,11767
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 18717,11835 18730,11834
 Alt-Friedrichsfelde [Wohngebiet]: Verbundsteinpflaster	Q1 18730,11834 18896,11824
 (Alt-Friedrichsfelde - Gensinger Str.): Verbundsteinpflaster	Q1 18717,11821 18825,11816 18896,11824 18910,11826
-(Alt-Friedrichsfelde - Gensinger Str.): Beton	Q0 18910,11826 19048,11815 19138,11815
+(Alt-Friedrichsfelde - Gensinger Str.): Beton mit Unebenheiten	Q1 18910,11826 19048,11815 19138,11815
 Köpitzer Str.: Beton	Q1 18272,11552 18326,11573
 Köpitzer Str.: Asphalt	Q0 18326,11573 18390,11597 18381,11655
 Kirchsteig: Asphalt	Q0 22007,711 21925,612
