@@ -486,6 +486,14 @@ sub cmd_diff {
         # Fancy mode
 	binmode STDOUT, ':utf8';
 
+        my $bbbike_root = BBBikeUtil::bbbike_root();
+        my $current_yml = "$bbbike_root/tmp/sourceid-current.yml";
+        my $inactive_yml = "$bbbike_root/tmp/sourceid-inactive.yml";
+
+        require BBBikeYAML;
+        my $current_sourceids = -f $current_yml ? eval { BBBikeYAML::LoadFile($current_yml) } : {};
+        my $inactive_sourceids = -f $inactive_yml ? eval { BBBikeYAML::LoadFile($inactive_yml) } : {};
+
         open my $in1, "<:utf8", $file1 or die "Can't read $file1: $!\n";
         my %old_records;
         while (my $line = <$in1>) {
@@ -546,12 +554,14 @@ sub cmd_diff {
         if (@additions) {
             print "=== NEW EVENTS (" . scalar(@additions) . ") ===\n";
             for my $rec (@additions) {
-                printf "[NEW] Prio: %2d | %s | %s - %s | ID: %s | Coords: %s\n",
+                my $stable_info = get_stable_id_info($rec, $current_sourceids, $inactive_sourceids);
+                printf "[NEW] Prio: %2d | %s | %s - %s | ID: %s (%s) | Coords: %s\n",
                     $rec->{prio},
                     $rec->{desc},
                     $rec->{begin_date},
                     $rec->{end_date},
                     $rec->{id} || 'N/A',
+                    $stable_info,
                     $rec->{coords}->[0] || 'N/A';
             }
             print "\n";
@@ -562,10 +572,12 @@ sub cmd_diff {
             for my $chg (@changes) {
                 my $old = $chg->{old};
                 my $new = $chg->{new};
-                printf "[CHANGED] Prio: %2d | %s | ID: %s\n",
+                my $stable_info = get_stable_id_info($new, $current_sourceids, $inactive_sourceids);
+                printf "[CHANGED] Prio: %2d | %s | ID: %s (%s)\n",
                     $chg->{prio},
                     $new->{desc},
-                    $new->{id} || 'N/A';
+                    $new->{id} || 'N/A',
+                    $stable_info;
                 if ($old->{end_date} ne $new->{end_date}) {
                     print "    - End Date: $old->{end_date} -> $new->{end_date}\n";
                 }
@@ -617,6 +629,58 @@ sub calculate_prio {
     return $prio;
 }
 
+sub get_stable_id_info {
+    my ($rec, $current_sourceids, $inactive_sourceids) = @_;
+
+    my $stable_id = $rec->{bbbikeid} || "";
+    my $first_coord = $rec->{coords}->[0] || "";
+    my $begin_date = $rec->{begin_date} || "";
+
+    my $matched_inuse = 0;
+    my $matched_was_inuse = 0;
+
+    if ($stable_id) {
+        if ($current_sourceids->{$stable_id}) {
+            $matched_inuse = 1;
+        }
+        if ($inactive_sourceids->{$stable_id}) {
+            $matched_was_inuse = 1;
+        }
+    }
+
+    if (!$matched_inuse && !$matched_was_inuse) {
+        my $prefix = "planb2026:$first_coord,$begin_date";
+        for my $k (keys %$current_sourceids) {
+            if ($k eq $prefix || $k =~ /^\Q$prefix\E,/) {
+                $matched_inuse = 1;
+                $stable_id = $k;
+                last;
+            }
+        }
+        for my $k (keys %$inactive_sourceids) {
+            if ($k eq $prefix || $k =~ /^\Q$prefix\E,/) {
+                $matched_was_inuse = 1;
+                $stable_id = $k;
+                last;
+            }
+        }
+    }
+
+    if (!$stable_id) {
+        $stable_id = "planb2026:$first_coord,$begin_date,";
+    }
+
+    my $status_str = "";
+    if ($matched_inuse) {
+        $status_str .= " INUSE";
+    }
+    if ($matched_was_inuse) {
+        $status_str .= " WAS_INUSE";
+    }
+
+    return "stable: $stable_id" . $status_str;
+}
+
 sub parse_bbd_line {
     my ($line) = @_;
     chomp $line;
@@ -635,6 +699,10 @@ sub parse_bbd_line {
         $end_date = $2;
     }
 
+    my $bbbikeid = "";
+    if ($text_part =~ s/\s+bbbikeid=(\S+)//) {
+        $bbbikeid = $1;
+    }
     my $id = "";
     if ($text_part =~ s/\s+id=(\S+)//) {
         $id = $1;
@@ -651,6 +719,7 @@ sub parse_bbd_line {
         line       => $line,
         desc       => $desc,
         id         => $id,
+        bbbikeid   => $bbbikeid,
         rating     => $rating,
         begin_date => $begin_date,
         end_date   => $end_date,
