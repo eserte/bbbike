@@ -7,7 +7,7 @@ use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use Getopt::Long;
-use JSON::PP;
+use JSON::XS;
 use LWP::UserAgent;
 use File::Temp;
 use BBBikeUtil;
@@ -158,7 +158,7 @@ sub cmd_fetch_one {
     }
 
     my $ua = _get_ua();
-    my $json_coder = JSON::PP->new->utf8->canonical->pretty;
+    my $json_coder = JSON::XS->new->utf8->canonical->pretty;
 
     for my $importid (@$args) {
         my $url = "https://gdi.berlin.de/services/wfs/planb_ereignisse?service=WFS&version=2.0.0&request=GetFeature&srsName=EPSG:4326&typeNames=planb_ereignisse:ereignisse&CQL_FILTER=importid=$importid&outputFormat=application/json";
@@ -166,7 +166,7 @@ sub cmd_fetch_one {
         if (!$resp->is_success) {
             die "Error fetching importid $importid: " . $resp->status_line . "\n";
         }
-        my $data = eval { JSON::PP::decode_json($resp->content) };
+        my $data = eval { JSON::XS::decode_json($resp->content) };
         if ($@) {
             die "Error parsing JSON response for importid $importid: $@\n";
         }
@@ -246,7 +246,7 @@ sub cmd_fetch {
     my $geojson_content = <$gzip_fh>;
     close $gzip_fh;
 
-    my $geojson_data = eval { JSON::PP::decode_json($geojson_content) };
+    my $geojson_data = eval { JSON::XS::decode_json($geojson_content) };
     if ($@) {
         die "Error parsing downloaded GeoJSON: $@\n";
     }
@@ -259,7 +259,7 @@ sub cmd_fetch {
 
     my $temp_geojson = "/tmp/all_planb_${today}_bbbikeid.geojson";
     open my $out_fh, ">", $temp_geojson or die "Can't write temporary geojson: $!\n";
-    print $out_fh JSON::PP::encode_json($geojson_data);
+    print $out_fh JSON::XS::encode_json($geojson_data);
     close $out_fh;
 
     my @cmd2 = (
@@ -344,7 +344,7 @@ sub cmd_check {
     my $geojson_content = <$fh>;
     close $fh;
 
-    my $geojson_data = eval { JSON::PP::decode_json($geojson_content) };
+    my $geojson_data = eval { JSON::XS::decode_json($geojson_content) };
     if ($@) {
         die "Error parsing $temp_geojson: $@\n";
     }
