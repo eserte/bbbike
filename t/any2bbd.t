@@ -154,7 +154,7 @@ EOF
  SKIP: {
 	skip "No reliable locale handling on Windows", 3
 	    if $^O eq 'MSWin32';
-	local $ENV{LC_ALL} = 'C.UTF-8'; # explicitly specify encoding here, because of the "¦"
+	local $ENV{LC_ALL} = ($^O eq 'darwin' ? 'en_US.UTF-8' : 'C.UTF-8'); # explicitly specify encoding here, because of the "¦"
 	delete local $ENV{LANG};
 	ok run [@basecmd, '-name-sep', '¦', '-geojson-name', 'street=.properties.street date=.properties.date', $tmp, '-o', '-'], '>', \my $out, '2>', \my $err;
 	$out = decode 'utf-8', $out;
