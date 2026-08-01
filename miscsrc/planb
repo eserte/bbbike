@@ -457,6 +457,9 @@ sub cmd_diff {
         my ($fh1, $tmp1) = File::Temp::tempfile(UNLINK => 1);
         my ($fh2, $tmp2) = File::Temp::tempfile(UNLINK => 1);
 
+	binmode $fh1, ':utf8';
+	binmode $fh2, ':utf8';
+
         open my $in1, "<:utf8", $file1 or die "Can't read $file1: $!\n";
         while (<$in1>) {
             s/\s+id=\d+//;
@@ -481,6 +484,8 @@ sub cmd_diff {
         }
     } else {
         # Fancy mode
+	binmode STDOUT, ':utf8';
+
         open my $in1, "<:utf8", $file1 or die "Can't read $file1: $!\n";
         my %old_records;
         while (my $line = <$in1>) {
