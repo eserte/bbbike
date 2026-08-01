@@ -148,6 +148,8 @@ for my $f (@files) {
 	myskip "$f works only with installed YAML::XS", 1
 	    if $f =~ m{/( vizhistory
 		       )$}x && !eval { require YAML::XS; 1 };
+	myskip "$f works only with installed LWP::UserAgent and JSON::PP", 1
+	    if $f =~ m{/planb$} && (!eval { require LWP::UserAgent; 1 } || !eval { require JSON::PP; 1 });
 
 	my @add_opts;
 	if ($f =~ m{\.pm$}) {
