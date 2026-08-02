@@ -852,7 +852,7 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: source_id: planb2026:13.41404379,52.49257553,12.01.2026,16:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026)
 #: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
 #: note: im Zuge der Grimmstr. kann die Absperrung weggeschoben sein
-#: last_checked: 2026-07-29 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-08-21 (planb) vvv
 # REMOVED --- #: valid: -20260312
@@ -1222,7 +1222,7 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
 #: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026) (inaktiv) (bis 22.01.2026) (inaktiv)
 #: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026)
-#: last_checked: 2026-06-23 (mapillary) vvv
+#: last_checked: 2026-08-02 vvv
 #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
 # REMOVED (nicht mehr) --- Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
@@ -1571,6 +1571,16 @@ Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahre
 # REMOVED --- #: also_indoor: traffic (ex-B,G,ex-H,ex-T) --- #: note: Halteverbotsschilder bis 23.10.2024 --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: last_checked: 2025-04-27 (traffic) vvv --- #: check_frequency: 10d vvv --- # REMOVED --- #: next_check: 2024-10-23 vvv --- # REMOVED --- #: valid: -20241023 vvv --- Mozartstr./Calandrellistr.: Bauarbeiten, Sperrung der Fahrbahn, Umwege	q2::inwork 5619,3958 5710,3751 5791,3563 --- Calandrellistr./Mozartstr.: Bauarbeiten im Kreuzungsbereich, Umwege	q2::inwork 5549,3679 5710,3751 5954,3861 --- # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 ### Lichterfelde ###
+# 
+#: next_check_id: KRANOLDPLATZ-2026
+#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/autos-werden-hier-kunftig-nur-noch-gaste-sein-ein-burgerrat-soll-den-umbau-des-berliner-kranoldplatzes-begleiten-15564981.html (Umbau erst ab 2030?)
+#: by: https://www.entwicklungsstadt.de/ueber-100-jahre-geschichte-kranoldplatz-in-lichterfelde-ost-vor-dem-neustart/
+#: by: https://bvv-steglitz-zehlendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9858 (Anfrage)
+#: source_id: planb2026:13.32837204,52.42765752,30.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 06.08.2027)
+#: last_checked: 2026-08-02
+#: check_frequency: 360d
+#: next_check: 2027-08-06 (planb)
+Kranoldplatz (Lichterfelde): Bauarbeiten, Sperrung der südlichen Spange	q4::inwork 5317,2345 5417,2383
 # 
 #: note: laut VIZ-Verkehrsmeldung ist nur der Kfz-Verkehr betroffen; bis zur Baseler Str. gibt's auch einen Hochbordradweg
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lycdxxhmxk2c (nur Kfz-Verkehr)
@@ -2728,7 +2738,8 @@ Albert-Brodersen-Allee: Fußgänger	q2 20857,12027 20835,11810 20831,11777 20825,1
 (Am Schlachtensee - Altvaterstr., Unterführung): enge Unterführung	q3 -3192,3129 -3176,3081 -3170,3070
 (Altvaterstr. - Spanische Allee): eng	q1 -3223,3034 -3368,2942 -3378,2936
 Feuchtwangerweg: eng, Fußgänger	q1 15835,1747 15788,1747
-Mondsteinpfad: Fußgänger	q1 11181,1884 11182,1976
+#: XXX_prog: BS (an beiden Enden, nördlich relativ flach; ansonsten q2)
+Mondsteinpfad: Fußgänger, Bordsteine	q3 11181,1884 11182,1976
 (Falkenseer Chaussee - Spektelake): Fußgänger	q1 -7092,16224 -7114,16176 -7153,16123 -7175,16089 -7211,15920
 (Radweg parallel zur Potsdamer Chaussee): eng und kurvenreich	q1 -7414,8970 -7530,8825 -7539,8788 -7597,8735 -7729,8553 -7783,8524
 Kätchenweg: sehr eng	q2 -6975,-1250 -6914,-1218
@@ -5302,9 +5313,7 @@ Ehrenfelsstr.: Fußgängerzone	q3 18737,8686 18778,8663
 (Parkweg - Otto-Wels-Ring): Fußgänger	q1 13763,3015 13787,3017
 #: note: Grünanlagen-Schild ohne Radfahrer-Zusatzschild
 Buchsteinweg - Säntisstr.: einige Fußgänger	q1 9964,1839 9922,1896
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8171 (Antrag)
-#: XXX_prog BS (ansonsten entfernen)
-Wildmeisterdamm: Bordstein am Kölner Damm	q2 13640,2229 13827,2280
+# REMOVED (abgeflacht, wenn nicht ganz perfekt) --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8171 (Antrag) --- #: XXX_prog BS (ansonsten entfernen) --- Wildmeisterdamm: Bordstein am Kölner Damm	q2 13640,2229 13827,2280
 (Alte Hellersdorfer Str. - Neuruppiner Str.): einige Fußgänger, schmal	q3 23222,15219 23257,15223 23282,15228 23280,15244
 #: note: Grünanlagen-Schild ohne weitere Zusatzschilder
 (Hönower Str./Wilhelmsmühlenweg - An der Schule): einige Fußgänger	q3 24614,11657 24651,11656 24667,11666 24759,11666

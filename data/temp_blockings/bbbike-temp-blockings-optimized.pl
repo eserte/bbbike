@@ -4301,6 +4301,7 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (bis 16.7.2021) (bis 28.10.2022) (bis 31.3.2023) (bis 22.2.2023) (bis 31.05.2023) (bis 23.6.2023) (bis 30.6.2023) (bis 15.12.2023) (bis 19.01.2024) (bis 30.04.2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025 + weitere Arbeiten) (bis 28.02.2025 + ...) (bis 17.03.2025 + ...) (bis 26.03.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.37619,52.425695,31.03.2025,09:00 (Baustellenampel in der Daimlerstr., bis 30.04.2025) (inaktiv)
 #: source_id: viz2021:13.374437,52.426331,16.06.2025,07:00 (Fahrbahnsanierung Daimlerstr., bis 21.06.2025) (inaktiv)
+#: source_id: planb2026:-
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
@@ -4314,9 +4315,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="20"
 #: osm_watch: way id="1148659680" version="8"
-#: last_checked: 2026-07-31 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: check_frequency: 30d (non-traffic)
+#: last_checked: 2026-08-02
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: check_frequency: 30d (non-traffic)
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
@@ -6263,7 +6264,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: bvg2024:396#HIM_FREETEXT_309001 (zwischenzeitlich entfernt)
 #: source_id: planb2026:13.50989979,52.49288278,01.12.2025,06:00 (Hönower Weg im gesperrten Abschnitt: "Vollsperrung beider Fahrbahnen", bis 29.08.2026)
 #: source_id: planb2026:13.50856246,52.49155942,20.04.2026,07:00 (westlich Neuer Feldweg: "Fahrbahneinengung", bis 26.02.2027)
-#: last_checked: 2026-08-01 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr; mittlerweile (2026-07-18) aber doch wieder Radfahren-verboten-Schilder; 2026-07-25: nur noch Umleitungsschilder, keine Radfahren-verboten-Schilder mehr; 2026-07-29: Radfahren-verboten-Schilder sind wieder da)
@@ -7575,7 +7576,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026?
 #: source_id: planb2026:13.37232419,52.48441245,16.12.2024,06:00 ("Sperrung einer Fahrtrichtung" (allerdings zu lang), bis 21.08.2026)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2026-07-29
+#: last_checked: 2026-08-02
 #: check_frequency: 30d
 #: next_check: 2026-08-21 (planb)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
@@ -7736,7 +7737,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
 #: also_indoor: traffic (G,T,H,A,W)
-#: last_checked: 2026-07-18 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-02-03 (planb) vvv
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
@@ -8015,8 +8016,8 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: planb2026:13.55412862,52.43801228,30.01.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.07.2026) (inaktiv)
 #: note: Vollsperrung aufgrund Kabelgrube bis Ende Juni 2026; Vollsperrung aufgrund Kabelgrube bis voraussichtlich August 2026
 #: also_indoor: traffic (ex-T,G)
-#: last_checked: 2026-08-01 (traffic)
-#: check_frequency: 7d (traffic)
+#: last_checked: 2026-08-02
+#: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-08-31 (stromnetz website)
 # REMOVED --- #: next_check: 2026-07-31 (planb)
 Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
@@ -8027,17 +8028,17 @@ Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,
 # REMOVED --- #: next_check: 2026-06-30
 # REMOVED --- Freystadter Weg: Fahrbahn gesperrt	q4::inwork 20994,4761 20981,4696 20981,4628
 # 
-#: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026; mittlerweile bis voraussichtlich August 2026
-#: also_indoor: traffic (T,G,no-W)
-#: source_id: planb2026:13.5460219,52.43485761,26.01.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 01.09.2026)
-#: last_checked: 2026-07-09 (stromnetz website, traffic)
-#: check_frequency: 30d
-#: next_check: 2026-08-31
-Gellertstr.: an der Radickestr. gesperrt	q4::inwork 20148,3490 20237,3392
+# REMOVED (keine Einschränkung mehr gesehen) --- #: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026; mittlerweile bis voraussichtlich August 2026
+# REMOVED --- #: also_indoor: traffic (T,G,no-W)
+# REMOVED --- #: source_id: planb2026:13.5460219,52.43485761,26.01.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 01.09.2026)
+# REMOVED --- #: last_checked: 2026-07-09 (stromnetz website, traffic)
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2026-08-31
+# REMOVED --- Gellertstr.: an der Radickestr. gesperrt	q4::inwork 20148,3490 20237,3392
 # 
 #: also_indoor: traffic (no-G,T,no-H,ex-W)
 #: source_id: planb2026:-
-#: last_checked: 2026-07-26 (traffic)
+#: last_checked: 2026-08-02
 #: check_frequency: 14d (traffic)
 Friedenstr.: Abschnitt der Fahrbahn gesperrt	q4::inwork 20366,3480 20219,3661
 # 
@@ -8093,7 +8094,7 @@ Lohnauer Steig: möglicherweise gesperrt, genaue Lage unklar	q4::inwork 20790,411
 ',
          'from' => undef,
          'id' => 4303,
-         'text' => 'Radickestr., Gellertstr., Wassermannstr. und Umgebung; Gutenbergstr., Flemmingstr.: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
+         'text' => 'Radickestr., Wassermannstr. und Umgebung; Gutenbergstr., Flemmingstr.: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8443,7 +8444,7 @@ Schiffbauerdamm, Richtung Westen: nur für Fußgänger	q4::inwork; 9025,12727 8870,
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
 #: source_id: planb2026:13.41359234,52.51568692,13.12.2023, ("Fahrstreifen-Reduzierung" in der Stralauer Allee, bis 30.10.2026)
-#: last_checked: 2026-07-08
+#: last_checked: 2026-08-02 (daf)
 #: check_frequency: 30d
 #: next_check: 2026-10-30 (planb)
 	q4::inwork 10951,12249 10957,12401
@@ -8666,7 +8667,32 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: MUSSEHL-2025
+#: also_indoor: traffic (ex-G,re-T,ex-W)
+#: osm_watch: way id="722008943" version="17"
+#: osm_watch: way id="722013098" version="16"
+#: osm_watch: way id="1350756367" version="5"
+#: osm_watch: note 5124809 1
+#: source_id: planb2026:13.38205024,52.4838886,28.10.2025,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.07.2026) (inaktiv)
+#: add_fragezeichen: Besteht die Sperrung weiterhin?
+#: last_checked: 2026-08-02
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2026-07-31 (planb)
+Mussehlstr.: zwischen Dudenstr. und Tankstelleneinfahrt gesperrt	q3::inwork 8982,8781 8926,8682
+# REMOVED --- #: note: laut Baustellenschild der Wasserbetriebe bis Mai 2026
+# REMOVED --- #: note: Halteverbotsschilder bis 31.10.2025; mittlerweile bis 20.02.2026; mittlerweile bis 30.04.2026 (aber bereits obsolet)
+# REMOVED ---	q4::inwork 8982,8781 8926,8682
+# REMOVED --- #: note: hier auf etwa 50m Länge gesperrt
+# REMOVED ---	q3::inwork 8926,8682 8842,8561
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
+',
+         'from' => 1756245600,
+         'id' => 4426,
+         'text' => 'Mussehlstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -8699,7 +8725,7 @@ Rudolfstr.	q4::inwork; 14026,10869 13886,10939
 #: source_id: LMS-BR:415346/72 viz2021:13.38557,52.47199, (zwischen Te-Damm und Schulenburgring (tatsächlich?), bis 08.05.2027)
 #: source_id: planb2026:13.37904221,52.47572048,26.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 01.09.2026)
 #: add_fragezeichen: Sind die Straßen weiterhin gesperrt? vvv
-#: last_checked: 2026-07-29 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-09-01 (VIZ-Verkehrsmeldung, planb) vvv
 Manfred-von-Richthofen-Str.: Fahrbahn Richtung Süden gesperrt	q4::inwork; 8731,7956 8757,7841 8796,7751
@@ -8817,18 +8843,14 @@ Corinthstr.	q3::inwork 14447,10491 14608,10409
        {
          'data' => '#: next_check_id: HERMANNDORNERALLEE-2025
 #: source_id: planb2026:13.51957796,52.42829578,17.01.2024, (hier nur "Fahrbahneinengung", bis 31.07.2026) (inaktiv)
-#: also_indoor: traffic (no-G,ex-T,H,no-W) vvv
-#: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-07-11 vvv
-# REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2026-07-31 (BA-Seite, planb) vvv
+#: also_indoor: traffic (no-G,ex-T,H,no-W)
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2026-08-02
+# REMOVED --- #: check_frequency: 14d
+# REMOVED --- #: next_check: 2026-07-31 (BA-Seite, planb)
 Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q4::inwork; 18374,2971 18445,2642
 # REMOVED (Durchgang/fahrt möglich) --- Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-#: also_indoor ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^ --- #: also_indoor ^^^
 ',
          'from' => 1759615200,
          'id' => 4457,
@@ -9472,18 +9494,7 @@ Forstallee: 2. BA zwischen Fasanenstr./Weichselstr. und Waldpromenade	q4::inwork
          'type' => 'handicap',
          'until' => 1797620400
        },
-       {
-         'data' => '#: source_id: LMS-BR:401047/72 viz2021:13.33578,52.43328,06.03.2026,12:00 (bis 21.04.2026) (bis 29.06.2026) (bis 04.08.2026)
-#: also_indoor: traffic (T,G)
-	q4::inwork 6044,3110 5936,2977 5853,3050
-	q4::inwork 5774,2785 5936,2977 6022,2901
-',
-         'from' => 1772708400,
-         'id' => 4553,
-         'text' => 'Seydlitzstr.: Bauarbeiten in Höhe Charlottenstr., Sperrung der Fahrbahn, vom 06.03.2026 bis 04.08.2026',
-         'type' => 'handicap',
-         'until' => 1785880799
-       },
+       undef,
        {
          'data' => '#: next_check_id: BLOCKDAMMWEG-2026
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=27B18CBA-A54C-4B76-B3FF-2B1F76A96A23&plugid=/ingrid-group:ige-iplug-be&docid=27B18CBA-A54C-4B76-B3FF-2B1F76A96A23
@@ -9515,9 +9526,9 @@ Forstallee: 2. BA zwischen Fasanenstr./Weichselstr. und Waldpromenade	q4::inwork
 #: source_id: planb2026:13.51311063,52.48348885,02.03.2026, ("Vollsperrung beider Fahrbahnen", bis 06.09.2026)
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-07-10 vvv
-# REMOVED --- #: check_frequency: 90d vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2026-08-02 vvv
+#: check_frequency: 60d vvv
+# REMOVED --- #: check_frequency: 30d vvv
 # REMOVED (wird sehr wahrscheinlich verlängert) (tatsächlich weiterhin Baustelle) --- #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
 # REMOVED --- #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten) vvv
@@ -9745,7 +9756,7 @@ Westerwaldstr.: Einbahnstraßenregelung	q4::inwork; -5036,15625 -5023,15688
 #: osm_watch: way id="10856020" version="53"
 #: osm_watch[closed]: note 5250307 2
 #: priority: #A
-#: last_checked: 2026-07-25 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-31 (BA TK, nbb netzgesellschaft) vvv
 Kastanienallee	2::inwork 18437,7752 19045,6959
@@ -9876,19 +9887,19 @@ Böhmischer Platz	q4::inwork 13571,7588 13553,7594
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (ex-T,re-G[noch länger],ex-H,no-W)
+         'data' => '#: also_indoor: traffic (T,re-G[falsch, nur Jägerstr],no-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: XXX Oder sind die Bauarbeiten nun zur Brauerstr. gewandert?
-#: source_id: planb2026:13.32567635,52.42505107,09.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.07.2026) (inaktiv)
-#: source_id: planb2026:13.3249997,52.42487496,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", unklar, ist als "Brauerstr." bezeichnet; bis 04.12.2026)
-#: last_checked: 2026-07-30 (traffic)
-#: check_frequency: 3d (traffic)
-# REMOVED --- #: next_check: 2026-07-24 (planb)
-	q4::inwork 5220,2030 5277,2054 5376,2097
+#: source_id: planb2026:13.32567635,52.42505107,09.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", Jägerstr., bis 24.07.2026) (inaktiv)
+#: source_id: planb2026:13.3249997,52.42487496,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", Brauerstr.+Jägerstr.; bis 04.12.2026)
+#: last_checked: 2026-08-02
+#: check_frequency: 30d (traffic, später Frequenz hochsetzen)
+#: next_check: 2026-12-04 (planb)
+Brauerstr.	q4::inwork 5159,2176 4979,1964
+# REMOVED (hier nicht mehr, trotz planb-Eintrags) --- Jägerstr.	q4::inwork 5220,2030 5277,2054 5376,2097
 ',
          'from' => undef,
          'id' => 4603,
-         'text' => 'Jägerstr.: Bauarbeiten, Sperrung, voraussichtlich bis Ende Juni 2026, evtl. wird die Sperrung verlängert',
+         'text' => 'Brauerstr.: Bauarbeiten, Sperrung zwischen Kastanienstr. und Brauerplatz, voraussichtlich bis Dezember 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9962,7 +9973,7 @@ Abzweig Hasenwinkel - Steinhöfel: 3. BA	2::inwork 63284,3141 62739,2290 62537,16
 #: note: Bauabschnitt 2: vsl. 10.07. bis vsl. 06.09.2026
 #: XXX nach der Baustellenumstellung prüfen
 #: also_indoor: traffic (G,T,H,W)
-#: last_checked: 2026-07-18 vvv
+#: last_checked: 2026-08-02 vvv
 # REMOVED --- #: check_frequency: 3d (2. BA?) vvv
 #: next_check: 2026-09-06 vvv
 Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18461,8377 18391,8425 18322,8470 18228,8537 18151,8589
@@ -10057,7 +10068,7 @@ Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
 #: osm_watch: note 5292595 3
 #: source_id: planb2026:13.37453115,52.47872517,23.02.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
-#: last_checked: 2026-07-25
+#: last_checked: 2026-08-02
 #: check_frequency: 21d (traffic)
 #: next_check: 2026-08-31 (planb)
 Wünsthoffstr.: Sperrung der Fahrbahn	q4::inwork 8461,8084 8519,8088 8620,8095
@@ -10070,11 +10081,13 @@ Wünsthoffstr.: Sperrung der Fahrbahn	q4::inwork 8461,8084 8519,8088 8620,8095
 Wünsthoffstr.: Einbahnstraßenregelung	q4::inwork; 8461,8097 8265,8092
 #: source_id: planb2026:13.37587723,52.48044355,27.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.01.2027)
 #: also_indoor: traffic (T,no-G)
-#: add_fragezeichen: Ist der Bäumerplan im Bereich Loewenhardtdamm tatsächlich gesperrt?
-#: last_checked: 2026-07-25
-#: next_check: 2026-07-27
+#: add_fragezeichen: Ist der Bäumerplan im Bereich Loewenhardtdamm noch immer gesperrt?
+#: note: Halteverbotsschilder bis 31.01.2027
+#: note: außerdem ist die westliche Fahrbahn des Loewenhardtdamms zwischen den beiden Strängen des Bäumerplans gesperrt, Verkehr wird über die Gegenfahrbahn geführt
+#: last_checked: 2026-08-02
+#: next_check: 2027-01-31 (planb, Halteverbotsschilder)
 # REMOVED --- #: next_check: 2027-01-30 (planb)
-Bäumerplan: mögliche Sperrung wegen Bauarbeiten	q4::inwork 8527,8293 8482,8227
+Bäumerplan: Sperrung der Fahrbahne	q4::inwork 8527,8293 8482,8227
 ',
          'from' => undef,
          'id' => 4620,
@@ -10234,20 +10247,20 @@ Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,
 #: by: https://www.aktives-adlershof.de/fileadmin/_processed_/d/a/csm_260707_Bauinfo_Radickestra%C3%9Fe_5_red_c7f704934c.png (bis 13.7.2026)
 #: by: https://www.aktives-adlershof.de/aktuelles?date=20260713 (Verzögerung bis 17.7.2026) (Start der neuen Sperrung erst am 3.8.2026)
 #: source_id: planb2026:-
-#: next_check: 2026-08-02 vvv
+# REMOVED --- #: next_check: 2026-08-02 vvv
 #	q4::inwork 20861,3814 20835,3795 20776,3753 20683,3693 20592,3633 20499,3572
 #	q4::inwork 20835,3795 20845,3825
 # REMOVED (schon beendet oder nicht?) --- #: valid: -20260727
-Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
+# REMOVED (Durchfahrt möglich) --- Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
 # REMOVED (schon angefangen?) --- #: valid: 20260803-20260814
 # REMOVED (ursprüngliche Planung) --- Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
 #Radickestr. [Adlergestell - Süßer Grund]	q4::inwork 20064,3278 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 ',
          'dont_check_date' => 1,
-         'from' => 1783893600,
+         'from' => 1785621600,
          'id' => 4638,
-         'text' => 'Radickestr.: Bauarbeiten, mögliche Sperrung der Fahrbahn, geplant bis 14.08.2026',
+         'text' => 'Radickestr.: Bauarbeiten, mögliche Sperrung der Fahrbahn, geplant vom 03.08.2026 bis 14.08.2026',
          'type' => 'handicap',
          'until' => 1786723200
        },
@@ -10256,13 +10269,15 @@ Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3miau3c4yn22y (hier nur Kfz-Verkehr)
 #: source_id: LMS-BR:403317/72 viz2021:13.35962,52.4251,30.03.2026,07:00 (bis 15.05.2026) (bis 05.06.2026) (bis 13.06.2026) (bis 28.08.2026)
 #: source_id: planb2026:13.36027271,52.42520734,30.03.2026, ("Vollsperrung beider Fahrbahnen", bis 31.07.2026) (vorfristig inaktiv)
+#: note: Länge der Sperrung ca. 50m, von Bordsteinabsenkung zu Bordsteinabsenkung ca. 65m; außerdem ist der Weg im Grünzug Malteser Str. - Kamenzer Damm betroffen, Umwege
+#: last_checked: 2026-08-02
 # REMOVED --- #: next_check: 2026-07-31 (planb (kürzer als bei VIZ))
 #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung)
 Preysingstr.	q4::inwork 7721,2137 7650,2112 7581,2092
 ',
          'from' => 1774821600,
          'id' => 4640,
-         'text' => 'Preysingstr.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis 28.08.2026',
+         'text' => 'Preysingstr.: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich bis 28.08.2026',
          'type' => 'handicap',
          'until' => 1787954400
        },
@@ -10812,13 +10827,14 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
 #: XXX Ist der Weg während der Bauarbeiten tatsächlich gesperrt?
 #: XXX Zukünftig wird der Zugang von der Südostalleebrücke barrierefrei möglich sein.
 #: last_checked: 2026-03-22
-# REMOVED --- #: check_frequency: 60d (später auf 120d erhöhen)
-#: next_check: 2026-08-03 (Start der Bauarbeiten)
+#: check_frequency: 180d
+# REMOVED --- #: next_check: 2026-08-03 (Start der Bauarbeiten)
+#: next_check: 2027-12-31 (BA-Pressemitteilung)
 Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung	2::inwork 16425,6445 16275,6275 16263,6248 16098,6134
 ',
          'from' => 1785621600,
          'id' => 4688,
-         'text' => '...',
+         'text' => 'Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung, voraussichtlich bis Ende 2027',
          'type' => 'gesperrt',
          'until' => 1830293999
        },
@@ -10837,24 +10853,18 @@ Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung	2::inwork 1
        },
        {
          'data' => '#: source_id: planb2026:13.38210622,52.46704655,19.01.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026)
-	q4::inwork 9052,6664 9046,6784 9048,6877
-	q4::inwork 8846,6781 9046,6784 9245,6791
+#: note: hier möglicherweise längerer Abschnitt gesperrt
+Neue Straße	q4::inwork 9052,6664 9046,6784 9048,6877
+#: note: q4 -> q3, weil wohl nur der Kreuzungsbereich betroffen ist
+Borussiastr.	q3::inwork 8846,6781 9046,6784 9245,6791
 ',
          'from' => 1784784734,
          'id' => 4691,
-         'text' => 'Neue Straße/Borussiastr.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 30.09.2026',
+         'text' => 'Neue Straße/Borussiastr.: Bauarbeiten, Sperrung, vermutlich ist auch der Radverkehr betroffen, bis 30.09.2026',
          'type' => 'handicap',
          'until' => 1790805600
        },
-       {
-         'data' => 'Weinmeisterhornweg	q4::inwork -5061,11305 -5188,11342 -5202,11347 -5292,11378 -5399,11426
-',
-         'from' => 1785016800,
-         'id' => 4692,
-         'text' => 'Weinmeisterhornweg: Bauarbeiten, Sperrung zwischen Wilhemstr. und Folkungerstr., 27.7.2026 bis 1.8.2026',
-         'type' => 'handicap',
-         'until' => 1785621599
-       },
+       undef,
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260724
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrm4u2z75s26
@@ -10909,7 +10919,7 @@ Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung	2::inwork 1
 #: osm_watch: way id="318665525" version="13"
 #: osm_watch: way id="1546133695" version="1"
 #: also_indoor: traffic (G[zu kurz],T[zu lang],H[zu kurz],W[zu kurz])
-#: last_checked: 2026-07-25
+#: last_checked: 2026-08-02
 #: check_frequency: 90d
 #: next_check: 2026-09-14 (planb)
 Manfred-von-Richthofen-Str.	q4::inwork; 9229,8718 9158,8706 9093,8665 9011,8605

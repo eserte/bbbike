@@ -58,6 +58,7 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
 Stavangerstr.: Sperrung der Fahrbahn, Radverkehr wird über den schmalen Bürgersteig geführt	q2::inwork 10845,16770 10883,16824
 Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahrer frei	q3::inwork 10495,17658 10573,17566
+Kranoldplatz (Lichterfelde): Bauarbeiten, Sperrung der südlichen Spange	q4::inwork 5317,2345 5417,2383
 Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	q2::inwork; 3641,2827 3456,2835 3313,2842 3171,2848
 Paulinenstr.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3318,3046 3313,2842
 Kadettenweg: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3459,2944 3456,2835
@@ -739,7 +740,7 @@ Albert-Brodersen-Allee: Fußgänger	q2 20857,12027 20835,11810 20831,11777 20825,1
 (Am Schlachtensee - Altvaterstr., Unterführung): enge Unterführung	q3 -3192,3129 -3176,3081 -3170,3070
 (Altvaterstr. - Spanische Allee): eng	q1 -3223,3034 -3368,2942 -3378,2936
 Feuchtwangerweg: eng, Fußgänger	q1 15835,1747 15788,1747
-Mondsteinpfad: Fußgänger	q1 11181,1884 11182,1976
+Mondsteinpfad: Fußgänger, Bordsteine	q3 11181,1884 11182,1976
 (Falkenseer Chaussee - Spektelake): Fußgänger	q1 -7092,16224 -7114,16176 -7153,16123 -7175,16089 -7211,15920
 (Radweg parallel zur Potsdamer Chaussee): eng und kurvenreich	q1 -7414,8970 -7530,8825 -7539,8788 -7597,8735 -7729,8553 -7783,8524
 Kätchenweg: sehr eng	q2 -6975,-1250 -6914,-1218
@@ -2501,7 +2502,6 @@ Ehrenfelsstr.: Fußgängerzone	q3 18737,8686 18778,8663
 (Severingstr. - Parkweg): Fußgänger, schmal	q2 13692,3024 13724,3026 13747,3016 13763,3015
 (Parkweg - Otto-Wels-Ring): Fußgänger	q1 13763,3015 13787,3017
 Buchsteinweg - Säntisstr.: einige Fußgänger	q1 9964,1839 9922,1896
-Wildmeisterdamm: Bordstein am Kölner Damm	q2 13640,2229 13827,2280
 (Alte Hellersdorfer Str. - Neuruppiner Str.): einige Fußgänger, schmal	q3 23222,15219 23257,15223 23282,15228 23280,15244
 (Hönower Str./Wilhelmsmühlenweg - An der Schule): einige Fußgänger	q3 24614,11657 24651,11656 24667,11666 24759,11666
 Torgauer Str. (Hellersdorf) [am Kinder- und Jugendhaus]: als Fußgängerzone ausgeschildert	q3 25311,15355 25315,15404 25215,15413 25135,15419 25127,15412
@@ -3699,7 +3699,6 @@ Wadzeckstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 11315
 Cantianstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 10855,15283 10887,15287
 (Suermondtstr. - Konrad-Wolf-Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 16842,15932 16799,15974 16719,16005 16753,16111
 Ferdinandstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 5398,2422 5417,2383
-Kranoldplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 5417,2383 5317,2345
 An den Grachten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 22132,10915 22166,10936 22169,10969 22172,10996 22181,11057 22191,11130
 Am Groen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 22142,11116 22146,11086 22131,11084 22115,11082 22110,11107
 Am Groen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 22146,10995 22137,11033 22131,11084
@@ -3768,7 +3767,6 @@ Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten: gegen die Einba
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 7697,14187 7781,14238 7802,14250
 Hedwig-Porschütz-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 7757,14318 7735,14305 7652,14257
 Glockenblumenweg: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 16461,2569 16260,2717
-Petunienweg: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 16635,2796 16541,2866
 Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 8442,14456 8266,14346
 Offenbacher Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 4785,7609 5045,7623
 Deidesheimer Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 4978,7530 4785,7518

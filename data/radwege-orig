@@ -55,11 +55,11 @@
 #: source_id: LMS-BR:405906/72 viz2021:13.36206,52.4473,24.04.2026,19:00 (bis 26.04.2026) (inaktiv)
 #: source_id: planb2026:13.36164907,52.44712195,03.08.2026, (hier: "Gehwegvollsperrung", bis 24.08.2026)
 #: osm_watch: note 5188307 3 vvv
-#: last_checked: 2026-07-21 (mapillary) vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-08-24 (planb) vvv
-provisorische Radspuren	RW3; 7597,4499 7628,4521 7667,4549 7690,4563
-provisorische Radspuren	RW3; 7690,4563 7667,4549 7628,4521 7597,4499
+provisorische Radspuren	RW4; 7597,4499 7628,4521 7667,4549 7690,4563
+provisorische Radspuren	RW4; 7690,4563 7667,4549 7628,4521 7597,4499
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -155,7 +155,7 @@ sehr schmal, Verbundsteinpflaster	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,735
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021) (inaktiv)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8699,6468 8683,6326 8666,6169 8646,6000 8629,5866
 	RW3; 8629,5866 8613,5745
@@ -181,7 +181,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: https://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021) (mittlerweile gelöscht) (wieder da, "abgeschlossen")
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 120d vvv
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet) (bestätigt)
@@ -2127,7 +2127,7 @@ Verbundsteinpflaster	RW1; 6494,10440 6403,10424 6276,10401 6147,10383 6029,10356
 #: source_id: viz2021:13.346381,52.43193,10.10.2023,07:00 (Fahrbahnsanierung bis 30.11.2023) (bis 01.12.2023) (inaktiv)
 #: osm_watch: way id="85468589" version="28"
 #: osm_watch: way id="458915639" version="9"
-#: last_checked: 2026-04-01 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2023-12-01 vvv
 alter holpriger Verbundsteinpflasterradweg	RW1;RW8 6665,2836 6658,2907 6643,3070
@@ -2522,7 +2522,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: by: https://www.entwicklungsstadt.de/dauersperrung-richtung-ostkreuz-warum-hier-seit-2018-nichts-passiert/
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-07-18 vvv
+#: last_checked: 2026-07-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -4552,7 +4552,7 @@ Gehweg für Radfahrer frei	RW1; 21365,5832 21303,5826
 # REMOVED (hier nicht, siehe https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1124786.php ) --- Gehweg für Radfahrer frei	RW1; 21569,5730 21600,5694 21605,5687 21623,5661 21706,5541 21789,5427
 Gehweg für Radfahrer frei	RW1; 21789,5427 21706,5541 21623,5661
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: last_checked: 2026-03-17 (luftbildsuche)
+#: last_checked: 2026-08-02
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
 #: XXX nach den Bauarbeiten wieder aktivieren: Gehweg für Radfahrer frei	RW1; 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
@@ -5428,7 +5428,7 @@ Gehweg für Radfahrer frei	RW1; 22467,6135 22656,6142 22700,6138 22777,6151 22857
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260421
 #: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026)
-#: last_checked: 2026-05-31
+#: last_checked: 2026-08-02
 #: next_check: 2026-09-02
 #: valid: -20260902
 gemeinsamer Geh- und Radweg während der Bauarbeiten	RW2;RW2 22128,5003 22133,4986 22154,4923 22196,4847
@@ -8476,7 +8476,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: osm_watch: note 4862755 1
 #: also_indoor: traffic (H,G,B,T,A,W)
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: note: Stubenrauchstr. Richtung Nordosten
@@ -9445,7 +9445,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: osm_watch: way id="4357826" version="25"
 #: osm_watch: way id="354645907" version="21"
 #: osm_watch: way id="354645904" version="15"
-#: last_checked: 2026-04-11 (mapillary) vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 	RW3; 8739,6701 8653,6781
@@ -9492,11 +9492,11 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025) (bis 28.02.2025) (bis 17.03.2025) (bis 26.03.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024) (inaktiv)
 #: source_id: viz2021:13.37431,52.42642,11.03.2025,14:27 (bis 26.03.2025) (inaktiv)
-#: last_checked: 2026-07-01 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung) vvv
 #: note: wobei Richtung Norden das Schild abhanden gekommen ist (siehe Mapillary-Bilder vom 30.10.2025)
-provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
+# REMOVED (nicht mehr) --- provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 provisorische Radspur	RW4; 8579,2265 8560,2181 8490,2084
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -9932,4 +9932,8 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 # 
 #: by: mapillary
 	RW6;RW6 -3293,12304 -3284,12304 -3255,12338 -3252,12405 -3260,12540
+#: historical_note: seit etwa Juli/August 2026
+	RW7;RW7 20499,3572 20592,3633 20683,3693 20776,3753 20835,3795
+	RW7; 20835,3795 20861,3814
+	RW7;RW7 20835,3795 20845,3825
 # 

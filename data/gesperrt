@@ -848,7 +848,6 @@ Alexanderufer - Charité: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,134
 Falkoniergasse: durch Tore abgesperrt	2 9939,12174 9909,12261
 Business Park BBI: dauerhaft gesperrt, Firmengelände	2 19717,-1549 20038,-1474 20394,-1397
 Ferdinandstr.	1s 5398,2422 5417,2383
-Kranoldplatz	1s 5417,2383 5317,2345
 Klingsorplatz	1 4760,4075 4760,4112 4787,4133 4818,4125 4834,4102
 Rio-Reiser-Platz	1 11690,10543 11734,10563
 Rio-Reiser-Platz	1 11708,10497 11690,10543
@@ -1060,6 +1059,7 @@ Fürst-Bismarck-Str.	1 4032,22374 4017,22395
 Mittelstreifen	3nocross::ignrte 16785,17524 16761,17561 16677,17678
 Darßer Str. -> Perler Str.: Mittelstreifen	3::igndisp 16785,17524 16761,17561 16453,17611
 Perler Str. -> Darßer Str.: Mittelstreifen	3::igndisp 16453,17611 16761,17561 16677,17678
+Radickestr.	1 20861,3814 20835,3795
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3626,7 +3626,6 @@ Windenweg -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp
 Windenweg -> Stubenrauchstr.: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16106,2514 16306,2364 16382,2464
 Windenweg -> Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3::igndisp 16106,2514 16306,2364 16342,2338
 Glockenblumenweg: Einbahnstraße	1s:inwork 16461,2569 16260,2717
-Petunienweg: Einbahnstraße	1s:inwork 16635,2796 16541,2866
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
 neben der Minna-Todenhagen-Brücke: Sperrung der Rampe und Treppe	2::inwork 16997,7057 16849,6902 16775,6813 16747,6813
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539

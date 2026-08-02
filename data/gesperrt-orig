@@ -126,7 +126,7 @@ Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX Einbahnstraßenregelung temporär aufgehoben
-#: last_checked: 2026-05-31
+#: last_checked: 2026-08-02
 #: check_frequency: 120d
 #: next_check: 2026-08-24 (VIZ-Verkehrsmeldung)
 Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
@@ -868,7 +868,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
 #: osm_watch: way id="5111625" version="18"
-#: last_checked: 2026-07-01
+#: last_checked: 2026-08-02
 #: check_frequency: 270d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
@@ -1066,7 +1066,7 @@ Lindenstr. (Straßenbahntrasse)	1s:q3::igndisp 21605,5687 21623,5661 21706,5541 2
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: source_id: LMS-BR:263717/72 viz2021:13.56657,52.45535, (bis 31.12.2027)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2026-03-17 (luftbildsuche) vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -1481,7 +1481,14 @@ Falkoniergasse: durch Tore abgesperrt	2 9939,12174 9909,12261
 Business Park BBI: dauerhaft gesperrt, Firmengelände	2 19717,-1549 20038,-1474 20394,-1397
 # 
 Ferdinandstr.	1s:q4 5398,2422 5417,2383
-Kranoldplatz	1s:q4 5417,2383 5317,2345
+# 
+#: next_check_id: KRANOLDPLATZ-2026
+#: last_checked: 2026-08-02
+#: check_frequency: 360d
+#: next_check: 2027-08-06 (planb)
+# REMOVED (während der Bauarbeiten keine Einbahnstraßenregelung) --- Kranoldplatz	1s:q4 5417,2383 5317,2345
+Kranoldplatz	1no 5417,2383 5317,2345
+# 
 #: by: mapillary
 Klingsorplatz	1 4760,4075 4760,4112 4787,4133 4818,4125 4834,4102
 # 
@@ -1825,6 +1832,8 @@ Fürst-Bismarck-Str.	1 4017,22395 4037,22389
 Fürst-Bismarck-Str.	1 4032,22374 4017,22395
 # 
 Darßer Str.: Mittelstreifen	3nocross 16785,17524 16761,17561 16677,17678
+# 
+Radickestr.	1 20861,3814 20835,3795
 # 
 #: section ^^^
 ######################################################################
@@ -4459,12 +4468,12 @@ Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 1
 # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: STUBENRAUCH-2025
-#: last_checked: 2026-06-24 (mapillary) vvv
+#: last_checked: 2026-08-02 vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 Stubenrauchstr./Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3nocross 16242,2279 16306,2364 16382,2464
 #: historical_note: am Anfang kurze unechte Einbahnstraße und Einfahrt verboten
 Glockenblumenweg: Einbahnstraße	1s:q2:inwork 16461,2569 16260,2717
-Petunienweg: Einbahnstraße	1s:q3:inwork 16635,2796 16541,2866
+# REMOVED (nicht mehr) --- Petunienweg: Einbahnstraße	1s:q3:inwork 16635,2796 16541,2866
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -4501,7 +4510,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-08-01
+#: last_checked: 2026-08-02
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -5204,7 +5213,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-07-29 vvv
+#: last_checked: 2026-08-02 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
