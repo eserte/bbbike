@@ -480,7 +480,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-07-14 vvv
+#: last_checked: 2026-08-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
@@ -606,7 +606,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-06-26
+#: last_checked: 2026-08-03
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung, entwicklungsstadt)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -690,7 +690,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: also_indoor: traffic
 #: source_id: planb2026:13.39082309,52.51741878,25.07.2023, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
 #: priority: #B vvv
-#: last_checked: 2026-07-29 (mapillary) vvv
+#: last_checked: 2026-08-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt, planb) vvv
 #: osm_watch: way id="153698394" version="19"
@@ -1087,11 +1087,12 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 ### Neukölln ###
 # 
-# REMOVED --- #: source_id: LMS-BR:416772/72 viz2021:13.44685,52.46001, (inaktiv)
-# REMOVED --- #: source_id: planb2026:-
-# REMOVED --- #: also_indoor: traffic (G,T)
-# REMOVED --- #: last_checked: 2026-07-25
-# REMOVED --- Sieversufer: Wasserrohrbruch, kurzer Abschnitt der Fahrbahn gesperrt	q2::inwork 13430,6086 13636,6185
+#: source_id: LMS-BR:416772/72 viz2021:13.44685,52.46001, (inaktiv)
+#: source_id: planb2026:-
+#: also_indoor: traffic (ex-G,T)
+#: last_checked: 2026-08-02 (mapillary)
+#: check_frequency: 14d (traffic)
+Sieversufer: Wasserrohrbruch, kurzer Abschnitt der Fahrbahn gesperrt	q2::inwork 13430,6086 13636,6185
 # 
 # REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260427 (hier: nur Kfz-Verkehr) #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhxndyhlk2o #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mmgdzlwgnk2f) --- #: source_id: LMS-BR:405792/72 viz2021:13.424843,52.482167, (bis 26.05.2026) (vorfristig inaktiv) --- #: source_id: LMS-BR:405832/72 viz2021:13.424477,52.48219, (inaktiv) --- #: traffic_note: Ausweichverkehr über Reuterstr. - Flughafenstr., Gefahr von Stauungen vor den Ampeln --- #: last_checked: 2026-05-08 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2026-05-26 vvv --- Hermannstr.: Wasserrohrbruch, Engstelle	q3::inwork; 11884,8492 11882,8519 11882,8527 --- Karlsgartenstr.: Absperrung an der Hermannstr	q3::inwork 11769,8515 11882,8527 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 

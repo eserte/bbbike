@@ -289,6 +289,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: by: https://entwicklungsstadt.de/trotz-verzoegerungen-berlin-modern-am-kulturforum-oeffnet-rohbau-fuer-besucher/ (Fertigstellung 2029)
 #: by: https://www.entwicklungsstadt.de/verzoegerungen-beim-berlin-modern-feuchtigkeitsschaeden-stoppen-prestige-museumsbau/
 #: by: https://www.entwicklungsstadt.de/berlin-modern-rueckt-in-die-2030er-probleme-im-rohbau-bremsen-baufortschritt/ (bis Mitte 2030?)
+#: by: https://www.entwicklungsstadt.de/sanierung-am-berlin-modern-schreitet-voran-eroeffnung-erst-2030/
 #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
 #: by: srt
 #: XXX: temporäre Radspur
@@ -1983,7 +1984,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren -> mittlerweile ist der Bürgersteig + Radweg wieder offen, wird noch die Busspur kommen?
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-07-28 (webcam)
+#: last_checked: 2026-08-02 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2026-11-30 (VIZ-Verkehrsmeldung)
 	RW1; 14174,7505 14305,7415
@@ -2370,7 +2371,7 @@ Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,116
 	RW3; 10133,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
 #: next_check_id: GERTRAUDENBRUECKE-2025
-#: last_checked: 2026-07-28 vvv
+#: last_checked: 2026-08-03 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
 #: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
@@ -2419,7 +2420,7 @@ Busspur ist immer gültig	RW5; 10376,11879 10391,11898 10423,11936 10460,11979 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-07-13 vvv
+#: last_checked: 2026-08-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2451,7 +2452,7 @@ Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
-#: last_checked: 2026-07-28
+#: last_checked: 2026-08-03
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
@@ -3517,6 +3518,17 @@ Busspur ist immer gültig	RW5; 16248,12177 16223,11999
 # REMOVED (nur das Stück bergauf) --- #: XXX Radspur wird grün markiert (evtl. auch das Teilstück bergauf) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php --- #: next_check: 2018-10-17
 # REMOVED --- #: XXX wird hier auch die Radspur grün markiert? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php --- #: by: https://twitter.com/ADFC_Berlin/status/1065526520599511045 --- #: priority: #D --- #: next_check: 2018-11-22
 Grünbeschichtung	RW4; 11979,8014 12162,8053 12311,8084 12415,8106 12427,8109
+#: by: https://www.infravelo.de/projekt/werbellinstrasse-1/ (4. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 2. Quartal 2026) (3. Quartal 2026 - 3. Quartal 2026)
+#: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (voraussichtlich ab März 2026)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2026/pressemitteilung.1697694.php (Beginn der Bauarbeiten, kein Endedatum)
+#: by: https://www.entwicklungsstadt.de/300-meter-bis-zum-lueckenschluss-radstreifen-in-der-werbellinstrasse-wird-ergaenzt/
+#: source_id: planb2026:13.43729985,52.47898915,26.07.2026, ("Fahrbahneinengung", 26.07.2026 bis 31.07.2026) (inaktiv)
+#: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_352010 (2026-07-28 bis 2026-07-30) (mittlerweile bis 2026-07-31)
+#: XXX kommen hier noch Poller/Leitboys hin? kommen hier noch Radwegschilder hin?
+#: last_checked: 2026-08-02 (mapillary)
+#: check_frequency: 14d
+#: next_check: 2026-09-30 (infravelo)
+	RW3; 12427,8109 12566,8140 12656,8160 12700,8170
 Grünbeschichtung	RW4; 12427,8109 12415,8106 12311,8084 12162,8053
 Fahrradschleuse, Grünbeschichtung	RW4; 12162,8053 11979,8014
 	RW2; 12700,8170 12753,8187

@@ -4177,7 +4177,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-07-13
+#: last_checked: 2026-08-03
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4302,7 +4302,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026) (bis 22.07.2026) (bis 01.10.2026)
 #: source_id: planb2026:13.42640002,52.52310299,03.02.2026, ("Fahrstreifen-Reduzierung", bis 01.10.2026)
 #: note: außerdem ist die verkehrsrechtliche Situation der Einfahrt Richtung Weydemeyerstr. für Radfahrer unklar: komplett gesperrt oder nicht? Durchfahrt war bislang immer möglich.
-#: last_checked: 2026-07-13
+#: last_checked: 2026-08-03
 #: next_check: 2026-10-01 (VIZ-Verkehrsmeldung, planb)
 # REMOVED --- #: valid: -20260722
 #: valid: -20261001
@@ -4750,7 +4750,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-07-29 vvv
+#: last_checked: 2026-08-02 (mapillary) vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
@@ -4769,8 +4769,7 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht
 (Betriebsweg Kiefholzstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14120,9234 14081,9268
 #: osm_watch: way id="1455838853" version="3"
 (Betriebsweg Beermannstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14103,9316 14088,9294 14081,9268
-#: osm_watch: way id="825049429" version="11"
-Weg entlang der A100: gesperrt	2::inwork 14379,7372 14291,7033
+# REMOVED (offen!) --- #: osm_watch: way id="825049429" version="11" --- Weg entlang der A100: gesperrt	2::inwork 14379,7372 14291,7033
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4939,7 +4938,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-07-28
+#: last_checked: 2026-08-03
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -4969,7 +4968,7 @@ Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
 #: osm_watch: node id="12731777446" version="1"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten; am 2025-01-27 ebenso
-#: last_checked: 2026-07-19
+#: last_checked: 2026-08-02 (mapillary)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
@@ -5405,7 +5404,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-warum-das-wichtigste-gebaeude-in-der-kritik-steht/
 #: by: https://www.entwicklungsstadt.de/800-jahre-molkenmarkt-vom-olden-markt-zum-neuen-stadtquartier/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-07-13
+#: last_checked: 2026-08-03
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5414,7 +5413,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-06-26
+#: last_checked: 2026-08-03
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
