@@ -290,6 +290,9 @@ Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 1366
 # REMOVED --- Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
+#: osm_watch: way id="1219203456" version="25"
+#: osm_watch: way id="884139300" version="28"
+#: osm_watch: way id="1127801487" version="14"
 #: last_checked: 2026-07-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
@@ -1099,6 +1102,7 @@ Sieversufer: Wasserrohrbruch, kurzer Abschnitt der Fahrbahn gesperrt	q2::inwork 
 #: by: https://www.buwog.de/wohnbauprojekte/berlin-buwog-set-44 ("BUWOG SET 44", Fertigstellung ab 2028)
 #: by: https://www.entwicklungsstadt.de/buwog-set-44-in-neukoelln-baustart-auf-dem-gelaende-der-geyer-werke/ (bis Herbst 2028)
 #: by: https://www.entwicklungsstadt.de/neukoelln-neue-wohnungen-und-gewerbe-fuer-harzer-kiez-geplant/
+#: by: https://www.entwicklungsstadt.de/geyer-werke-in-neukoelln-neues-wohnquartier-auf-historischem-gewerbeareal/
 #: osm_watch: note 3372461 1
 #: osm_watch: way id="714352578" version="3"
 #: source_id[inactive]: bvg2024:171#HIM_FREETEXT_320392 (Haltestelle ist aufgehoben, kein Endedatum)

@@ -2862,8 +2862,9 @@ tragen (3x13 Stufen)	0:45 18739,4728
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409854635/licht-am-ende-des-tunnels-s-bahnhof-erhaelt-endlich-seinen-aufzug.html (1. Quartal 2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23856.pdf (Inbetriebnahme im 2. Quartal 2026)
 #: XXX hier wird es in Zukunft einen Aufzug geben
-#: last_checked: 2026-07-07 (bahninfo-forum)
-# REMOVED --- #: next_check: 2026-06-30 (pardok)
+#: last_checked: 2026-07-18 (bahninfo-forum)
+#: check_frequency: 30d
+#: next_check: 2026-09-20 (Baustellenschild: Sommer 2026)
 tragen	0:45 18661,4655
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
@@ -4282,6 +4283,7 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 #: osm_watch: way id="1054730129" version="9"
 #: osm_watch: way id="295548381" version="9"
 #: source_id: planb2026:13.43684271,52.51255043,02.03.2026,06:00 ("Gehwegvollsperrung", bis 31.03.2027)
+#: source_id: planb2026:13.43631736,52.51181578,17.08.2026,08:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026)
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
 #: historical_note: am Anfang der Bauarbeiten war der Gehwegbereich schmaler: schmaler Gehweg, Fußgänger, Bordstein, q4+::inwork
 #: last_checked: 2026-07-16
@@ -5234,7 +5236,7 @@ Eierkühlhaus/Stralauer One (Uferseite): wegen Hochbauarbeiten gesperrt	2::inwork
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/agromex-fanny-zobel-stra%C3%9Fe.5/page-8#post-27408
 #: confirmed_by: srt
 # REMOVED (mehr als zwei Jahre kaputt) --- #: also_indoor: webcam https://portal1548.webcam-profi.de/ (Februar+Juli 2023 + Juli 2024 + Mai 2025: 401) vvv
-#: last_checked: 2026-07-23 vvv
+#: last_checked: 2026-08-04 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,10152 14373,10046
