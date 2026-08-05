@@ -719,6 +719,13 @@
 (defun bbbike-insert-current-url ()
   "Read ~/Downloads/current_url.txt and insert '#: by: URL' on a new line below the current one."
   (interactive)
+  (let ((url (bbbike-get-current-url)))
+    (beginning-of-line)
+    ;(end-of-line)
+    ;(forward-char 1)
+    (insert "#: by: " url "\n")))
+
+(defun bbbike-get-current-url ()
   (let ((file "~/Downloads/current_url.txt"))
     (unless (file-exists-p file)
       (user-error "File does not exist: %s" file))
@@ -729,10 +736,7 @@
         (user-error "File is empty: %s" file))
       (unless (string-match-p "\\`https?://.+\\'" url)
         (user-error "Content does not look like a http/https URL: %s" url))
-      (beginning-of-line)
-      ;(end-of-line)
-      ;(forward-char 1)
-      (insert "#: by: " url "\n"))))
+      url)))
 
 (setq bbbike-next-check-id-regexp "^#:[ ]*\\(next_check_id\\):?[ ]*\\([^ \n]+\\)")
 
