@@ -5812,7 +5812,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2924,15914 2892,15983 2809,16143
 #: also_indoor: traffic (ex-T,G,ex-H[ganz kurz],ex-W)
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2026-08-03 (traffic)
+#: last_checked: 2026-08-05 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-07-31 (planb)
@@ -6995,18 +6995,18 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        {
          'data' => '#: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026) (mittlerweile auch die Mühlenstr. gesperrt -> andere Baustelle -> handicap_s) (bis 07.07.2026) (bis 07.08.2026)
+#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026) (mittlerweile auch die Mühlenstr. gesperrt -> andere Baustelle -> handicap_s) (bis 07.07.2026) (bis 07.08.2026) (bis 30.09.2026)
 #: osm_watch: way id="1303423090" version="8"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdf4duxn6227 (Radverkehr von der Sperrung in der Mühlenstr. nicht betroffen)
 #: last_checked: 2026-06-25 (mapillary)
 # REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
-#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-00-30 (VIZ-Verkehrsmeldung)
 Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 ',
          'from' => 1717909200,
          'id' => 4083,
-         'text' => 'Dolomitenstr.: Einbahnstraßenregelung an der Mühlenstr., voraussichtlich bis August 2026',
+         'text' => 'Dolomitenstr.: Einbahnstraßenregelung an der Mühlenstr., voraussichtlich bis September 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7880,7 +7880,8 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
        undef,
        undef,
        {
-         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
+         'data' => '#: next_check_id: MERLERWEG-2026
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
 #: by: https://www.entwicklungsstadt.de/marzahner-chaussee-rohbauarbeiten-fuer-neue-wohnungen-kommen-voran/ (Fertigstellung: geplant bis 2027)
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260605 (Fräsarbeiten bis Ende Juni 2026, Baustellenampel)
 #: source_id: LMS-BR:386025/72 viz2021:13.53352,52.52323,08.10.2025,06:00 viz2021:13.53352,52.52323, (Gegenverkehrsregelung, bis 30.11.2025) (bis 31.12.2025) (bis 23.01.2026) (bis 27.02.2026) (bis 02.04.2026) (bis 10.04.2026) (bis 15.04.2026) (bis 30.04.2026) (bis 08.05.2026) (vorfristig inaktiv)
@@ -7893,13 +7894,12 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 # REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
 #: osm_watch: way id="1374232475" version="6"
 #: osm_watch[closed]: note 4693093 1
-#: XXX der östliche Abschnitt des Merler Wegs wird asphaltiert
 #: also_indoor: traffic (ex-H,ex-G,no-T)
 #: add_fragezeichen: Ist die Merler Straße weiterhin gesperrt?
-#: last_checked: 2026-06-16 (mapillary)
-#: check_frequency: 45d
+#: last_checked: 2026-08-05
+#: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
-Merler Weg	q4::inwork 18987,13248 19180,13219
+Merler Weg	q4::inwork 18987,13248 19027,13242 19180,13219
 ',
          'from' => undef,
          'id' => 4291,
@@ -8275,7 +8275,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-07-23 (traffic) vvv
+#: last_checked: 2026-08-05 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 Caspar-Theiß-Str.: Einbahnstraßenregelung	q4::inwork; 2924,9391 2947,9367
@@ -8384,7 +8384,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
-#: last_checked: 2026-07-22
+#: last_checked: 2026-08-05
 #: next_check: 2026-08-14 (VIZ-Verkehrsmeldung)
 	q4::inwork; 16276,12273 16397,12397
 # REMOVED (hier nicht) ---	q4::inwork; 16397,12397 16485,12384
@@ -9083,8 +9083,8 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
 #: osm_watch: note 5200828 2
-#: last_checked: 2026-08-01 (traffic) vvv
-#: check_frequency: 14d (traffic) vvv
+#: last_checked: 2026-08-02 (architektur-urbanistik) vvv
+#: check_frequency: 10d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
 Gotenstr.: südlich der Kreuzung	q4::inwork 7497,7761 7499,7880
@@ -9686,7 +9686,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: source_id: planb2026:13.32151599,52.46715781,01.12.2025, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
 #: also_indoor: traffic (G,no-T,no-W,no-H)
 #: osm_watch: way id="251962463" version="5"
-#: last_checked: 2026-07-07 (traffic)
+#: last_checked: 2026-08-05 (traffic)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (neubaukompass website)
@@ -9763,19 +9763,7 @@ Käthestr.: Abschnitt der Straße gesperrt	q4::inwork 16369,16003 16349,15935 1635
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: LMS-BR:404324/72 viz2021:13.17839,52.54934,-1 (hier bis Pionierstr., was vermutlich zu weit ist, bis 05.08.2026) (inaktiv)
-#: source_id: LMS-BR:388895/72 viz2021:13.17839,52.54934, (hier nur bis Hermann-Schmidt-Weg, was realistischer ist, bis 04.08.2026)
-	q4::inwork -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5061,15847
-Westerwaldstr.: Einbahnstraßenregelung	q4::inwork; -5036,15625 -5023,15688
-# REMOVED (hier vermutlich nicht) ---	q4::inwork -5061,15847 -5036,15923 -5019,15970 -4951,16116
-',
-         'from' => 1775758530,
-         'id' => 4580,
-         'text' => 'Westerwaldstr.: Bauarbeiten zwischen Erzgebirgsweg und Hermann-Schmidt-Weg, Sperrung, bis 04.08.2026 17:00',
-         'type' => 'handicap',
-         'until' => 1785880800
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.entwicklungsstadt.de/treptow-koepenick-volkspark-wuhlheide-baustelle-europaradweg/
@@ -10850,7 +10838,18 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
          'type' => 'gesperrt',
          'until' => 1788213599
        },
-       undef,
+       {
+         'data' => '#: next_check_id: AMSTAEDTISCHENZENTRALFRIEDHOF-2026
+#: note: Weg durch Baustellenbereich: 150m, 2/3 davon unbefestigter Weg, 1/3 Kopfsteinpflaster mit großen Fugen; direkter Weg wäre 100m; man soll als Radfahrer schieben
+	q4::inwork 17540,12222 17485,12240
+# REMOVED ---	2::inwork 17540,12222 17485,12240
+',
+         'from' => 1784412000,
+         'id' => 4687,
+         'text' => 'Am Städtischen Zentralfriedhof: Bauarbeiten, Umwege über teilweise unbefestigte Wege, möglicherweise bis März 2027',
+         'type' => 'gesperrt',
+         'until' => 1806530399
+       },
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1640934.php (zum möglichen Uferweg Baumschulenstraße-Köpenicker Landstraße)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1644291.php (vorbereitende Rodungen bis 1.3.2026)
@@ -10911,19 +10910,7 @@ Borussiastr.	q3::inwork 8846,6781 9046,6784 9245,6791
          'type' => 'gesperrt',
          'until' => 1786831199
        },
-       {
-         'data' => '#: also_indoor: traffic (ex-G,no-T,no-H,no-W)
-#: source_id: planb2026:13.42333831,52.55507567,02.03.2026,06:00 ("Sicherung gemäß Vz.-plan", ist das diese Baustelle? bis 31.12.2026)
-#: last_checked: 2026-07-23 (mapillary)
-#: check_frequency: 14d (traffic)
-	q4::inwork 11534,16622 11630,16623
-',
-         'from' => undef,
-         'id' => 4694,
-         'text' => 'Thulestr.: Bauarbeiten zwischen Neumannstr. und Kurze Str., Sperrung, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/verkehrsberuhigung-in-der-gartenstadt-bleibt-schwierig_a202537#gallery=null (für 2020 geplant)
@@ -11033,6 +11020,32 @@ Plauener Str.	q4::inwork; 17902,15039 17829,15015
          'text' => 'Plauener Str.: Anbindung an Rhinstr. gesperrt, evtl. ist auch der Radverkehr betroffen, bis Mitte August 2026',
          'type' => 'handicap',
          'until' => 1786744799
+       },
+       {
+         'data' => '#: by: https://www.ahrensfelde.de/portal/meldungen/verkehrseinschraenkungen-aufgrund-von-bauarbeiten-im-juli-und-august-900000540-30601.html
+#: osm_watch: note 5362444 3
+#: note: es gibt allerdings zur Not einen inoffiziellen Trampelpfad über eine steile Böschung
+#: next_check: 2026-08-14
+	2::inwork 26501,19266 25861,19127
+',
+         'from' => 1781474400,
+         'id' => 4701,
+         'text' => 'Mehrow - Trappenfelde: Straße wegen Leitungsarbeiten gesperrt, voraussichtlich bis 14.08.2026, evtl. wird die Sperrung verlängert',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~03-08-2026-b102_jueterbog_fertigstellung-bruecke-auf-fruehjahr-2027-verschoben
+#: source_id: LS/222-W/26/015 (bis 01.09.2028)
+#: osm_watch: way id="24822627" version="17"
+#: osm_watch: way id="1542840515" version="1"
+	2::inwork -9196,-46818 -9302,-46743 -9400,-46580 -9520,-46557
+',
+         'from' => 1785954227,
+         'id' => 4702,
+         'text' => 'Jüterbog, B102: Bauarbeiten, Sperrung der Straße, voraussichtlich bis August 2028',
+         'type' => 'gesperrt',
+         'until' => 1851372000
        }
      
 );

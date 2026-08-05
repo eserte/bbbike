@@ -1239,10 +1239,10 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 ### Lichtenberg ###
 # 
 #: next_check_id: ALLEEDERKOSMONAUTEN-2026
-#: last_checked: 2026-07-22
-#: check_frequency: 14d
+#: last_checked: 2026-08-05
+# REMOVED --- #: check_frequency: 14d
 #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
-(Allee der Kosmonauten/Rhinstr. - am Marzahn-Hohenschönhauser Grenzgraben): Fußgänger, Bordsteine	q3- 18226,13506 18178,13495 18153,13464 18091,13461 18088,13494 18065,13496
+(Allee der Kosmonauten/Rhinstr. - am Marzahn-Hohenschönhauser Grenzgraben): Fußgänger, Bordsteine	q3- 18226,13506 18178,13495 18153,13464 18091,13461 18088,13494 18063,13490
 # 
 # REMOVED --- #: also_indoor: traffic (ex-G,no-T,no-H,no-W)
 # REMOVED --- #: source_id: planb2026:13.48262603,52.51414893,11.05.2026,06:00 (hier nur "Fahrbahneinengung", bis 30.07.2026)
@@ -1396,7 +1396,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-07-07 vvv
+#: last_checked: 2026-08-02 (architektur-urbanistik) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -1512,11 +1512,11 @@ Stavangerstr.: Sperrung der Fahrbahn, Radverkehr wird über den schmalen Bürgerst
 # 
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/wenn-wohnungsbau-den-verkehr-blockiert-fast-jeden-tag-chaos--berliner-bezirk-lasst-gefahrlichen-engpass-weiten-15670280.html (Erwähnung)
 #: by: https://www.entwicklungsstadt.de/heynstrasse-warum-landet-der-durchgangsverkehr-im-wohnkiez/
-#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, (bis 04.06.2026) (bis 07.07.2026) (bis 07.08.2026)
+#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, (bis 04.06.2026) (bis 07.07.2026) (bis 07.08.2026) (bis 30.09.2026)
 # REMOVED (vorfristig inaktiv) --- #: source_id: planb2026:175 (bis 07.08.2026)
 #: last_checked: 2026-07-08
-#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung, ex-planb)
-#: valid: -20260807
+#: next_check: 2026-09-30 (VIZ-Verkehrsmeldung, ex-planb)
+#: valid: -20260930
 Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahrer frei	q3::inwork 10495,17658 10573,17566
 # 
 # REMOVED --- #: XXX Neumannstraße (Pankow) in beiden Richtungen zwischen Schonensche Straße und Thulestraße: Leitungsbau, Vollsperrung für Kfz-Verkehr, vom 05.06.2023 07:00 bis 28.07.2023 17:00 --- #: source_id: viz2021:13.423554,52.554909,05.06.2023,07:00 (bis 28.07.2023) (inaktiv) --- #: also_indoor: traffic (H,G,B,W) --- #: last_checked: 2023-07-14 --- #: next_check: 2023-07-28 --- #: valid: -20230728 --- Neumannstr.: Bauarbeiten, etwa 30m Fahrbahn gesperrt	q2::inwork 11630,16623 11655,16486
@@ -1626,8 +1626,10 @@ Potsdamer Str.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3644,293
 ### Waidmannslust ###
 # 
 #: next_check_id: FUERSTBISMARCKSTEG-2026
+#: source_id: planb2026:13.31334242,52.60806686,07.07.2026,07:00 ("keine Fahrbahn-Einschränkung", bis 28.08.2026)
 #: last_checked: 2026-06-07
-#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2026-08-28 (planb)
 Fürst-Bismarck-Steg: Engstelle	q3 3879,22574 3907,22560
 # 
 #: temporary ^^^

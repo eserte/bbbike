@@ -366,7 +366,7 @@ Eisvogelweg	1 528,4747 542,4699 595,4594 635,4524 661,4492 691,4474
 Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,1468 10638,1442 10659,1370
 Zingster Str. (Gesundbrunnen)	1 9276,16032 9265,16109 9277,16154 9307,16190
-Neufahrwasserweg	1 20390,15307 20550,15551
+Neufahrwasserweg	1 20390,15307 20548,15549
 Rotdornstr.	1 5081,7112 5121,7132 5141,7158 5139,7216
 Rieppelstr.	1 851,15155 780,15358 794,15362 772,15460 768,15486
 Harriesstr.	1 768,15486 659,15469 525,15435
@@ -1659,8 +1659,8 @@ Adersleber Weg -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20935,1468
 Mittelstreifen	3nocross::ignrte 14218,13834 14291,13862 14343,13882
 Landsberger Allee -> Oderbruchstr.: Mittelstreifen	3::igndisp 14218,13834 14291,13862 14243,13890
 Mittelstreifen	3nocross::ignrte 20260,15434 20532,15564 20580,15586
-Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20580,15586 20532,15564 20550,15551
-Rebhuhnweg -> Landsberger Allee: Mittelstreifen	3::igndisp 20550,15551 20532,15564 20260,15434
+Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20580,15586 20532,15564 20548,15549
+Rebhuhnweg -> Landsberger Allee: Mittelstreifen	3::igndisp 20548,15549 20532,15564 20260,15434
 Mittelstreifen	3nocross::ignrte 15256,14237 15430,14262 15588,14279 15850,14308
 Landsberger Allee -> Mittelstr./Altenhofer Str.: Mittelstreifen	3::igndisp 15256,14237 15430,14262 15430,14272
 Mittelstr./Altenhofer Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15430,14272 15430,14262 15588,14279
@@ -3580,7 +3580,7 @@ Schwingtor	BNP:5:-191:trailer=10 4183,13725
 Drängelgitter	BNP:3:-262:trailer=10 -1940,24464
 Drängelgitter	BNP:3:-113:trailer=10 4277,23296
 Drängelgitter	BNP:3:-93:trailer=10 5829,7827
-Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18065,13496
+Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18063,13490
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
 (Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): noch nicht freigegeben, Bauzäune	2::inwork 5812,7826 5829,7827 6147,7840

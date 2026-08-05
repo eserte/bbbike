@@ -6,6 +6,22 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: source_id: LMS-BR:412099/72 viz2021:13.22465,52.58966,16.06.2026,09:00 (bis 18.09.2026)
+#: next_check: 2026-09-18
+#: valid: -20260918
+Sandhauser Str./Elstegasse: Gegenverkehrsregelung	X::inwork::alternating -1971,20231
+# 
+#: source_id: LMS-BR:412100/72 viz2021:13.34672,52.59299,16.06.2026,09:00 (bis 04.09.2026)
+#: next_check: 2026-09-04
+#: valid: -20260904
+Schorfheidestr./Drebkauer Str.: Gegenverkehrsregelung	X::inwork::alternating 6317,20751
+# 
+#: next_check_id: ALLEEDERKOSMONAUTEN-2026
+#: last_checked: 2026-08-05
+#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+#: valid: -20260907
+Allee der Kosmonauten/Meeraner Str.	X::inwork 18382,13492
+# 
 #: source_id: LMS-BR:417487/72 viz2021:13.38351,52.53674,29.07.2026,07:00 (bis 16.10.2026)
 #: next_check: 2026-10-16
 #: valid: -20261016
@@ -99,7 +115,7 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # 
 #: next_check_id: ALTEFOERSTEREI-2026
 #: last_checked: 2026-08-02 vvv
-#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-08-06 (VIZ-Verkehrsmeldung) vvv
 (Übergang Höhe Haupteingang Stadion an der Alten Försterei)	F::inwork 21519,5767
 (Übergang Höhe Haupteingang Stadion an der Alten Försterei)	F::inwork 21522,5771
 #: next_check ^^^
@@ -243,7 +259,7 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
-#: last_checked: 2026-07-23 (traffic)
+#: last_checked: 2026-08-05 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
 # REMOVED --- #: valid: -20251231

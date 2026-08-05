@@ -2048,6 +2048,7 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.1571503.php
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/250513-lageplan-schoenholzer-weg-komprimiert.pdf (keine Radspuren; direkte Radwegverbindung zur Kreuzung Hauptstr./Kastanienallee; Unterbindung des Durchgangsverkehrs zur Kastanienallee)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26599.pdf (Erwähnung der Asphaltierung)
 #: osm_watch: way id="34428911" version="18" vvv
 #: osm_watch: note 4459967 1 vvv
 #: XXX wird hier asphaltiert? vvv
@@ -2463,7 +2464,7 @@ Landsberger Allee: neu asphaltierter Radweg	Q0; 18831,14823 18553,14678
 #: source_id: 2147342864 (inaktiv)
 #: source_id: 2147345560 (Radwegarbeiten) (inaktiv)
 #: check_frequency: 360d vvv
-#: last_checked: 2026-03-04 vvv
+#: last_checked: 2026-08-05 vvv
 Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
@@ -2975,16 +2976,16 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 (Kolonie Friedrichsfelde Nord, entlang der Fernwärmeleitung): feiner Kies, relativ glatt	Q1 17832,12244 18135,12246 18142,12260 18180,12262 18216,12262
 (Am Städtischen Zentralfriedhof): asphaltiert	Q0 17790,12255 17764,12238 17540,12222
 # REMOVED (weitgehend fertiggestellt, nur ein paar Meter an den Anschlüssen fehlen noch) --- #: XXX wird hier auch asphaltiert werden? --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php ("Vorplatz Zentralfriedhof, Asphaltierung Fahrradspur", "Planung") --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.842152.php ("bis Mitte November 2019") --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bezirksamt-laesst-am-vorplatz-des-zentralfriedhofs-spuren-fuer-radler-bauen_a236194 (bis Mitte November 2019) --- #: osm_watch: way id="70668204" version="9" --- #: last_checked: 2019-11-16 (fast fertig) --- #: check_frequency: 7d
+#: next_check_id: AMSTAEDTISCHENZENTRALFRIEDHOF-2026
 #: by: https://www.nachhaltige-erneuerung.berlin.de/frankfurter-allee-nord/umgestaltung-vorplatz-zentralfriedhof-friedrichsfelde (Realisierung bis 2025/2026) (mittlerweile bis 2027)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article410552147/firma-gefeuert-arbeiten-eingestellt-diese-baustelle-wird-zur-posse.html
 #: by: https://mein.berlin.de/ideas/2023-16489/ (bekommt dieser Platz nach Ende der Bauarbeiten den Namen Hermann-Mächtig-Platz?)
 #: source_id[inactive]: bvg2024:256#HIM_FREETEXT_307497
-#: osm_watch: note 4294376 9
+#: osm_watch: note 4294376 10
 #: osm_watch: way id="1025072174" version="5"
 #: source_id: planb2026:13.50921404,52.51499445,11.05.2026,07:00 ("Fahrbahneinengung", bis 31.03.2027)
-#: XXX außerdem kann die Asphaltfahrbahn neben dem Friedhof gesperrt sein (nicht am Wochenende?), dann Ausweichen über unbefestigten parallelen Weg
-#: last_checked: 2026-07-22 (Fahrbahnarbeiten)
-#: check_frequency: 14d
+#: last_checked: 2026-08-05
+#: check_frequency: 60d
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-03-31 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (nachhaltige-erneuerung website)
@@ -3621,11 +3622,11 @@ Bleckmannweg: Verbundsteinpflaster	Q1+ 15756,12212 15886,12190
 Hoenerweg: kleinteiliges Kopfsteinpflaster	Q1- 15668,12304 15790,12289 15896,12273
 (Verlängerte Borkheider Str.): Verbundsteinpflaster	Q1 21555,17546 21571,17587 21619,17691
 (Verlängerte Borkheider Str.): Beton	Q1+ 21619,17691 21663,17795
-Alfred-Döblin-Str.: Beton	Q0 20487,16392 20286,16494 20232,16522
+Alfred-Döblin-Str.: Beton	Q0 20489,16386 20286,16494 20232,16522
 (S-Bhf. Raoul-Wallenberg-Str. - Alfred-Döblin-Str.): Beton	Q0 20198,16322 20286,16494
-# REMOVED --- x(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Beton	Q0- 20328,16473 20342,16499
+# REMOVED --- x(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Beton	Q0- 20328,16473 20336,16495
 #: corrected_by: mapillary (Beton, Q0- -> ..., neu gemacht)
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20342,16499 20395,16481 20409,16486 20520,16479 20547,16485
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20336,16495 20395,16475 20409,16486 20520,16479 20547,16485
 #: corrected_by: mapillary (alter Asphalt mit einigen Hebungen, Q1- -> ..., neu gemacht)
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20547,16485 20815,16469 20851,16454
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Beton	Q0- 20851,16454 20898,16420
@@ -11016,7 +11017,7 @@ Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17485,13316 17488,13257 17491,13190 17490,13133 17491,13125
 #: historical_note: bis Juli 2026 mit getaggt Q2+, danach Q2
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, zahlreiche Wurzelhebungen	Q2 17698,13124 17739,13146 17871,13145 17906,13141
-(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, vereinzelt leichte Wurzelhebungen	Q0- 17906,13141 17978,13328 18065,13496 18104,13510
+(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, vereinzelt leichte Wurzelhebungen	Q0- 17906,13141 17981,13327 18032,13404 18063,13490 18104,13510
 Allee der Kosmonauten: Beton mit einigen Hebungen und Asphaltflicken	Q1+ 17698,13134 17690,13365 17689,13405 17688,13430
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
 #: historical_note: früher ohne "etwas Schotter", Q1+
@@ -11453,8 +11454,8 @@ Sella-Hasse-Str.: Beton	Q0 20840,16777 20734,16819
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): Kleinsteinpflaster	Q1- 21142,16730 21077,16710
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): Verbundsteinpflaster	Q1 21077,16710 21019,16698 21011,16700
 Walter-Felsenstein-Str.: Asphalt	Q0 20792,16951 20770,16901 20734,16819 20617,16614
-(Walter-Felsenstein-Str. - Raoul-Wallenberg-Str.): Beton	Q0 20617,16614 20547,16485 20523,16469 20487,16392 20474,16363 20456,16356 20389,16209 20372,16173
-Marzahner Promenade: Beton	Q0- 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20226,15512
+(Walter-Felsenstein-Str. - Raoul-Wallenberg-Str.): Beton	Q0 20617,16614 20547,16485 20528,16470 20489,16386 20477,16361 20460,16353 20389,16209 20372,16173
+Marzahner Promenade: Beton	Q0- 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15717 20527,15654 20226,15512
 # REMOVED (keine Instandsetzungsarbeiten mehr, keine wesentliche Verbesserung) --- #: by: https://nitter.cz/VIZ_Berlin/status/1617486809470013442#m (Ende Februar 2023?) --- #: source_id: viz2021:13.54537,52.542117,17.10.2022,10:12 (Fahrbahninstandsetzung bis 9.12.2022) (inaktiv) --- #: osm_watch: way id="8014720" version="35" --- #: XXX Nach der Instandsetzung bessere Qualität, vielleicht asphaltiert? --- #: last_checked: 2023-05-06 --- #: check_frequency: 90d --- #: next_check: 2023-02-28
 Marzahner Promenade: Beton	Q0- 20226,15512 19960,15337 19875,15324 19768,15361 19681,15405
 (Raoul-Wallenberg-Str. - Marzahner Promenade): Beton	Q0- 20832,15981 20788,15968 20761,15940
@@ -12375,8 +12376,8 @@ Schlotterkammsteig: wassergebundene Decke	Q1 16251,-586 16254,-575 16271,-522 16
 (Springpfuhlpark - Murtzaner Ring): Beton	Q0- 19535,14448 19593,14452
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): unbefestigter Weg	Q2+ 22347,13858 22389,13824 22426,13735
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Holzbohlen	Q1- 22426,13735 22445,13720 22457,13713
-(Rebhuhnweg - Landsberger Allee): Beton	Q1+ 20569,15537 20580,15586
-(Landsberger Allee - Marzahner Promenade): Betonplatten	Q1 20580,15586 20555,15631 20526,15657
+(Rebhuhnweg - Landsberger Allee): Beton	Q1+ 20571,15530 20580,15586
+(Landsberger Allee - Marzahner Promenade): Betonplatten	Q1 20580,15586 20555,15631 20527,15654
 (Radweg an der Straßenbahn - Rudolf-Leonhard-Str.): Verbundsteinpflaster	Q1 21192,16466 21217,16446
 Neubrandenburger Str.: Beton	Q0- 17680,18700 17667,18617 17635,18591 17584,18551 17401,18409
 Darguner Str.: Beton	Q0- 17566,18680 17635,18591
@@ -12830,7 +12831,8 @@ Lin-Jaldati-Weg: Verbundsteinpflaster	Q1+ 23762,14009 23751,14031 23724,14086
 Hermineweg: Verbundsteinpflaster	Q1+ 24915,10858 24877,10863 24806,10880 24819,10924 24831,10966
 Hermineweg: Verbundsteinpflaster	Q1+ 24906,10965 24831,10966 24811,10969
 Malevkeweg: Verbundsteinpflaster	Q1+ 24877,10863 24875,10919 24819,10924
-Max-Herrmann-Str.: Asphalt	Q0 21131,16680 21238,16627 21278,16685 21295,16710 21390,16903
+Max-Herrmann-Str.: Beton	Q1+ 21077,16609 21101,16598 21134,16676
+Max-Herrmann-Str.: Asphalt	Q0 21134,16676 21238,16627 21278,16685 21295,16710 21390,16903
 Radweg zur Detmolder Str.: Verbundsteinpflaster/Gehwegplatten	Q1; 4461,8105 4349,8118 4280,8188
 (Havelchaussee - zum Havelufer): Kopfsteinpflaster	Q2- -3807,4794 -3854,4819 -3940,4800
 Cimbernstr. [Stichstraße] (Nikolassee): schlechtes Kopfsteinpflaster	Q3 -3544,2003 -3616,1877
@@ -14623,6 +14625,9 @@ Thiemannstr.: Asphalt mit Schäden	Q1 13724,8090 13663,8011 13616,7949
 # 
 Wartiner Str. [zur Biesenbrower Str.]: Beton	Q1+ 18801,18233 18886,18300
 # 
+#: historical_note: im Sommer 2026 asphaltiert, davor war wohl betoniert
+Kemberger Str.: Fahrbahn asphaltiert	Q0 22207,17772 22148,17687 22022,17519 22002,17492
+# 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
 #: by: anonymous vvv
@@ -16209,11 +16214,12 @@ Marchwitzastr.: Asphalt	Q0 19934,13318 19933,13328 19918,13459
 #: by: Elke Ortloff: vvv
 #: corrected_by: srt (added "mit Schäden")
 Sterckmannweg: Beton mit Schäden	Q1+ 20245,14985 20440,15277
-#: corrected_by: srt (Beton -> ...)
-Sterckmannweg: Asphalt mit Schäden	Q1+ 20440,15277 20473,15329 20577,15478 20604,15512
+#: corrected_by: srt (Beton -> Asphalt mit Schäden, 2025 oder 2026 neu gemacht)
+Sterckmannweg: Asphalt	Q0 20440,15277 20473,15329 20565,15460
+Sterckmannweg: Beton	Q0- 20565,15460 20577,15478 20600,15514
 Kiebitzgrund: Beton	Q0 20440,15277 20390,15307 20319,15358 20286,15382
 #: confirmed_by: srt
-Rebhuhnweg: Beton	Q0 20532,15564 20550,15551 20569,15537 20604,15512 20625,15502 20666,15485 20755,15450 20882,15391 20906,15352 20908,15313
+Rebhuhnweg: Beton	Q0 20532,15564 20548,15549 20571,15530 20600,15514 20625,15502 20666,15485 20755,15450 20882,15391 20906,15352 20908,15313
 Kleeackerweg: Asphalt	Q0 25408,13023 25279,13095 25309,13170 25352,13308 25373,13447
 #: by: ^^^
 # 
@@ -18591,6 +18597,10 @@ Peter-Huchel-Str.: Asphalt	Q0 22980,13286 23007,13509 23157,13467 23285,13441 23
 (Carola-Neher-Str - Kastanienallee): Verbundsteinpflaster	Q1+ 23382,14367 23405,14410 23458,14439 23506,14450
 (Carola-Neher-Str - Kastanienallee): Asphalt	Q0 23506,14450 23563,14473
 #: corrected_by: srt (wassergebundene Decke -> ...)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26599.pdf (Erwähnung einer Asphaltierung, Länge 380m)
+#: osm_watch: way id="47796714" version="8"
+#: XXX wird hier asphaltiert?
+#: next_check: 2027-10-15
 (Carola-Neher-Str - Kastanienallee): unbefestigter Weg	Q2+ 23563,14473 23567,14523 23723,14595 23786,14631
 #: corrected_by: ^^^
 #: corrected_by: srt (Q0 -> Q1, teilweise Verbundsteinpflaster) vvv
@@ -20953,8 +20963,14 @@ Güntherstr.: schlechtes Kopfsteinpflaster, einige Asphaltflicken	Q2-; 17771,8349
 #: corrected_by ^^^
 # 
 #: by: Jörg (studi):
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> kleinteiliges Kopfsteinpflaster, Q2+ -> neu gemacht)
+#: next_check_id: MERLERWEG-2026
+#: XXX wann wird hier vollständig asphaltiert?
+#: last_checked: 2026-08-05
+#: check_frequency: 60d
+Merler Weg: Asphalt ohne letzte Deckschicht	Q1 19180,13219 19027,13242
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> kleinteiliges Kopfsteinpflaster, Q2+)
-Merler Weg: kleinteiliges Kopfsteinpflaster	Q2+ 19180,13219 18987,13248 18852,13269
+Merler Weg: kleinteiliges Kopfsteinpflaster	Q2+ 19027,13242 18987,13248 18852,13269
 # 
 #: by: Andrea (techlin):
 Hugo-Heimann-Str.: guter Asphalt	Q0 14120,1991 14165,2106 14184,2157 14218,2181 14259,2184 14393,2137 14444,2090 14587,2032
@@ -24703,7 +24719,7 @@ Brussaer Weg: guter Asphalt	Q0 10237,3789 10248,3897 10260,4107 10269,4136
 # 
 #: by: pueromella:
 #: corrected_by: srt (gut zu fahrender Asphalt -> Beton, zumindest am nördl. Ende)
-Neufahrwasserweg: gut zu fahrender Beton	Q0 20550,15551 20390,15307
+Neufahrwasserweg: gut zu fahrender Beton	Q0 20548,15549 20390,15307
 # 
 #: by: Michael van Laak: vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ...)
@@ -32622,10 +32638,13 @@ Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll-des-fahrrat_2026-02-25.pdf (Abschluss in den Sommerferien?)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25978.pdf (in Bau)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26201.pdf (Fertigstellung im 3. Quartal 2026, Asphaltierung, 4m breit)
-#: note: soll asphaltiert und auf 4m verbreitert werden
-#: last_checked: 2026-06-16 (mapillary)
-#: next_check: 2026-08-15 (fahr-rat)
-# REMOVED --- #: next_check: 2026-09-30 (infravelo)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26599.pdf (Erwähnung)
+#: osm_watch: note 5438509 1
+#: XXX: wird asphaltiert und auf 4m verbreitert; während der Bauarbeiten kann man die parallele Wohngebietsstraße benutzen
+#: last_checked: 2026-08-05
+#: check_frequency: 30d
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-08-15 (fahr-rat)
+#: next_check: 2026-09-30 (infravelo)
 (Radweg an der Straßenbahn): Beton	Q0- 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896
 # REMOVED (anscheinend realisiert) --- #: corrected_by: srt (was Q3) --- #: XXX: wird der Radweg hier verbessert? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4797&options=4
 (Radweg an der Straßenbahn): asphaltiert	Q0 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21192,16466 21179,16455 21067,16327 21036,16286 21035,16280 21000,16238
@@ -33554,9 +33573,9 @@ Eva-Strittmatter-Str.: Betonpflaster	Q0- 23418,15234 23536,15252
 Ingeborg-Feustel-Str.: Betonpflaster	Q0- 23536,15252 23537,15247 23569,15062
 (Springeberger Weg - Fürstenwalder Allee): Asphalt	Q0 29947,4268 29946,4241
 (Rampe Bitterfelder Brücke): Asphalt	Q0 20409,16486 20389,16502 20343,16516 20328,16546
-(Rampe Bitterfelder Brücke): Asphalt	Q0 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539 20276,16519 20296,16512 20342,16499
+(Rampe Bitterfelder Brücke): Asphalt	Q0 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539 20269,16520 20293,16507 20336,16495
 (Rampe Bitterfelder Brücke - Märkische Allee): Asphalt	Q0 20267,16539 20242,16543
-(Rampe Bitterfelder Brücke - Alfred-Döblin-Str.): Asphalt	Q0 20296,16512 20286,16494
+(Rampe Bitterfelder Brücke - Alfred-Döblin-Str.): Asphalt	Q0 20293,16507 20286,16494
 (Amselhainer Weg - Hirschfelder Weg): Betonplatten	Q0- 21886,15594 21892,15637
 (Bollersdorfer Weg - Amselhainer Weg): Verbundsteinpflaster	Q0- 21849,15404 21860,15458
 Blankenburger Chaussee [zur Straße 47]: Asphalt	Q0 14650,21649 14670,21720 14697,21760 14746,21828 14742,21843
@@ -34862,5 +34881,7 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 5220,2030
 Einmündungsbereich asphaltiert	Q0 5143,1998
 Kreuzungsbereich betoniert	Q0- 5198,1853
 Kreuzungsbereich asphaltiert/betoniert	Q0- 5261,1718
+Einmündungsbereich asphaltiert	Q0 20147,14570
+Einmündungsbereich asphaltiert	Q0 20093,14591
 #: ignore ^^^
 #: section ^^^

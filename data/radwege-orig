@@ -1030,7 +1030,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-07-22
+#: last_checked: 2026-08-05
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -2231,7 +2231,7 @@ Busspur ist immer gültig	RW5; 7795,8765 8008,8771
 geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,8773 8209,8773 8298,8774
 # 
 #: note: Detmolder Str.
-#: by: https://www.infravelo.de/projekt/detmolder-strasse/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2026) (Planung -> Vorgesehen) (wieder in Planung) (3. Quartal 2028 - 4. Quartal 2028) (Planung -> Vorgesehen)
+#: by: https://www.infravelo.de/projekt/detmolder-strasse/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2027) (3. Quartal 2025 - 4. Quartal 2026) (Planung -> Vorgesehen) (wieder in Planung) (3. Quartal 2028 - 4. Quartal 2028) (Planung -> Vorgesehen) (von der Website entfernt, 404)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25975.pdf (Erwähnung)
 #: note: früher infravelo-Projekt "detmolder-strasse-1"
 #: XXX Sanierung der Radwege vvv
@@ -4758,7 +4758,7 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: check_frequency: 30d vvv
 #: next_check: 2026-08-17 (planb) vvv
 # REMOVED --- #: next_check: 2026-12-31 (infravelo) vvv
-#: source_id: planb2026:13.46826637,52.47225026,23.06.2026,07:00 ("Gehwegvollsperrung", bis 13.12.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.46826637,52.47225026,23.06.2026,07:00 ("Gehwegvollsperrung", bis 13.12.2026) (vorfristig inaktiv) (bis 16.11.2026)
 #: historical_note: früher: alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg, RW1;; seit ungefähr 2025 existiert eine Absperrung vor den schlimmsten Wurzelhebungen; etwa ab 2026 Provisorium
 provisorische Radwegführung auf der Fahrbahn	RW4; 14853,7451 14775,7385
 #: source_id: planb2026:13.46660341,52.47141375,04.05.2026,07:00 ("Gehwegvollsperrung", bis 17.08.2026)
@@ -4867,6 +4867,7 @@ Verbundsteinpflaster	RW2; -4647,12269 -4903,12055
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25981.pdf (Umsetzung 2027 avisiert)
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13329 (Bau im Sommer (2026?))
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/mit-dem-fahrrad-durch-berlin-spandau-auf-diesen-sechs-strecken-werden-neue-radwege-geplant-15697183.html
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26599.pdf (Erwähnung, Länge 160m, Strecke ist aber 203m lang)
 #: XXX Gehwegplatten sollen durch Asphalt ersetzt werden, Verbreiterung auf 2,5m
 #: last_checked: 2026-05-06 (Tsp)
 #: check_frequency: 120d
@@ -5475,10 +5476,11 @@ Verbundsteinpflaster	RW1; 20323,16706 20390,16663
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll_fahrrat_26-02-2025.pdf
 #: source_id: viz2021:13.55154,52.55437,22.09.2025,18:00 (Nachtsperrung, bis 23.09.2025) (inaktiv)
 #: source_id: planb2026:13.5513287,52.55294667,18.11.2024, ("Fahrstreifen-Verschwenkung", bis 31.12.2026)
-#: last_checked: 2026-03-04 vvv
+#: last_checked: 2026-08-05 vvv
 #: check_frequency: 150d vvv
 #: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung, planb) vvv
 #: XXX früher: Verbundsteinpflaster	RW1;
+#: osm_watch: note 4748107 4
 #: osm_watch: way id="870445662" version="19"
 provisorische Radspur	RW4; 20390,16663 20392,16621 20379,16585
 kein Radweg, Radfahrüberholverbot	RW0; 20379,16585 20354,16563 20325,16551
@@ -7197,8 +7199,9 @@ Verbundsteinpflasterradweg	RW1;RW1 27804,1337 27999,1570 28050,1609 28122,1625
 	RW6;RW6 -1698,1927 -1655,1847
 #: by: ^^^
 einige Meter Radspur an der Salvador-Allende-Str.	RW0;RW0 23388,4864 23451,4877
-#: by: blauklaus...
-4m breite Randstreifen für Fußgänger und Radfahrer	RW1;RW9 22207,17772 22148,17687 22022,17519 22002,17492 21992,17479 21913,17376
+#: by: blauklaus...: 4m breite Randstreifen für Fußgänger und Radfahrer
+#: note: keine offizielle Freigabe als Zweirichtungsradweg, aber der Bürgersteig ist sehr breit
+breit, Verbundsteinpflaster	RW1;RW9 22207,17772 22148,17687 22022,17519 22002,17492 21992,17479 21913,17376
 #: by: MichaelM vvv
 #: note wahrscheinlich auch eine Fußgängerzone (Radfahrer+Anlieger frei) vvv
 10km/h	RW6;RW6 -820,4772 -793,4754 -741,4660 -753,4578 -760,4542 -763,4462

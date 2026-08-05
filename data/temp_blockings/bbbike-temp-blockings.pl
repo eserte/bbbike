@@ -23203,6 +23203,7 @@ EOF
        until => $isodate2epoch->("2025-09-12 18:00:00"), # $isodate2epoch->("2024-09-13 16:00:00"), # 1378407600, # 2013-09-05 21:00
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 9]],
+       recurrence_prewarn_days => 13, # in planb?
 #      text  => 'Mauerstr. (Mitte): Veranstaltung, Fahrbahn zwischen Taubenstr. und Jägerstr. gesperrt (ggfs. auf Gehweg ausweichen), Einbiegen in die Jägerstr. nicht möglich, bis zum 05.09.2013',
 #      text  => 'Mauerstr./Jägerstr./Taubenstr.: Veranstaltung, Straßen gesperrt, vom 05.09.2024 06:00 Uhr bis 13.09.2024 16:00 Uhr',
        text  => 'Glinkastr./Mauerstr./Jägerstr./Taubenstr.: Veranstaltung, Straßen gesperrt, vom 04.09.2025 06:00 bis 12.09.2025 18:00',
@@ -39043,7 +39044,7 @@ EOF
 #: also_indoor: traffic (ex-T,G,ex-H[ganz kurz],ex-W)
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2026-08-03 (traffic)
+#: last_checked: 2026-08-05 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-07-31 (planb)
@@ -45344,18 +45345,18 @@ EOF
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, vom 10.06.2024 07:00 bis 29.08.2025 17:00',
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Dezember 2025',
 #      text  => 'Dolomitenstr.: Anbindung zur Mühlenstr. gesperrt, voraussichtlich bis Juli 2026',
-       text  => 'Dolomitenstr.: Einbahnstraßenregelung an der Mühlenstr., voraussichtlich bis August 2026',
+       text  => 'Dolomitenstr.: Einbahnstraßenregelung an der Mühlenstr., voraussichtlich bis September 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: viz2021:13.408359,52.563675,10.06.2024,07:00 (bis 29.07.2024) (bis 01.11.2024) (bis 01.05.2025) (bis 28.03.2025) (bis 10.04.2025) (bis 23.05.2025) (bis 02.07.2025) (inaktiv)
 #: source_id: viz2021:13.408293,52.563636,10.06.2024,07:00 (bis 29.08.2025) (inaktiv)
-#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026) (mittlerweile auch die Mühlenstr. gesperrt -> andere Baustelle -> handicap_s) (bis 07.07.2026) (bis 07.08.2026)
+#: source_id: LMS-BR:374530/72 viz2021:13.40836,52.56369, viz2021:13.408237,52.563626, (bis 29.08.2025) (bis 15.09.2025) (bis 29.09.2025) (kein Endedatum mehr) (bis 04.06.2026) (mittlerweile auch die Mühlenstr. gesperrt -> andere Baustelle -> handicap_s) (bis 07.07.2026) (bis 07.08.2026) (bis 30.09.2026)
 #: osm_watch: way id="1303423090" version="8"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdf4duxn6227 (Radverkehr von der Sperrung in der Mühlenstr. nicht betroffen)
 #: last_checked: 2026-06-25 (mapillary)
 # REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
-#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-00-30 (VIZ-Verkehrsmeldung)
 Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 EOF
      },
@@ -48337,7 +48338,7 @@ EOF
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19192,13350 19198,13272
 # REMOVED (hier nicht) --- Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19198,13272 19180,13219
 #: osm_watch: way id="36786796" version="24"
-Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 18987,13248 18852,13269
+Merler Weg: temporäre Einbahnstraßenregelung	q3::inwork; 19180,13219 19027,13242 18987,13248 18852,13269
 # REMOVED --- #: valid ^^^
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
@@ -48612,6 +48613,7 @@ EOF
        text  => 'Merler Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt, nur ein schmaler Bürgersteig vorhanden sowie ein notwendiger Umweg durch das Wohngebiet, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: MERLERWEG-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2nt7wtgch2s (Gegenverkehrsregelung in der Marzahner Chaussee in Höhe Merler Weg bis Ende November 2025)
 #: by: https://www.entwicklungsstadt.de/marzahner-chaussee-rohbauarbeiten-fuer-neue-wohnungen-kommen-voran/ (Fertigstellung: geplant bis 2027)
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260605 (Fräsarbeiten bis Ende Juni 2026, Baustellenampel)
@@ -48625,13 +48627,12 @@ EOF
 # REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
 #: osm_watch: way id="1374232475" version="6"
 #: osm_watch[closed]: note 4693093 1
-#: XXX der östliche Abschnitt des Merler Wegs wird asphaltiert
 #: also_indoor: traffic (ex-H,ex-G,no-T)
 #: add_fragezeichen: Ist die Merler Straße weiterhin gesperrt?
-#: last_checked: 2026-06-16 (mapillary)
-#: check_frequency: 45d
+#: last_checked: 2026-08-05
+#: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
-Merler Weg	q4::inwork 18987,13248 19180,13219
+Merler Weg	q4::inwork 18987,13248 19027,13242 19180,13219
 EOF
      },
      { from  => $isodate2epoch->("2025-07-27 00:00:00"), # $isodate2epoch->("2025-04-09 00:00:00"), # 1743953696, # 1743890400, # 2025-04-06 00:00
@@ -49558,7 +49559,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-07-23 (traffic) vvv
+#: last_checked: 2026-08-05 (traffic) vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) vvv
 Caspar-Theiß-Str.: Einbahnstraßenregelung	q4::inwork; 2924,9391 2947,9367
@@ -49925,7 +49926,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
-#: last_checked: 2026-07-22
+#: last_checked: 2026-08-05
 #: next_check: 2026-08-14 (VIZ-Verkehrsmeldung)
 	q4::inwork; 16276,12273 16397,12397
 # REMOVED (hier nicht) ---	q4::inwork; 16397,12397 16485,12384
@@ -51984,8 +51985,8 @@ EOF
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
 #: osm_watch: note 5200828 2
-#: last_checked: 2026-08-01 (traffic) vvv
-#: check_frequency: 14d (traffic) vvv
+#: last_checked: 2026-08-02 (architektur-urbanistik) vvv
+#: check_frequency: 10d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
 Gotenstr.: südlich der Kreuzung	q4::inwork 7497,7761 7499,7880
@@ -52857,7 +52858,7 @@ EOF
        text  => 'Seydlitzstr.: Bauarbeiten in Höhe Charlottenstr., Sperrung der Fahrbahn, vom 06.03.2026 bis 04.08.2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:401047/72 viz2021:13.33578,52.43328,06.03.2026,12:00 (bis 21.04.2026) (bis 29.06.2026) (bis 04.08.2026)
+#: source_id: LMS-BR:401047/72 viz2021:13.33578,52.43328,06.03.2026,12:00 (bis 21.04.2026) (bis 29.06.2026) (bis 04.08.2026) (inaktiv)
 #: also_indoor: traffic (T,G)
 	q4::inwork 6044,3110 5936,2977 5853,3050
 	q4::inwork 5774,2785 5936,2977 6022,2901
@@ -53178,7 +53179,7 @@ EOF
 #: source_id: planb2026:13.32151599,52.46715781,01.12.2025, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
 #: also_indoor: traffic (G,no-T,no-W,no-H)
 #: osm_watch: way id="251962463" version="5"
-#: last_checked: 2026-07-07 (traffic)
+#: last_checked: 2026-08-05 (traffic)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (neubaukompass website)
@@ -53263,7 +53264,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:404324/72 viz2021:13.17839,52.54934,-1 (hier bis Pionierstr., was vermutlich zu weit ist, bis 05.08.2026) (inaktiv)
-#: source_id: LMS-BR:388895/72 viz2021:13.17839,52.54934, (hier nur bis Hermann-Schmidt-Weg, was realistischer ist, bis 04.08.2026)
+#: source_id: LMS-BR:388895/72 viz2021:13.17839,52.54934, (hier nur bis Hermann-Schmidt-Weg, was realistischer ist, bis 04.08.2026) (inaktiv)
 	q4::inwork -5023,15688 -5000,15769 -5010,15787 -5056,15800 -5066,15820 -5061,15847
 Westerwaldstr.: Einbahnstraßenregelung	q4::inwork; -5036,15625 -5023,15688
 # REMOVED (hier vermutlich nicht) ---	q4::inwork -5061,15847 -5036,15923 -5019,15970 -4951,16116
@@ -54711,11 +54712,15 @@ EOF
 EOF
      },
      { from  => 1784412000, # 2026-07-19 00:00
-       until => 1785016800, # 2026-07-26 00:00
-       text  => 'Am Städtischen Zentralfriedhof: Bauarbeiten, komplett gesperrt, 20.7.2026 bis 25.7.2026',
+       until => $isodate2epoch->("2027-03-31 23:59:59"), # 1785016800, # 2026-07-26 00:00
+#      text  => 'Am Städtischen Zentralfriedhof: Bauarbeiten, komplett gesperrt, 20.7.2026 bis 25.7.2026',
+       text  => 'Am Städtischen Zentralfriedhof: Bauarbeiten, Umwege über teilweise unbefestigte Wege, möglicherweise bis März 2027',
        type  => 'gesperrt',
        data  => <<'EOF',
-	2::inwork 17540,12222 17485,12240
+#: next_check_id: AMSTAEDTISCHENZENTRALFRIEDHOF-2026
+#: note: Weg durch Baustellenbereich: 150m, 2/3 davon unbefestigter Weg, 1/3 Kopfsteinpflaster mit großen Fugen; direkter Weg wäre 100m; man soll als Radfahrer schieben
+	q4::inwork 17540,12222 17485,12240
+# REMOVED ---	2::inwork 17540,12222 17485,12240
 EOF
      },
      { from  => $isodate2epoch->("2026-08-02 00:00:00"),
@@ -54793,14 +54798,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1785953512, # undef, # XXX
        text  => 'Thulestr.: Bauarbeiten zwischen Neumannstr. und Kurze Str., Sperrung, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (ex-G,no-T,no-H,no-W)
 #: source_id: planb2026:13.42333831,52.55507567,02.03.2026,06:00 ("Sicherung gemäß Vz.-plan", ist das diese Baustelle? bis 31.12.2026)
-#: last_checked: 2026-07-23 (mapillary)
-#: check_frequency: 14d (traffic)
+# REMOVED (möglicherweise schon beendet) --- #: last_checked: 2026-07-23 (mapillary) --- #: check_frequency: 14d (traffic)
 	q4::inwork 11534,16622 11630,16623
 EOF
      },
@@ -54906,6 +54910,30 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ms6aw7sqhc2p
 #: source_id: LMS-BR:418132/72 viz2021:13.51432,52.53963,03.08.2026,07:00 (bis 14.08.2026)
 Plauener Str.	q4::inwork; 17902,15039 17829,15015
+EOF
+     },
+     { from  => 1781474400, # 2026-06-15 00:00
+       until => undef,
+       text  => 'Mehrow - Trappenfelde: Straße wegen Leitungsarbeiten gesperrt, voraussichtlich bis 14.08.2026, evtl. wird die Sperrung verlängert',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.ahrensfelde.de/portal/meldungen/verkehrseinschraenkungen-aufgrund-von-bauarbeiten-im-juli-und-august-900000540-30601.html
+#: osm_watch: note 5362444 3
+#: note: es gibt allerdings zur Not einen inoffiziellen Trampelpfad über eine steile Böschung
+#: next_check: 2026-08-14
+	2::inwork 26501,19266 25861,19127
+EOF
+     },
+     { from  => 1785954227, # 2026-08-05 20:23
+       until => 1851372000, # 2028-09-01 00:00
+       text  => 'Jüterbog, B102: Bauarbeiten, Sperrung der Straße, voraussichtlich bis August 2028',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~03-08-2026-b102_jueterbog_fertigstellung-bruecke-auf-fruehjahr-2027-verschoben
+#: source_id: LS/222-W/26/015 (bis 01.09.2028)
+#: osm_watch: way id="24822627" version="17"
+#: osm_watch: way id="1542840515" version="1"
+	2::inwork -9196,-46818 -9302,-46743 -9400,-46580 -9520,-46557
 EOF
      },
     );

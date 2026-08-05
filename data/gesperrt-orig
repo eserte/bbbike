@@ -220,7 +220,7 @@ Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026) (1. Quartal 2027 - 4. Quartal 2027)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
 #: source_id: bvg2024:194#HIM_FREETEXT_341095 (Umleitung, evtl. gibt es hier Bauarbeiten?) (-> nichts gesehen)
-#: last_checked: 2026-08-01 vvv
+#: last_checked: 2026-08-05 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
@@ -678,7 +678,7 @@ Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 #: confirmed_by: S.Knaack:
 Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,1468 10638,1442 10659,1370
 Zingster Str. (Gesundbrunnen)	1 9276,16032 9265,16109 9277,16154 9307,16190
-Neufahrwasserweg	1 20390,15307 20550,15551
+Neufahrwasserweg	1 20390,15307 20548,15549
 #: by: rjoop:
 Rotdornstr.	1 5081,7112 5121,7132 5141,7158 5139,7216
 #: by: junga: vvv
@@ -4126,9 +4126,9 @@ Drängelgitter	BNP:3::trailer=10 5829,7827
 #: by: https://www.entwicklungsstadt.de/grossbaustelle-an-der-rhinstrasse-bvg-zerlegt-wichtigen-tramknoten-im-berliner-osten/ (laut Baustellenschild bis August 2027)
 #: source_id: LMS-BR:414868/72 viz2021:13.51933,52.52609,06.07.2026,07:00 (bis 07.09.2026)
 #: source_id: planb2026:13.51956095,52.52592192,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026)
-#: last_checked: 2026-07-22
+#: last_checked: 2026-08-05
 #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
-Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18065,13496
+Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18063,13490
 # 
 #: next_check_id: GOERLITZERBRUECKEN-2026
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1663549.php
@@ -4498,7 +4498,7 @@ neben der Minna-Todenhagen-Brücke: Sperrung der Rampe und Treppe	2::inwork 16997
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: source_id: viz2021:13.549389,52.553147,18.11.2024,13:37 (bis 31.12.2026) (inaktiv)
 #: osm_watch: way id="1087144824" version="9"
-#: last_checked: 2026-03-04
+#: last_checked: 2026-08-05
 #: check_frequency: 150d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
@@ -4512,7 +4512,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-08-02
+#: last_checked: 2026-08-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -5278,6 +5278,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,1015
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/nordhafen-living-office-heidestra%C3%9Fe-30-32.1495/#post-26912
 #: by: https://www.entwicklungsstadt.de/nordhafen-living-office-mixed-use-projekt-in-der-europacity-vor-naechster-etappe/ (Fertigstellung Frühjahr 2027)
 #: by: https://www.entwicklungsstadt.de/nordhafen-living-in-der-europacity-wohnen-arbeiten-am-wasser/
+#: by: https://www.entwicklungsstadt.de/82-meter-hoch-upbeat-in-der-europacity-ist-fertiggestellt/
 #: source_id: viz2021:13.362267,52.536335,05.02.2024,07:00 (Leitungsarbeiten, in der Heidestr., bis 29.03.2024) (inaktiv)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
