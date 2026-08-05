@@ -735,7 +735,14 @@
   "Read ~/Downloads/current_url.txt and insert '#: by: URL' on a new line below the current one."
   (interactive)
   (let ((url (bbbike-get-current-url)))
-    (when (string= url "https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/")
+    (when (or (string= url "https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/")
+	      (string= url "https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/")
+	      (string-match (concat "^\\("
+				    "https://bauprojekte.deutschebahn.com/p/.*/infobauarbeiten"
+				    "\\|https://www.aktives-adlershof.de/aktuelles"
+				    "\\|https://www.bwb.de/de/baustelleninformationen.php"
+				    "\\|https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/"
+				    "\\)") url))
       (setq url (concat url "?date=" (format-time-string "%Y%m%d"))))
     (beginning-of-line)
     ;(end-of-line)
