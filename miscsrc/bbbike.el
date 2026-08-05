@@ -735,6 +735,8 @@
   "Read ~/Downloads/current_url.txt and insert '#: by: URL' on a new line below the current one."
   (interactive)
   (let ((url (bbbike-get-current-url)))
+    (when (string= url "https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/")
+      (setq url (concat url "?date=" (format-time-string "%Y%m%d"))))
     (beginning-of-line)
     ;(end-of-line)
     ;(forward-char 1)
