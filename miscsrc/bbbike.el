@@ -680,25 +680,40 @@
 
 (defun bbbike-insert-osm-watch ()
   (interactive)
-  (let ((sel (bbbike--get-x-selection)))
-    (cond
-     ((string-match "<\\(way\\|node\\|relation\\).* \\(id=\"[0-9]+\"\\).* \\(version=\"[0-9]+\"\\)" sel)
-      (let ((elemtype (substring sel (match-beginning 1) (match-end 1)))
-	    (elemidxml (substring sel (match-beginning 2) (match-end 2)))
-	    (elemversionxml (substring sel (match-beginning 3) (match-end 3))))
-	(beginning-of-line)
-	(insert (concat "#: osm_watch: " elemtype " " elemidxml " " elemversionxml "\n"))))
-     ((string-match "/note/\\([0-9]+\\)" sel)
-      (let ((elemid (substring sel (match-beginning 1) (match-end 1))))
-	(beginning-of-line)
-	(insert (concat "#: osm_watch: note " elemid " 1\n"))))
-     ((string-match "https?://www.openstreetmap.org.*\\(way\\|node\\|relation\\)/\\([0-9]+\\)\\(#\\|$\\|/history\\)" sel)
-      (let* ((elemtype (substring sel (match-beginning 1) (match-end 1)))
-	     (elemid (substring sel (match-beginning 2) (match-end 2)))
-	     (elemversion (bbbike--get-osm-elem-version elemtype elemid)))
-	(beginning-of-line)
-	(insert (concat "#: osm_watch: " elemtype " id=\"" elemid "\" version=\"" elemversion "\"\n"))))
-     (t (error "No X selection or X selection does not contain a way/node/relation line")))))
+  (let ((found nil))
+    (dolist (getter
+	     (list
+	      ;; 1st: current_url.txt
+	      (lambda ()
+		(condition-case nil
+		    (bbbike-get-current-url)
+		  (error nil)))
+	      ;; 2nd: X11 selection
+	      #'bbbike--get-x-selection))
+      (unless found
+	(let ((sel (funcall getter)))
+	  (cond
+	   ((string-match "<\\(way\\|node\\|relation\\).* \\(id=\"[0-9]+\"\\).* \\(version=\"[0-9]+\"\\)" sel)
+	    (let ((elemtype (substring sel (match-beginning 1) (match-end 1)))
+		  (elemidxml (substring sel (match-beginning 2) (match-end 2)))
+		  (elemversionxml (substring sel (match-beginning 3) (match-end 3))))
+	      (beginning-of-line)
+	      (insert (concat "#: osm_watch: " elemtype " " elemidxml " " elemversionxml "\n"))
+	      (setq found t)))
+	   ((string-match "/note/\\([0-9]+\\)" sel)
+	    (let ((elemid (substring sel (match-beginning 1) (match-end 1))))
+	      (beginning-of-line)
+	      (insert (concat "#: osm_watch: note " elemid " 1\n"))
+	      (setq found t)))
+	   ((string-match "https?://www.openstreetmap.org.*\\(way\\|node\\|relation\\)/\\([0-9]+\\)\\(#\\|$\\|/history\\)" sel)
+	    (let* ((elemtype (substring sel (match-beginning 1) (match-end 1)))
+		   (elemid (substring sel (match-beginning 2) (match-end 2)))
+		   (elemversion (bbbike--get-osm-elem-version elemtype elemid)))
+	      (beginning-of-line)
+	      (insert (concat "#: osm_watch: " elemtype " id=\"" elemid "\" version=\"" elemversion "\"\n"))
+	      (setq found t)))))))
+    (unless found
+      (error "No suitable current_url.txt or no X selection or X selection does not contain a way/node/relation line"))))
 
 (defun bbbike-insert-source-id ()
   (interactive)
