@@ -4178,7 +4178,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-08-03
+#: last_checked: 2026-08-06
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4454,7 +4454,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-07-13 vvv
+#: last_checked: 2026-08-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt, MoPo) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -4940,7 +4940,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-08-03
+#: last_checked: 2026-08-06
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -4952,7 +4952,7 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: note: siehe auch Eintrag in temp_blockings (URLs und osm watches dort)
 #: by: Karsten S.: wieder (temporär?) frei
 #: last_checked: 2026-05-09 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 #: valid: -20261231 vvv
 Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
@@ -5119,7 +5119,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: source_id: planb2026:13.43551948,52.50901002,01.04.2026, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
-#: last_checked: 2026-07-31
+#: last_checked: 2026-08-06
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (Tsp, planb)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5407,7 +5407,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-warum-das-wichtigste-gebaeude-in-der-kritik-steht/
 #: by: https://www.entwicklungsstadt.de/800-jahre-molkenmarkt-vom-olden-markt-zum-neuen-stadtquartier/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-08-03
+#: last_checked: 2026-08-06
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5416,7 +5416,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-08-03
+#: last_checked: 2026-08-06
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

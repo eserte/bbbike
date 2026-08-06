@@ -10,6 +10,41 @@
 # 
 ### Friedrichshain ###
 # 
+#: next_check_id: AMWIEZENERBAHNHOF-2024
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
+#: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
+#: by: https://www.deutsches-architekturforum.de/thread/3986-bauprojekte-am-wriezener-bahnhof-friedrichshain/?postID=767122#post767122
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Grundstücksnummerierungen)
+#: by: https://edge.tech/de/buildings/edge-friedrichspark-berlin (Fertigstellung Q1 2026)
+#: by: https://edge.tech/portfolio/friedrichspark (Fertigstellung weiterhin Q1 2026)
+#: by: https://entwicklungsstadt.de/neubauprojekt-an-der-strasse-der-pariser-kommune-nach-abriss-des-plattenbaus-startet-das-bauvorhaben/
+#: by: https://entwicklungsstadt.de/buerokomplex-edge-friedrichspark-installation-der-fassade-beginnt/
+#: by: https://entwicklungsstadt.de/friedrichshain-kreuzberg-fuenf-stadtentwicklungsprojekte-im-ueberblick/
+#: by: https://entwicklungsstadt.de/edge-friedrichspark-markante-fassade-praegt-neuen-buerokomplex-in-friedrichshain/
+#: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-so-soll-der-neubau-in-friedrichshain-aussehen/
+#: by: https://www.entwicklungsstadt.de/baustellen-update-am-ostbahnhof-edge-friedrichspark-nimmt-gestalt-an/ (im Laufe des Jahres 2026 bezugsfertig)
+#: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-b-yard-baustelle-im-ueberblick/ ("B.YARD", Fertigstellung: Ende 2027/Anfang 2028)
+#: by: https://www.entwicklungsstadt.de/edge-friedrichspark-am-ostbahnhof-commerzbank-wird-ankermieter/
+#: by: https://www.entwicklungsstadt.de/b-yard-im-bau-60-wohnungen-und-kulturflaechen-entstehen-am-ostbahnhof/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/90-millionen-projekt-in-berlin-riesiges-burogebaude-entsteht-am-ostbahnhof-15791460.html
+#: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
+#: also_indoor: traffic (B)
+#: osm_watch: way id="1120450475" version="6"
+#: osm_watch: note 4180739 2
+#: source_id: planb2026:13.44213814,52.51076044,05.01.2026,06:00 ("Gehwegvollsperrung", Wriezener Karree, bis 30.07.2026) (inaktiv)
+#: source_id: planb2026:13.43879907,52.51156593,14.04.2026, ("Fahrstreifen-Verschwenkung", Straße der Pariser Kommune, bis 31.03.2028)
+#: last_checked: 2026-08-06 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2026-07-30 (planb) vvv
+#: next_check: 2028-03-31 (entwicklungsstadt, planb) vvv
+#: osm_watch: way id="1054783030" version="9"
+Am Wriezener Bahnhof: Einfahrt verboten	q3::inwork; 12758,11915 12788,11898 12944,11760
+# REMOVED (nicht mehr?) --- Am Wriezener Bahnhof: Dokumentation	? 12944,11760 12993,11717 12986,11699 12959,11631
+# REMOVED (nicht mehr?) --- #: osm_watch: way id="154381294" version="22" --- Wriezener Karree: Dokumentation	? 12959,11631 12728,11850
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 # REMOVED --- #: XXX Laut Halteverbotsschildern möglicherweise bis Ende November 2026 ("31.11.2026" (sic!))
 # REMOVED --- #: last_checked: 2026-05-16 (Fahrbahn wieder offen)
 # REMOVED --- #: check_frequency: 10d
@@ -131,7 +166,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-07-31 vvv
+#: last_checked: 2026-08-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (Tsp, planb) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -609,7 +644,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-08-03
+#: last_checked: 2026-08-06
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung, entwicklungsstadt)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -1446,8 +1481,8 @@ Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (T,G)
-#: last_checked: 2026-07-09 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2026-08-06 vvv
+#: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
 #: next_check: 2026-08-07 (VIZ-Verkehrsmeldung) vvv
 Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625

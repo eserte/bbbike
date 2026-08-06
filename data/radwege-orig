@@ -1068,7 +1068,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2026-07-09
+#: last_checked: 2026-08-06
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -2377,7 +2377,8 @@ geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
 #: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
 provisorische Radspur	RW4; 10240,11740 10299,11786
 #: XXX früher #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
-provisorische Radspur	RW4; 10299,11786 10314,11804 10349,11847 10376,11879
+#: XXX zwischenzeitlich provisorische Radspur, RW4;
+teilweise gemeinsamer provisorischer Geh- und Radweg	RW2; 10299,11786 10314,11804 10349,11847 10376,11879
 #: check_frequency ^^^
 #: last_checked ^^^
 Busspur ist immer gültig	RW5; 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999
@@ -2420,7 +2421,7 @@ Busspur ist immer gültig	RW5; 10376,11879 10391,11898 10423,11936 10460,11979 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-08-03 vvv
+#: last_checked: 2026-08-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2452,7 +2453,7 @@ Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
-#: last_checked: 2026-08-03
+#: last_checked: 2026-08-06
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
@@ -3192,7 +3193,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-07-28 vvv
+#: last_checked: 2026-08-06 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -8234,7 +8235,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2026-07-31 vvv
+#: last_checked: 2026-08-05 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -9454,6 +9455,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article412109710/schoeneberger-strasse-soll-verkehrssicher-werden-was-geplant-ist.html
 #: by: https://www.entwicklungsstadt.de/radweg-an-der-schoeneberger-strasse-bau-startet-nach-fast-zehn-jahren/
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10189
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/260507_fahrrat_protokoll-und-ppt.pdf (geschützer Radstreifen zwischen Alboinstr. und Eresburgstr. (555m --- das würde aber bis zur Manteuffelstr. reichen), Breite 2,38m)
 #: XXX Laut infravelo gibt es auch eine Ampel (vermutlich in Höhe Borussiastraße); mittlerweile ist nur von einer Erneuerung der Ampelanlage an der Alboinstr. die Rede
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
