@@ -153,7 +153,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-07-29
+#: last_checked: 2026-08-07
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -527,7 +527,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-07-28
+#: last_checked: 2026-08-07
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -14619,8 +14619,9 @@ Meta-London-Str. [Wohngebiet]: Betonpflaster	Q0- -2913,16665 -2877,16647 -2638,1
 Meta-London-Str. [Wohngebiet]: Betonpflaster	Q0- -2927,16588 -2649,16537
 # 
 #: historical_note: früher (bis 2026) ohne Eintrag, evtl. durch den vielen Ausweich- und Umleitungsverkehr schlechter geworden? vvv
-Thiemannstr.: Asphalt mit Schäden	Q1+ 13875,8282 13805,8193 13724,8090
-Thiemannstr.: Asphalt mit Schäden	Q1 13724,8090 13663,8011 13616,7949
+Thiemannstr.: Asphalt mit Schäden	Q1; 13875,8282 13805,8193 13724,8090
+Thiemannstr.: Asphalt mit Schäden	Q1+; 13724,8090 13805,8193 13875,8282
+Thiemannstr.: Asphalt mit leichten Schäden	Q0- 13724,8090 13663,8011 13616,7949
 #: historical_note ^^^
 # 
 Wartiner Str. [zur Biesenbrower Str.]: Beton	Q1+ 18801,18233 18886,18300

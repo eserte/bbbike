@@ -122,7 +122,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="33"
 #: osm_watch: way id="1072662717" version="37"
-#: last_checked: 2026-07-28
+#: last_checked: 2026-08-07
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -309,7 +309,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 # 
 #: source_id: planb2026:13.45361302,52.4854625,06.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.06.2028)
 #: note: Länge der Einbahnstraßenregelung etwa 150m
-#: last_checked: 2026-07-21
+#: last_checked: 2026-08-07
 #: check_frequency: 90d
 #: next_check: 2028-06-30 (planb, Halteverbotsschilder)
 Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 13664,9073
@@ -619,7 +619,8 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,123
 #: osm_watch: way id="111833186" version="18"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: by: https://www.entwicklungsstadt.de/vom-forschungsstandort-zur-hochschule-robert-koch-forum-auf-dem-weg-zur-neuen-nutzung/ (Abschluss 2027)
-#: osm_watch: way id="153698413" version="21"
+#: osm_watch: way id="153698413" version="22"
+#: last_checked: 2026-08-06 (osm)
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
@@ -868,15 +869,16 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Kreuzberg ###
 # 
 #: source_id: LMS-BR:380721/72 viz2021:13.40045,52.4905, (bis 31.12.2026)
-#: last_checked: 2026-07-22 (mapillary) vvv
+#: source_id: planb2026:13.40268317,52.48973279,13.05.2025, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
+#: last_checked: 2026-08-07 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-12-31 vvv
+#: next_check: 2026-12-31 (VIZ-Verkehrsmeldung, planb) vvv
 #: valid: -20261231 vvv
 #: note: einige Abschnitte der Fahrbahn nur noch mit Schotterdecke
 #: note: typischerweise steht die Absperrung auf dem Radweg
 Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q2::inwork; 10198,9405 10290,9604 10306,9640 10361,9755 10405,9795
-#: note: hier weniger Probleme mit der Baustelleneinrichtung, deshalb q1 statt q2
-Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q1-::inwork; 10357,9807 10361,9755 10306,9640 10290,9604 10198,9405
+#: historical_note: hier gab's weniger Probleme mit der Baustelleneinrichtung, deshalb q1- statt q2, mittlerweile auch recht eng -> q2
+Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q2::inwork; 10357,9807 10361,9755 10306,9640 10290,9604 10198,9405
 #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -890,7 +892,7 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: source_id: planb2026:13.41404379,52.49257553,12.01.2026,16:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026)
 #: also_indoor: traffic (ex-G[nun Grimmstr.],ex-T[nun Müllenhoffstr.],ex-H,ex-W[nur Müllenhoffstr.],ex-A[falsche Position])
 #: note: im Zuge der Grimmstr. kann die Absperrung weggeschoben sein
-#: last_checked: 2026-08-02 vvv
+#: last_checked: 2026-08-07 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-08-21 (planb) vvv
 # REMOVED --- #: valid: -20260312
@@ -1736,15 +1738,13 @@ Wilmersdorfer Str.: Fußgängerzone, nachts und sonntags Radfahren erlaubt	q4 3717
 Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28853,3279
 Pestalozzistr.: Fußgängerzone	q3 3738,11231 3770,11231 3813,11230
 # 
-# REMOVED --- #: next_check_id: NKZ-2020 --- #: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); vor Corona-Zeiten gab's außerdem einen großzügigen Restaurantbereich --- #: last_checked: 2022-01-03 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2022-01-01 vvv
-(Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11291,10438 11317,10485
-(Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11317,10485 11344,10507
-# REMOVED (Bauarbeiten beendet) -- (Zufahrt am NKZ): Fußgänger/Lieferverkehr, Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11317,10485 11344,10507
-# REMOVED --- #: next_check ^^^  --- #: check_frequency ^^^ --- #: last_checked ^^^
-(Zufahrt am NKZ): Fußgänger, unübersichtlich	q3 11344,10507 11392,10520 11411,10515
+#: historical_note: früher ohne Engstellen, q2; zwischenzeitlich gab es immer wieder Bauarbeiten oder einen großzügigen Restaurantbereich mit entsprechenden Engstellen
+(Zufahrt am NKZ): Fußgänger/Lieferverkehr/Engstellen	q3+ 11291,10438 11317,10485 11344,10507
+(Zufahrt am NKZ): Fußgänger, unübersichtlich	q3- 11344,10507 11392,10520 11411,10515
 # 
 #: XXX_prog BS (1x oder 2x?)
 Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
+# 
 Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q3 11139,13008 11064,12910 11005,12855 10970,12822 10923,12779
 Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11141,12806 11064,12910
 # REMOVED (beide Einträge entfernt --- zurzeit wenig Fußgängerverkehr) --- #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg) --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?) --- #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam) --- #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten) --- #: (gelöscht) osm_watch: relation id="8743849" version="2" --- #: last_checked: 2021-05-01 (webcam) --- #: check_frequency: 7d --- #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595 --- Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
