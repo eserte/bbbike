@@ -519,9 +519,11 @@ sub cmd_diff {
 	my @additions;
 	my @changes;
 	my $deleted_count = 0;
+	my %seen_ids;
 
 	for my $key (keys %new_records) {
 	    my $new_rec = $new_records{$key};
+	    next if $seen_ids{$new_rec->{id}}++;
 	    if (!exists $old_records{$key}) {
 		push @additions, $new_rec;
 	    } else {
@@ -611,8 +613,11 @@ sub calculate_prio {
 
     if ($desc =~ /Vollsperrung.*Fahrbahn|Sperrung einer Fahrtrichtung/i) {
 	$prio += 30;
-    }
-    if ($desc =~ /keine Fahrbahn-Einschr|Haltverbot/i) {
+    } elsif ($desc =~ /Sicherung gem.* Vz.-plan/i) {
+	$prio += 20;
+    } elsif ($desc =~ /Gehwegvollsperrung/i) {
+	$prio -= 10;
+    } elsif ($desc =~ /keine Fahrbahn-Einschr|Haltverbot/i) {
 	$prio -= 25;
     }
 
