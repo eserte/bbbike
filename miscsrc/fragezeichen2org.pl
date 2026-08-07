@@ -478,7 +478,7 @@ for my $file (@files) {
 		     if      ($source_id =~ m{(?:bvg2021|bvg2024):([^#\s]+)}) { # match the BVG line only; the BVG id cannot be used for linking
 			 my $bvg_url = "https://www.bvg.de/de/verbindungen/linienuebersicht/$1#stoerungsmeldungen";
 			 if (!$seen_bvg_url{$bvg_url}++) {
-			     push @extra_url_defs, ['BVG' . ($inactive ? '(inactive)' : ''), $bvg_url];
+			     push @extra_url_defs, [_make_inactive('BVG', $inactive), $bvg_url];
 			 }
 		     } elsif ($source_id =~ m{(?:^| )viz2021:}) { # note: other VIZ id patterns (LS/..., LMS-...) cannot be used here due to lacking coordinates in the id
 			 my($px,$py) = ($px,$py);
@@ -501,7 +501,7 @@ for my $file (@files) {
 			     $inactive = 1;
 			 }
 			 my $planb_url = sprintf 'planb:%d,%d', $x, $y;
-			 push @extra_url_defs, ['planb', $planb_url, ($inactive ? "(inactive)" : ())];
+			 push @extra_url_defs, [_make_inactive('planb', $inactive), $planb_url];
 		     }
 		 }
 		 if (@viz_source_ids) {
@@ -513,7 +513,7 @@ for my $file (@files) {
 		     my($source_id, $px, $py, $inactive) = @{$viz_source_ids[0]}{qw(source_id px py inactive)};
 		     my($x,$y) = _wgs84_to_utm33U($py, $px);
 		     my $viz_url = sprintf 'vizmap:%d,%d', $x, $y;
-		     push @extra_url_defs, ['VIZ', $viz_url, ($inactive ? "(inactive)" : ())];
+		     push @extra_url_defs, [_make_inactive('VIZ', $inactive), $viz_url];
 		 }
 	     }
 
@@ -1147,6 +1147,11 @@ sub print_org_visibility {
   :VISIBILITY: $visibility
   :END:
 EOF
+}
+
+sub _make_inactive {
+    my($label, $inactive) = @_;
+    ($inactive ? '(' : '') . $label . ($inactive ? ')' : '');
 }
 
 # XXX duplicated from MultiMap.pm
