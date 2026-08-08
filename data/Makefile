@@ -978,7 +978,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd:	\
 		${ADDITIONAL_FRAGEZEICHEN_FILES} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	${PERL} ${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --remove-non-coords --preamble \
-	    --coloring '#6c0000 +1w #b05555 +1m #ec8888 +6m #f2a0a0 +1y #fcc8c8 +5y #fdd8d8 +100y #fde0e0'\
+	    --standard-coloring \
 	    --outdoor-mode \
 	    --fragezeichen-mode fragezeichen-orig \
 	    --no-fragezeichen-mode \

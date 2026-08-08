@@ -28,6 +28,7 @@ my $door_mode = 'out';
 my $today = strftime "%Y-%m-%d", localtime;
 my $do_preamble;
 my $coloring;
+my $standard_coloring = '#6c0000 +1w #b05555 +1m #ec8888 +6m #f2a0a0 +1y #fcc8c8 +5y #fdd8d8 +100y #fde0e0'; # note: this is also used in bbbikeleaflet.js, see stdGeojsonLayerOptions
 my $verbose;
 my $emit_source_directives;
 my $remove_non_coords;
@@ -42,6 +43,9 @@ GetOptions(
 	   "verbose" => \$verbose,
 	   "preamble" => \$do_preamble,
 	   "coloring=s" => \$coloring,
+	   'standard-coloring' => sub {
+	       $coloring = $standard_coloring;
+	   },
 	   "line-dash=s" => \$line_dash,
 	   "line-width=i" => \$line_width,
 	   "emit-source-directives" => \$emit_source_directives,
@@ -53,10 +57,10 @@ GetOptions(
 	   "outdoor-mode"         => sub { push @actions, sub { $door_mode = 'out' } },
 	   "<>"                   => sub { my $f = $_[0]; push @actions, sub { handle_file($f) } },
 	  )
-    or die "usage: $0 [--today YYYY-MM-DD] [--verbose] [--fragezeichen-mode|--no-fragezeichen-mode|--indoor-mode|--outdoor-mode] [--handle-mapillary-section] ...";
+    or die "usage: $0 [--today YYYY-MM-DD] [--verbose] [--fragezeichen-mode|--no-fragezeichen-mode|--indoor-mode|--outdoor-mode] [--handle-mapillary-section] [--coloring ...|--standard-coloring] ...\n";
 
 if ($today !~ m{^\d{4}-\d{2}-\d{2}$}) {
-    die "Unexpected argument for --today '$today', expected YYYY-MM-DD";
+    die "Unexpected argument for --today '$today', expected YYYY-MM-DD\n";
 }
 
 if (!@actions) {
@@ -76,13 +80,15 @@ if ($coloring) {
     my $cat = '?';
     $colors{$cat} = shift @items;
     for(my $i=0; $i<$#items; $i+=2) {
-	$cat .= '?';
 	my($interval,$color) = @items[$i,$i+1];
 	if (my($count,$unit) = $interval =~ m{^\+(\d+)([dwmy])$}) {
+	    $cat .= '?';
 	    my $epoch = $today_epoch + $count * {d => 1, w => 7, m => 30, y => 365}->{$unit} * 86400;
 	    my $date = strftime "%Y-%m-%d", localtime $epoch;
 	    $colors{$cat} = $color;
 	    push @time_limits, [$date, $cat];
+	} elsif ($interval eq 'checked-today') {
+	    $colors{'?!'} = $color;
 	} else {
 	    die "Invalid interval '$interval'\n";
 	}
@@ -150,9 +156,21 @@ sub handle_file {
 		 } else {
 		 CHECK_TIME_LIMITS: {
 			 if (@time_limits) {
-			     for my $time_limit (@time_limits) {
-				 my($date, $_cat) = @$time_limit;
-				 if ($dir->{_nextcheck_date}[0] le $date) {
+			     for my $time_limit ('checked-today', @time_limits) {
+				 my $_cat;
+				 my $matching;
+				 if ($time_limit eq 'checked-today') { # special handling for records with last_checked date of today
+				     if ($dir->{last_checked} && $dir->{last_checked}[0] && $dir->{last_checked}[0] =~ /^\Q$today\E/) {
+					 $matching = 1;
+					 $_cat = '?!';
+				     }
+				 } else {
+				     (my($date), $_cat) = @$time_limit;
+				     if ($dir->{_nextcheck_date}[0] le $date) {
+					 $matching = 1;
+				     }
+				 }
+				 if ($matching) {
 				     $cat = $_cat;
 				     my $orig_cat = $r->[Strassen::CAT];
 				     my $is_directed = $orig_cat =~ m{;$} || ($file =~ /handicap_directed/ && $orig_cat =~ /^DH:/);

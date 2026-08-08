@@ -211,7 +211,7 @@ var unknown_map_url = unknown_map_url_mapping[mapset] || unknown_map_url_mapping
 var accel;
 
 function parseCat(cat) {
-    if (cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?+)(?:(::(?:night|play|mask|inwork|xmas|bomb|trailer=no|temp))+;?)?/)) {
+    if (cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?!|\?+)(?:(::(?:night|play|mask|inwork|xmas|bomb|trailer=no|temp))+;?)?/)) {
 	var cat    = RegExp.$1;
         var attribString = RegExp.$2;
 	var attribs = {};
@@ -230,6 +230,7 @@ var stdGeojsonLayerOptions = {
 		    cat = parsedCat.cat;
 		    var color = '#f00';
 		    var opacity = 0.5;
+		    // The following colors until '?!' (including) match the --standard-coloring definition in miscsrc/create_fragezeichen_nextcheck.pl
 		    if (cat == '?') {
 			color = '#6c0000';
 		    } else if (cat == '??') {
@@ -244,6 +245,8 @@ var stdGeojsonLayerOptions = {
 			color = '#fdd8d8';
 		    } else if (cat == '???????') {
 			color = '#fde0e0';
+		    } else if (cat == '?!') {
+			color = '#006000';
 		    } else if (cat.match(/^[qQ]0/)) {
 			color = '#698b69';
 		    } else if (cat.match(/^[qQ]1/)) {
