@@ -122,7 +122,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="33"
 #: osm_watch: way id="1072662717" version="37"
-#: last_checked: 2026-08-07
+#: last_checked: 2026-08-08
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -468,10 +468,10 @@ An der Kommandantur: Gerüstbauarbeiten, Fahrbahn gesperrt	q4::inwork 9943,12364 
 # 
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
-#: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026)
+#: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026)
 #: last_checked: 2026-07-31
 #: check_frequency: 21d
-#: next_check: 2026-08-14 (planb)
+#: next_check: 2026-10-01 (planb)
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
@@ -1017,11 +1017,11 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: by: https://www.entwicklungsstadt.de/anna-lindh-haus-am-europaplatz-fassade-fast-vollstaendig-verglast/ (Fertigstellung 2027)
 #: XXX Wie sieht die Verbindung nach den Bauarbeiten aus? Wird der Europaplatz Nord bis zur Minna-Cauer-Str. verlängert?
 #: also_indoor: webcam https://1223a25j44.bautvplus.de/cam1/image.jpg
-#: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
+# REMOVED (existiert nicht mehr) --- #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch[closed]: note 3913793 11
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="4"
-#: last_checked: 2026-06-17 (webcam)
+#: last_checked: 2026-08-08 (webcam)
 #: check_frequency: 60d
 #: next_check: 2027-03-15 (caimmo website: Anfang 2027)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2::inwork 7995,13537 7963,13489
@@ -1052,7 +1052,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="16096289" version="40"
 #: osm_watch: way id="707100249" version="32"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
-#: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
+# REMOVED (existiert nicht mehr) --- #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
 #: last_checked: 2026-07-16 (luftbildsuche)
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
@@ -1433,7 +1433,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-08-02 (architektur-urbanistik) vvv
+#: last_checked: 2026-08-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -1462,40 +1462,6 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 #: last_checked: 2026-06-18
 #: check_frequency: 90d
 Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
-# 
-#: source_id[inactive]: bvg2024:142#HIM_FREETEXT_316063 (kein Endedatum)
-#: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316065 (kein Endedatum)
-#: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
-#: source_id[inactive]: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
-#: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
-#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026)
-#: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
-#: source_id: planb2026:13.42324439,52.52777598,03.02.2026, ("Sperrung einer Fahrtrichtung", bis 31.07.2026) (inaktiv)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
-#: by: https://viz.berlin.de/aktuelle-meldungen/greifswalder-strasse-stadtauswarts-rohrschaden/
-#: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-prenzlauer-berg-greifswalder-strasse-weiterhin-gesperrt--dauer-unklar-15205719.html
-#: by: https://www.morgenpost.de/bezirke/pankow/article411096985/ende-ungewiss-frust-und-chaos-nach-rohrbruch-in-prenzlauer-berg.html
-#: by: https://www.morgenpost.de/bezirke/pankow/article411086279/wasserrohrbruch-mit-folgen-greifswalder-strasse-stadtauswaerts-voll-gesperrt.html
-#: by: https://www.morgenpost.de/bezirke/pankow/article411357085/greifswalder-strasse-weitere-vollsperrung-ab-montag.html
-#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neue-sperrung-wegen-rohrbruch-baustelle-kreuzung-in-prenzlauer-berg-funf-tage-dicht-15316994.html
-#: by: https://www.bahninfo-forum.de/read.php?9,854720,854720#msg-854720
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260429 (Umbau der Baustelle am 30.4.2026, danach fällt wohl der einspurige Abschnitt in der Otto-Braun/Greifswalder  weg...)
-#: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
-#: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
-#: also_indoor: traffic (T,G)
-#: last_checked: 2026-08-06 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
-#: next_check: 2026-08-07 (VIZ-Verkehrsmeldung) vvv
-Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
-# REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
-# REMOVED --- #: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig, ohne Überholverbotschilder
-# REMOVED (mittlerweile kommt man zumindest bis zur Kreuzung auf der Fahrbahn vorbei an den Absperrungen) --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635
-# REMOVED --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11820,13804
-# REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3-::inwork; 11785,13625 11762,13619 11706,13635
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/scale-b%C3%BCroneubau-storkower-stra%C3%9Fe-142-146.864/page-4#post-24657 --- # REMOVED (ja) --- #: XXX wird sich auch die Qualität der Fahrbahn verbessern? --- #: osm_watch: way id="1184177622" version="3" --- #: osm_watch: way id="804682311" version="4" --- #: osm_watch: note 4734732 6 --- #: priority: #C --- #: last_checked: 2025-08-21 (architektur-urbanistik) --- #: check_frequency: 30d --- # REMOVED --- #: check_frequency: 60d --- Storkower Str. [Gewerbegebiet]: Fahrbahn wegen Bauarbeiten gesperrt, Gehweg passierbar	q4::inwork 13736,14192 13636,14130
 # REMOVED (hier offen) --- Storkower Str. [Gewerbegebiet]: wegen Bauarbeiten gesperrt	2::inwork 13636,14130 13707,14021

@@ -108,7 +108,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="26"
 #: osm_watch: way id="1430487470" version="2"
-#: last_checked: 2026-07-07
+#: last_checked: 2026-08-08
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -1645,7 +1645,7 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: also_indoor: webcam https://webcam-profi.de/bilder/charite/berlin/dhzc/cam1/image.jpg
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
-#: last_checked: 2026-04-25 (daf) vvv
+#: last_checked: 2026-08-08 (webcam) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2028-12-31 (entwicklungsstadt) vvv
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
@@ -4164,7 +4164,7 @@ Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbaua
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
-#: last_checked: 2026-07-23
+#: last_checked: 2026-08-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-07-01
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
@@ -4189,8 +4189,8 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
 #: by: https://www.deutsches-architekturforum.de/thread/13397-stadtquartier-friedenauer-h%C3%B6he-in-bau/?postID=770057#post770057
-#: osm_watch: way id="1323938020" version="9"
-#: last_checked: 2026-07-19
+#: osm_watch: way id="1323938020" version="10"
+#: last_checked: 2026-08-08
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2027-06-30
 (Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): noch nicht freigegeben, Bauzäune	2::inwork 5812,7826 5829,7827 6147,7840
@@ -4229,7 +4229,7 @@ Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
 # 
 #: next_check_id: DUNCKERBRUECKE-2026
-#: last_checked: 2026-06-07 (daf)
+#: last_checked: 2026-08-05 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-09-30 (mögliche Nutzung durch den Rad+Fußverkehr)
 Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
@@ -4283,7 +4283,7 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 #: osm_watch: way id="1054730129" version="9"
 #: osm_watch: way id="295548381" version="9"
 #: source_id: planb2026:13.43684271,52.51255043,02.03.2026,06:00 ("Gehwegvollsperrung", bis 31.03.2027)
-#: source_id: planb2026:13.43631736,52.51181578,17.08.2026,08:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026)
+#: source_id: planb2026:13.43631736,52.51181578,17.08.2026,08:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv)
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
 #: historical_note: am Anfang der Bauarbeiten war der Gehwegbereich schmaler: schmaler Gehweg, Fußgänger, Bordstein, q4+::inwork
 #: last_checked: 2026-07-16
@@ -4752,7 +4752,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-08-07 vvv
+#: last_checked: 2026-08-08 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
@@ -5202,7 +5202,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-07-23 vvv
+#: last_checked: 2026-08-08 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # REMOVED (Treppe ist frei, und dann noch 35m Uferweg) --- Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5214,7 +5214,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-08-07 vvv
+#: last_checked: 2026-08-08 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5415,7 +5415,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # REMOVED (offen) --- #: next_check_id: MOLKENMARKT-2021 --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/ --- #: last_checked: 2025-01-21 --- #: check_frequency: 30d --- Jüdenstr.: zwischen Parochialstr. und Stralauer Str. komplett gesperrt	2::inwork 10831,12371 10830,12313 10830,12279
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
+# REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
 #: last_checked: 2026-08-06
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
@@ -5828,7 +5828,7 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-14
 # REMOVED --- Pariser Platz: Durchfahrt gesperrt an der französischen Botschaft	3 * 8673,12315 *
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin/berlin-hotel-adlon
-#: last_checked: 2026-06-26
+#: last_checked: 2026-08-08 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 
@@ -5836,6 +5836,7 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 # REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12812,-1490
 # REMOVED --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970
 # 
+#: url: https://www.dresden.de/de/stadtraum/zentrale-projekte/carolabruecke.php
 #: by: https://www.welt.de/vermischtes/article253583690/Carolabruecke-Dresdner-Baubuergermeister-angezeigt-Loeste-Temperatursturz-den-Einsturz-aus.html ("Mit einer Wiedereröffnung der übrigen Brückenzüge sei vorerst nicht zu rechnen.")
 #: by: https://www.dresden.de/de/stadtraum/zentrale-projekte/carolabruecke.php (Abrißarbeiten bis voraussichtlich Ende 2024)
 #: by: https://www.deutsches-architekturforum.de/thread/15410-dresden-carolabr%C3%BCcke-st-petersburger-stra%C3%9Fe-carolaplatz/?postID=771348#post771348
@@ -5843,12 +5844,13 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: by: https://www.n-tv.de/panorama/Dresdner-Carolabruecke-soll-bis-zum-Sommer-verschwinden-article25605881.html (Neubau ab 2027)
 #: by: https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/09/Pm_020.php (Ausschreibung)
 #: by: https://www.dresden.de/de/stadtraum/zentrale-projekte/carolabruecke/wiederaufbau-brueckenverbindung.php (Herbst 2026: Entscheidung über Entwurfsvariante)
+#: by: https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/08/pm_048.php (Beginn: 2. Quartal 2028, Fertigstellung 2031)
 #: osm_watch: way id="4214231" version="45"
 #: osm_watch: way id="10368500" version="50"
 #: also_indoor: search Carolabrücke
-#: last_checked: 2026-03-03 (dresden.de)
-#: check_frequency: 180d
-# REMOVED -- #: next_check: 2024-12-31
+#: last_checked: 2026-08-08 (dresden.de)
+#: check_frequency: 360d
+#: next_check: 2031-12-31 (dresden.de: Fertigstellung)
 Carolabrücke (Dresden): Brücke teilweise eingestürzt, der Rest ist gesperrt	2::inwork 36969,-149635 37090,-149991
 # 
 #: by: https://www.berliner-zeitung.de/news/sachsen-naechste-bruecke-muss-abgerissen-werden-li.2282916

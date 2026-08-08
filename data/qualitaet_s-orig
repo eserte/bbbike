@@ -153,7 +153,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-08-07
+#: last_checked: 2026-08-08
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -527,7 +527,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-08-07
+#: last_checked: 2026-08-08
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -1817,7 +1817,7 @@ Hegemeisterweg: Asphalt	Q0 18325,7778 18406,7760
 (Hegemeisterweg - Hoher Wallgraben/KGA Stallwiese): Waldweg	Q2 17987,7973 18025,7986 18101,8044
 Am Fichtenberg: Kopfsteinpflaster, OK	Q1 4347,5103 4285,5180 4217,5217 4134,5284
 Tietzenweg: mäßiges Kopfsteinpflaster	Q2 3643,4232 3766,4058 3777,4042 3870,3914 4004,3729 4135,3564 4275,3428 4342,3366 4467,3332
-#: note: zu beiden Seiten glattere Kopfsteinpflasterstreifen, zurzeit (Juli 2021 und Oktober 2022) Richtung Südosten zugeparkt
+#: note: zu beiden Seiten glattere Kopfsteinpflasterstreifen, meistens (oder immer?) (Juli 2021 + Oktober 2022 + August 2026) Richtung Südosten zugeparkt
 Viktoriastr.: schlechtes Kopfsteinpflaster	Q3 3766,4058 3787,4053 3936,4014
 Augustastr.: Kopfsteinpflaster, OK	Q1- 4234,4020 4385,4032 4551,4042
 #: by: Adrian Fiedler vvv
@@ -1834,7 +1834,7 @@ Augustaplatz: Asphalt	Q0 3946,3967 3971,3950 4000,3950 4025,3958 4042,3982 4045,
 Augustaplatz: Asphalt mit einigen Schäden	Q1+ 4045,4005 4034,4033 4015,4053 3986,4051 3955,4039 3936,4014 3937,3993 3946,3967
 #: corrected_by: srt (Asphalt -> Kopfsteinpflaster)
 Kyllmannstr. (Lichterfelde): Kopfsteinpflaster	Q2 3500,4146 3467,4247
-#: confirmed_by: srt, mapillary
+#: confirmed_by: srt
 Kyllmannstr. (Lichterfelde): Asphalt	Q0 3518,4106 3583,4011 3632,3943 3719,3806
 #: by: ^^^
 #: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
@@ -3581,22 +3581,13 @@ Viersener Str.: Beton	Q0 -5257,14668 -5228,14750 -5199,14835
 Klosterstr.: Kopfsteinpflaster	Q2- 10951,12249 10945,12150
 Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 # 
-#: next_check_id: DRESDENERBAHN-ATTILA-2019
-#: next_check_id: DRESDNERBAHN-2021
-#: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
-#: source_id: planb2026:13.36507111,52.44628677,20.07.2026,07:00 ("keine Fahrbahn-Einschränkung", bis 31.07.2026) (bis 14.08.2026)
-#: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
-# REMOVED --- #: XXX siehe auch RING-2015 für die aktuelle Verschwenkung
-#: osm_watch: way id="30893534" version="30"
-#: osm_watch: way id="1155399359" version="5"
-#: last_checked: 2026-06-13
-#: check_frequency: 60d
-#: next_check: 2026-08-14 (planb)
-Am Teltowkanal: Asphalt	Q0 7911,4465 7866,4419 7769,4315
+#: historical_note: zwischenzeitlich während der Arbeiten an der Dresdener Bahn asphaltiert
+Am Teltowkanal: Verbundsteinpflaster	Q1 7911,4465 7866,4419 7769,4315
 # 
 Am Teltowkanal: Verbundsteinpflaster	Q1 7769,4315 7724,4270
 Am Teltowkanal: fester Sandweg	Q1 7724,4270 7673,4223
 Edenkobener Steg: Holzbohlen	Q1 6618,4191 6633,4272
+Edenkobener Weg: Beton mit einigen leichten Schäden und Hebungen	Q1+ 6996,3762 6931,3870 6819,4051 6768,4113 6642,4155 6618,4191
 Teltowkanalstr.: Kopfsteinpflaster	Q2 5624,4112 5524,4066 5458,4037
 Teltowkanalstr.: Asphalt	Q0 5458,4037 5405,4014
 Wiesenweg (Lankwitz, Lichterfelde): Asphalt	Q0 5400,3969 5405,4014
@@ -7096,9 +7087,10 @@ Scharfe Lanke: Asphalt	Q0 -4255,11600 -4246,11438 -4245,11400
 #: by: https://www.berlin.de/b-intern.de/ba/spandau/_assets/politik-und-verwaltung/dokumente/plan_3_folkungerstrasse_gatower_strasse.pdf
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022, hier: von Wilhemstr. bis Gatower Str.)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
-#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1696984.php (Fahrbahnflächenerneuerung)
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1696984.php (Fahrbahnflächenerneuerung 27.07.2026 - 01.08.2026)
 #: source_id: viz2021:13.17159,52.51104,15.01.2024,09:13 (bis 29.02.2024) (inaktiv)
 #: source_id: viz2021:13.172174,52.511623,16.08.2023,13:00 (Erdgasleitungssanierung, bis 29.02.2024) (bis 29.03.2024) (inaktiv)
+#: source_id: planb2026:13.17877491,52.51264371,06.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", falsche Koordinaten?, bis 21.08.2026)
 #: XXX geplanter Straßenausbau; evtl. wird dabei die Asphaltierung verbessert
 #: add_fragezeichen: Wurde die Fahrbahn mittlerweile erneuert?
 #: osm_watch: note 3653798 2
@@ -13982,7 +13974,7 @@ Bruno-Bauer-Str.: Gehwegplatten	Q0- 12893,6527 12904,6488 12921,6424
 Priesterweg: Asphalt mit einigen Schäden, Gehwegplatten	Q1 7224,7553 7220,7445 7227,7352
 #: next_check_id: CRAILSHEIMER-2026
 #: add_fragezeichen: Ist die Fahrbahnqualität nach den Bauarbeiten besser geworden?
-#: last_checked: 2026-08-02
+#: last_checked: 2026-08-08
 #: next_check: 2026-08-20
 Crailsheimer Str.: Asphalt mit einigen Schäden	Q1+; 7171,4200 7143,4350 7138,4379
 (Schlesischer Busch - Bouchéstr.): Parkweg	Q1- 13418,9944 13513,9871
@@ -16099,7 +16091,7 @@ Eberbacher Str.: Asphalt	Q0 4397,7380 4330,7382 4161,7388 4064,7396 3969,7399
 #: confirmed_by: srt
 Spessartstr.: Asphalt	Q0 4400,7508 4486,7597 4559,7672 4638,7733 4741,7801
 Offenbacher Str.: Asphalt	Q0 5045,7623 4785,7609 4559,7672 4506,7734
-Schlangenbader Str.: Asphalt	Q0 3981,6850 3958,7040 3965,7297 3969,7399 3971,7533 3969,7731 3968,7906
+Schlangenbader Str.: Asphalt	Q0 3981,6850 3990,6875 3964,7052 3965,7297 3969,7399 3971,7533 3969,7731 3968,7906
 Nauheimer Str.: Asphalt	Q0 3969,7731 4067,7726 4162,7721 4343,7732
 #: confirmed_by: srt
 Homburger Str.: Asphalt	Q0 3971,7533 4066,7514 4162,7510 4330,7507 4400,7508 4599,7474 4785,7438
@@ -28354,6 +28346,7 @@ McNair-Promenade: Asphalt	Q0 1882,1376 1785,1338
 Steinäckerstr.: schlechtes Kopfsteinpflaster	Q3 2632,2969 3023,2958
 # 
 #: by: timo (...beyerlein):
+#: confirmed_by: srt
 Sophienstr. (Lichterfelde): Asphalt	Q0 3632,3943 3777,4042 3787,4053
 # 
 #: by: Susanne Conty: vvv
@@ -34885,5 +34878,7 @@ Kreuzungsbereich betoniert	Q0- 5198,1853
 Kreuzungsbereich asphaltiert/betoniert	Q0- 5261,1718
 Einmündungsbereich asphaltiert	Q0 20147,14570
 Einmündungsbereich asphaltiert	Q0 20093,14591
+Einmündungsbereich asphaltiert	Q0 3583,4011
+Einmündungsbereich mit Kleinkopfsteinpflaster	Q1- 3826,6656
 #: ignore ^^^
 #: section ^^^

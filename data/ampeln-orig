@@ -386,14 +386,14 @@ Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: osm_watch: note 4289251 2
 #: source_id: adac:1602492862 (inaktiv)
-#: last_checked: 2026-04-01
+#: last_checked: 2026-08-08
 #: check_frequency: 120d
 #: next_check: 2028-01-01
 Wiesbadener Str./Sodener Str.: provisorische Ampel	X::inwork 3703,7324
 # 
 #: next_check_id: SCHLANGENBADERTUNNEL-2023
 #: note: Anforderungsampel; gilt zumindest nicht für Radfahrer auf dem Radweg Richtung Nordosten
-#: last_checked: 2026-04-01
+#: last_checked: 2026-08-08
 #: check_frequency: 120d
 #: next_check: 2028-01-01
 Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
@@ -457,7 +457,7 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 #: next_check_id: KIEFHOLZMOERIKE-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
 #: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 (bis 21.08.2026)
-#: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026)
+#: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv)
 #: last_checked: 2026-07-11
 #: next_check: 2026-08-21 (VIZ-Verkehrsmeldung, planb)
 #: valid: 20260601-20260821
@@ -4541,7 +4541,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX Ausgeschaltet, weil die Zufahrt zum Tunnel gesperrt ist.
 #: osm_watch: note 4573131 2
 #: osm_watch: node id="6225847741" version="1"
-#: last_checked: 2026-04-01
+#: last_checked: 2026-08-08
 #: check_frequency: 210d
 #: next_check: 2028-01-01
 	F0 3944,6901
@@ -4607,7 +4607,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
 #: XXX laut osm note von SGA Neukölln bis Ende August 2026
-#: last_checked: 2026-07-25
+#: last_checked: 2026-08-08
 #: check_frequency: 30d
 #: next_check: 2026-08-31 (osm note)
 # REMOVED --- #: next_check: 2026-09-30 (infravelo)
