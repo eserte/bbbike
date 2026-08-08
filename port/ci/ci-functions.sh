@@ -387,7 +387,8 @@ install_old_perl_dependencies() {
         case "$PERLBREW_PERL" in
 	    5.8|5.10|5.12|5.14|5.16|5.18)
 		# Object::Iterate 1.143 runs only with perl 5.20+
-		cpanm --quiet --notest Object::Iterate~"<1.143"
+		# Imager 1.034 fails for <= 5.18: https://github.com/tonycoz/imager/issues/569
+		cpanm --quiet --notest Object::Iterate~"<1.143" Imager~"!=1.034"
 		;;
 	esac
         case "$PERLBREW_PERL" in
