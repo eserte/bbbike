@@ -1434,6 +1434,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 #: by: https://www.entwicklungsstadt.de/elsenbruecke-und-a100-mehr-spuren-aber-kaum-entlastung/
 #: by: https://www.berliner-zeitung.de/article/elsenbruecke-treptow-friedrichshain-drei-fahrstreifen-10087603 (29. Juni 2026)
 #: by: https://www.berliner-zeitung.de/article/bruecke-oder-tunnel-unter-der-spree-die-wichtigste-entscheidung-zur-a100-nach-lichtenberg-verzoegert-sich-weiter-10185054
+#: by: https://www.entwicklungsstadt.de/elsenbruecke-in-treptow-und-die-a100-gibt-es-bald-zwei-autobruecken-ueber-die-spree/
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -2529,7 +2530,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: by: https://www.entwicklungsstadt.de/dauersperrung-richtung-ostkreuz-warum-hier-seit-2018-nichts-passiert/
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-07-29 vvv
+#: last_checked: 2026-08-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -3428,7 +3429,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-07-29
+#: last_checked: 2026-08-09
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3439,7 +3440,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-07-29
+#: last_checked: 2026-08-09
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -4570,7 +4571,7 @@ Gehweg für Radfahrer frei	RW1; 21365,5832 21303,5826
 # REMOVED (hier nicht, siehe https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1124786.php ) --- Gehweg für Radfahrer frei	RW1; 21569,5730 21600,5694 21605,5687 21623,5661 21706,5541 21789,5427
 Gehweg für Radfahrer frei	RW1; 21789,5427 21706,5541 21623,5661
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: last_checked: 2026-08-02
+#: last_checked: 2026-08-09
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
 #: XXX nach den Bauarbeiten wieder aktivieren: Gehweg für Radfahrer frei	RW1; 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771

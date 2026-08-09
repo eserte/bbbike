@@ -340,7 +340,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2026-08-02
+#: last_checked: 2026-08-09
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -3031,6 +3031,7 @@ Neltestr.: Beton	Q1 19723,4175 19756,4245
 Ostritzer Str.: Asphalt	Q0 20774,5131 20689,4862
 Ostritzer Str.: Beton	Q0 20774,5131 20782,5206 20793,5256
 Bernstadter Weg: Beton	Q0 20774,5131 20852,5106
+Bernstadter Weg: Asphalt	Q0 20852,5106 20932,5071 20949,4775
 Bruno-Bürgel-Weg: Asphalt	Q0 20793,5256 20740,5273
 Bruno-Bürgel-Weg: Beton	Q0 20740,5273 20473,5436 20435,5460
 Bruno-Bürgel-Weg: Asphalt	Q0 20435,5460 20348,5509 20065,5534 19814,5512 19696,5456 19588,5385 19386,5335 19328,5304
@@ -12502,7 +12503,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-08-03
+#: last_checked: 2026-08-09
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -14105,13 +14106,10 @@ Gustav-Tempel-Str.: Asphalt	Q0 15245,10719 15236,10684 15220,10682 15205,10616 1
 Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: XXX Wie wird der endgültige Belag aussehen? vvv
-#: last_checked: 2026-06-17 vvv
-#: check_frequency: 60d vvv
+#: XXX Wie wird der endgültige Belag aussehen?
+#: last_checked: 2026-08-01
+#: check_frequency: 30d
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
 # 
 Bölschestr. [Marktplatz]: Kopfsteinpflaster	Q2 25491,5240 25497,5327 25544,5326
 Bölschestr. [Kirchplatz]: Kopfsteinpflaster	Q2 25544,5326 25592,5322 25588,5235
@@ -14895,8 +14893,8 @@ Harzburger Str. (Blankenburg): unbefestigte Straße	Q2 14005,21262 14096,21243 14
 #: note: "enge Straße", aber ohne Kategorisierung
 #: corrected_by: srt (guter Asphalt -> ...)
 Holunderweg (Spandau): Asphalt/Beton	Q0 -3010,17885 -3064,17678 -3093,17647
-#: corrected_by: srt (Asphalt -> Beton)
-Lohnauer Steig: Beton	Q0 20790,4114 20852,4157 20829,4211 20770,4277 20614,4381
+#: corrected_by: srt (Asphalt -> Asphalt/Beton)
+Lohnauer Steig: Asphalt/Beton	Q0- 20790,4114 20852,4157 20829,4211 20770,4277 20614,4381
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Kurstr. (Spandau): Asphalt	Q0 -3077,15367 -3041,15434 -3006,15534
 #: corrected_by: srt (Q2 -> Q2-)

@@ -50,6 +50,7 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 #: source_id: LMS-BR:402270/72 viz2021:13.19778,52.54712, (bis 19.06.2026) (bis 14.08.2026)
 #: source_id: LMS-BR:402269/72 viz2021:13.19778,52.54712, (provisorische Ampel, bis 19.06.2026) (bis 14.08.2026)
 #: note: außerdem sind beide Anbindungen der Ackerstr. gesperrt, kleinere Umwege notwendig
+#: also_indoor: traffic (no-G,T,H,no-W)
 #: last_checked: 2026-07-08
 #: next_check: 2026-08-14
 #: valid: -20260814
@@ -114,11 +115,11 @@ Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,1
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # 
 #: next_check_id: ALTEFOERSTEREI-2026
-#: last_checked: 2026-08-02 vvv
-#: next_check: 2026-08-06 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2026-08-09 vvv
+# REMOVED --- #: next_check: 2026-08-06 (VIZ-Verkehrsmeldung) vvv
 (Übergang Höhe Haupteingang Stadion an der Alten Försterei)	F::inwork 21519,5767
 (Übergang Höhe Haupteingang Stadion an der Alten Försterei)	F::inwork 21522,5771
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 # 
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
@@ -571,7 +572,7 @@ Gegenverkehrsregelung	X::inwork::alternating 20302,1613
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-07-29
+#: last_checked: 2026-08-09
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431

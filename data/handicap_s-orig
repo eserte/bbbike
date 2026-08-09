@@ -328,7 +328,7 @@ Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 1366
 #: osm_watch: way id="1219203456" version="25"
 #: osm_watch: way id="884139300" version="28"
 #: osm_watch: way id="1127801487" version="14"
-#: last_checked: 2026-07-10 vvv
+#: last_checked: 2026-08-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -451,7 +451,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,re-H,T[permanent],no-W)
 #: last_checked: 2026-06-29 (daf (noch immer Abrissarbeiten))
-#: check_frequency: 45d
+# REMOVED --- #: check_frequency: 45d
 #: next_check: 2026-08-30 (planb)
 #: valid: 20171026-
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -1130,7 +1130,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: source_id: LMS-BR:416772/72 viz2021:13.44685,52.46001, (inaktiv)
 #: source_id: planb2026:-
 #: also_indoor: traffic (ex-G,T)
-#: last_checked: 2026-08-02 (mapillary)
+#: last_checked: 2026-08-09 (traffic)
 #: check_frequency: 14d (traffic)
 Sieversufer: Wasserrohrbruch, kurzer Abschnitt der Fahrbahn gesperrt	q2::inwork 13430,6086 13636,6185
 # 
@@ -1331,7 +1331,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-07-29
+#: last_checked: 2026-08-09
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1800,6 +1800,7 @@ Tiergarten: einige Fußgänger	q1 8172,11679 8189,11722 8210,11775 8244,11878 8327
 Tiergarten: einige Fußgänger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger	q1 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/nordwegbruecke/ (noch keine geplante Bauzeit)
+#: osm_watch: way id="28583353" version="6"
 #: last_checked: 2026-04-15
 #: check_frequency: 120d
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger, Engstelle an der Nordwegbrücke	q3 7661,12229 7653,12227
@@ -4067,7 +4068,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2026-07-25 vvv
+#: last_checked: 2026-08-09 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="26995453" version="13"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -5959,6 +5960,8 @@ Frauenfelder Weg: Bordsteine, einige Fußgänger	q3 7627,17034 7647,17037
 Oberfeldstr.: Bahnübergang zusammen mit Fußverkehr	q2 20627,12162 20624,12133 20619,12098
 # 
 (Bullengraben - Seeburger Str./Seecktstr.): Parkplatzverkehr	q1 -4368,13387 -4334,13338 -4320,13296
+# 
+Platz am Kaisersteg: schmale Stellen	q2 18381,6134 18428,6123
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

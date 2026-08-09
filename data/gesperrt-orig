@@ -1066,7 +1066,7 @@ Lindenstr. (Straßenbahntrasse)	1s:q3::igndisp 21605,5687 21623,5661 21706,5541 2
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: source_id: LMS-BR:263717/72 viz2021:13.56657,52.45535, (bis 31.12.2027)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2026-08-02 vvv
+#: last_checked: 2026-08-09 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -4245,11 +4245,12 @@ Landsberger Allee/Anton-Saefkow-Platz: Überqueren wegen Bauarbeiten nicht möglic
 #: by: https://www.zeuthen.de/Baumassnahme-im-2-Bauabschnitt-Strasse-Zeuthener-Winkel-706639.html (ab 13.4.2026)
 #: by: https://www.zeuthen.de/Beteiligung-der-Oeffentlichkeit-zum-Entwurf-der-1-Aenderung-des-Bebauungsplanes-Nr-115-3-Zeuthener-Winkel-Mitte-gem-3-Abs-2-BauGB-708899.html
 #: by: https://www.zeuthen.de/1-B-Plan-115-3_erste-Aenderung_Entwurf-pdf-708902.pdf (diese Straße; außerdem weitere Straßen zwischen Adolph-Menzel-Ring und Emil-Nolde-Ring)
+#: by: https://bbf-gruppe.com/aktuelles/update-zeuthener-winkel (vom 30.7.2026; Beginn etwa Mitte August 2026, Dauer ein Jahr)
 #: XXX zukünftig Julie-Wolfthorn-Allee
 #: osm_watch: way id="835765737" version="14"
 #: osm_watch: note 5260095 1
-#: last_checked: 2026-04-13 (zeuthen.de)
-#: check_frequency: 120d
+#: last_checked: 2026-07-30 (bbf-gruppe)
+#: check_frequency: 360d
 Baustraße im Zeuthener Winkel: wird als öffentliche Straße neu gebaut	2::inwork 25345,-4806 25183,-4565 25042,-4334
 # 
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13021 (Antrag)
@@ -4385,7 +4386,7 @@ Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3445,1150
 #: by: https://www.entwicklungsstadt.de/bka-standort-puschkinallee-sicherheitscampus-in-treptow-nimmt-form-an/
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="2"
-#: last_checked: 2026-07-10
+#: last_checked: 2026-08-09
 #: check_frequency: 60d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
@@ -4512,7 +4513,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="4"
 #: osm_watch: note 5102399 2
-#: last_checked: 2026-08-05
+#: last_checked: 2026-08-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4556,7 +4557,7 @@ Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 # REMOVED --- #: valid: -20251201
 # REMOVED --- Wollankstr.: Sperrung, auch für Fußgänger und Radfahrer	2::inwork 9544,17629 9586,17665
 #: note: existiert auch als temp_blockings-Eintrag
-#: last_checked: 2026-05-16 (mapillary)
+#: last_checked: 2026-07-09 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten	2::inwork 9586,17665 9461,17795
@@ -5214,7 +5215,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-08-08 vvv
+#: last_checked: 2026-08-09 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
