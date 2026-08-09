@@ -28,7 +28,7 @@ my $door_mode = 'out';
 my $today = strftime "%Y-%m-%d", localtime;
 my $do_preamble;
 my $coloring;
-my $standard_coloring = '#6c0000 +1w #b05555 +1m #ec8888 +6m #f2a0a0 +1y #fcc8c8 +5y #fdd8d8 +100y #fde0e0'; # note: this is also used in bbbikeleaflet.js, see stdGeojsonLayerOptions
+my $standard_coloring = '#6c0000 +1w #b05555 +1m #ec8888 +6m #f2a0a0 +1y #fcc8c8 +5y #fdd8d8 +100y #fde0e0 checked-today #006000'; # note: this is also used in bbbikeleaflet.js, see stdGeojsonLayerOptions
 my $verbose;
 my $emit_source_directives;
 my $remove_non_coords;
