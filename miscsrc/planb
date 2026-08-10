@@ -191,7 +191,13 @@ sub cmd_fetch_one {
 	my $dat_ende = $props->{dat_ende};
 	$dat_ende = "" if !defined $dat_ende;
 
+	my $dat_beginn_iso;
+	if (($props->{dat_beginn}||'') =~ /^(\d{1,2})\.(\d{1,2})\.(\d{4})$/) {
+	    $dat_beginn_iso = sprintf "%04d-%02d-%02d", $3, $2, $1;
+	}
+
 	print "#: source_id: $id (\"$einschr\", bis $dat_ende)\n";
+	print "#: next_check: $dat_beginn_iso\n" if defined $dat_beginn_iso;
     }
 }
 
