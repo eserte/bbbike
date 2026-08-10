@@ -1275,7 +1275,7 @@ Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 1
 #: note: Waltersdorfer Chaussee/Neuköllner Str., Richtung Norden
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
 #: XXX Inkonsistenz: Busspur ist für Radfahrer freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
-#: last_checked: 2026-07-01
+#: last_checked: 2026-08-09 (mapillary)
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
@@ -1435,6 +1435,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 #: by: https://www.berliner-zeitung.de/article/elsenbruecke-treptow-friedrichshain-drei-fahrstreifen-10087603 (29. Juni 2026)
 #: by: https://www.berliner-zeitung.de/article/bruecke-oder-tunnel-unter-der-spree-die-wichtigste-entscheidung-zur-a100-nach-lichtenberg-verzoegert-sich-weiter-10185054
 #: by: https://www.entwicklungsstadt.de/elsenbruecke-in-treptow-und-die-a100-gibt-es-bald-zwei-autobruecken-ueber-die-spree/
+#: by: https://www.entwicklungsstadt.de/abrisse-kosten-und-zeitplan-wie-steht-es-um-die-a100-verlaengerung/
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -1463,7 +1464,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-08-08 vvv
+#: last_checked: 2026-08-10 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14405,10027 14501,10169 14558,10264
@@ -3355,7 +3356,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-08-08 vvv
+#: last_checked: 2026-08-10 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2026-09-30 (planb) vvv
@@ -3385,7 +3386,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-08-08
+#: last_checked: 2026-08-10
 #: check_frequency: 30d
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 #: next_check: 2026-09-30 (planb)

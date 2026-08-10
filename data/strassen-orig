@@ -1302,10 +1302,12 @@ Gotenstr. (Schöneberg)	N 7497,8168 7494,8354 7490,8593 7485,8777
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1650967.php
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article411451478/neues-berliner-quartier-bekommt-modernen-platz-was-genau-geplant-ist.html
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10270 (Antrag) (Charlotte-Wolf-Platz oder Charlotte-Wolff-Platz?)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1701305.php (Umbau des Platzes Oktober 2026 bis 2028)
 #: XXX Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?
 #: last_checked: 2026-08-08
 #: check_frequency: 180d
-#: next_check: 2026-12-31 (entwicklungsstadt)
+#: next_check: 2026-10-31 (BA-Pressemitteilung: Start des Umbaus)
+# REMOVED --- #: next_check: 2026-12-31 (entwicklungsstadt)
 (Gotenstr. - Ella-Barowsky-Str.)	NN 7497,7761 7551,7851
 # 
 Schmiljanstr.	H 5397,7205 5424,7151 5559,7031 5565,7024 5644,6936
@@ -16916,8 +16918,11 @@ Juchaczweg	N 14126,3225 14180,3334
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/unterlagen/karten-und-plaene/xiv-132-1_pl.pdf
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8363 (Vorlage zur Beschlussfassung)
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260807 (Umbau der Zufahrt zum Krankenhaus Neukölln ab 10.8.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mspcfsaaci2s
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreich24e6pvkfuv4nlewrod2ztvir4rjzyoy4ip4v3dz7wx6umeyafi
 #: XXX Bebauungsplan XIV-132-1: ggfs. wird dieser Abschnitt öffentlich befahrbar werden, inklusive Verlegung der Schranke?
 #: source_id: planb2026:13.46032981,52.4391609,10.08.2026, ("Sicherung gemäß Vz.-plan", Rudower Str. vor dem Krankenhaus, bis 24.08.2026)
+#: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 (bis 24.08.2026)
 #: osm_watch: way id="721901188" version="1"
 #: osm_watch: way id="138144497" version="10"
 #: priority: #C
@@ -20059,7 +20064,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-07-28 vvv
+#: last_checked: 2026-08-10 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

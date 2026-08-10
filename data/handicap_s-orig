@@ -10,6 +10,42 @@
 # 
 ### Friedrichshain ###
 # 
+#: source_id[inactive]: bvg2024:142#HIM_FREETEXT_316063 (kein Endedatum)
+#: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316065 (kein Endedatum)
+#: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
+#: source_id[inactive]: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
+#: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
+#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026) (inaktiv)
+#: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
+#: source_id: LMS-BR:397763/72 viz2021:13.424,52.528103, (bis 21.08.2026)
+#: source_id: planb2026:13.42324439,52.52777598,03.02.2026, ("Sperrung einer Fahrtrichtung", bis 31.07.2026) (inaktiv)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
+#: by: https://viz.berlin.de/aktuelle-meldungen/greifswalder-strasse-stadtauswarts-rohrschaden/
+#: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-prenzlauer-berg-greifswalder-strasse-weiterhin-gesperrt--dauer-unklar-15205719.html
+#: by: https://www.morgenpost.de/bezirke/pankow/article411096985/ende-ungewiss-frust-und-chaos-nach-rohrbruch-in-prenzlauer-berg.html
+#: by: https://www.morgenpost.de/bezirke/pankow/article411086279/wasserrohrbruch-mit-folgen-greifswalder-strasse-stadtauswaerts-voll-gesperrt.html
+#: by: https://www.morgenpost.de/bezirke/pankow/article411357085/greifswalder-strasse-weitere-vollsperrung-ab-montag.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neue-sperrung-wegen-rohrbruch-baustelle-kreuzung-in-prenzlauer-berg-funf-tage-dicht-15316994.html
+#: by: https://www.bahninfo-forum.de/read.php?9,854720,854720#msg-854720
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260429 (Umbau der Baustelle am 30.4.2026, danach fällt wohl der einspurige Abschnitt in der Otto-Braun/Greifswalder  weg...)
+#: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
+#: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
+#: also_indoor: traffic (re-T,ex-G)
+#: last_checked: 2026-08-06 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
+#: next_check: 2026-08-21 (VIZ-Verkehrsmeldung) vvv
+# REMOVED (nach den Bauarbeiten:) --- Am Friedrichshain: letzte Prüfung und ggfs. Dokumentation nach Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	?; 11706,13635 11762,13619 11785,13625
+Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
+# REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
+# REMOVED --- #: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig, ohne Überholverbotschilder
+# REMOVED (mittlerweile kommt man zumindest bis zur Kreuzung auf der Fahrbahn vorbei an den Absperrungen) --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635
+# REMOVED --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11820,13804
+# REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3-::inwork; 11785,13625 11762,13619 11706,13635
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: next_check_id: AMWIEZENERBAHNHOF-2024
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
 #: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
@@ -475,7 +511,7 @@ An der Kommandantur: Gerüstbauarbeiten, Fahrbahn gesperrt	q4::inwork 9943,12364 
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-07-28
+#: last_checked: 2026-08-10
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -1130,7 +1166,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: source_id: LMS-BR:416772/72 viz2021:13.44685,52.46001, (inaktiv)
 #: source_id: planb2026:-
 #: also_indoor: traffic (ex-G,T)
-#: last_checked: 2026-08-09 (traffic)
+#: last_checked: 2026-08-09 (mapillary, Sackgassenschild)
 #: check_frequency: 14d (traffic)
 Sieversufer: Wasserrohrbruch, kurzer Abschnitt der Fahrbahn gesperrt	q2::inwork 13430,6086 13636,6185
 # 

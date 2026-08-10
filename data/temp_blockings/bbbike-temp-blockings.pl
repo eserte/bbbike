@@ -13032,7 +13032,7 @@ EOF
        text  => 'L 028 Neureetz - B158 Kreuzung bei Gabow/ B158/B158A Straßenbauarb., Radweg, LSA Vollsperrung 22.09.2008-30.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 54862,47561 55048,47057
+	2::inwork 54862,47561 55124,46711
 EOF
      },
      { from  => 1221343200, # 2008-09-14 00:00
@@ -39045,7 +39045,7 @@ EOF
 #: also_indoor: traffic (ex-T,G,ex-H[ganz kurz],ex-W)
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2026-08-08 (traffic)
+#: last_checked: 2026-08-10 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-07-31 (planb)
@@ -42092,6 +42092,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/wegen-bruckenarbeiten-bahnhofstrasse-in-berlin-kopenick-wird-im-august-gesperrt-15900609.html
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msno676yzz2v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4f7cnmhjem3wqnm6qcq4hq56uitnam45imh4h6dnmlle6a5rrbi
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msp542wvqn2l
 # REMOVED --- #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
 #: source_id[inactive]: bvg2021:269#BVG326513_0
 #: source_id[inactive]: bvg2021:63#BVG326792_0
@@ -42102,6 +42103,7 @@ EOF
 #: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024) (inaktiv)
 #: source_id: viz2021:13.57927,52.458482,18.08.2025,06:00 (bis 10.11.2025) (inaktiv)
 #: source_id: bvg2024:x69#48fe4f2d-7c2c-468f-a810-941ed4ac83ad (2026-08-10 bis 2026-08-31)
+#: source_id: LMS-BR:418987/72 viz2021:13.57925,52.45846,10.08.2026,06:00 (bis 31.08.2026)
 #: traffic_note: Möglicherweise erhöhter Kfz-Ausweichverkehr via Hämmerlingstr.
 # REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-11-10 vvv
 Bahnbrücke Bhf. Köpenick	q4::inwork 22431,6068 22467,6135
@@ -45562,7 +45564,7 @@ EOF
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-08-07 vvv
+#: last_checked: 2026-08-10 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -47003,7 +47005,7 @@ EOF
 #: source_id: 246700596 (bis 14.03.2025) (inaktiv)
 #: source_id: LS/221-F/25/033 (bis 27.10.2025) (bis 20.08.2026) (bis 31.03.2026) (bis 20.08.2026) (bis 18.12.2026) (bis 20.08.2026) (bis 18.12.2026)
 #: source_id: viz2021:13.75391,52.420661,17.03.2025,08:00 (bis 01.10.2025) (inaktiv)
-#: source_id: LS/221-F/25/052 (bis 30.04.2026) (inaktiv) (bis 31.05.2026) (vorfristig inaktiv)
+#: source_id: LS/221-F/25/052 (bis 30.04.2026) (inaktiv) (bis 31.05.2026) (vorfristig inaktiv) (bis 30.11.2026)
 #: by: https://www.erkner.de/umwelt-und-stadtentwicklung/bauen-und-verkehr/tiefbau.html (Bauarbeiten in der Erkner Friedrichstr. für Frühjahr 2025 angekündigt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/sperrung-der-l30-friedrichstrasse-in-erkner/ (Radfahrer können passieren, aber vermutlich mit Einschränkungen, weitere Bauabschnitte bis Oktober 2026, danach mit Radfahrstreifen)
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~28-02-2025-l-30-in-erkner-ausbau-der-friedrichstrasse-beginnt
@@ -47953,19 +47955,19 @@ Bonner Str. (in Höhe Kreuznacher Str.)	q4::inwork 4372,6718 4360,6779
 Ludwig-Barnay-Platz	q4::inwork 4360,6779 4506,6811
 EOF
      },
-     { from  => 1738562400, # 2025-02-03 07:00
-       until => $isodate2epoch->("2025-06-20 17:00:00"), # 1744729200, # 2025-04-15 17:00
+     { from  => $isodate2epoch->("2026-08-10 00:00:00"), # 1738562400, # 2025-02-03 07:00
+       until => $isodate2epoch->("2026-09-04 23:59:59"), # $isodate2epoch->("2025-06-20 17:00:00"), # 1744729200, # 2025-04-15 17:00
 #      text  => 'Eweststr.: Einbahnstraßenregelung, vom 04.02.2025 07:00 bis 15.04.2025 17:00',
-       text  => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (Gehwege für Radfahrer frei), vom 04.02.2025 07:00 bis 20.06.2025 17:00',
+#      text  => 'Pasewalker Str.: Sperrung der Fahrbahn zwischen Eweststr. und Bahnhofstr. Richtung Norden, außerdem Einbahnstraßenregelung in der Eweststr. (Gehwege für Radfahrer frei), vom 04.02.2025 07:00 bis 20.06.2025 17:00',
+       text  => 'Eweststr.: Einbahnstraßenregelung, vom 11.08.2026 bis 04.09.2026',
        type  => 'handicap',
        data  => <<EOF,
-#: note: außerdem noch Sperrung in der  Richtung Norden --- sind auch Radfahrer betroffen?
-#: note: in der Eweststr. ist der Gehweg für Radfahrer frei (siehe Mapillary), deshalb q4 -> q3
-#: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025) (bis 23.05.2025) (bis 20.06.2025) (inaktiv)
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1886642087409451474
-#: by: https://pbs.twimg.com/media/Gi3dUpVWsAAyAOM?format=png
-Pasewalker Str.	q3::inwork; 12121,20969 12158,21166
-Eweststr.	q3::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
+# REMOVED (alte Sperrung) --- #: note: außerdem noch Sperrung in der  Richtung Norden --- sind auch Radfahrer betroffen? --- #: note: in der Eweststr. ist der Gehweg für Radfahrer frei (siehe Mapillary), deshalb q4 -> q3 --- #: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025) (bis 23.05.2025) (bis 20.06.2025) (inaktiv) --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1886642087409451474 --- #: by: https://pbs.twimg.com/media/Gi3dUpVWsAAyAOM?format=png
+#: next_check_id: EWEST-2026
+#: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
+Eweststr.	q3::inwork; 12121,20969 12189,20959 12227,20966 12298,21015
+# REMOVED (alte Sperrung) --- Pasewalker Str.	q3::inwork; 12121,20969 12158,21166
+# REMOVED (alte Sperrung) --- Eweststr.	q3::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
 EOF
      },
      { from  => 1738645200, # 2025-02-04 06:00
@@ -49570,7 +49572,7 @@ EOF
 #: source_id: viz2021:13.29402,52.48994,01.07.2025,10:03 (Salzbrunner Str., bis 15.07.2025) (inaktiv)
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: LMS-BR:374539/72 viz2021:13.29402,52.48994, (Salzbrunner Str., bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
-#: source_id[inactive]: bvg2024:110#HIM_FREETEXT_284868 (zwischenzeitlich entfernt, 2x)
+#: source_id: bvg2024:110#HIM_FREETEXT_284868 (zwischenzeitlich entfernt, 2x)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (T,G,ex-H)
@@ -50681,7 +50683,7 @@ Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
 EOF
      },
      { from  => 1754431200, # 2025-08-06 00:00
-       until => undef, # 1767222000, # 2026-01-01 00:00
+       until => 1786379689, # undef, # 1767222000, # 2026-01-01 00:00
 #      text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege, bis Dezember 2025, voraussichtlich werden die Bauarbeiten verlängert (Stand Ende Dezember 2025: Diagonalweg ist offen)',
        text  => 'Schlesischer Busch: Bauarbeiten, mögliche Sperrungen der Wege (Stand Anfang Juli 2026: Diagonalweg ist offen)',
        type  => 'gesperrt',
@@ -50689,10 +50691,8 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1587825.php (bis Dez 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409692308/warum-der-schlesische-busch-in-treptow-erneut-zur-baustelle-wird.html
 #: osm_watch: note 5038218 4
-#: add_fragezeichen: Ist der Diagonalweg gesperrt?
 #: note: 2025-11-25: die letzten Meter an der Puschkinallee sind noch nicht saniert, vielleicht gibt es hier noch eine Sperrung
-#: last_checked: 2026-08-09
-#: check_frequency: 14d
+# REMOVED (alle Absperrungen wurden entfernt) --- #: add_fragezeichen: Ist der Diagonalweg gesperrt? --- #: last_checked: 2026-08-09 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2025-12-31
 	2::inwork 13711,10022 13657,9983 13418,9944
 EOF
@@ -50808,7 +50808,7 @@ EOF
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: source_id: planb2026:13.4564232,52.50244969,01.06.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-08-09 vvv
+#: last_checked: 2026-08-10 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2026-08-31 (planb) vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
@@ -51301,7 +51301,7 @@ EOF
 #: next_check_id: MARKGRAFENDAMM-2022
 #: source_id: planb2026:13.46545743,52.49884577,27.07.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 28.08.2026)
 #: note: gesperrter Bereich ist nur kurz, ca. 25m, deshalb q2
-#: last_checked: 2026-08-04
+#: last_checked: 2026-08-10
 #: check_frequency: 14d
 #: next_check: 2026-08-28
 Corinthstr.	q2::inwork 14447,10491 14608,10409
@@ -51913,9 +51913,9 @@ EOF
 #: osm_watch: note 5049958 2
 #: osm_watch: way id="1127993128" version="10"
 #: source_id: planb2026:13.37147229,52.53701526,13.10.2025,06:00 ("keine Fahrbahn-Einschränkung", bis 07.08.2026) (bis 28.08.2026)
-#: last_checked: 2026-08-03 (osm)
+#: last_checked: 2026-08-09 (mapillary)
 #: check_frequency: 21d
-#: next_check: 2026-08-07 (Baustellenschild, Haltestellenschilder, planb)
+#: next_check: 2026-08-28 (planb)
 # REMOVED --- #: next_check: 2026-08-28 (planb)
 	2::inwork 8050,14556 7996,14487 7940,14447
 EOF
@@ -53175,14 +53175,15 @@ EOF
 EOF
      },
      { from  => 1775426400, # 2026-04-06 00:00
-       until => $isodate2epoch->("2026-08-07 23:59:59"), # 1781560799, # 2026-06-15 23:59
-       text  => 'Borsigstr.: Bauarbeiten, Anbindung an die Torstr. gesperrt, vom 7.4.2026 bis Anfang August 2026',
+       until => $isodate2epoch->("2026-08-31 23:59:59"), # $isodate2epoch->("2026-08-07 23:59:59"), # 1781560799, # 2026-06-15 23:59
+#      text  => 'Borsigstr.: Bauarbeiten, Anbindung an die Torstr. gesperrt, vom 7.4.2026 bis Anfang August 2026',
+       text  => 'Borsigstr.: Bauarbeiten, Anbindung an die Torstr. gesperrt, vom 7.4.2026 bis August 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260402
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3miuzl2mxlk23
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia66tltsum32mkymbjkhdu43dqpdebywpnndoeadsdfsr2o4tk5vm (Länge des gesperrten Bereichs 72,5m)
-#: source_id: LMS-BR:404063/72 viz2021:13.391393,52.528031,07.04.2026,07:00 (bis 12.06.2026) (bis 03.07.2026) (bis 07.08.2026) (inaktiv)
+#: source_id: LMS-BR:404063/72 viz2021:13.391393,52.528031,07.04.2026,07:00 (bis 12.06.2026) (bis 03.07.2026) (bis 07.08.2026) (inaktiv) (bis 31.08.2026)
 #: also_indoor: traffic (ex?-G,T)
 	q4::inwork 9508,13578 9373,13769
 EOF
@@ -54619,7 +54620,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~14-07-2026-baustart-an-der-l-90-in-werder-havel-grundhafte-erneuerung-der-eisenbahnstrasse (weitere Bauabschnitte folgen)
-#: source_id: LS/223-P/26/101 (10.08.2026 bis 21.08.2026)
+#: source_id: LS/223-P/26/101 (10.08.2026 bis 21.08.2026) (Gesamtmaßnahme bis 14.05.2027)
 #: next_check: 2026-08-21 (Verkehrsmeldung) vvv
 	q4::inwork -21220,-3831 -21284,-3767
 	q3::inwork -21284,-3767 -21266,-3604
@@ -54632,7 +54633,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~14-07-2026-l-70-zwischen-kummersdorf-gut-und-sperenberg-ab-august-vollgesperrt
-#: source_id: LS/222-W/26/094 (3.8.2026 bis 31.10.2026)
+#: source_id: LS/222-W/26/094 (3.8.2026 bis 31.10.2026) (inaktiv)
 #: source_id: LS/222-W/26/095 (3.8.2026 bis 31.10.2026)
 #: XXX außerdem Bau eines Radwegs (nicht die gesamte Strecke, nur 1km)
 #: next_check: 2026-10-31 (Verkehrsmeldung, ls.brandenburg)
@@ -54911,7 +54912,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.tagesspiegel.de/berlin/strassensperrung-und-tram-umleitung-gasleitung-in-berlin-lichtenberg-bei-bauarbeiten-beschadigt-15899632.html
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrutcn2mlc2o
-#: source_id: LMS-BR:417708/72 viz2021:13.49374,52.54476, (kein Endedatum)
+#: source_id: LMS-BR:417708/72 viz2021:13.49374,52.54476, (kein Endedatum) (inaktiv)
 #: also_indoor: traffic (no-T,no-G)
 # REMOVED --- #: last_checked: 2026-07-31 (VIZ-Verkehrsmeldung) --- #: check_frequency: 7d
 Manetstr.	2::inwork 16251,15629 16412,15559
@@ -54990,6 +54991,8 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260807 (explizite Sperrung für den Radverkehr, Umleitung via Behrenstr. bzw. Dorotheenstr.)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mspa6eodbs2i
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibdnfto5fbeyuv7vipvpczqe6aupzu425bzzpytyo73tiauhnmcx4
 #: source_id: planb2026:13.37681195,52.51618261,12.08.2026, ("Vollsperrung beider Fahrbahnen", Auf/Abbau 10.08.2026 bis 18.08.2026)
 	q4::temp 8804,12280 8722,12268 8637,12258 8592,12252 8538,12245
 EOF
@@ -55006,6 +55009,26 @@ EOF
 #: note: Richtung Norden: Absperrung an der Siemensstr. über die gesamte Breite der Fahrbahn, vereinzelte Baubereiche
 #: last_checked: 2026-08-09
 Nalepastr.	q3::inwork 17510,6751 17550,6677 17614,6571
+EOF
+     },
+     { from  => 1786399200, # 2026-08-11 00:00
+       until => 1787436000, # 2026-08-23 00:00
+       text  => 'Seegefelder Weg: Fahrbahnsanierung zwischen Hamburger Str. und Straße 339, Sperrung, vom 12.08.2026 bis 22.08.2026 ',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1701298.php
+#: source_id: planb2026:13.13162244,52.54946216,10.08.2026, ("Vollsperrung beider Fahrbahnen", bis 22.08.2026)
+	q4::inwork -8450,15702 -8339,15657 -8309,15691 -8198,15648
+EOF
+     },
+     { from  => 1786251600, # 2026-08-09 07:00
+       until => 1790434800, # 2026-09-26 17:00
+       text  => 'Wilhelm-Kuhr-Str.: östlich der Kreuzstr. Asphaltierungsarbeiten, mögliche Sperrung, vom 10.08.2026 bis 26.09.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: WILHELMKUHR-2026
+#: source_id: LMS-BR:418994/72 viz2021:13.39851,52.56931,10.08.2026,07:00 (bis 26.09.2026)
+	q4::inwork 9893,18179 9831,18181 9803,18131 9776,18125
 EOF
      },
     );
