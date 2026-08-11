@@ -16,7 +16,13 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "url-to-file@local"
+      "id": "url-to-file@local",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+
     }
   }
 }
