@@ -125,14 +125,21 @@ Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgerste
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-08-01 (osm) vvv
+#: last_checked: 2026-08-11 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
+#: source_id: planb2026:13.45274687,52.51888366,19.08.2024, ("Sperrung einer Fahrtrichtung", bis 31.12.2026)
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="15"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="182614432" version="28"
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
+#: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027) (vorfristig inaktiv)
+#: osm_watch: way id="1083535036" version="17"
+#: osm_watch: way id="1119255054" version="13"
+#: also_indoor: traffic (G,W)
+#: next_check: 2027-09-30 (ex-VIZ-Verkehrsmeldung)
+Straßmannstr.: Baustelleneinrichtung zwischen Petersburger Str. und Petersburger Platz, Sperrung der Fahrbahn	q4::inwork 13530,13014 13470,12990
 #: source_id: viz2021:13.449412,52.524444,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="114684413" version="25"
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
@@ -494,13 +501,13 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
-#: source_id: planb2026:13.39770515,52.51708189,13.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 15.08.2026)
-#: note: nur der südliche Bürgersteig ist frei
-#: historical_note: anfang war die komplette Straße gesperrt
-#: last_checked: 2026-07-28
-#: check_frequency: 21d
-#: next_check: 2026-08-15 (planb)
-An der Kommandantur: Gerüstbauarbeiten, Fahrbahn gesperrt	q4::inwork 9943,12364 9996,12372
+# REMOVED (vorfristig frei) --- #: source_id: planb2026:13.39770515,52.51708189,13.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 15.08.2026)
+# REMOVED --- #: note: nur der südliche Bürgersteig ist frei
+# REMOVED --- #: historical_note: anfang war die komplette Straße gesperrt
+# REMOVED --- #: last_checked: 2026-07-28
+# REMOVED --- #: check_frequency: 21d
+# REMOVED --- #: next_check: 2026-08-15 (planb)
+# REMOVED --- An der Kommandantur: Gerüstbauarbeiten, Fahrbahn gesperrt	q4::inwork 9943,12364 9996,12372
 # 
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
@@ -1311,6 +1318,13 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 # 
 ### Lichtenberg ###
 # 
+#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260811 (bis Anfang September 2026)
+#: source_id: planb2026:13.47721649,52.52297025,12.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
+#: note: außerdem ist die Radspur auf der Storkower Str. Richtung Westen aufgehoben
+#: next_check: 2026-09-04 (planb, VIZ)
+#: valid: -20260904
+Alfred-Jung-Str.: Sperrung vor der Storkower Str.	q3::inwork 15347,13268 15347,13124
+# 
 #: next_check_id: ALLEEDERKOSMONAUTEN-2026
 #: last_checked: 2026-08-05
 # REMOVED --- #: check_frequency: 14d
@@ -1492,6 +1506,14 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # REMOVED (hier nicht mehr bzw. integriert in die Moltkestraßenbrückensperrung) --- #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023) --- #: also_indoor: traffic (G) --- #: last_checked: 2022-01-20 (osm) --- #: check_frequency: 180d --- #: next_check: 2023-09-30 --- Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
 # 
 ### Prenzlauer Berg ###
+# 
+#: source_id: LMS-BR:414025/72 viz2021:13.42474,52.55248, (bis 07.09.2026)
+#: source_id: planb2026:13.42380103,52.5516383,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026)
+#: note: für den Kfz-Verkehr Richtung Norden gesperrt
+#: last_checked: 2026-08-11
+#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+#: valid: -20260907
+Stahlheimer Str.: gemeinsamer Geh- und Radweg	q2::inwork; 11618,16183 11666,16260 11698,16311 11727,16358
 # 
 #: osm_watch: note 5163520 5
 #: add_fragezeichen: Ist die Fahrbahn wegen der Hochbauarbeiten weiterhin gesperrt?

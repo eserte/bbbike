@@ -8,7 +8,8 @@
 # 
 #: next_check_id: EWEST-2026
 #: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
-#: next_check_id: 2026-09-04
+#: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026)
+#: next_check: 2026-09-04 (planb + VIZ-Verkehrsmeldung)
 #: valid: -20260904
 Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 # 
@@ -131,7 +132,7 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: source_id: planb2026:13.42219032,52.51114479,11.09.2025,07:00 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-08-06
+#: last_checked: 2026-08-11
 #: check_frequency: 60d
 #: next_check: 2026-11-04 (planb)
 Michaelbrücke	F::inwork 11676,11839
@@ -267,8 +268,8 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
 #: last_checked: 2026-08-05 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: next_check: 2025-12-31 (ex-VIZ-Verkehrsmeldung) 
+#: check_frequency: 30d (traffic)
+#: next_check: 2026-08-31 (planb) 
 # REMOVED --- #: valid: -20251231
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
@@ -544,6 +545,7 @@ Gegenverkehrsregelung	X::inwork::alternating 20302,1613
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
 #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
 #: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/
+#: by: https://www.entwicklungsstadt.de/neuer-amtssitz-bezogen-das-passiert-jetzt-mit-schloss-bellevue/
 #: last_checked: 2026-06-24
 #: check_frequency: 180d
 #: next_check: 2026-08-21 (VIZ-Verkehrsmeldung)
