@@ -13,5 +13,10 @@
   },
   "icons": {
     "128": "icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "url-to-file@local"
+    }
   }
 }
