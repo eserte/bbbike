@@ -5,12 +5,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2023,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -19,7 +18,7 @@ use lib "$FindBin::RealBin/..";
 use CGI;
 use BBBikeVar;
 
-use constant DEFAULT_SNAPSHOT_IS_LOCAL => 0;
+use constant DEFAULT_SNAPSHOT_IS_LOCAL => 1;
 
 my $q = CGI->new;
 
