@@ -99,8 +99,8 @@ Gneisenaustr./Schleiermacherstr.: provisorische Fußgängerampel	F::inwork 10032,9
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: osm_watch: node id="13704066872" version="1"
 #: osm_watch: node id="13704066873" version="1"
-#: note: manchmal (oder immer?) bekommt man zügig nach Betätigen der Anforderung grün (gesehen: 2026-04-15 Wed 10:20)
-#: last_checked: 2026-06-25 (mapillary)
+#: note: manchmal bekommt man zügig nach Betätigen der Anforderung grün (gesehen: 2026-04-15 Wed 10:20) (mit Wartzezeit: 2026-08-12 Wed 10:50)
+#: last_checked: 2026-08-12
 #: check_frequency: 90d
 #: next_check: 2028-03-03
 Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
@@ -4484,8 +4484,21 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # REMOVED (wurden bereits abgebaut) --- #: next_check_id: HEIDELBERGER-2017 --- #: XXX wann werden die Ampeln wieder abgebaut? --- #: note eigentlich zwei Ampeln, aber zusammengeschaltet --- #: last_checked: 2017-11-18 --- #: check_frequency: 60d ---	F::inwork 13489,9199
 #: note: Anforderung für linksabbiegende Radfahrer in die Alexander-Meißner-Str.
 	X 19894,-835
+# 
+#: next_check_id: FENN-2026
 #: note: Anforderungsampel
-	F 7533,14702
+#: XXX zurzeit ausgeschaltet, später wieder F0 -> F
+#: osm_watch: node id="9908000230" version="3"
+#: next_check: 2027-06-04 (planb + VIZ-Verkehrsmeldung)
+	F0 7533,14702
+#: note: Anforderungsampel
+#: XXX temporär
+#: osm_watch: node id="3779924761" version="9"
+#: osm_watch: note 5445919 3
+#: next_check: 2027-06-04 (planb + VIZ-Verkehrsmeldung)
+#: valid: -20270604
+	F::inwork 7480,14660
+# 
 	X 25312,11186
 # 
 #: note: vermutlich nur Mo-Fr angeschaltet

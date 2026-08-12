@@ -1032,7 +1032,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-08-05
+#: last_checked: 2026-08-12
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1495,7 +1495,7 @@ Fahrradschleuse	RW3; 7612,14325 7566,14404
 Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7829,14665
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
-#: last_checked: 2026-07-26 (mapillary) vvv
+#: last_checked: 2026-08-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
 #: XXX früher RW1;, nun Benutzungspflicht
@@ -3723,7 +3723,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
 #: osm_watch: way id="966685279" version="10"
-#: last_checked: 2026-06-09 vvv
+#: last_checked: 2026-08-12 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2028-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -3838,7 +3838,11 @@ Gehwegplatten	RW1; 5121,17559 5109,17507
 #: historical_note: früher (bis 2025): alte Gehwegplatten
 neu asphaltiert	RW1; 6996,15319 6833,15215
 abschnittsweise neu asphaltiert	RW1; 6833,15215 6715,15152
-alte Gehwegplatten	RW1; 6715,15152 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
+#: XXX Bauarbeiten, möglicherweise wird hier auch asphaltiert
+#: osm_watch: note 5275733 2
+#: last_checked: 2026-08-12
+alte Gehwegplatten	RW1; 6715,15152 6626,15104
+alte Gehwegplatten	RW1; 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
 Verbundsteinpflaster	RW1; 6334,14756 6445,14893 6504,14969 6528,15000 6561,15041 6626,15104
 alte Gehwegplatten	RW1; 6626,15104 6715,15152 6833,15215 6996,15319 7138,15437 7277,15586
 asphaltiert	RW1;RW1 6334,14756 6288,14661
@@ -7465,7 +7469,8 @@ asphaltiert	RW1;RW1 21278,18786 21332,18819 21359,18834
 Fahrradschleuse	RW4; 9234,11056 9196,11165
 Fahrradschleuse	RW3; 9196,11165 9234,11056
 Radstreifen hört etwa 50 Meter vor der Ampel auf	RW3; 9275,10932 9234,11056
-asphaltiert	RW1;RW1 8179,18756 8066,18754 7875,18741
+asphaltiert	RW1; 8179,18756 8066,18754 7875,18741
+asphaltiert, erste leichte Unebenheiten	RW1; 7875,18741 8066,18754 8179,18756
 	RW3;RW3 7875,18741 7843,18705
 	RW2; -3657,11631 -3692,11681
 	RW2;RW2 -3692,11681 -3688,11705 -3681,11761
@@ -8168,7 +8173,7 @@ Grünbeschichtung	RW4; 15417,12823 15367,12815 15357,12813
 Grünbeschichtung	RW4; 15357,12813 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
 #: XXX kommt hier noch ein Radwegschild hin?
-#: last_checked: 2026-07-12
+#: last_checked: 2026-08-12
 #: check_frequency: 60d
 Grünbeschichtung, Poller	RW3; 15098,12849 15010,12855
 #: note: frühere Radstreifenmarkierung nicht mehr erkennbar

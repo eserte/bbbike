@@ -1853,7 +1853,8 @@ Monumentenplatz: einige Fußgänger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
 Andreas-Hofer-Platz: einige Fußgänger, Bordsteine	q3 10490,16914 10493,16960
 Schlosspark Schönhausen: einige Fußgänger, Pflasterreihen	q1 10496,18704 10518,18750 10513,18854 10497,18883 10507,18959 10529,19055 10584,19132 10600,19225
 Schlosspark Schönhausen: einige Fußgänger	q1 10600,19225 10589,19275 10575,19327 10569,19395 10503,19371
-Schlosspark Schönhausen: einige Fußgänger	q1 10600,19225 10636,19289 10575,19327 10503,19371
+Schlosspark Schönhausen: einige Fußgänger	q1 10600,19225 10636,19289 10575,19327
+Schlosspark Schönhausen: einige Fußgänger, Grünanlage	q3 10575,19327 10503,19371
 Schlosspark Schönhausen: einige Fußgänger	q1 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509
 Bitburger Str. teilweise relativ eng	q2 15548,17684 15515,17717 15488,17721 15461,17702
 (Dohnagestell - Plötzensee): eng	q2 5086,15664 5113,15596 5134,15565
@@ -2314,8 +2315,9 @@ Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fußgänger	q1 16894,10003 1
 Uber-Platz: Fußgängerzone	q4 13150,11101 13067,11145 12984,11194
 Uber-Platz: Fußgängerzone	q4 12990,11006 13067,11145
 (Abbestr. - Otto-Suhr-Allee): einige Fußgänger	q1 4674,12076 4608,11935 4596,11912
-Michelangelostr. - Gürtelstr.: Bauarbeiten, Engstelle	q3::inwork 13905,15306 13809,15370 13716,15437
-An der Kieler Brücke: Fußgängerzone, Radfahren verboten	q4 7877,14504 7804,14445
+(Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
+An der Kieler Brücke: Fußgängerzone, Radfahrer frei	q1 7877,14504 7804,14445
+An der Panke: Grünanlage, Radfahren verboten	q4 7872,14510 7787,14473
 (Straße G, Innovationspark Wuhlheide): Gewerbebetriebe	q1 21627,6942 21547,7024
 (Relingstr. - Uferweg): einige Fußgänger	q2 22358,2460 22399,2481
 (Uferweg): einige Fußgänger	q2 22399,2481 22304,2570 22239,2644
@@ -3765,6 +3767,7 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einba
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Dolgenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17774,9934 17761,9971 17559,10024
 Köpenicker Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp::igndisp; 21137,11346 21137,11294
+Streustr.: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::inwork::igndisp; 12890,16121 12675,16214
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::inwork::igndisp; 8870,13926 8831,13973 8732,14098
 Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::inwork::igndisp; 9011,14019 8870,13926
 Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -3445,11505 -3606,11532

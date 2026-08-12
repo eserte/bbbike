@@ -1656,7 +1656,7 @@ Virchow-Klinikum	2::inwork 6106,14890 6104,14937
 # 
 #: XXX nach den Bauarbeiten die alte Einbahnstraßenregelung eintragen
 #: note: es gibt eine provisorische Verbindung zur Weststr. (mittlerweile bei bbbike eingezeichnet)
-#: last_checked: 2026-04-15 vvv
+#: last_checked: 2026-08-12 vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="273858820" version="13"
 #: osm_watch: way id="1239079510" version="2"
@@ -4122,11 +4122,21 @@ Drängelgitter	BNP:3::trailer=10 5829,7827
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: source_id: planb2026:13.44173022,52.55043528,04.05.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 28.02.2027)
+#: note: Einbahnstraßenregelung nur in einem Abschnitt, deshalb q4->q3
+#: last_checked: 2026-08-12
+#: check_frequency: 120d
+#: next_check: 2027-02-28
+#: valid: -20270228
+Streustr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3::inwork 12890,16121 12675,16214
+# 
+#: next_check_id: FENN-2026
 #: source_id: planb2026:13.36067702,52.53741246,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.06.2027)
 #: source_id: LMS-BR:419146/72 viz2021:13.36167,52.53792,11.08.2026,07:00 (bis 04.06.2027)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msrv4hnc6s2l (bis Mitte 2027)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie7d4xrms4jdia3kvcuf7pkmxcwzdwysmuuroyjzggf6d7vzvon2a
 #: note: außerdem: Fußgängerampel Richtung Tegeler Str. verschoben; Radwegbenutzungspflicht im Baustellenbereich
+#: last_checked: 2026-08-12
 #: next_check: 2027-06-04 (planb + VIZ-Verkehrsmeldung)
 Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14660 7514,14687 7533,14702 7911,15008
 # 
@@ -4216,10 +4226,10 @@ Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12780
 # 
 #: next_check_id: NORDUFER-2025
-#: osm_watch: note 5332936 1
+#: osm_watch: note 5332936 2
 #: osm_watch: way id="1237814530" version="4"
 #: XXX früher: 1::igndisp
-#: last_checked: 2026-06-25 (mapillary)
+#: last_checked: 2026-08-12
 Nordufer: Radweg wird vermutlich zurückgebaut	2::inwork 7156,14763 7129,14787
 # 
 #: next_check_id: URBANTECHREPUBLIC-2022
@@ -4305,8 +4315,8 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: osm_watch: way id="1495906089" version="1"
 #: osm_watch: way id="971631807" version="9"
 #: osm_watch: way id="971631806" version="9"
-#: last_checked: 2026-07-02
-#: check_frequency: 45d
+#: last_checked: 2026-08-12
+#: check_frequency: 60d
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
 # 
@@ -4560,15 +4570,15 @@ Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
 Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 #: next_check ^^^
 #: last_checked ^^^
-# REMOVED --- #: note: existiert auch als temp_blockings-Eintrag
-# REMOVED --- #: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20251201
-# REMOVED --- Wollankstr.: Sperrung, auch für Fußgänger und Radfahrer	2::inwork 9544,17629 9586,17665
 #: note: existiert auch als temp_blockings-Eintrag
 #: last_checked: 2026-07-09 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten	2::inwork 9586,17665 9461,17795
+# REMOVED --- #: note: existiert auch als temp_blockings-Eintrag
+# REMOVED --- #: next_check: 2025-12-01 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20251201
+# REMOVED --- Wollankstr.: Sperrung, auch für Fußgänger und Radfahrer	2::inwork 9544,17629 9586,17665
 #: XXX ^^^
 # 
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-ueber-den-koenigsgraben/ (laut Bild schon abgebrochen; voraussichtliche Bauzeit: noch in Planung)
@@ -5624,7 +5634,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2026-07-26 (mapillary) vvv
+#: last_checked: 2026-08-12 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188 (inaktiv)
 #: osm_watch: way id="593108603" version="3"

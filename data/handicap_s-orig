@@ -102,7 +102,7 @@ Am Wriezener Bahnhof: Einfahrt verboten	q3::inwork; 12758,11915 12788,11898 1294
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
 #: source_id: planb2026:13.46470153,52.51022419,02.12.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
-#: last_checked: 2026-07-30
+#: last_checked: 2026-08-12
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2026-08-31 (planb)
 # REMOVED --- #: valid: -20250630
@@ -461,7 +461,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
 #: by: https://www.entwicklungsstadt.de/forschung-lehre-zukunft-bht-eroeffnet-laborneubau-wal-in-wedding/
 # REMOVED --- #: osm_watch: way id="885130938" version="7"
-#: last_checked: 2026-07-08
+#: last_checked: 2026-08-12
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-10-01
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
@@ -1017,7 +1017,7 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 #: source_id: planb2026:13.35334176,52.53143774,28.11.2022, ("Sicherung gemäß Vz.-plan", bis 30.09.2026)
 #: source_id: LMS-BR:325489/72 viz2021:13.358912,52.537703, (bis 25.09.2026)
-#: last_checked: 2026-07-26 (mapillary)
+#: last_checked: 2026-08-12
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung)
 #: valid: -20260930
 Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,14599 7368,14573
@@ -1132,13 +1132,14 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/verkehrssperrungen-in-der-berliner-city-west-rund-um-den-breitscheidplatz-gibt-es-bald-viele-baustellen-15223104.html (Sperrung 2026)
 #: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
 #: source_id: LMS-BR:406219/72 viz2021:13.331624,52.50377,27.04.2026,12:00 (Verengung, evtl. im Zusammenhang mit dieser Maßnahme? bis 28.05.2026) (bis 30.11.2026)
+#: source_id: planb2026:13.33491591,52.50358375,27.04.2026, ("geänderte Führung im Knotenpunkt", bis 20.11.2026)
 #: osm_watch: note 5181118 1
 #: osm_watch: way id="4491984" version="29"
 #: XXX etwa 60m der Fahrbahn sind gesperrt
 #: also_indoor: traffic (ex-G,T,ex-W)
 #: last_checked: 2026-05-22 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2026-11-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-11-20 (planb)
 #: note: "Notfall"-valid-Direktive
 #: valid: -20261231
 Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine, Umwege	q4::inwork 5669,10704 5782,10884
@@ -1319,7 +1320,9 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 ### Lichtenberg ###
 # 
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260811 (bis Anfang September 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msubin42gl24
 #: source_id: planb2026:13.47721649,52.52297025,12.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
+#: source_id: LMS-BR:419242/72 viz2021:13.4795,52.52304,12.08.2026,07:00 (bis 04.09.2026)
 #: note: außerdem ist die Radspur auf der Storkower Str. Richtung Westen aufgehoben
 #: next_check: 2026-09-04 (planb, VIZ)
 #: valid: -20260904
@@ -1367,10 +1370,11 @@ Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hoch
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260504 (Dauer: ein Jahr)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ml3ex3sqks2i (nur der östliche Strang der Ontarioseestr. betroffen?)
 #: by: https://www.entwicklungsstadt.de/autohaus-abriss-am-tierpark-was-in-lichtenberg-gebaut-wird/ (Fertigstellung November 2027)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-am-tierpark-124.1552/#post-27828
 #: source_id: LMS-BR:407167/72 viz2021:13.52329,52.49559,05.05.2026,07:00 (bis 31.05.2027)
 #: source_id: planb2026:13.52339081,52.4953266,18.03.2026, ("Fahrstreifen-Reduzierung" in der Sewanstr., bis 31.05.2027)
 #: note: außerdem ist die Einbahnstraßenregelung in der restlichen Ontarioseestr. aufgehoben, aber eher geringer verkehrlicher Wert für den Radverkehr
-#: last_checked: 2026-06-24
+#: last_checked: 2026-08-12 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2027-05-31 (VIZ-Verkehrsmeldung, planb)
 # REMOVED (Fertigstellungsdatum von entwicklungsstadt nehmen) --- #: valid: -20270531
@@ -2718,7 +2722,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="16"
 #: source_id: planb2026:13.35375098,52.49913271,15.10.2024,06:00 (hier: "Haltverbote", bis 31.12.2027)
-#: last_checked: 2026-06-23 (daf)
+#: last_checked: 2026-08-09 (architektur-urbanistik)
 #: check_frequency: 120d
 #: next_check: 2027-12-31 ("Haltverbote", planb)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
@@ -4399,7 +4403,9 @@ Monumentenplatz: einige Fußgänger, Spielplatz	q2 8385,8923 8362,9007 8358,9068
 Andreas-Hofer-Platz: einige Fußgänger, Bordsteine	q3 10490,16914 10493,16960
 Schlosspark Schönhausen: einige Fußgänger, Pflasterreihen	q1 10496,18704 10518,18750 10513,18854 10497,18883 10507,18959 10529,19055 10584,19132 10600,19225
 Schlosspark Schönhausen: einige Fußgänger	q1+ 10600,19225 10589,19275 10575,19327 10569,19395 10503,19371
-Schlosspark Schönhausen: einige Fußgänger	q1+ 10600,19225 10636,19289 10575,19327 10503,19371
+Schlosspark Schönhausen: einige Fußgänger	q1+ 10600,19225 10636,19289 10575,19327
+#: note: Grünanlagen-Schild mit Radfahren-verboten-Zusatzschild (q1+ -> q3)
+Schlosspark Schönhausen: einige Fußgänger, Grünanlage	q3 10575,19327 10503,19371
 Schlosspark Schönhausen: einige Fußgänger	q1+ 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509
 Bitburger Str. teilweise relativ eng	q2 15548,17684 15515,17717 15488,17721 15461,17702
 (Dohnagestell - Plötzensee): eng	q2 5086,15664 5113,15596 5134,15565
@@ -4889,7 +4895,7 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 #: XXX laut osm Sperrung bis 2028
 #: osm_watch: way id="1238623806" version="3"
 #: osm_watch: way id="1168244288" version="7"
-#: last_checked: 2025-12-06 (webcam)
+#: last_checked: 2026-08-12
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 (Südstr., Virchow-Klinikum): Bauarbeiten, Fahrbahn gesperrt	q4::inwork 6231,14952 6209,14948 6160,14927 6104,14937
@@ -5053,19 +5059,13 @@ Uber-Platz: Fußgängerzone	q4 13150,11101 13067,11145 12984,11194
 Uber-Platz: Fußgängerzone	q4 12990,11006 13067,11145
 (Abbestr. - Otto-Suhr-Allee): einige Fußgänger	q1 4674,12076 4608,11935 4596,11912
 # 
-#: next_check_id: MICHELANGELO-2025
-#: note: laut Aushang 2027/2028
-#: note: evtl. ist das bereits die angekündigte Erneuerung der Fußwegeverbindung
-#: last_checked: 2026-04-02
-#: check_frequency: 120d
-#: next_check: 2027-04-01
-# XXX später: wieder aktivieren: (Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
-# REMOVED (hier (noch) nicht) --- Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrungen geben?	? 13973,15259 13905,15306
-Michelangelostr. - Gürtelstr.: Bauarbeiten, Engstelle	q3::inwork 13905,15306 13809,15370 13716,15437
+(Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
 # 
-#: note: früher (bis ca. 2020) für Radfahrer explizit frei, mittlerweile hängt hier ein explizites Radfahren-verboten-Schild
+#: historical_note: früher (bis ca. 2020) für Radfahrer explizit frei, mittlerweile hängt hier ein explizites Radfahren-verboten-Schild; nun (2026) wieder "Radfahrer frei"
 #: note: mittlerweile wurde die "Industriekultur Berlin Radroute 1" explizit hier entlang geführt
-An der Kieler Brücke: Fußgängerzone, Radfahren verboten	q4 7877,14504 7804,14445
+An der Kieler Brücke: Fußgängerzone, Radfahrer frei	q1 7877,14504 7804,14445
+#: historical_note: früher wohl ohne Verbotsschild
+An der Panke: Grünanlage, Radfahren verboten	q4 7872,14510 7787,14473
 # REMOVED (zurzeit keine größeren Einschränkungen feststellbar) --- (Straße E, Innovationspark Wuhlheide): Gewerbebetriebe	q2 21233,7246 21181,7199 21243,7135
 (Straße G, Innovationspark Wuhlheide): Gewerbebetriebe	q1 21627,6942 21547,7024
 (Relingstr. - Uferweg): einige Fußgänger	q2 22358,2460 22399,2481
@@ -5500,9 +5500,9 @@ Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 76
 #: note: Zobeltitzstraße (Rosengarten)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_04_0213_0280_online.pdf (Teileinziehung von Straßenland)
 #: XXX Werden hier durch die Teileinziehung explizite Radfahren-verboten-Schilder aufgestellt?
-#: XXX zurzeit wird die Parkanlage umgestaltet)
+#: XXX zurzeit wird die Parkanlage umgestaltet
 #: osm_watch: note 5214226 2
-#: last_checked: 2026-05-19
+#: last_checked: 2026-08-12
 #: check_frequency: 60d
 Zobeltitzstr.: einige Fußgänger	q2 4370,18039 4492,18013
 # 

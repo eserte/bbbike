@@ -976,7 +976,7 @@ Verbindungschaussee: Waldweg, OK, 22 km/h möglich	Q1- -426,9473 -360,9193 -310,8
 Verbindungschaussee: asphaltiert	Q0 -426,9473 -471,9647
 Lenbachstr.: Kopfsteinpflaster	Q2 14799,11330 14669,11157 14605,11078
 Garnisonkirchplatz: Kopfsteinpflaster, OK	Q1 10308,12859 10255,12959
-Am Schwarzen Graben: Querrillen, Parkweg, teilweise Schotter	Q1- 4841,15889 4833,15916 5005,16824 5007,16861 4996,16990 4994,17023 4973,17042
+Am Schwarzen Graben: Querrillen, Parkweg, teilweise Schotter	Q1- 4841,15889 4833,15916 4839,15949 5005,16824 5007,16861 4996,16990 4994,17023 4973,17042
 #: note: seit ca. 2007-08
 Holteistr.: Asphalt	Q0 14535,11327 14506,11275 14468,11203
 #: note: seit ca. 2008-01
@@ -1112,7 +1112,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="28"
-#: last_checked: 2026-07-11 (mapillary)
+#: last_checked: 2026-08-12
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -2050,9 +2050,9 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/250513-lageplan-schoenholzer-weg-komprimiert.pdf (keine Radspuren; direkte Radwegverbindung zur Kreuzung Hauptstr./Kastanienallee; Unterbindung des Durchgangsverkehrs zur Kastanienallee)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26599.pdf (Erwähnung der Asphaltierung)
 #: osm_watch: way id="34428911" version="18" vvv
-#: osm_watch: note 4459967 1 vvv
+#: osm_watch: note 4459967 2 vvv
 #: XXX wird hier asphaltiert? vvv
-#: last_checked: 2026-03-05 (orthofotos) vvv
+#: last_checked: 2026-08-12 vvv
 #: check_frequency: 300d vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 #: by: mapillary
@@ -5208,7 +5208,8 @@ KGA Plötzensee: Verbundsteinpflaster, teilweise etwas uneben, zweispurig	Q1- 496
 (KGA Plötzensee, Hauptweg): Verbundsteinpflaster, zweispurig	Q1 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
 (Am Hohenzollernkanal): Asphalt, teilweise erhebliche Wurzelschäden	Q1- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779
-(Am Hohenzollernkanal): Asphalt	Q0 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4111,15999 4089,15978
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922
+(Am Hohenzollernkanal): Asphalt	Q0 4378,15922 4381,15931 4369,15950 4131,16017 4111,15999 4089,15978
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768
 (Am Hohenzollernkanal): Asphalt	Q0 -182,16045 -231,16061 -242,16087 -255,16096 -257,16103 -822,16535 -910,16608
 Juliushof: Asphalt	Q0 13129,6535 13143,6499 13142,6453
@@ -6824,11 +6825,8 @@ Etzelstr.: Beton	Q1 8555,19648 8603,19569
 Woglindestr.: Beton	Q1 8476,19603 8516,19535
 Straße 90: unbefestigte Straße	Q2 8573,19766 8642,19808
 Frickastr.: unbefestigte Straße	Q2 8642,19808 8560,19942
-#: add_fragezeichen: Ist hier auch asphaltiert?
-#: osm_watch: way id="879921851" version="8"
-#: last_checked: 2025-09-17
-#: check_frequency: 180d
-Neuer Steg: unbefestigter Weg	Q2 8277,19210 8209,19107
+#: historical_note: früher (bis 2025/2026): unbefestigter Weg, Q2
+Neuer Steg: Asphalt, leichte Unebenheiten	Q0- 8277,19210 8209,19107
 #: historical_note: früher (bis 2023/2024): unbefestigter Weg, Q2
 Neuer Steg: Asphalt	Q0 8211,19082 8183,19042
 # REMOVED (ja) --- #: XXX wurde hier auch asphaltiert?
@@ -7352,7 +7350,8 @@ Schreckhornweg: unbefestigte Straße	Q2 13878,18823 13882,18918
 (Märchenland - Heinersdorfer Str.): schlechtes Kopfsteinpflaster, Banketten	Q3+ 13617,19766 13381,19911
 (Märchenland - Heinersdorfer Str.): Kopfsteinpflaster	Q2 13381,19911 13280,19977
 Asgardstr.: eine Fahrbahnhälfte asphaltiert, die andere schlechtes Beton	Q2+ 12387,19454 12424,19542
-Hödurstr.: Asphalt	Q1 12952,18598 12910,18584 12852,18514 12751,18401
+#: historical_note: früher (bis vermutlich 2026) Asphalt, Q1
+Hödurstr.: Asphalt	Q0 12952,18598 12910,18584 12852,18514 12751,18401
 Hödurstr.: Kopfsteinpflaster	Q2+ 12592,18230 12638,18279
 Hödurstr.: unbefestigte Straße	Q2+ 12638,18279 12664,18309 12751,18401
 Fafnerstr. (Heinersdorf): Asphalt	Q0 13031,19576 12909,19609
@@ -7383,8 +7382,11 @@ Sigurdstr.: Asphalt	Q0 12627,19317 12674,19188 12706,19107
 Ingeborgstr.: Asphalt	Q0 13011,19111 12861,19072 12809,19050
 Mimestr.: Asphalt	Q0 12969,18548 12952,18598
 Mimestr.: glattes Kopfsteinpflaster	Q1- 12952,18598 12921,18691
-Sleipnerplatz: mäßiger Asphalt	Q2 12921,18691 12838,18734 12829,18775
-Sleipnerstr.: mäßiger Asphalt	Q2 12510,18954 12684,18859 12829,18775
+#: historical_note: früher (bis Frühjahr 2026): mäßiger Asphalt, Q2
+Sleipnerplatz: Asphalt	Q0 12921,18691 12838,18734 12829,18775
+Sleipnerstr.: mäßiger Asphalt	Q2 12510,18954 12684,18859
+#: historical_note: früher (bis Frühjahr 2026): mäßiger Asphalt, Q2
+Sleipnerstr.: Asphalt	Q0 12684,18859 12829,18775
 Frostr.: mäßiger Asphalt	Q1- 12541,18625 12616,18630
 Erdastr.: mäßiger Asphalt	Q1- 12852,18514 12818,18543 12755,18573
 Fasoltstr.: Kopfsteinpflaster	Q2- 12683,18435 12749,18564 12755,18573 12794,18656
@@ -7936,6 +7938,7 @@ Straße 455: Beton	Q0 4879,17246 4902,17234 4916,17201 4931,17174
 Charles-Corcelle-Ring: Beton	Q0 3676,16497 3711,16481 3895,16381 4023,16306 4263,16166
 Charles-Corcelle-Ring: Asphalt	Q0 4263,16166 4724,15925 4775,15929 4804,15966 4973,16847 4982,16984 4973,17042 4952,17122 4988,17172 5014,17212 4989,17245
 (Charles-Corcelle-Ring - Kurt-Schumacher-Damm): Verbundsteinpflaster	Q1 4952,17122 4931,17174
+(Parkplatz am Charles-Corcelle-Ring): Kopfsteinpflaster	Q2 4839,15949 4804,15966
 (Dohnagestell - Plötzensee): Kleinsteinpflaster	Q1- 5130,15692 5086,15664
 (Dohnagestell - Plötzensee): unbefestigter Pfad	Q2 5086,15664 5113,15596
 (Dohnagestell - Plötzensee): Verbundsteinpflaster	Q1- 5113,15596 5134,15565
@@ -11201,7 +11204,7 @@ Prenzlauer Promenade: mäqiger Beton	Q1 11940,19380 11953,19541
 #: note: neu gemacht
 Prenzlauer Promenade: Asphalt	Q0 11953,19541 11942,19567 11915,19580
 Prenzlauer Promenade: Beton	Q0- 11950,18529 11969,18552 11984,18650 12002,18768 12024,18913 11969,19360 11979,19403 11987,19457 12048,19485 12092,19465
-Prenzlauer Promenade: Beton	Q0- 11979,19403 11990,19325
+Prenzlauer Promenade: Beton	Q0- 11979,19403 11991,19316
 (Dohnagestell - Tangastr.): Fahrbahn Kopfsteinpflaster, breiter Nebenstreifen als Parkweg	Q1- 5553,15271 5722,15332
 (Dohnagestell - Tangastr.): schlechtes Kopfsteinpflaster	Q3 5722,15332 5802,15399
 (Dohnagestell - Tangastr.): Parkweg, Schotter, Regenrinnen	Q2 5802,15399 5889,15457 5961,15562
@@ -18053,8 +18056,8 @@ Alemannenallee: Asphalt	Q0 947,11299 960,11291 1070,11226 1184,11143
 #: by: Christian Lochner: vvv
 #: note: mit einer kurzen Schadstelle in der Mitte
 Kuckhoffstr.: guter Asphalt	Q0- 10167,19797 10004,19765
-#: corrected_by: srt (guter Asphalt -> Kopfsteinpflaster)
-Kuckhoffstr.: Kopfsteinpflaster	Q2 10004,19765 9962,19757 9878,19741 9717,19692
+#: corrected_by: srt (guter Asphalt -> Kleinsteinpflaster)
+Kuckhoffstr.: Kleinsteinpflaster	Q2+ 10004,19765 9962,19757 9878,19741 9717,19692
 #: confirmed_by: mapillary
 Kuckhoffstr.: guter Asphalt	Q0 9717,19692 9646,19670 9468,19599
 #: corrected_by: Christian Hahn (guter Asphalt -> Kopfsteinpflaster)
@@ -28536,9 +28539,10 @@ Hildestr.: mäßiger Asphalt	Q1- 12684,18859 12623,18756 12609,18730 12616,18630 1
 # 
 #: by: Juliane ... Rothmaler: vvv
 #: confirmed_by: srt
-Blankenburger Str. [20a-26e]: Betonplatten	Q0- 10489,19406 10439,19576
-#: note: laut ADFC-Karte gut geeignet
-(Schloßallee - Blankenburger Str.): Parkweg	Q1 10636,19289 10575,19327 10503,19371 10489,19406
+Blankenburger Str. [20a-26e]: Beton	Q0- 10489,19406 10439,19576
+#: corrected_by: srt (früher als Parkweg getaggt, vielleicht wurde neu asphaltiert?)
+(Schloßallee - Blankenburger Str.): Asphalt	Q0 10636,19289 10575,19327
+(Schloßallee - Blankenburger Str.): Parkweg	Q1 10575,19327 10503,19371 10489,19406
 #: by: ^^^
 # 
 #: by: Holger (holgi...):
@@ -34879,5 +34883,6 @@ Einmündungsbereich asphaltiert	Q0 20147,14570
 Einmündungsbereich asphaltiert	Q0 20093,14591
 Einmündungsbereich asphaltiert	Q0 3583,4011
 Einmündungsbereich mit Kleinkopfsteinpflaster	Q1- 3826,6656
+Einmündungsbereich asphaltiert	Q0 10004,19765
 #: ignore ^^^
 #: section ^^^

@@ -4592,7 +4592,7 @@ Dohnagestell	NN 5130,15692 4841,15889 4799,15891
 (Dohnagestell - Rehberge)	NN 4841,15889 4873,15926 4870,15960 5022,15987 5066,15991
 (Rehberge - Petersallee)	NN 5022,15987 5057,16116 5122,16215 5426,16539
 (Rehberge, entlang des Wildschweingeheges)	NN 4870,15960 4890,15932 4895,15888 5162,15717
-(Am Schwarzen Graben)	NN 4841,15889 4833,15916 5005,16824 5007,16861 4996,16990 4994,17023 4973,17042
+(Am Schwarzen Graben)	NN 4841,15889 4833,15916 4839,15949 5005,16824 5007,16861 4996,16990 4994,17023 4973,17042
 Charles-Corcelle-Ring	NN 3659,16507 3676,16497
 #: oldname: -20001130: Allée Camille St. Saëns
 Charles-Corcelle-Ring	N 3676,16497 3711,16481 3895,16381 4023,16306 4263,16166 4724,15925 4775,15929 4804,15966 4973,16847 4982,16984 4973,17042 4952,17122
@@ -4600,6 +4600,8 @@ Charles-Corcelle-Ring	N 3676,16497 3711,16481 3895,16381 4023,16306 4263,16166 4
 (Kurt-Schumacher-Damm - Julius-Leber-Kaserne)	N 4989,17245 5014,17212 4988,17172 4952,17122 4929,17069 4897,17040
 (Charles-Corcelle-Ring - Dohnagestell)	NN 4724,15925 4723,15907
 (Charles-Corcelle-Ring - Dohnagestell/Am Schwarzen Graben)	NN 4775,15929 4833,15916
+#: osm.highway: service
+(Parkplatz am Charles-Corcelle-Ring)	N 4839,15949 4804,15966
 #: oldname: -20001130: Rue André le Nôtre
 #: note: luise-berlin.de meint: "Die Schreibweise des Straßennamens entspricht nicht den Regeln der deutschen Rechtschreibung.", aber mittlerweile (2012-09) ist vor Ort richtig geschrieben
 #: note: bei LOR 2017 "Tourcoing Straße"
@@ -10152,7 +10154,7 @@ Pasewalker Str. (Französisch Buchholz, Pankow)	H 12166,21208 12158,21166 12121,2
 #: oldname: -20010116: Prenzlauer Chaussee
 Pasewalker Str. (Französisch Buchholz, Pankow)	H 11907,19749 11909,19706 11911,19667 11915,19580 11927,19308 11929,19281 11937,19175 11913,19144 11855,19068
 Am Feuchten Winkel	N 12239,19664 12212,19652 12164,19581
-Am Feuchten Winkel	H 12164,19581 12092,19465 12020,19333 11990,19325 11927,19308
+Am Feuchten Winkel	H 12164,19581 12092,19465 12020,19333 11991,19316 11927,19308
 Am Feuchten Winkel	N 12020,19333 11937,19175
 (Prenzlauer Prenzlauer - Am Feuchten Winkel)	NN 11979,19403 11987,19457 12048,19485 12092,19465
 Damerowstr.	H 11855,19068 11752,18932 11492,18665 11357,18598 11168,18542 11001,18528
@@ -10172,7 +10174,7 @@ Prenzlauer Promenade	H 12008,19613 12164,19581
 Prenzlauer Promenade	NN 11953,19541 11940,19380 11958,19158 11980,18900 11934,18576 11950,18529
 Prenzlauer Promenade	NN 11950,18529 11969,18552 11984,18650 12002,18768 12024,18913 11969,19360
 Prenzlauer Promenade [Nebenfahrbahn]	N 11843,17517 11891,17240 11951,16914 11993,16862
-(Rampe zur Prenzlauer Promenade)	NN 11969,19360 11979,19403 11990,19325
+(Rampe zur Prenzlauer Promenade)	NN 11969,19360 11979,19403 11991,19316
 Rothenbachstr.	H 11950,18529 12144,18436 12455,18276 12566,18275
 Tiniusstr.	N 12555,18375 11984,18650
 Stubnitzstr.	N 11303,18096 11102,17942 11047,17883
@@ -19700,6 +19702,7 @@ Ramlerstr. [entlang der Swinemünder Brücke]	N 9666,15739 9644,15780
 #: by: https://www.entwicklungsstadt.de/hochhaeuser-und-brueckenpark-in-gesundbrunnen-neues-quartier-geplant/ (kein konkreter Zeitplan)
 #: by: https://www.tagesspiegel.de/berlin/der-wedding-bekommt-ein-dach-aus-baumen-stadtebauliches-konzept-fur-das-neue-quartier-fountain-in-mitte-steht-15747946.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_31_2001_2076_online.pdf (Bebauungsplan 1-125)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2026/top-1b_1257_z_anlage_stadtfml-2_1-125_swinemuender-bruecke_planskizze.pdf (Vorentwurg: Rad- und Gehweg entlang der Bahnstrecke und unter der Brücke)
 #: XXX Falls das Einkaufszentrum abgerissen wird: bleibt die Zufahrtsstraße? Bleibt die Zugangsmöglichkeit vom Bärbel-Bohley-Ring?
 #: last_checked: 2026-07-08
 #: check_frequency: 360d
@@ -21185,7 +21188,7 @@ Am Bülowbogen	NN 7906,10098 7928,10094 8011,10085
 (Mittelallee, Virchow-Klinikum)	N 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
 #: next_check_id: VIRCHOW-2023
 #: XXX provisorische Verbindung, wird vermutlich später wieder entfernt
-#: last_checked: 2026-04-15
+#: last_checked: 2026-08-12
 #: check_frequency: 120d
 (Mittelallee - Westring, Virchow-Klinikum)	N 6012,15024 5924,15005
 (Weststr., Virchow-Klinikum)	N 5944,15172 5998,15112 6007,15053 6012,15024 6030,14924
