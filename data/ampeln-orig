@@ -6,6 +6,21 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: STRDPARISERKOMMUNE-2026
+#: by: https://wgf.berlin/bautagebuch/fassaden-und-dachsanierung/ (Sanierung des Hausriegels, hat es was damit zu tun?) (nein)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mswtaq6n522d
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihkzzqkj6vhnvdduehk6n42jv3e2oawhepxd5bdllhlcpeip2jbua
+#: note: Indizien: vorbereitete Baustellenampeln, vorbereitete Ersatzbushaltestellen (evtl. gültig ab 11.6.2026), vorbereitete Umleitungstafeln -> laut planb wird es wohl eine Einbahnstraßenregelung geben, auch in Hildegard-Jadamowitz-Str. und Marchlewskistr., Richtung? auch für den Radverkehr?
+#: note: unterschiedliche Halteverbote: teilweise erst ab 13.08.2026 (Hildegard-Jadamowitz-Str.), teilweise schon ab 03.08.2026. Vorbereitete Einfahrt-verboten-Tafeln für die Fredersdorfer Str. an der Marchlewskistr. In der Marchlewskistr. und Hildegard-Jadamowitz-Str. wurde Richtung Norden und Westen ab Wedekindstr. eine Busspur (!) markiert
+#: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
+#: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026)
+#: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 (bis 15.10.2026)
+#: last_checked: 2026-08-13
+#: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
+#: valid: -20261015
+Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
+# REMOVED --- Straße der Pariser Kommune: vermutete (Hoch?)Bauarbeiten, evtl. mit (Teil)Sperrung der Straße?	? 12822,12067 12833,12154 12854,12287
+# 
 #: next_check_id: EWEST-2026
 #: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
 #: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026)
@@ -56,11 +71,12 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 # 
 #: source_id: LMS-BR:402270/72 viz2021:13.19778,52.54712, (bis 19.06.2026) (bis 14.08.2026)
 #: source_id: LMS-BR:402269/72 viz2021:13.19778,52.54712, (provisorische Ampel, bis 19.06.2026) (bis 14.08.2026)
+#: source_id: planb2026:13.422525,52.48200987,16.07.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026)
 #: note: außerdem sind beide Anbindungen der Ackerstr. gesperrt, kleinere Umwege notwendig
 #: also_indoor: traffic (no-G,T,H,no-W)
 #: last_checked: 2026-07-08
-#: next_check: 2026-08-14
-#: valid: -20260814
+#: next_check: 2026-08-31 (planb)
+#: valid: -20260831
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026)
@@ -537,21 +553,7 @@ Gegenverkehrsregelung	X::inwork::alternating 20302,1613
 # REMOVED --- Gegenverkehrsregelung	X::inwork::alternating 18587,16834
 # REMOVED (frühere Regelung hier) --- Gegenverkehrsregelung	X::inwork::alternating 18527,16789
 # 
-#: next_check_id: KATHARINAPAULUS-2023
-#: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv)
-#: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026) (bis 21.08.2026)
-#: source_id: LMS-BR:403519/72 viz2021:13.36807,52.52228,01.04.2026,07:00 (Verengung, bis 31.07.2026) (bis 21.08.2026)
-#: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes
-#: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025)
-#: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025)
-#: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/
-#: by: https://www.entwicklungsstadt.de/neuer-amtssitz-bezogen-das-passiert-jetzt-mit-schloss-bellevue/
-#: last_checked: 2026-06-24
-#: check_frequency: 180d
-#: next_check: 2026-08-21 (VIZ-Verkehrsmeldung)
-# REMOVED (verschoben)	X::inwork 7873,12927
-	F::inwork 7822,12937
-# 
+# REMOVED --- #: next_check_id: KATHARINAPAULUS-2023 --- #: source_id: viz2021:13.367709,52.522369,03.05.2023,09:00 (bis 05.09.2023) (inaktiv) --- #: source_id: LMS-BR:299352/72 viz2021:13.36722,52.52237,05.09.2023,07:20 viz2021:13.36722,52.52237, (bis 05.09.2025) (bis 31.12.2025) (bis 06.03.2026) (bis 31.03.2026) (bis 31.07.2026) (bis 21.08.2026) --- #: source_id: LMS-BR:403519/72 viz2021:13.36807,52.52228,01.04.2026,07:00 (Verengung, bis 31.07.2026) (bis 21.08.2026) --- #: note: möglicherweise im Zusammenhang mit dem Bau des Bundespräsidialamtes --- #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/buerogebaeude-bundesbehoerden/neubau.html (Fertigstellung geplant Sommer 2025) --- #: by: https://entwicklungsstadt.de/ersatzbau-fuer-bundespraesidialamt-in-moabit-nimmt-gestalt-an/ (bis Herbst 2025) --- #: by: https://www.entwicklungsstadt.de/neubau-fast-fertig-praesidialamt-verlegt-verwaltung-2026-ins-uebergangsquartier/ --- #: by: https://www.entwicklungsstadt.de/neuer-amtssitz-bezogen-das-passiert-jetzt-mit-schloss-bellevue/ --- #: last_checked: 2026-06-24 --- #: check_frequency: 180d --- #: next_check: 2026-08-21 (VIZ-Verkehrsmeldung) --- # REMOVED (verschoben)	X::inwork 7873,12927 ---	F::inwork 7822,12937
 # REMOVED --- #: source_id: viz2021:13.376888,52.517762,25.05.2023,11:19 (bis 30.09.2023) (inaktiv) --- #: last_checked: 2023-06-04 --- #: next_check: 2023-09-30 --- #: valid: -20230930 --- F::inwork 8373,12416
 # REMOVED (nicht (mehr?)) --- #: next_check_id: KAULSDORFER-2023 --- #: XXX siehe auch Eintrag in bbbike-temp-blockings --- #: next_check: 2023-08-21 --- #: valid: -20231231 --- Gegenverkehrsregelung	X::inwork::alternating 22192,6659
 # REMOVED (Ampel steht noch, ist aber ausgeschaltet, vermutlich dauerhaft) --- #: next_check_id: BAUMSCHULEN-2023 --- #: source_id: viz2021:13.492467,52.470057,13.01.2023,12:00 (bis 30.5.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 27.10.2023) (bis 03.12.2023) (bis 31.12.2023) (bis 08.01.2024) (bis 29.02.2024) (bis 23.03.2024) (bis 22.03.2024) (inaktiv) --- #: source_id[inactive]: bvg2021:265#BVG314924_0 (bis 23.03.2024) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1385383.php (Abschluss der Bauarbeiten bis Jahresende 2023) --- #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/fahrbahn-der-baumschulenstrasse-wird-neu-gemacht_a400218 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7361 (Antrag auf Errichtung einer Querungshilfe (Zebrastreifen? Ampel?) an dieser Stelle) --- #: XXX Möglicherweise im Zusammenhang mit der noch vorhandenen Sperrung der Baumschulenstr. jenseits der Köpenicker Landstraße (Busverkehr wird umgeleitet) --- allerdings steht die Ampel nach Ende der Sperrung noch --- #: osm_watch: way id="383023440" version="19" --- #: last_checked: 2024-04-07 --- #: check_frequency: 14d --- #: next_check: 2024-03-22 --- #: valid: -20240322 --- X::inwork 16328,7005

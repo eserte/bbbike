@@ -10,6 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
+#: next_check_id: STRDPARISERKOMMUNE-2026
+#: last_checked: 2026-08-13
+#: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
+#: valid: -20261015
+Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
+# 
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_316063 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316065 (kein Endedatum)
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
@@ -163,9 +169,9 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="33"
-#: osm_watch: way id="1072662717" version="37"
-#: last_checked: 2026-08-08
+#: osm_watch: way id="1072662716" version="34"
+#: osm_watch: way id="1072662717" version="38"
+#: last_checked: 2026-08-13 (osm)
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -518,7 +524,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-08-10
+#: last_checked: 2026-08-13
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -1863,7 +1869,7 @@ Tiergarten: einige Fußgänger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger	q1 8068,12237 7836,12247 7789,12255 7686,12243 7661,12229
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/nordwegbruecke/ (noch keine geplante Bauzeit)
 #: osm_watch: way id="28583353" version="6"
-#: last_checked: 2026-04-15
+#: last_checked: 2026-08-13
 #: check_frequency: 120d
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger, Engstelle an der Nordwegbrücke	q3 7661,12229 7653,12227
 (Tiergarten, nördlich der Straße des 17. Juni): einige Fußgänger	q1 7653,12227 7449,12216 7288,12156 7215,12129 6812,12057
@@ -4255,11 +4261,8 @@ Bürgerstr. - Bendastr.: einige Fußgänger	q1 12830,6254 12813,6334 12812,6343 128
 Brienzer Str.: einige Fußgänger	q2 7282,17318 7289,17277
 (Weg um den Schäfersee): einige Fußgänger	q1 7320,17718 7215,17689
 (Weg um den Schäfersee): einige Fußgänger	q1 7189,17666 7173,17591 7222,17471 7253,17467 7350,17464 7455,17495 7477,17544 7466,17627
-#: next_check_id: SCHAEFERSEE-2022
-#: XXX nach den Bauarbeiten folgenden Eintrag wiederherstellen: (Weg um den Schäfersee): einige Fußgänger	q1 7466,17627 7415,17696 7320,17718
-#: last_checked: 2025-10-12
-#: next_check: 2026-06-30
-nördlicher Weg am Schäfersee: Umgestaltung, einige Engstellen	q2::inwork 7466,17627 7415,17696 7320,17718
+#: historical_note: während der Bauarbeiten (bis etwa 2026): Umgestaltung, einige Engstellen, q2::inwork
+(Weg um den Schäfersee): einige Fußgänger	q1 7466,17627 7415,17696 7320,17718
 (Schäfersee - Baseler Str.): einige Fußgänger	q1 7215,17689 7185,17681 7166,17677 6897,17616
 (Genfer Str. - Schäfersee): einige Fußgänger	q1 7076,18026 7089,17990 7116,17989 7123,17892 7127,17857 7162,17737
 (Genfer Str. - Schäfersee): einige Fußgänger	q1 7162,17737 7185,17681 7189,17666
@@ -7903,8 +7906,8 @@ Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,33
 #: next_check_id: BAEKEBRUECKE-2022
 #: note: Bei Sperrungen des Teltowkanaluferwegs ist hier die offizielle Umleitung für Fußgänger und *Radfahrer*, trotz Grünanlage.
 #: last_checked: 2026-05-30 (parallele Sperrung gesehen) vvv
-#: next_check: 2026-08-14 (VIZ-Verkehrsmeldung) vvv
-#: valid: !20250617-20260814
+#: next_check: 2026-10-09 (VIZ-Verkehrsmeldung) vvv
+#: valid: !20250617-20261009
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4328,2652 4659,3065
 #: valid: 20250617-20260814
 Eduard-Spranger-Promenade: Grünanlage, aber offizielle Umleitung für den Radverkehr	q1 4317,2638 4328,2652 4659,3065

@@ -1771,7 +1771,7 @@ asphaltiert	RW1; 19181,13485 19192,13350
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:388766/72 viz2021:13.36575,52.52532,03.11.2025,06:00 (bis 21.02.2027)
-#: last_checked: 2026-06-24
+#: last_checked: 2026-08-13
 #: check_frequency: 120d
 #: next_check: 2027-02-21 (VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
@@ -1785,7 +1785,10 @@ der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW
 #: by: RW2 by Robert:
 #: corrected_by: srt (die Benutzungspflicht ist aufgehoben worden, gesehen 2014-08-12)
 	RW1;RW1 7422,13012 7595,12980
-	RW4;RW4 7595,12980 7776,12945 7822,12937 7873,12927 7930,12912
+	RW4; 7595,12980 7776,12945 7822,12937
+#: note: massive Poller, eher als Schutz für das temporäre Bundespräsidialamt
+Poller	RW4; 7822,12937 7873,12927 7930,12912
+	RW4; 7930,12912 7873,12927 7822,12937 7776,12945 7595,12980
 Verbundsteinpflaster	RW1; 6239,15553 6127,15688
 alter Asphalt, Schäden und Unebenheiten	RW1; 6127,15688 6121,15697 6071,15768 6019,15841 5968,15914 5907,16000
 Gehwegplatten/Verbundsteinpflaster	RW1; 6127,15688 6239,15553
