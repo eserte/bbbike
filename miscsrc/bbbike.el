@@ -736,6 +736,7 @@
   (interactive)
   (let ((url (bbbike-get-current-url)))
     (when (or (string= url "https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/")
+	      (string= url "https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/")
 	      (string= url "https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/")
 	      (string-match (concat "^\\("
 				    "https://bauprojekte.deutschebahn.com/p/.*/infobauarbeiten"
