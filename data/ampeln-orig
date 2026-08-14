@@ -69,14 +69,14 @@ Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 #: valid: -20261216
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 # 
-#: source_id: LMS-BR:402270/72 viz2021:13.19778,52.54712, (bis 19.06.2026) (bis 14.08.2026)
-#: source_id: LMS-BR:402269/72 viz2021:13.19778,52.54712, (provisorische Ampel, bis 19.06.2026) (bis 14.08.2026)
+#: source_id: LMS-BR:402270/72 viz2021:13.19778,52.54712, (bis 19.06.2026) (bis 14.08.2026) (bis 30.10.2026)
+#: source_id: LMS-BR:402269/72 viz2021:13.19778,52.54712, (provisorische Ampel, bis 19.06.2026) (bis 14.08.2026) (inaktiv)
 #: source_id: planb2026:13.422525,52.48200987,16.07.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026)
 #: note: außerdem sind beide Anbindungen der Ackerstr. gesperrt, kleinere Umwege notwendig
 #: also_indoor: traffic (no-G,T,H,no-W)
 #: last_checked: 2026-07-08
-#: next_check: 2026-08-31 (planb)
-#: valid: -20260831
+#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung)
+#: valid: -20261030
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026)
@@ -480,11 +480,11 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 # 
 #: next_check_id: KIEFHOLZMOERIKE-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
-#: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 (bis 21.08.2026)
+#: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 (bis 21.08.2026) (bis 30.10.2026)
 #: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv)
 #: last_checked: 2026-07-11
-#: next_check: 2026-08-21 (VIZ-Verkehrsmeldung, planb)
-#: valid: 20260601-20260821
+#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung)
+#: valid: 20260601-20261030
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # 
 # REMOVED --- #: XXX Schnellerstraße (Niederschöneweide) in beiden Richtungen zwischen Rudower Straße und Köllnische Straße: Kabelschachtsanierung, Gegenverkehrsregelung durch Baustellenampel, vom 25.03.2024 11:00 bis 03.05.2024 17:00 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772165269927981192 --- #: by: https://pbs.twimg.com/media/GJSQEhiXwAAgVQE?format=jpg&name=large (außerdem Anbindung Rudower Str. (von Süden her) gesperrt) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784806818113327427 --- #: by: https://pbs.twimg.com/media/GMGdMBjXMAAwCqG?format=jpg&name=large --- #: source_id: viz2021:13.526211,52.452649,25.03.2024,11:00 (bis 03.05.2024) (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.529,52.452235,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.52392,52.45312,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: next_check: 2024-05-24 --- #: valid: -20240524 --- Schnellerstr./Köllnische Str.: Gegenverkehrsregelung	X::inwork::alternating 18955,5320
@@ -4578,7 +4578,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: next_check_id: CHAUSSEE-2026
 #: osm_watch: node id="26748289" version="10"
 #: XXX möglicherweise im Zusammenhang mit den neuen Bauarbeiten in der Chausseestr.
-#: last_checked: 2026-07-31
+#: last_checked: 2026-08-10 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2028-05-11 (VIZ-Verkehrsmeldung)
 #: valid: -20280511
@@ -5563,7 +5563,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	B 32829,-34732
 #: note: Luftbild
 	B 33356,-36311
-#: note: Luftbild
 	B 39259,612
 	X 23109,30968
 	X 22888,30953
