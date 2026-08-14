@@ -693,6 +693,7 @@
       (unless found
 	(let ((sel (funcall getter)))
 	  (cond
+	   ((null sel) nil)
 	   ((string-match "<\\(way\\|node\\|relation\\).* \\(id=\"[0-9]+\"\\).* \\(version=\"[0-9]+\"\\)" sel)
 	    (let ((elemtype (substring sel (match-beginning 1) (match-end 1)))
 		  (elemidxml (substring sel (match-beginning 2) (match-end 2)))
