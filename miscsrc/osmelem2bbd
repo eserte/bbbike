@@ -31,16 +31,29 @@ sub get_geom_for_feature ($$);
 my $api_root_url = 'https://api.openstreetmap.org/api/0.6';
 my $overpass_api_url = 'https://overpass-api.de/api/interpreter';
 
-sub usage () { die "usage: $0 [--full-features] [--as-org-link] osmURL ...\n" }
+sub usage () { die "usage: $0 [--full-features] [--as-org-link] [--current-url | osmURL ...]\n" }
 
 GetOptions(
     "full-feature|full-features!" => \my $do_full_features,
     "as-org-link" => \my $as_org_link,
+    "current-url|currenturl" => \my $current_url,
 )
     or usage;
 
-my @in_urls = @ARGV
-    or usage;
+my @in_urls;
+if ($current_url) {
+    my $current_url_file = "$ENV{HOME}/Downloads/current_url.txt";
+    open my $fh, $current_url_file
+	or die "$current_url_file cannot be opened ($!) --- did you install and use the url-to-file firefox addon?\n";
+    chomp(my $url = <$fh>);
+    if ($url !~ m{^https?://}) {
+	die "Content of $current_url_file does not look like a http/https URL.\n";
+    }
+    push @in_urls, $url;
+} else {
+    @in_urls = @ARGV
+	or usage;
+}
 
 my @elems;
 for my $in_url (@in_urls) {
@@ -216,6 +229,7 @@ osmelem2bbd - download OSM features and convert into bbd format
 =head1 SYNOPSIS
 
     osmelem2bbd [--full-features] https://www.openstreetmap.org/node/1234 https://www.openstreetmap.org/way/5678 https://www.openstreetmap.org/relation/9012
+    osmelem2bbd [--full-features] --current-url
 
 =head1 DESCRIPTION
 
@@ -224,9 +238,16 @@ Download name and coordinates of the specified openstreetmap features
 partial URL, that is, both C<https://www.openstreetmap.org/node/1234>
 and C<node/1234> is recognized.
 
+The second form with C<--current-url> would use the URL written to
+F<~/Downloads/current_url.txt>. This works well with the url-to-file
+firefox addon.
+
 By default, only the only (nodes) or middle (ways) or a random one
 (relations) coordinate is used. With option C<--full-features> the
 generated output contains all feature coordinates.
+
+With C<--as-org-link> an org-mode link is generated instead of a bbd
+snippet.
 
 =head2 BUGS
 
