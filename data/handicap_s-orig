@@ -108,7 +108,7 @@ Am Wriezener Bahnhof: Einfahrt verboten	q3::inwork; 12758,11915 12788,11898 1294
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
 #: source_id: planb2026:13.46470153,52.51022419,02.12.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
-#: last_checked: 2026-08-12
+#: last_checked: 2026-08-15
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2026-08-31 (planb)
 # REMOVED --- #: valid: -20250630
@@ -1391,7 +1391,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-08-09
+#: last_checked: 2026-08-15
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1652,6 +1652,7 @@ Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahre
 #: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/autos-werden-hier-kunftig-nur-noch-gaste-sein-ein-burgerrat-soll-den-umbau-des-berliner-kranoldplatzes-begleiten-15564981.html (Umbau erst ab 2030?)
 #: by: https://www.entwicklungsstadt.de/ueber-100-jahre-geschichte-kranoldplatz-in-lichterfelde-ost-vor-dem-neustart/
 #: by: https://bvv-steglitz-zehlendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9858 (Anfrage)
+#: by: https://www.entwicklungsstadt.de/lichterfelde-ost-warum-am-kranoldplatz-bestandsgebaeude-abgerissen-werden/
 #: source_id: planb2026:13.32837204,52.42765752,30.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 06.08.2027)
 #: last_checked: 2026-08-02
 #: check_frequency: 360d
@@ -2040,7 +2041,7 @@ Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 128
 # 
 Friedrichshaller Str.: einige Fußgänger	q2 2757,7604 2774,7655
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120418.1330.368930.html
-Luisenhain: Radfahren erlaubt, Fußgänger haben Vorrang	q2- 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
+Luisenhain: Radfahren erlaubt, Fußgänger haben Vorrang	q2- 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22070,4504
 #: note: hier explizit für Radfahrer verboten
 (Rathaus Köpenick - Luisenhain): Fußgänger	q4 22138,4642 22074,4664
 (Uferweg): Fußgänger, teilweise eng	q2- 22433,4887 22326,4940 22310,4935 22241,4911 22204,4910 22180,4938 22146,4934 22131,4914 22153,4861 22153,4840
@@ -2409,7 +2410,7 @@ Heidenfeldstr.: Gehweg, Bordstein	q3 13433,13371 13383,13349
 #: note: routing_helper beachten!
 (Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordstein	q3; 16818,11878 16803,11859
 Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22324,4586
-Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
+Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22096,4503
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11560,8480 11508,8491 11333,8582 11295,8595 11259,8591
 #: note: Radfahren erlaubt
 (Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11259,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
@@ -2650,7 +2651,7 @@ Dathepromenade: Fußgänger	q1 18094,10167 18091,10112 17995,10070
 (Dathepromenade - Sewanstr.): Bordsteine	q3 17970,10132 17905,10122
 #: note: die "parkenden Autos" von Uwe Schellenberg in der Rheinsteinstr. habe ich wieder entfernt
 Rheingoldpark: Fußgänger haben Vorrang	q1 19073,8828 19145,8659
-Schloßinsel Köpenick: Fußgänger	q4 22093,4499 22087,4470 22084,4455 22076,4422
+Schloßinsel Köpenick: Fußgänger	q4 22096,4503 22087,4470 22084,4455 22076,4422
 Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen	q2 6513,7005 6650,7017
 Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen, kurze Rampe	q2 6650,7017 6770,7027
 Viktoriapark: Fußgänger, kurze Rampe, Pfähle	q1 5013,6003 4981,5939 4954,5888
@@ -3349,7 +3350,7 @@ Bansiner Weg: Fußgänger	q1 1840,1229 1768,1242
 Engelberger Str.: Bordsteine	q1 3431,1883 3431,1987
 #: XXX_prog BS
 Bordstein	q2 15133,2046 15144,2015
-(Ammerseestr. - Waldstr.): enger Pfad	q2 22166,1636 22222,1831
+(Ammerseestr. - Waldstr.): enger Pfad	q2 22166,1636 22225,1835
 (Uferweg): Fußgänger, Radfahren offiziell nicht erlaubt, ggfs. schieben	q2 22548,2081 22569,2096 22617,1925
 Zur Fähre: Stufen oder Rampe benutzen	q4 27055,-2298 27069,-2282
 Fährsteg	q4 27069,-2282 27090,-2253
@@ -3558,7 +3559,7 @@ Harry-Liedtke-Pfad: einige Fußgänger	q1 15788,1747 15783,1820 15806,1903 15834,2
 Spreeufer: unter der Rohrdammbrücke sehr eng	q3 1123,13523 1142,13525 1186,13529
 (Uranusstr. - Siriusstr.): Schulgelände, teilweise ist das Radfahren explizit verboten	q4 18827,-537 18906,-316
 (Widosteig - Bohnsdorfer Weg): Pfad	q2 19934,1102 19955,1158 19940,1265
-(Parkweg im Business Park Berlin): Fußgänger	q1 20799,-1272 20789,-1275 20624,-1310 20540,-1346 20396,-1370 20388,-1373 20373,-1375 20297,-1377 20191,-1425 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
+(Parkweg im Business Park Berlin): Fußgänger	q1 20789,-1275 20624,-1310 20540,-1346 20396,-1370 20388,-1373 20373,-1375 20297,-1377 20191,-1425 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
 Vergissmeinnichtweg: Bodenschwellen	q1 21582,185 21596,132 21608,85
 #: XXX_prog BS zur Thaerstr.
 (Bersarinplatz - Thaerstr.): Fußgänger, Bordstein	q2 13747,12642 13761,12690
@@ -5687,12 +5688,7 @@ Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: einige Fußgänger	q1 16
 # 
 Lugierring: einige Fußgänger	q2 20162,929 20116,836 20100,801
 Lugierring: einige Fußgänger	q2 20116,836 20142,824
-#: XXX bleibt es beim Provisorium?
-#: osm_watch: way id="1310915062" version="1"
-#: priority: #C
-#: last_checked: 2025-07-02
-#: check_frequency: 360d
-(Lugierring - Bohnsdorfer Weg): provisorisch, schmal	q3- 20162,929 20192,975
+(Lugierring - Bohnsdorfer Weg): schmal	q3- 20162,929 20192,975
 # 
 (Kirschenbaumstr. - Anne-Frank-Str.): einige Fußgänger	q2 19790,609 19741,476
 (zur Meinolfstr.): einige Fußgänger	q2 19847,678 19833,643
@@ -7407,7 +7403,7 @@ Dinkelsbühler Steig: enge Straße	q0- 2615,25225 2649,25170 2694,25132 2775,25092
 Schlierbacher Weg: enge Straße	q1 10740,1180 10685,1159 10450,1202 10453,1242 10440,1283
 #: by: Andreas Weiß:
 #: corrected_by: srt/policy (q1 -> q0-)
-Fritz-Kühn-Str.: enge Straße	q0- 21688,-589 21666,-657 21487,-912 21445,-963
+Fritz-Kühn-Str.: enge Straße	q0- 21688,-589 21666,-657 21485,-913 21445,-963
 #: by: Michael (hinundweg):
 #: confirmed_by: srt
 Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15539,14493 15647,14693 15706,14752 15856,14915

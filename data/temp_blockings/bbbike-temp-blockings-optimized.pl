@@ -1515,15 +1515,7 @@ Londoner Str.: Richtung Müllerstr. gesperrt	q4::inwork; 5847,17018 5772,16919
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork 75272,-7514 75394,-6991 75402,-6910
-',
-         'from' => 1786312800,
-         'id' => 1382,
-         'text' => 'Bahnübergang Jacobsdorf: Gleisarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, 10.08.2026 06:00 Uhr bis 15.08.2026 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1786809600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2713,7 +2705,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
 #: tempex: volatile vvv
 (Gewerbegebiet)	2 21617,3287 21826,3129 21865,3095
 (Gewerbegebiet)	2 21826,3129 21770,2936
-(Gewerbegebiet)	2 21685,2964 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
+(Gewerbegebiet)	2 21685,2964 21770,2936 21816,2919 21939,2894 21984,2897 22000,2902
 #: tempex ^^^
 ',
          'from' => undef,
@@ -3624,7 +3616,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1353303.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1585924.php
 # REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
-# REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22111,4562 22093,4499
+# REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22111,4562 22096,4503
 # REMOVED (hier wohl nicht) ---	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
 # REMOVED (hier wohl nicht) ---	2::temp 22212,4655 22214,4548
 # REMOVED (hier wohl nicht) ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
@@ -3632,8 +3624,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (hier wohl nicht) ---	2::temp 22175,4730 22246,4711
 # REMOVED (hier wohl nicht) ---	2::temp 22074,4664 22138,4642
 # REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847
-Luisenhain	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
-Schlossinsel	2::temp 22093,4499 22087,4470 22084,4455 22076,4422
+Luisenhain	2::temp 22070,4504 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
+Schlossinsel	2::temp 22096,4503 22087,4470 22084,4455 22076,4422
 # REMOVED --- #: tempex ^^^
 ',
          'from' => 1787227200,
@@ -5709,7 +5701,7 @@ Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 161
 #: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03, 2024-06-09
 #: note: 2023 gibt es Konzerttermine zwischen dem 10. Juni 2023 und 09. September 2023; Nachtrag: am 17. September 2023 gab es wohl auch eins
 #: note: 2024 gibt es Konzerttermine zwischen dem 22. Juni 2024 und 14. September 2024
-#: note: 2026 gibt es Konzerttermine zwischen dem 10. Juli 2026 und 13. September 2026 (vielleicht auch früher?)
+#: note: 2026 gibt es Konzerttermine zwischen dem 10. Juli 2026 und 13. September 2026 (vielleicht auch früher?); Sperrung während der AnnenMayKantereit-Konzerte (Mitte August 2026) gesehen
 	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
 ',
          'from' => 1783548000,
@@ -6554,7 +6546,7 @@ Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: source_id: bvg2024:396#HIM_FREETEXT_309001 (zwischenzeitlich entfernt)
 #: source_id: planb2026:13.50989979,52.49288278,01.12.2025,06:00 (Hönower Weg im gesperrten Abschnitt: "Vollsperrung beider Fahrbahnen", bis 29.08.2026)
 #: source_id: planb2026:13.50856246,52.49155942,20.04.2026,07:00 (westlich Neuer Feldweg: "Fahrbahneinengung", bis 26.02.2027)
-#: last_checked: 2026-08-09 vvv
+#: last_checked: 2026-08-15 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr; mittlerweile (2026-07-18) aber doch wieder Radfahren-verboten-Schilder; 2026-07-25: nur noch Umleitungsschilder, keine Radfahren-verboten-Schilder mehr; 2026-07-29: Radfahren-verboten-Schilder sind wieder da)
@@ -6975,7 +6967,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
          'data' => '#: by: https://oldthing.de/riesenflohmarkt
 #: XXX Termine 2027 eintragen
 #: next_check: 2026-11-09 vvv
-	q4::temp:clock 18741,8125 18676,8096 18702,8160
+#: note: dieser Abschnitt kann auch wegen eines Zirkuszelts gesperrt sein (gesehen Mitte August 2026)
+	q4::temp:clock 18741,8125 18676,8096
+	q4::temp:clock 18676,8096 18702,8160
 	q4::temp:clock 18676,8096 18650,8111 18626,8114
 	q4::temp:clock 18702,8160 18741,8220 18751,8291 18746,8357 18728,8371
 	q3::temp:clock 18728,8371 18704,8427
@@ -7204,8 +7198,8 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: source_id: planb2026:13.56543908,52.38830377,21.05.2024, ("Umleitung", bis 30.09.2026)
 #: note: gesperrt-orig-Eintrag existiert, bis Ende 2026 gültig
-#: last_checked: 2026-04-19 (osm)
-#: check_frequency: 120d
+#: last_checked: 2026-08-15
+#: check_frequency: 90d
 #: next_check: 2026-09-30 (planb)
 # REMOVED --- #: next_check: 2026-12-31 (kein neues Ende-Datum bekannt)
 Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
@@ -8031,7 +8025,7 @@ Seeweg (Weißensee): Grünanlage	q4 14610,16522 14581,16529 14510,16549
 # REMOVED (vermutlich wieder offen?) --- Alt-Köpenick	q4::inwork 22196,4847 22198,4800 22175,4730
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22175,4730 22144,4660
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22144,4660 22138,4642 22111,4562
-# REMOVED (hier mittlerweile offen) --- Platzfläche	q3::inwork 22111,4562 22093,4499
+# REMOVED (hier mittlerweile offen) --- Platzfläche	q3::inwork 22111,4562 22096,4503
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
 #: also_indoor: traffic (G,T,H,A,W)
@@ -8297,10 +8291,10 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: note: Kabel-Tiefbau abgeschlossen, Ecke Gutenbergstraße Spülbohrung abgeschlossen; 2026-04-18 Sat 12:32: Durchfahrt verboten, aber Bauzäune waren teilweise weggeschoben; Anbindung an Rohrtrasse ab voraussichtlich Mitte Mai 2026
 #: also_indoor: traffic (no-T,ex-G[nur Flemmingstr])
 #: source_id: planb2026:13.57061465,52.44806569,10.07.2026, ("Vollsperrung beider Fahrbahnen", bis 01.12.2026)
-#: last_checked: 2026-07-18 vvv
+#: last_checked: 2026-08-15 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-01 (planb) vvv
-Gutenbergstr.: Fahrbahn wegen Baustelle verengt	q2::inwork 21903,4848 21848,4882
+Gutenbergstr.: Fahrbahn offiziell gesperrt, Durchfahrt manchmal (außerhalb der Arbeitszeiten?) möglich	q3::inwork 21903,4848 21848,4882
 Gutenbergstr. - Mentzelpark: Umwege	q4::inwork 21848,4882 21834,4889
 Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: next_check ^^^
@@ -8338,7 +8332,7 @@ Freystadter Weg: Fahrbahn gesperrt	q4::inwork 20994,4761 20981,4696
 # 
 #: also_indoor: traffic (no-G,T,no-H,ex-W)
 #: source_id: planb2026:-
-#: last_checked: 2026-08-02
+#: last_checked: 2026-08-15
 #: check_frequency: 14d (traffic)
 Friedenstr.: Abschnitt der Fahrbahn gesperrt	q4::inwork 20366,3480 20219,3661
 # 
@@ -9099,15 +9093,15 @@ Corinthstr.	q2::inwork 14447,10491 14608,10409
 #: source_id: planb2026:13.51957796,52.42829578,17.01.2024, (hier nur "Fahrbahneinengung", bis 31.07.2026) (inaktiv)
 #: also_indoor: traffic (no-G,ex-T,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-08-02
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2026-08-14 (BA-Seite)
+#: last_checked: 2026-08-15
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2026-08-14 (BA-Seite)
 Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q4::inwork; 18374,2971 18445,2642
 # REMOVED (Durchgang/fahrt möglich) --- Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
 ',
          'from' => 1759615200,
          'id' => 4457,
-         'text' => 'Hermann-Dorner-Allee: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, voraussichtlich bis 14.08.2026, evtl. werden die Bauarbeiten verlängert',
+         'text' => 'Hermann-Dorner-Allee: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9473,9 +9467,9 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
 August-Bebel-Str.	q4::inwork -8444,-1691 -8469,-1541
 #: osm_watch: way id="24969126" version="17"
 August-Bebel-Str.	q4::inwork -8469,-1541 -8485,-1445
-#: osm_watch: way id="23044834" version="23"
+#: osm_watch: way id="23044834" version="24"
 Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
-#: osm_watch: way id="1485412396" version="2"
+#: osm_watch: way id="1485412396" version="3"
 Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 ',
          'from' => 1772319600,
@@ -9489,8 +9483,9 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
          'data' => '#: next_check_id: SCHWARZERWEG-2026
 #: by: https://gemeinde-schoenefeld.de/news/aktuelles/brueckenbau-schwarzer-weg-wird-gesperrt/ (bis Jahresende 2025, Umfahrung existiert)
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2025/04/2025-04-28_VZ-Plan01-2_Schoenefeld_Waltersdorf_Schwarzer_Weg_Hubertus-1024x602.jpg
-#: note: auf https://gemeinde-schoenefeld.de/baustelle/ nicht mehr gelistet, evtl. wieder offen? -> nein, noch immer mit langer Umfahrung
+#: note: auf https://gemeinde-schoenefeld.de/baustelle/ nicht mehr gelistet, evtl. wieder offen? -> nein, noch immer mit langer Umfahrung (etwa 550m Umweg)
 #: osm_watch: way id="1417905902" version="3"
+#: osm_watch: way id="1417905903" version="2"
 #: osm_watch: way id="1257637878" version="3"
 #: osm_watch: note 5142999 2
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
@@ -9934,17 +9929,7 @@ Käthestr.: Abschnitt der Straße gesperrt	q4::inwork 16369,16003 16349,15935 1635
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: LMS-BR:404055/72 viz2021:13.46315,52.49949,07.04.2026,07:00 (bis 29.05.2026) (bis 30.06.2026) (bis 14.8.2026) (bis 28.8.2026)
-#: note: q4 -> q3, weil nur ein kurzer Abschnitt betroffen ist, allerdings müssen Bordsteine überwunden werden
-	q3::inwork 14447,10491 14490,10610
-',
-         'from' => 1775451600,
-         'id' => 4577,
-         'text' => 'Bödikerstr.: Bauarbeiten zwischen Corinthstr. und Persiusstr., Sperrung, vom 07.04.2026 07:00 bis 14.08.2026',
-         'type' => 'handicap',
-         'until' => 1786744799
-       },
+       undef,
        {
          'data' => '#: next_check_id: BER-2026
 # REMOVED --- #: by: https://gemeinde-schoenefeld.de/baustelle/?date=20260407 --- #: XXX haben die Bauarbeiten was mit dem Ausbau des Weges entlang des Flughafens zu tun? --- #: next_check: 2026-05-01 ---	2::inwork 13731,-6494 13735,-6535 14228,-6887 14289,-7003 14644,-7186 16251,-6520
@@ -10041,14 +10026,16 @@ Böhmische Str.: Fahrbahn auf 100m Länge gesperrt	q4::inwork 13335,7450 13499,750
          'data' => '#: also_indoor: traffic (G,T,no-H,W)
 #: source_id: planb2026:13.57398743,52.42177931,06.03.2026, ("keine Fahrbahn-Einschränkung" (?), bis 18.12.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-07-20 (traffic)
+#: historical_note: ursprünglich war ein Umweg über die benachbarte Wohnanlage möglich, jetzt gibt es diese Möglichkeit nicht mehr
+#: note: außerdem eine Einbahnstraßenregelung (ohne Radfahrerfreigabe) in der Lahmertstr. (Richtung Osten ab Friedrich-Wolf-Str. gesperrt), evtl. im Zusammenhang mit diesen Bauarbeiten
+#: last_checked: 2026-08-15
 #: check_frequency: 30d (traffic)
 #: next_check: 2026-12-18 (planb)
-	q4::inwork 22130,1961 22004,2149
+	2::inwork 22130,1961 22004,2149
 ',
          'from' => undef,
          'id' => 4588,
-         'text' => 'Waldstr. (Grünau): Bauarbeiten, Fahrbahn gesperrt, Umwege für den Rad- und Fußverkehr, voraussichtlich bis Dezember 2026',
+         'text' => 'Waldstr. (Grünau): Bauarbeiten, Straße gesperrt, Umwege für den Rad- und Fußverkehr, voraussichtlich bis Dezember 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -10225,7 +10212,7 @@ Abzweig Hasenwinkel - Steinhöfel: 3. BA	2::inwork 63284,3141 62739,2290 62537,16
 #: note: Bauabschnitt 2: vsl. 10.07. bis vsl. 06.09.2026
 #: XXX nach der Baustellenumstellung prüfen
 #: also_indoor: traffic (G,T,H,W)
-#: last_checked: 2026-08-09 vvv
+#: last_checked: 2026-08-15 vvv
 # REMOVED --- #: check_frequency: 3d (2. BA?) vvv
 #: next_check: 2026-09-06 vvv
 Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18461,8377 18391,8425 18322,8470 18228,8537 18151,8589
@@ -10236,9 +10223,9 @@ Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn und des nördlichen Bürgersteigs	
 # REMOVED (hier nicht) --- Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17856,8162 17793,8225 17753,8290 17707,8328 17652,8349 17617,8363 17588,8413 17581,8422 17554,8458 17533,8505 17521,8549 17515,8567 17497,8623 17468,8692
 Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 17443,8729 17416,8767 17380,8858
 # REMOVED (hier für Radfahrer frei, wird aber weiter nicht wiederholt) --- Wandlitzstr.: Einbahnstraßenregelung	q4::inwork; 18704,8427 18627,8475
-Wandlitzstr.: Einbahnstraßenregelung	q4::inwork; 18627,8475 18557,8525 18494,8569 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895
+# REMOVED (mittlerweile hier auch Radfahrer frei) --- Wandlitzstr.: Einbahnstraßenregelung	q4::inwork; 18627,8475 18557,8525 18494,8569 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895
 Trautenauer Str.: Einbahnstraßenregelung	q4::inwork; 17879,8773 17851,8662 17846,8644
-Müritzstr.: Einbahnstraßenregelung	q4::inwork; 18147,8895 18009,8687
+# REMOVED (mittlerweile Radfahrer frei) --- Müritzstr.: Einbahnstraßenregelung	q4::inwork; 18147,8895 18009,8687
 Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660 17668,8696 17659,8698 17468,8692
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -10712,7 +10699,7 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 # REMOVED (fälschlicherweise vorfristig entfernt) --- #: source_id: planb2026:5138 (bis 25.09.2026)
 #: priority: #A
-#: last_checked: 2026-08-11 vvv
+#: last_checked: 2026-08-15 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung, planb) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207
@@ -11323,6 +11310,18 @@ Streustr.: Einbahnstraßenregelung	q4::inwork; 13140,16000 13263,15930
          'text' => 'Ekkehardstr.: Anbindung Baumschulenstr. gesperrt, vom 14.08.2026 bis Anfang Oktober 2026',
          'type' => 'handicap',
          'until' => 1790978399
+       },
+       {
+         'data' => '#: next_check_id: RITAMAIBURG-2026
+#: last_checked: 2026-08-15
+#: check_frequency: 180d
+Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-1301
+',
+         'from' => undef,
+         'id' => 4713,
+         'text' => 'Kleine Lindenstr. - Business Park Berlin: Bauarbeiten in Höhe Rita-Maiburg-Str., kein Durchgang möglich (Stand August 2026), Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

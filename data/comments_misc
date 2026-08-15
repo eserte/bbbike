@@ -219,7 +219,7 @@ Havelwerke	CS -1854,14989 -1945,15018 -2009,15033 -2070,15046
 Havelwerke	CS -1985,14916 -1946,14907 -1937,14955 -1959,14962 -1945,15018
 zur Eitelstr.: in den Weg zwischen Brandmauer und DB/S-Unterführung fahren	CP2; 16759,11579 16717,11604
 (Konrad-Wolf-Allee - Gaußstr.): entlang der Straßenbahntrasse	CS -7189,-4365 -7142,-4288 -7104,-4204 -7084,-4122 -7094,-3976 -7081,-3952
-Autobahnunterführung ist nur 2,10m hoch	CS 21306,-975 21403,-859
+Autobahnunterführung ist nur 2,10m hoch	CS 21306,-975 21331,-932 21407,-863
 Gillweg: entlang der Autobahn	CS 2585,9653 2484,9671 2394,9714
 Richtung Grunewaldturm	CP2; 676,9104 197,9069
 Richtung Schildhorn	CP2; -1484,9175 -1588,9194
@@ -448,8 +448,8 @@ Privatstraße	CS 21126,-273 21045,-330 21089,-378 21138,-428
 Merkurstr.: Privatstraße	CS 4762,17484 4753,17446 4737,17385
 als Zionskirchstr. ausgeschildert	CS 10304,14254 10391,14280
 als Zionskirchstr. ausgeschildert	CS 10304,14254 10277,14350 10311,14391 10365,14372 10391,14280
-ausgeschildert als Kleine Lindenstr.	CP2; 21306,-975 21403,-859
-ausgeschildert als Parchwitzer Str..	CP2; 21403,-859 21306,-975
+ausgeschildert als Kleine Lindenstr.	CP2; 21306,-975 21331,-932
+ausgeschildert als Parchwitzer Str..	CP2; 21407,-863 21331,-932
 Bismarckplatz: als Hubertusallee ausgeschildert	CS; 2348,9388 2380,9402
 Bismarckplatz: als Caspar-Theyß-Str. ausgeschildert	CP2; 2396,9427 2380,9402
 als Lützowplatz ausgeschildert	CS; 6873,11011 6824,10904
@@ -468,7 +468,7 @@ Straße 77: nicht ausgeschildert	CS 15408,12394 15320,12375
 ausgeschildert als "Wiesenweg"	CS; 52215,83681 52346,83150
 ausgeschildert als "Zur Gerkrathstr."	CP2; -3368,2415 -3290,2420
 ausgeschildert als "Köllnischer Platz"	CP2; 21789,4520 21781,4470
-ausgeschildert als "Köllnischer Platz"	CP2; 21789,4520 22071,4501
+ausgeschildert als "Köllnischer Platz"	CP2; 21789,4520 21845,4508
 ausgeschildert zum Reichpietschufer 22	CP2; 8102,11099 8199,11152
 als Potsdamer Platz ausgeschildert	CS 8602,11369 8573,11404 8542,11502
 als Potsdamer Platz ausgeschildert	CS 8548,11571 8542,11502
@@ -785,7 +785,7 @@ Am Werksgarten: nicht ausgeschildert	CP2; 22802,5327 22803,5278
 Am Werksgarten: nicht ausgeschildert	CP2; 22805,5179 22803,5241
 Schilder VoltAir-Parkhaus und Zugang Dircksenstraße 04	CP2; 11240,12368 11344,12410
 Forum an der Museumsinsel: keine Standard-Ausschilderung	CS 9650,13074 9682,13167 9633,13192 9602,13081
-ausgeschildert als "Weg"	CP2; 21640,-582 21403,-859
+ausgeschildert als "Weg"	CP2; 21640,-582 21407,-863
 Bleckmannweg: nicht ausgeschildert	CP2; 15886,12190 15756,12212
 Straße 106: nicht ausgeschildert	CP2; 14580,14636 14599,14679
 ausgeschildert "Zu den Häusern Zur Marktflagge 33-59"	CP2; 14152,13072 14200,13213
@@ -888,3 +888,4 @@ Meta-London-Str.: nicht ausgeschildert	CP2; -2649,16537 -2927,16588
 ausgeschildert Meta-London-Str. 4-16	CP2; -2927,16588 -2649,16537
 ausgeschildert Meta-London-Str. 20-26	CP2; -2913,16665 -2877,16647
 Heilkräuterweg: nicht ausgeschildert	CP2; 8475,22241 8559,22200
+Mohnblütenweg: nicht ausgeschildert, Krankenhausparkplatz	CS 21712,215 21688,312

@@ -302,7 +302,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="7"
-#: last_checked: 2026-07-18
+#: last_checked: 2026-08-15
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -1369,7 +1369,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="15"
-#: last_checked: 2026-04-18
+#: last_checked: 2026-08-15
 #: check_frequency: 120d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -1478,7 +1478,7 @@ Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 Alexanderufer - Charité: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,13463
 # 
 Falkoniergasse: durch Tore abgesperrt	2 9939,12174 9909,12261
-Business Park BBI: dauerhaft gesperrt, Firmengelände	2 19717,-1549 20038,-1474 20394,-1397
+Business Park BBI: dauerhaft gesperrt, Firmengelände	2 19717,-1549 20038,-1474 20397,-1396
 # 
 Ferdinandstr.	1s:q4 5398,2422 5417,2383
 # 
@@ -1549,7 +1549,7 @@ Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 #: next_check_id: HOENOWERWEG-2025
 #: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1s:q4" ändern
-#: last_checked: 2026-08-01
+#: last_checked: 2026-08-15
 #: check_frequency: 90d
 #: next_check: 2027-02-28
 Mellenseestr. [Wohngebiet]	1no 17626,9744 17633,9898
@@ -4122,6 +4122,19 @@ Drängelgitter	BNP:3::trailer=10 5829,7827
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: RITAMAIBURG-2026
+#: last_checked: 2026-08-15 vvv
+#: check_frequency: 180d vvv
+#: by: http://www.dafmap.de/d/berlin.html?id=3036&mt=0&zoom=14
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_11_0713_0768_online.pdf (Grundstücksnummerierungen)
+#: osm_watch: way id="37138024" version="16"
+Rita-Maiburg-Str.: Wann wird die Straße fertiggestellt? Qualität vermutlich Asphalt. Radwege?	2::inwork 20346,-773 20468,-897 20779,-1216 20809,-1269 20817,-1301 20872,-1748
+#: osm_watch: way id="193822258" version="4"
+#: XXX Fahrbahn ist fertiggestellt, aber Einfahrt ab Alexander-Meißner-Str. noch verboten
+Ludwig-Prandtl-Str.: wann wird die Straße geöffnet?	2::inwork 20078,-1029 20346,-773
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: source_id: planb2026:13.44173022,52.55043528,04.05.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 28.02.2027)
 #: note: Einbahnstraßenregelung nur in einem Abschnitt, deshalb q4->q3
 #: last_checked: 2026-08-12
@@ -4529,9 +4542,9 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: source_id: LMS-BR:402145/72 viz2021:13.47353,52.50308,18.03.2026,07:00 (Verengung in der benachbarten Marktstr., bis 29.05.2026) (inaktiv)
 #: osm_watch: way id="394677970" version="11"
 #: osm_watch: way id="656149821" version="4"
-#: osm_watch: way id="867830687" version="4"
-#: osm_watch: note 5102399 2
-#: last_checked: 2026-08-09
+#: osm_watch: way id="867830687" version="5"
+#: osm_watch: note 5102399 3
+#: last_checked: 2026-08-15
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4634,7 +4647,7 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 # REMOVED --- Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 # 
 #: next_check_id: A117-2024
-#: osm_watch: way id="153260813" version="6"
+#: osm_watch: way id="153260813" version="7"
 #: osm_watch: way id="153260798" version="6"
 #: osm_watch[closed]: note 4162190 4
 #: by: https://gemeinde-schoenefeld.de/news/aktuelles/bau-der-anschlussstelle-hubertus-radweg-wird-gesperrt/ (Sperrung ab 3. Juni 2024 (voraussichtlich))
@@ -4642,8 +4655,8 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-a117-zwischen-waltersdorf-und-ad-treptow/
 #: source_id: planb2026:13.56543908,52.38830377,21.05.2024, ("Umleitung", bis 30.09.2026)
 #: note: temp_blockings-Eintrag existiert auch
-#: last_checked: 2026-04-19 (osm)
-#: check_frequency: 120d
+#: last_checked: 2026-08-15
+#: check_frequency: 90d
 #: next_check: 2026-09-30 (planb)
 #: note: danach "übernimmt" der temp_blockings-Eintrag
 #: valid: -20260930
@@ -4690,7 +4703,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
-#: last_checked: 2026-08-01
+#: last_checked: 2026-08-15
 #: check_frequency: 60d
 #: next_check: 2026-08-24 (SenSBW-Pressemitteilung: Schulbeginn)
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -5074,7 +5087,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026) (inaktiv)
 #: source_id: planb2026:13.48630282,52.4933522,09.07.2025, ("Sicherung gemäß Vz.-plan" (rund um die Baustelle), bis 31.12.2026)
-#: last_checked: 2026-07-01
+#: last_checked: 2026-08-15
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (Pressemitteilung SenSBW, planb)
 # REMOVED --- #: next_check: 2027-06-30
@@ -5835,12 +5848,12 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 # REMOVED --- #: osm_watch: way id="765539341" version="17" brb
-#: last_checked: 2026-07-05 (osm)
+#: last_checked: 2026-08-14 (osm)
 #: check_frequency: 180d
 #: osm_watch: way id="1285592463" version="8" brb
 # REMOVED (hier offen) --- Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12802,-1485 -12708,-1445
 #: XXX Evtl. heißt dieser Abschnitt "Alter Markt" (siehe osm)?
-#: osm_watch: way id="90781221" version="20" brb
+#: osm_watch: way id="90781221" version="21" brb
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
 # 
 # REMOVED --- #: next_check_id: AMALTENMARKT-2018 --- #: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz --- #: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf --- #: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."; bei osm mittlerweile offen --- #: osm_watch: way id="760022943" version="19" brb --- #: last_checked: 2024-07-24 (osm) --- #: check_frequency: 60d --- Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12780,-1558 -12719,-1542
@@ -5868,8 +5881,8 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: by: https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/09/Pm_020.php (Ausschreibung)
 #: by: https://www.dresden.de/de/stadtraum/zentrale-projekte/carolabruecke/wiederaufbau-brueckenverbindung.php (Herbst 2026: Entscheidung über Entwurfsvariante)
 #: by: https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/08/pm_048.php (Beginn: 2. Quartal 2028, Fertigstellung 2031)
-#: osm_watch: way id="4214231" version="45"
-#: osm_watch: way id="10368500" version="50"
+#: osm_watch: way id="4214231" version="46"
+#: osm_watch: way id="10368500" version="51"
 #: also_indoor: search Carolabrücke
 #: last_checked: 2026-08-08 (dresden.de)
 #: check_frequency: 360d

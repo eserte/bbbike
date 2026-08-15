@@ -278,7 +278,7 @@ Volkspark Friedrichshain: Fußgänger, flache enge Rampe	q4 12058,13403 12040,1342
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fußgänger	q1 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12006,13481 11957,13528 11857,13596 11823,13610 11785,13625
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
 Friedrichshaller Str.: einige Fußgänger	q2 2757,7604 2774,7655
-Luisenhain: Radfahren erlaubt, Fußgänger haben Vorrang	q2 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
+Luisenhain: Radfahren erlaubt, Fußgänger haben Vorrang	q2 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22070,4504
 (Rathaus Köpenick - Luisenhain): Fußgänger	q4 22138,4642 22074,4664
 (Uferweg): Fußgänger, teilweise eng	q2 22433,4887 22326,4940 22310,4935 22241,4911 22204,4910 22180,4938 22146,4934 22131,4914 22153,4861 22153,4840
 (Freiheit/Lindenstr. - Uferweg): Fußgänger	q2 22196,4847 22204,4910
@@ -500,7 +500,7 @@ Heidenfeldstr.: Gehweg, Bordstein	q3 13433,13371 13383,13349
 (Lichtenberger Brücke - Gudrunstr.): Gehweg, Bordstein	q3; 16803,11859 16818,11878
 (Gudrunstr. - Lichtenberger Brücke): Gehweg, Bordstein	q3; 16818,11878 16803,11859
 Grünstr.: Fußgängerzone, Radfahren erlaubt	q2 22111,4562 22162,4546 22214,4548 22324,4586
-Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22093,4499
+Schloßplatz Köpenick: Fußgänger, Straßenbahn, Lieferverkehr	q2 22111,4562 22096,4503
 (Karlsgartenstr. - Hasenheide): Parkweg, Fußgänger	q1 11627,8485 11560,8480 11508,8491 11333,8582 11295,8595 11259,8591
 (Am Rixdorfer Teich): Parkweg, Fußgänger	q1 11259,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
 Gustav-Heinemann-Brücke: Fußgänger, enge Brücke	q3 8116,12938 8111,13029 8110,13042
@@ -651,7 +651,7 @@ Dathepromenade: Fußgänger	q1 18394,10348 18320,10318 18302,10289 18314,10260 181
 Dathepromenade: Fußgänger	q1 18094,10167 18091,10112 17995,10070
 (Dathepromenade - Sewanstr.): Bordsteine	q3 17970,10132 17905,10122
 Rheingoldpark: Fußgänger haben Vorrang	q1 19073,8828 19145,8659
-Schloßinsel Köpenick: Fußgänger	q4 22093,4499 22087,4470 22084,4455 22076,4422
+Schloßinsel Köpenick: Fußgänger	q4 22096,4503 22087,4470 22084,4455 22076,4422
 Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen	q2 6513,7005 6650,7017
 Begasstr. - Riemenschneiderweg: teilweise mit Fußgängern zu rechnen, kurze Rampe	q2 6650,7017 6770,7027
 Viktoriapark: Fußgänger, kurze Rampe, Pfähle	q1 5013,6003 4981,5939 4954,5888
@@ -1139,7 +1139,7 @@ Rilkepfad: Fußgänger	q1 1762,1534 1825,1534
 Bansiner Weg: Fußgänger	q1 1840,1229 1768,1242
 Engelberger Str.: Bordsteine	q1 3431,1883 3431,1987
 Bordstein	q2 15133,2046 15144,2015
-(Ammerseestr. - Waldstr.): enger Pfad	q2 22166,1636 22222,1831
+(Ammerseestr. - Waldstr.): enger Pfad	q2 22166,1636 22225,1835
 (Uferweg): Fußgänger, Radfahren offiziell nicht erlaubt, ggfs. schieben	q2 22548,2081 22569,2096 22617,1925
 Zur Fähre: Stufen oder Rampe benutzen	q4 27055,-2298 27069,-2282
 Fährsteg	q4 27069,-2282 27090,-2253
@@ -1276,7 +1276,7 @@ Harry-Liedtke-Pfad: einige Fußgänger	q1 15788,1747 15783,1820 15806,1903 15834,2
 Spreeufer: unter der Rohrdammbrücke sehr eng	q3 1123,13523 1142,13525 1186,13529
 (Uranusstr. - Siriusstr.): Schulgelände, teilweise ist das Radfahren explizit verboten	q4 18827,-537 18906,-316
 (Widosteig - Bohnsdorfer Weg): Pfad	q2 19934,1102 19955,1158 19940,1265
-(Parkweg im Business Park Berlin): Fußgänger	q1 20799,-1272 20789,-1275 20624,-1310 20540,-1346 20396,-1370 20388,-1373 20373,-1375 20297,-1377 20191,-1425 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
+(Parkweg im Business Park Berlin): Fußgänger	q1 20789,-1275 20624,-1310 20540,-1346 20396,-1370 20388,-1373 20373,-1375 20297,-1377 20191,-1425 20046,-1449 20032,-1451 20018,-1456 19979,-1469 19864,-1480 19773,-1520 19727,-1526 19714,-1529 19706,-1528 19618,-1531
 Vergissmeinnichtweg: Bodenschwellen	q1 21582,185 21596,132 21608,85
 (Bersarinplatz - Thaerstr.): Fußgänger, Bordstein	q2 13747,12642 13761,12690
 (Thaerstr. - Bersarinplatz): Fußgänger, Bordstein	q2 13761,12690 13695,12643
@@ -2650,7 +2650,7 @@ Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: einige Fußgänger	q1 16
 (Alfonsstr. - Wegedornstr.): einige Fußgänger	q3 18989,1292 19022,1316 19073,1369 19107,1403
 Lugierring: einige Fußgänger	q2 20162,929 20116,836 20100,801
 Lugierring: einige Fußgänger	q2 20116,836 20142,824
-(Lugierring - Bohnsdorfer Weg): provisorisch, schmal	q3 20162,929 20192,975
+(Lugierring - Bohnsdorfer Weg): schmal	q3 20162,929 20192,975
 (Kirschenbaumstr. - Anne-Frank-Str.): einige Fußgänger	q2 19790,609 19741,476
 (zur Meinolfstr.): einige Fußgänger	q2 19847,678 19833,643
 (Ziekowstr. - Wilhelm-Blume-Allee): schmaler Weg, mäßiger Fußgängerverkehr	q1 2570,20837 2469,20812
@@ -3399,7 +3399,7 @@ Rudi-Dutschke-Weg: viele Fußgänger	q2 2627,5095 2851,5251 2913,5294
 Dinkelsbühler Steig: enge Straße	q0 2615,25225 2649,25170 2694,25132 2775,25092 2816,25037
 Ötztaler Str.: enge Straße	q1 10690,17420 10630,17421
 Schlierbacher Weg: enge Straße	q1 10740,1180 10685,1159 10450,1202 10453,1242 10440,1283
-Fritz-Kühn-Str.: enge Straße	q0 21688,-589 21666,-657 21487,-912 21445,-963
+Fritz-Kühn-Str.: enge Straße	q0 21688,-589 21666,-657 21485,-913 21445,-963
 Mittelstr. (Alt-Hohenschönhausen): enge Straße	q1 15539,14493 15647,14693 15706,14752 15856,14915
 Nantesstr.: enge Straße	q0 11200,21689 11255,22028 11231,22065 11073,22225
 Helgiweg: enge Straße	q0 14459,18589 14517,18410
@@ -3566,7 +3566,6 @@ Jochen-Klepper-Weg: kombinierter Rad- und Fußweg, Fußgänger haben Vorrang	q1 -30
 Frommpromenade: enge Straße	q0 5463,20461 5350,20495 5257,20551
 Brodersenstr.: enge Straße	q0 6033,19611 5885,19920 5804,20047
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,3371
-Eduard-Spranger-Promenade: Grünanlage, aber offizielle Umleitung für den Radverkehr	q1 4317,2638 4328,2652 4659,3065
 Rosenplüterweg: enge Straße	q0 3657,26240 3431,26192 3328,26193
 Bulgenbachweg: enge Straße	q0 3431,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840

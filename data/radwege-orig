@@ -2203,8 +2203,8 @@ der alte Verbundsteinpflasterradweg existiert weiterhin und ist auch benutzbar	R
 	RW1; 18631,10167 18552,10135
 	RW2; 22674,4309 22556,4386 22451,4441 22419,4457
 	RW1; 22419,4457 22383,4470 22341,4483 22269,4494 22216,4496 22132,4498
-	RW2; 22093,4499 22071,4501 21789,4520
-	RW2; 21789,4520 22071,4501 22093,4499 22132,4498 22216,4496 22269,4494 22341,4483 22383,4470 22419,4457 22451,4441 22556,4386 22674,4309
+	RW2; 22096,4503 22070,4504 21845,4508 21789,4520
+	RW2; 21789,4520 21845,4508 22070,4504 22096,4503 22132,4498 22216,4496 22269,4494 22341,4483 22383,4470 22419,4457 22451,4441 22556,4386 22674,4309
 #: note: Bushaltestelle auf den ersten Metern, aber trotzdem schon als Radspur ausgeschildert
 	RW4; 22674,4309 22713,4286 22812,4227
 	RW4; 22812,4227 22888,4184 22907,4169
@@ -2534,12 +2534,14 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: by: https://www.entwicklungsstadt.de/dauersperrung-richtung-ostkreuz-warum-hier-seit-2018-nichts-passiert/
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-08-09 vvv
+#: last_checked: 2026-08-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
 asphaltiert	RW2; 17681,7589 17611,7690
-provisorische geschützte Radspur	RW3; 17611,7690 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
+# XXX früher: provisorische geschützte Radspur	RW3; 17611,7690 17527,7812
+Engstelle, Radfahrüberholverbot	RW0; 17611,7690 17527,7812
+provisorische geschützte Radspur	RW3; 17527,7812 17311,8123 17292,8151 17202,8391 17188,8431 17143,8565
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3433,7 +3435,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-08-09
+#: last_checked: 2026-08-15
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3444,7 +3446,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-08-09
+#: last_checked: 2026-08-15
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -3529,7 +3531,7 @@ Busspur ist immer gültig	RW5; 16248,12177 16223,11999
 # REMOVED (nur das Stück bergauf) --- #: XXX Radspur wird grün markiert (evtl. auch das Teilstück bergauf) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php --- #: next_check: 2018-10-17
 # REMOVED --- #: XXX wird hier auch die Radspur grün markiert? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php --- #: by: https://twitter.com/ADFC_Berlin/status/1065526520599511045 --- #: priority: #D --- #: next_check: 2018-11-22
 Grünbeschichtung	RW4; 11979,8014 12162,8053 12311,8084 12415,8106 12427,8109
-#: by: https://www.infravelo.de/projekt/werbellinstrasse-1/ (4. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 2. Quartal 2026) (3. Quartal 2026 - 3. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/werbellinstrasse-1/ (4. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 2. Quartal 2026) (3. Quartal 2026 - 3. Quartal 2026) (Status: in Bau)
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (voraussichtlich ab März 2026)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2026/pressemitteilung.1697694.php (Beginn der Bauarbeiten, kein Endedatum)
 #: by: https://www.entwicklungsstadt.de/300-meter-bis-zum-lueckenschluss-radstreifen-in-der-werbellinstrasse-wird-ergaenzt/
@@ -6003,8 +6005,8 @@ Verbundsteinpflaster	RW1; 22027,-1548 22003,-1625
 breiter Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 22162,1067 22208,1103 22287,1165 22367,1230 22453,1294 22493,1325 22560,1377 22655,1450
 Gehweg für Radfahrer frei	RW1; 22655,1450 22560,1377 22493,1325 22453,1294 22367,1230 22287,1165 22208,1103
 # REMOVED (hier gibt's kein Schild) --- Gehweg für Radfahrer frei	RW1; 22208,1103 22162,1067
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 22655,1450 22570,1607 22549,1644 22455,1812 22448,1824 22421,1872 22388,1947 22378,1970 22324,2093 22271,2214 22246,2272 22205,2367 22195,2390 22153,2482 22118,2559 22083,2637 22074,2656 22058,2700 22050,2736 22004,2904 21967,3102
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 21967,3102 22004,2904 22050,2736 22058,2700 22074,2656 22083,2637 22118,2559 22153,2482 22195,2390 22205,2367 22246,2272 22271,2214 22324,2093 22378,1970 22388,1947 22421,1872 22448,1824 22455,1812 22549,1644 22570,1607 22655,1450
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 22655,1450 22570,1607 22549,1644 22455,1812 22448,1824 22421,1872 22388,1947 22378,1970 22324,2093 22271,2214 22246,2272 22205,2367 22195,2390 22153,2482 22118,2559 22083,2637 22074,2656 22058,2700 22045,2734 22000,2902 21967,3102
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 21967,3102 22000,2902 22045,2734 22058,2700 22074,2656 22083,2637 22118,2559 22153,2482 22195,2390 22205,2367 22246,2272 22271,2214 22324,2093 22378,1970 22388,1947 22421,1872 22448,1824 22455,1812 22549,1644 22570,1607 22655,1450
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 21967,3102 21958,3166 21964,3592 21970,3759 21966,3827
 Gehweg für Radfahrer frei	RW1; 21966,3827 21970,3759 21964,3592 21958,3166 21967,3102
 # REMOVED --- #: XXX vielleicht ändert sich hier etwas bzgl. der Benutzungspflicht? --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4604&date=20130903 (Beschluss der BVV) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136106059293/106059293/00095315/15-Anlagen/04/B0505ZB1.pdf (Zwischenbericht) --- #: last_checked: 2017-08-04 --- #: check_frequency: 180d --- #: priority: #C
@@ -7314,11 +7316,10 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 	RW6;RW6 21608,85 21596,132 21582,185
 # REMOVED (keine Schilder) ---	RW6;RW6 21515,67 21503,114 21487,173
 # REMOVED --- #: XXX jetzt Hochbauarbeiten, Gehweg und Radweg teilweise nicht mehr vorhanden --- #: osm_watch: way id="995894451" version="2" --- #: last_checked: 2023-03-17 --- #: check_frequency: 120d
-asphaltiert, teilweise mit Wurzelschäden	RW1; 19894,-835 20078,-1029 20388,-1373 20394,-1397
-asphaltiert	RW1; 20394,-1397 20416,-1721
+asphaltiert, teilweise mit Wurzelschäden	RW1; 19894,-835 20078,-1029
+asphaltiert, teilweise mit erheblichen Wurzelschäden	RW1; 20078,-1029 20361,-1325 20388,-1373 20397,-1396 20416,-1721
 # 
-asphaltiert	RW1; 20416,-1721 20394,-1397 20388,-1373
-asphaltiert, teils erhebliche Wurzelschäden	RW1; 20388,-1373 20078,-1029 19894,-835
+asphaltiert, teils erhebliche Wurzelschäden	RW1; 20416,-1721 20397,-1396 20388,-1373 20361,-1325 20078,-1029 19894,-835
 	RW3; 9229,8785 9076,8783
 die ersten 20 Meter sind noch nicht benutzungspflichtig	RW4; 9076,8783 9229,8785
 die letzten 20 Meter sind benutzungspflichtig	RW3; 9076,8783 8982,8781

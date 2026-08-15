@@ -422,7 +422,7 @@ zur Eitelstr.: in den Weg zwischen Brandmauer und DB/S-Unterführung fahren	CP2;
 # 
 (Konrad-Wolf-Allee - Gaußstr.): entlang der Straßenbahntrasse	CS -7189,-4365 -7142,-4288 -7104,-4204 -7084,-4122 -7094,-3976 -7081,-3952
 # 
-Autobahnunterführung ist nur 2,10m hoch	CS 21306,-975 21403,-859
+Autobahnunterführung ist nur 2,10m hoch	CS 21306,-975 21331,-932 21407,-863
 Gillweg: entlang der Autobahn	CS 2585,9653 2484,9671 2394,9714
 Richtung Grunewaldturm	CP2; 676,9104 197,9069
 Richtung Schildhorn	CP2; -1484,9175 -1588,9194
@@ -1307,7 +1307,7 @@ Bus 161	busroute_N 32814,3107 32785,2935 32790,2792 32643,2695 32512,2621 32467,
 Bus 161	busroute_N 32162,2542 32445,2716 32512,2621
 Bus 164	busroute_N 20839,3163 20772,3244 20717,3310 20644,3395 20499,3572 20451,3538 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
 Bus 164	busroute_N 20166,3344 20113,3408 20089,3438 20066,3466 20012,3532
-Bus 164	busroute_N 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
+Bus 164	busroute_N 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22096,4503
 Bus 164	busroute_N 22196,4847 22154,4923 22133,4986 22128,5003 22101,5064 22078,5093 22033,5148 22023,5160 21979,5208 21961,5228
 Bus X69	busroute_N 22467,6135 22365,6149 22325,6385 22305,6404 22193,6659 22189,6668 22075,6967
 Bus X69	busroute_N 22325,6385 22534,6249
@@ -1429,8 +1429,8 @@ Martha-Ndumbe-Platz [Gerichtstr.-Reinickendorfer Str.]: Wochenmarkt Di+Fr, 11-18
 #: section: Ausschilderung vvv
 als Zionskirchstr. ausgeschildert	CS 10304,14254 10391,14280
 als Zionskirchstr. ausgeschildert	CS 10304,14254 10277,14350 10311,14391 10365,14372 10391,14280
-ausgeschildert als Kleine Lindenstr.	CP2; 21306,-975 21403,-859
-ausgeschildert als Parchwitzer Str..	CP2; 21403,-859 21306,-975
+ausgeschildert als Kleine Lindenstr.	CP2; 21306,-975 21331,-932
+ausgeschildert als Parchwitzer Str..	CP2; 21407,-863 21331,-932
 Bismarckplatz: als Hubertusallee ausgeschildert	CS; 2348,9388 2380,9402
 Bismarckplatz: als Caspar-Theyß-Str. ausgeschildert	CP2; 2396,9427 2380,9402
 als Lützowplatz ausgeschildert	CS; 6873,11011 6824,10904
@@ -1456,7 +1456,7 @@ Straße 77: nicht ausgeschildert	CS 15408,12394 15320,12375
 ausgeschildert als "Wiesenweg"	CS; 52215,83681 52346,83150
 ausgeschildert als "Zur Gerkrathstr."	CP2; -3368,2415 -3290,2420
 ausgeschildert als "Köllnischer Platz"	CP2; 21789,4520 21781,4470
-ausgeschildert als "Köllnischer Platz"	CP2; 21789,4520 22071,4501
+ausgeschildert als "Köllnischer Platz"	CP2; 21789,4520 21845,4508
 ausgeschildert zum Reichpietschufer 22	CP2; 8102,11099 8199,11152
 als Potsdamer Platz ausgeschildert	CS 8602,11369 8573,11404 8542,11502
 als Potsdamer Platz ausgeschildert	CS 8548,11571 8542,11502
@@ -1753,7 +1753,7 @@ Eigene Scholle: nicht ausgeschildert	CS 8912,21308 8825,21246 8729,21185
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_06_0673_0824_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_54_4961_5184_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_21_1235_1274_online.pdf (Grundstücksnummerierungen)
-#: last_checked: 2026-04-18 vvv
+#: last_checked: 2026-08-15 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- An der Dahme: nicht ausgeschildert	CS 22270,2549 22358,2460
 # REMOVED --- Gaffelsteig: nicht ausgeschildert	CS 22287,2431 22221,2520
@@ -2070,7 +2070,7 @@ Forum an der Museumsinsel: keine Standard-Ausschilderung	CS 9650,13074 9682,1316
 #: by: mapillary (kein Scherz)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5832
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/fnLHXQriPYaXCg11dvvhibO6O8AmZFFbDGfEsncu/GcavYgrs/69-Anlagen/04/B0316SB.pdf (hier wird auch "Weg" erwähnt)
-ausgeschildert als "Weg"	CP2; 21640,-582 21403,-859
+ausgeschildert als "Weg"	CP2; 21640,-582 21407,-863
 # 
 Bleckmannweg: nicht ausgeschildert	CP2; 15886,12190 15756,12212
 # 
@@ -2314,6 +2314,12 @@ ausgeschildert Meta-London-Str. 20-26	CP2; -2913,16665 -2877,16647
 # 
 #: note: allerdings haben einige Hausnummern hier den Zusatz "Heilkräuterweg"
 Heilkräuterweg: nicht ausgeschildert	CP2; 8475,22241 8559,22200
+# 
+#: next_check_id: MOHNBLUETENWEG-2026
+#: XXX heißt dieser Abschnitt auch "Höhensteig" oder wird irgendwann mal der Mohnblütenweg ausgeschildert?
+#: last_checked: 2026-08-15
+#: check_frequency: 360d
+Mohnblütenweg: nicht ausgeschildert, Krankenhausparkplatz	CS 21712,215 21688,312
 # 
 #: section ^^^
 # DO NOT ADD ANYTHING AFTER THIS POINT!
