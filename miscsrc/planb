@@ -10,6 +10,9 @@ use Getopt::Long;
 use JSON::XS;
 use LWP::UserAgent;
 use File::Temp;
+use IO::Compress::Gzip qw(gzip $GzipError);
+use IO::Uncompress::Gunzip qw(gunzip $GunzipError);
+
 use BBBikeUtil;
 
 my $ca_temp_file;
@@ -166,11 +169,11 @@ sub cmd_fetch_one {
 	my $url = "https://gdi.berlin.de/services/wfs/planb_ereignisse?service=WFS&version=2.0.0&request=GetFeature&srsName=EPSG:4326&typeNames=planb_ereignisse:ereignisse&CQL_FILTER=importid=$importid&outputFormat=application/json";
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
-	    die "Error fetching importid $importid: " . $resp->status_line . "\n";
+	    die "Error fetching importid $importid: " . $resp->dump . "\n";
 	}
 	my $data = eval { JSON::XS::decode_json($resp->content) };
 	if ($@) {
-	    die "Error parsing JSON response for importid $importid: $@\n";
+	    _content_error($resp, "Error parsing JSON response for importid $importid");
 	}
 	my $features = $data->{features};
 	if (!$features || !@$features) {
@@ -219,44 +222,51 @@ sub cmd_fetch {
     }
 
     my $geojson_gz = "$destdir/all_planb.geojson.gz";
-    my $geojson_raw = "$destdir/all_planb.geojson";
     my $bbd_raw = "$destdir/all_planb.bbd";
 
     my $bbbike_root = BBBikeUtil::bbbike_root();
     my $any2bbd_path = "$bbbike_root/miscsrc/any2bbd";
 
+    my $geojson_data;
+
     if (!-s $geojson_gz) {
 	print "Fetch geojson...\n";
+	my $tmpfile = File::Temp->new(SUFFIX => ".geojson");
 	my $ua = _get_ua();
 	my $url = "https://gdi.berlin.de/services/wfs/planb_ereignisse?service=WFS&version=2.0.0&srsName=EPSG:4326&request=GetFeature&typeNames=planb_ereignisse:ereignisse&outputFormat=application/json";
-	my $resp = $ua->get($url, ':content_file' => $geojson_raw);
+	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
-	    unlink $geojson_raw;
-	    die "Error fetching complete geojson: " . $resp->status_line . "\n";
+	    die "Error fetching complete geojson: " . $resp->dump . "\n";
 	}
+	$geojson_data = eval { JSON::XS::decode_json($resp->content) };
+	if ($@) {
+	    _content_error($resp, "Error parsing JSON response");
+	}
+
+	print "Compress geojson...\n";
+	gzip(\$geojson_data => "$geojson_gz~")
+	    or die "Can't gzip to $geojson_gz~: $GzipError";
 
 	print "Convert to bbd...\n";
 	my @cmd1 = (
 	    $^X, $any2bbd_path,
 	    '-geojson-name', '.properties.strasse .properties.einschr id=.properties.importid rating=.properties.bewertung .properties.dat_beginn .properties.dat_ende',
-	    $geojson_raw,
+	    "$tmpfile",
 	    '-o', $bbd_raw
 	);
 	system(@cmd1) == 0 or die "any2bbd failed: $?\n";
-
-	print "Compress geojson...\n";
-	system("gzip", "-f", $geojson_raw) == 0 or die "gzip failed: $?\n";
     }
 
     print "Create bbd variant with bbbikeid...\n";
-    open my $gzip_fh, "-|", "gzip", "-dc", $geojson_gz or die "Can't decompress $geojson_gz: $!\n";
-    local $/;
-    my $geojson_content = <$gzip_fh>;
-    close $gzip_fh;
+    if (!$geojson_data) {
+	my $geojson_content;
+	gunzip($geojson_gz => \$geojson_content)
+	    or die "Can't decompress $geojson_gz: $GunzipError";
 
-    my $geojson_data = eval { JSON::XS::decode_json($geojson_content) };
-    if ($@) {
-	die "Error parsing downloaded GeoJSON: $@\n";
+	$geojson_data = eval { JSON::XS::decode_json($geojson_content) };
+	if ($@) {
+	    die "Error parsing downloaded GeoJSON: $@\n";
+	}
     }
 
     my $features = $geojson_data->{features} || [];
@@ -740,4 +750,13 @@ sub parse_bbd_line {
 	coords	   => \@coords,
 	stable_key => $stable_key,
     };
+}
+
+sub _content_error {
+    my($resp, $msg) = @_;
+    if ($resp->content_type !~ /javascript/i && $resp->decoded_content =~ /wartungsarbeiten/i) {
+	die "$msg: website under maintenance\n";
+    } else {
+	die "$msg: $@\n";
+    }
 }
