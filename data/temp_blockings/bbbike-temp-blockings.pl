@@ -4821,9 +4821,9 @@ EOF
 #: source_id: viz2021:13.35107,52.51429,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
 #: source_id: viz2021:13.370518,52.51725,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
 #: source_id: planb2026:13.36201985,52.49779678,15.08.2026, ("Vollsperrung beider Fahrbahnen", Kurfürstendamm bis Straße des 17. Juni, 15.08.2026)
-#: source_id: LMS-BR:419573/72 viz2021:13.35107,52.51429,14.08.2026,18:00 (bis 16.08.2026)
-#: source_id: LMS-BR:419575/72 viz2021:13.37737,52.51457,14.08.2026,18:00 (bis 16.08.2026)
-#: source_id: LMS-BR:419574/72 viz2021:13.36968,52.51571,14.08.2026,18:00 (bis 16.08.2026)
+#: source_id: LMS-BR:419573/72 viz2021:13.35107,52.51429,14.08.2026,18:00 (bis 16.08.2026) (inaktiv)
+#: source_id: LMS-BR:419575/72 viz2021:13.37737,52.51457,14.08.2026,18:00 (bis 16.08.2026) (inaktiv)
+#: source_id: LMS-BR:419574/72 viz2021:13.36968,52.51571,14.08.2026,18:00 (bis 16.08.2026) (inaktiv)
 #: note: Sperrung des Pariser Platzes auf Webcam gesehen (2023)
 #: note: am Samstag weitergehende Sperrungen: alle Straßen Richtung Großer Stern, John-Foster-Dulles-Allee/Scheidemannstraße, Ebertstraße, Behrenstr., Hannah-Ahrendt-Straße (nicht eingetragen)
 Pariser Platz, Brandenburger Tor	2::temp 8722,12268 8637,12258 8592,12252 8538,12245
@@ -39058,7 +39058,7 @@ EOF
 #: also_indoor: traffic (ex-T,G,ex-H[ganz kurz],ex-W)
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2026-08-14 (traffic)
+#: last_checked: 2026-08-16 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-07-31 (planb)
@@ -39362,9 +39362,10 @@ EOF
 #: source_id: planb2026:13.33263422,52.50263083,02.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 01.06.2027)
 #: osm_watch: note 4984535 1
 #: osm_watch: way id="1144627217" version="6"
-#: also_indoor: traffic (re-W,ex-G,T)
-#: last_checked: 2026-05-22 (mapillary)
-#: check_frequency: 90d
+#: also_indoor: traffic (re-W,re-G[in Karte eingebaut],ex-T,H)
+#: last_checked: 2026-08-15 (traffic)
+#: check_frequency: 30d (traffic)
+# REMOVED --- #: check_frequency: 90d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork; 5497,10719 5471,10719
 EOF
@@ -40834,14 +40835,14 @@ EOF
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-08-11 vvv
+#: last_checked: 2026-08-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder, planb, VIZ-Verkehrsmeldung) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
 #: osm_watch: way id="4615467" version="39"
 Margarete-Sommer-Str.	2::inwork 12874,13893 12802,13813 12707,13706
 #: note: bis zur Kniprodestr. gesperrt, allerdings könnte die Benutzung des Hochbords geduldet sein
-#: osm_watch: way id="175916784" version="21"
+#: osm_watch: way id="175916784" version="22"
 Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: next_check ^^^
 #: check_frequency ^^^
@@ -42382,6 +42383,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/hackesche-hoefe-denkmalgeschuetztes-ensemble-erhaelt-neue-fassade/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260803 (neue Gleisbauarbeiten bis Mitte September 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msap3crgck27
+#: by: https://www.entwicklungsstadt.de/mitten-im-besuchertrubel-hackescher-markt-wird-umfassend-saniert/
 # REMOVED (nach den Gleisbauarbeiten reaktivieren) --- #: also_indoor: traffic (ex-G,T,ex-H,ex-W)
 #: also_indoor: traffic (no-G,T[nur bis Neue Schönhauser],H[nur bis Sophienstr],W[nur bis Neue Schönhauser])
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
@@ -46569,12 +46571,11 @@ EOF
 #: note: laut rbb bis 19.01.2025 (nun inaktiv)
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: source_id: LMS-BR:418130/72 viz2021:13.33775,52.50366,03.08.2026,07:00 (Kraneinsatz bis 09.10.2026)
-#: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
+#: also_indoor: traffic (re-H,re-G,re-T,re-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2026-05-21
-#: check_frequency: 90d
-# REMOVED --- #: check_frequency: 7d
-# REMOVED --- #: next_check: 2025-01-19
+#: last_checked: 2026-08-15 (traffic)
+#: check_frequency: 30d (traffic)
+# REMOVED --- #: check_frequency: 90d
 Marburger Str.	q3::inwork 5802,10621 5907,10821
 EOF
      },
@@ -47870,12 +47871,12 @@ EOF
 #: source_id: LMS-BR:359627/72 viz2021:13.46101,52.5454,05.02.2025,07:00 viz2021:13.46101,52.5454, (bis 30.11.2025) (noch immer Smetanastr.?, bis 05.12.2025) (bis 31.08.2026)
 #: source_id: planb2026:13.46612656,52.54626473,04.03.2026, ("Vollsperrung beider Fahrbahnen", bis 30.08.2026)
 # REMOVED --- #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
-# REMOVED --- #: last_checked: 2025-12-12 (vorfristig beendet) --- #: check_frequency: 120d --- #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
 # REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
 # REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
 # REMOVED --- Chopinstr.	q4::inwork 14195,15604 14321,15636
 #: note: Halteverbotsschilder bis 30.08.2026 18:00
+#: last_checked: 2026-08-16
+#: next_check: 2026-08-30 (Halteverbotsschilder, planb)
 Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,15738
 EOF
      },
@@ -51546,7 +51547,8 @@ EOF
        until => $isodate2epoch->("2026-09-23 23:59:59"), # 1762089890, # undef, # 1761083999, # 2025-10-21 23:59
 #      text  => 'Hufelandstr.: Sanierungsarbeiten, Sperrung der Fahrbahn, ab 13. Oktober 2025 bis 21. Oktober 2025',
 #      text  => 'Hufelandstr./Bötzowstr.: Sanierungsarbeiten, Sperrung der Fahrbahn',
-       text  => 'Hufelandstr.: Sanierungsarbeiten, Sperrung der Fahrbahn, ab 24. Juli 2026 bis Ende September 2026',
+#      text  => 'Hufelandstr.: Sanierungsarbeiten, Sperrung der Fahrbahn, ab 24. Juli 2026 bis Ende September 2026',
+       text  => 'Hufelandstr.: mögliche Sperrung der Fahrbahn wegen Markierungsarbeiten, ab 24. Juli 2026 bis Ende September 2026 (Stand Mitte August 2026: nur Absperrungen am östlichen und westlichen Ende)',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: HUFELAND-2025
@@ -52687,7 +52689,7 @@ Glaßbrennerstr.	q4::inwork 11543,16207 11632,16373
 EOF
      },
      { from  => 1771359027, # 2026-02-17 21:10
-       until => 1788213599, # 2026-08-31 23:59
+       until => 1786885821, # 1788213599, # 2026-08-31 23:59
        text  => 'Anton-Saefkow-Str.: Bauarbeiten zwischen Eugen-Schönhaar-Str. und Bötzowstr, Sperrung, bis Ende August 2026',
        type  => 'handicap',
        data  => <<'EOF',
@@ -52695,8 +52697,7 @@ EOF
 #: source_id: LMS-BR:399332/72 viz2021:13.43881,52.53783,18.02.2026,06:00 (bis 31.08.2026)
 #: source_id: planb2026:13.44114382,52.53687503,03.02.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026) (inaktiv)
 #: also_indoor: traffic (G,no-T,H,no-W)
-#: add_fragezeichen: Besteht die Sperrung in der Anton-Saefkow-Str. weiterhin?
-#: next_check: 2026-08-14
+# REMOVED (nein) --- #: add_fragezeichen: Besteht die Sperrung in der Anton-Saefkow-Str. weiterhin? --- #: next_check: 2026-08-14
 	q4::inwork 12862,14618 12780,14675 12700,14726
 EOF
      },
@@ -53246,15 +53247,15 @@ EOF
        text  => 'Sabinensteig, Oberseestr., Käthestr.: Bauarbeiten, Einbahnstraßenregelung bzw. Sperrung, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (ex-G,ex-T,ex-H,no-W)
-#: note: Laut Baustellenschild der Wasserbetriebe bis August 2026
+#: also_indoor: traffic (ex-G,re-T[zu kurz],ex-H,no-W)
+#: note: Laut Baustellenschild der Wasserbetriebe bis August 2026, mittlerweile August 2027
 #: source_id: planb2026:13.49393502,52.54854804,26.05.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 28.08.2026)
 #: source_id: planb2026:13.49366527,52.54839067,09.02.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 26.08.2026)
 #: source_id: planb2026:13.49222078,52.54990296,24.04.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 26.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-08-08 (traffic) vvv
+#: last_checked: 2026-08-16 vvv
 #: check_frequency: 21d (traffic) vvv
-#: next_check: 2026-08-26 (planb (früherer der beiden Termine), Baustellenschild der Wasserbetriebe) vvv
+#: next_check: 2026-08-26 (planb (früherer der beiden Termine)) vvv
 Sabinensteig: Einbahnstraßenregelung	q4::inwork; 16395,16099 16442,15926
 Oberseestr.: Einbahnstraßenregelung	q4::inwork; 16442,15926 16491,15874 16537,15827
 Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
@@ -54809,13 +54810,17 @@ EOF
 EOF
      },
      { from  => 1784584800, # 2026-07-21 00:00
-       until => 1788213599, # 2026-08-31 23:59
-       text  => 'Streffenstr.: Bauarbeiten, Durchfahrt u.U. nicht möglich',
+       until => undef, # 1788213599, # 2026-08-31 23:59
+#      text  => 'Steffenstr.: Bauarbeiten, Durchfahrt u.U. nicht möglich',
+       text  => 'Steffenstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg noch offen',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: source_id: planb2026:13.48092968,52.5389072,13.05.2024,06:00 (bis 31.08.2026)
+#: add_fragezeichen: Wurden die Bauarbeiten beendet?
+#: last_checked: 2026-08-16
 #: next_check: 2026-08-31
-	2::inwork 15536,14956 15568,14901
+#	2::inwork 15536,14956 15568,14901
+	q3::inwork 15536,14956 15568,14901 15580,14880
 EOF
      },
      { from  => 1784412000, # 2026-07-19 00:00
@@ -55187,6 +55192,19 @@ EOF
 #: last_checked: 2026-08-15
 #: check_frequency: 180d
 Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-1301
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hansastr.: Bauarbeiten, Bürgersteig Richtung Südwesten zwischen Falkenberger Str. und Giersstr. komplett gesperrt',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: HANSA-2025
+#: note: entweder den gegenüberliegenden Gehweg benutzen, oder der ausgeschilderten Umleitung via Falkenberger Str. und Giersstr. folgen; in der Giersstr. wurde der Bürgersteig zum Geh- und Radweg (Benutzungspflichtig) gemacht
+#: last_checked: 2026-08-16
+#: check_frequency: 30d
+#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung)
+	q4::inwork; 15929,16870 15875,16816 15776,16721 15735,16698 15662,16649
 EOF
      },
     );

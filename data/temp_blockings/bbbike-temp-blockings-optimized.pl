@@ -587,48 +587,7 @@ Krokusstr.	2::temp 16610,1715 16767,1831
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2023/07/rave-the-planet-parade/
-#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-findet-laut-veranstalter-statt-id226463
-#: by: https://berliner-abendblatt.de/berlin-news/rave-the-planet-300-000-menschen-laut-polizei-angemeldet-id260300
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1823248945088270542
-#: by: https://viz.berlin.de/aktuelle-meldungen/am-wochenende-rave-the-planet-auf-der-strasse-des-17-juni-in-tiergarten/
-#: by: https://www.ravetheplanet.com/demoroute-2024/
-#: by: https://www.tagesspiegel.de/berlin/anreise-programm-line-up-die-wichtigsten-fragen-und-antworten-zu-rave-the-planet-in-berlin-13957109.html
-#: by: https://viz.berlin.de/aktuelle-meldungen/am-samstag-rave-the-planet-auf-der-strasse-des-17-juni/
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ltorcurwrk2m
-#: source_id: viz2021:13.376834,52.516206,07.07.2023,14:00 (Ebertstr., bis 09.07.2023) (inaktiv)
-#: source_id: viz2021:13.371607,52.515899,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
-#: source_id: viz2021:13.349991,52.514511,17.08.2024,09:00 (bis 18.08.2024) (inaktiv)
-#: source_id: viz2021:13.354603,52.517071,17.08.2024,21:00 (bis 18.08.2024) (inaktiv)
-#: source_id: viz2021:13.35107,52.51429,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
-#: source_id: viz2021:13.370518,52.51725,16.08.2024,18:00 (bis 18.08.2024) (inaktiv)
-#: source_id: planb2026:13.36201985,52.49779678,15.08.2026, ("Vollsperrung beider Fahrbahnen", Kurfürstendamm bis Straße des 17. Juni, 15.08.2026)
-#: source_id: LMS-BR:419573/72 viz2021:13.35107,52.51429,14.08.2026,18:00 (bis 16.08.2026)
-#: source_id: LMS-BR:419575/72 viz2021:13.37737,52.51457,14.08.2026,18:00 (bis 16.08.2026)
-#: source_id: LMS-BR:419574/72 viz2021:13.36968,52.51571,14.08.2026,18:00 (bis 16.08.2026)
-#: note: Sperrung des Pariser Platzes auf Webcam gesehen (2023)
-#: note: am Samstag weitergehende Sperrungen: alle Straßen Richtung Großer Stern, John-Foster-Dulles-Allee/Scheidemannstraße, Ebertstraße, Behrenstr., Hannah-Ahrendt-Straße (nicht eingetragen)
-Pariser Platz, Brandenburger Tor	2::temp 8722,12268 8637,12258 8592,12252 8538,12245
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
-	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	3 7429,12070 7383,12095 7288,12156 7031,12320
-	3 7031,12320 7288,12156 7383,12095 7429,12070
-	3 8119,12414 8068,12237 8055,12186 8049,12140
-	3 8049,12140 8055,12186 8068,12237 8119,12414
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-	3 7822,12201 7816,12150 7823,12120
-	3 7823,12120 7816,12150 7822,12201
-Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-Großer Stern	2::temp 6828,12031 6812,12057 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031
-',
-         'from' => 1786658400,
-         'id' => 536,
-         'text' => 'Straße des 17. Juni: Veranstaltung (Rave the planet), Straße voraussichtlich gesperrt, am 15.08.2026',
-         'type' => 'gesperrt',
-         'until' => 1786867200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6026,7 +5985,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2924,15914 2892,15983 2809,16143
 #: also_indoor: traffic (ex-T,G,ex-H[ganz kurz],ex-W)
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2026-08-14 (traffic)
+#: last_checked: 2026-08-16 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-07-31 (planb)
@@ -6117,9 +6076,10 @@ Sennheimer Str., Königsbacher Zeile bis Schönfließer Str.	q4::inwork 2519,25772 
 #: source_id: planb2026:13.33263422,52.50263083,02.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 01.06.2027)
 #: osm_watch: note 4984535 1
 #: osm_watch: way id="1144627217" version="6"
-#: also_indoor: traffic (re-W,ex-G,T)
-#: last_checked: 2026-05-22 (mapillary)
-#: check_frequency: 90d
+#: also_indoor: traffic (re-W,re-G[in Karte eingebaut],ex-T,H)
+#: last_checked: 2026-08-15 (traffic)
+#: check_frequency: 30d (traffic)
+# REMOVED --- #: check_frequency: 90d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 	q4::inwork; 5497,10719 5471,10719
 ',
@@ -6455,14 +6415,14 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-08-11 vvv
+#: last_checked: 2026-08-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder, planb, VIZ-Verkehrsmeldung) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
 #: osm_watch: way id="4615467" version="39"
 Margarete-Sommer-Str.	2::inwork 12874,13893 12802,13813 12707,13706
 #: note: bis zur Kniprodestr. gesperrt, allerdings könnte die Benutzung des Hochbords geduldet sein
-#: osm_watch: way id="175916784" version="21"
+#: osm_watch: way id="175916784" version="22"
 Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6789,6 +6749,7 @@ Bahnbrücke Bhf. Köpenick	q4::inwork 22431,6068 22467,6135
 #: by: https://www.entwicklungsstadt.de/hackesche-hoefe-denkmalgeschuetztes-ensemble-erhaelt-neue-fassade/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260803 (neue Gleisbauarbeiten bis Mitte September 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msap3crgck27
+#: by: https://www.entwicklungsstadt.de/mitten-im-besuchertrubel-hackescher-markt-wird-umfassend-saniert/
 # REMOVED (nach den Gleisbauarbeiten reaktivieren) --- #: also_indoor: traffic (ex-G,T,ex-H,ex-W)
 #: also_indoor: traffic (no-G,T[nur bis Neue Schönhauser],H[nur bis Sophienstr],W[nur bis Neue Schönhauser])
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
@@ -7574,12 +7535,11 @@ Teltowkanaluferweg: komplette Sperrung, auch für Fußgänger	2::inwork 4587,3097 4
          'data' => '#: note: laut rbb bis 19.01.2025 (nun inaktiv)
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: source_id: LMS-BR:418130/72 viz2021:13.33775,52.50366,03.08.2026,07:00 (Kraneinsatz bis 09.10.2026)
-#: also_indoor: traffic (ex-H,ex-G,re-B,re-T,ex-W)
+#: also_indoor: traffic (re-H,re-G,re-T,re-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2026-05-21
-#: check_frequency: 90d
-# REMOVED --- #: check_frequency: 7d
-# REMOVED --- #: next_check: 2025-01-19
+#: last_checked: 2026-08-15 (traffic)
+#: check_frequency: 30d (traffic)
+# REMOVED --- #: check_frequency: 90d
 Marburger Str.	q3::inwork 5802,10621 5907,10821
 ',
          'from' => undef,
@@ -7897,12 +7857,12 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: source_id: LMS-BR:359627/72 viz2021:13.46101,52.5454,05.02.2025,07:00 viz2021:13.46101,52.5454, (bis 30.11.2025) (noch immer Smetanastr.?, bis 05.12.2025) (bis 31.08.2026)
 #: source_id: planb2026:13.46612656,52.54626473,04.03.2026, ("Vollsperrung beider Fahrbahnen", bis 30.08.2026)
 # REMOVED --- #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
-# REMOVED --- #: last_checked: 2025-12-12 (vorfristig beendet) --- #: check_frequency: 120d --- #: next_check: 2026-08-31 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2025-11-30 (VIZ-Verkehrsmeldung + BA-Pressemitteilung) vvv
 # REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
 # REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
 # REMOVED --- Chopinstr.	q4::inwork 14195,15604 14321,15636
 #: note: Halteverbotsschilder bis 30.08.2026 18:00
+#: last_checked: 2026-08-16
+#: next_check: 2026-08-30 (Halteverbotsschilder, planb)
 Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,15738
 ',
          'from' => 1738450800,
@@ -9131,7 +9091,7 @@ Bötzowstr.: Kreuzungsbereich vermutlich betroffen	q3::inwork 12280,13880 12361,1
 ',
          'from' => 1784757600,
          'id' => 4465,
-         'text' => 'Hufelandstr.: Sanierungsarbeiten, Sperrung der Fahrbahn, ab 24. Juli 2026 bis Ende September 2026',
+         'text' => 'Hufelandstr.: mögliche Sperrung der Fahrbahn wegen Markierungsarbeiten, ab 24. Juli 2026 bis Ende September 2026 (Stand Mitte August 2026: nur Absperrungen am östlichen und westlichen Ende)',
          'type' => 'handicap',
          'until' => 1790200799
        },
@@ -9643,16 +9603,7 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~12-02-2026-l16_erneuerung-sperrung-zw-paaren-und-gruenefeld
-	2::inwork -18187,27206 -18694,27999 -19216,29323
-',
-         'from' => 1772319600,
-         'id' => 4534,
-         'text' => 'Paaren - Grünefeld: Bauarbeiten mit Sperrung, vom 2. März 2026 bis Mitte August 2026',
-         'type' => 'gesperrt',
-         'until' => 1786831199
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:399141/72 viz2021:13.284481,52.470838, (bis 31.12.2026)
 #: source_id: planb2026:13.28603151,52.47122021,19.01.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
@@ -9665,21 +9616,7 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
          'until' => 1798736400
        },
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260217
-#: source_id: LMS-BR:399332/72 viz2021:13.43881,52.53783,18.02.2026,06:00 (bis 31.08.2026)
-#: source_id: planb2026:13.44114382,52.53687503,03.02.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026) (inaktiv)
-#: also_indoor: traffic (G,no-T,H,no-W)
-#: add_fragezeichen: Besteht die Sperrung in der Anton-Saefkow-Str. weiterhin?
-#: next_check: 2026-08-14
-	q4::inwork 12862,14618 12780,14675 12700,14726
-',
-         'from' => 1771359027,
-         'id' => 4537,
-         'text' => 'Anton-Saefkow-Str.: Bauarbeiten zwischen Eugen-Schönhaar-Str. und Bötzowstr, Sperrung, bis Ende August 2026',
-         'type' => 'handicap',
-         'until' => 1788213599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9904,15 +9841,15 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
          'until' => undef
        },
        {
-         'data' => '#: also_indoor: traffic (ex-G,ex-T,ex-H,no-W)
-#: note: Laut Baustellenschild der Wasserbetriebe bis August 2026
+         'data' => '#: also_indoor: traffic (ex-G,re-T[zu kurz],ex-H,no-W)
+#: note: Laut Baustellenschild der Wasserbetriebe bis August 2026, mittlerweile August 2027
 #: source_id: planb2026:13.49393502,52.54854804,26.05.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 28.08.2026)
 #: source_id: planb2026:13.49366527,52.54839067,09.02.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 26.08.2026)
 #: source_id: planb2026:13.49222078,52.54990296,24.04.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 26.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-08-08 (traffic) vvv
+#: last_checked: 2026-08-16 vvv
 #: check_frequency: 21d (traffic) vvv
-#: next_check: 2026-08-26 (planb (früherer der beiden Termine), Baustellenschild der Wasserbetriebe) vvv
+#: next_check: 2026-08-26 (planb (früherer der beiden Termine)) vvv
 Sabinensteig: Einbahnstraßenregelung	q4::inwork; 16395,16099 16442,15926
 Oberseestr.: Einbahnstraßenregelung	q4::inwork; 16442,15926 16491,15874 16537,15827
 Oberseestr.: Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
@@ -10977,14 +10914,17 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
        },
        {
          'data' => '#: source_id: planb2026:13.48092968,52.5389072,13.05.2024,06:00 (bis 31.08.2026)
+#: add_fragezeichen: Wurden die Bauarbeiten beendet?
+#: last_checked: 2026-08-16
 #: next_check: 2026-08-31
-	2::inwork 15536,14956 15568,14901
+#	2::inwork 15536,14956 15568,14901
+	q3::inwork 15536,14956 15568,14901 15580,14880
 ',
          'from' => 1784584800,
          'id' => 4686,
-         'text' => 'Streffenstr.: Bauarbeiten, Durchfahrt u.U. nicht möglich',
+         'text' => 'Steffenstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg noch offen',
          'type' => 'gesperrt',
-         'until' => 1788213599
+         'until' => undef
        },
        {
          'data' => '#: next_check_id: AMSTAEDTISCHENZENTRALFRIEDHOF-2026
@@ -11052,17 +10992,7 @@ Borussiastr.	q3::inwork 8846,6781 9046,6784 9245,6791
          'until' => 1790805600
        },
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260724
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrm4u2z75s26
-	2::inwork -8445,12092 -8599,11272
-',
-         'from' => 1785016800,
-         'id' => 4693,
-         'text' => 'Staakener Weg: Baustelle, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 27.07.2026 bis Mitte August 2026',
-         'type' => 'gesperrt',
-         'until' => 1786831199
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
@@ -11321,6 +11251,20 @@ Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-
          'id' => 4713,
          'text' => 'Kleine Lindenstr. - Business Park Berlin: Bauarbeiten in Höhe Rita-Maiburg-Str., kein Durchgang möglich (Stand August 2026), Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: HANSA-2025
+#: note: entweder den gegenüberliegenden Gehweg benutzen, oder der ausgeschilderten Umleitung via Falkenberger Str. und Giersstr. folgen; in der Giersstr. wurde der Bürgersteig zum Geh- und Radweg (Benutzungspflichtig) gemacht
+#: last_checked: 2026-08-16
+#: check_frequency: 30d
+#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung)
+	q4::inwork; 15929,16870 15875,16816 15776,16721 15735,16698 15662,16649
+',
+         'from' => undef,
+         'id' => 4714,
+         'text' => 'Hansastr.: Bauarbeiten, Bürgersteig Richtung Südwesten zwischen Falkenberger Str. und Giersstr. komplett gesperrt',
+         'type' => 'handicap',
          'until' => undef
        }
      

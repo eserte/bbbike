@@ -1464,7 +1464,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5ldll222g (Gleisarbeiten)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm3kowu4k2g (Gleisarbeiten)
 #: osm_watch: way id="111283481" version="32"
-#: osm_watch: note 5043311 6
+#: osm_watch: note 5043311 7
 #: source_id: 2147344555 (bis Ende August 2019, Gleisbauarbeiten, inaktiv)
 #: source_id: viz2021:13.48997,52.55798,29.12.2022,09:38 (bis 25.1.2023) (später am Tag wieder entfernt, inaktiv)
 #: source_id: viz2021:13.487447,52.556905,05.10.2022,07:00 (Kabelarbeiten, bis 9.12.2022) (bis 13.1.2023) (bis 15.2.2023) (inaktiv)
@@ -1480,9 +1480,9 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: source_id: planb2026:13.48041976,52.55368539,05.08.2026, ("Sicherung gemäß Vz.-plan", bis 29.10.2026)
 #: source_id: LMS-BR:419243/72 viz2021:13.48997,52.55798,12.08.2026,07:00 (bis 04.09.2026)
 #: XXX Fertigstellung laut osm note sogar erst Anfang 2027
-#: last_checked: 2026-07-22
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-07-27 (VIZ-Verkehrsmeldung, planb)
+#: last_checked: 2026-08-16
+#: check_frequency: 30d
+#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-12-31 (infravelo)
 Hansastr.: Radspuren in Arbeit (2,5m breit) + Sanierung der Fahrbahn	?::inwork 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017 16296,17114 16318,17128
 # 
@@ -1508,7 +1508,7 @@ Hansastr.: Radspuren in Arbeit (2,5m breit) + Sanierung der Fahrbahn	?::inwork 1
 #: osm_watch: way id="40520565" version="56"
 #: osm_watch: way id="51317007" version="38"
 #: osm_watch: way id="624116238" version="19"
-#: last_checked: 2026-07-22
+#: last_checked: 2026-08-16
 #: check_frequency: 90d
 #: next_check: 2026-10-31 (infravelo)
 Hansastr.: Verbesserung -> evtl. auch Radspuren?	?::projected 16837,17440 16578,17285 16525,17253 16460,17214 16352,17150 16318,17128
@@ -2392,7 +2392,7 @@ Buckower Damm: ein Zweirichtungsradweg soll entstehen	?::projected 12939,1469 12
 #: XXX Umleitung des Busverkehrs über die Wrangelstr. -> wird es hier eine Einbahnstraßenregelung geben?
 #: last_checked: 2026-08-09
 #: check_frequency: 30d
-#: next_check: 2026-08-17 (planb: Beginn der Bauarbeiten?)
+#: next_check: 2026-08-20 (Pressemitteilung: Aufbau der Baustelleneinrichtung)
 # REMOVED --- #: next_check: 2026-12-31 (infravelo)
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
 # 
@@ -3782,7 +3782,7 @@ Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,1271
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/risiko-stelle-vor-berliner-gymnasium-warum-hier-schuler-seit-zwei-jahren-auf-eine-ampel-warten-mussen-15009973.html (Ampel?)
 #: source_id: viz2021:13.439487,52.530759,03.07.2023,10:00 (bis 21.07.2023) (inaktiv)
 #: priority: #D
-#: last_checked: 2026-08-11
+#: last_checked: 2026-08-16
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-07-21
 Kniprodestr./Pasteurstr.: wird hier ein Zebrastreifen oder eine Ampel gebaut?	?::projected 12723,13934 12766,13942 12758,13896
@@ -5702,7 +5702,7 @@ Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maßn
 # REMOVED --- #: next_check: 2024-12-31 vvv
 #: last_checked: 2026-07-12
 Simon-Bolivar-Str./Goeckestr.: entsteht hier ein neuer Zebrastreifen?	? 16104,14678 16128,14685 16152,14691
-#: last_checked: 2026-07-22
+#: last_checked: 2026-08-16
 Werneuchener Str./Küstriner Str.: entsteht hier ein neuer Zebrastreifen?	? 16301,15247 16314,15223 16327,15193
 #: XXX Halteverbote bis zum 23.07.2025, evtl. im Zusammenhang mit dem geplanten Zebrastreifen? mittlerweile: verengte Fahrbahn wegen Bauarbeiten an der östlichen Straßenseite
 #: also_indoor: traffic (none)
@@ -6323,7 +6323,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: source_id: viz2021:13.470029,52.540596,16.11.2022,09:00 (bis 14.12.2022) (inaktiv)
 #: source_id: viz2021:13.4663,52.5505,25.11.2022,09:27 (bis 28.03.2023) (inaktiv)
 #: source_id: viz2021:13.466459,52.550159,25.11.2022,09:00 (bis 28.03.2023, Arbeiten an Wasserleitungen zwischen Bizetstr. und Meyerbeerstr.) (bis 5.4.2023) (bis 11.4.2023) (bis 28.4.2023) (bis 21.4.2023) (inaktiv)
-#: last_checked: 2026-07-12
+#: last_checked: 2026-08-16
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-03-28
 Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 14828,15050 14686,15608 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260 14499,16341
@@ -6378,7 +6378,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17251,11789 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2026-08-05
+#: last_checked: 2026-08-16
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -7649,7 +7649,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: note 4669630 2
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2026-08-13
+#: last_checked: 2026-08-16
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7830,7 +7830,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="4"
-#: last_checked: 2026-08-13
+#: last_checked: 2026-08-16
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7838,7 +7838,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-08-13
+#: last_checked: 2026-08-16
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -9377,12 +9377,13 @@ Güstow - Prenzlau: Bau eines Radwegs	? 37047,101103 37211,101028 37577,100778
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~06-08-2026-zufahrt-zum-neuen-bahnhof-fangschleuse-ueber-knotenpunkt-l-23l38 (neue Zufahrt zum Bahnhof)
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%2023%20B%C3%9C-Beseitigung%20Fangschleuse%20Vollsperrung%20Umleitungsphase%20Karten%202%20PM%2006-08-26.pdf
 #: by: https://www.gruenheide-im-blick.de/neuer-bahnhof-fangschleuse-inbetriebnahme-am-14-15-august-anbindung-ist-bereit/
+#: XXX Wurde der Bahnübergang bereits für den Fußgänger- und Radverkehr gesperrt?
 #: osm_watch: way id="860486098" version="6"
 #: osm_watch: way id="1367158749" version="5"
 #: osm_watch: note 5026614 1
 #: osm_watch: note 4699893 2
 #: next_check: 2026-08-16 (Verschiebung der Eröffnung)
-Bahnhof Fangschleuse: Verlegung des Bahnhofs, Bahnübergang wird durch eine Überführung ersetzt	?::inwork 39284,437 39339,627 39265,846
+Bahnhof Fangschleuse: Bahnübergang wird durch eine Überführung ersetzt	?::inwork 39284,437 39339,627 39265,846
 # 
 #: by: https://www.gruenheide-im-blick.de/neuer-bahnhof-fangschleuse-inbetriebnahme-am-14-15-august-anbindung-ist-bereit/
 #: last_checked: 2026-08-07 (gruenheide-im-blick)
@@ -9404,7 +9405,7 @@ Kunow - Neue Mühle (Radrundweg): Anbindung geplant	? 66896,81995 66945,81927 669
 #: next_check_id: MICHELANGELO-2025
 #: note: laut Aushang ab Sommer (Juni?) 2025 bis Frühjahr 2027; mittlerweile 1. BA von September 2025 bis Frühjahr 2027; der 2. BA (der vermutlich diese Verbindung betrifft) von 2027 bis 2028
 #: note: ab 13325,15619 Richtung Südosten Bauarbeiten mit Sperrung (gesehen: Mapillary, 2025-10-24; srt, 2025-11-06)
-#: last_checked: 2026-08-12
+#: last_checked: 2026-08-16
 #: check_frequency: 120d
 #: next_check: 2027-04-01
 Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrungen geben?	? 13724,15309 13700,15375 13687,15387 13608,15436 13597,15443
@@ -9707,7 +9708,7 @@ Cecilienstr.: wird hier ein Zebrastreifen angelegt?	? 21956,13665 21918,13720 21
 #: by: https://www.morgenpost.de/berlin/article412653901/hufelandstrasse-wird-fahrradstrasse-neue-bauphase-startet-ende-juli.html
 #: osm_watch: way id="4615063" version="42"
 #: osm_watch[closed]: note 5010352 6
-#: last_checked: 2026-07-31
+#: last_checked: 2026-08-16
 #: check_frequency: 60d
 #: next_check: 2026-09-10 (planb)
 Hufelandstr.: Fahrradstraße geplant	?::projected 12077,14186 12228,14083 12361,13985 12478,13903 12582,13834 12578,13800
@@ -10178,6 +10179,7 @@ Rohrdommelweg: Teileinziehung geplant	? 15220,3840 15179,3901
 Unter den Eichen: die Radspur soll zurückgebaut werden	?; 4347,5103 4181,5000 4160,4988 4141,4975 3938,4849 3834,4786
 # 
 #: source_id: planb2026:13.32269309,52.47258663,17.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.09.2026)
+#: also_indoor: traffic (none)
 #: next_check: 2026-08-17 (planb)
 Wilhelmshöher Weg: geplante Bauarbeiten mit Sperrung	? 4874,7326 5058,7327
 # 
@@ -10199,12 +10201,8 @@ Eschersheimer Str.: Fahrradstraße soll entstehen	? 11740,6338 11713,6380 11689,6
 #: next_check: 2026-08-12
 Manfred-von-Richthofen-Str.: mögliche Einbahnstraßenregelung	?; 9242,7325 9097,7469 9070,7493 8956,7598 8900,7643 8864,7676 8812,7730
 # 
-#: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026)
-#: also_indoor: traffic (G,T,no-H,no-W)
-#: next_check: 2026-08-10 (planb) vvv
-Matthiasstr./Pufendorfstr.: geplante Bauarbeiten mit Sperrung des Einmündungsbereichs	? 12786,13185 12842,13070 12885,12980
-Matthiasstr./Pufendorfstr.: geplante Bauarbeiten mit Sperrung des Einmündungsbereichs	? 12616,12844 12842,13070
-#: next_check ^^^
+#: osm_watch: way id="1105600233" version="1"
+Adlerplatz: existiert hier ein ausgeschilderter Platz?	? -584,12553 -587,12529 -587,12500
 # 
 ######################################################################
 #
@@ -10879,7 +10877,7 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen, Sackgasse	?::projected -
 #: osm_watch: way id="830632211" version="7"
 #: osm_watch: note 4346490 2
 #: XXX eine baldige Anbindung an die Rhenaniastr. erscheint unrealistisch, siehe Orthofotos Frühjahr+August 2025
-#: XXX bei DTAG 12/2025 wird eine neue Straße "Am Salzhof" (PLZ 13599) erwähnt, ist das hier?
+#: XXX bei DTAG 12/2025 wird eine neue Straße "Am Salzhof" (PLZ 13599) erwähnt, ist das hier? Wird auch bei LOR 7/2026 gelistet.
 #: last_checked: 2026-07-08
 #: check_frequency: 150d
 #: next_check: 2026-12-31 (bw)
@@ -13120,10 +13118,10 @@ Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997
 #: note: Insel Gartenfeld
 #: XXX neue Straßennamen:
 #: XXX erste Gruppe (öffentliche Straßen):
-#: XXX 1) Moderlieschenstraße (PLZ=13599 laut DPAG-Mitteilungsblatt 03/2026)
+#: note (bereits eingetragen) 1) Moderlieschenstraße (PLZ=13599 laut DPAG-Mitteilungsblatt 03/2026)
 #: XXX 2) Gründlingstraße (PLZ=13599 laut DPAG-Mitteilungsblatt 03/2026)
-#: XXX 3) Rotfederstraße (PLZ=13599 laut DPAG-Mitteilungsblatt 03/2026)
-#: XXX 4) Alandstraße (PLZ=13599 laut DPAG-Mitteilungsblatt 03/2026)
+#: note (bereits eingetragen) 3) Rotfederstraße (PLZ=13599 laut DPAG-Mitteilungsblatt 03/2026)
+#: note (bereits eingetragen) 4) Alandstraße (PLZ=13599 laut DPAG-Mitteilungsblatt 03/2026)
 #: XXX 5) Steinbeißerpromenade
 #: XXX 6) Stintplatz
 #: XXX 7) Rapfenweg (PLZ=13599 laut DPAG-Mitteilungsblatt 03/2026)
@@ -13396,7 +13394,7 @@ Bebauungsplan XIV-274abba (Waßmannsdorfer Chaussee 163/175): Planung eines Einfa
 #: osm_watch: way id="515880860" version="6"
 #: osm_watch: note 3955339 7
 #: XXX außerdem wird an der Hansastr. eine kleine Parkanlage mit Spielplatz entstehen
-#: last_checked: 2026-05-06
+#: last_checked: 2026-08-16
 #: check_frequency: 180d
 # REMOVED (projektiertes Bauende ist nicht zu schaffen) --- #: next_check: 2024-12-31
 Hansastr.: neue KGA entsteht	? 15561,16648 15455,16627 15473,16519 15571,16585 15561,16648

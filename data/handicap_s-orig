@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
-#: last_checked: 2026-08-13
+#: last_checked: 2026-08-16
 #: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261015
 Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
@@ -178,7 +178,16 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
+# 
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 --- #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut --- #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv) --- #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024) (inaktiv) --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-02-16 vvv --- #: valid: -20231229 vvv --- Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229 --- Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+#: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026)
+#: also_indoor: traffic (G,T,no-H,no-W)
+#: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
+#: last_checked: 2026-08-16
+#: next_check: 2026-09-09 (planb)
+#: valid: -20260909
+Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,13185 12842,13070
+# 
 # REMOVED (beendet) --- #: next_check_id: STRALAUERALLEE-2023 --- #: last_checked: 2024-04-09 --- # REMOVED --- #: check_frequency: 30d --- #: check_frequency: 3d --- # REMOVED --- #: next_check: 2024-04-09 --- # REMOVED --- #: valid: -20240409 --- #: valid: -20240412 --- Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13549,10741 13496,10763
 # 
 # REMOVED (so gut wie keine Einschränkungen) --- #: next_check_id: KARLMARXALLEE-2023
@@ -1329,7 +1338,9 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msubin42gl24
 #: source_id: planb2026:13.47721649,52.52297025,12.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
 #: source_id: LMS-BR:419242/72 viz2021:13.4795,52.52304,12.08.2026,07:00 (bis 04.09.2026)
+#: note: sehr kurze Sperrung, Umfahrung/Umgehung mit Bordsteinabsenkungen (via Zebrastreifen) möglich
 #: note: außerdem ist die Radspur auf der Storkower Str. Richtung Westen aufgehoben
+#: last_checked: 2026-08-16
 #: next_check: 2026-09-04 (planb, VIZ)
 #: valid: -20260904
 Alfred-Jung-Str.: Sperrung vor der Storkower Str.	q3::inwork 15347,13268 15347,13124
@@ -6019,6 +6030,9 @@ Oberfeldstr.: Bahnübergang zusammen mit Fußverkehr	q2 20627,12162 20624,12133 20
 (Bullengraben - Seeburger Str./Seecktstr.): Parkplatzverkehr	q1 -4368,13387 -4334,13338 -4320,13296
 # 
 Platz am Kaisersteg: schmale Stellen	q2 18381,6134 18428,6123
+# 
+#: XXX_prog BS an beiden Enden, ansonsten trotzdem q3 (siehe auch Eintrag wegen der drei Stufen)
+Rudolf-Schwarz-Str.: einige Fußgänger, Bordsteine	q3 13107,14318 13087,14332
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

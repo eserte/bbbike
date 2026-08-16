@@ -3728,7 +3728,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
 #: osm_watch: way id="966685279" version="10"
-#: last_checked: 2026-08-12 vvv
+#: last_checked: 2026-08-16 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2028-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -5367,14 +5367,25 @@ asphaltiert, etwas breiter, bereits erste leichte Wurzelhebungen	RW1;RW1 13775,3
 Verbundsteinpflaster	RW1; 14994,3245 15030,3286 15162,3462 15213,3541 15263,3617 15307,3683 15350,3749 15356,3759 15363,3770 15464,3936 15585,4139
 	RW3; 15585,4139 15464,3936 15363,3770 15356,3759 15350,3749 15307,3683 15263,3617 15213,3541 15162,3462 15030,3286
 Verbundsteinpflaster	RW1; 15030,3286 14994,3245
-die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Radfahrer frei) geführt	RW10; 15297,16321 15437,16491
 # 
 #: note: Hansastr. Richtung SW
 Verbundsteinpflaster	RW1; 16837,17440 16578,17285 16525,17253
 alter Beton, Radweg nur aufgemalt	RW1; 16525,17253 16460,17214
 #: note: kurze Abschnitte mit Verbundsteinpflasterradweg
-Gehweg für Radfahrer frei	RW1; 16460,17214 16352,17150 16318,17128 16296,17114 16139,17017 15986,16922 15929,16870 15875,16816 15776,16721 15735,16698 15662,16649
-Gehweg für Radfahrer frei, die letzten 60 Meter sind benutzungspflichtig	RW1; 15662,16649 15437,16491
+Gehweg für Radfahrer frei	RW1; 16460,17214 16352,17150 16318,17128 16296,17114 16139,17017
+#: next_check_id: HANSA-2025
+#: last_checked: 2026-08-16 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung) vvv
+#: historical_note: bis 2026: Gehweg für Radfahrer frei, RW1; vvv
+provisorischer gemeinsamer Rad- und Gehweg	RW2; 16139,17017 15986,16922 15929,16870
+	RW0; 15929,16870 15875,16816 15776,16721 15735,16698 15662,16649
+#: historical_note ^^^
+#: historical_note: bis 2026: Gehweg für Radfahrer frei, die letzten 60 Meter sind benutzungspflichtig, RW1;
+provisorischer gemeinsamer Rad- und Gehweg	RW2; 15662,16649 15437,16491
+#: last_checked ^^^
+#: check_frequency ^^^
+#: next_check ^^^
 	RW3; 15437,16491 15297,16321 15236,16241 15194,16186 15130,16098
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgonry5ias2l
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260312
@@ -5384,7 +5395,7 @@ Gehweg für Radfahrer frei, die letzten 60 Meter sind benutzungspflichtig	RW1; 15
 #: note: zwischen Indira-Gandhi-Str. und Orankeweg ist die südliche Fahrbahn komplett gesperrt, Radfahrer Richtung Hohenschönhausen müssen zusammen mit Fußgängern den Hochbord benutzen, Richtung Westen auch, aber das ist zumindest am Orankeweg nicht ausgeschildert -> handicap ja/nein? q1? q2? -> erstmal nicht
 #: XXX später wiederherstellen:	RW3; 15130,16098 14967,15885 14936,15857 14808,15788
 #: XXX später wiederherstellen: die letzten Meter werden als benutzungspflichtiger Radweg auf dem Hochbord geführt	RW3; 14808,15788 14653,15738
-#: last_checked: 2026-07-12
+#: last_checked: 2026-08-16
 #: check_frequency: 60d
 #: next_check: 2026-12-31
 gemeinsamer Geh- und Radweg	RW2; 15130,16098 14967,15885 14936,15857 14808,15788 14653,15738
@@ -5392,26 +5403,28 @@ gemeinsamer Geh- und Radweg	RW2; 15130,16098 14967,15885 14936,15857 14808,15788
 #: note: Hansastr. Richtung NO
 #: XXX später wiederherstellen: die ersten Meter werden auf dem Hochbord geführt	RW3; 14653,15738 14808,15788
 #: XXX später wiederherstellen:	RW3; 14808,15788 14936,15857 14967,15885
-#: last_checked: 2026-07-12
+#: last_checked: 2026-08-16
 #: check_frequency: 60d
 #: next_check: 2026-12-31
 gemeinsamer Geh- und Radweg	RW2; 14653,15738 14808,15788 14936,15857 14967,15885
 	RW3; 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
-Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
+die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Radfahrer frei) geführt	RW10; 15297,16321 15437,16491
+#: next_check_id: HANSA-2025
+#: last_checked: 2026-08-16
+#: check_frequency: 30d
+#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung)
+#: historical_note: früher (bis 2026): Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
+provisorischer gemeinsamer Rad- und Gehweg	RW2; 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Bauarbeiten bis etwa Frühjahr 2026: provisorischer gemeinsamer Geh- und Radweg, RW2;
-# XXX wegen Gleisbauarbeiten wieder aufgehoben	RW4; 15875,16816 15929,16870 15986,16922
-gemeinsamer Geh- und Radweg	RW1; 15875,16816 15929,16870 15986,16922
+# XXX wegen Gleisbauarbeiten wieder aufgehoben, später wegen Radspurarbeiten aufgehoben	RW4; 15875,16816 15929,16870 15986,16922
+#gemeinsamer Geh- und Radweg	RW1; 15875,16816 15929,16870 15986,16922
 #: historical_note: früher (bis Sommer/Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Bauarbeiten bis etwa Frühjahr 2026: provisorischer gemeinsamer Geh- und Radweg, RW2;
 # XXX wegen Gleisbauarbeiten wieder aufgehoben	RW4; 15986,16922 16139,17017
-gemeinsamer Geh- und Radweg	RW1; 15986,16922 16139,17017
-#: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;
-# XXX wegen Gleisbauarbeiten wieder aufgehoben	RW4; 16139,17017 16296,17114 16318,17128 16352,17150
-gemeinsamer Geh- und Radweg	RW1; 16139,17017 16296,17114 16318,17128 16352,17150
-#: next_check_id: HANSA-2025
-#: last_checked: 2026-07-22
-# REMOVED --- #: next_check: 2026-04-17 (VIZ-Verkehrsmeldung)
+#gemeinsamer Geh- und Radweg	RW1; 15986,16922 16139,17017
+#: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Gleisbauarbeiten 2026 zwischenzeitlich aufgehoben (gemeinsamer Geh- und Radweg)
+	RW4; 16139,17017 16296,17114 16318,17128 16352,17150
 #: historical_note: während der Bauarbeiten (2025/2026): provisorischer gemeinsamer Geh- und Radweg, RW2;
-gemeinsamer Geh- und Radweg	RW1; 16352,17150 16460,17214
+	RW4; 16352,17150 16460,17214
 neues Verbundsteinpflaster, Gehweg für Radfahrer frei	RW1; 16460,17214 16525,17253 16578,17285
 	RW2; 16578,17285 16837,17440
 # 
@@ -8828,7 +8841,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2026-08-11
+#: last_checked: 2026-08-16
 #: check_frequency: 45d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8855,7 +8868,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2026-08-11 vvv
+#: last_checked: 2026-08-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: osm_watch: way id="335479077" version="25"
