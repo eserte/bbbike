@@ -42004,7 +42004,7 @@ EOF
        until => $isodate2epoch->("2025-09-25 22:00:00"), # 1693080000, # 2023-08-26 22:00
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 8]],
-       recurrence_prewarn_days => 7,
+       recurrence_prewarn_days => -7,
        text  => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 25. September 2025 von 14 bis 22 Uhr',
        type  => 'handicap',
        data  => <<EOF,
@@ -45583,7 +45583,7 @@ EOF
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-08-13 vvv
+#: last_checked: 2026-08-17 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -50298,7 +50298,7 @@ EOF
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="5"
 #: also_indoor: traffic (T,H,G)
-#: last_checked: 2026-07-31 vvv
+#: last_checked: 2026-08-15 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -50319,7 +50319,7 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
 #: source_id: planb2026:13.41359234,52.51568692,13.12.2023, ("Fahrstreifen-Reduzierung" in der Stralauer Allee, bis 30.10.2026)
-#: last_checked: 2026-08-06 (sieht allerdings so aus, als ob sich die Baustelle dem Ende neigt)
+#: last_checked: 2026-08-17 (sieht allerdings so aus, als ob sich die Baustelle dem Ende neigt)
 #: check_frequency: 14d
 #: next_check: 2026-10-30 (planb)
 	q4::inwork 10951,12249 10957,12401
@@ -50825,8 +50825,8 @@ EOF
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: source_id: planb2026:13.4564232,52.50244969,01.06.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-08-14 vvv
-#: check_frequency: 10d vvv
+#: last_checked: 2026-08-17 vvv
+#: check_frequency: 8d vvv
 #: next_check: 2026-08-31 (planb) vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
 # REMOVED (frühere Sperrung) ---	q4::inwork 13856,10864 13755,10896 13795,10995
@@ -51938,7 +51938,7 @@ EOF
 #: osm_watch: note 5049958 2
 #: osm_watch: way id="1127993128" version="10"
 #: source_id: planb2026:13.37147229,52.53701526,13.10.2025,06:00 ("keine Fahrbahn-Einschränkung", bis 07.08.2026) (bis 28.08.2026)
-#: last_checked: 2026-08-12
+#: last_checked: 2026-08-15 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2026-08-28 (planb)
 # REMOVED --- #: next_check: 2026-08-28 (planb)
@@ -53942,13 +53942,13 @@ EOF
      { from  => 1780200000, # 2026-05-31 06:00
        until => $isodate2epoch->("2026-10-31 23:59:59"), # 1785535140, # 2026-07-31 23:59
 #      text  => 'Heegermühler Weg: Sperrung zwischen Marthastr. und Germanenstr., evtl. ist auch der Radverkehr betroffen, vom 01.06.2026 06:00 bis 31.07.2026 23:59',
-       text  => 'Heegermühler Weg: Sperrung zwischen Marthastr. und Germanenstr., evtl. ist auch der Radverkehr betroffen, voraussichtlich bis Ende Oktober 2026',
+       text  => 'Heegermühler Weg: Bauarbeiten zwischen Marthastr. und Siegfried-Baruch-Weg, Fahrbahn gesperrt, voraussichtlich bis Ende Oktober 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:410346/72 viz2021:13.371186,52.584284,01.06.2026,06:00 (bis 31.07.2026) (bis 31.10.2026)
 #: source_id: planb2026:13.37123252,52.58395673,01.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 31.10.2026)
-# REMOVED (hier nicht) ---	q4::inwork 8231,19806 8043,19725
-	q4::inwork 8043,19725 8030,19762 8000,19819
+# REMOVED (hier nicht) ---	q4::inwork 8231,19806 8043,19725 8030,19762
+	q4::inwork 8030,19762 8000,19819
 EOF
      },
      { from  => 1780200000, # 2026-05-31 06:00
@@ -54153,18 +54153,18 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-08-02 00:00:00"), # $isodate2epoch->("2026-07-13 00:00:00"), # 1781992800, # 2026-06-21 00:00
-       until => $isodate2epoch->("2026-08-14 18:00:00"), # 1783375200, # 2026-07-07 00:00
+       until => $isodate2epoch->("2026-08-21 18:00:00"), # 1783375200, # 2026-07-07 00:00
        dont_check_date => 1,
 #      text  => 'Radickestr.: Bauarbeiten zwischen Nipkowstr. und Zinsgutstr., Sperrung der Fahrbahn, geplant vom 22.6.2026 bis 17.7.2026, weitere Bauarbeiten bis 14.08.2026',
 #      text  => 'Radickestr.: Bauarbeiten im Kreuzungsbereich Nipkowstr., mögliche Sperrung der Fahrbahn, geplant vom 13.7.2026 bis 27.07.2026, weitere Bauarbeiten bis 14.08.2026',
-       text  => 'Radickestr.: Bauarbeiten, mögliche Sperrung der Fahrbahn, geplant vom 03.08.2026 bis 14.08.2026',
+       text  => 'Radickestr.: Bauarbeiten, mögliche Sperrung der Fahrbahn, geplant vom 03.08.2026 bis 21.08.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: RADICKE-2026
 #: by: https://www.aktives-adlershof.de/fileadmin/PDF/Bauma%C3%9Fnahmen/260610_Bauinfo_Radickestra%C3%9Fe_4.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1688283.php (bis 8.7.2026)
 #: by: https://www.aktives-adlershof.de/fileadmin/_processed_/d/a/csm_260707_Bauinfo_Radickestra%C3%9Fe_5_red_c7f704934c.png (bis 13.7.2026)
-#: by: https://www.aktives-adlershof.de/aktuelles?date=20260713 (Verzögerung bis 17.7.2026) (Start der neuen Sperrung erst am 3.8.2026)
+#: by: https://www.aktives-adlershof.de/aktuelles?date=20260713 (Verzögerung bis 17.7.2026) (Start der neuen Sperrung erst am 3.8.2026) (Verlängerung bis zum 21.8.2026)
 #: source_id: planb2026:-
 # REMOVED --- #: next_check: 2026-08-02 vvv
 #	q4::inwork 20861,3814 20835,3795 20776,3753 20683,3693 20592,3633 20499,3572
@@ -54173,7 +54173,7 @@ EOF
 # REMOVED (Durchfahrt möglich) --- Radickestr. [26-44]	q4::inwork 20592,3633 20499,3572 20451,3538 20366,3480
 # REMOVED (schon angefangen?) --- #: valid: 20260803-20260814
 # REMOVED (ursprüngliche Planung) --- Radickestr. [44-Adlergestell]	q4::inwork 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
-#Radickestr. [Adlergestell - Süßer Grund]	q4::inwork 20064,3278 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538
+Radickestr. [Adlergestell - Süßer Grund]	q4::inwork 20064,3278 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538
 # REMOVED --- #: next_check ^^^
 EOF
      },
@@ -54457,7 +54457,7 @@ EOF
 #: source_id: LMS-BR:418661/72 viz2021:13.39892,52.53262, (Veteranenstr., bis 31.08.2026)
 #: also_indoor: traffic (T,no-G)
 #: note: Für den Radverkehr ist eine Umleitung über Fehrbelliner Str. - Choriner Str. (und vermutlich weiter über Schwedter Str.) ausgeschildert, beide Richtungen
-#: last_checked: 2026-08-11 vvv
+#: last_checked: 2026-08-16 (mapillary) vvv
 #: check_frequency: 14d (am Anfang höhere Frequenz) vvv
 #: next_check: 2027-01-29 (planb) vvv
 Kastanienallee: Gleisbauarbeiten	q4::inwork 10370,14158 10426,14262 10497,14391 10530,14452
@@ -54576,7 +54576,7 @@ EOF
 #: source_id: LMS-BR:415649/72 viz2021:13.41002,52.52861,13.07.2026,07:00 (bis 22.12.2028)
 #: osm_watch: note 5394140 1
 #: note: die ersten drei Wochen nur gesperrt, ohne dass an der Oberfläche sichtbare Bauarbeiten wären
-#: last_checked: 2026-08-03 vvv
+#: last_checked: 2026-08-16 (mapillary) vvv
 #: check_frequency: 21d (am Anfang höhere Frequenz) vvv
 #: next_check: 2028-12-31 (VIZ) vvv
 #: priority: #A
@@ -54723,10 +54723,11 @@ EOF
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1689676.php (Baubeginn ab 13. Juli 2026, Ende November 2026)
 #: by: https://www.luisenstadt-mitte.de/projekte/umgestaltung-sechseckplatz
 #: by: https://www.entwicklungsstadt.de/was-sich-am-michaelkirchplatz-jetzt-alles-veraendert/
+#: by: https://www.entwicklungsstadt.de/michaelkirchplatz-in-mitte-so-viele-parkplaetze-fallen-beim-umbau-weg/
 #: osm_watch: note 5183324 3
 #: source_id: planb2026:13.42048743,52.50798798,11.07.2026, ("Vollsperrung beider Fahrbahnen", bis 30.10.2026)
 #: XXX Nach den Bauarbeiten müssen vermutlich gesperrt_car-orig-Einträge erzeugt werden.
-#: last_checked: 2026-07-31
+#: last_checked: 2026-08-17
 #: check_frequency: 30d
 #: next_check: 2026-10-30 (planb)
 # REMOVED --- #: next_check: 2026-11-30 (BA-Pressemitteilung)
@@ -55044,7 +55045,7 @@ EOF
 #: osm_watch: note 5362444 3
 #: also_indoor: traffic (G,T,no-H,W[Sperrung auf der Basiskarte])
 #: note: es gibt allerdings zur Not einen inoffiziellen Trampelpfad über eine steile Böschung
-#: last_checked: 2026-08-14 (traffic)
+#: last_checked: 2026-08-17 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-08-14 (ahrensfelde website)
 	2::inwork 26501,19266 25861,19127
@@ -55205,6 +55206,40 @@ EOF
 #: check_frequency: 30d
 #: next_check: 2026-09-04 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15929,16870 15875,16816 15776,16721 15735,16698 15662,16649
+EOF
+     },
+     { from  => 1786831200, # 2026-08-16 00:00
+       until => 1789164000, # 2026-09-12 00:00
+       text  => 'Breite Str.: Fahrbahnarbeiten, Zweirichtungsradweg zwischen Ossietzkystr. und Berliner Str. möglicherweise gesperrt, vom 17.08.2026 bis 11.09.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: BREITE-2026
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1703210.php
+#: by: https://viz.berlin.de/aktuelle-meldungen/mehr-verkehrssicherheit-und-larmschutz-fahrbahnsanierung-auf-der-breiten-strasse-pankow/ (bis 11.09.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mtax2qcirc2h
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibdoullemtlc7p5zheczdy24xf67qg632f5b3nls6fpsfclo4sbti
+#: XXX oder man nimmt den direkten Weg und schiebt ggfs.
+Breite Str.: Fahrbahnarbeiten, offizielle Umleitung für den Radverkehr über Breite Str. - westlich Kirche - Breite Str.	q4::inwork; 10602,18382 10680,18380
+Eintrachtstr.: Anbindung Breite Str. gesperrt	q3::inwork 10650,18544 10710,18393
+EOF
+     },
+     { do {
+	    # Check after changes with
+	    #    BBBIKE_TEMP_BLOCKINGS_DEBUG=1 perl data/temp_blockings/bbbike-temp-blockings.pl
+	    my $text = 'Klausdorf - Zossen (Thomas-Müntzer-Straße): Arbeiten am Bahnübergang, Sperrung';
+	    my $ret = $next_interval->([
+	        ["2026-10-19", "2026-10-30"],
+	        ["2026-11-28", "2026-12-05"],
+	        ["2027-01-25", "2027-02-22"],
+	    ], $text);
+	    $text .= ", nächster Termin geplant: " . $epoch2dedate->($ret->{from}) . " bis " . $epoch2dedate->($ret->{until});
+	    (from => $ret->{from}-86400, until => $ret->{until}, text => $text);
+       },
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: next_check_id: ZOSSENMELLENSEE-2025
+#: by: https://www.berlin-dresden.de/bautagebuch.html?date=20260817
+Klausdorf - Zossen (Thomas-Müntzer-Straße): Sperrung des Bahnübergangs	2::inwork 13014,-22300 13528,-21855 13960,-21244
 EOF
      },
     );

@@ -824,8 +824,11 @@ Bernhard-Bästlein-Str.	1 15595,14045 15593,13768
 # REMOVED (während der Bauarbeiten muss man zum Notweg kommen) --- #: by: Bernhard Husch: --- #: note: Einfahrt verboten --- Pfarrer-Lütkehaus-Platz	1 10228,-2136 10273,-2158
 Radebeuler Str.	1 19025,14037 19067,13818
 Beilsteiner Str.	1 18748,12399 18800,12838 18832,13099 18852,13269
+#: next_check_id: BREITE-2026
+#: XXX nach den Bauarbeiten wieder auf 1s:q4 ändern
+#: next_check: 2026-09-11
 #: by: osm
-(Breite Str., Verbindung)	1s:q4 10463,18321 10487,18270
+(Breite Str., Verbindung)	1s:q3 10463,18321 10487,18270
 #: by: Norbert Palzkill:
 Thuner Platz	1 3251,1881 3263,1904 3286,1912 3307,1904 3317,1884 3312,1866 3297,1845
 Hubertusallee	1 2361,9664 2360,9754
@@ -4209,7 +4212,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-08-06
+#: last_checked: 2026-08-17
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4233,7 +4236,7 @@ Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119
 # 
 #: source_id: LMS-BR:410555/72 viz2021:13.37994,52.52093, (bis 21.12.2028)
 #: XXX Es gibt zwar eine offizielle Umleitungsstrecke auch für Radfahrer zur Margarete-Steffin-Str., aber diese führt über eine Wiese (!)
-#: last_checked: 2026-07-31
+#: last_checked: 2026-08-15 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-21
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12780
@@ -5443,7 +5446,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-warum-das-wichtigste-gebaeude-in-der-kritik-steht/
 #: by: https://www.entwicklungsstadt.de/800-jahre-molkenmarkt-vom-olden-markt-zum-neuen-stadtquartier/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-08-06
+#: last_checked: 2026-08-17
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5452,7 +5455,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-08-06
+#: last_checked: 2026-08-17
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

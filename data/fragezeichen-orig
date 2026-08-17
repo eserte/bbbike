@@ -897,10 +897,11 @@ Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 20196,
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4539 (Antrag zur Fahrbahn Semmelweisstr.)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/2Cc4F4eF7So0MRwfXg6nT3h2vZoyZUjXEhnSHOX2/onfaPOEj/46-Anlagen/08/B0440ZB5.pdf (Zwischenbericht: Sanierung bis 2027, keine Erwähnung einer Radverkehrsanlage)
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=6063 (Sanierung zwischen Wegedornstraße und Köpenicker Straße ab 2028)
 #: osm_watch: way id="169076556" version="16"
 #: last_checked: 2026-08-15
 #: check_frequency: 120d
-#: next_check: 2027-06-30 (BVV-Drucksache: Sanierung)
+#: next_check: 2028-06-30 (BVV-Drucksache: Beginn der Sanierung 2028)
 Semmelweisstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 18922,2238 18965,2237 19019,2217
 # 
 #: XXX Ag.4
@@ -2390,9 +2391,10 @@ Buckower Damm: ein Zweirichtungsradweg soll entstehen	?::projected 12939,1469 12
 #: by: https://www.entwicklungsstadt.de/neue-radverkehrsachse-zwischen-mitte-und-treptow-umbau-der-koepenicker-strasse-startet/
 #: source_id: planb2026:13.44149207,52.50131282,17.08.2026, ("Sicherung gemäß Vz.-plan", bis 26.10.2026)
 #: XXX Umleitung des Busverkehrs über die Wrangelstr. -> wird es hier eine Einbahnstraßenregelung geben?
-#: last_checked: 2026-08-09
-#: check_frequency: 30d
-#: next_check: 2026-08-20 (Pressemitteilung: Aufbau der Baustelleneinrichtung)
+#: last_checked: 2026-08-17
+#: check_frequency: 8d
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2026-08-20 (Pressemitteilung: Aufbau der Baustelleneinrichtung)
 # REMOVED --- #: next_check: 2026-12-31 (infravelo)
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
 # 
@@ -2463,7 +2465,7 @@ Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein
 #: by: https://www.bbr.bund.de/BBR/DE/Wettbewerbe/Planungswettbewerbe/berlin/luisenblock-ost/verfahren.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_08_0469_0520_online.pdf (Einziehung von öffentlichem Straßenland (alter Straßenabschnitt))
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_16_0917_0996_online.pdf (Einziehung von öffentlichem Straßenland - Vollzug)
-#: last_checked: 2026-07-31
+#: last_checked: 2026-08-15 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 180d
 #: next_check: 2026-12-31
@@ -4387,6 +4389,7 @@ Grellstr.: 120m Hochbordradweg vor der Prenzlauer Allee geplant	?::projected; 12
 #: by: https://www.tagesspiegel.de/berlin/trotz-protesten-von-anwohnern-und-wirtschaft-umbau-der-torstrasse-soll-bald-beginnen--und-langer-dauern-15750064.html (Baubeginn 4. Quartal 2026)
 #: by: https://www.entwicklungsstadt.de/torstrasse-in-mitte-umbau-fuer-mehr-autoverkehr-soll-starten/
 #: by: https://www.entwicklungsstadt.de/torstrasse-umbau-senat-haelt-an-planung-und-32-baumfaellungen-fest/
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1703875.php (Dialogveranstaltung)
 #: last_checked: 2026-08-13
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2026-10-15 (Tsp: Baubeginn)
@@ -4931,7 +4934,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 #: by: https://www.luisenstadt-mitte.de/projekte/ohmstrasse-0 (Baubeginn 2023, verkehrsberuhigte Mischverkehrsfläche)
 #: by: https://www.luisenstadt-mitte.de/drupal/web/projekte/ohmstrasse-0 (alternative URL)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/neugestaltung-der-ohmstrasse-876903.php (Neugestaltung bis 2023)
-#: last_checked: 2026-08-11
+#: last_checked: 2026-08-17
 #: check_frequency: 90d
 # REMOVED --- #: check_frequency: 360d
 # REMOVED --- #: next_check: 2023-01-01
@@ -4944,7 +4947,7 @@ Ohmstr.: verkehrsberuhigter Bereich geplant	?::projected 11380,11863 11324,11689
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1076_ds_1443_vi_verkehrskonzept_adalbertstrasse.pdf
 #: by: https://mittemachen-berlin.de/die-vorhabenliste-des-bezirksamtes-mitte-von-berlin/ (Erwähnung: Projektzeitraum 2024-2028)
 #: XXX verschwindet dabei auch das Kopfsteinpflaster?
-#: last_checked: 2026-07-31
+#: last_checked: 2026-08-17
 #: check_frequency: 270d
 #: next_check: 2028-12-31 (BA, Ende Projektzeitraum)
 Adalbertstr.: Umbau geplant (verkehrsberuhigter Bereich)	?::projected 11656,11106 11726,11265 11808,11482
@@ -7243,7 +7246,7 @@ Mühlenstr.: Radstreifen geplant	?::projected 10228,18196 10347,17959 10448,17751
 #: source_id: LMS-BR:418137/72 viz2021:13.37418,52.58681,03.08.2026,07:00 (Tiefbauarbeiten bis 28.08.2026)
 #: osm_watch: way id="175631760" version="21"
 #: osm_watch: way id="1432534379" version="4"
-#: last_checked: 2026-08-12
+#: last_checked: 2026-08-15 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-02-28
 Schönholzer Weg: wird hier eine Radverkehrsanlage erstellt?	?::projected; 8196,20096 8224,19977 8234,19936
@@ -7838,7 +7841,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-08-16
+#: last_checked: 2026-08-17
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8390,7 +8393,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-08-13
+#: last_checked: 2026-08-17
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8645,13 +8648,15 @@ Bhf. Zossen: neue Bahnunterführung	?::inwork 13391,-20703 13391,-20703 13460,-20
 #: by: https://www.maz-online.de/lokales/teltow-flaeming/ludwigsfelde/zossen-landesstrasse-und-bahnuebergang-thomas-muentzer-strasse-vorerst-nicht-gesperrt-GY5TKYDJSNDS7CY6DZHJIDL2D4.html
 #: by: https://www.gemeinde-am-mellensee.de/news/1/1055328/nachrichten/neue-informationen-zum-umbau-des-bahnhofs-zossen-und-zu-den-arbeiten-an-der-thomas-m%C3%BCntzer-stra%C3%9Fe.html (vom 11.04.2025: Beginn der Bauarbeiten voraussichtlich 2029)
 #: by: https://www.eba.bund.de/SharedDocs/Downloads/DE/PF/Beschluesse/Berlin/2026/0227_PG_ABS_Berlin_Dresden_PA_2_Bf_Zossen_Strecke_6135.pdf?__blob=publicationFile&amp;v=2
+#: by: https://www.berlin-dresden.de/bautagebuch.html?date=20260817
 #: osm_watch: way id="26142828" version="25" brb
 #: osm_watch: way id="800533068" version="6" brb
 #: XXX Falls hier während der Bauarbeiten komplett gesperrt wird, könnte man eine mögliche Umleitungsstrecke via Nottekanal Südufer - Johneweg eintragen
 #: XXX Früher war eine Eisenbahnüberführung geplant, nun wird nur der Bahnübergang neu gebaut, ggfs. mit Geh+Radwegen
 #: last_checked: 2026-03-03 (Planfeststellungsbeschluss)
 # REMOVED --- #: check_frequency: 240d
-#: next_check: 2029-01-01 (Gemeinde Mellensee)
+# REMOVED --- #: next_check: 2029-01-01 (Gemeinde Mellensee)
+#: next_check: 2030-12-31 (DB-Bautagebuch: Überführung in den frühen 30er Jahren)
 Klausdorf - Zossen (Thomas-Müntzer-Straße): Neubau des Bahnübergangs	?::projected 13014,-22300 13528,-21855 13960,-21244
 # 
 #: by: https://www.zossen.de/buerger/meldungen/info-abend-der-deutschen-bahn/ (2027-2028)
@@ -9259,7 +9264,8 @@ Kluckstr.: Fahrradstraße geplant	?::projected 7579,11032 7534,10850
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13795 (Antrag)
 #: osm_watch: way id="754567008" version="12"
 #: last_checked: 2026-07-19
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 40d
 # REMOVED --- #: next_check: 2026-05-23 (Amtsblatt, aber siehe Widerspruch)
 Kluckstr.: Umbenennung in Anita-Augspurg-Str. geplant	? 7579,11032 7534,10850 7517,10775 7487,10643 7478,10612
 # 
@@ -10060,7 +10066,7 @@ Straße 42: verkehrsberuhigter Bereich soll entstehen	? 15271,22527 15377,22452 1
 #: by: https://www.entwicklungsstadt.de/gartenstrassen-am-rudolfplatz-so-geht-es-mit-der-danneckerstrasse-weiter/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1702726.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/service-und-organisationseinheiten/klima-und-internationales/planungsstand-gartenstr-rudolfplatz-august-2026.pdf
-#: last_checked: 2026-08-14
+#: last_checked: 2026-08-17
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (BA-Seite)
 Rudolfstr.: beabsichtigte Teileinziehung	?::projected 13886,10939 14026,10869
@@ -10180,7 +10186,9 @@ Unter den Eichen: die Radspur soll zurückgebaut werden	?; 4347,5103 4181,5000 41
 # 
 #: source_id: planb2026:13.32269309,52.47258663,17.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.09.2026)
 #: also_indoor: traffic (none)
-#: next_check: 2026-08-17 (planb)
+#: last_checked: 2026-08-17 (traffic)
+#: check_frequency: 3d (traffic)
+# REMOVED --- #: next_check: 2026-08-17 (planb)
 Wilhelmshöher Weg: geplante Bauarbeiten mit Sperrung	? 4874,7326 5058,7327
 # 
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-der-fahrrat-stitzung-vom-17072025.pdf
@@ -12232,6 +12240,7 @@ Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grü
 #: by: https://www.entwicklungsstadt.de/kabelwerk-koepenick-coepius/
 #: by: https://www.entwicklungsstadt.de/koepenick-an-der-filmfabrik-entstehen-neue-wohnungen/ (angrenzend: BUWOG-Wohnungen bis 2028)
 #: by: https://www.entwicklungsstadt.de/koepenick-was-neben-der-alten-filmfabrik-jetzt-entsteht/ (angrenzend)
+#: by: https://www.entwicklungsstadt.de/koepenicker-bau-turbo-wohnungen-an-der-filmfabrik-wachsen-rasant/
 #: osm_watch: way id="37588146" version="17"
 #: XXX auch interessant: möglicher Uferweg unter der Salvador-Allende-Brücke bis zum Katzengrabensteg
 #: last_checked: 2026-07-27 (daf)
@@ -12593,6 +12602,8 @@ Köpenicker Allee 146-162: Wohngebiet geplant, Wege werden entstehen	?::projected
 #: by: https://www.entwicklungsstadt.de/gemeinwohl-statt-randbebauung-neue-debatte-um-die-trabrennbahn-karlshorst/
 #: by: https://www.entwicklungsstadt.de/zukunft-der-trabrennbahn-karlshorst-streit-um-bebauung/
 #: by: https://www.entwicklungsstadt.de/trabrennbahn-karlshorst-bezirk-rechnet-bereits-mit-490-wohnungen/
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1703864.php (Beteiligung der Öffentlichkeit)
+#: by: https://www.entwicklungsstadt.de/trabrennbahn-karlshorst-bebauungsplan-geht-in-die-oeffentlichkeitsbeteiligung/
 #: last_checked: 2026-08-09
 #: check_frequency: 1000d
 Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entstehen?	?::projected 18598,7984 18460,7777 18892,7197 19013,7427 18598,7984
@@ -13791,7 +13802,7 @@ Elisabethstr. (Strausberg) etc.: Genaue Wegführung? Tatsächlich Hauptstraße?	? 4
 # REMOVED (-> qualitaet_l-orig) --- Altlandsberg - Wegendorf: wahrscheinlich schlechte Strecke	? 32483,18870 32561,19092 32859,19606 32934,19984 33051,20649 33625,21374 33710,21746 33833,22055 33954,22102 34127,22147 34163,22156
 Garzin - Hasenholz: Qualität (auf Garziner Seite nur Waldweg)?	? 49700,16565 50013,16912 50124,17200 51475,17887 51867,18284 52288,18180 53427,17985
 # REMOVED (-> qualitaet_l-orig) --- Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29522,21866 29614,21888 29712,21916 29835,21917 30185,21993 30444,22044 31272,22232
-Hegemühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42866,17621 42823,17481 42155,17158 41913,16722 41724,16078 41693,16075
+Hegermühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42866,17621 42823,17481 42155,17158 41913,16722 41724,16078 41693,16075
 Straße der Freiheit (Lebus): Qualität? Radweg?	? 87940,3516 87722,3688 87539,3653 87443,3671 87344,3693
 #: XXX laut Aktiv Regional zwischen Schönfließ und Boosen mäßig starker Verkehr
 Lebus - Boosen: Qualität (wahrscheinlich asphaltiert)?	? 87151,3688 86366,3391 85940,3299 84607,3437 84089,3284 83773,3285 83289,3308 83153,3202 83024,3058 83457,2462 83335,1616 83476,155 83137,-401 83022,-798 83038,-965 83319,-1506 83327,-1933 83175,-2268 83182,-2420
