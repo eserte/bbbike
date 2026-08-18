@@ -1,0 +1,21 @@
+#!/usr/bin/perl -w
+# -*- cperl -*-
+
+use strict;
+use FindBin;
+use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
+use BBBikeTest qw(check_gui_testing);
+check_gui_testing;
+use Time::HiRes ();
+
+$ENV{BBBIKE_GUI_TEST_MODULE} = 'BBBikeChooseOrtWidgetTest';
+chdir "$FindBin::RealBin/.." or die $!;
+if ($^O eq 'MSWin32') {
+    $ENV{LC_MESSAGES} = $ENV{LC_ALL} = 'German_Germany.1252';
+} else {
+    $ENV{LC_ALL} = $ENV{LANG} = 'de_DE.UTF-8';
+}
+$ENV{BBBIKE_TEST_STARTTIME} = Time::HiRes::time();
+exec $^X, '-It', 'bbbike', '-public';
+
+__END__
