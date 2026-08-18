@@ -5547,7 +5547,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: source_id: planb2026:13.45012105,52.47955018,09.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.08.2026)
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026; mittlerweile (Sommer 2026) ist eine Durchfahrt wieder möglich, zumindest inoffiziell
 #: osm_watch: note 4794007 2
-#: last_checked: 2026-08-08 vvv
+#: last_checked: 2026-08-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung, planb) vvv
 # REMOVED --- #: next_check: 2027-09-30 (infravelo) vvv
@@ -5985,7 +5985,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2924,15914 2892,15983 2809,16143
 #: also_indoor: traffic (ex-T,G,ex-H[ganz kurz],ex-W)
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2026-08-16 (traffic)
+#: last_checked: 2026-08-18 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-07-31 (planb)
@@ -6419,7 +6419,7 @@ Mommsenstr., östlicher Abschnitt	q3::inwork 4267,10724 4393,10712
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder, planb, VIZ-Verkehrsmeldung) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
-#: osm_watch: way id="4615467" version="39"
+#: osm_watch: way id="4615467" version="40"
 Margarete-Sommer-Str.	2::inwork 12874,13893 12802,13813 12707,13706
 #: note: bis zur Kniprodestr. gesperrt, allerdings könnte die Benutzung des Hochbords geduldet sein
 #: osm_watch: way id="175916784" version="22"
@@ -7807,20 +7807,22 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        {
          'data' => '#: also_indoor: traffic (re-G[nur noch ein Stummel],ex-W,ex-T,ex-A)
-#: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt
-#: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026?
+#: note: mittlerweile (Ende Nov. 2025) nur noch hinter dem Bayernring gesperrt; mittlerweile (Aug 2028) ist die Fahrbahnanbindung General-Pape-Str. gesperrt, enger Bürgersteig, westliche Fahrbahn im Gegenverkehr mit Sackgasse, östliche Fahrbahn komplett gesperrt
+#: note: laut Baustellenschild der Wasserbetriebe am nördlichen Ende bis Juni 2026? Mittlerweile Verlängert bis September 2026.
 #: source_id: planb2026:13.37232419,52.48441245,16.12.2024,06:00 ("Sperrung einer Fahrtrichtung" (allerdings zu lang), bis 21.08.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.37254838,52.48475345,16.12.2024,06:00 ("Sperrung einer Fahrtrichtung", bis 21.08.2026)
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
-#: last_checked: 2026-08-02
+#: last_checked: 2026-08-18
 #: check_frequency: 30d
-#: next_check: 2026-08-21 (planb)
+# REMOVED --- #: next_check: 2026-08-21 (planb)
+#: next_check: 2026-09-30 (Baustellenschild der Wasserbetriebe)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8482,8364 8380,8545
-	q4::inwork; 8380,8545 8334,8655 8306,8722
+# REMOVED ---		q4::inwork; 8380,8545 8334,8655 8306,8722
+	q4::inwork 8334,8655 8306,8722
 ',
          'from' => 1736343075,
          'id' => 4237,
-         'text' => 'Loewenhardtdamm: Bauarbeiten ab Bayernring mit Sperrung, geplant bis August 2026',
+         'text' => 'Loewenhardtdamm: Anbindung südlich der General-Pape-Str. gesperrt, geplant bis September 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8853,7 +8855,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: source_id: planb2026:13.4564232,52.50244969,01.06.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-08-17 vvv
+#: last_checked: 2026-08-18 vvv
 #: check_frequency: 8d vvv
 #: next_check: 2026-08-31 (planb) vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
@@ -8932,7 +8934,7 @@ Goethestr.	q3::inwork 4620,2155 4568,2424 4526,2648
 #: source_id: LMS-BR:415346/72 viz2021:13.38557,52.47199, (zwischen Te-Damm und Schulenburgring (tatsächlich?), bis 08.05.2027)
 #: source_id: planb2026:13.37904221,52.47572048,26.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 01.09.2026)
 #: add_fragezeichen: Sind die Straßen weiterhin gesperrt? vvv
-#: last_checked: 2026-08-02 vvv
+#: last_checked: 2026-08-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-09-01 (VIZ-Verkehrsmeldung, planb) vvv
 Manfred-von-Richthofen-Str.: Fahrbahn Richtung Süden gesperrt	q4::inwork; 8731,7956 8757,7841 8796,7751
@@ -8958,7 +8960,7 @@ Rumeyplan: südliche Fahrbahn gesperrt	q4::inwork 8812,7730 8907,7773 8895,7797
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
 #: add_fragezeichen: Ist der Schreiberring weiterhin gesperrt?
 #: source_id: planb2026:13.37724442,52.48018571,15.06.2026,06:00 ("Fahrstreifen-Reduzierung", bis 13.08.2026) (bis 31.08.2026)
-#: last_checked: 2026-07-24 (mapillary)
+#: last_checked: 2026-08-18
 #: next_check: 2026-08-31 (planb)
 Schreiberring	q4::inwork 8561,8252 8666,8305
 # REMOVED --- #: also_indoor: traffic (ex-T,G)
@@ -9070,7 +9072,24 @@ Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: by: https://www.morgenpost.de/berlin/article410184104/dreieck-funkturm-grosse-sperrungen-fuer-ende-oktober-angekuendigt.html
+#: by: https://www.tagesspiegel.de/berlin/autobahnbrucke-in-berlin-wird-abgerissen-grosssperrung-und-massive-verkehrseinschrankungen-am-dreieck-funkturm-ab-ende-oktober-14511032.html
+#: by: https://entwicklungsstadt.de/ringbahnbruecke-sperrungen-rund-um-die-a100-und-a115-angekuendigt/
+#: by: https://viz.berlin.de/aktuelle-meldungen/umfangreiche-sperrungen-am-autobahndreieck-funkturm/
+#: by: https://www.tagesspiegel.de/berlin/79-stunden-sperrungen-umleitungen-am-dreieck-funkturm-wegen-bruckenarbeiten-14690588.html
+#: by: https://www.tagesspiegel.de/berlin/abrissarbeiten-an-autobahnbrucke-beendet-79-stunden-sperrung-am-dreieck-funkturm-ist-aufgehoben-14727629.html
+#: by: https://www.morgenpost.de/berlin/article412855189/berlin-dreieck-funkturm-teilweise-gesperrt-einschraenkungen-umleitungen.html (neue Sperrung: 22.08. und 23.08.2026)
+	2::inwork 2104,10494 2086,10552 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
+	2::inwork 2033,10613 2090,10576 2117,10495
+',
+         'from' => 1787263200,
+         'id' => 4463,
+         'text' => 'Halenseestr.: Arbeiten an der Brücke Halenseestr. Ost, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 22.08.2026 20:00 bis 23.08.2026 22:00',
+         'type' => 'gesperrt',
+         'until' => 1787515200
+       },
        undef,
        {
          'data' => '#: next_check_id: HUFELAND-2025
@@ -9867,22 +9886,7 @@ Käthestr.: Abschnitt der Straße gesperrt	q4::inwork 16369,16003 16349,15935 1635
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: BER-2026
-# REMOVED --- #: by: https://gemeinde-schoenefeld.de/baustelle/?date=20260407 --- #: XXX haben die Bauarbeiten was mit dem Ausbau des Weges entlang des Flughafens zu tun? --- #: next_check: 2026-05-01 ---	2::inwork 13731,-6494 13735,-6535 14228,-6887 14289,-7003 14644,-7186 16251,-6520
-#: add_fragezeichen: Ist der Weg entlang des BER weiterhin gesperrt?
-#: osm_watch: way id="27043028" version="18"
-#: osm_watch: way id="158214949" version="20"
-#: last_checked: 2026-07-11
-#: check_frequency: 14d
-	2::inwork 19656,-4037 19664,-4063 19633,-4099 19591,-4242 19570,-4313 19529,-4494 19582,-4503 19813,-5070 19814,-5106 19675,-5161 19555,-5166 18693,-5516 18365,-5657 16859,-6263 16251,-6520
-',
-         'from' => undef,
-         'id' => 4578,
-         'text' => 'entlang des BER: Straßenbau, Weg offiziell gesperrt, Ende der Sperrung unbekannt (Stand 11. Juli 2026: offiziell gesperrt, Durchfahrt aber möglich)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: LMS-BR:404324/72 viz2021:13.17839,52.54934,-1 (hier bis Pionierstr., was vermutlich zu weit ist, bis 05.08.2026) (inaktiv)
@@ -9928,7 +9932,7 @@ Baustelleneinrichtungsfläche	2::inwork 19045,6959 19080,6986
 #: source_id: planb2026:13.44612533,52.47235569,18.05.2026, (Böhmische Str., "Vollsperrung beider Fahrbahnen", bis 28.08.2026, vor Ort aber ohne Bauarbeiten in den Randbereichen ohne Sperrung) (inaktiv)
 #: source_id: planb2026:13.44582437,52.47232182,18.05.2026, (gleicher Datensatz, veränderte Fläche, "Vollsperrung beider Fahrbahnen", bis 28.08.2026)
 #: source_id: planb2026:13.44938415,52.47396792,01.08.2026, ("Vollsperrung beider Fahrbahnen", bis 30.08.2026) (vorfristig inaktiv) (bis 30.09.2026)
-#: last_checked: 2026-08-07 vvv
+#: last_checked: 2026-08-18 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-08-28 (planb) vvv
 # REMOVED --- #: next_check: 2027-05-31 (Baustellenschild der Wasserbetriebe) vvv
@@ -10097,15 +10101,15 @@ Auguste-Viktoria-Allee: mögliche Sperrung der Fahrbahn, Radweg existiert, aber v
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%20241%20Stegelitz%20-%20Knotenpunkt%20L%20242%20Deckensanierung%20Karte%2018-05-26.pdf
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-05-2026-l241-bei-stegelitz-sanierung-in-drei-bauabschnitten (weiterhin bis voraussichtlich Ende Juni 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~07-08-2026-erneuerung-der-l241-stegelitz-bauzeit-verlaengert-bis-ende-august
-#: source_id: LS/221-E/26/043 (bis 21.08.2026)
-#: next_check: 2026-08-21 (Verkehrsmeldung, ls.brandenburg)
+#: source_id: LS/221-E/26/043 (bis 21.08.2026) (bis 28.08.2026)
+#: next_check: 2026-08-28 (Verkehrsmeldung, ls.brandenburg)
 	2::inwork 38872,80620 38542,80087 37967,79628 37683,79423 37564,79307 37430,79187 37199,79068 37009,78946 36411,78795 36141,78665 35571,78339 35068,78169 34637,77900
 ',
          'from' => 1780178400,
          'id' => 4609,
          'text' => 'Stegelitz - Temmen: Deckensanierung, Sperrung, 1. Juni 2026 bis voraussichtlich Ende August 2026',
          'type' => 'gesperrt',
-         'until' => 1787335200
+         'until' => 1787940000
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-05-2026-l36-zw-steinhoefel-und-heinersdorf
@@ -10228,9 +10232,10 @@ Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660
        {
          'data' => '#: also_indoor: traffic (T,G,W)
 #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
+#: note: am 2026-08-18 sah es relativ fertig aus, Fahrbahn war frisch asphaltiert, nur die Absperrungen standen noch
 #: osm_watch: note 5292595 4
 #: source_id: planb2026:13.37453115,52.47872517,23.02.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
-#: last_checked: 2026-08-02
+#: last_checked: 2026-08-18
 #: check_frequency: 21d (traffic)
 #: next_check: 2026-08-31 (planb)
 Wünsthoffstr.: Sperrung der Fahrbahn	q4::inwork 8461,8084 8519,8088 8620,8095
@@ -10246,7 +10251,7 @@ Wünsthoffstr.: Sperrung der Fahrbahn	q4::inwork 8461,8084 8519,8088 8620,8095
 #: add_fragezeichen: Ist der Bäumerplan im Bereich Loewenhardtdamm noch immer gesperrt?
 #: note: Halteverbotsschilder bis 31.01.2027
 #: note: außerdem ist die westliche Fahrbahn des Loewenhardtdamms zwischen den beiden Strängen des Bäumerplans gesperrt, Verkehr wird über die Gegenfahrbahn geführt
-#: last_checked: 2026-08-02
+#: last_checked: 2026-08-18
 #: next_check: 2027-01-31 (planb, Halteverbotsschilder)
 # REMOVED --- #: next_check: 2027-01-30 (planb)
 Bäumerplan: Sperrung der Fahrbahn	q4::inwork 8527,8293 8482,8227
@@ -10542,18 +10547,7 @@ Rückertstr.	q4::inwork 3569,11473 3571,11451
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: LMS-BR:414040/72 viz2021:13.4861,52.4369,29.06.2026,00:00 (bis 31.07.2026) (inaktiv)
-#: source_id: LMS-BR:414171/72 viz2021:13.4861,52.4369, (bis 17.08.2026)
-#: source_id: planb2026:13.48738233,52.43633797,26.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 17.08.2026)
-	q4::inwork 16152,3562 16208,3527 16254,3489
-',
-         'from' => 1782597600,
-         'id' => 4656,
-         'text' => 'Minzeweg: Bauarbeiten zwischen Sternliebweg und Zwergasternweg, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 29.06.2026 bis 17.08.2026',
-         'type' => 'handicap',
-         'until' => 1787003999
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:414022/72 viz2021:13.31644,52.51084,29.06.2026,07:00 (bis 31.12.2026)
 #: source_id: planb2026:13.31472699,52.51071172,17.08.2026,07:00 ("Sperrung einer Fahrtrichtung", 17.08.2026 bis 31.01.2027)
@@ -10743,17 +10737,7 @@ Zerndorfer Weg/Zeltinger Str.	q3::inwork 2989,25784 2933,25830 2840,25899
          'type' => 'handicap',
          'until' => 1787695199
        },
-       {
-         'data' => '#: source_id: LMS-BR:415638/72 viz2021:13.28551,52.57471,13.07.2026,06:00 (bis 17.08.2026)
-#: source_id: planb2026:13.28534811,52.57493461,13.07.2026,06:00 (hier: "Sperrung einer Fahrtrichtung", bis 17.08.2026)
-	q4::inwork 2175,18740 2196,18642
-',
-         'from' => 1783828800,
-         'id' => 4672,
-         'text' => 'Sterkrader Str.: Bauarbeiten zwischen Billerbecker Weg und Bernauer Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 13.07.2026 06:00 bis 17.08.2026',
-         'type' => 'handicap',
-         'until' => 1787003940
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: MARWITZ-2026
@@ -10767,14 +10751,14 @@ Zerndorfer Weg/Zeltinger Str.	q3::inwork 2989,25784 2933,25830 2840,25899
          'until' => 1788544800
        },
        {
-         'data' => '#: source_id: LS/223-K/26/114 (bis 21.08.2026)
+         'data' => '#: source_id: LS/223-K/26/114 (bis 21.08.2026) (bis 04.09.2026)
 	q4::inwork 8740,38857 8665,38862 8643,38865 8518,38881 8240,38876 7990,38846 7950,38843 7836,38835 7698,38825 7632,38828 7465,38830
 ',
          'from' => 1784433600,
          'id' => 4675,
-         'text' => 'Wensickendorf: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 20.07.2026 06:00 Uhr bis 21.08.2026 20:00 Uhr',
+         'text' => 'Wensickendorf: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 20.07.2026 06:00 Uhr bis 04.09.2026 20:00 Uhr',
          'type' => 'handicap',
-         'until' => 1787335200
+         'until' => 1788544800
        },
        {
          'data' => '#: source_id: 266320006 (bis 31.10.2026)
@@ -10792,6 +10776,7 @@ Zerndorfer Weg/Zeltinger Str.	q3::inwork 2989,25784 2933,25830 2840,25899
 #: source_id: LMS-BR:415908/72 viz2021:13.33049,52.56254,15.07.2026,07:00 (hier nur bis 19.08.2026, evtl. der 1. BA)
 #: source_id: planb2026:13.32035722,52.56030224,10.06.2026, ("Sicherung gemäß Vz.-plan", bis 27.05.2027)
 #: source_id: bvg2024:125#HIM_FREETEXT_348375
+#: add_fragezeichen: Besteht die Sperrung des Geh- und Radwegs im Kapweg weiterhin?
 # REMOVED --- #: next_check: 2027-07-15 (VIZ (Mitte 2027))
 #: last_checked: 2026-08-12
 #: next_check: 2026-08-19 (VIZ-Verkehrsmeldung)
@@ -10985,23 +10970,7 @@ Uferweg am Britzer Verbindungskanal: Sperrung während der Erneuerung	2::inwork 1
          'until' => 1830293999
        },
        undef,
-       {
-         'data' => '#: next_check_id: FANGSCHLEUSE-2026
-#: source_id: LS/221-F/26/119 (bis 14.08.2026) (inaktiv)
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~17-07-2026-l-23-beseitigung-des-bahnuebergangs-am-bahnhof-fangschleuse
-#: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%2023%20B%C3%9C-Beseitigung%20Fangschleuse%20Vollsperrung%20Karten%20PM%2017-07-26.pdf
-#: XXX Gibt es den Bahnübergang noch? Können Radfahrer hier rüberfahren?
-#: osm_watch: node id="5097767040" version="4"
-#: osm_watch: way id="1006909405" version="12"
-#: next_check: 2026-08-14
-	2::inwork 39259,574 39259,612
-',
-         'from' => 1784833200,
-         'id' => 4690,
-         'text' => 'Bahnübergang Fangschleuse: Sperrung, evtl. ist auch der Radverkehr betroffen',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: planb2026:13.38210622,52.46704655,19.01.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026)
 #: note: hier möglicherweise längerer Abschnitt gesperrt
@@ -11093,7 +11062,8 @@ Manfred-von-Richthofen-Str.	q4::inwork; 9229,8718 9158,8706 9093,8665 9011,8605
 #: also_indoor: traffic (T,G[verspätet])
 #: traffic_note: Verstärkter Ausweichverkehr über Rüdersdorfer Str. - Koppenstr. - Singerstr.; vor der Andreasstraße Stauung möglich
 #: note: Der nach Süden führende Bürgersteig war vor der Havarie explizit für Radfahrer freigegeben, aber das Schild wurde entfernt; Gelbmarkierung ist teilweise noch da; mittlerweile gibt es auch eine Komplettsperrung auf dieser Seite; Richtung Norden existiert auch teilweise noch Gelbmarkierung von einer früheren Radwegführung, keine Einschränkungen
-#: last_checked: 2026-08-06
+#: note: Mittlerweile ist hier eine Sackgasse ausgeschildert, und nur die Fahrbahn und der westliche Bürgersteig hinter dem südlichen Unterführungsende ist abgesperrt.
+#: last_checked: 2026-08-18
 #: check_frequency: 14d
 #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung)
 Straße der Pariser Kommune	q2::inwork 12645,11673 12543,11521
@@ -11297,7 +11267,8 @@ Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-
 #: by: https://viz.berlin.de/aktuelle-meldungen/mehr-verkehrssicherheit-und-larmschutz-fahrbahnsanierung-auf-der-breiten-strasse-pankow/ (bis 11.09.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mtax2qcirc2h
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibdoullemtlc7p5zheczdy24xf67qg632f5b3nls6fpsfclo4sbti
-#: XXX oder man nimmt den direkten Weg und schiebt ggfs.
+#: by: https://www.entwicklungsstadt.de/breite-strasse-in-pankow-neuer-asphalt-soll-verkehrslaerm-deutlich-senken/
+#: note: oder man nimmt den direkten Weg und schiebt gegebenenfalls
 Breite Str.: Fahrbahnarbeiten, offizielle Umleitung für den Radverkehr über Breite Str. - westlich Kirche - Breite Str.	q4::inwork; 10602,18382 10680,18380
 Eintrachtstr.: Anbindung Breite Str. gesperrt	q3::inwork 10650,18544 10710,18393
 ',
@@ -11317,6 +11288,20 @@ Klausdorf - Zossen (Thomas-Müntzer-Straße): Sperrung des Bahnübergangs	2::inwork
          'text' => 'Klausdorf - Zossen (Thomas-Müntzer-Straße): Arbeiten am Bahnübergang, Sperrung, nächster Termin geplant: 19.10.2026 bis 30.10.2026',
          'type' => 'gesperrt',
          'until' => 1793401199
+       },
+       {
+         'data' => '#: source_id: planb2026:13.38566134,52.47188846,12.08.2026,06:00 ("Sperrung einer Fahrtrichtung", vermutlich Sperrung Richtung Nordwesten, bis 11.09.2026)
+#: note: sah am 18.08.2026 relativ fertig aus, möglicherweise wird die geplante planb-Sperrung bis zum 11.09.2026 nicht ausgereizt?
+#: also_indoor: traffic (no-G,T,no-W,no-H)
+#: last_checked: 2026-08-18
+#: next_check: 2026-08-30 (Halteverbotsschilder)
+Manfred-von-Richthofen-Str.: mögliche Einbahnstraßenregelung	q4::inwork; 9242,7325 9097,7469 9070,7493 8956,7598 8900,7643 8864,7676 8812,7730
+',
+         'from' => 1786399200,
+         'id' => 4717,
+         'text' => 'Manfred-von-Richthofen-Str.: Fahrbahnsanierung, Einbahnstraßenregelung, voraussichtlich bis Ende August 2026',
+         'type' => 'handicap',
+         'until' => 1788127199
        }
      
 );

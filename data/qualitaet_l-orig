@@ -7421,13 +7421,8 @@ Jägerbude - Freienbrink: Asphalt	Q0 36296,-1732 36305,-1720 36614,-1840 36704,-1
 Ernst-Thälmann-Str. (Gottesbrück): Asphalt	Q0 37870,1620 37690,1546
 Gottesbrück: Asphalt	Q0 37718,1728 37714,1582 37690,1546
 Gottesbrück: Kopfsteinpflaster	Q2 37690,1546 37623,1484
-#: next_check_id: FANGSCHLEUSE-2026
-#: by: https://www.bahninfo-forum.de/read.php?9,648905,863525#msg-863525
-#: by: https://www.spd-gruenheide.de/neuer-bahnhof-fangschleuse-sperrung-und-erreichbarkeit/
-#: osm_watch: way id="227084333" version="3"
-#: osm_watch: way id="216879406" version="3"
-#: XXX ist hier mittlerweile asphaltiert?
-Gottesbrück - Bhf. Fangschleuse: unbefestigt	Q2 37623,1484 37542,1395
+#: by: mapillary
+Gottesbrück - Bhf. Fangschleuse: Asphalt/Beton	Q0 37623,1484 37542,1395
 Klosterfelde - Kreuzbruch: unbefestigte Straße	Q2 12799,45024 12095,45414 11464,45426 11168,45523 10770,45603 10184,45947 10047,46095
 #: confirmed_by: mapillary
 (Ruppiner Str. - L20): Asphalt	Q0 -10813,19397 -10713,19507 -10619,19565 -10608,19593 -10474,19644
@@ -8559,8 +8554,16 @@ PCK - Heinersdorf: Beton	Q1+ 64653,77310 64611,77283
 #: by: Tina Carl:
 #: confirmed_by: mapillary
 Großer Ring (Schönwalde): Asphalt	Q0 -7831,20753 -7851,20667 -7853,20554 -7769,20448 -7622,20434 -7514,20454 -7412,20502 -7330,20594 -7287,20683 -7323,20774 -7412,20859 -7437,20952
-#: by: youtube:
-Gottesbrück - Bhf. Fangschleuse: Asphalt	Q0 37542,1395 37099,873 37141,732
+#: by: youtube, mapillary:
+Gottesbrück - Bhf. Fangschleuse: Asphalt	Q0 37542,1395 37099,873 37119,806
+#: by: mapillary:
+#: XXX provisorische Wegführung
+#: last_checked: 2026-08-17 (mapillary)
+Gottesbrück - Bhf. Fangschleuse: unbefestigt	Q2 37119,806 37069,765 37141,732
+#: by: mapillary
+Bahnhof Fangschleuse: Betonpflaster	Q0 37202,568 37145,669 37141,732
+#: by: mapillary
+zum Bahnhof Fangschleuse: Asphalt	Q0 39260,176 39192,221 39129,355 39037,476 38918,523 38678,526 38567,542 38509,524 38459,497 38330,495 38237,440 38084,517 37733,532 37601,411 37491,476 37416,477 37414,537 37284,543 37202,568
 ######################################################################
 #: by: Andreas Titz vvv
 #: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

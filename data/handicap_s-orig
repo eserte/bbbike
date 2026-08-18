@@ -36,8 +36,8 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260429 (Umbau der Baustelle am 30.4.2026, danach fällt wohl der einspurige Abschnitt in der Otto-Braun/Greifswalder  weg...)
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
-#: also_indoor: traffic (re-T,ex-G)
-#: last_checked: 2026-08-06 vvv
+#: also_indoor: traffic (re-T,re-G[aber kurz])
+#: last_checked: 2026-08-18 (traffic) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2026-03-13 (mögliche Verkleinerung der Sperrung?) vvv
 #: next_check: 2026-08-21 (VIZ-Verkehrsmeldung) vvv
@@ -224,7 +224,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,1318
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-08-06 vvv
+#: last_checked: 2026-08-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (Tsp, planb) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -367,7 +367,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 # 
 #: source_id: planb2026:13.45361302,52.4854625,06.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.06.2028)
 #: note: Länge der Einbahnstraßenregelung etwa 150m
-#: last_checked: 2026-08-07
+#: last_checked: 2026-08-18
 #: check_frequency: 90d
 #: next_check: 2028-06-30 (planb, Halteverbotsschilder)
 Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 13664,9073
@@ -5786,12 +5786,15 @@ Rummelsburger Seeblick: Fußgänger	q3 14927,10807 14918,10769 14909,10732
 Suttnerstr.: einige Fußgänger	q2+ 7728,5866 7733,5893 7735,5960
 # 
 #: next_check_id: HINDENBURGDAMM-2022
-#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, (bis 27.02.2026) (bis 29.05.2026) (bis 30.06.2026) (bis 17.08.2026)
-#: XXX nach den Bauarbeiten prüfen und wiederherstellen: (Wolfensteindamm - Händelplatz): Gehweg, einige Fußgänger, q2	q3 4543,4820 4517,4853
+#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, (bis 27.02.2026) (bis 29.05.2026) (bis 30.06.2026) (bis 17.08.2026) (inaktiv)
+#: XXX sind die Bauarbeiten Bauarbeiten vorbei?
 #: last_checked: 2025-12-06 (mapillary)
 #: next_check: 2026-08-17 (VIZ-Verkehrsmeldung)
-#: note: zwischenzeitlich (ab ca. 2022): 
+#: note: zwischenzeitlich (ab ca. 2022):
+#: valid: -20260817
 (Wolfensteindamm - Händelplatz): Baustelleneinrichtung, Ausweichen auf Gehweg	q3 4543,4820 4517,4853
+#: valid: !-20260817
+(Wolfensteindamm - Händelplatz): Gehweg, einige Fußgänger, q2	q3 4543,4820 4517,4853
 # 
 Annastr.: einige Fußgänger	q3 5920,2693 5930,2671
 # 

@@ -4125,6 +4125,11 @@ Drängelgitter	BNP:3::trailer=10 5829,7827
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: FANGSCHLEUSE-2026
+#: last_checked: 2026-08-17 (mapillary)
+#: check_frequency: 90d
+ehem. Bahnübergang Fangschleuse	2::inwork 39260,176 39259,574 39259,612
+# 
 #: next_check_id: RITAMAIBURG-2026
 #: last_checked: 2026-08-15 vvv
 #: check_frequency: 180d vvv
@@ -4198,7 +4203,7 @@ Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbaua
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
-#: last_checked: 2026-08-08
+#: last_checked: 2026-08-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-07-01
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
@@ -4567,8 +4572,6 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12727,1074 12772,1019
 # REMOVED (fertig) --- Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12772,1019 12808,968
 # REMOVED (fertig) --- #: XXX außerdem Anbindung zum Mauerweg geplant --- #: osm_watch: way id="946008579" version="8" --- # REMOVED (laut osm hier offen) --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12861,1102 12868,1085 --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12868,1085 12860,1057 12882,999
-#: osm_watch: way id="1482608309" version="3"
-An den Weiden: Hochbauarbeiten, gesperrt	2::inwork 12882,999 12946,1027
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4787,7 +4790,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-08-08 vvv
+#: last_checked: 2026-08-18 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
@@ -5156,7 +5159,7 @@ Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: source_id: planb2026:13.43551948,52.50901002,01.04.2026, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
-#: last_checked: 2026-08-06
+#: last_checked: 2026-08-18
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (Tsp, planb)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5239,7 +5242,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-08-14 vvv
+#: last_checked: 2026-08-18 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # REMOVED (Treppe ist frei, und dann noch 35m Uferweg) --- Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5369,6 +5372,8 @@ George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgerste
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_09_0521_0564_online.pdf (Bekanntmachung zum Planfeststellungsverfahren ... Bauwerk XII)
 #: by: https://www.entwicklungsstadt.de/gleisdreieck-wird-grossbaustelle-hochhaeuser-und-neue-u-bahn-bruecken-geplant/
 #: by: https://www.entwicklungsstadt.de/streitpunkt-denkmalschutz-bvg-favorisiert-modernen-brueckenneubau-im-gleisdreieck/ (Brückenneubau ab Herbst 2028)
+#: by: https://www.tagesspiegel.de/berlin/wegen-zwei-baumen-am-berliner-gleisdreieck-marode-u-bahn-brucke-bvg-verliert-weitere-zehn-monate-15949348.html
+#: by: https://www.entwicklungsstadt.de/gleisdreieck-neubau-der-maroden-u-bahn-bruecke-kommt-nicht-voran/
 #: XXX während der richtigen Bauarbeiten wird es weitere Einschränkungen geben (laut 08-02_Go_Kus_GP1058_Wege .. 08-04_Go_Kus_GP1060_Wege und Maßnahmenkarte):
 #: XXX - Parkzugang Kurfürstenstraße: Sperrung des Weges anscheinend bis zum östlichen Weg; am Eingang temporäre Treppe & temporärer Weg bis Höhe westlicher Weg
 #: XXX - westlicher Weg zwischen Höhe Kurfürstenstraße und Pohlstraße liegt in der Baustelleneinrichtungsfläche
