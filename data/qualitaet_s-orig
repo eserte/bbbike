@@ -224,7 +224,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2026-07-16
+#: last_checked: 2026-08-19
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -236,7 +236,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2026-07-19 vvv
+#: last_checked: 2026-08-19 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -527,7 +527,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-08-08
+#: last_checked: 2026-08-19
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -833,7 +833,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="28"
-#: last_checked: 2026-03-05 (orthofotos)
+#: last_checked: 2026-08-19
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-12-31
 Windscheidstr.: Kopfsteinpflaster, OK	Q1- 3283,11097 3340,10888
@@ -854,7 +854,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: osm_watch: way id="1101189359" version="7"
 #: osm_watch: way id="1101189360" version="7"
 #: osm_watch[closed]: note 4529248 5
-#: last_checked: 2026-04-12
+#: last_checked: 2026-08-19
 # REMOVED --- #: check_frequency: 60d
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2025-12-31 (ex-infravelo)
@@ -1128,14 +1128,11 @@ Görlitzer Park: Kopfsteinpflaster	Q2 12757,10197 12763,10207 12767,10216
 Görlitzer Park: Asphalt	Q0 13141,9911 13132,9916 13107,9930 12983,10000 12866,10064 12802,10097
 Görlitzer Park: Asphalt	Q0 12670,10160 12543,10223
 Görlitzer Park: Asphalt	Q0 12543,10223 12502,10244
+#: historical_note: im Juli 2026 neu gemacht, davor wellig, Q1-
+Görlitzer Park: wassergebundene Decke	Q1 12415,10335 12384,10368
+Görlitzer Park: wassergebundene Decke, wellig	Q1- 12415,10335 12457,10309
 #: historical_note: früher (bis Juni 2026) Q1-, nach Bauarbeiten wohl besser
-Görlitzer Park: wassergebundene Decke	Q1 12502,10244 12457,10309
-#: next_check_id: PAMUKKALE-2026
-# XXX ursprünglich: Görlitzer Park: wassergebundene Decke, wellig	Q1- 12457,10309 12384,10368
-#: last_checked: 2026-08-10
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2026-07-31 (BA: "im Juli")
-Görlitzer Park: wassergebundene Decke, wellig, teils Kopfsteinpflaster	Q2 12457,10309 12384,10368
+Görlitzer Park: wassergebundene Decke	Q1 12457,10309 12502,10244
 Görlitzer Park: teils Gehwegplatten, teils Kopfsteinpflaster	Q1- 12384,10368 12331,10409 12328,10442
 Görlitzer Park: Asphalt	Q0 12814,9966 12833,9998 12866,10064
 Görlitzer Park: Gehwegplatten	Q0- 12866,10064 12901,10134 12905,10143
@@ -12522,7 +12519,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-08-16
+#: last_checked: 2026-08-19
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -13992,11 +13989,8 @@ Klaus-Selmke-Str.: Asphalt	Q0 21133,11387 21275,11547
 Kurfürstendamm: Asphaltschäden	Q0-; 5475,10808 5656,10876
 Bruno-Bauer-Str.: Gehwegplatten	Q0- 12893,6527 12904,6488 12921,6424
 Priesterweg: Asphalt mit einigen Schäden, Gehwegplatten	Q1 7224,7553 7220,7445 7227,7352
-#: next_check_id: CRAILSHEIMER-2026
-#: add_fragezeichen: Ist die Fahrbahnqualität nach den Bauarbeiten besser geworden?
-#: last_checked: 2026-08-08
-#: next_check: 2026-08-20
-Crailsheimer Str.: Asphalt mit einigen Schäden	Q1+; 7171,4200 7143,4350 7138,4379
+#: historical_note: früher (bis August 2028): Asphalt mit einigen Schäden, Q1+; (Richtung Norden)
+Crailsheimer Str.: Asphalt	Q0 7171,4200 7143,4350 7138,4379
 (Schlesischer Busch - Bouchéstr.): Parkweg	Q1- 13418,9944 13513,9871
 (Schlesischer Busch - Bouchéstr.): Kleinsteinpflaster/Mosaikpflaster	Q1- 13513,9871 13704,9691
 (Bocksfeldstr. - Uferweg an der Scharfen Lanke): Verbundsteinpflaster	Q1 -3658,11534 -3727,11421 -3742,11409

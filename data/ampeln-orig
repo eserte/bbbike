@@ -6,6 +6,10 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: last_checked: 2026-08-19
+#: check_frequency: 60d
+Scheidemannstr./Reichstag	F::inwork 8373,12416
+# 
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-08-16
 #: check_frequency: 30d
@@ -22,7 +26,7 @@ Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 (bis 15.10.2026)
-#: last_checked: 2026-08-16
+#: last_checked: 2026-08-19
 #: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261015
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
@@ -128,15 +132,15 @@ Gneisenaustr./Schleiermacherstr.: provisorische Fußgängerampel	F::inwork 10032,9
 #: next_check: 2028-03-03
 Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 # 
-#: next_check_id: CHARLOTTENBURGERUFER-2024
-#: osm_watch: note 5200746 2
-#: note: Anforderungsampel
-#: source_id: planb2026:13.29973905,52.52120309,02.01.2026, ("Sicherung gemäß Vz.-plan", bis 20.08.2026)
-#: last_checked: 2026-07-21 (mapillary)
-#: check_frequency: 60d
-#: next_check: 2026-08-20 (planb)
-# REMOVED --- #: next_check: 2026-10-09 (VIZ-Verkehrsmeldung)
-Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
+# REMOVED (abgebaut) --- #: next_check_id: CHARLOTTENBURGERUFER-2024
+# REMOVED --- #: osm_watch: note 5200746 2
+# REMOVED --- #: note: Anforderungsampel
+# REMOVED --- #: source_id: planb2026:13.29973905,52.52120309,02.01.2026, ("Sicherung gemäß Vz.-plan", bis 20.08.2026)
+# REMOVED --- #: last_checked: 2026-08-19
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- #: next_check: 2026-08-20 (planb)
+# REMOVED --- # REMOVED --- #: next_check: 2026-10-09 (VIZ-Verkehrsmeldung)
+# REMOVED --- Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
 #: last_checked: 2026-08-03
@@ -4187,7 +4191,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-08-03 vvv
+#: last_checked: 2026-08-19 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 4
