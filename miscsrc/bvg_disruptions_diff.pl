@@ -289,6 +289,11 @@ sub filter_and_split_json {
 		    $element->{$key} = $element->{$key}->{displayName};
 		}
 	    }
+	    if ($element->{disruptionTypes} && ref $element->{disruptionTypes} eq 'ARRAY') {
+		for (@{ $element->{disruptionTypes} }) {
+		    delete $_->{color};
+		}
+	    }
 	}
 
 	$records{$element->{id}} = $element;
