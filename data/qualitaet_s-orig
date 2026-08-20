@@ -3553,6 +3553,10 @@ Köbisstr.: Kleinsteinpflaster	Q1- 7160,11225 7103,11247
 Köbisstr.: Gehwegplatten, einige Schäden	Q1+ 7103,11247 6851,11346
 zum Hiroshimasteg: Kleinsteinpflaster	Q1- 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188
 Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
+#: next_check_id: KOEPENICKER-2026
+#: XXX Asphaltierungsarbeiten
+#: last_checked: 2026-08-20
+#: check_frequency: 3d
 Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11917,11186 11944,11152
 (Weg am Humboldthain): Betonpflaster mit breiten Fugen	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Betonpflaster mit breiten Fugen	Q2+ 9092,15789 8934,15740
@@ -12519,7 +12523,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-08-19
+#: last_checked: 2026-08-20
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -25553,6 +25557,10 @@ Kummerower Ring: guter Beton	Q0 22615,13734 22527,13708 22523,13680 22544,13602 
 #: confirmed_by: srt
 Hainstr.: guter Asphalt	Q0 18380,5520 18371,5541 18367,5645 18349,5730 18312,5824
 #: confirmed_by: srt
+#: next_check_id: FLIESS-2026
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705149.php (Asphaltierung, 24.08.2026 bis 30.10.2026)
+#: XXX Asphaltierung geplant
+#: next_check: 2026-10-30
 Fließstr.: mäßiges Kopfsteinpflaster	Q2 18164,5701 18019,5786
 #: confirmed_by: srt
 Fließstr.: guter Asphalt	Q0 18019,5786 17877,5860
