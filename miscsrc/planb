@@ -155,7 +155,15 @@ if ($subcmd eq 'fetch-one' || $subcmd eq 'fetch-single' || $subcmd eq 'fetch-by-
 }
 
 sub cmd_fetch_one {
-    my ($args) = @_;
+    my($args) = @_;
+    my $from_file;
+
+    local @ARGV = @$args;
+    GetOptions(
+	"from-file|file=s" => \$from_file,
+    ) or die "Usage: $0 fetch-one [--from-file /path/to/file] importid ...\n";
+    @$args = @ARGV; # remaining arguments
+
     if (!@$args) {
 	die "Error: Please specify at least one importid.\n";
     }
@@ -163,23 +171,48 @@ sub cmd_fetch_one {
     my $ua = _get_ua();
     my $json_coder = JSON::XS->new->canonical->pretty;
 
+    my $json_data;
+    if (defined $from_file) {
+	my $json_string;
+	if ($from_file =~ m{\.gz$}) {
+	    gunzip($from_file => \$json_string)
+		or die "Can't decompress $from_file: $GunzipError";
+	} else {
+	    $json_string = do { open my $fh, $from_file or die "Can't open $from_file: $!"; local $/; <$fh> };
+	}
+	$json_data = $json_coder->decode($json_string);
+    }
+
     binmode STDOUT, ':utf8';
 
     for my $importid (@$args) {
-	my $url = "https://gdi.berlin.de/services/wfs/planb_ereignisse?service=WFS&version=2.0.0&request=GetFeature&srsName=EPSG:4326&typeNames=planb_ereignisse:ereignisse&CQL_FILTER=importid=$importid&outputFormat=application/json";
-	my $resp = $ua->get($url);
-	if (!$resp->is_success) {
-	    die "Error fetching importid $importid: " . $resp->dump . "\n";
+	my $feature;
+	if ($json_data) {
+	    for my $_feature (@{ $json_data->{features} }) {
+		if ($_feature->{id} eq "ereignisse.$importid") {
+		    $feature = $_feature;
+		    last;
+		}
+	    }
+	    if (!$feature) {
+		die "Cannot find importid $importid in $from_file.\n";
+	    }
+	} else {
+	    my $url = "https://gdi.berlin.de/services/wfs/planb_ereignisse?service=WFS&version=2.0.0&request=GetFeature&srsName=EPSG:4326&typeNames=planb_ereignisse:ereignisse&CQL_FILTER=importid=$importid&outputFormat=application/json";
+	    my $resp = $ua->get($url);
+	    if (!$resp->is_success) {
+		die "Error fetching importid $importid: " . $resp->dump . "\n";
+	    }
+	    my $data = eval { JSON::XS::decode_json($resp->content) };
+	    if ($@) {
+		_content_error($resp, "Error parsing JSON response for importid $importid");
+	    }
+	    my $features = $data->{features};
+	    if (!$features || !@$features) {
+		die "Error: No feature found for importid $importid.\n";
+	    }
+	    $feature = $features->[0];
 	}
-	my $data = eval { JSON::XS::decode_json($resp->content) };
-	if ($@) {
-	    _content_error($resp, "Error parsing JSON response for importid $importid");
-	}
-	my $features = $data->{features};
-	if (!$features || !@$features) {
-	    die "Error: No feature found for importid $importid.\n";
-	}
-	my $feature = $features->[0];
 	my $props = $feature->{properties} || {};
 
 	# Print properties JSON block
