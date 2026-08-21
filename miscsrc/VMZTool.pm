@@ -15,7 +15,7 @@ package VMZTool;
 use v5.10.0; # named captures, defined-or
 use strict;
 use warnings;
-our $VERSION = '0.18';
+our $VERSION = '0.19';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -107,6 +107,16 @@ sub set_existsid_current {
 sub set_existsid_old {
     my($self, $existsid_old_ref) = @_;
     $self->{existsid_old} = $existsid_old_ref;
+}
+
+sub shorten_id {
+    my $id = shift;
+    return undef if !defined $id;
+
+    return "LMS-BR:$1/$2"   if $id =~ m{^LMS-BR[_/]r_LMS-BR[_/](\d+)_LMS-BR[_/](\d+)$};
+    return "AdbNO:$1"       if $id =~ m{^AdbNO[_/]r_AdbNO[_/](\d+)_AdB-NO$};
+    return "vizapi2026:$id" if $id =~ m{^\d{1,6}/20\d\d$}; # looks like id from https://api.viz.berlin.de/daten/meldungen_berlin.json
+    return "viz2025:$id";
 }
 
 ######################################################################
@@ -676,16 +686,7 @@ sub parse_vmz_2021 {
 	}
 	my($lon, $lat) = @$first_coordinate;
 
-	my $viz2025_id;
-	if ($properties->{id}) {
-	    if      ($properties->{id} =~ m{^LMS-BR[_/]r_LMS-BR[_/](\d+)_LMS-BR[_/](\d+)$}) {
-		$viz2025_id = "LMS-BR:$1/$2";
-	    } elsif ($properties->{id} =~ m{^AdbNO[_/]r_AdbNO[_/](\d+)_AdB-NO$}) {
-		$viz2025_id = "AdbNO:$1";
-	    } else {
-		$viz2025_id = "viz2025:$properties->{id}";
-	    }
-	}
+	my $viz2025_id = shorten_id($properties->{id});
 
 	my $coord_for_viz2021_id = join ",", $Karte::Polar::obj->trim_accuracy($lon, $lat);
 	my $validity_from_for_viz2021_id = join ",", split /\s+/, $properties->{validity}->{from};
