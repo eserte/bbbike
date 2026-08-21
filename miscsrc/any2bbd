@@ -80,7 +80,7 @@ if ($opt{'geojson-name'}) {
     my @paths = split /\s+/, $opt{'geojson-name'};
     for my $path (@paths) {
 	my %def;
-	if (my($label,$path_rest) = $path =~ /^([a-zA-Z]+=)?\.(.+)/) {
+	if (my($label,$path_rest) = $path =~ /^([a-zA-Z_]+=)?\.(.+)/) {
 	    %def = (
 		label          => $label,
 		splitted_path  => [ split /\./, $path_rest ],
