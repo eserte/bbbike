@@ -153,7 +153,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-08-08
+#: last_checked: 2026-08-21
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -527,7 +527,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-08-19
+#: last_checked: 2026-08-21
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -1030,7 +1030,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2026-07-22 (mapillary) vvv
+#: last_checked: 2026-08-21 vvv
 #: check_frequency: 120d vvv
 Rollbergstr.: Kopfsteinpflaster	Q2- 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Kopfsteinpflaster	Q2 12407,8177 12545,8209 12714,8249
@@ -3554,6 +3554,7 @@ Köbisstr.: Gehwegplatten, einige Schäden	Q1+ 7103,11247 6851,11346
 zum Hiroshimasteg: Kleinsteinpflaster	Q1- 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188
 Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 #: next_check_id: KOEPENICKER-2026
+#: osm_watch: note 5467923 2
 #: XXX Asphaltierungsarbeiten
 #: last_checked: 2026-08-20
 #: check_frequency: 3d
@@ -25559,6 +25560,7 @@ Hainstr.: guter Asphalt	Q0 18380,5520 18371,5541 18367,5645 18349,5730 18312,582
 #: confirmed_by: srt
 #: next_check_id: FLIESS-2026
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705149.php (Asphaltierung, 24.08.2026 bis 30.10.2026)
+#: by: https://www.entwicklungsstadt.de/niederschoeneweide-fliessstrasse-bekommt-asphalt-neue-gehwege-und-querungen/
 #: XXX Asphaltierung geplant
 #: next_check: 2026-10-30
 Fließstr.: mäßiges Kopfsteinpflaster	Q2 18164,5701 18019,5786

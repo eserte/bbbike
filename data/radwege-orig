@@ -1463,7 +1463,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-08-18 vvv
+#: last_checked: 2026-08-21 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14405,10027 14501,10169 14558,10264
@@ -3368,7 +3368,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-08-18 vvv
+#: last_checked: 2026-08-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2026-09-30 (planb) vvv
@@ -3398,7 +3398,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-08-18
+#: last_checked: 2026-08-21
 #: check_frequency: 30d
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 #: next_check: 2026-09-30 (planb)
@@ -3544,11 +3544,11 @@ Grünbeschichtung	RW4; 11979,8014 12162,8053 12311,8084 12415,8106 12427,8109
 #: by: https://www.entwicklungsstadt.de/300-meter-bis-zum-lueckenschluss-radstreifen-in-der-werbellinstrasse-wird-ergaenzt/
 #: source_id: planb2026:13.43729985,52.47898915,26.07.2026, ("Fahrbahneinengung", 26.07.2026 bis 31.07.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_352010 (2026-07-28 bis 2026-07-30) (mittlerweile bis 2026-07-31)
-#: XXX kommen hier noch Poller/Leitboys hin? kommen hier noch Radwegschilder hin?
-#: last_checked: 2026-08-08
+#: XXX kommen hier noch Poller/Leitboys hin? kommen hier noch Radwegschilder hin? -> Radwegschild an der Morusstr. steht nun
+#: last_checked: 2026-08-21
 #: check_frequency: 14d
 #: next_check: 2026-09-30 (infravelo)
-	RW3; 12427,8109 12566,8140 12656,8160 12700,8170
+	RW4; 12427,8109 12566,8140 12656,8160 12700,8170
 Grünbeschichtung	RW4; 12427,8109 12415,8106 12311,8084 12162,8053
 Fahrradschleuse, Grünbeschichtung	RW4; 12162,8053 11979,8014
 	RW2; 12700,8170 12753,8187
@@ -8074,7 +8074,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2026-08-08 vvv
+#: last_checked: 2026-08-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -8121,7 +8121,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2026-08-08 vvv
+#: last_checked: 2026-08-21 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8583,11 +8583,12 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: by: https://www.entwicklungsstadt.de/fertigstellung-bis-2026-hier-waechst-das-hainwerk-an-der-warschauer-strasse/
 #: by: https://www.entwicklungsstadt.de/hainwerk-an-der-warschauer-strasse-erste-wohnungen-kurz-vor-der-fertigstellung/ (Fertigstellung 2027)
 #: by: https://www.entwicklungsstadt.de/friedrichshain-bueroneubau-hainwerk-vor-fertigstellung-voll-vermietet/
+#: by: https://www.entwicklungsstadt.de/hainwerk-in-friedrichshain-erreicht-volle-hoehe-erste-fassade-sichtbar/
 #: osm_watch: way id="278197510" version="10"
 #: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", bis 22.10.2026)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-08-19
+#: last_checked: 2026-08-21
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -9172,6 +9173,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/mehr-verachtung-ist-kaum-vorstellbar-berlins-verkehrssenatorin-wollte-lieferwagen-auf-bus-und-radspur-halten-lassen-15568626.html
 #: by: https://www.tagesspiegel.de/berlin/streit-um-pop-up-radweg-in-der-berliner-kantstrasse-ruckbau-soll-im-september-beginnen--umwelthilfe-kundigt-klage-an-15864888.html
 #: by: https://www.entwicklungsstadt.de/kantstrasse-in-charlottenburg-rueckbau-der-radspur-rueckt-naeher/
+#: by: https://www.entwicklungsstadt.de/kantstrasse-in-charlottenburg-so-viel-kostet-der-radweg-rueckbau/ (Baubeginn September 2026)
 #: source_id: LMS-BR:379465/72 viz2021:13.30931,52.50658,11.08.2025,07:00 viz2021:13.30931,52.50658, (Bauarbeiten Höhe Krumme Str., bis 28.11.2025) (inaktiv)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
@@ -9180,7 +9182,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zwischen Krumme Str. und Wilmersdorfer Str. Richtung Westen praktisch keine Radspur mehr
 #: last_checked: 2026-07-31 (mapillary) vvv
 #: check_frequency: 45d vvv
-#: next_check: 2026-09-01 (Tsp: Rückbau?) vvv
+#: next_check: 2026-09-01 (Tsp+entwicklungsstadt: Rückbau?) vvv
 #: note: Kantstr., Richtung Osten
 provisorischer Radstreifen hinter den parkenden Autos	RW4; 3795,11098 3975,11087 4100,11078 4289,11060 4415,11053 4532,11046 4709,11036
 provisorischer Radstreifen	RW4; 4709,11036 4821,11026 4911,11018
