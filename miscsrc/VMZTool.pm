@@ -706,9 +706,10 @@ sub parse_vmz_2021 {
 		 (defined $timeTo   && $timeTo   ne ''  ? "bis " . $timeTo   : ()),
 		);
 	};
-	if (!$validity_text) {
-	    warn "Cannot parse validity for viz2021 id $viz2021_id: $@";
-	}
+	## Since using the new VMZ_2021_DATA_URL (~2025-07-22) timeFrom may be often missing, so do not warn anymore.
+	#if (!$validity_text) {
+	#    warn "Cannot parse validity for viz2021 id $viz2021_id: $@";
+	#}
 
 	my($minTimeFrom, $maxTimeTo);
 	for my $def (
