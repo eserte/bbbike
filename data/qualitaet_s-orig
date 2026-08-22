@@ -1000,7 +1000,7 @@ Calvinstr.: Kopfsteinpflaster	Q2 6775,12661 6802,12797 6860,13093
 #: XXX wiederherstellen: Alt-Pichelsdorf: Kopfsteinpflaster	Q2- -3692,11681 -3657,11631 -3606,11532
 #: source_id: planb2026:13.20005325,52.5115172,03.02.2026,07:00 ("Haltverbote", bis 03.11.2028) (inaktiv)
 #: source_id: planb2026:13.20091183,52.51198316,20.02.2026,07:00 (gleicher Eintrag, veränderte Fläche/Startdatum, "Haltverbote", bis 03.11.2028)
-#: last_checked: 2026-07-08
+#: last_checked: 2026-08-21 (mapillary)
 #: next_check: 2028-11-03 (planb)
 Alt-Pichelsdorf: provisorisch asphaltiert	Q0 -3692,11681 -3657,11631 -3606,11532
 #: XXX wiederherstellen Alt-Pichelsdorf: Kopfsteinpflaster	Q2- -3606,11532 -3445,11505
@@ -4029,7 +4029,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="5"
 #: priority: #C
-#: last_checked: 2026-05-31
+#: last_checked: 2026-08-22
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -4734,10 +4734,14 @@ Treptower Park: Kleinsteinpflaster	Q2+ 15190,9027 15214,9090 15183,9186
 Treptower Park: wassergebundene Decke	Q1+ 14889,9381 15003,9337 15163,9200
 Treptower Park: Kleinsteinpflaster	Q1- 15163,9200 15183,9186 15213,9166
 Treptower Park: wassergebundene Decke	Q1+ 15213,9166 15275,9140 15359,9131 15407,9151
+Treptower Park: wassergebundene Decke	Q1 15272,8860 15278,8848 15288,8842 15306,8844 15316,8856 15313,8877 15304,8884 15289,8884 15276,8875 15272,8860
+Treptower Park: wassergebundene Decke	Q1 15254,8816 15278,8848
+Treptower Park: wassergebundene Decke	Q1 15304,8884 15329,8908
+Treptower Park: wassergebundene Decke	Q1 15230,8888 15272,8860
 #: historical_note: bis 2025: Schotterweg, Q2+
-(Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15558,8820 15505,8829 15439,8839 15297,8921 15250,8911
+(Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15558,8820 15505,8829 15439,8839 15329,8908 15297,8921 15252,8913
 #: historical_note: bis 2025/2026: Asphalt, Q0
-(Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15250,8911 15230,8888
+(Neue Krugallee/Bulgarische Str. - Karpfenteich): wassergebundene Decke	Q1 15252,8913 15230,8888
 Heylstr: Asphalt	Q0 6181,8181 6246,8222 6313,8254 6385,8274 6459,8281 6552,8281
 Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3569,11473 3554,11617
 Goethepark: Asphalt	Q1 3467,11373 3594,11372
@@ -6570,7 +6574,9 @@ Stelzenweg: Asphalt	Q0 15464,3936 15362,4023 15183,4157 15028,4272
 (Stelzenweg - Uferweg): Asphalt	Q0 15183,4157 15280,4301 15338,4341
 Straße 26a: Asphalt mit Schäden	Q1 15028,4272 14967,4317 14805,4440 14651,4554 14616,4581
 (Straße 26a - Parchimer Allee): Asphalt	Q0- 14616,4581 14602,4576 14581,4584 14532,4524 14529,4530 14499,4584 14475,4635
-(Parchimer Allee - Rohrdommelweg): Asphalt	Q0 14398,4541 14448,4501 14709,4307 14958,4119 15179,3901
+#: note: bei osm "Birkenweg"
+(Parchimer Allee - Rohrdommelweg): Asphalt	Q0 14398,4541 14448,4501 14709,4307 14958,4119 15165,3915 15179,3901
+(Schirmvogelweg, Verlängerung): Asphalt, einige Wurzelschäden	Q1+ 15103,3835 15165,3915
 Kohlmeisenweg: Beton	Q0 14991,3547 14954,3447
 Grasmückenweg: Kopfsteinpflaster	Q2 14911,3568 14877,3475
 Grasmückenweg: Gehwegplatten	Q1 14877,3475 14822,3409
@@ -7084,28 +7090,8 @@ Jaczostr.: Asphalt	Q0 -4101,11708 -4255,11600 -4267,11590
 Jaczostr.: Beton	Q0 -4267,11590 -4383,11512 -4545,11403 -4751,11262
 Scharfe Lanke: Asphalt	Q0 -4255,11600 -4246,11438 -4245,11400
 # 
-#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/begruendung-oeff-toeb-01-02-2019.pdf
-#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.865332.php
-#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/b-plan-5-11-vom-07-10-2019.pdf
-#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7956
-#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9658
-#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.668807.php (Baubeginn voraussichtlich 2020) (mittlerweile: Baubeginn voraussichtlich 2023)
-#: by: https://www.berlin.de/b-intern.de/ba/spandau/_assets/politik-und-verwaltung/dokumente/plan_1_wilhelmstrasse_stritteweg.pdf
-#: by: https://www.berlin.de/b-intern.de/ba/spandau/_assets/politik-und-verwaltung/dokumente/plan_2_stritteweg_folkungerstrasse.pdf
-#: by: https://www.berlin.de/b-intern.de/ba/spandau/_assets/politik-und-verwaltung/dokumente/plan_3_folkungerstrasse_gatower_strasse.pdf
-#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022, hier: von Wilhemstr. bis Gatower Str.)
-#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11746 (Anfrage)
-#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1696984.php (Fahrbahnflächenerneuerung 27.07.2026 - 01.08.2026)
-#: source_id: viz2021:13.17159,52.51104,15.01.2024,09:13 (bis 29.02.2024) (inaktiv)
-#: source_id: viz2021:13.172174,52.511623,16.08.2023,13:00 (Erdgasleitungssanierung, bis 29.02.2024) (bis 29.03.2024) (inaktiv)
-#: source_id: planb2026:13.17877491,52.51264371,06.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", falsche Koordinaten?, bis 21.08.2026)
-#: XXX geplanter Straßenausbau; evtl. wird dabei die Asphaltierung verbessert
-#: add_fragezeichen: Wurde die Fahrbahn mittlerweile erneuert?
-#: osm_watch: note 3653798 2
-#: last_checked: 2026-06-25 (mapillary)
-#: check_frequency: 180d
-#: next_check: 2026-08-01 (BA-Pressemitteilung)
-Weinmeisterhornweg: Asphalt mit Schäden	Q1- -5061,11305 -5188,11342 -5202,11347 -5292,11378 -5399,11426
+#: historical_note: früher (bis etwa August 2026): Asphalt mit Schäden	Q1-
+Weinmeisterhornweg: Asphalt	Q0 -5061,11305 -5188,11342 -5202,11347 -5292,11378 -5399,11426
 # 
 Stritteweg: Asphalt	Q0 -5202,11347 -5202,11342 -5224,11248 -5229,11230
 Stritteweg: Verbundsteinpflaster	Q1 -5229,11230 -5236,11204
@@ -10218,13 +10204,14 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307
 (neben dem U-Bahn-Viadukt): Asphalt	Q0 7906,10098 7928,10094 8011,10085
 (Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8011,10085 8023,10106 8074,10292 8058,10306
 (Park am Gleisdreieck, Eingang Schöneberger Str.): Verbundsteinpflaster	Q1 8296,10438 8322,10451 8328,10485 8361,10491 8377,10502 8384,10507
-#: historical_note: früher (bis Sommer 2026): Asphalt, Q0
-(Treptower Park): Kleinsteinpflaster	Q2+ 15190,9027 15181,8967
-(Treptower Park): Asphalt	Q0 15181,8967 15159,8934
+#: historical_note: früher (bis Sommer 2026, letzte Arbeiten im August 2026 fertig): Asphalt, Q0
+(Treptower Park): Kleinsteinpflaster	Q2+ 15190,9027 15181,8967 15159,8934
 #: historical_note: früher (bis Mitte 2025): Q1-
 (Treptower Park): wassergebundene Decke	Q1 15190,9027 15154,9106 15025,9171 14955,9294
 #: historical_note: früher (bis Anfang 2025) Asphalt, Q0
 (Treptower Park): wassergebundene Decke	Q1 14955,9294 14898,9364 14889,9381 14879,9433
+#: historical_note: früher (bis 2025/2026) Asphalt, Q0
+(Treptower Park): Kleinsteinpflaster	Q2+ 15137,8952 15159,8934
 #: historical_note: früher (bis 2025/2026) Asphalt, Q0
 (Treptower Park): wassergebundene Decke	Q1 15159,8934 15230,8888 15235,8841 15254,8816
 (Treptower Park): wassergebundene Decke	Q1 15254,8816 15190,8730
@@ -10234,7 +10221,9 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9493,16481 9490,16455 9484,16395 9475,16307
 (Treptower Park): wassergebundene Decke	Q1 15505,8829 15468,8806 15413,8785 15343,8714 15269,8732 15190,8730 15036,8728 14949,8773 14918,8813 14854,8964
 (Treptower Park - Karpfenteichstr.): wassergebundene Decke	Q1 14918,8813 14883,8823 14852,8799
 #: historical_note: früher (bis 2025/2026) Asphalt, Q0
-(Treptower Park): wassergebundene Decke	Q1 15181,8967 15250,8911
+(Treptower Park): Kleinsteinpflaster	Q2+ 15159,8981 15181,8967
+#: historical_note: früher (bis 2025/2026) Asphalt, Q0
+(Treptower Park): wassergebundene Decke	Q1 15181,8967 15252,8913 15289,8884
 Florentinestr.: Asphalt	Q0 16633,20174 16728,20189
 (Florentinestr., Verlängerung): wassergebundene Decke	Q1 16728,20189 17050,20298
 (Weg): Asphalt	Q0 17061,20451 17130,20436 17426,20265 17643,20144 17745,20095 17842,20065
@@ -14125,7 +14114,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen?
-#: last_checked: 2026-08-01
+#: last_checked: 2026-08-22
 #: check_frequency: 30d
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 # 
@@ -14293,9 +14282,11 @@ Wallenbergstr.: Kopfsteinpflaster	Q2- 4453,8490 4457,8383 4473,8351
 (Weg entlang der A100, westliche Seite): Asphalt	Q0 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
 (Weg entlang der A100, westliche Seite): Betonpflaster mit Fugen	Q2+ 14375,8057 14406,8003 14410,7986
 (Weg entlang der A100, westliche Seite): Asphalt	Q0 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
+(Weg entlang der A100, westliche Seite): Asphalt	Q0 14245,7059 14261,7164 14323,7403
 (Betriebsweg Kiefholzstr. - Beermannstr.): Asphalt	Q0 14139,8980 14173,9018 14136,9126 14130,9161 14120,9234 14103,9316 14131,9358 14124,9364
 (Betriebsweg Kiefholzstr. - Görlitzer Bahndamm): Asphalt	Q0 14120,9234 14081,9268
 (Betriebsweg Beermannstr. - Görlitzer Bahndamm): Asphalt	Q0 14103,9316 14088,9294 14081,9268
+(Neuköllnische Allee - Grenzallee): Asphalt	Q0 14291,7033 14252,6988 14248,6954 14227,6901 14245,6880
 # 
 (zu den Depotgebäuden): Asphalt	Q0 24700,5633 24716,5613 24734,5592 24733,5553
 (Fürstenwalder Damm - Müggelseedamm): Waldweg, etwas Split	Q1- 24716,5613 24695,5592 24699,5430 24678,5215 24676,5049 24681,4943
@@ -14638,6 +14629,12 @@ Wartiner Str. [zur Biesenbrower Str.]: Beton	Q1+ 18801,18233 18886,18300
 # 
 #: historical_note: im Sommer 2026 asphaltiert, davor war wohl betoniert
 Kemberger Str.: Fahrbahn asphaltiert	Q0 22207,17772 22148,17687 22022,17519 22002,17492
+# 
+Buschkrugallee [64]: altes Betonpflaster	Q1+ 13530,5870 13460,5834
+Buschkrugallee [64]: Betonpflaster	Q0- 13460,5834 13427,5849 13190,5794
+# 
+(Parkweg am Laubsängerweg): Verbundsteinpflaster	Q1 14484,3796 14507,3820 14540,3821 14568,3731
+(Ibisweg - Laubsängerweg): Verbundsteinpflaster	Q1 14573,3843 14540,3821
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -19380,7 +19377,7 @@ Beethovenstr.: schlechtes Kopfsteinpflaster	Q3 7933,20171 8008,20332 8057,20430
 # 
 #: by: Ralf Schindofski:
 #: corrected_by: srt (Beton -> Beton mit Schäden)
-Rohrdommelweg: Beton mit Schäden	Q1- 15350,3749 15239,3815 15220,3840 15179,3901
+Rohrdommelweg: Beton mit Schäden	Q1- 15350,3749 15239,3815 15215,3832 15201,3886 15179,3901
 # 
 #: by: bibo:
 #: corrected_by: srt (Asphalt -> Beton)
@@ -25001,7 +24998,7 @@ Wartiner Str.: Beton	Q1+ 18811,18404 18886,18300 18979,18179 18967,18015 18959,1
 Passower Str.: Beton	Q0- 18967,18015 19079,17999 19071,17874 18974,17796 18965,17789 18888,17881
 # 
 #: by: manfred faust:
-#: confirmed_by: srt (südlicher Abschnitt)
+#: confirmed_by: srt
 Schirmvogelweg: Asphalt	Q0 14854,3587 14859,3602 14957,3696 15055,3787 15103,3835
 # 
 #: by: Marion (1268):
@@ -28340,7 +28337,7 @@ Trappenpfad: guter Asphalt	Q0 14387,3875 14737,4175
 #: corrected_by: srt (mäßiger Asphalt -> Asphalt)
 Laubsängerweg: Asphalt	Q0 14761,3580 14725,3617
 #: corrected_by: srt (mäßiger Asphalt -> Asphalt)
-Laubsängerweg: Asphalt	Q0; 14725,3617 14645,3691 14594,3712
+Laubsängerweg: Asphalt	Q0-; 14725,3617 14645,3691 14594,3712
 #: corrected_by: srt (mäßiger Asphalt -> ...)
 Laubsängerweg: Asphalt, am Rand (Parkstreifen) mäßiger Beton	Q0-; 14594,3712 14645,3691 14725,3617
 #: corrected_by: srt (mäßiger Asphalt -> Asphalt)
@@ -34907,5 +34904,8 @@ Einmündungsbereich asphaltiert	Q0 3583,4011
 Einmündungsbereich mit Kleinkopfsteinpflaster	Q1- 3826,6656
 Einmündungsbereich asphaltiert	Q0 10004,19765
 Einmündungsbereich asphaltiert	Q0 21868,-611
+Kreuzungsbereich mit Kleinsteinpflaster	Q2+ 15190,9027
+Kreuzungsbereich mit Kleinsteinpflaster	Q2+ 15181,8967
+Kreuzungsbereich mit Kleinsteinpflaster	Q2+ 15159,8934
 #: ignore ^^^
 #: section ^^^

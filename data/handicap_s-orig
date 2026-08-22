@@ -21,7 +21,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
-#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, viz2021:13.424,52.528103, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026) (bis 21.08.2026)
+#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, viz2021:13.424,52.528103, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026) (bis 21.08.2026) (inaktiv)
 #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
 #: source_id: planb2026:13.42324439,52.52777598,03.02.2026, ("Sperrung einer Fahrtrichtung", bis 31.07.2026) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
@@ -35,8 +35,8 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260429 (Umbau der Baustelle am 30.4.2026, danach f‰llt wohl der einspurige Abschnitt in der Otto-Braun/Greifswalder  weg...)
 #: note: auﬂerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ung¸nstiger f¸r Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bˆtzowstraﬂe - Hufelandstraﬂe
-#: also_indoor: traffic (re-T,re-G[aber kurz])
-#: last_checked: 2026-08-21 (traffic) vvv
+#: also_indoor: traffic (re-T,ex-G[aber kurz])
+#: last_checked: 2026-08-22 (traffic) vvv
 #: check_frequency: 8d vvv
 # REMOVED --- #: next_check: 2026-08-21 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (nach den Bauarbeiten:) --- Am Friedrichshain: letzte Pr¸fung und ggfs. Dokumentation nach Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind f¸r Radfahrer frei	?; 11706,13635 11762,13619 11785,13625
@@ -1194,12 +1194,12 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 ### Neukˆlln ###
 # 
-#: source_id: LMS-BR:416772/72 viz2021:13.44685,52.46001, (inaktiv)
-#: source_id: planb2026:-
-#: also_indoor: traffic (ex-G,T)
-#: last_checked: 2026-08-09 (mapillary, Sackgassenschild)
-#: check_frequency: 14d (traffic)
-Sieversufer: Wasserrohrbruch, kurzer Abschnitt der Fahrbahn gesperrt	q2::inwork 13430,6086 13636,6185
+# REMOVED --- #: source_id: LMS-BR:416772/72 viz2021:13.44685,52.46001, (inaktiv)
+# REMOVED --- #: source_id: planb2026:-
+# REMOVED --- #: also_indoor: traffic (ex-G,T)
+# REMOVED --- #: last_checked: 2026-08-22
+# REMOVED --- #: check_frequency: 14d (traffic)
+# REMOVED --- Sieversufer: Wasserrohrbruch, kurzer Abschnitt der Fahrbahn gesperrt	q2::inwork 13430,6086 13636,6185
 # 
 # REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260427 (hier: nur Kfz-Verkehr) #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mkhxndyhlk2o #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mmgdzlwgnk2f) --- #: source_id: LMS-BR:405792/72 viz2021:13.424843,52.482167, (bis 26.05.2026) (vorfristig inaktiv) --- #: source_id: LMS-BR:405832/72 viz2021:13.424477,52.48219, (inaktiv) --- #: traffic_note: Ausweichverkehr ¸ber Reuterstr. - Flughafenstr., Gefahr von Stauungen vor den Ampeln --- #: last_checked: 2026-05-08 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2026-05-26 vvv --- Hermannstr.: Wasserrohrbruch, Engstelle	q3::inwork; 11884,8492 11882,8519 11882,8527 --- Karlsgartenstr.: Absperrung an der Hermannstr	q3::inwork 11769,8515 11882,8527 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
@@ -1815,7 +1815,7 @@ Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14488,9848 1
 (Uferweg - Puschkinallee): Fuﬂg‰nger	q2 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fuﬂg‰nger	q2 14809,9466 14837,9517 14867,9573 14909,9649
 Treptower Park: Fuﬂg‰nger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14495,9710 14443,9731 14361,9772
-Treptower Park: einige Fuﬂg‰nger	q1+ 15558,8820 15505,8829 15439,8839 15297,8921 15250,8911 15230,8888
+Treptower Park: einige Fuﬂg‰nger	q1+ 15558,8820 15505,8829 15439,8839 15329,8908 15297,8921 15252,8913 15230,8888
 Treptower Park: einige Fuﬂg‰nger	q1+ 15505,8829 15468,8806 15413,8785 15343,8714 15269,8732 15190,8730 15036,8728 14949,8773 14918,8813 14854,8964
 Treptower Park: einige Fuﬂg‰nger	q1+ 14918,8813 14883,8823 14852,8799
 Treptower Park: einige Fuﬂg‰nger	q1+ 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15214,9090 15183,9186
@@ -1836,6 +1836,13 @@ Treptower Park: einige Fuﬂg‰nger	q1 14398,9373 14485,9271 14531,9244
 Treptower Park: einige Fuﬂg‰nger	q1 14705,9034 14855,9046 14947,8993 14980,8940
 Treptower Park: einige Fuﬂg‰nger	q1+ 15297,8921 15213,8977 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14889,9381 14879,9433
 Treptower Park: einige Fuﬂg‰nger	q1+ 14889,9381 15003,9337 15163,9200 15183,9186 15213,9166 15275,9140 15359,9131 15407,9151
+Treptower Park: einige Fuﬂg‰nger	q1 15272,8860 15278,8848 15288,8842 15306,8844 15316,8856 15313,8877 15304,8884 15289,8884 15276,8875 15272,8860
+Treptower Park: einige Fuﬂg‰nger	q1 15254,8816 15278,8848
+Treptower Park: einige Fuﬂg‰nger	q1 15304,8884 15329,8908
+Treptower Park: einige Fuﬂg‰nger	q1 15230,8888 15272,8860
+Treptower Park: einige Fuﬂg‰nger	q1 15190,8730 15254,8816
+Treptower Park: einige Fuﬂg‰nger	q1 15378,8668 15343,8714 15298,8781 15254,8816 15235,8841 15230,8888 15159,8934 15137,8952
+Treptower Park: einige Fuﬂg‰nger	q1 15289,8884 15252,8913 15181,8967 15159,8981
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12671,10042 12681,10047 12690,10062
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12757,10197 12763,10207 12767,10216
 Gˆrlitzer Park: Fuﬂg‰nger	q2 13141,9911 13132,9916 13107,9930 12983,10000 12866,10064 12802,10097
@@ -6044,6 +6051,13 @@ Platz am Kaisersteg: schmale Stellen	q2 18381,6134 18428,6123
 # 
 #: XXX_prog BS an beiden Enden, ansonsten trotzdem q3 (siehe auch Eintrag wegen der drei Stufen)
 Rudolf-Schwarz-Str.: einige Fuﬂg‰nger, Bordsteine	q3 13107,14318 13087,14332
+# 
+(Schirmvogelweg, Verl‰ngerung): schmaler Weg, wenige Fuﬂg‰nger	q2 15103,3835 15165,3915
+# 
+#: note: explizites Radfahrverbot vvv
+(Parkweg am Laubs‰ngerweg): Gr¸nanlage, Fuﬂg‰nger	q3 14484,3796 14507,3820 14540,3821 14568,3731
+(Ibisweg - Laubs‰ngerweg): Gr¸nanlage, Fuﬂg‰nger	q3 14573,3843 14540,3821
+#: note ^^^
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

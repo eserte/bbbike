@@ -1705,9 +1705,10 @@ Fontanepromenade	1 10617,9353 10706,9554 10746,9646 10760,9646 10773,9632 10735,
 # 
 #: note: mittlere Fahrbahn ist eine Kfz-Straße
 Heerstr.: am Scholzplatz	1 -1448,11020 -1475,10979 -1517,10971
-# REMOVED (tatsächlich ist hier Gegenverkehr erlaubt) --- Heerstr.: am Scholzplatz	1 -1517,10971 -1558,10970 -1581,11030
+# REMOVED (tatsächlich ist hier Gegenverkehr erlaubt) --- Heerstr.: am Scholzplatz	1 -1517,10971 -1558,10970 -1567,10996 -1581,11030
 Heerstr.: am Scholzplatz	1 -1581,11030 -1527,11047 -1481,11050 -1448,11020
 Heerstr.: am Scholzplatz	2::igndisp -1581,11030 -1523,11012 -1448,11020
+Heerstr.: am Scholzplatz	1 -1567,10996 -1581,11030
 # 
 Pichelsdorfer Str.	1 -3802,13303 -3836,13310
 Pichelsdorfer Str.	1 -3824,13350 -3802,13303
@@ -2826,13 +2827,8 @@ abgeschlossenes Tor	3 * 14701,0 *
 # REMOVED (-> temp blockings) --- #: XXX Bleibt das so? Laut Anwohner könnte es in Zukunft wieder geöffnet sein. --- #: last_checked: 2021-10-09 --- #: check_frequency: 90d --- abgeschlossenes Tor	3 * 8203,7909 *
 # 
 abgeschlossenes Tor	3 * 20561,17 *
-#
-abgeschlossenes Tor	3 * 7319,8515 *
 # 
-#: next_check_id: TEGELERBRUECKE-2021
-#: note: Die Sperrung der Straße R bleibt wohl dauerhaft.
-#: osm_watch: node id="10202117536" version="10"
-Zaun, Durchfahrt für Radfahrer nicht möglich	3 * -761,16641 *
+abgeschlossenes Tor	3 * 7319,8515 *
 # 
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): abgeschlossenes Tor	3 * 19881,16561 *
 # 
@@ -4119,6 +4115,11 @@ Drängelgitter	BNP:3::trailer=10 -1940,24464
 Drängelgitter	BNP:3::trailer=10 4277,23296
 Drängelgitter	BNP:3::trailer=10 5829,7827
 # 
+#: next_check_id: TEGELERBRUECKE-2021
+#: note: siehe auch temp blockings
+#: osm_watch: node id="10202117536" version="10"
+Tor, geschlossen	BNP:10::trailer=15 -761,16641
+# 
 #: section ^^^
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -4250,7 +4251,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12
 #: osm_watch: note 5332936 2
 #: osm_watch: way id="1237814530" version="4"
 #: XXX früher: 1::igndisp
-#: last_checked: 2026-08-12
+#: last_checked: 2026-08-21 (mapillary)
 Nordufer: Radweg wird vermutlich zurückgebaut	2::inwork 7156,14763 7129,14787
 # 
 #: next_check_id: URBANTECHREPUBLIC-2022
@@ -4336,7 +4337,7 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: osm_watch: way id="1495906089" version="1"
 #: osm_watch: way id="971631807" version="9"
 #: osm_watch: way id="971631806" version="9"
-#: last_checked: 2026-08-12
+#: last_checked: 2026-08-21 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
@@ -4552,7 +4553,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="5"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-08-15
+#: last_checked: 2026-08-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4759,7 +4760,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 1
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2026-07-26 (mapillary)
+#: last_checked: 2026-08-21 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4791,26 +4792,22 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-08-21 vvv
+#: last_checked: 2026-08-22 vvv
 #: check_frequency: 21d vvv
-# REMOVED --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
-# REMOVED (offiziell offen) --- Weg entlang der A100: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14440,8050
-# REMOVED (offiziell offen) --- #: osm_watch: way id="1199463690" version="2" --- Weg an der A100 - Mergenthalerring: gesperrt, Durchfahrt wegen Bauzaun nicht möglich	2::inwork 14409,8102 14419,8112
-# REMOVED --- #: osm_watch: way id="1199463688" version="3"
 #: osm_watch: way id="1199465845" version="5"
-Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
+Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
 # REMOVED (deleted) --- #: osm_watch: way id="1199465847" version="2"
 #: osm_watch: way id="801304797" version="6"
-#: XXX außerdem: wird es eine Anbindung an die Sonnenallee geben?
-Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
+Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
+#: osm_watch: way id="612109178" version="4"
+Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14245,7059 14261,7164 14323,7403
 #: osm_watch: way id="852517037" version="6"
 (Betriebsweg Kiefholzstr. - Beermannstr.): gesperrt, Durchfahrt wegen Bauzauns bzw. festen Tors nicht möglich	2::inwork 14139,8980 14173,9018 14136,9126 14130,9161 14120,9234 14103,9316 14131,9358 14124,9364
 #: osm_watch: way id="1455838852" version="3"
 (Betriebsweg Kiefholzstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14120,9234 14081,9268
 #: osm_watch: way id="1455838853" version="3"
 (Betriebsweg Beermannstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14103,9316 14088,9294 14081,9268
-# REMOVED (offen!) --- #: osm_watch: way id="825049429" version="11" --- Weg entlang der A100: gesperrt	2::inwork 14379,7372 14291,7033
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4920,7 +4917,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-08-01
+#: last_checked: 2026-08-22
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4928,7 +4925,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-08-01 vvv
+#: last_checked: 2026-08-22 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5010,7 +5007,7 @@ Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
 #: osm_watch: node id="12731777446" version="1"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten; am 2025-01-27 ebenso
-#: last_checked: 2026-08-02 (mapillary)
+#: last_checked: 2026-08-22
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
@@ -5243,7 +5240,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-08-21 vvv
+#: last_checked: 2026-08-22 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # REMOVED (Treppe ist frei, und dann noch 35m Uferweg) --- Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
@@ -5658,7 +5655,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2026-08-12 vvv
+#: last_checked: 2026-08-21 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188 (inaktiv)
 #: osm_watch: way id="593108603" version="3"

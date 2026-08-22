@@ -48,7 +48,6 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen B¸
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 Rankestr.: Einm¸ndungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine, Umwege	q4::inwork 5669,10704 5782,10884
 Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
-Sieversufer: Wasserrohrbruch, kurzer Abschnitt der Fahrbahn gesperrt	q2::inwork 13430,6086 13636,6185
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 H¸ttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
@@ -118,7 +117,7 @@ Uferweg im Treptower Park: Fuﬂg‰nger, besonders an schˆnen Tagen	q2 14488,9848 1
 (Uferweg - Puschkinallee): Fuﬂg‰nger	q2 14443,9731 14371,9726 14318,9688
 Treptower Park, am Rosengarten: Fuﬂg‰nger	q2 14809,9466 14837,9517 14867,9573 14909,9649
 Treptower Park: Fuﬂg‰nger	q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14495,9710 14443,9731 14361,9772
-Treptower Park: einige Fuﬂg‰nger	q1 15558,8820 15505,8829 15439,8839 15297,8921 15250,8911 15230,8888
+Treptower Park: einige Fuﬂg‰nger	q1 15558,8820 15505,8829 15439,8839 15329,8908 15297,8921 15252,8913 15230,8888
 Treptower Park: einige Fuﬂg‰nger	q1 15505,8829 15468,8806 15413,8785 15343,8714 15269,8732 15190,8730 15036,8728 14949,8773 14918,8813 14854,8964
 Treptower Park: einige Fuﬂg‰nger	q1 14918,8813 14883,8823 14852,8799
 Treptower Park: einige Fuﬂg‰nger	q1 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15214,9090 15183,9186
@@ -137,6 +136,13 @@ Treptower Park: einige Fuﬂg‰nger	q1 14398,9373 14485,9271 14531,9244
 Treptower Park: einige Fuﬂg‰nger	q1 14705,9034 14855,9046 14947,8993 14980,8940
 Treptower Park: einige Fuﬂg‰nger	q1 15297,8921 15213,8977 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14889,9381 14879,9433
 Treptower Park: einige Fuﬂg‰nger	q1 14889,9381 15003,9337 15163,9200 15183,9186 15213,9166 15275,9140 15359,9131 15407,9151
+Treptower Park: einige Fuﬂg‰nger	q1 15272,8860 15278,8848 15288,8842 15306,8844 15316,8856 15313,8877 15304,8884 15289,8884 15276,8875 15272,8860
+Treptower Park: einige Fuﬂg‰nger	q1 15254,8816 15278,8848
+Treptower Park: einige Fuﬂg‰nger	q1 15304,8884 15329,8908
+Treptower Park: einige Fuﬂg‰nger	q1 15230,8888 15272,8860
+Treptower Park: einige Fuﬂg‰nger	q1 15190,8730 15254,8816
+Treptower Park: einige Fuﬂg‰nger	q1 15378,8668 15343,8714 15298,8781 15254,8816 15235,8841 15230,8888 15159,8934 15137,8952
+Treptower Park: einige Fuﬂg‰nger	q1 15289,8884 15252,8913 15181,8967 15159,8981
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12671,10042 12681,10047 12690,10062
 Gˆrlitzer Park: Fuﬂg‰nger	q2 12757,10197 12763,10207 12767,10216
 Gˆrlitzer Park: Fuﬂg‰nger	q2 13141,9911 13132,9916 13107,9930 12983,10000 12866,10064 12802,10097
@@ -2809,6 +2815,9 @@ Oberfeldstr.: Bahn¸bergang zusammen mit Fuﬂverkehr	q2 20627,12162 20624,12133 20
 (Bullengraben - Seeburger Str./Seecktstr.): Parkplatzverkehr	q1 -4368,13387 -4334,13338 -4320,13296
 Platz am Kaisersteg: schmale Stellen	q2 18381,6134 18428,6123
 Rudolf-Schwarz-Str.: einige Fuﬂg‰nger, Bordsteine	q3 13107,14318 13087,14332
+(Schirmvogelweg, Verl‰ngerung): schmaler Weg, wenige Fuﬂg‰nger	q2 15103,3835 15165,3915
+(Parkweg am Laubs‰ngerweg): Gr¸nanlage, Fuﬂg‰nger	q3 14484,3796 14507,3820 14540,3821 14568,3731
+(Ibisweg - Laubs‰ngerweg): Gr¸nanlage, Fuﬂg‰nger	q3 14573,3843 14540,3821
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

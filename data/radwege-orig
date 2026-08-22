@@ -377,7 +377,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-08-18 vvv
+#: last_checked: 2026-08-22 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1281,7 +1281,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 Bushaltestelle mit Radspur	RW5;RW5 16908,1217 16839,1262
 	RW1;RW0 14239,4367 14164,4271 14111,4181 14108,4175
 Verbundsteinpflaster	RW1; 14023,3276 14056,3374 14141,3614 14189,3732 14233,3840 14290,3908
-	RW1;RW1 13430,6086 13483,5973 13566,5792 13612,5698 13635,5650 13660,5602 13730,5448 13756,5388
+	RW1;RW1 13430,6086 13483,5973 13530,5870 13566,5792 13612,5698 13635,5650 13660,5602 13730,5448 13756,5388
 	RW2;RW1 13756,5388 13809,5257
 neues Verbundsteinpflaster, trotzdem bereits mit leichten Unebenheiten	RW1;RW1 13809,5257 13824,5204 13892,4955 13914,4877 13939,4778 14023,4475 14048,4363 14108,4175 14119,4153
 alte Gehwegplatten, Unebenheiten	RW1; 14119,4153 14290,3908
@@ -1304,7 +1304,8 @@ Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 15980,2318 15804,2
 Verbundsteinpflaster, neu gemacht, trotzdem etwas uneben	RW1; 15572,2785 15459,2921 15301,3038
 #: historical_note: bis Herbst 2024: Verbundsteinpflaster, teilweise mit Schäden und Hebungen
 Verbundsteinpflaster, neu gemacht, trotzdem etwas uneben	RW1; 15301,3038 15176,3136 14994,3245
-Verbundsteinpflaster	RW1; 14994,3245 14822,3409 14788,3441 14550,3625 14391,3786 14347,3836 14290,3908 14119,4153
+Verbundsteinpflaster	RW1; 14994,3245 14822,3409 14788,3441 14550,3625 14391,3786 14347,3836 14290,3908
+Verbundsteinpflaster, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 14-18 Uhr	RW1; 14290,3908 14119,4153
 	RW2; 13316,6320 13307,6359 13294,6386 13261,6456 13236,6489 13248,6452 13275,6382 13289,6355 13316,6320
 	RW2;RW1 13316,6320 13355,6235
 	RW1;RW1 13355,6235 13430,6086
@@ -1463,7 +1464,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-08-21 vvv
+#: last_checked: 2026-08-22 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14405,10027 14501,10169 14558,10264
@@ -1494,7 +1495,7 @@ Fahrradschleuse	RW3; 7612,14325 7566,14404
 Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7829,14665
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
-#: last_checked: 2026-08-12 vvv
+#: last_checked: 2026-08-21 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
 #: XXX früher RW1;, nun Benutzungspflicht
@@ -1993,7 +1994,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren -> mittlerweile ist der Bürgersteig + Radweg wieder offen, wird noch die Busspur kommen?
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-08-08 (webcam)
+#: last_checked: 2026-08-22
 #: check_frequency: 21d
 #: next_check: 2026-11-30 (VIZ-Verkehrsmeldung)
 	RW1; 14174,7505 14305,7415
@@ -2014,12 +2015,14 @@ Verbundsteinpflaster	RW2; 14530,7301 14617,7243
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
 # REMOVED --- #: last_checked: 2023-04-05 vvv --- #: check_frequency: 30d vvv
 # REMOVED ---	RW1;RW2 14057,6734 14147,6791 14153,6795
-# REMOVED ---	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
+# REMOVED ---	RW1;RW1 14344,7003 14257,6895 14245,6880 14153,6795
 # REMOVED --- #: note: von der Fußgängerampel aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten ---	RW2;RW8 14147,6791 14057,6734 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
 #: note: Grenzallee, Richtung Westen
-	RW1; 14344,7003 14257,6895 14239,6875
-	RW2; 14239,6875 14153,6795 14147,6791 14057,6734 14044,6725 13932,6680
+	RW1; 14344,7003 14257,6895 14245,6880
+#: historical_note: früher (vielleicht während der Bauarbeiten für die A100?) benutzungspflichtig
+	RW1; 14245,6880 14153,6795
+	RW2; 14153,6795 14147,6791 14057,6734 14044,6725 13932,6680
 	RW1; 13932,6680 13882,6674 13830,6672 13786,6670 13712,6656 13520,6583
 	RW2; 13520,6583 13455,6559
 #: note: Radwegschild wird hier nicht wiederholt
@@ -2029,7 +2032,7 @@ Gehwegplatten, Wurzelschäden, Bord gegen Gehweg	RW1; 13236,6489 13455,6559 13520
 Gehwegplatten, Wurzelschäden	RW1; 13520,6583 13712,6656
 	RW1; 13712,6656 13786,6670 13830,6672 13882,6674 13932,6680
 	RW2; 13932,6680 14044,6725 14057,6734
-	RW1; 14057,6734 14147,6791 14153,6795 14239,6875 14257,6895 14344,7003
+	RW1; 14057,6734 14147,6791 14153,6795 14245,6880 14257,6895 14344,7003
 # 
 	RW1; 12547,4391 12564,4308
 Verbundsteinpflaster	RW1; 12564,4308 12547,4391
@@ -3368,7 +3371,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-08-21 vvv
+#: last_checked: 2026-08-22 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2026-09-30 (planb) vvv
@@ -3398,7 +3401,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-08-21
+#: last_checked: 2026-08-22
 #: check_frequency: 30d
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 #: next_check: 2026-09-30 (planb)
@@ -3544,6 +3547,7 @@ Grünbeschichtung	RW4; 11979,8014 12162,8053 12311,8084 12415,8106 12427,8109
 #: by: https://www.entwicklungsstadt.de/300-meter-bis-zum-lueckenschluss-radstreifen-in-der-werbellinstrasse-wird-ergaenzt/
 #: source_id: planb2026:13.43729985,52.47898915,26.07.2026, ("Fahrbahneinengung", 26.07.2026 bis 31.07.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_352010 (2026-07-28 bis 2026-07-30) (mittlerweile bis 2026-07-31)
+#: osm_watch: note 5409313 4
 #: XXX kommen hier noch Poller/Leitboys hin? kommen hier noch Radwegschilder hin? -> Radwegschild an der Morusstr. steht nun
 #: last_checked: 2026-08-21
 #: check_frequency: 14d
@@ -4779,16 +4783,16 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: by: https://www.entwicklungsstadt.de/neukoelln-baut-radweg-am-dammweg-um-parkplaetze-fallen-weg/
 #: osm_watch: note 4883566 9
 #: XXX Verlegung der RVA zwischen Widderstraße und der Sonnenallee auf die Fahrbahn; aktuell Arbeiten zwischen Aronsstr. und Sonnenallee
-#: last_checked: 2026-07-19 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2026-08-17 (planb) vvv
-# REMOVED --- #: next_check: 2026-12-31 (infravelo) vvv
+#: last_checked: 2026-08-22 vvv
+#: check_frequency: 45d vvv
+# REMOVED --- #: next_check: 2026-08-17 (planb) vvv
+#: next_check: 2026-12-31 (infravelo) vvv
 #: source_id: planb2026:13.46826637,52.47225026,23.06.2026,07:00 ("Gehwegvollsperrung", bis 13.12.2026) (vorfristig inaktiv) (bis 16.11.2026)
 #: historical_note: früher: alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg, RW1;; seit ungefähr 2025 existiert eine Absperrung vor den schlimmsten Wurzelhebungen; etwa ab 2026 Provisorium
-provisorische Radwegführung auf der Fahrbahn	RW4; 14853,7451 14775,7385
+provisorische Radwegführung, teils auf der Fahrbahn, teils auf dem Bürgersteig	RW2; 14853,7451 14775,7385
 #: source_id: planb2026:13.46660341,52.47141375,04.05.2026,07:00 ("Gehwegvollsperrung", bis 17.08.2026)
 #: historical_note: früher (bis ca. 2026): alte Gehwegplatten, deutliche Schäden und Wurzelhebungen, Bord gegen Gehweg, RW1;
-provisorische Radwegführung auf der Fahrbahn	RW4; 14775,7385 14758,7373 14708,7325 14617,7243
+provisorische Radwegführung, teils auf der Fahrbahn, teils auf dem Bürgersteig	RW2; 14775,7385 14758,7373 14708,7325 14617,7243
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5375,6 +5379,7 @@ Verbundsteinpflaster mit zahlreichen Unebenheiten, schmal	RW1; 11054,-740 11099,
 Gehweg für Radfahrer frei	RW9;RW1 8839,18504 9229,18178 9310,18108 9343,18080 9365,18062 9410,18021
 asphaltiert, etwas breiter, bereits erste leichte Wurzelhebungen	RW1;RW1 13775,3500 13818,3623 13833,3665 13852,3721 13909,3845 14012,4002 14119,4153
 Verbundsteinpflaster	RW1; 14994,3245 15030,3286 15162,3462 15213,3541 15263,3617 15307,3683 15350,3749 15356,3759 15363,3770 15464,3936 15585,4139
+#: note: ein echter Suggestivstreifen: die restliche Fahrbahnbreite reicht nicht für sich begegnende Autos, regelmäßig wird auf dem Suggestivstreifen gefahren
 	RW3; 15585,4139 15464,3936 15363,3770 15356,3759 15350,3749 15307,3683 15263,3617 15213,3541 15162,3462 15030,3286
 Verbundsteinpflaster	RW1; 15030,3286 14994,3245
 # 

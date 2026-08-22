@@ -21,6 +21,7 @@ Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 #: by: https://wgf.berlin/bautagebuch/fassaden-und-dachsanierung/ (Sanierung des Hausriegels, hat es was damit zu tun?) (nein)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mswtaq6n522d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihkzzqkj6vhnvdduehk6n42jv3e2oawhepxd5bdllhlcpeip2jbua
+#: by: https://www.bahninfo-forum.de/read.php?9,854720,864795#msg-864795
 #: note: Indizien: vorbereitete Baustellenampeln, vorbereitete Ersatzbushaltestellen (evtl. gültig ab 11.6.2026), vorbereitete Umleitungstafeln -> laut planb wird es wohl eine Einbahnstraßenregelung geben, auch in Hildegard-Jadamowitz-Str. und Marchlewskistr., Richtung? auch für den Radverkehr?
 #: note: unterschiedliche Halteverbote: teilweise erst ab 13.08.2026 (Hildegard-Jadamowitz-Str.), teilweise schon ab 03.08.2026. Vorbereitete Einfahrt-verboten-Tafeln für die Fredersdorfer Str. an der Marchlewskistr. In der Marchlewskistr. und Hildegard-Jadamowitz-Str. wurde Richtung Norden und Westen ab Wedekindstr. eine Busspur (!) markiert
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
@@ -127,7 +128,7 @@ Gneisenaustr./Schleiermacherstr.: provisorische Fußgängerampel	F::inwork 10032,9
 #: osm_watch: node id="13704066872" version="1"
 #: osm_watch: node id="13704066873" version="1"
 #: note: manchmal bekommt man zügig nach Betätigen der Anforderung grün (gesehen: 2026-04-15 Wed 10:20) (mit Wartzezeit: 2026-08-12 Wed 10:50)
-#: last_checked: 2026-08-12
+#: last_checked: 2026-08-21 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2028-03-03
 Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
@@ -4401,7 +4402,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2026-08-02 (mapillary)
+#: last_checked: 2026-08-22
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -4756,7 +4757,7 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: XXX_prog gilt nicht für Radfahrer Richtung Norden
 	F 22902,2681
 # 
-#: note: Anforderung für Radfahrer im Zuge des A100-Betriebswegs
+#: note: Anforderung für Radfahrer im Zuge des A100-Betriebswegs; kann automatisch (durch Kontaktschleifen?) passieren (gesehen Fahrtrichtung Nord)
 #: XXX_prog gilt nicht für rechtsabbiegende Radfahrer von der Sonnenallee auf den Betriebsweg (SO->N)
 	X 14379,7372
 	X 14323,7403

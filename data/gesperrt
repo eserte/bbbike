@@ -980,6 +980,7 @@ Fontanepromenade	1 10617,9353 10706,9554 10746,9646 10760,9646 10773,9632 10735,
 Heerstr.: am Scholzplatz	1 -1448,11020 -1475,10979 -1517,10971
 Heerstr.: am Scholzplatz	1 -1581,11030 -1527,11047 -1481,11050 -1448,11020
 Heerstr.: am Scholzplatz	2::igndisp -1581,11030 -1523,11012 -1448,11020
+Heerstr.: am Scholzplatz	1 -1567,10996 -1581,11030
 Pichelsdorfer Str.	1 -3802,13303 -3836,13310
 Pichelsdorfer Str.	1 -3824,13350 -3802,13303
 Fulhamer Str. (Radweg)	1 13225,4495 13213,4565
@@ -2709,8 +2710,6 @@ abgeschlossenes Tor	3 20555,15 20561,17 20685,52
 abgeschlossenes Tor	3 20685,52 20561,17 20555,15
 abgeschlossenes Tor	3 7317,8511 7319,8515 7358,8569
 abgeschlossenes Tor	3 7358,8569 7319,8515 7317,8511
-Zaun, Durchfahrt für Radfahrer nicht möglich	3 -719,16608 -761,16641 -784,16658
-Zaun, Durchfahrt für Radfahrer nicht möglich	3 -784,16658 -761,16641 -719,16608
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): abgeschlossenes Tor	3 19872,16563 19881,16561 19890,16559
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): abgeschlossenes Tor	3 19890,16559 19881,16561 19872,16563
 abgeschlossenes Tor	3 12261,19099 12299,19143 12372,19203
@@ -3580,6 +3579,7 @@ Schwingtor	BNP:5:-191:trailer=10 4183,13725
 Drängelgitter	BNP:3:-262:trailer=10 -1940,24464
 Drängelgitter	BNP:3:-113:trailer=10 4277,23296
 Drängelgitter	BNP:3:-93:trailer=10 5829,7827
+Tor, geschlossen	BNP:10:-231:trailer=15 -761,16641
 ehem. Bahnübergang Fangschleuse	2::inwork 39261,159 39259,574 39259,612
 Rita-Maiburg-Str.: Wann wird die Straße fertiggestellt? Qualität vermutlich Asphalt. Radwege?	2::inwork 20346,-773 20468,-897 20779,-1216 20809,-1269 20817,-1301 20872,-1748
 Ludwig-Prandtl-Str.: wann wird die Straße geöffnet?	2::inwork 20078,-1029 20346,-773
@@ -3659,8 +3659,9 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772,12694 7521,12581 7447,12520
-Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
-Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen Bauzauns nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
+Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
+Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
+Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14245,7059 14261,7164 14323,7403
 (Betriebsweg Kiefholzstr. - Beermannstr.): gesperrt, Durchfahrt wegen Bauzauns bzw. festen Tors nicht möglich	2::inwork 14139,8980 14173,9018 14136,9126 14130,9161 14120,9234 14103,9316 14131,9358 14124,9364
 (Betriebsweg Kiefholzstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14120,9234 14081,9268
 (Betriebsweg Beermannstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14103,9316 14088,9294 14081,9268

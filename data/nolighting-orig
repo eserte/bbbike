@@ -65,7 +65,7 @@ Uferweg am Plänterwald/Treptower Park: teils beleuchtet	NL 16627,8581 16619,8606
 (Treptower Park: südl./westl. des Karpfenteichs)	NL 15505,8829 15468,8806 15413,8785 15343,8714 15269,8732 15190,8730 15036,8728 14949,8773 14918,8813 14854,8964
 (Treptower Park: nördl. des Karpfenteichs)	NL 14614,9052 14705,9034 14854,8964 14980,8940 15057,8910 15110,8912 15159,8934 15181,8967 15190,9027 15154,9106 15025,9171 14955,9294 14898,9364 14889,9381 14879,9433
 (Treptower Park: östl. des Karpfenteichs)	NL 15343,8714 15298,8781 15254,8816
-(Treptower Park: östl. des Karpfenteichs)	NL 15190,8730 15254,8816 15235,8841 15230,8888 15159,8934
+(Treptower Park: östl. des Karpfenteichs)	NL 15190,8730 15254,8816 15235,8841 15230,8888 15159,8934 15137,8952
 # REMOVED (Laternen gehen wieder) --- #: note: einige Laternen existieren hier, aber viele davon sind defekt (gesehen: 2013-08-25) --- #: note: die meisten Laternen leuchten wieder (gesehen: 2015-01-18) --- trotzdem NL lassen? --- #: note: dunkel (gesehen: 2015-10-13 gegen 19 Uhr) --- #: note: alle Laternen gehen (gesehen: 2015-12-07 gegen 18:45 Uhr sowie 2015-12-27 gegen 19:00 Uhr) --- #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/bvv/pdf/mdv-vii-50.pdf (Seite 43) --- (Treptower Park)	NL 14318,9688 14316,9542 14320,9530 14347,9452 14398,9373
 (Treptower Park)	NL 14398,9373 14485,9271 14531,9244
 (Treptower Park)	NL 14257,9432 14286,9457 14320,9530
@@ -73,7 +73,7 @@ Uferweg am Plänterwald/Treptower Park: teils beleuchtet	NL 16627,8581 16619,8606
 (Treptower Park)	NL 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641
 (Treptower Park: zur Karpfenteichstr.)	NL 14852,8799 14883,8823 14918,8813
 # REMOVED (eine Laterne steht hier) --- (Treptower Park - Moosdorfstr.)	NL 14398,9373 14382,9299
-(Treptower Park)	NL 15181,8967 15250,8911
+(Treptower Park)	NL 15159,8981 15181,8967 15252,8913 15289,8884
 (Treptower Park)	NL 14705,9578 14791,9537 14823,9523 14837,9517
 (Treptower Park)	NL 14443,9731 14371,9726 14318,9688
 (Treptower Park)	NL 15190,9027 15214,9090 15183,9186
@@ -85,9 +85,13 @@ Uferweg am Plänterwald/Treptower Park: teils beleuchtet	NL 16627,8581 16619,8606
 (Treptower Park)	NL 14705,9034 14644,9130 14628,9158 14612,9190 14531,9244
 (Treptower Park)	NL 14705,9034 14855,9046 14947,8993 14980,8940
 (Treptower Park)	NL 15297,8921 15213,8977 15190,9027
+(Treptower Park)	NL 15272,8860 15278,8848 15288,8842 15306,8844 15316,8856 15313,8877 15304,8884 15289,8884 15276,8875 15272,8860
+(Treptower Park)	NL 15254,8816 15278,8848
+(Treptower Park)	NL 15304,8884 15329,8908
+(Treptower Park)	NL 15230,8888 15272,8860
 (Wasserweg - Treptower Park)	NL 15678,8911 15617,8924
 Treptower Park	NL 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
-Treptower Park	NL 15558,8820 15505,8829 15439,8839 15297,8921 15250,8911 15230,8888
+Treptower Park	NL 15558,8820 15505,8829 15439,8839 15329,8908 15297,8921 15252,8913 15230,8888
 (Alt-Treptow - Insel der Jugend)	NL 15591,8848 15608,8882 15617,8924 15623,8949 15630,8979 15658,9007 15674,9095
 (Uferweg Insel der Jugend)	NL 15674,9095 15683,9136 15693,9194 15604,9215 15580,9181 15631,9114 15668,9140 15683,9136
 # laut (URL existiert nicht mehr) http://www.berlin.de/ba-lichtenberg/presse/archiv/20071119.1550.89206.html beleuchtet: Coppistr. - Nöldnerplatz (?)	NL 15731,11270 15735,11201 15779,10970 15756,10966 15738,10962
@@ -2170,9 +2174,11 @@ Uferweg - Erna-Koschwitz-Weg	NL -2011,17986 -2074,17921
 #: by ^^^
 (Weg entlang der A100)	NL 14341,8763 14326,8747 14325,8682 14299,8436 14310,8335 14350,8228 14409,8102 14440,8050 14439,8030 14467,7904 14476,7827 14478,7771 14462,7597 14441,7529 14379,7372 14291,7033
 (Weg entlang der A100, westliche Seite)	NL 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
+(Weg entlang der A100, westliche Seite)	NL 14245,7059 14261,7164 14323,7403
 (Betriebsweg Kiefholzstr. - Beermannstr.)	NL 14139,8980 14173,9018 14136,9126 14130,9161 14120,9234 14103,9316 14131,9358 14124,9364
 (Betriebsweg Kiefholzstr. - Görlitzer Bahndamm)	NL 14120,9234 14081,9268
 (Betriebsweg Beermannstr. - Görlitzer Bahndamm)	NL 14103,9316 14088,9294 14081,9268
+(Neuköllnische Allee - Grenzallee)	NL 14291,7033 14252,6988 14248,6954 14227,6901 14245,6880
 (Bärbel-Bohley-Ring - Ramlerstr.)	NL 9744,15793 9644,15780
 (zu den Depotgebäuden)	NL 24700,5633 24716,5613 24734,5592 24733,5553
 (Fürstenwalder Damm - Müggelseedamm)	NL 24716,5613 24695,5592 24699,5430 24678,5215 24676,5049 24681,4943
@@ -2237,11 +2243,15 @@ Schöneicher Landstraße	NL 29192,7368 29168,7350 28586,7139 26405,6289
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9953 (Antrag)
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9962 (Antrag)
 #: XXX Wird es wieder eine Beleuchtung geben? vvv
-#: next_check: 2026-06-30 vvv
+#: last_checked: 2026-08-22 vvv
+#: check_frequency: 270d vvv
+# REMOVED --- #: next_check: 2026-06-30 vvv
 (Parkweg am Laubsängerweg)	NL 14484,3796 14507,3820 14540,3821 14568,3731
 (Ibisweg - Laubsängerweg)	NL 14573,3843 14540,3821
 #: XXX ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (zumindest der nördliche der beiden Wege war am 2026-02-21 beleuchtet) --- #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13369 (Beleuchtung defekt)
 # REMOVED --- #: last_checked: 2026-02-21 vvv
