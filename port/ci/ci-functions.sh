@@ -413,7 +413,7 @@ install_old_perl_dependencies() {
 		# Data::OptList and Sub::Exporter are dependencies of GIS::Distance
 		# Pod::Man is a dependency of Plack
 		# NOTE: Order matters!
-		cpanm --quiet --notest Data::OptList~'<0.114' Sub::Exporter~'<0.991' Email::MessageID~"<1.407" Email::Date::Format~"<1.006" Email::Simple~"<2.218" Email::MIME::Encodings~"<1.316" Email::MIME::ContentType~"<1.027" Email::MIME~"<1.953" Email::Address~"<=1.912" Email::Sender::Simple~"<=1.300035" Test::Deep~"<1.202" Pod::Man~"<5" Plack~"<1.0051" Test::Fatal~"<0.018"
+		cpanm --quiet --notest Data::OptList~'<0.114' Sub::Exporter~'<0.991' Email::MessageID~"<1.407" Email::Date::Format~"<1.006" Email::Simple~"<2.218" Email::MIME::Encodings~"<1.316" Email::MIME::ContentType~"<1.027" Email::MIME~"<1.953" Email::Address~"<=1.912" Email::Sender::Simple~"<=1.300035" Test::Deep~"<1.202" Pod::Man~"<5" Plack~"<1.0051" Test::Fatal~"<0.018" DBI~"<=1.651"
 		;;
 	esac
 	case "$PERLBREW_PERL" in
