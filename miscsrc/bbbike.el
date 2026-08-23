@@ -1068,9 +1068,7 @@
   )
 
 (defun bbbike--is-source-id-inactive ()
-  (if (save-excursion (search-forward-regexp "\\(inactive\\|inaktiv\\))? *\\(vvv+\\)?$" (save-excursion (end-of-line) (point)) t))
-      t
-    nil))
+  (looking-at-p ".*\\(?:inactive\\|inaktiv\\))? *\\(?:vvv+\\)?$"))
 
 ;; convert bbbike "standard" coordinates to WGS84 coordinates using external commands
 ;; usage:
