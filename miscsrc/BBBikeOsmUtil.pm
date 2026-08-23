@@ -7,15 +7,14 @@
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.32;
+$VERSION = 1.33;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -488,24 +487,28 @@ sub plot_osm_files {
 		(exists $tag{'highway'} && ($tag{'highway'} =~ ABANDONED_RX || $tag{'highway'} =~ PLANNED_RX)) ||
 		(exists $tag{'disused'} && $tag{'disused'} eq 'yes') ||
 		exists $tag{'demolished:historic'} ||
+		(exists $tag{'historic'} && $tag{'historic'} eq 'path') ||
 		(exists $tag{'highway'} && $tag{'highway'} eq 'none') ||
 		(exists $tag{'man_made'} && $tag{'man_made'} =~ m{^(?:pipeline|embankment|microwave_link)$}) ||
 		exists $tag{'proposed:man_made'} || # but probably also other proposed:... tags
+		exists $tag{'proposed:highway'} ||
 		exists $tag{'barrier'} ||
 		exists $tag{'abandoned:barrier'} ||
 		exists $tag{'abandoned:power'} ||
+	        exists $tag{'removed:power'} ||
 		# XXX seen around B115 north of Schlenzer, maybe a mapping error (highway=abandoned missing)? vvv
 		(exists $tag{'abandoned'} && $tag{'abandoned'} eq 'track') ||
 		(exists $tag{'highway:abandoned'} && $tag{'highway:abandoned'} eq 'track') ||
 		# XXX ^^^
 		# official according to https://wiki.openstreetmap.org/wiki/DE:Key:abandoned:highway
-		(exists $tag{'abandoned:highway'} ||
+		exists $tag{'abandoned:highway'} ||
+		exists $tag{'razed:highway'} ||
 		exists $tag{'mj10777:admin_levels'} ||
 		(exists $tag{'natural'} && ($tag{'natural'} eq 'tree_row' ||
 					   ($tag{'natural'} eq 'cliff'))) ||
 		# just a note tag, nothing else
 		(exists $tag{'note'} && %tag == 1)
-	       )) {
+	       ) {
 		$item_args{'-dash'} = '.  ';
 	    } elsif (exists $tag{'power'}) {
 		$item_args{'-dash'} = '.   ';
@@ -638,12 +641,17 @@ sub plot_osm_files {
 			undef $light_color;
 		    }
 		    if (defined $light_color) {
-			unshift @item_tags, $tag{landuse} ? $osm_layer{landuse} : $osm_layer{area};
+			my $layer_tag;
+			if ($tag{landuse} || (($tag{place}||'') eq 'island')) {
+			    $layer_tag = $osm_layer{landuse};
+			} else {
+			    $layer_tag = $osm_layer{area};
+			}
 			$c->createPolygon(@coordlist,
 					  -fill => $light_color,
 					  -outline => $dark_color,
 					  %item_args,
-					  -tags => [@item_tags],
+					  -tags => [$layer_tag, @item_tags],
 					 );
 			($cx, $cy) = get_polygon_center(@coordlist);
 		    }
