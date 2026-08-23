@@ -54,6 +54,7 @@ GetOptions(\%opt,
 	   "info=s",
 	   "noempty",
 	   "geojson-name=s",
+	   "geojson-name-code=s",
 	   "name-sep=s",
 	   "v+",
 	  )
@@ -65,13 +66,17 @@ usage: $0 [-i inputformat] -o outfile [-a|-append]
     [-info file]
     [-infotobbd]
     [-noempty]
-    [-geojson-name ...] [-name-sep ...]
+    [-geojson-name ... | -geojson-name-code] [-name-sep ...]
     [-v [-v ...]]
 EOF
 
 use vars qw($verbose);
 if ($opt{v}) {
     $verbose = $opt{v};
+}
+
+if (defined $opt{'geojson-name'} && defined $opt{'geojson-name-code'}) {
+    die "Cannot use -geojson-name and -geojson-name-code together.\n";
 }
 
 my $namecb;
@@ -120,6 +125,21 @@ if ($opt{'geojson-name'}) {
 	    '';
 	}
     };
+} elsif ($opt{'geojson-name-code'}) {
+    my $code = <<'EOF' . $opt{'geojson-name-code'} . <<'EOF';
+sub {
+    my $f = shift;
+    my $p = $f->{properties};
+    my $res = sub {
+EOF
+    }->();
+    defined $res ? $res : '';
+};
+EOF
+    $namecb = eval $code;
+    if ($@) {
+	die "Cannot compile provided code.\nError: $@\nCode: $code\n";
+    }
 }
 
 my @download_dirs; @download_dirs = @{ $opt{dir} } if $opt{dir};
