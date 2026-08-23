@@ -934,22 +934,25 @@
   )
 
 (defun bbbike-osm-button (button)
-  (browse-url (concat "http://www.openstreetmap.org/" (button-get button :osmid))))
+  (let ((val (button-get button :val))
+	url)
+    (cond
+     ((string-match "^\\(way\\|node\\|relation\\)[ ]+id=\"\\([0-9]+\\)\"" val)
+      (setq url (concat "http://www.openstreetmap.org/"
+			(substring val (match-beginning 1) (match-end 1))
+			"/"
+			(substring val (match-beginning 2) (match-end 2)))))
+     ((string-match "^note[ ]+\\([0-9]+\\)" val)
+      (setq url (concat "http://www.openstreetmap.org/note/"
+			(substring val (match-beginning 1) (match-end 1)))))
+     (t (user-error "Value '%s' cannot be parsed" val)))
+    (browse-url url)))
 
 (define-button-type 'bbbike-osm-button
   'action 'bbbike-osm-button
   'follow-link t
   'face 'bbbike-button
-  'help-echo "Click button to show OSM element")
-
-(defun bbbike-osm-note-button (button)
-  (browse-url (concat "http://www.openstreetmap.org/note/" (button-get button :osmnoteid))))
-
-(define-button-type 'bbbike-osm-note-button
-  'action 'bbbike-osm-note-button
-  'follow-link t
-  'face 'bbbike-button
-  'help-echo "Click button to show OSM note")
+  'help-echo "Click button to show OSM element or note")
 
 (defun bbbike-traffic-button (button)
   (browse-url (concat bbbike-mc-traffic-base-url "&" (bbbike--convert-coord-to-wgs84 (button-get button :bbbikepos) "lat=%lat&lon=%lon"))))
@@ -1038,23 +1041,13 @@
 		     :bvgline bvg-line
 		     ))))
 
-  ;; recognize "#: osm_watch" directives (ways etc.)
+  ;; recognize "#: osm_watch" directives (way, node, relation, and note)
   (save-excursion
     (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\):?[ ]*\\(way\\|node\\|relation\\)[ ]+id=\"\\([0-9]+\\)\"" nil t)
+    (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\):?[ ]*\\(.*\\)" nil t)
       (make-button (match-beginning 1) (match-end 1)
 		   :type 'bbbike-osm-button
-		   :osmid (concat (buffer-substring-no-properties (match-beginning 2) (match-end 2)) "/" (buffer-substring-no-properties (match-beginning 3) (match-end 3)))
-		   )))
-
-  ;; recognize "#: osm_watch" directives (just notes)
-  (save-excursion
-    (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\(?:\\[closed\\]\\)?\\):?[ ]*note[ ]+\\([0-9]+\\)" nil t)
-      (make-button (match-beginning 1) (match-end 1)
-		   :type 'bbbike-osm-note-button
-		   :osmnoteid (buffer-substring-no-properties (match-beginning 2) (match-end 2))
-		   )))
+		   :val (buffer-substring-no-properties (match-beginning 2) (match-end 2)))))
 
   ;; recognize "#: also_indoor: traffic" directives
   (save-excursion
