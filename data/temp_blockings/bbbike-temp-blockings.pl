@@ -39048,7 +39048,7 @@ EOF
 EOF
      },
      { from  => undef, # $isodate2epoch->("2023-04-10 00:00:00"), # 1667170800, # 2022-10-31 00:00
-       until => undef, # $isodate2epoch->("2023-08-09 23:59:59"), # 1678541944, # undef, # XXX
+       until => 1787482914, # assume finished # undef, # $isodate2epoch->("2023-08-09 23:59:59"), # 1678541944, # undef, # XXX
 #      dont_check_date => 1, # weitere Bauabschnitte in until berücksichtigt!
 #      text  => 'Eiswaldtstr.: Instandsetzung der Fahrbahn, von Am Gemeindepark bis Malteserstraße, voraussichtlich bis 9. August 2023',
 #      text  => 'Eiswaldtstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, Ende der Bauarbeiten unbekannt',
@@ -39070,9 +39070,7 @@ EOF
 #: source_id: planb2026:13.35291557,52.42745313,09.07.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.07.2026) (inaktiv)
 #: also_indoor: traffic (ex-T,G,ex-H[ganz kurz],ex-W)
 # REMOVED --- #: add_fragezeichen: Gilt die Einbahnstraßenregelung weiterhin?
-#: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt?
-#: last_checked: 2026-08-20 (traffic)
-#: check_frequency: 3d (traffic)
+# REMOVED --- #: add_fragezeichen: Ist die Fahrbahn weiterhin gesperrt? --- #: last_checked: 2026-08-20 (traffic) --- #: check_frequency: 3d (traffic)
 # REMOVED --- #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-07-31 (planb)
 # REMOVED --- Eiswaldtstr.: Einbahnstraßenregelung	q4::inwork; 7169,2348 7051,2366 6965,2418
@@ -40025,9 +40023,9 @@ EOF
 #: note: das im Baustellenplan geplante Radfahren-verboten-Schild existierte am 26.3.2023 (noch?) nicht; mittlerweile (seit Montag?) schon
 #: note: in einem YouTube-Video vom 4.12.2026 kein Radfahren-verboten-Schild mehr zu sehen
 #: osm_watch: way id="37861386" version="34"
-#: osm_watch: way id="1231148375" version="13"
+#: osm_watch: way id="1231148375" version="14"
 #: priority: #B
-#: last_checked: 2026-07-27 (osm)
+#: last_checked: 2026-08-21 (osm)
 #: check_frequency: 120d
 #: next_check: 2027-03-01 (planb)
 	q4::inwork; 22431,6068 22467,6135
@@ -45393,7 +45391,7 @@ EOF
 #: osm_watch: way id="1303423090" version="8"
 #: note: laut osm opening_date=2025-08-01 (habe ich nun verlängert); laut Baustellenschild der Wasserbetriebe bis Mai 2025, mittlerweile bis Dezember 2025
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdf4duxn6227 (Radverkehr von der Sperrung in der Mühlenstr. nicht betroffen)
-#: last_checked: 2026-06-25 (mapillary)
+#: last_checked: 2026-08-23 (mapillary)
 # REMOVED --- #: next_check: 2025-12-31 (Baustellenschild)
 #: next_check: 2026-09-30 (VIZ-Verkehrsmeldung)
 Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
@@ -48134,8 +48132,9 @@ EOF
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
 #: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, (eigentlich eine andere Baustelle (Dammbrücke), hängt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026) (bis 22.04.2026) (bis 29.06.2026) (bis 02.09.2026)
 #: source_id: planb2026:13.57888323,52.44737601,01.12.2025, ("Vollsperrung beider Fahrbahnen", bis 24.08.2026) (bis 03.02.2027)
-#: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
-#: note: einige Halteverbotsschilder bis 15.12.2025, andere ohne Endedatum
+#: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
+# REMOVED --- #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verlängert
+# REMOVED --- #: note: einige Halteverbotsschilder bis 15.12.2025, andere ohne Endedatum
 # REMOVED --- #: last_checked: 2025-08-25 (bahninfo-forum) vvv --- #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2025-06-02 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2025-11-30 (Ausschreibungsunterlagen) vvv
@@ -48144,7 +48143,6 @@ EOF
 # REMOVED (hier mittlerweile offen) ---	q4::inwork 22144,4660 22138,4642 22111,4562
 # REMOVED (hier mittlerweile offen) --- Platzfläche	q3::inwork 22111,4562 22096,4503
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-#: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026)
 #: also_indoor: traffic (G,T,H,A,W)
 #: last_checked: 2026-08-02 vvv
 #: check_frequency: 90d vvv
@@ -50846,7 +50844,7 @@ EOF
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: source_id: planb2026:13.4564232,52.50244969,01.06.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-08-22 vvv
+#: last_checked: 2026-08-23 vvv
 #: check_frequency: 8d vvv
 #: next_check: 2026-08-31 (planb) vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
@@ -53280,7 +53278,7 @@ EOF
        text  => 'Sabinensteig, Oberseestr., Käthestr.: Bauarbeiten, Einbahnstraßenregelung bzw. Sperrung, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (ex-G,re-T[zu kurz],ex-H,no-W)
+#: also_indoor: traffic (ex-G,ex-T[zu kurz],ex-H,no-W)
 #: note: Laut Baustellenschild der Wasserbetriebe bis August 2026, mittlerweile August 2027
 #: source_id: planb2026:13.49393502,52.54854804,26.05.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 28.08.2026)
 #: source_id: planb2026:13.49366527,52.54839067,09.02.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 26.08.2026)
@@ -54496,11 +54494,11 @@ EOF
 #: source_id: LMS-BR:418661/72 viz2021:13.39892,52.53262, (Veteranenstr., bis 31.08.2026)
 #: also_indoor: traffic (T,no-G)
 #: note: Für den Radverkehr ist eine Umleitung über Fehrbelliner Str. - Choriner Str. (und vermutlich weiter über Schwedter Str.) ausgeschildert, beide Richtungen
-#: last_checked: 2026-08-16 (mapillary) vvv
+#: last_checked: 2026-08-23 (mapillary) vvv
 #: check_frequency: 14d (am Anfang höhere Frequenz) vvv
 #: next_check: 2027-01-29 (planb) vvv
 Kastanienallee: Gleisbauarbeiten	q4::inwork 10370,14158 10426,14262 10497,14391 10530,14452
-# REMOVED (hier noch nicht) --- Zionskirchplatz: Gleisbauarbeiten	q4::inwork 10426,14262 10391,14280 10304,14254
+Zionskirchplatz: Gleisbauarbeiten	q4::inwork 10426,14262 10391,14280 10304,14254
 # REMOVED (hier nicht) --- Zionskirchplatz: Gleisbauarbeiten	q4::inwork 10304,14254 10282,14212
 Veteranenstr.: Gleisbauarbeiten	q4::inwork 10002,14092 10282,14212
 #: next_check ^^^
@@ -54585,7 +54583,7 @@ EOF
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 # REMOVED (fälschlicherweise vorfristig entfernt) --- #: source_id: planb2026:5138 (bis 25.09.2026)
 #: priority: #A
-#: last_checked: 2026-08-15 vvv
+#: last_checked: 2026-08-23 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung, planb) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207
@@ -54815,8 +54813,9 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-07-10 00:00:00"),
-       until => $isodate2epoch->("2026-08-24 21:00:00"),
-       text  => 'Am Wiesenrain: mögliche Sperrung der Fahrbahn vor dem S-Bhf. Hirschgarten, vom 10.7.2026 bis 24.8.2026',
+       until => undef, # $isodate2epoch->("2026-08-24 21:00:00"),
+#      text  => 'Am Wiesenrain: mögliche Sperrung der Fahrbahn vor dem S-Bhf. Hirschgarten, vom 10.7.2026 bis 24.8.2026',
+       text  => 'Am Wiesenrain: mögliche Sperrung der Fahrbahn vor dem S-Bhf. Hirschgarten, vom 10.7.2026 bis 24.8.2026, evtl. wird die Sperrung verlängert',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: HIRSCHGARTEN-2024
@@ -54832,6 +54831,7 @@ EOF
 #: note: 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information (vor Ort keine Freigabe für Radfahrer)
 #: note: 2026-07-18 Sa: Durchfahrt offiziell verboten, aber problemlos möglich (evtl. immer an Wochenenden/außerhalb von Arbeitszeiten?)
 #: also_indoor: traffic (G)
+#: add_fragezeichen: Besteht die Sperrung in der Straße "Am Wiesenrain" noch immer? Oder gibt es mittlerweile eine Einbahnstraßenregelung?
 #: last_checked: 2026-07-18 vvv
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-10-29
@@ -55153,7 +55153,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260811 (Radverkehr wird über den Gehweg geführt, deshalb q4 -> q3)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msucf6syqf2c
 #: source_id: planb2026:13.13162244,52.54946216,10.08.2026, ("Vollsperrung beider Fahrbahnen", bis 22.08.2026)
-#: source_id: LMS-BR:419244/72 viz2021:13.12799,52.54996, (bis 22.08.2026)
+#: source_id: LMS-BR:419244/72 viz2021:13.12799,52.54996, (bis 22.08.2026) (inaktiv)
 	q3::inwork -8450,15702 -8339,15657 -8309,15691 -8198,15648
 EOF
      },
@@ -55186,7 +55186,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260811 (Richtung John-Schehr-Straße gesperrt)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msuayjnqsb2s
 #: source_id: planb2026:13.43920924,52.53531312,12.08.2026,07:00 ("Sperrung einer Fahrtrichtung", vermutlich Richtung Norden gesperrt, bis 22.08.2026)
-#: source_id: LMS-BR:419241/72 viz2021:13.43727,52.53403,12.08.2026,07:00 (bis 22.08.2026)
+#: source_id: LMS-BR:419241/72 viz2021:13.43727,52.53403,12.08.2026,07:00 (bis 22.08.2026) (inaktiv)
 # REMOVED --- #: last_checked: 2026-08-11 --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-07-01 (MoPo)
 # REMOVED --- #: next_check: 2026-08-12 (planb)
@@ -55335,7 +55335,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/mauerpark-in-pankow-schwedter-strasse-nach-absenkungen-gesperrt/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/erneute-sperrung-im-berliner-mauerpark-schon-wieder-boden-abgerutscht--ist-eine-unterirdische-baustelle-der-grund-15958943.html
 #: add_fragezeichen: Ist die Schwedter Str. weiterhin gesperrt?
-#: last_checked: 2026-08-19 (BA, entwicklungsstadt)
+#: last_checked: 2026-08-23 (mapillary)
 	q4::inwork 10130,15653 10186,15481
 EOF
      },
@@ -55359,19 +55359,31 @@ EOF
      },
      { from  => 1787397019, # 2026-08-22 13:10
        until => $isodate2epoch->("2026-12-31 23:59:59"), # undef, # XXX
-       text  => 'Laubsängerweg: Baustelleneinrichtung, Fahrbahn gesperrt, geplant bis 24.08.2026, evtl. werden die Bauarbeiten verlängert',
+#      text  => 'Laubsängerweg: Baustelleneinrichtung, Fahrbahn gesperrt, geplant bis 24.08.2026, evtl. werden die Bauarbeiten verlängert',
+       text  => 'Laubsängerweg: Baustelleneinrichtung, Fahrbahn gesperrt, voraussichlich bis Ende 2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 (bis 24.08.2026)
+#: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 (bis 24.08.2026 + weitere Arbeiten)
 #: source_id: planb2026:13.46032981,52.4391609,10.08.2026, ("Sicherung gemäß Vz.-plan", bis 24.08.2026)
 #: osm_watch: note 5414689 2
 #: also_indoor: traffic (G,T,H,W)
 #: XXX Laut osm note von SGA Nk bis vorauss. Ende 2026
 #: last_checked: 2026-08-22
 #: check_frequency: 14d
-#: next_check: 2026-08-24 (VIZ-Verkehrsmeldung, planb)
-# REMOVED --- #: next_check: 2026-12-31 (SGA Nk)
+# REMOVED --- #: next_check: 2026-08-24 (VIZ-Verkehrsmeldung, planb)
+#: next_check: 2026-12-31 (SGA Nk)
 	q4::inwork 14324,3938 14387,3875
+EOF
+     },
+     { from  => $isodate2epoch->("2026-08-24 00:00:00"),
+       until => $isodate2epoch->("2026-09-18 17:00:00"),
+       text  => 'Groninger Str.: Bauarbeiten, Sperrung der Fahrbahn, 25.08.2026 bis 18.09.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: planb2026:13.36220341,52.55175045,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
+#: source_id: vizapi2026:857/2026 (Vollsperrung für den Kfz- und Radverkehr, 25.08.2026 bis 18.09.2026)
+# REMOVED --- #: next_check: 2026-09-18
+Groninger Str.	q4::inwork 7458,16207 7474,16086
 EOF
      },
     );

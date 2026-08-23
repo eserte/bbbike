@@ -2826,7 +2826,7 @@ An der Bahn: Asphalt	Q0 2120,31350 2082,31535
 Akazienweg: Verbundsteinpflaster	Q1 2082,31535 2070,31607 1988,31882 1972,31940
 Brieseallee: Asphalt	Q0 1800,31436 1820,31582 1887,31658 1925,31701 1945,31803 1963,31895 1972,31940 1960,31979 1931,32075 1965,32117
 Galileistr.: Beton	Q1 -6953,-3680 -7094,-3679 -7351,-3685 -7820,-3701 -7918,-3704 -8032,-3710
-Ricarda-Huch-Str. (Potsdam): Asphalt	Q0 -7917,-4792 -7908,-4836 -7856,-4893 -7725,-4890 -7657,-4888 -7557,-4885 -7502,-4930 -7436,-4991 -7395,-5032 -7393,-5137 -7393,-5164 -7390,-5238 -7384,-5346 -7378,-5448 -7373,-5548 -7369,-5648
+Ricarda-Huch-Str. (Potsdam): Asphalt	Q0 -7917,-4792 -7908,-4836 -7856,-4893 -7725,-4890 -7657,-4888 -7557,-4885 -7502,-4930 -7495,-4935 -7436,-4991 -7395,-5032 -7393,-5137 -7393,-5164 -7390,-5238 -7384,-5346 -7378,-5448 -7373,-5548 -7369,-5648
 Eleonore-Prochaska-Str. (Potsdam): Asphalt	Q0 -7856,-4893 -7874,-4969 -7871,-5055 -7867,-5129
 Johanna-Just-Str. (Potsdam): Asphalt	Q0 -7871,-5055 -7844,-5026 -7784,-4963 -7725,-4890
 Nelly-Sachs-Str. (Potsdam): Asphalt	Q0 -7745,-5148 -7747,-5102 -7689,-5039 -7652,-4993 -7657,-4888
@@ -4047,10 +4047,12 @@ Friedenstr.: Asphalt	Q0 22565,20832 22471,20770
 Friedenstr.: unbefestigter Weg im Wald	Q1 22471,20770 22388,20609
 Friedenstr.: Asphalt	Q0 22388,20609 22252,20353 22218,20273 22171,20139 22161,19982 22206,19858
 Rudolf-Breitscheid-Str.: Asphalt	Q0 22525,20544 22411,20314 22387,20271 22353,20212 22323,20095 22342,19945
-Rudolf-Breitscheid-Str.: Verbundsteinpflaster	Q1 22342,19945 22353,19867 22379,19814 22406,19763
+Rudolf-Breitscheid-Str.: Verbundsteinpflaster	Q1 22342,19945 22353,19867 22379,19814 22424,19730 22459,19674
 Rosenstr.: Asphalt	Q0 22671,20472 22590,20302
 Bernhard-Lichtenberg-Str.: Asphalt	Q0 22590,20302 22563,20247 22538,20184 22510,20002
-Bernhard-Lichtenberg-Str.: Verbundsteinpflaster	Q1 22510,20002 22528,19910 22545,19864
+Bernhard-Lichtenberg-Str.: Verbundsteinpflaster	Q1 22510,20002 22528,19910 22545,19864 22568,19828 22588,19799 22596,19767
+Barnimblick: Verbundsteinpflaster	Q1 22282,19591 22311,19625 22329,19667 22424,19730 22484,19769 22568,19828
+Am Stoppelfeld: Verbundsteinpflaster	Q1 22311,19625 22280,19666
 Asternstr.: Asphalt	Q0 22252,20353 22143,20405
 Tulpenring: grobes Verbundsteinpflaster	Q2 22387,20271 22356,20282 22313,20295 22285,20336 22252,20353
 Tulpenring: grobes Verbundsteinpflaster	Q2 22356,20282 22366,20319 22343,20369 22285,20336
@@ -4280,6 +4282,7 @@ Gluckstr. (Potsdam): Beton	Q1 -7789,-2868 -7491,-2904
 Ratsweg (Potsdam): unbefestigte Straße	Q2 -7822,-2795 -7731,-2808
 Gagarinstr. (Potsdam): Beton	Q1 -8137,-2997 -8197,-3128 -8247,-3264
 Mozartstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -8127,-2925 -8137,-2997
+Mozartstr. (Potsdam): Asphalt	Q0 -8108,-2809 -8127,-2925
 Bahnhofstr. (Potsdam): Asphalt	Q0 -8417,-2862 -8410,-2884 -8430,-2937 -8363,-3060 -8347,-3065 -8197,-3128
 Bahnhofstr. (Potsdam): Asphalt	Q1 -8197,-3128 -7934,-3226 -7923,-3230
 Lotte-Loebinger-Str. (Potsdam): Asphalt	Q0 -9075,-2664 -9054,-2632 -9013,-2614
@@ -6559,6 +6562,8 @@ Lortzingstr.: Asphalt	Q0 -7958,-2775 -7965,-2825 -7992,-2960 -8005,-3056
 Patrizierweg: Kopfsteinpflaster	Q2 -8127,-2925 -7992,-2960
 Patrizierweg: mäßiger Asphalt	Q1 -7992,-2960 -7855,-2973
 Wildenbruch - Fresdorf: sowohl Straße als auch Radweg sehr guter Asphalt	Q0 -11954,-13862 -11853,-14116 -11699,-14911 -11484,-15158 -11553,-15502
+Hubertusdamm (Potsdam): Kleinsteinpflaster	Q2 -7803,-2689 -7690,-2708
+Hubertusdamm (Potsdam): Beton	Q0 -7690,-2708 -7484,-2745 -7369,-2751
 Wildenbruch - Langerwisch: Asphalt mit Löchern	Q0 -12104,-13586 -12221,-13124 -12344,-12547 -12373,-12221
 Wildenbruch - Langerwisch: Kopfsteinpflaster	Q2 -12373,-12221 -12373,-12118 -12369,-11903
 Wildenbruch - Langerwisch: Asphalt mit Löchern	Q0 -12369,-11903 -12305,-10732
@@ -7759,6 +7764,18 @@ Geraer Str. (Neuenhagen): unbefestigte Straße	Q2 29949,11390 29942,11284
 Tegeler Str.: Kleinsteinpflaster	Q2 -10088,17984 -10150,17988 -10292,17929 -10374,17869 -10417,17770
 Marwitzer Str.: Kleinsteinpflaster	Q2 -10530,17708 -10417,17770
 Marwitzer Str.: Asphalt	Q2 -10417,17770 -10344,17792 -10239,17791 -10114,17740
+(Stern-Center): Verbundsteinpflaster	Q1 -7749,-4297 -7811,-4239 -7814,-4120 -7724,-4114
+(Bellavitestr. - Slatan-Dudow-Str./Wolfgang-Staudte-Str.): Verbundsteinpflaster	Q1 -7399,-4814 -7388,-4800 -7381,-4790 -7353,-4785
+Bellavitestr. (Potsdam): Asphalt	Q0 -7502,-4930 -7399,-4814
+Am Friedhof (Potsdam): schlechtes Kopfsteinpflaster	Q3 -7722,-5701 -7724,-5778
+Am Friedhof (Potsdam): Asphalt	Q0 -7724,-5778 -7728,-5839 -7719,-5916
+Am Friedhof (Potsdam): Asphalt	Q0 -7728,-5839 -7821,-5866
+Am Silbergraben (Potsdam): Asphalt/Beton	Q1 -8057,-5350 -7905,-5621 -7859,-5751
+Am Silbergraben (Potsdam): Asphalt	Q0 -7859,-5751 -7821,-5866 -7719,-5916
+Am Silbergraben (Potsdam): Asphalt/Beton	Q1 -7719,-5916 -7588,-5950 -7506,-5936
+Lise-Meitner-Str. (Potsdam): Asphalt	Q0 -7319,-5445 -7378,-5448 -7405,-5449 -7484,-5452 -7533,-5454 -7549,-5447 -7582,-5438 -7602,-5430 -7624,-5411 -7633,-5396 -7646,-5361 -7678,-5326 -7724,-5283 -7739,-5246 -7745,-5192
+Clara-Schumann-Str. (Potsdam): Asphalt	Q0 -7492,-5242 -7491,-5264 -7489,-5321 -7489,-5351 -7488,-5379 -7484,-5452 -7482,-5550 -7537,-5620 -7561,-5659 -7634,-5733 -7661,-5767
+Am Gehölz (Potsdam): Kleinsteinpflaster	Q2 -7758,-2457 -8024,-2468 -8140,-2475
 Gellmersdorf - Stolpe: Asphalt	Q0 57072,64731 57147,64659 57251,64607 57305,64593 57340,64628 57320,64703 57333,64748 57369,64773 57434,64750
 Gellmersdorf - Crussow: Asphalt	Q0 54622,63448 54631,63585 54646,63795 54474,64173 54715,64807 54853,65846 54909,66268 54955,66376 55245,66878
 Crussow - Henriettenhof: Betonplattenstraße	Q2 55462,67494 55350,67664 54991,68210 54554,68493 54071,69098
@@ -7879,7 +7896,9 @@ Börnicke - Wessow: schlechtes Kopfsteinpflaster, Verbundsteinpflastergehweg exis
 Catholystr. (Erkner): Asphalt	Q0 34205,1672 34194,1520 34187,1425
 Catholystr. (Erkner): schlechtes Kopfsteinpflaster	Q3 34187,1425 34181,1349 34182,1314
 Erlenweg (Kleinmachnow): schlechtes Kopfsteinpflaster	Q3 11,549 12,640 -27,702
+Erlenweg (Kleinmachnow): schlechtes Kopfsteinpflaster	Q3 -37,83 15,209 12,326 11,549
 Medonstr. (Kleinmachnow): schlechtes Kopfsteinpflaster	Q3 -27,702 -87,637
+Medonstr. (Kleinmachnow): schlechtes Kopfsteinpflaster	Q3 -87,637 -203,498 -286,309 -340,191 -348,136 -311,99
 Elbestr. (Vogelsdorf): Asphalt	Q0 33985,11787 34067,11751 34821,11357
 Am Panke-Park (Bernau): Asphalt	Q0 23647,31351 23665,31331 23639,31282 23651,31262 23702,31227 23713,31202 23702,31176 23713,31155 23734,31137 23768,31091 23782,31065 23807,31005 23833,30901 23838,30841 23821,30714 23797,30636 23744,30547 23704,30517 23707,30485
 Platanenallee (Röntgental): Asphalt	Q0 17733,27410 17491,27600

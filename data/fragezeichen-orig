@@ -125,7 +125,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt für Radfahrer	?::projected 9047,9
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
 #: by: https://www.tagesspiegel.de/berlin/bislang-125-kilometer-strecke-geplant-diese-neuen-radwege-sollen-2026-in-berlin-gebaut-werden-15071362.html (hier ist ein komplett unklares Projekt gelistet: Kynaststraße, von Paul-Paula-Ufer bis Glasbläserallee als Schutzstreifen, 285 Meter --- wo soll das sein?)
-#: osm_watch: way id="667331289" version="7"
+#: osm_watch: way id="667331289" version="9"
 #: last_checked: 2026-08-01
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
@@ -1944,7 +1944,7 @@ Braunschweiger Str.: Diagonalsperre oder Quersperre geplant	?::projected 13368,7
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26599.pdf (Erwähnung: Asphaltierung der Fahrgasse)
 #: osm_watch: way id="4764878" version="22"
-#: last_checked: 2026-07-18 (mapillary)
+#: last_checked: 2026-08-23 (mapillary)
 #: check_frequency: 180d
 Niederstr.: Asphaltierung geplant	?::projected 7634,19793 7769,19736 7857,19693
 # 
@@ -1952,7 +1952,7 @@ Niederstr.: Asphaltierung geplant	?::projected 7634,19793 7769,19736 7857,19693
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (2017 nicht realisierbar)
 #: by: https://api.fixmyberlin.de/api/plannings/113
 #: osm_watch: way id="4764886" version="24"
-#: last_checked: 2025-09-29 (mapillary)
+#: last_checked: 2026-08-23 (mapillary)
 #: check_frequency: 360d
 Tollerstr.: Asphaltierung geplant	?::projected 7751,19696 7769,19736 7807,19811 7838,19884 7885,19975
 # 
@@ -2676,8 +2676,10 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1700448.php (Abfräsen des Kopfsteinpflasters 17.08.2026 - 31.08.2026; Beschilderung bis 12/2026)
 #: by: https://www.entwicklungsstadt.de/fahrradstrasse-in-steglitz-arbeiten-am-tietzenweg-gehen-weiter/
 #: source_id: planb2026:13.30544371,52.44209114,18.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.09.2026)
-#: osm_watch: way id="1423053724" version="2"
-#: osm_watch: way id="148666424" version="29"
+#: osm_watch: way id="1423053724" version="3"
+#: osm_watch: way id="148666424" version="30"
+#: osm_watch: way id="1551261988" version="3"
+#: osm_watch: way id="1423053720" version="5"
 #: osm_watch: note 5188302 3
 #: last_checked: 2026-08-08
 #: check_frequency: 360d
@@ -4407,7 +4409,7 @@ Torstr.: Planung von Radwegen	?::projected 10177,13766 9917,13741 9797,13691 967
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5828
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5582 (Zwischenbericht) (Vorlage zur Kenntnisnahme: Einbahnstraßensystem geplant)
 #: XXX BA folgt der BVV bei der Sperrung des westlichen Endes des Waldstegs nicht. Aber vielleicht wird es ein Einbahnstraßensystem in der Siedlung geben.
-#: last_checked: 2025-09-29 (mapillary)
+#: last_checked: 2026-08-23 (mapillary)
 #: check_frequency: 360d
 Waldsteg: Abschnitt soll für den MIV gesperrt werden	?::projected 7940,19521 7849,19614 7851,19631 7857,19693
 # 
@@ -7235,7 +7237,7 @@ Bahnhof Köpenick: neuer Ostzugang	?::inwork 22700,6138 22700,6045 22624,6044
 #: osm_watch: way id="190701274" version="15"
 #: osm_watch: way id="949605667" version="12"
 #: osm_watch: way id="1451353643" version="1"
-#: last_checked: 2026-06-23 (mapillary)
+#: last_checked: 2026-08-23 (mapillary)
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2025-12-31 (infravelo)
 Mühlenstr.: Radstreifen geplant	?::projected 10228,18196 10347,17959 10448,17751 10495,17658 10573,17566 10647,17501 10670,17458 10679,17441 10690,17420 10706,17391 10758,17288 10807,17193 10846,17121 10862,17087 10927,17022
@@ -7866,7 +7868,7 @@ Modersohnstr.: geschützte Radfahrstreifen geplant	?::projected 13919,10583 14011
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1620838.php (kein Zeitplan)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260228 (Modalfilter ab März 2026, keine Erwähnung einer Fahrradstraße oder Asphaltierung, außerdem Kfz-Einbahnstraßenregelungen in der Libauer Str. und Simon-Dach-Str.)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25976.pdf (Erwähnung der Fahrradstraße)
-#: last_checked: 2026-07-22
+#: last_checked: 2026-08-23
 #: check_frequency: 120d
 # REMOVED (2025 ist nichts passiert) --- #: next_check: 2025-12-31 (BVV-Drucksache)
 Revaler Str.: östlicher Abschnitt wird zur Fahrradstraße und soll asphaltiert werden	?::projected 14134,11272 14211,11229 14286,11186 14357,11148 14442,11101 14513,11075
@@ -9029,7 +9031,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1596791.php
-#: last_checked: 2026-08-15 vvv
+#: last_checked: 2026-08-23 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="563341820" version="24"
 #: note: zwischenzeitlich gar keine Einbahnstraßenregelung
@@ -9382,7 +9384,7 @@ Güstow - Prenzlau: Bau eines Radwegs	? 37047,101103 37211,101028 37577,100778
 #: XXX Wurde der Bahnübergang bereits für den Fußgänger- und Radverkehr gesperrt?
 #: osm_watch: way id="860486098" version="6"
 #: osm_watch: way id="1367158749" version="5"
-#: osm_watch: note 5026614 1
+#: osm_watch: note 5026614 2
 #: osm_watch: note 4699893 3
 #: last_checked: 2026-08-17 (mapillary)
 #: check_frequency: 90d
@@ -9763,7 +9765,7 @@ Heinersdorfer Str.: was für eine Art RVA wird hier entstehen?	?::projected 13584
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m5ifjexi322p
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihgaqmvltloji4e5ohyxmyitpwt5nt5s2z4e6qmayesbakbeej2gq@jpeg
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1623387.php
-#: osm_watch: note 5080224 2
+#: osm_watch[closed]: note 5080224 2
 #: source_id: viz2021:13.37541,52.59714,23.09.2025,07:00 (bis 10.10.2025) (inaktiv)
 #: source_id: viz2021:13.38052,52.59488, (bis 29.10.2025) (bis 21.11.2025) (bis 26.11.2025) (inaktiv)
 #: source_id: viz2021:13.38487,52.5912,13.11.2025,07:00 (bis 26.11.2025) (inaktiv)
@@ -10051,7 +10053,7 @@ Straße 42: verkehrsberuhigter Bereich soll entstehen	? 15271,22527 15377,22452 1
 #: by: https://www.entwicklungsstadt.de/gartenstrassen-am-rudolfplatz-so-geht-es-mit-der-danneckerstrasse-weiter/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1702726.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/service-und-organisationseinheiten/klima-und-internationales/planungsstand-gartenstr-rudolfplatz-august-2026.pdf
-#: last_checked: 2026-08-22
+#: last_checked: 2026-08-23
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (BA-Seite)
 Rudolfstr.: beabsichtigte Teileinziehung	?::projected 13886,10939 14026,10869
@@ -10173,7 +10175,7 @@ Unter den Eichen: die Radspur soll zurückgebaut werden	?; 4347,5103 4181,5000 41
 # 
 #: source_id: planb2026:13.32269309,52.47258663,17.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.09.2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2026-08-21 (traffic)
+#: last_checked: 2026-08-23 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-08-17 (planb)
 Wilhelmshöher Weg: geplante Bauarbeiten mit Sperrung	? 4874,7326 5058,7327
@@ -10192,11 +10194,11 @@ B198 bei Angermünde: gibt es hier einen Radweg? wo genau?	? 47908,73136 47292,73
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/projekte/artikel.1704801.php (Fertigstellung Anfang 2027)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1704698.php
 #: by: https://www.entwicklungsstadt.de/gartenstadt-tempelhof-suedliche-manfred-von-richthofen-strasse-wird-zur-fahrradstrasse/
-#: osm_watch: way id="1214362233" version="5"
-#: osm_watch: way id="339708816" version="23"
-#: osm_watch: way id="35457635" version="23"
-#: osm_watch: way id="1214362235" version="5"
-#: osm_watch: note 5465550 1
+#: osm_watch: way id="1214362233" version="6"
+#: osm_watch: way id="339708816" version="24"
+#: osm_watch: way id="35457635" version="24"
+#: osm_watch: way id="1214362235" version="6"
+#: osm_watch: note 5465550 2
 #: last_checked: 2026-08-18
 #: check_frequency: 60d
 #: next_check: 2027-03-15 (BA: Anfang 2027)
@@ -11980,9 +11982,10 @@ geplante Straßen bzw. Rad- und Fußweg	?::projected 23391,15298 23324,15292 23280
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10426 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10551 (Antrag (Umfahrungsverkehr))
 #: XXX außerdem Umgestaltung diverser Kreuzungsbereiche (Märkische Allee, Eiche - Ahrensfelde ...), Bau einiger Radwege
+#: XXX wird die Straße Ahrensfelde - Mehrow umverlegt?
 #: last_checked: 2026-03-04
 #: check_frequency: 720d
-Ortsumfahrung Ahrensfelde: geplante Straße, vermutlich Kfz-Straße	?::projected 21400,18817 22365,19031 22752,19055 22928,19304 22913,19870 22986,20408
+Ortsumfahrung Ahrensfelde: geplante Straße, vermutlich Kfz-Straße	?::projected 21400,18817 22122,18906 22557,18915 22750,18972 22874,19081 22975,19235 23020,19410 23013,19556 22906,20089 22986,20408
 # 
 # REMOVED (laut osm offen) --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31828 --- #: by: https://www.o-sp.de/download/lbvbrandenburg/141822 --- #: XXX vermutlich mit Radspuren (Schutzstreifen) --- #: osm_watch: way id="28020956" version="10" brb --- #: next_check: 2021-06-01 --- Biomalzspange Teltow: geplante Straße	?::projected -556,-1402 -412,-1540 -347,-1747 -359,-1996
 # 
@@ -12181,10 +12184,10 @@ Bebauungsplan XXI-22-2 (Georg-Knorr-Park Teilgebiet Ost): Planung eines Geh- und
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/bauwens-feiert-fertigstellung-von-aera-buerohaus_a424980
 #: by: https://www.bauwens.de/de/projekte/am-spreebord
 #: osm_watch: way id="1029334947" version="7"
-#: last_checked: 2026-02-25
+#: last_checked: 2026-05-25 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2023-05-01
-Spreebordpark: werden hier Wege entstehen?	? 4172,12933 4275,12930 4286,12717 4160,12738 4172,12933
+Spreebordpark: werden hier Wege entstehen?	? 4104,12937 4132,12728 4233,12713 4217,12853 4246,12857 4236,12936 4104,12937
 # 
 # REMOVED (realisiert) --- #: next_check_id: GROSSBERLINERDAMM-2020 --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie) --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel)--- #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20210926 (Eröffnungstermin) --- #: last_checked: 2021-09-05 (krickstadt) --- #: next_check: 2021-10-31 --- Groß-Berliner Damm/Benno-König-Str.: hier entsteht eine Ampel	?::inwork 18374,4307 18373,4280
 # 
@@ -12420,7 +12423,7 @@ Arnimstr.: hier soll eine Grünfläche entstehen	?::projected 18472,16844 18267,17
 # REMOVED (deleted) --- #: osm_watch: way id="44606576" version="26"
 # REMOVED --- Bebauungsplan XV-11 (Hasselwerderstr....): Planstraßen sowie ein Uferweg werden entstehen	?::projected 17968,5904 18213,5783
 # REMOVED (-> strassen + temp_blockings) --- (Uferweg)	?::inwork 18192,5931 18118,5953
-#: osm_watch: way id="958828369" version="2"
+#: osm_watch: way id="958828369" version="3"
 (Uferweg)	?::inwork 18118,5953 17969,6037
 # REMOVED (-> strassen + temp_blockings) --- #: osm_watch: way id="958828368" version="1" --- (Fußweg zum Uferweg)	?::inwork 18075,5880 18118,5953
 #: next_check ^^^
@@ -13741,7 +13744,7 @@ Im Schäferfeld: Qualität?	? -8098,-3680 -8198,-3696 -8317,-3775 -8404,-3824 -847
 Fichtenallee (Potsdam): Qualität?	? -8563,-3805 -8451,-3728 -8226,-3592
 #: XXX Name "Breites Gestell", gibt es dazu Schilder?
 #: XXX_indoor: in Potsdam.coords.data gab es einen Eintrag "Am Breiten Gestell|Potsdam||" --- hat es was mit diesem Weg zu tun?
-Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -7077,-4186 -6902,-4397 -6775,-4326 -6767,-4463 -6669,-6430 -6655,-6763 -6610,-6839 -6435,-6954 -6470,-7079 -6191,-7587 -6319,-7795 -5766,-8911 -5387,-8896
+Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -6767,-4200 -6759,-4462 -6756,-4508 -6698,-4584 -6641,-4622 -6631,-4673 -6738,-4796 -6669,-6430 -6655,-6763 -6610,-6839 -6435,-6954 -6470,-7079 -6191,-7587 -6319,-7795 -5766,-8911 -5387,-8896
 Königsdamm in Schlänitzsee: Qualität? Führt hier die F3 entlang?	? -19316,4365 -19392,4605
 F3 nach Marquardt: genaue Wegführung? Qualität?	? -19392,4605 -18701,4578
 #: XXX: am südöstlichen Ende habe ich "unbefestigt" notiert, aber bei osm steht "cobblestone" --- vielleicht wechselt hier die Fahrbahnbeschaffenheit?
@@ -14255,9 +14258,7 @@ Am Hirtengraben (Potsdam): Qualität? Für Autos befahrbar?	? -7944,-5153 -7934,-5
 #: note: laut osm "unbefestigt" und für Autos offen
 Am Hirtengraben (Potsdam): Qualität? Für Autos befahrbar?	? -7934,-5175 -8001,-5199 -8116,-5221
 Mildred-Harnack-Str. (Potsdam): Qualität?	? -7384,-5346 -7411,-5348 -7489,-5351
-Lise-Meitner-Str. (Potsdam): Qualität?	? -7319,-5445 -7378,-5448 -7405,-5449 -7484,-5452 -7533,-5454 -7549,-5447 -7582,-5438 -7602,-5430 -7624,-5411 -7633,-5396 -7646,-5361 -7678,-5326 -7724,-5283 -7739,-5246 -7745,-5192
 Kamblystr. (Potsdam): Qualität?	? -7672,-5189 -7672,-5238 -7633,-5279
-Clara-Schumann-Str. (Potsdam): Qualität?	? -7492,-5242 -7491,-5264 -7489,-5321 -7489,-5351 -7488,-5379 -7484,-5452 -7482,-5550 -7537,-5620 -7561,-5659 -7634,-5733 -7661,-5767 -7661,-5767
 Gertrud-Kolmar-Str. (Potsdam): Qualität?	? -7313,-5545 -7373,-5548 -7403,-5549 -7482,-5550
 #: XXX zweifelhafter Eintrag von anonymous: Asphalt, Q0, aber NN (osm meint Anlieger frei) und "viele Fußgänger"?
 Schinkelstr. (Potsdam): Qualität?	? -7655,-5517 -7582,-5438
@@ -14266,8 +14267,6 @@ Schadowstr. (Potsdam): Qualität?	? -7713,-5470 -7658,-5407 -7633,-5396
 Clara-Schumann-Str. - Dorothea-Schneider-Str.: Qualität? Hat diese Verbindung einen Straßennamen?	? -7488,-5379 -7558,-5383 -7580,-5366
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_08_2018_endfassung.pdf (Widmung)
 Büringstr. (Potsdam): Qualität?	? -7364,-5052 -7321,-5005 -7272,-5050
-#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_08_2018_endfassung.pdf (Widmung)
-Bellavitestr. (Potsdam): Qualität?	? -7502,-4930 -7399,-4814
 #: XXX gesehen bei OpenStreetMap
 Heinrich-Kleist-Str. (Potsdam): existiert eine Verbindung zur Walter-Klausch-Str.?	? -10142,-2540 -10158,-2591 -10080,-2632
 Kleewall (Potsdam): Qualität?	? -9806,-2861 -9693,-2899
@@ -14304,11 +14303,9 @@ Wolfshagen - Ottenhage: Qualität?	? 25017,115256 25026,115200 25050,115094 25010
 Fürstenwerder - Bülowssiege: Qualität?	? 21007,109931 21062,109937 21165,109966 21220,109964 21445,110097 21615,110199 21693,110291 21855,110445 21977,110489 22078,110654 22289,110757 22351,110760 22638,110897 22803,110995 23087,111261
 L25 - Hildebrandshagen: Qualität?	? 23242,109707 23226,110446 23385,110586 23413,110757 23274,110878 23274,110963 23087,111261 23087,111306 23153,111439 23077,111655 23118,111699 23134,111848 22992,112273 22836,112384 22674,112533
 Hildebrandshagen - Wolfshagen: Qualität?	? 22674,112533 22785,112612 22909,112768 22972,112939 22766,114059 22849,114201 22836,114325 22934,114693 23096,114947 24289,115273 24587,115502
-Am Gehölz (Potsdam): Qualität?	? -7758,-2457 -8024,-2468 -8140,-2475
-Hubertusdamm (Potsdam): Qualität östlich der Mendelssohn-Bartholdy-Str.?	? -7803,-2689 -7484,-2745 -7369,-2751
 Brahmsweg (Potsdam): Qualität?	? -8136,-2699 -8132,-2754 -8138,-2804
+#: XXX im östlichen Abschnitt asphaltiert (siehe Mapillary)
 Schubertstr. (Potsdam): Qualität?	? -8219,-2795 -8138,-2804 -8108,-2809 -7965,-2825
-Mozartstr. (Potsdam): Qualität im nördlichen Abschnitt?	? -8108,-2809 -8127,-2925
 Hohenreinkendorf: Qualität?	? 71648,92361 71767,92617 71794,92835 71812,93044 71834,93124 71805,93237
 # REMOVED --- #: by: https://www.schwedt.eu/de/politik-und-verwaltung/veroeffentlichungen/ausschreibungen//sanierung-der-dorfstrasse-in-kummerow/31088 (Betonstraße, soll 2023 asphaltiert werden) --- Kummerow - Kunow/Neue Mühle: Qualität?	? 63213,83851 63343,83884 63484,83896 63708,83896 64030,83689
 # REMOVED --- #: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//uckermaerkischer-radrundweg/31426 (Asphaltierung bis März 2023, Uckermärkischer Radrundweg wird hierher verlegt) --- #: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//uckermaerkischer-radrundweg/31426 --- Kummerow - Kunow/Neue Mühle: Qualität? Laut osm grade3	? 64030,83689 64070,83638 64136,83538 64199,83388 64560,83095 65187,82762 65732,81931
@@ -14384,7 +14381,8 @@ Otto-Haseloff-Str. (Potsdam): Qualität des nordöstlichen Abschnitts?	? -6744,-33
 #: XXX str_cont_ausnahme-Eintrag
 Sternstr. (Potsdam): Qualität des nordöstlichen Abschnitts?	? -6959,-3804 -6941,-3803 -6796,-3645
 Sternstr. (Potsdam): Qualität des südwestlichen Abschnitts?	? -7228,-4113 -7335,-4235 -7436,-4337 -7480,-4391 -7531,-4446 -7616,-4536 -7702,-4629 -7853,-4790
-Newtonstr. - Stern-Center: Können Radfahrer zum Stern-Center fahren? (Rampe am südlichen Ende scheint zu existieren)	? -7805,-4022 -7802,-4113
+Newtonstr. - Stern-Center: Können Radfahrer zum Stern-Center fahren? (Rampe am südlichen Ende scheint zu existieren)	? -7805,-4022 -7802,-4113 -7768,-4106 -7818,-4106 -7814,-4120
+(Gerlachstr. - Sternstr): existiert hier eine Verbindung für Radfahrer? Qualität?	? -7471,-4299 -7436,-4337
 Laplacering (Potsdam): Qualität?	? -7819,-3764 -7987,-3769 -7980,-3938 -7812,-3936
 Leibnizring (Potsdam): Qualität?	? -7815,-3805 -7663,-3800 -7656,-3934 -7812,-3936
 Guido-Seeber-Weg (Potsdam): Qualität?	? -7308,-4459 -7378,-4396 -7427,-4439 -7464,-4407 -7480,-4391
@@ -14400,15 +14398,10 @@ Conrad-Veidt-Str. (Potsdam): Qualität?	? -7156,-4745 -7083,-4708 -6961,-4588
 Friedrich-W.-Murnau-Str.: Qualität?	? -7149,-4407 -7047,-4299 -7016,-4326 -6949,-4389
 Paul-Wegener-Str.: Qualität?	? -6949,-4389 -7049,-4505
 #: XXX Verknüpfungen zu den angrenzenden Straßen?
-Priesterweg (Potsdam): Qualität? Teilweise für Autos gesperrt?	? -6767,-4463 -6940,-4609 -7038,-4699 -7172,-4776 -7199,-4797 -7873,-4811
-Kirchstr. (Potsdam): Qualität (vermutlich asphaltiert, aber wie gut?)?	? -7534,-5904 -7473,-5743 -7561,-5659 -7796,-5447
+Priesterweg (Potsdam): Qualität? Teilweise für Autos gesperrt?	? -6759,-4462 -6940,-4609 -7038,-4699 -7172,-4776 -7199,-4797 -7388,-4800 -7873,-4811
+Kirchstr. (Potsdam): Qualität (vermutlich asphaltiert, aber wie gut?)? Teilweise Einbahnstraße, auch für den Radverkehr?	? -7534,-5904 -7473,-5743 -7561,-5659 -7796,-5447
 Kirchstr. (Potsdam): Qualität (vermutlich wassergebundene Decke)? Ist der gesamte Abschnitt nur für Fußgänger+Radfahrer?	? -7796,-5447 -7910,-5356 -8057,-5350
-#: XXX str_cont_ausnahme-Eintrag:
-Am Friedhof (Potsdam): Qualität?	? -7722,-5701 -7728,-5839 -7719,-5916
-Am Friedhof (Potsdam): Qualität?	? -7728,-5839 -7821,-5866
-#: XXX möglicherweise betoniert, zumindest am südöstlichen Ende
-Am Silbergraben (Potsdam): Qualität?	? -8057,-5350 -7905,-5621 -7821,-5866 -7719,-5916 -7588,-5950 -7506,-5936
-#: XXX laut osm tertiary
+#: XXX laut osm ist der größte Teil eine Servicestraße
 Trebbiner Str. (Potsdam): Qualität?	? -7476,-6039 -7488,-6072 -7762,-6204 -7862,-6009
 Handelshof (Potsdam): Qualität?	? -9028,-5574 -9169,-5651 -9205,-5580
 Möbelhof (Potsdam): Qualität?	? -9329,-5239 -9199,-5153 -9088,-5091
@@ -14841,8 +14834,6 @@ Auf der Drift (Kleinmachnow): Qualität im nördlichen Abschnitt?	? -1416,-84 -144
 Auf der Breite (Kleinmachnow): Qualität im nördlichen Abschnitt?	? -1309,-59 -1334,66
 Wilhelm-Külz-Weg (Kleinmachnow): Qualität im östlichen Abschnitt?	? -632,-172 -547,-231
 Erlenweg (Kleinmachnow): Qualität?	? -133,-371 -193,-298 -217,-250 -144,-156
-Erlenweg (Kleinmachnow): Qualität (vermutlich Kopfsteinpflaster, aber Q2 oder Q3?)?	? -37,83 15,209 12,326 11,549
-Medonstr. (Kleinmachnow): Qualität (vermutlich schlechtes Kopfsteinpflaster?)?	? -87,637 -203,498 -286,309 -340,191 -348,136 -311,99
 #: XXX zumindest am westlichen Ende asphaltiert
 Heinersdorfer Weg (Teltow): Qualität des östlichen Abschnitts? nur für Radfahrer/Fußgänger frei?	? 2578,-871 2637,-933 2807,-987
 An den Koppeln (Teltow): Qualität?	? 2807,-987 2855,-1022 2940,-1031 3004,-1036 3118,-1063
@@ -14990,9 +14981,10 @@ Seilerstr. (Gramzow): Qualität?	? 49787,90264 49854,90252 49851,90216 49968,9021
 Perugiaplatz (Potsdam): genaue Lage? Qualität?	? -13211,2566 -13205,2542 -13197,2517
 # 
 #: osm_watch: way id="26223763" version="30"
-#: XXX außerdem Verlängerungen von bestehenden Straßen
+#: XXX außerdem Verlängerungen von bestehenden Straßen (Rudolf-Breitscheid-Str., Am Stoppelfeld) und neue Straßen (Bienengasse, Siedlersteig, Feldhasenweg)
+#: XXX vermutlich Fortführung des Verbundsteinpflasters
 #: last_checked: 2026-04-28 (osm)
 #: check_frequency: 120d
-Bernhard-Lichtenberg-Str. (Ahrensfelde): neue Straße entsteht	?::inwork 22366,19467 22439,19573 22592,19772 22580,19815 22545,19864
+Bernhard-Lichtenberg-Str. (Ahrensfelde): Straße wird verlängert	?::inwork 22596,19767 22572,19716 22540,19649 22497,19618 22460,19595 22406,19501 22366,19467
 # 
 #: section ^^^
