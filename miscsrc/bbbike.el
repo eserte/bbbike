@@ -888,13 +888,16 @@
 (defun bbbike-sourceid-viz-button (button)
   (let ((sourceid (button-get button :sourceid))
 	(bbbike-datadir (bbbike-datadir))
-	(fragezeichen-lowprio (concat (bbbike-aux-bbddir) "/fragezeichen_lowprio.bbd")))
-    (grep (concat "2>/dev/null egrep -a -ns "
+	(fragezeichen-lowprio (concat (bbbike-aux-bbddir) "/fragezeichen_lowprio.bbd"))
+	(meldungen-berlin-bbd-file (concat "/tmp/meldungen_berlin_inuse_flatten." (format-time-string "%Y-%m-%d" (current-time)) ".bbd")) ; XXX temporary solution, path will change
+	)
+    (grep (concat "2>/dev/null grep --color -P -a -ns "
 		  bbbike-vmz-diff-file " "
 		  (if (file-exists-p fragezeichen-lowprio) (concat fragezeichen-lowprio " "))
 		  bbbike-datadir "/*-orig" " "
 		  bbbike-datadir "/temp_blockings/bbbike-temp-blockings.pl" " "
-		  "-e " "'" "(¦|\246| )" sourceid "(¦|\246| |$)" "'"))))
+		  (if (file-exists-p meldungen-berlin-bbd-file) (concat meldungen-berlin-bbd-file " "))
+		  "-e " "'" "(?<=[¦\\246= ])" sourceid "((?=[¦\\246 ])|$)" "'"))))
 
 (define-button-type 'bbbike-sourceid-viz-button
   'action 'bbbike-sourceid-viz-button
