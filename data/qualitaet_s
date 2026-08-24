@@ -1241,7 +1241,7 @@ Breite Str.: Kopfsteinpflaster	Q2 5048,4798 5087,4853 5169,4969 5216,5047 5259,5
 Schiffbauerdamm: Kleinsteinpflaster	Q2 9239,12923 9193,12875
 Albrechtstr.: Asphalt	Q0 9102,12790 9042,12931 8997,13037
 Tempelherrenstr.: asphaltiert	Q0 10190,9872 10251,9979 10313,10084
-Tempelherrenstr.: Verbundsteinpflaster	Q1 10190,9872 10177,9850
+Tempelherrenstr.: Verbundsteinpflaster	Q1 10190,9872 10180,9852
 (Benekendorffstr - Alt-Lübars): wassergebundene Decke	Q1 6454,23582 6481,23605
 (Benekendorffstr - Alt-Lübars): Kopfsteinpflaster	Q2 6481,23605 6623,23678 6674,23683 6744,23695
 (Alt-Hermsdorf - Zehntwerderweg): Kleinsteinpflaster	Q2 4564,23048 4596,22955
@@ -12080,6 +12080,7 @@ Buschkrugallee [64]: altes Betonpflaster	Q1 13530,5870 13460,5834
 Buschkrugallee [64]: Betonpflaster	Q0 13460,5834 13427,5849 13190,5794
 (Parkweg am Laubsängerweg): Verbundsteinpflaster	Q1 14484,3796 14507,3820 14540,3821 14568,3731
 (Ibisweg - Laubsängerweg): Verbundsteinpflaster	Q1 14573,3843 14540,3821
+(Mauerweg - Oberjägerweg): Waldweg	Q2 -6806,18129 -6635,18128
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -16580,7 +16581,8 @@ Fennpfuhlweg: Asphalt, teilweise etwas grob	Q1 18055,19106 17956,19139 17845,191
 Fennpfuhlweg: Verbundsteinpflaster	Q1 17845,19186 17761,19221 17750,19181
 Fennpfuhlweg: Asphalt	Q0 17750,19181 17697,18989
 Sallgaster Str.: Beton	Q0 6337,20826 6027,20807
-Oberjägerweg: fester Sandweg, mal Sand, mal uneben, mal Kopfsteinpflaster	Q2 -6608,17562 -6547,17884 -6501,17981 -6635,18128 -5708,19113 -5209,19643 -5024,19831 -4844,20024 -4559,20331 -4485,20420
+Oberjägerweg: Waldweg	Q2 -6608,17562 -6547,17884 -6501,17981 -6635,18128 -5708,19113 -5209,19643
+Oberjägerweg: Kleinsteinpflaster	Q2 -5209,19643 -5122,19730 -5024,19831 -4844,20024 -4559,20331 -4485,20420
 Kiepertstr.: guter Asphalt	Q0 8522,1870 8374,1815
 Kiepertstr.: guter Asphalt	Q0 8286,1830 8277,1812 8152,1771 8085,1763 7994,1750 7962,1748 7876,1786
 Bohnsacker Steig: Verbundsteinpflaster	Q1 -2245,22954 -2284,22847

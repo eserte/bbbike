@@ -3574,43 +3574,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.winzerfest-köpenick.de/
-#: by: https://www.laubinger.de/event/koepenickerwinzersommer/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1353303.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1585924.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704602.php
-# REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
-# REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22111,4562 22096,4503
-# REMOVED (hier wohl nicht) ---	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
-# REMOVED (hier wohl nicht) ---	2::temp 22212,4655 22214,4548
-# REMOVED (hier wohl nicht) ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
-# REMOVED (hier wohl nicht) ---	2::temp 22314,4604 22355,4660 22363,4678 22395,4678
-# REMOVED (hier wohl nicht) ---	2::temp 22175,4730 22246,4711
-# REMOVED (hier wohl nicht) ---	2::temp 22074,4664 22138,4642
-# REMOVED (hier wohl nicht) ---	2::temp 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847
-Luisenhain	2::temp 22070,4504 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
-Schlossinsel	2::temp 22096,4503 22087,4470 22084,4455 22076,4422
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1787227200,
-         'id' => 2610,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              8,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 21.8.2026 bis 23.8.2026 möglich',
-         'type' => 'gesperrt',
-         'until' => 1787522399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6468,7 +6432,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1352930.php (unklare Instandsetzung)
 #: osm_watch: way id="238032318" version="7"
 #: add_fragezeichen: Wann ist der Steg wieder offen?
-#: last_checked: 2026-06-21 (osm)
+#: last_checked: 2026-08-23 (mapillary)
 #: check_frequency: 120d
 	2::inwork 11162,22939 11150,22898
 ',
@@ -7116,7 +7080,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-08-20 vvv
+#: last_checked: 2026-08-24 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -8369,7 +8333,27 @@ Caspar-Theiß-Str.: Sperrung der Fahrbahn an der Paulsborner Str., Gehweg für Rad
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.501283,52.560123,21.05.2025,07:00 (hier nur Kfz-Verkehr, bis 23.07.2025 + weitere Bauphasen) (inaktiv)
+#: source_id: adac:1670787902 (bis voraussichtlich 23.07.2025) (inaktiv)
+#: source_id: adac:193058608 (bis 23.07.2025) (inaktiv)
+#: source_id: viz2021:13.50038,52.56143,21.05.2025,07:00 (bis 23.07.2025) (inaktiv)
+#: source_id: LMS-BR:419975/72 viz2021:13.50149,52.55964, (gibt\'s die Bauarbeiten wieder? bis 22.09.2026)
+#: also_indoor: traffic (T,no-G,no-W,H[falsche Lage?])
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpnptl6lls2o
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiebwxdqzzfbx4fuikq5twvb2ibrbfh7mzstw4rj6hwp7ucy4km2zi@jpeg (laut Verkehrszeichenplan keine Ausnahmen für Radfahrer)
+Drossener Str.: mögliche Sperrung	q4::inwork 16753,17192 16915,17231
+# REMOVED (alte Meldung) --- Malchower Weg	q4::inwork; 16887,17349 16905,17281 16915,17231
+# REMOVED --- #: note: nur wenige Meter, deshalb q3
+# REMOVED --- Drossener Str.: Einbahnstraßenregelung	q3::inwork; 16753,17192 16915,17231
+# REMOVED --- Privatstr. 2	q4::inwork 16905,17281 17028,17298
+',
+         'from' => 1787522400,
+         'id' => 4347,
+         'text' => 'Drossener Str.: Anbindung an den Malchower Weg möglicherweise gesperrt, bis 22.09.2026',
+         'type' => 'handicap',
+         'until' => 1790114399
+       },
        undef,
        undef,
        undef,
@@ -8700,7 +8684,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: source_id: planb2026:13.4564232,52.50244969,01.06.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-08-23 vvv
+#: last_checked: 2026-08-24 vvv
 #: check_frequency: 8d vvv
 #: next_check: 2026-08-31 (planb) vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
@@ -8900,7 +8884,7 @@ Corinthstr.	q2::inwork 14447,10491 14608,10409
        {
          'data' => '#: next_check_id: HERMANNDORNERALLEE-2025
 #: source_id: planb2026:13.51957796,52.42829578,17.01.2024, (hier nur "Fahrbahneinengung", bis 31.07.2026) (inaktiv)
-#: source_id: bvg2024:160#HIM_FREETEXT_357250 (neue Haltestelle Hermann-Dorner-Allee noch nicht in Betrieb)
+#: source_id[inactive]: bvg2024:160#HIM_FREETEXT_357250 (neue Haltestelle Hermann-Dorner-Allee noch nicht in Betrieb)
 #: source_id: bvg2024:160#HIM_FREETEXT_357299 (neuer Standort der Haltestelle noch in Bau)
 #: also_indoor: traffic (no-G,ex-T,ex-H,no-W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
@@ -10122,7 +10106,19 @@ Bäumerplan: Sperrung der Fahrbahn	q4::inwork 8527,8293 8482,8227
          'type' => 'handicap',
          'until' => 1793487599
        },
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR:410355/72 viz2021:13.288284,52.515211,01.06.2026,06:00 (bis 19.06.2026) (inaktiv)
+# REMOVED ---	q4::inwork 2686,12051 2485,12032
+#: source_id: planb2026:13.29237017,52.51538613,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 07.09.2026)
+#: source_id: LMS-BR:419944/72 viz2021:13.29075,52.51534,24.08.2026,07:00 (bis 07.09.2026)
+Seelingstr.	q4::inwork 2686,12051 2920,12070
+',
+         'from' => 1787522400,
+         'id' => 4624,
+         'text' => 'Seelingstr.: Sperrung zwischen Danckelmannstr. und Nehringstr., evtl. ist auch der Radverkehr betroffen, vom 24.08.2026 06:00 bis 07.09.2026',
+         'type' => 'handicap',
+         'until' => 1788818399
+       },
        undef,
        undef,
        {
@@ -10655,10 +10651,10 @@ Michaelkirchplatz	q4::inwork 11491,11396 11458,11394 11451,11378 11507,11355 115
        },
        {
          'data' => '#: next_check_id: RESIDENZ-2026
-#: source_id: LMS-BR:415057/72 viz2021:13.36354,52.56514,07.07.2026,00:00 (zwischen Simmelstr. und Walderseestr., bis 05.08.2026) (bis 24.08.2026)
-#: source_id: LMS-BR:411172/72 viz2021:13.36354,52.56514, (Höhe Simmelstr., bis 05.08.2026) (bis 24.08.2026)
-#: source_id: LMS-BR:415078/72 viz2021:13.36582,52.5629,07.07.2026,00:00 (angrenzende Holländerstr., bis 05.08.2026) (bis 24.08.2026)
-#: source_id: LMS-BR:415077/72 viz2021:13.36416,52.56378,07.07.2026,00:00 (angrenzende Pankower Allee, bis 05.08.2026) (bis 24.08.2026)
+#: source_id: LMS-BR:415057/72 viz2021:13.36354,52.56514,07.07.2026,00:00 (zwischen Simmelstr. und Walderseestr., bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026)
+#: source_id: LMS-BR:411172/72 viz2021:13.36354,52.56514, (Höhe Simmelstr., bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026)
+#: source_id: LMS-BR:415078/72 viz2021:13.36582,52.5629,07.07.2026,00:00 (angrenzende Holländerstr., bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026)
+#: source_id: LMS-BR:415077/72 viz2021:13.36416,52.56378,07.07.2026,00:00 (angrenzende Pankower Allee, bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026)
 #: note: wobei man theoretisch auf der 1+1-spurigen Gegenfahrbahn fahren könnte; ein Radfahrverbot scheint es nicht zu geben
 Residenzstr.: Sperrung Richtung Norden	1::inwork 7602,17399 7579,17532
 Holländerstr.: mögliche Engstellen	q2::inwork; 7602,17399 7675,17427
@@ -10668,9 +10664,9 @@ Fahlandgasse: provisorische Einbahnstraßenregelung	q4::inwork; 7675,17538 7675,1
 ',
          'from' => 1783375200,
          'id' => 4681,
-         'text' => 'Residenzstr.: Bauarbeiten am Franz-Neumann-Platz, Sperrungen, Engstellen, geplant bis 24.8.2026',
+         'text' => 'Residenzstr.: Bauarbeiten am Franz-Neumann-Platz, Sperrungen, Engstellen, geplant bis 7.9.2026',
          'type' => 'gesperrt',
-         'until' => 1787608799
+         'until' => 1788818399
        },
        {
          'data' => '#: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 (bis 04.09.2026)
@@ -10878,7 +10874,7 @@ Manfred-von-Richthofen-Str.	q4::inwork; 9229,8718 9158,8706 9093,8665 9011,8605
 #: traffic_note: Verstärkter Ausweichverkehr über Rüdersdorfer Str. - Koppenstr. - Singerstr.; vor der Andreasstraße Stauung möglich
 #: note: Der nach Süden führende Bürgersteig war vor der Havarie explizit für Radfahrer freigegeben, aber das Schild wurde entfernt; Gelbmarkierung ist teilweise noch da; mittlerweile gibt es auch eine Komplettsperrung auf dieser Seite; Richtung Norden existiert auch teilweise noch Gelbmarkierung von einer früheren Radwegführung, keine Einschränkungen
 #: note: Mittlerweile ist hier eine Sackgasse ausgeschildert, und nur die Fahrbahn und der westliche Bürgersteig hinter dem südlichen Unterführungsende ist abgesperrt.
-#: last_checked: 2026-08-18
+#: last_checked: 2026-08-24
 #: check_frequency: 14d
 #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung)
 Straße der Pariser Kommune	q2::inwork 12645,11673 12543,11521
@@ -11145,6 +11141,7 @@ Manfred-von-Richthofen-Str.: Einbahnstraßenregelung	q4::inwork; 9242,7325 9097,7
        {
          'data' => '#: source_id: planb2026:13.36220341,52.55175045,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
 #: source_id: vizapi2026:857/2026 (Vollsperrung für den Kfz- und Radverkehr, 25.08.2026 bis 18.09.2026)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260824
 # REMOVED --- #: next_check: 2026-09-18
 Groninger Str.	q4::inwork 7458,16207 7474,16086
 ',

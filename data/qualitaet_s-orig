@@ -224,7 +224,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2026-08-19
+#: last_checked: 2026-08-24
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -236,7 +236,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2026-08-19 vvv
+#: last_checked: 2026-08-24 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -527,7 +527,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-08-21
+#: last_checked: 2026-08-24
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -1882,7 +1882,7 @@ Schiffbauerdamm: Kleinsteinpflaster	Q2+ 9239,12923 9193,12875
 Albrechtstr.: Asphalt	Q0 9102,12790 9042,12931 8997,13037
 #: note: außer ein etwas längeres Stück beiderseits der Kreuzung Johanniterstr./Wilmsstr.
 Tempelherrenstr.: asphaltiert	Q0 10190,9872 10251,9979 10313,10084
-Tempelherrenstr.: Verbundsteinpflaster	Q1 10190,9872 10177,9850
+Tempelherrenstr.: Verbundsteinpflaster	Q1 10190,9872 10180,9852
 (Benekendorffstr - Alt-Lübars): wassergebundene Decke	Q1- 6454,23582 6481,23605
 (Benekendorffstr - Alt-Lübars): Kopfsteinpflaster	Q2+ 6481,23605 6623,23678 6674,23683 6744,23695
 # REMOVED --- Dianastr.: mäßig geeignet laut ADFC-Karte; ist aber asphaltiert!	Q2 6698,3477 6792,3318 6820,3245
@@ -3556,7 +3556,7 @@ Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 #: next_check_id: KOEPENICKER-2026
 #: osm_watch: note 5467923 2
 #: XXX Asphaltierungsarbeiten
-#: last_checked: 2026-08-20
+#: last_checked: 2026-08-24 (letzte Deckschicht fehlt)
 #: check_frequency: 3d
 Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11917,11186 11944,11152
 (Weg am Humboldthain): Betonpflaster mit breiten Fugen	Q2 9255,15816 9092,15789
@@ -8946,7 +8946,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 #: next_check_id: HELLWEG-2014 vvv
 #: by: https://beteiligung.bund.de/DE/VorhabenFindenUndBeteiligen/Details/Vorhaben.html?id=V-E100461 (Neubau S-Bahn Berlin S21, GUw Yorckstraße: "der angrenzende Geh- und Radweg umverlegt" -> ist dieser Weg gemeint?)
 #: by: https://beteiligung.bund.de/DE/VorhabenFindenUndBeteiligen/Details/Beteiligung.html?id=V-E100461&idb=B-E100461-01 (laut Planunterlagen/03_Lagepl/03-1_Lagepl.pdf wird der Weg begradigt und asphaltiert; außerdem könnte es noch einen weiteren Weg auf der westlichen Seite von Hellweg zur Yorckstraße geben)
-#: last_checked: 2026-02-24 vvv
+#: last_checked: 2026-08-24 vvv
 #: check_frequency: 180d vvv
 #: osm_watch: way id="531908445" version="14"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
@@ -14635,6 +14635,9 @@ Buschkrugallee [64]: Betonpflaster	Q0- 13460,5834 13427,5849 13190,5794
 # 
 (Parkweg am Laubsängerweg): Verbundsteinpflaster	Q1 14484,3796 14507,3820 14540,3821 14568,3731
 (Ibisweg - Laubsängerweg): Verbundsteinpflaster	Q1 14573,3843 14540,3821
+# 
+#: by: mapillary
+(Mauerweg - Oberjägerweg): Waldweg	Q2+ -6806,18129 -6635,18128
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -27241,9 +27244,12 @@ Fennpfuhlweg: Asphalt	Q0 17750,19181 17697,18989
 #: confirmed_by: srt
 Sallgaster Str.: Beton	Q0 6337,20826 6027,20807
 # 
-#: by: Kerstin Eggert:
-#: note: breiter Forstweg
-Oberjägerweg: fester Sandweg, mal Sand, mal uneben, mal Kopfsteinpflaster	Q2 -6608,17562 -6547,17884 -6501,17981 -6635,18128 -5708,19113 -5209,19643 -5024,19831 -4844,20024 -4559,20331 -4485,20420
+#: by: Kerstin Eggert: vvv
+#: corrected_by: mapillary (fester Sandweg, mal Sand, mal uneben, mal Kopfsteinpflaster -> ...)
+Oberjägerweg: Waldweg	Q2+ -6608,17562 -6547,17884 -6501,17981 -6635,18128 -5708,19113 -5209,19643
+#: corrected_by: mapillary (fester Sandweg, mal Sand, mal uneben, mal Kopfsteinpflaster -> ...)
+Oberjägerweg: Kleinsteinpflaster	Q2 -5209,19643 -5122,19730 -5024,19831 -4844,20024 -4559,20331 -4485,20420
+#: by ^^^
 # 
 #: by: Dorothea Parak: vvv
 Kiepertstr.: guter Asphalt	Q0 8522,1870 8374,1815
