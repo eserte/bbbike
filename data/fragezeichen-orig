@@ -49,7 +49,7 @@ Berliner Str. (Wilmersdorf): wird es hier Radspuren geben?	? 3951,8992 3989,8982
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1200646.php (Fertigstellung in der KW 17/2022)
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260805 (Tiefbauarbeiten ab Baruther Str.)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msf75fd6d42m (Tiefbauarbeiten nur auf wenigen Metern; Gehweg für Radfahrer frei)
-#: source_id: LMS-BR:418520/72 viz2021:13.38865,52.49417,06.08.2026,07:00 (kleine Tiefbauarbeiten bis 24.08.2026)
+#: source_id: LMS-BR:418520/72 viz2021:13.38865,52.49417,06.08.2026,07:00 (kleine Tiefbauarbeiten bis 24.08.2026) (inaktiv)
 # REMOVED --- #: XXX Bauarbeiten zwischen Bergmannstr. und Gneisenaustr. (Richtung Norden) haben begonnen --- #: last_checked: 2022-04-08 --- #: check_frequency: 45d --- #: next_check: 2022-04-30
 # REMOVED (hier fertig) --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350
 # REMOVED (hier fertig) --- Mehringdamm: Sanierung des Radwegs (Asphaltierung + Verbreiterung)	?::inwork; 9248,9350 9283,9487 9334,9670
@@ -333,7 +333,7 @@ Oderbruchstr./Hohenschönhauser Str.: werden hier Radspuren markiert?	?::projecte
 #: source_id: 2147342170 (möglicherweise inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72 (möglicherweise inaktiv)
 #: osm_watch: way id="336565341" version="21"
-#: last_checked: 2026-08-05
+#: last_checked: 2026-08-25
 #: check_frequency: 120d
 # REMOVED (Markierung existiert hier) --- Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15951,12832
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15951,12832 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
@@ -5739,7 +5739,7 @@ Schleizer Str./Arendsweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1688574.php
 #: osm_watch: note 5410940 1
 #: XXX südlich der Einmündung Fanningerstr., weggedrehter Mast steht bereits
-#: last_checked: 2026-08-05
+#: last_checked: 2026-08-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-07-15 (BA-Pressemitteilung)
 Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) entsteht	?::inwork 16273,12212 16255,12224 16235,12218
@@ -5752,7 +5752,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) entsteht	
 #: source_id: viz2021:13.4752,52.50156, (Verengung, bis 16.09.2025) (inaktiv)
 #: osm_watch: note 4969496 5
 #: XXX Anforderung für Radfahrer aus An den Eiswerken und für Linksabbieger aus der Hauptstr. -> An den Eiswerken
-#: last_checked: 2026-08-22 vvv
+#: last_checked: 2026-08-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-20 (VIZ-Verkehrsmeldung) vvv
 Hauptstr./An den Eiswerken: Ampel entsteht	?::inwork 14988,10778 15004,10791 15019,10803
@@ -6362,7 +6362,7 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 #: osm_watch: note 5376445 1
 #: osm_watch: way id="1457165105" version="2"
 #: osm_watch: way id="1457165107" version="1"
-#: last_checked: 2026-08-05
+#: last_checked: 2026-08-25
 #: check_frequency: 60d
 #: next_check: 2026-12-10 (BA-Pressemitteilung)
 # REMOVED --- #: next_check: 2027-09-30 (infravelo)
@@ -6379,7 +6379,7 @@ Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected
 #: source_id: LMS-BR:399338/72 viz2021:13.50838,52.51041, (bis 13.03.2026) (bis 20.03.2026) (bis 27.03.2026) (inaktiv)
 #: osm_watch: way id="4689026" version="48"
 #: note: in früheren Planungen nur ab Robert-Uhrig-Str., nun ab Rosenfelder Str.
-#: last_checked: 2026-06-17
+#: last_checked: 2026-08-25
 #: check_frequency: 180d
 #: next_check: 2027-09-30 (infravelo)
 Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17251,11789 17440,11774 17497,11769 17746,11748 17963,11723 18098,11706 18215,11690
@@ -6387,7 +6387,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17251,11789 17
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet, inaktiv)
-#: last_checked: 2026-08-16
+#: last_checked: 2026-08-25
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 # 
@@ -6500,7 +6500,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11560 (Antrag)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/protokoll-der-sitzung-vom-04122023.pdf (Erwähnung: keine Zustimmung von SenUMVK)
 #: source_id: viz2021:13.47241,52.504032,25.09.2023,08:00 (Leitungsarbeiten, bis 3.11.2023) (bis 10.11.2023) (inaktiv)
-#: last_checked: 2026-08-22
+#: last_checked: 2026-08-25
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg war geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -6550,7 +6550,7 @@ An der Bucht: mögliche Einrichtung einer Fahrradstraße an der Rummelsburger Buch
 #: source_id: viz2021:13.476631,52.500907,21.05.2024,07:00 (Leitungsarbeiten bis 07.06.2024) (inaktiv)
 #: source_id: viz2021:13.476477,52.501057,08.07.2024,08:00 (Baustelleneinrichtung, bis 30.08.2024) (bis 31.08.2024) (inaktiv)
 #: source_id: LMS-BR:395261/72 viz2021:13.480566,52.499214,07.11.2025,09:00 (Fahrstreifensperrung, bis 29.05.2026) (am nächsten Tag bereits inaktiv) (wieder bis 29.05.2026) (und wieder gleich inaktiv)
-#: last_checked: 2026-08-15
+#: last_checked: 2026-08-25
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 # 
@@ -6777,6 +6777,9 @@ Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projec
 #: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/bauarbeiten-im-berliner-sudosten-dauern-viel-langer-als-erhofft-eine-magistrale--zwei-baustellen-nacheinander-15739040.html
 #: by: https://www.nd-aktuell.de/artikel/1196348.strassenbahn-feuerwehr-blockiert-die-tramstrecke-in-berlin-adlershof.html
 #: by: https://www.entwicklungsstadt.de/doerpfeldstrasse-in-adlershof-geplanter-umbau-gekippt-so-geht-es-weiter/
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8168 (zum Süßen Grund)
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/0TEue53jbC3zMdokEo9LlME9V2rWrq58OQ1SDjvY/pbbKsnVZ/59-Anlagen/04/B1174ZB1.pdf (1. Zwischenbericht)
+#: XXX Bei der Umgestaltung des Dörpfeldstr. ist es geplant, die Straße "Süßer Grund" von der Dörpfeldstr. "abzuhängen" (nur für den Kfz-Verkehr?)
 #: osm_watch: way id="11389403" version="44"
 #: last_checked: 2026-08-02
 #: check_frequency: 540d
@@ -7547,6 +7550,7 @@ Osdorfer Str.: neue parallele Straße wird gebaut, alte Straße wird zum Radweg	?:
 #: by: https://www.entwicklungsstadt.de/urbane-mitte-sued-am-gleisdreieck-das-plant-projektentwickler-periskop/
 #: by: https://www.entwicklungsstadt.de/gleisdreieck-so-geht-es-mit-der-urbanen-mitte-sued-weiter/
 #: by: https://www.entwicklungsstadt.de/wettbewerb-entschieden-so-soll-die-urbane-mitte-sued-am-gleisdreieck-aussehen/
+#: by: https://www.entwicklungsstadt.de/faq-urbane-mitte-am-gleisdreieck-was-kommt-was-bleibt-und-was-weichen-muss/
 #: last_checked: 2025-04-27
 #: check_frequency: 1080d
 Bebauungsplan VI-140cab "Urbane Mitte Süd" (zwischen Gleisdreieckpark und Technikmuseum): wird die Trebbiner Str. verlängert und entsteht eine Verbindung für Radfahrer? Genaue Lage?	? 8521,10268 8427,10120 8360,10133
@@ -7717,7 +7721,7 @@ Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12
 # REMOVED --- #: next_check: 2026-10-31 (BA-Pressemitteilung)
 #: last_checked: 2026-06-07
 #: check_frequency: 120d
-#: next_check: 2026-08-21 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-09-02 (planb)
 Senheimer Str.: Bauarbeiten, Asphaltierung	?::inwork 2490,26126 2484,25984 2496,25915 2519,25772
 # REMOVED (hier realisiert) --- Senheimer Str.: Bauarbeiten, kommt es dabei zu Änderungen (z.B. Asphaltierungen?)	?::inwork 2519,25772 2515,25666 2502,25544 2506,25398 2510,25350
 # 
@@ -8977,6 +8981,7 @@ Quartiersweg - Wilhelm-Kabus-Str.: geplanter Geh- und Radweg	?::projected 7639,7
 #: by: https://www.nd-aktuell.de/artikel/1201154.bvg-altstadt-koepenick-laengere-bauzeit-fuer-wasser-und-tram.html (bis 3. Quartal 2028?)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/cafe-betreiberin-furchtet-um-ihre-existenz-altstadt-kopenick-bleibt-noch-langer-grossbaustelle-15856871.html (bis Frühjahr 2028?)
 #: by: https://www.entwicklungsstadt.de/altstadt-koepenick-strassenbahn-faellt-nun-deutlich-laenger-aus/ (bis Frühjahr 2028)
+#: by: https://www.entwicklungsstadt.de/altstadt-koepenick-zweites-strassenbahngleis-kommt-weg-und-spaeter-wieder/
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_244204 (ab 2024-10-28, für vorbereitende Arbeiten?)
 #: source_id: viz2021:13.575981,52.444348,28.10.2024,07:00 (vermutlich vorbereitende Gleisbauarbeiten in der Müggelheimer Str., bis 24.11.2024) (bis 08.12.2024) (bis 22.12.2024) (inaktiv)
 #: source_id[inactive]: bvg2024:162#fe73d49a-2471-4d3b-a756-05ec6943ea49 (2024-11-25 - 2024-12-08)
@@ -9386,6 +9391,7 @@ Güstow - Prenzlau: Bau eines Radwegs	? 37047,101103 37211,101028 37577,100778
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~06-08-2026-zufahrt-zum-neuen-bahnhof-fangschleuse-ueber-knotenpunkt-l-23l38 (neue Zufahrt zum Bahnhof)
 #: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%2023%20B%C3%9C-Beseitigung%20Fangschleuse%20Vollsperrung%20Umleitungsphase%20Karten%202%20PM%2006-08-26.pdf
 #: by: https://www.gruenheide-im-blick.de/neuer-bahnhof-fangschleuse-inbetriebnahme-am-14-15-august-anbindung-ist-bereit/
+#: by: https://www.entwicklungsstadt.de/re1-faehrt-wieder-durch-umstieg-zwischen-berlin-und-frankfurt-oder-entfaellt/
 #: XXX Wurde der Bahnübergang bereits für den Fußgänger- und Radverkehr gesperrt?
 #: osm_watch: way id="860486098" version="6"
 #: osm_watch: way id="1367158749" version="5"
@@ -10180,7 +10186,7 @@ Unter den Eichen: die Radspur soll zurückgebaut werden	?; 4347,5103 4181,5000 41
 # 
 #: source_id: planb2026:13.32269309,52.47258663,17.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.09.2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2026-08-23 (traffic)
+#: last_checked: 2026-08-25 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-08-17 (planb)
 Wilhelmshöher Weg: geplante Bauarbeiten mit Sperrung	? 4874,7326 5058,7327
@@ -12616,8 +12622,11 @@ Köpenicker Allee 146-162: Wohngebiet geplant, Wege werden entstehen	?::projected
 #: by: https://www.entwicklungsstadt.de/trabrennbahn-karlshorst-bezirk-rechnet-bereits-mit-490-wohnungen/
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1703864.php (Beteiligung der Öffentlichkeit)
 #: by: https://www.entwicklungsstadt.de/trabrennbahn-karlshorst-bebauungsplan-geht-in-die-oeffentlichkeitsbeteiligung/
+#: by: https://be.beteiligung.diplanung.de/verfahren/11-178/public/detail
+#: by: https://be.beteiligung.diplanung.de/file/11-178/cf7b29c6-8bbf-449e-a408-35f388d260b5
+#: XXX erster B-Plan-Entwurf: eine von der Treskowallee abgehende Erschließungsstraße zwischen Trabrennbahn und neuen Gebäuden entsteht; von der Sackgasse wird es Richtung Osten einen Weg geben, aber ob dieser Anschluss an Carlsgarten bekommt, ist unklar; an der Treskowallee entstehen Gebäude und eine private Grünfläche; möglicherweise fallen hier Wegbeziehungen weg?
 #: last_checked: 2026-08-09
-#: check_frequency: 1000d
+#: check_frequency: 720d
 Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entstehen?	?::projected 18598,7984 18460,7777 18892,7197 19013,7427 18598,7984
 # 
 #: next_check_id: CITEFOCH-2024
@@ -14984,6 +14993,8 @@ Seilerstr. (Gramzow): Qualität?	? 49787,90264 49854,90252 49851,90216 49968,9021
 Perugiaplatz (Potsdam): genaue Lage? Qualität?	? -13211,2566 -13205,2542 -13197,2517
 # 
 #: osm_watch: way id="26223763" version="30"
+#: osm_watch: way id="1292154173" version="6"
+#: osm_watch: way id="1201094240" version="16"
 #: XXX außerdem Verlängerungen von bestehenden Straßen (Rudolf-Breitscheid-Str., Am Stoppelfeld) und neue Straßen (Bienengasse, Siedlersteig, Feldhasenweg)
 #: XXX vermutlich Fortführung des Verbundsteinpflasters
 #: last_checked: 2026-04-28 (osm)

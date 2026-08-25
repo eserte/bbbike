@@ -73,7 +73,8 @@ Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_347630
 #: source_id: bvg2024:194#HIM_FREETEXT_348289 (zwischenzeitlich 1x entfernt)
 #: source_id: LMS-BR:415149/72 viz2021:13.4754,52.50199, (bis 16.12.2026)
-#: source_id: planb2026:13.47841638,52.50180555,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026)
+#: source_id: planb2026:13.47841638,52.50180555,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.47959962,52.50191162,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026)
 #: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
 #: note: Länge der Gegenverkehrsregelung: 150m
 #: last_checked: 2026-08-15
@@ -495,9 +496,9 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 #: next_check_id: KIEFHOLZMOERIKE-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
 #: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 (bis 21.08.2026) (bis 30.10.2026)
-#: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv) (bis 30.10.2026)
 #: last_checked: 2026-07-11
-#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung, planb)
 #: valid: 20260601-20261030
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # 
@@ -596,7 +597,7 @@ Gegenverkehrsregelung	X::inwork::alternating 20302,1613
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-08-15
+#: last_checked: 2026-08-25
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431

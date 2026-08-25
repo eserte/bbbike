@@ -74,6 +74,8 @@ Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind fü
 #: osm_watch: note 4180739 2
 #: source_id: planb2026:13.44213814,52.51076044,05.01.2026,06:00 ("Gehwegvollsperrung", Wriezener Karree, bis 30.07.2026) (inaktiv)
 #: source_id: planb2026:13.43879907,52.51156593,14.04.2026, ("Fahrstreifen-Verschwenkung", Straße der Pariser Kommune, bis 31.03.2028)
+#: source_id: planb2026:13.4389493,52.51163164,20.04.2026,06:00 ("Fahrstreifen-Verschwenkung", bis 31.03.2028)
+#: source_id: planb2026:13.4421069,52.5107065,24.08.2026,10:30 ("Fahrbahneinengung", bis 30.09.2026)
 #: last_checked: 2026-08-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-30 (planb) vvv
@@ -526,9 +528,10 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: source_id: planb2026:13.3804937,52.51755219,03.08.2026, ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.3804937,52.51755219,18.08.2026, ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
+#: source_id: LMS-BR:420081/72 viz2021:13.3803,52.51893, (bis 18.09.2026)
 #: note: Richtung Süden existiert auf der westlichen Straßenseite eine Radfahrerfurt, die allerdings auch für die Fahrtrichtung Nord genutzt wird
 #: last_checked: 2026-08-20
-#: next_check: 2026-09-18
+#: next_check: 2026-09-18 (planb, VIZ-Verkehrsmeldung)
 #: valid: -20260918
 Wilhelmstr.: Bauarbeiten, Engstelle	q2::inwork 8766,12541 8775,12457
 # 
@@ -1174,7 +1177,7 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/verkehrssperrungen-in-der-berliner-city-west-rund-um-den-breitscheidplatz-gibt-es-bald-viele-baustellen-15223104.html (Sperrung 2026)
 #: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
 #: source_id: LMS-BR:406219/72 viz2021:13.331624,52.50377,27.04.2026,12:00 (Verengung, evtl. im Zusammenhang mit dieser Maßnahme? bis 28.05.2026) (bis 30.11.2026)
-#: source_id: planb2026:13.33491591,52.50358375,27.04.2026, ("geänderte Führung im Knotenpunkt", bis 20.11.2026)
+#: source_id: planb2026:13.33491591,52.50358375,27.04.2026, ("geänderte Führung im Knotenpunkt", bis 20.11.2026) (vorfristig inaktiv)
 #: osm_watch: note 5181118 1
 #: osm_watch: way id="4491984" version="29"
 #: XXX etwa 60m der Fahrbahn sind gesperrt
@@ -1418,7 +1421,7 @@ Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hoch
 #: source_id: LMS-BR:407167/72 viz2021:13.52329,52.49559,05.05.2026,07:00 (bis 31.05.2027)
 #: source_id: planb2026:13.52339081,52.4953266,18.03.2026, ("Fahrstreifen-Reduzierung" in der Sewanstr., bis 31.05.2027)
 #: note: außerdem ist die Einbahnstraßenregelung in der restlichen Ontarioseestr. aufgehoben, aber eher geringer verkehrlicher Wert für den Radverkehr
-#: last_checked: 2026-08-12 (architektur-urbanistik)
+#: last_checked: 2026-08-25
 #: check_frequency: 120d
 #: next_check: 2027-05-31 (VIZ-Verkehrsmeldung, planb)
 # REMOVED (Fertigstellungsdatum von entwicklungsstadt nehmen) --- #: valid: -20270531
@@ -1429,7 +1432,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-08-15
+#: last_checked: 2026-08-25
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 

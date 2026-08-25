@@ -1566,7 +1566,7 @@ Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 #: next_check_id: HOENOWERWEG-2025
 #: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1s:q4" ändern
-#: last_checked: 2026-08-15
+#: last_checked: 2026-08-25
 #: check_frequency: 90d
 #: next_check: 2027-02-28
 Mellenseestr. [Wohngebiet]	1no 17626,9744 17633,9898
@@ -2876,7 +2876,7 @@ tragen (3x13 Stufen)	0:45 18739,4728
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23856.pdf (Inbetriebnahme im 2. Quartal 2026)
 #: XXX hier wird es in Zukunft einen Aufzug geben
 #: last_checked: 2026-07-18 (bahninfo-forum)
-#: check_frequency: 40d
+#: check_frequency: 50d
 #: next_check: 2026-09-20 (Baustellenschild: Sommer 2026)
 tragen	0:45 18661,4655
 # 
@@ -4232,7 +4232,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-08-17
+#: last_checked: 2026-08-25 (daf)
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4567,7 +4567,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="5"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-08-22
+#: last_checked: 2026-08-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4725,9 +4725,9 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date der landuse=construction-Fläche 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
-#: last_checked: 2026-08-15
-#: check_frequency: 60d
-#: next_check: 2026-08-24 (SenSBW-Pressemitteilung: Schulbeginn)
+#: last_checked: 2026-08-25
+#: check_frequency: 45d
+# REMOVED --- #: next_check: 2026-08-24 (SenSBW-Pressemitteilung: Schulbeginn)
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
@@ -5004,8 +5004,8 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: by: Karsten S.: wieder (temporär?) frei
 #: last_checked: 2026-05-09 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2026-12-31 vvv
-#: valid: -20261231 vvv
+#: next_check: 2026-08-31 vvv
+#: valid: -20260831 vvv
 Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
 # REMOVED (offen) --- Uferweg am Teltowkanal	2::inwork 3980,2102 4209,2641 4220,2664
 # REMOVED (offen, allerdings stehen hier Bauzäune rum) --- Uferweg am Teltowkanal	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
