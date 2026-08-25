@@ -271,23 +271,29 @@ sub cmd_fetch {
 	if (!$resp->is_success) {
 	    die "Error fetching complete geojson: " . $resp->dump . "\n";
 	}
-	$geojson_data = eval { JSON::XS::decode_json($resp->content) };
+	my $resp_content = $resp->content;
+	$geojson_data = eval { JSON::XS::decode_json($resp_content) };
 	if ($@) {
 	    _content_error($resp, "Error parsing JSON response");
 	}
 
 	print "Compress geojson...\n";
-	gzip(\$geojson_data => "$geojson_gz~")
+	gzip(\$resp_content => "$geojson_gz~")
 	    or die "Can't gzip to $geojson_gz~: $GzipError";
 
 	print "Convert to bbd...\n";
+	open my $ofh, '>', "$tmpfile"
+	    or die "Error while writing to $tmpfile: $!";
+	print $ofh $resp_content;
+	close $ofh
+	    or die "Error while writing to $tmpfile: $!";
 	my @cmd1 = (
 	    $^X, $any2bbd_path,
 	    '-geojson-name', '.properties.strasse .properties.einschr id=.properties.importid rating=.properties.bewertung .properties.dat_beginn .properties.dat_ende',
 	    "$tmpfile",
 	    '-o', $bbd_raw
 	);
-	system(@cmd1) == 0 or die "any2bbd failed: $?\n";
+	system(@cmd1) == 0 or die "Command '@cmd1' failed: $?\n";
     }
 
     print "Create bbd variant with bbbikeid...\n";
@@ -319,7 +325,7 @@ sub cmd_fetch {
 	$temp_geojson,
 	'-o', '/tmp/all_planb_bbbikeid.bbd'
     );
-    system(@cmd2) == 0 or die "any2bbd bbbikeid failed: $?\n";
+    system(@cmd2) == 0 or die "Command '@cmd2' failed: $?\n";
 
     print "Adjust categories...\n";
     my $replacestrassen_path = "$bbbike_root/miscsrc/replacestrassen";
@@ -376,7 +382,8 @@ $_->[Strassen::CAT] = ($_->[Strassen::CAT] =~ /^F:/ ? "F:" : "") . $cat;
     } else {
 	die "Can't run replacestrassen: $!\n";
     }
-    close $cat_fh;
+    close $cat_fh
+	or die "Error running '@cmd3'";
     print "fetch complete!\n";
 }
 
