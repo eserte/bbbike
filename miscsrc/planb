@@ -552,34 +552,38 @@ sub cmd_diff {
 	my $current_sourceids = -f $current_yml ? eval { BBBikeYAML::LoadFile($current_yml) } : {};
 	my $inactive_sourceids = -f $inactive_yml ? eval { BBBikeYAML::LoadFile($inactive_yml) } : {};
 
-	open my $in1, "<:utf8", $file1 or die "Can't read $file1: $!\n";
 	my %old_records;
-	while (my $line = <$in1>) {
-	    my $rec = parse_bbd_line($line);
-	    if ($rec) {
-		$old_records{$rec->{stable_key}} = $rec;
+	{
+	    my %seen_ids;
+	    open my $in1, "<:utf8", $file1 or die "Can't read $file1: $!\n";
+	    while (my $line = <$in1>) {
+		my $rec = parse_bbd_line($line);
+		if ($rec) {
+		    next if $seen_ids{$rec->{id}}++;
+		    $old_records{$rec->{stable_key}} = $rec;
+		}
 	    }
 	}
-	close $in1;
 
-	open my $in2, "<:utf8", $file2 or die "Can't read $file2: $!\n";
 	my %new_records;
-	while (my $line = <$in2>) {
-	    my $rec = parse_bbd_line($line);
-	    if ($rec) {
-		$new_records{$rec->{stable_key}} = $rec;
+	{
+	    my %seen_ids;
+	    open my $in2, "<:utf8", $file2 or die "Can't read $file2: $!\n";
+	    while (my $line = <$in2>) {
+		my $rec = parse_bbd_line($line);
+		if ($rec) {
+		    next if $seen_ids{$rec->{id}}++;
+		    $new_records{$rec->{stable_key}} = $rec;
+		}
 	    }
 	}
-	close $in2;
 
 	my @additions;
 	my @changes;
 	my $deleted_count = 0;
-	my %seen_ids;
 
 	for my $key (keys %new_records) {
 	    my $new_rec = $new_records{$key};
-	    next if $seen_ids{$new_rec->{id}}++;
 	    if (!exists $old_records{$key}) {
 		push @additions, $new_rec;
 	    } else {
