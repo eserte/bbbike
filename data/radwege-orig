@@ -55,11 +55,11 @@
 #: source_id: LMS-BR:405906/72 viz2021:13.36206,52.4473,24.04.2026,19:00 (bis 26.04.2026) (inaktiv)
 #: source_id: planb2026:13.36164907,52.44712195,03.08.2026, (hier: "Gehwegvollsperrung", bis 24.08.2026) (inaktiv)
 #: osm_watch: note 5188307 3 vvv
-#: last_checked: 2026-08-02 vvv
+#: last_checked: 2026-08-26 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2026-08-24 (planb) vvv
+# REMOVED --- #: next_check: 2026-08-24 (planb) vvv
 provisorische Radspuren	RW4;RW4 7597,4499 7628,4521 7667,4549 7690,4563
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -264,7 +264,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2026-08-19 vvv
+#: last_checked: 2026-08-26 vvv
 #: check_frequency: 60d vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
@@ -295,7 +295,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="13"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2026-07-16 (luftbildsuche)
+#: last_checked: 2026-08-26
 #: check_frequency: 180d
 #: next_check: 2030-06-30 (entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -376,7 +376,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-08-24 vvv
+#: last_checked: 2026-08-26 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1069,7 +1069,7 @@ neu asphaltiert, breit	RW2; 12050,12616 12005,12619 11976,12595
 #: note: später wieder einsetzen: RW4;
 #: note: hinter der Kreuzung: Gehwegplatten	RW1; 10933,14122 10938,14159
 #: XXX Radspur nicht befahrbar, insgesamt eine Fahrspur übrig
-#: last_checked: 2026-08-06
+#: last_checked: 2026-08-26
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 	RW0; 10908,13978 10933,14122 10938,14159
@@ -1495,7 +1495,7 @@ Fahrradschleuse	RW3; 7612,14325 7566,14404
 Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7829,14665
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
-#: last_checked: 2026-08-21 (mapillary) vvv
+#: last_checked: 2026-08-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
 #: XXX früher RW1;, nun Benutzungspflicht
@@ -1771,7 +1771,7 @@ asphaltiert	RW1; 19181,13485 19192,13350
 #: source_id: viz2021:13.36575,52.52532,19.05.2022,09:00 (bis 31.01.2025) (inaktiv)
 #: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025) (vorfristig inaktiv)
 #: source_id: LMS-BR:388766/72 viz2021:13.36575,52.52532,03.11.2025,06:00 (bis 21.02.2027)
-#: last_checked: 2026-08-13
+#: last_checked: 2026-08-26
 #: check_frequency: 120d
 #: next_check: 2027-02-21 (VIZ-Verkehrsmeldung)
 # Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7901,13324
@@ -6425,7 +6425,9 @@ Verbundsteinpflaster	RW1;RW1 17832,3740 17585,3745
 #: note: zumindest nördl. der Preysingstr. relativ schlechte Qualität, holprig vvv
 	RW2;RW2 7757,834 7759,906
 	RW2;RW1 7759,906 7753,994
-holpriges Verbundsteinpflaster	RW1;RW1 7753,994 7740,1041 7630,1297 7539,1529 7438,1855 7423,1905 7409,1953 7390,2021 7285,2377 7235,2542 7115,3003
+holpriges Verbundsteinpflaster	RW1; 7753,994 7740,1041 7630,1297 7539,1529 7438,1855 7423,1905 7409,1953 7390,2021 7285,2377 7235,2542 7115,3003
+holpriges Verbundsteinpflaster, kein Puffer zu parkenden Autos	RW1; 7115,3003 7235,2542
+holpriges Verbundsteinpflaster	RW1; 7235,2542 7285,2377 7390,2021 7409,1953 7423,1905 7438,1855 7539,1529 7630,1297 7740,1041 7753,994
 #: note ^^^
 #: note ^^^
 #: by: Kasi:
@@ -7795,6 +7797,7 @@ Radweg nur aufgemalt	RW1; 11149,-1274 11003,-1303
 die letzten Meter sind benutzungspflichtig	RW3; 11003,-1303 10849,-1332
 #: note: Groß-Ziethener Str., Richtung Osten
 Radweg nur aufgemalt	RW1; 10849,-1332 11003,-1303 11149,-1274 11240,-1262 11311,-1252 11548,-1223 11578,-1220 11666,-1209 11717,-1204
+	RW3; 11717,-1204 11761,-1199
 # 
 	RW1;RW1 15952,719 16042,772 16096,803 16153,835 16221,872 16287,908 16349,932 16365,935 16451,950 16490,955 16588,980 16655,1020 16726,1074 16839,1162
 	RW2;RW2 16839,1162 16908,1217
@@ -9818,11 +9821,12 @@ niedrige Protektionselemente, Poller an der Einfahrten	RW3; 13970,11366 14134,11
 	RW7;RW7 5219,9808 5203,9840 5194,9985 5191,10190 5192,10241 5196,10398
 	RW7;RW7 5192,10241 5223,10243
 # 
-#: by: osm vvv
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1707047.php (Freigabe für Kfz)
+#: historical_note: seit August 2026 für den Kfz-Verkehr frei (nicht nur für Anlieger) vvv
 	RW7; 2490,25211 2615,25225 2683,25238 2756,25260 2909,25322 3101,25402 3185,25437 3166,25496 3307,25554
 	RW7; 3166,25496 3185,25437
 	RW7; 3307,25554 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238 2615,25225 2490,25211
-#: by ^^^
+#: historical_note ^^^
 # 
 #: note: Fahrradstraße in der Tucholskystr. ab November 2023 (teilweise mit Vorfahrtsregelung)
 	RW7;RW7 9611,13245 9651,13406 9609,13522 9579,13604
@@ -9891,7 +9895,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 6994,9288 7118,9315
 #: osm_watch[closed]: note 4803321 2
 #: source_id: planb2026:13.35661917,52.49021456,15.05.2026,00:01 ("-", bis 03.03.2027)
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2026-07-07
+#: last_checked: 2026-08-26
 #: check_frequency: 90d
 #: next_check: 2027-03-03 (planb)
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7118,9315 7202,9329 7299,9346
@@ -9902,7 +9906,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 7418,9366 7299,9346
 #: next_check_id: GRUNEWALDSTR-2025
 #: next_check_id: ELSSHOLZ-2025
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2026-07-07
+#: last_checked: 2026-08-26
 #: check_frequency: 90d
 #: next_check: 2027-03-03 (planb)
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7299,9346 7202,9329 7118,9315
@@ -9927,9 +9931,9 @@ asphaltiert	RW1;RW9 7308,9163 7363,9152
 	RW6;RW6 12716,1088 12742,1113 12832,1192 12860,1200 12914,1215
 	RW6;RW6 12727,1074 12656,1019
 	RW6;RW6 12838,1174 12917,1197
-	RW6;RW6 12904,1299 12914,1215 12917,1197 12928,1126 12933,1101 12946,1027
+	RW6;RW6 12904,1299 12914,1215 12917,1197 12928,1126 12933,1101 12950,1029
 	RW6;RW6 12713,962 12772,1019 12868,1085 12891,1091 12933,1101
-	RW6;RW6 12808,968 12882,999 12946,1027
+	RW6;RW6 12808,968 12882,999 12950,1029
 # 
 #: by: osm
 	RW7;RW7 -298,2577 -197,2634 -155,2658

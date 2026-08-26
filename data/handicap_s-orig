@@ -36,7 +36,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (re-T,ex-G[aber kurz])
-#: last_checked: 2026-08-22 (traffic) vvv
+#: last_checked: 2026-08-26 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-09-04 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (nach den Bauarbeiten:) --- Am Friedrichshain: letzte Prüfung und ggfs. Dokumentation nach Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	?; 11706,13635 11762,13619 11785,13625
@@ -108,10 +108,10 @@ Am Wriezener Bahnhof: Einfahrt verboten	q3::inwork; 12758,11915 12788,11898 1294
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
-#: source_id: planb2026:13.46470153,52.51022419,02.12.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
+#: source_id: planb2026:13.46470153,52.51022419,02.12.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026) (vorfristig inaktiv)
 #: last_checked: 2026-08-23
 # REMOVED --- #: check_frequency: 14d
-#: next_check: 2026-08-31 (planb)
+#: next_check: 2026-08-31 (ex-planb)
 # REMOVED --- #: valid: -20250630
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 # 
@@ -184,7 +184,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026)
 #: also_indoor: traffic (G,T,no-H,no-W)
 #: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
-#: last_checked: 2026-08-16
+#: last_checked: 2026-08-26
 #: next_check: 2026-09-09 (planb)
 #: valid: -20260909
 Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,13185 12842,13070
@@ -357,9 +357,9 @@ Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für R
 # 
 #: next_check_id: WOLZIGERZEILE-2024
 #: source_id: planb2026:13.39962825,52.38248763,01.07.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
-#: last_checked: 2026-06-13
-#: check_frequency: 14d
-#: next_check: 2026-08-31 (planb)
+#: last_checked: 2026-08-26
+#: check_frequency: 21d
+# REMOVED --- #: next_check: 2026-08-31 (planb)
 Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10392,-2595 10394,-2567
 # 
 # REMOVED --- #: next_check_id: BAHNHOFSTR-2020 --- #: source_id: 2147345858 --- #: last_checked: 2024-05-18 --- #: check_frequency: 180d --- #: next_check: 2024-06-28 --- (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10273,-2158 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
@@ -368,7 +368,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 # 
 #: source_id: planb2026:13.45361302,52.4854625,06.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.06.2028)
 #: note: Länge der Einbahnstraßenregelung etwa 150m
-#: last_checked: 2026-08-21
+#: last_checked: 2026-08-26
 #: check_frequency: 90d
 #: next_check: 2028-06-30 (planb, Halteverbotsschilder)
 Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 13664,9073
@@ -525,6 +525,12 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
 ### Mitte ###
+# 
+#: by: https://www.tagesschau.de/inland/regional/berlin/rbb-tickets-fuer-volksbad-der-berliner-volksbuehne-ab-dienstag-erhaeltlich-100.html
+#: last_checked: 2026-08-26
+#: next_check: 2026-10-01 (Tagesschau) (+ vermutete Abbauarbeiten)
+#: valid: -20261007
+Rosa-Luxemburg-Platz: temporäres Volksbad auf der Fahrbahn	q4 10828,13464 10931,13419
 # 
 #: source_id: planb2026:13.3804937,52.51755219,03.08.2026, ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.3804937,52.51755219,18.08.2026, ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
@@ -1062,7 +1068,7 @@ Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,62
 # 
 #: source_id: planb2026:13.35334176,52.53143774,28.11.2022, ("Sicherung gemäß Vz.-plan", bis 30.09.2026)
 #: source_id: LMS-BR:325489/72 viz2021:13.358912,52.537703, (bis 25.09.2026)
-#: last_checked: 2026-08-12
+#: last_checked: 2026-08-26
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung)
 #: valid: -20260930
 Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,14599 7368,14573
@@ -1141,7 +1147,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="32"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 # REMOVED (existiert nicht mehr) --- #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2026-07-16 (luftbildsuche)
+#: last_checked: 2026-08-26
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1241,11 +1247,11 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # REMOVED --- #: next_check: 2028-11-30 (entwicklungsstadt)
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
-#: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2
+#: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2; mittlerweile sind die Einbahnstraßenschilder an der Elsenstr. verschwunden
 #: source_id: planb2026:13.4472157,52.48491004,21.01.2025, ("Fahrbahneinengung", bis 31.07.2026) (bis 26.02.2027)
-#: last_checked: 2026-07-29
-# REMOVED --- #: check_frequency: 120d
-#: check_frequency: 30d
+#: last_checked: 2026-08-26
+#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2027-02-26 (planb)
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 # 
@@ -1534,7 +1540,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-08-08 vvv
+#: last_checked: 2026-08-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6263,7894 6178,7899
@@ -1667,6 +1673,27 @@ Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahre
 # REMOVED (laut osm sind die Bauarbeiten beendet) --- #: next_check_id: BOHNSDORFERKREISEL-2017 --- #: source_id: 2147341295 --- #: osm_watch: way id="410955359" version="3" --- #: last_checked: 2017-08-07 --- #: check_frequency: 30d --- Am Falkenberg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 21862,807 21870,803 22007,711
 # 
 ### Marienfelde ###
+# 
+#: next_check_id: BUCKOWERCHAUSSEE-2022
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260707 (bis Ende August 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mq4bvxr3sf2z
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifbvsfliejhy4sbashirdwsaw6wdrjtn2oajvwovcyoked53e72xy
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260803 (Umbau der Baustelle, weiterhin bis Ende August 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msagudcygk2b
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidvo2akpr4ik7t2dzkvfu7ie5f2kwyvakumzcrezznxuyn7b4fdqq (aktuelle Meldung zu Arbeiten am östlichen Ende der neuen Brücke)
+#: source_id: LMS-BR:415125/72 viz2021:13.38021,52.41036,08.07.2026,07:00 (bis 23.08.2026) (inaktiv) (bis 05.10.2026)
+#: source_id: LMS-BR:418266/72 viz2021:13.39268,52.4127,04.08.2026,07:00 (östlich der Brücke, bis 28.08.2026)
+#: source_id: planb2026:13.37629824,52.40919079,26.05.2023, ("Vollsperrung beider Fahrbahnen", bis 05.10.2026)
+#: XXX wird es auch Änderungen bei den RVA auf der Hauptfahrbahn geben?
+#: last_checked: 2026-08-26 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2026-10-05 (VIZ-Verkehrsmeldung, planb) vvv
+Buckower Chaussee: Anbindungen an die Nebenstraßen werden noch erstellt	q4::inwork 8977,505 9004,481 9031,484
+Buckower Chaussee [Nebenstraße]: Absperrung auf der Fahrbahn, ggfs. auf den Bürgersteig wechseln	q3::inwork 9149,568 9115,556
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 # REMOVED (nicht mehr relevant) --- #: next_check_id: BUCKOWERCHAUSSEE-2022
 # REMOVED --- #: last_checked: 2025-11-29 vvv
 # REMOVED --- #: check_frequency: 120d vvv
@@ -1898,8 +1925,8 @@ Tiergarten: Parkweg	q1 8167,11865 8132,11910
 Tiergarten: Parkweg	q1 8095,11919 8104,11984 8091,11992 8091,12011
 Tiergarten: Rampe, eng	q3 8091,12011 8091,12023 8099,12022
 Tiergarten: Parkweg	q1 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
-Tiergarten: Parkweg	q1 8016,11770 8020,11937 8022,12016
-Tiergarten: Parkweg	q1 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093 8049,12140 8055,12186
+Tiergarten: Parkweg	q1 8016,11770 8020,11937 8023,12031
+Tiergarten: Parkweg	q1 8036,12103 8053,12078 8049,12049 8023,12031 7995,12062 8007,12092 8036,12103 8046,12139 8055,12186
 Tiergarten: Parkweg	q1 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775
 Tiergarten: Parkweg	q1 8189,11722 8221,11690
 Tiergarten: Parkweg	q1 8005,11627 8006,11648 8014,11753 8016,11770
@@ -2730,13 +2757,13 @@ Firlstr.: zwei Bodenschwellen	q1 18574,6401 18645,6511
 (Florastr. - Schloßstr.): Fußgänger	q2 5234,6086 5165,6119
 Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13291,22422 13290,22399 13388,22386 13404,22384
 (Bremer Weg): Fußgänger	q1 5858,11863 5907,11874 6264,11901 6337,11887 6384,11926 6550,11954 6642,12010
-(Bremer Weg): Fußgänger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8502,12226 8538,12245
+(Bremer Weg): Fußgänger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8046,12139 8122,12147 8215,12156 8327,12174 8466,12197 8502,12226 8538,12245
 Oberlandgarten: Fußgänger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fußgänger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fußgänger	q1 12052,6660 12059,6642 12092,6616 12155,6526
 #: XXX_prog BS (Bordstein am Mariendorfer Weg, ansonsten mit dem anderen Fußgänger-Eintrag verknüpfen)
 (Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
-Mauerweg: einige Fußgänger	q1 12984,1011 12890,969 12823,939 12731,893 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11802,554 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
+Mauerweg: einige Fußgänger	q1 12984,1011 12957,999 12890,969 12823,939 12731,893 12651,848 12557,799 12246,706 12014,620 11956,599 11928,588 11802,554 11698,390 11686,169 11746,-62 11816,-278 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fußgänger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3480,441 3412,534
 Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
@@ -4354,6 +4381,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 #: by: https://marzahn-hellersdorf.com/behelfsbruecke-an-der-wuhle-uebergang-am-kuenftigen-bibersteg-wieder-passierbar/
 #: by: https://marzahn-hellersdorf.com/bruecke-ueber-die-wuhle-bekommt-offiziellen-namen-bibersteg/
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26050.pdf
+#: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13176 (Anfrage)
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
 # REMOVED (habe ich bei osm entfernt) --- #: XXX: laut osm opening_date=2025-12-31 (Quelle fehlt)
 #: osm_watch: way id="27944267" version="25"
@@ -6081,6 +6109,9 @@ Rudolf-Schwarz-Str.: einige Fußgänger, Bordsteine	q3 13107,14318 13087,14332
 (Ibisweg - Laubsängerweg): Grünanlage, Fußgänger	q3 14573,3843 14540,3821
 #: note ^^^
 # 
+#: note: am Diedersdorfer Weg steht ein Schild "Radfahrer absteigen", auf der anderen Seite fehlt es
+(Diedersdorfer Weg - Nahmitzer Damm): einige Fußgänger, kurvig	q3 7760,440 7810,461 7809,509 7837,516 7848,500 7910,518 8018,500 8075,499
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -6121,7 +6152,9 @@ Aßmannstr.: Bodenschwellen	q1 25039,5295 25039,5304 25048,5727
 (Fußweg parallel zur Aßmannstr.): wenig Fußgänger, Bordstein	q1- 25002,5296 25009,5593
 #: by ^^^
 #: by: Katja (...lindner):
-Beckmannstr.: eng	q1 11670,-1973 11681,-1951 11666,-1825 11657,-1721
+# REMOVED (hier nicht) --- Beckmannstr.: eng	q1 11670,-1973 11681,-1951
+#: confirmed_by: srt
+Beckmannstr.: eng	q1 11681,-1951 11666,-1825 11657,-1721
 #: by: Roland (cybertour):
 #: corrected_by: srt/policy (q1 -> q0-)
 Sültstr.: enge Straße, beidseitiges Parken	q0- 12094,15598 12168,15731 12247,15868 12295,15953 12347,16039

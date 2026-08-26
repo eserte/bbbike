@@ -238,7 +238,12 @@ Wismarplatz	3 14461,11738 14416,11815 14395,11753
 #: historical_note: seit etwa Februar/März 2026
 Simon-Dach-Str.	1 13954,11647 13888,11405
 Simon-Dach-Str.	1 13954,11647 13981,11746 14006,11843
-Simon-Dach-Str.	1 14055,11964 14021,11910 14006,11843
+#: historical_note: im August 2026 wurde die Einbahnstraßenregelung umgedreht
+Simon-Dach-Str.	1 14006,11843 14021,11910 14055,11964
+#: historical_note: seit August 2026
+Gabriel-Max-Str.	1 14127,11811 14161,11930
+#: historical_note: seit August 2026
+Gärtnerstr.	1 14272,11775 14306,11889
 #: historical_note: seit Mitte März 2026
 Libauer Str.	1 13895,11663 13711,11458
 #: by: Gregor (bluege):
@@ -897,8 +902,8 @@ Oderberger Str.: Durchfahrt verboten	3 * 10864,14692 10723,14772
 Straße 12 (Neukölln): gesperrt für Fahrzeuge aller Art (außer BAB-Versorgung)	2 13882,6674 13881,6634 13915,6592
 Schranke	3 * 10559,2252 *
 Einfahrt verboten	3 * 9561,-748 9340,-829
-Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11712,-289 11242,-332
-Tordurchfahrt nur für Radfahrer/Fußgänger	3 11242,-332 11712,-289 11721,-351
+Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11707,-293 11694,-279 11242,-332
+Tordurchfahrt nur für Radfahrer/Fußgänger	3 11242,-332 11694,-279 11707,-293 11721,-351
 Sächsische Str.	1 4550,9539 4517,9401
 Legiendamm	1 11159,10769 11189,10831
 Mariendorfer Damm: Mittelstreifen	3nocross 10067,1939 10127,1778 10172,1657 10226,1515
@@ -2524,6 +2529,9 @@ Ernst-Thälmann-Str. (Erkner)	1 34605,2073 34620,2046
 # 
 #: historical_note: seit Sommer 2026
 Flottwellstr.	1 8199,10634 8287,10786
+# 
+#: historical_note: seit Sommer 2026
+Kurfürstenstr.: Einbahnstraßenregelung nur für Kfz	1 7744,10372 7633,10394
 # 
 Greenpark - Buschkrugallee: Linksabbiegen nicht erlaubt	3 13460,5834 13530,5870 13483,5973
 # 

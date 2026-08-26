@@ -172,7 +172,9 @@ Wismarplatz	1 14395,11753 14416,11815
 Wismarplatz	3 14461,11738 14416,11815 14395,11753
 Simon-Dach-Str.	1 13954,11647 13888,11405
 Simon-Dach-Str.	1 13954,11647 13981,11746 14006,11843
-Simon-Dach-Str.	1 14055,11964 14021,11910 14006,11843
+Simon-Dach-Str.	1 14006,11843 14021,11910 14055,11964
+Gabriel-Max-Str.	1 14127,11811 14161,11930
+Gärtnerstr.	1 14272,11775 14306,11889
 Libauer Str.	1 13895,11663 13711,11458
 Buchhorster Str.	1 7616,20633 7736,20598 7793,20580 7866,20556 7979,20528
 Handjerystr.	1 5641,7189 5624,7113 5565,7024
@@ -1414,8 +1416,8 @@ Schranke	3 10549,2257 10559,2252 10617,2226
 Schranke	3 10617,2226 10559,2252 10549,2257
 Einfahrt verboten	3 9520,-641 9561,-748 9340,-829
 Einfahrt verboten	3 9598,-846 9561,-748 9340,-829
-Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11712,-289 11242,-332
-Tordurchfahrt nur für Radfahrer/Fußgänger	3 11242,-332 11712,-289 11721,-351
+Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11707,-293 11694,-279 11242,-332
+Tordurchfahrt nur für Radfahrer/Fußgänger	3 11242,-332 11694,-279 11707,-293 11721,-351
 Sächsische Str.	1 4550,9539 4517,9401
 Legiendamm	1 11159,10769 11189,10831
 Mittelstreifen	3nocross::ignrte 10067,1939 10127,1778 10172,1657 10226,1515
@@ -2827,4 +2829,5 @@ Pankstr. -> Schönstedtstr.: Mittelstreifen	3::igndisp 8271,15734 8430,15901 8338
 Schönstedtstr. -> Pankstr.: Mittelstreifen	3::igndisp 8338,15987 8430,15901 8436,15907
 Ernst-Thälmann-Str. (Erkner)	1 34605,2073 34620,2046
 Flottwellstr.	1 8199,10634 8287,10786
+Kurfürstenstr.: Einbahnstraßenregelung nur für Kfz	1 7744,10372 7633,10394
 Greenpark - Buschkrugallee: Linksabbiegen nicht erlaubt	3 13460,5834 13530,5870 13483,5973

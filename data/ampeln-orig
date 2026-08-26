@@ -27,7 +27,7 @@ Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 (bis 15.10.2026)
-#: last_checked: 2026-08-20
+#: last_checked: 2026-08-26
 #: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261015
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
@@ -107,11 +107,11 @@ Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,1858
 Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
-#: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026)
+#: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026) (bis 16.10.2026)
 #: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026)
 #: last_checked: 2026-05-30
-#: next_check: 2026-08-28 (VIZ-Verkehrsmeldung, planb)
-#: valid: -20260828
+#: next_check: 2026-10-16 (VIZ-Verkehrsmeldung)
+#: valid: -20261016
 Siemensstr./Borstellstr.	X::inwork 6219,4336
 # 
 # REMOVED --- #: next_check_id: AUGUSTEVIKTORIAALLEE-2026
@@ -129,7 +129,7 @@ Gneisenaustr./Schleiermacherstr.: provisorische Fußgängerampel	F::inwork 10032,9
 #: osm_watch: node id="13704066872" version="1"
 #: osm_watch: node id="13704066873" version="1"
 #: note: manchmal bekommt man zügig nach Betätigen der Anforderung grün (gesehen: 2026-04-15 Wed 10:20) (mit Wartzezeit: 2026-08-12 Wed 10:50)
-#: last_checked: 2026-08-21 (mapillary)
+#: last_checked: 2026-08-26
 #: check_frequency: 90d
 #: next_check: 2028-03-03
 Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
@@ -412,11 +412,7 @@ Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating
 # REMOVED --- # REMOVED --- #: valid: -20250725
 # REMOVED --- Ringstr.: Gegenverkehrsregelung	X::inwork::alternating 7874,4481
 # 
-#: next_check_id: PERLEBERGER-2024
-#: last_checked: 2026-05-24 (mapillary)
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung)
-Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
+# REMOVED (abgebaut) --- #: next_check_id: PERLEBERGER-2024 --- #: last_checked: 2026-05-24 (mapillary) --- #: check_frequency: 90d ---# REMOVED --- #: next_check: 2025-11-05 (VIZ-Verkehrsmeldung) --- Lehrter Str./Kruppstr.: provisorische Ampel	X::inwork 7331,14132
 # 
 # REMOVED (stehen noch, sind aber ausgeschaltet, wohl dauerhaft) --- #: next_check_id: OSTEND-2024 --- #: last_checked: 2024-11-06 vvv --- #: next_check: 2024-11-03 vvv --- #: valid: -20241103 vvv --- An der Wuhlheide/Rathenaustr.: Baustellenampel	X::inwork 19245,6379 --- An der Wuhlheide/Steffelbauerstr.: Baustellenampel östlich der Einmündung	F::inwork 19594,6155 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: source_id: viz2021:13.58402,52.443878,20.08.2024,09:00 (bis 31.03.2025) (inaktiv) --- #: source_id: viz2021:13.584031,52.443916,30.04.2025,10:00 (bis 11.07.2025) (inaktiv) --- #: source_id: viz2021:13.584313,52.444031,30.04.2025,10:00 (bis 11.07.2025) (inaktiv) --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1825789868754219040 --- #: by: https://pbs.twimg.com/media/GVVe5-VWoAAAD12?format=jpg&name=medium --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-wendenschlo%C3%9Fstra%C3%9Fe-47.1437/#post-25536 --- #: last_checked: 2025-07-18 (architektur-urbanistik) --- # REMOVED --- #: next_check: 2025-07-11 (VIZ-Verkehrsmeldung) --- # REMOVED --- #: valid: -20250711 --- Wendenschloßstr.: Gegenverkehrsregelung	X::inwork::alternating 22791,4457
@@ -533,7 +529,7 @@ Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2026-08-06
+#: last_checked: 2026-08-26
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -799,7 +795,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: XXX Ampel wird vermutlich permanent gemacht
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/staatssekretaerin-informiert-ueber-ampeln-zebrastreifen-und-mehr_a411347 (wird vermutlich permanent gemacht)
 #: osm_watch: node id="7978101859" version="2"
-#: last_checked: 2026-06-13
+#: last_checked: 2026-08-26
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-06-28
 	X::inwork 10096,-2137
@@ -1568,7 +1564,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6230,13596
 	X 6493,13822
 	X 6730,14021
-#: note: Grüner Pfeil für Radfahrer (Prellerweg -> Munsterdamm, W->S)
+# REMOVED (wurde wieder abgebaut, nun gibt es hier eine normale Rechtsabbiegersignalisierung für alle) --- #: note: Grüner Pfeil für Radfahrer (Prellerweg -> Munsterdamm, W->S)
 	X 6757,5858
 	X 7690,4563
 	X 7597,4499
@@ -1778,7 +1774,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2026-05-21
+#: last_checked: 2026-08-26
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 	F::inwork 8096,11393
@@ -4513,6 +4509,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX temporär
 #: osm_watch: node id="3779924761" version="9"
 #: osm_watch: note 5445919 3
+#: last_checked: 2026-08-26
 #: next_check: 2027-06-04 (planb + VIZ-Verkehrsmeldung)
 #: valid: -20270604
 	F::inwork 7480,14660
@@ -4594,7 +4591,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: next_check_id: CHAUSSEE-2026
 #: osm_watch: node id="26748289" version="10"
 #: XXX möglicherweise im Zusammenhang mit den neuen Bauarbeiten in der Chausseestr.
-#: last_checked: 2026-08-10 (mapillary)
+#: last_checked: 2026-08-26
 #: check_frequency: 60d
 #: next_check: 2028-05-11 (VIZ-Verkehrsmeldung)
 #: valid: -20280511

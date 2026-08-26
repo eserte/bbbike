@@ -542,6 +542,8 @@ entlang der ehemaligen Kindl-Brauerei	CS 12284,8195 12340,8208 12397,8221 12386,
 # 
 Hausdurchfahrt	CP2; 17601,5374 17538,5301
 # 
+(Diedersdorfer Weg - Nahmitzer Damm): entlang des Bundesinstitus für Risikobewertung	CS 7760,440 7810,461 7809,509 7837,516 7848,500 7910,518 8018,500 8075,499
+# 
 #: section ^^^
 # 
 ######################################################################
@@ -605,7 +607,7 @@ Haduweg: nur frei für Anlieger	CS 16416,23705 16510,23642
 (Ludwigpark): Privatgelände	CS 17259,26148 17385,25954 17413,25969 17435,25983 17310,26181
 Am Rundling: nur frei für Anlieger	CS 17927,3737 17927,3771 17927,3788
 # 
-(Kloster-Zinna-Str. - Braunfelsstr.): Privatstraße	CS 11712,-289 11721,-351
+(Kloster-Zinna-Str. - Braunfelsstr.): Privatstraße	CS 11694,-279 11707,-293 11721,-351
 # 
 Jänickestr. - Dahlemer Weg: Privatstraße	CS 1702,1278 1707,1256 1742,1118
 # 
@@ -1032,9 +1034,9 @@ Invalidenstr. Richtung Osten vor Schwarzer Weg	CS; 8539,13654 8572,13671
 Invalidenstr. Richtung Osten vor Chauseestr.	CS; 8841,13800 8898,13827 8935,13844
 #: note: 2026-04-11 noch nicht eingeschaltet gewesen; am 2026-07-02 eingeschaltet
 Invalidenstr. Richtung Osten vor Caroline-Michaelis-Str.	CS; 8974,13864 9046,13900 9085,13919 9148,13944
-#: note: 2026-02-27 + 2026-03-09 + 2026-04-05 + 2026-05-02 noch nicht eingeschaltet gewesen; am 2026-05-19 eingeschaltet
+#: note: 2026-02-27 + 2026-03-09 + 2026-04-05 + 2026-05-02 noch nicht eingeschaltet gewesen; am 2026-05-19 + 2026-08-26 eingeschaltet
 Invalidenstr. Richtung Westen vor Caroline-Michaelis-Str.	CS; 9223,13957 9189,13953 9148,13944
-#: note: 2026-02-27 + 2026-04-05 noch nicht eingeschaltet gewesen; am 2026-05-19 eingeschaltet; am 2026-07-26 nicht eingeschaltet
+#: note: 2026-02-27 + 2026-04-05 noch nicht eingeschaltet gewesen; am 2026-05-19 eingeschaltet; am 2026-07-26 nicht eingeschaltet; am 2026-08-26 eingeschaltet
 Invalidenstr. Richtung Westen vor Chausseestr.	CS; 9046,13900 8974,13864 8935,13844
 #: note: 2026-07-26 eingeschaltet gewesen
 Invalidenstr. Richtung Westen vor Hessische Str.	CS; 8898,13827 8841,13800 8685,13728
@@ -1265,7 +1267,7 @@ Bus 172, Bus 373	busroute_N 14120,1991 14231,1952
 Bus 373	busroute_N 14231,1952 14252,1945 14523,1847 14549,1922 14587,2032
 Bus 172	busroute_N 14231,1952 14224,1925 14203,1873 14124,1857 14062,1846 14008,1835 13890,1817 13794,1799 13679,1782 13614,1772 13657,1587 13708,1383
 Bus M44, ...	busroute_N 13708,1383 13634,1371 13413,1363 13300,1359 13194,1355 13089,1351 12938,1348
-Bus 172	busroute_N 12938,1348 12790,1302 12657,1154 12588,1103 12538,1075 12403,1011 12307,964 12107,898
+Bus 172	busroute_N 12938,1348 12790,1302 12657,1154 12588,1103 12563,1089 12538,1075 12403,1011 12307,964 12107,898
 Bus 172	busroute_N 10266,-1473 10460,-1471 10496,-1486 10508,-1511 10531,-1633 10539,-1689 10537,-1785 10513,-1954 10512,-1994 10507,-2016 10465,-2129
 Bus 172	busroute_N 10021,-1918 9959,-1918 9982,-1818
 Bus 175	busroute_N 9959,-1918 9853,-1921 9750,-1925 9648,-1928 9534,-1926 9428,-1892 9431,-1800 9443,-1626 9450,-1464 9457,-1329 9456,-1271 9379,-935
@@ -2174,7 +2176,7 @@ bereits vor der Einmündung als "Neheimer Str." ausgeschildert	CP2; 1735,19045 1
 Lichtenberger Str. [Wohngebiet]: nicht ausgeschildert	CP2; 11947,12494 11867,12284
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-08-08
+#: last_checked: 2026-08-26
 #: check_frequency: 90d
 #: next_check: 2027-06-30
 Friedenauer Höhe: nicht ausgeschildert	CS 6293,7875 6263,7894 6178,7899 6126,7917 6011,7911 5810,7883

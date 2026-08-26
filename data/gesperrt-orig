@@ -212,8 +212,9 @@ Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 #: osm_watch: note 4996305 1
 #: osm_watch: way id="1025420899" version="8"
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung wieder?
-#: last_checked: 2026-06-13
+#: last_checked: 2026-08-26
 #: check_frequency: 60d
+#: next_check: 2026-10-05 (VIZ-Verkehrsmeldung, planb)
 Buckower Chaussee	1no 8742,475 8977,505 9004,481
 # 
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
@@ -878,7 +879,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
 #: osm_watch: way id="5111625" version="18"
-#: last_checked: 2026-08-02
+#: last_checked: 2026-08-26
 #: check_frequency: 270d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
@@ -2875,8 +2876,8 @@ tragen (3x13 Stufen)	0:45 18739,4728
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409854635/licht-am-ende-des-tunnels-s-bahnhof-erhaelt-endlich-seinen-aufzug.html (1. Quartal 2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23856.pdf (Inbetriebnahme im 2. Quartal 2026)
 #: XXX hier wird es in Zukunft einen Aufzug geben
-#: last_checked: 2026-07-18 (bahninfo-forum)
-#: check_frequency: 50d
+#: last_checked: 2026-08-25 (bahninfo-forum)
+#: check_frequency: 30d
 #: next_check: 2026-09-20 (Baustellenschild: Sommer 2026)
 tragen	0:45 18661,4655
 # 
@@ -4141,8 +4142,8 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: FANGSCHLEUSE-2026
-#: last_checked: 2026-08-17 (mapillary)
-#: check_frequency: 90d
+#: last_checked: 2026-08-23 (youtube)
+#: check_frequency: 120d
 ehem. Bahnübergang Fangschleuse	2::inwork 39261,159 39259,574 39259,612
 # 
 #: next_check_id: RITAMAIBURG-2026
@@ -4244,7 +4245,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: FRIEDENAUERHOEHE-2024
 #: by: https://www.deutsches-architekturforum.de/thread/13397-stadtquartier-friedenauer-h%C3%B6he-in-bau/?postID=770057#post770057
 #: osm_watch: way id="1323938020" version="10"
-#: last_checked: 2026-08-08
+#: last_checked: 2026-08-26
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2027-06-30
 (Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): noch nicht freigegeben, Bauzäune	2::inwork 5812,7826 5829,7827 6147,7840
@@ -4351,7 +4352,7 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: osm_watch: way id="1495906089" version="1"
 #: osm_watch: way id="971631807" version="9"
 #: osm_watch: way id="971631806" version="9"
-#: last_checked: 2026-08-21 (mapillary)
+#: last_checked: 2026-08-26
 #: check_frequency: 60d
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
@@ -4378,7 +4379,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: osm_watch[closed]: note 5192591 2
 #: osm_watch[closed]: note 5192593 1
 #: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert laut Verkehrszeichenplan eine Furt an der Baustelle vorbei
-#: last_checked: 2026-08-10 (mapillary) vvv
+#: last_checked: 2026-08-26 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2028-05-11 (VIZ-Verkehrsmeldung) vvv
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s:q4::inwork 8870,13926 8831,13973 8732,14098
@@ -4630,7 +4631,7 @@ Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,10
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="5"
-#: last_checked: 2026-07-16 (luftbildsuche)
+#: last_checked: 2026-08-26
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11336 7934,11275
@@ -4783,7 +4784,7 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="5"
-#: last_checked: 2026-08-13
+#: last_checked: 2026-08-26
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (Schilder vor Ort)
 # REMOVED --- #: valid: -20251030
@@ -5045,7 +5046,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 # REMOVED (gelöscht, Alternative ist nun die provisorische (?) Baustraße) --- #: osm_watch: way id="223950473" version="6"
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_53_3721_3860_online.pdf (neue Zufahrt soll für mindestens sechs Jahre bestehen)
 #: osm_watch: way id="1115686082" version="5"
-#: last_checked: 2026-08-13
+#: last_checked: 2026-08-26
 #: check_frequency: 180d
 #: next_check: 2028-12-23 (Amtsblatt)
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
@@ -5154,11 +5155,12 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
 #: source_id: viz2021:13.374617,52.535574,24.08.2023,12:27 (bis 31.08.2023) (bis 31.08.2025) (bis 31.08.2026) (inaktiv)
 #: source_id: LMS-BR:391216/72 viz2021:13.37613,52.53612, viz2021:13.376138,52.536093, (bis 01.09.2026) (bis 31.08.2026)
+#: source_id: planb2026:13.37351074,52.53509031,24.08.2023, ("Sperrung einer Fahrtrichtung", bis 31.08.2026)
 #: osm_watch: way id="129104626" version="27"
 #: osm_watch: way id="945966258" version="3"
 #: osm_watch[closed]: note 5077509 1
 #: also_indoor: traffic (ex-H,ex-G,ex-B[alle falsch])
-#: last_checked: 2026-07-31
+#: last_checked: 2026-08-26
 #: check_frequency: 120d
 #: next_check: 2026-09-30 (Baustellenschild)
 # REMOVED --- Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -5266,7 +5268,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-08-20 vvv
+#: last_checked: 2026-08-26 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5669,7 +5671,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2026-08-21 (mapillary) vvv
+#: last_checked: 2026-08-26 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188 (inaktiv)
 #: osm_watch: way id="593108603" version="3"
