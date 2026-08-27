@@ -3249,7 +3249,7 @@ Alter Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542
 # 
 #: next_check_id: AMALTENMARKT-2018
 #: XXX: möglicherweise nur provisorischer Asphalt
-#: osm_watch: way id="760022943" version="21" brb
+#: osm_watch: way id="760022943" version="23" brb
 #: last_checked: 2026-04-18 (mapillary)
 #: check_frequency: 120d
 Anna-Zielenziger-Str.: asphaltiert	Q0- -12719,-1542 -12780,-1558 -12790,-1560
@@ -5853,9 +5853,10 @@ Goethebahn - Lessingstr.: Verbundsteinpflaster	Q1+ 25107,-9554 25197,-9566
 (Goethebahn - A10-Center): Verbundsteinpflaster	Q1 25209,-10021 25109,-10060 25022,-10098
 Forstallee (Miersdorf): Asphalt mit einigen Unebenheiten	Q1 24726,-6632 24672,-6698 24623,-6966 24602,-7131
 #: next_check_id: FORSTALLEEZEUTHEN-2026
-#: source_id: 266100065 (bis 21.08.2026) (inaktiv)
+#: source_id: 266100065 (bis 21.08.2026) (inaktiv) (bis 31.12.2026)
 #: XXX: nach den Bauarbeiten bessere Qualität?
-#: next_check: 2026-09-01 (zeuthen.de)
+# REMOVED --- #: next_check: 2026-09-01 (zeuthen.de)
+#: next_check: 2026-12-31 (Verkehrsmeldung)
 Forstallee (Miersdorf): Asphalt mit einigen Schäden	Q1+ 24726,-6632 24797,-6578 24946,-6533 25083,-6494 25400,-6408 25581,-6359 25619,-6350
 Am Mühlenberg: Asphalt	Q0 24703,-7243 24490,-7241 24416,-7241 24283,-7242
 Straße am Hochwald: Asphalt	Q0 24700,-7331 24616,-7384

@@ -6711,14 +6711,15 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 # aktuelles Bauvorhaben (Botschaft von Bangladesh)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-botschaft-bangladesh-tiergartenstr-neben-canisius-kolleg.1197/#post-24583
 #: source_id: planb2026:13.35625607,52.50931328,03.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 29.08.2026)
+#: source_id: planb2026:13.35621089,52.5092219,05.02.2026,00:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026)
 #: osm_watch: way id="46886611" version="11"
 #: also_indoor: traffic (ex-G,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
 #: note: offiziell gesperrt, Absperrungen können aber weggeschoben sein
-#: last_checked: 2026-05-26 (daf)
+#: last_checked: 2026-07-26 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2026-08-29 (planb)
+#: next_check: 2026-10-31 (planb (längere der beiden Meldungen))
 	q3::inwork 7103,11247 7171,11510
 ',
          'from' => 1740817421,
@@ -7126,7 +7127,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-08-24 vvv
+#: last_checked: 2026-08-27 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -7190,7 +7191,7 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
 #: osm_watch: way id="1168938182" version="14"
 # REMOVED --- #: osm_watch: way id="837927791" version="14"
 #: osm_watch: way id="1168938183" version="10"
-#: osm_watch: note 5094173 4
+#: osm_watch: note 5094173 5
 #: osm_watch[closed]: note 4283578 4
 #: also_indoor: search Wolziger_Zeile
 #: last_checked: 2026-08-26 vvv
@@ -7521,7 +7522,7 @@ Friedrichstr., 2. BA	q4::inwork 34359,2165 34250,2546
 #: osm_watch: way id="5057517" version="22"
 #: also_indoor: traffic (T,G)
 #: note: hier sind die Radwege fast in der gesamten Breite verfügbar, deshalb q3
-#: last_checked: 2026-07-29
+#: last_checked: 2026-08-27 (traffic)
 # REMOVED --- #: next_check: 2026-05-31 (VIZ-Verkehrsmeldung)
 Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
 ',
@@ -8145,11 +8146,11 @@ Freystadter Weg: Fahrbahn gesperrt	q4::inwork 20994,4761 20981,4696
 # REMOVED --- #: next_check: 2026-08-31
 # REMOVED --- Gellertstr.: an der Radickestr. gesperrt	q4::inwork 20148,3490 20237,3392
 # 
-#: also_indoor: traffic (no-G,T,no-H,ex-W)
-#: source_id: planb2026:-
-#: last_checked: 2026-08-15
-#: check_frequency: 14d (traffic)
-Friedenstr.: Abschnitt der Fahrbahn gesperrt	q4::inwork 20366,3480 20219,3661
+# REMOVED --- #: also_indoor: traffic (no-G,T,no-H,ex-W)
+# REMOVED --- #: source_id: planb2026:-
+# REMOVED --- #: last_checked: 2026-08-15
+# REMOVED --- #: check_frequency: 14d (traffic)
+# REMOVED --- Friedenstr.: Abschnitt der Fahrbahn gesperrt	q4::inwork 20366,3480 20219,3661
 # 
 # REMOVED --- #: note: Vollsperrung aufgrund Kabelgrube bis 1. Juni 2026
 # REMOVED --- #: also_indoor: traffic (T,no-G,no-W)
@@ -8284,10 +8285,10 @@ Wernigeroder Str.	q4::inwork; 4096,13095 4092,13021 4092,12947
        undef,
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2; im April 2026 nach Hinweis von Thomas K. wieder reaktiviert
-#: also_indoor: traffic (G,T)
+#: also_indoor: traffic (ex-G,T)
 #: source_id: planb2026:13.3422831,52.44531015,19.05.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026)
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: last_checked: 2026-08-08 vvv
+#: last_checked: 2026-08-27 (traffic) vvv
 #: check_frequency: 21d (traffic) vvv
 #: next_check: 2026-09-30 (planb) vvv
 # REMOVED --- #: note: hier Halteverbotsschilder bis 4.11.2025
@@ -8607,7 +8608,7 @@ Schiffbauerdamm, Richtung Westen: nur für Fußgänger	q4::inwork; 9025,12727 8870,
 #: source_id: adac:850837566 (hier nur die östliche Sperrung, bis voraussichtlich 19.09.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:376390/72 viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025) (bis 22.12.2025) (bis 18.12.2025) (inaktiv)
 #: source_id: planb2026:13.42938086,52.47090502,13.04.2026, ("Sicherung gemäß Vz.-plan", bis 15.09.2026)
-#: also_indoor: traffic (ex-G,T,no-H,no-W)
+# REMOVED --- #: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: XXX im Zusammenhang mit den Arbeiten an der Ampel
 #: note: Überquerungsmöglichkeit nun ca. 30m südlich der Kreuzung; mittlerweile möglicher direkter Weg (evtl. nur außerhalb der Arbeitszeiten?)
 #: last_checked: 2026-08-08
@@ -8735,7 +8736,7 @@ Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,1145
 #: also_indoor: traffic (ex-G,ex-T,no-W,no-A,no-H)
 #: source_id: planb2026:13.4564232,52.50244969,01.06.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-08-26 vvv
+#: last_checked: 2026-08-27 vvv
 #: check_frequency: 8d vvv
 #: next_check: 2026-08-31 (planb) vvv
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-04-30 (Baustellenschild der Wasserbetriebe) vvv
@@ -8989,7 +8990,7 @@ Bötzowstr.: Kreuzungsbereich vermutlich betroffen	q3::inwork 12280,13880 12361,1
 #: source_id: planb2026:13.44989871,52.50304685,28.04.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 01.11.2027)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-08-26
+#: last_checked: 2026-08-27
 #: check_frequency: 120d
 #: next_check: 2027-11-01 (planb)
 	q4::inwork 13408,10837 13436,10903
@@ -9122,7 +9123,7 @@ Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
          'until' => undef
        },
        {
-         'data' => '#: osm_watch: note 5049958 2
+         'data' => '#: osm_watch: note 5049958 3
 #: osm_watch: way id="1127993128" version="10"
 #: source_id: planb2026:13.37147229,52.53701526,13.10.2025,06:00 ("keine Fahrbahn-Einschränkung", bis 07.08.2026) (bis 28.08.2026)
 #: last_checked: 2026-08-26
@@ -9329,10 +9330,10 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5398
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/frost-posse-in-babelsberg-busse-fahren-wochenlang-umleitung--trotz-verschobener-baustelle-15213887.html
 # REMOVED (last_checked ist nun in fragezeichen-orig) --- #: last_checked: 2026-02-25 (mapillary)
-#: osm_watch: way id="10612721" version="24"
-#: osm_watch: way id="1221275926" version="10"
+#: osm_watch: way id="10612721" version="25"
+#: osm_watch: way id="1221275926" version="11"
 August-Bebel-Str.	q4::inwork -8444,-1691 -8469,-1541
-#: osm_watch: way id="24969126" version="17"
+#: osm_watch: way id="24969126" version="18"
 August-Bebel-Str.	q4::inwork -8469,-1541 -8485,-1445
 #: osm_watch: way id="23044834" version="24"
 Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541 -8390,-1532
@@ -10932,23 +10933,7 @@ Straße der Pariser Kommune	q2::inwork 12645,11673 12543,11521
          'until' => 1788213599
        },
        undef,
-       {
-         'data' => '#: by: https://www.ahrensfelde.de/portal/meldungen/verkehrseinschraenkungen-aufgrund-von-bauarbeiten-im-juli-und-august-900000540-30601.html
-#: osm_watch: note 5362444 4
-#: also_indoor: traffic (ex-G,ex-T,no-H,W[Sperrung auf der Basiskarte])
-#: note: es gibt allerdings zur Not einen inoffiziellen Trampelpfad über eine steile Böschung
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-08-19 (traffic)
-#: check_frequency: 3d (traffic)
-# REMOVED --- #: next_check: 2026-08-14 (ahrensfelde website)
-	2::inwork 26501,19266 25861,19127
-',
-         'from' => 1781474400,
-         'id' => 4701,
-         'text' => 'Mehrow - Trappenfelde: Straße wegen Leitungsarbeiten gesperrt, voraussichtlich bis 14.08.2026, evtl. wird die Sperrung verlängert',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~03-08-2026-b102_jueterbog_fertigstellung-bruecke-auf-fruehjahr-2027-verschoben
 #: source_id: LS/222-W/26/015 (bis 01.09.2028)
@@ -10989,11 +10974,12 @@ Straße der Pariser Kommune	q2::inwork 12645,11673 12543,11521
        {
          'data' => '#: source_id: planb2026:13.47159126,52.61569554,27.05.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.09.2026)
 #: also_indoor: traffic (G,T,H,W)
-Hubertusdamm	q4::inwork; 14761,23453 14718,23387 14632,23257
+# REMOVED (hier nicht, siehe Mapillary) --- Hubertusdamm	q4::inwork; 14761,23453 14718,23387 14632,23257
+Hubertusdamm	q4::inwork; 14845,23565 14761,23453
 ',
          'from' => 1779746400,
          'id' => 4708,
-         'text' => 'Hubertusdamm: Einbahnstraßenregelung, evtl. ist auch der Radverkehr betroffen, vom 27.05.2026 bis 30.09.2026',
+         'text' => 'Hubertusdamm: Einbahnstraßenregelung, vom 27.05.2026 bis 30.09.2026',
          'type' => 'handicap',
          'until' => 1790805599
        },
@@ -11256,23 +11242,32 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
          'type' => 'gesperrt',
          'until' => 1790805600
        },
+       undef,
        {
-         'data' => '#: by: https://plan.tomtom.com/de/route/plan?p=52.4799,13.45642,14.23z&q=Treptower%20Park
-#: by: https://viz.berlin.de/aktuelle-meldungen/bombenentscharfung-in-neukolln/
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/sonderthemen/fliegerbombe-am-weigandufer-1707234.php
-#: source_id: LMS-BR:420196/72 viz2021:13.45179,52.48088,
-#: last_checked: 2026-08-26 vvv
-#: check_frequency: 2d vvv
-	2::bomb 13718,8408 13875,8282 13805,8193 13724,8090
-	2::bomb 13875,8282 13939,8228 13968,8270 13830,8381 13747,8446
-#: check_frequency ^^^
-#: last_checked ^^^
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mtzz7zexok2i
+#: source_id: bvg2024:m43#HIM_FREETEXT_358187
+#: source_id: LMS-BR:420275/72 viz2021:13.385706,52.485011, (kein Endedatum)
+#: also_indoor: traffic (T,no-G)
+#: note: Richtung Osten für den Kfz-Verkehr gesperrt, eine Gasse für den Radverkehr ist zurzeit offen
+#: note: Länge des abgesperrten Bereichs 100m, der eigentlich Baubereich nur etwa 50m
+#: last_checked: 2026-08-27
+#: check_frequency: 14d
+	q3::inwork; 9229,8785 9076,8783
 ',
          'from' => undef,
-         'id' => 4731,
-         'text' => 'Weigandufer, Kiehlufer, Thiemannstr.: Bombenfund, Sperrungen',
-         'type' => 'gesperrt',
-         'until' => 1787803200
+         'id' => 4732,
+         'text' => 'Dudenstr.: Wasserrohrbruch, Fahrbahn Richtung Westen gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	q4::temp::play 11335,10375 11325,10317 11274,10184
+',
+         'from' => 1789596000,
+         'id' => 4733,
+         'text' => 'Admiralstraße: Spielstraße zwischen Regina-Jonas-Straße und Skalitzer Straße, donnerstags zwischen 15:00 und 18:00, vom 18. September 2026 bis 29. Oktober 2026',
+         'type' => 'handicap',
+         'until' => 1793293200
        }
      
 );
