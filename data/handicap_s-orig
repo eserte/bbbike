@@ -225,7 +225,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,1318
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-08-24 vvv
+#: last_checked: 2026-08-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (Tsp, planb) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -384,10 +384,10 @@ Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 1366
 # REMOVED --- Kiefholzstr.: Sanierungsarbeiten an der Fahrbahn Richtung Südosten, Gehweg für Radfahrer frei	q2::inwork; 13849,9310 14018,9118
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: osm_watch: way id="1219203456" version="25"
-#: osm_watch: way id="884139300" version="28"
-#: osm_watch: way id="1127801487" version="14"
-#: last_checked: 2026-08-09 vvv
+#: osm_watch: way id="1219203456" version="26"
+#: osm_watch: way id="884139300" version="29"
+#: osm_watch: way id="1127801487" version="15"
+#: last_checked: 2026-08-29 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -1095,7 +1095,7 @@ Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,1459
 #: source_id: bvg2024:m27#HIM_FREETEXT_348335
 #: osm_watch: way id="1392961223" version="7"
 #: also_indoor: traffic (T,ex-G[viel zu kurz?],re-W,re-H)
-#: last_checked: 2026-07-26 (mapillary)
+#: last_checked: 2026-08-27 (mapillary)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung)
@@ -1189,7 +1189,7 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 #: by: https://www.tagesspiegel.de/berlin/bezirke/charlottenburg-wilmersdorf/verkehrssperrungen-in-der-berliner-city-west-rund-um-den-breitscheidplatz-gibt-es-bald-viele-baustellen-15223104.html (Sperrung 2026)
 #: source_id: viz2021:13.33567,52.50437,20.10.2025,06:00 (bis 08.11.2025) (inaktiv)
 #: source_id: LMS-BR:406219/72 viz2021:13.331624,52.50377,27.04.2026,12:00 (Verengung, evtl. im Zusammenhang mit dieser Maßnahme? bis 28.05.2026) (bis 30.11.2026)
-#: source_id: planb2026:13.33491591,52.50358375,27.04.2026, ("geänderte Führung im Knotenpunkt", bis 20.11.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.33491591,52.50358375,27.04.2026, ("geänderte Führung im Knotenpunkt", bis 20.11.2026) (vorfristig inaktiv) (bis 20.11.2026)
 #: osm_watch: note 5181118 1
 #: osm_watch: way id="4491984" version="29"
 #: XXX etwa 60m der Fahrbahn sind gesperrt
@@ -1364,10 +1364,10 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9872 (Anfrage)
 #: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
 #: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026) (inaktiv) (bis 22.01.2026) (inaktiv)
-#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026)
+#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026) (bis 30.09.2026)
 #: source_id: planb2026:13.49473836,52.43124572,25.02.2025, ("Sperrung einer Fahrtrichtung", bis 30.09.2026)
 #: last_checked: 2026-08-02 vvv
-#: next_check: 2026-09-30 (planb) vvv
+#: next_check: 2026-09-30 (planb + VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
 # REMOVED (nicht mehr) --- Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
@@ -1689,7 +1689,7 @@ Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahre
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msagudcygk2b
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidvo2akpr4ik7t2dzkvfu7ie5f2kwyvakumzcrezznxuyn7b4fdqq (aktuelle Meldung zu Arbeiten am östlichen Ende der neuen Brücke)
 #: source_id: LMS-BR:415125/72 viz2021:13.38021,52.41036,08.07.2026,07:00 (bis 23.08.2026) (inaktiv) (bis 05.10.2026)
-#: source_id: LMS-BR:418266/72 viz2021:13.39268,52.4127,04.08.2026,07:00 (östlich der Brücke, bis 28.08.2026)
+#: source_id: LMS-BR:418266/72 viz2021:13.39268,52.4127,04.08.2026,07:00 (östlich der Brücke, bis 28.08.2026) (inaktiv)
 #: source_id: planb2026:13.37629824,52.40919079,26.05.2023, ("Vollsperrung beider Fahrbahnen", bis 05.10.2026)
 #: XXX wird es auch Änderungen bei den RVA auf der Hauptfahrbahn geben?
 #: last_checked: 2026-08-26 vvv
@@ -1738,10 +1738,10 @@ Kranoldplatz (Lichterfelde): Bauarbeiten, Sperrung der südlichen Spange	q4::inwo
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lycdxxhmxk2c (nur Kfz-Verkehr)
 #: source_id: LMS-BR:382669/72 viz2021:13.29708,52.43252,08.09.2025,07:00 viz2021:13.29708,52.43252, (hier keine Einschränkung auf den Kfz-Verkehr, bis 09.01.2026) (bis 30.01.2026) (bis 01.03.026) (bis 04.09.2026)
 #: source_id: planb2026:13.30225823,52.43231703,06.07.2026,07:00 (hier: "keine Fahrbahn-Einschränkung", bis 31.07.2026) (inaktiv)
-#: source_id: planb2026:13.29499928,52.43257687,08.09.2025, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
+#: source_id: planb2026:13.29499928,52.43257687,08.09.2025, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (bis 30.10.2026)
 #: last_checked: 2026-05-09 vvv
-#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung, planb) vvv
-#: valid: -20260904 vvv
+#: next_check: 2026-10-30 (planb) vvv
+#: valid: -20261030 vvv
 # REMOVED (Baustelle ist gewandert) --- Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	DH:h=q2,294 3313,2842 3171,2848 3025,2858 3019,2858
 #: note: auf der Fahrbahn gilt eine Einbahnstraßenregelung, frei Richtung Osten
 Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	q2::inwork; 3641,2827 3456,2835 3313,2842 3171,2848
@@ -1773,7 +1773,7 @@ Potsdamer Str.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3644,293
 ### Waidmannslust ###
 # 
 #: next_check_id: FUERSTBISMARCKSTEG-2026
-#: source_id: planb2026:13.31334242,52.60806686,07.07.2026,07:00 ("keine Fahrbahn-Einschränkung", bis 28.08.2026)
+#: source_id: planb2026:13.31334242,52.60806686,07.07.2026,07:00 ("keine Fahrbahn-Einschränkung", bis 28.08.2026) (inaktiv)
 #: last_checked: 2026-06-07
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2026-08-28 (planb)

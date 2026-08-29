@@ -34,9 +34,9 @@ Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # REMOVED --- Straße der Pariser Kommune: vermutete (Hoch?)Bauarbeiten, evtl. mit (Teil)Sperrung der Straße?	? 12822,12067 12833,12154 12854,12287
 # 
 #: next_check_id: EWEST-2026
-#: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
+#: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026)
-#: next_check: 2026-09-04 (planb + VIZ-Verkehrsmeldung)
+#: next_check: 2026-09-04 (ex-planb + VIZ-Verkehrsmeldung)
 #: valid: -20260904
 Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 # 
@@ -71,7 +71,7 @@ Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 # 
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_347631
 #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_347630
-#: source_id: bvg2024:194#HIM_FREETEXT_348289 (zwischenzeitlich 1x entfernt)
+#: source_id[inactive]: bvg2024:194#HIM_FREETEXT_348289 (zwischenzeitlich 2x entfernt)
 #: source_id: LMS-BR:415149/72 viz2021:13.4754,52.50199, (bis 16.12.2026)
 #: source_id: planb2026:13.47841638,52.50180555,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.47959962,52.50191162,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026)
@@ -93,22 +93,22 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026)
-#: last_checked: 2026-07-23 (mapillary)
+#: last_checked: 2026-08-27 (mapillary)
 #: next_check: 2026-09-04
 #: valid: -20260904
 Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,18585
 # 
 #: next_check_id: WOLLANK-2024
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7373 (Antrag auf Verstetigung)
-#: source_id: planb2026:13.38387014,52.57273303,15.06.2026, ("Gegenverkehrsanlage (LZA)", bis 04.09.2026)
-#: last_checked: 2026-07-23 (mapillary)
+#: source_id: planb2026:13.38387014,52.57273303,15.06.2026, ("Gegenverkehrsanlage (LZA)", bis 04.09.2026) (vorfristig inaktiv)
+#: last_checked: 2026-08-27 (mapillary)
 #: next_check: 2026-09-04 (planb)
 # REMOVED --- #: next_check: 2026-12-31
 Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
 #: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026) (bis 16.10.2026)
-#: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026)
+#: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026) (inaktiv)
 #: last_checked: 2026-05-30
 #: next_check: 2026-10-16 (VIZ-Verkehrsmeldung)
 #: valid: -20261016
@@ -295,12 +295,13 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv) (bis 15.07.2025) (inaktiv)
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: vizapi2026:332/2026 (bis 31.08.2026)
+#: source_id: LMS-BR:420436/72 viz2021:13.29383,52.49126,28.08.2026,00:00 (bis 09.09.2026)
 #: also_indoor: traffic (T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
 #: last_checked: 2026-08-05 (traffic)
 #: check_frequency: 30d (traffic)
-#: next_check: 2026-08-31 (planb, VIZ-Verkehrsmeldung)
+#: next_check: 2026-09-09 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20251231
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
@@ -529,7 +530,7 @@ Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2026-08-26
+#: last_checked: 2026-08-29
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -4945,6 +4946,7 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: section ^^^
 ################################################################################
 #: section: Ampeln elsewhere vvv
+	X 68591,73201
 	X 32130,-604
 #: note: Anforderungsampel im Zuge des Radwegs
 	X 37397,-1192
@@ -5298,7 +5300,7 @@ Bahn kommt ca. halbstündlich	B 40222,103642
 #: by: https://berliner-abendblatt.de/berlin-news/grosses-bauvorhaben-in-luebbenau-startet-id227435 (Bahnübergänge werden beseitigt, bis Ende 2027)
 #: by: https://www.rbb24.de/wirtschaft/beitrag/2024/08/brandenburg-luebbenau-bahn-unterwasser-baustelle-unterfuehrung-taucher.html (bis Ende 2026)
 #: osm_watch: node id="440824347" version="10"
-#: osm_watch: way id="1291223017" version="3"
+#: osm_watch: way id="1291223017" version="4"
 #: osm_watch: way id="56672802" version="5"
 #: next_check: 2026-12-31
 	B 49226,-59451

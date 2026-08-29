@@ -1094,7 +1094,7 @@ Verbundsteinpflaster	RW1; 63283,76647 63409,76650 63580,76754 63905,76943 64034,
 #: by: https://www.schwedt.eu/de/schwedt-entdecken/aktuelle-meldungen/verkehrseinschraenkungen/31978 (letzter Teilabschnitt bis Heinersdorfer Damm bis Herbst 2026)
 #: by: https://www.schwedt.eu/de/54835
 #: XXX nach den Bauarbeiten möglicherweise asphaltierte Radwege
-#: next_check: 2026-07-10
+#: next_check: 2026-10-31
 Verbundsteinpflaster	RW2;RW2 67175,74764 67106,74630 67049,74502 66961,74312 66890,74152 66810,73963
 Verbundsteinpflaster	RW2;RW2 66890,74152 66975,74119 67068,74080 67201,74018
 Verbundsteinpflaster	RW2; 67201,74018 67277,74164 67328,74278 67369,74369
@@ -1587,6 +1587,13 @@ Bürgersteig mit Verbundsteinpflaster, wird wohl normalerweise auch von Radfahrer
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 39553,15059 39615,15288 39621,15311
 Verbundsteinpflaster, teilweise schlecht	RW2;RW8 37661,-1285 37545,-1442 37537,-1504 37591,-1666
 Verbundsteinpflaster	RW2;RW2 37591,-1666 37624,-1765 37613,-2204
+Verbundsteinpflaster	RW2; 67117,71540 66887,71643 66781,71705 66505,71828
+Asphalt	RW2;RW8 68016,72528 68129,72893 68135,73168
+Asphalt	RW2;RW8 68135,73168 68517,73160 68591,73201
+Bushaltestelle	RW5; 68591,73201 68630,73232
+Asphalt	RW2; 68630,73232 68737,73317
+	RW3; 68737,73317 68777,73351
+Asphalt	RW2; 68777,73351 68737,73317 68630,73232 68591,73201
 ######################### User Contributions #################################
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_oktober_2018_web.pdf (Fahrradstraße geplant)
 #: by: mapillary, osm
@@ -1790,7 +1797,10 @@ asphaltiert	RW2;RW8 18722,30727 18676,30738 18580,30715 18299,30636 17927,30552 
 # 
 #: by: rjoop vvv
 straßenbegleitende Radwege	RW;RW 92404,20801 92726,20487 92970,20194
-asphaltiert	RW8;RW2 67117,71540 68016,72528
+#: confirmed_by: srt
+asphaltiert	RW8;RW2 67117,71540 67669,72128 67889,72373
+#: confirmed_by: srt (asphaltiert -> ...)
+Verbundsteinpflaster	RW8;RW2 67889,72373 68016,72528
 Radweg auf Bürgersteig	RW;RW 68016,72528 68281,72757 68700,73001
 #: by: ^^^
 # 

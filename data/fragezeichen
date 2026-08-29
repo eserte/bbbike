@@ -3,6 +3,7 @@
 Kurfürstenstr.: Einbahnstraßenregelung für Kfz geplant, hier auch?	?; 8058,10306 7850,10351 7744,10372
 Adlerplatz: existiert hier ein ausgeschilderter Platz?	? -584,12553 -587,12529 -587,12500
 B198 bei Angermünde: gibt es hier einen Radweg? wo genau?	? 47908,73136 47292,73547
+Handjerystr.: Rüttelstreifen geplant	? 5635,7820 5636,7734
 Am Schlänitzsee (Potsdam-Marquardt): Qualität? Wie ist die genaue Lage der Straße?	? -19356,5480 -19454,5465 -19461,5517 -19374,5533
 An der Obstplantage (Potsdam-Marquardt): Qualität?	? -19427,5736 -19517,5712 -19543,5849 -19463,5860
 Biegen - Müllrose: existiert hier ein Radweg (wahrscheinlich ab 2006-10-31)	? 79768,-15263 78364,-14355
@@ -260,11 +261,6 @@ Platkow - Letschin: Qualität? Teilweise für Autos gesperrt? Führt der R1 hier en
 Letschin Bahnhof - Letschin: Qualität?	? 74762,26048 74282,26423 75067,27259 75093,27355
 Wollup - Spadille: Qualität?	? 78680,25852 78756,27072 78680,27516
 Fürstenwalder Str. (Zernsdorf): Qualität?	? 27906,-11638 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
-Heinersdorf - Berkholz: Qualität des südlichen Abschnitts? Hier auch asphaltiert?	? 63283,75793 63732,73976 63805,73769 63945,73688
-Berkholz - Meyenburg: Qualität?	? 63945,73688 64048,73386 64272,73434 64491,73284 64797,73259 64976,73094 65440,72548 65658,72501 65817,72245
-Meyenburg - Schwedt: Qualität?	? 65817,72245 65801,72127 67117,71540
-B166 - Meyenburg: Qualität des südlichen Abschnitts? Hier auch asphaltiert?	? 65417,75421 65388,75202 65022,74147 64983,73522 64976,73094
-B166 - Berkholz: Qualität?	? 65022,74147 64076,73706 63945,73688
 Altranft - Sonnenburg: Qualität?	? 55627,41154 55542,41087 54597,39850 53976,39070 54043,38820 53890,38424 53397,38297
 Sonnenburg - Baasee: Qualität?	? 53397,38297 52995,38583 52879,38436 52531,38339 52410,38174
 Turmstr. (Potsdam): Qualität? Zugang zum Radweg über Fernwärmeleitung mit Treppe	? -8081,-4396 -8111,-4396 -8259,-4119
@@ -566,7 +562,6 @@ Alter Torfweg (Potsdam): Qualität? Existieren Straßenschilder?	? -10836,-5477 -1
 Ahlimbswalde: ist die gesamte Straße asphaltiert?	? 30962,71971 31251,71954 31669,72016 31857,72102 32370,71986 32613,71643
 Vogelsangsruh: ist die gesamte Straße asphaltiert?	? 66431,84540 66638,84513
 Niederfelde: ist die gesamte Straße gepflastert?	? 66126,84243 66092,84252 66062,84129
-Auguststr. (Schwedt): Qualität des westlichen Abschnitts?	? 68135,73168 68517,73160 68591,73201 68777,73351
 Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9847,6891
 Ahlimbsmühle - Templin: Qualität (Asphalt oder etwas anderes)? Ist die gesamte Straße eine Fahrradstraße?	? 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
 Carl-Dähne-Str.: Planstraße A, schon fertiggestellt, Qualität?	? -16317,-541 -16309,-435 -16168,-312
@@ -826,5 +821,6 @@ F3.4 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 # added from bbbike-temp-blockings-optimized
+Hermann-Dorner-Allee: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, Ende der Bauarbeiten unbekannt [Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden] (Sind die Bauarbeiten beendet?)	? 18374,2971 18445,2642
 Uferweg unter dem Siemenssteg: Baustelle, komplett gesperrt, möglicherweise bis Herbst 2027 [Uferweg] (Ist der Uferweg unter dem Siemenssteg weiterhin gesperrt?)	? 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
 Am Wiesenrain: mögliche Sperrung der Fahrbahn vor dem S-Bhf. Hirschgarten, vom 10.7.2026 bis 24.8.2026, evtl. wird die Sperrung verlängert [Am Wiesenrain: mögliche Sperrung der Fahrbahn] (Besteht die Sperrung in der Straße "Am Wiesenrain" noch immer? Oder gibt es mittlerweile eine Einbahnstraßenregelung?)	? 23931,5992 24122,6007
