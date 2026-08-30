@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
-#: last_checked: 2026-08-16
+#: last_checked: 2026-08-30
 #: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261015
 Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
@@ -540,7 +540,7 @@ Rosa-Luxemburg-Platz: tempor‰res Volksbad auf der Fahrbahn	q4 10828,13464 10931,
 # 
 #: source_id: planb2026:13.3804937,52.51755219,03.08.2026, ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.3804937,52.51755219,18.08.2026, ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
-#: source_id: LMS-BR:420081/72 viz2021:13.3803,52.51893, (bis 18.09.2026)
+#: source_id: LMS-BR:420081/72 viz2021:13.3803,52.51893, vizapi2026:866/2026 (bis 18.09.2026)
 #: note: Richtung S¸den existiert auf der westlichen Straﬂenseite eine Radfahrerfurt, die allerdings auch f¸r die Fahrtrichtung Nord genutzt wird
 #: last_checked: 2026-08-20
 #: next_check: 2026-09-18 (planb, VIZ-Verkehrsmeldung)
@@ -5858,14 +5858,14 @@ Rummelsburger Seeblick: Fuﬂg‰nger	q3 14927,10807 14918,10769 14909,10732
 Suttnerstr.: einige Fuﬂg‰nger	q2+ 7728,5866 7733,5893 7735,5960
 # 
 #: next_check_id: HINDENBURGDAMM-2022
-#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, (bis 27.02.2026) (bis 29.05.2026) (bis 30.06.2026) (bis 17.08.2026) (inaktiv) (bis 01.09.2026)
+#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, (bis 27.02.2026) (bis 29.05.2026) (bis 30.06.2026) (bis 17.08.2026) (inaktiv) (bis 01.09.2026) (bis 30.09.2026)
 #: XXX sind die Bauarbeiten Bauarbeiten vorbei?
 #: last_checked: 2025-12-06 (mapillary)
-#: next_check: 2026-09-01 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-09-30 (VIZ-Verkehrsmeldung)
 #: note: zwischenzeitlich (ab ca. 2022):
-#: valid: -20260901
+#: valid: -20260930
 (Wolfensteindamm - H‰ndelplatz): Baustelleneinrichtung, Ausweichen auf Gehweg	q3 4543,4820 4517,4853
-#: valid: !-20260901
+#: valid: !-20260930
 (Wolfensteindamm - H‰ndelplatz): Gehweg, einige Fuﬂg‰nger, q2	q3 4543,4820 4517,4853
 # 
 Annastr.: einige Fuﬂg‰nger	q3 5920,2693 5930,2671
