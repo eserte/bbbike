@@ -105,13 +105,13 @@ EOF
 }
 
 sub teaser_kreisfahrt_adfc {
-    my $out_of_date = $today lt "20250831" || $today gt "20250913";
+    my $out_of_date = $today lt "20260905" || $today gt "20260919";
     if (!$out_of_date) {
-	my $adfc_url    = "https://berlin.adfc.de/artikel/kreisfahrt-2025";
+	my $adfc_url    = "https://touren-termine.adfc.de/radveranstaltung/203240-adfckreisfahrt-2026";
 	my $misc_dir = $use_cgi_bin_layout ? '/BBBike/misc' : '/bbbike/misc';
 	my $kreisfahrt_img = "$misc_dir/kreisfahrt_anyyear/kreisfahrt_anyyear.png";
 	<<EOF
-<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0" style="position: relative; top: 3px;" /></a> am 13. September $year</div>
+<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0" style="position: relative; top: 3px;" /></a> am 19. September $year</div>
 EOF
     } else {
 	();
