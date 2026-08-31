@@ -3560,11 +3560,12 @@ zum Hiroshimasteg: Kleinsteinpflaster	Q1- 7253,11208 7252,11202 7235,11203 7233,
 Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 #: next_check_id: KOEPENICKER-2026
 #: osm_watch: note 5467923 3
-#: XXX Asphaltierungsarbeiten
-#: last_checked: 2026-08-27 (fertig, aber nicht freigegeben)
-# REMOVED --- #: check_frequency: 3d
-#: next_check: 2026-08-31 (BVG-Verkehrsmeldung: mögliche Freigabe?)
-Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11917,11186 11944,11152
+#: XXX bleibt der Asphalt?
+#: historical_note: früher (bis Ende August 2026): Gehwegplatten, Q0-
+#: note: eigentlich nur für den Linienverkehr frei
+#: last_checked: 2026-08-31
+#: next_check: 2026-12-31
+Melchiorstr. - Mariannenplatz: Asphalt	Q0 11917,11186 11944,11152
 (Weg am Humboldthain): Betonpflaster mit breiten Fugen	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Betonpflaster mit breiten Fugen	Q2+ 9092,15789 8934,15740
 Humboldtsteg: unebene Holzbohlen	Q2 8934,15740 8886,15799
@@ -8954,10 +8955,10 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 #: by: https://beteiligung.bund.de/DE/VorhabenFindenUndBeteiligen/Details/Beteiligung.html?id=V-E100461&idb=B-E100461-01 (laut Planunterlagen/03_Lagepl/03-1_Lagepl.pdf wird der Weg begradigt und asphaltiert; außerdem könnte es noch einen weiteren Weg auf der westlichen Seite von Hellweg zur Yorckstraße geben)
 #: last_checked: 2026-08-24 vvv
 #: check_frequency: 180d vvv
-#: osm_watch: way id="531908445" version="14"
+#: osm_watch: way id="531908445" version="15"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
-#: osm_watch: way id="273174490" version="15"
+#: osm_watch: way id="273174490" version="16"
 # REMOVED --- #: osm_watch: way id="356357906" version="8"
 #: XXX wird hier noch verbessert werden?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Betonplattenweg	Q2- 8289,9988 8206,9867

@@ -4141,6 +4141,11 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: GRUENANLAGEBERGHAIN-2026
+#: note: mit festen Zäunen gesperrt
+#: last_checked: 2026-08-31
+(Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
+# 
 #: next_check_id: FANGSCHLEUSE-2026
 #: last_checked: 2026-08-23 (youtube)
 #: check_frequency: 120d
@@ -4233,7 +4238,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-08-25 (daf)
+#: last_checked: 2026-08-31
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4606,7 +4611,7 @@ Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 #: next_check ^^^
 #: last_checked ^^^
 #: note: existiert auch als temp_blockings-Eintrag
-#: last_checked: 2026-08-17 (okas)
+#: last_checked: 2026-08-24 (baustellen-doku)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten	2::inwork 9586,17665 9461,17795
@@ -4992,7 +4997,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-08-24
+#: last_checked: 2026-08-31
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -5465,7 +5470,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-warum-das-wichtigste-gebaeude-in-der-kritik-steht/
 #: by: https://www.entwicklungsstadt.de/800-jahre-molkenmarkt-vom-olden-markt-zum-neuen-stadtquartier/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-08-19
+#: last_checked: 2026-08-31
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5756,6 +5761,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.entwicklungsstadt.de/friedrichshain-hochhaus-brooks-on-east/
 #: by: https://www.entwicklungsstadt.de/brooks-on-east-aparthotel-betreiber-fuer-berliner-hochhausprojekt-steht-fest/
 #: by: https://www.entwicklungsstadt.de/brooks-on-east-in-friedrichshain-hochhausensemble-nach-langer-pause-wieder-klar-auf-kurs/ (Fertigstellung 2027)
+#: by: https://www.entwicklungsstadt.de/brooks-on-east-neue-architektur-trifft-auf-berlins-eisenbahngeschichte/
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data, PLZ=10243 laut LOR)
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"

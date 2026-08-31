@@ -1102,7 +1102,7 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauersperrung-uber-hunderte-meter-millionen-radstreifen-in-der-schonhauser-allee-in-berlin-kaum-nutzbar-15484732.html
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
-#: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026)
+#: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026) (bis 22.09.2026)
 #: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026)
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 #: last_checked: 2026-08-11 vvv
@@ -2391,14 +2391,14 @@ Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,116
 	RW3; 10133,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
 #: next_check_id: GERTRAUDENBRUECKE-2025
-#: last_checked: 2026-08-27 vvv
+#: last_checked: 2026-08-31 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
 #: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
 provisorische Radspur	RW4; 10240,11740 10299,11786
 #: XXX früher #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
-#: XXX zwischenzeitlich provisorische Radspur, RW4;
-teilweise gemeinsamer provisorischer Geh- und Radweg	RW2; 10299,11786 10314,11804 10349,11847 10376,11879
+#: XXX zwischenzeitlich teilweise gemeinsamer provisorischer Geh- und Radweg	RW2;
+provisorische Radspur	RW4; 10299,11786 10314,11804 10349,11847 10376,11879
 #: check_frequency ^^^
 #: last_checked ^^^
 Busspur ist immer gültig	RW5; 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999
@@ -2441,7 +2441,7 @@ Busspur ist immer gültig	RW5; 10376,11879 10391,11898 10423,11936 10460,11979 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-08-19 vvv
+#: last_checked: 2026-08-31 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2473,7 +2473,7 @@ Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
-#: last_checked: 2026-08-27
+#: last_checked: 2026-08-31
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
@@ -3215,7 +3215,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-08-06 vvv
+#: last_checked: 2026-08-31 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -6230,7 +6230,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: XXX wird der Radweg verbessert?
 # REMOVED (mittlerweile (2023-12) wieder da) --- #: XXX zwischen 2023-03 und 2023-05 ist das "Radfahrer frei"-Schild verschwunden
 #: osm_watch: way id="176753739" version="26"
-#: last_checked: 2026-06-22 (mapillary)
+#: last_checked: 2026-08-29 (mapillary)
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 180d
 #: next_check: 2027-06-30 (SenUVK website)

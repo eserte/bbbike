@@ -521,7 +521,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.entwicklungsstadt.de/burgsdorfstrasse-ruine-in-wedding-verschwindet-nach-jahrelangem-streit/
 #: osm_watch: way id="549316654" version="49"
 #: osm_watch: note 4844974 4
-#: source_id: planb2026:13.3631258,52.54306464,18.08.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.08.2026)
+#: source_id: planb2026:13.3631258,52.54306464,18.08.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.08.2026) (inaktiv)
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,re-H,T[permanent],no-W)
 #: last_checked: 2026-08-23 (mapillary)
@@ -607,7 +607,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-08-19 vvv
+#: last_checked: 2026-08-31 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
@@ -734,7 +734,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-08-06
+#: last_checked: 2026-08-31
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung, entwicklungsstadt)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -1774,6 +1774,7 @@ Potsdamer Str.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3644,293
 # 
 #: next_check_id: FUERSTBISMARCKSTEG-2026
 #: source_id: planb2026:13.31334242,52.60806686,07.07.2026,07:00 ("keine Fahrbahn-Einschränkung", bis 28.08.2026) (inaktiv)
+#: osm_watch: way id="25722363" version="11"
 #: last_checked: 2026-06-07
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2026-08-28 (planb)

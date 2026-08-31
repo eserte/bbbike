@@ -2403,18 +2403,17 @@ Buckower Damm: ein Zweirichtungsradweg soll entstehen	?::projected 12939,1469 12
 #: by: https://fahrinfo.vbb.de/him-uploads/1787718849780_0.jpg (Umleitungsstrecke für den Busverkehr)
 #: by: https://viz.berlin.de/aktuelle-meldungen/neue-geschutzte-radfahrstreifen-in-der-kopenicker-strasse/ (Sperrung nur für den Kfz-Verkehr)
 #: by: https://viz.berlin.de/site/assets/files/2280/768299eb-5d6f-4a87-b6f3-5dbad8eebe4e.996x0-is.png
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mudzxmj74e26
 #: osm_watch: note 5125171 3
 #: source_id: planb2026:13.44149207,52.50131282,17.08.2026, ("Sicherung gemäß Vz.-plan", bis 26.10.2026)
 #: source_id: vizapi2026:853/2026 (bis 31.12.2026) (bis 26.10.2026)
 #: source_id: bvg2024:165#HIM_FREETEXT_357977 (Umleitung via Wrangelstr. ab 31.08.2026)
 #: source_id: bvg2024:140#HIM_FREETEXT_357976 (ab 31.08.2026)
 #: XXX Umleitung des Busverkehrs über die Wrangelstr. -> wird es hier eine Einbahnstraßenregelung geben (-> vermutlich nicht; allerdings werden gerade noch provisorische Bushaltestellen (2x?) gebaut)? Außerdem: es sieht so aus, als ob es eine provisorische Überfahrt zwischen Engeldamm und Bethaniendamm geben könnte -> wurde am 2026-08-20 asphaltiert.
-#: last_checked: 2026-08-27
-# REMOVED --- #: check_frequency: 5d
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-08-31 (BVG-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2026-12-31 (infravelo, VIZ-Verkehrsmeldung)
-Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::projected 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
+#: last_checked: 2026-08-31
+#: check_frequency: 45d
+#: next_check: 2026-12-31 (infravelo, VIZ-Verkehrsmeldung)
+Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::inwork 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665 13028,10629
 # 
 #: section ^^^
 #: ignore ^^^
@@ -6677,7 +6676,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
 #: XXX mittlerweile Bauarbeiten hinter der Kreuzung Zeughofstr. Richtung NW, unklare Einbahnstraßenregelung; 2024-05-27: alle Einfahrt-verboten-Schilder haben nun Radfahrer-frei-Zusatzschilder, bei den Einbahnstraßenschildern fehlen sie weiterhin; mittlerweile scheint diese Baustelle fertig zu sein
 #: priority: #D
-#: last_checked: 2026-08-27
+#: last_checked: 2026-08-31
 #: check_frequency: 60d
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
 # 
@@ -7059,7 +7058,7 @@ Kanalweg (Potsdam-Uetz): Qualität?	? -24240,6075 -24386,5673
 #: by: https://berliner-abendblatt.de/berlin-news/klage-umweltverbaende-wollen-b96-ausbau-verhindern-id232661
 #: by: https://www.moz.de/lokales/gransee/b96-im-loewenberger-land-klage-gegen-den-ausbaunbsp-erste-einigung-erzielt-77518820.html
 #: osm_watch: way id="233556433" version="13" brb
-#: last_checked: 2026-06-11 (research)
+#: last_checked: 2026-08-27 (sat images)
 #: check_frequency: 180d
 B96: parallel geführte Kfz-Straße geplant, ehemalige B96 könnte man dann "degradieren"	?::projected -2602,45078 -2631,45150 -2715,45284 -2731,45311 -3168,45996 -3962,47034 -4284,47803 -4587,48481 -5125,48725 -5641,48958 -5719,48993 -6068,49150 -6042,49596 -6042,49937 -6459,50093 -6598,50356 -6671,50534 -6548,51220 -6563,51290 -6721,51668 -6874,52221 -6983,52753 -7671,54227 -7515,54339 -7404,54429 -7352,54661 -7184,55793
 # 
@@ -7869,7 +7868,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-08-30
+#: last_checked: 2026-08-31
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8409,7 +8408,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-08-27
+#: last_checked: 2026-08-31
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8667,6 +8666,7 @@ Bhf. Zossen: neue Bahnunterführung	?::inwork 13391,-20703 13391,-20703 13460,-20
 #: by: https://www.berlin-dresden.de/bautagebuch.html?date=20260817
 #: osm_watch: way id="26142828" version="25" brb
 #: osm_watch: way id="800533068" version="6" brb
+#: source_id: 267201643 (Gegenverkehrsampel, bis 16.10.2026)
 #: XXX Falls hier während der Bauarbeiten komplett gesperrt wird, könnte man eine mögliche Umleitungsstrecke via Nottekanal Südufer - Johneweg eintragen
 #: XXX Früher war eine Eisenbahnüberführung geplant, nun wird nur der Bahnübergang neu gebaut, ggfs. mit Geh+Radwegen
 #: last_checked: 2026-03-03 (Planfeststellungsbeschluss)
@@ -8815,6 +8815,8 @@ Heesestr./Schwabenallee: Zebrastreifen soll errichtet werden	?::projected 21359,
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11182 (Antrag)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11942 (Antrag)
+#: osm_watch: way id="1044815491" version="3"
+#: osm_watch: way id="1087438349" version="4"
 #: last_checked: 2026-03-03 (mapillary)
 #: check_frequency: 180d
 Kaulsdorfer Galgen: wird der Gehweg für Radfahrer freigegeben?	? 22842,12070 22693,12084 22673,12076 22669,12049 22674,12016 22688,12007 22809,12004 22843,11999
@@ -9811,11 +9813,6 @@ Friedrich-Engels-Str.: Sanierung geplant	? 9149,20336 9119,20399 9108,20410 9091
 #: check_frequency: 30d
 Hubertusweg: Einziehung geplant	?::projected 3333,27766 2939,27694
 # 
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-12-2025-b188-radweg-stechow-rhinsmuehlen (knapp 5km lang, bis Ende April 2026)
-#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-03-2026-b188_radweg-zw-rhinsmuehlen-und-stechow (bis Mai 2026)
-#: next_check: 2026-05-31
-Stechow - Rhinsmühlen: Radweg in Bau	?::inwork -54051,23436 -53816,23532 -53633,23786 -53625,23953 -53592,24328 -52617,25784 -51739,26888 -51432,27122
-# 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/praesentation-mobilitaetswenderat-19112025.pdf (2. Halbjahr 2026: Bauausführung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/protokoll-mobilitaetswenderat-19112025.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25976.pdf (Erwähnung)
@@ -9963,8 +9960,8 @@ Trampe - Eberswalde: Planung eines Radwegs	? 39350,42740 38746,46954 38683,47327
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-05-2026-b102-ortsdurchfahrt-rathenow-grundhafter-ausbau-startet-sommer-2026 (Juli 2026 bis Ende Oktober 2030)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-07-2026-baustart-an-der-b-102-in-rathenow-grundhafter-ausbau-der-ortsdurchfahrt
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~21-08-2026-b102_rathenow_fertigstellung-kv-dauert-bis-28-08-2026
-#: source_id: LS/223-P/26/084 (bis 31.07.2030) (bis 21.08.2026) (bis 28.08.2026) (inaktiv)
-#: next_check: 2026-08-28 (Verkehrsmeldung)
+#: source_id: LS/223-P/26/084 (bis 31.07.2030) (bis 21.08.2026) (bis 28.08.2026) (inaktiv) (bis 03.09.2026)
+#: next_check: 2026-09-03 (Verkehrsmeldung)
 # REMOVED --- #: next_check: 2030-07-31 (Verkehrsmeldung)
 Rathenow: nach den Bauarbeiten mit Radschutzstreifen	? -62108,21448 -62111,21747 -62419,21751
 # 
@@ -10213,7 +10210,7 @@ Unter den Eichen: die Radspur soll zurückgebaut werden	?; 4347,5103 4181,5000 41
 # 
 #: source_id: planb2026:13.32269309,52.47258663,17.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.09.2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2026-08-29 (traffic)
+#: last_checked: 2026-08-31 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-08-17 (planb)
 Wilhelmshöher Weg: geplante Bauarbeiten mit Sperrung	? 4874,7326 5058,7327
@@ -10248,8 +10245,11 @@ Manfred-von-Richthofen-Str.: Fahrradstraße entsteht	?::projected 8731,7956 8757,
 Handjerystr.: Rüttelstreifen geplant	? 5635,7820 5636,7734
 # 
 #: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026)
-#: last_checked: 2026-08-29
-#: next_check: 2026-08-31
+#: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026)
+#: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026)
+#: last_checked: 2026-08-31
+#: check_frequency: 3d
+# REMOVED --- #: next_check: 2026-08-31 (planb)
 Singerstr.: neue kurze Sperrung geplant	? 12691,12042 12532,12150
 # 
 #: source_id: planb2026:13.33187108,52.44705489,01.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 08.02.2027)
@@ -10642,6 +10642,7 @@ Hüfnerweg (Groß Glienicke): wurde die Straße bereits gebaut? genaue Lage, Qualit
 #: by: https://www.entwicklungsstadt.de/keine-schule-am-segelflieger-quartier-bezirk-stoppt-planung-in-johannisthal/
 #: by: https://www.entwicklungsstadt.de/7-euro-kaltmiete-degewo-startet-wohnungsbau-im-segelflieger-quartier/
 #: by: https://www.entwicklungsstadt.de/segelflieger-quartier-erste-mauern-fuer-182-wohnungen-stehen/
+#: by: https://www.entwicklungsstadt.de/segelflieger-quartier-in-johannisthal-wohnungen-mieten-und-zeitplan/
 #: osm_watch: way id="118127443" version="16"
 #: XXX Planstraßen A, B, C und D, ein Geh/Radweg in Verlängerung der Louis-Blériot-Str. sowie weitere Verbindungswege
 #: XXX nach früheren Plänen sollten hier Abramowitschallee und Gorissenstr. entstehen
@@ -10650,7 +10651,7 @@ Hüfnerweg (Groß Glienicke): wurde die Straße bereits gebaut? genaue Lage, Qualit
 #: last_checked: 2026-08-15
 #: check_frequency: 720d
 #: next_check: 2030-12-31 (entwicklungsstadt)
-Bebauungsplan 9-15a: hier werden Straßen entstehen	?::projected 18035,4631 17814,4426 17734,4261 17654,4150 17638,4080 17952,3979 18174,4150 18349,4305 18035,4631
+Bebauungsplan 9-15a (Segelflieger-Quartier): hier werden Straßen entstehen	?::projected 18035,4631 17814,4426 17734,4261 17654,4150 17638,4080 17952,3979 18174,4150 18349,4305 18035,4631
 # 
 #: XXX fehlen in Berlin.coords.data (PLZ vermutlich 12487) vvv
 #: by: http://www.stadtentwicklung.berlin.de/umwelt/umweltatlas/karten/pdf/e07_01_2009_mit_strname.pdf (teilweise)
@@ -11465,7 +11466,7 @@ A117: neue Anschlussstelle wird gebaut, mit Radweg	?::inwork 21861,-2154 21660,-
 #: last_checked: 2026-08-15
 #: check_frequency: 120d
 #: next_check: 2027-03-15 (gemeinde-schoenefeld)
-Alexander-Meißner-Str. - Bohnsdorfer Allee: Brücke in Bau, Fortführung der Straße noch nicht	?::projected 20412,-1750 20420,-1902 20900,-3106
+Alexander-Meißner-Str. - Bohnsdorfer Allee: Brücke in Bau, Fortführung der Straße noch nicht	?::projected 20412,-1750 20429,-2062 20900,-3106
 # 
 #: next_check_id: BUCKOWERFELDER-2024
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1710/nachricht6444.html
@@ -13082,6 +13083,7 @@ U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,
 #: by: https://www.berlin.de/sen/stadtentwicklung/planung/flaechennutzungsplanung/oeffentlichkeitsbeteiligung/fnp-aenderung-gradestrasse-tempelhoferweg-britzerdamm-1663527.php
 #: by: https://www.entwicklungsstadt.de/neukoelln-neuer-wohnraum-auf-ehemaligem-rias-gelaende-geplant/ ("RIAS-Gelände"; FNP wurde geändert)
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1701592.php
+#: by: https://www.entwicklungsstadt.de/wohnungen-oder-wildbienen-streit-um-das-rias-gelaende-in-britz/
 #: note: Projektname "Britzer Terrassen"
 #: osm_watch: note 3245865 2
 #: last_checked: 2026-06-13
@@ -13342,6 +13344,7 @@ Elisabeth-Aue: neues Wohnviertel geplant, werden hier auch Straßen entstehen?	? 
 Bebauungsplan 6-40 VE: wird hier der Park verkleinert?	? -2064,2244 -1997,2095 -1887,2144 -1945,2286 -2064,2244
 # 
 #: next_check_id: AMWIEZENERBAHNHOF-2024
+#: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10857
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/vermessung/abzeichnungen/0200011.pdf (Bebauungsplan 2-11, hier soll ein grüner Stadtplatz entstehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11445 ("Sondernutzung" des Containerstandorts bis 31.12.2026)

@@ -3367,18 +3367,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: außerhalb der Bühnenprogrammzeiten keine Behinderungen
-#: by: https://www.berlin.de/events/5983059-2229501-radioeins-parkfest.html
-#: by: https://www.radioeins.de/themen/_/parkfest/
-	q3::temp 8652,9870 8597,9888 8571,9896
-',
-         'from' => 1787263200,
-         'id' => 2473,
-         'text' => 'Gleisdreieckpark: radioeins Parkfest, Behinderungen möglich, vom 22. August 2026 bis 30. August 2026',
-         'type' => 'handicap',
-         'until' => 1788112800
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
@@ -4472,9 +4461,9 @@ Alter Markt, Lüdersstr.: Einbahnstraßenregelung	q4::inwork; 22395,4678 22390,470
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="20"
 #: osm_watch: way id="1148659680" version="8"
-#: last_checked: 2026-08-02
-# REMOVED --- #: check_frequency: 14d (traffic)
-#: check_frequency: 30d (non-traffic)
+#: last_checked: 2026-08-31 (traffic)
+#: check_frequency: 14d (traffic)
+# REMOVED --- #: check_frequency: 30d (non-traffic)
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
@@ -4922,24 +4911,7 @@ Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
-#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
-#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/neun-spielstrassen-im-sommer_a343397
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10412 (allgemein zu temporären Spiel- und Nachbarschaftsstraßen)
-# REMOVED --- #: XXX Spielstraße wurde verstetigt; genaue Geltungszeiten? --- #: next_check: 2022-05-24
-	q4::temp::play 14798,12502 15005,12443
-',
-         'from' => 1780178400,
-         'id' => 3368,
-         'recurring' => 1,
-         'text' => 'Bänschstr.: zwischen Voigtstr. und Pettenkoferstr. sonntags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 31.08., außer in den Sommerferien',
-         'type' => 'handicap',
-         'until' => 1788192000
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
@@ -5483,6 +5455,8 @@ Treptower Str.	q3::inwork 13566,8212 13650,8320
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7303/docs/GR_-berlin-gesundbrunnen-karow-bernau_wiltbergstrasse_umleitung_20250327.pdf
 #: by: https://viz.berlin.de/aktuelle-meldungen/weiterer-bauablauf-bereich-wiltbergstrasse_poelnitzweg-in-buch/
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/?date=20260530
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mue5lyuuzv2q
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieziw2zmjtp56hta5tovzy7ldfrgljycfdgpkyegppdnju3xrso64 (Umleitung auch für Fußgänger)
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.492858,52.63663,09.05.2022,11:58 (inaktiv)
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
@@ -5500,6 +5474,7 @@ Treptower Str.	q3::inwork 13566,8212 13650,8320
 #: source_id: viz2021:13.492729,52.636678,24.02.2025,00:33 (bis 07.03.2025) (bis 14.03.2025) (bis 11.04.2025) (bis 08.04.2025) (inaktiv)
 #: source_id: viz2021:13.492668,52.636706,15.04.2025,12:00 (bis 12.09.2025 + weitere Bauphasen) (inaktiv)
 #: source_id: LMS-BR:365855/72 viz2021:13.492936,52.636523,15.04.2025,12:00 (bis 12.09.2025) (bis 31.12.2025) (bis 31.12.2027) (bis 01.06.2027) (inaktiv)
+#: source_id: LMS-BR:420714/72 viz2021:13.492973,52.636498,31.08.2026,09:00 (bis 31.12.2026)
 #: also_indoor: traffic (H,re-G,W,T)
 #: XXX: Gesamtbaumaßnahme bis 2027
 # REMOVED --- #: last_checked: 2023-12-06 (mapillary) --- #: check_frequency: 14d ---
@@ -5507,16 +5482,16 @@ Treptower Str.	q3::inwork 13566,8212 13650,8320
 # REMOVED --- #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung, DB) vvv
 # REMOVED --- #: next_check: 2027-06-01 (ex-VIZ-Verkehrsmeldung) vvv
 #: next_check: 2028-03-15 (DB (Anfang 2028)) vvv
+Wiltbergstr.: Komplettsperrung	2::inwork 16166,25767 16121,25818
 # REMOVED (ein Bürgersteig ist gesperrt) --- #: note: keine Sperrung für Fußgänger
-Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16220,25716 16166,25767 16121,25818
-Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767 16220,25716
-# REMOVED ---	2::inwork 16166,25767 16121,25818
+# REMOVED --- Richtung Nordwesten: Bürgersteig gesperrt	q4::inwork; 16220,25716 16166,25767 16121,25818
+# REMOVED --- Richtung Südosten: Bürgersteig offen, Radfahrer sollen absteigen	q3::inwork; 16121,25818 16166,25767 16220,25716
 #: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => 1787868000,
          'id' => 3551,
-         'text' => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, ab Ende August 2026 bis voraussichtlich 2028',
+         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, möglicherweise auch für Fußgänger und Radfahrer, ab Ende August 2026 bis voraussichtlich 2028',
          'type' => 'gesperrt',
          'until' => 1861916399
        },
@@ -6480,58 +6455,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: RBAHNHOFKOEPENICK-2022
-#: next_check_id: BAHNHOFSTRKOEPENICK-2022
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1354552.php (Sperrung 28.08. - 09.10.2023)
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erneute-sperrung-der-bahnhofstrasse-am-bahnhof-koepenick-verschaerft-die-verkehrssituation_a390734
-#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-verkehr-bvg-db-stress-im-osten-so-lange-wird-die-bahnhofstrasse-in-koepenick-gesperrt-li.381296
-#: by: https://viz.berlin.de/2023/08/bahnhofstr/
-#: by: https://www.youtube.com/watch?v=Y73X25IYfTM
-#: by: https://viz.berlin.de/2023/10/verkehrsvorschau-091023/ ("wird am Abend aufgehoben")
-#: by: https://bauprojekte.deutschebahn.com/p/berlin-frankfurt-oder-grenze/infobauarbeiten (nächste Sperrungen: 23.10.2024-04.11.2024 + 18.6.2025-7.7.2025)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2024/pressemitteilung.1495775.php
-#: by: https://forum-koepenick.de/sperrung-bahnhofstrasse-koepenick-bauarbeiten-umleitungen (nächste Sperrungen: 19.06.-07.07.2025 und 29.07.-08.08.2025)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/kiezkamera-treptow-kopenick-brunnensaison-mullproblem-kasernenabriss-und-mehr-13591522.html
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409203271/bahnhofstrasse-koepenick-angekuendigte-sperrung-verschoben.html (von 18.7.2025 (!) auf 18.8.2025 verschoben, Dauer unklar)
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409460294/bahnhofstrasse-wird-fuer-drei-monate-gesperrt-mit-massiven-folgen.html
-#: by[nocache]: https://viz.berlin.de/aktuelle-meldungen/bahnhofstrasse-bahnhof-kopenick/ (vom 18. August 2025, ca. 06:00 Uhr bis zum 10. November 2025)
-#: by[nocache]: https://archive.ph/VXh5h
-#: by: https://www.tagesspiegel.de/berlin/gilt-fur-autos-fussganger-und-fahrrader-kopenicker-bahnhofstrasse-fur-fast-drei-monate-voll-gesperrt-14181980.html
-#: by: https://www.entwicklungsstadt.de/bahnhofstrasse-dicht-drei-wochen-vollsperrung-in-koepenick/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697866.php
-#: by: https://viz.berlin.de/aktuelle-meldungen/umbau-bahnhof-kopenick-sperrung-der-bahnhofstrasse-ab-10-august/
-#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/wegen-bruckenarbeiten-bahnhofstrasse-in-berlin-kopenick-wird-im-august-gesperrt-15900609.html
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msno676yzz2v
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4f7cnmhjem3wqnm6qcq4hq56uitnam45imh4h6dnmlle6a5rrbi
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msp542wvqn2l
-# REMOVED --- #: XXX nach der Sperrung muss der alte Eintrag (für Radfahrer Richtung Norden gesperrt) wieder aktiviert werden --- kann bereits kurz nach dem 28.8.2023 passieren
-#: source_id[inactive]: bvg2021:269#BVG326513_0
-#: source_id[inactive]: bvg2021:63#BVG326792_0
-#: source_id: viz2021:13.578463,52.457551,28.08.2023,06:00 (für den Kfz-Verkehr Sperrung sogar ab Seelenbinderstr., bis 09.10.2023) (inaktiv)
-#: source_id: viz2021:13.578463,52.457551,09.10.2023,18:00 (Folgearbeiten, bis 24.11.2023) (inaktiv)
-#: source_id[inactive]: bvg2024:x69#632282bd-bd77-478a-ac06-c49b1ff25b75
-#: source_id[inactive]: bvg2024:x69#HIM_FREETEXT_243108 (bis 2024-11-04)
-#: source_id: viz2021:13.579519,52.458776,23.10.2024,04:00 (bis 04.11.2024) (inaktiv)
-#: source_id: viz2021:13.57927,52.458482,18.08.2025,06:00 (bis 10.11.2025) (inaktiv)
-#: source_id: bvg2024:x69#48fe4f2d-7c2c-468f-a810-941ed4ac83ad (2026-08-10 bis 2026-08-31)
-#: source_id: LMS-BR:418987/72 viz2021:13.57925,52.45846,10.08.2026,06:00 (bis 31.08.2026)
-#: traffic_note: Möglicherweise erhöhter Kfz-Ausweichverkehr via Hämmerlingstr.
-# REMOVED (beendet) --- #: last_checked: 2024-06-19 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2025-11-10 vvv
-Bahnbrücke Bhf. Köpenick	q4::inwork 22431,6068 22467,6135
-# REMOVED (nicht mehr) --- Am Bahndamm	q3::inwork 22467,6135 22365,6149
-# REMOVED (nicht mehr) --- Elcknerplatz	q3::inwork; 22431,6068 22478,6048
-# REMOVED (hier nicht (mehr?)) --- Elcknerplatz	q3::inwork; 22478,6048 22538,6046
-# REMOVED (nicht mehr) --- Parrisiusstr.	q4::inwork; 22358,5918 22531,5871
-# REMOVED --- #: osm_watch: way id="25663270" version="21" --- Forum Köpenick, auch für Fußgänger	1::inwork 22204,6016 22332,5949 22358,5918
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-',
-         'from' => 1786226400,
-         'id' => 3882,
-         'text' => 'Bahnhofstr.: Bauarbeiten im Bereich der Bahnbrücke, Sperrung der Straße, Durchgang durch den Bahnhof Köpenick ist möglich, vom 10.08.2026 6:00 Uhr bis 31.08.2026 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1788192000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7099,7 +7023,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-08-27 vvv
+#: last_checked: 2026-08-31 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -7683,7 +7607,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-smetanastrasse-in-weissensee/
 #: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025) (inaktiv)
 #: source_id: LMS-BR:359627/72 viz2021:13.46101,52.5454,05.02.2025,07:00 viz2021:13.46101,52.5454, (bis 30.11.2025) (noch immer Smetanastr.?, bis 05.12.2025) (bis 31.08.2026)
-#: source_id: planb2026:13.46612656,52.54626473,04.03.2026, ("Vollsperrung beider Fahrbahnen", bis 30.08.2026)
+#: source_id: planb2026:13.46612656,52.54626473,04.03.2026, ("Vollsperrung beider Fahrbahnen", bis 30.08.2026) (inaktiv)
 # REMOVED --- #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
 # REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
 # REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
@@ -8542,8 +8466,8 @@ Schiffbauerdamm, Richtung Westen: nur für Fußgänger	q4::inwork; 9025,12727 8870,
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
 #: source_id: planb2026:13.41359234,52.51568692,13.12.2023, ("Fahrstreifen-Reduzierung" in der Stralauer Allee, bis 30.10.2026)
-#: last_checked: 2026-08-19
-#: check_frequency: 14d
+#: last_checked: 2026-08-31
+#: check_frequency: 21d
 #: next_check: 2026-10-30 (planb)
 	q4::inwork 10951,12249 10957,12401
 ',
@@ -8675,6 +8599,7 @@ Schwäbische Str. -> Eisenacher Str.	3::inwork 6771,9458 6727,9497 6724,9457
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-fertigstellung-des-teilbereichs-ruppiner-chaussee (Erwähnung)
 #: by: https://gruen-berlin.de/pressemitteilung/mehr-als-die-haelfte-des-gesamtprojekts-zur-ertuechtigung-des-berliner-mauerwegs-umgesetzt (in Bau)
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: next_check: 2026-09-01
 Mauerweg, Karolinenhöhe - Hahneberg	2::inwork -5564,11209 -5742,11314 -6012,11458 -6081,11508 -6174,11571 -6397,11664 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
 ',
@@ -9388,8 +9313,7 @@ Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-06-2026-b102-zwischen-premnitz-und-rathenow
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~08-07-2026-b102-moeglin_radwegsanierung-entlang-b102
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~25-07-2026-radwegsanierung-entlang-der-b-102-abschliessende-arbeiten-bis-mitte-august
-#: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026) (mittlerweile Umleitungsstrecke für Pkw) (vorfristig inaktiv) (bis 17.07.2026) (inaktiv)
-#: source_id: LS/223-P/26/029 (bis 31.08.2026)
+#: source_id: LS/223-P/26/029 (weite Umleitungsstrecke für Radfahrer? 09.03.2026 bis 17.07.2026) (mittlerweile Umleitungsstrecke für Pkw) (vorfristig inaktiv) (bis 17.07.2026) (inaktiv) (bis 31.08.2026) (inaktiv)
 	2::inwork -62638,16382 -62739,15787 -62836,15181
 ',
          'from' => 1772924400,
@@ -9640,7 +9564,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        {
          'data' => '#: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mhwuh3kyg22m
-#: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026)
+#: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026) (bis 22.09.2026)
 #: source_id: planb2026:13.41270765,52.54491963,16.03.2026, ("Sicherung gemäß Vz.-plan", bis 10.09.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026)
 #: note: Länge der Sperrung: ca. 50m (könnte für q4+/q3- reichen, sobald es unterstützt wird)
@@ -9841,7 +9765,7 @@ Böhmische Str.: Fahrbahn auf 100m Länge gesperrt	q4::inwork 13335,7450 13499,750
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mk2npuw5xs2k
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid4y7xizfc6tyab3rgfg4im6jxup6topqj3pjhccstvdccxdvlmpm
-#: source_id: LMS-BR:405615/72 viz2021:13.41291,52.5453,22.04.2026,07:00 (bis 10.09.2026)
+#: source_id: LMS-BR:405615/72 viz2021:13.41291,52.5453,22.04.2026,07:00 (bis 10.09.2026) (bis 22.09.2026)
 #: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026)
 #: note: geschätzt ist der halbe Straßenabschnitt gesperrt
 #: XXX existiert die Sperrung weiterhin?
@@ -10478,7 +10402,7 @@ Freilichtbühne Schwedt (Odertalbühne)	2::temp 69562,73280 69634,73330
 #: source_id: LMS-BR:414987/72 viz2021:13.46286,52.515, (ohne Endedatum) (bis 25.9.2026)
 #: source_id: planb2026:13.46332442,52.51483195,09.07.2026, ("Fahrstreifen-Reduzierung", bis 25.09.2026) (vorfristig inaktiv)
 #: priority: #A
-#: last_checked: 2026-08-23 vvv
+#: last_checked: 2026-08-29 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung, planb) vvv
 	q4::inwork; 14488,12188 14427,12199 14381,12207
@@ -10701,8 +10625,8 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
 #: also_indoor: traffic (G[zu lang],T,H,no-W)
 #: note: wegen der Kürze der Baustelle: q4 -> q3
 #: XXX Sind die Bauarbeiten beendet?
-#: last_checked: 2026-08-30 (traffic)
-#: check_frequency: 3d
+#: last_checked: 2026-08-31
+#: check_frequency: 8d
 	q3::inwork 12450,11980 12532,12150
 ',
          'from' => 1784498400,
@@ -10990,7 +10914,7 @@ Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mtax2qcirc2h
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibdoullemtlc7p5zheczdy24xf67qg632f5b3nls6fpsfclo4sbti
 #: by: https://www.entwicklungsstadt.de/breite-strasse-in-pankow-neuer-asphalt-soll-verkehrslaerm-deutlich-senken/
-#: source_id: LMS-BR:419745/72 viz2021:13.41178,52.57148,17.08.2026,07:00 (bis 31.08.2026)
+#: source_id: LMS-BR:419745/72 viz2021:13.41178,52.57148,17.08.2026,07:00 (bis 31.08.2026) (bis 09.09.2026)
 #: note: oder man nimmt den direkten Weg und schiebt gegebenenfalls
 Breite Str.: Fahrbahnarbeiten, offizielle Umleitung für den Radverkehr über Breite Str. - westlich Kirche - Breite Str.	q4::inwork; 10602,18382 10680,18380
 Eintrachtstr.: Anbindung Breite Str. gesperrt	q3::inwork 10650,18544 10710,18393
@@ -11041,6 +10965,7 @@ Manfred-von-Richthofen-Str.: Einbahnstraßenregelung	q4::inwork; 8812,7730 8864,7
        {
          'data' => '#: also_indoor: traffic (none)
 #: source_id: planb2026:13.32578128,52.52650206,10.11.2025,06:00 (Fahrbahneinengung, bis 30.09.2027)
+#: source_id: planb2026:13.32717823,52.52613825,14.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
 #: last_checked: 2026-08-19
 #: check_frequency: 120d
 #: next_check: 2027-09-30
@@ -11179,13 +11104,13 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mtzz7zexok2i
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mu2kny3el22y
-#: source_id: bvg2024:m43#HIM_FREETEXT_358187
+#: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_358187
 #: source_id: LMS-BR:420275/72 viz2021:13.385706,52.485011, (kein Endedatum)
 #: also_indoor: traffic (T,G[later],H,W)
 #: note: Richtung Osten für den Kfz-Verkehr gesperrt, eine Gasse für den Radverkehr ist zurzeit offen
 #: note: Länge des abgesperrten Bereichs 100m, der eigentlich Baubereich nur etwa 50m
 #: traffic_note: Vermuteter Umgehungsverkehr: Te-Damm - Bayernring - Boelckestr. oder Mussehlstr.
-#: last_checked: 2026-08-27
+#: last_checked: 2026-08-31 (traffic)
 #: check_frequency: 14d
 	q3::inwork; 9229,8785 9076,8783
 ',
@@ -11214,6 +11139,62 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
          'text' => 'Taunusstr.: Sperrung, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis 11.09.2026',
          'type' => 'handicap',
          'until' => 1789164000
+       },
+       {
+         'data' => '#: next_check_id: KOEPENICKER-2026
+#: note: der Bürgersteig ist nicht nur eng, sondern teilweise auch unangenehm zu fahren: Charlottenburger Platten, gepflasterte Ausfahrten, unzureichende abgesenkte Bordsteine
+#: traffic_note: Etwas Ausweichverkehr via Engeldamm - illegale Überfahrt zum Mariannenplatz - Wrangelstr., evtl. wird es mit der Zeit mehr werden.
+#: source_id: LMS-BR:420723/72 viz2021:13.42828,52.50735,31.08.2026,04:00 (bis 26.10.2026)
+#: last_checked: 2026-08-31 vvv
+#: check_frequency: 45d vvv
+#: next_check: 2026-12-31 vvv
+Köpenicker Str.: getrennter Rad- und Gehweg	q2::inwork; 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
+Brommystr.: ggfs. Anbindung unterbrochen	q4::inwork 12521,11016 12582,11103
+Pfuelstr.: ggfs. Anbindung unterbrochen	q4::inwork 12951,10839 12879,10750
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => 1788127200,
+         'id' => 4735,
+         'text' => 'Köpenicker Str.: Bauarbeiten, getrennter Rad- und Gehweg Richtung Schlesisches Tor, eng, voraussichtlich bis Ende 2026',
+         'type' => 'handicap',
+         'until' => 1798757999
+       },
+       {
+         'data' => '#: note: zur möglichen Wiederverwendung: Bereich zwischen Otto-von-Bismarck-Allee (excl.) und Scheidemannstr. (incl.)
+#: by: https://viz.berlin.de/aktuelle-meldungen/einschrankungen-in-mitte-am-01.09.26/
+#: by: https://viz.berlin.de/site/assets/files/2308/allgemeinverfuegung_20260901.png
+Große Querallee	2::temp 7945,12592 7875,12363
+Simsonweg	2::temp 8354,12416 8391,12389
+Kleine Querallee	2::temp 8391,12389 8400,12417
+John-Foster-Dulles-Allee	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+Scheidemannstr.	2::temp 8119,12414 8354,12416 8373,12416 8400,12417
+(Vorfahrt Reichstagsgebäude)	2::temp 8400,12417 8421,12479 8420,12556 8399,12610
+(Wiese vor dem Reichstag)	2::temp 8373,12416 8369,12609
+(am Bundeskanzleramt)	2::temp 8120,12756 8122,12603
+Heinrich-von-Gagern-Str.	2::temp 8122,12603 8119,12414
+Paul-Löbe-Allee	2::temp 8554,12593 8485,12612 8399,12610 8369,12609 8306,12609 8207,12606
+Paul-Löbe-Allee	2::temp 8207,12606 8122,12603
+Paul-Löbe-Allee	2::temp 8122,12603 7945,12592
+Konrad-Adenauer-Str.	2::temp 8309,12758 8306,12609
+Annemarie-Renger-Str.	2::temp 8207,12606 8206,12734 8206,12757
+',
+         'from' => 1788127200,
+         'id' => 4736,
+         'text' => 'Regierungsviertel: Sperrung wegen einer Veranstaltung, am 1.9.2026 von 06:00-20:00',
+         'type' => 'gesperrt',
+         'until' => 1788285600
+       },
+       {
+         'data' => '#: source_id: LMS-BR:420754/72 viz2021:13.37628,52.54915,31.08.2026,07:00 (bis 31.10.2026)
+	q4::inwork 8338,15987 8430,15901
+',
+         'from' => 1788066000,
+         'id' => 4737,
+         'text' => 'Schönstedtstr.: Bauarbeiten zwischen Pankstr. und Brunnenplatz, Sperrung, vom 31.08.2026 07:00 bis 31.10.2026 23:59',
+         'type' => 'handicap',
+         'until' => 1793487540
        }
      
 );
