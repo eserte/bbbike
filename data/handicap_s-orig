@@ -108,10 +108,10 @@ Am Wriezener Bahnhof: Einfahrt verboten	q3::inwork; 12758,11915 12788,11898 1294
 # 
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
-#: source_id: planb2026:13.46470153,52.51022419,02.12.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026) (vorfristig inaktiv)
-#: last_checked: 2026-08-23
+#: source_id: planb2026:13.46470153,52.51022419,02.12.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026) (vorfristig inaktiv) (bis 30.09.2026)
+#: last_checked: 2026-09-01
 # REMOVED --- #: check_frequency: 14d
-#: next_check: 2026-08-31 (ex-planb)
+#: next_check: 2026-09-30 (planb)
 # REMOVED --- #: valid: -20250630
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 # 
@@ -356,10 +356,10 @@ Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für R
 ### Lichtenrade ###
 # 
 #: next_check_id: WOLZIGERZEILE-2024
-#: source_id: planb2026:13.39962825,52.38248763,01.07.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026)
+#: source_id: planb2026:13.39962825,52.38248763,01.07.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026) (inaktiv)
 #: last_checked: 2026-08-26
 #: check_frequency: 21d
-# REMOVED --- #: next_check: 2026-08-31 (planb)
+#: next_check: 2026-08-31 (planb)
 Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10392,-2595 10394,-2567
 # 
 # REMOVED --- #: next_check_id: BAHNHOFSTR-2020 --- #: source_id: 2147345858 --- #: last_checked: 2024-05-18 --- #: check_frequency: 180d --- #: next_check: 2024-06-28 --- (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10273,-2158 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
@@ -1089,7 +1089,7 @@ Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,1459
 # REMOVED --- Lüneburger Str.: Wasserrohrbruch, einige Meter der Fahrbahn sind gesperrt	q3::inwork 6876,12610 6813,12617
 # 
 #: next_check_id: PERLEBERGER-2024
-#: source_id: LMS-BR:325283/72 viz2021:13.34718,52.53079, (bis 05.11.2025) (inaktiv) (bis 25.09.2026)
+#: source_id: LMS-BR:325283/72 viz2021:13.34718,52.53079, vizapi2026:881/2026 (bis 05.11.2025) (inaktiv) (bis 25.09.2026) (bei vizapi2026 bis 30.09.2026)
 #: source_id[inactive]: bvg2024:m27#HIM_FREETEXT_302033 (zwischenzeitlich mehrmals entfernt)
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: source_id: bvg2024:m27#HIM_FREETEXT_348335
@@ -2812,7 +2812,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: osm_watch: way id="1377234658" version="2"
 #: osm_watch: way id="11636138" version="16"
 #: source_id: planb2026:13.35375098,52.49913271,15.10.2024,06:00 (hier: "Haltverbote", bis 31.12.2027)
-#: last_checked: 2026-08-19
+#: last_checked: 2026-09-01 (daf)
 #: check_frequency: 120d
 #: next_check: 2027-12-31 ("Haltverbote", planb)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329

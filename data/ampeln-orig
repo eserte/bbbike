@@ -6,8 +6,11 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: source_id: planb2026:13.37673666,52.51665403,06.01.2026, ("Sicherung gemäß Vz.-plan", Scheidemannstr. und Simsonweg, evtl. im Zusammenhang mit der Ampel, bis 20.10.2026)
+#: source_id: vizapi2026:900/2026 (Wasserleitungsbau, Verengung, bis 20.10.2026)
 #: last_checked: 2026-08-19
 #: check_frequency: 60d
+#: next_check: 2026-10-20 (planb)
 Scheidemannstr./Reichstag	F::inwork 8373,12416
 # 
 #: next_check_id: HANSA-2025
@@ -84,11 +87,12 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 # 
 #: source_id: LMS-BR:402270/72 viz2021:13.19778,52.54712, (bis 19.06.2026) (bis 14.08.2026) (bis 30.10.2026)
 #: source_id: LMS-BR:402269/72 viz2021:13.19778,52.54712, (provisorische Ampel, bis 19.06.2026) (bis 14.08.2026) (inaktiv)
-#: source_id: planb2026:13.422525,52.48200987,16.07.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026)
+#: source_id: planb2026:13.422525,52.48200987,16.07.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026) (inaktiv)
+#: source_id: planb2026:13.19900774,52.54672302,18.03.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.10.2026)
 #: note: außerdem sind beide Anbindungen der Ackerstr. gesperrt, kleinere Umwege notwendig
 #: also_indoor: traffic (no-G,T,H,no-W)
 #: last_checked: 2026-07-08
-#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20261030
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
@@ -296,10 +300,10 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: vizapi2026:332/2026 (bis 31.08.2026) (bis 09.09.2026)
 #: source_id: LMS-BR:420436/72 viz2021:13.29383,52.49126,28.08.2026,00:00 (bis 09.09.2026)
-#: also_indoor: traffic (T,G)
+#: also_indoor: traffic (ex-T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
-#: last_checked: 2026-08-05 (traffic)
+#: last_checked: 2026-09-01 (traffic)
 #: check_frequency: 30d (traffic)
 #: next_check: 2026-09-09 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20251231

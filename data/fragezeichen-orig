@@ -1847,7 +1847,7 @@ Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 186
 #: osm_watch: way id="1231226672" version="6"
 #: osm_watch: way id="934649828" version="10"
 #: osm_watch[closed]: note 4041955 8
-#: source_id: planb2026:13.53358077,52.52323361,12.07.2021, ("Sicherung gemäß Vz.-plan", bis 31.08.2026)
+#: source_id: planb2026:13.53358077,52.52323361,12.07.2021, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (bis 31.12.2026)
 #: XXX Ab AdK wird Richtung Süden ein neuer Verbundsteinpflasterradweg (oder teilweise sogar asphaltiert?) gebaut, vermutlich nur bis Merler Weg, vielleicht auch bis Ruwersteig
 #: last_checked: 2026-08-05
 #: check_frequency: 180d
@@ -1889,7 +1889,7 @@ Marzahner Chaussee: Hochbordradweg entsteht	?::inwork; 19192,13350 19198,13272 1
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnqvpvhpac2b (Sanierungsarbeiten Höhe Simmelstr., bis Ende Juni 2026, danach weitere Arbeiten)
 #: by: https://zukunft-residenzstrasse.de/aktuell/infos-zum-start-der-umbauarbeiten-residenzstrasse.html (voraussichtlich Juni 2026 bis Frühjahr 2028, Baubereich Simmelstr. - Walderseestr.)
 #: by: https://www.entwicklungsstadt.de/grossbaustelle-in-reinickendorf-franz-neumann-platz-erst-2028-fertig/
-#: source_id: LMS-BR:411172/72 viz2021:13.36354,52.56514,08.06.2026,07:00 (Höhe Simmelstr., bis 26.06.2026) (bis 07.07.2026) (bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026)
+#: source_id: LMS-BR:411172/72 viz2021:13.36354,52.56514,08.06.2026,07:00 vizapi2026:565/2026 (Höhe Simmelstr., bis 26.06.2026) (bis 07.07.2026) (bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026) (bis 27.11.2027)
 #: osm_watch: way id="147432180" version="17"
 #: osm_watch: way id="25630356" version="33"
 #: osm_watch: way id="82456679" version="18"
@@ -2686,7 +2686,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/gremien/mobilitaetsrat/20260310-protokoll-17-sitzung-mobirat.pdf (bis zur Sommerpause 2026? Aussicht auf Verlängerung bis zum Hindenburgdamm)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1700448.php (Abfräsen des Kopfsteinpflasters 17.08.2026 - 31.08.2026; Beschilderung bis 12/2026)
 #: by: https://www.entwicklungsstadt.de/fahrradstrasse-in-steglitz-arbeiten-am-tietzenweg-gehen-weiter/
-#: source_id: planb2026:13.30544371,52.44209114,18.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.09.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.30544371,52.44209114,18.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.09.2026) (vorfristig inaktiv) (bis 17.09.2026)
 #: osm_watch: way id="1423053724" version="3"
 #: osm_watch: way id="148666424" version="30"
 #: osm_watch: way id="1551261988" version="3"
@@ -2696,7 +2696,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2026-08-18 (planb: Beginn der Bauarbeiten -> in temp blockings eingetragen)
 #: next_check: 2026-12-31 (BA-Pressemitteilung)
-Tietzenweg: geplante Fahrradstraße, evtl. Abfräsung des Kopfsteinpflasters	?::projected 3643,4232 3766,4058 3777,4042 3870,3914
+Tietzenweg: geplante Fahrradstraße, Abfräsung des Kopfsteinpflasters	?::inwork 3643,4232 3766,4058 3777,4042 3870,3914
 # 
 # REMOVED (entsprechende Einträge existieren) --- #: next_check_id: JUNGFERNSTIEG-2018 --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung-jungfernstieg.pdf --- #: osm_watch: way id="103136604" version="7" --- #: osm_watch: way id="229232324" version="5" --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.515823.php --- #: by: http://www.berliner-woche.de/steglitz/bauen/bezirk-investiert-in-sanierung-von-strassen-und-radwegen-d140640.html --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.705590.php (Bauarbeiten beginnen im Sommer 2018) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.709873.php (Bauarbeiten beginnen im Sommer 2018) --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/fahrradroute-wird-asphaltiert_a167534 --- #: add_fragezeichen: Wurde der Asphaltstreifen im Jungfernstieg bereits realisiert? --- #: last_checked: 2018-09-12 --- #: check_frequency: 7d --- Jungfernstieg: in der Fahrbahnmitte ein 4m breiter Asphaltstreifen geplant	?::projected 5229,2395 5332,2568 5425,2735 5510,2883
 # REMOVED (-> radwege-orig; ist aber noch nicht fertig, next_check dort existiert) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung-dahlemer-weg.pdf --- #: by: http://www.berliner-woche.de/lichterfelde/verkehr/radweg-dringend-reparieren-d160685.html --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782 --- #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/neue-fahrradstreifen-auf-dem-dahlemer-weg_a171992 --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/erneut-aerger-um-einen-neuen-radweg-in-steglitz-zehlendorf_a177530 --- #: osm_watch: way id="14477524" version="43" --- #: source_id: 2147342640 --- #: XXX laut vmz Ende Juli 2018, laut fritz 2. Juli 2018 --- #: last_checked: 2018-07-01 (Bauarbeiten, aber erstmal nur für Überquerungshilfen) --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2018-08-01 --- Dahlemer Weg: Radwege werden durch Radspuren ersetzt	?::projected 2152,2912 2193,3142 2198,3169 2203,3213 2253,3505 2287,3702
@@ -4115,6 +4115,7 @@ Bebauungsplan 3-69: ehem. Industriebahntrasse wird zum Rad/Gehweg	?::projected 1
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksamt/beschluesse/2025/artikel.1614242.php (Verkleinerung des Geltungsbereiches)
 #: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12631 (Vorlage zur Kenntnisnahme)
 #: by: https://www.entwicklungsstadt.de/vom-bundesgrundstueck-zum-rechenzentrum-der-aktuelle-stand-am-pyramidenring/
+#: by: https://www.entwicklungsstadt.de/pyramidenring-in-marzahn-insolvenz-bringt-neue-unsicherheit-fuer-grossprojekt/
 #: last_checked: 2026-07-22
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-04-01
@@ -7067,7 +7068,7 @@ B96: parallel geführte Kfz-Straße geplant, ehemalige B96 könnte man dann "degrad
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=19117
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~25-03-2026-b158-vollsperrung-behelfsumfahrung-oderberg (Fußgänger können passieren)
 #: source_id: LS/221-E/22/018 (vorbereitende Arbeiten bis 28.2.2022) (inaktiv)
-#: source_id: LS/221-E/23/033 (vorbereitende Arbeiten bis 31.08.2025) (Behelfsbrücke) (bis 31.08.2026)
+#: source_id: LS/221-E/23/033 (vorbereitende Arbeiten bis 31.08.2025) (Behelfsbrücke) (bis 31.08.2026) (inaktiv)
 #: osm_watch: way id="30609511" version="15"
 #: last_checked: 2023-08-12
 # REMOVED --- #: check_frequency: 360d
@@ -8357,7 +8358,7 @@ Gehrenseebrücke: Neubau vorgesehen, dann vermutlich mit Radwegen	?::projected 18
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~25-11-2025-b-1-bei-hennickendorf-wieder-frei
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~30-01-2026-b1l233-sperrung-des-abzweigs-zur-berliner-strasse-in-hennickendorf
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~23-07-2026-l233_hennickendorf_fertigstellung-strassenausbau-august-2026
-#: source_id: LS/221-F/24/173 (Vorbereitungsarbeiten, bis 31.12.2024) (bis 31.08.2026) (bis 11.04.2025) (bis 23.05.2025) (bis 04.07.2025) (bis 29.08.2025) (bis 31.10.2025) (bis 19.12.2025) (bis 17.04.2026) (bis 31.08.2026) (Restarbeiten bis 18.09.2026) (bis 31.08.2026)
+#: source_id: LS/221-F/24/173 (Vorbereitungsarbeiten, bis 31.12.2024) (bis 31.08.2026) (bis 11.04.2025) (bis 23.05.2025) (bis 04.07.2025) (bis 29.08.2025) (bis 31.10.2025) (bis 19.12.2025) (bis 17.04.2026) (bis 31.08.2026) (Restarbeiten bis 18.09.2026) (bis 31.08.2026) (inaktiv)
 #: source_id: LS/221-F/24/167 (bis 15.11.2024) (inaktiv) (bis 31.12.2024) (bis 31.08.2026) (bis 23.02.2026) (inaktiv) (bis 18.05.2026) (inaktiv)
 #: XXX die Landesstraße wird senkrecht auf die Bundesstraße stoßen (möglicherweise bereits realisiert, Stand 2026-08), Zweirichtungsradweg auf der östlichen Seite
 #: osm_watch: way id="346561721" version="9"
@@ -8728,9 +8729,11 @@ Stubenrauchstr.: geschützte Radstreifen (mit Leitboys) waren geplant	? 16135,213
 #: last_checked: 2026-08-02
 #: check_frequency: 120d
 Mariannenstr./Georgenstr.: Fußgängerüberweg (Zebrastreifen?) in Planung	? 6050,1383 6029,1357 6011,1306
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1709191.php (Bauarbeiten für einen Fußgängerüberweg vom 14.09. - 23.10.2026; Sperrung der Fahrbahn, Radverkehr wird vorbeigeführt)
+#: source_id: planb2026:13.33109458,52.42015808,14.09.2026,07:00 ("Vollsperrung beider Fahrbahnen" (nördlich des möglichen Zebrastreifens), bis 23.10.2026)
 #: last_checked: 2026-08-02
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2023-10-01
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2023-10-23 (BA-Pressemitteilung, planb)
 Geraer Str./Oberhofer Weg: Querung (Zebrastreifen?) in Planung	? 5674,1525 5661,1499 5647,1472
 # 
 # REMOVED (eingeschaltet) --- #: next_check_id: TRESKOWALLEE-2022 --- #: source_id: viz2021:13.519868,52.47368,23.06.2023,07:00 (Leitungsbaustelle, bis 01.11.2023) --- #: osm_watch: node id="11114247746" version="1" --- #: XXX Ampelanlage weitgehend fertig, ist aber noch nicht eingeschaltet --- #: last_checked: 2023-09-17 --- #: check_frequency: 30d --- Treskowallee/Hegemeisterweg: Ampel wird gebaut	?::inwork 18388,7800 18406,7760 18429,7715
@@ -8944,7 +8947,7 @@ Waldsassener Str./Tirschenreuther Ring: Zebrastreifen in Planung	?::projected 69
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1650967.php
 #: by: https://www.entwicklungsstadt.de/umbau-rund-um-die-ella-barowsky-strasse-schreitet-voran/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260827 (neue Bauarbeiten bis Mitte Oktober 2026, nur der Kfz-Verkehr ist betroffen)
-#: source_id: LMS-BR:420415/72 viz2021:13.363,52.47613,28.08.2026,07:00 (bis 07.10.2026)
+#: source_id: LMS-BR:420415/72 viz2021:13.363,52.47613,28.08.2026,07:00 vizapi2026:889/2026 (bis 07.10.2026)
 #: last_checked: 2026-08-28
 #: check_frequency: 90d
 Ella-Barowsky-Str.: Umbauarbeiten, dabei entsteht ein Radweg	?::inwork 7499,7880 7537,7859 7551,7851 7621,7813 7632,7807 7696,7771
@@ -8959,6 +8962,7 @@ Ella-Barowsky-Str.: Umbauarbeiten, dabei entsteht ein Radweg	?::inwork 7499,7880
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/berlins-landesbetriebe-leisten-sich-neue-firmen-zentralen-bauprojekt-am-sudkreuz-kostet-345-millionen-euro-15465303.html
 #: by: https://www.entwicklungsstadt.de/suedkreuz-hochhaus-bsr-zentrale-bueros/
 #: by: https://www.entwicklungsstadt.de/schoeneberger-linse-so-entwickelt-sich-das-quartier-am-suedkreuz/
+#: source_id: planb2026:13.36277335,52.47577167,01.04.2026, ("Sicherung gemäß Vz.-plan", bis 31.12.2028)
 #: XXX Bebauungsplan XI-231abb
 #: last_checked: 2026-07-07
 #: check_frequency: 720d
@@ -9057,7 +9061,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1596791.php
-#: last_checked: 2026-08-26 vvv
+#: last_checked: 2026-09-01 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="563341820" version="24"
 #: note: zwischenzeitlich gar keine Einbahnstraßenregelung
@@ -10080,7 +10084,7 @@ Straße 42: verkehrsberuhigter Bereich soll entstehen	? 15271,22527 15377,22452 1
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1702726.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/service-und-organisationseinheiten/klima-und-internationales/planungsstand-gartenstr-rudolfplatz-august-2026.pdf
 #: by: https://www.entwicklungsstadt.de/schwammstadt-am-rudolfplatz-wie-die-danneckerstrasse-gruener-werden-soll/
-#: last_checked: 2026-08-27
+#: last_checked: 2026-09-01
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (BA-Seite)
 Rudolfstr.: beabsichtigte Teileinziehung	?::projected 13886,10939 14026,10869
@@ -10253,7 +10257,10 @@ Handjerystr.: Rüttelstreifen geplant	? 5635,7820 5636,7734
 Singerstr.: neue kurze Sperrung geplant	? 12691,12042 12532,12150
 # 
 #: source_id: planb2026:13.33187108,52.44705489,01.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 08.02.2027)
-#: next_check: 2026-09-01
+#: also_indoor: traffic (no-G,no-T,no-H,no-W)
+#: last_checked: 2026-09-01 (traffic)
+#: check_frequency: 7d (traffic)
+# REMOVED --- #: next_check: 2026-09-01 (planb)
 Sedanstr.: Sperrung geplant	? 5541,4305 5630,4476 5658,4548
 # 
 ######################################################################

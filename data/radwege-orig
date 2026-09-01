@@ -4788,11 +4788,11 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2026-08-17 (planb) vvv
 #: next_check: 2026-12-31 (infravelo) vvv
-#: source_id: planb2026:13.46826637,52.47225026,23.06.2026,07:00 ("Gehwegvollsperrung", bis 13.12.2026) (vorfristig inaktiv) (bis 16.11.2026)
+#: source_id: planb2026:13.46826637,52.47225026,23.06.2026,07:00 ("Gehwegvollsperrung", bis 13.12.2026) (vorfristig inaktiv) (bis 16.11.2026) (bis 16.10.2026)
 #: historical_note: früher: alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg, RW1;; seit ungefähr 2025 existiert eine Absperrung vor den schlimmsten Wurzelhebungen; etwa ab 2026 Provisorium
 provisorische Radwegführung, teils auf der Fahrbahn, teils auf dem Bürgersteig	RW2; 14853,7451 14775,7385
 #: source_id: planb2026:13.46660341,52.47141375,04.05.2026,07:00 ("Gehwegvollsperrung", bis 17.08.2026) (inaktiv)
-#: source_id: planb2026:13.46550531,52.47084166,12.08.2026,07:00 ("Gehwegvollsperrung", bis 16.11.2026)
+#: source_id: planb2026:13.46550531,52.47084166,12.08.2026,07:00 ("Gehwegvollsperrung", bis 16.11.2026) (bis 16.10.2026)
 #: historical_note: früher (bis ca. 2026): alte Gehwegplatten, deutliche Schäden und Wurzelhebungen, Bord gegen Gehweg, RW1;
 provisorische Radwegführung, teils auf der Fahrbahn, teils auf dem Bürgersteig	RW2; 14775,7385 14758,7373 14708,7325 14617,7243
 #: next_check ^^^
@@ -5487,10 +5487,10 @@ Gehweg für Radfahrer frei	RW1; 22467,6135 22656,6142 22700,6138 22777,6151 22857
 # 
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260421
-#: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026)
+#: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, id=vizapi2026:360/2026 (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026) (bis 27.11.2026)
 #: last_checked: 2026-08-02
-#: next_check: 2026-09-02
-#: valid: -20260902
+#: next_check: 2026-11-27
+#: valid: -20261127
 gemeinsamer Geh- und Radweg während der Bauarbeiten	RW2;RW2 22128,5003 22133,4986 22154,4923 22196,4847
 # 
 Gehweg für Radfahrer frei	RW1; 26620,4936 26971,5025 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
