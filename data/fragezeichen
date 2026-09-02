@@ -1,7 +1,7 @@
 #: #: -*- coding: iso-8859-1 -*-
 #:
-Kurfürstenstr.: Einbahnstraßenregelung für Kfz geplant, hier auch?	?; 8058,10306 7850,10351 7744,10372
 Steegerstr.: Einbahnstraßenregelung (hoffentlich nur für Kfz) geplant	?; 9771,17154 9787,17050 9736,16919 9719,16904
+Unter den Eichen: die Radspur soll zurückgebaut werden	?; 4347,5103 4181,5000 4160,4988 4141,4975 3938,4849 3834,4786
 Adlerplatz: existiert hier ein ausgeschilderter Platz?	? -584,12553 -587,12529 -587,12500
 B198 bei Angermünde: gibt es hier einen Radweg? wo genau?	? 47908,73136 47292,73547
 Handjerystr.: Rüttelstreifen geplant	? 5635,7820 5636,7734
@@ -526,12 +526,6 @@ Schwarzer Weg (Potsdam-Grube): Qualität?	? -19422,2220 -19433,2155 -19691,2134 -
 Schmidtshof (Potsdam-Grube): Qualität?	? -19691,2134 -19689,2191 -19927,2193 -19927,2216 -20053,2244
 Am Golmer Weinberg (Potsdam-Golm): Qualität?	? -19197,-348 -19180,-292 -19175,-237
 Ritterstr. (Potsdam-Golm): Qualität? Genaue Lage	? -19180,-292 -19101,-318
-Am Gutstor (Groß Glienicke): Qualität im nördlichen Abschnitt?	? -9438,7174 -9445,7199 -9506,7421
-Helmut-Just-Str. (Groß Glienicke): Qualität?	? -9316,7393 -9506,7421
-Interessentenweg (Groß Glienicke): Qualität?	? -9670,7190 -9726,7239 -9798,7341
-Am Anger (Groß Glienicke): Qualität?	? -9668,6423 -9716,6434 -9803,6453 -9839,6497 -9843,6554
-Waldweg (Groß Glienicke): Qualität?	? -10261,6466 -10127,6469
-Eichengrund (Groß Glienicke): Qualität?	? -9506,7421 -9938,7393
 Zum Teufelssee - Am Moosfenn (Potsdam): Qualität der Gehwegverbindung?	? -10397,-5379 -10503,-5165
 Am Pappeltor (Potsdam, Geltow): Qualität?	? -18894,-5272 -18885,-5173 -18908,-4810 -18928,-4677 -18928,-4595 -18910,-4561 -18771,-4330 -18604,-3755
 An den Kopfweiden (Potsdam): Qualität?	? -10859,-3249 -11029,-3071
@@ -563,12 +557,10 @@ Alter Torfweg (Potsdam): Qualität? Existieren Straßenschilder?	? -10836,-5477 -1
 Ahlimbswalde: ist die gesamte Straße asphaltiert?	? 30962,71971 31251,71954 31669,72016 31857,72102 32370,71986 32613,71643
 Vogelsangsruh: ist die gesamte Straße asphaltiert?	? 66431,84540 66638,84513
 Niederfelde: ist die gesamte Straße gepflastert?	? 66126,84243 66092,84252 66062,84129
-Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9847,6891
 Ahlimbsmühle - Templin: Qualität (Asphalt oder etwas anderes)? Ist die gesamte Straße eine Fahrradstraße?	? 23185,74265 22563,74247 21760,74489 21331,74676 20498,75268 19701,76270 19750,76354 19659,77157 19454,77284 19061,78220 18681,78317 18337,78286 18125,78413 17757,78643 17177,79071 16882,79108 16707,79192 16377,78982
 Carl-Dähne-Str.: Planstraße A, schon fertiggestellt, Qualität?	? -16317,-541 -16309,-435 -16168,-312
 Zum Düsteren Teich: Planstraße B, schon fertiggestellt, Qualität?	? -16108,-415 -16168,-312 -16268,-218
 Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualität?	? -15825,-166 -16108,-415 -16224,-528
-Uferweg am Groß-Glienicker See: wird ein Uferweg östlich der Seepromenade angelegt? Genaue Lage? Qualität?	? -9762,5436 -9706,5417 -9478,5549 -9372,5532
 Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 Metzelthin - Jakobshagen: Qualität?	? 16156,85969 16228,86247
 Metzelthin - Jakobshagen: Qualität?	? 16423,86575 16613,86712 17078,86962 17760,87699 19179,88641 19405,88716
@@ -751,6 +743,8 @@ Schloßstr. (Einbahnstraße?)	? -14821,106013 -15004,105813 -15070,105705
 Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -14288,105530 -14242,105542
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
+# added from qualitaet_s
+Miraustr.: mäßiger Asphalt (Nach den Bauarbeiten besserer Asphalt?)	? 3323,20547 3344,20453 3380,20270
 # added from qualitaet_l
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK (ist hier mittlerweile asphaltiert?)	? 5633,-2011 5292,-2221 5132,-2299
 Werder - Golm: relativ glatter Feldweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21131,-2004 -20954,-1991 -20933,-1960 -20719,-1956 -20528,-1962
@@ -801,8 +795,6 @@ Groß Friedenwalde - Flieth: Kopfsteinpflaster (wie schlecht ist das Kopfsteinpfl
 Groß Friedenwalde - Flieth: Asphalt (ist hier tatsächlich asphaltiert?)	? 35894,81782 35998,82265 36009,82890 36430,83497 36578,83835 36590,84086 36693,84235 36676,84495 36696,84495
 # added from handicap_s
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1 (Besteht die Sperrung noch immer?)	? 7519,15193 7607,15282
-# added from nolighting
-Wublitzstr. und Straße 153 (Ab Sommer 2025 möglicherweise unbeleuchtet --- stimmt das?)	? -9271,4549 -9217,4645 -9164,4735 -9118,4812 -9071,4876 -9059,4862 -8994,4851
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
@@ -823,16 +815,11 @@ F3.3 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 F3.4 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
-# added from fragezeichen
-Kurpromenade: Bauarbeiten, vermutlich Erneuerung der Fahrbahn (Wurde die Fahrbahn in der Kurpromenade erneuert?)	? -8917,5986 -8871,6289 -8863,6402 -8863,6418 -8865,6541 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
 # added from bbbike-temp-blockings-optimized
 Herkulesufer: Neubau Bauhaus-Archiv, Uferweg gesperrt (Ist der Uferweg weiterhin gesperrt?)	? 6882,11061 6920,11064 7142,11145
-Radickestr. und Umgebung sowie Gutenbergstr. und Flemmingstr.: Leitungsarbeiten, Sperrungen von Fahrbahnen bzw. Einbahnstraßenregelungen [Freystadter Weg: Fahrbahn gesperrt] (Existiert die Sperrung der Fahrbahn weiterhin?)	? 20994,4761 20981,4696
-Mauerweg, Karolinenhöhe - Hahneberg: Sanierung, mögliche Sperrung, bis Sommer 2026 [Mauerweg, Karolinenhöhe - Hahneberg] (Sind die Bauarbeiten beendet?)	? -5564,11209 -5742,11314 -6012,11458 -6081,11508 -6174,11571 -6397,11664 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
 Schreiberring: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt [Schreiberring] (Ist der Schreiberring weiterhin gesperrt?)	? 8561,8252 8666,8305
 Hermann-Dorner-Allee: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, Ende der Bauarbeiten unbekannt [Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden] (Sind die Bauarbeiten beendet?)	? 18374,2971 18445,2642
 Lauinger Str., Gartenstr.: einige Wege sind gesperrt, Umwege erforderlich, Ende der Bauarbeiten unbekannt (Sind die Wege weiterhin gesperrt?)	? 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
 Hönower Str.: Durchfahrt wegen Bauarbeiten verboten, Ende der Bauarbeiten unbekannt [Hönower Str.: Einbahnstraßenregelung] (Wann sie die Bauarbeiten beendet?)	? 18660,9410 18735,9421
-Uferweg unter dem Siemenssteg: Baustelle, komplett gesperrt, möglicherweise bis Herbst 2027 [Uferweg] (Ist der Uferweg unter dem Siemenssteg weiterhin gesperrt?)	? 4040,12632 4078,12637 4131,12641 4162,12638 4225,12620
 Wünsthoffstr. und Bäumerplan: Sperrung der Fahrbahn, Ende der Sperrung unbekannt [Wünsthoffstr.: Sperrung der Fahrbahn] (Ist die Fahrbahn weiterhin gesperrt?)	? 8461,8084 8519,8088 8620,8095
 Am Wiesenrain: mögliche Sperrung der Fahrbahn vor dem S-Bhf. Hirschgarten, vom 10.7.2026 bis 24.8.2026, evtl. wird die Sperrung verlängert [Am Wiesenrain: mögliche Sperrung der Fahrbahn] (Besteht die Sperrung in der Straße "Am Wiesenrain" noch immer? Oder gibt es mittlerweile eine Einbahnstraßenregelung?)	? 23931,5992 24122,6007

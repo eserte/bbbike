@@ -1221,12 +1221,14 @@ Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article407857496/so-sollen-autos-in-lichterfelde-west-vergrault-werden.html (hier: Anfang 2025 (Stand Dez 2024))
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article409828528/neues-verkehrskonzept-in-lichterfelde-west-so-startet-die-umsetzung.html (Arbeiten sind ausgeschrieben)
 #: by: https://entwicklungsstadt.de/umgestaltung-des-bahnhofsvorplatzes-in-lichterfelde-west-starten-die-ersten-bauarbeiten/
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1709687.php (Umgestaltung ab 14. September 2026, 1. BA bis zur Adventszeit, Abschluss im Frühsommer 2027)
+#: by: https://www.entwicklungsstadt.de/lichterfelde-west-bahnhofsvorplatz-wird-ab-september-umgestaltet/
 #: XXX wird die Einbahnstraßenregelung umgedreht, dann offen von Bahnhof zur Drakestr.?
 #: osm_watch: way id="65369044" version="16"
 #: osm_watch[closed]: note 4846294 13
 #: last_checked: 2026-08-08
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2025-06-30 (Tsp)
+#: check_frequency: 120d
+#: next_check: 2026-07-01 (entwicklungsstadt)
 Hans-Sachs-Str.	1 3141,4023 3214,4066
 Anhaltinerstr.	1 682,2660 720,2718
 Askanischer Platz -> Stresemannstr.	3 8865,10974 8901,11011 8747,11194
@@ -2547,4 +2549,11 @@ Greenpark - Buschkrugallee: Linksabbiegen nicht erlaubt	3 13460,5834 13530,5870 
 # 
 #: historical_note: vermutlich seit Sommer 2026
 Quitzowstr.	1 6089,14197 6204,14220
+# 
+#: note: eigentlich für alle, aber Radfahrer können den südlichen Bürgersteig benutzen
+Theodor-Fontane-Str. (Groß Glienicke): Zufahrt zur B2 verboten	1 -9839,6877 -9844,6887
+# 
+#: historical_note: früher möglicherweise ohne "Radfahrer frei"
+Ribbeckweg (Groß Glienicke)	1 -9720,6589 -9928,6599 -9932,6558
+An der Kirche (Groß Glienicke)	1 -9717,6669 -10053,6676
 # 

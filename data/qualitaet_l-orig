@@ -290,7 +290,7 @@ Altlandsberg: Asphalt	Q0 32313,18306 32325,18434
 Klosterstr. (Altlandsberg): schlechtes Kopfsteinpflaster, Streifen mit glatteren Randsteinen existiert	Q3+ 32285,18093 32275,18055 32235,17969 32161,17822
 Hirtengasse (Altlandsberg): schlechtes Kopfsteinpflaster, schmaler Streifen mit glatteren Randsteinen existiert	Q3+ 32161,17822 32028,17866
 Poststr. (Altlandsberg): schlechtes Kopfsteinpflaster	Q3 32185,17995 32235,17969
-Groß Glienicke: Asphalt	Q0 -9413,7175 -9429,7137 -9476,7033 -9616,6980 -9640,6971
+Groß Glienicke: Asphalt	Q0 -9413,7175 -9429,7137 -9476,7033 -9616,6980 -9638,6969
 Werder, Adolf-Damaschke-Str.: Asphalt	Q0 -21386,-2959 -21631,-2111 -21646,-2095 -21915,-2045 -22042,-2060
 # REMOVED --- Eisenbahnbrücke Werder: Betonplatten	Q2+ -21227,-2017 -21125,-2012
 Golm, Weinmeisterstr.: sandige Straße	Q2 -19510,-628 -19252,-727 -19044,-737 -19030,-701 -18981,-566
@@ -866,7 +866,7 @@ Asphalt	Q0 -25788,3237 -25674,2966 -25674,2839 -25662,2746
 #: confirmed_by: srt
 Asphalt	Q0 -25662,2746 -25595,2721 -25530,2648 -25477,2419 -25392,2424 -25091,2300
 am Havellandkanal: Feldweg, Wurzeln	Q3 -24240,6075 -24325,6138 -23186,7432
-am Havellandkanal: Feldweg	Q2 -23186,7432 -21843,8484 -21796,8450 -21662,8537
+am Havellandkanal: Feldweg	Q2 -23186,7432 -22752,7809 -22149,8275 -21843,8484 -21796,8450 -21662,8537
 Karower Weg: schlechtes Kopfsteinpflaster mit Betonbanketten	Q2 17825,21931 17802,21950 17537,22168
 Karower Weg: Betoweg	Q1 17537,22168 17281,22368
 Karower Weg: Feldweg, teils holprig, teils OK	Q2 17281,22368 16594,22903
@@ -1613,7 +1613,7 @@ Fahrbahn Asphalt	Q0 26273,-17430 26342,-17212 26431,-16931 26455,-16852 26583,-1
 	Q0 -17404,7528 -17603,7487 -17812,7349 -17909,7321 -19150,7320
 Kopfsteinpflaster	Q2 -19190,7296 -19187,6709 -19514,6643
 	Q0 -16640,1304 -16719,1369 -16742,1387 -16763,1402 -16866,1476 -16905,1503 -16897,1518 -16840,1639 -16782,1767 -16706,1911 -16800,1991 -17292,2539 -17547,2832 -17956,3840 -18025,4018 -18233,4501 -18356,4783 -18598,5444 -18722,5775 -18847,6008 -19009,6153 -19576,6450 -19787,6551 -20023,6826 -20239,7026 -20301,7082 -21305,8159 -21464,8331 -21513,8387 -21662,8537 -21872,8784 -21931,8853 -22215,9500
-	Q0 -20301,7082 -20771,6952 -21093,6607 -21057,6524 -21736,6259 -22711,6023 -23599,5864 -24240,6075
+	Q0 -20301,7082 -20771,6952 -21087,6614 -21094,6583 -21057,6524 -21736,6259 -22711,6023 -23599,5864 -24240,6075
 	Q0 -22215,9500 -22369,9423 -22456,9379 -23470,9204 -23807,9279 -24267,9300 -24358,9272 -24460,9219 -24594,9168 -24719,9170 -25227,9010 -25378,8890 -25658,8777 -26144,8525 -26767,8029 -26899,7966 -27476,7691
 	Q0 -25898,6447 -26170,6459 -26525,6519 -27113,6829
 	Q0 -27113,6829 -26689,6111 -26783,5891 -26785,5851 -26784,5756
@@ -3749,7 +3749,7 @@ Hamburger Str.: Asphalt	Q0 31007,6343 31080,6454 31416,6774
 #: note: Poller am Südende
 Birkenweg (Groß Glienicke): Asphalt	Q0 -10055,6715 -10091,6716 -10133,6717 -10177,6711 -10178,6691 -10183,6650
 #: note: beleuchtet
-Am Park: Asphalt	Q0 -9413,7175 -9351,7188 -9273,7221 -9118,7286
+Am Park: Asphalt	Q0 -9413,7175 -9351,7188 -9268,7222 -9118,7286
 Reiherweg (Potsdam): Asphalt	Q0 -14435,357 -14592,323 -14663,310
 Reiherweg (Potsdam): Kopfsteinpflaster	Q2 -14663,310 -14706,301
 #: note: allerdings noch nicht komplett fertig (letzte Asphaltschicht fehlt, einige sehr kurze nicht asphaltierte Abschnitte) (2010-05-09)
@@ -4296,33 +4296,40 @@ Döberitzer Weg: unbefestigte Straße	Q2 -9524,12215 -9692,12123
 Döberitzer Weg: unbefestigter Weg	Q2- -9692,12123 -10324,11725
 Alte Dorfstr.: Asphalt	Q0 -9367,10916 -9335,10930 -8906,11139 -8655,11249 -8624,11246
 Gatower Weg (Seeburg): Asphalt	Q0 -8624,11246 -8596,11184 -8451,11071 -8327,10979 -8274,10938
-Freiheitsstr. (Groß Glienicke): Asphalt	Q0 -9869,7199 -9964,7203
-#: by: mapillary
-Freiheitsstr. (Groß Glienicke): Asphalt	Q0 -9445,7199 -9670,7190 -9848,7181 -9869,7199
+Freiheitsstr. (Groß Glienicke): Asphalt	Q0- -9869,7199 -9964,7203
+Freiheitsstr. (Groß Glienicke): Asphalt	Q0- -9445,7208 -9670,7197 -9848,7185 -9869,7199
+Interessentenweg (Groß Glienicke): Asphalt mit Schäden	Q1 -9670,7197 -9731,7252 -9791,7339
+Eichengrund (Groß Glienicke): unbefestigte Straße	Q2+ -9506,7421 -9806,7397 -9938,7393
+(Interessentenweg - Eichengrund): Waldweg	Q2 -9791,7339 -9804,7367 -9806,7397
+Helmut-Just-Str. (Groß Glienicke): schlechtes Kopfsteinpflaster	Q3 -9316,7393 -9506,7421
 #: by: mapillary
 Ulrich-Steinhauer-Str.: Verbundsteinpflaster	Q1+ -9983,7100 -9959,7099
 Ulrich-Steinhauer-Str.: Asphalt	Q0 -9959,7099 -9880,7094
 #: by: mapillary
-Am Glienicker Mühlenberg (Groß Glienicke): Asphalt	Q0 -9959,7099 -9986,7004 -9969,6985 -9884,6982 -9847,6891
-#: by: mapillary
-Grüner Weg (Groß Glienicke): Asphalt	Q0 -9616,6980 -9707,7077 -9848,7181
-#: by: mapillary
-Am Gutstor: Asphalt	Q0 -9413,7175 -9438,7174
-#: by: mapillary
-Am Gutstor: Asphalt	Q0 -9429,7137 -9438,7174
+Am Glienicker Mühlenberg (Groß Glienicke): Asphalt	Q0 -9959,7099 -9986,7004 -9969,6985 -9884,6982 -9844,6887
+Grüner Weg (Groß Glienicke): Asphalt	Q0- -9616,6980 -9708,7080 -9848,7185
+Am Gutstor (Groß Glienicke): Asphalt mit Unebenheiten	Q1 -9438,7174 -9445,7208 -9506,7421
+Am Gutstor (Groß Glienicke): Asphalt	Q0 -9413,7175 -9438,7174
+Am Gutstor (Groß Glienicke): Asphalt	Q0 -9429,7137 -9438,7174
 Rotdornweg (Groß Glienicke): Asphalt	Q0 -10091,6716 -10095,6664
 Ebereschenweg (Groß Glienicke): Asphalt	Q0 -10133,6717 -10138,6646
 Hainbuchenweg (Groß Glienicke): Asphalt	Q0 -10178,6691 -10227,6693
 Hainbuchenweg (Groß Glienicke): Verbundsteinpflaster	Q1 -10227,6693 -10227,6658
-Bergstr. (Groß Glienicke): Asphalt	Q0 -10272,6569 -10052,6563
+Bergstr. (Groß Glienicke): etwas unebener Asphalt	Q1+ -10265,6569 -10176,6567
+Bergstr. (Groß Glienicke): Asphalt	Q0 -10176,6567 -10120,6565 -10052,6563
 Bergstr. (Groß Glienicke): Verbundsteinpflaster	Q1 -10052,6563 -9932,6558 -9843,6554 -9722,6549
+(Bergstr. - Waldweg): unbefestigter Weg	Q2- -10120,6565 -10127,6469
 Ribbeckweg: Verbundsteinpflaster	Q1 -9932,6558 -9928,6599 -9720,6589
-Triftweg (Groß Glienicke): Asphalt	Q0 -9640,6971 -9690,6782 -9717,6669 -9719,6639 -9720,6589 -9722,6549
-An der Kirche: Pflaster	Q1 -10057,6804 -10030,6802
-An der Kirche: Asphalt	Q0 -10030,6802 -9835,6791 -9746,6789 -9690,6782
+Triftweg (Groß Glienicke): Asphalt	Q0 -9638,6969 -9690,6782 -9717,6669 -9719,6639 -9720,6589 -9722,6549
+Waldweg (Groß Glienicke): etwas unebener Asphalt	Q1 -10252,6469 -10127,6469
+An der Kirche: Verbundsteinpflaster	Q1 -10057,6804 -10030,6802
+An der Kirche: etwas unebener Asphalt	Q1+ -10030,6802 -9829,6791 -9746,6789 -9690,6782
 An der Kirche: Asphalt	Q0 -10053,6676 -9717,6669
 Hermann-Krome-Weg: Verbundsteinpflaster	Q1 -9746,6850 -9746,6789
-Theodor-Fontane-Str.: Asphalt	Q0 -9847,6891 -9835,6841 -9835,6791
+Theodor-Fontane-Str.: Verbundsteinpflaster	Q1 -9844,6887 -9839,6877
+Theodor-Fontane-Str.: Asphalt	Q0 -9839,6877 -9827,6842 -9829,6791
+Güntherweg (Groß Glienicke): Verbundsteinpflaster	Q1+ -9707,6938 -9746,6978 -9742,7028
+Schulzenlandweg (Groß Glienicke): Feinschotter, einige Unebenenheiten	Q1- -9708,7080 -9586,7076
 #: by: osm
 #: confirmed_by: srt
 Am Schlahn (Groß Glienicke): Kopfsteinpflaster	Q2 -10494,6586 -10442,6409 -10489,6050 -10467,5948 -10487,5846 -10521,5770
@@ -6444,7 +6451,7 @@ Umfahrung Torfhaus - Hennickendorf: Kopfsteinpflaster	Q2 40435,12043 40363,12020
 Hennickendorf - Tasdorf: Asphalt	Q0 40412,11647 40179,11450 40084,11390 39925,11298
 Hennickendorf - Tasdorf: Fahrbahn schadhafter Asphalt, Radweg neu asphaltiert	Q0 39925,11298 39813,11268 39563,11244 39310,11034 38808,10458 38546,10223
 Hennickendorf - Tasdorf: Fahrbahn schadhafter Asphalt, Radweg Verbundsteinpflaster	Q1+ 38546,10223 38409,10178
-Hennickendorf - Tasdorf: Asphalt mit einigen Schäden	Q0- 38409,10178 38013,10009 37644,9869 37621,9843
+Hennickendorf - Tasdorf: Asphalt mit einigen Schäden	Q0- 38409,10178 38013,10009 37808,9909 37774,9801
 Dr.-Wilhelm-Külz-Str.: Kopfsteinpflaster	Q2 36225,7766 36285,7683
 Dr.-Wilhelm-Külz-Str.: Verbundsteinpflaster	Q1 36285,7683 36446,7514
 Puschkinallee: Asphalt	Q0 36285,7683 36213,7631
@@ -7458,8 +7465,12 @@ Freienbrink - Spreeau: Asphalt	Q0 37330,-2195 37326,-2262 37405,-2468 37500,-284
 Spreeau - Spreewerder: Fahrbahn asphaltiert	Q0 40278,-3816 40449,-3826 40506,-3829 40762,-3650 41014,-3494 41095,-3344 41149,-3324 41180,-3302 41244,-3173 41825,-3132 41962,-3101 41892,-2868
 Hohenbinde - Steinfurt: Asphalt	Q0 35937,-1176 35990,-1243 36107,-1546 36176,-1661 36296,-1732
 Jägerbude - Freienbrink: Asphalt	Q0 36296,-1732 36305,-1720 36614,-1840 36704,-1907 37269,-2164 37330,-2195
+(Seepromenade - Am Anger): Verbundsteinpflaster	Q1 -9668,6423 -9678,6426 -9716,6434
+Am Anger: Verbundsteinpflaster	Q1 -9716,6434 -9803,6453 -9839,6497 -9843,6554
 ######################### User Contributions #################################
 #: by: osm vvv
+Falkenrehder Weg: unbefestiger Weg	Q2 -21549,7024 -21819,7107 -22052,7450
+Falkenrehder Weg: unbefestiger Weg	Q3 -22052,7450 -22025,7752 -22149,8275
 Ernst-Thälmann-Str. (Gottesbrück): Asphalt	Q0 37884,1615 37690,1546
 Gottesbrück: Asphalt	Q0 37718,1728 37714,1582 37690,1546
 Gottesbrück: Kopfsteinpflaster	Q2 37690,1546 37623,1484
@@ -9266,7 +9277,7 @@ Karlsruher Str.: guter Asphalt	Q0 27016,14509 27026,14443 27073,14138
 # 
 #: by: Stefan Byczynski:
 #: note: "Straße führt an einer Badestelle vorbei, im Bereich ist verstärkt mit Fußgängern und dicht parkenden Autos zu rechnen. Dann sehr eng. Linienbusverkehr."
-Seepromenade (Groß Glienicke): sehr guter Asphalt	Q0 -9642,6538 -9668,6423 -9687,6339 -9703,6278 -9728,6173 -9727,6035 -9723,5800 -9763,5555 -9777,5489 -9762,5436 -9667,5372
+Seepromenade (Groß Glienicke): sehr guter Asphalt	Q0 -9642,6538 -9668,6423 -9687,6339 -9703,6278 -9728,6173 -9727,6035 -9713,5846 -9723,5800 -9763,5555 -9777,5489 -9762,5436 -9667,5372
 # 
 #: by: ulrike (ub6): vvv
 #: add_fragezeichen: Sind Teilabschnitte der Straße "In der Aue" asphaltiert?
@@ -9515,7 +9526,8 @@ Bahnhofstr. (Eichwalde): Asphalt	Q0 25173,-3420 25088,-3470
 #: by: ^^^
 # 
 #: by: papst leo...
-Am Fenn: erdig, teilweise Kies	Q2 -10272,6569 -10261,6466 -10241,6280 -10203,5891 -10195,5794
+#: corrected_by: srt (erdig, teilweise Kies, Q2 -> ...)
+Am Fenn: etwas unebener Asphalt	Q1+ -10265,6569 -10252,6469 -10241,6280 -10203,5891 -10195,5794
 # 
 #: by: hannes (...graumann):
 Marie-Hannemann-Str.: Asphalt	Q0 -7796,-5447 -7767,-5415 -7678,-5326 -7633,-5279 -7597,-5240 -7569,-5240
@@ -9792,6 +9804,7 @@ Altlandsberg - Wegendorf: schlechtes Kopfsteinpflaster	Q3 32483,18870 32561,1909
 #: by: ^^^
 # 
 #: by: mapillary/osm vvv
+Uetzer Dorfstr.: Asphalt	Q0 -21094,6583 -21549,7024
 Kleiststr. (Dallgow-Döberitz): Asphalt	Q0 -12533,15538 -12802,15583 -12850,15606 -12906,15658 -12968,15790 -12985,15803
 Heidestr. (Schönow): Asphalt	Q0 19032,30053 18941,30212 18773,30398 18635,30610 18580,30715
 Friedrich-Engels-Str. (Hohen Neuendorf): Asphalt	Q0 950,29767 707,29911 590,29922 320,29941 171,29953 0,30042
@@ -10014,10 +10027,8 @@ Ahlimbsmühle - Milmersdorf: asphaltierter Radweg	Q0 23889,74991 23861,75003 2384
 Schenkenhorst: schlechtes Kopfsteinpflaster	Q3+ -3848,-7423 -3596,-7607
 Schenkenhorst: unbefestigte Straße	Q2 -3848,-7423 -4388,-7159 -5550,-6808
 Struveweg (Struveshof): Asphalt	Q0 -1066,-9674 -846,-9884 -835,-9893
-#: XXX möglicherweise wird hier noch gebaut
-#: last_checked: 2022-06-26 (mapillary)
-#: check_frequency: 90d
-Alter Weinberg (Groß Glienicke): sandige Straße	Q3 -9273,7221 -9198,7051
+#: historical_note: früher (z.B. 2022): sandige Straße, Q3
+Alter Weinberg (Groß Glienicke): Asphalt	Q0 -9268,7222 -9197,7058
 BER - Karlshof: sandiger Weg	Q3 19675,-5161 19937,-5454 19879,-5678 19873,-5697 19859,-6278 19858,-6330
 Margaretenstr. (Zeuthen): Asphalt	Q0 24487,-7143 24490,-7241 24493,-7282 24492,-7311
 Am Tonberg (Zeuthen): Asphalt	Q0 24616,-7384 24493,-7282

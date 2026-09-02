@@ -839,7 +839,7 @@ Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 203
 (Vorfahrt S-Bhf. Tegel)	1s 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer)	1s 4658,12450 4618,12340 4593,12322
 Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4304,12562
-(Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
+(Messedamm - S-Bhf. Westkreuz)	2::inwork 2117,10495 2090,10576 2033,10613
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 (Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
@@ -1134,7 +1134,6 @@ Nietnerstr.	2 -13855,1673 -13843,1668
 Hechtsprung (Groß Glienicke)	1 -9703,6278 -9860,6288 -9962,6295 -10045,6292
 (Potsdamer Chaussee - Dorfstr.)	1 -9547,6865 -9565,6954 -9616,6980
 Tuchmacherstr.	1 -10463,-1343 -10610,-1596 -10636,-1667
-Ribbeckweg	1 -9720,6589 -9928,6599 -9932,6558
 Templiner Str.	1 -13062,-2901 -12915,-2922
 An der Vorderkappe	1 -13321,-2801 -13304,-2779 -13150,-2777 -13123,-2797
 An der Vorderkappe	1 -13123,-2797 -13209,-2829 -13257,-2821 -13321,-2801
@@ -2988,6 +2987,7 @@ tragen (zwei Treppen)	0:60:-10 51766,-59693
 tragen (zwei Treppen)	0:60:36 51694,-59945
 tragen (4 Stufen)	0:10:37 6953,19939
 tragen (Treppe, 13+6 Stufen)	0:25:-4 5813,7813
+tragen (Treppe, 8 Stufen oder Rampe)	0:15:-253 -9678,6426
 Schranke	BNP:3:-130:trailer=10 18638,11479
 Schranke	BNP:10:-180:trailer=30 18965,11706
 Schranke	BNP:3:-164:trailer=10 17793,10382
@@ -3248,7 +3248,6 @@ Tor	BNP:10:31:trailer=no 12505,17469
 Drängelgitter (lichte Breite ca. 120cm)	BNP:3:-149:trailer=10 -4429,10484
 Drängelgitter (relativ breit)	BNP:3:-25:trailer=10 -7136,4321
 Poller (lichte Breite ca. 60cm)	BNP:5:-152:trailer=no -8061,5386
-Steinpoller (lichte Breite ca. 110cm)	BNP:1:-54:trailer=5 -9027,4521
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3:0:trailer=10 -5202,11342
 Drängelgitter (lichte Breite ca. 80cm)	BNP:4:15:trailer=no -5236,11204
 Drängelgitter	BNP:3:66:trailer=12 13194,2732
@@ -3448,7 +3447,7 @@ Drängelgitter	BNP:3:-192:trailer=10 25081,-9433
 Drängelgitter	BNP:3:28:trailer=10 1409,15177
 Drängelgitter	BNP:3:5:trailer=10 26682,-13082
 Drängelgitter	BNP:3:-249:trailer=20 8363,13402
-enges Tor	BNP:3:-125:trailer=no -6359,5220
+früher enges Tor	BNP:0:-125 -6359,5220
 Drängelgitter vor Schranke	BNP:3:-167:trailer=10 21558,12073
 Drängelgitter vor Schranke	BNP:3:-167:trailer=10 21564,12097
 Drängelgitter	BNP:3:-237:trailer=10 -31814,4922

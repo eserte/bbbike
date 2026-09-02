@@ -7,7 +7,7 @@
 #: temporary vvv
 # 
 #: source_id: planb2026:13.37673666,52.51665403,06.01.2026, ("Sicherung gemäß Vz.-plan", Scheidemannstr. und Simsonweg, evtl. im Zusammenhang mit der Ampel, bis 20.10.2026)
-#: source_id: vizapi2026:900/2026 (Wasserleitungsbau, Verengung, bis 20.10.2026)
+#: source_id: LMS-BR:420952/72 viz2021:13.374992,52.51778,02.09.2026,07:00 vizapi2026:900/2026 (Wasserleitungsbau, Verengung, bis 20.10.2026)
 #: last_checked: 2026-08-19
 #: check_frequency: 60d
 #: next_check: 2026-10-20 (planb)
@@ -149,7 +149,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 # REMOVED --- Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
-#: last_checked: 2026-08-24
+#: last_checked: 2026-09-02
 #: next_check: 2027-01-12
 #: valid: -20270112
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
@@ -1808,6 +1808,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2473,9861
 	X 2532,9911
 	X 1557,10306
+	X 1691,10487
 #: note: ausgeschaltet (gesehen 2017-02-18 gegen 0:00)
 	X -5869,1261
 #: note: ausgeschaltet (gesehen 2017-02-18 gegen 0:00)
@@ -2080,6 +2081,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	B 20616,7292
 	B 20624,12133
 	B 1583,9713
+#: note: Anforderung für linksabbiegende Radfahrer (Jafféstr. -> Harbigstr.)
 	X 1049,10568
 # 
 #: off: 2023-08-20 Sun 14:30
@@ -3096,6 +3098,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -4590,8666
 #: note: Anforderungsampel
 	F -4757,9140
+#: note: Anforderung für Radfahrer aus der Gutsstr.
 	X -8777,7386
 	X 25138,11215
 	X 23648,11265
@@ -4078,6 +4081,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: note: Anforderungsampel
 	F 16263,15427
 	F 20173,18306
+#: XXX_prog: Ampel gilt nicht für Radfahrer auf dem Zweirichtungsradweg
 	F -8603,6973
 #: XXX_prog: Ampel gilt nicht für Radfahrer
 	F 15468,13700
@@ -4685,7 +4689,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7345 (Antrag)
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 3
-#: last_checked: 2026-07-15 vvv
+#: last_checked: 2026-08-31 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

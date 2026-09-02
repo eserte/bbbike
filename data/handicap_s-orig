@@ -170,9 +170,9 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="34"
-#: osm_watch: way id="1072662717" version="38"
-#: last_checked: 2026-08-24
+#: osm_watch: way id="1072662716" version="35"
+#: osm_watch: way id="1072662717" version="39"
+#: last_checked: 2026-09-02
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -423,11 +423,18 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 # 
 ### Adlershof ###
 # 
-#: by: https://www.entwicklungsstadt.de/einbahnstrasse-neue-sperrung-an-der-doerpfeldstrasse-in-adlershof/ (Halteverbote bis 30.9.2026, Baustellenschild bis November 2026)
-#: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
-#: next_check: 2026-09-30
-#: valid: -20261130
+#: by: https://www.entwicklungsstadt.de/einbahnstrasse-neue-sperrung-an-der-doerpfeldstrasse-in-adlershof/ (Arndtstr.: Halteverbote bis 30.9.2026, Baustellenschild bis November 2026)
+#: source_id: planb2026:13.54992368,52.43804574,03.08.2026,06:00 ("Vollsperrung beider Fahrbahnen", Arndtstr. und Nipkowstr., bis 25.09.2026)
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung/Sperrung weiterhin? vvv
+#: next_check: 2026-09-25 (planb) vvv
+#: valid: -20261130 vvv
+#: also_indoor: traffic (no-G,no-T,no-H,no-W)
 Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4::inwork; 20592,3633 20449,3799
+#: also_indoor: traffic (G,T,H,no-W)
+Nipkowstr.: mögliche Bauarbeiten	q4::inwork 20352,3744 20499,3572
+#: valid ^^^
+#: next_check ^^^
+#: add_fragezeichen ^^^
 # 
 # REMOVED (keine Einschränkungen mehr) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1232282.php (erster Bauabschnitt bis 2. Quartal 2023) --- #: by: https://berliner-abendblatt.de/2022/08/04/marktplatz-adlershof-baumassnahmen-haben-begonnen/ --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/umbau-des-marktplatzes-adlershof-hat-anfang-august-begonnen_a353228 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237306.php --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2023/pressemitteilung.1391572.php (zweiter Bauabschnitt ab 4. Dezember 2023, Abschluss Mitte 2025) --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/neue-bauarbeiten-am-marktplatz-adlershof_a401378 --- #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=763887#post763887 (bis Mitte 2025) --- #: by: https://www.aktives-adlershof.de/das-aktive-zentrum/projekte/historischer-marktplatz --- #: by: https://www.wista.de/aktuelles/news/marktplatz-doerpfeldstrasse-wird-zur-gruenen-mitte-von-adlershof (mit Karte) --- #: by: https://www.wista.de/fileadmin/_processed_/8/c/csm_marktplatz_Adlershof_f75006337a.webp --- #: by: https://www.tagesspiegel.de/berlin/bezirke/eroffnung-mit-burgerfest-geplant-endspurt-fur-den-neuen-marktplatz-in-adlershof-12604670.html (Eröffnung Mai 2025) --- #: by[nocache]: https://archive.is/tLaeV --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_55_4355_4442_online.pdf (Teileinziehung (wo genau?)) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_02_0117_0156_online.pdf (Teileinziehung: korrekte Planskizze; es ist der nördliche Strang) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1539372.php (Verschiebung: Fertigstellung im Sommer 2025) --- #: by: https://www.tagesspiegel.de/berlin/bezirke/marktplatz-in-treptow-kopenick-eroffnung-nach-umbau-verschiebt-sich-13344481.html --- #: by: https://entwicklungsstadt.de/marktplatz-adlershof-fertigstellung-und-einweihung-im-sommer-2025-geplant/ --- #: by: https://www.berliner-zeitung.de/news/treptow-koepenick-darum-verzoegern-sich-die-bauarbeiten-auf-dem-marktplatz-adlershof-li.2323549 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_24_1521_1604_online.pdf (Teileinziehung von Straßenland, nördlicher Strang) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2025/pressemitteilung.1581989.php (Eröffnung am 29. August 2025, schrittweise Freigabe ab 19. Juli 2025) --- #: XXX der nördliche Strang soll dauerhaft eingezogen werden (Fußgängerzone? für Radfahrer frei?) --- #: osm_watch: way id="20554168" version="29" --- #: osm_watch: way id="1155308749" version="1" --- #: last_checked: 2025-07-19 vvv --- #: check_frequency: 45d vvv --- #: next_check: 2025-08-29 (BA-Pressemitteilung) vvv --- Marktplatz Adlershof: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 20290,3756 20336,3783 --- # REMOVED (hier wieder offen) --- Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20290,3756 20285,3739 20304,3714 --- Marktplatz Adlershof: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 20362,3750 20336,3783 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (keine großen Einschränkungen mehr) --- #: XXX_prog: BS --- #: last_checked: 2018-08-11 vvv --- Wagner-Régeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703 --- Igo-Etrich-Str. - Wagner-Régeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730 --- #: last_checked ^^^
@@ -447,11 +454,13 @@ Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4
 # 
 #: next_check_id: LIESENBRUECKEN-2026
 #: by: https://www.entwicklungsstadt.de/liesenbruecken-in-gesundbrunnen-sperrung-trifft-auf-ungeklaerte-zukunft/
+#: by: https://www.entwicklungsstadt.de/liesenbruecken-in-gesundbrunnen-das-steckt-hinter-den-sperrungen/ (bis Ende KW 36/2026)
 #: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, (bis 04.09.2026)
 #: also_indoor: traffic (T,no-G,H[zu lang],no-W)
 #: note: siehe auch aufgehobenen Eintrag zur Einbahnstraßenregelung in gesperrt-orig
 #: last_checked: 2026-08-24 (entwicklungsstadt)
 #: next_check: 2026-09-04
+#: valid: -20260904
 Liesenbrücken: Fahrbahn unter der Brücke gesperrt, Gehweg ist frei	q4::inwork 8700,14956 8685,14966 8663,14960
 # 
 # REMOVED (weitgehend offen) --- #: next_check_id: PEKINGERPLATZ-2025
@@ -708,8 +717,8 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,123
 #: osm_watch: way id="111833186" version="18"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: by: https://www.entwicklungsstadt.de/vom-forschungsstandort-zur-hochschule-robert-koch-forum-auf-dem-weg-zur-neuen-nutzung/ (Abschluss 2027)
-#: osm_watch: way id="153698413" version="22"
-#: last_checked: 2026-08-20
+#: osm_watch: way id="153698413" version="23"
+#: last_checked: 2026-09-01 (osm)
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
@@ -1688,13 +1697,13 @@ Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahre
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260803 (Umbau der Baustelle, weiterhin bis Ende August 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msagudcygk2b
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidvo2akpr4ik7t2dzkvfu7ie5f2kwyvakumzcrezznxuyn7b4fdqq (aktuelle Meldung zu Arbeiten am östlichen Ende der neuen Brücke)
-#: source_id: LMS-BR:415125/72 viz2021:13.38021,52.41036,08.07.2026,07:00 (bis 23.08.2026) (inaktiv) (bis 05.10.2026)
+#: source_id: LMS-BR:415125/72 viz2021:13.38021,52.41036,08.07.2026,07:00 vizapi2026:679/2026 (bis 23.08.2026) (inaktiv) (bis 05.10.2026) (bei vizapi2026 bis 05.11.2026)
 #: source_id: LMS-BR:418266/72 viz2021:13.39268,52.4127,04.08.2026,07:00 (östlich der Brücke, bis 28.08.2026) (inaktiv)
 #: source_id: planb2026:13.37629824,52.40919079,26.05.2023, ("Vollsperrung beider Fahrbahnen", bis 05.10.2026)
 #: XXX wird es auch Änderungen bei den RVA auf der Hauptfahrbahn geben?
 #: last_checked: 2026-08-26 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2026-10-05 (VIZ-Verkehrsmeldung, planb) vvv
+#: next_check: 2026-11-05 (vizapi2026) vvv
 Buckower Chaussee: Anbindungen an die Nebenstraßen werden noch erstellt	q4::inwork 8977,505 9004,481 9031,484
 Buckower Chaussee [Nebenstraße]: Absperrung auf der Fahrbahn, ggfs. auf den Bürgersteig wechseln	q3::inwork 9149,568 9115,556
 #: next_check ^^^
@@ -1941,7 +1950,7 @@ Tiergarten: Parkweg	q1 8005,11627 8006,11648 8014,11753 8016,11770
 Tiergarten: Parkweg	q1 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809 6980,11790 6778,11742 6540,11754
 #: XXX_prog: niedriger BS am Südende (nicht aufgeführt in q1)
 Tiergarten: Parkweg	q1 7816,12150 7823,12120 7832,12036 7822,11952 7801,11899 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681 7813,11589 7816,11571
-Tiergarten: Parkweg	q1 7775,12114 7772,12040 7717,11918 7706,11878 7701,11798 7648,11708 7623,11624 7612,11597
+Tiergarten: Parkweg	q1 7775,12114 7772,12040 7725,11936 7717,11918 7706,11878 7701,11798 7648,11708 7623,11624 7612,11597
 #: XXX_prog BS zur Allee
 Tiergarten: Parkweg, Bordstein	q3 7514,12387 7529,12361
 Tiergarten: Parkweg	q1 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353
@@ -2345,7 +2354,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: osm_watch: note 5350535 2
 #: osm_watch: way id="30909343" version="27"
 #: source_id: planb2026:13.43196346,52.4975659,01.02.2024,07:00 (hier: "Haltverbote", bis 31.12.2026)
-#: last_checked: 2026-08-27
+#: last_checked: 2026-09-02
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -2765,7 +2774,7 @@ Firlstr.: zwei Bodenschwellen	q1 18574,6401 18645,6511
 (Florastr. - Schloßstr.): Fußgänger	q2 5234,6086 5165,6119
 Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13291,22422 13290,22399 13388,22386 13404,22384
 (Bremer Weg): Fußgänger	q1 5858,11863 5907,11874 6264,11901 6337,11887 6384,11926 6550,11954 6642,12010
-(Bremer Weg): Fußgänger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8046,12139 8122,12147 8215,12156 8327,12174 8466,12197 8502,12226 8538,12245
+(Bremer Weg): Fußgänger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7453,12073 7775,12114 7823,12120 8018,12135 8046,12139 8122,12147 8215,12156 8327,12174 8466,12197 8502,12226 8538,12245
 Oberlandgarten: Fußgänger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fußgänger, Bordsteine	q2 11209,6166 11224,6244
 (Mariendorfer Weg - Bambachstr): einige Fußgänger	q1 12052,6660 12059,6642 12092,6616 12155,6526
@@ -4500,9 +4509,10 @@ Bitburger Str. teilweise relativ eng	q2 15548,17684 15515,17717 15488,17721 1546
 (Uferweg - Bocksfeldstr.): einige Fußgänger	q1 -3928,11526 -3909,11596 -3872,11619
 (Uferweg): Fußgänger	q1 -4245,11400 -4234,11408 -4204,11432 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3824,11499 -3782,11458 -3772,11406 -3742,11409
 #: note: auch auf dem Straßenabschnitt
-Imchenallee: Fußgänger, besonders an schönen Tagen	q1 -7714,4279 -7687,4233 -7561,4191 -7326,4195 -7195,4194 -7102,4246 -7025,4410 -6990,4531 -6920,4702 -6879,4775 -6811,4893
-Uferweg: Fußgänger	q1 -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
-Uferweg: Fußgänger	q1 -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836
+Imchenallee: Fußgänger, besonders an schönen Tagen	q1 -7714,4279 -7687,4233 -7561,4191 -7326,4195 -7195,4194 -7102,4246 -7025,4410 -6990,4531 -6920,4702 -6879,4775 -6827,4864 -6811,4893
+#: note: Durchgestrichenes-Fahrrad-Piktogramm am nördlichen Ende
+Uferweg: Fußgänger	q3 -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
+Uferweg: Fußgänger	q1 -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4589,9841
 #: note: am südlichen Ende ist ein Fußgänger-Schild, am nördlichen Ende fehlt es
 #: XXX_prog BS (am südlichen Ende), ansonsten q2
 Rudolf-Filter-Weg: Fußgänger, Bordstein	q3 20988,15505 21009,15539 21040,15589
@@ -4774,8 +4784,9 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/mobilitaetsrat/protokoll-mobilitaetsrat-spandau-2sitzung.pdf (15.10.2025, Erwähnung: Finanzierung fehlt)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/mobilitaetsrat/praesentation-mobilitaetsrat-spandau-2sitzung.pdf
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlins-grosses-bvg-drehkreuz-schandfleck-am-rathaus-spandau-wird-abgerissen-15141605.html (Erwähnung der gläsernen Brücke; Sanierung des Platzes bis 2032)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/was-passiert-hinter-dieser-weissen-wand-die-geheimnisvolle-baustelle-an-berlins-grossem-bvg-drehkreuz-15999527.html
 # REMOVED (wieder benutzungspflichtig) --- #: note: mittlerweile Richtung Norden temporär (?) nicht benutzungspflichtig
-#: last_checked: 2025-08-08 (mapillary) vvv
+#: last_checked: 2026-09-02 vvv
 #: check_frequency: 360d vvv
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3511,14260 -3517,14218 -3552,14082
@@ -5859,7 +5870,7 @@ Rummelsburger Seeblick: Fußgänger	q3 14927,10807 14918,10769 14909,10732
 Suttnerstr.: einige Fußgänger	q2+ 7728,5866 7733,5893 7735,5960
 # 
 #: next_check_id: HINDENBURGDAMM-2022
-#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, (bis 27.02.2026) (bis 29.05.2026) (bis 30.06.2026) (bis 17.08.2026) (inaktiv) (bis 01.09.2026) (bis 30.09.2026)
+#: source_id: LMS-BR:373434/72 viz2021:13.319176,52.453461, vizapi2026:8/2025 (bis 27.02.2026) (bis 29.05.2026) (bis 30.06.2026) (bis 17.08.2026) (inaktiv) (bis 01.09.2026) (bis 30.09.2026) (vorfristig inaktiv) (vizapi2026 weiterhin bis 30.09.2026)
 #: XXX sind die Bauarbeiten Bauarbeiten vorbei?
 #: last_checked: 2025-12-06 (mapillary)
 #: next_check: 2026-09-30 (VIZ-Verkehrsmeldung)
@@ -6119,6 +6130,10 @@ Rudolf-Schwarz-Str.: einige Fußgänger, Bordsteine	q3 13107,14318 13087,14332
 # 
 #: note: am Diedersdorfer Weg steht ein Schild "Radfahrer absteigen", auf der anderen Seite fehlt es
 (Diedersdorfer Weg - Nahmitzer Damm): einige Fußgänger, kurvig	q3 7760,440 7810,461 7809,509 7837,516 7848,500 7910,518 8018,500 8075,499
+# 
+(entlang des ehemaligen Flugplatzes Gatow): zweispuriger Pfad, schmal	q3 -7668,7117 -7420,7606 -7384,7634
+# 
+(Magazinstr. - Schillingstr.): schmale Straße	q2 11361,12511 11423,12478 11436,12446 11418,12405
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
@@ -7860,7 +7875,7 @@ Bieler Str.: enge Straße	q1 6815,17871 6711,17839
 Straße 129: enge Straße	q1 7784,21186 7929,21103
 # 
 #: by: Wanda (schramms):
-Hottengrundweg: enge Straße	q1 -8637,4741 -8086,4504
+Hottengrundweg: enge Straße	q1 -8644,4742 -8086,4504
 #: by: Roland Krause: vvv
 #: confirmed_by: srt
 Privatstr. 2: enge Straße	q1 16905,17281 17028,17298 17162,17294 17286,17277 17404,17238

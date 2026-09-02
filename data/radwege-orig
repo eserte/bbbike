@@ -487,7 +487,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 2770,10024 2702,10006 2
 	RW2; 2361,9664 2394,9714 2415,9765
 	RW2; 2415,9765 2369,9779 2300,9883 2268,9976 2218,10067
 	RW2;RW8 2218,10067 2082,10280 2069,10330 2071,10357 2104,10494
-	RW2; 2104,10494 2086,10552
+	RW2;RW8 2104,10494 2086,10552
 # REMOVED --- #: note: Man wird hier *links* von der Gegenrichtung geführt. Am Westkreuz werden die Seiten wieder korrigiert. ---	RW4; 1928,10728 1961,10646 2086,10552 2104,10494
 	RW2; 1928,10728 1900,10617 1901,10566 1939,10446 1988,10328 2030,10253 2110,10101 2163,10024 2297,9827 2360,9754 2394,9714
 	RW1;RW2 2095,11440 2102,11307 2061,11191
@@ -1530,9 +1530,9 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 3741,10097 3852,10236
 	RW1;RW2 1457,10168 1398,10201
 	RW1;RW1 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121
 	RW2;RW1 787,11121 711,11199 683,11270
-	RW2; 1928,10728 1847,10697 1817,10657 1557,10306 1457,10168
+	RW2; 1928,10728 1847,10697 1817,10657 1691,10487 1557,10306 1457,10168
 #: historical_note: früher benutzungspflichtig
-Gehwegplatten	RW1; 1457,10168 1557,10306 1817,10657
+Gehwegplatten	RW1; 1457,10168 1557,10306 1691,10487 1817,10657
 Gehwegplatten	RW2; 1817,10657 1847,10697 1928,10728
 	RW1;RW1 1457,10168 1344,10012
 Verbundsteinpflaster, kann im Sommer bewachsen sein	RW1; 890,9399 1019,9573 1117,9706 1238,9869 1344,10012
@@ -4468,8 +4468,8 @@ teilweise mit Pollern, teilweise Grünbeschichtung	RW4; 3711,13210 3710,13290 371
 teilweise mit Pollern, teilweise Grünbeschichtung	RW4; 3739,13563 3741,13495 3737,13429 3719,13346 3710,13290
 Busspur ist immer gültig	RW5; 3710,13290 3711,13210
 	RW4;RW4 3739,13563 3713,13787 3702,13865 3695,13902
-#: by: anonymous
-	RW6;RW6 -6660,9953 -6603,9918 -6370,9802 -6324,9778
+# REMOVED (stimmt nicht (mehr?)) --- #: by: anonymous ---	RW6;RW6 -6660,9953 -6603,9918 -6370,9802 -6324,9778
+	RW3;RW3 -6660,9953 -6603,9918
 #: by: René (refan):
 #: confirmed_by: srt (aber (mittlerweile?) ohne Benutzungspflicht)
 	RW1; 27054,-2771 27112,-2764
@@ -4900,7 +4900,7 @@ Verbundsteinpflaster	RW2; -4647,12269 -4903,12055
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/mit-dem-fahrrad-durch-berlin-spandau-auf-diesen-sechs-strecken-werden-neue-radwege-geplant-15697183.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26599.pdf (Erwähnung, Länge 160m, Strecke ist aber 203m lang)
 #: XXX Gehwegplatten sollen durch Asphalt ersetzt werden, Verbreiterung auf 2,5m
-#: last_checked: 2026-06-07 (kartaview)
+#: last_checked: 2026-09-02
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (pardok)
 	RW1; -4351,12460 -4304,12562 -4239,12626
@@ -7083,7 +7083,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2026-06-29 vvv
+#: last_checked: 2026-09-02 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
@@ -8598,7 +8598,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", bis 22.10.2026)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-08-24
+#: last_checked: 2026-09-02
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -8762,11 +8762,18 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW6;RW6 10004,15636 9965,15731 9933,15815
 	RW6;RW6 9933,15815 9917,15813 9744,15793
 	RW3;RW3 4795,1362 4702,1298 4631,1249 4542,1188
-	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
+#: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: XXX früher RW4;, jetzt Baustraße zur Ringbahnbrücke
+#: osm_watch: way id="4616326" version="18"
+#: osm_watch: way id="4616324" version="22"
+#: last_checked: 2026-09-02
+#: next_check: 2027-09-20 (rbb, entwicklungsstadt)
+	RW2; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613
+	RW4; 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2026-08-24
+#: last_checked: 2026-09-02
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -9190,9 +9197,9 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
 #: note: zwischen Krumme Str. und Wilmersdorfer Str. Richtung Westen praktisch keine Radspur mehr
-#: last_checked: 2026-07-31 (mapillary) vvv
-#: check_frequency: 45d vvv
-#: next_check: 2026-09-01 (Tsp+entwicklungsstadt: Rückbau?) vvv
+#: last_checked: 2026-09-02 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2026-09-01 (Tsp+entwicklungsstadt: Rückbau?) vvv
 #: note: Kantstr., Richtung Osten
 provisorischer Radstreifen hinter den parkenden Autos	RW4; 3795,11098 3975,11087 4100,11078 4289,11060 4415,11053 4532,11046 4709,11036
 provisorischer Radstreifen	RW4; 4709,11036 4821,11026 4911,11018
@@ -9205,7 +9212,7 @@ provisorischer Radstreifen	RW4; 4911,11018 4821,11026
 provisorischer Radstreifen hinter den parkenden Autos	RW4; 4821,11026 4709,11036 4532,11046 4415,11053 4289,11060 4100,11078 3975,11087
 #: historical_note: vor der bauzeitlichen Verkehrsführung: provisorischer Radstreifen, Linienverkehr frei	RW4;
 nur teilweise mit provisorischer Radspur	RW0; 3975,11087 3795,11098
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: note: Kantstr., Richtung Osten
@@ -10013,3 +10020,4 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 	RW7; 20835,3795 20861,3814
 	RW7;RW7 20835,3795 20845,3825
 # 
+	RW1;RW1 -1517,10971 -1523,11012

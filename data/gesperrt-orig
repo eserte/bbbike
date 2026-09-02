@@ -1466,7 +1466,11 @@ Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 203
 (Vorfahrt S-Bhf. Tegel)	1s:q3 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer)	1s:q3 4658,12450 4618,12340 4593,12322
 Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4304,12562
-(Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
+#: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: XXX früher 1, jetzt Baustraße
+#: last_checked: 2026-09-02
+#: next_check: 2027-09-20 (rbb, entwicklungsstadt)
+(Messedamm - S-Bhf. Westkreuz)	2::inwork 2117,10495 2090,10576 2033,10613
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 # REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510 --- #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021 --- 
@@ -1934,7 +1938,6 @@ Hechtsprung (Groß Glienicke)	1 -9703,6278 -9860,6288 -9962,6295 -10045,6292
 (Potsdamer Chaussee - Dorfstr.)	1 -9547,6865 -9565,6954 -9616,6980
 #: by: a.fuchs:
 Tuchmacherstr.	1 -10463,-1343 -10610,-1596 -10636,-1667
-Ribbeckweg	1 -9720,6589 -9928,6599 -9932,6558
 Templiner Str.	1 -13062,-2901 -12915,-2922
 An der Vorderkappe	1 -13321,-2801 -13304,-2779 -13150,-2777 -13123,-2797
 An der Vorderkappe	1 -13123,-2797 -13209,-2829 -13257,-2821 -13321,-2801
@@ -3281,6 +3284,7 @@ tragen (zwei Treppen)	0:60 51766,-59693
 tragen (zwei Treppen)	0:60 51694,-59945
 tragen (4 Stufen)	0:10 6953,19939
 tragen (Treppe, 13+6 Stufen)	0:25 5813,7813
+tragen (Treppe, 8 Stufen oder Rampe)	0:15 -9678,6426
 #
 #: section ^^^
 ###################################################################
@@ -3625,7 +3629,7 @@ Tor	BNP:10::trailer=no 12505,17469
 Drängelgitter (lichte Breite ca. 120cm)	BNP:3::trailer=10 -4429,10484
 Drängelgitter (relativ breit)	BNP:3::trailer=10 -7136,4321
 Poller (lichte Breite ca. 60cm)	BNP:5::trailer=no -8061,5386
-Steinpoller (lichte Breite ca. 110cm)	BNP:1::trailer=5 -9027,4521
+# REMOVED (mittlerweile ein normaler Poller ohne Einschränkung) --- Steinpoller (lichte Breite ca. 110cm)	BNP:1::trailer=5 -9027,4521
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 -5202,11342
 Drängelgitter (lichte Breite ca. 80cm)	BNP:4::trailer=no -5236,11204
 Drängelgitter	BNP:3::trailer=12 13194,2732
@@ -3950,8 +3954,13 @@ Drängelgitter	BNP:3::trailer=10 26682,-13082
 Drängelgitter	BNP:3::trailer=20 8363,13402
 # REMOVED (halber Flügel fehlt) --- Drängelgitter	BNP:3::trailer=10 20374,11949
 # REMOVED (mittlerweile fehlt ein Flügel, so dass es hier keine Beeinträchtigung mehr gibt) --- #: note: langgezogenes Drängelgitter --- Drängelgitter	BNP:5::trailer=15 9702,11647
-#: note: weniger als 80cm lichte Breite
-enges Tor	BNP:3::trailer=no -6359,5220
+#: next_check_id: GUTSPARKNEUKLADOW-2026
+#: XXX zurzeit ist das Tor offen, evtl. während der Arbeiten am Havelradweg?
+# #: note: weniger als 80cm lichte Breite
+# enges Tor	BNP:3::trailer=no -6359,5220
+#: last_checked: 2026-09-02
+#: next_check: 2026-11-15
+früher enges Tor	BNP:0 -6359,5220
 Drängelgitter vor Schranke	BNP:3::trailer=10 21558,12073
 Drängelgitter vor Schranke	BNP:3::trailer=10 21564,12097
 Drängelgitter	BNP:3::trailer=10 -31814,4922
@@ -4143,7 +4152,7 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 # 
 #: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: note: mit festen Zäunen gesperrt
-#: last_checked: 2026-08-31
+#: last_checked: 2026-09-02
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
 # 
 #: next_check_id: FANGSCHLEUSE-2026
@@ -4341,6 +4350,8 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 #: by: https://www.entwicklungsstadt.de/haus-der-familie-und-bildung-am-ostbahnhof-neubau-startet/ (weiterer Neubau, Fertigstellung: Ende 2027)
 #: by: https://www.entwicklungsstadt.de/heinrich-hertz-gymnasium-moderner-neubau-alte-moebel-eroeffnung-wackelt/ (Umzug war für den Januar 2027 geplant, Termin ist nicht mehr zu halten)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1689904.php
+#: by: https://www.tagesspiegel.de/berlin/schule/berliner-bezirksamt-lehnt-nachbesserung-ab-elitegymnasium-in-friedrichshain-kampft-gegen-platznot-15996886.html
+#: by: https://www.entwicklungsstadt.de/fast-fertig-und-schon-zu-klein-neuer-streit-um-heinrich-hertz-gymnasium/
 #: osm_watch: way id="1054730129" version="9"
 #: osm_watch: way id="295548381" version="9"
 #: source_id: planb2026:13.43684271,52.51255043,02.03.2026,06:00 ("Gehwegvollsperrung", bis 31.03.2027)
@@ -4515,7 +4526,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-08-19 vvv
+#: last_checked: 2026-09-02 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt, MoPo) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -5144,9 +5155,9 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=799674#post799674
 #: by: https://www.entwicklungsstadt.de/bernhard-lichtenberg-haus-am-bebelplatz-neubau-zeigt-seine-fassade/
 #: osm_watch: way id="28120501" version="15"
-#: last_checked: 2026-08-24
-#: check_frequency: 90d
-#: next_check: 2026-09-01 (erzbistumberlin)
+#: last_checked: 2026-09-02
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2026-09-01 (erzbistumberlin)
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 # 
 # REMOVED --- #: by: mapillary --- #: last_checked: 2022-02-05 (mapillary) --- #: check_frequency: 90d --- Ackerstr. (Schulzendorf): Hochbauarbeiten, Straße gesperrt	2::inwork 22996,-4983 22962,-5193
@@ -5273,7 +5284,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-08-27 vvv
+#: last_checked: 2026-09-02 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5402,7 +5413,7 @@ George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgerste
 #: XXX - temporärer Weg in W-O-Richtung südlich der Baustelleneinrichtungsfläche (etwa 8162,10177 8248,10159)
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="15"
-#: last_checked: 2026-08-24
+#: last_checked: 2026-09-02
 #: check_frequency: 120d
 #: next_check: 2028-10-01 (entwicklungsstadt: Beginn der Bauarbeiten)
 #: priority: #A
@@ -5479,7 +5490,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-08-19
+#: last_checked: 2026-09-02
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
