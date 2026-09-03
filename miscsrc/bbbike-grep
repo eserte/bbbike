@@ -65,6 +65,7 @@ my @search_org_files;
 
 my $searchterm_type = 'fixed';
 my $case_insens     = 1;
+my $also_reverse_coords = 1;
 my $limit;
 
 my $with_filename = 1;
@@ -97,6 +98,7 @@ GetOptions(
 	   },
 	   'add-org-file=s@'       => \@search_org_files,
 	   'reldir=s'              => \my $reldir,
+	   'also-reverse-coords|also-reverse-coordinates!' => \$also_reverse_coords,
 	   'debug'                 => \$debug,
 	  )
     or die "usage?";
@@ -106,13 +108,37 @@ my $searchterm = shift
     or die "usage? searchterm missing";
 my $original_searchterm = $searchterm;
 
-if ($searchterm_type eq 'fixed') {
-    $searchterm = quotemeta($searchterm);
+my $is_coord_series = 0;
+if ($also_reverse_coords) {
+    my $number_rx     = qr{[+-]?(?:\d+(?:\.\d+)?|\.\d+)};
+    my $coord_pair_rx = qr{$number_rx\s*,\s*$number_rx};
+    if ($searchterm =~ m{^\s*$coord_pair_rx(?:\s+$coord_pair_rx)+\s*$}s) {
+	my @coords = $searchterm =~ m{($coord_pair_rx)}g;
+	if (@coords >= 2) {
+	    my $fwd_term = join(" ", @coords);
+	    my $rev_term = join(" ", reverse @coords);
+	    if ($fwd_term ne $rev_term) {
+		$is_coord_series = 1;
+		if ($searchterm_type eq 'fixed') {
+		    $searchterm = "(?:" . quotemeta($fwd_term) . "|" . quotemeta($rev_term) . ")";
+		} else {
+		    $searchterm = "(?:$fwd_term|$rev_term)";
+		}
+	    }
+	}
+    }
 }
-# maybe do this conditional/with option?
-# str. <-> straße
-$searchterm =~ s{(?<=[sS]tr)\\\.}{(\\.|aße)}g;
-$searchterm =~ s{(?<=[sS]tr)aße}{(\\.|aße)}g;
+
+if (!$is_coord_series) {
+    if ($searchterm_type eq 'fixed') {
+	$searchterm = quotemeta($searchterm);
+    }
+    # maybe do this conditional/with option?
+    # str. <-> straße
+    $searchterm =~ s{(?<=[sS]tr)\\\.}{(\\.|aße)}g;
+    $searchterm =~ s{(?<=[sS]tr)aße}{(\\.|aße)}g;
+}
+
 if ($searchterm ne $original_searchterm) {
     debug "searchterm was changed from '$original_searchterm' to '$searchterm'";
 }
@@ -394,6 +420,13 @@ set of files.
 
 Specify an org-mode file to search, additionally to the standard set
 of files.
+
+=item C<--also-reverse-coords>, C<--no-also-reverse-coords> (alias: C<--[no-]also-reverse-coordinates>)
+
+If the search term looks like a series of coordinates (space-separated
+x,y or lon,lat pairs, integer or float, negative or positive, at least
+two pairs), then automatically include the reversed sequence of coordinates
+in the search regex. Enabled by default.
 
 =item C<--debug>
 
