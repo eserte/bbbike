@@ -108,7 +108,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="26"
 #: osm_watch: way id="1430487470" version="2"
-#: last_checked: 2026-08-08
+#: last_checked: 2026-09-03
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -4194,9 +4194,9 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: next_check_id: ALLEEDERKOSMONAUTEN-2026
 #: by: https://www.entwicklungsstadt.de/grossbaustelle-an-der-rhinstrasse-bvg-zerlegt-wichtigen-tramknoten-im-berliner-osten/ (laut Baustellenschild bis August 2027)
 #: source_id: LMS-BR:414868/72 viz2021:13.51933,52.52609,06.07.2026,07:00 (bis 07.09.2026)
-#: source_id: planb2026:13.51956095,52.52592192,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026)
+#: source_id: planb2026:13.51956095,52.52592192,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026) (bis 12.12.2026)
 #: last_checked: 2026-08-05
-#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung)
 Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18063,13490
 # 
 #: next_check_id: GOERLITZERBRUECKEN-2026
@@ -4233,7 +4233,7 @@ Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbaua
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
-#: last_checked: 2026-08-18
+#: last_checked: 2026-09-03
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-07-01
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
@@ -4521,6 +4521,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: by: https://www.entwicklungsstadt.de/marx-engels-forum-in-berlin-mitte-archaeologische-funde-muessen-neugestaltung-weichen/
 #: by: https://www.morgenpost.de/bezirke/mitte/article411813135/so-lange-bleibt-das-marx-engels-forum-noch-gesperrt.html (bis Ende 2027)
 #: by: https://www.entwicklungsstadt.de/rathausforum-in-mitte-neue-uferkante-an-der-spree-nimmt-gestalt-an/
+#: by: https://gruen-berlin.de/pressemitteilung/bauarbeiten-fuer-neuen-spielbereich-am-rathaus-und-marx-engels-forum-starten
 #: XXX Bleiben nach den Umbauarbeiten die Wege die gleichen?
 #: osm_watch: note 4795958 5
 #: osm_watch: way id="169067264" version="15"
@@ -4823,7 +4824,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-08-22 vvv
+#: last_checked: 2026-09-03 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
 #: osm_watch: way id="1199465845" version="5"
@@ -5284,7 +5285,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-09-02 vvv
+#: last_checked: 2026-09-03 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5413,7 +5414,7 @@ George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgerste
 #: XXX - temporärer Weg in W-O-Richtung südlich der Baustelleneinrichtungsfläche (etwa 8162,10177 8248,10159)
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="15"
-#: last_checked: 2026-09-02
+#: last_checked: 2026-09-03
 #: check_frequency: 120d
 #: next_check: 2028-10-01 (entwicklungsstadt: Beginn der Bauarbeiten)
 #: priority: #A

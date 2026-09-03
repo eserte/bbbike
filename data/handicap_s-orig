@@ -339,14 +339,16 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: next_check_id: ROEBLING-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf4dnag3yg2z (nur Kfz-Verkehr, bis November 2026 geplant)
 #: source_id: LMS-BR:399339/72 viz2021:13.35937,52.4567,18.02.2026,07:00 (bis 13.11.2026)
+#: source_id: planb2026:13.36103702,52.45337263,18.02.2026, ("Sperrung einer Fahrtrichtung", bis 13.11.2026)
 #: note: außerdem drei Fußgängerampeln mit Anforderung, nur für die Fahrbahn und damit für den Verkehr Richtung Norden relevant
 #: last_checked: 2026-07-19
-#: next_check: 2026-11-13 (VIZ)
+#: next_check: 2026-11-13 (VIZ + planb)
 #: valid: -20261113
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), teilweise sehr enger Gehweg (parkende Autos auf dem Bürgersteig!) für Radfahrer frei	q3::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260706 (weitere Arbeiten bis ca. 2029)
+#: source_id: planb2026:13.36252186,52.45206699,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 13.11.2026)
 #: last_checked: 2026-07-19
-#: next_check: 2026-11-13 (VIZ)
+#: next_check: 2026-11-13 (VIZ + planb)
 #: valid: -20261113
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für Radfahrer frei	q3::inwork; 7625,5231 7694,5135
 # 
@@ -368,7 +370,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 # 
 #: source_id: planb2026:13.45361302,52.4854625,06.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.06.2028)
 #: note: Länge der Einbahnstraßenregelung etwa 150m
-#: last_checked: 2026-08-26
+#: last_checked: 2026-09-03
 #: check_frequency: 90d
 #: next_check: 2028-06-30 (planb, Halteverbotsschilder)
 Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 13664,9073
@@ -1388,8 +1390,11 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 # 
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260811 (bis Anfang September 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msubin42gl24
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mulytuay6k2n (zur Storkower Str.)
 #: source_id: planb2026:13.47721649,52.52297025,12.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
-#: source_id: LMS-BR:419242/72 viz2021:13.4795,52.52304,12.08.2026,07:00 (bis 04.09.2026)
+#: source_id: LMS-BR:419242/72 viz2021:13.4795,52.52304,12.08.2026,07:00 (bis 04.09.2026) (vorfristig inaktiv)
+#: source_id: LMS-BR:421068/72 viz2021:13.4795,52.52304,03.09.2026,12:00 (angrenzende Storkower Str. nun auch gesperrt, bis 17.09.2026)
+#: source_id: vizapi2026:905/2026 (angrenzende Storkower Str., bis 17.09.2026)
 #: note: sehr kurze Sperrung, Umfahrung/Umgehung mit Bordsteinabsenkungen (via Zebrastreifen) möglich
 #: note: außerdem ist die Radspur auf der Storkower Str. Richtung Westen aufgehoben
 #: last_checked: 2026-08-16
@@ -1580,11 +1585,11 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6178,7899 6126,7917 6011,7911 5
 # 
 ### Prenzlauer Berg ###
 # 
-#: source_id: LMS-BR:414025/72 viz2021:13.42474,52.55248, (bis 07.09.2026)
+#: source_id: LMS-BR:414025/72 viz2021:13.42474,52.55248, vizapi2026:639/2026 (bis 07.09.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.42380103,52.5516383,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026)
 #: note: für den Kfz-Verkehr Richtung Norden gesperrt
 #: last_checked: 2026-08-11
-#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+#: next_check: 2026-09-07 (ex-VIZ-Verkehrsmeldung, planb)
 #: valid: -20260907
 Stahlheimer Str.: gemeinsamer Geh- und Radweg	q2::inwork; 11618,16183 11666,16260 11698,16311 11727,16358
 # 
@@ -1699,11 +1704,11 @@ Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahre
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidvo2akpr4ik7t2dzkvfu7ie5f2kwyvakumzcrezznxuyn7b4fdqq (aktuelle Meldung zu Arbeiten am östlichen Ende der neuen Brücke)
 #: source_id: LMS-BR:415125/72 viz2021:13.38021,52.41036,08.07.2026,07:00 vizapi2026:679/2026 (bis 23.08.2026) (inaktiv) (bis 05.10.2026) (bei vizapi2026 bis 05.11.2026)
 #: source_id: LMS-BR:418266/72 viz2021:13.39268,52.4127,04.08.2026,07:00 (östlich der Brücke, bis 28.08.2026) (inaktiv)
-#: source_id: planb2026:13.37629824,52.40919079,26.05.2023, ("Vollsperrung beider Fahrbahnen", bis 05.10.2026)
+#: source_id: planb2026:13.37629824,52.40919079,26.05.2023, ("Vollsperrung beider Fahrbahnen", Hauptfahrbahn, bis 05.10.2026) (bis 05.11.2026)
 #: XXX wird es auch Änderungen bei den RVA auf der Hauptfahrbahn geben?
 #: last_checked: 2026-08-26 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2026-11-05 (vizapi2026) vvv
+#: next_check: 2026-11-05 (vizapi2026 + planb) vvv
 Buckower Chaussee: Anbindungen an die Nebenstraßen werden noch erstellt	q4::inwork 8977,505 9004,481 9031,484
 Buckower Chaussee [Nebenstraße]: Absperrung auf der Fahrbahn, ggfs. auf den Bürgersteig wechseln	q3::inwork 9149,568 9115,556
 #: next_check ^^^
@@ -1745,11 +1750,11 @@ Kranoldplatz (Lichterfelde): Bauarbeiten, Sperrung der südlichen Spange	q4::inwo
 # 
 #: note: laut VIZ-Verkehrsmeldung ist nur der Kfz-Verkehr betroffen; bis zur Baseler Str. gibt's auch einen Hochbordradweg
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lycdxxhmxk2c (nur Kfz-Verkehr)
-#: source_id: LMS-BR:382669/72 viz2021:13.29708,52.43252,08.09.2025,07:00 viz2021:13.29708,52.43252, (hier keine Einschränkung auf den Kfz-Verkehr, bis 09.01.2026) (bis 30.01.2026) (bis 01.03.026) (bis 04.09.2026)
+#: source_id: LMS-BR:382669/72 viz2021:13.29708,52.43252,08.09.2025,07:00 viz2021:13.29708,52.43252, vizapi2026:196/2025 (hier keine Einschränkung auf den Kfz-Verkehr, bis 09.01.2026) (bis 30.01.2026) (bis 01.03.026) (bis 04.09.2026) (bis 30.10.2026)
 #: source_id: planb2026:13.30225823,52.43231703,06.07.2026,07:00 (hier: "keine Fahrbahn-Einschränkung", bis 31.07.2026) (inaktiv)
 #: source_id: planb2026:13.29499928,52.43257687,08.09.2025, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (bis 30.10.2026)
 #: last_checked: 2026-05-09 vvv
-#: next_check: 2026-10-30 (planb) vvv
+#: next_check: 2026-10-30 (planb + VIZ-Verkehrsmeldung) vvv
 #: valid: -20261030 vvv
 # REMOVED (Baustelle ist gewandert) --- Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	DH:h=q2,294 3313,2842 3171,2848 3025,2858 3019,2858
 #: note: auf der Fahrbahn gilt eine Einbahnstraßenregelung, frei Richtung Osten

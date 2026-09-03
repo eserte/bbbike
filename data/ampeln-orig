@@ -6,6 +6,14 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mue3w6t4dw2u
+#: source_id: LMS-BR:420745/72 viz2021:13.4212,52.5098,31.08.2026,07:00 vizapi2026:895/2026 (bis 04.09.2026)
+#: note: Gegenverkehrsabschnitt ca. 60m
+#: last_checked: 2026-09-03
+#: next_check: 2026-09-04
+#: valid: -20260904
+Köpenicker Str.: Gegenverkehrsregelung	X::inwork::alternating 11405,11655
+# 
 #: source_id: planb2026:13.37673666,52.51665403,06.01.2026, ("Sicherung gemäß Vz.-plan", Scheidemannstr. und Simsonweg, evtl. im Zusammenhang mit der Ampel, bis 20.10.2026)
 #: source_id: LMS-BR:420952/72 viz2021:13.374992,52.51778,02.09.2026,07:00 vizapi2026:900/2026 (Wasserleitungsbau, Verengung, bis 20.10.2026)
 #: last_checked: 2026-08-19
@@ -16,8 +24,8 @@ Scheidemannstr./Reichstag	F::inwork 8373,12416
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-08-16
 #: check_frequency: 30d
-#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung)
-#: valid: -20260904
+#: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
+#: valid: -20261029
 Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
@@ -111,11 +119,11 @@ Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,1858
 Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
-#: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026) (bis 16.10.2026)
+#: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026) (bis 16.10.2026) (bis 02.07.2027)
 #: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026) (inaktiv)
 #: last_checked: 2026-05-30
-#: next_check: 2026-10-16 (VIZ-Verkehrsmeldung)
-#: valid: -20261016
+#: next_check: 2027-07-02 (VIZ-Verkehrsmeldung)
+#: valid: -20270702
 Siemensstr./Borstellstr.	X::inwork 6219,4336
 # 
 # REMOVED --- #: next_check_id: AUGUSTEVIKTORIAALLEE-2026
@@ -4653,9 +4661,9 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
 #: XXX laut osm note von SGA Neukölln bis Ende August 2026
-#: last_checked: 2026-08-08
+#: last_checked: 2026-09-03
 #: check_frequency: 30d
-#: next_check: 2026-08-31 (osm note)
+# REMOVED (wurde nicht gehalten) --- #: next_check: 2026-08-31 (osm note)
 # REMOVED --- #: next_check: 2026-09-30 (infravelo)
 	X::inwork 12185,7381
 # 

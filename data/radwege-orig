@@ -376,7 +376,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-08-27 vvv
+#: last_checked: 2026-09-03 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1464,7 +1464,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-08-22 vvv
+#: last_checked: 2026-09-03 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14405,10027 14501,10169 14558,10264
@@ -2753,7 +2753,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: osm_watch: way id="142161214" version="25"
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: XXX zurzeit ist ein Abschnitt des Gehwegs wegen Bauarbeiten für das BSR-Hochhaus komplett gesperrt: check_frequency von 120d -> 180d erhöht
-#: last_checked: 2026-07-29
+#: last_checked: 2026-09-03
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 180d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
@@ -3203,7 +3203,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
 bei der Einfahrt aus der östlichen Oranienstr. kurzer Abschnitt mit Zeichen 237 gekennzeichnet	RW3; 10906,10874 10887,10922
 	RW3;RW3 10887,10922 10937,11033 11039,11254 11094,11377 11174,11554 11250,11715
-	RW3;RW3 11324,11689 11569,11587 11715,11522 11808,11482 11947,11398 12021,11349
+	RW3;RW3 11324,11689 11405,11655 11569,11587 11715,11522 11808,11482 11947,11398 12021,11349
 	RW4;RW4 12021,11349 12060,11323
 	RW3; 11458,11136 11640,11067 11750,11065 11845,11095 11944,11152 12010,11224 12060,11323
 	RW3; 12021,11349 11981,11263 11917,11186 11798,11121 11656,11106 11473,11180
@@ -3371,7 +3371,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-08-22 vvv
+#: last_checked: 2026-09-03 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2026-09-30 (planb) vvv
@@ -3402,7 +3402,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-08-22
+#: last_checked: 2026-09-03
 #: check_frequency: 30d
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 #: next_check: 2026-09-30 (planb)
@@ -5393,7 +5393,7 @@ Gehweg für Radfahrer frei	RW1; 16460,17214 16352,17150 16318,17128 16296,17114 1
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-08-16 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2026: Gehweg für Radfahrer frei, RW1; vvv
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 16139,17017 15986,16922 15929,16870
 	RW0; 15929,16870 15875,16816 15776,16721 15735,16698 15662,16649
@@ -5429,7 +5429,7 @@ die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Ra
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-08-16
 #: check_frequency: 30d
-#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
 #: historical_note: früher (bis 2026): Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Bauarbeiten bis etwa Frühjahr 2026: provisorischer gemeinsamer Geh- und Radweg, RW2;
@@ -5487,7 +5487,7 @@ Gehweg für Radfahrer frei	RW1; 22467,6135 22656,6142 22700,6138 22777,6151 22857
 # 
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260421
-#: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, id=vizapi2026:360/2026 (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026) (bis 27.11.2026)
+#: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, vizapi2026:360/2026 (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026) (nur bei vizapi2026 bis 27.11.2026)
 #: last_checked: 2026-08-02
 #: next_check: 2026-11-27
 #: valid: -20261127
@@ -9608,7 +9608,7 @@ Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 provisorische Radspur	RW3; 12221,7271 12185,7381
 #: next_check_id: THOMAS-2025
 #: XXX wann wird hier die Radspur komplettiert?
-#: last_checked: 2026-08-08
+#: last_checked: 2026-09-03
 Markierung fehlt noch	RW0; 12185,7381 12158,7449
 Leitboys	RW4; 12158,7449 12123,7549
 Poller und Leitboys	RW4; 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696
@@ -9626,7 +9626,7 @@ Grünbeschichtung, einige Leitboys	RW4; 12090,7651 12121,7555 12123,7549
 Leitboys, dazwischen Bushaltestelle	RW4; 12123,7549 12158,7449
 #: next_check_id: THOMAS-2025
 #: XXX zwischenzeitlich provisorisch markiert, nun bauzeitlich gemeinsame Spur mit dem Autoverkehr
-#: last_checked: 2026-08-08
+#: last_checked: 2026-09-03
 	RW0; 12158,7449 12185,7381
 #: historical_note: früher: provisorische Radspur, meistens zugeparkt, RW3; --- nun stehen hier wieder Halteverbotsschilder
 provisorische Radspur	RW3; 12185,7381 12221,7271

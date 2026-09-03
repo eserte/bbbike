@@ -111,7 +111,7 @@ Schwiebusser Str.	N 9227,8890 9417,8890 9803,8890
 Mussehlstr.	N 8982,8781 8926,8682 8842,8561
 Mussehlstr.	NN 8842,8561 8759,8458 8720,8373
 Manfred-von-Richthofen-Str.	H 9229,8718 9158,8706 9093,8665 9011,8605 8916,8511 8854,8429 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 8731,7956
-Manfred-von-Richthofen-Str.	N 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676 8900,7643 8956,7598 9070,7493 9097,7469 9242,7325
+Manfred-von-Richthofen-Str.	N 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676 8900,7643 8956,7598 9021,7552 9073,7496 9097,7469 9242,7325
 Paradestr.	N 9240,8028 9130,8029 9033,8029 8952,8030 8921,8028 8834,8023 8783,8020
 (Paradestr. - Flughafengelände)	N 9240,8028 9268,8029 9300,8027
 (Bayernring - Flughafengelände)	N 9238,8410 9292,8404
@@ -1309,8 +1309,10 @@ Gotenstr. (Schöneberg)	N 7497,8168 7494,8354 7490,8593 7485,8777
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article411451478/neues-berliner-quartier-bekommt-modernen-platz-was-genau-geplant-ist.html
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10270 (Antrag) (Charlotte-Wolf-Platz oder Charlotte-Wolff-Platz?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1701305.php (Umbau des Platzes Oktober 2026 bis 2028)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1710243.php
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/projekte/artikel.1709938.php
 #: XXX Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?
-#: last_checked: 2026-08-08
+#: last_checked: 2026-09-03
 #: check_frequency: 180d
 #: next_check: 2026-10-31 (BA-Pressemitteilung: Start des Umbaus)
 # REMOVED --- #: next_check: 2026-12-31 (entwicklungsstadt)
@@ -1413,7 +1415,7 @@ Wilhelmine-Gemberg-Weg	N 11715,11522 11767,11662
 Wilhelmine-Gemberg-Weg	NN 11767,11662 11827,11720
 (Uferweg)	NN 11827,11720 11861,11688 11863,11670 11919,11626 11948,11604 11970,11587 12010,11545
 Köpenicker Str. (Kreuzberg, Mitte)	N 11155,11750 11250,11715
-Köpenicker Str. (Kreuzberg, Mitte)	H 11250,11715 11324,11689 11569,11587 11715,11522 11808,11482 11947,11398 12021,11349 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
+Köpenicker Str. (Kreuzberg, Mitte)	H 11250,11715 11324,11689 11405,11655 11569,11587 11715,11522 11808,11482 11947,11398 12021,11349 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
 Eisenbahnstr.	N 12509,11025 12363,10781 12294,10663
 #: note: Fußgängerzone
 Eisenbahnstr.	NN 12294,10663 12274,10612
@@ -19303,7 +19305,7 @@ Kanzlerweg	N 8830,8148 8834,8023 8839,7904
 (Kanzlerweg - Schreiberring)	NN 8830,8148 8839,8168 8861,8242
 Eschwegering	N 8704,7603 8790,7615 8864,7676
 Wiesenerstr.	N 8923,7673 8948,7689 8952,7719 8926,7705 8923,7673 8900,7643 8846,7579 8815,7517 8806,7382
-Siegertweg	N 8971,7359 8982,7438 9042,7462 9070,7493
+Siegertweg	N 8971,7359 8982,7438 9042,7462 9073,7496
 Hessenring	N 8384,7915 8397,7813 8465,7699 8549,7622 8625,7594 8706,7585
 Wölfertstr.	N 8397,7813 8260,7803
 Mohnickesteig	N 8625,7594 8603,7452 8600,7381
