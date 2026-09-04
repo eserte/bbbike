@@ -107,6 +107,7 @@ Steigung 6.8% ((Grimmelshausenstr. - Pegnitzweg/Wickramstr.))	St; -8061,5386 -80
 Steigung 6.8% ((Grimmelshausenstr. - Pegnitzweg/Wickramstr.))	St; -8057,5395 -8061,5386
 Steigung 6.8% ((Blockdammweg - Trautenauer Str.))	St; 17910,8881 17888,8899
 Steigung 6.8% ((Blockdammweg - Trautenauer Str.))	St; 17888,8899 17904,8924
+Steigung 6.7% (Rohrsängersteig)	St; -6879,4775 -7038,4885
 Steigung 6.7% (Grünspechtweg)	St; 6967,23278 6988,23244
 Steigung 6.7% ((Heerstr. - Tiefwerder))	St; -3186,11557 -3075,11510
 Steigung 6.6% (Stangeweg)	St; 21566,16121 21598,16055
@@ -118,7 +119,6 @@ Steigung 6.6% ((Ahrensfelder Berge, zum Gipfel))	St; 22271,16934 22265,16978
 Steigung 6.6% ((Ahrensfelder Berge, zum Gipfel))	St; 22265,16978 22290,17028
 Steigung 6.5% (Berghofer Weg)	St; 30655,4186 30719,4172
 Steigung 6.5% (Angerburger Allee)	St; -2138,11772 -2109,11598
-Steigung 6.4% (Rohrsängersteig)	St; -6879,4775 -7038,4885
 Steigung 6.4% (Am Fort)	St; -8056,12916 -7961,12894
 Steigung 6.4% (Am Fort)	St; -7961,12894 -7939,12877
 Steigung 6.4% (Am Feldberg)	St; 22865,11007 22898,11125
@@ -166,11 +166,14 @@ Steigung 5.7% (Moorlakeweg)	St; -9353,1464 -9284,1468
 Steigung 5.7% (Moorlakeweg)	St; -9284,1468 -9224,1417
 Steigung 5.7% (Moorlakeweg)	St; -9224,1417 -9085,1347
 Steigung 5.7% (Haydnstr. (Biesdorf))	St; 20005,11872 20016,11980
+Steigung 5.7% (Alt-Kladow)	St; -6827,4864 -6863,4889
 Steigung 5.6% (Hallgarter Steig)	St; 28046,268 28042,304
 Steigung 5.6% (Hallgarter Steig)	St; 28042,304 27961,321
 Steigung 5.6% (Hallgarter Steig)	St; 27961,321 27890,373
 Steigung 5.5% (Am Birkenhügel)	St; -7505,454 -7556,559
 Steigung 5.5% (Alt-Kladow)	St; -6947,4861 -7038,4885
+Steigung 5.5% (Alt-Kladow)	St; -6919,4870 -6947,4861
+Steigung 5.5% (Alt-Kladow)	St; -6863,4889 -6919,4870
 Steigung 5.4% (Spreetalallee)	St; 667,13236 715,13126
 Steigung 5.4% (Reinholdstr.)	St; 13014,6833 12953,6820
 Steigung 5.4% (Hasensprung (Grunewald))	St; 1394,8965 1374,8992
@@ -322,7 +325,6 @@ Steigung 4.3% (Preußenstr.)	St; 20709,1413 20761,1345
 Steigung 4.3% (Preußenstr.)	St; 20693,1447 20709,1413
 Steigung 4.3% (Preußenstr.)	St; 20668,1524 20693,1447
 Steigung 4.3% (Kladower Damm)	St; -4902,7664 -4963,7566
-Steigung 4.3% (Imchenplatz)	St; -6811,4893 -6863,4889
 Steigung 4.3% (Höhensteig)	St; 21799,234 21844,238
 Steigung 4.3% (Höhensteig)	St; 21712,215 21799,234
 Steigung 4.3% (Friesenstr. (Kreuzberg, Tempelhof))	St; 9801,9241 9802,9163
@@ -397,6 +399,7 @@ Steigung 3.9% (Königin-Luise-Str.)	St; 3850,5801 3931,5825
 Steigung 3.9% (Krampenburger Weg)	St; 28126,641 28083,592
 Steigung 3.9% (Kopischstr.)	St; 9477,9113 9459,9019
 Steigung 3.9% (Jägerallee)	St; -8678,6414 -8650,6296
+Steigung 3.9% (Imchenallee)	St; -6827,4864 -6811,4893
 Steigung 3.9% (Hochkirchstr.)	St; 8105,9313 8102,9262
 Steigung 3.9% (Hochkirchstr.)	St; 8086,9418 8076,9316
 Steigung 3.9% (Hochkirchstr.)	St; 8076,9316 8105,9313
@@ -465,7 +468,6 @@ Steigung 3.6% (Sakrower Kirchweg)	St; -7914,4150 -7990,4086
 Steigung 3.6% (Sakrower Kirchweg)	St; -7792,4249 -7914,4150
 Steigung 3.6% (Rollbergstr.)	St; 12545,8209 12407,8177
 Steigung 3.6% (Insterburgallee)	St; 200,11428 229,11213
-Steigung 3.6% (Imchenallee)	St; -6811,4893 -6827,4864
 Steigung 3.6% (Herzfelder Steig)	St; 31500,4539 31542,4680
 Steigung 3.6% (Heimstr.)	St; 9973,9232 9966,9151
 Steigung 3.6% (Buntzelstr.)	St; 22166,312 22145,208
@@ -641,8 +643,6 @@ Steigung 3.1% (Finkenkruger Weg)	St; -7418,14564 -7420,14520
 Steigung 3.1% (Fichtenauer Str.)	St; 30179,3966 30210,4046
 Steigung 3.1% (Bornholmer Str.)	St; 9514,16603 9617,16590
 Steigung 3.1% (Bornholmer Str.)	St; 10197,16528 10134,16534
-Steigung 3.1% (Alt-Kladow)	St; -6919,4870 -6947,4861
-Steigung 3.1% (Alt-Kladow)	St; -6863,4889 -6919,4870
 Steigung 3.1% ((Sana Klinikum Lichtenberg))	St; 16543,12087 16556,12180
 Steigung 3.1% ((Sana Klinikum Lichtenberg))	St; 16541,12071 16543,12087
 Steigung 3.1% ((Jaczostr. - Gatower Str.))	St; -4751,11262 -4782,11270
@@ -1153,6 +1153,7 @@ Steigung 2.3% (Lierbacher Weg)	St; 5152,22809 5260,22634
 Steigung 2.3% (Liebigstr.)	St; 13991,12522 14058,12709
 Steigung 2.3% (Kienitzer Str.)	St; 12823,8028 12692,7996
 Steigung 2.3% (Kellerstr.)	St; 6312,4806 6385,4896
+Steigung 2.3% (Imchenplatz)	St; -6811,4893 -6863,4889
 Steigung 2.3% (Horchheimer Weg)	St; 27949,182 27825,295
 Steigung 2.3% (Gürtelstr. (Weißensee) [Wohngebiet])	St; 13809,15370 13716,15437
 Steigung 2.3% (Germanenstr. (Altglienicke))	St; 20381,1390 20365,1394

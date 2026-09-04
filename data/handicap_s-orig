@@ -21,7 +21,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
-#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, viz2021:13.424,52.528103, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026) (bis 21.08.2026) (inaktiv) (bis 04.09.2026)
+#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, viz2021:13.424,52.528103, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026) (bis 21.08.2026) (inaktiv) (bis 04.09.2026) (vermutete Verlängerung)
 #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
 #: source_id: planb2026:13.42324439,52.52777598,03.02.2026, ("Sperrung einer Fahrtrichtung", bis 31.07.2026) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
@@ -35,10 +35,10 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260429 (Umbau der Baustelle am 30.4.2026, danach fällt wohl der einspurige Abschnitt in der Otto-Braun/Greifswalder  weg...)
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
-#: also_indoor: traffic (re-T,ex-G[aber kurz])
-#: last_checked: 2026-08-26 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2026-09-04 (VIZ-Verkehrsmeldung) vvv
+#: also_indoor: traffic (re-T,re-G)
+#: last_checked: 2026-09-04 (traffic) vvv
+#: check_frequency: 8d vvv
+# REMOVED --- #: next_check: 2026-09-04 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (nach den Bauarbeiten:) --- Am Friedrichshain: letzte Prüfung und ggfs. Dokumentation nach Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	?; 11706,13635 11762,13619 11785,13625
 Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
 # REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
@@ -46,7 +46,7 @@ Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind fü
 # REMOVED (mittlerweile kommt man zumindest bis zur Kreuzung auf der Fahrbahn vorbei an den Absperrungen) --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635
 # REMOVED --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11820,13804
 # REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3-::inwork; 11785,13625 11762,13619 11706,13635
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -172,7 +172,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="35"
 #: osm_watch: way id="1072662717" version="39"
-#: last_checked: 2026-09-02
+#: last_checked: 2026-09-04
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -370,7 +370,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 # 
 #: source_id: planb2026:13.45361302,52.4854625,06.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.06.2028)
 #: note: Länge der Einbahnstraßenregelung etwa 150m
-#: last_checked: 2026-09-03
+#: last_checked: 2026-09-04
 #: check_frequency: 90d
 #: next_check: 2028-06-30 (planb, Halteverbotsschilder)
 Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 13664,9073
@@ -389,7 +389,7 @@ Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 1366
 #: osm_watch: way id="1219203456" version="26"
 #: osm_watch: way id="884139300" version="29"
 #: osm_watch: way id="1127801487" version="15"
-#: last_checked: 2026-08-29 (osm) vvv
+#: last_checked: 2026-09-03 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -454,16 +454,16 @@ Nipkowstr.: mögliche Bauarbeiten	q4::inwork 20352,3744 20499,3572
 # 
 ### Wedding/Gesundbrunnen ###
 # 
-#: next_check_id: LIESENBRUECKEN-2026
-#: by: https://www.entwicklungsstadt.de/liesenbruecken-in-gesundbrunnen-sperrung-trifft-auf-ungeklaerte-zukunft/
-#: by: https://www.entwicklungsstadt.de/liesenbruecken-in-gesundbrunnen-das-steckt-hinter-den-sperrungen/ (bis Ende KW 36/2026)
-#: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, (bis 04.09.2026)
-#: also_indoor: traffic (T,no-G,H[zu lang],no-W)
-#: note: siehe auch aufgehobenen Eintrag zur Einbahnstraßenregelung in gesperrt-orig
-#: last_checked: 2026-08-24 (entwicklungsstadt)
-#: next_check: 2026-09-04
-#: valid: -20260904
-Liesenbrücken: Fahrbahn unter der Brücke gesperrt, Gehweg ist frei	q4::inwork 8700,14956 8685,14966 8663,14960
+#  REMOVED --- #: next_check_id: LIESENBRUECKEN-2026
+#  REMOVED --- #: by: https://www.entwicklungsstadt.de/liesenbruecken-in-gesundbrunnen-sperrung-trifft-auf-ungeklaerte-zukunft/
+#  REMOVED --- #: by: https://www.entwicklungsstadt.de/liesenbruecken-in-gesundbrunnen-das-steckt-hinter-den-sperrungen/ (bis Ende KW 36/2026)
+#  REMOVED --- #: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, (bis 04.09.2026)
+#  REMOVED --- #: also_indoor: traffic (T,no-G,H[zu lang],no-W)
+#  REMOVED --- #: note: siehe auch aufgehobenen Eintrag zur Einbahnstraßenregelung in gesperrt-orig
+#  REMOVED --- #: last_checked: 2026-08-24 (entwicklungsstadt)
+#  REMOVED --- #: next_check: 2026-09-04
+#  REMOVED --- #: valid: -20260904
+#  REMOVED --- Liesenbrücken: Fahrbahn unter der Brücke gesperrt, Gehweg ist frei	q4::inwork 8700,14956 8685,14966 8663,14960
 # 
 # REMOVED (weitgehend offen) --- #: next_check_id: PEKINGERPLATZ-2025
 # REMOVED --- #: next_check_id: NORDUFER-2025
@@ -544,7 +544,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: by: https://www.tagesschau.de/inland/regional/berlin/rbb-tickets-fuer-volksbad-der-berliner-volksbuehne-ab-dienstag-erhaeltlich-100.html
-#: last_checked: 2026-08-26
+#: last_checked: 2026-09-03 (mapillary)
 #: next_check: 2026-10-01 (Tagesschau) (+ vermutete Abbauarbeiten)
 #: valid: -20261007
 Rosa-Luxemburg-Platz: temporäres Volksbad auf der Fahrbahn	q4 10828,13464 10931,13419
@@ -1393,8 +1393,7 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mulytuay6k2n (zur Storkower Str.)
 #: source_id: planb2026:13.47721649,52.52297025,12.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
 #: source_id: LMS-BR:419242/72 viz2021:13.4795,52.52304,12.08.2026,07:00 (bis 04.09.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:421068/72 viz2021:13.4795,52.52304,03.09.2026,12:00 (angrenzende Storkower Str. nun auch gesperrt, bis 17.09.2026)
-#: source_id: vizapi2026:905/2026 (angrenzende Storkower Str., bis 17.09.2026)
+#: source_id: LMS-BR:421068/72 viz2021:13.4795,52.52304,03.09.2026,12:00 vizapi2026:905/2026 (angrenzende Storkower Str. nun auch gesperrt, bis 17.09.2026)
 #: note: sehr kurze Sperrung, Umfahrung/Umgehung mit Bordsteinabsenkungen (via Zebrastreifen) möglich
 #: note: außerdem ist die Radspur auf der Storkower Str. Richtung Westen aufgehoben
 #: last_checked: 2026-08-16

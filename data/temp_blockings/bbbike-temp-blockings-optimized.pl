@@ -5371,6 +5371,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: by: https://entwicklungsstadt.de/kai-wegner-besucht-zur-neueroeffnung-das-kalle-neukoelln/
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409917943/kalle-neukoelln-ist-fertig-da-schwingt-das-berlinerische-mit.html
 #: by: https://www.entwicklungsstadt.de/vom-leerstand-zum-leuchtturm-das-kalle-neukoelln-avanciert-zum-staedtebaulichen-vorzeigeprojekt/
+#: by: https://www.entwicklungsstadt.de/neue-plaene-fuer-kalle-so-soll-die-markthalle-nach-der-insolvenz-gerettet-werden/ (Umbau der KALLE Markthalle: September 2026 - Ende 2026)
 # REMOVED --- #: osm_watch: way id="734271970" version="10"
 #: osm_watch: way id="975241319" version="10"
 # REMOVED --- #: osm_watch: way id="970452276" version="9"
@@ -5378,7 +5379,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: source_id: planb2026:13.4396586,52.47929897,27.05.2024,07:00 ("Fahrstreifen-Reduzierung", bis 31.07.2026) (bis 30.09.2026)
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-08-21
+#: last_checked: 2026-09-04
 #: check_frequency: 14d
 #: next_check: 2026-09-30 (planb)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -5406,7 +5407,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: source_id: planb2026:13.45012105,52.47955018,09.05.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026)
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026; mittlerweile (Sommer 2026) ist eine Durchfahrt wieder mˆglich, zumindest inoffiziell
 #: osm_watch: note 4794007 2
-#: last_checked: 2026-09-03 vvv
+#: last_checked: 2026-09-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-31 (planb) vvv
 # REMOVED --- #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung, planb) vvv
@@ -6507,7 +6508,7 @@ Rosenthaler Str.	q4::inwork 10313,13227 10270,13101
 #: note: Halteverbotsschilder bis Ende M‰rz 2026
 #: note: L‰nge der Einbahnstraﬂenregelung: 100m; mittlerweile anscheinend wieder Komplettsperrung; nun wieder Einbahnstraﬂenregelung
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: last_checked: 2026-08-21
+#: last_checked: 2026-09-04
 #: check_frequency: 60d
 #: next_check: 2027-03-30 (planb)
 	q4::inwork; 12407,8177 12545,8209
@@ -6920,7 +6921,25 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Sperrung der s¸dlichen Fahrbahn UdL erw‰hnt; bis 07.06.2024) (inaktiv)
+#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Verschwenkung des Verkehrs UdL Richtung Osten erw‰hnt; bis 07.06.2024) (inaktiv)
+#: source_id: LMS-BR:421164/72 viz2021:13.39828,52.51708,04.09.2026,09:00 (An der Kommandantur, bis 13.09.2026)
+#: source_id: LMS-BR:421165/72 viz2021:13.3974,52.51756,04.09.2026,09:00 (Niederlagstr., bis 13.09.2026)
+#: by: https://www.bertelsmann.de/news-und-media/nachrichten/bertelsmann-party-2024-vielfalt-kreativitaet-und-jede-menge-stars-in-berlin.jsp?atn=2862170&abp=2862170,2862222, (Bertelsmann Party)
+#: note: eigentlich gibt es einen engen Durchgang am Schinkelplatz, aber UdL muss man zus‰tzlich einen 1x70m oder 2x70m langen Umweg nehmen
+#: note: zu Ende der Sperrung (Samstag davor) war die Einengung an UdL bereits abgebaut
+Schinkelplatz	2::temp 9984,12426 9990,12404
+Schinkelplatz	2::temp 9990,12404 9996,12372
+Niederlagstr.	q4::temp 9934,12420 9943,12364
+An der Kommandantur	q4::temp 9996,12372 9943,12364
+',
+         'from' => 1788386400,
+         'id' => 4079,
+         'text' => 'Schinkelplatz, Niederlagstr., An der Kommandantur: Veranstaltung, mˆgliche Sperrung, vom 04.09.2026 09:00 bis 13.09.2026 20:00',
+         'type' => 'gesperrt',
+         'until' => 1789322400
+       },
        undef,
        {
          'data' => '#: next_check_id: VIRCHOW-2023
@@ -7656,22 +7675,7 @@ Caspar-Theyﬂ-Str.: westlich und ˆstlich Wangenheimstr.	q4::inwork 2467,9425 2592
        },
        undef,
        undef,
-       {
-         'data' => '# REMOVED (alte Sperrung) --- #: note: auﬂerdem noch Sperrung in der  Richtung Norden --- sind auch Radfahrer betroffen? --- #: note: in der Eweststr. ist der Gehweg f¸r Radfahrer frei (siehe Mapillary), deshalb q4 -> q3 --- #: source_id: viz2021:13.432469,52.594796,04.02.2025,07:00 (bis 15.04.2025) (bis 23.05.2025) (bis 20.06.2025) (inaktiv) --- #: by[nocache]: https://x.com/VIZ_Berlin/status/1886642087409451474 --- #: by: https://pbs.twimg.com/media/Gi3dUpVWsAAyAOM?format=png
-#: next_check_id: EWEST-2026
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msrtitun6j2e
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiacgkrx7rwew3aljurqnfxc6hdmst4icpyh23x7q4u65lilu6sonu
-#: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gem‰ﬂ Vz.-plan", bis 04.09.2026) (vorfristig inaktiv)
-Eweststr.	q4::inwork; 12227,20966 12298,21015
-# REMOVED (alte Sperrung) --- Pasewalker Str.	q3::inwork; 12121,20969 12158,21166
-# REMOVED (alte Sperrung) --- Eweststr.	q3::inwork; 12298,21015 12227,20966 12189,20959 12121,20969
-',
-         'from' => 1786312800,
-         'id' => 4252,
-         'text' => 'Eweststr.: Einbahnstraﬂenregelung, vom 11.08.2026 bis 04.09.2026',
-         'type' => 'handicap',
-         'until' => 1788559199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7720,7 +7724,7 @@ Seeweg (Weiﬂensee): Gr¸nanlage	q4 14610,16522 14581,16529 14510,16549
 #: source_id: bvg2024:27#adb66544-e4cc-439f-b123-db70487f427b (kein Endedatum)
 #: source_id: bvg2024:162#65094844-2116-4f53-9a4f-31fe7fe8c496 (kein Endedatum)
 #: source_id: viz2021:13.575455,52.447094,17.02.2025,08:00 (hier nur Kfz-Verkehr, bis 02.06.2025) (inaktiv)
-#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, vizapi2026:360/2026 (eigentlich eine andere Baustelle (Dammbr¸cke), h‰ngt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026) (bis 22.04.2026) (bis 29.06.2026) (bis 02.09.2026) (nur bei vizapi2026 bis 27.11.2026)
+#: source_id: LMS-BR:378674/72 viz2021:13.574491,52.448686,04.08.2025,07:00 viz2021:13.574491,52.448686, viz2021:13.5721,52.45083, vizapi2026:360/2026 (eigentlich eine andere Baustelle (Dammbr¸cke), h‰ngt aber vielleicht damit zusammen; bis 13.10.2025) (bis 16.02.2026) (bis 08.04.2026) (bis 22.04.2026) (bis 29.06.2026) (bis 02.09.2026) (bis 27.11.2026)
 #: source_id: planb2026:13.57888323,52.44737601,01.12.2025, ("Vollsperrung beider Fahrbahnen", bis 24.08.2026) (bis 03.02.2027)
 #: source_id: LMS-BR:392071/72 viz2021:13.57718,52.44513, (bis 24.08.2026) ("Vollsperrung f¸r den Kfz- und Radverkehr", bis 03.02.2027)
 # REMOVED --- #: note: bei der VIZ mittlerweile inaktiv, bei rbb bis zum 10.06.2025 verl‰ngert
@@ -8278,7 +8282,35 @@ Drossener Str.: mˆgliche Sperrung	q4::inwork 16753,17192 16915,17231
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.449603,52.490906,02.06.2025,07:00 (BouchÈstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 28.11.2025) (inaktiv)
+# REMOVED (Einbahnstraﬂe offen f¸r Radfahrer) --- BouchÈstr.: geplante Sperrung (wegen der Umleitung?)	?; 13489,9456 13602,9581
+#: source_id: bvg2024:194#HIM_FREETEXT_286893 (ohne Endedatum) (zwischenzeitlich entfernt)
+#: source_id: viz2021:13.450458,52.489247,02.06.2025,07:00 (Karl-Kunger-Str., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (bis 30.09.2025) (inaktiv)
+#: source_id: adac:738022488 (bis 20.06.2025) (bis voraussichtlich 30.09.2025) (neue ID -> inaktiv)
+#: source_id: LMS-BR:371046/72 viz2021:13.450532,52.489209, (bis 30.09.2025) (bis 28.11.2025) (bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026) (bis 31.08.2026) (bis 30.09.2026)
+#: source_id: LMS-BR:371047/72 viz2021:13.44875,52.49034, (BouchÈstr., bis 31.01.2026) (bis 31.03.2026) (bis 31.07.2026) (bis 31.08.2026) (bis 30.09.2026)
+#: source_id: planb2026:13.45108802,52.48887959,02.06.2025, ("Sicherung gem‰ﬂ Vz.-plan", ungenaue Lage, bis 31.07.2026) (inaktiv) (bis 30.09.2026)
+#: last_checked: 2026-09-04 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2026-09-30 (VIZ-Verkehrsmeldung, planb) vvv
+#: historical_note: am Anfang waren nur wenige Meter gesperrt, q3::inwork;
+Karl-Kunger-Str.: Richtung Westen gesperrt	q4::inwork; 13614,9333 13489,9456
+#: source_id: viz2021:13.450704,52.489311,02.06.2025,07:00 (Wildenbruchstr., nur Kfz-Verkehr, bis 20.06.2025) (bis 24.06.2025) (inaktiv)
+#: source_id: adac:90391862 (bis 20.06.2025) (inaktiv)
+#: also_indoor: traffic (T,H)
+# REMOVED --- #: XXX Wurde diese Sperrung mittlerweile aufgehoben? (Bei VIZ und rbb nicht mehr gelistet, vor Ort noch gesperrt)
+# REMOVED (offen) --- #: note: Halteverbotsschilder bis 28.11.2025 --- Wildenbruchstr.: einige Meter der Fahrbahn an der Karl-Kunger-Str. gesperrt	q3::inwork 13614,9333 13715,9455
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => 1748754000,
+         'id' => 4353,
+         'text' => 'Karl-Kunger-Straﬂe: Leitungsbauarbeiten, Richtung Westen gesperrt, voraussichtlich bis Ende September 2026',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: source_id: LMS-BR:371044/72 viz2021:13.31597,52.479492,02.06.2025,07:00 (bis 03.12.2027) (bis 30.04.2026) (inaktiv)
 #: source_id: LMS-BR:392515/72 viz2021:13.315577,52.479657,08.12.2025,07:00 (bis 01.06.2026) (inaktiv)
@@ -8728,7 +8760,7 @@ Kaiserdamm -> Fritschestr.: Richtung Osten/Norden	3 3159,11562 3320,11583 3287,1
 #: osm_watch: note 5465754 2
 #: note: gesperrter Bereich ist nur kurz, ca. 25m, deshalb q2
 #: add_fragezeichen: Ist die Anbindung der Corinthstr. an den Markgrafendamm weiterhin gesperrt?
-#: last_checked: 2026-08-22
+#: last_checked: 2026-09-04
 #: check_frequency: 21d
 #: next_check: 2026-09-30 (planb)
 Corinthstr.	q2::inwork 14447,10491 14608,10409
@@ -8960,7 +8992,7 @@ Kolmarer Str.: Baustelleneinrichtungsfl‰che	q4::inwork 11418,14290 11354,14187
 #: add_fragezeichen: Besteht die Sperrung der Gotenstr. noch immer?
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> best‰tigt, mit Umwegen: mittlerweile ist der ˆstliche B¸rgersteig normal freigegeben
 #: osm_watch: note 4847575 8
-#: osm_watch: note 5200828 2
+#: osm_watch: note 5200828 3
 #: last_checked: 2026-09-03 vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-21
@@ -9934,14 +9966,14 @@ B‰umerplan: Sperrung der Fahrbahn	q4::inwork 8527,8293 8482,8227
          'data' => '#: source_id: LMS-BR:410355/72 viz2021:13.288284,52.515211,01.06.2026,06:00 (bis 19.06.2026) (inaktiv)
 # REMOVED ---	q4::inwork 2686,12051 2485,12032
 #: source_id: planb2026:13.29237017,52.51538613,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 07.09.2026)
-#: source_id: LMS-BR:419944/72 viz2021:13.29075,52.51534,24.08.2026,07:00 (bis 07.09.2026)
+#: source_id: LMS-BR:419944/72 viz2021:13.29075,52.51534,24.08.2026,07:00 (bis 07.09.2026) (bis 25.09.2026)
 Seelingstr.	q4::inwork 2686,12051 2920,12070
 ',
          'from' => 1787522400,
          'id' => 4624,
-         'text' => 'Seelingstr.: Sperrung zwischen Danckelmannstr. und Nehringstr., evtl. ist auch der Radverkehr betroffen, vom 24.08.2026 06:00 bis 07.09.2026',
+         'text' => 'Seelingstr.: Sperrung zwischen Danckelmannstr. und Nehringstr., evtl. ist auch der Radverkehr betroffen, vom 24.08.2026 06:00 bis 25.09.2026',
          'type' => 'handicap',
-         'until' => 1788818399
+         'until' => 1790373599
        },
        undef,
        undef,
@@ -10126,14 +10158,14 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
        },
        undef,
        {
-         'data' => '#: source_id: 266320004 (bis 31.12.2026) (Vollsperrung bis 23.08.2026)
+         'data' => '#: source_id: 266320004 (bis 31.12.2026) (Vollsperrung bis 23.08.2026) (Gesamtmaﬂnahme bis 04.09.2026)
 	2::inwork -20853,11781 -19771,12065
 ',
          'from' => 1782619200,
          'id' => 4651,
-         'text' => 'Priort: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, 29.06.2026 06:00 Uhr bis Ende 2026',
+         'text' => 'Priort: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, 29.06.2026 06:00 Uhr bis 04.09.2026',
          'type' => 'gesperrt',
-         'until' => 1798743600
+         'until' => 1788544800
        },
        {
          'data' => '#: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/schul-baustelle-fuhrt-zu-strassensperrungen-uberraschende-plananderung-fur-umbau-des-rosa-luxemburg-gymnasiums-13873627.html (ab Anfang 2026)
@@ -10309,14 +10341,14 @@ Almstadtstr.: Anbindung an die Rosa-Luxemburg-Str. gesperrt, Umwege	q4::inwork 1
        undef,
        {
          'data' => '#: next_check_id: MARWITZ-2026
-#: source_id: LS/223-K/26/124 (bis 10.08.2026) (bis 23.08.2026) (bis 04.09.2026)
+#: source_id: LS/223-K/26/124 (bis 10.08.2026) (bis 23.08.2026) (bis 04.09.2026) (bis 12.09.2026)
 	q4::inwork -6817,29208 -6989,29419 -7125,29585 -7143,29737 -7333,29761 -7571,29802 -7593,29803 -7833,29837 -7867,29842 -7921,29842 -8029,29819 -8159,29787 -8221,29784
 ',
          'from' => 1784433600,
          'id' => 4674,
-         'text' => 'Marwitz: Fahrbahnsanierung, Sperrung, vom 20.07.2026 06:00 Uhr bis 04.09.2026 20:00 Uhr',
+         'text' => 'Marwitz: Fahrbahnsanierung, Sperrung, vom 20.07.2026 06:00 Uhr bis 12.09.2026 20:00 Uhr',
          'type' => 'handicap',
-         'until' => 1788544800
+         'until' => 1789236000
        },
        {
          'data' => '#: source_id: LS/223-K/26/114 (bis 21.08.2026) (bis 04.09.2026)
@@ -10431,14 +10463,16 @@ Fahlandgasse: provisorische Einbahnstraﬂenregelung	q4::inwork; 7675,17538 7675,1
          'until' => 1788818399
        },
        {
-         'data' => '#: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 (bis 04.09.2026)
+         'data' => '#: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 (bis 04.09.2026) (vermutete Verl‰ngerung)
+#: last_checked: 2026-09-04
+#: check_frequency: 7d
 	q4::inwork 4011,2942 4350,3161
 ',
          'from' => 1784196000,
          'id' => 4682,
-         'text' => 'Karwendelstr.: Bauarbeiten zwischen Drakestr. und Ringstr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 17.07.2026 12:00 bis 04.09.2026',
+         'text' => 'Karwendelstr.: Bauarbeiten zwischen Drakestr. und Ringstr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 17.07.2026 12:00 bis 04.09.2026, evtl. werden die Bauarbeiten verl‰ngert',
          'type' => 'handicap',
-         'until' => 1788559140
+         'until' => undef
        },
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-07-2026-l25_zw-schmoelln-und-gruenz_ersatzneubau-durchlass-ueber-die-randow
@@ -10876,7 +10910,7 @@ Manfred-von-Richthofen-Str.: Einbahnstraﬂenregelung	q4::inwork; 8812,7730 8864,7
          'until' => 1793401200
        },
        {
-         'data' => '#: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 vizapi2026:805/2026 (bis 24.08.2026 + weitere Arbeiten) (bis 04.09.2026)
+         'data' => '#: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 vizapi2026:805/2026 (bis 24.08.2026 + weitere Arbeiten) (bis 04.09.2026) (vermutete Verl‰ngerung)
 #: source_id: planb2026:13.46032981,52.4391609,10.08.2026, ("Sicherung gem‰ﬂ Vz.-plan", bis 24.08.2026) (inaktiv) (bis 04.09.2026) (inaktiv)
 #: osm_watch: note 5414689 2
 #: also_indoor: traffic (G,T,H,W)

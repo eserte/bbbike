@@ -7,11 +7,12 @@
 #: temporary vvv
 # 
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mue3w6t4dw2u
-#: source_id: LMS-BR:420745/72 viz2021:13.4212,52.5098,31.08.2026,07:00 vizapi2026:895/2026 (bis 04.09.2026)
+#: source_id: LMS-BR:420745/72 viz2021:13.4212,52.5098,31.08.2026,07:00 vizapi2026:895/2026 (bis 04.09.2026) (vermutete Verlängerung)
 #: note: Gegenverkehrsabschnitt ca. 60m
 #: last_checked: 2026-09-03
 #: next_check: 2026-09-04
-#: valid: -20260904
+# REMOVED --- #: valid: -20260904
+#: valid: -20260911
 Köpenicker Str.: Gegenverkehrsregelung	X::inwork::alternating 11405,11655
 # 
 #: source_id: planb2026:13.37673666,52.51665403,06.01.2026, ("Sicherung gemäß Vz.-plan", Scheidemannstr. und Simsonweg, evtl. im Zusammenhang mit der Ampel, bis 20.10.2026)
@@ -46,9 +47,10 @@ Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # 
 #: next_check_id: EWEST-2026
 #: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026)
+#: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung)
 #: next_check: 2026-09-04 (ex-planb + VIZ-Verkehrsmeldung)
-#: valid: -20260904
+# REMOVED --- #: valid: -20260904
+#: valid: -20260911
 Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 # 
 #: source_id: LMS-BR:412099/72 viz2021:13.22465,52.58966,16.06.2026,09:00 (bis 18.09.2026)
@@ -56,7 +58,7 @@ Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 #: valid: -20260918
 Sandhauser Str./Elstegasse: Gegenverkehrsregelung	X::inwork::alternating -1971,20231
 # 
-#: source_id: LMS-BR:412100/72 viz2021:13.34672,52.59299,16.06.2026,09:00 (bis 04.09.2026)
+#: source_id: LMS-BR:412100/72 viz2021:13.34672,52.59299,16.06.2026,09:00 (bis 04.09.2026) (bei vizapi2026 inaktiv)
 #: next_check: 2026-09-04
 #: valid: -20260904
 Schorfheidestr./Drebkauer Str.: Gegenverkehrsregelung	X::inwork::alternating 6317,20751
@@ -104,10 +106,11 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 #: valid: -20261030
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
-#: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026)
+#: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung)
 #: last_checked: 2026-08-27 (mapillary)
 #: next_check: 2026-09-04
-#: valid: -20260904
+# REMOVED --- #: valid: -20260904
+#: valid: -20260911
 Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,18585
 # 
 #: next_check_id: WOLLANK-2024
@@ -4655,7 +4658,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: osm_watch: node id="8656381176" version="5"
 #: osm_watch: node id="8740310061" version="4"
 #: osm_watch: node id="8740310063" version="4"
-#: osm_watch: note 5409312 1
+#: osm_watch: note 5409312 2
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
@@ -4762,7 +4765,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX noch provisorisch, wird verstetigt --- in Zukunft wird der gesamte Knotenpunkt bis zur Blockdammweg-Rampe durch die Ampelanlage erfasst
 #: last_checked: 2026-05-20
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2026-09-06 (planb)
+#: next_check: 2026-10-05 (planb)
 provisorische Fußgängerampel	F::inwork 17720,8854
 # 
 #: note: Anforderungsampel im Zuge der August-Froehlich-Str. und An der Werderlake

@@ -157,7 +157,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-08-21
+#: last_checked: 2026-09-04
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -432,7 +432,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/2026-03-02-protokoll_ag-mobilitaet.pdf ("Belagwechsel ... nicht geplant")
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
-#: osm_watch: way id="4686083" version="31"
+#: osm_watch: way id="4686083" version="32"
 #: last_checked: 2026-08-26
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
@@ -531,7 +531,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-09-02
+#: last_checked: 2026-09-04
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -1036,7 +1036,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2026-08-21 vvv
+#: last_checked: 2026-09-04 vvv
 #: check_frequency: 120d vvv
 Rollbergstr.: Kopfsteinpflaster	Q2- 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Kopfsteinpflaster	Q2 12407,8177 12545,8209 12714,8249
@@ -32702,6 +32702,9 @@ Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26201.pdf (Fertigstellung im 3. Quartal 2026, Asphaltierung, 4m breit)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26599.pdf (Erwähnung)
 #: osm_watch: note 5438509 1
+#: osm_watch: way id="600785153" version="9"
+#: osm_watch: way id="600785151" version="5"
+#: osm_watch: way id="673529517" version="7"
 #: XXX: wird asphaltiert und auf 4m verbreitert; während der Bauarbeiten kann man die parallele Wohngebietsstraße benutzen
 #: last_checked: 2026-08-05
 #: check_frequency: 30d
