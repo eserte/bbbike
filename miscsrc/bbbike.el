@@ -287,6 +287,7 @@
     (define-key map "\C-c."    'bbbike-update-now)
     (define-key map "\C-c\C-l" 'bbbike-update-last-checked)
     (define-key map "\C-c\C-m" 'bbbike-center-point)
+    (define-key map "\C-ciu"   'bbbike-insert-current-url)
     ; menu
     (if (fboundp 'bindings--define-key)
 	(progn
@@ -317,6 +318,7 @@
 	  (bindings--define-key menu-map [insert-source-id]    '(menu-item "Insert source_id" bbbike-insert-source-id))
 	  (bindings--define-key menu-map [update-osm-watch]    '(menu-item "Update osm_watch" bbbike-update-osm-watch))
 	  (bindings--define-key menu-map [insert-osm-watch]    '(menu-item "Insert osm_watch" bbbike-insert-osm-watch))
+	  (bindings--define-key menu-map [insert-current-url]  '(menu-item "Insert current URL" bbbike-insert-current-url))
 	  ))
     (setq bbbike-mode-map map)))
 
