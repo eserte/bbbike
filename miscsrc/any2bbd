@@ -56,6 +56,7 @@ GetOptions(\%opt,
 	   "geojson-name=s",
 	   "geojson-name-code=s",
 	   "name-sep=s",
+	   "debug!",
 	   "v+",
 	  )
     or die <<EOF;
@@ -67,7 +68,7 @@ usage: $0 [-i inputformat] -o outfile [-a|-append]
     [-infotobbd]
     [-noempty]
     [-geojson-name ... | -geojson-name-code] [-name-sep ...]
-    [-v [-v ...]]
+    [-debug] [-v [-v ...]]
 EOF
 
 use vars qw($verbose);
@@ -136,6 +137,7 @@ EOF
     defined $res ? $res : '';
 };
 EOF
+    if ($opt{debug}) { warn "geojson-name-code expanded: $code" }
     $namecb = eval $code;
     if ($@) {
 	die "Cannot compile provided code.\nError: $@\nCode: $code\n";
