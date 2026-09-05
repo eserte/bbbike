@@ -239,8 +239,8 @@ sub print_basic_info {
     (my $short_first_line = $record->{lines}->[0]) =~ s/^\S+\s+//;
     my $ext_id = 'bvg2024:' . lc($short_first_line).'#'.$id;
     my $enddate;
-    if ($record->{_date} =~ m{ - (\d{4}-\d{2}-\d{2})}) {
-	$enddate = $1;
+    if ($record->{_date} =~ m{ - (\d{4})-(\d{2})-(\d{2})}) {
+	$enddate = "$3.$2.$1";
     }
     print "#: source_id: $ext_id" . ($enddate ? " (bis $enddate)" : "") . ($inactive_sourceids->{$id} ? " " . _yellow("(WAS_INUSE)") : ($sourceids->{$id} ? " " . _red("(INUSE)") : "")) . "\n";
 
