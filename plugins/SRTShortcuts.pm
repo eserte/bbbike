@@ -386,7 +386,7 @@ EOF
 					      or main::status_message("Failed to rename $file to final destination: $!", "die");
 				      },
 				     );
-		} (30, 90)
+		} (30, 90, 365)
 		),
 		(map {
 		    my $year = $_;
