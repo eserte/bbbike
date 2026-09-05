@@ -50,6 +50,16 @@ my %codename_to_obs_repository = (
     resolute => 'xUbuntu_26.04',
 );
 
+my $latest_archived_debian = 'buster';
+
+my @interleaved_debian_ubuntu_codenames =
+    qw(
+	  squeeze precise wheezy trusty jessie
+	  xenial stretch bionic buster
+	  focal bullseye jammy
+	  bookworm noble trixie resolute forky
+    );
+
 sub usage (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] gui | cgi | ci | build-deb [options]
@@ -134,10 +144,10 @@ sub _dockerfile_fix_sources_list ($) {
     my $optref = shift;
     my $dockerfile = '';
 
-    if ($optref->{distver} =~ m{^(wheezy|jessie|stretch|buster)$}) {
+    if ($optref->{dist} eq 'debian' && _is_archived_debian($optref->{distver})) {
 	$dockerfile .= <<EOF;
-RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian $optref->{distver} main'                   >  /etc/apt/sources.list
-RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian-security/ $optref->{distver}/updates main' >> /etc/apt/sources.list
+RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian $optref->{distver} main'                  >  /etc/apt/sources.list
+RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian-security $optref->{distver}/updates main' >> /etc/apt/sources.list
 EOF
     } elsif ($optref->{distver} =~ m{^(precise)$}) {
 	$dockerfile .= <<'EOF';
@@ -184,6 +194,41 @@ sub _docker_build_with_retry ($$$;@) {
 	}
     }
 }
+
+sub _is_archived_debian ($) {
+    my $distver = shift;
+    _distver_cmp($distver, '<=', $latest_archived_debian);
+}
+
+{
+    my %distver_to_inx;
+
+    sub _distver_cmp ($$$) {
+	my($subject, $op, $against) = @_;
+
+	$op =~ m{^(<|<=|==|>=|>)$}
+	    or die "Invalid compare operator '$op'";
+
+	if (!%distver_to_inx) {
+	    my $i = 1;
+	    for my $distver (@interleaved_debian_ubuntu_codenames) {
+		$distver_to_inx{$distver} = $i++;
+	    }
+	}
+
+	for ($subject, $against) {
+	    $_ = $distver_to_inx{$_} || die "Unknown codename '$_'";
+	}
+
+	my $code = '$subject ' . $op . ' $against';
+	my $res = eval $code;
+	die "Code '$code' failed: $@" if $@;
+	$res;
+    }
+}
+
+######################################################################
+# MAIN SUBCOMMANDS
 
 sub gui {
     my($doit, %opt) = @_;
@@ -548,7 +593,7 @@ EOF
 
     my($real_dist, $real_distver) = ($opt{dist}, $opt{distver});
     if ($real_dist eq 'perl') { # perl docker images are usually based on debian
-	if ($real_distver =~ /-(stretch|buster|bullseye|bookworm)$/) {
+	if ($real_distver =~ /-(stretch|buster|bullseye|bookworm|trixie)$/) {
 	    $real_distver = $1;
 	    $real_dist = 'debian';
 	    warn "WARN: currently docker-bbbike has no support for non-system perl systems. Expect failures.\n";
@@ -559,7 +604,7 @@ EOF
 
     # repository for agrep
     if ($real_dist eq 'debian') {
-	my $debhost = $real_distver =~ m{^(wheezy|jessie|stretch|buster)$} ? 'archive.debian.org' : 'ftp.debian.org';
+	my $debhost = _is_archived_debian($real_distver) ? 'archive.debian.org' : 'ftp.debian.org';
 	$dockerfile .= <<EOF;
 RUN echo "deb [check-valid-until=no] http://$debhost/debian/ $real_distver non-free" > /etc/apt/sources.list.d/$real_distver-non-free.list
 EOF
