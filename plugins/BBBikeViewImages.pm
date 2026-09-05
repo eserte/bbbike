@@ -110,7 +110,7 @@ sub add_button {
 
     my %prog_is_available;
     if ($^O ne 'MSWin32') {
-	for my $prog (qw(xv gm display xzgv eog gimp)) {
+	for my $prog (qw(ristretto loupe eog xzgv xv gm display xdg-open gimp)) {
 	    $prog_is_available{$prog} = is_in_path($prog);
 	}
     }
@@ -180,10 +180,18 @@ sub add_button {
 		   ]
 		 : ()
 		),
-		($prog_is_available{"xzgv"}
-		 ? [Radiobutton => "xzgv",
+		($prog_is_available{"ristretto"}
+		 ? [Radiobutton => "ristretto",
 		    -variable => \$viewer,
-		    -value => "xzgv",
+		    -value => "ristretto",
+		    -command => sub { viewer_change() },
+		   ]
+		 : ()
+		),
+		($prog_is_available{"loupe"}
+		 ? [Radiobutton => "Loupe (loupe)",
+		    -variable => \$viewer,
+		    -value => "loupe",
 		    -command => sub { viewer_change() },
 		   ]
 		 : ()
@@ -196,10 +204,26 @@ sub add_button {
 		   ]
 		 : ()
 		),
+		($prog_is_available{"xzgv"}
+		 ? [Radiobutton => "xzgv",
+		    -variable => \$viewer,
+		    -value => "xzgv",
+		    -command => sub { viewer_change() },
+		   ]
+		 : ()
+		),
 		($prog_is_available{"gimp"}
 		 ? [Radiobutton => "GIMP",
 		    -variable => \$viewer,
 		    -value => "gimp",
+		    -command => sub { viewer_change() },
+		   ]
+		 : ()
+		),
+		($prog_is_available{"xdg-open"}
+		 ? [Radiobutton => "xdg-open",
+		    -variable => \$viewer,
+		    -value => "xdg-open",
 		    -command => sub { viewer_change() },
 		   ]
 		 : ()
@@ -251,10 +275,31 @@ sub add_button {
 		    ]
 		  : ()
 		 ),
+		 ($prog_is_available{'ristretto'}
+		  ? [Radiobutton => 'ristretto',
+		     -variable => \$original_image_viewer,
+		     -value => 'ristretto',
+		    ]
+		  : ()
+		 ),
+		 ($prog_is_available{'loupe'}
+		  ? [Radiobutton => 'Loupe (loupe)',
+		     -variable => \$original_image_viewer,
+		     -value => 'loupe',
+		    ]
+		  : ()
+		 ),
 		 ($prog_is_available{'eog'}
 		  ? [Radiobutton => 'Eye of GNOME (eog)',
 		     -variable => \$original_image_viewer,
 		     -value => 'eog',
+		    ]
+		  : ()
+		 ),
+		 ($prog_is_available{'xdg-open'}
+		  ? [Radiobutton => 'xdg-open',
+		     -variable => \$original_image_viewer,
+		     -value => 'xdg-open',
 		    ]
 		  : ()
 		 ),
@@ -293,7 +338,7 @@ sub add_button {
 
 sub viewer_change {
     my $enable_image_sizes;
-    if ($viewer eq '_wwwbrowser' || $viewer eq 'gimp') {
+    if ($viewer eq '_wwwbrowser' || $viewer eq 'gimp' || $viewer eq 'ristretto' || $viewer eq 'loupe' || $viewer eq 'eog' || $viewer eq 'xdg-open') {
 	$enable_image_sizes = 0;
     } else {
 	$enable_image_sizes = 1;
@@ -608,11 +653,12 @@ sub show_image_viewer {
 
 		$image_viewer_toplevel->Subwidget("InfoButton")->configure(-command => [\&exif_viewer, $abs_file]);
 
-		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => $this_index_in_array->() . "/" . @$all_image_inx);
+		my $curr_inx_val = $this_index_in_array->();
+		$image_viewer_toplevel->Subwidget("NOfMLabel")->configure(-text => (defined $curr_inx_val ? $curr_inx_val : "?") . "/" . @$all_image_inx);
 
-		$image_viewer_toplevel->Subwidget("DateLabel")->configure(-text => $date);
+		$image_viewer_toplevel->Subwidget("DateLabel")->configure(-text => (defined $date ? $date : ""));
 
-		$image_viewer_toplevel->Subwidget("DeltaLabel")->configure(-text => chr(0x0394)."=".$delta);
+		$image_viewer_toplevel->Subwidget("DeltaLabel")->configure(-text => (defined $delta ? chr(0x0394)."=".$delta : ""));
 
 		######################################################################
 		# Photo handling
@@ -720,9 +766,15 @@ sub show_image_viewer {
 		push @xzgv_args, '--zoom', '--zoom-reduce-only', '--geometry', '33%x33%';
 	    } # XXX need impl. for image-half and image-third
 	    viewer_xzgv(@xzgv_args, $abs_file);
+	} elsif ($use_viewer eq 'ristretto') {
+	    viewer_ristretto($abs_file);
+	} elsif ($use_viewer eq 'loupe') {
+	    viewer_loupe($abs_file);
 	} elsif ($use_viewer eq 'eog') {
 	    # viewer_eog('--disable-image-collection', $abs_file); # old option name
 	    viewer_eog('--disable-gallery', $abs_file);
+	} elsif ($use_viewer eq 'xdg-open') {
+	    viewer_xdg_open($abs_file);
 	} elsif ($use_viewer eq '_wwwbrowser') {
 	    viewer_browser($abs_file);
 	} else {
@@ -769,9 +821,30 @@ sub viewer_gm_display {
     double_forked_exec @cmd;
 }
 
+sub viewer_ristretto {
+    my(@args) = @_;
+    my @cmd = ("ristretto", @args);
+    main::status_message("@cmd", "info");
+    double_forked_exec @cmd;
+}
+
+sub viewer_loupe {
+    my(@args) = @_;
+    my @cmd = ("loupe", @args);
+    main::status_message("@cmd", "info");
+    double_forked_exec @cmd;
+}
+
 sub viewer_eog {
     my(@args) = @_;
     my @cmd = ("eog", @args);
+    main::status_message("@cmd", "info");
+    double_forked_exec @cmd;
+}
+
+sub viewer_xdg_open {
+    my(@args) = @_;
+    my @cmd = ("xdg-open", @args);
     main::status_message("@cmd", "info");
     double_forked_exec @cmd;
 }
@@ -798,6 +871,14 @@ sub orig_viewer {
 	viewer_gm_display(graphicsmagick_maxpect_args(), @_);
     } elsif ($use_original_image_viewer eq 'xv') {
 	viewer_xv('-maxpect', @_);
+    } elsif ($use_original_image_viewer eq 'ristretto') {
+	viewer_ristretto(@_);
+    } elsif ($use_original_image_viewer eq 'loupe') {
+	viewer_loupe(@_);
+    } elsif ($use_original_image_viewer eq 'eog') {
+	viewer_eog('--disable-gallery', @_);
+    } elsif ($use_original_image_viewer eq 'xdg-open') {
+	viewer_xdg_open(@_);
     } else {
 	my @cmd = ($use_original_image_viewer, @_);
 	main::status_message("@cmd", "info");
@@ -833,7 +914,11 @@ sub graphicsmagick_maxpect_args {
 }
 
 sub find_best_external_viewer {
-    if (is_in_path("eog")) { # handles photos regarding orientation better than xzgv
+    if (is_in_path("ristretto")) {
+	"ristretto";
+    } elsif (is_in_path("loupe")) {
+	"loupe";
+    } elsif (is_in_path("eog")) { # handles photos regarding orientation better than xzgv
 	"eog";
     } elsif (is_in_path("xzgv")) { # faster than ImageMagick, free
 	"xzgv";
@@ -843,6 +928,8 @@ sub find_best_external_viewer {
 	"gm display";
     } elsif (is_in_path("display")) {
 	"display";
+    } elsif (is_in_path("xdg-open")) {
+	"xdg-open";
     } else {
 	undef;
     }
@@ -882,7 +969,9 @@ sub _check_exiftool {
 	$exiftool_path = is_in_path('exiftool');
 	if (!$exiftool_path) {
 	    $exiftool_path = 0; # remember failure
-	    main::perlmod_install_advice('Image::ExifTool');
+	    if (!main::perlmod_install_advice('Image::ExifTool')) {
+		main::status_message(M"exiftool ist nicht installiert", "warn");
+	    }
 	    return;
 	}
     }
@@ -904,7 +993,7 @@ sub _fill_exif_viewer {
     my @exif_lines;
     my %line_seen;
     open my $fh, "-|", $exiftool_path, $image_path
-	or main::status_message($!, "die");
+	or main::status_message(($! ? "$!" : M"Fehler beim Ausführen von exiftool"), "die");
     while(<$fh>) {
 	chomp;
 	next if $line_seen{$_}++; # no duplicates, please
@@ -918,7 +1007,7 @@ sub _fill_exif_viewer {
 	}
     }
     close $fh
-	or main::status_message($!, "die");
+	or main::status_message(($! ? "$!" : M"Fehler beim Ausführen von exiftool"), "die");
 
     my %exif_key_priority = do {
 	my $i = 1;
