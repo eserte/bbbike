@@ -124,11 +124,12 @@ jobs:
             bbbike_test_skip_mapserver: 0
             use_bbbike_ppa:             0
             use_eserte_obs:             0
-          - dist:                       debian
-            distver:                    bullseye
-            bbbike_test_skip_mapserver: 0
-            use_bbbike_ppa:             0
-            use_eserte_obs:             0
+# XXX temporarily disabled because of repo problems
+#          - dist:                       debian
+#            distver:                    bullseye
+#            bbbike_test_skip_mapserver: 0
+#            use_bbbike_ppa:             0
+#            use_eserte_obs:             0
           - dist:                       debian
             distver:                    bookworm
             bbbike_test_skip_mapserver: 0
