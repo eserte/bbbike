@@ -6,14 +6,14 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mue3w6t4dw2u
-#: source_id: LMS-BR:420745/72 viz2021:13.4212,52.5098,31.08.2026,07:00 vizapi2026:895/2026 (bis 04.09.2026) (vermutete Verlängerung)
-#: note: Gegenverkehrsabschnitt ca. 60m
-#: last_checked: 2026-09-03
-#: next_check: 2026-09-04
-# REMOVED --- #: valid: -20260904
-#: valid: -20260911
-Köpenicker Str.: Gegenverkehrsregelung	X::inwork::alternating 11405,11655
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mue3w6t4dw2u
+# REMOVED --- #: source_id: LMS-BR:420745/72 viz2021:13.4212,52.5098,31.08.2026,07:00 vizapi2026:895/2026 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv)
+# REMOVED --- #: note: Gegenverkehrsabschnitt ca. 60m
+# REMOVED --- #: last_checked: 2026-09-03
+# REMOVED --- #: next_check: 2026-09-04
+# REMOVED --- # REMOVED --- #: valid: -20260904
+# REMOVED --- #: valid: -20260911
+# REMOVED --- Köpenicker Str.: Gegenverkehrsregelung	X::inwork::alternating 11405,11655
 # 
 #: source_id: planb2026:13.37673666,52.51665403,06.01.2026, ("Sicherung gemäß Vz.-plan", Scheidemannstr. und Simsonweg, evtl. im Zusammenhang mit der Ampel, bis 20.10.2026)
 #: source_id: LMS-BR:420952/72 viz2021:13.374992,52.51778,02.09.2026,07:00 vizapi2026:900/2026 (Wasserleitungsbau, Verengung, bis 20.10.2026)
@@ -47,10 +47,10 @@ Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # 
 #: next_check_id: EWEST-2026
 #: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung)
-#: next_check: 2026-09-04 (ex-planb + VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20260904
-#: valid: -20260911
+#: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026) (inaktiv)
+#: also_indoor: traffic (H)
+#: next_check: 2026-09-09 (Here)
+#: valid: -20260909
 Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 # 
 #: source_id: LMS-BR:412099/72 viz2021:13.22465,52.58966,16.06.2026,09:00 (bis 18.09.2026)
@@ -58,10 +58,10 @@ Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 #: valid: -20260918
 Sandhauser Str./Elstegasse: Gegenverkehrsregelung	X::inwork::alternating -1971,20231
 # 
-#: source_id: LMS-BR:412100/72 viz2021:13.34672,52.59299,16.06.2026,09:00 (bis 04.09.2026) (bei vizapi2026 inaktiv)
-#: next_check: 2026-09-04
-#: valid: -20260904
-Schorfheidestr./Drebkauer Str.: Gegenverkehrsregelung	X::inwork::alternating 6317,20751
+# REMOVED --- #: source_id: LMS-BR:412100/72 viz2021:13.34672,52.59299,16.06.2026,09:00 (bis 04.09.2026) (bei vizapi2026 inaktiv) (inaktiv)
+# REMOVED --- #: next_check: 2026-09-04
+# REMOVED --- #: valid: -20260904
+# REMOVED --- Schorfheidestr./Drebkauer Str.: Gegenverkehrsregelung	X::inwork::alternating 6317,20751
 # 
 #: next_check_id: ALLEEDERKOSMONAUTEN-2026
 #: last_checked: 2026-08-05
@@ -90,7 +90,7 @@ Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 #: source_id: planb2026:13.47959962,52.50191162,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026)
 #: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
 #: note: Länge der Gegenverkehrsregelung: 150m
-#: last_checked: 2026-08-15
+#: last_checked: 2026-09-05
 #: next_check: 2026-12-16 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20261216
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
@@ -106,10 +106,10 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 #: valid: -20261030
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
-#: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung)
-#: last_checked: 2026-08-27 (mapillary)
-#: next_check: 2026-09-04
-# REMOVED --- #: valid: -20260904
+#: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv)
+#: also_indoor: traffic (G,T)
+#: last_checked: 2026-09-05 (traffic)
+#: next_check: 2026-09-11
 #: valid: -20260911
 Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,18585
 # 
@@ -173,10 +173,11 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 # 
+#: also_indoor: webcam https://0507e26k59.bautvplus.de/
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: source_id: planb2026:13.42219032,52.51114479,11.09.2025,07:00 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-08-17
+#: last_checked: 2026-09-05 (webcam)
 #: check_frequency: 60d
 #: next_check: 2026-11-04 (planb)
 Michaelbrücke	F::inwork 11676,11839
@@ -733,7 +734,7 @@ Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
 #: note: Anforderungsampel, man bekommt zügig grün
 #: source_id: viz2021:13.56016,52.48441,01.07.2025,18:32 (Ampelanlage außer Betrieb (also existiert sie noch)) (inaktiv)
-#: last_checked: 2026-05-03
+#: last_checked: 2026-09-05
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
@@ -3348,7 +3349,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: section Parkeisenbahn Wuhlheide vvv
 #: note: Fährt nur am Wochenende tagsüber während des Sommers im 15-30-Minutentakt: vvv
 	B0 20623,6136
-	B0 20533,7199
+	B0 20530,7180
 	B0 20430,7122
 	B0 19587,6584
 	B0 19606,6182
@@ -4054,6 +4055,9 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	F 15356,3759
 # REMOVED (ja) --- #: XXX bleibt die Ampel permanent? --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1509/nachricht5759.html (ja, es wird eine neue Ampel errichtet) --- #: last_checked: 2016-08-01 --- #: check_frequency: 60d
 	X 14904,10812
+#: historical_note: im September 2026 eingeschaltet
+#: note: Anforderung für Radfahrer aus An den Eiswerken und für Linksabbieger aus der Hauptstr. -> An den Eiswerken
+	X 15004,10791
 	F 8667,5372
 	F 5807,12070
 #: note: Anforderungsampel
@@ -4664,7 +4668,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
 #: XXX laut osm note von SGA Neukölln bis Ende August 2026
-#: last_checked: 2026-09-03
+#: last_checked: 2026-09-04 (mapillary)
 #: check_frequency: 30d
 # REMOVED (wurde nicht gehalten) --- #: next_check: 2026-08-31 (osm note)
 # REMOVED --- #: next_check: 2026-09-30 (infravelo)

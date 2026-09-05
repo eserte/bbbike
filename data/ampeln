@@ -2,13 +2,11 @@
 #: title: Ampeln, Bahnübergänge und Zugbrücken
 #: note: XXX_* categorization done 2008-01-26
 #:
-Köpenicker Str.: Gegenverkehrsregelung	X::inwork 11405,11655
 Scheidemannstr./Reichstag	F::inwork 8373,12416
 Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork 12298,21015
 Sandhauser Str./Elstegasse: Gegenverkehrsregelung	X::inwork -1971,20231
-Schorfheidestr./Drebkauer Str.: Gegenverkehrsregelung	X::inwork 6317,20751
 Allee der Kosmonauten/Meeraner Str.	X::inwork 18382,13492
 Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork 8953,14528
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork 15433,10765
@@ -1787,7 +1785,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 1028,11309
 	X 13151,13367
 	B0 20623,6136
-	B0 20533,7199
+	B0 20530,7180
 	B0 20430,7122
 	B0 19587,6584
 	B0 19606,6182
@@ -2162,6 +2160,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	F 22031,9142
 	F 15356,3759
 	X 14904,10812
+	X 15004,10791
 	F 8667,5372
 	F 5807,12070
 	F 6833,15215

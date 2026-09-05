@@ -344,7 +344,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id[inactive]: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX Wird hier irgendwann neu asphaltiert werden?
 #: historical_note: früher (bis März 2025) war hier eingetragen: Asphalt mit einigen Schäden, Q1
-#: last_checked: 2026-08-09
+#: last_checked: 2026-09-05
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2022-12-16
 Wallensteinstr.: schadhafter Asphalt	Q1- 18037,9195 18092,9141 18134,9080
@@ -622,7 +622,7 @@ Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 1156
 #: osm_watch: note 5203545 3
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
 #: XXX laut SGA Neukölln Baustart Mitte 2028, nach Arbeiten der BWB
-#: last_checked: 2026-09-03
+#: last_checked: 2026-09-04 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2028-12-31 (infravelo)
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11593,7237 11607,7145 11617,7083 11652,6879
@@ -5502,7 +5502,7 @@ Zwieseler Str.: Beton/provisorischer Asphalt	Q1+ 19669,9876 19684,10037 19688,10
 (Verlängerung der Zwieseler Str.): Kleinsteinpflaster	Q1- 19621,9097 19638,9070
 (Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19638,9070 19705,9039
 Bodenmaiser Weg: Asphalt mit Schäden	Q1- 19406,9236 19488,9223 19628,9194
-Robert-Siewert-Str.: Asphalt mit Schäden	Q1 19669,9876 19842,9895
+Robert-Siewert-Str.: Asphalt mit Schäden	Q1- 19669,9876 19842,9895
 Beerfelder Str.: unbefestigte, holprige Straße	Q2 19842,9895 19819,10090 19810,10155
 Pirolstr. (Karlshorst): Beton	Q0 19688,10094 19789,10091
 Pirolstr. (Karlshorst): unbefestigte, holprige Straße	Q2 19789,10091 19819,10090
@@ -11161,7 +11161,9 @@ Egon-Erwin-Kisch-Str. [Wohngebiet]: Beton	Q0- 17044,18859 17053,18879 17067,1900
 Schweriner Ring [9-19 ungerade]: Beton	Q0- 17444,19115 17259,19121
 (Am Berl - Weg zum Hechtgraben): Beton	Q0- 16793,18809 16743,18892 16757,18910
 (Weg zum Hechtgraben): Asphalt	Q0 16757,18910 16780,18930 16784,18955 16734,19033 16694,19042 16665,19021
-(Weg auf dem Lärmschutzwall): unbefestigter Weg, teilweise Schotter	Q2+ 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
+(Weg auf dem Lärmschutzwall): unbefestigter Weg, teilweise Schotter	Q2+ 16665,19021 16699,19090 17131,18554 17197,18473 17275,18356 17564,18010 17585,17963
+#: by: mapillary
+(Lärmschutzwall - Wustrower Park): unbefestigter Weg, teilweise Schotter	Q2+ 17131,18554 17099,18575 17091,18596 17064,18601 17057,18587 17040,18571
 #: historical_note: früher: note: die ersten Meter im Norden haben noch eine "vernünftige" wassergebundene Decke; Eintrag: unbefestigter Pfad, Q2
 (Zingster Str. - Wartenberger Weg): Asphalt	Q0 16358,18687 16325,18796
 Zingster Str.: Beton	Q0 16358,18687 16371,18669 16445,18571 16534,18457 16583,18386
@@ -12138,8 +12140,8 @@ Zechsteinweg: unbefestigter Weg	Q2- 10350,21676 10328,21737 10319,21774
 Kieselweg: Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10423,21701 10388,21801
 (Grenzweg KGA Daheim II): Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10120,21464 10811,21705
 (Weg im Wustrower Park): Asphalt	Q0 17235,18352 17206,18332
-(Weg im Wustrower Park): wassergebundene Decke	Q1 17206,18332 17162,18304 17087,18434 17102,18490 17021,18663
-(Weg im Wustrower Park): Gehwegplatten	Q0- 17021,18663 16939,18652
+(Weg im Wustrower Park): wassergebundene Decke	Q1 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17021,18663
+(Weg im Wustrower Park): Gehwegplatten	Q0- 17021,18663 16998,18695
 (Suermondtstr. - Degnerstr.): Verbundsteinpflaster	Q1+ 16476,16216 16458,16104 16493,15983 16559,15896
 (an den Schönhauser Allee Arcaden): Kleinsteinpflaster	Q1 11150,15908 11070,15944 11086,15984 10975,16010
 (Friedrich-Ludwig-Jahn-Sportpark - Cantianstr.): Asphalt	Q0 10520,15353 10781,15438 10804,15447
@@ -13002,7 +13004,7 @@ Am Treptower Park, Nebenstraße: Kleinsteinpflaster	Q2+; 14614,9052 14558,9111
 Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0- 24649,10710 24702,10710 24731,10710
 Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0- 24702,10710 24719,10647 24739,10645
 #: note: zusätzlich existiert eine (für Fußgänger gedachte?) Rampe mit neuem Verbundsteinpflaster
-Am Bahnhof Wuhlheide: Beton	Q0- 20640,7122 20654,7136 20629,7189
+Am Bahnhof Wuhlheide: Beton	Q0- 20641,7118 20654,7124 20629,7189
 Im Lichtenhain: Verbundsteinpflaster	Q1+ 16497,10685 16491,10655 16484,10615 16474,10591 16461,10560
 Im Lichtenhain: Verbundsteinpflaster	Q1+ 16433,10576 16461,10560 16503,10532
 # REMOVED --- (temporäre Zufahrt zur Straße Im Lichtenhain): unebener Asphalt und Verbundsteinpflaster	Q1 16576,10658 16533,10566 16474,10591
@@ -13449,7 +13451,8 @@ Fritzi-Massary-Str. [am Highdeck]: Asphalt	Q0 15361,6317 15360,6424
 (Greifswalder Bucht): unbefestigte Straße	Q2 11252,21022 11294,21005 11360,20982
 (Zoppoter Weg): unbefestigte Straße	Q2 11242,21348 11296,21266 11371,21121 11382,21083 11360,20982 11318,20894
 (Verlängerung Guntramstr.): Waldweg, einige Wurzeln	Q2 20977,8191 20879,8173 20719,8139 20616,8122
-(Nord-Süd-Weg in der nördlichen Wuhlheide): Waldweg, einige Wurzeln, einige sandige Stellen	Q2 20841,7271 20815,7313 20728,7363 20778,7659 20763,7868 20719,8139 20679,8362
+(Nord-Süd-Weg in der nördlichen Wuhlheide): Waldweg, einige Wurzeln, einige sandige Stellen	Q2 20841,7271 20815,7313 20728,7363
+(Nord-Süd-Weg in der nördlichen Wuhlheide): Waldweg, einige Wurzeln, einige sandige Stellen	Q2 20673,7303 20713,7335 20728,7363 20778,7659 20763,7868 20719,8139 20679,8362
 (Verlängerung Hadubrandstr.): unbefestigter Weg, einige sandige Stellen	Q2 20918,8383 20888,8372 20679,8362 20590,8365
 (Hadubrandstr. - Nord-Süd-Weg): Waldweg, einige Wurzeln	Q2 20888,8372 20870,8252 20879,8173 20895,8079 20854,7982 20763,7868
 (Königswinterstr. - Rheingoldstr.): Asphalt	Q0 18970,8970 19007,8986
@@ -13685,7 +13688,7 @@ Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7739,14119 7784,14147 7875,14204
 #: historical_note: bis Juni 2025 provisorisch asphaltiert (Asphalt, Q0)
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7775,14062 7843,14103
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7843,14103 7918,14148
-Am Bahnhof Wuhlheide: Betonpflaster	Q0- 20430,7122 20524,7176 20533,7199 20575,7226 20629,7189
+Am Bahnhof Wuhlheide: Betonpflaster	Q0- 20430,7122 20525,7179 20530,7180 20541,7187 20551,7213 20575,7226 20629,7189
 An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24530,12296 24556,12181 24554,12100
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1499398.php (Sanierungsmaßnahmen vom 4.11.2024 bis 15.11.2024 zwischen Wodanstr. und Treskowstr.)
@@ -13724,7 +13727,7 @@ Bruno-Baum-Str.: Asphalt	Q0 19997,15122 19893,14947 19867,14886 19793,14728 1976
 #: by: https://www.entwicklungsstadt.de/richtfest-fuer-oder-so-waechst-das-wohnquartier-nahe-tempelhofer-feld/ (geplante Fertigstellung: März 2027)
 #: osm_watch: way id="933570857" version="6"
 #: XXX die Straße wird neu gemacht, wird evtl. nach den Hochbauarbeiten komplettiert
-#: last_checked: 2026-06-20
+#: last_checked: 2026-09-04 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (entwicklungsstadt, porr website)
 (Verlängerung der Siegfriedstr.): Asphalt ohne letzte Deckschicht	Q1+ 11664,6796 11488,6781

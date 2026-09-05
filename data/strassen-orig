@@ -7151,11 +7151,13 @@ Gehrenseestr.	H 18738,16957 18674,16904 18587,16834 18527,16789 18478,16753 1831
 Gehrenseestr. [Nebenstraße]	N 18499,16788 18471,16765 18308,16645
 Gehrenseestr. [Nebenstraße]	N 18487,16741 18324,16625
 Gehrenseestr. [Nebenstraße]	N 18153,16551 18096,16523 17877,16423
-(Weg zwischen S-Hohenschönhausen und S-Wartenberg)	NN 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
-(Weg zwischen S-Hohenschönhausen und S-Wartenberg)	NN 17159,18375 17206,18332
-(Weg im Wustrower Park)	NN 17235,18352 17206,18332 17162,18304 17087,18434 17102,18490 17021,18663 16939,18652
+(Weg zwischen S-Bhf. Hohenschönhausen und S-Bhf. Wartenberg)	NN 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
+(Weg zwischen S-Bhf. Hohenschönhausen und S-Bhf. Wartenberg)	NN 17159,18375 17206,18332
+(Weg im Wustrower Park)	NN 17235,18352 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17021,18663
+(Wustrower Park - Willy-Abel-Platz/S-Bhf. Wartenberg)	NN 17021,18663 16998,18695
 #: alias: (Höhenweg am Wustrower Park)
-(Weg auf dem Lärmschutzwall)	NN 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
+(Weg auf dem Lärmschutzwall)	NN 16665,19021 16699,19090 17131,18554 17197,18473 17275,18356 17564,18010 17585,17963
+(Lärmschutzwall - Wustrower Park)	NN 17131,18554 17099,18575 17091,18596 17064,18601 17057,18587 17040,18571
 (Wustrower Str. - Wustrower Park)	NN 17128,18281 17162,18304
 Wollenberger Str.	H 17640,16259 17651,15766
 Grenzgrabenstr.	N 18422,15583 18429,15165
@@ -7333,7 +7335,7 @@ Spindlersfelder Str.	H 21002,5755 21024,5601 21025,5437 21056,5108 21060,5043 21
 (Weg unterhalb der Spindlersfelder Str.)	NN 21108,4725 21130,4596 21130,4481 21130,4420 21130,4335 21139,4293 21146,4229 21148,4220 21170,4111 21260,3848 21310,3762 21325,3715 21324,3691
 Straße zum FEZ	N 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211
 Straße zum FEZ	N 20464,6237 20453,6211 20428,6157 20593,6082 20716,6029
-Am Bahnhof Wuhlheide	N 20430,7122 20524,7176 20533,7199 20575,7226 20629,7189 20654,7136 20640,7122
+Am Bahnhof Wuhlheide	N 20430,7122 20525,7179 20530,7180 20541,7187 20551,7213 20575,7226 20629,7189 20654,7124 20641,7118
 #: note: Beleuchtung existiert
 (Steffelbauerstr. - Wuhlheide)	N 19594,6155 19606,6182 19617,6208 19751,6514 19810,6634 19914,6865 19931,6903 19997,6935
 (An der Wuhlheide - FEZ/Freilichtbühne Wuhlheide)	NN 19957,5941 19943,5971 19952,5981
@@ -7400,7 +7402,7 @@ Verlängerte Waldowallee	H 19468,8168 19558,8064 19666,7988 19843,7866 19927,7813
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110323.1140.336899.html
 #: oldname: -20110329: Köpenicker Allee
-Rudolf-Rühl-Allee	H 21303,5826 21243,6046 21239,6063 20722,6971 20640,7122 20603,7189 20653,7289 20616,7292 20510,7325 20393,7404 20340,7468 20323,7529 20316,7637 20307,7689 20280,7749
+Rudolf-Rühl-Allee	H 21303,5826 21243,6046 21239,6063 20722,6971 20641,7118 20603,7189 20653,7289 20616,7292 20510,7325 20393,7404 20340,7468 20323,7529 20316,7637 20307,7689 20280,7749
 Köpenicker Allee	NN 20280,7749 20226,7846
 Köpenicker Allee	N 20226,7846 20096,8077 19990,8253 19898,8410 19813,8564 19697,8776 19633,8892 19575,8978 19500,9043 19392,9116 19267,9201 19206,9243 19195,9249 19109,9306 19020,9364 18939,9417
 # REMOVED --- #: XXX neuer Straßenname: "Am alten Flugplatz", evtl. nur im Bereich der neuen Gartenstadt --- #: XXX fehlt in Berlin.coords.data --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6985 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf (Benennung) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_39_4845_4932_online.pdf (späte Straßenlandwidmung) --- #: osm_watch: way id="24845022" version="16" --- #: last_checked: 2017-11-05 --- #: check_frequency: 45d
@@ -9318,7 +9320,8 @@ Nitzwalder Str.	NN 21578,7947 21593,7934
 (Wuhlebrücke)	NN 21351,8259 21356,8267 21368,8285 21371,8289
 #: note Wege in der nördlichen Wuhlheide vvv
 (Verlängerung Guntramstr.)	NN 20977,8191 20879,8173 20719,8139 20616,8122
-(Nord-Süd-Weg in der nördlichen Wuhlheide)	NN 20841,7271 20815,7313 20728,7363 20778,7659 20763,7868 20719,8139 20679,8362
+(Nord-Süd-Weg in der nördlichen Wuhlheide)	NN 20841,7271 20815,7313 20728,7363
+(Nord-Süd-Weg in der nördlichen Wuhlheide)	NN 20673,7303 20713,7335 20728,7363 20778,7659 20763,7868 20719,8139 20679,8362
 (Verlängerung Hadubrandstr.)	NN 20918,8383 20888,8372 20679,8362 20590,8365
 (Hadubrandstr. - Nord-Süd-Weg)	NN 20888,8372 20870,8252 20879,8173 20895,8079 20854,7982 20763,7868
 #: note ^^^
@@ -13057,7 +13060,7 @@ Eisensteiner Str.	N 19727,9672 19722,9483
 #: XXX wird hier noch ein verkehrsberuhigter Bereich ausgewiesen?
 #: osm_watch: way id="338124008" version="17"
 #: priority: #C
-#: last_checked: 2026-03-01
+#: last_checked: 2026-09-05
 #: check_frequency: 180d
 Zachenberger Str.	N 19889,9400 19824,9405 19780,9409
 Teisnacher Str.	N 19871,9680 19859,9473
@@ -16221,7 +16224,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2026-08-25
+#: last_checked: 2026-09-05
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16617,7 +16620,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2026-08-25
+#: last_checked: 2026-09-05
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
@@ -16957,7 +16960,7 @@ Juchaczweg	N 14126,3225 14180,3334
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mspcfsaaci2s
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreich24e6pvkfuv4nlewrod2ztvir4rjzyoy4ip4v3dz7wx6umeyafi
 #: XXX Bebauungsplan XIV-132-1: ggfs. wird dieser Abschnitt öffentlich befahrbar werden, inklusive Verlegung der Schranke?
-#: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 (bis 24.08.2026) (bis 04.09.2026)
+#: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 (bis 24.08.2026) (bis 04.09.2026) (inaktiv)
 #: osm_watch: way id="721901188" version="1"
 #: osm_watch: way id="138144497" version="10"
 #: priority: #C

@@ -304,7 +304,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="7"
-#: last_checked: 2026-08-15
+#: last_checked: 2026-09-05
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -3780,12 +3780,7 @@ Drängelgitter kann ohne Absteigen passiert werden	BNP:2 1388,3197
 #: by: Niels Weber
 Drängelgitter	BNP:5 11010,-378
 Drängelgitter	BNP:5 22268,11285
-#: by: rjoop vvv
-#: confirmed_by: srt vvv
-Drängelgitter	BNP:5 -7224,15496
-Drängelgitter	BNP:5 -7179,15516
-#: confirmed_by: ^^^
-#: by: ^^^
+# REMOVED (nach dem Neubau nicht mehr) --- #: by: rjoop vvv --- #: confirmed_by: srt vvv --- Drängelgitter	BNP:5 -7224,15496 --- Drängelgitter	BNP:5 -7179,15516 --- #: confirmed_by: ^^^ --- #: by: ^^^
 #: by: (x)qusor
 #: XXX_prog: BS (wg. Umfahrung der Schranke; min. 1x; wenn zugeparkt ist, dann 2x)
 Drängelgitter und Schranke	BNP:5::trailer=15 14274,12190
@@ -4187,8 +4182,11 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 # 
 #: next_check_id: ALLEEDERKOSMONAUTEN-2026
 #: by: https://www.entwicklungsstadt.de/grossbaustelle-an-der-rhinstrasse-bvg-zerlegt-wichtigen-tramknoten-im-berliner-osten/ (laut Baustellenschild bis August 2027)
+#: by: https://marzahn-hellersdorf.com/rhinstrasse-allee-der-kosmonauten-ab-montag-wird-es-an-der-kreuzung-eng/
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260904
 #: source_id: LMS-BR:414868/72 viz2021:13.51933,52.52609,06.07.2026,07:00 (bis 07.09.2026)
 #: source_id: planb2026:13.51956095,52.52592192,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026) (bis 12.12.2026)
+#: source_id: vizapi2026:914/2026 (bis 12.12.2026)
 #: last_checked: 2026-08-05
 #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung)
 Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18063,13490
@@ -4553,7 +4551,7 @@ Glockenblumenweg: Einbahnstraße	1s:q2:inwork 16461,2569 16260,2717
 #: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7894 (zum geplanten Skaterpark)
 #: by: https://www.tagesspiegel.de/berlin/jugendliche-haben-die-ideen-geliefert-neuer-skatepark-in-berlins-sudosten-geplant-15312633.html (Projektstart 2028)
 #: priority: #C vvv
-#: last_checked: 2026-07-10 vvv
+#: last_checked: 2026-09-05 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-04-30 (nd) vvv
 unter der Minna-Todenhagen-Brücke: Sperrung	2::inwork 16930,7151 16997,7057
@@ -4581,7 +4579,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="5"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-08-28
+#: last_checked: 2026-09-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967

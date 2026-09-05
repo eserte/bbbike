@@ -9222,7 +9222,8 @@ Egon-Erwin-Kisch-Str. [Wohngebiet]: Beton	Q0 17044,18859 17053,18879 17067,19004
 Schweriner Ring [9-19 ungerade]: Beton	Q0 17444,19115 17259,19121
 (Am Berl - Weg zum Hechtgraben): Beton	Q0 16793,18809 16743,18892 16757,18910
 (Weg zum Hechtgraben): Asphalt	Q0 16757,18910 16780,18930 16784,18955 16734,19033 16694,19042 16665,19021
-(Weg auf dem Lärmschutzwall): unbefestigter Weg, teilweise Schotter	Q2 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
+(Weg auf dem Lärmschutzwall): unbefestigter Weg, teilweise Schotter	Q2 16665,19021 16699,19090 17131,18554 17197,18473 17275,18356 17564,18010 17585,17963
+(Lärmschutzwall - Wustrower Park): unbefestigter Weg, teilweise Schotter	Q2 17131,18554 17099,18575 17091,18596 17064,18601 17057,18587 17040,18571
 (Zingster Str. - Wartenberger Weg): Asphalt	Q0 16358,18687 16325,18796
 Zingster Str.: Beton	Q0 16358,18687 16371,18669 16445,18571 16534,18457 16583,18386
 Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]: Beton	Q0 16938,17971 16739,18249 16618,18412
@@ -10092,8 +10093,8 @@ Zechsteinweg: unbefestigter Weg	Q2 10350,21676 10328,21737 10319,21774
 Kieselweg: Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10423,21701 10388,21801
 (Grenzweg KGA Daheim II): Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10120,21464 10811,21705
 (Weg im Wustrower Park): Asphalt	Q0 17235,18352 17206,18332
-(Weg im Wustrower Park): wassergebundene Decke	Q1 17206,18332 17162,18304 17087,18434 17102,18490 17021,18663
-(Weg im Wustrower Park): Gehwegplatten	Q0 17021,18663 16939,18652
+(Weg im Wustrower Park): wassergebundene Decke	Q1 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17021,18663
+(Weg im Wustrower Park): Gehwegplatten	Q0 17021,18663 16998,18695
 (Suermondtstr. - Degnerstr.): Verbundsteinpflaster	Q1 16476,16216 16458,16104 16493,15983 16559,15896
 (an den Schönhauser Allee Arcaden): Kleinsteinpflaster	Q1 11150,15908 11070,15944 11086,15984 10975,16010
 (Friedrich-Ludwig-Jahn-Sportpark - Cantianstr.): Asphalt	Q0 10520,15353 10781,15438 10804,15447
@@ -10847,7 +10848,7 @@ Am Treptower Park, Nebenstraße: Kleinsteinpflaster	Q2; 14614,9052 14558,9111
 (Schragenfeldstr. - Allee der Kosmonauten): Verbundsteinpflaster	Q1 21095,15003 21025,15005
 Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0 24649,10710 24702,10710 24731,10710
 Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0 24702,10710 24719,10647 24739,10645
-Am Bahnhof Wuhlheide: Beton	Q0 20640,7122 20654,7136 20629,7189
+Am Bahnhof Wuhlheide: Beton	Q0 20641,7118 20654,7124 20629,7189
 Im Lichtenhain: Verbundsteinpflaster	Q1 16497,10685 16491,10655 16484,10615 16474,10591 16461,10560
 Im Lichtenhain: Verbundsteinpflaster	Q1 16433,10576 16461,10560 16503,10532
 (Frankfurter Allee - Albert-Hößler-Str./Harnackstr.): Asphalt	Q0 16190,11872 16115,11791 16099,11786
@@ -11212,7 +11213,8 @@ Fritzi-Massary-Str. [am Highdeck]: Asphalt	Q0 15361,6317 15360,6424
 (Greifswalder Bucht): unbefestigte Straße	Q2 11252,21022 11294,21005 11360,20982
 (Zoppoter Weg): unbefestigte Straße	Q2 11242,21348 11296,21266 11371,21121 11382,21083 11360,20982 11318,20894
 (Verlängerung Guntramstr.): Waldweg, einige Wurzeln	Q2 20977,8191 20879,8173 20719,8139 20616,8122
-(Nord-Süd-Weg in der nördlichen Wuhlheide): Waldweg, einige Wurzeln, einige sandige Stellen	Q2 20841,7271 20815,7313 20728,7363 20778,7659 20763,7868 20719,8139 20679,8362
+(Nord-Süd-Weg in der nördlichen Wuhlheide): Waldweg, einige Wurzeln, einige sandige Stellen	Q2 20841,7271 20815,7313 20728,7363
+(Nord-Süd-Weg in der nördlichen Wuhlheide): Waldweg, einige Wurzeln, einige sandige Stellen	Q2 20673,7303 20713,7335 20728,7363 20778,7659 20763,7868 20719,8139 20679,8362
 (Verlängerung Hadubrandstr.): unbefestigter Weg, einige sandige Stellen	Q2 20918,8383 20888,8372 20679,8362 20590,8365
 (Hadubrandstr. - Nord-Süd-Weg): Waldweg, einige Wurzeln	Q2 20888,8372 20870,8252 20879,8173 20895,8079 20854,7982 20763,7868
 (Königswinterstr. - Rheingoldstr.): Asphalt	Q0 18970,8970 19007,8986
@@ -11425,7 +11427,7 @@ Bergiusstr. - Grenzallee: asphaltiert	Q0 14141,6623 14147,6652 14187,6704 14179,
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1 7739,14119 7784,14147 7875,14204
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1 7775,14062 7843,14103
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1 7843,14103 7918,14148
-Am Bahnhof Wuhlheide: Betonpflaster	Q0 20430,7122 20524,7176 20533,7199 20575,7226 20629,7189
+Am Bahnhof Wuhlheide: Betonpflaster	Q0 20430,7122 20525,7179 20530,7180 20541,7187 20551,7213 20575,7226 20629,7189
 An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1 24530,12296 24556,12181 24554,12100
 Hönower Str.: Asphalt	Q0 24554,12100 24556,12056 24563,11980

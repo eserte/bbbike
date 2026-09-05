@@ -21,7 +21,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
-#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, viz2021:13.424,52.528103, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026) (bis 21.08.2026) (inaktiv) (bis 04.09.2026) (vermutete Verlängerung)
+#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, viz2021:13.424,52.528103, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026) (bis 21.08.2026) (inaktiv) (bis 04.09.2026) (inaktiv)
 #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
 #: source_id: planb2026:13.42324439,52.52777598,03.02.2026, ("Sperrung einer Fahrtrichtung", bis 31.07.2026) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
@@ -36,7 +36,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (re-T,re-G)
-#: last_checked: 2026-09-04 (traffic) vvv
+#: last_checked: 2026-09-05 (traffic) vvv
 #: check_frequency: 8d vvv
 # REMOVED --- #: next_check: 2026-09-04 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (nach den Bauarbeiten:) --- Am Friedrichshain: letzte Prüfung und ggfs. Dokumentation nach Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	?; 11706,13635 11762,13619 11785,13625
@@ -184,7 +184,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026)
 #: also_indoor: traffic (G,T,no-H,no-W)
 #: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
-#: last_checked: 2026-08-26
+#: last_checked: 2026-09-05 (traffic)
 #: next_check: 2026-09-09 (planb)
 #: valid: -20260909
 Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,13185 12842,13070
@@ -389,7 +389,7 @@ Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 1366
 #: osm_watch: way id="1219203456" version="26"
 #: osm_watch: way id="884139300" version="29"
 #: osm_watch: way id="1127801487" version="15"
-#: last_checked: 2026-09-03 (mapillary) vvv
+#: last_checked: 2026-09-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
 # REMOVED (andere Verkehrsführung) --- Marggraffbrücke: Behelfsbrücke, Engstellen	q2::inwork 16747,6813 16720,6845 16677,6892 16627,6945
@@ -453,17 +453,6 @@ Nipkowstr.: mögliche Bauarbeiten	q4::inwork 20352,3744 20499,3572
 # REMOVED (laut traffic offen) --- #: XXX wie lange bleibt die Fahrbahn gesperrt? Laut rbb "bis voraussichtlich 30.06.2021" --- #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021) --- #: source_id: 2147347162 (bis 11.6.2021) (inaktiv) --- #: also_indoor: traffic (G,H) --- #: priority: #A --- #: last_checked: 2021-05-29 --- #: next_check: 2021-06-30 --- #: valid: -20210630 --- Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
 # 
 ### Wedding/Gesundbrunnen ###
-# 
-#  REMOVED --- #: next_check_id: LIESENBRUECKEN-2026
-#  REMOVED --- #: by: https://www.entwicklungsstadt.de/liesenbruecken-in-gesundbrunnen-sperrung-trifft-auf-ungeklaerte-zukunft/
-#  REMOVED --- #: by: https://www.entwicklungsstadt.de/liesenbruecken-in-gesundbrunnen-das-steckt-hinter-den-sperrungen/ (bis Ende KW 36/2026)
-#  REMOVED --- #: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, (bis 04.09.2026)
-#  REMOVED --- #: also_indoor: traffic (T,no-G,H[zu lang],no-W)
-#  REMOVED --- #: note: siehe auch aufgehobenen Eintrag zur Einbahnstraßenregelung in gesperrt-orig
-#  REMOVED --- #: last_checked: 2026-08-24 (entwicklungsstadt)
-#  REMOVED --- #: next_check: 2026-09-04
-#  REMOVED --- #: valid: -20260904
-#  REMOVED --- Liesenbrücken: Fahrbahn unter der Brücke gesperrt, Gehweg ist frei	q4::inwork 8700,14956 8685,14966 8663,14960
 # 
 # REMOVED (weitgehend offen) --- #: next_check_id: PEKINGERPLATZ-2025
 # REMOVED --- #: next_check_id: NORDUFER-2025
@@ -1063,7 +1052,7 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordra
 #: check_frequency: 120d
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 # 
-# REMOVED (Bauarbeiten weitgehende fertig) --- #: next_check_id: WUHLHEIDE-2021 --- #: last_checked: 2022-03-06 --- #: check_frequency: 45d --- Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
+# REMOVED (Bauarbeiten weitgehende fertig) --- #: next_check_id: WUHLHEIDE-2021 --- #: last_checked: 2022-03-06 --- #: check_frequency: 45d --- Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7124 20629,7189 20575,7226
 # REMOVED --- #: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970 --- #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verlängerung bis 9. März 2020) --- #: source_id: 2147344732 (bis 06. März 2020) --- #: priority: #B --- #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig) --- #: check_frequency: 3d --- #: next_check: 2020-03-06 --- #: valid: -20200306 --- Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
 # REMOVED (vermutlich (hoffentlich) ist der neue Geh/Radweg breit genug) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: last_checked: 2020-06-14 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2021-12-31 vvv --- Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23404,5325 23420,5159 --- Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23433,5037 23444,4942 23451,4877 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: last_checked: 2012-10-21 --- #: next_check: 2012-11-01 --- Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22544,6037 22539,5956
@@ -1458,7 +1447,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-08-25
+#: last_checked: 2026-09-05
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -3897,7 +3886,7 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fußgänger	q1 6534,1702 6
 # REMOVED --- (Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17267,14146 17264,14178
 (Genslerstr. - Landsberger Allee): Fußgänger	q2 16669,14438 16665,14420 16644,14401 16632,14390
 Schweriner Ring [9-19 ungerade]: enge Straße	q1 17444,19115 17259,19121
-(Weg auf dem Lärmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
+(Weg auf dem Lärmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17131,18554 17197,18473 17275,18356 17564,18010 17585,17963
 (entlang der Stadtbahn): Fußgänger, schmal	q3 10117,12973 10004,12966 9975,12959 9930,12947
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fußgänger	q1 7144,16781 7131,16790 7115,16827 7097,16915 7094,16938
@@ -4250,7 +4239,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: note: hier kein explizites Radfahrverbot, vielleicht wird das noch geändert
 (Am Werkstor/Kupferkamp - Uferweg): einige Fußgänger	q1 18075,5880 18118,5953
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
-(Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17206,18332 17162,18304 17087,18434 17102,18490 17021,18663
+(Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17021,18663
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
 (an den Schönhauser Allee Arcaden): Fußgänger	q4 11086,15984 10975,16010
 #: XXX_prog falls man die Umfahrung auf dem Gehweg wählt, auf der südlichen Seite, ansonsten wegfallen lassen
