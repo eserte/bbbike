@@ -15,7 +15,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $original_image_editor $geometry $viewer_menu $viewer_sizes_menu $exiftool_path);
-$VERSION = 1.31;
+$VERSION = 1.32;
 
 use BBBikeProcUtil qw(double_forked_exec);
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
@@ -854,6 +854,7 @@ sub _check_exiftool {
 	}
     }
     if (!$exiftool_path) {
+	main::status_message('Image::ExifTool or exiftool missing', 'error');
 	return;
     }
 
