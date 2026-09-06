@@ -319,6 +319,14 @@ EOF
 	    # only capable displaying simple websites.
 	    push @optional_packages, qw(dillo);
 	}
+	if ($opt{'feature-imageviewer'}) {
+	    if (_distver_cmp($opt{distver}, '>=', 'jammy')) {
+		push @optional_packages, qw(geeqie);
+	    } else {
+		push @optional_packages, qw(eog);
+	    }
+	    push @optional_packages, qw(libimage-exiftool-perl);
+	}
 	if ($opt{src} =~ m{^(github|github-fixed)$}) {
 	    push @packages, 'git';
 	} elsif ($opt{src} eq 'github-archive') {
@@ -1273,6 +1281,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'feature-svg' => 1,
 	       'feature-remote' => 1,
 	       'feature-extras' => 1,
+	       'feature-imageviewer' => 0,
 	       'invalidate-apt' => 0,
 	       'docker-image' => undef,
 	       'share-data-osm' => 0,
@@ -1294,6 +1303,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'feature-svg!',
 	       'feature-remote!',
 	       'feature-extras!',
+	       'feature-imageviewer!',
 	       'invalidate-apt!',
 	       'docker-image=s',
 	       'share-data-osm!',
