@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2007,2008,2009,2011,2012,2013,2016,2019,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2007,2008,2009,2011,2012,2013,2016,2019,2020,2026 Slaven Rezic. All rights reserved.
 #
 
 # Description (en): View images in bbd files
@@ -15,7 +15,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $original_image_editor $geometry $viewer_menu $viewer_sizes_menu $exiftool_path);
-$VERSION = 1.29;
+$VERSION = 1.30;
 
 use BBBikeProcUtil qw(double_forked_exec);
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
@@ -40,12 +40,27 @@ $geometry = "third" if !defined $geometry;
 
 my $exif_viewer_toplevel_name = "BBBikeViewImages_ExifViewer";
 
+our @external_viewer_defs = (
+    # order is used in find_best_external_viewer
+    # exe, label, value
+    ['eog', 'Eye of GNOME (eog)'], # handles photos regarding orientation better than xzgv
+    ['xzgv'], # faster than ImageMagick, free
+    ['gm', 'GraphicsMagick (gm display)', 'gm display'], # better maintained than ImageMagick (?)
+    ['display', 'ImageMagick (display)'],
+    ['gimp', 'GIMP'],
+    ['xv'], # non-free, nowadays very rarely installed
+);
+
+our %prog_is_available;
+
 sub register {
     my $pkg = __PACKAGE__;
 
     $BBBikePlugin::plugins{$pkg} = $pkg;
 
     define_cursor();
+
+    find_available_viewers();
 
     add_button();
 }
@@ -85,6 +100,16 @@ sub unregister {
     delete $BBBikePlugin::plugins{$pkg};
 }
 
+sub find_available_viewers {
+    %prog_is_available = ();
+    if ($^O ne 'MSWin32') {
+	for my $def (@external_viewer_defs) {
+	    my $prog = $def->[0];
+	    $prog_is_available{$prog} = is_in_path($prog);
+	}
+    }
+}
+
 sub add_button {
     my $mf  = $main::top->Subwidget("ModePluginFrame");
     my $mmf = $main::top->Subwidget("ModeMenuPluginFrame");
@@ -107,13 +132,6 @@ sub add_button {
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_on');
     $main::balloon->attach($b, -msg => M"Bildbetrachter")
 	if $main::balloon;
-
-    my %prog_is_available;
-    if ($^O ne 'MSWin32') {
-	for my $prog (qw(xv gm display xzgv eog gimp)) {
-	    $prog_is_available{$prog} = is_in_path($prog);
-	}
-    }
 
     $viewer_sizes_menu = $mmf->Menu
 	(-menuitems =>
@@ -150,60 +168,27 @@ sub add_button {
 	      ],
 	      # Some viewers might be available, but forking (see below) does not work on MSWin32...
 	      ($^O eq 'MSWin32' ? () :
-	       (# xv is not surely not available ...
+	       (
 		[Radiobutton => M"Bester externer Viewer",
 		 -variable => \$viewer,
 		 -value => '_external',
 		 -command => sub { viewer_change() },
 		],
-		($prog_is_available{"xv"}
-		 ? [Radiobutton => "xv",
-		    -variable => \$viewer,
-		    -value => "xv",
-		    -command => sub { viewer_change() },
-		   ]
-		 : ()
-		),
-		($prog_is_available{"display"}
-		 ? [Radiobutton => "ImageMagick (display)",
-		    -variable => \$viewer,
-		    -value => "display",
-		    -command => sub { viewer_change() },
-		   ]
-		 : ()
-		),
-		($prog_is_available{"gm"}
-		 ? [Radiobutton => "GraphicsMagick (gm display)",
-		    -variable => \$viewer,
-		    -value => "gm display",
-		    -command => sub { viewer_change() },
-		   ]
-		 : ()
-		),
-		($prog_is_available{"xzgv"}
-		 ? [Radiobutton => "xzgv",
-		    -variable => \$viewer,
-		    -value => "xzgv",
-		    -command => sub { viewer_change() },
-		   ]
-		 : ()
-		),
-		($prog_is_available{"eog"}
-		 ? [Radiobutton => "Eye of GNOME (eog)",
-		    -variable => \$viewer,
-		    -value => "eog",
-		    -command => sub { viewer_change() },
-		   ]
-		 : ()
-		),
-		($prog_is_available{"gimp"}
-		 ? [Radiobutton => "GIMP",
-		    -variable => \$viewer,
-		    -value => "gimp",
-		    -command => sub { viewer_change() },
-		   ]
-		 : ()
-		),
+		(map {
+		    my($exe, $label, $value) = @$_;
+		    if ($prog_is_available{$exe}) {
+			$label = $exe if !defined $label;
+			$value = $exe if !defined $value;
+			[
+			    Radiobutton => $label,
+			    -variable => \$viewer,
+			    -value => $value,
+			    -command => sub { viewer_change() },
+			];
+		    } else {
+			();
+		    }
+		} @external_viewer_defs),
 	       )
 	      ),
 	      [Radiobutton => M"WWW-Browser",
@@ -223,48 +208,20 @@ sub add_button {
 		  -variable => \$original_image_viewer,
 		  -value => '_external',
 		 ],
-		 ($prog_is_available{'xv'}
-		  ? [Radiobutton => 'xv',
-		     -variable => \$original_image_viewer,
-		     -value => 'xv',
-		    ]
-		  : ()
-		 ),
-		 ($prog_is_available{'display'}
-		  ? [Radiobutton => 'ImageMagick (display)',
-		     -variable => \$original_image_viewer,
-		     -value => 'display',
-		    ]
-		  : ()
-		 ),
-		 ($prog_is_available{'gm'}
-		  ? [Radiobutton => 'GraphicsMagick (gm display)',
-		     -variable => \$original_image_viewer,
-		     -value => 'gm display',
-		    ]
-		  : ()
-		 ),
-		 ($prog_is_available{'xzgv'}
-		  ? [Radiobutton => 'xzgv',
-		     -variable => \$original_image_viewer,
-		     -value => 'xzgv',
-		    ]
-		  : ()
-		 ),
-		 ($prog_is_available{'eog'}
-		  ? [Radiobutton => 'Eye of GNOME (eog)',
-		     -variable => \$original_image_viewer,
-		     -value => 'eog',
-		    ]
-		  : ()
-		 ),
-		 ($prog_is_available{'gimp'}
-		  ? [Radiobutton => 'GIMP',
-		     -variable => \$original_image_viewer,
-		     -value => 'gimp',
-		    ]
-		  : ()
-		 ),
+		 (map {
+		     my($exe, $label, $value) = @$_;
+		     if ($prog_is_available{$exe}) {
+			 $label = $exe if !defined $label;
+			 $value = $exe if !defined $value;
+			 [
+			     Radiobutton => $label,
+			     -variable => \$original_image_viewer,
+			     -value => $value,
+			 ];
+		     } else {
+			 ();
+		     }
+		 } @external_viewer_defs),
 		),
 		[Radiobutton => M"WWW-Browser",
 		 -variable => \$original_image_viewer,
@@ -833,19 +790,14 @@ sub graphicsmagick_maxpect_args {
 }
 
 sub find_best_external_viewer {
-    if (is_in_path("eog")) { # handles photos regarding orientation better than xzgv
-	"eog";
-    } elsif (is_in_path("xzgv")) { # faster than ImageMagick, free
-	"xzgv";
-    } elsif (is_in_path("xv")) { # also faster than ImageMagick
-	"xv";
-    } elsif (is_in_path("gm")) { # better maintained than ImageMagick (?)
-	"gm display";
-    } elsif (is_in_path("display")) {
-	"display";
-    } else {
-	undef;
+    for my $def (@external_viewer_defs) {
+	my($prog, undef, $value) = @$def;
+	if (is_in_path($prog)) {
+	    $value = $prog if !defined $value;
+	    return $value;
+	}
     }
+    undef;
 }
 
 sub exif_viewer {
