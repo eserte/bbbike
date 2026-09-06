@@ -15,7 +15,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $original_image_editor $geometry $viewer_menu $viewer_sizes_menu $exiftool_path);
-$VERSION = 1.30;
+$VERSION = 1.31;
 
 use BBBikeProcUtil qw(double_forked_exec);
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
@@ -43,11 +43,15 @@ my $exif_viewer_toplevel_name = "BBBikeViewImages_ExifViewer";
 our @external_viewer_defs = (
     # order is used in find_best_external_viewer
     # exe, label, value
+    ['ristretto'],
     ['eog', 'Eye of GNOME (eog)'], # handles photos regarding orientation better than xzgv
+    ['geeqie'], # lightweight, capable of correct orientation
     ['xzgv'], # faster than ImageMagick, free
     ['gm', 'GraphicsMagick (gm display)', 'gm display'], # better maintained than ImageMagick (?)
     ['display', 'ImageMagick (display)'],
     ['gimp', 'GIMP'],
+    ['xdg-open', 'Default system image viewer (xdg-open)'],
+    ['loupe'], # might have problems with docker operation: MESA: error: Failed to attach to x11 shm
     ['xv'], # non-free, nowadays very rarely installed
 );
 
@@ -680,6 +684,8 @@ sub show_image_viewer {
 	} elsif ($use_viewer eq 'eog') {
 	    # viewer_eog('--disable-image-collection', $abs_file); # old option name
 	    viewer_eog('--disable-gallery', $abs_file);
+	} elsif ($use_viewer eq 'geeqie') {
+	    viewer_any('geeqie', '--without-tools', $abs_file);
 	} elsif ($use_viewer eq '_wwwbrowser') {
 	    viewer_browser($abs_file);
 	} else {
@@ -733,6 +739,13 @@ sub viewer_eog {
     double_forked_exec @cmd;
 }
 
+sub viewer_any {
+    my($exe, @args) = @_;
+    my @cmd = ($exe, @args);
+    main::status_message("@cmd", "info");
+    double_forked_exec @cmd;
+}
+
 sub viewer_browser {
     my($abs_file) = @_;
     require WWWBrowser;
@@ -753,6 +766,8 @@ sub orig_viewer {
 	viewer_display(imagemagick_maxpect_args(), @_);
     } elsif ($use_original_image_viewer eq 'gm display') {
 	viewer_gm_display(graphicsmagick_maxpect_args(), @_);
+    } elsif ($use_original_image_viewer eq 'geeqie') {
+	viewer_any('geeqie', '--without-tools', @_);
     } elsif ($use_original_image_viewer eq 'xv') {
 	viewer_xv('-maxpect', @_);
     } else {
