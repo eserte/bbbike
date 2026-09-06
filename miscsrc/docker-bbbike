@@ -144,7 +144,14 @@ sub _dockerfile_fix_sources_list ($) {
     my $optref = shift;
     my $dockerfile = '';
 
-    if ($optref->{dist} eq 'debian' && _is_archived_debian($optref->{distver})) {
+    if ($optref->{dist} eq 'debian' && $optref->{distver} eq 'bullseye') {
+	# XXX It seems that the transition of bullseye to archive.debian.org
+	# is incomplete/broken. For now, use a snapshot instead.
+	$dockerfile .= <<EOF;
+RUN echo 'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260831/ bullseye main'                   >  /etc/apt/sources.list
+RUN echo 'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260831/ bullseye-security main' >> /etc/apt/sources.list
+EOF
+    } elsif ($optref->{dist} eq 'debian' && _is_archived_debian($optref->{distver})) {
 	$dockerfile .= <<EOF;
 RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian $optref->{distver} main'                  >  /etc/apt/sources.list
 RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian-security $optref->{distver}/updates main' >> /etc/apt/sources.list
