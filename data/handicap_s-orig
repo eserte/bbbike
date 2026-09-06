@@ -172,7 +172,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="35"
 #: osm_watch: way id="1072662717" version="39"
-#: last_checked: 2026-09-04
+#: last_checked: 2026-09-06
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -1377,23 +1377,11 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 # 
 ### Lichtenberg ###
 # 
-#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260811 (bis Anfang September 2026)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msubin42gl24
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mulytuay6k2n (zur Storkower Str.)
-#: source_id: planb2026:13.47721649,52.52297025,12.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
-#: source_id: LMS-BR:419242/72 viz2021:13.4795,52.52304,12.08.2026,07:00 (bis 04.09.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:421068/72 viz2021:13.4795,52.52304,03.09.2026,12:00 vizapi2026:905/2026 (angrenzende Storkower Str. nun auch gesperrt, bis 17.09.2026)
-#: note: sehr kurze Sperrung, Umfahrung/Umgehung mit Bordsteinabsenkungen (via Zebrastreifen) möglich
-#: note: außerdem ist die Radspur auf der Storkower Str. Richtung Westen aufgehoben
-#: last_checked: 2026-08-16
-#: next_check: 2026-09-04 (planb, VIZ)
-#: valid: -20260904
-Alfred-Jung-Str.: Sperrung vor der Storkower Str.	q3::inwork 15347,13268 15347,13124
-# 
 #: next_check_id: ALLEEDERKOSMONAUTEN-2026
-#: last_checked: 2026-08-05
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+#: last_checked: 2026-09-06
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+#: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
 (Allee der Kosmonauten/Rhinstr. - am Marzahn-Hohenschönhauser Grenzgraben): Fußgänger, Bordsteine	q3- 18226,13506 18178,13495 18153,13464 18091,13461 18088,13494 18063,13490
 # 
 # REMOVED --- #: also_indoor: traffic (ex-G,no-T,no-H,no-W)
@@ -3886,7 +3874,8 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fußgänger	q1 6534,1702 6
 # REMOVED --- (Landschaftspark Herzberge - Arendsweg): Trampelpfad, Bordstein	q4 17267,14146 17264,14178
 (Genslerstr. - Landsberger Allee): Fußgänger	q2 16669,14438 16665,14420 16644,14401 16632,14390
 Schweriner Ring [9-19 ungerade]: enge Straße	q1 17444,19115 17259,19121
-(Weg auf dem Lärmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17131,18554 17197,18473 17275,18356 17564,18010 17585,17963
+(Weg auf dem Lärmschutzwall): Rampen, nicht sehr breit	q2 16665,19021 16699,19090 17131,18554 17197,18473 17275,18356 17564,18010 17593,17981 17598,17945
+(Rampe zum Lärmschutzwall): Rampe, nicht sehr breit	q2 17057,18587 17072,18600 17091,18596 17099,18575 17131,18554
 (entlang der Stadtbahn): Fußgänger, schmal	q3 10117,12973 10004,12966 9975,12959 9930,12947
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fußgänger	q1 7144,16781 7131,16790 7115,16827 7097,16915 7094,16938
@@ -4239,7 +4228,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: note: hier kein explizites Radfahrverbot, vielleicht wird das noch geändert
 (Am Werkstor/Kupferkamp - Uferweg): einige Fußgänger	q1 18075,5880 18118,5953
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
-(Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17021,18663
+(Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17031,18647
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
 (an den Schönhauser Allee Arcaden): Fußgänger	q4 11086,15984 10975,16010
 #: XXX_prog falls man die Umfahrung auf dem Gehweg wählt, auf der südlichen Seite, ansonsten wegfallen lassen

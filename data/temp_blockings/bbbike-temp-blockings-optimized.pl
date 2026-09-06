@@ -7353,14 +7353,14 @@ Marburger Str.	q3::inwork 5802,10621 5907,10821
        undef,
        {
          'data' => '#: next_check_id: ZURALTENBOERSE-2025
-#: osm_watch: node id="12522972446" version="2"
-#: last_checked: 2026-03-04
+#: note: zurzeit ist der gesperrt-orig-Eintrag auch aktiv
+#: last_checked: 2026-09-06
 #: check_frequency: 180d
 Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 ',
          'from' => undef,
          'id' => 4164,
-         'text' => 'Zur Alten Börse - Merler Weg: Tor kann verschlossen sein (Stand März 2026: Tor kann geöffnet werden)',
+         'text' => 'Zur Alten Börse - Merler Weg: Tor kann verschlossen sein (Stand September 2026)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -7672,7 +7672,32 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2025/pressemitteilung.1524850.php (Baumaßnahme am Fernwärmenetz)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-in-der-smetanastrasse_a434819
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1887013282894025077
+#: by: https://pbs.twimg.com/media/Gi7-nVQXEAAnVV2?format=jpg&name=large (Richtung Süden Gehweg Radfahrer frei, Richtung Norden nicht)
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-der-smetanastrasse-in-weissensee/
+#: source_id: viz2021:13.460506,52.54631,05.02.2025,07:00 (hier nur Kfz-Verkehr, bis 30.11.2025) (inaktiv)
+#: source_id: LMS-BR:359627/72 viz2021:13.46101,52.5454,05.02.2025,07:00 viz2021:13.46101,52.5454, (bis 30.11.2025) (noch immer Smetanastr.?, bis 05.12.2025) (bis 31.08.2026) (inaktiv)
+#: source_id: planb2026:13.46612656,52.54626473,04.03.2026, ("Vollsperrung beider Fahrbahnen", bis 30.08.2026) (inaktiv)
+# REMOVED --- #: note: Komplettsperrung der Fahrbahn auf etwa 115m; Zufahrt zwischen St.-Hedwigs-Friedhof und Chopinstr. verengt möglich; deshalb q4->q3 bzw. q3->q2
+# REMOVED --- Smetanastr.	q3::inwork; 14195,15604 14133,15773
+# REMOVED --- Smetanastr.	q2::inwork; 14133,15773 14195,15604
+# REMOVED --- Chopinstr.	q4::inwork 14195,15604 14321,15636
+#: note: Halteverbotsschilder bis 30.08.2026 18:00, nun bis 23.12.2026
+#: last_checked: 2026-09-06
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2026-08-30 (Halteverbotsschilder, planb)
+#: next_check: 2026-12-23 (Halteverbotsschilder)
+Chopinstr.: Einbahnstraßenregelung	q4::inwork; 14321,15636 14440,15682 14653,15738
+',
+         'from' => 1738450800,
+         'id' => 4245,
+         'text' => 'Chopinstr.: Bauarbeiten zwischen Smetanastr. und Indira-Gandhi-Str., Einbahnstraßenregelung, offen Richtung Westen, bis voraussichtlich Ende 2026',
+         'type' => 'handicap',
+         'until' => 1798066799
+       },
        undef,
        {
          'data' => '#: source_id: viz2021:13.28562,52.49184,28.01.2025,10:34 (bis 06.05.2025) (inaktiv)
@@ -7882,7 +7907,7 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: source_id: LMS-BR:411214/72 viz2021:13.53353,52.52323,08.06.2026,12:00 (Gegenverkehrsregelung, bis 26.06.2026) (bis 29.06.2026) (inaktiv)
 #: source_id: planb2026:13.53346459,52.52327845,03.03.2025, ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 #: note: Vorankündigung der Komplettsperrung in https://www.openstreetmap.org/changeset/163160087
-#: note: Baustellenbereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt; mittlerweile (März 2026) muss man einen Umweg durch das Wohngebiet machen (+60m)
+#: note: Baustellenbereich ca. 180m, am 2025-04-02 waren davon etwa 120m gesperrt; mittlerweile (März 2026) muss man einen Umweg durch das Wohngebiet machen (+60m); 2026-09-06 Sun 11:43: Bauarbeiten, aber Durchfahrt möglich (weil es ein Sonntag war?)
 # REMOVED (anderer Abschnitt nun) --- #: osm_watch: way id="36786796" version="23"
 #: osm_watch: way id="1089784248" version="6"
 # REMOVED (deleted) --- #: osm_watch: way id="916522688" version="2"
@@ -7890,14 +7915,14 @@ Nalepastr., südliches Tor am Rundfunkgebäude	2 17056,8159 17059,8102 17059,8097
 #: osm_watch[closed]: note 4693093 1
 #: also_indoor: traffic (ex-H,ex-G,no-T)
 #: add_fragezeichen: Ist die Merler Straße weiterhin gesperrt?
-#: last_checked: 2026-08-05
-#: check_frequency: 60d
+#: last_checked: 2026-09-06
+#: check_frequency: 30d
 #: next_check: 2026-12-31 (planb)
 Merler Weg	q4::inwork 18987,13248 19027,13242 19180,13219
 ',
          'from' => undef,
          'id' => 4291,
-         'text' => 'Merler Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt, nur ein schmaler Bürgersteig vorhanden sowie ein notwendiger Umweg durch das Wohngebiet, Ende der Bauarbeiten unbekannt',
+         'text' => 'Merler Str.: Abschnitt der Fahrbahn kann wegen Bauarbeiten gesperrt sein, dann ist nur ein schmaler Bürgersteig vorhanden sowie ein notwendiger Umweg durch das Wohngebiet, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7965,7 +7990,7 @@ Schoelerpark: Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q4 5219
 #: osm_watch: way id="276210232" version="6"
 #: note: Bauvorhaben "Hegenbarth-Sammlung"
 #: note: Länge des Baustellenbereichs etwa 75m, deshalb q4 -> q3
-#: last_checked: 2026-07-07
+#: last_checked: 2026-09-05 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2027-03-31
 	q3::inwork; 7202,9329 7209,9507
@@ -8246,7 +8271,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
 #: osm_watch: way id="1376570531" version="6"
 #: osm_watch: way id="48848041" version="30"
 #: add_fragezeichen: Ist die Straße weiterhin wegen Bauarbeiten gesperrt?
-#: last_checked: 2026-08-08
+#: last_checked: 2026-09-06 (traffic)
 #: check_frequency: 30d (traffic)
 #: next_check: 2026-11-27 (planb)
 	2::inwork 8347,3886 8404,3648 8461,3410
@@ -9251,8 +9276,8 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 #: by: https://gemeinde-schoenefeld.de/news/aktuelles/brueckenbau-schwarzer-weg-wird-gesperrt/ (bis Jahresende 2025, Umfahrung existiert)
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2025/04/2025-04-28_VZ-Plan01-2_Schoenefeld_Waltersdorf_Schwarzer_Weg_Hubertus-1024x602.jpg
 #: note: auf https://gemeinde-schoenefeld.de/baustelle/ nicht mehr gelistet, evtl. wieder offen? -> nein, noch immer mit langer Umfahrung (etwa 550m Umweg)
-#: osm_watch: way id="1417905902" version="3"
-#: osm_watch: way id="1417905903" version="2"
+#: osm_watch: way id="1417905902" version="4"
+#: osm_watch: way id="1417905903" version="3"
 #: osm_watch: way id="1257637878" version="3"
 #: osm_watch: note 5142999 2
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
@@ -9309,16 +9334,16 @@ Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,
        },
        {
          'data' => '#: next_check_id: KNOTENMARZAHN-2022
-#: note: -> gesperrt-orig
+#: note: auch in -> gesperrt-orig
 #: osm_watch: note 4547152 7
-#: last_checked: 2026-06-03
+#: last_checked: 2026-09-06
 #: check_frequency: 90d
 #: next_check: 2026-12-31
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.)	2::inwork 19173,14932 19171,14938 19157,14979
 ',
          'from' => undef,
          'id' => 4524,
-         'text' => 'Georg-Knorr-Str. - Frank-Schweitzer-Str.: Unterführung unter der Landsberger Allee kann gesperrt sein (Stand Mai 2026: Durchfahrt nicht möglich)',
+         'text' => 'Georg-Knorr-Str. - Frank-Schweitzer-Str.: Unterführung unter der Landsberger Allee kann gesperrt sein (Stand September 2026: Durchfahrt nicht möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -9449,7 +9474,7 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse (bis voraussichtlich 1. November 2026) (bis Ende November 2026)
 #: by[nocache]: https://www.uvp-verbund.de/documents-ige-ng/igc_be/27B18CBA-A54C-4B76-B3FF-2B1F76A96A23/Alle_Unterlagen_gesiegelt%2F3_Lageplan_gesiegelt.pdf (Baustelleneinrichtungsfläche)
 #: by: https://www.entwicklungsstadt.de/strassenbahnlinie-21-neue-bvg-anlage-am-blockdammweg-in-karlshorst/ (bis Nov 2026)
-#: osm_watch: note 5193492 5
+#: osm_watch: note 5193492 6
 #: source_id: planb2026:13.51311063,52.48348885,02.03.2026, ("Vollsperrung beider Fahrbahnen", bis 06.09.2026) (vorfristig inaktiv) (bis 05.10.2026)
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
@@ -10816,7 +10841,7 @@ Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-
        {
          'data' => '#: next_check_id: HANSA-2025
 #: note: entweder den gegenüberliegenden Gehweg benutzen, oder der ausgeschilderten Umleitung via Falkenberger Str. und Giersstr. folgen; in der Giersstr. wurde der Bürgersteig zum Geh- und Radweg (Benutzungspflichtig) gemacht
-#: last_checked: 2026-08-16
+#: last_checked: 2026-09-06
 #: check_frequency: 30d
 #: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
 	q4::inwork; 15929,16870 15875,16816 15776,16721 15735,16698 15662,16649
@@ -11027,6 +11052,7 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mu2kny3el22y
 #: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_358187
 #: source_id: LMS-BR:420275/72 viz2021:13.385706,52.485011, (kein Endedatum)
+#: source_id: bvg2024:m43#HIM_FREETEXT_360149
 #: also_indoor: traffic (T,G[later],H,W)
 #: note: Richtung Osten für den Kfz-Verkehr gesperrt, eine Gasse für den Radverkehr ist zurzeit offen
 #: note: Länge des abgesperrten Bereichs 100m, der eigentlich Baubereich nur etwa 50m
@@ -11158,6 +11184,25 @@ Fontanestr. -> An der Wuhlheide	3::inwork 18240,6845 18225,7004 18010,7137
          'text' => 'An der Wuhlheide/Fontanestr.: Überqueren wegen der Abbrucharbeiten nicht möglich, voraussichtlich bis November 2026',
          'type' => 'gesperrt',
          'until' => 1796079599
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260811 (ursprünglich Sperrung der Alfred-Jung-Str., bis Anfang September 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msubin42gl24
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mulytuay6k2n (zur Storkower Str.)
+#: source_id: planb2026:13.47721649,52.52297025,12.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
+#: source_id: LMS-BR:419242/72 viz2021:13.4795,52.52304,12.08.2026,07:00 (bis 04.09.2026) (vorfristig inaktiv)
+#: source_id: LMS-BR:421068/72 viz2021:13.4795,52.52304,03.09.2026,12:00 vizapi2026:905/2026 (angrenzende Storkower Str. nun auch gesperrt, bis 17.09.2026)
+# REMOVED --- #: note: sehr kurze Sperrung, Umfahrung/Umgehung mit Bordsteinabsenkungen (via Zebrastreifen) möglich --- #: note: außerdem ist die Radspur auf der Storkower Str. Richtung Westen aufgehoben
+#: last_checked: 2026-09-06
+#: next_check: 2026-09-17 (VIZ-Verkehrsmeldung)
+	q4::inwork; 15515,13134 15347,13124
+#  REMOVED --- Alfred-Jung-Str.: Sperrung vor der Storkower Str.	q3::inwork 15347,13268 15347,13124
+',
+         'from' => 1788695691,
+         'id' => 4742,
+         'text' => 'Storkower Str.: Bauarbeiten, Richtung Westen ab Möllendorffstr. gesperrt, voraussichtlich bis 17.9.2026',
+         'type' => 'handicap',
+         'until' => 1789682400
        }
      
 );

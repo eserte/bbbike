@@ -23,7 +23,7 @@
 Scheidemannstr./Reichstag	F::inwork 8373,12416
 # 
 #: next_check_id: HANSA-2025
-#: last_checked: 2026-08-16
+#: last_checked: 2026-09-06
 #: check_frequency: 30d
 #: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
 #: valid: -20261029
@@ -64,10 +64,15 @@ Sandhauser Str./Elstegasse: Gegenverkehrsregelung	X::inwork::alternating -1971,2
 # REMOVED --- Schorfheidestr./Drebkauer Str.: Gegenverkehrsregelung	X::inwork::alternating 6317,20751
 # 
 #: next_check_id: ALLEEDERKOSMONAUTEN-2026
-#: last_checked: 2026-08-05
-#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
-#: valid: -20260907
+#: last_checked: 2026-09-06
+#: check_frequency: 60d
+#: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20260907
 Allee der Kosmonauten/Meeraner Str.	X::inwork 18382,13492
+#: last_checked: 2026-09-06
+#: check_frequency: 60d
+#: next_check: 2026-12-12 (VIZ-Verkehrsmeldung zur möglicherweise verknüpften Baustelle)
+Allee der Kosmonauten/Krankenhauszufahrt	X::inwork::alternating 17779,13457
 # 
 #: source_id: LMS-BR:417487/72 viz2021:13.38351,52.53674,29.07.2026,07:00 (bis 16.10.2026)
 #: next_check: 2026-10-16
@@ -631,7 +636,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 # REMOVED (ja) --- #: XXX gibt es die Ampeln wieder?
-#: last_checked: 2026-06-03 vvv
+#: last_checked: 2026-09-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: 20240618- vvv

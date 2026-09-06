@@ -531,7 +531,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-09-04
+#: last_checked: 2026-09-06
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -1269,7 +1269,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: osm_watch[closed]: note 4719579 5
 #: osm_watch: way id="934995901" version="14"
 #: osm_watch: way id="934995899" version="16"
-#: osm_watch: way id="22820618" version="24"
+#: osm_watch: way id="22820618" version="25"
 #: source_id: planb2026:13.46027116,52.50926464,04.06.2026,07:35 ("Fahrstreifen-Reduzierung", bis 30.11.2026)
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
@@ -4777,6 +4777,7 @@ Am Pankepark: Verbundsteinpflaster	Q1 8282,14116 8238,14181 8152,14130
 Stendaler Platz: überwiegend Asphalt	Q0 6394,14085 6489,14071
 Karl-Marx-Allee - Hildegard-Jadamowitz-Str.: Gehwegplatten und Verbundsteinpflaster	Q0- 12878,12430 12950,12340 12985,12303
 Hinter dem Zeughaus: kleinteiliges Kopfsteinpflaster	Q1 9846,12516 9953,12533
+(Krankenhaus Herzberge): Asphalt mit Schäden	Q1 17438,13525 17454,13501 17479,13490
 (Krankenhaus Herzberge): Asphalt mit Schäden	Q1- 17479,13490 17500,13504 17510,13527 17502,13554 17475,13567
 Beilsteiner Str.: Beton, einige Hebungen und Zwischenräume	Q1+ 19025,14037 18998,14089 18859,14061
 Beilsteiner Str.: Beton	Q0- 18859,14061 18871,13796 18875,13467
@@ -8583,9 +8584,14 @@ Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25601,6158 25584,6029
 Biesterfelder Str.: Asphalt	Q0 16942,16174 17010,16349 17102,16464
 Klettwitzer Str.: Asphalt	Q0 18875,16872 18782,16597
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Asphalt	Q0 18782,16597 18757,16561
-(Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Beton mit Unkraut	Q1- 18757,16561 18817,16417
-# REMOVED (früherer Zustand wurde wiederhergestellt) --- #: XXX früher Asphalt, evtl. wird das wieder hergestellt --- #: osm_watch: note 1822447 1 --- #: last_checked: 2020-08-30 --- #: check_frequency: 120d
-(Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Asphalt	Q0 18817,16417 18865,16295
+#: historical_note: früher "Beton mit Unkraut"
+(Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Beton	Q1- 18757,16561 18817,16417
+#: historical_note: war bereits 2019 schon mal geschottert; 2021 dann wieder asphaltiert
+#: XXX früher Asphalt, Q0, evtl. wird das wieder hergestellt
+#: osm_watch: note 1822447 3
+#: last_checked: 2026-09-06
+#: check_frequency: 120d
+(Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Schotter	Q2 18817,16417 18865,16295
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Asphalt	Q0 18865,16295 18953,16105 19031,15629 19015,15612 19041,15458 19019,15416 19012,15376 19063,15183 19113,15056
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Beton	Q0 19113,15056 19133,15004
 zur Georg-Knorr-Str.: Asphalt	Q0 19169,15015 19150,15009 19133,15004
@@ -11161,9 +11167,10 @@ Egon-Erwin-Kisch-Str. [Wohngebiet]: Beton	Q0- 17044,18859 17053,18879 17067,1900
 Schweriner Ring [9-19 ungerade]: Beton	Q0- 17444,19115 17259,19121
 (Am Berl - Weg zum Hechtgraben): Beton	Q0- 16793,18809 16743,18892 16757,18910
 (Weg zum Hechtgraben): Asphalt	Q0 16757,18910 16780,18930 16784,18955 16734,19033 16694,19042 16665,19021
-(Weg auf dem Lärmschutzwall): unbefestigter Weg, teilweise Schotter	Q2+ 16665,19021 16699,19090 17131,18554 17197,18473 17275,18356 17564,18010 17585,17963
-#: by: mapillary
-(Lärmschutzwall - Wustrower Park): unbefestigter Weg, teilweise Schotter	Q2+ 17131,18554 17099,18575 17091,18596 17064,18601 17057,18587 17040,18571
+(Weg auf dem Lärmschutzwall): unbefestigter Weg, teilweise Schotter	Q2+ 16665,19021 16699,19090 17131,18554 17197,18473 17275,18356 17564,18010
+(Weg auf dem Lärmschutzwall): teilweise loser Schotter	Q3 17564,18010 17593,17981 17598,17945
+(Lärmschutzwall - Wustrower Park): teilweise loser Schotter	Q3 17131,18554 17099,18575 17091,18596 17072,18600
+(Lärmschutzwall - Wustrower Park): unbefestigter Weg	Q2+ 17072,18600 17057,18587 17040,18571
 #: historical_note: früher: note: die ersten Meter im Norden haben noch eine "vernünftige" wassergebundene Decke; Eintrag: unbefestigter Pfad, Q2
 (Zingster Str. - Wartenberger Weg): Asphalt	Q0 16358,18687 16325,18796
 Zingster Str.: Beton	Q0 16358,18687 16371,18669 16445,18571 16534,18457 16583,18386
@@ -11884,7 +11891,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Sind die Bauarbeiten von 2020/2021 komplett fertig oder wird sich hier auch noch etwas ändern? vvv
-#: last_checked: 2026-08-16 vvv
+#: last_checked: 2026-09-06 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt	Q0- 15454,12519 15433,12686
@@ -12140,8 +12147,8 @@ Zechsteinweg: unbefestigter Weg	Q2- 10350,21676 10328,21737 10319,21774
 Kieselweg: Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10423,21701 10388,21801
 (Grenzweg KGA Daheim II): Plattenweg in der Mitte, ansonsten unbefestigt	Q2 10120,21464 10811,21705
 (Weg im Wustrower Park): Asphalt	Q0 17235,18352 17206,18332
-(Weg im Wustrower Park): wassergebundene Decke	Q1 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17021,18663
-(Weg im Wustrower Park): Gehwegplatten	Q0- 17021,18663 16998,18695
+(Weg im Wustrower Park): wassergebundene Decke	Q1 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17031,18647
+(Weg im Wustrower Park): Gehwegplatten	Q1 17031,18647 16998,18695
 (Suermondtstr. - Degnerstr.): Verbundsteinpflaster	Q1+ 16476,16216 16458,16104 16493,15983 16559,15896
 (an den Schönhauser Allee Arcaden): Kleinsteinpflaster	Q1 11150,15908 11070,15944 11086,15984 10975,16010
 (Friedrich-Ludwig-Jahn-Sportpark - Cantianstr.): Asphalt	Q0 10520,15353 10781,15438 10804,15447
@@ -12840,10 +12847,24 @@ Clara-Müller-Jahnke-Str.: Betonpflaster	Q1+ 31971,3170 31799,3192 31800,3091 318
 (Einkaufszentrum Lagunenweg - Parkweg): Verbundsteinpflaster	Q1 31650,3218 31660,3193
 (Parkweg): Asphalt	Q0 31762,3202 31747,3199 31700,3204 31660,3193 31658,3157 31683,3132 31707,3075 31751,3028 31800,2969 31948,2962
 (Falkenberger Str. - Piesporter Str., Wohngebietsstraße): Verbundsteinpflaster	Q1 15370,16781 15362,16742 15350,16729
+# 
 #: historical_note: der Radweg wurde hier ca. 2018 neu asphaltiert, danach Q0, mittlerweile wieder schlechter vvv
-B2: asphaltiert mit teilweise erheblichen Wurzelhebungen	Q1-; 15778,20350 15872,20496 15900,20531 16025,20631 16181,20734 16644,21042 16815,21156 17073,21329
-B2: aspaltiert mit einigen Wurzelhebungen	Q1; 17073,21329 16815,21156 16644,21042 16181,20734 16025,20631 15900,20531 15872,20496 15778,20350
+B2: asphaltiert mit teilweise erheblichen Wurzelhebungen	Q1-; 15778,20350 15872,20496 15900,20531 16025,20631 16133,20704
+#: next_check_id: B2-2026
+#: osm_watch: note 5378808 2
+#: XXX wie sieht es nach den Bauarbeiten aus? vvv
+#: last_checked: 2026-09-06 vvv
+#: next_check: 2027-03-18 vvv
+# früher: B2: asphaltiert mit teilweise erheblichen Wurzelhebungen	Q1-; 16133,20704 16644,21042 16815,21156 17073,21329
+B2: provisorischer Asphalt	Q0-; 16133,20704 16644,21042 16815,21156 17073,21329
+# früher: B2: asphaltiert mit einigen Wurzelhebungen	Q1; 17073,21329 16815,21156 16644,21042 16133,20704
+B2: provisorischer Asphalt	Q0-; 17073,21329 16815,21156 16644,21042 16133,20704
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
+B2: asphaltiert mit einigen Wurzelhebungen	Q1; 16133,20704 16025,20631 15900,20531 15872,20496 15778,20350
 #: historical_note ^^^
+# 
 (Falkenberger Fußsteig - Falkenberger Chaussee): wassergebundene Decke, teilweise mit Regenschäden	Q1- 18507,18541 18483,18433 18521,18347 18530,18327
 (Falkenberger Chaussee - Darßer Str.): Asphalt, etwas wellig	Q1+ 16938,17500 16848,17530
 (Falkenberger Chaussee - Darßer Str.): Beton	Q1+ 16848,17530 16825,17537 16785,17524
@@ -17767,7 +17788,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="14"
 #: osm_watch: way id="1033468087" version="5"
-#: last_checked: 2026-08-16
+#: last_checked: 2026-09-06
 #: check_frequency: 90d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14906,15859 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -32255,7 +32276,8 @@ Titastr.: schlechtes Kopfsteinpflaster	Q3 17276,16281 17385,16432
 #: note: katrin Keppler ist unspezifischer und bescheinigt der gesamten Straße "mäßiger Asphalt"
 #: corrected_by: srt (guter Asphalt -> )
 Arnimstr.: rauer Asphalt	Q1 17902,17074 18073,17007 18282,16920
-Arnimstr.: mäßiger Asphalt	Q1 18282,16920 18416,16867
+#: historical_note: früher mäßiger Asphalt, Q0; nun spezifisch Wurzelhebungen erwähnt
+Arnimstr.: mäßiger Asphalt, Wurzelhebungen	Q1- 18282,16920 18416,16867
 #: corrected_by: srt (guter Asphalt, Q0 -> ...)
 Arnimstr.: Beton/Asphalt mit einigen Schäden	Q1- 18416,16867 18472,16844 18499,16788
 Gehrenseestr.: guter Asphalt	Q0 18499,16788 18471,16765 18308,16645
@@ -32305,7 +32327,7 @@ Gehrenseestr.: guter Asphalt	Q0 18487,16741 18324,16625
 #: by: https://be.beteiligung.diplanung.de/file/11-157-detlevstrasse/b2910af3-b463-4139-94c1-af192bf48209 (verkehrsberuhigter Bereich in der Detlevstr. zwischen Oswaldstr. und Bennostr.)
 #: by: https://www.entwicklungsstadt.de/gehrenseestrasse-in-lichtenberg-ehemaliges-betonwerk-wird-zum-neuen-logistikstandort/
 #: by: https://www.entwicklungsstadt.de/hohenschoenhausen-400-wohnungen-im-wald-an-der-detlevstrasse-geplant/ (Bauzeit: Oktober 2027 - Oktober 2029)
-#: last_checked: 2026-07-22 vvv
+#: last_checked: 2026-09-06 vvv
 # REMOVED --- #: check_frequency: 360d vvv
 #: next_check: 2027-10-31 (Baustart (entwicklungsstadt)) vvv
 #: corrected_by: srt (teilweise holpriger Asphalt, Q2 -> ...)

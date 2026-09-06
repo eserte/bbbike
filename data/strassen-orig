@@ -17,8 +17,10 @@
 # REMOVED --- (Umleitungsstrecke Rotes Rathaus)	NN 10723,12613 10681,12616 10615,12642 10542,12587
 # 
 #: next_check_id: ALLEEDERKOSMONAUTEN-2026
-#: last_checked: 2026-08-05
-#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+#: last_checked: 2026-09-06
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+#: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
 (Allee der Kosmonauten/Rhinstr. - am Marzahn-Hohenschönhauser Grenzgraben)	NN 18226,13506 18178,13495 18153,13464 18091,13461 18088,13494 18063,13490
 # 
 #: temporary ^^^
@@ -3203,9 +3205,9 @@ Hohenschönhauser Str. (Fennpfuhl, Prenzlauer Berg) [76-64]	N 14754,14406 14682,1
 #: by: https://cdn.prod.website-files.com/5c6a8b9ed8c2274b1749e981/64c7d88e693027544f731c43_136_LP.jpg
 #: source_id: planb2026:13.47028348,52.53609285,07.09.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 01.07.2028)
 #: XXX Werden die bestehenden Wege/Straße im Zuge der neuen Bebauung geändert? Zumindest wird es eine direkte Verbindung zum Weißenseer Weg geben, schon weitgehend fertig, noch nicht freigegeben vvv
-#: last_checked: 2026-04-21 vvv
-# REMOVED --- #: check_frequency: 60d vvv
-#: next_check: 2026-09-07 (planb) vvv
+#: last_checked: 2026-09-06 (überall Halteverbotsschilder) vvv
+#: check_frequency: 10d vvv
+#: next_check: 2028-07-01 (planb) vvv
 #: osm.highway: service
 (Hohenschönhauser Str., Verbindungsweg)	N 14871,14601 14839,14586
 (Hohenschönhauser Str., Verbindungsweg)	NN 14839,14586 14715,14547
@@ -3214,7 +3216,7 @@ Hohenschönhauser Str. (Fennpfuhl, Prenzlauer Berg) [76-64]	N 14754,14406 14682,1
 #: osm.highway: service
 (Hohenschönhauser Str. - Stellerweg)	N 14919,14503 14871,14601 14834,14674 14790,14656
 #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -7153,11 +7155,11 @@ Gehrenseestr. [Nebenstraße]	N 18487,16741 18324,16625
 Gehrenseestr. [Nebenstraße]	N 18153,16551 18096,16523 17877,16423
 (Weg zwischen S-Bhf. Hohenschönhausen und S-Bhf. Wartenberg)	NN 17557,17999 17267,18343 17235,18352 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
 (Weg zwischen S-Bhf. Hohenschönhausen und S-Bhf. Wartenberg)	NN 17159,18375 17206,18332
-(Weg im Wustrower Park)	NN 17235,18352 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17021,18663
-(Wustrower Park - Willy-Abel-Platz/S-Bhf. Wartenberg)	NN 17021,18663 16998,18695
+(Weg im Wustrower Park)	NN 17235,18352 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17031,18647
+(Wustrower Park - Willy-Abel-Platz/S-Bhf. Wartenberg)	NN 17031,18647 16998,18695
 #: alias: (Höhenweg am Wustrower Park)
-(Weg auf dem Lärmschutzwall)	NN 16665,19021 16699,19090 17131,18554 17197,18473 17275,18356 17564,18010 17585,17963
-(Lärmschutzwall - Wustrower Park)	NN 17131,18554 17099,18575 17091,18596 17064,18601 17057,18587 17040,18571
+(Weg auf dem Lärmschutzwall)	NN 16665,19021 16699,19090 17131,18554 17197,18473 17275,18356 17564,18010 17593,17981 17598,17945
+(Lärmschutzwall - Wustrower Park)	NN 17131,18554 17099,18575 17091,18596 17072,18600 17057,18587 17040,18571
 (Wustrower Str. - Wustrower Park)	NN 17128,18281 17162,18304
 Wollenberger Str.	H 17640,16259 17651,15766
 Grenzgrabenstr.	N 18422,15583 18429,15165
@@ -10532,7 +10534,7 @@ Falkenberger Chaussee [Wohngebiet]	N 16930,17495 17050,17437 17139,17390
 #: osm.highway: service
 (Falkenberger Chaussee - Wartenberger Str.)	N 17568,17945 17585,17963
 Wartenberger Str.	H 17418,16014 17419,16080 17425,16165 17516,16208 17465,16340 17446,16393 17504,16489 17638,16686 17793,16922 17839,16987 17902,17074 17915,17166 17955,17341 17817,17546 17760,17682 17715,17773 17650,17875
-Wartenberger Str.	H 17650,17875 17585,17963 17557,17999 17356,17856 17400,17790
+Wartenberger Str.	H 17650,17875 17598,17945 17585,17963 17557,17999 17356,17856 17400,17790
 (Zingster Str. - Wartenberger Weg)	NN 16358,18687 16325,18796
 Zingster Str. (Neu-Hohenschönhausen)	N 17159,17631 17107,17697 16981,17855 16945,17900 16905,17949 16861,18009 16718,18204 16705,18222 16583,18386 16534,18457 16445,18571 16371,18669 16358,18687
 Zingster Str. (Neu-Hohenschönhausen) [Wohngebietsstraße]	N 16938,17971 16739,18249 16618,18412 16489,18609 16504,18692 16507,18715 16460,18792 16562,18862 16656,18742
@@ -10777,7 +10779,7 @@ Thaler Str.	N 13744,21067 13817,21304 13884,21524 13938,21700
 (Fußgängerbrücke)	NN 14987,21022 15024,21116 15082,21165 15091,21172 15102,21180
 (Rampe zur Fußgängerbrücke)	NN 15082,21165 15048,21203 15102,21180
 Dorfstr. (Malchow)	HH 15610,18596 15611,18627 15640,19060 15642,19179 15604,19349 15597,19573 15617,19775 15620,19809
-Bundesstraße 2	HH 15620,19809 15656,19946 15729,20221 15778,20350 15872,20496 15900,20531 16025,20631 16181,20734 16644,21042 16815,21156 17073,21329
+Bundesstraße 2	HH 15620,19809 15656,19946 15729,20221 15778,20350 15872,20496 15900,20531 16025,20631 16133,20704 16644,21042 16815,21156 17073,21329
 Blankenburger Pflasterweg	NH 15620,19809 15424,19861 15354,19879 15255,19906 15059,19935 14714,19841 14567,19815 14348,19861 14205,19918 14021,20037 13566,20540
 (Am Fließgraben)	NN 15413,18626 15180,18687 15098,19112 15059,19281 14777,19666 14714,19841 14417,20171 14432,20188
 Märchenweg	N 15640,19060 15412,19082 15098,19112 14977,19129 14830,19143 14743,19174 14546,19286 14284,19451 14241,19379 14216,19338 14209,19327

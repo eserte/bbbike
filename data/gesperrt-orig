@@ -135,7 +135,7 @@ Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2026-06-16 (mapillary) vvv
+#: last_checked: 2026-09-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19015,14901 19175,14968
@@ -592,7 +592,7 @@ Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18459,9354
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX: während der Sperrung des Fußgängertunnels gibt es hier einen provisorisch abgetrennten Fußweg, vorher war die Kategorie einfach nur "1s"
 #: note: eng, aber sehr wenige Fußgänger zu erwarten, deshalb q3
-#: last_checked: 2026-06-03
+#: last_checked: 2026-09-06
 #: check_frequency: 120d
 (Landsberger Allee - Georg-Knorr-Str.)	1s:q3 19169,15015 19314,15059 19364,15045
 #: by: Bosshold, Martin:
@@ -1793,17 +1793,17 @@ Buswendestelle Gensweg	2s:q4 12673,1140 12609,1088 12588,1103
 # 
 Minna-Cauer-Str.: Straßentunnel	3nocross 7901,13324 7895,13415 7907,13532
 # 
-# REMOVED (Tor kann mittlerweile geöffnet werden) --- #: next_check_id: ZURALTENBOERSE-2025
-# REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10033 (Bebauungsplanverfahren XXI-40a)
-# REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Vv4rUT47ARU5kPfcIX9n8DriVwLUcSQYmBw9qou2/KGmnfQiu/94-Anlagen/02/vzb0059_VI_Auswertg_Beteilig_Behoerden_B-Plan_.pdf
-# REMOVED --- #: by: https://pascalgrothe.de/stillstand-am-magerviehhof-wie-gehts-weiter-an-der-alten-boerse/ (Umwandlung zur öffentlichen Verkehrsfläche geplant)
-# REMOVED --- #: note: man kann hier schon entlangfahren, über Betriebsgeländestraßen unterschiedlicher Qualität; am südlichen Ende ist ein Tor, welches am 2023-01-21 geöffnet werden konnte; mittlerweile existiert kein Tor mehr (2024-09-08); 2025-01-22: wieder ein verschlossenes Tor; siehe auch gesperrt-orig-Eintrag
-# REMOVED --- #: osm_watch: way id="946443907" version="4"
-# REMOVED --- #: osm_watch: node id="12522972446" version="1"
-# REMOVED --- #: note: siehe auch temp_blockings-Eintrag
-# REMOVED --- #: last_checked: 2026-03-04
-# REMOVED --- #: check_frequency: 180d
-# REMOVED --- Zur Alten Börse - Merler Weg: gesperrtes Tor/Bauzaun	2 18736,13080 18749,13158
+#: next_check_id: ZURALTENBOERSE-2025
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10033 (Bebauungsplanverfahren XXI-40a)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Vv4rUT47ARU5kPfcIX9n8DriVwLUcSQYmBw9qou2/KGmnfQiu/94-Anlagen/02/vzb0059_VI_Auswertg_Beteilig_Behoerden_B-Plan_.pdf
+#: by: https://pascalgrothe.de/stillstand-am-magerviehhof-wie-gehts-weiter-an-der-alten-boerse/ (Umwandlung zur öffentlichen Verkehrsfläche geplant)
+#: note: man kann hier schon entlangfahren, über Betriebsgeländestraßen unterschiedlicher Qualität; am südlichen Ende ist ein Tor, welches am 2023-01-21 geöffnet werden konnte; mittlerweile existiert kein Tor mehr (2024-09-08); 2025-01-22: wieder ein verschlossenes Tor; März 2026: Tor kann geöffnet werden; 2026-09-06 Sun 11:40: verschlossenes Tor
+#: osm_watch: way id="946443907" version="4"
+#: osm_watch: node id="12522972446" version="2"
+#: note: siehe auch temp_blockings-Eintrag
+#: last_checked: 2026-09-06
+#: check_frequency: 180d
+Zur Alten Börse - Merler Weg: verschlossenes Tor	2 18736,13080 18749,13158
 # 
 Straße am Heizhaus: Betriebsgelände	2 20150,8962 20220,8976
 # 
@@ -4187,8 +4187,9 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: source_id: LMS-BR:414868/72 viz2021:13.51933,52.52609,06.07.2026,07:00 (bis 07.09.2026)
 #: source_id: planb2026:13.51956095,52.52592192,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026) (bis 12.12.2026)
 #: source_id: vizapi2026:914/2026 (bis 12.12.2026)
-#: last_checked: 2026-08-05
-#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-09-06
+# REMOVED --- #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
 Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18063,13490
 # 
 #: next_check_id: GOERLITZERBRUECKEN-2026
@@ -4297,7 +4298,7 @@ Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
 # 
 #: next_check_id: LANDSBERGER-2026
 #: source_id: planb2026:13.45772567,52.52890379,15.04.2024, (bis 31.12.2026)
-#: last_checked: 2026-05-06
+#: last_checked: 2026-09-06
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (planb)
 # REMOVED --- #: next_check: 2028-06-30 (VIZ)
@@ -4516,6 +4517,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: by: https://www.entwicklungsstadt.de/rathausforum-in-mitte-neue-uferkante-an-der-spree-nimmt-gestalt-an/
 #: by: https://gruen-berlin.de/pressemitteilung/bauarbeiten-fuer-neuen-spielbereich-am-rathaus-und-marx-engels-forum-starten
 #: by: https://www.entwicklungsstadt.de/zwischen-fernsehturm-und-spree-entsteht-neuer-spiel-und-begegnungsort/
+#: by: https://www.entwicklungsstadt.de/vom-rathausforum-ins-marx-engels-forum-neuer-weg-fuer-regenwasser/
 #: XXX Bleiben nach den Umbauarbeiten die Wege die gleichen?
 #: osm_watch: note 4795958 5
 #: osm_watch: way id="169067264" version="15"
@@ -4700,7 +4702,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: note: siehe auch temp-blockings-Eintrag
-#: last_checked: 2026-06-03 vvv
+#: last_checked: 2026-09-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.): massive Sperrung	2::inwork 19173,14932 19171,14938 19157,14979
@@ -4712,7 +4714,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: osm_watch: way id="4696062" version="30"
-#: last_checked: 2026-01-17
+#: last_checked: 2026-09-06
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2026-12-31
 (Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
@@ -4721,7 +4723,7 @@ Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 215
 #: osm_watch: way id="26244466" version="26"
 #: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:316070/72 viz2021:13.53642,52.53865, (bis 31.12.2026)
-#: last_checked: 2026-06-03
+#: last_checked: 2026-09-06
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930

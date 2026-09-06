@@ -479,7 +479,7 @@ Motzener Str.: Bordsteine	DH:kerb_down:kerb_up 8695,188 8775,272 8742,343
 #: note: man bekommt nach genau 60s grün
 #: osm_watch: way id="1136164744" version="3"
 #: osm_watch: way id="868066954" version="10"
-#: last_checked: 2026-06-03 vvv
+#: last_checked: 2026-09-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: 20240618- vvv
@@ -593,7 +593,7 @@ Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden 
 # REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-08-11 vvv
+#: last_checked: 2026-09-06 vvv
 #: next_check: 2026-09-15 (SenUVK site) vvv
 # REMOVED --- #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/?date=20260612 (bis September 2026)
@@ -700,7 +700,7 @@ Königsberger Str. -> Hindenburgdamm: ggfs. Straßenseite wechseln, oder zugestaut
 #: osm_watch: way id="4687156" version="27"
 #: source_id: planb2026:13.45772567,52.52890379,15.04.2024, (bis 31.12.2026)
 #: source_id: LMS-BR:377483/72 viz2021:13.46052,52.52938, (bis 26.01.2029)
-#: last_checked: 2026-05-06 vvv
+#: last_checked: 2026-09-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (planb) vvv
 # REMOVED --- #: next_check: 2028-06-30 (VIZ) vvv
@@ -807,6 +807,20 @@ Mittenwalder Str./Gneisenaustr.: Radverkehr muss die Fußgängerampel benutzen	DH:
 #  REMOVED --- #: next_check: 2026-06-05 (VIZ-Verkehrsmeldung)
 #  REMOVED --- #: valid: -20260605
 #  REMOVED --- Bundesstraße 2: Gegenverkehrsregelung, Radverkehr muss auf die gegenüberliegende Seite wechseln	DH:tl=60 16025,20631 16181,20734 16644,21042
+# 
+#: next_check_id: B2-2026
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260902 (3.9.2026 bis bis März 2027)
+#: source_id: LMS-BR:421063/72 viz2021:13.505,52.59649,03.09.2026,09:00 vizapi2026:902/2026 (zwischen Umspannwerk und Am Luchgraben Stromnetzarbeiten, Fahrbahnverschwenkung, bis 18.03.2027)
+#: XXX vielleicht wird auch der Radweg wieder neu gemacht?
+#: note: am 2026-09-06 Sun 12:37 kann man das Grün für die Überquerung an der südwestlichen Ampel recht prompt
+#: last_checked: 2026-09-06 vvv
+#: next_check: 2027-03-18 vvv
+#: valid: -20270318 vvv
+B2: Bauarbeiten, Radverkehr muss auf die gegenüberliegende Seite wechseln	DH:tl=30 17584,21678 17102,21349 17073,21329
+B2: Bauarbeiten, Radverkehr wieder zurück auf die rechte Seite	DH:tl=30 16644,21042 16133,20704 16025,20631
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: by: https://www.wsa-oder-havel.wsv.de/Webs/WSA/Oder-Havel/DE/SharedDocs/Pressemitteilungen/20240813_Ersatzneubau_SB_Hennigsdorf.html (keine Termine)
 #: by: https://www.hennigsdorf.de/index.php?La=1&object=tx,3590.20797.1&NavID=2713.41.1

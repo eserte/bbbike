@@ -994,6 +994,7 @@ Kolonie Albrechtshöhe: wassergebundene Decke	X 10260,5953 10215,5959 9955,5993
 #: mud: 2025-10-23: zahlreiche umfahrbare Pfützen, teilweise etwas feucht	h=q2+,wet
 #: mud: 2025-11-08: etwas feuchtere Oberfläche, aber keine Beeinträchtigungen	h=q0-,wet
 #: mud: 2026-06-21: trocken, leicht sandig	h=q0-,dry
+#: mud: 2026-09-06: keine Beeinträchtigungen	h=q0
 Straße 106: fester Sandweg	X 14599,14679 14608,14701 14666,14845 14828,15050
 # 
 #: mud: 2023-05-13: keine Beeinträchtigungen	h=q0
@@ -1172,6 +1173,7 @@ Verlängerte Schulzendorfer Str.: gut befahrbarer Waldweg	X 2150,22464 2015,22435
 # 
 #: mud: 2026-05-06: sehr große Pfütze an der Einmündung Waxweiler Str.	h=q4,wet
 #: mud: 2026-06-21: keine Beeinträchtigungen	h=q0
+#: mud: 2026-09-06: große Pfütze an der Einmündung Waxweiler Str., aber umfahrbar	h=q2,wet
 (Perler Str. - Darßer Str.)	X 16256,17651 16358,17627 16453,17611
 # 
 #: mud: 2026-05-06: feuchte Oberfläche, einige Pfützen	h=q2,wet
@@ -1184,5 +1186,6 @@ Verlängerte Schulzendorfer Str.: gut befahrbarer Waldweg	X 2150,22464 2015,22435
 (Wartenberger Weg - Dorfstr.): unbefestigter Pfad, teilweise matschig	X 16082,19754 15617,19775
 # 
 #: mud: 2026-05-06: matschige Oberfläche, einige Pfützen	h=q2,wet
+#: mud: 2026-09-06: weitgehend ohne Beeinträchtigungen, nur wenige matschige Stellen und Pfützen	h=q0-,wet
 (Am Luchgraben - Siedlung Wartenberg): glatter Feldweg	X 17073,21329 17080,21288 17287,20837 17475,20851 17946,20889 18026,20847 18083,20782 18061,20715
 # 
