@@ -1798,8 +1798,8 @@ Minna-Cauer-Str.: Straßentunnel	3nocross 7901,13324 7895,13415 7907,13532
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Vv4rUT47ARU5kPfcIX9n8DriVwLUcSQYmBw9qou2/KGmnfQiu/94-Anlagen/02/vzb0059_VI_Auswertg_Beteilig_Behoerden_B-Plan_.pdf
 #: by: https://pascalgrothe.de/stillstand-am-magerviehhof-wie-gehts-weiter-an-der-alten-boerse/ (Umwandlung zur öffentlichen Verkehrsfläche geplant)
 #: note: man kann hier schon entlangfahren, über Betriebsgeländestraßen unterschiedlicher Qualität; am südlichen Ende ist ein Tor, welches am 2023-01-21 geöffnet werden konnte; mittlerweile existiert kein Tor mehr (2024-09-08); 2025-01-22: wieder ein verschlossenes Tor; März 2026: Tor kann geöffnet werden; 2026-09-06 Sun 11:40: verschlossenes Tor
-#: osm_watch: way id="946443907" version="4"
-#: osm_watch: node id="12522972446" version="2"
+#: osm_watch: way id="946443907" version="5"
+#: osm_watch: node id="12522972446" version="3"
 #: note: siehe auch temp_blockings-Eintrag
 #: last_checked: 2026-09-06
 #: check_frequency: 180d
@@ -4184,12 +4184,15 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: by: https://www.entwicklungsstadt.de/grossbaustelle-an-der-rhinstrasse-bvg-zerlegt-wichtigen-tramknoten-im-berliner-osten/ (laut Baustellenschild bis August 2027)
 #: by: https://marzahn-hellersdorf.com/rhinstrasse-allee-der-kosmonauten-ab-montag-wird-es-an-der-kreuzung-eng/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260904
-#: source_id: LMS-BR:414868/72 viz2021:13.51933,52.52609,06.07.2026,07:00 (bis 07.09.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3muvqallarc2i
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiba3lg4gyyv4xszcnsqvt6nl3ormok6idhrtix6gazaf75ctypykm (keine Sperrung mehr?)
+#: source_id: LMS-BR:414868/72 viz2021:13.51933,52.52609,06.07.2026,07:00 vizapi2026:659/2026 (provisorische Ampelanlage, bis 07.09.2026)
 #: source_id: planb2026:13.51956095,52.52592192,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026) (bis 12.12.2026)
-#: source_id: vizapi2026:914/2026 (bis 12.12.2026)
+#: source_id: LMS-BR:421575/72 viz2021:13.51975,52.52586,07.09.2026,07:00 vizapi2026:914/2026 (Gleisbauarbeiten bis 12.12.2026)
+#: XXX Aber gibt es nun neue Umwege für den Radverkehr? Z.B. im Zuge der AdK von West nach Ost, oder Rhinstr. von Nord nach Süd?
 #: last_checked: 2026-09-06
-# REMOVED --- #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung)
-#: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
 Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18063,13490
 # 
 #: next_check_id: GOERLITZERBRUECKEN-2026
@@ -4491,6 +4494,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 # 
 #: by: https://www.reo.berlin/
 #: by: https://entwicklungsstadt.de/hotelentwicklung-in-friedrichshain-premier-inn-plant-282-zimmer-am-ostkreuz/
+#: by: https://www.entwicklungsstadt.de/neuer-campus-am-ostkreuz-hier-entsteht-das-neue-zentrum-der-bvg/
 #: source_id: planb2026:13.47278542,52.50619727,03.03.2025,07:00 (bis 31.03.2027)
 #: note: anfangs (Sep 2025) mit einem Bauzaun gesperrt, jetzt (Jun 2026) eine Schranke
 #: last_checked: 2026-06-03
@@ -4644,7 +4648,7 @@ Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,10
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="5"
-#: last_checked: 2026-08-26
+#: last_checked: 2026-09-07
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11336 7934,11275
@@ -4820,7 +4824,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-09-04 vvv
+#: last_checked: 2026-09-06 (mapillary) vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
 #: osm_watch: way id="1199465845" version="5"
@@ -5281,7 +5285,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-09-04 vvv
+#: last_checked: 2026-09-07 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759

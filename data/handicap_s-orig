@@ -21,7 +21,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
 #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
-#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, viz2021:13.424,52.528103, (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026) (bis 21.08.2026) (inaktiv) (bis 04.09.2026) (inaktiv)
+#: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, viz2021:13.424,52.528103, vizapi2026:392/2026 (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026) (bis 21.08.2026) (inaktiv) (bis 04.09.2026) (inaktiv) (bis 14.09.2026)
 #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
 #: source_id: planb2026:13.42324439,52.52777598,03.02.2026, ("Sperrung einer Fahrtrichtung", bis 31.07.2026) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
@@ -36,19 +36,17 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
 #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
 #: also_indoor: traffic (re-T,re-G)
-#: last_checked: 2026-09-05 (traffic) vvv
-#: check_frequency: 8d vvv
-# REMOVED --- #: next_check: 2026-09-04 (VIZ-Verkehrsmeldung) vvv
-# REMOVED (nach den Bauarbeiten:) --- Am Friedrichshain: letzte Prüfung und ggfs. Dokumentation nach Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	?; 11706,13635 11762,13619 11785,13625
+#: last_checked: 2026-09-05 (traffic)
+# REMOVED --- #: check_frequency: 8d
+#: next_check: 2026-09-14 (VIZ-Verkehrsmeldung)
 Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
+# REMOVED (nach den Bauarbeiten:) --- Am Friedrichshain: letzte Prüfung und ggfs. Dokumentation nach Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	?; 11706,13635 11762,13619 11785,13625
 # REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
 # REMOVED --- #: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig, ohne Überholverbotschilder
 # REMOVED (mittlerweile kommt man zumindest bis zur Kreuzung auf der Fahrbahn vorbei an den Absperrungen) --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635
 # REMOVED --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11820,13804
 # REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3-::inwork; 11785,13625 11762,13619 11706,13635
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: AMWIEZENERBAHNHOF-2024
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
@@ -540,11 +538,14 @@ Rosa-Luxemburg-Platz: temporäres Volksbad auf der Fahrbahn	q4 10828,13464 10931,
 # 
 #: source_id: planb2026:13.3804937,52.51755219,03.08.2026, ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.3804937,52.51755219,18.08.2026, ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
-#: source_id: LMS-BR:420081/72 viz2021:13.3803,52.51893, vizapi2026:866/2026 (bis 18.09.2026)
+#: source_id: LMS-BR:420081/72 viz2021:13.3803,52.51893, vizapi2026:866/2026 (bis 18.09.2026) (kein Endedatum)
 #: note: Richtung Süden existiert auf der westlichen Straßenseite eine Radfahrerfurt, die allerdings auch für die Fahrtrichtung Nord genutzt wird
+#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin?
 #: last_checked: 2026-08-20
-#: next_check: 2026-09-18 (planb, VIZ-Verkehrsmeldung)
-#: valid: -20260918
+#: next_check: 2026-09-18 (planb, ex-VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20260918
+#: XXX valid auf spätes Datum gesetzt
+#: valid: -20261231
 Wilhelmstr.: Bauarbeiten, Engstelle	q2::inwork 8766,12541 8775,12457
 # 
 # REMOVED (vorfristig frei) --- #: source_id: planb2026:13.39770515,52.51708189,13.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 15.08.2026)
@@ -1153,7 +1154,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch: way id="707100249" version="32"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 # REMOVED (existiert nicht mehr) --- #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2026-08-26
+#: last_checked: 2026-09-07
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
@@ -1247,7 +1248,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 #: source_id: bvg2024:171#HIM_FREETEXT_303697 (Verlegung der Haltestelle, kein Endedatum)
 #: source_id: planb2026:13.44982843,52.48243991,06.01.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2028)
 #: XXX Wann sind die Bauarbeiten zu Ende?
-#: last_checked: 2026-07-21
+#: last_checked: 2026-09-06 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2028-09-30 (planb)
 # REMOVED --- #: next_check: 2028-11-30 (entwicklungsstadt)
@@ -1498,6 +1499,12 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED --- Knoten Marzahn: Baustelle, Verschwenkungen und Engstellen	q2::inwork 18831,14823 19013,14905 19175,14968 19196,14976 19200,14963 19214,14966
 # 
 ### Schöneberg ###
+# 
+#: also_indoor: traffic (G,T,no-H,no-W)
+#: source_id: planb2026:-
+#: last_checked: 2026-09-07
+#: check_frequency: 21d (traffic)
+Nollendorfstr.: Bauarbeiten, Sperrung der Fahrbahn an der Einmündung Eisenacher Str.	q3::inwork 6739,10120 7055,10220
 # 
 # REMOVED --- #: XXX Hohenstaufenstraße (Schöneberg) in beiden Richtungen im Kreuzungsbereich Eisenacher Straße: Leitungsarbeiten, eine Baustellenampel regelt den Verkehr, vom 28.03.2024 07:00 bis 29.05.2024 17:00 --- verlängert
 # REMOVED --- #: source_id: viz2021:13.349791,52.494637,28.03.2024,07:00 (bis 29.05.2024) (bis 14.06.2024) (bis 13.06.2024) (inaktiv)

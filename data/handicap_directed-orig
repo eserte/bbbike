@@ -837,9 +837,9 @@ Hennigsdorf, Havelbrücke	DH:len=117:h=q1,117 -2446,25386 -2808,25489
 #: osm_watch ^^^
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
-#: last_checked: 2026-08-08 vvv
-#: next_check: 2026-10-16 (VIZ-Verkehrsmeldung) vvv
-#: valid: -20261016 vvv
+#: last_checked: 2026-09-06 (mapillary) vvv
+#: next_check: 2027-07-02 (VIZ-Verkehrsmeldung) vvv
+#: valid: -20270702 vvv
 Am Eichgarten -> Uferpromenade: provisorische Ampel und Umweg	DH:len=20:h=q3,20:tl 6147,4329 6210,4325 6392,4312
 Uferpromenade -> Am Eichgarten: provisorische Ampel und Umweg	DH:len=20:h=q3,20:tl 6392,4312 6210,4325 6147,4329
 #: note: Ampel hier bereits berücksichtigt
@@ -854,7 +854,7 @@ Borstellstr. -> Am Eichgarten: Umweg	DH:len=20:h=q3,20 6309,4328 6219,4336 6210,
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/berlin/politik-und-verwaltung/bmukn/erweiterung/projektinformation.html (Fertigstellung geplant 2029)
 #: osm_watch: way id="295838676" version="11"
 #: note: von der Fahrbahn aus könnte man physikalisch abbiegen, ist aber nicht erlaubt
-#: last_checked: 2026-08-13
+#: last_checked: 2026-09-07
 #: check_frequency: 120d
 #: next_check: 2029-12-31  (bbr.bund site)
 Stresemannstr. -> Niederkirchnerstr.: Linksabbiegen vom Radweg aus wegen Barrieren nicht möglich, Umweg	DH:len=100 8631,11334 8720,11226 8833,11241

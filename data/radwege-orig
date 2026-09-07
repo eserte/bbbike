@@ -295,7 +295,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: osm_watch: way id="305483806" version="13"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2026-08-26
+#: last_checked: 2026-09-07
 #: check_frequency: 180d
 #: next_check: 2030-06-30 (entwicklungsstadt)
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -376,7 +376,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-09-05 vvv
+#: last_checked: 2026-09-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -2391,7 +2391,7 @@ Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,116
 	RW3; 10133,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
 #: next_check_id: GERTRAUDENBRUECKE-2025
-#: last_checked: 2026-08-31 vvv
+#: last_checked: 2026-09-07 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
 #: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
@@ -2473,7 +2473,7 @@ Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
-#: last_checked: 2026-08-31
+#: last_checked: 2026-09-07
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
@@ -6242,7 +6242,7 @@ Gehweg für Radfahrer frei, alter Asphalt mit vielen Unebenheiten	RW1; 15642,1917
 #: historical_note: bis etwa 2022/2023 Radwege, dann Bauarbeiten mit Verengung und "Nivellierung" der Radwege, seit ca. 2025 sieht es so aus, als ob es hier nicht-ausgeschilderte und ohne Piktogramme versehene Radspuren gibt
 #: XXX Wird sich die Radverkehrsanlage noch ändern?
 #: source_id: planb2026:13.48334398,52.57730345,28.07.2025,07:00 ("Fahrstreifen-Reduzierung", bis 08.12.2026)
-#: source_id: LMS-BR:414867/72 viz2021:13.48328,52.58301,06.07.2026,07:00 (bis 07.09.2026)
+#: source_id: LMS-BR:414867/72 viz2021:13.48328,52.58301,06.07.2026,07:00 (bis 07.09.2026) (bis 30.09.2026)
 #: osm_watch: note 3817921 5
 #: last_checked: 2026-09-06
 #: next_check: 2026-12-08 (planb)
