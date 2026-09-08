@@ -64,15 +64,15 @@ Sandhauser Str./Elstegasse: Gegenverkehrsregelung	X::inwork::alternating -1971,2
 # REMOVED --- Schorfheidestr./Drebkauer Str.: Gegenverkehrsregelung	X::inwork::alternating 6317,20751
 # 
 #: next_check_id: ALLEEDERKOSMONAUTEN-2026
-#: last_checked: 2026-09-06
+#: last_checked: 2026-09-08
 #: check_frequency: 60d
 #: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260907
 Allee der Kosmonauten/Meeraner Str.	X::inwork 18382,13492
-#: last_checked: 2026-09-06
-#: check_frequency: 60d
-#: next_check: 2026-12-12 (VIZ-Verkehrsmeldung zur möglicherweise verknüpften Baustelle)
-Allee der Kosmonauten/Krankenhauszufahrt	X::inwork::alternating 17779,13457
+# REMOVED --- #: last_checked: 2026-09-08
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- #: next_check: 2026-12-12 (VIZ-Verkehrsmeldung zur möglicherweise verknüpften Baustelle)
+# REMOVED --- Allee der Kosmonauten/Krankenhauszufahrt	X::inwork::alternating 17779,13457
 # 
 #: source_id: LMS-BR:417487/72 viz2021:13.38351,52.53674,29.07.2026,07:00 (bis 16.10.2026)
 #: next_check: 2026-10-16
@@ -182,7 +182,7 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: source_id: planb2026:13.42219032,52.51114479,11.09.2025,07:00 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-09-07
+#: last_checked: 2026-09-08
 #: check_frequency: 60d
 #: next_check: 2026-11-04 (planb)
 Michaelbrücke	F::inwork 11676,11839
@@ -315,15 +315,16 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: next_check_id: PAULSBORNER-2025
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv) (bis 15.07.2025) (inaktiv)
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
-#: source_id: vizapi2026:332/2026 (bis 31.08.2026) (bis 09.09.2026)
-#: source_id: LMS-BR:420436/72 viz2021:13.29383,52.49126,28.08.2026,00:00 (bis 09.09.2026)
+#: source_id: vizapi2026:332/2026 (bis 31.08.2026) (bis 09.09.2026) (bis 22.10.2026)
+#: source_id: LMS-BR:420436/72 viz2021:13.29383,52.49126,28.08.2026,00:00 (bis 09.09.2026) (bis 22.10.2026)
 #: also_indoor: traffic (ex-T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
 #: last_checked: 2026-09-01 (traffic)
 #: check_frequency: 30d (traffic)
-#: next_check: 2026-09-09 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20251231
+#: next_check: 2026-10-22 (VIZ-Verkehrsmeldung)
+# note: maximum assumed validity
+#: valid: -20261231
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
 # REMOVED --- #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)

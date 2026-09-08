@@ -2501,6 +2501,7 @@ Riesaer Str.: Straßenbahntrasse	3nocross 24730,14288 24870,14244 24930,14225 249
 # REMOVED --- Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17568,7753 17611,7690 17681,7589 17769,7465
 # REMOVED (die Überführung ist Geschichte) --- Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17769,7465 17847,7356 17990,7115
 Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4600,8002 4711,8013 4786,8007
+Rhinstr.: Straßenbahntrasse	3nocross 18226,13506 18235,13236 18225,12697
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12123 18216,12209 18216,12239 18216,12262 18220,12450
 Rhinstr.: Straßenbahntrasse	3nocross 18176,14108 18178,14078 18181,14039 18198,13816
 Rhinstr.: Straßenbahntrasse	3nocross 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
@@ -4180,21 +4181,6 @@ Streustr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3::inwork 12890,16121 12675,1
 #: next_check: 2027-06-04 (planb + VIZ-Verkehrsmeldung)
 Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14660 7514,14687 7533,14702 7911,15008
 # 
-#: next_check_id: ALLEEDERKOSMONAUTEN-2026
-#: by: https://www.entwicklungsstadt.de/grossbaustelle-an-der-rhinstrasse-bvg-zerlegt-wichtigen-tramknoten-im-berliner-osten/ (laut Baustellenschild bis August 2027)
-#: by: https://marzahn-hellersdorf.com/rhinstrasse-allee-der-kosmonauten-ab-montag-wird-es-an-der-kreuzung-eng/
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260904
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3muvqallarc2i
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiba3lg4gyyv4xszcnsqvt6nl3ormok6idhrtix6gazaf75ctypykm (keine Sperrung mehr?)
-#: source_id: LMS-BR:414868/72 viz2021:13.51933,52.52609,06.07.2026,07:00 vizapi2026:659/2026 (provisorische Ampelanlage, bis 07.09.2026)
-#: source_id: planb2026:13.51956095,52.52592192,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026) (bis 12.12.2026)
-#: source_id: LMS-BR:421575/72 viz2021:13.51975,52.52586,07.09.2026,07:00 vizapi2026:914/2026 (Gleisbauarbeiten bis 12.12.2026)
-#: XXX Aber gibt es nun neue Umwege für den Radverkehr? Z.B. im Zuge der AdK von West nach Ost, oder Rhinstr. von Nord nach Süd?
-#: last_checked: 2026-09-06
-#: next_check: 2026-09-07 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
-Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18063,13490
-# 
 #: next_check_id: GOERLITZERBRUECKEN-2026
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1663549.php
 #: by: https://www.entwicklungsstadt.de/schliessung-der-goerlitzer-bruecken-treptow-koepenick-fordert-loesung/
@@ -4224,6 +4210,7 @@ Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbaua
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mplq2mrw2k2r
 #: by: https://viz.berlin.de/aktuelle-meldungen/gorlitzer-brucken-ab-01-juli-gesperrt/
 #: by: https://www.morgenpost.de/berlin/article412437202/goerlitzer-bruecken-ab-1-juli-gesperrt-so-soll-jetzt-die-rettung-gelingen.html
+#: by: https://www.entwicklungsstadt.de/goerlitzer-bruecken-in-alt-treptow-schadensanalyse-soll-klarheit-bringen/
 #: osm_watch: note 5278957 5
 #: osm_watch: way id="24042478" version="20"
 #: alias: Görlitzer Bahnbrücken
@@ -4243,7 +4230,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-08-31
+#: last_checked: 2026-09-08
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4373,7 +4360,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026) (bis 22.07.2026) (bis 01.10.2026)
 #: source_id: planb2026:13.42640002,52.52310299,03.02.2026, ("Fahrstreifen-Reduzierung", bis 01.10.2026)
 #: note: außerdem ist die verkehrsrechtliche Situation der Einfahrt Richtung Weydemeyerstr. für Radfahrer unklar: komplett gesperrt oder nicht? Durchfahrt war bislang immer möglich.
-#: last_checked: 2026-08-29
+#: last_checked: 2026-09-08
 #: next_check: 2026-10-01 (VIZ-Verkehrsmeldung, planb)
 # REMOVED --- #: valid: -20260722
 #: valid: -20261001
@@ -4492,9 +4479,10 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 # 
-#: by: https://www.reo.berlin/
+#: by: https://reo.berlin/
 #: by: https://entwicklungsstadt.de/hotelentwicklung-in-friedrichshain-premier-inn-plant-282-zimmer-am-ostkreuz/
 #: by: https://www.entwicklungsstadt.de/neuer-campus-am-ostkreuz-hier-entsteht-das-neue-zentrum-der-bvg/
+#: by: https://www.tagesspiegel.de/berlin/dpa-die-bvg-zieht-um-und-fuhrt-standorte-zusammen-16026444.html
 #: source_id: planb2026:13.47278542,52.50619727,03.03.2025,07:00 (bis 31.03.2027)
 #: note: anfangs (Sep 2025) mit einem Bauzaun gesperrt, jetzt (Jun 2026) eine Schranke
 #: last_checked: 2026-06-03
@@ -4613,7 +4601,7 @@ Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12727,1074 12772,1019
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
 #: source_id: bvg2024:250#HIM_FREETEXT_308566 (zwischenzeitlich entfernt)
-#: source_id: bvg2024:250#HIM_FREETEXT_307841 (zwischenzeitlich entfernt)
+#: source_id: bvg2024:250#HIM_FREETEXT_307841 (zwischenzeitlich entfernt, 2x)
 #: last_checked: 2026-08-17 (okas) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="8"
@@ -4648,6 +4636,7 @@ Fußgängerbrücke über den Königsgraben: Neubau geplant	2::inwork 8671,118 8626,10
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: osm_watch: way id="1332697425" version="5"
+#: osm_watch: note 5185596 2
 #: last_checked: 2026-09-07
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
@@ -4758,7 +4747,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="4612427" version="23"
 #: source_id: planb2026:13.41545231,52.51320684,25.03.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2027)
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-08-13
+#: last_checked: 2026-09-08
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2027-06-30 (entwicklungsstadt)
 #: next_check: 2027-12-31 (planb)
@@ -5285,7 +5274,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-09-07 vvv
+#: last_checked: 2026-09-08 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5482,7 +5471,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-warum-das-wichtigste-gebaeude-in-der-kritik-steht/
 #: by: https://www.entwicklungsstadt.de/800-jahre-molkenmarkt-vom-olden-markt-zum-neuen-stadtquartier/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-08-31
+#: last_checked: 2026-09-08
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5491,7 +5480,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-09-02
+#: last_checked: 2026-09-08
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5778,7 +5767,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: node id="10239151904" version="1"
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
-#: last_checked: 2026-07-16 (daf)
+#: last_checked: 2026-09-08
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,11316 12713,11372
@@ -5904,7 +5893,7 @@ Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-14
 # REMOVED --- Pariser Platz: Durchfahrt gesperrt an der französischen Botschaft	3 * 8673,12315 *
 # 
 #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin/berlin-hotel-adlon
-#: last_checked: 2026-08-08 (webcam)
+#: last_checked: 2026-09-08 (webcam)
 #: check_frequency: 360d
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 

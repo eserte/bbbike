@@ -16,12 +16,12 @@
 # REMOVED --- #: valid: -20260710
 # REMOVED --- (Umleitungsstrecke Rotes Rathaus)	NN 10723,12613 10681,12616 10615,12642 10542,12587
 # 
-#: next_check_id: ALLEEDERKOSMONAUTEN-2026
-#: last_checked: 2026-09-06
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
-#: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
-(Allee der Kosmonauten/Rhinstr. - am Marzahn-Hohenschönhauser Grenzgraben)	NN 18226,13506 18178,13495 18153,13464 18091,13461 18088,13494 18063,13490
+# REMOVED --- #: next_check_id: ALLEEDERKOSMONAUTEN-2026
+# REMOVED --- #: last_checked: 2026-09-06
+# REMOVED --- #: check_frequency: 14d
+# REMOVED --- # REMOVED --- #: next_check: 2026-09-07 (VIZ-Verkehrsmeldung, planb)
+# REMOVED --- #: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
+# REMOVED --- (Allee der Kosmonauten/Rhinstr. - am Marzahn-Hohenschönhauser Grenzgraben)	NN 18226,13506 18178,13495 18153,13464 18091,13461 18088,13494 18063,13490
 # 
 #: temporary ^^^
 #: section ^^^
@@ -3268,7 +3268,7 @@ Herzbergstr. [Wohngebiet]	N 15700,13597 15833,13596 15896,13594
 (Landschaftspark Herzberge)	NN 17507,12781 17637,12785 17638,12813 17659,12823 17662,12918 17679,12933 17674,13022 17671,13132
 (Landschaftspark Herzberge)	NN 17300,13061 17300,13118 17491,13125 17671,13132 17684,13133 17698,13134
 (Landschaftspark Herzberge)	NN 17499,12998 17314,12990
-(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.)	NN 17698,13124 17739,13146 17871,13145 17906,13141 17981,13327 18032,13404 18063,13490 18104,13510
+(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.)	NN 17698,13124 17739,13146 17871,13145 17906,13141 17981,13327 18032,13404 18063,13490 18097,13492
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5116&options=4 (Forderung eines Lückenschlusses, auch zur Siegfriedstr. -> wird aber erst einmal nicht realisiert) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6766 --- #: XXX hier sind Bauarbeiten zugange, teilweise existieren schon neue Verbundsteinpflasterwege --- #: osm_watch: way id="485690626" version="1" --- #: last_checked: 2018-01-06
 (Landschaftspark Herzberge - Arendsweg/Zufahrt IKEA)	NN 17267,14146 17264,14176
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager)	NN 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
@@ -6712,6 +6712,8 @@ Rhinstr. (Marzahn, Friedrichsfelde, Lichtenberg, Alt-Hohenschönhausen)	H 18215,1
 Rhinstr. [Wohngebiet]	N 18008,13507 17995,13675 17994,13750 18024,13843 18050,13835 18134,13811 18198,13816
 Rhinstr. [Wohngebiet]	N 18050,13835 18056,13853 18047,13905 18027,14016 18021,14081 18176,14108
 Rhinstr. [Wohngebiet]	N 18139,11833 18140,11932 18160,11938 18165,12091 18174,12116 18215,12123
+Rhinstr. [Wohngebiet]	N 18104,13510 18097,13492 18096,13456 18162,13459 18197,13461
+Rhinstr. [Wohngebiet]	N 18162,13459 18168,13234 18235,13236
 Rhinstr. [134-130]	N 18477,14042 18181,14039
 Rhinstr. [Nebenstraße]	N 18258,11827 18340,11830 18381,11857 18417,11854
 Rhinstr. [Gewerbegebiet]	N 18027,14016 17763,13983 17647,14034
@@ -11789,6 +11791,7 @@ Lauterplatz	NN 5810,7883 5707,7878
 #: by: https://www.entwicklungsstadt.de/vom-gueterbahnhof-zum-wohnquartier-friedenauer-hoehe-ist-fertig/
 #: by: https://www.entwicklungsstadt.de/neue-mieter-fuer-the-friedenauer-edeka-zieht-an-den-innsbrucker-platz/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_35_2253_2272_online.pdf (Widmung von Grün- und Erholungsanlagen)
+#: by: https://www.entwicklungsstadt.de/innsbrucker-platz-richtfest-fuer-160-millionen-euro-projekt-the-friedenauer/
 #: source_id: viz2021:13.342132,52.477014,13.06.2023,06:00 (Leitungsbau in der Hauptstr., bis 31.03.2024) (bis 28.06.2024) (bis 23.04.2024, im Anschluss weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.342764,52.477504,02.06.2025,10:00 (Leitungsbau in der Hauptstr., bis 21.07.2025) (inaktiv)
 #: source_id: viz2021:13.34245,52.47724, (Hauptstr., bis 30.07.2025) (bis 31.08.2025) (bis 21.08.2025) (inaktiv)

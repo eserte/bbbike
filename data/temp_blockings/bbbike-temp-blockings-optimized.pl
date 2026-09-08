@@ -492,7 +492,18 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR:421713/72 viz2021:13.29846,52.47229,08.09.2026,07:00	
+	q4::inwork 3314,7269 3308,7193
+# REMOVED --- #: source_id: IM_002552 (inaktiv)
+# REMOVED ---	q4 3346,7369 3314,7269
+',
+         'from' => 1788818400,
+         'id' => 467,
+         'text' => 'Zoppoter Str.: Bauarbeiten zwischen Heiligendammer Str. und Sylter Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 08.09.2026 07:00 bis 27.11.2026',
+         'type' => 'handicap',
+         'until' => 1795820399
+       },
        undef,
        undef,
        undef,
@@ -6715,7 +6726,29 @@ Nordufer: zwischen Tegeler Str. und Buchstr.	q4::inwork 7129,14787 7000,14832 69
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: planb2026:13.50326602,52.51530671,10.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 31.07.2026) (inaktiv)
+#: also_indoor: traffic (G,T,no-H,no-W)
+#: last_checked: 2026-09-08
+#: next_check: 2026-09-25 (Halteverbotsschilder)
+Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309
+# REMOVED --- #: next_check: 2026-07-31 (planb)
+# REMOVED --- Rüdigerstr.: Einbahnstraße	q4::inwork; 16918,12325 17020,12309 17056,12304 17122,12295
+# REMOVED --- #: note: Länge des gesperrten Bereichs 40-50m; laut Bauschild der Wasserbetriebe bis September 2024; Halteverbotsschilder bis 28.02.2024, Halteverbotsschilder wurden bis 28.03.2024 verlängert, nun bis 19.04.2024, mittlerweile bis 09.05.2025
+# REMOVED --- #: by: https://www.morgenpost.de/bezirke/lichtenberg/article408790142/bauprojekt-ruedigerstrasse-es-ist-einfach-unverhaeltnismaessig.html
+# REMOVED --- #: add_fragezeichen: Gibt es weiterhin eine Einbahnstraßenregelung? vvv --- #: last_checked: 2025-05-22 (traffic) vvv --- # REMOVED --- #: check_frequency: 30d (outdoor) vvv --- #: check_frequency: 14d (traffic) vvv
+# REMOVED (hier nicht mehr) --- Rüdigerstr.: Einbahnstraße	q3::inwork; 16918,12325 17020,12309 17056,12304
+# REMOVED (alter Eintrag) --- Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309 17056,12304
+# REMOVED (hier nicht mehr) --- Hagenstr.: Sperrung im Einmündungsbereich	q3::inwork 16918,12325 16933,12432
+# REMOVED (alter Eintrag) --- Dietlindestr.: Sperrung im Einmündungsbereich	q2::inwork 17056,12304 17088,12506
+# REMOVED ---  --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3978,
+         'text' => 'Rüdigerstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen, voraussichtlich bis 25.09.2026',
+         'type' => 'handicap',
+         'until' => 1790359200
+       },
        undef,
        undef,
        undef,
@@ -6938,6 +6971,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
 #: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Verschwenkung des Verkehrs UdL Richtung Osten erwähnt; bis 07.06.2024) (inaktiv)
 #: source_id: LMS-BR:421164/72 viz2021:13.39828,52.51708,04.09.2026,09:00 (An der Kommandantur, bis 13.09.2026)
 #: source_id: LMS-BR:421165/72 viz2021:13.3974,52.51756,04.09.2026,09:00 (Niederlagstr., bis 13.09.2026)
+#: source_id: LMS-BR:421718/72 viz2021:13.3974,52.51756,08.09.2026,08:00 (UdL, Verengung, bis 11.09.2026)
 #: by: https://www.bertelsmann.de/news-und-media/nachrichten/bertelsmann-party-2024-vielfalt-kreativitaet-und-jede-menge-stars-in-berlin.jsp?atn=2862170&abp=2862170,2862222, (Bertelsmann Party)
 #: note: eigentlich gibt es einen engen Durchgang am Schinkelplatz, aber UdL muss man zusätzlich einen 1x70m oder 2x70m langen Umweg nehmen
 #: note: zu Ende der Sperrung (Samstag davor) war die Einengung an UdL bereits abgebaut
@@ -7017,7 +7051,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: source_id: viz2021:13.334196,52.589688,14.06.2024,07:00 (bis 30.08.2024) (bis 30.09.2024) (bis 31.12.2025) (inaktiv)
 #: source_id: LMS-BR:408563/72 viz2021:13.338888,52.589354,18.05.2026,07:00 (bis 12.06.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:120#HIM_FREETEXT_337463
-#: source_id: bvg2024:120#HIM_FREETEXT_343106
+#: source_id[inactive]: bvg2024:120#HIM_FREETEXT_343106
 #: source_id: LMS-BR:336421/72 viz2021:13.338677,52.589372, vizapi2026:534/2025 (bis 31.10.2026) (laut vizapi2026 Einbahnstraßenregelung)
 #: also_indoor: traffic (G,ex-H,ex-W,no-T)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
@@ -8320,15 +8354,15 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
 #: source_id: LMS-BR:374539/72 viz2021:13.29402,52.48994, (Salzbrunner Str., bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: bvg2024:110#HIM_FREETEXT_284868 (zwischenzeitlich entfernt, 2x)
 #: source_id: planb2026:13.29413931,52.49034723,30.01.2026, ("Gegenverkehrsanlage (LZA)", bis 31.08.2026) (inaktiv)
-#: source_id: vizapi2026:332/2026 (bis 31.08.2026) (bis 09.09.2026)
-#: source_id: LMS-BR:420436/72 viz2021:13.29383,52.49126,28.08.2026,00:00 (bis 09.09.2026)
+#: source_id: vizapi2026:332/2026 (bis 31.08.2026) (bis 09.09.2026) (bis 22.10.2026)
+#: source_id: LMS-BR:420436/72 viz2021:13.29383,52.49126,28.08.2026,00:00 (bis 09.09.2026) (bis 22.10.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
 #: also_indoor: traffic (ex-T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
 #: last_checked: 2026-09-01 (traffic) vvv
 #: check_frequency: 30d (traffic) vvv
-#: next_check: 2026-09-09 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-10-22 (VIZ-Verkehrsmeldung) vvv
 Caspar-Theiß-Str.: Einbahnstraßenregelung	q4::inwork; 2924,9391 2947,9367
 Caspar-Theiß-Str.: Sperrung der Fahrbahn an der Paulsborner Str., Gehweg für Radfahrer frei	q4::inwork 2947,9367 2978,9338
 # REMOVED (hier wohl nicht) --- Caspar-Theiß-Str.: Sperrung an der Paulsborner Str.	q4::inwork 2978,9338 2977,9220
@@ -8460,15 +8494,19 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
 #: also_indoor: traffic (no-G,T,H,no-W)
-#: last_checked: 2026-08-25
-#: next_check: 2026-10-02 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2026-11-13 (planb)
-	q4::inwork; 16276,12273 16397,12397
+#: last_checked: 2026-09-08 vvv
+#: next_check: 2026-11-13 (planb) vvv
+# REMOVED --- #: next_check: 2026-11-13 (planb) vvv
+Schottstr.	q4::inwork; 16276,12273 16397,12397
+nördliche Schottstr.: Kreuzungsbereich gesperrt	q4::inwork 16409,12612 16397,12397
+westliche Rüdigerstr.: Einfahrt verboten	q3::inwork; 16397,12397 16259,12419
+#: next_check ^^^
+#: last_checked ^^^
 # REMOVED (hier nicht) ---	q4::inwork; 16397,12397 16485,12384
 ',
          'from' => 1772924400,
          'id' => 4368,
-         'text' => 'Rüdigerstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, voraussichtlich bis 13.11.2026',
+         'text' => 'Schottstr.: zwischen Roedeliusplatz und Atzpodienstr. Bauarbeiten, Sperrung Richtung Osten, voraussichtlich bis 13.11.2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -8915,7 +8953,7 @@ Bötzowstr.: Kreuzungsbereich vermutlich betroffen	q3::inwork 12280,13880 12361,1
 #: source_id: planb2026:13.44989871,52.50304685,28.04.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 01.11.2027)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-09-07
+#: last_checked: 2026-09-08
 #: check_frequency: 120d
 #: next_check: 2027-11-01 (planb)
 	q4::inwork 13408,10837 13436,10903
@@ -10302,8 +10340,8 @@ Malteser/Bruchwitzstr.	q3::inwork 7098,3067 7042,3281 6926,3337
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiag7pw6g3bvggb46asuojgj4hjw4sfwg5eofj7vtoibzrzf7gw74e
 #: source_id: planb2026:13.40452117,52.53329753,31.07.2026, ("Vollsperrung beider Fahrbahnen", bis 29.01.2027) (vorfristig inaktiv) (bis 29.01.2027) (vorfristig inaktiv)
 #: source_id: LMS-BR:418663/72 viz2021:13.40671,52.53572, vizapi2026:811/2026 (Kastanienallee, bis 31.08.2026) (bis 29.01.2027) (inaktiv)
-#: source_id: LMS-BR:418661/72 viz2021:13.39892,52.53262, vizapi2026:810/2026 (Veteranenstr., bis 31.08.2026) (bis 29.01.2027) (inaktiv) (bis 07.09.2027)
-#: also_indoor: traffic (T,no-G)
+#: source_id: LMS-BR:418661/72 viz2021:13.39892,52.53262, vizapi2026:810/2026 (Veteranenstr., bis 31.08.2026) (bis 29.01.2027) (inaktiv) (bis 07.09.2027) (nur noch in vizapi2026 aktiv)
+#: also_indoor: traffic (T,G[later],H,W)
 #: note: Für den Radverkehr ist eine Umleitung über Fehrbelliner Str. - Choriner Str. (und vermutlich weiter über Schwedter Str.) ausgeschildert, beide Richtungen
 #: last_checked: 2026-08-31 (mapillary) vvv
 #: check_frequency: 14d (am Anfang höhere Frequenz) vvv
@@ -10477,10 +10515,10 @@ Michaelkirchplatz	q4::inwork 11491,11396 11458,11394 11451,11378 11507,11355 115
        },
        {
          'data' => '#: next_check_id: RESIDENZ-2026
-#: source_id: LMS-BR:415057/72 viz2021:13.36354,52.56514,07.07.2026,00:00 (zwischen Simmelstr. und Walderseestr., bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026)
-#: source_id: LMS-BR:411172/72 viz2021:13.36354,52.56514, vizapi2026:565/2026 (Höhe Simmelstr., bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026) (nun Geometrie für alle betroffenen Straßenzüge, bis 27.11.2027)
-#: source_id: LMS-BR:415078/72 viz2021:13.36582,52.5629,07.07.2026,00:00 (angrenzende Holländerstr., bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026)
-#: source_id: LMS-BR:415077/72 viz2021:13.36416,52.56378,07.07.2026,00:00 (angrenzende Pankower Allee, bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026)
+#: source_id: LMS-BR:415057/72 viz2021:13.36354,52.56514,07.07.2026,00:00 (zwischen Simmelstr. und Walderseestr., bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026) (inaktiv)
+#: source_id: LMS-BR:411172/72 viz2021:13.36354,52.56514, vizapi2026:565/2026 (Höhe Simmelstr., bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026) (nun Geometrie für alle betroffenen Straßenzüge, bis 27.11.2027) (alte API inaktiv)
+#: source_id: LMS-BR:415078/72 viz2021:13.36582,52.5629,07.07.2026,00:00 (angrenzende Holländerstr., bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026) (inaktiv)
+#: source_id: LMS-BR:415077/72 viz2021:13.36416,52.56378,07.07.2026,00:00 (angrenzende Pankower Allee, bis 05.08.2026) (bis 24.08.2026) (bis 07.09.2026) (inaktiv)
 #: note: wobei man theoretisch auf der 1+1-spurigen Gegenfahrbahn fahren könnte; ein Radfahrverbot scheint es nicht zu geben
 Residenzstr.: Sperrung Richtung Norden	1::inwork 7602,17399 7579,17532
 Holländerstr.: mögliche Engstellen	q2::inwork; 7602,17399 7675,17427
@@ -10490,9 +10528,9 @@ Fahlandgasse: provisorische Einbahnstraßenregelung	q4::inwork; 7675,17538 7675,1
 ',
          'from' => 1783375200,
          'id' => 4681,
-         'text' => 'Residenzstr.: Bauarbeiten am Franz-Neumann-Platz, Sperrungen, Engstellen, geplant bis 7.9.2026',
+         'text' => 'Residenzstr.: Bauarbeiten am Franz-Neumann-Platz, Sperrungen, Engstellen, geplant bis 27.11.2026',
          'type' => 'gesperrt',
-         'until' => 1788818399
+         'until' => 1795820399
        },
        {
          'data' => '#: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 (bis 04.09.2026) (inaktiv)
@@ -10585,6 +10623,9 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
        {
          'data' => '#: next_check_id: AMSTAEDTISCHENZENTRALFRIEDHOF-2026
 #: note: Weg durch Baustellenbereich: 150m, 2/3 davon unbefestigter Weg, 1/3 Kopfsteinpflaster mit großen Fugen; direkter Weg wäre 100m; man soll als Radfahrer schieben
+#: last_checked: 2026-09-08
+#: check_frequency: 60d
+#: next_check: 2027-03-31 (planb)
 	q4::inwork 17540,12222 17485,12240
 # REMOVED ---	2::inwork 17540,12222 17485,12240
 ',
@@ -10712,7 +10753,7 @@ Manfred-von-Richthofen-Str.	q4::inwork; 9229,8718 9158,8706 9093,8665 9011,8605
 #: traffic_note: Verstärkter Ausweichverkehr Richtung Westen über Rüdersdorfer Str. - Koppenstr. - Singerstr., teilweise auch bis Lichtenberger Str.; vor der Andreasstraße Stauung möglich; gesehen 2026-08-31 Mon 08:15: Stau bereits ab der Rüdersdorfer Str. vor Koppenstr.; auch Richtung Osten erhöhter Verkehr
 #: note: Der nach Süden führende Bürgersteig war vor der Havarie explizit für Radfahrer freigegeben, aber das Schild wurde entfernt; Gelbmarkierung ist teilweise noch da; mittlerweile gibt es auch eine Komplettsperrung auf dieser Seite; Richtung Norden existiert auch teilweise noch Gelbmarkierung von einer früheren Radwegführung, keine Einschränkungen
 #: note: Mittlerweile ist hier eine Sackgasse ausgeschildert, und nur die Fahrbahn und der westliche Bürgersteig hinter dem südlichen Unterführungsende ist abgesperrt.
-#: last_checked: 2026-09-01 (traffic)
+#: last_checked: 2026-09-08
 #: check_frequency: 14d
 #: next_check: 2026-09-18 (VIZ-Verkehrsmeldung, planb)
 Straße der Pariser Kommune	q2::inwork 12645,11673 12543,11521
@@ -10831,7 +10872,7 @@ Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-
        },
        {
          'data' => '#: next_check_id: HANSA-2025
-#: note: entweder den gegenüberliegenden Gehweg benutzen, oder der ausgeschilderten Umleitung via Falkenberger Str. und Giersstr. folgen; in der Giersstr. wurde der Bürgersteig zum Geh- und Radweg (Benutzungspflichtig) gemacht
+#: note: entweder den gegenüberliegenden Gehweg benutzen, oder der ausgeschilderten Umleitung via Falkenberger Str. und Giersstr. folgen; in der Giersstr. wurde der Bürgersteig zum Geh- und Radweg (benutzungspflichtig) gemacht
 #: last_checked: 2026-09-06
 #: check_frequency: 30d
 #: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
@@ -10850,7 +10891,7 @@ Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mtax2qcirc2h
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibdoullemtlc7p5zheczdy24xf67qg632f5b3nls6fpsfclo4sbti
 #: by: https://www.entwicklungsstadt.de/breite-strasse-in-pankow-neuer-asphalt-soll-verkehrslaerm-deutlich-senken/
-#: source_id: LMS-BR:419745/72 viz2021:13.41178,52.57148,17.08.2026,07:00 (bis 31.08.2026) (bis 09.09.2026)
+#: source_id: LMS-BR:419745/72 viz2021:13.41178,52.57148,17.08.2026,07:00 vizapi2026:850/2026 (bis 31.08.2026) (bis 09.09.2026) (bis 10.09.2026)
 #: note: oder man nimmt den direkten Weg und schiebt gegebenenfalls
 Breite Str.: Fahrbahnarbeiten, offizielle Umleitung für den Radverkehr über Breite Str. - westlich Kirche - Breite Str.	q4::inwork; 10602,18382 10680,18380
 Eintrachtstr.: Anbindung Breite Str. gesperrt	q3::inwork 10650,18544 10710,18393
@@ -11042,14 +11083,15 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mtzz7zexok2i
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mu2kny3el22y
 #: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_358187
-#: source_id: LMS-BR:420275/72 viz2021:13.385706,52.485011, (kein Endedatum)
+#: source_id: LMS-BR:420275/72 viz2021:13.385706,52.485011, vizapi2026:887/2026 (kein Endedatum) (bei vizapi2026 bis 30.09.2026)
 #: source_id: bvg2024:m43#HIM_FREETEXT_360149
 #: also_indoor: traffic (T,G[later],H,W)
 #: note: Richtung Osten für den Kfz-Verkehr gesperrt, eine Gasse für den Radverkehr ist zurzeit offen
 #: note: Länge des abgesperrten Bereichs 100m, der eigentlich Baubereich nur etwa 50m
 #: traffic_note: Vermuteter Umgehungsverkehr: Te-Damm - Bayernring - Boelckestr. oder Mussehlstr.
 #: last_checked: 2026-09-07
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2026-09-30
 	q3::inwork; 9229,8785 9076,8783
 ',
          'from' => undef,
@@ -11226,6 +11268,29 @@ Fontanestr. -> An der Wuhlheide	3::inwork 18240,6845 18225,7004 18010,7137
          'text' => 'Windscheidstr.: Bauarbeiten zwischen Kantstr. und Stuttgarter Platz, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 07.09.2026 07:00 bis 25.09.2026',
          'type' => 'handicap',
          'until' => 1790373540
+       },
+       {
+         'data' => '#: next_check_id: ALLEEDERKOSMONAUTEN-2026
+#: by: https://www.entwicklungsstadt.de/grossbaustelle-an-der-rhinstrasse-bvg-zerlegt-wichtigen-tramknoten-im-berliner-osten/ (laut Baustellenschild bis August 2027)
+#: by: https://marzahn-hellersdorf.com/rhinstrasse-allee-der-kosmonauten-ab-montag-wird-es-an-der-kreuzung-eng/
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260904
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3muvqallarc2i
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiba3lg4gyyv4xszcnsqvt6nl3ormok6idhrtix6gazaf75ctypykm (keine Sperrung mehr?)
+#: source_id: LMS-BR:414868/72 viz2021:13.51933,52.52609,06.07.2026,07:00 vizapi2026:659/2026 (provisorische Ampelanlage, bis 07.09.2026) (inaktiv)
+#: source_id: planb2026:13.51956095,52.52592192,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026) (bis 12.12.2026)
+#: source_id: LMS-BR:421575/72 viz2021:13.51975,52.52586,07.09.2026,07:00 vizapi2026:914/2026 (Gleisbauarbeiten bis 12.12.2026)
+#: XXX Aber gibt es nun neue Umwege für den Radverkehr? Z.B. im Zuge der AdK von West nach Ost, oder Rhinstr. von Nord nach Süd?
+#: last_checked: 2026-09-08
+#: check_frequency: 60d
+#: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
+Rhinstr.: Fahrbahn und Bürgersteig Richtung Süden gesperrt, Kfz-Verkehr wird über die Gegenfahrbahn geführt	1::inwork 18226,13506 18235,13236
+# REMOVED --- Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18097,13492 18063,13490
+',
+         'from' => 1788732000,
+         'id' => 4746,
+         'text' => 'Rhinstr.: Umweg ab Allee der Kosmonauten Richtung Süden, voraussichtlich bis 12.12.2026',
+         'type' => 'gesperrt',
+         'until' => 1797116400
        }
      
 );

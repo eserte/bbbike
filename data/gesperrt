@@ -1865,6 +1865,9 @@ Mittweidaer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24918,14008 24983
 Mittelstreifen nicht passierbar	3nocross::ignrte 4600,8002 4711,8013 4786,8007
 Detmolder Str. -> Aachener Str.: Mittelstreifen nicht passierbar	3::igndisp 4572,7936 4711,8013 4672,8031
 Aachener Str. -> Detmolder Str.: Mittelstreifen nicht passierbar	3::igndisp 4672,8031 4711,8013 4786,8007
+Straßenbahntrasse	3nocross::ignrte 18226,13506 18235,13236 18225,12697
+Rhinstr. -> Rhinstr. [Wohngebiet]: Straßenbahntrasse	3::igndisp 18225,12697 18235,13236 18168,13234
+Rhinstr. [Wohngebiet] -> Rhinstr.: Straßenbahntrasse	3::igndisp 18168,13234 18235,13236 18226,13506
 Straßenbahntrasse	3nocross::ignrte 18215,12123 18216,12209 18216,12239 18216,12262 18220,12450
 Kolonie Friedrichsfelde Nord -> Rhinstr.: Straßenbahntrasse	3::igndisp 18180,12262 18216,12262 18220,12450
 Rhinstr. -> Kolonie Friedrichsfelde Nord: Straßenbahntrasse	3::igndisp 18216,12239 18216,12262 18180,12262
@@ -3592,7 +3595,6 @@ Fennstr. -> Uferweg am Nordhafen: im Baustellenbereich Überqueren nicht möglich	
 Uferweg am Nordhafen -> Fennstr.: im Baustellenbereich Überqueren nicht möglich	3::igndisp::inwork 7549,14664 7514,14687 7480,14660
 Fennstr. -> Nordhafenpark: im Baustellenbereich Überqueren nicht möglich	3::igndisp::inwork 7911,15008 7533,14702 7560,14670
 Nordhafenpark -> Fennstr.: im Baustellenbereich Überqueren nicht möglich	3::igndisp::inwork 7560,14670 7533,14702 7514,14687
-Allee der Kosmonauten - am Marzahn-Hohenschönhauser Grenzgraben: wegen Gleisbauarbeiten gesperrt	2::inwork 18104,13510 18063,13490
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
 (Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): noch nicht freigegeben, Bauzäune	2::inwork 5812,7826 5829,7827 6147,7840
@@ -3651,7 +3653,6 @@ Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11
 Delbrückstr.: Baustellenfläche, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 Mittelheide - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::inwork 24089,6144 24060,6059 23951,6063
 Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::inwork 24120,6090 24060,6059
-Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.): massive Sperrung	2::inwork 19173,14932 19171,14938 19157,14979
 (Georg-Knorr-Str. - Landsberger Allee): Bauzäune, gesperrt	2::inwork 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979 19163,14981 19171,14984 19175,14968
 (Landsberger Allee - Frank-Schweitzer-Str.): Rampe und Treppe gesperrt	2::inwork 19157,14948 19162,14931 19121,14916 19173,14932 19195,14931

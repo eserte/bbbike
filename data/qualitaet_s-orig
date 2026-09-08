@@ -3001,7 +3001,7 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 #: osm_watch: note 4294376 10
 #: osm_watch: way id="1025072174" version="5"
 #: source_id: planb2026:13.50921404,52.51499445,11.05.2026,07:00 ("Fahrbahneinengung", bis 31.03.2027)
-#: last_checked: 2026-08-05
+#: last_checked: 2026-09-08
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-03-31 (planb)
@@ -4644,7 +4644,8 @@ Roedeliusplatz: Kopfsteinpflaster	Q2 16158,12191 16248,12177
 Freiastr.: Kopfsteinpflaster	Q2 16831,12419 16696,12437
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0+ 16865,13000 17048,13000 17113,13025 17170,13070 17227,13075 17257,13117 17219,13430 17201,13510 17201,13519
 (Siegfriedstr. - Herzbergstr.): Asphalt	Q0+ 17219,13430 17300,13459
-Herzbergstr.: betoniert/Verbundsteinpflaster	Q0- 17232,13518 17300,13459 17330,13437 17479,13434 17688,13430
+#: historical_note: früher mit Q0- getaggt, aber die Betonflächen haben deutliche Schäden
+Herzbergstr.: betoniert/Verbundsteinpflaster	Q1+ 17232,13518 17300,13459 17330,13437 17479,13434 17688,13430
 #: historical_note: früher: Asphalt mit Schäden, Q1
 Rumeyplan: Asphalt	Q0  8690,7704 8812,7730
 #: historical_note: früher: Asphalt mit Schäden	Q1
@@ -4815,6 +4816,8 @@ Rosenfelder Ring: Beton	Q0- 17477,11893 17540,11878 17775,11858 18014,11837
 Rosenfelder Ring: Asphalt	Q0- 18140,11932 18118,11941 18114,12089
 Rhinstr. [Wohngebiet]: Asphalt	Q0 18215,12123 18174,12116 18165,12091 18160,11938
 Rhinstr. [Wohngebiet]: Beton	Q0- 18160,11938 18140,11932 18139,11833 18014,11837
+Rhinstr. [Wohngebiet]: Beton	Q1+ 18104,13510 18097,13492 18096,13456 18162,13459 18197,13461
+Rhinstr. [Wohngebiet]: Beton	Q1+ 18162,13459 18168,13234 18235,13236
 Rhinstr. [Gewerbegebiet]: Beton	Q1+ 18027,14016 17763,13983 17647,14034
 #: note: aus der S-Bahn gesehen:
 Seebeckstr.: Kopfsteinpflaster	Q2+ 8495,18566 8425,18542
@@ -11043,7 +11046,7 @@ Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17485,13316 17488,13257 17491,13190 17490,13133 17491,13125
 #: historical_note: bis Juli 2026 mit getaggt Q2+, danach Q2
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, zahlreiche Wurzelhebungen	Q2 17698,13124 17739,13146 17871,13145 17906,13141
-(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, vereinzelt leichte Wurzelhebungen	Q0- 17906,13141 17981,13327 18032,13404 18063,13490 18104,13510
+(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, vereinzelt leichte Wurzelhebungen	Q0- 17906,13141 17981,13327 18032,13404 18063,13490 18097,13492
 Allee der Kosmonauten: Beton mit einigen Hebungen und Asphaltflicken	Q1+ 17698,13134 17690,13365 17689,13405 17688,13430
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
 #: historical_note: früher ohne "etwas Schotter", Q1+

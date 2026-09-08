@@ -55,7 +55,7 @@
 #: source_id: LMS-BR:405906/72 viz2021:13.36206,52.4473,24.04.2026,19:00 (bis 26.04.2026) (inaktiv)
 #: source_id: planb2026:13.36164907,52.44712195,03.08.2026, (hier: "Gehwegvollsperrung", bis 24.08.2026) (inaktiv)
 #: osm_watch: note 5188307 3 vvv
-#: last_checked: 2026-08-26 vvv
+#: last_checked: 2026-09-08 (osm note) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2026-08-24 (planb) vvv
 provisorische Radspuren	RW4;RW4 7597,4499 7628,4521 7667,4549 7690,4563
@@ -289,6 +289,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 #: by: https://www.entwicklungsstadt.de/verzoegerungen-beim-berlin-modern-feuchtigkeitsschaeden-stoppen-prestige-museumsbau/
 #: by: https://www.entwicklungsstadt.de/berlin-modern-rueckt-in-die-2030er-probleme-im-rohbau-bremsen-baufortschritt/ (bis Mitte 2030?)
 #: by: https://www.entwicklungsstadt.de/sanierung-am-berlin-modern-schreitet-voran-eroeffnung-erst-2030/
+#: by: https://www.entwicklungsstadt.de/erste-ausstellung-im-berlin-modern-kulturforum-oeffnet-den-neubau/
 # REMOVED (existiert nicht mehr) --- #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
 #: by: srt
 #: XXX: temporäre Radspur
@@ -1031,7 +1032,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-09-06
+#: last_checked: 2026-09-08
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1849,7 +1850,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-09-06 vvv
+#: last_checked: 2026-09-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1870,7 +1871,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="59"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-09-06 vvv
+#: last_checked: 2026-09-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -2391,7 +2392,7 @@ Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,116
 	RW3; 10133,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
 #: next_check_id: GERTRAUDENBRUECKE-2025
-#: last_checked: 2026-09-07 vvv
+#: last_checked: 2026-09-08 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
 #: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
@@ -2441,7 +2442,7 @@ Busspur ist immer gültig	RW5; 10376,11879 10391,11898 10423,11936 10460,11979 10
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-08-31 vvv
+#: last_checked: 2026-09-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -2473,7 +2474,7 @@ Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
-#: last_checked: 2026-09-07
+#: last_checked: 2026-09-08
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
@@ -3543,13 +3544,13 @@ Busspur ist immer gültig	RW5; 16248,12177 16223,11999
 # REMOVED (nur das Stück bergauf) --- #: XXX Radspur wird grün markiert (evtl. auch das Teilstück bergauf) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php --- #: next_check: 2018-10-17
 # REMOVED --- #: XXX wird hier auch die Radspur grün markiert? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php --- #: by: https://twitter.com/ADFC_Berlin/status/1065526520599511045 --- #: priority: #D --- #: next_check: 2018-11-22
 Grünbeschichtung	RW4; 11979,8014 12162,8053 12311,8084 12415,8106 12427,8109
-#: by: https://www.infravelo.de/projekt/werbellinstrasse-1/ (4. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 2. Quartal 2026) (3. Quartal 2026 - 3. Quartal 2026) (Status: in Bau)
+#: by: https://www.infravelo.de/projekt/werbellinstrasse-1/ (4. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 2. Quartal 2026) (3. Quartal 2026 - 3. Quartal 2026) (Status: in Bau) (abgeschlossen)
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (voraussichtlich ab März 2026)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2026/pressemitteilung.1697694.php (Beginn der Bauarbeiten, kein Endedatum)
 #: by: https://www.entwicklungsstadt.de/300-meter-bis-zum-lueckenschluss-radstreifen-in-der-werbellinstrasse-wird-ergaenzt/
 #: source_id: planb2026:13.43729985,52.47898915,26.07.2026, ("Fahrbahneinengung", 26.07.2026 bis 31.07.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_352010 (2026-07-28 bis 2026-07-30) (mittlerweile bis 2026-07-31)
-#: osm_watch: note 5409313 4
+#: osm_watch: note 5409313 5
 #: XXX kommen hier noch Poller/Leitboys hin? kommen hier noch Radwegschilder hin? -> Radwegschild an der Morusstr. steht nun
 #: last_checked: 2026-09-04
 #: check_frequency: 14d
@@ -3742,7 +3743,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
 #: osm_watch: way id="966685279" version="10"
-#: last_checked: 2026-08-16 vvv
+#: last_checked: 2026-09-08 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2028-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -5408,7 +5409,7 @@ provisorischer gemeinsamer Rad- und Gehweg	RW2; 15662,16649 15437,16491
 	RW3; 15437,16491 15297,16321 15236,16241 15194,16186 15130,16098
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgonry5ias2l
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260312
-#: source_id: LMS-BR:401373/72 viz2021:13.46805,52.5465,10.03.2026,07:00 viz2021:13.46805,52.5465, (vorbereitende Arbeiten, bis 13.03.2026) (Verengung, bis 31.12.2026)
+#: source_id: LMS-BR:401373/72 viz2021:13.46805,52.5465,10.03.2026,07:00 viz2021:13.46805,52.5465, vizapi2026:184/2026 (vorbereitende Arbeiten, bis 13.03.2026) (Verengung, bis 31.12.2026) (bis 15.01.2027)
 #: source_id[inactive]: bvg2024:259#HIM_FREETEXT_324670
 #: note: ab 13.03.2026 bis Ende 2026 wegen Fernwärmearbeiten Verengung und Verschwenkung
 #: note: zwischen Indira-Gandhi-Str. und Orankeweg ist die südliche Fahrbahn komplett gesperrt, Radfahrer Richtung Hohenschönhausen müssen zusammen mit Fußgängern den Hochbord benutzen, Richtung Westen auch, aber das ist zumindest am Orankeweg nicht ausgeschildert -> handicap ja/nein? q1? q2? -> erstmal nicht
@@ -5416,7 +5417,7 @@ provisorischer gemeinsamer Rad- und Gehweg	RW2; 15662,16649 15437,16491
 #: XXX später wiederherstellen: die letzten Meter werden als benutzungspflichtiger Radweg auf dem Hochbord geführt	RW3; 14808,15788 14653,15738
 #: last_checked: 2026-09-06
 #: check_frequency: 60d
-#: next_check: 2026-12-31
+#: next_check: 2027-01-15 (VIZ-Verkehrsmeldung)
 gemeinsamer Geh- und Radweg	RW2; 15130,16098 14967,15885 14936,15857 14808,15788 14653,15738
 # 
 #: note: Hansastr. Richtung NO
@@ -5424,7 +5425,7 @@ gemeinsamer Geh- und Radweg	RW2; 15130,16098 14967,15885 14936,15857 14808,15788
 #: XXX später wiederherstellen:	RW3; 14808,15788 14936,15857 14967,15885
 #: last_checked: 2026-09-06
 #: check_frequency: 60d
-#: next_check: 2026-12-31
+#: next_check: 2027-01-15 (VIZ-Verkehrsmeldung)
 gemeinsamer Geh- und Radweg	RW2; 14653,15738 14808,15788 14936,15857 14967,15885
 	RW3; 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
 die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Radfahrer frei) geführt	RW10; 15297,16321 15437,16491
