@@ -5162,25 +5162,6 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # REMOVED --- #: by: mapillary --- #: last_checked: 2022-02-05 (mapillary) --- #: check_frequency: 90d --- Ackerstr. (Schulzendorf): Hochbauarbeiten, Straße gesperrt	2::inwork 22996,-4983 22962,-5193
 # REMOVED (laut osm offen) --- #: by: mapillary --- #: osm_watch: way id="27016349" version="15" --- #: last_checked: 2022-08-07 (mapillary, unsicher) --- # REMOVED --- #: check_frequency: 120d --- #: check_frequency: 60d --- Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5346 22677,-5420
 # 
-# REMOVED (hat wohl nichts mit der Chausseestr. (mehr) zu tun) --- #: next_check_id: CHAUSSEE-2020
-#: by: https://www.berliner-woche.de/mitte/c-bauen/abschluss-des-stauraumprogramms-wasserbetriebe-bauen-an-der-chausseestrasse_a357698 (Abschluss des Projekts bis 2026)
-#: by: https://www.deutsches-architekturforum.de/thread/10894-projekte-rund-um-das-bnd-areal/?postID=742860#post742860 (laut Baustellenschild der Wasserbetriebe bis September 2026)
-#: by: https://www.tagesspiegel.de/berlin/kippt-dieses-staubecken-das-badeverbot-berlins-grosster-wasserparkplatz-14249273.html
-#: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022, mittlerweile entfernt
-#: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
-#: source_id: viz2021:13.374617,52.535574,24.08.2023,12:27 (bis 31.08.2023) (bis 31.08.2025) (bis 31.08.2026) (inaktiv)
-#: source_id: LMS-BR:391216/72 viz2021:13.37613,52.53612, viz2021:13.376138,52.536093, (bis 01.09.2026) (bis 31.08.2026) (inaktiv)
-#: source_id: planb2026:13.37351074,52.53509031,24.08.2023, ("Sperrung einer Fahrtrichtung", bis 31.08.2026) (inaktiv)
-#: osm_watch: way id="129104626" version="27"
-#: osm_watch: way id="945966258" version="3"
-#: osm_watch[closed]: note 5077509 1
-#: also_indoor: traffic (ex-H,ex-G,ex-B[alle falsch])
-#: last_checked: 2026-08-26
-#: check_frequency: 14d
-#: next_check: 2026-09-30 (Baustellenschild)
-# REMOVED --- Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
-Ida-von-Arnim-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Chausseestr.	1s:q4:inwork 8442,14456 8266,14346
-# 
 # REMOVED (weitgehend offen) -- #: next_check_id: SIEGFRIED-2021 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straße öffentlich sein?) --- #: by: https://www.i-live-tempelhof.de/ (Erstbezug Anfang 2023) --- #: priority: #C --- #: last_checked: 2022-09-24 --- #: check_frequency: 120d --- (Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
 # REMOVED (wieder offen) --- #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021 --- #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen --- #: last_checked: 2025-05-07 --- #: check_frequency: 60d --- Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # REMOVED (eröffnet) --- #: next_check_id: TEGELERBRUECKE-2021 --- #: last_checked: 2023-06-02 (mapillary) --- #: next_check: 2023-12-01 --- Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -233,15997 -236,16043 -226,16086

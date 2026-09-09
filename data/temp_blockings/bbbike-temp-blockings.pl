@@ -20812,6 +20812,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1484601.php
 #: by: https://www.visitberlin.de/de/event/fest-der-panke
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1697936.php
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1711804.php
 #: source_id: viz2021:13.40899,52.57098,12.09.2025,08:00 (bis 14.09.2025) (inaktiv)
 	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
 	2::temp 10602,18382 10562,18506 10532,18601
@@ -26382,11 +26383,11 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-09-09 00:00:00"), # $isodate2epoch->("2025-05-10 00:00:00"), # $isodate2epoch->("2024-06-09 00:00:00"), # $isodate2epoch->("2023-03-14 12:00:00"), # 1455447600, # 2016-02-14 12:00
-       until => $isodate2epoch->("2026-09-11 20:00:00"), # $isodate2epoch->("2025-05-13 09:00:00"), # $isodate2epoch->("2024-06-11 18:00:00"), # $isodate2epoch->("2023-03-17 12:00:00"), # 1455642000, # 2016-02-16 18:00
+       until => $isodate2epoch->("2026-09-12 12:00:00"), # $isodate2epoch->("2025-05-13 09:00:00"), # $isodate2epoch->("2024-06-11 18:00:00"), # $isodate2epoch->("2023-03-17 12:00:00"), # 1455642000, # 2016-02-16 18:00
 #      text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 15. März 2023, 12:00 Uhr bis zum 17. März 2023, 12:00 Uhr',
 #      text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 10. Juni 2024, 13:00 Uhr bis zum 11. Juni 2024, 18:00 Uhr',
 #      text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 11. Mai 2025, 20:00 Uhr bis zum 13. Mai 2025, 09:00 Uhr',
-       text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 09. September 2026 bis 11. September 2026',
+       text  => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 09. September 2026 bis voraussichtlich 12. September 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: STAATSBESUCH-HARDENBERGSTR
@@ -26400,10 +26401,12 @@ EOF
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1800101801108336978
 #: by: http://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zur-ukraine-wiederaufbaukonferenz/ (2024-06)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
-#: by: https://www.tagesspiegel.de/berlin/israelischer-staatsprasident-besucht-berlin-verkehrseinschrankungen-am-sonntag-und-montag-in-mitte-und-charlottenburg-13667389.html
-#: by: https://www.tagesspiegel.de/berlin/scheich-mohammed-bin-zayed-in-berlin-hotel-waldorf-astoria-wegen-staatsbesuchs-abgeriegelt-16032600.html
+#: by: https://www.tagesspiegel.de/berlin/israelischer-staatsprasident-besucht-berlin-verkehrseinschrankungen-am-sonntag-und-montag-in-mitte-und-charlottenburg-13667389.html (bis Freitag = 2026-09-11?)
+#: by: https://www.tagesspiegel.de/berlin/scheich-mohammed-bin-zayed-in-berlin-hotel-waldorf-astoria-wegen-staatsbesuchs-abgeriegelt-16032600.html (2026-09-09)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mv3lwdnsnk2n
 #: source_id: viz2021:13.322084,52.512028,10.06.2024,13:00 (hier bereits ab Ernst-Reuter-Platz (bei rbb: Anlieger frei), bis 12.06.2024) (inaktiv)
 #: source_id: viz2021:13.331732,52.505347,10.06.2024,13:00 (bis 12.06.2024) (inaktiv)
+#: source_id: vizapi2026:920/2026 (bis 12.09.2026 12:00)
 #: note: um das Hotel Waldorf Astoria herum; das Ausmaß der Sperrungen kann etwas variieren
 Hardenbergstr.	2::temp 5542,11075 5652,11004
 Kantstr.	2::temp 5652,11004 5613,10963 5488,10978
@@ -36778,14 +36781,14 @@ EOF
 # REMOVED --- #: next_check: 2023-07-31
 # REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
-#: source_id: LMS-BR:408948/72 viz2021:13.44444,52.48166,21.05.2026,09:00 (bis 28.08.2026) (inaktiv)
+#: source_id: LMS-BR:408948/72 viz2021:13.44444,52.48166,21.05.2026,09:00 vizapi2026:499/2026 (bis 28.08.2026) (nur noch bei vizapi2026, bis 31.10.2026)
 #: source_id: planb2026:13.45012105,52.47955018,09.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.08.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.45012105,52.47955018,09.05.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026)
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026; mittlerweile (Sommer 2026) ist eine Durchfahrt wieder möglich, zumindest inoffiziell
 #: osm_watch: note 4794007 2
 #: last_checked: 2026-09-04 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2026-10-31 (planb) vvv
+#: next_check: 2026-10-31 (planb + vizapi2026) vvv
 # REMOVED --- #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung, planb) vvv
 # REMOVED --- #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -44728,12 +44731,13 @@ EOF
 	q4::inwork 20388,3100 20478,3156 20717,3310
 EOF
      },
-     { from  => undef,
-       until => $isodate2epoch->("2026-08-06 20:00:00"), # $isodate2epoch->("2026-05-31 20:00:00"), # $isodate2epoch->("2025-12-31 17:00:00"),
-       text  => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 06.08.2026',
+     { from  => $isodate2epoch->("2026-09-13 00:00:00"), # undef,
+       until => $isodate2epoch->("2026-09-26 04:30:00"), # $isodate2epoch->("2026-08-06 20:00:00"), # $isodate2epoch->("2026-05-31 20:00:00"), # $isodate2epoch->("2025-12-31 17:00:00"),
+#      text  => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betroffen, voraussichtlich bis 06.08.2026',
+       text  => 'Schönerlinde - Mühlenbeck: Bauarbeiten, Sperrung der Brücke, evtl. sind auch Radfahrer betroffen, vom 14.09.2026 19:00 bis 26.09.2026 04:30',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/221-E/23/175 (bis 10.01.2024) (bis 31.12.2025) (bis 31.05.2026) (bis 06.08.2026) (inaktiv)
+#: source_id: LS/221-E/23/175 (bis 10.01.2024) (bis 31.12.2025) (bis 31.05.2026) (bis 06.08.2026) (inaktiv) (14.09.2026 bis 26.09.2026)
 	2::inwork 11448,28068 12126,27740
 EOF
      },
@@ -45762,7 +45766,8 @@ EOF
 #      text  => 'Wolziger Zeile: Sperrung des Bahnübergangs ab 1.7.2024',
 #      text  => 'Wolziger Zeile: Unterführung wegen Bauarbeiten voraussichtlich bis Ende Mai 2026 gesperrt, evtl. werden die Bauarbeiten verlängert',
 #      text  => 'Wolziger Zeile: Unterführung weitgehend fertig, aber noch nicht offiziell freigegeben',
-       text  => 'Wolziger Zeile: Unterführung weitgehend fertig, aber nur teilweise für Fußgänger freigegeben',
+#      text  => 'Wolziger Zeile: Unterführung weitgehend fertig, aber nur teilweise für Fußgänger freigegeben',
+       text  => 'Wolziger Zeile: Unterführung weitgehend fertig, aber nur teilweise für Fußgänger freigegeben, vollständige Eröffnung voraussichtlich im Oktober 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLZIGERZEILE-2024
@@ -45785,6 +45790,8 @@ EOF
 #: by: https://www.berliner-zeitung.de/mensch-metropole/start-der-dresdner-bahn-in-berlin-steht-bevor-bald-faehrt-erstmals-ein-ice-durch-lichtenrade-li.10004430 (vor Weihnachten 2025 werden die Treppen eröffnet, im April 2026 die Rampen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1628173.php
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26162.pdf (Eröffnung im Juli 2026?)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20260909 (Eröffnung voraussichtlich im Oktober 2026)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/zeitplan?date=20260909
 #: source_id: viz2021:13.39948,52.38249,03.02.2025,10:46 (bis 30.06.2025) (inaktiv)
 #: source_id: viz2021:13.399297,52.382412,01.07.2024,07:00 (bis 30.06.2025) (inaktiv)
 #: source_id: planb2026:13.39962825,52.38248763,01.07.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026) (inaktiv)
@@ -45799,17 +45806,19 @@ EOF
 #: osm_watch: note 5094173 5
 #: osm_watch[closed]: note 4283578 4
 #: also_indoor: search Wolziger_Zeile
+#: add_fragezeichen: Wurde die Unterführung mittlerweile vollständig freigegeben? vvv
 #: last_checked: 2026-08-26 vvv
-#: check_frequency: 21d vvv
-#: next_check: 2026-08-31 (planb) vvv
+# REMOVED --- #: check_frequency: 21d vvv
+# REMOVED --- #: next_check: 2026-08-31 (planb) vvv
 # REMOVED --- #: next_check: 2026-07-31 (pardok) vvv
-# REMOVED --- #: next_check: 2026-06-01 (DB website: Bauarbeiten bis Ende Mai 2026)
+#: next_check: 2026-10-01 (DB website: Eröffnung voraussichtlich im Oktober 2026)
 Wolziger Zeile: Unterführung und Rampe nur für Fußgänger frei	q4::inwork 10307,-2633 10391,-2624
 Wolziger Zeile: Rampe gesperrt	2::inwork 10391,-2624 10373,-2575 10394,-2567
 # REMOVED (freigegeben) --- Wolziger Zeile: Treppe	2::inwork 10391,-2624 10400,-2629 10420,-2644
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 # REMOVED (mittlerweile komplett zu) --- #: note: Schranke existiert noch, man kann als Radfahrer/Fußgänger noch halb-legal durch (Stand 2024-07-03)
 # REMOVED --- #: last_checked: 2024-09-21 (youtube)
 #	2::inwork 10392,-2595 10362,-2604 10307,-2633
@@ -55825,8 +55834,9 @@ Fontanestr. -> An der Wuhlheide	3::inwork 18240,6845 18225,7004 18010,7137
 EOF
      },
      { from  => 1788695691, # 2026-09-06 13:54
-       until => 1789682400, # 2026-09-18 00:00
-       text  => 'Storkower Str.: Bauarbeiten, Richtung Westen ab Möllendorffstr. gesperrt, voraussichtlich bis 17.9.2026',
+       until => $isodate2epoch->("2026-09-11 17:00:00"), # 1789682400, # 2026-09-18 00:00
+#      text  => 'Storkower Str.: Bauarbeiten, Richtung Westen ab Möllendorffstr. gesperrt, voraussichtlich bis 17.9.2026',
+       text  => 'Storkower Str.: Bauarbeiten, Richtung Westen ab Möllendorffstr. gesperrt, geplant bis 11.9.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260811 (ursprünglich Sperrung der Alfred-Jung-Str., bis Anfang September 2026)
@@ -55834,10 +55844,10 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mulytuay6k2n (zur Storkower Str.)
 #: source_id: planb2026:13.47721649,52.52297025,12.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026)
 #: source_id: LMS-BR:419242/72 viz2021:13.4795,52.52304,12.08.2026,07:00 (bis 04.09.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:421068/72 viz2021:13.4795,52.52304,03.09.2026,12:00 vizapi2026:905/2026 (angrenzende Storkower Str. nun auch gesperrt, bis 17.09.2026)
+#: source_id: LMS-BR:421068/72 viz2021:13.4795,52.52304,03.09.2026,12:00 vizapi2026:905/2026 (angrenzende Storkower Str. nun auch gesperrt, bis 17.09.2026) (bei vizapi2026 nur noch bis 11.09.2026)
 # REMOVED --- #: note: sehr kurze Sperrung, Umfahrung/Umgehung mit Bordsteinabsenkungen (via Zebrastreifen) möglich --- #: note: außerdem ist die Radspur auf der Storkower Str. Richtung Westen aufgehoben
 #: last_checked: 2026-09-06
-#: next_check: 2026-09-17 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-09-11 (vizapi2026)
 	q4::inwork; 15515,13134 15347,13124
 #  REMOVED --- Alfred-Jung-Str.: Sperrung vor der Storkower Str.	q3::inwork 15347,13268 15347,13124
 EOF
@@ -55902,12 +55912,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-09-07 00:00:00"),
-       until => $isodate2epoch->("2026-09-30 23:59:59"),
-       text  => 'Kressenweg: Baustelle zwischen Elsenstr. und Alt-Mahlsdorf, Einbahnstraße offen Richtung Süden, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis Ende September 2026',
+       until => $isodate2epoch->("2026-09-30 17:00:00"),
+#      text  => 'Kressenweg: Baustelle zwischen Elsenstr. und Alt-Mahlsdorf, Einbahnstraße offen Richtung Süden, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis Ende September 2026',
+       text  => 'Kressenweg: Baustelle zwischen Elsenstr. und Alt-Mahlsdorf, Einbahnstraße offen Richtung Süden, voraussichtlich bis Ende September 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://bsky.app/profile/bahnkaktus.bsky.social/post/3muwbjhpduc2y
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3muwkw7uaoc2l
+#: source_id: vizapi2026:919/2026 (Fahrtrichtung für den Kfz- und Radverkehr gesperrt, bis 30.09.2026)
 #: also_indoor: traffic (T,H)
 Kressenweg	q4::inwork; 23573,10975 23648,11265
 EOF

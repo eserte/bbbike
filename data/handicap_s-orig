@@ -182,8 +182,9 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026)
 #: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
-#: last_checked: 2026-09-08
-#: next_check: 2026-09-09 (planb)
+#: last_checked: 2026-09-09 (traffic)
+#: check_frequency: 3d (traffic)
+# REMOVED --- #: next_check: 2026-09-09 (planb)
 # REMOVED --- #: valid: -20260909
 #: valid: -20260916
 Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,13185 12842,13070
@@ -359,8 +360,9 @@ Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für R
 #: next_check_id: WOLZIGERZEILE-2024
 #: source_id: planb2026:13.39962825,52.38248763,01.07.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026) (inaktiv)
 #: last_checked: 2026-08-26
-#: check_frequency: 21d
-#: next_check: 2026-08-31 (planb)
+# REMOVED --- #: check_frequency: 21d
+# REMOVED --- #: next_check: 2026-08-31 (planb)
+#: next_check: 2026-10-01 (DB website: Eröffnung voraussichtlich im Oktober 2026)
 Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10392,-2595 10394,-2567
 # 
 # REMOVED --- #: next_check_id: BAHNHOFSTR-2020 --- #: source_id: 2147345858 --- #: last_checked: 2024-05-18 --- #: check_frequency: 180d --- #: next_check: 2024-06-28 --- (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10273,-2158 10210,-2175 10227,-2221 10221,-2225 10210,-2230 10157,-2150 10096,-2137
@@ -557,7 +559,7 @@ Wilhelmstr.: Bauarbeiten, Engstelle	q2::inwork 8766,12541 8775,12457
 # REMOVED --- #: next_check: 2026-08-15 (planb)
 # REMOVED --- An der Kommandantur: Gerüstbauarbeiten, Fahrbahn gesperrt	q4::inwork 9943,12364 9996,12372
 # 
-#: also_indoor: traffic (no-G,no-T,no-H,no-W)
+#: also_indoor: traffic (no-G,T[later],no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
 #: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026)
 #: last_checked: 2026-08-20
