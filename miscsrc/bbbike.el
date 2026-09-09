@@ -742,7 +742,8 @@
 	      (string= url "https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/")
 	      (string= url "https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/")
 	      (string-match (concat "^\\("
-				    "https://bauprojekte.deutschebahn.com/p/.*/infobauarbeiten"
+				       "https://bauprojekte.deutschebahn.com/p/.*/infobauarbeiten"
+				    "\\|https://bauprojekte.deutschebahn.com/p/.*/zeitplan"
 				    "\\|https://www.aktives-adlershof.de/aktuelles"
 				    "\\|https://www.bwb.de/de/baustelleninformationen.php"
 				    "\\|https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/"
