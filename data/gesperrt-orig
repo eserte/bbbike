@@ -2873,8 +2873,9 @@ tragen (3x13 Stufen)	0:45 18739,4728
 #: by: https://www.bahninfo-forum.de/read.php?9,677830,795049#msg-795049 (Aufzug wird frühestens Mitte 2025 fertig) (mittlerweile 4. Quartal 2025)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article409854635/licht-am-ende-des-tunnels-s-bahnhof-erhaelt-endlich-seinen-aufzug.html (1. Quartal 2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-23856.pdf (Inbetriebnahme im 2. Quartal 2026)
+#: osm_watch: node id="13898104860" version="2"
 #: XXX hier wird es in Zukunft einen Aufzug geben
-#: last_checked: 2026-08-25 (bahninfo-forum)
+#: last_checked: 2026-09-09
 #: check_frequency: 30d
 #: next_check: 2026-09-20 (Baustellenschild: Sommer 2026)
 tragen	0:45 18661,4655
@@ -3280,6 +3281,7 @@ tragen (zwei Treppen)	0:60 51694,-59945
 tragen (4 Stufen)	0:10 6953,19939
 tragen (Treppe, 13+6 Stufen)	0:25 5813,7813
 tragen (Treppe, 8 Stufen oder Rampe)	0:15 -9678,6426
+tragen (Treppe, 13+13 Stufen)	0:30 19245,4073
 #
 #: section ^^^
 ###################################################################
@@ -4140,6 +4142,18 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: SCHWARZERWEG-2026
+#: note: siehe auch unbegrenzten Eintrag in bbbike-temp-blockings
+#: osm_watch: way id="1417905902" version="5"
+#: osm_watch: way id="1417905903" version="3"
+#: osm_watch: way id="1257637878" version="4"
+#: osm_watch[closed]: note 5142999 2
+#: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
+#: last_checked: 2026-09-09
+#: check_frequency: 30d (traffic)
+#: next_check: 2027-12-31
+Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
+# 
 #: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: note: mit festen Zäunen gesperrt
 #: last_checked: 2026-09-02
@@ -4211,6 +4225,7 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: by: https://viz.berlin.de/aktuelle-meldungen/gorlitzer-brucken-ab-01-juli-gesperrt/
 #: by: https://www.morgenpost.de/berlin/article412437202/goerlitzer-bruecken-ab-1-juli-gesperrt-so-soll-jetzt-die-rettung-gelingen.html
 #: by: https://www.entwicklungsstadt.de/goerlitzer-bruecken-in-alt-treptow-schadensanalyse-soll-klarheit-bringen/
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26838.pdf
 #: osm_watch: note 5278957 5
 #: osm_watch: way id="24042478" version="20"
 #: alias: Görlitzer Bahnbrücken
@@ -4573,7 +4588,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="4"
 #: osm_watch: way id="867830687" version="5"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-09-05
+#: last_checked: 2026-09-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4674,22 +4689,16 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 # REMOVED --- #: check_frequency: 14d (traffic checks)
 # REMOVED --- Slatan-Dudow-Str. (Potsdam): gesperrt wegen Bauarbeiten	2::inwork -7476,-4673 -7353,-4785
 # 
-#: next_check_id: A117-2024
-#: osm_watch: way id="153260813" version="7"
-#: osm_watch: way id="153260798" version="6"
-#: osm_watch[closed]: note 4162190 4
-#: by: https://gemeinde-schoenefeld.de/news/aktuelles/bau-der-anschlussstelle-hubertus-radweg-wird-gesperrt/ (Sperrung ab 3. Juni 2024 (voraussichtlich))
-#: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2024/03/2024-05-22_Anwohnerbrief.pdf (bis Ende 2025)
-#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-a117-zwischen-waltersdorf-und-ad-treptow/
-#: source_id: planb2026:13.56543908,52.38830377,21.05.2024, ("Umleitung", bis 30.09.2026)
-#: note: temp_blockings-Eintrag existiert auch
-#: last_checked: 2026-08-15
-#: check_frequency: 90d
-#: next_check: 2026-09-07 (maz)
-# REMOVED --- #: next_check: 2026-09-30 (planb)
-#: note: danach "übernimmt" der temp_blockings-Eintrag
-#: valid: -20260907
-Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
+# REMOVED (nur noch in temp blocking) --- #: next_check_id: A117-2024
+# REMOVED --- #: source_id: planb2026:13.56543908,52.38830377,21.05.2024, ("Umleitung", bis 30.09.2026)
+# REMOVED --- #: note: temp_blockings-Eintrag existiert auch
+# REMOVED --- #: last_checked: 2026-09-09
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2026-09-07 (maz)
+# REMOVED --- # REMOVED --- #: next_check: 2026-09-30 (planb)
+# REMOVED --- #: note: danach "übernimmt" der temp_blockings-Eintrag
+# REMOVED --- #: valid: -20260907
+# REMOVED --- Kleine Waldstr. - Waldstr.: Sperrung wegen Bauarbeiten an der A117	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
 # 
 # REMOVED (neue Rampe existiert) --- #: next_check_id: KNOTENMARZAHN-2022 --- #: XXX an dieser Stelle wird es alternativ eine Rampe geben --- #: osm_watch: note 4298701 3 --- #: osm_watch: way id="1297589176" version="1" --- #: last_checked: 2025-08-24 --- #: check_frequency: 180d --- #: next_check: 2026-12-31 --- (Landsberger Allee - Frank-Schweitzer-Str.): abgesperrt	2::inwork 19157,14948 19162,14931 19121,14916 19173,14932
 # 
@@ -4813,7 +4822,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-09-06 (mapillary) vvv
+#: last_checked: 2026-09-09 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
 #: osm_watch: way id="1199465845" version="5"
@@ -4938,7 +4947,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-08-22
+#: last_checked: 2026-09-09
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4946,7 +4955,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-08-22 vvv
+#: last_checked: 2026-09-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5112,7 +5121,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026) (inaktiv)
 #: source_id: planb2026:13.48630282,52.4933522,09.07.2025, ("Sicherung gemäß Vz.-plan" (rund um die Baustelle), bis 31.12.2026)
-#: last_checked: 2026-08-15
+#: last_checked: 2026-09-09
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (Pressemitteilung SenSBW, planb)
 # REMOVED --- #: next_check: 2027-06-30
@@ -5877,12 +5886,12 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 # REMOVED --- #: osm_watch: way id="765539341" version="17" brb
-#: last_checked: 2026-08-14 (osm)
+#: last_checked: 2026-09-07 (osm)
 #: check_frequency: 180d
 #: osm_watch: way id="1285592463" version="8" brb
 # REMOVED (hier offen) --- Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12802,-1485 -12708,-1445
 #: XXX Evtl. heißt dieser Abschnitt "Alter Markt" (siehe osm)?
-#: osm_watch: way id="90781221" version="21" brb
+#: osm_watch: way id="90781221" version="22" brb
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
 # 
 # REMOVED --- #: next_check_id: AMALTENMARKT-2018 --- #: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz --- #: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf --- #: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."; bei osm mittlerweile offen --- #: osm_watch: way id="760022943" version="19" brb --- #: last_checked: 2024-07-24 (osm) --- #: check_frequency: 60d --- Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12780,-1558 -12719,-1542

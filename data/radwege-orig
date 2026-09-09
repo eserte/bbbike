@@ -54,7 +54,7 @@
 #: source_id: LMS-BR:287345/72 viz2021:13.36063,52.44674, (bis 31.08.2025) (bis 31.10.2025) (bis 12.12.2025) (bis 28.02.2026) (bis 30.04.2026) (inaktiv)
 #: source_id: LMS-BR:405906/72 viz2021:13.36206,52.4473,24.04.2026,19:00 (bis 26.04.2026) (inaktiv)
 #: source_id: planb2026:13.36164907,52.44712195,03.08.2026, (hier: "Gehwegvollsperrung", bis 24.08.2026) (inaktiv)
-#: osm_watch: note 5188307 3 vvv
+#: osm_watch: note 5188307 4 vvv
 #: last_checked: 2026-09-08 (osm note) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2026-08-24 (planb) vvv
@@ -1465,7 +1465,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-09-05 vvv
+#: last_checked: 2026-09-09 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14405,10027 14501,10169 14558,10264
@@ -2545,7 +2545,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: by: https://www.entwicklungsstadt.de/dauersperrung-richtung-ostkreuz-warum-hier-seit-2018-nichts-passiert/
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-09-05 vvv
+#: last_checked: 2026-09-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -3373,7 +3373,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-09-05 vvv
+#: last_checked: 2026-09-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 #: next_check: 2026-09-30 (planb) vvv
@@ -3404,7 +3404,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-09-05
+#: last_checked: 2026-09-09
 #: check_frequency: 30d
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 #: next_check: 2026-09-30 (planb)
@@ -3448,7 +3448,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-08-25
+#: last_checked: 2026-09-09
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3459,7 +3459,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-08-25
+#: last_checked: 2026-09-09
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -3550,7 +3550,7 @@ Grünbeschichtung	RW4; 11979,8014 12162,8053 12311,8084 12415,8106 12427,8109
 #: by: https://www.entwicklungsstadt.de/300-meter-bis-zum-lueckenschluss-radstreifen-in-der-werbellinstrasse-wird-ergaenzt/
 #: source_id: planb2026:13.43729985,52.47898915,26.07.2026, ("Fahrbahneinengung", 26.07.2026 bis 31.07.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_352010 (2026-07-28 bis 2026-07-30) (mittlerweile bis 2026-07-31)
-#: osm_watch: note 5409313 5
+#: osm_watch[closed]: note 5409313 5
 #: XXX kommen hier noch Poller/Leitboys hin? kommen hier noch Radwegschilder hin? -> Radwegschild an der Morusstr. steht nun
 #: last_checked: 2026-09-04
 #: check_frequency: 14d
@@ -7024,8 +7024,8 @@ asphaltiert, relativ breit	RW2; 17648,5338 17695,5394 17736,5441
 Fahrradschleuse	RW3; 17845,5546 17886,5587
 asphaltiert, relativ breit	RW2; 17736,5441 17695,5394 17648,5338
 asphaltiert	RW1; 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971
-#: historical_note: früher asphaltierter Hochbordradweg, RW1;
-	RW3; 18374,2971 18445,2642
+#: historical_note: früher asphaltierter Hochbordradweg, RW1;, seit August/September 2026 auch ausgeschildert
+	RW4; 18374,2971 18445,2642
 asphaltiert	RW1; 18445,2642 18374,2971 18347,3129 18395,3176 18511,3290 18624,3402 18689,3465 18755,3531 18836,3611 18860,3634 18930,3703
 asphaltiert	RW1;RW2 18445,2642 18338,2669
 # 
@@ -7924,7 +7924,7 @@ asphaltiert	RW1;RW1 984,14086 1058,14060 1216,13978 1381,13939 1559,13938 1674,1
 	RW3; 10680,18380 10718,18304 10739,18262 10755,18231 10815,18074 10830,17985
 	RW2; 10830,17985 10849,17848
 	RW1; 19398,254 19297,80 19398,254 19429,337 19470,453 19477,472 19507,556
-	RW1; 19297,80 19273,35 19210,-85
+Verbundsteinpflaster	RW1; 19273,35 19297,80 19273,35 19210,-85
 	RW10; 19210,-85 19273,35
 	RW1;RW1 19210,-85 19040,-250 19026,-283 18997,-351
 	RW1; 19437,50 19546,12 19699,-41
@@ -9202,6 +9202,8 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/streit-um-pop-up-radweg-in-der-berliner-kantstrasse-ruckbau-soll-im-september-beginnen--umwelthilfe-kundigt-klage-an-15864888.html
 #: by: https://www.entwicklungsstadt.de/kantstrasse-in-charlottenburg-rueckbau-der-radspur-rueckt-naeher/
 #: by: https://www.entwicklungsstadt.de/kantstrasse-in-charlottenburg-so-viel-kostet-der-radweg-rueckbau/ (Baubeginn September 2026)
+#: by: https://www.tagesspiegel.de/berlin/eilantrag-beim-verwaltungsgericht-umwelthilfe-will-ruckbau-des-kantstrassen-radwegs-stoppen-16028151.html
+#: by: https://www.berliner-zeitung.de/article/radweg-in-der-kantstrasse-soll-weg-jetzt-muss-das-gericht-entscheiden-10372029
 #: source_id: LMS-BR:379465/72 viz2021:13.30931,52.50658,11.08.2025,07:00 viz2021:13.30931,52.50658, (Bauarbeiten Höhe Krumme Str., bis 28.11.2025) (inaktiv)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
@@ -10023,6 +10025,8 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 # 
 #: note: entsprechendes Schild nur am nördlichen Ende, vor dem südlichen Ende sind Poller
 	RW6;RW6 19624,377 19677,498
+#: note: entsprechendes Schild nur am nördlichen Ende, vor dem südlichen Ende sind Poller
+	RW6;RW6 19752,361 19785,461
 # 
 #: by: mapillary
 	RW6;RW6 -3293,12304 -3284,12304 -3255,12338 -3252,12405 -3260,12540

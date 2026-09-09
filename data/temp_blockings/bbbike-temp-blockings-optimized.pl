@@ -3811,7 +3811,39 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: STAATSBESUCH-HARDENBERGSTR
+#: next_check_id: STAATSBESUCH-WALDORFASTORIA
+#: by: https://viz.berlin.de/2023/03/staatsbesuch/
+#: by: https://berliner-abendblatt.de/berlin-news/israels-ministerpraesident-in-berlin-grosses-polizeiaufgebot-id212454
+#: by: https://nitter.net/DasBoes/status/1636082561859350528#m (die Joachimsthaler ist entgegen der Karte in beiden Richtungen gesperrt)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_24_1479_1538_online.pdf
+#: by: https://www.tagesspiegel.de/berlin/grosse-verkehrseinschrankungen-in-berlin-erwartet-hohe-sicherheitsstufe-fur-ukraine-wiederaufbaukonferenz--polizei-im-grosseinsatz-11787479.html
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staatsbesuch-aenderungen-auf-bvg-linien_a417820
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1800101801108336978
+#: by: http://viz.berlin.de/aktuelle-meldungen/verkehrseinschrankungen-zur-ukraine-wiederaufbaukonferenz/ (2024-06)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_20_1245_1284_online.pdf
+#: by: https://www.tagesspiegel.de/berlin/israelischer-staatsprasident-besucht-berlin-verkehrseinschrankungen-am-sonntag-und-montag-in-mitte-und-charlottenburg-13667389.html
+#: by: https://www.tagesspiegel.de/berlin/scheich-mohammed-bin-zayed-in-berlin-hotel-waldorf-astoria-wegen-staatsbesuchs-abgeriegelt-16032600.html
+#: source_id: viz2021:13.322084,52.512028,10.06.2024,13:00 (hier bereits ab Ernst-Reuter-Platz (bei rbb: Anlieger frei), bis 12.06.2024) (inaktiv)
+#: source_id: viz2021:13.331732,52.505347,10.06.2024,13:00 (bis 12.06.2024) (inaktiv)
+#: note: um das Hotel Waldorf Astoria herum; das Ausmaß der Sperrungen kann etwas variieren
+Hardenbergstr.	2::temp 5542,11075 5652,11004
+Kantstr.	2::temp 5652,11004 5613,10963 5488,10978
+Budapester Str.	2::temp 5652,11004 5716,10978
+Joachimsthaler Str.	2::temp 5488,10978 5542,11075
+Joachimsthaler südl. Kantstr.	2::temp 5488,10978 5475,10808
+# REMOVED (diesmal nicht) --- Hardenbergstr.	2::temp 5459,11135 5542,11075
+# REMOVED (diesmal nicht) --- Kantstr. westl. Joachimsthaler Str.	2::temp 5373,10981 5488,10978
+# REMOVED (diesmal nicht) --- Hardenbergplatz	3 5600,11114 5542,11075 5560,11124
+# REMOVED (diesmal nicht) ---	3 5560,11124 5542,11075 5600,11114
+',
+         'from' => 1788904800,
+         'id' => 2769,
+         'text' => 'Hardenbergstr., Joachimsthaler Str., Kantstr.: Staatsbesuch, Sperrungen möglich, vom 09. September 2026 bis 11. September 2026',
+         'type' => 'gesperrt',
+         'until' => 1789149600
+       },
        undef,
        undef,
        undef,
@@ -6941,13 +6973,19 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        undef,
        {
          'data' => '#: next_check_id: A117-2024
+#: osm_watch: way id="153260813" version="7"
+#: osm_watch: way id="153260798" version="6"
+#: osm_watch[closed]: note 4162190 4
+#: by: https://gemeinde-schoenefeld.de/news/aktuelles/bau-der-anschlussstelle-hubertus-radweg-wird-gesperrt/ (Sperrung ab 3. Juni 2024 (voraussichtlich))
+#: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2024/03/2024-05-22_Anwohnerbrief.pdf (bis Ende 2025)
+#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-a117-zwischen-waltersdorf-und-ad-treptow/
 #: add_fragezeichen: Ist der Weg noch immer gesperrt?
 #: source_id: planb2026:13.56543908,52.38830377,21.05.2024, ("Umleitung", bis 30.09.2026)
 #: note: gesperrt-orig-Eintrag existiert, bis 7.9.2026 gültig
-#: last_checked: 2026-08-15
-#: check_frequency: 90d
+#: last_checked: 2026-09-09
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-09-30 (planb)
-#: next_check: 2026-09-07 (maz)
+# REMOVED --- #: next_check: 2026-09-07 (maz)
 # REMOVED --- #: next_check: 2026-12-31 (kein neues Ende-Datum bekannt)
 Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21657,-1726
 ',
@@ -8894,25 +8932,7 @@ Corinthstr.	q2::inwork 14447,10491 14608,10409
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: HERMANNDORNERALLEE-2025
-#: source_id: planb2026:13.51957796,52.42829578,17.01.2024, (hier nur "Fahrbahneinengung", bis 31.07.2026) (inaktiv)
-#: source_id[inactive]: bvg2024:160#HIM_FREETEXT_357250 (neue Haltestelle Hermann-Dorner-Allee noch nicht in Betrieb)
-#: source_id: bvg2024:160#HIM_FREETEXT_357299 (neuer Standort der Haltestelle noch in Bau)
-#: also_indoor: traffic (no-G,ex-T,ex-H,no-W)
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-08-15
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2026-08-14 (BA-Seite)
-Hermann-Dorner-Allee: Einbahnstraße, auch für Radfahrer, offen Richtung Norden	q4::inwork; 18374,2971 18445,2642
-# REMOVED (Durchgang/fahrt möglich) --- Auf dem Oktogon Höhe Hermann-Dorner-Allee	2::inwork 18390,2972 18374,2971 18361,2972
-',
-         'from' => 1759615200,
-         'id' => 4457,
-         'text' => 'Hermann-Dorner-Allee: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -9301,15 +9321,11 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 #: by: https://gemeinde-schoenefeld.de/news/aktuelles/brueckenbau-schwarzer-weg-wird-gesperrt/ (bis Jahresende 2025, Umfahrung existiert)
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2025/04/2025-04-28_VZ-Plan01-2_Schoenefeld_Waltersdorf_Schwarzer_Weg_Hubertus-1024x602.jpg
 #: note: auf https://gemeinde-schoenefeld.de/baustelle/ nicht mehr gelistet, evtl. wieder offen? -> nein, noch immer mit langer Umfahrung (etwa 550m Umweg)
-#: osm_watch: way id="1417905902" version="4"
-#: osm_watch: way id="1417905903" version="3"
-#: osm_watch: way id="1257637878" version="3"
-#: osm_watch: note 5142999 2
-#: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
 #: note: Ausschilderung am westlichen Ende: Verbot für Fahrzeuge aller Art, Anwohner frei
-#: last_checked: 2026-09-01 (traffic)
-#: check_frequency: 14d (traffic)
-	2::inwork 20285,-2775 20875,-2584
+#: note: mittlerweile gibt es einen gesperrt-orig-Eintrag
+#: last_checked: 2026-09-09
+#: next_check: 2027-12-31
+	2::inwork 20582,-2678 20778,-2614
 ',
          'from' => undef,
          'id' => 4521,
@@ -9414,7 +9430,7 @@ Hermann-Blankenstein-Str.: Einbahnstraßenregelung	q3::inwork; 13875,13532 13769,
 #: source_id: LMS-BR:403521/72 viz2021:13.42326,52.54529,01.04.2026,07:00 (bis 14.06.2028)
 #: source_id: planb2026:13.42454311,52.54674705,01.04.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 14.06.2028)
 #: osm_watch[closed]: note 5163943 2
-#: osm_watch: way id="23252393" version="26"
+#: osm_watch: way id="23252393" version="27"
 #: XXX: Dunckerbrücke: Ersatzneubau
 #: XXX: ursprüngliche Planung: während der Bauarbeiten soll der Fußgänger- und Radverkehr auf einer Brückenhälfte stattfinden können; mittlerweile wird es wohl eine Vollsperrung geben, ab 3. Quartal 2027 wird der Fuß+Radverkehr über den neuen Rohbau geführt werden
 #: last_checked: 2026-08-11 vvv
@@ -9503,9 +9519,8 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
 #: source_id: planb2026:13.51311063,52.48348885,02.03.2026, ("Vollsperrung beider Fahrbahnen", bis 06.09.2026) (vorfristig inaktiv) (bis 05.10.2026)
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-08-09 vvv
+#: last_checked: 2026-09-09 vvv
 #: check_frequency: 60d vvv
-# REMOVED --- #: check_frequency: 30d vvv
 # REMOVED (wird sehr wahrscheinlich verlängert) (tatsächlich weiterhin Baustelle) --- #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
 # REMOVED --- #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten) vvv
@@ -9946,30 +9961,32 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: note: neue Planung: bis 21.09.2026 bleibt die Ehrlichstr. gesperrt, der Kreuzungsbereich Blockdammweg/Ehrlichstr. bis zum 12.10.2026
 #: XXX nach der Baustellenumstellung prüfen
 #: also_indoor: traffic (G,T,H,W)
-#: last_checked: 2026-08-15 vvv
+#: last_checked: 2026-09-09 vvv
 # REMOVED --- #: check_frequency: 3d (2. BA?) vvv
 #: next_check: 2026-09-21 (VIZ-Verkehrsmeldung + BVG-Seite) vvv
-Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18461,8377 18391,8425 18322,8470 18228,8537 18151,8589
+Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18461,8377 18391,8425 18322,8470
+# REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18322,8470 18228,8537 18151,8589
 Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687
 # REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18009,8687 17997,8695 17929,8742 17879,8773
+Blockdammweg: Abschnitt der Fahrbahn gesperrt	q3::inwork 17380,8858 17702,8855
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn, schmaler Gehweg für Radfahrer frei	q3::inwork; 17702,8855 17720,8854 17736,8850 17879,8773
 Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn und des nördlichen Bürgersteigs	q4::inwork; 17879,8773 17736,8850 17720,8854 17702,8855
 # REMOVED (hier nicht) --- Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17856,8162 17793,8225 17753,8290 17707,8328 17652,8349 17617,8363 17588,8413 17581,8422 17554,8458 17533,8505 17521,8549 17515,8567 17497,8623 17468,8692
-Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 17443,8729 17416,8767 17380,8858
+# REMOVED (mittlerweile mit Radfahrer frei) --- Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 17443,8729 17416,8767 17380,8858
 # REMOVED (hier für Radfahrer frei, wird aber weiter nicht wiederholt) --- Wandlitzstr.: Einbahnstraßenregelung	q4::inwork; 18704,8427 18627,8475
 # REMOVED (mittlerweile hier auch Radfahrer frei) --- Wandlitzstr.: Einbahnstraßenregelung	q4::inwork; 18627,8475 18557,8525 18494,8569 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895
-Trautenauer Str.: Einbahnstraßenregelung	q4::inwork; 17879,8773 17851,8662 17846,8644
+# REMOVED (mittlerweile mit Radfahrer frei) --- Trautenauer Str.: Einbahnstraßenregelung	q4::inwork; 17879,8773 17851,8662 17846,8644
 # REMOVED (mittlerweile Radfahrer frei) --- Müritzstr.: Einbahnstraßenregelung	q4::inwork; 18147,8895 18009,8687
-Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660 17668,8696 17659,8698 17468,8692
+# REMOVED (vermutlich nun auch Radfahrer frei?) --- Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660 17668,8696 17659,8698 17468,8692
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => 1779660000,
          'id' => 4612,
-         'text' => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Heiligenberger Str. (Gehweg für Radfahrer frei), außerdem Einbahnstraßenregelung Hönower Wiesenweg - Georg-Klingenberg-Str. - Trautenauer Str. und Müritzstr. - Wandlitzstr., vom 26.05.2026 bis voraussichtlich 21.09.2026, evtl. wird die Baustelle verlängert',
+         'text' => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Trautenauer Str. sowie zwischen Lehndorffstr. und Heiligenberger Str. (Gehweg für Radfahrer frei), vom 26.05.2026 bis voraussichtlich 21.09.2026, evtl. wird die Baustelle verlängert',
          'type' => 'handicap',
-         'until' => 1791755999
+         'until' => 1791842399
        },
        {
          'data' => '#: source_id: LMS-BR:407959/72 viz2021:13.38521,52.49849,12.05.2026,00:00 vizapi2026:457/2026 (bis 19.07.2026) (bis 31.08.2026) (inaktiv) (bis 14.09.2026)
@@ -10643,9 +10660,9 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
 #: by: https://baume-ecke-koepenicker.de/projekt/machbarkeitsstudie-zur-herstellung-eines-durchgaengigen-uferwegs-an-spree-und-britzer-verbindungskanal/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1696205.php (Bauarbeiten starten ab 3. August 2026, voraussichtlich bis Ende 2027)
 #: by: https://www.entwicklungsstadt.de/17-monate-vollsperrung-was-am-britzer-verbindungskanal-passiert/
-#: XXX Ist der Weg während der Bauarbeiten tatsächlich gesperrt?
+#: XXX Ist der Weg während der Bauarbeiten tatsächlich gesperrt? -> es ist eine Baustraße, offiziell gesperrt
 #: XXX Zukünftig wird der Zugang von der Südostalleebrücke barrierefrei möglich sein.
-#: last_checked: 2026-03-22
+#: last_checked: 2026-09-09
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2026-08-03 (Start der Bauarbeiten)
 #: next_check: 2027-12-31 (BA-Pressemitteilung)
@@ -11022,19 +11039,7 @@ Groninger Str.	q4::inwork 7458,16207 7474,16086
          'until' => 1789743600
        },
        undef,
-       {
-         'data' => '#: source_id: planb2026:13.45053829,52.47646623,10.08.2026,07:00 ("Haltverbote", bis 14.08.2026) (inaktiv)
-#: source_id: planb2026:13.31883497,52.46878471,17.08.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 08.09.2026)
-#: also_indoor: traffic (no-G,T)
-# REMOVED --- #: next_check: 2026-08-10
-Rauenthaler Str.: mögliche Bauarbeiten	q4::inwork 4708,6904 4646,6875
-',
-         'from' => 1786917600,
-         'id' => 4726,
-         'text' => 'Rauenthaler Str.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, 17.08.2026 bis 08.09.2026',
-         'type' => 'handicap',
-         'until' => 1788904799
-       },
+       undef,
        {
          'data' => '#: source_id: planb2026:13.60119831,52.49598078,03.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.09.2026)
 #: also_indoor: traffic (no-G,T,H,no-W)
@@ -11202,7 +11207,7 @@ Uetz: Fahrbahn wird wegen Bauarbeiten gesperrt	2::inwork -20301,7082 -20771,6952
 #: source_id: LMS-BR:417247/72 viz2021:13.513758,52.469278,27.07.2026,07:00 (bis 11.11.2026)
 #: osm_watch: note 5494303 1
 #: XXX evtl. wandern die Arbeiten zur nördlichen Rampe
-#: last_checked: 2026-09-05 vvv
+#: last_checked: 2026-09-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-11-11 (VIZ-Verkehrsmeldung) vvv
 # generiert mit:
@@ -11291,6 +11296,28 @@ Rhinstr.: Fahrbahn und Bürgersteig Richtung Süden gesperrt, Kfz-Verkehr wird übe
          'text' => 'Rhinstr.: Umweg ab Allee der Kosmonauten Richtung Süden, voraussichtlich bis 12.12.2026',
          'type' => 'gesperrt',
          'until' => 1797116400
+       },
+       {
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~04-09-2026-l-100-beseitigung-boeschungsschaden-henkinshain
+	2::inwork 25695,82276 25786,82784
+',
+         'from' => 1788818400,
+         'id' => 4747,
+         'text' => 'L 100: Böschungssanierung zwischen Milmersdorf und Petznick, Fahrbahn gesperrt, vom 09.09.2026 voraussichtlich bis Anfang Dezember 2026',
+         'type' => 'gesperrt',
+         'until' => 1796943599
+       },
+       {
+         'data' => '#: by: https://bsky.app/profile/bahnkaktus.bsky.social/post/3muwbjhpduc2y
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3muwkw7uaoc2l
+#: also_indoor: traffic (T,H)
+Kressenweg	q4::inwork; 23573,10975 23648,11265
+',
+         'from' => 1788732000,
+         'id' => 4748,
+         'text' => 'Kressenweg: Baustelle zwischen Elsenstr. und Alt-Mahlsdorf, Einbahnstraße offen Richtung Süden, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis Ende September 2026',
+         'type' => 'gesperrt',
+         'until' => 1790805599
        }
      
 );

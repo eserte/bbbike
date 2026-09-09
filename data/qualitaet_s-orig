@@ -2801,7 +2801,8 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0- 17976,3735 17975,3744 17953,3955
 (Groﬂ-Berliner Damm - Landschaftspark Johannisthal): Asphalt	Q0 18856,3783 18833,3781 18500,3782 18347,3947 18196,4106 18176,4105 18162,4105 18122,4074
 (Wolfgang-Harlan-Str. - Landschaftspark Johannisthal): Asphalt	Q0 18018,3276 18027,3276
-(Segelfliegerdamm - Landschaftspark Johannisthal): Asphalt	Q0 17607,4068 17621,4063 17883,3976 17953,3955 18006,3992 18122,4074
+(Segelfliegerdamm - Landschaftspark Johannisthal): Asphalt	Q0 17607,4068 17621,4063 17883,3976 17953,3955
+(Segelfliegerdamm - Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0- 17953,3955 18006,3992 18122,4074
 # REMOVED --- Bergiusstr.: Asphalt	Q0 14051,6731 14106,6663 14141,6623
 Bergiusstr.: Asphalt	Q0 14141,6623 14187,6555 14366,6337
 Bergiusstr.: Betonstraﬂe	Q0 14366,6337 14396,6298 14398,6184
@@ -4955,7 +4956,7 @@ Nieberstr.: Asphalt	Q0 17879,4910 17792,4875 17760,4867
 Landfliegerstr.: Asphalt	Q0 18042,4667 18157,4742 18207,4780 18228,4796 18254,4817 18296,4850
 Sportfliegerstr.: Asphalt	Q0 18157,4742 18341,4543 18370,4511 18423,4459
 Louis-BlÈriot-Str.: Asphalt	Q0 18341,4543 18239,4453
-Hermann-Dorner-Allee: Asphalt (Fahrbahn und Radwege)	Q0 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642 18484,2471
+Hermann-Dorner-Allee: Asphalt (Fahrbahn und Radweg)	Q0 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642 18484,2471
 Wagner-RÈgeny-Str.: Asphalt	Q0 19728,3351 19661,3421 19585,3499 19491,3597 19363,3730 19162,3935
 Georg-Schendel-Str.: Asphalt	Q0 19125,3491 19363,3730
 Hans-Schmidt-Str.: Asphalt	Q0 19667,3578 19585,3499 19449,3358 19348,3253
@@ -6172,8 +6173,8 @@ Quittenweg: unbefestigte Straﬂe	Q2 19509,-283 19488,-186
 Quittenweg: Asphalt	Q0 19488,-186 19546,12 19593,141
 Birnenweg: Asphalt	Q0 19726,-32 19718,-47 19699,-41 19546,12 19437,50 19398,254
 Pegasuseck: Asphalt	Q0 19138,141 19189,263 19302,221
-Kunibertstr.: Asphalt	Q0 19595,526 19648,656 19660,696
-Kunibertstr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 19660,696 19694,811
+Kunibertstr.: Asphalt	Q0 19591,528 19643,658 19656,697
+Kunibertstr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 19656,697 19694,811
 Wolfmarsteig: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 19613,851 19694,811 19781,767 19861,728 19885,719 19943,693
 Wolfmarsteig: Beton	Q1+ 19943,693 19966,683 20051,646 20136,608 20246,553 20354,500
 Wolfmarsteig: unbefestigter Weg	Q2 20409,478 20447,452
@@ -6436,7 +6437,8 @@ Auraser Weg: Asphalt	Q0 21944,-297 21955,-340 21941,-422 21885,-483 21803,-571 2
 Mettkauer Weg: Asphalt	Q0 22065,-478 22034,-631
 #: note: nur eine Fahrspur, keine Gehwege
 Schlichtingsheimer Weg: Asphalt	Q0 22145,-486 22167,-553 22162,-648
-Wohlauer Str.: Beton	Q0 22047,-1042 22114,-867 22143,-645
+#: historical_note: fr¸her Beton, Q0
+Wohlauer Str.: Beton mit einigen asphaltierten Stellen	Q1+ 22047,-1042 22108,-869 22143,-645
 Florastr. (Bohnsdorf): Asphalt	Q0 22307,-1329 22322,-1207 22339,-1080
 Sandbacher Weg: Asphalt	Q0 23504,-938 23414,-980
 Sandbacher Weg: Beton	Q0- 23414,-980 23408,-982 23072,-1116
@@ -11292,7 +11294,7 @@ Zwergasternweg: Verbundsteinpflaster	Q1 16254,3489 16338,3578 16344,3586
 (Mauerweg im Landschaftspark - Ostburger Weg): unebene wassergebundene Decke	Q2+ 18305,660 18200,809
 #: historical_note: fr¸her (bis Fr¸hjahr 2025): Asphalt mit vielen Wurzelsch‰den, Q2
 (Mauerweg im Landschaftspark - Ostburger Weg): unebene wassergebundene Decke	Q2+ 18200,809 18128,910
-Ortolfstr. [Wohngebiet]: Beton	Q1+ 19210,-85 19205,-219 19214,-313
+Ortolfstr. [Wohngebiet]: Beton	Q1+ 19210,-85 19199,-129 19205,-219 19214,-313
 (Ortolfstr., Verbindungsweg): unbefestigter Weg	Q2 19214,-313 19026,-283
 (Preuﬂensiedlung): wassergebundene Decke	Q1 20971,1046 20957,1043 20850,963
 # REMOVED --- #: last_checked: 2021-06-17 --- #: XXX Bauarbeiten, ein neuer paralleler Weg wird gebaut (vielleicht asphaltiert?)
@@ -12031,7 +12033,7 @@ Advokatensteig: Asphalt mit einigen Wurzelsch‰den	Q1 22162,452 22221,465 22251,5
 (Am Seegraben - Sch¸tzenstr.): Asphalt	Q0 19996,-740 19978,-712
 (Wilhelm-Hoff-Str. - James-Franck-Str.): Asphalt	Q0 18828,3196 18822,3188 18724,3091 18716,3082 18707,3074 18613,2983 18601,2971
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7692 (Antrag f¸r eine Sanierung) (Zwischenbericht)
-#: last_checked: 2026-08-12 (BA: 1. Zwischenbericht)
+#: last_checked: 2026-09-09 (BA: 1. Zwischenbericht)
 #: check_frequency: 360d
 Adlergestell: Radweg wechselnd m‰ﬂiger Beton und Verbundsteinpflaster	Q1 21242,2048 21388,1895
 Adlergestell: Beton	Q0- 21388,1895 21515,1785 21800,1644 21856,1573
@@ -14161,7 +14163,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endg¸ltige Belag aussehen?
-#: last_checked: 2026-08-22
+#: last_checked: 2026-09-09
 #: check_frequency: 30d
 Paul-und-Paula-Promenade: unbefestigte Baustraﬂe	Q2 14886,10748 14909,10732 14984,10677
 # 
@@ -14426,8 +14428,8 @@ Nˆldnerstr.: Asphalt	Q0 15932,10830 15856,10821 15793,10814
 #: note: wurde zwar im November 2025 neu gemacht, aber ist trotzdem uneben geworden
 Nˆldnerstr.: etwas unebener Asphalt	Q0- 15793,10814 15681,10801
 # 
-(zur Hilde-Archenhold-Br¸cke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19240,4049 19237,4058 19252,4069 19300,4018
-Hilde-Archenhold-Br¸cke: Asphalt	Q0 19300,4018 19358,4077
+(zur Hilde-Archenhold-Br¸cke): Asphalt	Q0 19162,3935 19268,4037 19263,4048 19238,4048 19237,4058 19252,4069 19299,4022
+Hilde-Archenhold-Br¸cke: Asphalt	Q0 19299,4022 19358,4077
 (zur Hilde-Archenhold-Br¸cke): Asphalt	Q0 19358,4077 19403,4119 19428,4095 19428,4081 19416,4080 19401,4094 19389,4094 19383,4077 19367,4061 19353,4047
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1554565.php (Sanierung der Fahrbahn, vom 5. bis 16. Mai 2025)
@@ -14607,6 +14609,7 @@ Konradinstr.: Asphalt, einige leichte Sch‰den	Q0- 8872,5484 8674,5357
 # 
 (Anne-Frank-CarÈe, westlicher Weg): Betonpflaster	Q0- 19576,533 19537,420
 (Anne-Frank-CarÈe, Verbindung zwischen Erxlebenstr. und Hassoweg): Betonpflaster	Q0- 19624,377 19677,498
+(Anne-Frank-CarÈe, ˆstlicher Weg): Betonpflaster	Q0- 19752,361 19785,461
 # 
 (F¸rbringerstr. - Baerwaldstr.): Verbundsteinpflaster	Q1 10067,9674 10290,9604
 # 
@@ -16667,9 +16670,9 @@ Gneiststr.: Kopfsteinpflaster	Q2 11112,15387 11040,15398 10902,15422
 # 
 #: by: Diana Sattler: vvv
 #: confirmed_by: srt
-Anne-Frank-Str.: Asphalt	Q0 19507,556 19576,533 19595,526 19677,498
-#: corrected_by: srt (Asphalt -> Beton)
-Anne-Frank-Str.: Beton	Q0- 19677,498 19741,476 19852,437
+Anne-Frank-Str.: Asphalt	Q0 19507,556 19576,533 19591,528 19677,498
+#: corrected_by: srt (Asphalt -> Beton, Q0-; mittlerweile (2026) asphaltiert)
+Anne-Frank-Str.: Asphalt	Q0 19677,498 19741,476 19785,461 19852,437
 #: by: ^^^
 # 
 #: by: Peer:
@@ -22507,8 +22510,8 @@ Martin-Opitz-Str.: Asphalt	Q0 8077,16178 7987,16332
 Mittelheide: Asphalt	Q0+ 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
 # 
 #: by: Pastille (jean):
-#: confirmed_by: srt
-Gehrenweg: guter Beton	Q0- 21868,-1674 21887,-1528 21901,-1406 21914,-1278 21930,-1159 21945,-1031 21987,-624
+#: corrected_by: srt (guter Beton, Q0 -> ...)
+Gehrenweg: Beton	Q1+ 21868,-1674 21887,-1528 21901,-1406 21914,-1278 21930,-1159 21945,-1031 21987,-624
 # 
 #: by: Michael Dinter: vvv
 Senegalstr.: guter Beton	Q0- 5961,15562 5906,15623 5848,15685 5787,15741 5722,15795
@@ -23443,7 +23446,7 @@ Arthur-M¸ller-Str.: Asphalt	Q0 17799,3183 17890,3204 17942,3205 17980,3197 18057
 # 
 #: by: Michael Lietz:
 #: corrected_by: srt (asphaltiert/betoniert -> asphaltiert)
-Kirschenbaumstr.: asphaltiert	Q0 19559,696 19648,656 19726,628
+Kirschenbaumstr.: asphaltiert	Q0 19559,696 19643,658 19726,628
 # 
 #: by: Reinhardt Herold:
 #: confirmed_by: srt (zumindest an der Dietzgenstr.)
@@ -27683,7 +27686,7 @@ Ritterhufen: guter Asphalt	Q0 1020,496 1046,537 1016,737 958,1009
 #: note: "ruhige Nebenstraﬂe"
 #: note: laut ADFC-Karte "m‰ﬂig geeignet"
 #: confirmed_by: srt
-Mohnweg (Altglienicke): guter Asphalt	Q0 19470,453 19537,420 19591,394 19624,377 19652,366 19728,362 19785,360 19821,358 19843,357 19895,355 19921,355 20035,348 20098,359 20214,375 20267,375
+Mohnweg (Altglienicke): guter Asphalt	Q0 19470,453 19537,420 19591,394 19624,377 19652,366 19728,362 19752,361 19785,360 19821,358 19843,357 19895,355 19921,355 20035,348 20098,359 20214,375 20267,375
 # 
 #: by: Maria Hach:
 # REMOVED --- #: note: "Kiesweg (Parkweg)" angegeben --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6241 (Beleuchtung wird entstehen, dabei wird auch der Weg gepflastert, bis zur "dunklen Jahreszeit" 2019/2020) --- #: osm_watch: way id="49140979" version="6" --- #: XXX Beleuchtung wurde neu gemacht, gepflastert wurde bislang noch nicht --- #: last_checked: 2022-03-07 --- #: check_frequency: 180d
