@@ -72,7 +72,8 @@ CGI_FILES=		bbbike.cgi \
 			mapserver_comment.cgi \
 			mapserver_setcoord.cgi \
 			upload-track.cgi \
-			qrcode.cgi
+			qrcode.cgi \
+			osmand.cgi
 TESTS_ON_REMOTE?=	basic.t \
 			strassen-gpx.t \
 			bbbikedraw.t \
@@ -86,6 +87,7 @@ TESTS_FROM_LOCAL=	\
 			cgi-test.t \
 			cgi-download.t \
 			cgi-leaflet.t \
+			cgi-osmand.t \
 			wwwdata.t
 TESTS_SERVER_ON_REMOTE=	
 TESTS=			$(TESTS_ON_REMOTE) $(TESTS_SERVER_ON_REMOTE) $(TESTS_FROM_LOCAL)

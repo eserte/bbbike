@@ -151,6 +151,7 @@ builder {
 		    ['mapserver_address.cgi'],
 		    ['mapserver_comment.cgi'],
 		    ['mapserver_setcoord.cgi'],
+		    ['osmand.cgi'],
 		    ['qrcode.cgi'],
 		    ['upload-track.cgi'],
 		    ['wapbbbike.cgi'],
