@@ -567,3 +567,30 @@ EOF
 	is_deeply $s_file2->data, $expected_data, 'geojson via Strassen::GeoJSON->new';
     }
 }
+
+{
+    # feature with empty coordinates array
+    my $example_geojson = <<"EOF";
+{ "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": { "name": "Point" },           "geometry": { "type": "Point", "coordinates": [100.0, 0.0] } }
+   ,{ "type": "Feature", "properties": { "name": "LineString" },      "geometry": { "type": "LineString", "coordinates": [ [100.0, 0.0], [101.0, 1.0] ] } }
+   ,{ "type": "Feature", "properties": { "name": "LineString" },      "geometry": { "type": "LineString", "coordinates": [ ] } }
+  ]
+}
+EOF
+
+    my @warnings;
+    local $SIG{__WARN__} = sub { push @warnings, @_ };
+
+    my $expected_data = 
+	[
+	    "Point\tX 100,0\n",
+	    "LineString\tX 100,0 101,1\n",
+	];
+
+    my $s_geojson = Strassen::GeoJSON->new();
+    $s_geojson->geojsonstring2bbd($example_geojson);
+    like "@warnings", qr{Feature without coordinates, skipping}, 'seen warning about missing coordinates';
+    is_deeply $s_geojson->data, $expected_data, 'expected data seen';
+}

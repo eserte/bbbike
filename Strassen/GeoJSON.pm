@@ -3,19 +3,18 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2018,2019,2020,2021,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2018,2019,2020,2021,2023,2026 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package Strassen::GeoJSON;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.09';
+$VERSION = '0.10';
 
 use Strassen::Core;
 @ISA = qw(Strassen);
@@ -91,7 +90,9 @@ sub geojsonstring2bbd {
 	    }
 	} else {
 	    my $coordinates = $geometry->{coordinates};
-	    if ($type eq 'Point') {
+	    if (!$coordinates || !@$coordinates) {
+		warn "Feature without coordinates, skipping...\n";
+	    } elsif ($type eq 'Point') {
 		if ($converter) { @$coordinates = $converter->(@$coordinates) }
 		$self->push_ext([$name, [join ',', @$coordinates], $cat], $dir);
 	    } elsif ($type eq 'LineString') {
