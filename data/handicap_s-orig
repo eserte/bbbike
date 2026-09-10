@@ -1093,6 +1093,7 @@ Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,1459
 # REMOVED --- Lüneburger Str.: Wasserrohrbruch, einige Meter der Fahrbahn sind gesperrt	q3::inwork 6876,12610 6813,12617
 # 
 #: next_check_id: PERLEBERGER-2024
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26857.pdf (Ende der Bauarbeiten für November 2026 geplant, auch an der Perleberger Brücke)
 #: source_id: LMS-BR:325283/72 viz2021:13.34718,52.53079, vizapi2026:881/2026 (bis 05.11.2025) (inaktiv) (bis 25.09.2026) (bei vizapi2026 bis 30.09.2026)
 #: source_id[inactive]: bvg2024:m27#HIM_FREETEXT_302033 (zwischenzeitlich mehrmals entfernt)
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
@@ -1101,8 +1102,8 @@ Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,1459
 #: also_indoor: traffic (T,ex-G[viel zu kurz?],re-W,re-H)
 #: last_checked: 2026-08-27 (mapillary)
 #: check_frequency: 45d
-# REMOVED --- #: next_check: 2026-02-16 (laut rbb endet die Sperrung)
 #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-11-30 (pardok)
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951
 # REMOVED (hier nicht mehr) --- Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6646,13951 6730,14021 6818,14102 6992,14251
 # REMOVED (Fahrbahn hier frei in beide Richtungen) --- Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6992,14251 7123,14367

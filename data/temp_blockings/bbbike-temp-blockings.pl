@@ -45498,7 +45498,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-07-28 00:00:00"), # 1718085600, # 2024-06-11 08:00
-       until => $isodate2epoch->("2026-09-10 23:59:59"), # 1723441837, # $isodate2epoch->("2024-09-30 17:00:00"), # 1720796400, # 2024-07-12 17:00
+       until => 1789076664, # $isodate2epoch->("2026-09-10 23:59:59"), # 1723441837, # $isodate2epoch->("2024-09-30 17:00:00"), # 1720796400, # 2024-07-12 17:00
        dont_check_date => 1,
 #      text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 12.06.2024 08:00 bis 12.08.2024 17:00, evtl. auch bis September 2024',
        text  => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 29.07.2026 bis Mitte September 2026',
@@ -55413,7 +55413,7 @@ EOF
 EOF
      },
      { from  => 1786831200, # 2026-08-16 00:00
-       until => 1789164000, # 2026-09-12 00:00
+       until => 1789076628, # 1789164000, # 2026-09-12 00:00
        text  => 'Breite Str.: Fahrbahnarbeiten, Zweirichtungsradweg zwischen Ossietzkystr. und Berliner Str. möglicherweise gesperrt, vom 17.08.2026 bis 11.09.2026',
        type  => 'handicap',
        data  => <<'EOF',
@@ -55423,7 +55423,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mtax2qcirc2h
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibdoullemtlc7p5zheczdy24xf67qg632f5b3nls6fpsfclo4sbti
 #: by: https://www.entwicklungsstadt.de/breite-strasse-in-pankow-neuer-asphalt-soll-verkehrslaerm-deutlich-senken/
-#: source_id: LMS-BR:419745/72 viz2021:13.41178,52.57148,17.08.2026,07:00 vizapi2026:850/2026 (bis 31.08.2026) (bis 09.09.2026) (bis 10.09.2026)
+#: source_id: LMS-BR:419745/72 viz2021:13.41178,52.57148,17.08.2026,07:00 vizapi2026:850/2026 (bis 31.08.2026) (bis 09.09.2026) (bis 10.09.2026) (inaktiv)
 #: note: oder man nimmt den direkten Weg und schiebt gegebenenfalls
 Breite Str.: Fahrbahnarbeiten, offizielle Umleitung für den Radverkehr über Breite Str. - westlich Kirche - Breite Str.	q4::inwork; 10602,18382 10680,18380
 Eintrachtstr.: Anbindung Breite Str. gesperrt	q3::inwork 10650,18544 10710,18393

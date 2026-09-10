@@ -7074,27 +7074,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: KELTENSTEIG-2026
-#: source_id: viz2021:13.546579,52.418724,12.06.2024,08:00 (bis 12.07.2024) (bis 25.07.2024) (bis 12.08.2024) (inaktiv)
-#: source_id: planb2026:13.54669682,52.41850813,11.06.2024, ("Vollsperrung beider Fahrbahnen", bis 10.09.2026)
-# REMOVED (alte Bauarbeiten) --- #: note: bei rbb mittlerweile bis 30.09.2024, go with rbb --- #: note: Länge der Baustelle: etwa 40m
-#: note: Länge der Baustelle: etwa 30m
-#: by[nocache]: https://x.com/VIZ_Berlin/status/1800742824524259711
-#: by: https://pbs.twimg.com/media/GPzFCzlWcAAoKgR?format=jpg&name=large
-#: by: https://pbs.twimg.com/media/GUh0blsWoAAR-uT?format=jpg&name=large (nicht mehr gesperrt)
-#: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260728 (neue Sperrung)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrr4ux7di22v
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreif7tssptpgubeasefbe2ub5hndfdiijt4jqwjmsryffsc2eftzspa
-	q3::inwork 20302,1613 20366,1479
-',
-         'dont_check_date' => 1,
-         'from' => 1785189600,
-         'id' => 4087,
-         'text' => 'Keltensteig: Einmündung an der Grünauer Str. gesperrt, vom 29.07.2026 bis Mitte September 2026',
-         'type' => 'handicap',
-         'until' => 1789077599
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.33329,52.589834,14.06.2024,07:00 (bis 30.08.2024) (inaktiv)
@@ -10917,24 +10897,7 @@ Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: BREITE-2026
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1703210.php
-#: by: https://viz.berlin.de/aktuelle-meldungen/mehr-verkehrssicherheit-und-larmschutz-fahrbahnsanierung-auf-der-breiten-strasse-pankow/ (bis 11.09.2026)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mtax2qcirc2h
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibdoullemtlc7p5zheczdy24xf67qg632f5b3nls6fpsfclo4sbti
-#: by: https://www.entwicklungsstadt.de/breite-strasse-in-pankow-neuer-asphalt-soll-verkehrslaerm-deutlich-senken/
-#: source_id: LMS-BR:419745/72 viz2021:13.41178,52.57148,17.08.2026,07:00 vizapi2026:850/2026 (bis 31.08.2026) (bis 09.09.2026) (bis 10.09.2026)
-#: note: oder man nimmt den direkten Weg und schiebt gegebenenfalls
-Breite Str.: Fahrbahnarbeiten, offizielle Umleitung für den Radverkehr über Breite Str. - westlich Kirche - Breite Str.	q4::inwork; 10602,18382 10680,18380
-Eintrachtstr.: Anbindung Breite Str. gesperrt	q3::inwork 10650,18544 10710,18393
-',
-         'from' => 1786831200,
-         'id' => 4715,
-         'text' => 'Breite Str.: Fahrbahnarbeiten, Zweirichtungsradweg zwischen Ossietzkystr. und Berliner Str. möglicherweise gesperrt, vom 17.08.2026 bis 11.09.2026',
-         'type' => 'handicap',
-         'until' => 1789164000
-       },
+       undef,
        {
          'data' => '#: next_check_id: ZOSSENMELLENSEE-2025
 #: by: https://www.berlin-dresden.de/bautagebuch.html?date=20260817
