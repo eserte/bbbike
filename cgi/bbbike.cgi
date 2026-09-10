@@ -3562,7 +3562,13 @@ sub search_coord {
 
     }
 
-    # handicap_directed XXX not yet enabled
+    # handicap_directed XXX not yet enabled.
+    # Reasons:
+    # 1. Missing integration in display_route() / get_route_list(), so
+    #    the calculated route times would be inconsistent with the
+    #    routing result.
+    # 2. User-specific penalties are baked into the net object, which
+    #    would be problematic in persistent environments (mod_perl, Plack).
     if (0) {
 	if (!$handicap_directed_net) {
 	    if (-f "$Strassen::datadirs[0]/handicap_directed") { # XXX may be missing for osm data
