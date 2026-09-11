@@ -1044,10 +1044,10 @@
 		     :bvgline bvg-line
 		     ))))
 
-  ;; recognize "#: osm_watch" directives (way, node, relation, and note)
+  ;; recognize "#: osm_watch" directives (also "[closed]" variant) (way, node, relation, and note)
   (save-excursion
     (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\):?[ ]*\\(.*\\)" nil t)
+    (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\)\\(?:\\[closed\\]\\)?:?[ ]*\\(.*\\)" nil t)
       (make-button (match-beginning 1) (match-end 1)
 		   :type 'bbbike-osm-button
 		   :val (buffer-substring-no-properties (match-beginning 2) (match-end 2)))))
