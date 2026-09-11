@@ -421,6 +421,9 @@ sub url_normalizations {
     $url =~ s{(https://www.tagesspiegel.de/.*)\?.*}{$1};
     $url =~ s{(https://www.berlin.de/.*)\?ts=\d+\b}{$1};
     $url =~ s{https?://(?:www\.)?(entwicklungsstadt.de/.*)}{$1}; # remove www.
+    # convert to special bbbike directives
+    $url =~ s{https?://www.openstreetmap.org/(?:browse/)?(way|node|relation)/(\d+).*}{#: osm_watch: $1 id="$2"};
+    $url =~ s{https?://www.openstreetmap.org/note/(\d+).*}{#: osm_watch: note $1 };
     # should be last
     $url =~ s{([&?])utm_source=.*?(?=&|$)}{$1 eq '?' ? '?' : ''}e;
     $url =~ s{\?$}{};
