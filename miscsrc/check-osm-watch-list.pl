@@ -178,7 +178,7 @@ my $handle_record = sub ($$$) {
 	if ($old_version != $new_version) {
 	    warn "CHANGED: $type_id (version $old_version -> $new_version) ($record->{info})\n";
 	    if ($show_diffs) {
-		print STDERR "*** URL: $osm_url/browse/$type_id\n";
+		print STDERR "*** URL: $osm_url/$type_id\n";
 		show_diff($type, $id, $old_version, $new_version);
 	    }
 	    if ($new_file) {
