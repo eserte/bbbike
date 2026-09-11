@@ -1,13 +1,9 @@
 #: #: -*- coding: iso-8859-1 -*-
 #:
-Steegerstr.: Einbahnstraßenregelung (hoffentlich nur für Kfz) geplant	?; 9771,17154 9787,17050 9736,16919 9719,16904
-Soldiner Str.: Einbahnstraßenregelung (hoffentlich nur für Kfz) geplant	?; 9299,16889 9082,16982
-Biesentaler Str.: Einbahnstraßenregelung (hoffentlich nur für Kfz) geplant	?; 9245,16758 9030,16853
 Wilhelm-Kuhr-Str.: Kopfsteinpflaster wird durch Asphalt ersetzt	? 9776,18125 9803,18131 9831,18181 9893,18179
 Unter den Eichen: die Radspur soll zurückgebaut werden	?; 4347,5103 4181,5000 4160,4988 4141,4975 3938,4849 3834,4786
 Adlerplatz: existiert hier ein ausgeschilderter Platz?	? -584,12553 -587,12529 -587,12500
 B198 bei Angermünde: gibt es hier einen Radweg? wo genau?	? 47908,73136 47292,73547
-Handjerystr.: Rüttelstreifen geplant	? 5635,7820 5636,7734
 Am Schlänitzsee (Potsdam-Marquardt): Qualität? Wie ist die genaue Lage der Straße?	? -19356,5480 -19454,5465 -19461,5517 -19374,5533
 An der Obstplantage (Potsdam-Marquardt): Qualität?	? -19427,5736 -19517,5712 -19543,5849 -19463,5860
 Biegen - Müllrose: existiert hier ein Radweg (wahrscheinlich ab 2006-10-31)	? 79768,-15263 78364,-14355
@@ -743,6 +739,8 @@ Schloßstr. (Einbahnstraße?)	? -14821,106013 -15004,105813 -15070,105705
 Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -14288,105530 -14242,105542
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
+# added from qualitaet_s
+Miraustr.: mäßiger Asphalt (Nach den Bauarbeiten besserer Asphalt?)	? 3323,20547 3344,20453 3380,20270
 # added from qualitaet_l
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK (ist hier mittlerweile asphaltiert?)	? 5633,-2011 5292,-2221 5132,-2299
 Werder - Golm: relativ glatter Feldweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21131,-2004 -20954,-1991 -20933,-1960 -20719,-1956 -20528,-1962
@@ -791,8 +789,6 @@ Götschendorf - Böckenberg: schlechte Qualität, teilweise Sand (wie ist die Quali
 (bei Götschendorf): mäßige Qualität (wie ist die Qualität des Weges hier?)	? 30027,76566 29951,76969 29769,77099 29507,77428 29458,77597
 Groß Friedenwalde - Flieth: Kopfsteinpflaster (wie schlecht ist das Kopfsteinpflaster hier?)	? 35740,80983 35815,81168 35815,81518 35894,81782
 Groß Friedenwalde - Flieth: Asphalt (ist hier tatsächlich asphaltiert?)	? 35894,81782 35998,82265 36009,82890 36430,83497 36578,83835 36590,84086 36693,84235 36676,84495 36696,84495
-# added from handicap_s
-Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1 (Besteht die Sperrung noch immer?)	? 7519,15193 7607,15282
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt

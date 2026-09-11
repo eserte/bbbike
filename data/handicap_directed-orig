@@ -593,9 +593,10 @@ Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden 
 # REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-09-06 vvv
-#: next_check: 2026-09-15 (SenUVK site) vvv
-# REMOVED --- #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2026-09-10 vvv
+#: check_frequency: 60d vvv
+# REMOVED --- #: next_check: 2026-09-15 (SenUVK site) vvv
+#: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/?date=20260612 (bis September 2026)
 Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=190:h=q3,100:tl 13747,12642 13695,12643 13681,12624
 Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=190:h=q3,100:tl 13761,12690 13695,12643 13681,12624
@@ -613,6 +614,7 @@ Matternstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 Petersburger Str. - Ebelingstr.: Ebelingstr. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,124 13530,13014 13481,13128 13598,13180
 Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,115 13598,13180 13481,13128 13434,13234
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED --- #: source_id: viz2021:13.402548,52.55449,30.09.2024,07:00 (bis 22.11.2024) (inaktiv)

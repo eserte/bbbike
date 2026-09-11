@@ -108,7 +108,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="26"
 #: osm_watch: way id="1430487470" version="2"
-#: last_checked: 2026-09-03
+#: last_checked: 2026-09-11
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -425,7 +425,7 @@ Große Präsidentenstr.	1 10105,13004 10219,13102
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-11_-sitzung-am-26_03_2025.pdf (geplant)
 #: source_id: viz2021:13.312025,52.498061,30.07.2024,07:00 (Sackgasse, bis 28.02.2025) (keine Erwähnung der Sackgasse mehr, bis 30.04.2025) (bis 16.06.2025) (inaktiv)
 #: osm_watch: way id="4437134" version="19"
-#: last_checked: 2026-05-09
+#: last_checked: 2026-09-11
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-02-28
 Duisburger Str.	1 4183,10144 3880,10154
@@ -826,11 +826,7 @@ Bernhard-Bästlein-Str.	1 15595,14045 15593,13768
 # REMOVED (während der Bauarbeiten muss man zum Notweg kommen) --- #: by: Bernhard Husch: --- #: note: Einfahrt verboten --- Pfarrer-Lütkehaus-Platz	1 10228,-2136 10273,-2158
 Radebeuler Str.	1 19025,14037 19067,13818
 Beilsteiner Str.	1 18748,12399 18800,12838 18832,13099 18852,13269
-#: next_check_id: BREITE-2026
-#: XXX nach den Bauarbeiten wieder auf 1s:q4 ändern
-#: next_check: 2026-09-11
-#: by: osm
-(Breite Str., Verbindung)	1s:q3 10463,18321 10487,18270
+(Breite Str., Verbindung)	1s:q4 10463,18321 10487,18270
 #: by: Norbert Palzkill:
 Thuner Platz	1 3251,1881 3263,1904 3286,1912 3307,1904 3317,1884 3312,1866 3297,1845
 Hubertusallee	1 2361,9664 2360,9754
@@ -4156,7 +4152,7 @@ Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
 # 
 #: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: note: mit festen Zäunen gesperrt
-#: last_checked: 2026-09-02
+#: last_checked: 2026-09-10
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
 # 
 #: next_check_id: FANGSCHLEUSE-2026
@@ -4226,12 +4222,13 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: by: https://www.morgenpost.de/berlin/article412437202/goerlitzer-bruecken-ab-1-juli-gesperrt-so-soll-jetzt-die-rettung-gelingen.html
 #: by: https://www.entwicklungsstadt.de/goerlitzer-bruecken-in-alt-treptow-schadensanalyse-soll-klarheit-bringen/
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26838.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/2026-06-08-protokoll-ag-mobilitaet.pdf
 #: osm_watch: note 5278957 5
 #: osm_watch: way id="24042478" version="20"
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
-#: last_checked: 2026-09-04
+#: last_checked: 2026-09-11
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-07-01
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
@@ -4245,7 +4242,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-09-08
+#: last_checked: 2026-09-10
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4257,7 +4254,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: FRIEDENAUERHOEHE-2024
 #: by: https://www.deutsches-architekturforum.de/thread/13397-stadtquartier-friedenauer-h%C3%B6he-in-bau/?postID=770057#post770057
 #: osm_watch: way id="1323938020" version="11"
-#: last_checked: 2026-08-26
+#: last_checked: 2026-09-11
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2027-06-30
 (Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): noch nicht freigegeben, Bauzäune	2::inwork 5812,7826 5829,7827 6147,7840
@@ -4292,7 +4289,7 @@ Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 #: XXX ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-08-11
+#: last_checked: 2026-09-10
 Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
 # 
 #: next_check_id: DUNCKERBRUECKE-2026
@@ -4766,13 +4763,14 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,
 #: by: https://www.deutsches-architekturforum.de/thread/10517-wohnpark-gartenstadt-karlshorst-und-umgebung/?postID=758952#post758952
 #: osm_watch: way id="618834389" version="17"
 #: osm_watch: way id="43619494" version="9"
-#: source_id: planb2026:13.53894732,52.48609659,31.12.2024,07:00 (hier nur "Gehwegvollsperrung", bis 31.12.2026)
+#: source_id: planb2026:13.53894732,52.48609659,31.12.2024,07:00 (hier nur "Gehwegvollsperrung", bis 31.12.2026) (vermutlich ersetzt, vorfristig inaktiv)
+#: source_id: planb2026:13.53894732,52.48609659,22.03.2022,07:00 ("Gehwegvollsperrung", bis 31.12.2027)
 #: also_indoor: traffic (G,ex-H[ungenau])
 #: note: Siehe auch bauzeitliche Umleitung Regener Str. - Biesenhorster Weg; mittlerweile (2024-12-13) ist die Straße kaum noch erkennbar
 #: priority: #C
 #: last_checked: 2026-08-08 (luftbildsuche)
 #: check_frequency: 180d
-#: next_check: 2026-12-31 (planb)
+#: next_check: 2027-12-31 (planb)
 Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 # 
 # REMOVED --- #: next_check_id: ALTFRIEDRICHSFELDE-2024 --- #: last_checked: 2024-08-08 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2024-08-31 --- #: valid: -20240831 --- Alt-Friedrichsfelde: Sperrung des Radwegs	1::inwork 19389,11761 19092,11776 19004,11780 18853,11780
@@ -4790,7 +4788,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 1
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2026-08-21 (mapillary)
+#: last_checked: 2026-09-11
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -4822,7 +4820,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-09-09 vvv
+#: last_checked: 2026-09-11 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
 #: osm_watch: way id="1199465845" version="5"
@@ -4845,10 +4843,11 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren n
 #: next_check_id: PLANSTRASSE9-2023
 #: next_check_id: GARTENSTADTKARLSHORST-2025
 #: osm_watch: way id="20420585" version="37"
-#: source_id: planb2026:13.53894732,52.48609659,31.12.2024,07:00 ("Gehwegvollsperrung", gehört zum Komplex Gartenstadt Karlshorst, bis 31.12.2026)
+#: source_id: planb2026:13.53894732,52.48609659,31.12.2024,07:00 ("Gehwegvollsperrung", gehört zum Komplex Gartenstadt Karlshorst, bis 31.12.2026) (vermutlich ersetzt, vorfristig inaktiv)
+#: source_id: planb2026:13.53894732,52.48609659,22.03.2022,07:00 ("Gehwegvollsperrung", gehört zum Komplex Gartenstadt Karlshorst, bis 31.12.2027)
 #: last_checked: 2026-05-31
 #: check_frequency: 120d
-#: next_check: 2026-12-31 (planb)
+#: next_check: 2027-12-31 (planb)
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 # REMOVED (hier nicht mehr) --- Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19638,9070 19621,9097
 # 
@@ -5007,7 +5006,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-08-31
+#: last_checked: 2026-09-10
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -5460,8 +5459,11 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-statt-altstadt-rekonstruktion-berlins-neue-historische-mitte/
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-warum-das-wichtigste-gebaeude-in-der-kritik-steht/
 #: by: https://www.entwicklungsstadt.de/800-jahre-molkenmarkt-vom-olden-markt-zum-neuen-stadtquartier/
+#: by: https://www.berlin.de/sen/stadt/presse/pressemeldungen/pressemitteilung.1712979.php (B-Plan 1-14-2)
+#: by: https://molkenmarkt.berlin.de/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf (Aufstellungsbeschluss 1-14-2 (zwischen Jüdenstr. und Klosterstr.))
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-09-08
+#: last_checked: 2026-09-10
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5470,7 +5472,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-09-08
+#: last_checked: 2026-09-10
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5940,7 +5942,7 @@ Aribertstr. (Köthen): Bauarbeiten, Fahrbahn gesperrt	2s:q4:inwork -85324,-74675 
 # 
 #: by: https://www.tagesschau.de/inland/regional/brandenburg/rbb-neuer-autobahnabschnitt-a14-elbbruecke-teilweise-freigegeben-100.html
 #: by: https://www.deges.de/presse/pressemitteilung/a-14-abschnitt-as-seehausen-nord-bis-wittenberge-verkehrsumlegung-am-31-august/
-#: source_id: 267010415 (bis 11.09.2026)
+#: source_id: 267010415 (bis 11.09.2026) (inaktiv)
 #: XXX Statt der B189 gibt es erstmal eine Autobahnbrücke (A14), auf der langsamer motorisierter Verkehr zugelassen ist, aber nicht Radverkehr. Später kommt noch die Brücke für die B189 dazu. Radfahrer müssen die Eisenbahnbrücke weiter westlich benutzen (nicht bei BBBike eingetragen).
 #: next_check: 2029-12-31
 Elbbrücke bei Wittenberge (B189): Abbruch und Wiederaufbau 2029	2::inwork -105237,63318 -104187,61587

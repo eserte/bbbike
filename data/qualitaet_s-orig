@@ -561,16 +561,18 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20241203-mobilitaetsrat-mitte-protokoll-barrierefrei-entwurf.pdf (Erwähnung)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/20250121-mobilitaetsrat-mitte-tagesordnung.pdf (Fahrradstraße in der Gerichtstr. ist in Planung)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1040.pdf (keine Priorisierung)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260911 (Arbeiten für eine Fußgängerzone (?), Sperrung für Kfz-Verkehr)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
+#: source_id: planb2026:13.37940933,52.54020766,14.09.2026,00:01 ("Vollsperrung beider Fahrbahnen", bis 02.11.2026)
 #: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
 #: last_checked: 2026-07-27 (mapillary) vvv
 #: check_frequency: 180d vvv
-# REMOVED --- #: next_check: 2025-12-31 (infravelo, Ende-Datum vor Entfernung des Projekts) vvv
+#: next_check: 2026-09-14 (planb: Sperrung) vvv
 #: osm_watch: way id="169459736" version="19"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 #: osm_watch: way id="25278674" version="32"
 Gerichtstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -11742,7 +11744,7 @@ Am Weinhang: Verbundsteinpflaster	Q1 8918,8965 8917,8988 8916,9023
 (Edeka-Parkplatz): Asphalt, einige Verbundsteinpflaster-Aufpflasterungen	Q0- 16058,6629 16138,6548
 #: note: zwei harmlose Aufpflasterungen
 (Siemensstr./Deulstr. - Wilhelminenhofstr.): Asphalt	Q0 17842,6639 17852,6589 17826,6495
-Kolonnenweg: einige Unebenheiten	Q1+ 9955,16578 9954,16590 9945,16738 9949,16866 9980,16973
+Kolonnenweg: Asphalt, einige Unebenheiten	Q1+ 9955,16578 9954,16590 9945,16738 9949,16866 9980,16973
 (Heimdallstr. - Frithjofstr.): unbefestigter Weg	Q2+ 12299,19143 12372,19203 12457,19248
 Heimdallstr.: Feinschotter	Q1- 12261,19099 12299,19143
 (Wuhlebrücken): wassergebundene Decke	Q1 22843,14452 22839,14453
@@ -14441,8 +14443,8 @@ Ungarnstr.: Fahrbahn betoniert und Radweg mit Verbundsteinpflaster, beide mit Sc
 #: historical_note: früher (bis Mai 2025) war die Fahrbahn betoniert mit Schäden
 Ungarnstr.: Fahrbahn asphaltiert (leicht uneben) und Radweg mit schadhaften Verbundsteinpflaster	Q0- 7583,16872 7394,16836 7267,16784 7177,16715 7106,16646 7056,16587
 # 
-Friedenauer Höhe: Asphalt	Q0 6293,7875 6263,7894 6178,7899
-Friedenauer Höhe: Betonsteinpflaster	Q0- 6178,7899 6126,7917 6011,7911 5810,7883
+Friedenauer Höhe: Asphalt	Q0 6293,7875 6260,7899 6132,7893
+Friedenauer Höhe: Betonsteinpflaster	Q0- 6132,7893 6131,7916 6011,7911 5810,7883
 # 
 (Reinbeckstr. - Spreeufer): Kopfsteinpflaster	Q2 18310,6223 18298,6199
 (Reinbeckstr. - Spreeufer): Beton	Q1- 18298,6199 18282,6184 18259,6110

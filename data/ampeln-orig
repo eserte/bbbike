@@ -39,7 +39,7 @@ Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 (bis 15.10.2026)
-#: last_checked: 2026-08-30
+#: last_checked: 2026-09-11
 #: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261015
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
@@ -112,10 +112,13 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv)
-#: also_indoor: traffic (G,T)
-#: last_checked: 2026-09-05 (traffic)
-#: next_check: 2026-09-11
-#: valid: -20260911
+#: also_indoor: traffic (ex-G,T)
+#: last_checked: 2026-09-11 (traffic)
+#: check_frequency: 3d (traffic)
+# REMOVED --- #: next_check: 2026-09-11
+# REMOVED --- #: valid: -20260911
+#: XXX prolonged for a month
+#: valid: -20261011
 Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,18585
 # 
 #: next_check_id: WOLLANK-2024
@@ -128,9 +131,9 @@ Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
 #: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026) (bis 16.10.2026) (bis 02.07.2027)
-#: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026) (inaktiv)
+#: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026) (inaktiv) (bis 02.07.2027)
 #: last_checked: 2026-09-06 (mapillary)
-#: next_check: 2027-07-02 (VIZ-Verkehrsmeldung)
+#: next_check: 2027-07-02 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20270702
 Siemensstr./Borstellstr.	X::inwork 6219,4336
 # 
@@ -322,9 +325,8 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
 #: last_checked: 2026-09-01 (traffic)
 #: check_frequency: 30d (traffic)
-#: next_check: 2026-10-22 (VIZ-Verkehrsmeldung)
-# note: maximum assumed validity
-#: valid: -20261231
+#: next_check: 2026-10-22 (VIZ-Verkehrsmeldung + planb)
+#: valid: -20261022
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
 # 
 # REMOVED --- #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
@@ -567,7 +569,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 # 
 # REMOVED --- #: next_check_id: KELTENSTEIG-2026
 # REMOVED --- # REMOVED --- #: source_id: viz2021:13.54658,52.41878,11.07.2023,09:00 (bis 30.09.2024) (inaktiv)
-# REMOVED --- #: source_id: LMS-BR:417486/72 viz2021:13.54653,52.41878,29.07.2026,07:00 (bis 10.09.2026) (inaktiv)
+# REMOVED --- #: source_id: LMS-BR:417486/72 viz2021:13.54653,52.41878,29.07.2026,07:00 vizapi2026:759/2026 (bis 10.09.2026) (inaktiv)
 # REMOVED --- #: note: Länge der Gegenverkehrsstrecke etwa 100m
 # REMOVED --- #: next_check: 2026-09-10 (planb, VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260910
@@ -1289,7 +1291,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10927,17022
 	X 10758,17288
 	X 7480,7683
-	X 7499,7880
+#: next_check_id: ELLABAROWSKY-2024
+#: XXX Ampelanlage wird neu gebaut
+#: last_checked: 2026-09-11
+	X0::inwork 7499,7880
 	X 7497,8168
 	X 7193,7950
 	X 7147,8000
@@ -4674,7 +4679,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
 #: XXX laut osm note von SGA Neukölln bis Ende August 2026
-#: last_checked: 2026-09-04 (mapillary)
+#: last_checked: 2026-09-11
 #: check_frequency: 30d
 # REMOVED (wurde nicht gehalten) --- #: next_check: 2026-08-31 (osm note)
 # REMOVED --- #: next_check: 2026-09-30 (infravelo)

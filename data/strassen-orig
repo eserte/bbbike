@@ -1314,7 +1314,7 @@ Gotenstr. (Schöneberg)	N 7497,8168 7494,8354 7490,8593 7485,8777
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1710243.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/projekte/artikel.1709938.php
 #: XXX Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?
-#: last_checked: 2026-09-03
+#: last_checked: 2026-09-11
 #: check_frequency: 180d
 #: next_check: 2026-10-31 (BA-Pressemitteilung: Start des Umbaus)
 # REMOVED --- #: next_check: 2026-12-31 (entwicklungsstadt)
@@ -2544,6 +2544,7 @@ Samländische Str.	N 10892,17396 10706,17391
 Bornholmer Str.	HH 11019,16465 10778,16485 10699,16492 10620,16497 10533,16505 10458,16509 10370,16516 10282,16522 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565 9781,16569 9617,16590 9514,16603 9442,16610
 (Treppe zum Kolonnenweg)	NN 9998,16547 9983,16561 9955,16578
 (Treppe zum Kolonnenweg)	NN 9998,16547 9982,16527 9959,16510
+#: note: bei osm als "Wiesenhang" bezeichnet
 (Bornholmer Str. - Kolonnenweg)	NN 10134,16534 10118,16561 10108,16576 9954,16590
 Jülicher Str.	N 9446,16060 9458,16180 9474,16297 9475,16307 9484,16395 9490,16455 9493,16481 9514,16603
 Spanheimstr.	N 9458,16180 9320,16319
@@ -11806,15 +11807,15 @@ Lauterplatz	NN 5810,7883 5707,7878
 # REMOVED (eingetragen) --- #: XXX Friedenauer Höhe (Privatstraße) -> im Amtsblatt, PLZ=12159, laut LOR PLZ=10827+12159
 # REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
 # REMOVED (eingetragen) --- #: XXX Hannah-Höch-Weg (evtl. ohne "h") -> laut Amtsblatt mit "h", bei DPAG ebenso, PLZ=12159
-#: last_checked: 2026-08-26 vvv
+#: last_checked: 2026-09-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (website the-friedenauer, entwicklungsstadt) vvv
 #: osm_watch: way id="1254710366" version="11"
 #: note: Privatstraße vvv
 # REMOVED (nicht mehr) --- #: XXX bleibt es bei der "Fahrradzone" hier?
-Friedenauer Höhe	N 6293,7875 6263,7894 6178,7899
+Friedenauer Höhe	N 6293,7875 6260,7899 6132,7893
 #: XXX Wird hier noch parallel zum Fußweg eine Fahrbahn gebaut? Zurzeit gibt es eine Baustraße.
-Friedenauer Höhe	NN 6178,7899 6126,7917 6011,7911 5810,7883
+Friedenauer Höhe	NN 6132,7893 6131,7916 6011,7911 5810,7883
 #: note ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -19756,6 +19757,7 @@ Ramlerstr. [entlang der Swinemünder Brücke]	N 9666,15739 9644,15780
 #: by: https://www.tagesspiegel.de/berlin/der-wedding-bekommt-ein-dach-aus-baumen-stadtebauliches-konzept-fur-das-neue-quartier-fountain-in-mitte-steht-15747946.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_31_2001_2076_online.pdf (Bebauungsplan 1-125)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2026/top-1b_1257_z_anlage_stadtfml-2_1-125_swinemuender-bruecke_planskizze.pdf (Vorentwurg: Rad- und Gehweg entlang der Bahnstrecke und unter der Brücke)
+#: by: https://www.entwicklungsstadt.de/swinemuender-bruecke-in-gesundbrunnen-historisches-bauwerk-bekommt-einen-park/
 #: XXX Falls das Einkaufszentrum abgerissen wird: bleibt die Zufahrtsstraße? Bleibt die Zugangsmöglichkeit vom Bärbel-Bohley-Ring?
 #: last_checked: 2026-07-08
 #: check_frequency: 360d
@@ -20120,7 +20122,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-08-31 vvv
+#: last_checked: 2026-09-10 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
