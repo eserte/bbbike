@@ -225,7 +225,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,1318
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-08-29 vvv
+#: last_checked: 2026-09-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (Tsp, planb) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -372,7 +372,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 #: source_id: planb2026:13.45361302,52.4854625,06.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.06.2028) (vorfristig inaktiv)
 #: source_id: planb2026:13.45606815,52.48428848,02.06.2025, ("Fahrbahneinengung", bis 30.04.2027)
 #: note: Länge der Einbahnstraßenregelung etwa 150m
-#: last_checked: 2026-09-11
+#: last_checked: 2026-09-12
 #: check_frequency: 90d
 #: next_check: 2027-04-30 (planb)
 # REMOVED --- #: next_check: 2028-06-30 (ex-planb, Halteverbotsschilder)
@@ -431,11 +431,13 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: by: https://www.entwicklungsstadt.de/einbahnstrasse-neue-sperrung-an-der-doerpfeldstrasse-in-adlershof/ (Arndtstr.: Halteverbote bis 30.9.2026, Baustellenschild bis November 2026)
 #: source_id: planb2026:13.54992368,52.43804574,03.08.2026,06:00 ("Vollsperrung beider Fahrbahnen", Arndtstr. und Nipkowstr., bis 25.09.2026)
 #: source_id: planb2026:13.54988628,52.43806477,07.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", nur Arndtstr., bis 08.01.2027)
-#: add_fragezeichen: Besteht die Einbahnstraßenregelung/Sperrung weiterhin? vvv
+#: add_fragezeichen: Bestehen die Sperrungen weiterhin? vvv
 #: next_check: 2026-09-25 (planb) vvv
 #: valid: -20261130 vvv
 #: also_indoor: traffic (no-G,no-T,no-H,no-W)
-Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4::inwork; 20592,3633 20449,3799
+# REMOVED (mittlerweile wohl eine Sperrung, keine Einbahnstraße mehr) --- Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4::inwork; 20592,3633 20449,3799
+#: last_checked: 2026-09-11 (mapillary)
+Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung an der Dörpfeldstr.	q3::inwork 20592,3633 20449,3799
 #: also_indoor: traffic (G,T,H,no-W)
 Nipkowstr.: mögliche Bauarbeiten	q4::inwork 20352,3744 20499,3572
 #: valid ^^^
@@ -975,13 +977,19 @@ Tempelherrenstr.: Baustelleneinrichtung blockiert den Radweg	q4::inwork 10180,98
 # 
 #: source_id: LMS-BR:380721/72 viz2021:13.40045,52.4905, (bis 31.12.2026)
 #: source_id: planb2026:13.40268317,52.48973279,13.05.2025, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
-#: last_checked: 2026-08-24 vvv
+#: osm_watch: way id="1061707899" version="11"
+#: osm_watch: way id="4611912" version="40"
+#: osm_watch: way id="8005348" version="32"
+#: osm_watch: way id="8005347" version="29"
+#: last_checked: 2026-09-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung, planb) vvv
 #: valid: -20261231 vvv
 #: note: einige Abschnitte der Fahrbahn nur noch mit Schotterdecke
-#: note: typischerweise steht die Absperrung auf dem Radweg
-Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q2::inwork; 10198,9405 10290,9604 10306,9640 10361,9755 10405,9795
+#: note: mittlerweile ist der Radweg hinter der Absperrung verschwunden
+Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Gehweg für Radfahrer frei	q2-::inwork; 10198,9405 10290,9604 10306,9640
+#: note: hier ist etwas mehr Platz und weniger Fußgänger/Gastronomie
+Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Gehweg für Radfahrer frei	q2::inwork; 10306,9640 10361,9755 10405,9795
 #: historical_note: hier gab's weniger Probleme mit der Baustelleneinrichtung, deshalb q1- statt q2, mittlerweile auch recht eng -> q2
 Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q2::inwork; 10357,9807 10361,9755 10306,9640 10290,9604 10198,9405
 #: valid ^^^
@@ -6145,6 +6153,15 @@ Rudolf-Schwarz-Str.: einige Fußgänger, Bordsteine	q3 13107,14318 13087,14332
 # 
 (Magazinstr. - Schillingstr.): schmale Straße	q2 11361,12511 11423,12478 11436,12446 11418,12405
 # 
+(Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9404,6392 9389,6348
+#: note: getrennter Rad- und Gehweg
+(Götzstr. - Albrechtstr.): Fußgänger	q2 9389,6348 9381,6277
+#: note: am südlichen Ende ein Grünanlagenschilder mit Radfahren verboten, am nördlichen Ende fehlt es wohl
+(Götzstr. - Albrechtstr.): Fußgänger	q3- 9381,6277 9373,6184 9371,6173 9367,6160 9366,6150 9365,6140 9376,6102 9349,6102 9339,6076
+#: note: im Bereich des Rosengartens
+(Franckepark, Rosengarten): Fußgänger	q3- 9365,6140 9391,6139 9395,6179 9373,6184
+Franckepark: Fußgänger	q2 9389,6348 9346,6352
+# 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
 #: by: Michael Kiekbusch vvv
@@ -6396,9 +6413,6 @@ Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5158 6276,4915
 Hünensteig: Fußgänger	q2 6395,5154 6405,5238 6100,5254
 #: by: ^^^
 #: by: Thomas (dobr@...) vvv
-(Götzstr. - Albrechtstr.): Fußgänger	q2 9460,6519 9453,6415 9404,6392 9389,6348 9381,6277 9374,6189
-(Götzstr. - Albrechtstr.): Fußgänger, Rampe	q4 9374,6189 9373,6179
-(Götzstr. - Albrechtstr.): Fußgänger	q2 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 #: note: ähnliche Angaben von Christian (chrispan), nach Mailverkehr mit ihm (Message-Id: <E1EtpOe-0001ZH-IJ@www.radzeit.de>) von q2 auf q4 degradiert:
 #: XXX_prog BS an der Gersdorfstr., ansonsten bleibt es aber bei q4
 #: confirmed_by: srt

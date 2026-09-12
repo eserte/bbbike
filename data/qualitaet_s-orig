@@ -157,7 +157,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-09-04
+#: last_checked: 2026-09-12
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -1038,7 +1038,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2026-09-04 vvv
+#: last_checked: 2026-09-12 vvv
 #: check_frequency: 120d vvv
 Rollbergstr.: Kopfsteinpflaster	Q2- 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Kopfsteinpflaster	Q2 12407,8177 12545,8209 12714,8249
@@ -3573,7 +3573,7 @@ Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 #: XXX bleibt der Asphalt?
 #: historical_note: früher (bis Ende August 2026): Gehwegplatten, Q0-
 #: note: eigentlich nur für den Linienverkehr frei
-#: last_checked: 2026-08-31
+#: last_checked: 2026-09-12
 #: next_check: 2026-12-31
 Melchiorstr. - Mariannenplatz: Asphalt	Q0 11917,11186 11944,11152
 (Weg am Humboldthain): Betonpflaster mit breiten Fugen	Q2 9255,15816 9092,15789
@@ -6496,7 +6496,7 @@ Fuchsbau (Grünau): Asphalt	Q0 21421,2268 21416,2139 21414,2085 21385,2031
 Waldvogelweg: Asphalt	Q0 21416,2139 21385,2146 21301,2189
 Adlerhorst: fester Sandweg	Q2+ 21111,2451 21123,2409 21185,2341
 (Adlergestell - Am Kanal): Asphalt mit einigen Schäden	Q1 21041,2259 21050,2267 20946,2397 20939,2413
-Werner-Loebermann-Weg: Asphalt	Q0 9268,8029 9268,8331 9292,8404
+Werner-Loebermann-Weg: Asphalt	Q0 9268,8029 9267,8301 9293,8365 9292,8404
 Alexander-Meißner-Str.: Asphalt	Q0 19894,-835 20078,-1029 20361,-1325 20388,-1373 20397,-1396 20416,-1721
 Geraldweg: Asphalt	Q0 20909,8700 20834,8694 20677,8700 20555,8694
 Geraldweg: unbefestigter Weg	Q2+ 20555,8694 20553,8641
@@ -11198,9 +11198,14 @@ John-Sieg-Str.: Asphalt	Q0 15504,11969 15461,11897 15434,11846 15417,11819
 Kaiser-Wilhelm-Str.: Asphalt mit Löchern	Q1+; 6613,3320 6657,3367 6780,3497
 Liebenowzeile: Asphalt	Q0 6820,4347 6826,4472 6826,4500 6841,4667 6845,4761 6846,4808
 Franckepark: wassergebundene Decke	Q1 9339,6076 9349,6102 9376,6102
-Franckepark: Verbundsteinpflaster	Q1 9376,6102 9366,6150
-Franckepark: wassergebundene Decke	Q1 9366,6150 9367,6160 9373,6179
-Franckepark: Verbundsteinpflaster	Q1 9373,6179 9374,6189 9381,6277
+#: historical_note: früher (vor der Sanierung des Rosengarten bis Mai 2026): Verbundsteinpflaster
+Franckepark: wassergebundene Decke	Q1 9376,6102 9365,6140 9366,6150
+Franckepark: wassergebundene Decke	Q1 9366,6150 9367,6160 9371,6173
+#: historical_note: früher (vor der Sanierung des Rosengarten bis Mai 2026): Verbundsteinpflaster
+Franckepark: wassergebundene Decke	Q1 9371,6173 9373,6184 9381,6277
+Franckepark: Mosaikpflaster	Q1 9365,6140 9391,6139
+Franckepark: wassergebundene Decke	Q1 9391,6139 9395,6179
+Franckepark: Mosaikpflaster	Q1 9395,6179 9373,6184
 (Armenische Str. - Schwyzer Str., Schillerpark): Asphalt	Q0- 7144,16781 7131,16790 7115,16827
 (Armenische Str. - Schwyzer Str., Schillerpark): wassergebundene Decke	Q1 7115,16827 7097,16915 7094,16938
 (Armenische Str. - Schwyzer Str., Schillerpark): Asphalt	Q0- 7097,16915 7064,16943 7002,17027
@@ -12548,7 +12553,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-08-26
+#: last_checked: 2026-09-12
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -34997,5 +35002,8 @@ Einmündungsbereich mit Verbundsteinpflaster	Q1+ 564,10584
 Einmündungsbereich asphaltiert	Q0- -220,10893
 Einmündungsbereich asphaltiert	Q0 -7080,4896
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 -7252,8982
+Einmündungsbereich mit Kopfsteinpflaster	Q2 12520,7694
+Kreuzungsbereich asphaltiert	Q0 12585,7357
+Einmündungsbereich asphaltiert	Q0 12601,7284
 #: ignore ^^^
 #: section ^^^

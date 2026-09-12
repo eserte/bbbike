@@ -161,7 +161,7 @@ Knoten Märkische/Landsberger Allee	1no 19196,14976 19205,14980 19254,15000
 #: XXX nach den Bauarbeiten vielleicht wieder zur Einbahnstraße machen?
 #: historical_note: früher (bis Nov. 2025) Einbahnstraße
 #: last_checked: 2026-06-16 (mapillary)
-# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 180d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Knoten Märkische/Landsberger Allee	2::inwork 19694,15141 19707,15206 19654,15219 19577,15166
 # REMOVED (ja, derzeit Rückbau) --- #: XXX evtl. wird dieser Abschnitt der Frank-Schweitzer-Str. komplett aufgegeben? --- Frank-Schweitzer-Str.	2::inwork 19318,14984 19195,14931
@@ -2931,7 +2931,9 @@ tragen (7+9 Stufen)	0:25 -3513,13800
 tragen (7 Stufen)	0:14 -4744,14392
 # REMOVED (Weg gibt's nicht (mehr?)) --- tragen (2 Stufen)	0:5 12572,14836
 # REMOVED (Stufe existiert nicht mehr) --- tragen (1 Stufe)	0:5 12632,14956
-tragen (3+5 Stufen)	0:15 9366,6150
+tragen (3+4 Stufen)	0:15 9366,6150
+#: note: oben vermutete Stufenanzahl, unten gezählte
+tragen (3+4 Stufen)	0:15 9371,6173
 tragen (3+3+2+2 Stufen)	0:20 9244,3872
 # REMOVED (Rampe existiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130116.0915.380245.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4276 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130722.1530.387208.html --- #: XXX hier entsteht bis voraussichtlich Oktober 2013 eine Rampe (klappt wahrscheinlich nicht mit dem Termin) --- #: last_checked: 2013-12-14 --- #: check_frequency: 60d --- tragen (10 Stufen)	0:15 8035,10075
 tragen (7 weite Stufen)	0:30 15759,16671
@@ -4152,7 +4154,7 @@ Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
 # 
 #: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: note: mit festen Zäunen gesperrt
-#: last_checked: 2026-09-10
+#: last_checked: 2026-09-12
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
 # 
 #: next_check_id: FANGSCHLEUSE-2026
@@ -4820,9 +4822,15 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-09-11 vvv
+#: last_checked: 2026-09-12 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
+#: osm_watch: way id="852517037" version="6"
+(Betriebsweg Kiefholzstr. - Beermannstr.): gesperrt, Durchfahrt wegen Bauzauns bzw. festen Tors nicht möglich	2::inwork 14139,8980 14173,9018 14136,9126 14130,9161 14120,9234 14103,9316 14131,9358 14124,9364
+#: osm_watch: way id="1455838852" version="3"
+(Betriebsweg Kiefholzstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14120,9234 14081,9268
+#: osm_watch: way id="1455838853" version="3"
+(Betriebsweg Beermannstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14103,9316 14088,9294 14081,9268
 #: osm_watch: way id="1199465845" version="5"
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
 # REMOVED (deleted) --- #: osm_watch: way id="1199465847" version="2"
@@ -4830,12 +4838,6 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren n
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
 #: osm_watch: way id="612109178" version="4"
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14245,7059 14261,7164 14323,7403
-#: osm_watch: way id="852517037" version="6"
-(Betriebsweg Kiefholzstr. - Beermannstr.): gesperrt, Durchfahrt wegen Bauzauns bzw. festen Tors nicht möglich	2::inwork 14139,8980 14173,9018 14136,9126 14130,9161 14120,9234 14103,9316 14131,9358 14124,9364
-#: osm_watch: way id="1455838852" version="3"
-(Betriebsweg Kiefholzstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14120,9234 14081,9268
-#: osm_watch: way id="1455838853" version="3"
-(Betriebsweg Beermannstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14103,9316 14088,9294 14081,9268
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5168,7 +5170,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: source_id: planb2026:13.43551948,52.50901002,01.04.2026, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
-#: last_checked: 2026-08-29
+#: last_checked: 2026-09-12
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (Tsp, planb)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
