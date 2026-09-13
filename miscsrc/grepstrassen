@@ -19,6 +19,7 @@ use lib ("$FindBin::RealBin/..",
 	);
 
 use Getopt::Long;
+use Scalar::Util qw(looks_like_number);
 use Storable qw(dclone);
 use Tie::IxHash;
 
@@ -134,6 +135,18 @@ for my $directive_def (@directive_def) {
 	} else {
 	    push @directiverx, [$key, $i ? qr{$val}i : qr{$val}];
 	}
+    } elsif ($directive_def =~ m{^(.+?)(<|>|<=|>=)(.+)$}) {
+	my($key, $type, $val) = ($1, $2, $3);
+	die "key '$key' does not look like a valid directive key" if $key !~ /^[a-zA-Z_.-]+$/;
+	die "val '$val' does not look like a number" if !looks_like_number($val);
+	push @directivecode, sub {
+	    my($all_dirs) = @_;
+	    return 1 if !defined $all_dirs->{$key} || $all_dirs->{$key} eq 'undef';
+	    my $eval_code = '$all_dirs->{"'.$key.'"}->[0] ' . $type . " $val";
+	    my $ret = eval $eval_code;
+	    die "Code '$eval_code' failed: $@" if $@;
+	    $ret;
+	};
     } else {
 	die "Cannot parse <$directive_def>, should be key=val or key~val";
     }
