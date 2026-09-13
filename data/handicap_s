@@ -56,14 +56,14 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
-Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzenden Hochbauarbeiten	q1::inwork 17526,14531 17824,14572
+Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzender Hochbauarbeiten	q1::inwork 17526,14531 17656,14549 17824,14572
 Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 18552,10135 18585,10024
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 Nollendorfstr.: Bauarbeiten, Sperrung der Fahrbahn an der Einmündung Eisenacher Str.	q3::inwork 6739,10120 7055,10220
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6260,7899 6132,7893
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6132,7893 6131,7916 6011,7911 5810,7883
 Driesener Str.: Anbindung Schivelbeiner Str. gesperrt	q3::inwork 10438,16340 10421,16175
-Erich-Boltze-Str., Verlängerung: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
+Erich-Boltze-Str., Verlängerung: Hochbauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
 Stavangerstr.: Sperrung der Fahrbahn, Radverkehr wird über den schmalen Bürgersteig geführt	q2::inwork 10845,16770 10883,16824
 Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahrer frei	q3::inwork 10495,17658 10573,17566
 Buckower Chaussee: Anbindungen an die Nebenstraßen werden noch erstellt	q4::inwork 8977,505 9004,481 9031,484
@@ -2834,6 +2834,7 @@ Rudolf-Schwarz-Str.: einige Fußgänger, Bordsteine	q3 13107,14318 13087,14332
 (Götzstr. - Albrechtstr.): Fußgänger	q3 9381,6277 9373,6184 9371,6173 9367,6160 9366,6150 9365,6140 9376,6102 9349,6102 9339,6076
 (Franckepark, Rosengarten): Fußgänger	q3 9365,6140 9391,6139 9395,6179 9373,6184
 Franckepark: Fußgänger	q2 9389,6348 9346,6352
+(Arendsweg - Landsberger Allee [Nebenfahrbahn]): Radfahren verboten	q4 17251,14525 17184,14526
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3589,6 +3590,7 @@ Jochen-Klepper-Weg: kombinierter Rad- und Fußweg, Fußgänger haben Vorrang	q1 -30
 Frommpromenade: enge Straße	q0 5463,20461 5350,20495 5257,20551
 Brodersenstr.: enge Straße	q0 6033,19611 5885,19920 5804,20047
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,3371
+Eduard-Spranger-Promenade: Grünanlage, aber offizielle Umleitung für den Radverkehr	q1 4317,2638 4328,2652 4659,3065
 Rosenplüterweg: enge Straße	q0 3657,26240 3431,26192 3328,26193
 Bulgenbachweg: enge Straße	q0 3431,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840

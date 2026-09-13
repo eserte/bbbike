@@ -564,6 +564,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260911 (Arbeiten für eine Fußgängerzone (?), Sperrung für Kfz-Verkehr)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: source_id: planb2026:13.37940933,52.54020766,14.09.2026,00:01 ("Vollsperrung beider Fahrbahnen", bis 02.11.2026)
+#: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, vizapi2026:869/2026 (bis 04.09.2026) ("Herstellung einer Fußgängerzone", bei vizapi2026 weiterhin aktiv, bis 02.11.2026)
 #: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
 #: last_checked: 2026-07-27 (mapillary) vvv
 #: check_frequency: 180d vvv
@@ -5061,7 +5062,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058 (letzter Stand 16.09.2021: Zwischenbericht)
 #: XXX wird hier saniert?
 #: osm_watch: way id="22047751" version="26"
-#: last_checked: 2026-08-16
+#: last_checked: 2026-09-13
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
@@ -8618,6 +8619,8 @@ Blumberger Damm: Beton	Q0 21908,16634 21885,16494 21862,16381
 Blumberger Damm: Beton mit Schäden	Q1 21862,16381 21842,16242
 Blumberger Damm: Beton mit Schäden	Q1 21842,16242 21835,16210 21812,16189 21788,16002 21816,15954
 Blumberger Damm [Wohngebiet]: Beton	Q0 21824,16506 21574,16547
+Landsberger Allee [Nebenfahrbahn]: Asphalt mit Schäden	Q1 17184,14526 16841,14487
+(Arendsweg - Landsberger Allee [Nebenfahrbahn]): Gehwegplatten	Q1 17251,14525 17184,14526
 Landsberger Allee [Wohngebiet]: Asphalt, einige Schäden	Q1+ 15710,14086 15701,14148 15666,14212 15596,14247 15357,14213
 Landsberger Allee [Wohngebiet]: Beton mit Schäden	Q1 22092,16029 22112,16137
 Landsberger Allee [Nebenfahrbahn]: Beton mit Schäden	Q1 21816,15954 21891,15938 22092,16029
@@ -14034,7 +14037,7 @@ Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9
 (Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0- 24981,2565 25116,2529 25496,2429
 (Genslerstr. - Liebenwalder Str.): Asphalt	Q0 16669,14438 16845,14461
 Landsberger Allee [Nebenfahrbahn]: Asphalt	Q0 17252,14495 17400,14511
-Landsberger Allee [Nebenfahrbahn]: Asphalt	Q0 17526,14531 17824,14572
+Landsberger Allee [Nebenfahrbahn]: Asphalt	Q0 17526,14531 17656,14549 17824,14572
 Klaus-Selmke-Str.: Asphalt	Q0 21133,11387 21275,11547
 Kurfürstendamm: Asphaltschäden	Q0-; 5475,10808 5656,10876
 Bruno-Bauer-Str.: Gehwegplatten	Q0- 12893,6527 12904,6488 12921,6424
@@ -20848,6 +20851,7 @@ Dammsmühler Str.: asphaltiert	Q0 10140,21107 9897,21035 9620,20952
 Emma-Ihrer-Str.: asphaltiert	Q0 15496,10277 15513,10298 15556,10357 15583,10399 15623,10449 15639,10469
 # 
 #: by: jörg (schalkau):
+#: confirmed_by: srt
 Schalkauer Str.: guter Asphalt	Q0 17475,14912 17507,14693 17517,14606 17526,14531 17533,14484
 # 
 #: by: peter (ph2607): vvv
@@ -26835,7 +26839,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="9"
-#: last_checked: 2026-06-21
+#: last_checked: 2026-09-13
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452

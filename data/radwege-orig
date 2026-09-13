@@ -1032,7 +1032,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-09-08
+#: last_checked: 2026-09-13
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1850,7 +1850,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-09-10 vvv
+#: last_checked: 2026-09-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1871,7 +1871,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="59"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-09-10 vvv
+#: last_checked: 2026-09-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -3733,7 +3733,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
 #: osm_watch: way id="966685279" version="10"
-#: last_checked: 2026-09-08 vvv
+#: last_checked: 2026-09-13 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2028-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -4821,7 +4821,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021) (inaktiv)
 #: source_id[inactive]: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2026-06-17 vvv
+#: last_checked: 2026-07-29 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
 	RW3; 22666,3888 22694,3693
@@ -6325,18 +6325,18 @@ asphaltierter Bordsteinradweg	RW1; 18042,4667 18239,4453 18374,4307 18541,4125 1
 #: note: Ferdinand-Schultze-Str., Richtung Norden
 #: historical_note: ganz früher (vor 2015?) RW2;
 Verbundsteinpflasterradweg	RW1; 17848,14523 17824,14572 17791,14639
-Verbundsteinpflasterradweg	RW1; 17791,14639 17745,14734 17693,14840 17684,14858 17638,14945 17609,15006 17432,15378 17424,15400 17405,15454 17377,15588 17370,15670 17378,15760
+Verbundsteinpflasterradweg	RW1; 17791,14639 17768,14686 17745,14734 17693,14840 17684,14858 17638,14945 17609,15006 17432,15378 17424,15400 17405,15454 17377,15588 17370,15670 17378,15760
 #: note: Ferdinand-Schultze-Str., Richtung Süden
 Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15588 17405,15454 17424,15400 17432,15378 17609,15006 17638,14945
 #: next_check_id: WEISSETAUBE-2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-wei%C3%9Fe-taube.161/page-3#post-26792
 #: source_id: planb2026:13.51369864,52.5358353,01.05.2026, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (bis 31.10.2026)
 #: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
-#: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734 17791,14639 17824,14572
-#: last_checked: 2026-07-22
+#: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734 17768,14686 17791,14639 17824,14572
+#: last_checked: 2026-09-13
 #: check_frequency: 60d
 #: next_check: 2026-10-31 (planb)
-	RW0; 17638,14945 17684,14858 17693,14840 17745,14734 17791,14639 17824,14572
+	RW0; 17638,14945 17684,14858 17693,14840 17745,14734 17768,14686 17791,14639 17824,14572
 	RW3; 17824,14572 17848,14523
 # 
 	RW4; 17488,15766 17450,15856 17427,15930

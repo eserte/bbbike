@@ -2504,8 +2504,10 @@ Landsberger Allee [Nebenfahrbahn]	N 22092,16029 21891,15938 21816,15954
 #: osm.highway: service
 Landsberger Allee [Nebenfahrbahn]	N 16669,14438 16845,14461
 Landsberger Allee [Nebenfahrbahn]	N 17252,14495 17400,14511
-Landsberger Allee [Nebenfahrbahn]	N 17526,14531 17824,14572
+Landsberger Allee [Nebenfahrbahn]	N 17526,14531 17656,14549 17824,14572
 Landsberger Allee [Nebenfahrbahn]	N 16304,14434 16075,14412 16084,14377 16007,14367 15920,14357
+Landsberger Allee [Nebenfahrbahn]	N 17184,14526 16841,14487
+(Arendsweg - Landsberger Allee [Nebenfahrbahn])	NN 17251,14525 17184,14526
 (Landsberger Allee, Zufahrt zur Nebenfahrbahn)	N 16010,14326 16007,14367
 (Landsberger Allee - Große-Leege-Str.)	NN 15963,14470 15902,14498
 (Marzahner Promenade - Landsberger Allee [Wohngebiet])	NN 20731,15742 20759,15740 20789,15736
@@ -3207,8 +3209,8 @@ Hohenschönhauser Str. (Fennpfuhl, Prenzlauer Berg) [76-64]	N 14754,14406 14682,1
 #: by: https://cdn.prod.website-files.com/5c6a8b9ed8c2274b1749e981/64c7d88e693027544f731c43_136_LP.jpg
 #: source_id: planb2026:13.47028348,52.53609285,07.09.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 01.07.2028)
 #: XXX Werden die bestehenden Wege/Straße im Zuge der neuen Bebauung geändert? Zumindest wird es eine direkte Verbindung zum Weißenseer Weg geben, schon weitgehend fertig, noch nicht freigegeben vvv
-#: last_checked: 2026-09-06 (überall Halteverbotsschilder) vvv
-#: check_frequency: 10d vvv
+#: last_checked: 2026-09-13 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2028-07-01 (planb) vvv
 #: osm.highway: service
 (Hohenschönhauser Str., Verbindungsweg)	N 14871,14601 14839,14586
@@ -7197,7 +7199,8 @@ Bennyweg	N 17254,15183 17262,15056
 Björnweg	N 17310,15186 17317,15059 17319,15038
 #: note ^^^
 #: note ^^^
-Arendsweg	N 17221,15181 17226,15083 17227,15054 17231,14979 17236,14882 17242,14719 17244,14664 17247,14604 17249,14575 17252,14495 17254,14451 17261,14406 17182,14394 17183,14358 17198,14269 17208,14209 17229,14183
+Arendsweg	N 17221,15181 17226,15083 17227,15054 17231,14979 17236,14882 17242,14719 17244,14664 17247,14604 17249,14575 17251,14525 17252,14495 17254,14451 17261,14406 17182,14394 17183,14358 17198,14269 17208,14209 17229,14183
+Arendsweg [Wohngebiet]	N 17184,14526 17176,14597 17247,14604
 (Zufahrt IKEA Lichtenberg)	N 18166,14277 18058,14269 17979,14247 17960,14245 17808,14226 17668,14208 17330,14163 17264,14176 17229,14183
 (Siegfriedstr. - Autowaschcenter)	N 16873,14236 16965,14235 17110,14187
 # REMOVED (mal sehen, wie es beim neuen Markt aussieht) --- (Zufahrt ehem. Einkaufszentrum)	N 16965,14235 17010,14269 17060,14255 17221,14268 17198,14269
@@ -7212,7 +7215,7 @@ Küllstedter Str.	N 17363,14760 17377,14678 17392,14591
 Küllstedter Str.	NN 17392,14591 17400,14511
 Joachimsthaler Str. (Alt-Hohenschönhausen)	N 16917,14905 16943,14785 17063,14797 17129,14804 17117,14885
 Biesenthaler Str. (Alt-Hohenschönhausen)	N 17063,14797 17074,14704 17242,14719
-Ferdinand-Schultze-Str.	NH 17848,14523 17824,14572 17791,14639 17745,14734 17693,14840 17684,14858 17638,14945 17609,15006 17432,15378 17424,15400 17405,15454 17377,15588 17370,15670 17378,15760
+Ferdinand-Schultze-Str.	NH 17848,14523 17824,14572 17791,14639 17768,14686 17745,14734 17693,14840 17684,14858 17638,14945 17609,15006 17432,15378 17424,15400 17405,15454 17377,15588 17370,15670 17378,15760
 Ferdinand-Schultze-Str. [am Friedhof Hohenschönhausen]	N 17493,15752 17486,15736 17467,15697 17433,15606
 (Rhinstr. - Ferdinand-Schultze-Str.)	NN 17433,15606 17377,15588
 Straße 109	N 17432,15378 17533,15363 17588,15355
@@ -11807,7 +11810,7 @@ Lauterplatz	NN 5810,7883 5707,7878
 # REMOVED (eingetragen) --- #: XXX Friedenauer Höhe (Privatstraße) -> im Amtsblatt, PLZ=12159, laut LOR PLZ=10827+12159
 # REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
 # REMOVED (eingetragen) --- #: XXX Hannah-Höch-Weg (evtl. ohne "h") -> laut Amtsblatt mit "h", bei DPAG ebenso, PLZ=12159
-#: last_checked: 2026-09-11 vvv
+#: last_checked: 2026-09-12 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 (website the-friedenauer, entwicklungsstadt) vvv
 #: osm_watch: way id="1254710366" version="11"
@@ -12050,7 +12053,7 @@ Lasdehner Str.	N 13524,12271 13470,12190 13375,12062
 (Lasdehner Str. - Gubener Str.)	NN 13375,12062 13339,12029
 Am Comeniusplatz	N 13275,11830 13406,11896
 Graudenzer Str.	N 13243,12222 13470,12190
-(Karl-Marx-Allee - Marchlewskistr.)	NN 12878,12430 12950,12340 12985,12303
+(Karl-Marx-Allee - Hildegard-Jadamowitz-Str./Marchlewskistr.)	NN 12878,12430 12950,12340 12985,12303
 Marchlewskistr.	N 13541,11355 13496,11384 13473,11456 13366,11651 13295,11792 13275,11830 13217,11936 13097,12166 13086,12186 13019,12316 12997,12361 12972,12361
 (Marchlewskistr. - Gubener Str.)	N 13097,12166 13173,12202 13168,12219
 Helsingforser Str.	NN 13496,11384 13427,11431
