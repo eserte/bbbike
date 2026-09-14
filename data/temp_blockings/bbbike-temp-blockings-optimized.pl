@@ -1,420 +1,6 @@
-$#temp_blocking = 30;
+$#temp_blocking = 416;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html (mittlerweile 404)
-#: by: https://www.family-and-friends-ev.de/?date=20210418 (10.-12. September 2021)
-#: by: https://www.vinoflix.com/blog/wein-und-winzerfest-lichtenrade
-#: by: https://www.visitberlin.de/en/event/wine-festival-lichtenrade
-#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/35-wein-und-winzerfest-29d68374-a7db-402e-9595-697a7fb58cc1/
-#: by: https://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-lichtenrade.html
-#: by: https://www.family-and-friends-ev.de/12-14-september-wein-und-winzerfest-650-jahre-lichtenrade
-#: by: https://www.family-and-friends-ev.de/11-13-september-wein-und-winzerfest-lichtenrade
-	2::temp 11070,-1853 11055,-1741 11054,-1659 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1788991200,
-         'id' => 31,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 11.09.2026 14:00 Uhr bis 13.09.2026 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1789326000
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
@@ -1775,6 +1361,7 @@ Bölschestr.: Sperrung der Fahrbahn	2::temp 25579,5958 25571,5829 25567,5749 2556
 #: by: https://bvv-charlottenburg-wilmersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9473
 #: by: https://www.entwicklungsstadt.de/berlin-cubes-in-der-kantstrasse-urban-gardening-trifft-terrorschutz/
 #: by: https://www.entwicklungsstadt.de/pop-up-basketballplatz-am-breitscheidplatz-ist-eroeffnet/
+#: osm_watch: note 5362664 1
 #: also_indoor: traffic (T,G)
 #: XXX bis Dez 2026 oder noch viel länger (3-5 Jahre?)?
 #: last_checked: 2026-09-02 vvv
@@ -2891,39 +2478,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
-#: by: https://www.wollenschlaeger-berlin.de/51-fest-an-der-panke/
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1226411.php (evtl. nur auf der Nordseite?)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2023/pressemitteilung.1345861.php (findet 2023 nicht statt)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6806 (Anfrage)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/hinweise/artikel.1226093.php
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2024/pressemitteilung.1484601.php
-#: by: https://www.visitberlin.de/de/event/fest-der-panke
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1697936.php
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1711804.php
-#: source_id: viz2021:13.40899,52.57098,12.09.2025,08:00 (bis 14.09.2025) (inaktiv)
-	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
-	2::temp 10602,18382 10562,18506 10532,18601
-',
-         'from' => 1789077600,
-         'id' => 2281,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              9,
-                              'start',
-                              '2023-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (12.09.2026-13.09.2026)',
-         'type' => 'gesperrt',
-         'until' => 1789336799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3062,7 +2617,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'data' => '#: source_id: IM_019071 (inaktiv)
 #	q4::inwork 5090,11007 5113,11305
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3moezfxq4c22u (bis 18.09.2026)
-#: source_id: LMS-BR:412089/72 viz2021:13.32617,52.50824,16.06.2026,07:00 (bis 18.09.2026)
+#: source_id: LMS-BR:412089/72 viz2021:13.32617,52.50824,16.06.2026,07:00 (bis 18.09.2026) (bis 30.10.2026)
 #: source_id: LMS-BR:412908/72 viz2021:13.326006,52.5073,22.06.2026,07:00 (nur Fahrbahnverengung, bis 10.07.2026) (inaktiv)
 #: note: fehlt bei planb
 #: also_indoor: traffic (G,T,H,W)
@@ -3070,9 +2625,9 @@ Uhlandstr.: Einbahnstraßenregelung zwischen Steinplatz und Kantstr.	q4::inwork; 
 ',
          'from' => undef,
          'id' => 2374,
-         'text' => 'Uhlandstr.: Baustelle, Einbahnstraßenregelung zwischen Steinplatz und Kantstr., offen Richtung Süden, bis 18.09.2026',
+         'text' => 'Uhlandstr.: Baustelle, Einbahnstraßenregelung zwischen Steinplatz und Kantstr., offen Richtung Süden, bis 30.10.2026',
          'type' => 'handicap',
-         'until' => 1789768799
+         'until' => 1793401199
        },
        undef,
        undef,
@@ -5212,6 +4767,7 @@ Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
 #: by: https://www.entwicklungsstadt.de/panorama-hotel-am-adenauerplatz-fassade-veraendert-das-fruehere-hotel/
 # REMOVED --- #: note: vermutlich nur im Bereich Sybelstr. 14 --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
 #: osm_watch: way id="1300235970" version="3"
+#: osm_watch: note 5206969 1
 # REMOVED --- #: osm_watch: way id="1039329567" version="6"
 # REMOVED (beendet) --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-04 (architektur-urbanistik)
 # REMOVED (hier nicht) ---	2::inwork 3726,10757 3731,10640
@@ -5610,20 +5166,7 @@ Wiltbergstr.: Komplettsperrung	2::inwork 16166,25767 16121,25818
        undef,
        undef,
        undef,
-       {
-         'data' => '#: url: https://www.wuhlheide.de/programm
-#: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03, 2024-06-09
-#: note: 2023 gibt es Konzerttermine zwischen dem 10. Juni 2023 und 09. September 2023; Nachtrag: am 17. September 2023 gab es wohl auch eins
-#: note: 2024 gibt es Konzerttermine zwischen dem 22. Juni 2024 und 14. September 2024
-#: note: 2026 gibt es Konzerttermine zwischen dem 10. Juli 2026 und 13. September 2026 (vielleicht auch früher?); Sperrung während der AnnenMayKantereit-Konzerte (Mitte August 2026) gesehen
-	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
-',
-         'from' => 1783548000,
-         'id' => 3570,
-         'text' => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison von Juni/Juli bis Mitte September',
-         'type' => 'gesperrt',
-         'until' => 1789401600
-       },
+       undef,
        {
          'data' => '#: by: Gonsolo & osm
 	2::temp -8489,-2220 -8574,-2204 -8653,-2195
@@ -6058,6 +5601,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2924,15914 2892,15983 2809,16143
 #: osm_watch: note 4556342 7
 #: osm_watch: note 4741254 7
 #: osm_watch: note 5161618 2
+#: osm_watch: note 5315955 1
 #: note: siehe auch Eintrag in gesperrt-orig (zurzeit auskommentiert)
 #: note: laut osm note 4741254 bis 12/2025 gesperrt
 #: priority: #A
@@ -6263,14 +5807,14 @@ ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: XXX parallelen südöstlichen Gehweg auch anschauen; ggfs. nach handicap_s verschieben
 #: also_indoor: traffic (ex-T,ex-G)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-09-10 vvv
+#: last_checked: 2026-09-13 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-10-23 (Halteverbotsschilder, planb, VIZ-Verkehrsmeldung) vvv
 #: note: es gibt einen parallelen Weg, der bei BBBike separat eingezeichnet ist
-#: osm_watch: way id="4615467" version="40"
+#: osm_watch: way id="4615467" version="41"
 Margarete-Sommer-Str.	2::inwork 12874,13893 12802,13813 12707,13706
 #: note: bis zur Kniprodestr. gesperrt, allerdings könnte die Benutzung des Hochbords geduldet sein
-#: osm_watch: way id="175916784" version="22"
+#: osm_watch: way id="175916784" version="23"
 Virchowstr.	q3::inwork 12707,13706 12640,13814
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6551,7 +6095,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msap3crgck27
 #: by: https://www.entwicklungsstadt.de/mitten-im-besuchertrubel-hackescher-markt-wird-umfassend-saniert/
 # REMOVED (nach den Gleisbauarbeiten reaktivieren) --- #: also_indoor: traffic (ex-G,T,ex-H,ex-W)
-#: also_indoor: traffic (G[later],T[sogar bis Weinmeisterstr],H[bis Sophienstr],W[bis Neue Schönhauser])
+#: also_indoor: traffic (ex-G[later],T[sogar bis Weinmeisterstr],ex-H[bis Sophienstr],ex-W[bis Neue Schönhauser])
 # REMOVED --- #: note: offizielle Umleitungen für Radfahrer: Richtung Süden via Neue Schönhauser Str. und Weinmeisterstr., Richtung Norden via Auguststr.
 # REMOVED --- #: XXX Sind Radfahrer noch immer betroffen? (Stand 23.12.2023: ja, gesamte Fahrbahn gesperrt außer für Straßenbahnen) --- #: last_checked: 2024-01-03 (mapillary) vvv --- #: check_frequency: 45d vvv --- #: next_check: 2024-01-09 vvv
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
@@ -6689,10 +6233,13 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mujknblorc23
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3muvnxf5jjg2g (Sperrung für Kfz-Verkehr zwischen Buchstr. und Föhrer Str., bis 19.09.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260911 (Sperrung für Kfz-Verkehr zwischen Buchstr. und Fehmarner Str., bis 02.10.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvhbmldptb22 (Sperrung für Kfz-Verkehr zwischen Buchstraße und Fehmarner Straße, bis 02.10.2026)
 #: source_id: LMS-BR:420968/72 viz2021:13.352783,52.53975, vizapi2026:903/2026 (zwischen Samoastr. und Torfstr., bis 11.09.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:421050/72 viz2021:13.3549,52.5397,03.09.2026,07:00 vizapi2026:903/2026 (laut Text von der alten API zwischen Tegeler Str. und Buchstr., bis 11.09.2026) (inaktiv)
 #: source_id: LMS-BR:421555/72 viz2021:13.34514,52.53909,07.09.2026,06:00 vizapi2026:909/2026 (zwischen Buchstr. und Föhrer Str. Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 19.09.2026)
 #: source_id: vizapi2026:908/2026 (Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 02.10.2026)
+#: source_id: LMS-BR:422260/72 viz2021:13.348504,52.539088,14.09.2026,06:00 (Baustelle zwischen Föhrer Str. und Fehmarner Str., bis 26.09.2026)
+#: source_id: LMS-BR:422273/72 viz2021:13.34873,52.53891,14.09.2026,07:00 (Markierungsarbeiten zwischen Buchstr. und Fehmarner Str., bis 02.10.2026)
 Nordufer: zwischen Tegeler Str. und Föhrer Str.	q4::inwork 7129,14787 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782 6596,14740 6513,14725 6334,14756
 # REMOVED (kürzere Variante) ---	q4::inwork 7000,14832 6929,14845 6849,14831
 # REMOVED --- #: source_id: viz2021:13.348039,52.538941,25.09.2023,07:00 (hier nur Kfz-Verkehr betroffen, bis 18.09.2024) (bis 07.10.2024) (bis 30.11.2024) (inaktiv)
@@ -6771,11 +6318,11 @@ Nordufer: zwischen Tegeler Str. und Föhrer Str.	q4::inwork 7129,14787 7000,14832
 	q3::temp:clock 18728,8371 18704,8427
 #: next_check ^^^
 ',
-         'from' => 1789077600,
+         'from' => 1790805600,
          'id' => 3956,
-         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 12.9.2026 bis 13.9.2026',
+         'text' => 'Flohmarkt an der Trabrennbahn Karlshorst (Antikflohmarkt, Riesenflohmarkt): nächster Termin 2.10.2026 bis 4.10.2026',
          'type' => 'handicap',
-         'until' => 1789336799
+         'until' => 1791151199
        },
        undef,
        undef,
@@ -7026,6 +6573,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: osm_watch: way id="153260813" version="7"
 #: osm_watch: way id="153260798" version="6"
 #: osm_watch[closed]: note 4162190 4
+#: osm_watch: note 5510677 2
 #: by: https://gemeinde-schoenefeld.de/news/aktuelles/bau-der-anschlussstelle-hubertus-radweg-wird-gesperrt/ (Sperrung ab 3. Juni 2024 (voraussichtlich))
 #: by: https://gemeinde-schoenefeld.de/wp-content/uploads/2024/03/2024-05-22_Anwohnerbrief.pdf (bis Ende 2025)
 #: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-a117-zwischen-waltersdorf-und-ad-treptow/
@@ -7055,26 +6603,7 @@ Kleine Waldstr. - Waldstr.	2::inwork 21510,-1724 21509,-1790 21531,-1819 21590,-
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Sperrung der südlichen Fahrbahn UdL erwähnt; bis 07.06.2024) (inaktiv)
-#: source_id: viz2021:13.3974,52.51755,04.06.2024,08:00 (nur Verschwenkung des Verkehrs UdL Richtung Osten erwähnt; bis 07.06.2024) (inaktiv)
-#: source_id: LMS-BR:421164/72 viz2021:13.39828,52.51708,04.09.2026,09:00 (An der Kommandantur, bis 13.09.2026)
-#: source_id: LMS-BR:421165/72 viz2021:13.3974,52.51756,04.09.2026,09:00 (Niederlagstr., bis 13.09.2026)
-#: source_id: LMS-BR:421718/72 viz2021:13.3974,52.51756,08.09.2026,08:00 (UdL, Verengung, bis 11.09.2026) (inaktiv)
-#: by: https://www.bertelsmann.de/news-und-media/nachrichten/bertelsmann-party-2024-vielfalt-kreativitaet-und-jede-menge-stars-in-berlin.jsp?atn=2862170&abp=2862170,2862222, (Bertelsmann Party)
-#: note: eigentlich gibt es einen engen Durchgang am Schinkelplatz, aber UdL muss man zusätzlich einen 1x70m oder 2x70m langen Umweg nehmen
-#: note: zu Ende der Sperrung (Samstag davor) war die Einengung an UdL bereits abgebaut
-Schinkelplatz	2::temp 9984,12426 9990,12404
-Schinkelplatz	2::temp 9990,12404 9996,12372
-Niederlagstr.	q4::temp 9934,12420 9943,12364
-An der Kommandantur	q4::temp 9996,12372 9943,12364
-',
-         'from' => 1788386400,
-         'id' => 4079,
-         'text' => 'Schinkelplatz, Niederlagstr., An der Kommandantur: Veranstaltung, mögliche Sperrung, vom 04.09.2026 09:00 bis 13.09.2026 20:00',
-         'type' => 'gesperrt',
-         'until' => 1789322400
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: VIRCHOW-2023
@@ -7176,6 +6705,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: source_id: viz2021:13.398583,52.510008,26.06.2024,07:00 (bis 01.07.2027) (inaktiv)
 #: source_id: LMS-BR:337726/72 viz2021:13.400498,52.509998,26.06.2024,06:00 (bis 11.08.2027)
 #: osm_watch: way id="42747980" version="23"
+#: osm_watch: note 4732320 1
 #: XXX Sperrung zwischen Jerusalemer Str. (West) und Markgrafenstr. ab 15. Oktober 2025
 #: XXX Sperrung im 1. BA bis Ende Oktober 2025
 #: XXX Sperrung der Jerusalemer Str. noch bis Ende 2025
@@ -7183,7 +6713,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-09-10 vvv
+#: last_checked: 2026-09-14 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -7831,6 +7361,7 @@ Caspar-Theyß-Str.: westlich und östlich Wangenheimstr.	q4::inwork 2467,9425 2592
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/3951-rund-um-den-kudamm-westl-der-fasanenstra%C3%9Fe/?postID=786496#post786496 (BV Bleibtreustraße 48a)
 #: source_id: LMS-BR:353494/72 viz2021:13.319804,52.504158, (bis 25.05.2026) (bis 31.12.2026)
 #: source_id: planb2026:13.32007208,52.50517019,25.11.2024,00:01 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
+#: osm_watch: note 4978365 4
 #: also_indoor: traffic (G,B,T,A)
 	q4::inwork 4692,10829 4704,10951
 # REMOVED (hier nicht, erst ab Bahnbrücke) ---	q4::inwork 4704,10951 4709,11036
@@ -8654,8 +8185,8 @@ Schiffbauerdamm, Richtung Westen: nur für Fußgänger	q4::inwork; 9025,12727 8870,
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (G,T,B)
 #: source_id: planb2026:13.41359234,52.51568692,13.12.2023, ("Fahrstreifen-Reduzierung" in der Stralauer Allee, bis 30.10.2026) (vorfristig inaktiv)
-#: last_checked: 2026-09-10
-#: check_frequency: 10d
+#: last_checked: 2026-09-14
+#: check_frequency: 14d
 #: next_check: 2026-10-30 (ex-planb)
 	q4::inwork 10951,12249 10957,12401
 ',
@@ -8908,7 +8439,7 @@ Goethestr.	q3::inwork 4620,2155 4568,2424 4526,2648
 #: source_id: LMS-BR:415346/72 viz2021:13.38557,52.47199, (zwischen Te-Damm und Schulenburgring (tatsächlich?), bis 08.05.2027)
 #: source_id: planb2026:13.37904221,52.47572048,26.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 01.09.2026) (bis 31.03.2027)
 #: add_fragezeichen: Sind die Straßen weiterhin gesperrt? vvv
-#: last_checked: 2026-09-11 vvv
+#: last_checked: 2026-09-14 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-03-31 (planb) vvv
 Manfred-von-Richthofen-Str.: Fahrbahn Richtung Süden gesperrt	q4::inwork; 8731,7956 8757,7841 8796,7751
@@ -8935,9 +8466,9 @@ Rumeyplan: südliche Fahrbahn gesperrt	q4::inwork 8812,7730 8907,7773 8895,7797
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-b%C3%BCro-und-verwaltungsgeb%C3%A4ude-sellerstra%C3%9Fe-17.1188/ (Hochbauarbeiten nebenan)
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=746695#post746695
 #: XXX offizielle Radroutenausschilderung (welche? Mauerweg? Abzweig des Pankewegs?)
-#: osm_watch: note 4801950 13
+#: osm_watch[closed]: note 4801950 13
 #: osm_watch: way id="53168806" version="7"
-#: osm_watch: way id="1463464930" version="1"
+#: osm_watch: way id="1463464930" version="3"
 # REMOVED --- #: osm_watch: way id="1093001262" version="4"
 #: note: allerdings können die Bauzäune weggeschoben sein, gesehen: 2026-05-16 Sat 15:38
 #: add_fragezeichen: Sind alle Bauarbeiten beendet?
@@ -9045,7 +8576,7 @@ Bötzowstr.: Kreuzungsbereich vermutlich betroffen	q3::inwork 12280,13880 12361,1
 #: source_id: planb2026:13.44989871,52.50304685,28.04.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 01.11.2027)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-09-08
+#: last_checked: 2026-09-14
 #: check_frequency: 120d
 #: next_check: 2027-11-01 (planb)
 	q4::inwork 13408,10837 13436,10903
@@ -10171,13 +9702,14 @@ Bäumerplan: Sperrung der Fahrbahn	q4::inwork 8527,8293 8482,8227
 #: source_id: planb2026:13.29237017,52.51538613,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 07.09.2026) (inaktiv)
 #: source_id: LMS-BR:419944/72 viz2021:13.29075,52.51534,24.08.2026,07:00 (bis 07.09.2026) (bis 25.09.2026)
 #: source_id: planb2026:13.2939394,52.5154944,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 25.09.2026)
+#: source_id: planb2026:13.29098992,52.51534596,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.10.2026)
 Seelingstr.	q4::inwork 2686,12051 2920,12070
 ',
          'from' => 1787522400,
          'id' => 4624,
-         'text' => 'Seelingstr.: Sperrung zwischen Danckelmannstr. und Nehringstr., evtl. ist auch der Radverkehr betroffen, vom 24.08.2026 06:00 bis 25.09.2026',
+         'text' => 'Seelingstr.: Sperrung zwischen Danckelmannstr. und Nehringstr., evtl. ist auch der Radverkehr betroffen, vom 24.08.2026 06:00 bis voraussichtlich 09.10.2026',
          'type' => 'handicap',
-         'until' => 1790373599
+         'until' => 1791583199
        },
        undef,
        undef,
@@ -10680,11 +10212,12 @@ Am Wiesenrain: mögliche Sperrung der Fahrbahn	q4::inwork 23931,5992 24122,6007
          'data' => '#: source_id: LMS-BR:416449/72 viz2021:13.4355,52.51475,20.07.2026,07:00 (bis 29.08.2026) (fälschlicherweise inaktiv)
 #: source_id: planb2026:13.43554035,52.51462551,20.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", etwa 40m lang, bis 29.08.2026) (inaktiv)
 #: source_id: planb2026:13.43421234,52.51316056,14.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 11.12.2026)
+#: source_id: LMS-BR:422267/72 viz2021:13.4355,52.51475,14.09.2026,07:00 (bis 11.12.2026)
 #: also_indoor: traffic (G[zu lang],T,H,no-W)
 #: note: wegen der Kürze der Baustelle: q4 -> q3
 #: note: Laut Baustellenschild der Wasserbetriebe Bauarbeiten bis Oktober 2027 (!)
 #: XXX Sind die Bauarbeiten beendet?
-#: last_checked: 2026-09-10
+#: last_checked: 2026-09-14
 #: check_frequency: 30d
 #: next_check: 2026-12-11 (planb)
 # REMOVED --- #: next_check: 2027-10-31 (Wasserbetriebe, evtl. Gesamtmaßnahme)
@@ -10788,6 +10321,7 @@ Borussiastr.	q3::inwork 8846,6781 9046,6784 9245,6791
 #: by: https://www.morgenpost.de/bezirke/tempelhof-schoeneberg/article411511492/baustart-am-platz-der-luftbruecke-mamC2ADmutC2ADproC2ADjekt-an-historischem-ort.html
 #: by: https://www.entwicklungsstadt.de/mehr-gruen-mehr-raum-bauarbeiten-am-platz-der-luftbruecke-gestartet/ (erster Bauabschnitt bis Anfang 2028)
 #: by: https://www.entwicklungsstadt.de/luftbruecke-am-flughafen-tempelhof-geschichte-und-umbau/
+#: by: https://www.entwicklungsstadt.de/neue-piazza-und-quartiersplatz-grossbaustelle-am-platz-der-luftbruecke/
 #: source_id: planb2026:13.38263329,52.48208211,21.04.2026,07:00 ("Fahrbahneinengung", bis 14.09.2026)
 #: source_id: LMS-BR:415346/72 (bis 08.05.2027 + weitere Arbeiten)
 #: osm_watch: note 5278398 5
@@ -10869,17 +10403,7 @@ Straße der Pariser Kommune	q2::inwork 12645,11673 12543,11521
          'type' => 'gesperrt',
          'until' => 1851372000
        },
-       {
-         'data' => '#: next_check_id: TIETZENWEG-2026
-#: source_id: planb2026:13.30544371,52.44209114,18.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.09.2026) (vorfristig inaktiv) (bis 17.09.2026)
-	q4::inwork 3870,3914 3777,4042 3766,4058 3643,4232
-',
-         'from' => 1786917600,
-         'id' => 4703,
-         'text' => 'Tietzenweg: Abfräsen des Kopfsteinpflasters, Sperrung der Fahrbahn, möglicherweise bis Mitte September 2026',
-         'type' => 'handicap',
-         'until' => 1789682399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -10950,6 +10474,7 @@ Streustr.: Einbahnstraßenregelung	q4::inwork; 13140,16000 13263,15930
        },
        {
          'data' => '#: next_check_id: RITAMAIBURG-2026
+#: osm_watch: note 5457487 1
 #: last_checked: 2026-08-15
 #: check_frequency: 180d
 Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-1301
@@ -10991,7 +10516,7 @@ Klausdorf - Zossen (Thomas-Müntzer-Straße): Sperrung des Bahnübergangs	2::inwork
          'data' => '#: source_id: planb2026:13.38566134,52.47188846,12.08.2026,06:00 ("Sperrung einer Fahrtrichtung", vermutlich Sperrung Richtung Nordwesten, bis 11.09.2026) (bis 18.09.2026)
 #: note: sah am 18.08.2026 relativ fertig aus, möglicherweise wird die geplante planb-Sperrung bis zum 11.09.2026 nicht ausgereizt? Oder wird erstmal die andere Fahrtrichtung saniert?
 #: also_indoor: traffic (no-G,T,no-W,no-H)
-#: last_checked: 2026-09-12
+#: last_checked: 2026-09-14
 # REMOVED --- #: next_check: 2026-08-30 (Halteverbotsschilder)
 #: next_check: 2026-09-18 (planb)
 Manfred-von-Richthofen-Str.: Einbahnstraßenregelung	q4::inwork; 8812,7730 8864,7676 8900,7643 8956,7598 9021,7552 9073,7496 9097,7469 9242,7325
@@ -11007,6 +10532,7 @@ Manfred-von-Richthofen-Str.: Einbahnstraßenregelung	q4::inwork; 8812,7730 8864,7
          'data' => '#: also_indoor: traffic (none)
 #: source_id: planb2026:13.32578128,52.52650206,10.11.2025,06:00 (Fahrbahneinengung, bis 30.09.2027)
 #: source_id: planb2026:13.32717823,52.52613825,14.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
+#: source_id: planb2026:13.32717823,52.52613825,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 02.10.2026)
 #: last_checked: 2026-08-19
 #: check_frequency: 120d
 #: next_check: 2027-09-30
@@ -11140,17 +10666,17 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
 #: also_indoor: traffic (T,G[later],H,W)
 #: note: Richtung Osten für den Kfz-Verkehr gesperrt, eine Gasse für den Radverkehr ist zurzeit offen
 #: note: Länge des abgesperrten Bereichs 100m, der eigentlich Baubereich nur etwa 50m
-#: note: die Absperrung Richtung Westen kann weggeschoben sein, vielleicht außerhalb der Arbeitszeiten (gesehen 2026-09-12 Sat 14:46)
-#: traffic_note: Vermuteter Umgehungsverkehr: Te-Damm - Bayernring - Boelckestr. oder Mussehlstr.
+#: note: die Absperrung Richtung Westen kann weggeschoben sein, vielleicht außerhalb der Arbeitszeiten (gesehen 2026-09-12 Sat 14:46, 2026-09-14 Mon 17:23)
+#: traffic_note: Umgehungsverkehr: Te-Damm - Bayernring - Boelckestr. und zurück sowie Mussehlstr. - Schulenburgring - Manfred-von-Richthofen-Str.
 #: add_fragezeichen: Besteht die Baustelle weiterhin?
-#: last_checked: 2026-09-12
+#: last_checked: 2026-09-14
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2026-09-30 (vizapi2026 + planb)
 	q3::inwork; 9229,8785 9076,8783
 ',
          'from' => undef,
          'id' => 4732,
-         'text' => 'Dudenstr.: Wasserrohrbruch, Fahrbahn Richtung Westen gesperrt, voraussichtlich bis Ende September 2026, evtl. werden die Bauarbeiten verlängert',
+         'text' => 'Dudenstr.: Wasserrohrbruch, Fahrbahn Richtung Westen gesperrt (es kann aber eine Furt für Radfahrer existieren), voraussichtlich bis Ende September 2026',
          'type' => 'handicap',
          'until' => undef
        },
@@ -11169,7 +10695,7 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
 #: note: der Bürgersteig ist nicht nur eng, sondern teilweise auch unangenehm zu fahren: Charlottenburger Platten, gepflasterte Ausfahrten, unzureichende abgesenkte Bordsteine
 #: traffic_note: Etwas Ausweichverkehr via Engeldamm - illegale Überfahrt zum Mariannenplatz - Wrangelstr., evtl. wird es mit der Zeit mehr werden.
 #: source_id: LMS-BR:420723/72 viz2021:13.42828,52.50735,31.08.2026,04:00 vizapi2026:853/2026 (bis 26.10.2026)
-#: last_checked: 2026-09-12 vvv
+#: last_checked: 2026-09-14 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2026-12-31 vvv
 Köpenicker Str.: getrennter Rad- und Gehweg	q2::inwork; 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
@@ -11387,6 +10913,24 @@ Kressenweg	q4::inwork; 23573,10975 23648,11265
          'text' => 'Hildegard-Jadamowitz-Str./Marchlewskistr. - Karl-Marx-Allee: Bauarbeiten, Sperrung, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvhdvlfoul2g
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4hwtrvxovsbdxnc4nemj6ahzomfhitvqpb6evh5prkv5oujx6fq
+#: source_id: LMS-BR:422269/72 viz2021:13.35402,52.44333,14.09.2026,07:00 (bis 17.02.2027)
+#: source_id: planb2026:-
+# suboptimales Routing: besser wäre eine Teilung der Fahrbahnen der Kaiser-Wilhelm-Str., oder eine Lösung mit DH
+Maulbronner Ufer -> Kaiser-Wilhelm-Str.	3::inwork 7307,4087 7161,4110 7162,4058
+Kaiser-Wilhelm-Str. -> Maulbronner Ufer	3::inwork 7171,4200 7161,4110 7307,4087
+Maulbronner Ufer geradeaus	3::inwork 7307,4087 7161,4110 6904,4162
+Maulbronner Ufer geradeaus	3::inwork 6904,4162 7161,4110 7307,4087
+# Beziehungen vom/in den Sackgassenabschnitt des Maulbronner Ufers weggelassen
+',
+         'from' => 1789336800,
+         'id' => 4753,
+         'text' => 'Kaiser-Wilhelm-Str./Maulbronner Ufer: Bauarbeiten, evtl. ist das Überqueren der Kaiser-Wilhelm-Str. nicht mehr möglich, bis Mitte Februar 2027',
+         'type' => 'gesperrt',
+         'until' => 1802905199
        }
      
 );

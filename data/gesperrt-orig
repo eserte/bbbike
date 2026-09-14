@@ -4244,7 +4244,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-09-10
+#: last_checked: 2026-09-14
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4414,6 +4414,7 @@ Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inw
 #: osm_watch: way id="236674294" version="8"
 #: note: nur dieser Abschnitt ist offen:
 #: osm_watch: way id="25958768" version="11"
+#: osm_watch: note 5383312 2
 #: last_checked: 2026-07-08
 #: check_frequency: 360d
 Am Egelpfuhlgraben: Holzbohlensteg zum Bullengraben gesperrt	2::inwork -5790,13458 -5785,13606
@@ -4497,6 +4498,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: by: https://entwicklungsstadt.de/hotelentwicklung-in-friedrichshain-premier-inn-plant-282-zimmer-am-ostkreuz/
 #: by: https://www.entwicklungsstadt.de/neuer-campus-am-ostkreuz-hier-entsteht-das-neue-zentrum-der-bvg/
 #: by: https://www.tagesspiegel.de/berlin/dpa-die-bvg-zieht-um-und-fuhrt-standorte-zusammen-16026444.html
+#: osm_watch: note 4964987 1
 #: source_id: planb2026:13.47278542,52.50619727,03.03.2025,07:00 (bis 31.03.2027)
 #: note: anfangs (Sep 2025) mit einem Bauzaun gesperrt, jetzt (Jun 2026) eine Schranke
 #: last_checked: 2026-06-03
@@ -4585,9 +4587,9 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: source_id: LMS-BR:402145/72 viz2021:13.47353,52.50308,18.03.2026,07:00 (Verengung in der benachbarten Marktstr., bis 29.05.2026) (inaktiv)
 #: osm_watch: way id="394677970" version="11"
 #: osm_watch: way id="656149821" version="4"
-#: osm_watch: way id="867830687" version="5"
+#: osm_watch: way id="867830687" version="7"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-09-09
+#: last_checked: 2026-09-13 (osm)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -5008,7 +5010,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-09-10
+#: last_checked: 2026-09-14
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -5265,7 +5267,8 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 # 
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
-#: last_checked: 2026-09-08 vvv
+#: osm_watch: note 4853760 1
+#: last_checked: 2026-09-14 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5465,7 +5468,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://molkenmarkt.berlin.de/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf (Aufstellungsbeschluss 1-14-2 (zwischen Jüdenstr. und Klosterstr.))
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-09-10
+#: last_checked: 2026-09-14
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5474,7 +5477,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-09-10
+#: last_checked: 2026-09-14
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

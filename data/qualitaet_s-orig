@@ -562,9 +562,13 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/20250121-mobilitaetsrat-mitte-tagesordnung.pdf (Fahrradstraße in der Gerichtstr. ist in Planung)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1040.pdf (keine Priorisierung)
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260911 (Arbeiten für eine Fußgängerzone (?), Sperrung für Kfz-Verkehr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvg36bttsf2v
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibisq3tu5izlu3k4dgsnc7aapstmj6nngiz7c3a5dd5cva5nhf2ta (Gehwege für Radfahrer frei)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
+#: also_indoor: traffic (G,T,H,W)
 #: source_id: planb2026:13.37940933,52.54020766,14.09.2026,00:01 ("Vollsperrung beider Fahrbahnen", bis 02.11.2026)
 #: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, vizapi2026:869/2026 (bis 04.09.2026) ("Herstellung einer Fußgängerzone", bei vizapi2026 weiterhin aktiv, bis 02.11.2026)
+#: source_id: LMS-BR:422254/72 viz2021:13.37944,52.54047,14.09.2026,04:00 (Sperrung, bis 02.11.2026)
 #: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
 #: last_checked: 2026-07-27 (mapillary) vvv
 #: check_frequency: 180d vvv
@@ -9422,7 +9426,8 @@ Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q0- 8482,8364 8394,8313 8
 Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8265,8092 8260,7911 8260,7803 8263,7611
 #: historical_note: früher (bis Sommer 2026): Asphalt über Beton, einige Schäden, Q0-, nach den Leitungsarbeiten ausgebessert
 Mussehlstr.: Asphalt	Q0 8982,8781 8926,8682
-Mussehlstr.: Asphalt über Beton, einige Schäden	Q0- 8926,8682 8842,8561
+#: historical_note: früher Q0-, mittlerweile gibt es einige schlechtere Stellen, z.B. im Einmündungsbereich Schulenburgring
+Mussehlstr.: Asphalt über Beton, einige Schäden	Q1+ 8926,8682 8842,8561
 Mussehlstr.: Gehwegplatten	Q0- 8842,8561 8759,8458
 Mussehlstr.: Verbundsteinpflaster	Q1+ 8759,8458 8720,8373
 Varian-Fry-Str.: Kleinsteinpflaster	Q1 8374,11479 8389,11378
@@ -12866,8 +12871,8 @@ Clara-Müller-Jahnke-Str.: Betonpflaster	Q1+ 31971,3170 31799,3192 31800,3091 318
 #: historical_note: der Radweg wurde hier ca. 2018 neu asphaltiert, danach Q0, mittlerweile wieder schlechter vvv
 B2: asphaltiert mit teilweise erheblichen Wurzelhebungen	Q1-; 15778,20350 15872,20496 15900,20531 16025,20631 16133,20704
 #: next_check_id: B2-2026
-#: osm_watch: note 5378808 2
 #: XXX wie sieht es nach den Bauarbeiten aus? vvv
+#: osm_watch: way id="515474756" version="17"
 #: last_checked: 2026-09-06 vvv
 #: next_check: 2027-03-18 vvv
 # früher: B2: asphaltiert mit teilweise erheblichen Wurzelhebungen	Q1-; 16133,20704 16644,21042 16815,21156 17073,21329
@@ -19423,7 +19428,8 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: by: https://www.entwicklungsstadt.de/gutspark-neukladow-wird-erneuert-das-sind-die-naechsten-schritte/
 #: XXX Hier soll asphaltiert werden
 #: osm_watch: way id="205746338" version="10"
-#: last_checked: 2026-09-02
+#: osm_watch: note 5515221 1
+#: last_checked: 2026-09-12 (osm note)
 # REMOVED --- #: check_frequency: 45d
 #: next_check: 2026-11-15 (BA-Pressemitteilung (Herbst 2026))
 #: corrected_by: srt (wassergebundene Decke, etwas sandig, Q1- -> ..., Bauzustand)
