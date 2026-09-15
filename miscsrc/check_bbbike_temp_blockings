@@ -323,6 +323,8 @@ EOF
 	    # Checks for now restricted to Berlin
 	    warn "  Check points...\n" if $v;
 	    require "$FindBin::RealBin/check_points";
+	    # XXX CDB_File seems sometimes to be problematic, default to Storable for now
+	    local @Strassen::Util::cacheable = ('Storable'); @Strassen::Util::cacheable = @Strassen::Util::cacheable;
 	    my $ret = BBBike::check_points::doit
 		("-q", ($debug ? "-debug" : ()), "-memcache", $full_path, "strassen", "faehren");
 	    if ($ret != 0) {
