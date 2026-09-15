@@ -75,6 +75,8 @@ Allee der Kosmonauten/Meeraner Str.	X::inwork 18382,13492
 # REMOVED --- Allee der Kosmonauten/Krankenhauszufahrt	X::inwork::alternating 17779,13457
 # 
 #: source_id: LMS-BR:417487/72 viz2021:13.38351,52.53674,29.07.2026,07:00 (bis 16.10.2026)
+#: note: Richtung Süden wird der Radverkehr mit Benutzungspflicht über den Bürgersteig (Charlottenburger Platten) geführt (etwa 120m)
+#: last_checked: 2026-09-15
 #: next_check: 2026-10-16
 #: valid: -20261016
 Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
@@ -112,8 +114,8 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv)
-#: also_indoor: traffic (ex-G,T)
-#: last_checked: 2026-09-13 (traffic)
+#: also_indoor: traffic (re-G,T)
+#: last_checked: 2026-09-15 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-09-11
 # REMOVED --- #: valid: -20260911
@@ -185,7 +187,7 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: source_id: planb2026:13.42219032,52.51114479,11.09.2025,07:00 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-09-08
+#: last_checked: 2026-09-15
 #: check_frequency: 60d
 #: next_check: 2026-11-04 (planb)
 Michaelbrücke	F::inwork 11676,11839
@@ -251,7 +253,7 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 #: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026) (inaktiv)
 #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
 #: source_id: vizapi2026:629/2026 (bis 28.10.2026)
-#: last_checked: 2026-08-20
+#: last_checked: 2026-09-15
 #: check_frequency: 120d
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung)
 #: valid: -20261028

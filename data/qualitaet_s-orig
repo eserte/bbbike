@@ -531,7 +531,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-09-06
+#: last_checked: 2026-09-15
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -546,6 +546,7 @@ Ackerstr.: Kopfsteinpflaster	Q2 9375,14419 9279,14495 9197,14562 9048,14681 8945
 Ackerstr.: Kopfsteinpflaster	Q2- 9804,14071 9750,14132 9627,14229
 Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13986 9514,13826 9535,13801 9670,13637
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
+#: next_check_id: GARTEN-2026
 #: by[removed]: http://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse-2/ (2. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 4. Quartal 2023) (4. Quartal 2023 - 4. Quartal 2023) (mittlerweile umbenannt)
 #: by: https://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse/ (4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (2. Quartal 2025 - 4. Quartal 2025) (kein Datum mehr, Planung abgeschlossen) (mittlerweile entfernt, auch von der Website)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/fahrbahn-und-gehwege-in-der-gerichts-und-gartenstrasse-1046099.php
@@ -561,23 +562,16 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20241203-mobilitaetsrat-mitte-protokoll-barrierefrei-entwurf.pdf (Erwähnung)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/20250121-mobilitaetsrat-mitte-tagesordnung.pdf (Fahrradstraße in der Gerichtstr. ist in Planung)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1040.pdf (keine Priorisierung)
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260911 (Arbeiten für eine Fußgängerzone (?), Sperrung für Kfz-Verkehr)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvg36bttsf2v
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibisq3tu5izlu3k4dgsnc7aapstmj6nngiz7c3a5dd5cva5nhf2ta (Gehwege für Radfahrer frei)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: also_indoor: traffic (G,T,H,W)
-#: source_id: planb2026:13.37940933,52.54020766,14.09.2026,00:01 ("Vollsperrung beider Fahrbahnen", bis 02.11.2026)
-#: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, vizapi2026:869/2026 (bis 04.09.2026) ("Herstellung einer Fußgängerzone", bei vizapi2026 weiterhin aktiv, bis 02.11.2026)
-#: source_id: LMS-BR:422254/72 viz2021:13.37944,52.54047,14.09.2026,04:00 (Sperrung, bis 02.11.2026)
 #: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
-#: last_checked: 2026-07-27 (mapillary) vvv
+#: last_checked: 2026-09-15 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2026-09-14 (planb: Sperrung) vvv
+# REMOVED --- #: next_check: 2026-09-14 (planb: Sperrung) vvv
 #: osm_watch: way id="169459736" version="19"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 #: osm_watch: way id="25278674" version="32"
 Gerichtstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1125,7 +1119,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: by: http://www.berliner-woche.de/heinersdorf/verkehr/radstreifen-und-neue-querungen-d155368.html
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
-#: osm_watch: way id="266580485" version="28"
+#: osm_watch: way id="266580485" version="29"
 #: last_checked: 2026-08-12
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
@@ -2060,7 +2054,7 @@ Pankeweg: Beton/Verbundsteinpflaster	Q1 16294,25683 16253,25651 16227,25620 1620
 Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15643,25090
 Nesselweg: Betonplatten, OK	Q1- 8717,21429 8654,21327 8631,21290 8605,21248 8587,21218 8513,21099
 Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
-#: by: https://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (war weg und wieder da) (3. Quartal 2024 - 3. Quartal 2025) (2. Quartal 2025 - 4. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 4. Quartal 2026) (3. Quartal 2026 - 4. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (war weg und wieder da) (3. Quartal 2024 - 3. Quartal 2025) (2. Quartal 2025 - 4. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 4. Quartal 2026) (3. Quartal 2026 - 4. Quartal 2026) (3. Quartal 2026 - 4. Quartal 2027)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.1571503.php
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/250513-lageplan-schoenholzer-weg-komprimiert.pdf (keine Radspuren; direkte Radwegverbindung zur Kreuzung Hauptstr./Kastanienallee; Unterbindung des Durchgangsverkehrs zur Kastanienallee)
@@ -2069,8 +2063,8 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: osm_watch: note 4459967 2 vvv
 #: XXX wird hier asphaltiert? vvv
 #: last_checked: 2026-08-15 (mapillary) vvv
-#: check_frequency: 300d vvv
-#: next_check: 2026-12-31 (infravelo) vvv
+#: check_frequency: 120d vvv
+#: next_check: 2027-12-31 (infravelo) vvv
 #: by: mapillary
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8003,20507 8040,20454 8057,20430
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 8057,20430 8071,20410 8093,20379 8131,20287 8196,20096
@@ -2226,7 +2220,9 @@ Anton-Saefkow-Platz: glatte Pflasterung	Q0- 15095,13839 15034,13814 15010,13807 
 Märchenweg: neu asphaltiert	Q0 15640,19060 15412,19082 15098,19112 14977,19129 14830,19143
 Märchenweg: leicht rauer Asphalt	Q0- 14830,19143 14743,19174 14546,19286 14284,19451
 Am Bürgerpark: Kopfsteinpflaster	Q2 9343,18080 9365,18062 9410,18021
-Wilhelm-Kuhr-Str.: Kopfsteinpflaster	Q2 9776,18125 9803,18131 9831,18181 9893,18179
+#: historical_note: früher (bis September 2026) Kopfsteinpflaster, Q2
+#: note: Parkflächen weiterhin gepflastert
+Wilhelm-Kuhr-Str.: Asphalt	Q0 9776,18125 9803,18131 9831,18181 9893,18179
 Wilhelm-Kuhr-Str.: Kopfsteinpflaster	Q3+ 9460,18053 9410,18021
 Wilhelm-Kuhr-Str.: Asphalt	Q0- 9460,18053 9590,18082
 (Am Bürgerpark - Wilhelm-Kuhr-Str.): Kopfsteinpflaster	Q2 9365,18062 9366,17997
@@ -6501,7 +6497,8 @@ Fuchsbau (Grünau): Asphalt	Q0 21421,2268 21416,2139 21414,2085 21385,2031
 Waldvogelweg: Asphalt	Q0 21416,2139 21385,2146 21301,2189
 Adlerhorst: fester Sandweg	Q2+ 21111,2451 21123,2409 21185,2341
 (Adlergestell - Am Kanal): Asphalt mit einigen Schäden	Q1 21041,2259 21050,2267 20946,2397 20939,2413
-Werner-Loebermann-Weg: Asphalt	Q0 9268,8029 9267,8301 9293,8365 9292,8404
+Werner-Loebermann-Weg: Asphalt	Q0 9268,8029 9267,8301 9293,8365
+(Werner-Loebermann-Weg - Bayernring/Tempelhofer Damm): Asphalt	Q0 9293,8365 9292,8404
 Alexander-Meißner-Str.: Asphalt	Q0 19894,-835 20078,-1029 20361,-1325 20388,-1373 20397,-1396 20416,-1721
 Geraldweg: Asphalt	Q0 20909,8700 20834,8694 20677,8700 20555,8694
 Geraldweg: unbefestigter Weg	Q2+ 20555,8694 20553,8641

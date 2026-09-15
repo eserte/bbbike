@@ -4,7 +4,6 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
-Am Wriezener Bahnhof: Einfahrt verboten	q3::inwork; 12758,11915 12788,11898 12944,11760
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
 Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
@@ -26,6 +25,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung an der Dörpfeldstr.	q3::inwork 20592,3633 20449,3799
 Nipkowstr.: mögliche Bauarbeiten	q4::inwork 20352,3744 20499,3572
+Gartenstr. (Gesundbrunnen): Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 8570,15107 8663,14960
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -2836,6 +2836,7 @@ Rudolf-Schwarz-Str.: einige Fußgänger, Bordsteine	q3 13107,14318 13087,14332
 (Franckepark, Rosengarten): Fußgänger	q3 9365,6140 9391,6139 9395,6179 9373,6184
 Franckepark: Fußgänger	q2 9389,6348 9346,6352
 (Arendsweg - Landsberger Allee [Nebenfahrbahn]): Radfahren verboten	q4 17251,14525 17184,14526
+(Karl-Marx-Allee - Marchlewskistr.): Fußgänger, Bordstein	q4 12950,12340 12965,12341 12972,12361
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

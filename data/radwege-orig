@@ -1104,10 +1104,11 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauersperrung-uber-hunderte-meter-millionen-radstreifen-in-der-schonhauser-allee-in-berlin-kaum-nutzbar-15484732.html
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026) (bis 22.09.2026)
-#: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026)
+#: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026) (vorfristig inaktiv) (bis 27.09.2026)
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 #: last_checked: 2026-08-11 vvv
-#: next_check: 2026-11-30 (planb) vvv
+# REMOVED --- #: next_check: 2026-11-30 (planb) vvv
+#: next_check: 2026-09-27 (planb) vvv
 #: XXX nach den Bauarbeiten wiederherstellen: Radspur, niedrige Protektion	RW4;
 provisorische Radwegführung über Hochbord	RW2; 10925,15581 10917,15525
 provisorische Radwegführung über Hochbord	RW2; 10917,15525 10902,15422
@@ -8604,7 +8605,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", bis 22.10.2026)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-09-06
+#: last_checked: 2026-09-15
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -9198,7 +9199,8 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.entwicklungsstadt.de/kantstrasse-in-charlottenburg-rueckbau-der-radspur-rueckt-naeher/
 #: by: https://www.entwicklungsstadt.de/kantstrasse-in-charlottenburg-so-viel-kostet-der-radweg-rueckbau/ (Baubeginn September 2026)
 #: by: https://www.tagesspiegel.de/berlin/eilantrag-beim-verwaltungsgericht-umwelthilfe-will-ruckbau-des-kantstrassen-radwegs-stoppen-16028151.html
-#: by: https://www.berliner-zeitung.de/article/radweg-in-der-kantstrasse-soll-weg-jetzt-muss-das-gericht-entscheiden-10372029
+#: by: https://www.berliner-zeitung.de/article/radweg-in-der-kantstrasse-soll-weg-jetzt-muss-das-gericht-entscheiden-10372029 (bis Ende September 2026 keine Umbauarbeiten)
+#: by: https://www.entwicklungsstadt.de/kantstrasse-radweg-bleibt-vorerst-erhalten-gericht-prueft-rueckbau/
 #: source_id: LMS-BR:379465/72 viz2021:13.30931,52.50658,11.08.2025,07:00 viz2021:13.30931,52.50658, (Bauarbeiten Höhe Krumme Str., bis 28.11.2025) (inaktiv)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen

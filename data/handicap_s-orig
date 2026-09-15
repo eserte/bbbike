@@ -16,76 +16,43 @@
 #: valid: -20261015
 Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 # 
-# REMOVED --- #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_316063 (kein Endedatum)
-# REMOVED --- #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316065 (kein Endedatum)
-# REMOVED --- #: source_id: bvg2024:142#HIM_FREETEXT_317027 (kein Endedatum)
-# REMOVED --- #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_317071 (kein Endedatum)
-# REMOVED --- #: source_id[inactive]: bvg2024:200#HIM_FREETEXT_316425 (kein Endedatum)
-# REMOVED --- #: source_id: LMS-BR:397763/72 viz2021:13.42572,52.52825, viz2021:13.42496,52.52807, viz2021:13.424,52.528103, vizapi2026:392/2026 (kein Endedatum) (bis 20.04.2026) (bis 30.04.2026) (bis 28.05.2026) (bis 31.07.2026) (bis 07.08.2026) (bis 21.08.2026) (inaktiv) (bis 04.09.2026) (inaktiv) (bis 14.09.2026)
-# REMOVED --- #: source_id: LMS-BR:397816/72 viz2021:13.42389,52.52812, (kein Endedatum) (bis 30.04.2026) (inaktiv)
-# REMOVED --- #: source_id: planb2026:13.42324439,52.52777598,03.02.2026, ("Sperrung einer Fahrtrichtung", bis 31.07.2026) (inaktiv) (bis 14.09.2026)
-# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mdu4zxetts2l
-# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/greifswalder-strasse-stadtauswarts-rohrschaden/
-# REMOVED --- #: by: https://www.tagesspiegel.de/berlin/wasserrohrbruch-in-prenzlauer-berg-greifswalder-strasse-weiterhin-gesperrt--dauer-unklar-15205719.html
-# REMOVED --- #: by: https://www.morgenpost.de/bezirke/pankow/article411096985/ende-ungewiss-frust-und-chaos-nach-rohrbruch-in-prenzlauer-berg.html
-# REMOVED --- #: by: https://www.morgenpost.de/bezirke/pankow/article411086279/wasserrohrbruch-mit-folgen-greifswalder-strasse-stadtauswaerts-voll-gesperrt.html
-# REMOVED --- #: by: https://www.morgenpost.de/bezirke/pankow/article411357085/greifswalder-strasse-weitere-vollsperrung-ab-montag.html
-# REMOVED --- #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neue-sperrung-wegen-rohrbruch-baustelle-kreuzung-in-prenzlauer-berg-funf-tage-dicht-15316994.html
-# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,854720,854720#msg-854720
-# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau_viz/?date=20260429 (Umbau der Baustelle am 30.4.2026, danach fällt wohl der einspurige Abschnitt in der Otto-Braun/Greifswalder  weg...)
-# REMOVED --- #: note: außerdem erscheint mir die provisorische Ampelregelung mittlerweile noch ungünstiger für Radfahrer geschaltet als sie sonst schon ist...
-# REMOVED --- #: traffic_note: Kfz-Ausweichverkehr via Bötzowstraße - Hufelandstraße
-# REMOVED --- #: also_indoor: traffic (re-T,re-G)
-# REMOVED --- #: last_checked: 2026-09-11
-# REMOVED --- # REMOVED --- #: check_frequency: 8d
-# REMOVED --- #: next_check: 2026-09-14 (VIZ-Verkehrsmeldung + planb)
-# REMOVED --- #: valid: -20260914
-# REMOVED --- Am Friedrichshain: Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
-# REMOVED (nach den Bauarbeiten:) --- Am Friedrichshain: letzte Prüfung und ggfs. Dokumentation nach Wasserrohrbruch, Fahrbahn teilweise gesperrt, Gehwege sind für Radfahrer frei	?; 11706,13635 11762,13619 11785,13625
-# REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11762,13619 11785,13625
-# REMOVED --- #: note: Radfahrer dürfen hier auch die Fahrbahn benutzen, ist allerdings nur einspurig, ohne Überholverbotschilder
-# REMOVED (mittlerweile kommt man zumindest bis zur Kreuzung auf der Fahrbahn vorbei an den Absperrungen) --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11652,13564 11706,13635
-# REMOVED --- Otto-Braun-Str./Greifswalder Str.: Wasserrohrbruch, Verengung im Kreuzungsbereich, Gehwege sind für Radfahrer frei	q3::inwork; 11706,13635 11820,13804
-# REMOVED --- Am Friedrichshain: Wasserrohrbruch, Kreuzungsbereich gesperrt, Gehwege sind für Radfahrer frei	q3-::inwork; 11785,13625 11762,13619 11706,13635
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: AMWIEZENERBAHNHOF-2024
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
-#: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
-#: by: https://www.deutsches-architekturforum.de/thread/3986-bauprojekte-am-wriezener-bahnhof-friedrichshain/?postID=767122#post767122
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Grundstücksnummerierungen)
-#: by: https://edge.tech/de/buildings/edge-friedrichspark-berlin (Fertigstellung Q1 2026)
-#: by: https://edge.tech/portfolio/friedrichspark (Fertigstellung weiterhin Q1 2026)
-#: by: https://entwicklungsstadt.de/neubauprojekt-an-der-strasse-der-pariser-kommune-nach-abriss-des-plattenbaus-startet-das-bauvorhaben/
-#: by: https://entwicklungsstadt.de/buerokomplex-edge-friedrichspark-installation-der-fassade-beginnt/
-#: by: https://entwicklungsstadt.de/friedrichshain-kreuzberg-fuenf-stadtentwicklungsprojekte-im-ueberblick/
-#: by: https://entwicklungsstadt.de/edge-friedrichspark-markante-fassade-praegt-neuen-buerokomplex-in-friedrichshain/
-#: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-so-soll-der-neubau-in-friedrichshain-aussehen/
-#: by: https://www.entwicklungsstadt.de/baustellen-update-am-ostbahnhof-edge-friedrichspark-nimmt-gestalt-an/ (im Laufe des Jahres 2026 bezugsfertig)
-#: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-b-yard-baustelle-im-ueberblick/ ("B.YARD", Fertigstellung: Ende 2027/Anfang 2028)
-#: by: https://www.entwicklungsstadt.de/edge-friedrichspark-am-ostbahnhof-commerzbank-wird-ankermieter/
-#: by: https://www.entwicklungsstadt.de/b-yard-im-bau-60-wohnungen-und-kulturflaechen-entstehen-am-ostbahnhof/
-#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/90-millionen-projekt-in-berlin-riesiges-burogebaude-entsteht-am-ostbahnhof-15791460.html
-#: by: https://www.entwicklungsstadt.de/b-yard-in-friedrichshain-auf-der-baustelle-geht-es-jetzt-in-die-hoehe/
-#: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
-#: also_indoor: traffic (B)
-#: osm_watch: way id="1120450475" version="6"
-#: osm_watch: note 4180739 2
-#: source_id: planb2026:13.44213814,52.51076044,05.01.2026,06:00 ("Gehwegvollsperrung", Wriezener Karree, bis 30.07.2026) (inaktiv)
-#: source_id: planb2026:13.43879907,52.51156593,14.04.2026, ("Fahrstreifen-Verschwenkung", Straße der Pariser Kommune, bis 31.03.2028)
-#: source_id: planb2026:13.4389493,52.51163164,20.04.2026,06:00 ("Fahrstreifen-Verschwenkung", bis 31.03.2028)
-#: source_id: planb2026:13.4421069,52.5107065,24.08.2026,10:30 ("Fahrbahneinengung", bis 30.09.2026)
-#: last_checked: 2026-08-24 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2026-07-30 (planb) vvv
-#: next_check: 2028-03-31 (entwicklungsstadt, planb) vvv
-#: osm_watch: way id="1054783030" version="9"
-Am Wriezener Bahnhof: Einfahrt verboten	q3::inwork; 12758,11915 12788,11898 12944,11760
-# REMOVED (nicht mehr?) --- Am Wriezener Bahnhof: Dokumentation	? 12944,11760 12993,11717 12986,11699 12959,11631
-# REMOVED (nicht mehr?) --- #: osm_watch: way id="154381294" version="22" --- Wriezener Karree: Dokumentation	? 12959,11631 12728,11850
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (Einfahrt-verboten-Schild steht nicht mehr) --- #: next_check_id: AMWIEZENERBAHNHOF-2024
+# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
+# REMOVED --- #: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
+# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/3986-bauprojekte-am-wriezener-bahnhof-friedrichshain/?postID=767122#post767122
+# REMOVED --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Grundstücksnummerierungen)
+# REMOVED --- #: by: https://edge.tech/de/buildings/edge-friedrichspark-berlin (Fertigstellung Q1 2026)
+# REMOVED --- #: by: https://edge.tech/portfolio/friedrichspark (Fertigstellung weiterhin Q1 2026)
+# REMOVED --- #: by: https://entwicklungsstadt.de/neubauprojekt-an-der-strasse-der-pariser-kommune-nach-abriss-des-plattenbaus-startet-das-bauvorhaben/
+# REMOVED --- #: by: https://entwicklungsstadt.de/buerokomplex-edge-friedrichspark-installation-der-fassade-beginnt/
+# REMOVED --- #: by: https://entwicklungsstadt.de/friedrichshain-kreuzberg-fuenf-stadtentwicklungsprojekte-im-ueberblick/
+# REMOVED --- #: by: https://entwicklungsstadt.de/edge-friedrichspark-markante-fassade-praegt-neuen-buerokomplex-in-friedrichshain/
+# REMOVED --- #: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-so-soll-der-neubau-in-friedrichshain-aussehen/
+# REMOVED --- #: by: https://www.entwicklungsstadt.de/baustellen-update-am-ostbahnhof-edge-friedrichspark-nimmt-gestalt-an/ (im Laufe des Jahres 2026 bezugsfertig)
+# REMOVED --- #: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-b-yard-baustelle-im-ueberblick/ ("B.YARD", Fertigstellung: Ende 2027/Anfang 2028)
+# REMOVED --- #: by: https://www.entwicklungsstadt.de/edge-friedrichspark-am-ostbahnhof-commerzbank-wird-ankermieter/
+# REMOVED --- #: by: https://www.entwicklungsstadt.de/b-yard-im-bau-60-wohnungen-und-kulturflaechen-entstehen-am-ostbahnhof/
+# REMOVED --- #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/90-millionen-projekt-in-berlin-riesiges-burogebaude-entsteht-am-ostbahnhof-15791460.html
+# REMOVED --- #: by: https://www.entwicklungsstadt.de/b-yard-in-friedrichshain-auf-der-baustelle-geht-es-jetzt-in-die-hoehe/
+# REMOVED --- #: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
+# REMOVED --- #: also_indoor: traffic (B)
+# REMOVED --- #: osm_watch: way id="1120450475" version="6"
+# REMOVED --- #: osm_watch: note 4180739 2
+# REMOVED --- #: source_id: planb2026:13.44213814,52.51076044,05.01.2026,06:00 ("Gehwegvollsperrung", Wriezener Karree, bis 30.07.2026) (inaktiv)
+# REMOVED --- #: source_id: planb2026:13.43879907,52.51156593,14.04.2026, ("Fahrstreifen-Verschwenkung", Straße der Pariser Kommune, bis 31.03.2028)
+# REMOVED --- #: source_id: planb2026:13.4389493,52.51163164,20.04.2026,06:00 ("Fahrstreifen-Verschwenkung", bis 31.03.2028)
+# REMOVED --- #: source_id: planb2026:13.4421069,52.5107065,24.08.2026,10:30 ("Fahrbahneinengung", bis 30.09.2026)
+# REMOVED --- #: last_checked: 2026-08-24 vvv
+# REMOVED --- #: check_frequency: 30d vvv
+# REMOVED --- # REMOVED --- #: next_check: 2026-07-30 (planb) vvv
+# REMOVED --- #: next_check: 2028-03-31 (entwicklungsstadt, planb) vvv
+# REMOVED --- #: osm_watch: way id="1054783030" version="9"
+# REMOVED --- Am Wriezener Bahnhof: Einfahrt verboten	q3::inwork; 12758,11915 12788,11898 12944,11760
+# REMOVED --- # REMOVED (nicht mehr?) --- Am Wriezener Bahnhof: Dokumentation	? 12944,11760 12993,11717 12986,11699 12959,11631
+# REMOVED --- # REMOVED (nicht mehr?) --- #: osm_watch: way id="154381294" version="22" --- Wriezener Karree: Dokumentation	? 12959,11631 12728,11850
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED --- #: XXX Laut Halteverbotsschildern möglicherweise bis Ende November 2026 ("31.11.2026" (sic!))
 # REMOVED --- #: last_checked: 2026-05-16 (Fahrbahn wieder offen)
@@ -171,7 +138,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="35"
 #: osm_watch: way id="1072662717" version="39"
-#: last_checked: 2026-09-06
+#: last_checked: 2026-09-15
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -233,7 +200,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,1318
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-09-12 vvv
+#: last_checked: 2026-09-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (Tsp, planb) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -468,6 +435,19 @@ Nipkowstr.: mögliche Bauarbeiten	q4::inwork 20352,3744 20499,3572
 # 
 ### Wedding/Gesundbrunnen ###
 # 
+#: next_check_id: GARTEN-2026
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260911 (Arbeiten für eine Fußgängerzone (?), Sperrung für Kfz-Verkehr)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvg36bttsf2v
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibisq3tu5izlu3k4dgsnc7aapstmj6nngiz7c3a5dd5cva5nhf2ta (Gehwege für Radfahrer frei)
+#: also_indoor: traffic (G,T,H,W)
+#: source_id: planb2026:13.37940933,52.54020766,14.09.2026,00:01 ("Vollsperrung beider Fahrbahnen", bis 02.11.2026)
+#: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, vizapi2026:869/2026 (bis 04.09.2026) ("Herstellung einer Fußgängerzone", bei vizapi2026 weiterhin aktiv, bis 02.11.2026)
+#: source_id: LMS-BR:422254/72 viz2021:13.37944,52.54047,14.09.2026,04:00 (Sperrung, bis 02.11.2026)
+#: last_checked: 2026-09-15
+#: check_frequency: 45d
+#: next_check: 2026-11-02 (VIZ-Verkehrsmeldung + planb)
+Gartenstr. (Gesundbrunnen): Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 8570,15107 8663,14960
+# 
 # REMOVED (weitgehend offen) --- #: next_check_id: PEKINGERPLATZ-2025
 # REMOVED --- #: next_check_id: NORDUFER-2025
 # REMOVED --- #: note: laut Baustellenschild bis 01/2026
@@ -559,7 +539,7 @@ Rosa-Luxemburg-Platz: temporäres Volksbad auf der Fahrbahn	q4 10828,13464 10931,
 #: source_id: LMS-BR:420081/72 viz2021:13.3803,52.51893, vizapi2026:866/2026 (bis 18.09.2026) (kein Endedatum)
 #: note: Richtung Süden existiert auf der westlichen Straßenseite eine Radfahrerfurt, die allerdings auch für die Fahrtrichtung Nord genutzt wird
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin?
-#: last_checked: 2026-08-20
+#: last_checked: 2026-09-15
 #: next_check: 2026-09-18 (planb, ex-VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260918
 #: XXX valid auf spätes Datum gesetzt
@@ -577,7 +557,7 @@ Wilhelmstr.: Bauarbeiten, Engstelle	q2::inwork 8766,12541 8775,12457
 #: also_indoor: traffic (no-G,T[later],no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
 #: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026)
-#: last_checked: 2026-09-10
+#: last_checked: 2026-09-15 (traffic)
 #: check_frequency: 21d
 #: next_check: 2026-10-01 (planb)
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
@@ -702,7 +682,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
 #: source_id: planb2026:13.38375056,52.51772337,26.11.2017, ("Fahrstreifen-Reduzierung", bis 30.04.2028)
-#: last_checked: 2026-08-20 vvv
+#: last_checked: 2026-09-15 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -1148,8 +1128,8 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 # REMOVED (existiert nicht mehr) --- #: also_indoor: webcam https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg
 #: osm_watch[closed]: note 3913793 11
 #: osm_watch[closed]: note 4157644 3
-#: osm_watch: way id="1283287449" version="4"
-#: last_checked: 2026-08-08 (webcam)
+#: osm_watch: way id="1283287449" version="5"
+#: last_checked: 2026-09-14 (osm)
 #: check_frequency: 60d
 #: next_check: 2027-03-15 (caimmo website: Anfang 2027)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2::inwork 7995,13537 7963,13489
@@ -1175,8 +1155,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 ### Tiergarten ###
 # 
 #: source_id: planb2026:13.35816899,52.50101227,14.09.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 18.12.2026)
-#: source_id: vizapi2026:927/2026 (bis 18.12.2026)
-#: source_id: LMS-BR:422272/72 viz2021:13.35543,52.50171,14.09.2026,07:00 (bis 18.12.2026)
+#: source_id: LMS-BR:422272/72 viz2021:13.35543,52.50171,14.09.2026,07:00 vizapi2026:927/2026 (bis 18.12.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260911 (Leitungsarbeiten, bis Mitte Dez 2026 Sperrung für den Kfz-Verkehr Richtung Osten)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvhdhbjylp2n (bis Mitte Dez 2026)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiefcctrjnw357paidtjkftxmf4samejtdohdsh5tkpa63hqpx5avq (Gehweg für Radfahrer frei)
@@ -1402,7 +1381,7 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=9872 (Anfrage)
 #: by[nocache]: https://bvv-neukoelln.berlin.de/pi-r/___tmp/tmp/45081036/4TdO9jW0jy8P2moQ8I79JwwgqBs8wmiws9IKXye5/kNJOiul/01-Anlagen/02/1012MA_2063_Stubenrauchstrasse_halbeSperrung_v.pdf (Arbeiten in Höhe Kanalstr. bis Ende Oktober 2025?)
 #: source_id: LMS-BR:372744/72 viz2021:13.495371,52.43164, (Kanalstr., bis 30.06.2026) (bis 30.11.2025) (bis 23.12.2025) (bis 02.01.2026) (inaktiv) (bis 22.01.2026) (inaktiv)
-#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026) (bis 30.09.2026)
+#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026) (ab Kanalstr., bis 30.09.2026) (mittlerweile ab Neuköllner Str., bis 30.09.2026)
 #: source_id: planb2026:13.49473836,52.43124572,25.02.2025, ("Sperrung einer Fahrtrichtung", bis 30.09.2026)
 #: last_checked: 2026-08-02 vvv
 #: next_check: 2026-09-30 (planb + VIZ-Verkehrsmeldung) vvv
@@ -6186,6 +6165,9 @@ Rudolf-Schwarz-Str.: einige Fußgänger, Bordsteine	q3 13107,14318 13087,14332
 Franckepark: Fußgänger	q2 9389,6348 9346,6352
 # 
 (Arendsweg - Landsberger Allee [Nebenfahrbahn]): Radfahren verboten	q4 17251,14525 17184,14526
+# 
+#: XXX_prog: BS am Wendehammer, ansonsten q3
+(Karl-Marx-Allee - Marchlewskistr.): Fußgänger, Bordstein	q4 12950,12340 12965,12341 12972,12361
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

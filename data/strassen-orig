@@ -117,7 +117,8 @@ Manfred-von-Richthofen-Str.	N 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676 
 Paradestr.	N 9240,8028 9130,8029 9033,8029 8952,8030 8921,8028 8834,8023 8783,8020
 (Paradestr. - Flughafengelände)	N 9240,8028 9268,8029 9300,8027
 (Bayernring - Flughafengelände)	N 9238,8410 9292,8404
-Werner-Loebermann-Weg	N 9268,8029 9267,8301 9293,8365 9292,8404
+Werner-Loebermann-Weg	N 9268,8029 9267,8301 9293,8365
+(Werner-Loebermann-Weg - Bayernring/Tempelhofer Damm)	N 9293,8365 9292,8404
 Fritz-Bräuning-Promenade	NN 8731,8020 8623,8018
 Wolffring	N 9238,8253 9128,8251 9032,8254 8969,8278 8807,8353 8720,8373 8670,8370 8590,8344 8527,8293
 Schreiberring	N 8561,8252 8666,8305 8776,8285 8861,8242 8941,8186
@@ -12059,6 +12060,7 @@ Lasdehner Str.	N 13524,12271 13470,12190 13375,12062
 Am Comeniusplatz	N 13275,11830 13406,11896
 Graudenzer Str.	N 13243,12222 13470,12190
 (Karl-Marx-Allee - Hildegard-Jadamowitz-Str./Marchlewskistr.)	NN 12878,12430 12950,12340 12985,12303
+(Karl-Marx-Allee - Marchlewskistr.)	NN 12950,12340 12965,12341 12972,12361
 Marchlewskistr.	N 13541,11355 13496,11384 13473,11456 13366,11651 13295,11792 13275,11830 13217,11936 13097,12166 13086,12186 13019,12316 12997,12361 12972,12361
 (Marchlewskistr. - Gubener Str.)	N 13097,12166 13173,12202 13168,12219
 Helsingforser Str.	NN 13496,11384 13427,11431
@@ -21303,7 +21305,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: osm_watch: note 2562671 9
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025) (bis 31.08.2026) (inaktiv)
-#: source_id: LMS-BR:233438/72 viz2021:13.33801,52.51361,09.01.2025,11:20 viz2021:13.33801,52.51361, (bis 31.08.2026) (bis 31.12.2027)
+#: source_id: LMS-BR:233438/72 viz2021:13.33801,52.51361,09.01.2025,11:20 viz2021:13.33801,52.51361, (bis 31.08.2026) (bis 31.12.2027) (bei vizapi2026 vorfristig entfernt)
 #: last_checked: 2026-07-08
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
