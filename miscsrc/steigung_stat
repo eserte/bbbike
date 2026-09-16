@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2003,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2003,2019,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # XXX Steigungsberechnung suspendieren, wenn man auf eine Treppe stößt!
@@ -47,19 +46,16 @@ my $i = "hoehe";
 my $v = 0;
 my $commentscompatible = 0;
 my $gefaelle = 0;
-my $orig = 0;
 my $min_mount;
 my $sperre_file;
 my $tolerant;
 my $die_on_fatal;
 
-# -orig is obsolete!
 if (!GetOptions("i=s" => \$i,
 		'str=s@' => \@strfile,
 		"o=s" => \$o,
 		"commentscompatible!" => \$commentscompatible,
 		"gefaelle!" => \$gefaelle,
-		"orig!" => \$orig,
 		"minmount=f" => \$min_mount,
 		"sperre=s" => \$sperre_file,
 		"tolerant!" => \$tolerant,
@@ -67,7 +63,7 @@ if (!GetOptions("i=s" => \$i,
 		"v+" => \$v,
 	       )) {
     die "usage: $0 [-str strassen.bbd [-str ...]] [-i hoehe.bbd] [-sperre gesperrt.bbd] [-o output.bbd]
-                   [-[no]commentscompatible] [-[no]gefaelle] [-[no]orig] [-tolerant] [-die-on-fatal] [-v]
+                   [-[no]commentscompatible] [-[no]gefaelle] [-tolerant] [-die-on-fatal] [-v]
 
 Default for -str: $strfile_default
 Default for -i: $i
@@ -79,19 +75,6 @@ Default for -o: $o
 
 if (!@strfile) {
     push @strfile, $strfile_default;
-}
-
-if ($orig) {
-    warn "The -orig option is obsolete and probably not needed!\n";
-
-    # This is not correct, because "-orig" does not mean automatically
-    # "b1996". But it's ok, because there's only a non-orig rule in
-    # data/Makefile.
-    require Karte;
-    Karte::preload("Berlinmap1996", "Standard");
-    $Karte::Berlinmap1996::obj = $Karte::Berlinmap1996::obj; # peacify -w
-    $i = $i . "-orig";
-    @strfile = map { $_ . "-orig" } @strfile;
 }
 
 my %treppe;
@@ -123,13 +106,6 @@ print STDERR "make net steigung...\n" if ($v);
 $steigungsnetz->better_make_net_steigung
     ($netz, \%hoehe,
      (defined $min_mount ? (-min => $min_mount) : ()),
-     ($orig ? (-strecke => sub {
-		   my($p1, $p2) = @_;
-		   my($pp1,$pp2) =
-		       map { $Karte::Berlinmap1996::obj->map2standard_s($_) }
-			   ($p1, $p2);
-		   Strassen::Util::strecke_s($pp1, $pp2);
-	       }) : ()),
      ($v ? (-v => 1) : ()),
     );
 print STDERR "done\n" if ($v);
