@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.28;
+$VERSION = 2.29;
 
 use File::Glob qw(bsd_glob);
 
@@ -39,7 +39,7 @@ use your qw(%MultiMap::images $BBBikeLazy::mode
 	    $main::gps_waypoints $main::gps_waypointlength
 	    $main::gps_waypointcharset $main::gps_needuniqueroutenumber
 	    $main::zoom_loaded_route $main::center_loaded_route
-	    $Karte::Berlinmap1996::obj $Karte::Polar::obj
+	    $Karte::Polar::obj
 	    $Tk::Config::xlib
 	  );
 
@@ -733,8 +733,15 @@ EOF
 		 (
 		  layer_checkbutton([$do_compound->('hm96.bbd (Höhenpunkte)')],
 				    'p', "$bbbike_auxdir/data/senat_b/hm96.bbd",
-				    oncallback  => sub { $main::top->bind("<F12>"=> \&find_nearest_hoehe) },
-				    offcallback => sub { $main::top->bind("<F12>"=> '') },
+				    oncallback  => sub {
+					my($layer) = @_;
+					$hm_layer = $layer;
+					$main::top->bind("<F12>"=> \&find_nearest_hoehe);
+				    },
+				    offcallback => sub {
+					undef $hm_layer;
+					$main::top->bind("<F12>"=> '');
+				    },
 				   )
 		 ) : ()
 		),
@@ -1899,7 +1906,7 @@ sub find_nearest_hoehe {
 	main::status_message("Multiple points in selection!", "warn");
 	return;
     }
-    my $xy = $Karte::Berlinmap1996::obj->map2standard_s($inslauf_selection[0]);
+    my $xy = $inslauf_selection[0];
     my $nearest = $main::lazy_p{$hm_layer}->nearest_point($xy, FullReturn => 1);
     if (!$nearest) {
 	main::status_message("No nearest point found", "warn");
