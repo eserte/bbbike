@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2002,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2002,2024,2026 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package Karte;
@@ -335,7 +334,7 @@ In a script:
 
 From command line:
 
-    perl Karte.pm -from standard -to polar -- x,y
+    perl -I. Karte.pm -from standard -to polar -- x,y
 
 For a list of all possible maps use
 
