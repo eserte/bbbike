@@ -201,7 +201,7 @@ persistent-tmp:	fragezeichen-outdoor \
 		doit \
 		data-bbbgeojsonp \
 		data-geojson \
-		tampermonkey-urls
+		tampermonkey-files
 
 rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
@@ -1206,14 +1206,19 @@ ${PERSISTENTTMPDIR}/.check_data_test_mount:	${BBBIKEDIR}/t/data-test/strassen \
 	mv $@~ $@
 	-@$(READONLY) $@
 
-tampermonkey-urls: \
+tampermonkey-files: \
 		${PERSISTENTTMPDIR}/tampermonkey/newspaper_urls.json \
-		${PERSISTENTTMPDIR}/tampermonkey/bvv_urls.json
+		${PERSISTENTTMPDIR}/tampermonkey/bvv_urls.json \
+		${PERSISTENTTMPDIR}/tampermonkey/osm_note_watches.txt
 
 # XXX reuse ADDITIONAL_OSMWATCH_FILES here
 ${PERSISTENTTMPDIR}/tampermonkey/newspaper_urls.json ${PERSISTENTTMPDIR}/tampermonkey/bvv_urls.json: *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd ${ADDITIONAL_OSMWATCH_FILES}
 	@mkdir -p ${PERSISTENTTMPDIR}/tampermonkey
 	${PERL} ${MISCSRCDIR}/extract-tampermonkey-urls.pl --output-dir ${PERSISTENTTMPDIR}/tampermonkey
+
+${PERSISTENTTMPDIR}/tampermonkey/osm_note_watches.txt: ${PERSISTENTTMPDIR}/osm_watch_list
+	${PERL} -nle '/^note\s+(\d+)/ and print $$1' ${PERSISTENTTMPDIR}/osm_watch_list | sort > $@~
+	mv $@~ $@
 
 ######################################################################
 # BBBGEOJSONP TARGETS
