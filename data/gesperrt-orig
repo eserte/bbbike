@@ -2794,7 +2794,7 @@ Straße des 17. Juni: Mittelstreifen	3nocross 5758,11895 5810,11902 5900,11913
 Blankenfelder Chaussee: Mittelstreifen	3nocross 9251,23578 9307,23456 9528,23240
 Blankenfelder Chaussee: Mittelstreifen	3nocross 9307,23456 9528,23240 9747,22694
 Blankenfelder Chaussee: Mittelstreifen	3nocross 9528,23240 9747,22694 9973,22133
-Blockdammweg: Straßenbahnhaltestelle	3nocross 17736,8850 17720,8854 17702,8855 17380,8858
+Blockdammweg: Straßenbahnhaltestelle	3nocross 17736,8850 17720,8854 17702,8855 17632,8856 17380,8858
 Attilastr.: Geländer am Gehweg	3nocross 7628,4521 7667,4549 7690,4563
 Paul-Schneider-Str.: unbequemes Überqueren	3nocross 6613,3320 6647,3292 6712,3237
 Puschkinallee: unbequemes Passieren (Bordsteine, starker Verkehr, kaum Lücken)	3nocross 15383,9191 15407,9151 15440,9098
@@ -4159,7 +4159,7 @@ Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
 # 
 #: next_check_id: FANGSCHLEUSE-2026
-#: last_checked: 2026-08-23 (youtube)
+#: last_checked: 2026-09-12 (youtube)
 #: check_frequency: 120d
 ehem. Bahnübergang Fangschleuse	2::inwork 39261,159 39259,574 39259,612
 # 
@@ -4268,6 +4268,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119 22860,-5130
 # 
 #: source_id: LMS-BR:410555/72 viz2021:13.37994,52.52093, (bis 21.12.2028)
+#: osm_watch: note 2514010 15
 #: XXX Es gibt zwar eine offizielle Umleitungsstrecke auch für Radfahrer zur Margarete-Steffin-Str., aber diese führt über eine Wiese (!)
 #: last_checked: 2026-09-15
 #: check_frequency: 120d
@@ -4590,7 +4591,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="5"
 #: osm_watch: way id="867830687" version="8"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-09-13 (osm)
+#: last_checked: 2026-09-16
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Frühjahr 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4662,7 +4663,7 @@ Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11
 #: osm_watch[closed]: note 4165928 1
 #: source_id: planb2026:13.50265147,52.50227465,11.05.2026, ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 #: last_checked: 2026-07-26
-#: check_frequency: 60d
+#: check_frequency: 75d
 #: next_check: 2026-12-31 (planb)
 Delbrückstr.: Baustellenfläche, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
 # 
@@ -4850,7 +4851,7 @@ Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren n
 #: osm_watch: way id="20420585" version="37"
 #: source_id: planb2026:13.53894732,52.48609659,31.12.2024,07:00 ("Gehwegvollsperrung", gehört zum Komplex Gartenstadt Karlshorst, bis 31.12.2026) (vermutlich ersetzt, vorfristig inaktiv)
 #: source_id: planb2026:13.53894732,52.48609659,22.03.2022,07:00 ("Gehwegvollsperrung", gehört zum Komplex Gartenstadt Karlshorst, bis 31.12.2027)
-#: last_checked: 2026-05-31
+#: last_checked: 2026-09-16
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (planb)
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
@@ -4951,7 +4952,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-09-09
+#: last_checked: 2026-09-16
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4959,7 +4960,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-09-09 vvv
+#: last_checked: 2026-09-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677

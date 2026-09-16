@@ -7485,7 +7485,6 @@ Am Kiessee (Waltersdorf): Fahrbahn und Radweg (wo existent) asphaltiert	Q0; 2112
 #: by: osm vvv
 Falkenrehder Weg: unbefestiger Weg	Q2 -21549,7024 -21819,7107 -22052,7450
 Falkenrehder Weg: unbefestiger Weg	Q3 -22052,7450 -22025,7752 -22149,8275
-Ernst-Thälmann-Str. (Gottesbrück): Asphalt	Q0 37884,1615 37690,1546
 Gottesbrück: Asphalt	Q0 37718,1728 37714,1582 37690,1546
 Gottesbrück: Kopfsteinpflaster	Q2 37690,1546 37623,1484
 #: by: mapillary
@@ -8631,10 +8630,11 @@ PCK - Heinersdorf: Beton	Q1+ 64653,77310 64611,77283
 Großer Ring (Schönwalde): Asphalt	Q0 -7831,20753 -7851,20667 -7853,20554 -7769,20448 -7622,20434 -7514,20454 -7412,20502 -7330,20594 -7287,20683 -7323,20774 -7412,20859 -7437,20952
 #: by: youtube, mapillary:
 Gottesbrück - Bhf. Fangschleuse: Asphalt	Q0 37542,1395 37099,873 37121,796
+#: next_check_id: FANGSCHLEUSE-2026
 #: by: mapillary:
 #: XXX provisorische Wegführung
 #: osm_watch: way id="1550468241" version="6"
-#: last_checked: 2026-08-17 (mapillary)
+#: last_checked: 2026-09-12 (youtube)
 Gottesbrück - Bhf. Fangschleuse: unbefestigt	Q2 37121,796 37069,765 37140,749
 #: by: mapillary
 Bahnhof Fangschleuse: Betonpflaster	Q0 37192,569 37136,668 37140,749
@@ -9865,6 +9865,7 @@ Marwitzer Str.: Asphalt	Q2+ -10417,17770 -10344,17792 -10239,17791 -10114,17740
 #: by ^^^
 # 
 #: by: mapillary vvv
+Ernst-Thälmann-Str. (Gottesbrück): Asphalt mit Schäden	Q1 37884,1615 37690,1546
 B97 - Cottbus/Kahren: Asphalt	Q0 83902,-74121 83830,-74122 83830,-73983 83464,-73977 82330,-73950 82236,-74014 82202,-74099 82246,-74208 82132,-74242 82126,-74164 82037,-73969 81942,-73906 81156,-73717 81126,-73737 81112,-73844 81126,-73879 81121,-73912 81077,-73910
 (Stern-Center): Verbundsteinpflaster	Q1 -7749,-4297 -7811,-4239 -7814,-4120 -7724,-4114
 (Bellavitestr. - Slatan-Dudow-Str./Wolfgang-Staudte-Str.): Verbundsteinpflaster	Q1 -7399,-4814 -7388,-4800 -7381,-4790 -7353,-4785

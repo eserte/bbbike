@@ -92,12 +92,12 @@ Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_347631
 #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_347630
 #: source_id: bvg2024:194#HIM_FREETEXT_348289 (zwischenzeitlich 2x entfernt)
-#: source_id: LMS-BR:415149/72 viz2021:13.4754,52.50199, (bis 16.12.2026)
+#: source_id: LMS-BR:415149/72 viz2021:13.4754,52.50199, vizapi2026:687/2026 (bis 16.12.2026)
 #: source_id: planb2026:13.47841638,52.50180555,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.47959962,52.50191162,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026)
 #: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
 #: note: Länge der Gegenverkehrsregelung: 150m
-#: last_checked: 2026-09-05
+#: last_checked: 2026-09-16
 #: next_check: 2026-12-16 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20261216
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
@@ -115,8 +115,8 @@ Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv)
 #: also_indoor: traffic (re-G,T)
-#: last_checked: 2026-09-15 (traffic)
-#: check_frequency: 3d (traffic)
+#: last_checked: 2026-09-16 (traffic)
+#: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-09-11
 # REMOVED --- #: valid: -20260911
 #: XXX prolonged for a month
@@ -325,7 +325,7 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: also_indoor: traffic (ex-T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
-#: last_checked: 2026-09-01 (traffic)
+#: last_checked: 2026-09-15 (traffic)
 #: check_frequency: 30d (traffic)
 #: next_check: 2026-10-22 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261022
@@ -620,7 +620,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-09-09
+#: last_checked: 2026-09-16
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -4228,7 +4228,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-09-06 (mapillary) vvv
+#: last_checked: 2026-09-08 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 4

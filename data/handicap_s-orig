@@ -75,11 +75,18 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: also_indoor: traffic (B,T)
 #: note: Halteverbotsschilder bis 30.06.2025, Hochbauarbeiten, mittlerweile bis 30.06.2026
 #: source_id: planb2026:13.46470153,52.51022419,02.12.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026) (vorfristig inaktiv) (bis 30.09.2026)
-#: last_checked: 2026-09-13
+#: last_checked: 2026-09-16
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2026-09-30 (planb)
-# REMOVED --- #: valid: -20250630
+#: valid: -20250930
 Gryphiusstr.: Fahrbahn an der Boxhagener Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q4::inwork 14513,11657 14550,11732
+# 
+#: source_id: planb2026:13.46536305,52.51083147,06.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026)
+#: last_checked: 2026-09-16
+#: check_frequency: 21d
+#: next_check: 2026-10-16 (planb)
+#: valid: -20261016
+Jungstr.: Abschnitt der Fahrbahn ab der Weserstr. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 14550,11732 14626,11869
 # 
 # REMOVED --- #: next_check_id: TRAM21-2025
 # REMOVED --- #: source_id: viz2021:13.463751,52.510709,22.11.2025,08:00 (bis 14.12.2025)
@@ -158,7 +165,7 @@ Singerstr.: kurze Sperrung am Franz-Mehring-Platz	q3::inwork 12691,12042 12532,1
 #: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026) (bis 13.11.2026)
 #: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
-#: last_checked: 2026-09-11
+#: last_checked: 2026-09-15
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-11-13 (planb)
 #: valid: -20261113
@@ -344,7 +351,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 # 
 ### Treptow ###
 # 
-#: source_id: planb2026:13.45361302,52.4854625,06.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.06.2028) (vorfristig inaktiv)
+#: source_id: planb2026:13.45361302,52.4854625,06.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.06.2028) (vorfristig inaktiv) (bis 30.06.2028)x
 #: source_id: planb2026:13.45606815,52.48428848,02.06.2025, ("Fahrbahneinengung", bis 30.04.2027)
 #: note: Länge der Einbahnstraßenregelung etwa 150m
 #: last_checked: 2026-09-12
@@ -409,11 +416,12 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: add_fragezeichen: Bestehen die Sperrungen weiterhin? vvv
 #: next_check: 2026-09-25 (planb) vvv
 #: valid: -20261130 vvv
-#: also_indoor: traffic (no-G,no-T,no-H,no-W)
+#: also_indoor: traffic (G,T,no-H,no-W)
 # REMOVED (mittlerweile wohl eine Sperrung, keine Einbahnstraße mehr) --- Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4::inwork; 20592,3633 20449,3799
-#: last_checked: 2026-09-11 (mapillary)
+#: last_checked: 2026-09-16 (traffic)
 Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung an der Dörpfeldstr.	q3::inwork 20592,3633 20449,3799
 #: also_indoor: traffic (G,T,H,no-W)
+#: last_checked: 2026-09-16 (traffic)
 Nipkowstr.: mögliche Bauarbeiten	q4::inwork 20352,3744 20499,3572
 #: valid ^^^
 #: next_check ^^^
@@ -541,9 +549,8 @@ Rosa-Luxemburg-Platz: temporäres Volksbad auf der Fahrbahn	q4 10828,13464 10931,
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin?
 #: last_checked: 2026-09-15
 #: next_check: 2026-09-18 (planb, ex-VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20260918
-#: XXX valid auf spätes Datum gesetzt
-#: valid: -20261231
+#: valid: -20260918
+# REMOVED --- #: XXX valid auf spätes Datum gesetzt --- #: valid: -20261231
 Wilhelmstr.: Bauarbeiten, Engstelle	q2::inwork 8766,12541 8775,12457
 # 
 # REMOVED (vorfristig frei) --- #: source_id: planb2026:13.39770515,52.51708189,13.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 15.08.2026)
@@ -709,6 +716,7 @@ Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9
 #: by: https://www.entwicklungsstadt.de/vom-forschungsstandort-zur-hochschule-robert-koch-forum-auf-dem-weg-zur-neuen-nutzung/ (Abschluss 2027)
 #: osm_watch: way id="153698413" version="23"
 #: last_checked: 2026-09-01 (osm)
+#: check_frequency: 60d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
@@ -900,7 +908,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 ### Karlshorst ###
 # 
 # REMOVED (fertig asphaltiert) --- #: next_check_id: BLOCKDAMMWEGAMPEL-2025 --- #: historical_note: zeitweise q3-, dann q2, dann wegen der Umwege wieder q3- --- #: last_checked: 2025-10-19--- #: check_frequency: 30d --- Hönower Wiesenweg: Bauarbeiten, Fahrbahn gesperrt, Engstelle, Umwege	q3-::inwork 17380,8858 17416,8767
-# REMOVED --- #: XXX Blockdammweg (Karlshorst) Richtung Treskowallee zwischen Hönower Wiesenweg und Ehrlichstraße: Leitungsbauarbeiten, Fahrtrichtung für Kfz-Verkehr gesperrt, vom 29.07.2024 10:00 bis 20.10.2024 17:00 --- #: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024) (bis 22.11.2024) (bis 30.11.2024) (bis 13.12.2024) (inaktiv) --- #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_232184 (bis auf weiteres) (inaktiv, aber Sperrung dürfte weiterhin bestehen) (wieder aktiv) --- #: last_checked: 2024-12-13 --- #: next_check: 2024-12-13 --- # REMOVED --- #: valid: -20241122 --- Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17702,8855 17720,8854 17736,8850
+# REMOVED --- #: XXX Blockdammweg (Karlshorst) Richtung Treskowallee zwischen Hönower Wiesenweg und Ehrlichstraße: Leitungsbauarbeiten, Fahrtrichtung für Kfz-Verkehr gesperrt, vom 29.07.2024 10:00 bis 20.10.2024 17:00 --- #: source_id: viz2021:13.508587,52.484281,29.07.2024,10:00 (bis 20.10.2024) (bis 22.11.2024) (bis 30.11.2024) (bis 13.12.2024) (inaktiv) --- #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_232184 (bis auf weiteres) (inaktiv, aber Sperrung dürfte weiterhin bestehen) (wieder aktiv) --- #: last_checked: 2024-12-13 --- #: next_check: 2024-12-13 --- # REMOVED --- #: valid: -20241122 --- Blockdammweg: Fahrbahn gesperrt, schmaler Gehweg für Radfahrer frei	q2; 17380,8858 17632,8856 17702,8855 17720,8854 17736,8850
 # 
 # REMOVED (weitgehend freigegeben; Überquerung der Treskowallee über Fußgängerfurt)
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2023
@@ -1445,7 +1453,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-09-09
+#: last_checked: 2026-09-16
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1511,7 +1519,7 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # 
 #: also_indoor: traffic (G,T,no-H,no-W)
 #: source_id: planb2026:-
-#: last_checked: 2026-09-07
+#: last_checked: 2026-09-15 (traffic)
 #: check_frequency: 21d (traffic)
 Nollendorfstr.: Bauarbeiten, Sperrung der Fahrbahn an der Einmündung Eisenacher Str.	q3::inwork 6739,10120 7055,10220
 # 
@@ -1589,7 +1597,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6132,7893 6131,7916 6011,7911 5
 #: priority: #C
 # REMOVED (nein, hier ist sogar eine explizite Radfahrfurt vorhanden) --- Schivelbeiner Str.: Wasserrohrbruch, sind Radfahrer tatsächlich nicht betroffen?	? 10291,16193 10421,16175 10591,16159
 #: last_checked: 2026-09-11
-#: next_check: 2026-09-18
+#: next_check: 2026-09-18 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20260918
 Driesener Str.: Anbindung Schivelbeiner Str. gesperrt	q3::inwork 10438,16340 10421,16175
 # 

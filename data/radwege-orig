@@ -1104,7 +1104,7 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauersperrung-uber-hunderte-meter-millionen-radstreifen-in-der-schonhauser-allee-in-berlin-kaum-nutzbar-15484732.html
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026) (bis 22.09.2026)
-#: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026) (vorfristig inaktiv) (bis 27.09.2026)
+#: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026) (vorfristig inaktiv) (bis 27.09.2026) (vorfristig inaktiv)
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 #: last_checked: 2026-08-11 vvv
 # REMOVED --- #: next_check: 2026-11-30 (planb) vvv
@@ -1991,12 +1991,12 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: by: https://www.entwicklungsstadt.de/estrel-hochhaus-baustelle/
 #: by: https://www.entwicklungsstadt.de/neukoellner-hotelhochhaus-endphase-der-fassadenarbeiten-am-estrel-tower/
 #: by: https://www.estreltower.com/webcam (alternative Webcam-URL)
-#: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 (bis 31.03.2026) (bis 31.07.2026) (bis 30.11.2026)
+#: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 vizapi2026:83/2026 (bis 31.03.2026) (bis 31.07.2026) (bis 30.11.2026)
 #: source_id: planb2026:13.4587988,52.4724106,01.10.2025,07:00 ("Fahrstreifen-Reduzierung", bis 30.11.2026)
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren -> mittlerweile ist der Bürgersteig + Radweg wieder offen, wird noch die Busspur kommen?
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-09-12 (webcam)
+#: last_checked: 2026-09-15 (webcam)
 #: check_frequency: 21d
 #: next_check: 2026-11-30 (VIZ-Verkehrsmeldung)
 	RW1; 14174,7505 14305,7415
@@ -2546,7 +2546,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: by: https://www.entwicklungsstadt.de/dauersperrung-richtung-ostkreuz-warum-hier-seit-2018-nichts-passiert/
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-09-09 vvv
+#: last_checked: 2026-09-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -3449,7 +3449,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-09-09
+#: last_checked: 2026-09-16
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3460,7 +3460,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-09-09
+#: last_checked: 2026-09-16
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -4473,8 +4473,8 @@ Busspur ist immer gültig	RW5; 3710,13290 3711,13210
 	RW6;RW6 6201,2125 6159,2176
 	RW1; 17067,8725 17126,8750
 	RW3; 17126,8750 17380,8858
-die letzten Meter sind benutzungspflichtig	RW3; 17380,8858 17702,8855 17720,8854 17736,8850
-die ersten 80 Meter sind nicht benutzungspflichtig	RW4; 17736,8850 17720,8854 17702,8855 17380,8858
+die letzten Meter sind benutzungspflichtig	RW3; 17380,8858 17632,8856 17702,8855 17720,8854 17736,8850
+die ersten 80 Meter sind nicht benutzungspflichtig	RW4; 17736,8850 17720,8854 17702,8855 17632,8856 17380,8858
 	RW4; 17380,8858 17126,8750
 	RW1; 17126,8750 17067,8725
 	RW2; 18615,8269 18672,8238
@@ -6730,7 +6730,7 @@ Radweg nur aufgemalt	RW1;RW1 1570,1753 1476,1730 1355,1701 1249,1672 1198,1662 1
 #: confirmed_by: srt
 	RW6;RW6 10578,1840 10968,1753 11031,1739 11136,1782
 	RW3; 21889,16817 21925,16981 21962,17152 21970,17284 21913,17376 21797,17418 21719,17427
-	RW4;RW4 21719,17427 21539,17442 21284,17454 21066,17503
+	RW4;RW4 21719,17427 21539,17442 21284,17454 21140,17486 21066,17503
 	RW4; 21066,17503 20915,17584 20769,17650
 	RW4; 20769,17650 20905,17567 21066,17503
 	RW4;RW4 20769,17650 20728,17670 20488,17793
@@ -7341,7 +7341,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-08-20 vvv
+#: last_checked: 2026-09-08 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -9201,6 +9201,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/eilantrag-beim-verwaltungsgericht-umwelthilfe-will-ruckbau-des-kantstrassen-radwegs-stoppen-16028151.html
 #: by: https://www.berliner-zeitung.de/article/radweg-in-der-kantstrasse-soll-weg-jetzt-muss-das-gericht-entscheiden-10372029 (bis Ende September 2026 keine Umbauarbeiten)
 #: by: https://www.entwicklungsstadt.de/kantstrasse-radweg-bleibt-vorerst-erhalten-gericht-prueft-rueckbau/
+#: by: https://www.tagesspiegel.de/berlin/senat-verzichtet-auf-ruckbau-im-september-radweg-an-der-berliner-kantstrasse-bleibt-vorerst-erhalten-16054105.html
 #: source_id: LMS-BR:379465/72 viz2021:13.30931,52.50658,11.08.2025,07:00 viz2021:13.30931,52.50658, (Bauarbeiten Höhe Krumme Str., bis 28.11.2025) (inaktiv)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
