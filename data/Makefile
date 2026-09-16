@@ -102,7 +102,7 @@ FILES_WITH_URLS=	comments_route-orig comments_ferry-orig comments_misc-orig
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
 BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//:S/^oldnames$//}
-BBBGEOJSONP_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdoor-nextcheck.bbd fragezeichen-outdoor.bbd
+BBBGEOJSONP_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdoor-nextcheck.bbd fragezeichen-outdoor.bbd veloflow.bbd
 BBBGEOJSONP_WEBCAMS_SOURCES=	webcams.bbd
 BBBGEOJSONP_TARGETS=	${BBBGEOJSONPDIR}/bbbike-temp-blockings-optimized.bbbgeojsonp \
 			${BBD_TARGETS:S/$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//} \
@@ -1192,6 +1192,10 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck-middlepoint.bbd: ${PERSISTENT
 ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd:	fragezeichen ${DATADIR}/strassen ${DATADIR}/landstrassen ${DATADIR}/landstrassen2
 	${PERL} $(MISCRSRCDIR)/match_bbd_data -incatrx . -v fragezeichen ${DATADIR}/strassen ${DATADIR}/landstrassen ${DATADIR}/landstrassen2 > /tmp/fragezeichen-matches.bbd
 	mv /tmp/fragezeichen-matches.bbd ${PERSISTENTTMPDIR}/fragezeichen-matches.bbd
+
+${PERSISTENTTMPDIR}/veloflow.bbd:	${DATADIR}/comments_misc-orig
+	${GREPSTRASSEN} -section VeloFlow ${DATADIR}/comments_misc-orig > $@~
+	mv $@~ $@
 
 ${PERSISTENTTMPDIR}/osm_watch_list:		*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd ${ADDITIONAL_OSMWATCH_FILES}
 	-@$(WRITEABLE) $@
