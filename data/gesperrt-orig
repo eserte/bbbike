@@ -126,7 +126,7 @@ Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX Einbahnstraﬂenregelung tempor‰r aufgehoben
-#: last_checked: 2026-08-02
+#: last_checked: 2026-09-17
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-08-24 (VIZ-Verkehrsmeldung zur Kirchstr.)
 #: next_check: 2027-02-03 (planb)
@@ -1067,7 +1067,7 @@ Lindenstr. (Straﬂenbahntrasse)	1s:q3::igndisp 21605,5687 21623,5661 21706,5541 2
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: source_id: LMS-BR:263717/72 viz2021:13.56657,52.45535, (bis 31.12.2027)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2026-08-09 vvv
+#: last_checked: 2026-09-17 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbr¸cke: ‹bergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -4584,6 +4584,7 @@ Bitterfelder Br¸cke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 # 
 #: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Fr¸hjahr 2026)
 #: by: https://www.entwicklungsstadt.de/ostkreuz-im-umbau-neuer-vorplatz-richtung-victoriakiez/
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26924.pdf (Nordostplatz ist im Herbst 2026 fertig)
 #: XXX Laut Aushang wird der Zugang erst im Fr¸hjahr 2026 mˆglich sein
 #: note: der Fuﬂg‰ngerschutztunnel ist bereits abgebaut worden
 #: source_id: LMS-BR:402145/72 viz2021:13.47353,52.50308,18.03.2026,07:00 (Verengung in der benachbarten Marktstr., bis 29.05.2026) (inaktiv)
@@ -4591,9 +4592,9 @@ Bitterfelder Br¸cke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="5"
 #: osm_watch: way id="867830687" version="8"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-09-16
+#: last_checked: 2026-09-17
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-05-29 (VIZ-Verkehrsmeldung; ungenauer: entwicklungsstadt, Aushang: Fr¸hjahr 2026)
+#: next_check: 2026-11-30 (pardok: Herbst 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorpl‰tzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
 # 
 # REMOVED (mittlerweile (oder schon immer): man kommt an der Baustelle vorbei, etwas verwinkelt, aber lohnt nicht, tempor‰r eine Degradierung q2->q3 vorzunehmen) --- #: priority: #B --- #: last_checked: 2025-04-30 --- #: next_check: 2025-07-31 (Halteverbotsschilder) --- Gounodstr.: Durchfahrt vor der Picasso-Grundschule wegen Bauarbeiten gesperrt	2::inwork 14251,15828 14366,15877
@@ -4952,7 +4953,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-09-16
+#: last_checked: 2026-09-17
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -4960,7 +4961,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon H‰user mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straﬂen offen? vvv
-#: last_checked: 2026-09-16 vvv
+#: last_checked: 2026-09-17 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5126,7 +5127,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026) (inaktiv)
 #: source_id: planb2026:13.48630282,52.4933522,09.07.2025, ("Sicherung gem‰ﬂ Vz.-plan" (rund um die Baustelle), bis 31.12.2026)
-#: last_checked: 2026-09-09
+#: last_checked: 2026-09-17
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (Pressemitteilung SenSBW, planb)
 # REMOVED --- #: next_check: 2027-06-30

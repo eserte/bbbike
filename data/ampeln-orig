@@ -6,6 +6,11 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: ERKNERFRIEDRICH-2026
+#: last_checked: 2026-09-17
+#: next_check: 2027-05-31
+Erkner	X::inwork 34742,2111
+# 
 # REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mue3w6t4dw2u
 # REMOVED --- #: source_id: LMS-BR:420745/72 viz2021:13.4212,52.5098,31.08.2026,07:00 vizapi2026:895/2026 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv)
 # REMOVED --- #: note: Gegenverkehrsabschnitt ca. 60m
@@ -45,13 +50,14 @@ Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # REMOVED --- Straße der Pariser Kommune: vermutete (Hoch?)Bauarbeiten, evtl. mit (Teil)Sperrung der Straße?	? 12822,12067 12833,12154 12854,12287
 # 
-# REMOVED --- #: next_check_id: EWEST-2026
-# REMOVED --- #: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (vorfristig inaktiv)
-# REMOVED --- #: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026) (inaktiv)
-# REMOVED --- #: also_indoor: traffic (ex-H)
-# REMOVED --- #: next_check: 2026-09-09 (Here)
-# REMOVED --- #: valid: -20260909
-# REMOVED --- Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
+#: next_check_id: EWEST-2026
+#: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (vorfristig inaktiv) (bis 02.10.2026)
+#: source_id: planb2026:13.43573837,52.59336128,01.10.2026, ("Gegenverkehrsanlage (LZA)", 01.10.2026 bis 02.11.2026)
+#: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026) (inaktiv)
+#: also_indoor: traffic (ex-H)
+#: next_check: 2026-11-02 (planb)
+#: valid: -20261102
+Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 # 
 #: source_id: LMS-BR:412099/72 viz2021:13.22465,52.58966,16.06.2026,09:00 (bis 18.09.2026)
 #: next_check: 2026-09-18
@@ -97,7 +103,7 @@ Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 #: source_id: planb2026:13.47959962,52.50191162,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026)
 #: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
 #: note: Länge der Gegenverkehrsregelung: 150m
-#: last_checked: 2026-09-16
+#: last_checked: 2026-09-17
 #: next_check: 2026-12-16 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20261216
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
@@ -115,12 +121,12 @@ Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv)
 #: also_indoor: traffic (re-G,T)
-#: last_checked: 2026-09-16 (traffic)
-#: check_frequency: 4d (traffic)
+#: last_checked: 2026-09-15 (mapillary)
+#: check_frequency: 30d (traffic)
 # REMOVED --- #: next_check: 2026-09-11
 # REMOVED --- #: valid: -20260911
-#: XXX prolonged for a month
-#: valid: -20261011
+#: XXX prolonged until end of year
+#: valid: -20261231
 Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,18585
 # 
 #: next_check_id: WOLLANK-2024
@@ -176,11 +182,13 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # 
 #: next_check_id: ALTEFOERSTEREI-2026
-#: last_checked: 2026-08-09 vvv
-# REMOVED --- #: next_check: 2026-08-06 (VIZ-Verkehrsmeldung) vvv
+#: last_checked: 2026-09-17 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2028-06-30 (planb) vvv
 (Übergang Höhe Haupteingang Stadion an der Alten Försterei)	F::inwork 21519,5767
 (Übergang Höhe Haupteingang Stadion an der Alten Försterei)	F::inwork 21522,5771
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: also_indoor: webcam https://0507e26k59.bautvplus.de/
@@ -253,9 +261,10 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 #: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026) (inaktiv)
 #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
 #: source_id: vizapi2026:629/2026 (bis 28.10.2026)
+#: source_id: planb2026:13.38013957,52.51948663,03.07.2025, ("Gegenverkehrsanlage (LZA)", bis 28.10.2026)
 #: last_checked: 2026-09-15
 #: check_frequency: 120d
-#: next_check: 2026-10-28 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-10-28 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261028
 Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12647
 # 
@@ -312,7 +321,7 @@ Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage, kann ausgeschaltet sei
 # REMOVED --- Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
 # 
 #: next_check_id: ALTSTADTKOEPENICK-2024
-#: last_checked: 2026-06-17
+#: last_checked: 2026-09-17
 #: check_frequency: 180d
 #: next_check: 2027-05-09 (Ausschreibungsunterlagen)
 Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
@@ -4544,7 +4553,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	F0 7533,14702
 #: note: Anforderungsampel
 #: XXX temporär
-#: osm_watch: node id="3779924761" version="9"
+#: osm_watch: node id="3779924761" version="11"
 #: osm_watch: note 5445919 3
 #: last_checked: 2026-08-26
 #: next_check: 2027-06-04 (planb + VIZ-Verkehrsmeldung)
@@ -5288,6 +5297,7 @@ Ziegelgrabenklappbrücke, geschlossen 5x täglich für ca. 20 Minuten	Zbr -13517,21
 #: note: ^^^
 geschlossen bei Bedarf	Zbr 27649,-11766
 	B 34385,2609
+	B 34965,1573
 # REMOVED ---	B 12755,-12554
 # REMOVED ---	B 11601,-7560
 # REMOVED ---	B 11875,-8728
@@ -5689,7 +5699,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 19909,-2863
 #: next_check_id: BER-20XX vvv
 #: XXX: Ampel noch ausgeschaltet --- oder ist es eine "Dunkelampel"? vvv
-#: last_checked: 2026-01-27 (mapillary)
+#: last_checked: 2026-09-11 (mapillary)
 #: check_frequency: 90d
 	F0 18517,-4502
 #: osm_watch: node id="1736933178" version="6"
@@ -5714,6 +5724,8 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	B 62281,15513
 	X 34359,2165
 	X 36334,2466
+#: XXX_prog nicht relevant für den Radverkehr zwischen Erkner und Grünheide
+	X 36719,2420
 #: note: Anforderungsampel
 	F 38512,2600
 #: note: Anforderungsampel

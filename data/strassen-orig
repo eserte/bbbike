@@ -10814,7 +10814,7 @@ Hauffallee	NN 13903,18979 13964,18985 14020,19033 14059,19079 14094,19134 14126,
 (Am Goldmannpark - Fürstenwalder Damm)	NN 26282,5830 26294,5923
 Fürstenwalder Damm	NN 26294,5923 26424,5924
 Fürstenwalder Damm	H 23402,5483 23492,5488 23519,5490 23590,5487 23657,5467 23724,5437 23818,5394 23849,5380 23942,5338 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633 24871,5699 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958 26080,5946 26424,5924 26578,5914 26688,5903 26890,5858 27068,5723 27205,5598 28176,5167 28376,5079 29089,4759 29653,4490 29714,4461
-Müggelseedamm	H 23942,5338 23951,5333 24189,5209 24681,4943 24798,4895 24936,4838 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830 25552,4829 25720,4828 25796,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936 26971,5025 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
+Müggelseedamm	H 23942,5338 23951,5333 24189,5209 24681,4943 24798,4895 24936,4838 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830 25552,4829 25720,4828 25796,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936 26971,5025 27047,5075 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
 Hahns Mühle	N 24681,4943 24667,4900 24778,4821 25007,4758
 Rauener Weg	N 24798,4895 24778,4821
 Spreestr. (Friedrichshagen)	N 25010,4807 25007,4758 24991,4701
@@ -12159,8 +12159,9 @@ Straße am Wald	N 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
 #: XXX Bleibt diese Übergangsmöglichkeit?
 #: source_id: LMS-BR:399511/72 viz2021:13.565907,52.455989,20.02.2026,07:00 (bis 26.06.2026) (bis 07.08.2026) (bis 06.08.2026) (inaktiv)
 #: source_id: planb2026:13.56632053,52.45558914,28.04.2025, ("Sicherung gemäß Vz.-plan", bis 30.06.2027)
-#: last_checked: 2026-08-09
-# REMOVED --- #: next_check: 2026-08-06 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-09-17
+#: check_frequency: 90d
+#: next_check: 2028-06-30 (planb)
 (Übergang Höhe Haupteingang Stadion an der Alten Försterei)	NN 21519,5767 21522,5771
 # REMOVED --- #: next_check_id: BER-20XX vvv
 #: note: offizieller Straßenname laut Amtsblatt 1/2014 ist "Flughafen Tegel"
@@ -16248,7 +16249,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2026-09-16
+#: last_checked: 2026-09-17
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16644,7 +16645,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2026-09-16
+#: last_checked: 2026-09-17
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
@@ -18556,7 +18557,7 @@ Rhönstr.	N 13598,21360 13415,21442 13371,21462
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7090 (Vorlage zur Beschlussfassung)
 #: osm_watch: way id="59573616" version="5"
 #: XXX im Zuge des Bebauungsplans 3-67 VE wird eine neue Planstraße entstehen (vermutlich müssen alle abhängigen Einträge - qualitaet, handicap, nolighting, green - neu evaluiert werden)
-#: last_checked: 2026-06-29 (mapillary)
+#: last_checked: 2026-09-15 (mapillary)
 #: check_frequency: 150d
 # REMOVED --- #: next_check: 2025-12-31 (alte BA-Pressemitteilung, Baubeginn 2025)
 (Rhönstr. - Harzburger Str.)	NN 13598,21360 13709,21334
@@ -21314,15 +21315,15 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: osm_watch: way id="1277899794" version="4"
-#: last_checked: 2026-08-09
+#: last_checked: 2026-09-17
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
 #: osm_watch: way id="1156287321" version="3"
-#: last_checked: 2026-08-09
+#: last_checked: 2026-09-17
 #: check_frequency: 180d
 (nördliche Behelfsbrücke an der Pyramidenbrücke)	NN 21618,5699 21591,5728 21522,5771
 #: osm_watch: way id="1138047106" version="6"
-#: last_checked: 2026-08-09
+#: last_checked: 2026-09-17
 #: check_frequency: 180d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21669,5700 21623,5661
 # 

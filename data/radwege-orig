@@ -2546,7 +2546,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: by: https://www.entwicklungsstadt.de/dauersperrung-richtung-ostkreuz-warum-hier-seit-2018-nichts-passiert/
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-09-16 vvv
+#: last_checked: 2026-09-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -4114,7 +4114,8 @@ unebenes Verbundsteinpflaster	RW2; 22534,6249 22467,6135
 asphaltiert	RW1; 29813,4314 29754,4398 29728,4435 29714,4461
 asphaltiert	RW1; 30748,3658 30993,3557 31139,3497
 Gehweg für Radfahrer frei	RW1;RW1 31139,3497 31366,3404 31447,3372
-asphaltiert	RW1; 31139,3497 30993,3557 30748,3658 30650,3698
+#: historical_note: früher (bis Sep 2026) nur "asphaltiert" getaggt und ohne "Gehweg für Radfahrer frei"
+Gehweg für Radfahrer frei, asphaltiert, erste Wurzelschäden	RW1; 31139,3497 30993,3557 30748,3658 30650,3698
 Verbundsteinpflaster	RW1; 30650,3698 30518,3753 30456,3794 30344,3933 30210,4046
 asphaltiert	RW1; 30210,4046 30037,4176 29959,4235 29946,4241
 	RW3; 29946,4241 29901,4264 29850,4288
@@ -4126,6 +4127,7 @@ asphaltiert	RW2;RW2 33525,2901 33327,2979 33111,3064
 asphaltiert	RW2;RW2 33111,3064 32814,3107 32376,3175 32121,3215 32016,3230
 asphaltiert	RW2; 32016,3230 31973,3237
 	RW3; 31973,3237 32016,3230
+#: note: nicht ausgeschildert, Gültigkeit als Radweg unklar, erst kurz vor der Nickelswalder Str. kommt ein Schild "getrennter Rad- und Gehweg"
 alter Beton	RW1; 31973,3237 31967,3238 31863,3257 31632,3297
 #: historical_note: früher betoniert vvv
 asphaltiert, gemeinsamer Geh- und Radweg	RW2;RW8 29192,7368 29168,7350 28586,7139 26405,6289
@@ -4591,7 +4593,7 @@ Gehweg für Radfahrer frei	RW1; 21365,5832 21303,5826
 # REMOVED (hier nicht, siehe https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1124786.php ) --- Gehweg für Radfahrer frei	RW1; 21569,5730 21600,5694 21605,5687 21623,5661 21706,5541 21789,5427
 Gehweg für Radfahrer frei	RW1; 21789,5427 21706,5541 21623,5661
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: last_checked: 2026-08-09
+#: last_checked: 2026-09-17
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
 #: XXX nach den Bauarbeiten wieder aktivieren: Gehweg für Radfahrer frei	RW1; 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
@@ -4780,6 +4782,8 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: by: https://www.infravelo.de/projekt/dammweg/ (1. Quartal 2026 - 2. Quartal 2026) (3. Quartal 2026 - 4. Quartal 2026)
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-6-mobilitaetsrat.pdf (Baubeginn 09/2026; 2-2,5 m Breite)
 #: by: https://www.entwicklungsstadt.de/neukoelln-baut-radweg-am-dammweg-um-parkplaetze-fallen-weg/
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260917 (2. BA ab 18.9.2026, Baustellenampel, allerdings ist das weit östlicher)
+#: source_id: vizapi2026:962/2026 (Baustellenampel, 18.09.2026 bis 06.12.2026)
 #: osm_watch: note 4883566 9
 #: XXX Verlegung der RVA zwischen Widderstraße und der Sonnenallee auf die Fahrbahn; aktuell Arbeiten zwischen Aronsstr. und Sonnenallee
 #: last_checked: 2026-08-22 vvv
@@ -5487,13 +5491,15 @@ Gehweg für Radfahrer frei	RW1; 22467,6135 22656,6142 22700,6138 22777,6151 22857
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260421
 #: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, vizapi2026:360/2026 (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026) (bis 27.11.2026)
-#: last_checked: 2026-08-02
+#: last_checked: 2026-09-17
 #: next_check: 2026-11-27
 #: valid: -20261127
 gemeinsamer Geh- und Radweg während der Bauarbeiten	RW2;RW2 22128,5003 22133,4986 22154,4923 22196,4847
 # 
-Gehweg für Radfahrer frei	RW1; 26620,4936 26971,5025 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
-	RW1; 27189,5169 27097,5108 26971,5025 26620,4936
+Gehweg für Radfahrer frei, Gehwegplatten	RW1; 26620,4936 26971,5025 27047,5075 27097,5108
+#: note: Richtung Westen nicht offiziell freigegeben, aber die Radwegführung ab Fürstenwalder Damm könnte einen Zweirichtungsradweg suggerieren
+Gehweg für Radfahrer frei, Asphalt	RW1; 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
+Gehweg für Radfahrer frei, Gehwegplatten	RW1; 27047,5075 26971,5025 26620,4936
 	RW2;RW2 21332,4655 21390,4637
 	RW1;RW2 21390,4637 21494,4605
 	RW1;RW1 21494,4605 21579,4579 21726,4537 21789,4520
@@ -7717,7 +7723,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 # 
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: XXX Bauarbeiten, kompletter Bürgersteig ist abgesperrt, früher: die letzten Meter sind benutzungspflichtig	RW1;
-#: osm_watch: way id="1163982841" version="3"
+#: osm_watch: way id="1163982841" version="5"
 #: osm_watch: way id="408367258" version="5"
 #: source_id: planb2026:13.57928174,52.45848464,01.03.2023, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (vorfristig inaktiv) (bis 01.03.2027)
 #: last_checked: 2026-05-31
