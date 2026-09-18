@@ -36425,7 +36425,7 @@ EOF
      { from  => 1645336800, # 2022-02-20 07:00
        until => undef, # $isodate2epoch->("2025-12-11 17:00:00"), # undef, dont_check_date => 1, # $isodate2epoch->("2023-01-31 17:00:00"), # 1672502400, # 2022-12-31 17:00
 #      text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem ist die Fahrbahn des Mittelbuschwegs gesperrt, vom 21.02.2022 07:00 bis mindestens Mitte Mai 2024, vermutlich noch länger',
-       text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn; außerdem sind die Fahrbahnen von Saalestr. und Mittelbuschweg gesperrt, vom 13.05.2024 07:00 bis Mitte 2026, evtl. wird verlängert',
+       text  => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn; außerdem sind die Fahrbahnen von Saalestr. und Mittelbuschweg gesperrt, vom 13.05.2024 07:00 bis Mitte 2027',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: NIEMETZ-2022
@@ -37039,14 +37039,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-08-28 00:00:00"), # $isodate2epoch->("2025-04-14 00:00:00"), # 1713897172, # 1652122429, # 2022-05-09 20:53
-       until => $isodate2epoch->("2028-12-31 23:59:59"), # $isodate2epoch->("2026-06-01 00:00:00"), # undef, # $isodate2epoch->("2027-09-12 17:00:00"), # $isodate2epoch->("2025-04-10 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
+       until => $isodate2epoch->("2028-03-31 23:59:59"), # $isodate2epoch->("2026-06-01 00:00:00"), # undef, # $isodate2epoch->("2027-09-12 17:00:00"), # $isodate2epoch->("2025-04-10 17:00:00"), # $isodate2epoch->("2024-01-31 18:00:00"), # 1689878456, # 1706716800, # 2024-01-31 17:00
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, ggfs. auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024', # evtl. auch für Radfahrer und Fußgänger, bis 16.06.2023',
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, geplant bis 31.03.2025',
 #      text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis 10.04.2025',
 #      text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, auch für Fußgänger und Radfahrer, vom 15.04.2025 mittags zunächst bis Mitte September 2025',
 #      text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, Ende der Bauarbeiten unbekannt',
 #      text  => 'Wiltbergstr.: Sperrung der Fahrbahn unter der S-Bahnbrücke Buch, der südwestliche Bürgersteig ist noch passierbar, voraussichtlich bis Juni 2027',
-       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, möglicherweise auch für Fußgänger und Radfahrer, ab Ende August 2026 bis voraussichtlich 2028',
+       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, möglicherweise auch für Fußgänger und Radfahrer, ab Ende August 2026 bis voraussichtlich Anfang 2028',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
@@ -38315,7 +38315,7 @@ EOF
      { from  => 1663524336,
        until => undef, # XXX Einschränkungen werden länger dauern als bei der VIZ angegeben
 #      text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung; außerdem sind Löptener Str., Gerstnerweg und südliche Mellener Str. Einbahnstraßen; ab 19.9.2022',
-       text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis Ende 2026',
+       text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis Ende 2027',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BAHNHOF-2022
@@ -42748,7 +42748,7 @@ EOF
        until => undef, # $isodate2epoch->("2025-12-19 17:00:00"), # 1735833600, # 2025-01-02 17:00
 #      text  => 'Schönhauser Allee: Bauarbeiten, zwischen Kollwitzstr. und Metzer Str. ist die Benutzung der Fahrbahn für Radfahrer verboten, vermutlich bis Anfang 2025',
 #      text  => 'Metzer Str.: Bauarbeiten, Fahrbahn zwischen Schönhauser Allee und Kollwitzstr. gesperrt, Umwege, vermutlich bis Anfang 2025',
-       text  => 'Schönhauser Allee/Metzer Str.: Bauarbeiten, Sperrung der Fahrbahn (Metzer Str.) bzw. Radfahrverbot (Schönhauser Allee Richtung Norden), Umwege, geplant bis 2027',
+       text  => 'Schönhauser Allee/Metzer Str.: Bauarbeiten, Sperrung der Fahrbahn (Metzer Str.) bzw. Radfahrverbot (Schönhauser Allee Richtung Norden), Umwege, geplant bis Mitte 2027',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: METZER-2023
@@ -43683,7 +43683,7 @@ EOF
        data  => <<EOF,
 #: source_id: planb2026:13.50326602,52.51530671,10.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 31.07.2026) (inaktiv)
 #: source_id: planb2026:13.50058386,52.51557606,24.08.2026,06:00 ("Sicherung gemäß Vz.-plan", kürzer als vor Ort, bis 25.09.2026)
-#: also_indoor: traffic (G,T,no-H,no-W)
+#: also_indoor: traffic (G,ex-T,no-H,no-W)
 #: last_checked: 2026-09-08
 #: next_check: 2026-09-25 (Halteverbotsschilder + planb)
 Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309
@@ -45661,7 +45661,7 @@ EOF
      { from  => 1719266400, # 2024-06-25 00:00
        until => $isodate2epoch->("2027-07-01 18:00:00"), # undef, # XXX
 #      text  => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Jerusalemer Str. und Markgrafenstr., voraussichtlich bis 2027',
-       text  => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Markgrafenstr., voraussichtlich bis 2027',
+       text  => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Markgrafenstr., voraussichtlich bis Mitte 2027',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1109922.php
@@ -49263,7 +49263,7 @@ EOF
 #: source_id: planb2026:13.33187108,52.44705489,01.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 08.02.2027) (vorfristig inaktiv)
 #: also_indoor: traffic (G,T,no-H,no-W)
 #: note: zumindest am südlichen Ende ist Gehweg, Radfahrer frei ausgeschildert; deshalb: q4 -> q3
-#: last_checked: 2026-09-16 (traffic) vvv
+#: last_checked: 2026-09-18 (traffic) vvv
 #: check_frequency: 8d (traffic) vvv
 #: next_check: 2027-02-08 (ex-planb) vvv
 Sedanstr.: Sperrung, Gehweg für Radfahrer frei	q3::inwork 5541,4305 5630,4476 5658,4548
@@ -49566,7 +49566,7 @@ EOF
 #      text  => 'Brandenburgische Str., Borstellstr.: Bauarbeiten, Fahrbahn gesperrt, vermutlich bis Oktober 2025',
 #      text  => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, vermutlich bis Anfang November 2025',
 #      text  => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
-       text  => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, möglicherweise bis Anfang Juli 2027',
+       text  => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, möglicherweise bis Anfang August 2027',
        type  => 'handicap',
        data  => <<EOF,
 #: note: laut Baustellenschild der Wasserbetriebe bis Oktober 2025, Bauabschnitt 2; im April 2026 nach Hinweis von Thomas K. wieder reaktiviert
@@ -49736,7 +49736,6 @@ EOF
      },
      { from  => 1747562400, # 2025-05-18 12:00
        until => undef, # 1750345200, # 2025-06-19 17:00
-       dont_check_date => 1,
 #      text  => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, vom 19.05.2025 12:00 bis 19.06.2025 17:00, evtl. wird verlängert',
 #      text  => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, voraussichtlich bis Ende 2025, evtl. werden die Bauarbeiten verlängert',
        text  => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, Ende der Bauarbeiten unbekannt',
@@ -50495,7 +50494,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
-#: also_indoor: traffic (G,T,B)
+#: also_indoor: traffic (ex-G,ex-T,ex-B)
 #: source_id: planb2026:13.41359234,52.51568692,13.12.2023, ("Fahrstreifen-Reduzierung" in der Stralauer Allee, bis 30.10.2026) (vorfristig inaktiv)
 #: last_checked: 2026-09-14
 #: check_frequency: 14d
@@ -52813,7 +52812,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-03-31 00:00:00"), # $isodate2epoch->("2026-02-11 00:00:00"),
-       until => undef, # 1771010707, # undef, # XXX
+       until => $isodate2epoch->("2027-12-31 23:59:59"), # undef, # 1771010707, # undef, # XXX
 #      text  => 'Dunckerbrücke: Sperrung für Kfz- und Radverkehr ab dem 12.02.2026, möglicherweise ist das Schieben weiterhin möglich',
 #      text  => 'Dunckerbrücke: Vollsperrung ab dem 01.04.2026',
        text  => 'Dunckerbrücke: Vollsperrung, außerdem Baustelleneinrichtungen in den angrenzenden Straßen, voraussichtlich bis Ende 2027',
@@ -53207,7 +53206,7 @@ EOF
        text  => 'Marienburger Str.: Einbahnstraßenregelung zwischen Winsstr. und Greifswalder Str., voraussichtlich bis Anfang Oktober 2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (ex-G,no-T,no-H,W[westlich Winsstr])
+#: also_indoor: traffic (re-G[mittlerweile erweitert bis Prenzlauer Allee],no-T,no-H,W[westlich Winsstr])
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: source_id: planb2026:13.42572037,52.53418373,31.03.2025, ("Fahrbahneinengung", bis 01.10.2026)
 #: XXX: Laut Baustellenschild der Wasserbetriebe bis 9/2026
@@ -53541,7 +53540,7 @@ EOF
 EOF
      },
      { from  => 1775939275, # 2026-04-11 22:27
-       until => 1793487600, # 2026-11-01 00:00
+       until => $isodate2epoch->("2026-10-31 23:59:59"),
 #      text  => 'Wuhlheide: Weg zwischen Hegemeisterweg/Treskowallee und Modellpark ("Kastanienallee") kann wegen Leitungsarbeiten gesperrt sein, voraussichtlich bis Ende Oktober 2026',
        text  => 'Wuhlheide: Weg zwischen Hegemeisterweg/Treskowallee und Modellpark ("Kastanienallee") ist wegen Leitungsarbeiten gesperrt, voraussichtlich bis Ende Oktober 2026',
        type  => 'gesperrt',
@@ -53564,7 +53563,7 @@ Baustelleneinrichtungsfläche	2::inwork 19045,6959 19080,6986
 EOF
      },
      { from  => 1772319600, # 2026-03-01 00:00
-       until => 1811800800, # 2027-06-01 00:00
+       until => $isodate2epoch->("2027-05-31 23:59:59"),
 #      text  => 'Niemetzstr., Böhmischer Platz: Leitungsarbeiten, Fahrbahn gesperrt, Gesamtbaumaßnahme bis Mai 2027',
        text  => 'Böhmische Str.: Leitungsarbeiten, Fahrbahn gesperrt, Gesamtbaumaßnahme bis Mai 2027',
        type  => 'handicap',
@@ -53976,7 +53975,7 @@ EOF
 #      text  => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Liepnitzstr. (Gehweg für Radfahrer frei), außerdem Einbahnstraßenregelung im Hönower Wiesenweg, vom 26.05.2026 bis voraussichtlich 10.07.2026, evtl. werden die Bauarbeiten verlängert',
 #      text  => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Heiligenberger Str. (Gehweg für Radfahrer frei), außerdem Einbahnstraßenregelung Hönower Wiesenweg - Georg-Klingenberg-Str. - Trautenauer Str. und Müritzstr. - Wandlitzstr., vom 26.05.2026 bis voraussichtlich 21.09.2026, evtl. wird die Baustelle verlängert',
 #      text  => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Trautenauer Str. sowie zwischen Lehndorffstr. und Heiligenberger Str. (Gehweg für Radfahrer frei), vom 26.05.2026 bis voraussichtlich 21.09.2026, evtl. wird die Baustelle verlängert',
-       text  => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Trautenauer Str., vom 26.05.2026 bis voraussichtlich 12.10.2026, evtl. wird die Baustelle verlängert',
+       text  => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Trautenauer Str., vom 26.05.2026 bis voraussichtlich 12.10.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: EHRLICH-2026
@@ -54000,7 +53999,7 @@ EOF
 #: also_indoor: traffic (G,T,H,W)
 #: last_checked: 2026-09-16 vvv
 # REMOVED --- #: check_frequency: 3d (2. BA?) vvv
-#: next_check: 2026-09-21 (VIZ-Verkehrsmeldung + BVG-Seite) vvv
+#: next_check: 2026-10-05 (VIZ-Verkehrsmeldung + BVG-Seite) vvv
 # REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18461,8377 18391,8425 18322,8470
 # REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18322,8470 18228,8537 18151,8589
 # REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687
@@ -55208,7 +55207,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Manfred-von-Richthofen-Str.: zwischen Tempelhofer Damm und Schulenburgring Richtung Südwesten wegen Bauarbeiten gesperrt, voraussichtlich bis Mitte 2027',
+       text  => 'Manfred-von-Richthofen-Str.: zwischen Tempelhofer Damm und Schulenburgring Richtung Südwesten wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2028',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
@@ -55333,7 +55332,7 @@ EOF
      },
      { from  => 1785954227, # 2026-08-05 20:23
        until => 1851372000, # 2028-09-01 00:00
-       text  => 'Jüterbog, B102: Bauarbeiten, Sperrung der Straße, voraussichtlich bis August 2028',
+       text  => 'Jüterbog, B102: Bauarbeiten, Sperrung der Straße, voraussichtlich bis Anfang September 2028',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~03-08-2026-b102_jueterbog_fertigstellung-bruecke-auf-fruehjahr-2027-verschoben
@@ -55560,7 +55559,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2027-09-30 23:59:59"),
-       text  => 'Erasmusstr.: Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, voraussichtlich bis September 2027',
+       text  => 'Erasmusstr.: Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, voraussichtlich bis Ende September 2027',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (none)
@@ -55810,7 +55809,7 @@ EOF
      },
      { from  => 1788127200, # 2026-08-31 00:00
        until => 1798757999, # 2026-12-31 23:59
-       text  => 'Köpenicker Str.: Bauarbeiten, getrennter Rad- und Gehweg Richtung Schlesisches Tor, eng, voraussichtlich bis Ende 2026',
+       text  => 'Köpenicker Str.: Bauarbeiten, getrennter Rad- und Gehweg Richtung Schlesisches Tor, eng, voraussichtlich bis Ende Dezember 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: KOEPENICKER-2026
@@ -55861,9 +55860,9 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:420754/72 viz2021:13.37628,52.54915,31.08.2026,07:00 (bis 31.10.2026)
 #: source_id: planb2026:13.37630466,52.54908701,31.08.2026, ("Vollsperrung beider Fahrbahnen", bis 31.10.2026)
-#: also_indoor: traffic (no-G,no-T,H,W)
-#: last_checked: 2026-09-16 (traffic)
-#: check_frequency: 8d (traffic)
+#: also_indoor: traffic (no-G,T,H,W)
+#: last_checked: 2026-09-18 (traffic)
+#: check_frequency: 14d (traffic)
 	q4::inwork 8338,15987 8430,15901
 EOF
      },
@@ -55907,7 +55906,7 @@ EOF
      },
      { from  => undef,
        until => $isodate2epoch->("2026-11-30 23:59:59"),
-       text  => 'An der Wuhlheide/Fontanestr.: Überqueren wegen der Abbrucharbeiten nicht möglich, voraussichtlich bis November 2026',
+       text  => 'An der Wuhlheide/Fontanestr.: Überqueren wegen der Abbrucharbeiten nicht möglich, voraussichtlich bis Ende November 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1697213.php (Arbeiten ab 27.7.2026)

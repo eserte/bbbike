@@ -4864,7 +4864,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 ',
          'from' => 1645336800,
          'id' => 3518,
-         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn; außerdem sind die Fahrbahnen von Saalestr. und Mittelbuschweg gesperrt, vom 13.05.2024 07:00 bis Mitte 2026, evtl. wird verlängert',
+         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn; außerdem sind die Fahrbahnen von Saalestr. und Mittelbuschweg gesperrt, vom 13.05.2024 07:00 bis Mitte 2027',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5109,9 +5109,9 @@ Wiltbergstr.: Komplettsperrung	2::inwork 16166,25767 16121,25818
 ',
          'from' => 1787868000,
          'id' => 3551,
-         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, möglicherweise auch für Fußgänger und Radfahrer, ab Ende August 2026 bis voraussichtlich 2028',
+         'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch, möglicherweise auch für Fußgänger und Radfahrer, ab Ende August 2026 bis voraussichtlich Anfang 2028',
          'type' => 'gesperrt',
-         'until' => 1861916399
+         'until' => 1838152799
        },
        undef,
        undef,
@@ -5287,7 +5287,7 @@ Mellener Str.	q4::inwork 10756,-2128 10763,-2276
 ',
          'from' => 1663524336,
          'id' => 3624,
-         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis Ende 2026',
+         'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Riedingerstr., Einbahnstraßenregelung; außerdem sind Goltzstr. (teilweise) und Briesingstr. Einbahnstraßen; voraussichtlich bis Ende 2027',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6201,7 +6201,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 ',
          'from' => undef,
          'id' => 3920,
-         'text' => 'Schönhauser Allee/Metzer Str.: Bauarbeiten, Sperrung der Fahrbahn (Metzer Str.) bzw. Radfahrverbot (Schönhauser Allee Richtung Norden), Umwege, geplant bis 2027',
+         'text' => 'Schönhauser Allee/Metzer Str.: Bauarbeiten, Sperrung der Fahrbahn (Metzer Str.) bzw. Radfahrverbot (Schönhauser Allee Richtung Norden), Umwege, geplant bis Mitte 2027',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6361,7 +6361,7 @@ Nordufer: zwischen Tegeler Str. und Föhrer Str.	q4::inwork 7129,14787 7000,14832
        {
          'data' => '#: source_id: planb2026:13.50326602,52.51530671,10.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 31.07.2026) (inaktiv)
 #: source_id: planb2026:13.50058386,52.51557606,24.08.2026,06:00 ("Sicherung gemäß Vz.-plan", kürzer als vor Ort, bis 25.09.2026)
-#: also_indoor: traffic (G,T,no-H,no-W)
+#: also_indoor: traffic (G,ex-T,no-H,no-W)
 #: last_checked: 2026-09-08
 #: next_check: 2026-09-25 (Halteverbotsschilder + planb)
 Rüdigerstr.: Einbahnstraße	q4::inwork; 16820,12339 16918,12325 17020,12309
@@ -6748,7 +6748,7 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
 ',
          'from' => 1719266400,
          'id' => 4095,
-         'text' => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Markgrafenstr., voraussichtlich bis 2027',
+         'text' => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Markgrafenstr., voraussichtlich bis Mitte 2027',
          'type' => 'handicap',
          'until' => 1814457600
        },
@@ -7818,7 +7818,7 @@ Gellertstr.: Sperrung	q4::inwork 20082,3578 20148,3490 20237,3392
          'data' => '#: source_id: planb2026:13.33187108,52.44705489,01.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 08.02.2027) (vorfristig inaktiv)
 #: also_indoor: traffic (G,T,no-H,no-W)
 #: note: zumindest am südlichen Ende ist Gehweg, Radfahrer frei ausgeschildert; deshalb: q4 -> q3
-#: last_checked: 2026-09-16 (traffic) vvv
+#: last_checked: 2026-09-18 (traffic) vvv
 #: check_frequency: 8d (traffic) vvv
 #: next_check: 2027-02-08 (ex-planb) vvv
 Sedanstr.: Sperrung, Gehweg für Radfahrer frei	q3::inwork 5541,4305 5630,4476 5658,4548
@@ -7917,7 +7917,7 @@ Borstellstr.	q4::inwork 6309,4328 6368,4324
 ',
          'from' => 1747223796,
          'id' => 4336,
-         'text' => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, möglicherweise bis Anfang Juli 2027',
+         'text' => 'Borstellstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, möglicherweise bis Anfang August 2027',
          'type' => 'handicap',
          'until' => undef
        },
@@ -7989,7 +7989,6 @@ Caspar-Theiß-Str.: Sperrung der Fahrbahn an der Paulsborner Str., Gehweg für Rad
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 ',
-         'dont_check_date' => 1,
          'from' => 1747562400,
          'id' => 4345,
          'text' => 'Caspar-Theiß-Str./Salzbrunner Str.: Einbahnstraßenregelung bzw. Fahrbahnsperrung, Ende der Bauarbeiten unbekannt',
@@ -8206,7 +8205,7 @@ Schiffbauerdamm, Richtung Westen: nur für Fußgänger	q4::inwork; 9025,12727 8870,
        },
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
-#: also_indoor: traffic (G,T,B)
+#: also_indoor: traffic (ex-G,ex-T,ex-B)
 #: source_id: planb2026:13.41359234,52.51568692,13.12.2023, ("Fahrstreifen-Reduzierung" in der Stralauer Allee, bis 30.10.2026) (vorfristig inaktiv)
 #: last_checked: 2026-09-14
 #: check_frequency: 14d
@@ -9074,7 +9073,7 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
          'id' => 4533,
          'text' => 'Dunckerbrücke: Vollsperrung, außerdem Baustelleneinrichtungen in den angrenzenden Straßen, voraussichtlich bis Ende 2027',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1830293999
        },
        undef,
        {
@@ -9194,7 +9193,7 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
        },
        undef,
        {
-         'data' => '#: also_indoor: traffic (ex-G,no-T,no-H,W[westlich Winsstr])
+         'data' => '#: also_indoor: traffic (re-G[mittlerweile erweitert bis Prenzlauer Allee],no-T,no-H,W[westlich Winsstr])
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: source_id: planb2026:13.42572037,52.53418373,31.03.2025, ("Fahrbahneinengung", bis 01.10.2026)
 #: XXX: Laut Baustellenschild der Wasserbetriebe bis 9/2026
@@ -9359,7 +9358,7 @@ Baustelleneinrichtungsfläche	2::inwork 19045,6959 19080,6986
          'id' => 4582,
          'text' => 'Wuhlheide: Weg zwischen Hegemeisterweg/Treskowallee und Modellpark ("Kastanienallee") ist wegen Leitungsarbeiten gesperrt, voraussichtlich bis Ende Oktober 2026',
          'type' => 'gesperrt',
-         'until' => 1793487600
+         'until' => 1793487599
        },
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe dauern die Bauarbeiten im Bauabschnitt Böhmische Straße zwischen Kanner Straße und Niemetzstraße von März 2026 bis Mai 2027 -> erwartete Änderungen des aktuell gesperrten Abschnitts
@@ -9384,7 +9383,7 @@ Böhmische Str.: Fahrbahn auf 100m Länge gesperrt	q4::inwork 13335,7450 13499,750
          'id' => 4583,
          'text' => 'Böhmische Str.: Leitungsarbeiten, Fahrbahn gesperrt, Gesamtbaumaßnahme bis Mai 2027',
          'type' => 'handicap',
-         'until' => 1811800800
+         'until' => 1811800799
        },
        undef,
        undef,
@@ -9594,7 +9593,7 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: also_indoor: traffic (G,T,H,W)
 #: last_checked: 2026-09-16 vvv
 # REMOVED --- #: check_frequency: 3d (2. BA?) vvv
-#: next_check: 2026-09-21 (VIZ-Verkehrsmeldung + BVG-Seite) vvv
+#: next_check: 2026-10-05 (VIZ-Verkehrsmeldung + BVG-Seite) vvv
 # REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18461,8377 18391,8425 18322,8470
 # REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18322,8470 18228,8537 18151,8589
 # REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687
@@ -9615,7 +9614,7 @@ Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn und des nördlichen Bürgersteigs	
 ',
          'from' => 1779660000,
          'id' => 4612,
-         'text' => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Trautenauer Str., vom 26.05.2026 bis voraussichtlich 12.10.2026, evtl. wird die Baustelle verlängert',
+         'text' => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Trautenauer Str., vom 26.05.2026 bis voraussichtlich 12.10.2026',
          'type' => 'handicap',
          'until' => 1791842399
        },
@@ -10364,7 +10363,7 @@ Manfred-von-Richthofen-Str.	q4::inwork; 9229,8718 9158,8706 9093,8665 9011,8605
 ',
          'from' => undef,
          'id' => 4695,
-         'text' => 'Manfred-von-Richthofen-Str.: zwischen Tempelhofer Damm und Schulenburgring Richtung Südwesten wegen Bauarbeiten gesperrt, voraussichtlich bis Mitte 2027',
+         'text' => 'Manfred-von-Richthofen-Str.: zwischen Tempelhofer Damm und Schulenburgring Richtung Südwesten wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2028',
          'type' => 'handicap',
          'until' => undef
        },
@@ -10403,7 +10402,7 @@ Manfred-von-Richthofen-Str.	q4::inwork; 9229,8718 9158,8706 9093,8665 9011,8605
 ',
          'from' => 1785954227,
          'id' => 4702,
-         'text' => 'Jüterbog, B102: Bauarbeiten, Sperrung der Straße, voraussichtlich bis August 2028',
+         'text' => 'Jüterbog, B102: Bauarbeiten, Sperrung der Straße, voraussichtlich bis Anfang September 2028',
          'type' => 'gesperrt',
          'until' => 1851372000
        },
@@ -10534,7 +10533,7 @@ Manfred-von-Richthofen-Str.: Einbahnstraßenregelung	q4::inwork; 8812,7730 8864,7
 ',
          'from' => undef,
          'id' => 4719,
-         'text' => 'Erasmusstr.: Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, voraussichtlich bis September 2027',
+         'text' => 'Erasmusstr.: Hochbauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, voraussichtlich bis Ende September 2027',
          'type' => 'handicap',
          'until' => 1822341599
        },
@@ -10704,7 +10703,7 @@ Pfuelstr.: ggfs. Anbindung unterbrochen	q4::inwork 12951,10839 12879,10750
 ',
          'from' => 1788127200,
          'id' => 4735,
-         'text' => 'Köpenicker Str.: Bauarbeiten, getrennter Rad- und Gehweg Richtung Schlesisches Tor, eng, voraussichtlich bis Ende 2026',
+         'text' => 'Köpenicker Str.: Bauarbeiten, getrennter Rad- und Gehweg Richtung Schlesisches Tor, eng, voraussichtlich bis Ende Dezember 2026',
          'type' => 'handicap',
          'until' => 1798757999
        },
@@ -10712,9 +10711,9 @@ Pfuelstr.: ggfs. Anbindung unterbrochen	q4::inwork 12951,10839 12879,10750
        {
          'data' => '#: source_id: LMS-BR:420754/72 viz2021:13.37628,52.54915,31.08.2026,07:00 (bis 31.10.2026)
 #: source_id: planb2026:13.37630466,52.54908701,31.08.2026, ("Vollsperrung beider Fahrbahnen", bis 31.10.2026)
-#: also_indoor: traffic (no-G,no-T,H,W)
-#: last_checked: 2026-09-16 (traffic)
-#: check_frequency: 8d (traffic)
+#: also_indoor: traffic (no-G,T,H,W)
+#: last_checked: 2026-09-18 (traffic)
+#: check_frequency: 14d (traffic)
 	q4::inwork 8338,15987 8430,15901
 ',
          'from' => 1788066000,
@@ -10787,7 +10786,7 @@ Fontanestr. -> An der Wuhlheide	3::inwork 18240,6845 18225,7004 18010,7137
 ',
          'from' => undef,
          'id' => 4741,
-         'text' => 'An der Wuhlheide/Fontanestr.: Überqueren wegen der Abbrucharbeiten nicht möglich, voraussichtlich bis November 2026',
+         'text' => 'An der Wuhlheide/Fontanestr.: Überqueren wegen der Abbrucharbeiten nicht möglich, voraussichtlich bis Ende November 2026',
          'type' => 'gesperrt',
          'until' => 1796079599
        },
