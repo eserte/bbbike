@@ -163,6 +163,7 @@ Singerstr.: kurze Sperrung am Franz-Mehring-Platz	q3::inwork 12691,12042 12532,1
 # 
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 --- #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut --- #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv) --- #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024) (inaktiv) --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-02-16 vvv --- #: valid: -20231229 vvv --- Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229 --- Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026) (bis 13.11.2026)
+#: source_id: planb2026:13.44005683,52.52346346,15.08.2024,07:00 ("Sicherung gemäß Vz.-plan", bis 31.10.2026)
 #: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
 #: last_checked: 2026-09-15
@@ -354,7 +355,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 #: source_id: planb2026:13.45361302,52.4854625,06.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.06.2028) (vorfristig inaktiv) (bis 30.06.2028)x
 #: source_id: planb2026:13.45606815,52.48428848,02.06.2025, ("Fahrbahneinengung", bis 30.04.2027)
 #: note: Länge der Einbahnstraßenregelung etwa 150m
-#: last_checked: 2026-09-12
+#: last_checked: 2026-09-15 (luftbildsuche)
 #: check_frequency: 90d
 #: next_check: 2027-04-30 (planb)
 # REMOVED --- #: next_check: 2028-06-30 (ex-planb, Halteverbotsschilder)
@@ -521,6 +522,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.entwicklungsstadt.de/abriss-in-der-burgsdorfstrasse-1-ruine-in-wedding-fast-vollstaendig-verschwunden/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/mitte/geisterhaus-in-berlin-wedding-schrottimmobilie-legte-uber-acht-jahre-strasse-lahm--erst-jetzt-folgt-der-abriss-15407901.html
 #: by: https://www.entwicklungsstadt.de/burgsdorfstrasse-ruine-in-wedding-verschwindet-nach-jahrelangem-streit/
+#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13867 (Einwohneranfrage)
 #: osm_watch: way id="549316654" version="49"
 #: osm_watch: note 4844974 4
 #: source_id: planb2026:13.3631258,52.54306464,18.08.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.08.2026) (inaktiv)
@@ -542,16 +544,16 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: valid: -20261007
 Rosa-Luxemburg-Platz: temporäres Volksbad auf der Fahrbahn	q4 10828,13464 10931,13419
 # 
-#: source_id: planb2026:13.3804937,52.51755219,03.08.2026, ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv)
-#: source_id: planb2026:13.3804937,52.51755219,18.08.2026, ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
-#: source_id: LMS-BR:420081/72 viz2021:13.3803,52.51893, vizapi2026:866/2026 (bis 18.09.2026) (kein Endedatum)
-#: note: Richtung Süden existiert auf der westlichen Straßenseite eine Radfahrerfurt, die allerdings auch für die Fahrtrichtung Nord genutzt wird
-#: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin?
-#: last_checked: 2026-09-15
-#: next_check: 2026-09-18 (planb, ex-VIZ-Verkehrsmeldung)
-#: valid: -20260918
-# REMOVED --- #: XXX valid auf spätes Datum gesetzt --- #: valid: -20261231
-Wilhelmstr.: Bauarbeiten, Engstelle	q2::inwork 8766,12541 8775,12457
+# REMOVED --- #: source_id: planb2026:13.3804937,52.51755219,03.08.2026, ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv)
+# REMOVED --- #: source_id: planb2026:13.3804937,52.51755219,18.08.2026, ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
+# REMOVED --- #: source_id: LMS-BR:420081/72 viz2021:13.3803,52.51893, vizapi2026:866/2026 (bis 18.09.2026) (kein Endedatum) (inaktiv)
+# REMOVED --- #: note: Richtung Süden existiert auf der westlichen Straßenseite eine Radfahrerfurt, die allerdings auch für die Fahrtrichtung Nord genutzt wird
+# REMOVED --- #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin?
+# REMOVED --- #: last_checked: 2026-09-15
+# REMOVED --- #: next_check: 2026-09-18 (planb, ex-VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20260918
+# REMOVED --- # REMOVED --- #: XXX valid auf spätes Datum gesetzt --- #: valid: -20261231
+# REMOVED --- Wilhelmstr.: Bauarbeiten, Engstelle	q2::inwork 8766,12541 8775,12457
 # 
 # REMOVED (vorfristig frei) --- #: source_id: planb2026:13.39770515,52.51708189,13.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 15.08.2026)
 # REMOVED --- #: note: nur der südliche Bürgersteig ist frei
@@ -1416,7 +1418,7 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 # REMOVED --- Rathausstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 15670,12022 15685,12154
 # 
 #: next_check_id: WEISSETAUBE-2025
-#: last_checked: 2026-09-13
+#: last_checked: 2026-09-15 (luftbildsuche)
 #: check_frequency: 60d
 Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzender Hochbauarbeiten	q1-::inwork 17526,14531 17656,14549 17824,14572
 # 
@@ -1590,21 +1592,21 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6132,7893 6131,7916 6011,7911 5
 # 
 ### Prenzlauer Berg ###
 # 
-#: source_id: vizapi2026:912/2026 (Wasserrohrbruch, Fahrtrichtung für Kfz-Verkehr gesperrt, ohne Endedatum) (bis 10.09.2026 + Folgearbeiten) (inaktiv)
-#: source_id: vizapi2026:921/2026 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 18.09.2026 15:00)
-#: source_id: planb2026:13.40799916,52.55123252,31.08.2026, ("Sicherung gemäß Vz.-plan", Baustelle in der Nähe, vielleicht damit zusammenhängend?, bis 18.09.2026)
-#: source_id: LMS-BR:421903/72 viz2021:13.405712,52.55133,10.09.2026,07:00 (Richtung Westen, bis 18.09.2026)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mumgqwbr6s2s (Richtung Osten für Kfz gesperrt)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mv5ein2p3q2t (für Kfz gesperrt, Umleitung Richtung Westen)
-#: traffic_note: Der Kfz-Verkehr benutzt als Umfahrung Schönfließer Straße - Paul-Robeson-Straße - Malmöer Straße
-#: also_indoor: traffic (G[Richtung Osten],H[Sperrung Richtung Westen, Baustelle Richtung Osten],T[Richtung Westen],W[beide Richtungen])
-#: XXX Außerdem: welche Richtung ist betroffen? Oder beide Richtungen?
-#: priority: #C
-# REMOVED (nein, hier ist sogar eine explizite Radfahrfurt vorhanden) --- Schivelbeiner Str.: Wasserrohrbruch, sind Radfahrer tatsächlich nicht betroffen?	? 10291,16193 10421,16175 10591,16159
-#: last_checked: 2026-09-11
-#: next_check: 2026-09-18 (VIZ-Verkehrsmeldung + planb)
-#: valid: -20260918
-Driesener Str.: Anbindung Schivelbeiner Str. gesperrt	q3::inwork 10438,16340 10421,16175
+# REMOVED --- #: source_id: vizapi2026:912/2026 (Wasserrohrbruch, Fahrtrichtung für Kfz-Verkehr gesperrt, ohne Endedatum) (bis 10.09.2026 + Folgearbeiten) (inaktiv)
+# REMOVED --- #: source_id: vizapi2026:921/2026 (Fahrtrichtung für Kfz-Verkehr gesperrt, bis 18.09.2026 15:00)
+# REMOVED --- #: source_id: planb2026:13.40799916,52.55123252,31.08.2026, ("Sicherung gemäß Vz.-plan", Baustelle in der Nähe, vielleicht damit zusammenhängend?, bis 18.09.2026)
+# REMOVED --- #: source_id: LMS-BR:421903/72 viz2021:13.405712,52.55133,10.09.2026,07:00 (Richtung Westen, bis 18.09.2026) (inaktiv)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mumgqwbr6s2s (Richtung Osten für Kfz gesperrt)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mv5ein2p3q2t (für Kfz gesperrt, Umleitung Richtung Westen)
+# REMOVED --- #: traffic_note: Der Kfz-Verkehr benutzt als Umfahrung Schönfließer Straße - Paul-Robeson-Straße - Malmöer Straße
+# REMOVED --- #: also_indoor: traffic (G[Richtung Osten],H[Sperrung Richtung Westen, Baustelle Richtung Osten],T[Richtung Westen],W[beide Richtungen])
+# REMOVED --- #: XXX Außerdem: welche Richtung ist betroffen? Oder beide Richtungen?
+# REMOVED --- #: priority: #C
+# REMOVED --- # REMOVED (nein, hier ist sogar eine explizite Radfahrfurt vorhanden) --- Schivelbeiner Str.: Wasserrohrbruch, sind Radfahrer tatsächlich nicht betroffen?	? 10291,16193 10421,16175 10591,16159
+# REMOVED --- #: last_checked: 2026-09-11
+# REMOVED --- #: next_check: 2026-09-18 (VIZ-Verkehrsmeldung + planb)
+# REMOVED --- #: valid: -20260918
+# REMOVED --- Driesener Str.: Anbindung Schivelbeiner Str. gesperrt	q3::inwork 10438,16340 10421,16175
 # 
 # REMOVED --- #: source_id: LMS-BR:414025/72 viz2021:13.42474,52.55248, vizapi2026:639/2026 (bis 07.09.2026) (vorfristig inaktiv)
 # REMOVED --- #: source_id: planb2026:13.42380103,52.5516383,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 07.09.2026) (inaktiv)

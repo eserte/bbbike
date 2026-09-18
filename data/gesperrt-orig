@@ -135,7 +135,7 @@ Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2026-09-06 vvv
+#: last_checked: 2026-09-15 (luftbildsuche) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19015,14901 19175,14968
@@ -160,7 +160,7 @@ Knoten Märkische/Landsberger Allee	1no 19196,14976 19205,14980 19254,15000
 #: source_id: LMS-BR:391269/72 viz2021:13.540283,52.540747,25.11.2025,07:00 viz2021:13.54008,52.5405,25.11.2025,07:00 (bis 31.03.2026) (bis 30.06.2026) (bis 31.12.2026)
 #: XXX nach den Bauarbeiten vielleicht wieder zur Einbahnstraße machen?
 #: historical_note: früher (bis Nov. 2025) Einbahnstraße
-#: last_checked: 2026-06-16 (mapillary)
+#: last_checked: 2026-09-15 (luftbildsuche)
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Knoten Märkische/Landsberger Allee	2::inwork 19694,15141 19707,15206 19654,15219 19577,15166
@@ -592,7 +592,7 @@ Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18459,9354
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX: während der Sperrung des Fußgängertunnels gibt es hier einen provisorisch abgetrennten Fußweg, vorher war die Kategorie einfach nur "1s"
 #: note: eng, aber sehr wenige Fußgänger zu erwarten, deshalb q3
-#: last_checked: 2026-09-06
+#: last_checked: 2026-09-15 (luftbildsuche)
 #: check_frequency: 120d
 (Landsberger Allee - Georg-Knorr-Str.)	1s:q3 19169,15015 19314,15059 19364,15045
 #: by: Bosshold, Martin:
@@ -4280,6 +4280,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12
 #: osm_watch: way id="1237814530" version="4"
 #: XXX früher: 1::igndisp
 #: last_checked: 2026-08-21 (mapillary)
+#: next_check: 2026-10-02 (planb)
 Nordufer: Radweg wird vermutlich zurückgebaut	2::inwork 7156,14763 7129,14787
 # 
 #: next_check_id: URBANTECHREPUBLIC-2022
@@ -4458,7 +4459,7 @@ Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3445,1150
 #: by: https://www.entwicklungsstadt.de/bka-standort-puschkinallee-sicherheitscampus-in-treptow-nimmt-form-an/
 #: osm_watch: way id="179005464" version="11"
 #: osm_watch: way id="1339060325" version="2"
-#: last_checked: 2026-08-10
+#: last_checked: 2026-09-17 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
@@ -4585,6 +4586,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: by: https://entwicklungsstadt.de/umgestaltung-der-vorplaetze-am-bahnhof-ostkreuz-geht-voran/ (Fertigstellung im Frühjahr 2026)
 #: by: https://www.entwicklungsstadt.de/ostkreuz-im-umbau-neuer-vorplatz-richtung-victoriakiez/
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26924.pdf (Nordostplatz ist im Herbst 2026 fertig)
+#: by: https://www.entwicklungsstadt.de/baustelle-ostkreuz-was-bis-herbst-2026-fertig-wird-und-was-sich-verzoegert/
 #: XXX Laut Aushang wird der Zugang erst im Frühjahr 2026 möglich sein
 #: note: der Fußgängerschutztunnel ist bereits abgebaut worden
 #: source_id: LMS-BR:402145/72 viz2021:13.47353,52.50308,18.03.2026,07:00 (Verengung in der benachbarten Marktstr., bis 29.05.2026) (inaktiv)
@@ -4594,7 +4596,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: note 5102399 3
 #: last_checked: 2026-09-17
 #: check_frequency: 30d
-#: next_check: 2026-11-30 (pardok: Herbst 2026)
+#: next_check: 2026-11-30 (pardok + entwicklungsstadt: Herbst 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
 # 
 # REMOVED (mittlerweile (oder schon immer): man kommt an der Baustelle vorbei, etwas verwinkelt, aber lohnt nicht, temporär eine Degradierung q2->q3 vorzunehmen) --- #: priority: #B --- #: last_checked: 2025-04-30 --- #: next_check: 2025-07-31 (Halteverbotsschilder) --- Gounodstr.: Durchfahrt vor der Picasso-Grundschule wegen Bauarbeiten gesperrt	2::inwork 14251,15828 14366,15877
@@ -4708,7 +4710,7 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 #: note: siehe auch temp-blockings-Eintrag
-#: last_checked: 2026-09-06 vvv
+#: last_checked: 2026-09-15 (luftbildsuche) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.): massive Sperrung	2::inwork 19173,14932 19171,14938 19157,14979
@@ -4729,7 +4731,7 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 #: osm_watch: way id="26244466" version="26"
 #: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:316070/72 viz2021:13.53642,52.53865, (bis 31.12.2026)
-#: last_checked: 2026-09-06
+#: last_checked: 2026-09-15 (luftbildsuche)
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
@@ -5271,7 +5273,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
 #: osm_watch: note 4853760 1
-#: last_checked: 2026-09-14 vvv
+#: last_checked: 2026-09-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759

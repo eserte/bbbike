@@ -59,10 +59,10 @@ Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 #: valid: -20261102
 Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 # 
-#: source_id: LMS-BR:412099/72 viz2021:13.22465,52.58966,16.06.2026,09:00 (bis 18.09.2026)
-#: next_check: 2026-09-18
-#: valid: -20260918
-Sandhauser Str./Elstergasse: Gegenverkehrsregelung	X::inwork::alternating -1971,20231
+# REMOVED --- #: source_id: LMS-BR:412099/72 viz2021:13.22465,52.58966,16.06.2026,09:00 vizapi2026:584/2026 (bis 18.09.2026) (inaktiv)
+# REMOVED --- #: next_check: 2026-09-18
+# REMOVED --- #: valid: -20260918
+# REMOVED --- Sandhauser Str./Elstergasse: Gegenverkehrsregelung	X::inwork::alternating -1971,20231
 # 
 # REMOVED --- #: source_id: LMS-BR:412100/72 viz2021:13.34672,52.59299,16.06.2026,09:00 (bis 04.09.2026) (bei vizapi2026 inaktiv) (inaktiv)
 # REMOVED --- #: next_check: 2026-09-04
@@ -70,7 +70,7 @@ Sandhauser Str./Elstergasse: Gegenverkehrsregelung	X::inwork::alternating -1971,
 # REMOVED --- Schorfheidestr./Drebkauer Str.: Gegenverkehrsregelung	X::inwork::alternating 6317,20751
 # 
 #: next_check_id: ALLEEDERKOSMONAUTEN-2026
-#: last_checked: 2026-09-08
+#: last_checked: 2026-09-15 (luftbildsuche)
 #: check_frequency: 60d
 #: next_check: 2026-12-12 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260907
@@ -182,6 +182,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # 
 #: next_check_id: ALTEFOERSTEREI-2026
+#: osm_watch: note 5524710 1
 #: last_checked: 2026-09-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-06-30 (planb) vvv
@@ -650,7 +651,7 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 #: next_check_id: KNOTENMARZAHN-2022
 # REMOVED (ja) --- #: XXX gibt es die Ampeln wieder?
-#: last_checked: 2026-09-06 vvv
+#: last_checked: 2026-09-15 (luftbildsuche) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: 20240618- vvv
