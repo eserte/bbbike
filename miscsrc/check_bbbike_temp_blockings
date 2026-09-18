@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2007,2014,2017,2022,2023,2025 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2007,2014,2017,2022,2023,2025,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBike::check_bbbike_temp_blockings;
@@ -208,89 +207,159 @@ sub run_checks {
 	# From here: checks only for future blockings
 	
 	# timestamp plausibility
-	if (!$o->{dont_check_date} && $o->{text} =~ m{
-							 (?:
-							     (?<from_gerdayrange>$german_ranges_rx)\b\s*
-							 |   (?<from_d>\d+)\.
-							 )
-							 (?:
-							     \s*(?<from_germonth>$german_month_rx)\s*
-							 |   (?<from_m>\d+)\.
-							 )
-							 (?<from_y>20\d+)
-							 .*?
-							 (?:
-							     (?<until_gerdayrange>$german_ranges_rx)\b\s*
-							 |   (?<until_d>\d+)\.
-							 )
-							 (?:
-							     \s*(?<until_germonth>$german_month_rx)\s*
-							 |   (?<until_m>\d+)\.
-							 )
-							 (?<until_y>20\d+)
-						 }x) {
+	if (!$o->{dont_check_date}) {
 	    # pre/postwarn_days: handle possible mismatch between
 	    # dates in text and dates in from/until fields
 	    my $prewarn_days = defined $o->{prewarn_days} ? $o->{prewarn_days} : 1;
 	    my $postwarn_days = defined $o->{postwarn_days} ? $o->{postwarn_days} : 1;
-	    my $from_day_range  = defined $+{from_gerdayrange}  ? $german_ranges{$+{from_gerdayrange}}  : undef;
-	    my $until_day_range = defined $+{until_gerdayrange} ? $german_ranges{$+{until_gerdayrange}} : undef;
-	    my $from_d = $+{from_d};
-	    my $from_m = defined $+{from_germonth}  ? $german_month_to_num{$+{from_germonth}}  : $+{from_m};
-	    my $from_y = $+{from_y};
-	    my $until_d = $+{until_d};
-	    my $until_m = defined $+{until_germonth} ? $german_month_to_num{$+{until_germonth}} : $+{until_m};
-	    my $until_y = $+{until_y};
-
-	    my($from_field, $from_and_one_day_field) = ('', '');
-	    if (defined $o->{from}) {
-		$from_field  = strftime "%F", localtime $o->{from};
-		$from_and_one_day_field = strftime "%F", localtime $o->{from} + 86400 * $prewarn_days; # accept an additional day
-	    }
-	    my($until_field, $until_and_one_day_field) = ('', '');
-	    if (defined $o->{until}) {
-		$until_field = strftime "%F", localtime $o->{until};
-		$until_and_one_day_field = strftime "%F", localtime $o->{until} - 86400 * $postwarn_days; # day before
-	    } elsif (!defined $o->{until} && $o->{data} =~ m{^#: next_check: (\d{4})-(\d{2})-(\d{2})}m) { # if until is not defined, then use a next_check directive as fallback
-		$until_field = "$1-$2-$3";
-		$until_and_one_day_field = strftime "%F", localtime(timelocal(0,0,0,$3,$2-1,$1) - 86400 * $postwarn_days);
-	    }
-
-	    my $die_text;
-	    if (defined $from_day_range) {
-		my $from_text_start = sprintf "%04d-%02d-%02d", $from_y,$from_m,$from_day_range->[0]; # XXX can't cope with prewarn days
-		my $from_text_end   = sprintf "%04d-%02d-%02d", $from_y,$from_m,$from_day_range->[1];
-		if ($from_field lt $from_text_start || $from_field gt $from_text_end) {
-		    $die_text = "from date mismatch: $from_text_start..$from_text_end vs. $from_field in" . Dumper($o);
-		}
-	    } else {
-		my $from_text  = sprintf "%04d-%02d-%02d", $from_y,$from_m,$from_d;
-		if ($from_text ne $from_field && $from_text ne $from_and_one_day_field) {
-		    $die_text = "from date mismatch: $from_text vs. $from_field and $from_and_one_day_field in " . Dumper($o);
-		}
-	    }
-	    my $dont_check_end = $o->{text} =~ m{\b(?:evtl\.|eventuell|möglicherweise|vielleicht) (?:wird|werden) die (?:Sperrung|Baustelle|Bauarbeiten|Einbahnstraßenregelung) verlängert};
-	    if (!$dont_check_end) {
-		if (defined $until_day_range) {
-		    my $until_text_start = sprintf "%04d-%02d-%02d", $until_y,$until_m,$until_day_range->[0];
-		    my $until_text_end   = sprintf "%04d-%02d-%02d", $until_y,$until_m,$until_day_range->[1]; # XXX can't cope with postwarn days
-		    if ($until_field lt $until_text_start || $until_field gt $until_text_end) {
-			$die_text = "until date mismatch: $until_text_start..$until_text_end vs. $until_field in" . Dumper($o);
+	    my($from_day_range, $until_day_range,
+	       $until_month_range,
+	       $from_d, $from_m, $from_y,
+	       $until_d, $until_m, $until_y);
+	    my $matched;
+	    # XXX avoid code duplication!
+	    if ($o->{text} =~ m{
+				   (?:
+				       (?<from_gerdayrange>$german_ranges_rx)\b\s*
+				   |   (?<from_d>\d+)\.
+				   )
+				   (?:
+				       \s*(?<from_germonth>$german_month_rx)\s*
+				   |   (?<from_m>\d+)\.
+				   )
+				   (?<from_y>20\d+)
+				   .*?
+				   (?:
+				       (?<until_gerdayrange>$german_ranges_rx)\b\s*
+				   |   (?<until_d>\d+)\.
+				   )
+				   (?:
+				       \s*(?<until_germonth>$german_month_rx)\s*
+				   |   (?<until_m>\d+)\.
+				   )
+				   (?<until_y>20\d+)
+			   }x) {
+		$from_day_range  = defined $+{from_gerdayrange}  ? $german_ranges{$+{from_gerdayrange}}  : undef;
+		$until_day_range = defined $+{until_gerdayrange} ? $german_ranges{$+{until_gerdayrange}} : undef;
+		$from_d = $+{from_d};
+		$from_m = defined $+{from_germonth}  ? $german_month_to_num{$+{from_germonth}}  : $+{from_m};
+		$from_y = $+{from_y};
+		$until_d = $+{until_d};
+		$until_m = defined $+{until_germonth} ? $german_month_to_num{$+{until_germonth}} : $+{until_m};
+		$until_y = $+{until_y};
+		$matched = 1;
+	    } elsif ($o->{text} =~ m{
+					\bbis(?:\s+voraussichtlich)?\s+
+					(?:
+					    (?<until_gerdayrange>$german_ranges_rx)\b\s*
+					|   (?<until_d>\d+)\.
+					)
+					(?:
+					    \s*(?<until_germonth>$german_month_rx)\s*
+					|   (?<until_m>\d+)\.
+					)
+					(?<until_y>20\d+)
+				}x) {
+		$until_day_range = defined $+{until_gerdayrange} ? $german_ranges{$+{until_gerdayrange}} : undef;
+		$until_d = $+{until_d};
+		$until_m = defined $+{until_germonth} ? $german_month_to_num{$+{until_germonth}} : $+{until_m};
+		$until_y = $+{until_y};
+		$matched = 1;
+	    } elsif ($o->{text} =~ m{
+					\bbis(?:\s+voraussichtlich)?\s+
+					(?:
+					    (?<until_germonth>$german_month_rx)
+					|   (?<until_grob>Anfang|Mitte|Ende|Frühjahr|Sommer|Herbst)
+					)
+					\s+
+					(?<until_y>20\d+)
+				}x) {
+		if (defined $+{until_germonth}) {
+		    $until_day_range = [1,31];
+		    $until_m = $german_month_to_num{$+{until_germonth}}
+		} elsif (defined $+{until_grob}) {
+		    if      ($+{until_grob} eq 'Anfang') {
+			$until_month_range = [1,3];
+		    } elsif ($+{until_grob} eq 'Mitte') {
+			$until_month_range = [6,7];
+		    } elsif ($+{until_grob} eq 'Ende') {
+			$until_month_range = [12,12];
+		    } elsif ($+{until_grob} eq 'Frühjahr') {
+			$until_month_range = [3,5];
+		    } elsif ($+{until_grob} eq 'Sommer') {
+			$until_month_range = [6,9];
+		    } elsif ($+{until_grob} eq 'Herbst') {
+			$until_month_range = [9,11];
+		    } else {
+			die "FATAL ERROR: Can't happen: unhandled until_grob value '$+{until_grob}'";
 		    }
 		} else {
-		    my $until_text = sprintf "%04d-%02d-%02d", $until_y,$until_m,$until_d;
-		    if ($until_text ne $until_field && $until_text ne $until_and_one_day_field) {
-			$die_text = "until date mismatch: $until_text vs. $until_field and $until_and_one_day_field in " . Dumper($o);
+		    die "FATAL ERROR: Can't happen: neither until_germonth nor until_grob defined";
+		}
+		$until_y = $+{until_y};
+		$matched = 1;
+	    }
+
+	    if ($matched) {
+		my($from_field, $from_and_one_day_field) = ('', '');
+		if (defined $o->{from}) {
+		    $from_field  = strftime "%F", localtime $o->{from};
+		    $from_and_one_day_field = strftime "%F", localtime $o->{from} + 86400 * $prewarn_days; # accept an additional day
+		}
+		my($until_field, $until_and_one_day_field) = ('', '');
+		if (defined $o->{until}) {
+		    $until_field = strftime "%F", localtime $o->{until};
+		    $until_and_one_day_field = strftime "%F", localtime $o->{until} - 86400 * $postwarn_days; # day before
+		} elsif (!defined $o->{until} && $o->{data} =~ m{^#: next_check: (\d{4})-(\d{2})-(\d{2})}m) { # if until is not defined, then use a next_check directive as fallback
+		    $until_field = "$1-$2-$3";
+		    $until_and_one_day_field = strftime "%F", localtime(timelocal(0,0,0,$3,$2-1,$1) - 86400 * $postwarn_days);
+		}
+
+		if ($debug) {
+		    warn "DEBUG: used dates: from=$from_field..$from_and_one_day_field until=$until_field..$until_and_one_day_field for $o->{text}.\n";
+		}
+
+		my $die_text;
+		if (defined $from_day_range) {
+		    my $from_text_start = sprintf "%04d-%02d-%02d", $from_y,$from_m,$from_day_range->[0]; # XXX can't cope with prewarn days
+		    my $from_text_end   = sprintf "%04d-%02d-%02d", $from_y,$from_m,$from_day_range->[1];
+		    if ($from_field lt $from_text_start || $from_field gt $from_text_end) {
+			$die_text = "from date mismatch: $from_text_start..$from_text_end vs. $from_field in" . Dumper($o);
+		    }
+		} elsif (defined $from_y) {
+		    my $from_text  = sprintf "%04d-%02d-%02d", $from_y,$from_m,$from_d;
+		    if ($from_text ne $from_field && $from_text ne $from_and_one_day_field) {
+			$die_text = "from date mismatch: $from_text vs. $from_field and $from_and_one_day_field in " . Dumper($o);
 		    }
 		}
-	    }
-	    if ($die_text) {
-		my $suggestion_text;
-		if ($tz) {
-		    # Try to guess if tzset was successful
-		    my($std,$dst) = tzname;
-		    if ($dst =~ /^\s*$/) { # if TZ was not known in the tzset call -> Linux: empty string; FreeBSD: whitespace
-			$suggestion_text = <<EOF;
+		my $dont_check_end = $o->{text} =~ m{\b(?:evtl\.|eventuell|möglicherweise|vielleicht) (?:wird|werden) die (?:Sperrung|Baustelle|Bauarbeiten|Einbahnstraßenregelung) verlängert};
+		if (!$dont_check_end) {
+		    if (defined $until_day_range) {
+			my $until_text_start = sprintf "%04d-%02d-%02d", $until_y,$until_m,$until_day_range->[0];
+			my $until_text_end   = sprintf "%04d-%02d-%02d", $until_y,$until_m,$until_day_range->[1]; # XXX can't cope with postwarn days
+			if ($until_field lt $until_text_start || $until_field gt $until_text_end) {
+			    $die_text = "until date mismatch: $until_text_start..$until_text_end vs. $until_field in" . Dumper($o);
+			}
+		    } elsif (defined $until_month_range) {
+			my $until_text_start = sprintf "%04d-%02d-%02d", $until_y,$until_month_range->[0],1;
+			my $until_text_end   = sprintf "%04d-%02d-%02d", $until_y,$until_month_range->[1],31; # XXX can't cope with postwarn days
+			if ($until_field lt $until_text_start || $until_field gt $until_text_end) {
+			    $die_text = "until date mismatch: $until_text_start..$until_text_end vs. $until_field in" . Dumper($o);
+			}
+		    } else {
+			my $until_text = sprintf "%04d-%02d-%02d", $until_y,$until_m,$until_d;
+			if ($until_text ne $until_field && $until_text ne $until_and_one_day_field) {
+			    $die_text = "until date mismatch: $until_text vs. $until_field and $until_and_one_day_field in " . Dumper($o);
+			}
+		    }
+		}
+		if ($die_text) {
+		    my $suggestion_text;
+		    if ($tz) {
+			# Try to guess if tzset was successful
+			my($std,$dst) = tzname;
+			if ($dst =~ /^\s*$/) { # if TZ was not known in the tzset call -> Linux: empty string; FreeBSD: whitespace
+			    $suggestion_text = <<EOF;
 It's possible that the timezone option (-tz) was ignored,
 e.g. due to missing packages. On Debian or Ubuntu, try to
 install the tzdata package:
@@ -298,10 +367,10 @@ install the tzdata package:
     sudo apt-get install tzdata
 
 EOF
+			}
 		    }
-		}
-		if (!defined $suggestion_text) {
-		    $suggestion_text = <<EOF;
+		    if (!defined $suggestion_text) {
+			$suggestion_text = <<EOF;
 Please set
        dont_check_date => 1,
 or
@@ -309,9 +378,16 @@ or
 to ignore this failure.
 
 EOF
+		    }
+		    die "\n=== DATA ERROR ===\n" . $die_text . "SUGGESTION:\n" . $suggestion_text;
 		}
-		die $die_text . "SUGGESTION:\n" . $suggestion_text;
+	    } else {
+		warn "DEBUG: no plausibility check for $o->{text} because of: no matching dates\n"
+		    if $debug;
 	    }
+	} else {
+	    warn "DEBUG: no plausibility check for $o->{text} because of: dont_check_date\n"
+		if $debug;
 	}
 
 	if ($check_net) {
