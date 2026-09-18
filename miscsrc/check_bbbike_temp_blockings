@@ -21,6 +21,7 @@ use FindBin;
 use Data::Dumper qw(Dumper);
 use Getopt::Long;
 use POSIX qw(strftime tzset tzname);
+use Time::Local qw(timelocal);
 
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
@@ -234,8 +235,12 @@ sub run_checks {
 	    my $postwarn_days = defined $o->{postwarn_days} ? $o->{postwarn_days} : 1;
 	    my $from_day_range  = defined $+{from_gerdayrange}  ? $german_ranges{$+{from_gerdayrange}}  : undef;
 	    my $until_day_range = defined $+{until_gerdayrange} ? $german_ranges{$+{until_gerdayrange}} : undef;
-	    my $from_m  = defined $+{from_germonth}  ? $german_month_to_num{$+{from_germonth}}  : $+{from_m};
+	    my $from_d = $+{from_d};
+	    my $from_m = defined $+{from_germonth}  ? $german_month_to_num{$+{from_germonth}}  : $+{from_m};
+	    my $from_y = $+{from_y};
+	    my $until_d = $+{until_d};
 	    my $until_m = defined $+{until_germonth} ? $german_month_to_num{$+{until_germonth}} : $+{until_m};
+	    my $until_y = $+{until_y};
 
 	    my($from_field, $from_and_one_day_field) = ('', '');
 	    if (defined $o->{from}) {
@@ -246,17 +251,20 @@ sub run_checks {
 	    if (defined $o->{until}) {
 		$until_field = strftime "%F", localtime $o->{until};
 		$until_and_one_day_field = strftime "%F", localtime $o->{until} - 86400 * $postwarn_days; # day before
+	    } elsif (!defined $o->{until} && $o->{data} =~ m{^#: next_check: (\d{4})-(\d{2})-(\d{2})}m) { # if until is not defined, then use a next_check directive as fallback
+		$until_field = "$1-$2-$3";
+		$until_and_one_day_field = strftime "%F", localtime(timelocal(0,0,0,$3,$2-1,$1) - 86400 * $postwarn_days);
 	    }
 
 	    my $die_text;
 	    if (defined $from_day_range) {
-		my $from_text_start = sprintf "%04d-%02d-%02d", $+{from_y},$from_m,$from_day_range->[0]; # XXX can't cope with prewarn days
-		my $from_text_end   = sprintf "%04d-%02d-%02d", $+{from_y},$from_m,$from_day_range->[1];
+		my $from_text_start = sprintf "%04d-%02d-%02d", $from_y,$from_m,$from_day_range->[0]; # XXX can't cope with prewarn days
+		my $from_text_end   = sprintf "%04d-%02d-%02d", $from_y,$from_m,$from_day_range->[1];
 		if ($from_field lt $from_text_start || $from_field gt $from_text_end) {
 		    $die_text = "from date mismatch: $from_text_start..$from_text_end vs. $from_field in" . Dumper($o);
 		}
 	    } else {
-		my $from_text  = sprintf "%04d-%02d-%02d", $+{from_y},$from_m,$+{from_d};
+		my $from_text  = sprintf "%04d-%02d-%02d", $from_y,$from_m,$from_d;
 		if ($from_text ne $from_field && $from_text ne $from_and_one_day_field) {
 		    $die_text = "from date mismatch: $from_text vs. $from_field and $from_and_one_day_field in " . Dumper($o);
 		}
@@ -264,13 +272,13 @@ sub run_checks {
 	    my $dont_check_end = $o->{text} =~ m{\b(?:evtl\.|eventuell|möglicherweise|vielleicht) (?:wird|werden) die (?:Sperrung|Baustelle|Bauarbeiten|Einbahnstraßenregelung) verlängert};
 	    if (!$dont_check_end) {
 		if (defined $until_day_range) {
-		    my $until_text_start = sprintf "%04d-%02d-%02d", $+{until_y},$until_m,$until_day_range->[0];
-		    my $until_text_end   = sprintf "%04d-%02d-%02d", $+{until_y},$until_m,$until_day_range->[1]; # XXX can't cope with postwarn days
+		    my $until_text_start = sprintf "%04d-%02d-%02d", $until_y,$until_m,$until_day_range->[0];
+		    my $until_text_end   = sprintf "%04d-%02d-%02d", $until_y,$until_m,$until_day_range->[1]; # XXX can't cope with postwarn days
 		    if ($until_field lt $until_text_start || $until_field gt $until_text_end) {
 			$die_text = "until date mismatch: $until_text_start..$until_text_end vs. $until_field in" . Dumper($o);
 		    }
 		} else {
-		    my $until_text = sprintf "%04d-%02d-%02d", $+{until_y},$until_m,$+{until_d};
+		    my $until_text = sprintf "%04d-%02d-%02d", $until_y,$until_m,$until_d;
 		    if ($until_text ne $until_field && $until_text ne $until_and_one_day_field) {
 			$die_text = "until date mismatch: $until_text vs. $until_field and $until_and_one_day_field in " . Dumper($o);
 		    }
