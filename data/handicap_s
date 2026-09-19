@@ -13,7 +13,8 @@ Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q3::inwork; 13434,13234 13383,13349
 Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 13375,13367 13330,13468
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
-Singerstr.: kurze Sperrung am Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
+Singerstr.: Sperrung an der Einm¸ndung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
+Franz-Mehring-Platz: Sperrung an der Einm¸ndung Singerstr.	q4::inwork 12691,12042 12648,11953
 Matthiasstr.: Sperrung im Einm¸ndungsbereich Pufendorfstr.	q3::inwork 12786,13185 12842,13070
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straﬂe der Pariser Kommune - Erich-Steinfurth-Str.): einige Fuﬂg‰nger	q2; 12660,11705 12634,11705 12608,11692
@@ -2488,6 +2489,7 @@ Fenchelweg: enge Straﬂe	q1 15410,3179 15500,3299 15611,3448 15674,3528 15737,360
 (KGA Alt-Hellersdorf): einige Fuﬂg‰nger	q2 23109,15140 23263,15162 23271,15164 23400,15195
 (KGA Alt-Hellersdorf - Neuruppiner Str.): einige Fuﬂg‰nger	q2 23263,15162 23257,15223
 (KGA Alt-Hellersdorf - Alt-Hellersdorf): einige Fuﬂg‰nger	q1 23271,15164 23285,15104 23282,15055
+(Havell‰nder Ring - Neuruppiner Str./KGA Alt-Hellersdorf): einige Fuﬂg‰nger, schmal, Bordstein	q3 23326,15287 23282,15228
 (Lydia-Rabinowitsch-Str. - Uferweg): einige Fuﬂg‰nger	q1 7930,14060 7965,14081
 (Lydia-Rabinowitsch-Str. - Uferweg): einige Fuﬂg‰nger	q1 7973,13991 8010,14014
 (Treskowallee - Traberweg): Rampe	q4 18471,7862 18442,7882

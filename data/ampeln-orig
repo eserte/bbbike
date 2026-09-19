@@ -44,7 +44,7 @@ Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 (bis 15.10.2026)
-#: last_checked: 2026-09-11
+#: last_checked: 2026-09-19
 #: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261015
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
@@ -196,7 +196,7 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: source_id: planb2026:13.42219032,52.51114479,11.09.2025,07:00 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-09-15
+#: last_checked: 2026-09-19
 #: check_frequency: 60d
 #: next_check: 2026-11-04 (planb)
 Michaelbrücke	F::inwork 11676,11839
@@ -263,7 +263,7 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
 #: source_id: vizapi2026:629/2026 (bis 28.10.2026)
 #: source_id: planb2026:13.38013957,52.51948663,03.07.2025, ("Gegenverkehrsanlage (LZA)", bis 28.10.2026)
-#: last_checked: 2026-09-15
+#: last_checked: 2026-09-19
 #: check_frequency: 120d
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261028
@@ -566,7 +566,7 @@ Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2026-08-29
+#: last_checked: 2026-09-19
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -1530,7 +1530,6 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 14208,12235
 	X 12382,13097
 	X 12126,13088
-	X 11706,13635
 	X 11251,13667
 	X 10933,14122
 	F 10938,14159
@@ -2385,7 +2384,11 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: off_rule: night
 	X 14134,11272
 # 
+#: note: aus der Friedenstr. kommend kann man die nächste Ampel an der Greifswalder Str. nicht schaffen
 	X 11785,13625
+#: note: 5s grün für den Radverkehr
+	X 11706,13635
+# 
 	X 10904,17288
 	X 10448,17751
 	X 9905,18329
@@ -4238,7 +4241,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-09-08 (mapillary) vvv
+#: last_checked: 2026-09-19 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 4
