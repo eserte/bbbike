@@ -394,7 +394,6 @@ Fürstenwerder - Bülowssiege: Qualität?	? 21007,109931 21062,109937 21165,109966 
 L25 - Hildebrandshagen: Qualität?	? 23242,109707 23226,110446 23385,110586 23413,110757 23274,110878 23274,110963 23087,111261 23087,111306 23153,111439 23077,111655 23118,111699 23134,111848 22992,112273 22836,112384 22674,112533
 Hildebrandshagen - Wolfshagen: Qualität?	? 22674,112533 22785,112612 22909,112768 22972,112939 22766,114059 22849,114201 22836,114325 22934,114693 23096,114947 24289,115273 24587,115502
 Brahmsweg (Potsdam): Qualität?	? -8136,-2699 -8132,-2754 -8138,-2804
-Schubertstr. (Potsdam): Qualität?	? -8219,-2795 -8138,-2804 -8108,-2809 -7965,-2825
 Hohenreinkendorf: Qualität?	? 71648,92361 71767,92617 71794,92835 71812,93044 71834,93124 71805,93237
 Prädikow - Ihlow: Qualität?	? 52002,25503 53381,24795 55138,24770 55410,24766
 Am Biotop: Qualität? Hat die gesamte Straße einen Radweg?	? 44686,20822 44589,20853 44493,20826 44382,20624 44286,20112
@@ -462,7 +461,8 @@ Handelshof (Potsdam): Qualität?	? -9028,-5574 -9169,-5651 -9205,-5580
 Möbelhof (Potsdam): Qualität?	? -9329,-5239 -9199,-5153 -9088,-5091
 Zum Heizwerk (Potsdam): Qualität?	? -9597,-5392 -9583,-5366 -9441,-5109 -9402,-5039 -9212,-4718 -9105,-4665
 Am Bürohochhaus (Potsdam): Qualität?	? -9402,-5039 -9199,-5153
-Meisenweg (Potsdam): Qualität?	? -9940,-4206 -9875,-4247 -9798,-4308 -9721,-4364 -9692,-4391
+Meisenweg (Potsdam): Qualität (im westlichen Abschnitt möglicherweise asphaltiert, im östlichen betoniert)?	? -9940,-4206 -9875,-4247 -9798,-4308 -9721,-4364 -9665,-4409
+(Meisenweg - Erich-Weinert-Str.): Fußweg, für Radfahrer frei? Qualität?	? -9665,-4409 -9609,-4468
 Wieselkiez (Potsdam): Qualität?	? -9647,-3958 -9645,-3830
 Habichthorst (Potsdam): Qualität?	? -10498,-3164 -10498,-3266
 Magnus-Zeller-Platz (Potsdam): Qualität?	? -10438,-3818 -10433,-3753
@@ -477,10 +477,8 @@ Lisdorf (Potsdam): Qualität?	? -9875,-4247 -9783,-4140 -9672,-4065
 Zur Nuthe (Potsdam): Qualität?	? -9798,-4308 -9717,-4220 -9613,-4149 -9573,-4124 -9502,-4079 -9472,-4061
 Am Fenn (Potsdam): Qualität?	? -10102,-4346 -10011,-4426 -9860,-4555
 Am Fenn (Potsdam): Qualität?	? -10072,-4507 -10011,-4426
-Am Stadtrand (Potsdam): Qualität?	? -9808,-4484 -9721,-4364 -9559,-4242 -9413,-4154 -9472,-4061
 Sonnentaustr. (Potsdam): Qualität?	? -10649,-5236 -10740,-5048
-Zum Teufelssee (Potsdam): Qualität des westlichen Abschnitts?	? -10397,-5379 -10542,-5445 -10516,-5498 -10482,-5572 -10431,-5655
-Liefelds Grund (Potsdam): Qualität?	? -10397,-5379 -10344,-5504 -10482,-5572
+Liefelds Grund (Potsdam): Qualität (vermutlich alter Beton)?	? -10397,-5379 -10344,-5504 -10482,-5572
 Moosglöckchenweg (Potsdam): Qualität?	? -10535,-5751 -10630,-5553
 Am Springbruch (Potsdam): Qualität?	? -10641,-5814 -10721,-5678 -10659,-5648
 Radweg zwischen Linthe und Brück: Qualität?	? -30940,-28490 -31197,-28211 -32764,-26283
@@ -698,7 +696,6 @@ Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -40472,-60875 
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -45341,-60204 -45542,-60600 -45672,-60511 -46530,-60599 -46723,-60522 -46764,-60401 -47043,-60384 -47127,-60413 -47304,-60419 -47361,-60377 -47719,-60341 -47970,-60425 -48241,-60614 -48333,-60479 -48351,-60042 -48443,-59933 -48939,-59625 -48925,-59526 -49133,-59396 -49325,-59391 -49402,-59372 -49678,-59347 -49897,-59301
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -50427,-59455 -50632,-59778 -50866,-60135 -51103,-60273 -51182,-60217 -51283,-60271 -51411,-60372 -51489,-60286 -51529,-60271 -51542,-60246 -51806,-59966 -51852,-59722 -52045,-59411 -52196,-59426 -52341,-59434
 Menz - Großwoltersdorf: Qualität des Radwegs?	? -13662,75159 -12578,74452 -12341,73942 -12394,73760 -12288,73702 -12250,73762
-Heinrich-Mann-Allee [Nebenfahrbahn] - Friedhofsgasse: gibt es hier eine Verbindung? Qualität?	? -12017,-2511 -12001,-2495
 Steenerbuschstr. (Zepernick): Qualität des verkehrsberuhigten Abschnitts?	? 18697,27189 18719,27191 18814,27266
 Götz - Deetz: Qualität der Fahrbahn? Gibt es hier Radwege?	? -35606,300 -35712,428 -36125,787
 Schillerstr. (Dallgow-Döberitz): Qualität?	? -12492,15282 -12326,15252 -12272,15277 -12245,15383
@@ -765,6 +762,7 @@ Eichendorffstr. (Schwanebeck-West): unbefestigte Straße (Wurde die Eichendorffst
 Maienhöhe: Asphalt (ist der südöstliche Abschnitt der Maienhöhe ebenfalls asphaltiert?)	? 32780,5513 32819,5506 32940,5485 33047,5433
 Lenzstr.: unbefestigt (ist der nördliche Abschnitt der Lenzstr. asphaltiert oder unbefestigt?)	? 33098,5856 33119,6053 33135,6164
 Petersdorf: Asphalt (ist auch im westlichen Abschnitt asphaltiert?)	? 23256,76732 22470,76523
+Schubertstr. (Potsdam): Kopfsteinpflaster (Ist die westliche Schubertstr. gepflastert? Ist das Pflaster eher normal oder eher schlechter?)	? -8219,-2795 -8138,-2804 -8108,-2809
 Storkow - Kolberg: Asphalt, leicht uneben (Ist die Qualität nach den Bauarbeiten besser geworden?)	? 45689,-16860 45643,-16874 45070,-17054 44711,-17090 44573,-17067 44536,-17050 44261,-17004 43029,-17057 42551,-17143 42214,-17200 40528,-17287 40362,-17304 40219,-17373 40127,-17455 39847,-17686 39608,-17712
 Storkow - Kolberg: Asphalt (Ist die Qualität nach den Bauarbeiten besser geworden?)	? 39608,-17712 39527,-17698 39380,-17617 39061,-17526 38880,-17517 38838,-17514
 Kolberg: Asphalt, leicht uneben (Ist die Qualität nach den Bauarbeiten besser geworden?)	? 38838,-17514 38696,-17507

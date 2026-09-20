@@ -649,7 +649,7 @@ Kielblockstr. - Rutnikstr.: Linksabbiegen Pflicht	3 15433,12686 15546,12690 1564
 Möllendorffstr. - Rutnikstr.: Abbiegen verboten	3 15516,12838 15546,12690 15648,12687
 # REMOVED (kein Durchgangsverkehr mehr) --- Torgauer Str.: nur für Anlieger	2:Anlieger 7446,8200 7402,8208 7374,8211 7250,8223 7001,8161
 #: by: Aaron Schaar, osm:
-Hermannswerder	1 -14306,-2867 -14044,-2918 -13765,-2974 -13733,-2967
+Hermannswerder	1 -14306,-2867 -14044,-2918 -13873,-2951 -13765,-2974 -13733,-2967
 # 
 #: by: Ulf Lenski:
 #: confirmed_by: srt
@@ -1074,7 +1074,7 @@ Sembritzkistr.: nur für Radfahrer	3 * 7199,5479 *
 Egon-Erwin-Kisch-Str. [Wohngebiet]: Schranke (für Autofahrer)	3 * 17067,19004 *
 Am Tierpark: Straßenbahntrasse	3nocross 18417,10738 18446,10620 18554,10354 18585,10278
 Domnauer Str.: Poller	3 * 7816,5682 *
-Hermannswerder	1 -14306,-2867 -14044,-2918 -13765,-2974 -13733,-2967
+Hermannswerder	1 -14306,-2867 -14044,-2918 -13873,-2951 -13765,-2974 -13733,-2967
 Paetowstr.: Poller	3 * -13110,-3015 *
 Am Raubfang (Potsdam)	1 -15308,1220 -15366,1249 -15436,1253 -15533,813
 Goetheplatz (Potsdam)	1 -9922,-1395 -9809,-1435
@@ -2558,4 +2558,6 @@ Theodor-Fontane-Str. (Groß Glienicke): Zufahrt zur B2 verboten	1 -9839,6877 -984
 #: historical_note: früher möglicherweise ohne "Radfahrer frei"
 Ribbeckweg (Groß Glienicke)	1 -9720,6589 -9928,6599 -9932,6558
 An der Kirche (Groß Glienicke)	1 -9717,6669 -10053,6676
+# 
+(Friedhofsgasse - Heinrich-Mann-Allee [Nebenfahrbahn])	1 -12001,-2495 -12017,-2511
 # 

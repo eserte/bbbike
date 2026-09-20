@@ -1591,7 +1591,7 @@ Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordsei
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/endversion-protokoll-18-06-20.pdf
 #: by: https://api.fixmyberlin.de/api/plannings/126 (Verbreiterung auf 2m)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25983.pdf (RVA, beidseitig, nicht weiter spezifiziert, bis zur Stadtgrenze, Fertigstellung vsl. 2027)
-#: last_checked: 2026-07-08
+#: last_checked: 2026-08-18 (mapilio)
 #: check_frequency: 360d
 #: next_check: 2027-12-31 (pardok)
 Falkenseer Chaussee: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Südseite?	?::projected -6722,16112 -6575,16071 -6313,15996 -6144,15946 -6073,15925 -5911,15877
@@ -2021,7 +2021,7 @@ Fischerhüttenweg: Bau eines Radwegs	?::projected -1297,4385 -1344,4436 -1366,445
 #: by: https://www.tagesspiegel.de/berlin/bezirke/fahrrad-baustellen-in-berlin-spandau-wir-bauen-einen-radweg-aus-cashewkernen-13011658.html ((ab?) 2025, irgendwann)
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12877 (Anfrage)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/sorge-um-spandaus-kinder-vor-diesen-schulen-soll-die-verkehrssicherheit-verbessert-werden-15755497.html (Sanierung ab 2026, Baubeginn im Herbst (2026))
-#: last_checked: 2026-03-05 (orthofotos)
+#: last_checked: 2026-08-18 (mapilio)
 #: check_frequency: 180d
 #: next_check: 2026-10-31 (BVV, Tsp)
 Kisselnallee: Radweg bzw. Radstreifen geplant	?::projected -4337,16494 -4544,15940
@@ -5362,6 +5362,7 @@ Allee der Kosmonauten: Radwege zwischen Elisabethstr. und Landsberger Allee gepl
 #: by: https://www.entwicklungsstadt.de/strassenbahn-in-mahlsdorf-wann-der-tram-ausbau-kommen-soll/ (Ausbau nach Fertigstellung der Straße "An der Schule" ab 2030)
 #: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article412137418/verkehrsloesung-mahlsdorf-cdu-lenkt-ein-tram-ausbau-kommt.html
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/oeffentlicher-personennahverkehr/projekte-in-umsetzung/ortskern-mahlsdorf/
+#: by: https://www.nd-aktuell.de/artikel/1202610.bvg-berlin-mahlsdorf-zweigleisige-tram-kann-kommen.html
 #: last_checked: 2026-09-08 (mapillary)
 #: check_frequency: 720d
 #: next_check: 2030-12-31 (entwicklungsstadt)
@@ -6647,12 +6648,6 @@ Alexander-Meißner-Str.: Überqueren nicht möglich, Schlenker nach Norden notwendi
 #: XXX_prog BS
 Bundespräsidenten-Dreieck: von der Joachim-Karnatz-Allee und Paulstr. (Fahrbahn) aus muss ein Bordstein überwunden werden, vom Radweg der Paulstr. aber nicht	? 7077,12575 7064,12560
 # 
-#: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
-#: by: https://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_14_2015_web.pdf
-#: XXX prüfen und ggfs. zu NN machen
-#: begin_check: 2015-12-30
-Kastanienallee (Potsdam): teilweise Entwidmung für den Kfzverkehr	? -14753,-2470 -14859,-2384
-# 
 # REMOVED (eingetragen) --- #: by: https://www.potsdam.de/sites/default/files/documents/potsdamer-mitte-2020_de_web_0.pdf (Herstellung ab 2021) --- #: XXX Eintrag in Potsdam.coords.data fehlt! PLZ=14467 (laut DPAG-Mitteilungsblatt) --- # REMOVED --- #: osm_watch: way id="244032995" version="20" --- #: osm_watch: way id="886418848" version="1" brb --- #: last_checked: 2020-03-08 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2021-03-01 --- Versailler Platz (Potsdam): wird hier irgendwo ein Platz ausgeschildert?	? -12486,-1490 -12495,-1518 -12474,-1559
 # REMOVED (vermutlich wird hier nichts passieren, stattdessen wird irgendwann die Bergmannstr. im Bereich Marheinekeplatz neu gemacht) --- #: by: http://gruene-xhain.de/news/single-view/artikel/vorfahrt-fuer-den-radverkehr.html --- #: by: http://www.berlin.de/imperia/md/content/bafriedrichshain-kreuzberg/abtstadtpg/bzbm-buero/bezirksamtssitzungen/02-07-13/beschluss_265_13.pdf?start&ts=1372853813&file=beschluss_265_13.pdf --- #: last_checked: 2017-12-30 --- #: check_frequency: 120d --- #: priority: #C --- Bergmannstr./Heimstr.: wird hier die Vorfahrtsregelung zugunsten des Radwegs geändert?	? 9880,9233 9973,9232 10001,9234
 #
@@ -6689,8 +6684,6 @@ Tiroler Damm (Potsdam): Qualität (auch Beton?)?	? -10362,-4158 -10304,-4090 -102
 #: last_checked: 2013-05-09
 #: next_check: 2013-08-09
 Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asphalt?)?	?::inwork; -11789,-3212 -11672,-3345
-# 
-(Alter Tornow - Fähre) (Potsdam): Qualität (vielleicht Verbundsteinpflaster?)? Tatsächlich NN?	? -13980,-2690 -14045,-2595
 # 
 # REMOVED (realisiert) --- #: next_check_id: SUEDPANKE-2014 --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.699011.php --- #: by: https://www.berliner-woche.de/mitte/c-bauen/hinter-der-neuen-geheimdienstzentrale-plaetschert-die-suedpanke_a166427 (bis 2020) --- #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=622493&postcount=291 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641416&postcount=304 --- #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=664066#post664066 (bald fertig?) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_41_5037_5124_online.pdf (Widmung als Grünanlage) --- #: by: https://www.rbb-online.de/abendschau/videos/20210521_1930/6.html (700m eröffnet) --- #: osm_watch: way id="327596411" version="8" --- #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist --- #: XXX außerdem wird die Panke oberirdisch fließen --- #: XXX laut daf-Bildern schon fertig, aber noch "gesperrt" --- #: last_checked: 2021-05-11 (daf) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2021-05-21 vvv --- Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann ist der Weg fertig? Qualität (vermutlich betoniert)? Beleuchtet (vermutlich nicht)?	?::inwork 8271,14222 8273,14269 8266,14346 --- Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann ist der Weg fertig? Qualität? Beleuchtet?	?::inwork 8266,14346 8267,14395 8293,14453 8302,14517 8301,14576 8323,14599 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (-> ampeln) --- #: last_checked: 2020-01-08 (mapillary) --- #: check_frequency: 90d --- Thomasstr./Hermannstr.: wird hier eine Ampel entstehen?	?::projected 12193,7412 12185,7381 12168,7368
@@ -7108,6 +7101,7 @@ B96: parallel geführte Kfz-Straße geplant, ehemalige B96 könnte man dann "degrad
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=19117
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~25-03-2026-b158-vollsperrung-behelfsumfahrung-oderberg (Fußgänger können passieren)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~10-09-2026-b158_vollsperrung-bruecke-in-oderberg (Fußgänger können passieren)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-09-2026-brueckeneinschub-im-zuge-der-b-158-in-oderberg (Fertigstellung der Gesamtmaßnahme zweite Hälfte 2027)
 #: source_id: LS/221-E/22/018 (vorbereitende Arbeiten bis 28.2.2022) (inaktiv)
 #: source_id: LS/221-E/23/033 (vorbereitende Arbeiten bis 31.08.2025) (Behelfsbrücke) (bis 31.08.2026) (inaktiv) (bis 31.12.2026)
 #: osm_watch: way id="30609511" version="15"
@@ -7525,8 +7519,9 @@ Landesstraße 30 (Woltersdorf und Rüdersdorf): wurde hier ein gemeinsamer Geh- un
 #: source_id: LS/721-F/22/001 (bis 14.9.2024) (inaktiv) (bis 14.09.2024) (inaktiv) (bis 31.01.2025) (inaktiv)
 #: source_id: LS/721-F/22/002 (bis 20.12.2024) (inaktiv) (bis 07.03.2025) (inaktiv) (bis 31.03.2025) (inaktiv) (bis 04.07.2025) (inaktiv)
 #: osm_watch: way id="4698246" version="10" brb
-#: next_check: 2025-07-04 (VIZ-Verkehrsmeldung)
-B158 Bad Freienwalde: bei der Instandsetzung sind möglicherweise Radspuren entstanden (oder existierten diese bereits?)	? 52984,42973 53249,43276 53317,43391
+#: last_checked: 2025-08-02 (mapillary)
+# REMOVED --- #: next_check: 2025-07-04 (VIZ-Verkehrsmeldung)
+B158 Bad Freienwalde: sind bei der Instandsetzung Radspuren entstanden?	? 52984,42973 53202,43222 53249,43276 53317,43391
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31873
 #: by: https://www.o-sp.de/download/lbvbrandenburg/296992
@@ -9197,6 +9192,7 @@ Weserstr.: Einbahnstraße für Kfz in Vorbereitung	? 14475,11778 14550,11732
 #: by: https://www.entwicklungsstadt.de/abriss-fast-abgeschlossen-2027-soll-der-neubau-des-stadions-im-jahnsportpark-beginnen/
 #: by: https://www.entwicklungsstadt.de/jahnsportpark-kunstrasenplatz-wird-kleiner-baeume-sollen-stehen-bleiben/
 #: by: https://www.entwicklungsstadt.de/millionenprojekt-jahnsportpark-neue-fragen-nach-vergabe-des-stadionbaus/
+#: by: https://www.entwicklungsstadt.de/jahnsportpark-ohne-stadion-traditionsreiche-berliner-arena-ist-verschwunden/
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: last_checked: 2026-09-11 vvv
@@ -9971,9 +9967,9 @@ Nasses Dreieck: neue Wegverbindung zur Brehmestr. wird entstehen	?::projected 99
 # 
 #: source_id: LS/222-W/26/024 (bis 30.04.2026) (bis 29.05.2026) (inaktiv)
 #: osm_watch: note 5318242 2
-#: last_checked: 2026-06-06 (osm note)
+#: last_checked: 2026-06-19 (mapillary)
 # REMOVED --- #: next_check: 2026-05-29
-Bestensee: Bau einer Fußgängerampel	?::inwork 27392,-17988 27416,-17969 27395,-17941
+Bestensee: Bau einer Fußgängerampel	?::inwork 27434,-17988 27436,-17970 27436,-17943
 # 
 # REMOVED (hier hat sich nichts geändert, es wurde nur eine Art "Kissen" am südöstlichen Ende gebaut) --- Damaschkestr.: liegt hier noch Kopfsteinpflasters? Gilt noch immer eine Einbahnstraßenregelung?	? 3027,10560 3123,10504
 # 
@@ -10154,6 +10150,7 @@ Rudolfstr.: beabsichtigte Teileinziehung	?::projected 13886,10939 14026,10869
 Wensickendorf: nach den Bauarbeiten Radwege? wo genau?	? 8740,38857 8665,38862 8643,38865 8518,38881 8240,38876 7990,38846 7950,38843 7836,38835 7698,38825 7632,38828 7465,38830
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-07-2026-baustart-an-der-l-96-zwischen-boehne-und-rathenow-radwegluecke-wird-geschlossen (Fertigstellung im Frühjahr 2027)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-09-2026-l96-radweg-zw-boehne-und-rathenow (Verschiebung; neue Termine werden noch kommuniziert)
 #: source_id: LS/223-P/26/091 (bis 28.05.2027)
 #: next_check: 2027-05-28 (Verkehrsmeldung)
 Böhne - Rathenow (L96): Radweglücke wird geschlossen	? -64529,15725 -64447,15895 -64176,16323 -64923,18443 -65141,19165 -65165,19674 -65134,20143
@@ -10272,7 +10269,7 @@ Unter den Eichen: die Radspur soll zurückgebaut werden	?; 4347,5103 4181,5000 41
 # 
 #: source_id: planb2026:13.32269309,52.47258663,17.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.09.2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2026-09-17 (traffic)
+#: last_checked: 2026-09-20 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-08-17 (planb)
 Wilhelmshöher Weg: geplante Bauarbeiten mit Sperrung	? 4874,7326 5058,7327
@@ -10389,6 +10386,10 @@ Falkenstr. (Hennigsdorf): Verbundsteinpflaster, Q0-	? -3881,25882 -3910,25724 -3
 Am Upstall (Potsdam-Fahrland): Asphalt, Q0	? -16009,7063 -16011,7252 -16010,7299 -15998,7329 -15967,7362 -15929,7375 -15891,7375 -15815,7375
 #: by: Katharina Undisz [AM]
 Helmut-Just-Str. (Hohen Neuendorf): Asphalt Q1	? 4054,29959 4132,29954 4487,29996
+# 
+#: XXX fehlt in Potsdam.coords.data
+#: XXX vermutlich kein offizieller Straßenname, keine Straßenschilder; evtl. nur als Zufahrt zum Wassersportzentrum oder so bezeichnen
+An der Hinterkappe (Potsdam): Qualität?	? -13873,-2951 -13961,-3032
 #
 #  ISOLIERTE FRAGEZEICHEN-STRECKEN (keine Verknüpfung zum Netz, darf nicht bei pref_fragezeichen=yes gewählt werden)
 # 
@@ -10401,8 +10402,6 @@ Am Konsumplatz (Potsdam-Grube): Qualität? Genaue Lage?	? -19532,4472 -19509,4469
 Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126443 -112,126528 -62,126684 -96,126768 -231,126900 -428,127368 -493,127450 -671,127478
 #: XXX laut anonymen Eintrag Radweg; keine Verbindung zum restlichen Netz:
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 562,29490 590,29922
-#: XXX fehlt in Potsdam.coords.data
-An der Hinterkappe (Potsdam): Existiert diese Straße? Ausgeschildert? Qualität?	? -13880,-2970 -14075,-3027
 Aalsteig (Potsdam-Grube): Qualität?	? -19509,4469 -19489,4471 -19449,4477
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10115978_1771576/bbb8d1f2/ENDFASSUNGAbl.%20PdmStadt%2004_13.pdf
@@ -10630,8 +10629,6 @@ weitere Straßen geplant	?::projected 24437,10337 24476,10248
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
 #: XXX PLZ=14473 (by Leitdaten)
 Inselweg (Potsdam): genaue Lage, Qualität?	? -13829,-2596 -13769,-2508
-# 
-Leiterstr. (Potsdam): existiert eine direkte Verbindung zur Templiner Str.? Qualität?	? -13495,-3094 -13524,-3083 -13567,-2967
 # 
 # REMOVED (ja, eingetragen) --- Templiner Str. - Uferweg: Gibt es hier eine Steigung?	? -13481,-2956 -13494,-2902 -13494,-2863 -13505,-2842 -13523,-2783
 # 
@@ -12252,8 +12249,9 @@ Uferweg geplant	?::projected 11827,11720 11676,11839 11375,11994
 #: by: https://www.entwicklungsstadt.de/konnekt-in-marzahn-bebauungsplan-mit-hochhaeusern-beschlossen/
 #: by: https://www.entwicklungsstadt.de/konnekt-in-marzahn-was-geplant-ist-und-was-schon-umgesetzt-wird/ (1. BA Ende 2029, Gesamtfertigstellung 2033)
 #: by: https://www.entwicklungsstadt.de/baufortschritt-bei-konnekt-hochhaus-in-marzahn-nimmt-form-an/
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/georg-knorr-park-konnekt-neues-stadtquartier-nach-chipperfield.867/page-2#post-27973
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
-#: last_checked: 2026-09-15 (luftbildsuche)
+#: last_checked: 2026-09-19 (architektur-urbanistik)
 #: check_frequency: 720d
 #: next_check: 2029-12-31 (entwicklungsstadt: 1. BA)
 # REMOVED --- #: next_check: 2033-12-31 (kondorwessels website)
@@ -14416,8 +14414,6 @@ Fürstenwerder - Bülowssiege: Qualität?	? 21007,109931 21062,109937 21165,109966 
 L25 - Hildebrandshagen: Qualität?	? 23242,109707 23226,110446 23385,110586 23413,110757 23274,110878 23274,110963 23087,111261 23087,111306 23153,111439 23077,111655 23118,111699 23134,111848 22992,112273 22836,112384 22674,112533
 Hildebrandshagen - Wolfshagen: Qualität?	? 22674,112533 22785,112612 22909,112768 22972,112939 22766,114059 22849,114201 22836,114325 22934,114693 23096,114947 24289,115273 24587,115502
 Brahmsweg (Potsdam): Qualität?	? -8136,-2699 -8132,-2754 -8138,-2804
-#: XXX im östlichen Abschnitt asphaltiert (siehe Mapillary)
-Schubertstr. (Potsdam): Qualität?	? -8219,-2795 -8138,-2804 -8108,-2809 -7965,-2825
 Hohenreinkendorf: Qualität?	? 71648,92361 71767,92617 71794,92835 71812,93044 71834,93124 71805,93237
 # REMOVED --- #: by: https://www.schwedt.eu/de/politik-und-verwaltung/veroeffentlichungen/ausschreibungen//sanierung-der-dorfstrasse-in-kummerow/31088 (Betonstraße, soll 2023 asphaltiert werden) --- Kummerow - Kunow/Neue Mühle: Qualität?	? 63213,83851 63343,83884 63484,83896 63708,83896 64030,83689
 # REMOVED --- #: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//uckermaerkischer-radrundweg/31426 (Asphaltierung bis März 2023, Uckermärkischer Radrundweg wird hierher verlegt) --- #: by: https://www.schwedt.eu/de/politik-und-verwaltung/stadtverwaltung/hoch-und-tiefbau-stadt-und-ortsteilpflege--fb-4-//uckermaerkischer-radrundweg/31426 --- Kummerow - Kunow/Neue Mühle: Qualität? Laut osm grade3	? 64030,83689 64070,83638 64136,83538 64199,83388 64560,83095 65187,82762 65732,81931
@@ -14521,7 +14517,8 @@ Möbelhof (Potsdam): Qualität?	? -9329,-5239 -9199,-5153 -9088,-5091
 Zum Heizwerk (Potsdam): Qualität?	? -9597,-5392 -9583,-5366 -9441,-5109 -9402,-5039 -9212,-4718 -9105,-4665
 #: XXX vermutlich betoniert
 Am Bürohochhaus (Potsdam): Qualität?	? -9402,-5039 -9199,-5153
-Meisenweg (Potsdam): Qualität?	? -9940,-4206 -9875,-4247 -9798,-4308 -9721,-4364 -9692,-4391
+Meisenweg (Potsdam): Qualität (im westlichen Abschnitt möglicherweise asphaltiert, im östlichen betoniert)?	? -9940,-4206 -9875,-4247 -9798,-4308 -9721,-4364 -9665,-4409
+(Meisenweg - Erich-Weinert-Str.): Fußweg, für Radfahrer frei? Qualität?	? -9665,-4409 -9609,-4468
 Wieselkiez (Potsdam): Qualität?	? -9647,-3958 -9645,-3830
 Habichthorst (Potsdam): Qualität?	? -10498,-3164 -10498,-3266
 Magnus-Zeller-Platz (Potsdam): Qualität?	? -10438,-3818 -10433,-3753
@@ -14537,10 +14534,8 @@ Lisdorf (Potsdam): Qualität?	? -9875,-4247 -9783,-4140 -9672,-4065
 Zur Nuthe (Potsdam): Qualität?	? -9798,-4308 -9717,-4220 -9613,-4149 -9573,-4124 -9502,-4079 -9472,-4061
 Am Fenn (Potsdam): Qualität?	? -10102,-4346 -10011,-4426 -9860,-4555
 Am Fenn (Potsdam): Qualität?	? -10072,-4507 -10011,-4426
-Am Stadtrand (Potsdam): Qualität?	? -9808,-4484 -9721,-4364 -9559,-4242 -9413,-4154 -9472,-4061
 Sonnentaustr. (Potsdam): Qualität?	? -10649,-5236 -10740,-5048
-Zum Teufelssee (Potsdam): Qualität des westlichen Abschnitts?	? -10397,-5379 -10542,-5445 -10516,-5498 -10482,-5572 -10431,-5655
-Liefelds Grund (Potsdam): Qualität?	? -10397,-5379 -10344,-5504 -10482,-5572
+Liefelds Grund (Potsdam): Qualität (vermutlich alter Beton)?	? -10397,-5379 -10344,-5504 -10482,-5572
 Moosglöckchenweg (Potsdam): Qualität?	? -10535,-5751 -10630,-5553
 Am Springbruch (Potsdam): Qualität?	? -10641,-5814 -10721,-5678 -10659,-5648
 # 
@@ -14595,6 +14590,7 @@ Radweg zwischen Wublitzstr. und Laubenweg: Ist der Radweg bereits fertig? Qualit
 Radweg in der Bergstraße: wo genau?	? -17909,7321 -18152,6572
 # REMOVED (nein) --- #: XXX laut osm living_street, kann ich aber nicht bestätigen --- Ecksteinweg (Potsdam-Eiche): Ist hier eine Spielstraße?	? -17305,-608 -17290,-679 -17395,-725
 # 
+#: XXX auf alten Mapillary-Bildern von 2016 sieht es nach Asphalt mit einigen Schäden aus, möglicherweise Q1
 Zum Bahnhof Pirschheide (Potsdam): Qualität?	? -16157,-3757 -16050,-3982 -15982,-4032
 #: XXX fehlt in Potsdam.coords.data
 Am Küssel (Potsdam-Grube): Qualität?	? -19243,2246 -19505,2798
@@ -15024,8 +15020,6 @@ Menz - Großwoltersdorf: Qualität des Radwegs?	? -13662,75159 -12578,74452 -12341
 # REMOVED --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=20797 --- #: source_id: LS/721-F/18/080 (möglicherweise inaktiv) --- #: osm_watch: way id="376710426" version="4" brb --- #: osm_watch: way id="472490728" version="8" brb --- #: next_check: 2020-05-29
 # REMOVED (hier nicht) --- Herzfelde - Hennickendorf: existiert hier mittlerweile ein Radweg?	? 40737,9012 40654,9441 40580,9711
 # REMOVED (hier nicht) --- Herzfelde - Hennickendorf: existiert hier mittlerweile ein Radweg?	? 40314,11223 40318,11400 40412,11647 40467,11827
-# 
-Heinrich-Mann-Allee [Nebenfahrbahn] - Friedhofsgasse: gibt es hier eine Verbindung? Qualität?	? -12017,-2511 -12001,-2495
 # REMOVED (eingetragen) --- Saarmunder Str. - Eduard-Claudius-Str.: gibt es hier eine Verbindung? Qualität?	? -10662,-4280 -10626,-4260
 # REMOVED (hier ist wohl nichts) --- Heinrich-Mann-Allee: gibt es ab "Zum Kahleberg" Richtung Süden Radwege? Benutzungspflicht?	?; -10500,-4514 -10359,-4780
 # REMOVED (eingetragen) --- Heinrich-Mann-Allee: jenseits der Straßenbahnstrecke gibt es einen für Radfahrer freigegebenen Gehweg	?; -10397,-4795 -10283,-5063 -10186,-5276 -10100,-5442 -10098,-5471 -10107,-5534 -10101,-5581 -10086,-5599 -10054,-5599 -10028,-5572 -10015,-5551

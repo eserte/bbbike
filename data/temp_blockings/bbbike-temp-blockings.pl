@@ -421,11 +421,11 @@ EOF
      #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
      #   data => '', # dummy
      # },
-     { from  => $isodate2epoch->("2025-11-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-12-23 23:59:59"),
+     { from  => $isodate2epoch->("2026-11-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-12-22 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11, start => "2022-01-01T00:00:00"]], # 2020 wird der Weihnachtsmarkt nur in der Zitadelle stattfinden, 2021 auch
-       text  => 'Spandauer Weihnachtsmarkt, vom 24.11.2025 bis 23.12.2025',
+       text  => 'Spandauer Weihnachtsmarkt, vom 23.11.2026 bis 22.12.2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html (2020)
@@ -1197,9 +1197,10 @@ EOF
      },
      { from  => $isodate2epoch->("2019-09-30 00:00:00"),
        until => $isodate2epoch->("2019-10-06 23:59:59"),
-       periodic => 1,
-       recurrences => [['yearly', days => 29, months => 9, start => "2025-10-25T00:00:00"]],
-       recurrence_prewarn_days => 7,
+## siehe unten "findet nicht mehr statt"
+#      periodic => 1,
+#      recurrences => [['yearly', days => 29, months => 9, start => "2025-10-25T00:00:00"]],
+#      recurrence_prewarn_days => 7,
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -1540,17 +1541,16 @@ EOF
 	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2025-11-28 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2025-11-30 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (29.11.2025 - 30.11.2025)',
+     { from  => $isodate2epoch->("2026-11-27 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2026-11-29 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (28.11.2026 - 29.11.2026)',
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11, start => "2022-01-01T00:00:00"]], # note: keine Weihnachtsmärkte vor dem 30.11.2020!
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
+#: by: https://www.weihnachtsmarkt-sophienstrasse.de/
 #: by: https://www.berlin.de/weihnachtsmarkt/3659027-3496862-umwelt-und-weihnachtsmarkt-in-der-sophie.html
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001302-955635-weihnachts-und-umweltmarkt-in-der-sophie.html
-#: by: https://www.weihnachtsmarkt-sophienstrasse.de/ (Absage 2021)
 #: tempex: before(1st_advent,1d) - +1d
 	2::xmas 9986,13412 10321,13259
 EOF
@@ -3400,7 +3400,7 @@ Friedrich-Engels-Str. (Potsdam)	2::temp -11369,-2085 -11513,-2122 -11597,-2203 -
 Zum Wasserturm (Potsdam)	2::temp -12100,-2039 -12003,-2046 -11947,-2048 -11830,-2053 -11834,-2191
 Friedhofsgasse (Potsdam)	2::temp -11778,-2225 -11799,-2283 -12001,-2495
 Am Stellwerk (Potsdam)	2::temp -12004,-2175 -12003,-2158 -12003,-2046
-Heinrich-Mann-Allee (Potsdam)	2::temp -12262,-2244 -12001,-2495 -11912,-2587 -11770,-2743 -11656,-2944 -11438,-3179 -11311,-3322
+Heinrich-Mann-Allee (Potsdam)	2::temp -12276,-2230 -12001,-2495 -11912,-2587 -11770,-2743 -11656,-2944 -11438,-3179 -11311,-3322
 Schlaatzstr. (Potsdam)	2::temp -11694,-2245 -11579,-2333 -11487,-2373
 Bergholzer Str. (Potsdam)	2::temp -11579,-2333 -11635,-2414 -11679,-2408
 Schlaatzweg (Potsdam)	2::temp -11487,-2373 -11425,-2384 -11422,-2425 -11240,-2525 -10927,-2679 -10870,-2729
@@ -3527,11 +3527,11 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1797,-1804 -1896,-1924 -1958,-2007 -2023,-2143
 EOF
      },
-     { from  => $isodate2epoch->("2025-11-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2026-01-04 22:00:00"), # 1357513199, # 2013-0
+     { from  => $isodate2epoch->("2026-11-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2027-01-03 22:00:00"), # 1357513199, # 2013-0
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11, start => "2021-01-01T00:00:00"]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 24. November 2025 bis voraussichtlich 04. Januar 2026',
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 23. November 2026 bis voraussichtlich 03. Januar 2027',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
@@ -7026,8 +7026,9 @@ EOF
      },
      { from  => $isodate2epoch->("2017-11-28 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
        until => $isodate2epoch->("2017-12-30 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
-       periodic => 1,
-       recurrences => [['yearly', days => 18, months => 11, start => "2026-01-01T00:00:00"]],
+## Hat schon viele Jahre nicht mehr stattgefunden
+#      periodic => 1,
+#      recurrences => [['yearly', days => 18, months => 11, start => "2026-01-01T00:00:00"]],
        text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege rund um die Hedwigs-Kathedrale nicht passierbar, vom 29.11. bis 30.12.2017',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16913,9 +16914,10 @@ EOF
      },
      { from  => $isodate2epoch->("2022-09-16 11:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2022-09-18 20:00:00"),
-       periodic => 1,
-       recurrences => [['yearly', days => 14, months => 9, start => "2025-10-15T00:00:00"]], # findet 2023 nicht statt # 2024 wohl auch nicht # 2025 wohl auch nicht
-       recurrence_prewarn_days => -7,
+## gibt es schon einige Jahre nicht mehr...
+#      periodic => 1,
+#      recurrences => [['yearly', days => 14, months => 9, start => "2025-10-15T00:00:00"]], # findet 2023 nicht statt # 2024 wohl auch nicht # 2025 wohl auch nicht
+#      recurrence_prewarn_days => -7,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -17624,16 +17626,16 @@ EOF
 	1::xmas 11202,12426 11240,12368 11273,12301
 EOF
      },
-     { from  => $isodate2epoch->("2025-11-14 00:00:00"), # bereits 10 Tage (mindestens!) vorher schon gesperrt (!)
-       until => $isodate2epoch->("2026-01-07 23:59:59"), # mehrere Tage für den Abbau
+     { from  => $isodate2epoch->("2026-11-13 00:00:00"), # $isodate2epoch->("2025-11-14 00:00:00"), # bereits 10 Tage (mindestens!) vorher schon gesperrt (!)
+       until => $isodate2epoch->("2027-01-07 23:59:59"), # $isodate2epoch->("2026-01-07 23:59:59"), # mehrere Tage für den Abbau
        periodic => 1,
        prewarn_days => 10,
        postwarn_days => 7,
        recurrences => [['yearly', days => 20, months => 11, start => "2025-01-01T00:00:00"]], # Weihnachtsmarkt 2023 und 2024 auf dem Gendarmenmarkt wird wegen Bauarbeiten zum Bebelplatz verlegt
-       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 24.11.2025 bis 31.12.2025, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 23.11.2026 bis 31.12.2026, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: BEBELPLATZXMAS-2022
+# REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022
 #: by: https://www.weihnachtsmarkt-berlin.de/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (2022 und 2023 vorübergehend am Bebelplatz, evtl. auch schon 2021)
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971676-955635-weihnachtszauber-gendarmenmarkt.html (2021 schon am Bebelplatz, wegen Bauarbeiten bis 2023)
@@ -17728,11 +17730,11 @@ EOF
 	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2025-12-04 00:00:00"),
-       until => $isodate2epoch->("2025-12-07 23:59:59"),
+     { from  => $isodate2epoch->("2026-12-03 00:00:00"),
+       until => $isodate2epoch->("2026-12-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12, start => "2022-01-01T00:00:00"]], # findet 2020 wegen Corona nicht statt
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (05.12.2025 - 07.12.2025)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (04.12.2026 - 06.12.2026)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
@@ -23602,46 +23604,46 @@ EOF
 	2::inwork 12624,25570 12697,25704
 EOF
      },
-     { from  => $isodate2epoch->("2025-12-05 00:00:00"), # erster Termin oben
-       until => $isodate2epoch->("2025-12-07 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (06.12.2025 - 07.12.2025)',
+     { from  => $isodate2epoch->("2026-12-04 00:00:00"), # erster Termin oben
+       until => $isodate2epoch->("2026-12-06 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (05.12.2026 - 06.12.2026)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
+#: by: https://www.weihnachtsmarkt-sophienstrasse.de/
 #: tempex: before(2nd_advent,sa) - +1d
 	2::xmas 9986,13412 10321,13259
 EOF
      },
-     { from  => $isodate2epoch->("2025-12-12 00:00:00"),
-       until => $isodate2epoch->("2025-12-14 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (13.12.2025 - 14.12.2025)',
+     { from  => $isodate2epoch->("2026-12-11 00:00:00"),
+       until => $isodate2epoch->("2026-12-13 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (12.12.2026 - 13.12.2026)',
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
+#: by: https://www.weihnachtsmarkt-sophienstrasse.de/
 #: tempex: before(3rd_advent,sa) - +1d
 	2::xmas 9986,13412 10321,13259
 EOF
      },
-     { from  => $isodate2epoch->("2025-12-19 00:00:00"),
-       until => $isodate2epoch->("2025-12-21 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (20.12.2025 - 21.12.2025)',
+     { from  => $isodate2epoch->("2026-12-18 00:00:00"),
+       until => $isodate2epoch->("2026-12-20 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (19.12.2026 - 20.12.2026)',
        periodic => 1,
        recurrences => [['yearly', days => 16, months => 12, start => "2024-01-01T00:00:00"]], # 2023 nur an drei Adventswochenenden
        type  => 'gesperrt',
-       source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
+#: by: https://www.weihnachtsmarkt-sophienstrasse.de/
 #: tempex: before(4th_advent,sa) - +1d
 #: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
 	2::xmas 9986,13412 10321,13259
 EOF
      },
-     { from  => $isodate2epoch->("2025-11-29 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-11-30 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 30.11.2025, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2026-11-28 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-11-29 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 29.11.2026, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11, start => "2022-01-01T00:00:00"]], # 2020 nicht!
        recurrence_prewarn_days => 14, # finden 2020 überhaupt Weihnachtsmärkte statt?
@@ -23656,9 +23658,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2025-12-06 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-12-07 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 07.12.2025, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2026-12-05 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-12-06 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 06.12.2026, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -23668,9 +23670,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2025-12-13 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-12-14 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 14.12.2025, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2026-12-12 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-12-13 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 13.12.2026, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -23680,9 +23682,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2025-12-20 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-12-21 17:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 21.12.2025, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2026-12-19 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-12-20 17:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 20.12.2026, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 17, months => 12, start => "2024-01-01T00:00:00"]], # 2023 nur an drei Adventssonntagen
        type  => 'gesperrt',
@@ -23776,17 +23778,18 @@ EOF
 	2::inwork 20653,7289 20603,7189 20641,7118 20722,6971 21239,6063 21243,6046 21303,5826
 EOF
      },
-     { from  => $isodate2epoch->("2025-12-19 12:00:00"), # 1 Tag Vorlauf # 1386198000, # 2013-12-05 00:00
-       until => $isodate2epoch->("2025-12-21 21:00:00"), # 1386525600, # 2013-12-08 19:00
+     { from  => $isodate2epoch->("2026-12-04 12:00:00"), # 1 Tag Vorlauf # 1386198000, # 2013-12-05 00:00
+       until => $isodate2epoch->("2026-12-06 21:00:00"), # 1386525600, # 2013-12-08 19:00
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12, start => "2022-01-01T00:00:00"]],
-       #recurrence_prewarn_days => -19,
-       text  => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 20.12.2025 und 21.12.2025', # note: früher "Rudower Adventsmeile"
+#      recurrence_prewarn_days => -19,
+       text  => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 05.12.2026 und 06.12.2026', # note: früher "Rudower Adventsmeile"
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
 #: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241219
+#: by: https://www.hauptstadtkultur.berlin/events/?date=20260919
 #: source_id: IM_020883 (inaktiv)
 #: source_id: 2147345257 (inaktiv)
 #: source_id: LMS-BR:393851/72 viz2021:13.49469,52.42125,20.12.2025,12:00 (bis 21.12.2025) (inaktiv)
@@ -26253,20 +26256,20 @@ EOF
 	q3::inwork; 14218,13834 14243,13890 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14919,14503 14989,14539 15066,14579
 EOF
      },
-     { from  => $isodate2epoch->("2025-11-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2025-12-26 23:59:59"),
+     { from  => $isodate2epoch->("2026-11-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2026-12-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]], # findet 2020 nicht statt
-       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 24. November 2025 bis 26. Dezember 2025',
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 23. November 2026 bis 26. Dezember 2026',
        type  => 'handicap',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html (seit 2022 keine Termine mehr?)
+#: by: https://www.visitberlin.de/de/weihnachtsmarkt-alexanderplatz-berlin
 #: also_indoor: webcam https://portal1391.webcam-profi.de/
 #: osm_watch: node id="3204993764" version="8"
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
-#: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
+#: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3; mittlerweile wohl immer eher q4
 	q4::xmas 11139,13008 11064,12910 11005,12855 10970,12822
 	q4::xmas 11064,12910 11141,12806
 #: tempex ^^^
@@ -28596,9 +28599,9 @@ EOF
 	2::bomb -12790,-1560 -12812,-1490
 	2::bomb -12431,-2096 -12478,-1879
 	2::bomb -12493,-1896 -12431,-2096
-	2::bomb -12318,-2192 -12262,-2244
+	2::bomb -12318,-2192 -12276,-2230
 	2::bomb -12431,-2096 -12318,-2192
-	2::bomb -12318,-2192 -12267,-2261
+	2::bomb -12276,-2230 -12267,-2261
 	2::bomb -12267,-2261 -12138,-2383
 	2::bomb -12318,-2192 -12355,-2263 -12358,-2278 -12423,-2459 -12476,-2605 -12643,-2673 -12840,-2799
 	2::bomb -12358,-2278 -12330,-2297 -12335,-2571 -12300,-2630 -12236,-2748
@@ -35970,9 +35973,9 @@ EOF
 	q4 16038,9837 16026,9821 16002,9787
 EOF
      },
-     { from  => $isodate2epoch->("2025-12-19 05:00:00"),
-       until => $isodate2epoch->("2025-12-21 23:00:00"),
-       text  => 'Preußenallee: voraussichtlich Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 20.12.2025 05:00 bis 21.12.2025 23:00 ',
+     { from  => $isodate2epoch->("2026-12-18 05:00:00"),
+       until => $isodate2epoch->("2026-12-20 23:00:00"),
+       text  => 'Preußenallee: voraussichtlich Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 19.12.2026 05:00 bis 20.12.2026 23:00 ',
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 12]],
        type  => 'gesperrt',
@@ -37771,7 +37774,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BADFREIENWALDE-2022
 #: source_id: LS/721-F/22/001 (bis 14.09.2024) (vorfristig inaktiv) (bis 14.09.2024) (inaktiv) (bis 31.01.2025) (inaktiv)
-	2::inwork 52984,42973 53249,43276
+	2::inwork 52984,42973 53202,43222 53249,43276
 EOF
      },
      { from  => 1658811600, # 2022-07-26 07:00
@@ -39465,11 +39468,11 @@ EOF
 	2::inwork 17414,26524 17381,26585 17363,26609 17043,26407 16928,26311 16895,26295 16686,26128 16655,26127 16616,26158 16580,26154
 EOF
      },
-     { from  => $isodate2epoch->("2025-11-08 00:00:00"), # vier Tage Vorlauf (reicht das?) --- einen Tag Vorlauf (reicht das?) --- 1669158000, # 2022-11-23 00:00
-       until => $isodate2epoch->("2026-01-16 18:00:00"), # viele Tage (mehr als zwei Wochen?) für den Abbau einplanen
+     { from  => $isodate2epoch->("2026-11-09 00:00:00"), # vier Tage Vorlauf (reicht das?) --- einen Tag Vorlauf (reicht das?) --- 1669158000, # 2022-11-23 00:00
+       until => $isodate2epoch->("2027-01-16 18:00:00"), # viele Tage (mehr als zwei Wochen?) für den Abbau einplanen
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
-       text  => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 17.11. - 30.12.2025, sowie während der Aufbau- und Abbauarbeiten gesperrt',
+       text  => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 16.11. - 30.12.2026, sowie während der Aufbau- und Abbauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen, und die Bauzäune waren noch am 2024-01-05 (!) da
@@ -42065,7 +42068,7 @@ EOF
      { from  => $isodate2epoch->("2025-09-24 00:00:00"), # 1692964800, # 2023-08-25 14:00
        until => $isodate2epoch->("2025-09-25 22:00:00"), # 1693080000, # 2023-08-26 22:00
        periodic => 1,
-       recurrences => [['yearly', days => 24, months => 8]],
+       recurrences => [['yearly', days => 24, months => 8, start => "2026-10-01T00:00:00"]], # scheint 2026 nicht stattzufinden?
        recurrence_prewarn_days => -28,
        text  => 'Dunckerstr.: zwischen Stargarder Str. und Ahlbecker Str. Veranstaltung (Dunckerstraßenfest) am 25. September 2025 von 14 bis 22 Uhr',
        type  => 'handicap',
@@ -42963,7 +42966,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvhbmldptb22 (Sperrung für Kfz-Verkehr zwischen Buchstraße und Fehmarner Straße, bis 02.10.2026)
 #: source_id: LMS-BR:420968/72 viz2021:13.352783,52.53975, vizapi2026:903/2026 (zwischen Samoastr. und Torfstr., bis 11.09.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:421050/72 viz2021:13.3549,52.5397,03.09.2026,07:00 vizapi2026:903/2026 (laut Text von der alten API zwischen Tegeler Str. und Buchstr., bis 11.09.2026) (inaktiv)
-#: source_id: LMS-BR:421555/72 viz2021:13.34514,52.53909,07.09.2026,06:00 vizapi2026:909/2026 (zwischen Buchstr. und Föhrer Str. Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 19.09.2026)
+#: source_id: LMS-BR:421555/72 viz2021:13.34514,52.53909,07.09.2026,06:00 vizapi2026:909/2026 (zwischen Buchstr. und Föhrer Str. Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 19.09.2026) (inaktiv)
 #: source_id: LMS-BR:422260/72 viz2021:13.348504,52.539088,14.09.2026,06:00 (Baustelle zwischen Föhrer Str. und Fehmarner Str., bis 26.09.2026)
 #: source_id: LMS-BR:422273/72 viz2021:13.34873,52.53891,14.09.2026,07:00 vizapi2026:908/2026 (Markierungsarbeiten zwischen Buchstr. und Fehmarner Str., Vollsperrung für Kfz-Verkehr, bis 02.10.2026)
 #: source_id: vizapi2026:910/2026 (zwischen Fehmarner Straße und Torfstraße Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 02.10.2026)
@@ -43088,7 +43091,7 @@ EOF
        text  => 'Bebelplatz: Weihnachtsmarkt vom 25.11.2024 bis 31.12.2024, davor mehrere Tage Aufbauarbeiten, Durchfahrt nur über einen Weg am Rand möglich', # note: früher (2023) "eng"
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: BEBELPLATZXMAS-2022
+# REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022
 #: by: https://www.weihnachtsmarkt-berlin.de/
 #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html?date=20231021
 #: osm_watch: node id="3874526513" version="9"
@@ -47295,15 +47298,17 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2025-07-20 00:00:00"), # 1731826800, # 2024-11-17 08:00, # 1729705680, # 1730012400, # 2024-10-27 08:00
-       until => $isodate2epoch->("2026-10-31 20:00:00"), # $isodate2epoch->("2026-07-10 20:00:00"), # $isodate2epoch->("2026-02-28 17:00:00"), # 1747075301, # 1778594400, # 2026-05-12 16:00, # 1729705680, # 1780236000, # 2026-05-31 16:00
+       until => $isodate2epoch->("2026-12-10 20:00:00"), # $isodate2epoch->("2026-07-10 20:00:00"), # $isodate2epoch->("2026-02-28 17:00:00"), # 1747075301, # 1778594400, # 2026-05-12 16:00, # 1729705680, # 1780236000, # 2026-05-31 16:00
 #      text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 18.11.2024 08:00 Uhr bis 12.05.2026 16:00 Uhr', # verschoben?
 #      text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, vom 21.07.2025 08:00 Uhr bis 28.02.2026 17:00 Uhr',
 #      text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, bis 10.07.2026 20:00 Uhr',
-       text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Oktober 2026',
+#      text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Oktober 2026',
+       text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Dezember 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-06-2026-l91-wachow_ausbau-der-ortsdurchfahrt (bis III. Quartal 2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-09-2026-l91-wachow_fertigstellung-verschiebt-sich-in-den-novemberdezember (bis Anfang Dezember 2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 EOF
      },
@@ -47748,7 +47753,7 @@ EOF
      { from  => $isodate2epoch->("2025-11-29 00:00:00"), # 1732921200, # 2024-11-30 00:00
        until => $isodate2epoch->("2025-11-30 20:00:00"), # 1733079600, # 2024-12-01 20:00
        periodic => 1,
-       recurrences => [['yearly', days => 27, months => 11]],
+       recurrences => [['yearly', days => 27, months => 11]], # üblicherweise am 1. Adventssonntag
        text  => 'Normannenstr.: Lichtermarkt am Rathaus Lichtenberg, 30.11.2025 von 13 bis 18 Uhr',
        type  => 'handicap',
        data  => <<EOF,
@@ -47761,11 +47766,12 @@ Rathausstr.	q4::xmas 15537,12367 15576,12315
 Rathausstr.	q3::xmas 15576,12315 15628,12246
 EOF
      },
-     { from  => $isodate2epoch->("2025-11-18 00:00:00"), # 1732402800, # 2024-11-24 00:00
-       until => $isodate2epoch->("2026-01-05 23:59:59"), # 1735772399, # 2025-01-01 23:59
+     { from  => $isodate2epoch->("2026-11-17 00:00:00"), # $isodate2epoch->("2025-11-18 00:00:00"), # 1732402800, # 2024-11-24 00:00
+       until => $isodate2epoch->("2027-01-03 23:59:59"), # $isodate2epoch->("2026-01-05 23:59:59"), # 1735772399, # 2025-01-01 23:59
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11]],
-       text  => 'Wintermarkt am Humboldt-Forum: gesperrt vom 19. November 2025 bis 04. Januar 2026',
+#      text  => 'Wintermarkt am Humboldt-Forum: gesperrt vom 19. November 2025 bis 04. Januar 2026',
+       text  => 'Wintermarkt am Humboldt-Forum: gesperrt vom 18. November 2026 bis 03. Januar 2027',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/8360550-3496862-weihnachtsmarkt-am-humboldt-forum.html
@@ -56192,6 +56198,36 @@ EOF
 #: check_frequency: 30d
 #: next_check: 2029-08-10
 Am Weidendamm	q4::inwork; 9286,12886 9323,12895
+EOF
+     },
+     { from  => $isodate2epoch->("2026-09-25 00:00:00"),
+       until => $isodate2epoch->("2026-09-30 06:00:00"),
+       prewarn_days => 3,
+       text  => 'B 158: Brückeneinschub in Oderberg, Behelfsbrücke voll gesperrt, 28.09.2026 06:00 bis 30.09.2026 06:00',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-09-2026-brueckeneinschub-im-zuge-der-b-158-in-oderberg
+	2::inwork 53201,51677 53170,51879
+EOF
+     },
+     { from  => 1789876800, # 2026-09-20 06:00
+       until => 1790100000, # 2026-09-22 20:00
+       text  => 'Falkenwalde - Weselitz, Brücke über die A20: Instandsetzung, Sperrung, 21.09.2026 06:00 Uhr bis 22.09.2026 20:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LS/221-E/26/099 (bis 22.09.2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-09-2026-uckermark-vollsperrungen-fuer-brueckenarbeiten
+	2::inwork 48395,96051 49250,96198
+EOF
+     },
+     { from  => 1790136000, # 2026-09-23 06:00
+       until => 1790359200, # 2026-09-25 20:00
+       text  => 'Schönfeld - Klockow, Brücke über die A20: Instandsetzung, Sperrung, 24.09.2026 06:00 Uhr bis 25.09.2026 20:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: source_id: LS/221-E/26/102 (bis 25.09.2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-09-2026-uckermark-vollsperrungen-fuer-brueckenarbeiten
+	2::inwork 48531,112068 48631,112021
 EOF
      },
     );

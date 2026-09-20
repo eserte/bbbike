@@ -1,6 +1,493 @@
-$#temp_blocking = 416;
+$#temp_blocking = 35;
 push @temp_blocking,
 (
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html (2020)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html
+#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20211026
+#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20221108
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1483109.php
+#: by: https://www.tagesspiegel.de/berlin/bezirke/berlins-grosste-fussgangerzone-kunftiger-betreiber-fur-den-spandauer-weihnachtsmarkt-gefunden-13354381.html
+#: osm_watch: node id="9278469937" version="7"
+	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
+	2::xmas -3275,14407 -3338,14333
+	2::xmas -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
+	2::xmas -3275,14407 -3350,14446 -3393,14470 -3410,14479 -3440,14498 -3481,14523
+	2::xmas -3227,14260 -3155,14340
+	2::xmas -3227,14260 -3293,14304 -3338,14333
+	2::xmas -3552,14082 -3457,14189 -3409,14241 -3338,14333
+	2::xmas -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340
+	2::xmas -3110,14408 -3174,14438 -3228,14468
+	2::xmas -3231,14383 -3293,14304
+',
+         'from' => 1795302000,
+         'id' => 36,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Spandauer Weihnachtsmarkt, vom 23.11.2026 bis 22.12.2026',
+         'type' => 'gesperrt',
+         'until' => 1797980399
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'data' => '#: by: https://www.weihnachtsmarkt-sophienstrasse.de/
+#: by: https://www.berlin.de/weihnachtsmarkt/3659027-3496862-umwelt-und-weihnachtsmarkt-in-der-sophie.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001302-955635-weihnachts-und-umweltmarkt-in-der-sophie.html
+#: tempex: before(1st_advent,1d) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1795734000,
+         'id' => 166,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (28.11.2026 - 29.11.2026)',
+         'type' => 'gesperrt',
+         'until' => 1795993199
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'data' => '#: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
+#: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410506383/weihnachtsmarkt-city-west-wichtige-strassen-bleiben-drei-jahre-zu.html
+#: by: https://www.entwicklungsstadt.de/umbau-des-breitscheidplatzes-sicherungskonzept-fuer-den-platz-ab-2026/
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1619006.php
+#: source_id: viz2021:13.33407,52.5054,07.11.2024,07:00 (Verengung Breitscheidplatz, bis 12.01.2025) (inaktiv)
+# REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
+# sowieso schon mit q4 markiert, deshalb -> 2
+	2::xmas 5829,10964 5782,10884
+	2::xmas 5656,10876 5652,11004
+#: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
+#: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html (2020)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
+#: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
+#: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576 (Weihnachten 2024)
+#: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
+# REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
+#: source_id: 2147345089 (inaktiv)
+#: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
+#: source_id: viz2021:13.331602,52.505283,07.11.2024,07:00 (bis 12.01.2025) (inaktiv)
+#: source_id: viz2021:13.33567,52.50437,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Rankestr., bis 12.01.2025) (inaktiv)
+#: source_id: viz2021:13.33931,52.50323,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Tauentzienstr., bis 12.01.2025) (inaktiv)
+#: note: 2022+2023+2025 ist die Fahrbahn gesperrt
+Kantstr.: Weihnachtsmarkt, Gehweg frei	q4::xmas 5613,10963 5652,11004
+#: note: etwa 70m frei befahrbar
+Kantstr.: Logistik Markt	q3::xmas 5613,10963 5488,10978
+',
+         'from' => 1795302000,
+         'id' => 394,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              11,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 23. November 2026 bis voraussichtlich 03. Januar 2027',
+         'type' => 'gesperrt',
+         'until' => 1799010000
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
@@ -2070,6 +2557,39 @@ Hermann-Stöhr-Platz: Markt	q4::temp::clock 12453,11790 12476,11864
        undef,
        undef,
        undef,
+       {
+         'data' => '# REMOVED --- #: next_check_id: BEBELPLATZXMAS-2022
+#: by: https://www.weihnachtsmarkt-berlin.de/
+#: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (2022 und 2023 vorübergehend am Bebelplatz, evtl. auch schon 2021)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971676-955635-weihnachtszauber-gendarmenmarkt.html (2021 schon am Bebelplatz, wegen Bauarbeiten bis 2023)
+#: by: https://www.weihnachtsmarkt-berlin.de/?date=20211019 (2021 noch immer am Gendarmenmarkt?)
+#: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt.html
+#: by: https://www.morgenpost.de/bezirke/mitte/article410233534/weihnachtszauber-kehrt-auf-den-gendarmenmarkt-in-mitte-zurueck.html
+#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
+#: note: schmale Durchgänge am Rand des Weihnachtsmarkts existieren
+	2::xmas 9536,11922 9666,11935
+	2::xmas 9523,12019 9656,12031
+',
+         'from' => 1794524400,
+         'id' => 1989,
+         'periodic' => 1,
+         'postwarn_days' => 7,
+         'prewarn_days' => 10,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11,
+                              'start',
+                              '2025-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 23.11.2026 bis 31.12.2026, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
+         'type' => 'gesperrt',
+         'until' => 1799362799
+       },
        undef,
        undef,
        undef,
@@ -2078,8 +2598,48 @@ Hermann-Stöhr-Platz: Markt	q4::temp::clock 12453,11790 12476,11864
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.1016256.php (finder 2020 nicht statt)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1147421.php (2021 abgesagt)
+#: by: https://berliner-abendblatt.de/2021/11/17/berliner-weihnachtsmaerkte-werden-abgesagt/
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8204
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
+#: by: https://berliner-abendblatt.de/2022/11/21/es-weihnachtet-in-berlin-die-25-schoensten-weihnachtsmaerkte/
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2023/pressemitteilung.1383211.php
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2025/pressemitteilung.1617272.php
+# REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
+#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
+	2::xmas 13416,7712 13424,7680
+	2::xmas 13416,7712 13378,7695 13288,7653
+	2::xmas 13424,7680 13417,7654 13392,7648 13295,7627
+	2::xmas 12972,7602 13100,7626 13130,7633 13174,7644
+	2::xmas 13179,7613 13174,7644
+	2::xmas 13179,7613 13295,7627
+	2::xmas 13288,7653 13295,7627
+	2::xmas 13288,7653 13174,7644
+	2::xmas 13288,7653 13278,7673 13245,7742
+#: tempex ^^^
+',
+         'from' => 1796252400,
+         'id' => 1998,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (04.12.2026 - 06.12.2026)',
+         'type' => 'gesperrt',
+         'until' => 1796597999
+       },
        undef,
        undef,
        undef,
@@ -3017,13 +3577,174 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: https://www.weihnachtsmarkt-sophienstrasse.de/
+#: tempex: before(2nd_advent,sa) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1796338800,
+         'id' => 2515,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (05.12.2026 - 06.12.2026)',
+         'type' => 'gesperrt',
+         'until' => 1796597999
+       },
+       {
+         'data' => '#: by: https://www.weihnachtsmarkt-sophienstrasse.de/
+#: tempex: before(3rd_advent,sa) - +1d
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1796943600,
+         'id' => 2516,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (12.12.2026 - 13.12.2026)',
+         'type' => 'gesperrt',
+         'until' => 1797202799
+       },
+       {
+         'data' => '#: by: https://www.weihnachtsmarkt-sophienstrasse.de/
+#: tempex: before(4th_advent,sa) - +1d
+#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
+	2::xmas 9986,13412 10321,13259
+',
+         'from' => 1797548400,
+         'id' => 2517,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              16,
+                              'months',
+                              12,
+                              'start',
+                              '2024-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (19.12.2026 - 20.12.2026)',
+         'type' => 'gesperrt',
+         'until' => 1797807599
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3250022-3496862-adventsmarkt-am-kollwitzplatz.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/ (2021 abgesagt)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html (Termin 2022 nicht bekannt)
+#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/?date=20221103
+#: tempex: 1st_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1795863600,
+         'id' => 2518,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 14,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 29.11.2026, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1795975200
+       },
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: tempex: 2nd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1796468400,
+         'id' => 2519,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 06.12.2026, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1796580000
+       },
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: tempex: 3rd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1797073200,
+         'id' => 2520,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 13.12.2026, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1797184800
+       },
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html
+#: tempex: 4th_advent & T12-T19
+#: note: scheint nicht stattzufinden, wenn der 4. Advent auf Heiligabend fällt
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1797670800,
+         'id' => 2521,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              17,
+                              'months',
+                              12,
+                              'start',
+                              '2024-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 20.12.2026, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1797782400
+       },
        undef,
        undef,
        undef,
@@ -3041,7 +3762,35 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
+#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau/?date=20241219
+#: by: https://www.hauptstadtkultur.berlin/events/?date=20260919
+#: source_id: IM_020883 (inaktiv)
+#: source_id: 2147345257 (inaktiv)
+#: source_id: LMS-BR:393851/72 viz2021:13.49469,52.42125,20.12.2025,12:00 (bis 21.12.2025) (inaktiv)
+Alt-Rudow zwischen Köpenicker Str. und Krokusstr.	2::xmas 16849,1437 16805,1488 16610,1715
+Krokusstr.	2::xmas 16610,1715 16767,1831
+',
+         'from' => 1796382000,
+         'id' => 2529,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 05.12.2026 und 06.12.2026',
+         'type' => 'gesperrt',
+         'until' => 1796587200
+       },
        undef,
        undef,
        undef,
@@ -3366,7 +4115,36 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html (seit 2022 keine Termine mehr?)
+#: by: https://www.visitberlin.de/de/weihnachtsmarkt-alexanderplatz-berlin
+#: also_indoor: webcam https://portal1391.webcam-profi.de/
+#: osm_watch: node id="3204993764" version="8"
+#: tempex: before(first_advent, monday)-YYYY1226 vvv
+#: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3; mittlerweile wohl immer eher q4
+	q4::xmas 11139,13008 11064,12910 11005,12855 10970,12822
+	q4::xmas 11064,12910 11141,12806
+#: tempex ^^^
+',
+         'from' => 1795302000,
+         'id' => 2763,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 23. November 2026 bis 26. Dezember 2026',
+         'type' => 'handicap',
+         'until' => 1798325999
+       },
        undef,
        undef,
        undef,
@@ -4707,7 +5485,31 @@ Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/7092703-3496862-weihnachten-in-westend.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
+#: by[nocache]: https://x.com/VIZ_Berlin/status/1870150671086834122 (hier beide Richtungen, aber nur Kfz-Verkehr, und nur zwischen Marathonallee und Badenallee)
+#: source_id: viz2021:13.259828,52.514849,18.12.2021,05:00 (inaktiv)
+#: source_id: viz2021:13.2597,52.51486,21.12.2024,05:00 (bis 22.12.2024) (inaktiv)
+#: source_id: LMS-BR:393826/72 viz2021:13.2597,52.51486,20.12.2025,05:00 (bis 21.12.2025) (inaktiv)
+	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+',
+         'from' => 1797566400,
+         'id' => 3490,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Preußenallee: voraussichtlich Richtung Heerstr. zwischen Marathonallee und Westendallee gesperrt (Weihnachten in Westend), vom 19.12.2026 05:00 bis 20.12.2026 23:00 ',
+         'type' => 'gesperrt',
+         'until' => 1797804000
+       },
        undef,
        undef,
        undef,
@@ -5510,7 +6312,33 @@ Senheimer Str., Königsbacher Zeile bis Schönfließer Str.	q4::inwork 2519,25772 2
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: 2023 hat die Sperrung zwischen 2023-11-15 und 2023-11-20 angefangen, und die Bauzäune waren noch am 2024-01-05 (!) da
+#: note: 2024 hat die Sperrung vor dem 2024-11-15 angefangen ...
+#: note: 2025 hat die Sperrung vor dem 2025-11-09 angefangen, und es wurde am 2026-01-14 noch immer abgebaut
+#: by: https://www.weihnachten-an-der-spree.de/
+#: osm_watch: node id="11346915244" version="3"
+# REMOVED (2024 hier nicht gesperrt) ---	2::xmas 13558,10704 13531,10673 13527,10660
+	2::xmas 13531,10673 13418,10724
+	2::xmas 13558,10704 13531,10673 13527,10660
+# REMOVED (seit 2025 Bauarbeiten) ---	2::xmas 13418,10724 13326,10765
+',
+         'from' => 1794178800,
+         'id' => 3696,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt an der Spree: Uferweg gesperrt, 16.11. - 30.12.2026, sowie während der Aufbau- und Abbauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1800118800
+       },
        undef,
        undef,
        undef,
@@ -6220,7 +7048,7 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvhbmldptb22 (Sperrung für Kfz-Verkehr zwischen Buchstraße und Fehmarner Straße, bis 02.10.2026)
 #: source_id: LMS-BR:420968/72 viz2021:13.352783,52.53975, vizapi2026:903/2026 (zwischen Samoastr. und Torfstr., bis 11.09.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:421050/72 viz2021:13.3549,52.5397,03.09.2026,07:00 vizapi2026:903/2026 (laut Text von der alten API zwischen Tegeler Str. und Buchstr., bis 11.09.2026) (inaktiv)
-#: source_id: LMS-BR:421555/72 viz2021:13.34514,52.53909,07.09.2026,06:00 vizapi2026:909/2026 (zwischen Buchstr. und Föhrer Str. Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 19.09.2026)
+#: source_id: LMS-BR:421555/72 viz2021:13.34514,52.53909,07.09.2026,06:00 vizapi2026:909/2026 (zwischen Buchstr. und Föhrer Str. Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 19.09.2026) (inaktiv)
 #: source_id: LMS-BR:422260/72 viz2021:13.348504,52.539088,14.09.2026,06:00 (Baustelle zwischen Föhrer Str. und Fehmarner Str., bis 26.09.2026)
 #: source_id: LMS-BR:422273/72 viz2021:13.34873,52.53891,14.09.2026,07:00 vizapi2026:908/2026 (Markierungsarbeiten zwischen Buchstr. und Fehmarner Str., Vollsperrung für Kfz-Verkehr, bis 02.10.2026)
 #: source_id: vizapi2026:910/2026 (zwischen Fehmarner Straße und Torfstraße Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 02.10.2026)
@@ -7110,13 +7938,14 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        {
          'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-06-2026-l91-wachow_ausbau-der-ortsdurchfahrt (bis III. Quartal 2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-09-2026-l91-wachow_fertigstellung-verschiebt-sich-in-den-novemberdezember (bis Anfang Dezember 2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 ',
          'from' => 1752962400,
          'id' => 4199,
-         'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende Oktober 2026',
+         'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Dezember 2026',
          'type' => 'gesperrt',
-         'until' => 1793473200
+         'until' => 1796929200
        },
        {
          'data' => '# REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
@@ -7220,7 +8049,29 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/8360550-3496862-weihnachtsmarkt-am-humboldt-forum.html
+#: by: https://wintermarkt-schlossplatz.de/
+#: note: im Internet teilweise als "Weihnachtsmarkt", teilweise als "Wintermarkt" zu finden, letzteres scheint aber korrekt zu sein
+	2::xmas 10152,12491 10168,12444
+	2::xmas 10095,12392 10168,12444 10263,12508
+',
+         'from' => 1794870000,
+         'id' => 4229,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Wintermarkt am Humboldt-Forum: gesperrt vom 18. November 2026 bis 03. Januar 2027',
+         'type' => 'gesperrt',
+         'until' => 1799017199
+       },
        undef,
        undef,
        undef,
@@ -11012,6 +11863,39 @@ Am Weidendamm	q4::inwork; 9286,12886 9323,12895
          'text' => 'Am Weidendamm: Baustelle, Einfahrt Richtung Osten verboten, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-09-2026-brueckeneinschub-im-zuge-der-b-158-in-oderberg
+	2::inwork 53201,51677 53170,51879
+',
+         'from' => 1790287200,
+         'id' => 4763,
+         'prewarn_days' => 3,
+         'text' => 'B 158: Brückeneinschub in Oderberg, Behelfsbrücke voll gesperrt, 28.09.2026 06:00 bis 30.09.2026 06:00',
+         'type' => 'gesperrt',
+         'until' => 1790740800
+       },
+       {
+         'data' => '#: source_id: LS/221-E/26/099 (bis 22.09.2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-09-2026-uckermark-vollsperrungen-fuer-brueckenarbeiten
+	2::inwork 48395,96051 49250,96198
+',
+         'from' => 1789876800,
+         'id' => 4764,
+         'text' => 'Falkenwalde - Weselitz, Brücke über die A20: Instandsetzung, Sperrung, 21.09.2026 06:00 Uhr bis 22.09.2026 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1790100000
+       },
+       {
+         'data' => '#: source_id: LS/221-E/26/102 (bis 25.09.2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-09-2026-uckermark-vollsperrungen-fuer-brueckenarbeiten
+	2::inwork 48531,112068 48631,112021
+',
+         'from' => 1790136000,
+         'id' => 4765,
+         'text' => 'Schönfeld - Klockow, Brücke über die A20: Instandsetzung, Sperrung, 24.09.2026 06:00 Uhr bis 25.09.2026 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1790359200
        }
      
 );
