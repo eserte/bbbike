@@ -30,7 +30,7 @@ if (@points != 2) {
 
 my $qq = CGI->new('');
 $qq->param('startc_wgs84', swap_latlon($points[0]));
-$qq->param('zielc_wgs84', swap_latlon($points[0]));
+$qq->param('zielc_wgs84', swap_latlon($points[1]));
 $qq->param('output_as', 'gpx-route');
 $qq->param('pref_seen', 1);
 $qq->param('appid', 'osmand-custom-1');
