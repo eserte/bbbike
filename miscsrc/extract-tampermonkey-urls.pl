@@ -45,6 +45,8 @@ if ($aux_dir && -d $aux_dir) {
 
 my @newspaper_urls;
 my @bvv_urls;
+my %seen_newspaper_urls;
+my %seen_bvv_urls;
 
 foreach my $file (@input_files) {
     if (!-f $file) {
@@ -54,10 +56,10 @@ foreach my $file (@input_files) {
     if (open(my $fh, "<", $file)) {
         while (<$fh>) {
             if (/^#:\s*by:?\s+(http\S+(?:morgenpost|tagesspiegel|berliner-zeitung|nd-aktuell|entwicklungsstadt)\.de[^\s\?]+)/) {
-                push @newspaper_urls, $1;
+                push @newspaper_urls, $1 if !$seen_newspaper_urls{$1}++;
             }
             if (m{^#:\s*by:?\s+(https?://(www\.berlin\.de/ba-.*/politik.*/bezirksverordnetenversammlung/online/\S+|bvv-.*\.berlin\.de/pi-r/\S+))}) {
-                push @bvv_urls, $1;
+                push @bvv_urls, $1 if !$seen_bvv_urls{$1}++;
             }
         }
         close $fh;
