@@ -53,9 +53,11 @@ use BBBikeBuildUtil qw(get_pmake);
 use BBBikeProcUtil qw(double_forked_exec);
 use BBBikeUtil qw(bbbike_root is_in_path module_exists);
 
+sub xpath_checks ($$&);
+
 @EXPORT = (qw(get_std_opts set_user_agent http_tiny_env_proxy_args do_display tidy_check
 	      libxml_parse_html libxml_parse_html_or_skip
-	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string xml_eq
+	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string xml_eq xpath_checks
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float is_number isnt_number using_bbbike_test_cgi using_bbbike_test_data
@@ -603,6 +605,28 @@ sub xml_eq {
 	    $_ = $dom->toStringC14N;
 	}
 	eq_or_diff($left, $right, $test_name);
+    }
+}
+
+# one test + specified number of $tests
+sub xpath_checks ($$&) {
+    my($xml_res, $tests, $testcode) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
+ SKIP: {
+	Test::More::skip("No XML::LibXML parser available for checking", $tests + 1)
+		if !eval { require XML::LibXML; 1 };
+	my $p = XML::LibXML->new;
+	my $doc = eval { $p->parse_string($xml_res) };
+	Test::More::ok($doc, "XML::LibXML was available to parse result");
+    SKIP: {
+	    Test::More::skip("Document was not parsed correctly, skip reamining subtests...", $tests)
+		if !$doc;
+
+	    $doc->documentElement->setNamespaceDeclURI('',''); # remove ns for easier xpath expressions
+
+	    local $Test::Builder::Level = $Test::Builder::Level + 1;
+	    $testcode->($doc);
+	}
     }
 }
 

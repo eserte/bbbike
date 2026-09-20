@@ -31,14 +31,13 @@ if (!eval { require Encode; 1 }) {
     diag "Encode is not available, some failures are expected";
 }
 
-use BBBikeTest qw(gpxlint_string eq_or_diff xml_eq);
+use BBBikeTest qw(gpxlint_string eq_or_diff xml_eq xpath_checks);
 
 use GPS::GpsmanData::Any;
 use Route;
 
 sub keep_file ($$);
 sub load_from_file_and_check ($$);
-sub xpath_checks ($$&);
 
 my $v;
 my @variants = ("XML::LibXML", "XML::Twig");
@@ -917,28 +916,6 @@ sub load_from_file_and_check ($$) {
     is_deeply $s_gpx->data, $check_against->data, "Loading gpx explicitely with Strassen::GPX";
     is_deeply $s_magic->data, $check_against->data, "Loading gpx with magic check";
     is_deeply $s_suffix->data, $check_against->data, "Loading gpx with suffix check";
-}
-
-# one test + specified number of $tests
-sub xpath_checks ($$&) {
-    my($xml_res, $tests, $testcode) = @_;
-    local $Test::Builder::Level = $Test::Builder::Level + 1;
- SKIP: {
-	skip("No XML::LibXML parser available for checking", $tests + 1)
-	    if !eval { require XML::LibXML; 1 };
-	my $p = XML::LibXML->new;
-	my $doc = eval { $p->parse_string($xml_res) };
-	ok($doc, "XML::LibXML was available to parse result");
-    SKIP: {
-	    skip "Document was not parsed correctly, skip reamining subtests...", $tests
-		if !$doc;
-
-	    $doc->documentElement->setNamespaceDeclURI('',''); # remove ns for easier xpath expressions
-
-	    local $Test::Builder::Level = $Test::Builder::Level + 1;
-	    $testcode->($doc);
-	}
-    }
 }
 
 __END__
