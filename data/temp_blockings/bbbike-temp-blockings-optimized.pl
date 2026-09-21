@@ -1115,43 +1115,7 @@ Londoner Str.: Richtung Müllerstr. gesperrt	q4::inwork; 5953,17131 5847,17018 57
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/ (Aktualisierungen nur bis 2020)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.921158.php (Absage 2020)
-#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html (geplant für 8. und 9. Mai 2021)
-#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20210418 (abgesagt)
-#: by: https://www.laubinger.de/event/30-fest-auf-der-boelschestrasse/ (geplant für 7.05.2022 - 8.05.2022)
-#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20220416 (geplant für 7. und 8. Mai 2022)
-#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20230325 (wegen Bauarbeiten für 2023 abgesagt)
-#: by: https://www.facebook.com/events/1572185126967043/?ref_source=NEWS_FEED&__hwl=1&_rdr (20.9.-22.9.2024)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/berliner-traditionsfeste-kein-festumzug-durch-die-kopenicker-altstadt-13344679.html (2025 nur auf dem Marktplatz Friedrichshagen?)
-#: by: https://www.laubinger.de/event/31-fest-auf-der-boelsche-geplant/ (fällt 2025 aus)
-#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article411944067/berlin-boelschefest-2026-in-friedrichshagen-das-ist-dieses-mal-anders.html (Fahrbahn für Autos gesperrt)
-#: source_id: viz2021:13.62428,52.44685,07.05.2022,06:00 (inaktiv)
-#: source_id: viz2021:13.624675,52.451034,20.09.2024,06:00 (bis 22.09.2024) (inaktiv)
-#: source_id: LMS-BR:408161/72 viz2021:13.62467,52.45051,14.05.2026,06:00 (bis 17.05.2026) (inaktiv)
-#: source_id: LMS-BR:422779/72 viz2021:13.62428,52.44685,18.09.2026,06:00 vizapi2026:960/2026 (18.09.2026 bis 20.09.2026)
-Bölschestr.: Sperrung der Fahrbahn	2::temp 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
-',
-         'from' => 1789596000,
-         'id' => 964,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              5,
-                              'start',
-                              '2025-05-13T00:00:00'
-                            ]
-                          ],
-         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (18. bis 20. September 2026)',
-         'type' => 'gesperrt',
-         'until' => 1789927200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3043,37 +3007,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.laubinger.de/termine/rosenthaler-herbst/?y=2019
-#: by: https://www.laubinger.de/event/47-rosenthaler-herbst/ (geplant: 18.09.2021 - 19.09.2021)
-#: by: https://www.berliner-woche.de/rosenthal/c-kultur/feiern-mit-abstand-und-einschraenkungen_a321188
-#: by: https://dorf-rosenthal.de/programmheft
-#: by: https://www.laubinger.de/event/47-rosenthaler-herbst/?date=20240814
-#: source_id: viz2021:13.379396,52.601479,20.09.2024,06:00 (bis 22.09.2024) (inaktiv)
-#: source_id: viz2021:13.377712,52.599818,19.09.2025,06:00 (bis 21.09.2025) (inaktiv)
-#: source_id: viz2021:13.37865,52.60065,19.09.2025,06:00 (bis 21.09.2025) (inaktiv)
-#: source_id: vizapi2026:959/2026 (bis 20.09.2026)
-	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
-# REMOVED --- Hauptstr. 155 - 171	q4::temp 8568,21863 8556,21918 8400,22010
-',
-         'from' => 1789596000,
-         'id' => 2285,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße gesperrt zwischen Schönhauser Str. und An der Vogelweide, 18.09.2026 bis 20.09.2026',
-         'type' => 'handicap',
-         'until' => 1789941599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -11819,14 +11753,17 @@ Raumerstr. - Gneiststr.	q4::inwork 11040,15398 11112,15387 11223,15319
        },
        {
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260918
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvywmhguny2r
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigjbp7epqsmvvhsrnvxcoahqarwlqxa75kvi376gbzt4zslxasemm
 #: source_id: planb2026:13.40946382,52.53830611,21.09.2026, ("Sperrung einer Fahrtrichtung", hier erst ab Höhe Prater, dafür aber über die Oderberger Str. hinweg, bis 19.10.2026)
 #: source_id: vizapi2026:969/2026 (Gleisbauarbeiten, Fahrtrichtung für Kfz- und Radverkehr gesperrt, Umleitung für Radverkehr via Choriner + Schwedter Str., bis 19.10.2026)
-#: XXX Gibt es für den Radverkehr eine Gehwegfreigabe, oder ist tatsächlich komplett gesperrt?
-#: next_check: 2026-09-21 vvv
+# REMOVED (laut Verkehrszeichenplan keine Freigabe) --- #: XXX Gibt es für den Radverkehr eine Gehwegfreigabe, oder ist tatsächlich komplett gesperrt? --- #: next_check: 2026-09-21 vvv
 	q4::inwork; 10881,15047 10838,14962 10816,14925 10723,14772
 #: note: anscheinend ist auch der Kreuzungsbereich Oderberger Str. gesperrt, deshalb hier noch ein Stück q3
 	q3::inwork; 10723,14772 10643,14639
-#: next_check ^^^
+#: note: möglicherweise Sperrung der westlichen Seite der Kastanienallee auch im Kreuzungsbereich Oderberger Str.
+	q3::inwork 10723,14772 10401,14963
+# REMOVED --- #: next_check ^^^
 ',
          'from' => 1789855200,
          'id' => 4760,

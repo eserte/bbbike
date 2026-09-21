@@ -56162,14 +56162,17 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260918
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvywmhguny2r
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigjbp7epqsmvvhsrnvxcoahqarwlqxa75kvi376gbzt4zslxasemm
 #: source_id: planb2026:13.40946382,52.53830611,21.09.2026, ("Sperrung einer Fahrtrichtung", hier erst ab Höhe Prater, dafür aber über die Oderberger Str. hinweg, bis 19.10.2026)
 #: source_id: vizapi2026:969/2026 (Gleisbauarbeiten, Fahrtrichtung für Kfz- und Radverkehr gesperrt, Umleitung für Radverkehr via Choriner + Schwedter Str., bis 19.10.2026)
-#: XXX Gibt es für den Radverkehr eine Gehwegfreigabe, oder ist tatsächlich komplett gesperrt?
-#: next_check: 2026-09-21 vvv
+# REMOVED (laut Verkehrszeichenplan keine Freigabe) --- #: XXX Gibt es für den Radverkehr eine Gehwegfreigabe, oder ist tatsächlich komplett gesperrt? --- #: next_check: 2026-09-21 vvv
 	q4::inwork; 10881,15047 10838,14962 10816,14925 10723,14772
 #: note: anscheinend ist auch der Kreuzungsbereich Oderberger Str. gesperrt, deshalb hier noch ein Stück q3
 	q3::inwork; 10723,14772 10643,14639
-#: next_check ^^^
+#: note: möglicherweise Sperrung der westlichen Seite der Kastanienallee auch im Kreuzungsbereich Oderberger Str.
+	q3::inwork 10723,14772 10401,14963
+# REMOVED --- #: next_check ^^^
 EOF
      },
      { from  => 1790546400, # 2026-09-28 00:00
