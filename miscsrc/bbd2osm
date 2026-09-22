@@ -1083,9 +1083,11 @@ sub handle_railway_stations_like {
     %attribs = (
 		railway => ($is_construction
 			    ? 'construction'
+			    : $is_abandoned
+			    ? ($is_optimize_for_mapnik_bbbike_style ? 'station_disused' : 'disused_station')
 			    : 'station' # no distinction between halt and station
 			   ),
-		($is_abandoned ? ("abandoned" => "yes") : ()),
+		($is_abandoned ? ("abandoned" => "yes", "disused" => "yes") : ()),
 		($is_construction ? ("construction" => "station") : ()), # more construction-related attribs set later
 		name => $name,
 	       );
