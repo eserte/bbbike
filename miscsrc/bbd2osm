@@ -22,7 +22,21 @@ use lib (
 use Fcntl qw(SEEK_SET);
 use File::Temp qw(tempfile);
 use Getopt::Long;
-use Tie::IxHash ();
+BEGIN {
+    if (!eval { require Tie::IxHash; 1 }) {
+	package Tie::IxHash;
+	sub TIEHASH { my $class = shift; bless {@_}, $class }
+	sub FETCH { $_[0]->{$_[1]} }
+	sub STORE { $_[0]->{$_[1]} = $_[2] }
+	sub DELETE { delete $_[0]->{$_[1]} }
+	sub EXISTS { exists $_[0]->{$_[1]} }
+	sub FIRSTKEY { my $a = [grep { $_ ne '_keys' } keys %{$_[0]}]; $_[0]->{_keys} = $a; shift @$a }
+	sub NEXTKEY { shift @{$_[0]->{_keys}} }
+	sub CLEAR { %{$_[0]} = () }
+	sub SCALAR { scalar %{$_[0]} }
+	$INC{'Tie/IxHash.pm'} = 1;
+    }
+}
 
 use Geography::Berlin_DE ();
 use Karte::Polar;
@@ -1063,7 +1077,7 @@ sub handle_ropeway_stations {
 }    
 
 sub handle_railway_stations_like {
-    my($r) = @_;
+    my($r, $dir) = @_;
     my $cat = $r->[Strassen::CAT];
     if ($cat eq 'Ropeway') {
 	return handle_ropeway_stations($r);
@@ -1072,6 +1086,7 @@ sub handle_railway_stations_like {
     my $is_sbahn = $cat =~ m{^S};
     my $is_abandoned = $cat =~ m{0$};
     my $is_construction = $cat =~ m{Bau$};
+    my $is_osm_abandoned = $dir && $dir->{'osm.abandoned'} && $dir->{'osm.abandoned'}->[0] && $dir->{'osm.abandoned'}->[0] eq 'yes';
     my $is_optimize_for_mapnik_bbbike_style = $optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE;
     my $name = (
 		$is_optimize_for_mapnik_bbbike_style
@@ -1083,11 +1098,11 @@ sub handle_railway_stations_like {
     %attribs = (
 		railway => ($is_construction
 			    ? 'construction'
-			    : $is_abandoned
-			    ? ($is_optimize_for_mapnik_bbbike_style ? 'station_disused' : 'disused_station')
 			    : 'station' # no distinction between halt and station
 			   ),
-		($is_abandoned ? ("abandoned" => "yes", "disused" => "yes") : ()),
+		($is_abandoned
+		 ? ($is_osm_abandoned ? ("abandoned" => "yes") : ("disused" => "yes"))
+		 : ()),
 		($is_construction ? ("construction" => "station") : ()), # more construction-related attribs set later
 		name => $name,
 	       );
@@ -1105,14 +1120,10 @@ sub handle_railway_stations_like {
 	}
     } elsif ($cat =~ m{^R}) {
 	# Regional/Fernbahnhof
-	if ($is_optimize_for_mapnik_bbbike_style) {
-	    if ($is_abandoned) {
-		$attribs{railway} = 'station_disused';
-	    } elsif ($cat =~ m{^RP}) {
+	if ($cat =~ m{^RP}) {
+	    if ($optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
 		$attribs{railway} = 'station_narrow_gauge';
-	    }
-	} else {
-	    if ($cat =~ m{^RP}) {
+	    } else {
 		$attribs{'bbbike:station_type'} = 'RP';
 	    }
 	}
@@ -1685,8 +1696,7 @@ using mapnik with the special bbbike style:
 value "traffic_signals_pedestrian"
 
 =item * Railway stations may have the non-standard tag values
-"station_subway", "station_light_rail", "station_narrow_gauge", or
-"station_disused"
+"station_subway", "station_light_rail", or "station_narrow_gauge"
 
 =item * The directive C<osm.highway> will be used, providing otherwise
 non-existing support for highway types like "service" or
