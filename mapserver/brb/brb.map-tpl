@@ -2250,6 +2250,11 @@ LAYER
 [% PROCESS CLASS_BAHNHOF expr="/^R[ABC]?\$/" symbol=undef imagename="eisenbahn" imagesize="_klein"  minscale=25000  maxscale=75000  do_label=0 -%]
 [% PROCESS CLASS_BAHNHOF expr="/^R[ABC]?\$/" symbol=undef imagename="eisenbahn" imagesize=""        minscale=15000  maxscale=25000  do_label=0 -%]
 [% PROCESS CLASS_BAHNHOF expr="/^R[ABC]?\$/" symbol=undef imagename="eisenbahn" imagesize=""        minscale=undef  maxscale=15000  do_label=1 labelcolor="0 128 0" -%]
+[% PROCESS CLASS_BAHNHOF expr="/^R0\$/"       symbol="circle" symbolcolor="128 128 128" symbolsize="6" minscale=150000 maxscale=undef do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^R0\$/"       symbol=undef imagename="eisenbahn_stillg" imagesize="_mini" minscale=75000 maxscale=150000 do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^R0\$/"       symbol=undef imagename="eisenbahn_stillg" imagesize="_klein" minscale=25000 maxscale=75000 do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^R0\$/"       symbol=undef imagename="eisenbahn_stillg" imagesize="" minscale=15000 maxscale=25000 do_label=0 -%]
+[% PROCESS CLASS_BAHNHOF expr="/^R0\$/"       symbol=undef imagename="eisenbahn_stillg" imagesize="" minscale=undef maxscale=15000 do_label=1 labelcolor="128 128 128" -%]
 
   TEMPLATE "query.html"
   HEADER "query_header2.html"

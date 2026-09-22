@@ -1103,10 +1103,14 @@ sub handle_railway_stations_like {
 	}
     } elsif ($cat =~ m{^R}) {
 	# Regional/Fernbahnhof
-	if ($cat =~ m{^RP}) {
-	    if ($optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE) {
+	if ($is_optimize_for_mapnik_bbbike_style) {
+	    if ($is_abandoned) {
+		$attribs{railway} = 'station_disused';
+	    } elsif ($cat =~ m{^RP}) {
 		$attribs{railway} = 'station_narrow_gauge';
-	    } else {
+	    }
+	} else {
+	    if ($cat =~ m{^RP}) {
 		$attribs{'bbbike:station_type'} = 'RP';
 	    }
 	}
@@ -1679,7 +1683,8 @@ using mapnik with the special bbbike style:
 value "traffic_signals_pedestrian"
 
 =item * Railway stations may have the non-standard tag values
-"station_subway", "station_light_rail", or "station_narrow_gauge"
+"station_subway", "station_light_rail", "station_narrow_gauge", or
+"station_disused"
 
 =item * The directive C<osm.highway> will be used, providing otherwise
 non-existing support for highway types like "service" or
