@@ -22,21 +22,7 @@ use lib (
 use Fcntl qw(SEEK_SET);
 use File::Temp qw(tempfile);
 use Getopt::Long;
-BEGIN {
-    if (!eval { require Tie::IxHash; 1 }) {
-	package Tie::IxHash;
-	sub TIEHASH { my $class = shift; bless {@_}, $class }
-	sub FETCH { $_[0]->{$_[1]} }
-	sub STORE { $_[0]->{$_[1]} = $_[2] }
-	sub DELETE { delete $_[0]->{$_[1]} }
-	sub EXISTS { exists $_[0]->{$_[1]} }
-	sub FIRSTKEY { my $a = [grep { $_ ne '_keys' } keys %{$_[0]}]; $_[0]->{_keys} = $a; shift @$a }
-	sub NEXTKEY { shift @{$_[0]->{_keys}} }
-	sub CLEAR { %{$_[0]} = () }
-	sub SCALAR { scalar %{$_[0]} }
-	$INC{'Tie/IxHash.pm'} = 1;
-    }
-}
+use Tie::IxHash ();
 
 use Geography::Berlin_DE ();
 use Karte::Polar;
@@ -1084,7 +1070,7 @@ sub handle_railway_stations_like {
     }
     my $is_ubahn = $cat =~ m{^U};
     my $is_sbahn = $cat =~ m{^S};
-    my $is_abandoned = $cat =~ m{0$};
+    my $is_disused = $cat =~ m{0$};
     my $is_construction = $cat =~ m{Bau$};
     my $is_osm_abandoned = $dir && $dir->{'osm.abandoned'} && $dir->{'osm.abandoned'}->[0] && $dir->{'osm.abandoned'}->[0] eq 'yes';
     my $is_optimize_for_mapnik_bbbike_style = $optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE;
@@ -1100,7 +1086,7 @@ sub handle_railway_stations_like {
 			    ? 'construction'
 			    : 'station' # no distinction between halt and station
 			   ),
-		($is_abandoned
+		($is_disused
 		 ? ($is_osm_abandoned ? ("abandoned" => "yes") : ("disused" => "yes"))
 		 : ()),
 		($is_construction ? ("construction" => "station") : ()), # more construction-related attribs set later
