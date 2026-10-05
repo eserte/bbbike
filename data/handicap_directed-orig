@@ -831,12 +831,15 @@ B2: Bauarbeiten, Radverkehr wieder zurück auf die rechte Seite	DH:tl=30 16644,21
 #: by: https://www.hennigsdorf.de/index.php?La=1&object=tx,3590.20797.1&NavID=2713.41.1
 #: by: https://www.hennigsdorf.de/index.php?object=tx,3590.6&ModID=7&FID=3590.23845.1 (Abschluss der Vorbereitungsarbeiten 2026)
 #: by: https://www.deutsches-architekturforum.de/thread/11269-kleinere-bauprojekte-im-berliner-umland/?postID=799087#post799087
+#: source_id: 266501853 (Anbindung Behelfsumfahrung, bis 16.10.2026)
 #: XXX Umweg für Radfahrer wegen Brückenarbeiten
 #: osm_watch: note 5301244 2 vvv
 #: last_checked: 2026-08-23 (mapillary) vvv
 #: check_frequency: 90d vvv
+#: next_check: 2026-10-16 (Verkehrsmeldung) vvv
 Hennigsdorf, Havelbrücke	DH:len=117:h=q1,117:tl -2808,25489 -2446,25386
 Hennigsdorf, Havelbrücke	DH:len=117:h=q1,117 -2446,25386 -2808,25489
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -857,7 +860,7 @@ Borstellstr. -> Am Eichgarten: Umweg	DH:len=20:h=q3,20 6309,4328 6219,4336 6210,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/erweiterungsbau-bundesumweltministerium-stresemannstra%C3%9Fe.307/#post-9710
 #: by: https://www.deutsches-architekturforum.de/thread/4575-bundesumweltministerium-stresemannstra%C3%9Fe-und-erweiterungsbau/?postID=774211#post774211 (Fertigstellung Ende 2026?)
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/berlin/politik-und-verwaltung/bmukn/erweiterung/projektinformation.html (Fertigstellung geplant 2029)
-#: osm_watch: way id="295838676" version="11"
+#: osm_watch: way id="295838676" version="12"
 #: note: von der Fahrbahn aus könnte man physikalisch abbiegen, ist aber nicht erlaubt
 #: last_checked: 2026-09-07
 #: check_frequency: 120d

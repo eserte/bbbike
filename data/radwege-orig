@@ -377,7 +377,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-09-18 vvv
+#: last_checked: 2026-10-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1103,12 +1103,11 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 #: next_check_id: SCHOENHAUSERALLEE-2024
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauersperrung-uber-hunderte-meter-millionen-radstreifen-in-der-schonhauser-allee-in-berlin-kaum-nutzbar-15484732.html
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
-#: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026) (bis 22.09.2026)
+#: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026) (bis 22.09.2026) (bis 13.11.2026)
 #: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026) (vorfristig inaktiv) (bis 27.09.2026) (vorfristig inaktiv)
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 #: last_checked: 2026-08-11 vvv
-# REMOVED --- #: next_check: 2026-11-30 (planb) vvv
-#: next_check: 2026-09-27 (planb) vvv
+#: next_check: 2026-11-13 (VIZ-Verkehrsmeldung) vvv
 #: XXX nach den Bauarbeiten wiederherstellen: Radspur, niedrige Protektion	RW4;
 provisorische Radwegführung über Hochbord	RW2; 10925,15581 10917,15525
 provisorische Radwegführung über Hochbord	RW2; 10917,15525 10902,15422
@@ -1466,7 +1465,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-09-12 vvv
+#: last_checked: 2026-10-05 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14405,10027 14501,10169 14558,10264
@@ -1955,13 +1954,13 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2026-09-08 (osm) vvv
+#: last_checked: 2026-10-02 (osm) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, Suggestivstreifen ist nicht der Rede Wert, Tempo 20 + Radfahrüberholverbot, früher:	RW2;
-#: osm_watch: way id="910439501" version="26"
+#: osm_watch: way id="910439501" version="27"
 #: osm_watch: note 3599331 7
 	RW0; 22467,6135 22431,6068
 # REMOVED --- #: next_check ^^^
@@ -3374,10 +3373,11 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-09-12 vvv
+#: last_checked: 2026-10-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
-#: next_check: 2026-09-30 (planb) vvv
+# REMOVED --- #: next_check: 2026-09-30 (planb) vvv
+#: next_check: 2026-10-31 (Halteverbotsschilder) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
 provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: next_check ^^^
@@ -3402,13 +3402,14 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id[inactive]: bvg2024:HIM_FREETEXT_247779
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026) (inaktiv)
 #: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026) (bis 31.10.2026)
-#: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026)
+#: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026) (bis 30.11.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
 #: last_checked: 2026-09-12
 #: check_frequency: 30d
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
-#: next_check: 2026-09-30 (planb)
+# REMOVED --- #: next_check: 2026-09-30 (planb)
+#: next_check: 2026-10-31 (Halteverbotsschilder)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
 #	RW3; 14641,10552 14608,10409
 #die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
@@ -6246,10 +6247,10 @@ Gehweg für Radfahrer frei, alter Asphalt mit vielen Unebenheiten	RW1; 15642,1917
 #: historical_note: bis etwa 2022/2023 Radwege, dann Bauarbeiten mit Verengung und "Nivellierung" der Radwege, seit ca. 2025 sieht es so aus, als ob es hier nicht-ausgeschilderte und ohne Piktogramme versehene Radspuren gibt
 #: XXX Wird sich die Radverkehrsanlage noch ändern?
 #: source_id: planb2026:13.48334398,52.57730345,28.07.2025,07:00 ("Fahrstreifen-Reduzierung", bis 08.12.2026)
-#: source_id: LMS-BR:414867/72 viz2021:13.48328,52.58301,06.07.2026,07:00 (bis 07.09.2026) (bis 30.09.2026)
+#: source_id: LMS-BR:414867/72 viz2021:13.48328,52.58301,06.07.2026,07:00 (bis 07.09.2026) (bis 30.09.2026) (bis 08.12.2026)
 #: osm_watch: note 3817921 6
 #: last_checked: 2026-09-13 (osm note)
-#: next_check: 2026-12-08 (planb)
+#: next_check: 2026-12-08 (planb + VIZ-Verkehrsmeldung)
 	RW3;RW3 15642,19179 15604,19349 15597,19573 15617,19775 15620,19809
 #: historical_note: Wurzelschäden wurden bis Ende 2021 weitgehend ausgebessert, danach bessere Qualität, Ende 2023 wieder Unebenheiten
 asphaltierter Rad- und Gehweg, leichte Unebenheiten durch Wurzelhebungen	RW2; 14832,17867 15152,18115 15181,18137 15569,18492
@@ -8098,7 +8099,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2026-09-17 (mapillary) vvv
+#: last_checked: 2026-10-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -8145,7 +8146,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2026-09-17 (mapillary) vvv
+#: last_checked: 2026-10-05 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8546,7 +8547,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
 #: source_id: LMS-BR:372746/72 viz2021:13.49387,52.43233, (Sperrung Seidelbastweg, bis 30.06.2026) (inaktiv)
 #: source_id: viz2021:13.49537,52.43164, (Ampelanlage außer Betrieb, kein Endedatum) (inaktiv)
 #: source_id: LMS-BR:362451/72 viz2021:13.485714,52.424228, (bis 12.05.2026) (bis 31.12.2026)
-#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026) (bis 30.09.2026)
+#: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026) (bis 30.09.2026) (bis 31.12.2026)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1892218755624718652 (nur Kfz-Verkehr erwähnt)
 #: by: https://viz.berlin.de/aktuelle-meldungen/stubenrauchstrasse-in-rudow-nach-rohrbruch-gesperrt/ ("mehrere Monate", auf dem Bild scheint die Absperrung über die gesamte Fahrbahnbreite zu gehen, etwa 90m vor der Kanalstraße)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1894669757980254425 (bis 30.05.2025)
@@ -8612,7 +8613,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", bis 22.10.2026)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-09-15
+#: last_checked: 2026-10-05
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -9628,7 +9629,7 @@ Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 provisorische Radspur	RW3; 12221,7271 12185,7381
 #: next_check_id: THOMAS-2025
 #: XXX wann wird hier die Radspur komplettiert?
-#: last_checked: 2026-09-11
+#: last_checked: 2026-10-05
 Markierung fehlt noch	RW0; 12185,7381 12158,7449
 Leitboys	RW4; 12158,7449 12123,7549
 Poller und Leitboys	RW4; 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696
@@ -9646,7 +9647,7 @@ Grünbeschichtung, einige Leitboys	RW4; 12090,7651 12121,7555 12123,7549
 Leitboys, dazwischen Bushaltestelle	RW4; 12123,7549 12158,7449
 #: next_check_id: THOMAS-2025
 #: XXX zwischenzeitlich provisorisch markiert, nun bauzeitlich gemeinsame Spur mit dem Autoverkehr
-#: last_checked: 2026-09-11
+#: last_checked: 2026-10-05
 	RW0; 12158,7449 12185,7381
 #: historical_note: früher: provisorische Radspur, meistens zugeparkt, RW3; --- nun stehen hier wieder Halteverbotsschilder
 provisorische Radspur	RW3; 12185,7381 12221,7271
@@ -10044,5 +10045,5 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 # 
 	RW1;RW1 -1517,10971 -1523,11012
 # 
-	RW7;RW7 6334,14756 6513,14725 6596,14740
+	RW7;RW7 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831
 # 

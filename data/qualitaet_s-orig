@@ -159,7 +159,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-09-12
+#: last_checked: 2026-10-05
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -534,7 +534,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-09-15
+#: last_checked: 2026-10-05
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -570,7 +570,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: last_checked: 2026-09-15 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2026-09-14 (planb: Sperrung) vvv
-#: osm_watch: way id="169459736" version="19"
+#: osm_watch: way id="169459736" version="20"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 #: osm_watch: way id="25278674" version="32"
 Gerichtstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -2060,7 +2060,7 @@ Pankeweg: Beton/Verbundsteinpflaster	Q1 16294,25683 16253,25651 16227,25620 1620
 Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15643,25090
 Nesselweg: Betonplatten, OK	Q1- 8717,21429 8654,21327 8631,21290 8605,21248 8587,21218 8513,21099
 Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
-#: by: https://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (war weg und wieder da) (3. Quartal 2024 - 3. Quartal 2025) (2. Quartal 2025 - 4. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 4. Quartal 2026) (3. Quartal 2026 - 4. Quartal 2026) (3. Quartal 2026 - 4. Quartal 2027)
+#: by: https://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024) (war weg und wieder da) (3. Quartal 2024 - 3. Quartal 2025) (2. Quartal 2025 - 4. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2025) (2. Quartal 2026 - 4. Quartal 2026) (3. Quartal 2026 - 4. Quartal 2026) (3. Quartal 2026 - 4. Quartal 2027) (4. Quartal 2026 - 3. Quartal 2027)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.1571503.php
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/250513-lageplan-schoenholzer-weg-komprimiert.pdf (keine Radspuren; direkte Radwegverbindung zur Kreuzung Hauptstr./Kastanienallee; Unterbindung des Durchgangsverkehrs zur Kastanienallee)
@@ -2070,7 +2070,7 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: XXX wird hier asphaltiert? vvv
 #: last_checked: 2026-08-15 (mapillary) vvv
 #: check_frequency: 120d vvv
-#: next_check: 2027-12-31 (infravelo) vvv
+#: next_check: 2027-09-30 (infravelo) vvv
 #: by: mapillary
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8003,20507 8040,20454 8057,20430
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 8057,20430 8071,20410 8093,20379 8131,20287 8196,20096
@@ -12567,7 +12567,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-09-12
+#: last_checked: 2026-10-05
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -13367,8 +13367,6 @@ Hilda-Geiringer-Weg: glatt gepflastert	Q1- 8167,13457 8174,13397 8241,13393 8281
 Frieda-Arnheim-Promenade: Betonpflaster	Q0- -2779,15358 -2769,15389 -2751,15383 -2733,15377 -2707,15456 -2699,15478 -2722,15486
 (Frieda-Arnheim-Promenade - Eiswerderstr.): Betonpflaster	Q0- -2722,15486 -2712,15520
 (Heinersdorfer Str. - Am Steinberg): asphaltierter Radweg	Q0 12257,16876 12307,16950
-#: note: Radweg
-Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
 (An der Ostbahn - S-Bhf. Warschauer Str.): Asphalt	Q0 13377,11345 13546,11280
 #: note: nach Regenfällen etwas matschig, bei trockenem Wetter problemlos befahrbar
 (Kattunsteig - Hartriegelstr.): Waldweg	Q2 19723,4348 19661,4414 19651,4424 19306,4791 19301,4814 19250,4830 19251,4879
@@ -32752,7 +32750,7 @@ Kölpiner Str.: Beton	Q1 22069,18401 22114,18244 22213,18193
 Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
 #: corrected_by: osm, srt (Beton, Q0- -> ... (ab Frühjahr 2022))
 (Radweg an der Straßenbahn): Asphalt	Q0+ 21871,18244 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442
-#: by: https://www.infravelo.de/projekt/verbindung-zwischen-mehrower-allee-und-wuhletalstrasse/ (4. Quartal 2025 - 3. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/verbindung-zwischen-mehrower-allee-und-wuhletalstrasse/ (4. Quartal 2025 - 3. Quartal 2026) (4. Quartal 2025 - 4. Quartal 2026)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll-des-fahrrat_2025-10-09_1.pdf (Erwähnung eines Zweirichtungsradwegs parallel zur Tram (Linien 165, M8, M17) --- allerdings gibt es so eine Kombination gar nicht?! Könnte vielleicht auch die Strecke nach Ahrensfelde entlang der M8 sein. Realisierung 2026)
 #: by: https://marzahn-hellersdorf.com/radverkehr-in-marzahn-hellersdorf-stellen-unbesetzt-fahrradstrassen-kaum-vorhanden/ (aktuell in Bau?)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll-des-fahrrat_2026-02-25.pdf (Abschluss in den Sommerferien?)
@@ -32765,9 +32763,8 @@ Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
 #: osm_watch: way id="673529517" version="7"
 #: XXX: wird asphaltiert und auf 4m verbreitert; während der Bauarbeiten kann man die parallele Wohngebietsstraße benutzen
 #: last_checked: 2026-08-05
-#: check_frequency: 30d
-# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-08-15 (fahr-rat)
-#: next_check: 2026-09-30 (infravelo)
+#: check_frequency: 90d
+#: next_check: 2026-12-31 (infravelo)
 (Radweg an der Straßenbahn): Beton	Q0- 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896
 # REMOVED (anscheinend realisiert) --- #: corrected_by: srt (was Q3) --- #: XXX: wird der Radweg hier verbessert? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4797&options=4
 (Radweg an der Straßenbahn): asphaltiert	Q0 21417,16896 21377,16822 21323,16716 21321,16696 21283,16619 21254,16567 21235,16531 21210,16481 21192,16466 21179,16455 21067,16327 21036,16286 21035,16280 21000,16238

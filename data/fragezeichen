@@ -3,8 +3,14 @@
 Koppenplatz: wann wird die eingezogene Fläche abgesperrt? wird der Radverkehr von der Absperrung oder den vorangegangenen Bauarbeiten betroffen sein?	? 9946,13550 9961,13502
 Adlerplatz: existiert hier ein ausgeschilderter Platz?	? -584,12553 -587,12529 -587,12500
 B198 bei Angermünde: gibt es hier einen Radweg? wo genau?	? 47908,73136 47292,73547
+Manfred-von-Richthofen-Str.: Fahrradstraße entsteht	?::inwork 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676 8900,7643 8956,7598 9021,7552 9073,7496 9097,7469 9242,7325
 Gottfried-Funeck-Weg: wo sind die Bodenschwellen?	? 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513 22026,14501 22061,14471 22172,14287 22416,14148 22503,14104
 Herkulesufer: dürfen Radfahrer hier fahren?	? 6882,11061 6920,11064 7142,11145
+Ackerstr.: Bauarbeiten mit kurzer Vollsperrung, ist der Radverkehr betroffen?	? 9048,14681 9197,14562
+Bayreuther Str.: Bauarbeiten, ist der Radverkehr betroffen?	? 6339,10588 6335,10589 6361,10677 6359,10891
+Billerbecker Weg: Bauarbeiten, ist der Radverkehr betroffen?	? 2117,18632 2196,18642 2323,18653 2413,18655 2498,18657
+Marie-Elisabeth-Lüders-Str.: Bauarbeiten, ist der Radverkehr betroffen?	? 4507,11936 4475,11845
+Luisenstr.: Bauarbeiten, Sperrung, ist der Radverkehr betroffen?	? 8752,12647 8735,12780 8732,12804 8726,12861 8715,12956
 Am Schlänitzsee (Potsdam-Marquardt): Qualität? Wie ist die genaue Lage der Straße?	? -19356,5480 -19454,5465 -19461,5517 -19374,5533
 An der Obstplantage (Potsdam-Marquardt): Qualität?	? -19427,5736 -19517,5712 -19543,5849 -19463,5860
 Biegen - Müllrose: existiert hier ein Radweg (wahrscheinlich ab 2006-10-31)	? 79768,-15263 78364,-14355
@@ -738,6 +744,8 @@ Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -142
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from qualitaet_s
+Rue Édith Piaf: fester Sand, etwas Schotter (Wurde die Fahrbahndecke gemacht?)	? 4444,21780 4410,21830 4236,21701 4235,21691
+Rue Simone de Beauvoir: fester Sand (Wurde die Fahrbahndecke gemacht?)	? 4527,21843 4490,21893 4575,21958
 Miraustr.: mäßiger Asphalt (Nach den Bauarbeiten besserer Asphalt?)	? 3323,20547 3344,20453 3380,20270
 # added from qualitaet_l
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK (ist hier mittlerweile asphaltiert?)	? 5633,-2011 5292,-2221 5132,-2299
@@ -788,6 +796,8 @@ Götschendorf - Böckenberg: schlechte Qualität, teilweise Sand (wie ist die Quali
 (bei Götschendorf): mäßige Qualität (wie ist die Qualität des Weges hier?)	? 30027,76566 29951,76969 29769,77099 29507,77428 29458,77597
 Groß Friedenwalde - Flieth: Kopfsteinpflaster (wie schlecht ist das Kopfsteinpflaster hier?)	? 35740,80983 35815,81168 35815,81518 35894,81782
 Groß Friedenwalde - Flieth: Asphalt (ist hier tatsächlich asphaltiert?)	? 35894,81782 35998,82265 36009,82890 36430,83497 36578,83835 36590,84086 36693,84235 36676,84495 36696,84495
+# added from handicap_s
+Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung an der Dörpfeldstr. (Bestehen die Sperrungen weiterhin?)	? 20592,3633 20449,3799
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
@@ -812,5 +822,13 @@ F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 # added from bbbike-temp-blockings-optimized
 Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Sperrung möglicherweise bis Ende 2026 [ab Wismarer Str. gesperrt] (Besteht die Sperrung des Uferwegs weiterhin?)	? 3698,1450 3821,1725 3980,2102
 Uferweg am Teltowkanal: zwischen Königsberger Str. und Wismarer Str. Leitungsarbeiten, Sperrung möglicherweise bis Ende 2026 (Besteht die Sperrung des Uferwegs weiterhin?)	? 3980,2102 4064,2293 4209,2641
+Wintgensstr.: Fahrbahn zwischen Gontermannstr. und Hessenring gesperrt, Ende der Sperrung unbekannt (Ist die Fahrbahn weiterhin gesperrt?)	? 8384,7915 8260,7911
 Schubertstr.: Sperrung wegen Baustelle, auch für Fußgänger nicht passierbar, Ende der Bauarbeiten unbekannt [Schubertstr.] (Ist die Schubertstr. weiterhin wegen Bauarbeiten gesperrt?)	? 21984,6317 21856,6390
+Mauerweg, Karolinenhöhe - Hahneberg: Sanierung, mögliche Sperrung, bis Sommer 2026, evtl. werden die Bauarbeiten verlängert [Mauerweg, Karolinenhöhe - Hahneberg] (Sind die Bauarbeiten beendet?)	? -5564,11209 -5742,11314 -6012,11458 -6081,11508 -6174,11571 -6397,11664 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
+Lauinger Str., Gartenstr.: einige Wege sind gesperrt, Umwege erforderlich, Ende der Bauarbeiten unbekannt (Sind die Wege weiterhin gesperrt?)	? 21214,11331 21193,11330 21168,11303 21171,11336 21137,11294
+Gotenstr.: Sperrung der Fahrbahn vor der Kreuzung Ella-Barowsky-Str., Ende der Bauarbeiten unbekannt [Gotenstr.: südlich der Kreuzung] (Besteht die Sperrung der Gotenstr. noch immer?)	? 7497,7761 7499,7880
 Brauerstr.: Bauarbeiten, Sperrung zwischen Kastanienstr. und Brauerplatz, voraussichtlich bis Dezember 2026 [Brauerstr.] (Sind die Bauarbeiten vorzeitig beendet?)	? 5159,2176 4979,1964
+Uferweg am Hohenzollernkanal: Sperrung des Uferwegs unter der General-Ganeval-Brücke (Besteht die Sperrung weiterhin?)	? 2942,15781 3005,15780 3252,15781
+Uferweg am Hohenzollernkanal: Sperrung des Uferwegs unter der General-Ganeval-Brücke (Besteht die Sperrung weiterhin?)	? 2924,15825 2950,15824 2972,15799 3009,15811 3058,15846 3237,15858
+Kapweg: Stromnetzarbeiten, Sperrung von Fahrbahn, Radweg und Bürgersteig in Richtung Kurt-Schumacher-Platz, voraussichtlich bis Mitte 2027 (Besteht die Sperrung des Geh- und Radwegs im Kapweg weiterhin?)	? 5295,17344 5250,17318 5025,17336
+Sommerstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt (Sind die Bauarbeiten beendet?)	? 8179,18756 8257,18684 8425,18542

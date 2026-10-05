@@ -20,11 +20,11 @@ Erkner	X::inwork 34742,2111
 # REMOVED --- #: valid: -20260911
 # REMOVED --- Köpenicker Str.: Gegenverkehrsregelung	X::inwork::alternating 11405,11655
 # 
-#: source_id: planb2026:13.37673666,52.51665403,06.01.2026, ("Sicherung gemäß Vz.-plan", Scheidemannstr. und Simsonweg, evtl. im Zusammenhang mit der Ampel, bis 20.10.2026)
+#: source_id: planb2026:13.37673666,52.51665403,06.01.2026, ("Sicherung gemäß Vz.-plan", Scheidemannstr. und Simsonweg, evtl. im Zusammenhang mit der Ampel, bis 20.10.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:420952/72 viz2021:13.374992,52.51778,02.09.2026,07:00 vizapi2026:900/2026 (Wasserleitungsbau, Verengung, bis 20.10.2026)
 #: last_checked: 2026-08-19
 #: check_frequency: 60d
-#: next_check: 2026-10-20 (planb)
+#: next_check: 2026-10-20 (VIZ-Verkehrsmeldung, ex-planb)
 Scheidemannstr./Reichstag	F::inwork 8373,12416
 # 
 #: next_check_id: HANSA-2025
@@ -50,14 +50,19 @@ Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # REMOVED --- Straße der Pariser Kommune: vermutete (Hoch?)Bauarbeiten, evtl. mit (Teil)Sperrung der Straße?	? 12822,12067 12833,12154 12854,12287
 # 
-#: next_check_id: EWEST-2026
-#: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (vorfristig inaktiv) (bis 02.10.2026)
+# REMOVED --- #: next_check_id: EWEST-2026
+# REMOVED --- #: source_id: planb2026:13.43489733,52.59415416,11.08.2026, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (vorfristig inaktiv) (bis 02.10.2026) (inaktiv)
+# REMOVED --- #: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026) (inaktiv)
+# REMOVED --- #: also_indoor: traffic (ex-H)
+# REMOVED --- #: next_check: 2026-10-02 (planb)
+# REMOVED --- #: valid: -20261102
+# REMOVED --- Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
+# 
+#: source_id: LMS-BR:424355/72 viz2021:13.436618,52.592582,05.10.2026,07:00 (bis 02.11.2026)
 #: source_id: planb2026:13.43573837,52.59336128,01.10.2026, ("Gegenverkehrsanlage (LZA)", 01.10.2026 bis 02.11.2026)
-#: source_id: LMS-BR:419153/72 viz2021:13.43409,52.59498,11.08.2026,08:00 (bis 04.09.2026) (inaktiv)
-#: also_indoor: traffic (ex-H)
-#: next_check: 2026-11-02 (planb)
+#: next_check: 2026-11-02 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261102
-Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
+Bahnhofstr.: Gegenverkehrsregelung	X::inwork::alternating 12332,20962
 # 
 # REMOVED --- #: source_id: LMS-BR:412099/72 viz2021:13.22465,52.58966,16.06.2026,09:00 vizapi2026:584/2026 (bis 18.09.2026) (inaktiv)
 # REMOVED --- #: next_check: 2026-09-18
@@ -119,11 +124,11 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 #: valid: -20261030
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
-#: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv)
+#: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026)
 #: also_indoor: traffic (re-G,T)
 #: last_checked: 2026-09-15 (mapillary)
-#: check_frequency: 30d (traffic)
-# REMOVED --- #: next_check: 2026-09-11
+# REMOVED --- #: check_frequency: 30d (traffic)
+#: next_check: 2026-10-23 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260911
 #: XXX prolonged until end of year
 #: valid: -20261231
@@ -131,10 +136,10 @@ Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,1858
 # 
 #: next_check_id: WOLLANK-2024
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7373 (Antrag auf Verstetigung)
-#: source_id: planb2026:13.38387014,52.57273303,15.06.2026, ("Gegenverkehrsanlage (LZA)", bis 04.09.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.38387014,52.57273303,15.06.2026, ("Gegenverkehrsanlage (LZA)", bis 04.09.2026) (vorfristig inaktiv) (bis 23.10.2026)
 #: last_checked: 2026-08-27 (mapillary)
-# REMOVED --- #: next_check: 2026-09-04 (ex-planb)
-#: next_check: 2026-12-31
+#: next_check: 2026-10-23 (planb)
+# REMOVED --- #: next_check: 2026-12-31
 Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
@@ -4557,7 +4562,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	F0 7533,14702
 #: note: Anforderungsampel
 #: XXX temporär
-#: osm_watch: node id="3779924761" version="11"
+#: osm_watch: node id="3779924761" version="12"
 #: osm_watch: note 5445919 3
 #: last_checked: 2026-08-26
 #: next_check: 2027-06-04 (planb + VIZ-Verkehrsmeldung)
@@ -4681,7 +4686,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by[removed]: http://www.infravelo.de/projekt/hermannstrasse-bauabschnitt-2/ (Erwähnung der Ampel)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1134851.php (temporäre Ampel wird durch eine finale Ampel abgelöst, Ampel am südlichen Ausgang Leinestr. wird dafür abgebaut)
 #: by: https://www.tagesspiegel.de/berlin/verkehrsunfalle-in-berlin-welche-gefahrenstellen-entscharft-werden-sollen-13107562.html (2025 neue Ampel -> Verstetigung?)
-#: by: https://www.infravelo.de/projekt/hermannstrasse/ (2. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2026 - 3. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/hermannstrasse/ (2. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2026 - 3. Quartal 2026) (2. Quartal 2026 - 4. Quartal 2026)
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (LSA 2026)
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/protokoll_5_mobilitaetsrat_070126.pdf (Erwähnung: 3. BA, kein Termin)
 #: note: früher das infravelo-Projekt "hermannstrasse-noerdliche-bauabschnitt"
@@ -4694,10 +4699,10 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
 #: XXX laut osm note von SGA Neukölln bis Ende August 2026
-#: last_checked: 2026-09-12
+#: last_checked: 2026-10-05
 #: check_frequency: 30d
 # REMOVED (wurde nicht gehalten) --- #: next_check: 2026-08-31 (osm note)
-# REMOVED --- #: next_check: 2026-09-30 (infravelo)
+#: next_check: 2026-12-31 (infravelo)
 	X::inwork 12185,7381
 # 
 #: note: Anforderungsampel für Radfahrer in der Relation Brachvogelstr. - Mittenwalder Str.
@@ -5706,7 +5711,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 19909,-2863
 #: next_check_id: BER-20XX vvv
 #: XXX: Ampel noch ausgeschaltet --- oder ist es eine "Dunkelampel"? vvv
-#: last_checked: 2026-09-11 (mapillary)
+#: last_checked: 2026-09-21
 #: check_frequency: 90d
 	F0 18517,-4502
 #: osm_watch: node id="1736933178" version="6"
