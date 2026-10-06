@@ -20,12 +20,12 @@ Erkner	X::inwork 34742,2111
 # REMOVED --- #: valid: -20260911
 # REMOVED --- Köpenicker Str.: Gegenverkehrsregelung	X::inwork::alternating 11405,11655
 # 
-#: source_id: planb2026:13.37673666,52.51665403,06.01.2026, ("Sicherung gemäß Vz.-plan", Scheidemannstr. und Simsonweg, evtl. im Zusammenhang mit der Ampel, bis 20.10.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:420952/72 viz2021:13.374992,52.51778,02.09.2026,07:00 vizapi2026:900/2026 (Wasserleitungsbau, Verengung, bis 20.10.2026)
-#: last_checked: 2026-08-19
-#: check_frequency: 60d
-#: next_check: 2026-10-20 (VIZ-Verkehrsmeldung, ex-planb)
-Scheidemannstr./Reichstag	F::inwork 8373,12416
+# REMOVED (steht nicht mehr) --- #: source_id: planb2026:13.37673666,52.51665403,06.01.2026, ("Sicherung gemäß Vz.-plan", Scheidemannstr. und Simsonweg, evtl. im Zusammenhang mit der Ampel, bis 20.10.2026) (vorfristig inaktiv)
+# REMOVED --- #: source_id: LMS-BR:420952/72 viz2021:13.374992,52.51778,02.09.2026,07:00 vizapi2026:900/2026 (Wasserleitungsbau, Verengung, bis 20.10.2026)
+# REMOVED --- #: last_checked: 2026-08-19
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- #: next_check: 2026-10-20 (VIZ-Verkehrsmeldung, ex-planb)
+# REMOVED --- Scheidemannstr./Reichstag	F::inwork 8373,12416
 # 
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-09-06
@@ -44,7 +44,7 @@ Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 (bis 15.10.2026)
-#: last_checked: 2026-09-19
+#: last_checked: 2026-10-06
 #: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261015
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
@@ -263,16 +263,16 @@ B198 bei Kerkow: Gegenverkehrsregelung	X::inwork::alternating 47908,73136
 # REMOVED --- #: valid: -20251219
 # REMOVED --- Lahnstr./Mittelbuschweg: Gegenverkehrsregelung	X::inwork::alternating 13500,7018
 # 
-#: next_check_id: SCHIFFBAUERDAMM-2025
-#: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026) (inaktiv)
-#: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
-#: source_id: vizapi2026:629/2026 (bis 28.10.2026)
-#: source_id: planb2026:13.38013957,52.51948663,03.07.2025, ("Gegenverkehrsanlage (LZA)", bis 28.10.2026)
-#: last_checked: 2026-09-19
-#: check_frequency: 120d
-#: next_check: 2026-10-28 (VIZ-Verkehrsmeldung + planb)
-#: valid: -20261028
-Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12647
+# REMOVED (wurde entfernt, möglicherweise wegen der Sperrung der Luisenstr.) --- #: next_check_id: SCHIFFBAUERDAMM-2025
+# REMOVED --- #: source_id: LMS-BR:389320/72 viz2021:13.38017,52.51979, (bis 12.05.2026) (inaktiv)
+# REMOVED --- #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026)
+# REMOVED --- #: source_id: vizapi2026:629/2026 (bis 28.10.2026)
+# REMOVED --- #: source_id: planb2026:13.38013957,52.51948663,03.07.2025, ("Gegenverkehrsanlage (LZA)", bis 28.10.2026)
+# REMOVED --- #: last_checked: 2026-09-19
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung + planb)
+# REMOVED --- #: valid: -20261028
+# REMOVED --- Luisenstr./Schiffbauerdamm: Gegenverkehrsregelung	X::inwork::alternating 8752,12647
 # 
 # REMOVED --- #: next_check_id: HERBERT-2025
 # REMOVED --- #: last_checked: 2025-11-09
@@ -340,11 +340,11 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: also_indoor: traffic (ex-T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
-#: last_checked: 2026-09-15 (traffic)
+#: last_checked: 2026-10-06
 #: check_frequency: 30d (traffic)
 #: next_check: 2026-10-22 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261022
-Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2947,9367
+Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2953,9371
 # 
 # REMOVED --- #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
 # REMOVED --- #: source_id: viz2021:13.455059,52.559321,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
@@ -1310,7 +1310,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7480,7683
 #: next_check_id: ELLABAROWSKY-2024
 #: XXX Ampelanlage wird neu gebaut
-#: last_checked: 2026-09-11
+#: last_checked: 2026-10-06
 	X0::inwork 7499,7880
 	X 7497,8168
 	X 7193,7950
@@ -3167,6 +3167,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9615,11225
 	X 9569,11631
 	X 9568,12688
+#: XXX_prog: der Verkehr im Zuge der Wilhelmstr. Richtung Süden hat eine deutlich kürzere Grünphase als die Gegenrichtung
 	X 8775,12457
 # 
 #: off: 2018-10-07 Sun 17:05
@@ -4699,8 +4700,8 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
 #: XXX Der Infravelo-Eintrag wurde recyclet (früher für die Radspuren verwendet): "Sicher Radfahren auf belebter Hauptstraße" -> "Neue Ampel für mehr Verkehrssicherheit"
 #: XXX laut osm note von SGA Neukölln bis Ende August 2026
-#: last_checked: 2026-10-05
-#: check_frequency: 30d
+#: last_checked: 2026-10-06
+#: check_frequency: 14d
 # REMOVED (wurde nicht gehalten) --- #: next_check: 2026-08-31 (osm note)
 #: next_check: 2026-12-31 (infravelo)
 	X::inwork 12185,7381
@@ -4735,7 +4736,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7345 (Antrag)
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 3
-#: last_checked: 2026-08-31 (mapillary) vvv
+#: last_checked: 2026-10-04 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

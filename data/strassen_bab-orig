@@ -70,7 +70,7 @@ BAB100	BAB 2225,12227 2372,11762 2338,11515 2170,11101 2021,10599 2009,10517
 #: osm_watch: way id="227985279" version="22"
 #: also_indoor: webcam https://www.youtube.com/watch?v=_IavCsnv6_o
 #: XXX Neubau der Ringbahnbrücke
-#: last_checked: 2026-09-02
+#: last_checked: 2026-10-06
 #: check_frequency: 360d
 #: next_check: 2027-09-20 (rbb, entwicklungsstadt)
 BAB100	BAB::inwork; 2009,10517 2039,10566 2117,10698 2165,10785 2175,10864 2183,10977 2207,11078 2353,11451 2379,11570 2403,11710 2409,11812 2399,11949 2388,11997
@@ -91,7 +91,7 @@ BAB100	BAB::inwork; 2009,10517 2039,10566 2117,10698 2165,10785 2175,10864 2183,
 #: osm_watch: way id="4495210" version="26"
 #: osm_watch[closed]: note 4671906 7
 #: also_indoor: webcam https://stream.netco.de/LiveApp/play.html?name=iTJR0GlIYNRMVUYJ607204630991365&playOrder=hls (mittlerweile (2025-05-18) nicht mehr aktiv)
-#: last_checked: 2026-07-08
+#: last_checked: 2026-10-06
 #: check_frequency: 360d
 #: next_check: 2027-09-20
 BAB100 (Westendbrücke)	BAB::Br::inwork; 2388,11997 2332,12106 2248,12201
@@ -244,17 +244,28 @@ Kleeblatt Zehlendorf	BAB; -3464,1452 -3464,1452 -3405,1421 -3387,1354 -3405,1314
 Kleeblatt Zehlendorf	BAB;  -3526,1344 -3553,1260 -3602,1224 -3651,1251 -3636,1322 -3567,1385
 #: osm.highway ^^^
 BAB115	BAB 2009,10517 1937,10569 1855,10569 1762,10531 1507,10183 480,8779 -865,6887 -3689,3059 -3786,2861 -3861,2355 -3861,2063 -3806,1934 -3636,1742 -3602,1699 -3571,1606 -3544,1450 -3526,1344 -3480,1049 -3442,806 -3404,501 -3480,273 -4381,-1135 -4712,-1453 -6021,-2039 -6224,-2266 -6502,-2976 -6562,-3181 -6548,-3936 -6538,-4260 -6594,-4456 -6698,-4654 -7027,-4999 -7108,-5149 -7155,-5354 -7149,-5756 -7104,-7075 -7129,-7345 -7259,-7675 -7402,-7857 -7643,-8052 -9177,-8820 -9345,-8943 -9472,-9172 -10094,-10162 -10285,-10556 -10653,-11444 -10730,-12017
-AD Funkturm	BAB; 1507,10183 1664,10263 1889,10283 2016,10348 2046,10391
+#: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: next_check: 2027-09-20
+AD Funkturm	BAB::inwork; 1507,10183 1664,10263 1889,10283 2016,10348 2046,10391
+#: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: XXX bauzeitliche Führung, wird später zurückgebaut
+#: next_check: 2027-09-20
+AD Funkturm	BAB; 1507,10183 1725,10242
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
 #: osm_watch: way id="4446472" version="26"
+#: next_check: 2027-09-20
 AD Funkturm	BAB::inwork; 2046,10391 2039,10566
 #: note: Ausfahrt A115 - Halenseestraße/Messedamm
 #: osm.highway: motorway_link
-AD Funkturm	BAB; 2046,10391 2073,10483 2060,10544 2021,10599
+#: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: next_check: 2027-09-20
+AD Funkturm	BAB::inwork; 2046,10391 2073,10483 2060,10544 2021,10599
 #: osm.highway: motorway_link
 Messedamm-Süd	BAB; 2083,10233 2082,10280
 #: osm.highway: motorway_link vvv
-	BAB; 1742,10220 1889,10283
+#: next_check_id: A100-RINGBAHNBRUECKE-2025
+#: next_check: 2027-09-20
+	BAB::inwork; 1742,10220 1889,10283
 #: osm.highway ^^^
 BAB111	BAB 2665,14041 2826,14408 3124,15324 3277,15674 3474,16091 3690,16485 3810,16690
 BAB111 (Tunnel Flughafen Tegel)	BAB::Tu 3810,16690 3946,17627
