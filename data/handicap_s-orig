@@ -105,7 +105,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-10-06 (osm) vvv
+#: last_checked: 2026-10-07 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: planb2026:13.45274687,52.51888366,19.08.2024, ("Sperrung einer Fahrtrichtung", bis 31.12.2026) (vorfristig inaktiv)
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
@@ -455,7 +455,7 @@ Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung an der Dörpfelds
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibisq3tu5izlu3k4dgsnc7aapstmj6nngiz7c3a5dd5cva5nhf2ta (Gehwege für Radfahrer frei)
 #: also_indoor: traffic (G,T,H,W)
 #: source_id: planb2026:13.37940933,52.54020766,14.09.2026,00:01 ("Vollsperrung beider Fahrbahnen", bis 02.11.2026)
-#: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, vizapi2026:869/2026 (bis 04.09.2026) ("Herstellung einer Fußgängerzone", bei vizapi2026 weiterhin aktiv, bis 02.11.2026)
+#: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, vizapi2026:869/2026 (bis 04.09.2026) ("Herstellung einer Fußgängerzone", bei vizapi2026 weiterhin aktiv, bis 02.11.2026) (inaktiv)
 #: source_id: LMS-BR:422254/72 viz2021:13.37944,52.54047,14.09.2026,04:00 (Sperrung, bis 02.11.2026) (vorfristig inaktiv)
 #: last_checked: 2026-10-06 (traffic)
 #: check_frequency: 45d
@@ -533,7 +533,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: source_id: planb2026:13.3631258,52.54306464,18.08.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.08.2026) (inaktiv) (bis 31.10.2026)
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,re-H,T[permanent],no-W)
-#: last_checked: 2026-09-28 (osm)
+#: last_checked: 2026-10-01 (daf)
 #: check_frequency: 45d
 #: next_check: 2026-10-21 (planb)
 #: valid: 20171026-
@@ -1100,7 +1100,7 @@ Stienitzseestr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 26228,5041 26
 ### Moabit ###
 # 
 # REMOVED (laut osm ist die Fahrbahn nun offen, allerdings noch mit Verengung) --- #: source_id: planb2026:13.35334176,52.53143774,28.11.2022, ("Sicherung gemäß Vz.-plan", bis 30.09.2026)
-# REMOVED --- #: source_id: LMS-BR:325489/72 viz2021:13.358912,52.537703, (bis 25.09.2026) (bis 13.11.2026)
+# REMOVED --- #: source_id: LMS-BR:325489/72 viz2021:13.358912,52.537703, (bis 25.09.2026) (bis 13.11.2026) (bei vizapi2026 bis 13.11.2026)
 # REMOVED --- #: osm_watch[closed]: note 5403292 2
 # REMOVED --- #: last_checked: 2026-08-26
 # REMOVED --- #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung)
@@ -1261,6 +1261,7 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 ### Wilmersdorf ###
 # 
 #: source_id: planb2026:13.31995822,52.47872413,28.08.2026, ("Sicherung gemäß Vz.-plan", bis 31.07.2027)
+#: osm_watch: note 5546534 3
 #: last_checked: 2026-10-06
 #: check_frequency: 120d
 #: next_check: 2027-07-31
@@ -1474,7 +1475,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-09-17
+#: last_checked: 2026-10-07
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1523,6 +1524,13 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17171,16372 17220,16320 17271,16280 17383,16197
 # 
 ### Marzahn ###
+# 
+#: source_id: planb2026:13.56952995,52.53995683,21.09.2026, ("Fahrstreifen-Reduzierung", bis 23.10.2026)
+#: source_id: LMS-BR:424013/72 vizapi2026:1009/2026 (bis 23.10.2026)
+#: last_checked: 2026-10-07
+#: next_check: 2026-10-23
+#: valid: -20261023
+Bärensteinstr.: Sperrung der Fahrbahn vor dem Blumberger Damm	q3::inwork 21497,15227 21599,15213
 # 
 # REMOVED (bei allen Verkehrsdiensten entfernt) --- #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
 # REMOVED --- #: also_indoor: traffic (B,T,ex-H,ex-G)
@@ -1683,7 +1691,7 @@ Erich-Boltze-Str., Verlängerung: Hochbauarbeiten, Fahrbahn gesperrt	q3::inwork 1
 # 
 #: source_id: planb2026:13.41315673,52.55757379,18.08.2025,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 #: osm_watch: way id="1378088529" version="2"
-#: last_checked: 2026-07-09 (mapillary)
+#: last_checked: 2026-10-06 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (planb)
 Stavangerstr.: Sperrung der Fahrbahn, Radverkehr wird über den schmalen Bürgersteig geführt	q2::inwork 10845,16770 10883,16824
@@ -1743,7 +1751,7 @@ Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahre
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msagudcygk2b
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidvo2akpr4ik7t2dzkvfu7ie5f2kwyvakumzcrezznxuyn7b4fdqq (aktuelle Meldung zu Arbeiten am östlichen Ende der neuen Brücke)
 #: source_id: LMS-BR:415125/72 viz2021:13.38021,52.41036,08.07.2026,07:00 vizapi2026:679/2026 (bis 23.08.2026) (inaktiv) (bis 05.10.2026) (bei vizapi2026 bis 05.11.2026) (bis 05.11.2026)
-#: source_id: LMS-BR:418266/72 viz2021:13.39268,52.4127,04.08.2026,07:00 (östlich der Brücke, bis 28.08.2026) (inaktiv) (bis 05.11.2026)
+#: source_id: LMS-BR:418266/72 viz2021:13.39268,52.4127,04.08.2026,07:00 vizapi2026:782/2026 (östlich der Brücke, bis 28.08.2026) (inaktiv) (bis 05.11.2026)
 #: source_id: planb2026:13.37629824,52.40919079,26.05.2023, ("Vollsperrung beider Fahrbahnen", Hauptfahrbahn, bis 05.10.2026) (bis 05.11.2026)
 #: XXX wird es auch Änderungen bei den RVA auf der Hauptfahrbahn geben?
 #: last_checked: 2026-08-26 vvv
@@ -2754,7 +2762,7 @@ S-Bhf. Raoul-Wallenberg-Str. - Märkische Allee: einige Fußgänger	q2 20133,16256 
 # REMOVED (beide Bordsteine sind abgesenkt) --- #: XXX wo genau sind die Bordsteine, auf beiden Seiten?
 (S-Bhf. Raoul-Wallenberg-Str. - Alfred-Döblin-Str.): Fußgänger	q2 20120,16297 20198,16322
 # REMOVED --- (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20328,16473 20342,16499
-# REMOVED --- (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20342,16499 20395,16481 20409,16486 20520,16479 20547,16485 20815,16469 20851,16454 20898,16420
+# REMOVED --- (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20342,16499 20395,16481 20409,16486 20520,16479 20557,16485 20815,16469 20851,16454 20898,16420
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20898,16420 20923,16435 20996,16429 21070,16415 21107,16418 21129,16426
 #: XXX_prog BS (am Wendehammer, ohne q2)
 (Otto-Rosenberg-Platz - Unterführung S-Bhf. Raoul-Wallenberg-Str.): Bordstein, einige Fußgänger	q3 19991,16322 20036,16299
@@ -2903,7 +2911,7 @@ Kiautschoustr.: Fußgänger, Bordsteine	q4 6837,14848 6880,14861
 (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger, Bordstein	q4 13514,11208 13503,11179 13479,11147
 (Blenheimstr. - Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2+ 21163,15289 21263,15291 21350,15292 21361,15270
 (Blenheimstr. - Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2+ 21163,15289 21195,15271 21262,15271 21361,15270
-(Blenheimstr. - Bärensteinstr.): Fußgänger	q2 21361,15270 21369,15252
+(Blenheimstr. - Bärensteinstr.): Fußgänger, Engstellen durch illegal parkende Autos	q3 21361,15270 21369,15252
 (Aldi/Getränke Hoffmann-Parkplatz): Parkplatzverkehr	q2+ 20184,14140 20187,14155 20219,14163 20217,14256 20262,14255
 #: note: nach Schulschluss sogar q2
 Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
@@ -4059,7 +4067,7 @@ Am Spektesee: einige Fußgänger	q1 -5732,15319 -5883,15339 -5956,15360 -5993,1538
 (Spektefeld): einige Fußgänger	q1 -6011,15481 -6018,15481 -6018,15394 -6008,15338 -6084,15276 -6120,15249 -6147,15204 -6184,15162
 (Wolfshorst - Spektewiesen): einige Fußgänger, eng	q2 -6573,15254 -6584,15311
 #: note: Grünanlagenschild ohne Zusatzschilder
-(am Burgwallgraben): einige Fußgänger, eng	q2 -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
+(am Burgwallgraben): einige Fußgänger, eng	q2 -3654,13293 -3644,13232 -3586,13141 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
 (Ziegelhof - Burgwallgraben): Fußgänger	q2 -3651,13476 -3654,13293
 (Burgwallgraben - Krowelstr.): einige Fußgänger, Rampe	q2 -3457,13028 -3458,13006 -3457,12960
 #: XXX_prog BS auf beiden Seiten (ansonsten wäre es q1)
@@ -5251,7 +5259,7 @@ Windhuker Str.: einige Fußgänger	q1 5426,16539 5712,16245 5748,16235
 #: note: früher "q1"
 (Stresemannstr. - Wilhelmstr.): einige Fußgänger	q3 9215,10607 9368,10641
 #: XXX_prog BS an der Ludwig-Renn-Str., ansonsten trotzdem q2
-(Weg im Hochzeitspark): Fußgänger, geschützte Grünanlage, Bordstein	q2 20547,16485 20553,16403 20583,16317
+(Weg im Hochzeitspark): Fußgänger, geschützte Grünanlage, Bordstein	q2 20557,16485 20553,16403 20583,16317
 Voigtstr.: einige Fußgänger	q4+ 14836,12826 14835,12801
 (Uferweg an der Scharfen Lanke): Fußgänger	q1 -4204,11432 -4246,11438
 (Gorgasring - Nonnendammallee): gemeinsamer Geh- und Radweg, nicht besonders breit	q2 -695,14819 -676,14773 -679,14743 -928,14643
@@ -6199,6 +6207,9 @@ Franckepark: Fußgänger	q2 9389,6348 9346,6352
 # 
 #: XXX_prog: BS am Wendehammer, ansonsten q3
 (Karl-Marx-Allee - Marchlewskistr.): Fußgänger, Bordstein	q4 12950,12340 12965,12341 12972,12361
+# 
+#: note: von Norden kommend nicht ausgeschildert, von Süden kommend explizit als Fußweg ausgeschildert
+An der Schule [Rad- und Gehweg]: einige Fußgänger	q1 24747,11524 24768,11616 24759,11666
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

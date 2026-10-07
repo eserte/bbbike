@@ -28,11 +28,16 @@ Erkner	X::inwork 34742,2111
 # REMOVED --- Scheidemannstr./Reichstag	F::inwork 8373,12416
 # 
 #: next_check_id: HANSA-2025
-#: last_checked: 2026-09-06
+#: last_checked: 2026-10-07
 #: check_frequency: 30d
 #: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
 #: valid: -20261029
 Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
+#: last_checked: 2026-10-07
+#: check_frequency: 30d
+#: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
+#: valid: -20261029
+Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
 #: by: https://wgf.berlin/bautagebuch/fassaden-und-dachsanierung/ (Sanierung des Hausriegels, hat es was damit zu tun?) (nein)
@@ -58,7 +63,7 @@ Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # REMOVED --- #: valid: -20261102
 # REMOVED --- Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 # 
-#: source_id: LMS-BR:424355/72 viz2021:13.436618,52.592582,05.10.2026,07:00 (bis 02.11.2026)
+#: source_id: LMS-BR:424355/72 viz2021:13.436618,52.592582,05.10.2026,07:00 vizapi2026:1022/2026 (bis 02.11.2026)
 #: source_id: planb2026:13.43573837,52.59336128,01.10.2026, ("Gegenverkehrsanlage (LZA)", 01.10.2026 bis 02.11.2026)
 #: next_check: 2026-11-02 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261102
@@ -108,12 +113,12 @@ Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 #: source_id: planb2026:13.47959962,52.50191162,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026)
 #: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
 #: note: Länge der Gegenverkehrsregelung: 150m
-#: last_checked: 2026-09-17
+#: last_checked: 2026-10-07
 #: next_check: 2026-12-16 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20261216
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 # 
-#: source_id: LMS-BR:402270/72 viz2021:13.19778,52.54712, (bis 19.06.2026) (bis 14.08.2026) (bis 30.10.2026)
+#: source_id: LMS-BR:402270/72 viz2021:13.19778,52.54712, vizapi2026:225/2026 (bis 19.06.2026) (bis 14.08.2026) (bis 30.10.2026)
 #: source_id: LMS-BR:402269/72 viz2021:13.19778,52.54712, (provisorische Ampel, bis 19.06.2026) (bis 14.08.2026) (inaktiv)
 #: source_id: planb2026:13.422525,52.48200987,16.07.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026) (inaktiv)
 #: source_id: planb2026:13.19900774,52.54672302,18.03.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.10.2026)
@@ -124,7 +129,7 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 #: valid: -20261030
 Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
-#: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026)
+#: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 vizapi2026:587/2026 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026)
 #: also_indoor: traffic (re-G,T)
 #: last_checked: 2026-09-15 (mapillary)
 # REMOVED --- #: check_frequency: 30d (traffic)
@@ -635,7 +640,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-09-16
+#: last_checked: 2026-10-07
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Gürtelstr./Weserstr.	F::inwork 15016,11431

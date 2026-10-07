@@ -222,7 +222,7 @@ Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026) (1. Quartal 2027 - 4. Quartal 2027)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
 #: source_id: bvg2024:194#HIM_FREETEXT_341095 (Umleitung, evtl. gibt es hier Bauarbeiten?) (-> nichts gesehen)
-#: last_checked: 2026-08-05 vvv
+#: last_checked: 2026-10-07 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
@@ -571,7 +571,7 @@ Talstr.	1 11776,16753 11825,16666
 #: confirmed_by: MichaelM (Regelung für alle gleich)
 Scharfestr.	1 758,3417 935,3430
 Junker-Jörg-Str.	1 18545,9395 18511,9185 18471,8957 18451,8823
-# REMOVED (wurde laut BA-Pressemitteilung aufgehoben) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.967761.php --- Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20734,16819
+# REMOVED (wurde laut BA-Pressemitteilung aufgehoben) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.967761.php --- Walter-Felsenstein-Str.	1 20456,16699 20595,16625 20617,16614 20734,16819
 #: by: Monika Weber-Jeremias (auch für Radfahrer)
 #: confirmed_by: srt
 Jugendweg	1 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
@@ -4130,6 +4130,8 @@ Schwingtor	BNP:5::trailer=10 4183,13725
 Drängelgitter	BNP:3::trailer=10 -1940,24464
 Drängelgitter	BNP:3::trailer=10 4277,23296
 Drängelgitter	BNP:3::trailer=10 5829,7827
+#: note: knapp, wenn unmittelbar hinter der Schranke ein Fahrzeug parkt
+Schranke	BNP:3::trailer=10 23382,11760
 # 
 #: next_check_id: TEGELERBRUECKE-2021
 #: note: siehe auch temp blockings
@@ -4258,7 +4260,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: FRIEDENAUERHOEHE-2024
 #: by: https://www.deutsches-architekturforum.de/thread/13397-stadtquartier-friedenauer-h%C3%B6he-in-bau/?postID=770057#post770057
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_41_2873_2920_online.pdf (Eingeschränkte Widmung von Straßenland)
-#: osm_watch: way id="1323938020" version="11"
+#: osm_watch: way id="1323938020" version="12"
 #: last_checked: 2026-10-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2027-06-30
@@ -4288,7 +4290,7 @@ Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 #: XXX ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-09-13
+#: last_checked: 2026-10-07
 Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
 # 
 #: next_check_id: DUNCKERBRUECKE-2026
@@ -4368,7 +4370,7 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
 # 
-#: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 (bis 05.05.2026) (bis 22.07.2026) (bis 01.10.2026) (bis 25.03.2027)
+#: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 vizapi2026:100/2026 (bis 05.05.2026) (bis 22.07.2026) (bis 01.10.2026) (bis 25.03.2027)
 #: source_id: planb2026:13.42640002,52.52310299,03.02.2026, ("Fahrstreifen-Reduzierung", bis 01.10.2026) (bis 25.03.2027)
 #: note: außerdem ist die verkehrsrechtliche Situation der Einfahrt Richtung Weydemeyerstr. für Radfahrer unklar: komplett gesperrt oder nicht? Durchfahrt war bislang immer möglich.
 #: last_checked: 2026-09-08
@@ -4522,6 +4524,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: by: https://gruen-berlin.de/pressemitteilung/bauarbeiten-fuer-neuen-spielbereich-am-rathaus-und-marx-engels-forum-starten
 #: by: https://www.entwicklungsstadt.de/zwischen-fernsehturm-und-spree-entsteht-neuer-spiel-und-begegnungsort/
 #: by: https://www.entwicklungsstadt.de/vom-rathausforum-ins-marx-engels-forum-neuer-weg-fuer-regenwasser/
+#: by: https://www.entwicklungsstadt.de/rathausforum-in-berlin-mitte-erste-fundamente-fuer-das-neue-spreeufer-entstehen/
 #: XXX Bleiben nach den Umbauarbeiten die Wege die gleichen?
 #: osm_watch: note 4795958 5
 #: osm_watch: way id="169067264" version="15"
@@ -4571,7 +4574,7 @@ neben der Minna-Todenhagen-Brücke: Sperrung der Rampe und Treppe	2::inwork 16997
 #: next_check_id: BITTERFELDERBRUECKE-2025
 #: source_id: viz2021:13.549389,52.553147,18.11.2024,13:37 (bis 31.12.2026) (inaktiv)
 #: osm_watch: way id="1087144824" version="9"
-#: last_checked: 2026-08-05
+#: last_checked: 2026-10-07
 #: check_frequency: 150d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539
@@ -4587,7 +4590,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="5"
 #: osm_watch: way id="867830687" version="8"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-10-05
+#: last_checked: 2026-10-07
 #: check_frequency: 30d
 #: next_check: 2026-11-30 (pardok + entwicklungsstadt: Herbst 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4658,7 +4661,7 @@ Matthäikirchplatz: Bauarbeiten, Sperrung	2::inwork 7933,11407 7970,11396 7952,11
 # 
 #: osm_watch[closed]: note 4165928 1
 #: source_id: planb2026:13.50265147,52.50227465,11.05.2026, ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
-#: last_checked: 2026-07-26
+#: last_checked: 2026-10-07
 #: check_frequency: 75d
 #: next_check: 2026-12-31 (planb)
 Delbrückstr.: Baustellenfläche, Sperrung	2::inwork 17085,10855 17123,10844 17141,10838
@@ -5020,9 +5023,9 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 #: note: siehe auch Eintrag in temp_blockings (URLs und osm watches dort)
 #: by: Karsten S.: wieder (temporär?) frei
 #: last_checked: 2026-05-09 vvv
-#: check_frequency: 120d vvv
-#: next_check: 2026-08-31 vvv
-#: valid: -20260831 vvv
+#: check_frequency: 170d vvv
+#: next_check: 2026-10-31 vvv
+#: valid: -20261031 vvv
 Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
 # REMOVED (offen) --- Uferweg am Teltowkanal	2::inwork 3980,2102 4209,2641 4220,2664
 # REMOVED (offen, allerdings stehen hier Bauzäune rum) --- Uferweg am Teltowkanal	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
@@ -5850,7 +5853,7 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="9"
-#: last_checked: 2026-04-21 vvv
+#: last_checked: 2026-10-07 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006

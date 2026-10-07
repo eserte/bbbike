@@ -59,6 +59,7 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzender Hochbauarbeiten	q1::inwork 17526,14531 17656,14549 17824,14572
 Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 18552,10135 18585,10024
 Gustav-Tempel-Str.: kurzes St¸ck B¸rgersteig	q3 15261,10738 15245,10719
+B‰rensteinstr.: Sperrung der Fahrbahn vor dem Blumberger Damm	q3::inwork 21497,15227 21599,15213
 Nollendorfstr.: Bauarbeiten, Sperrung der Fahrbahn an der Einm¸ndung Eisenacher Str.	q3::inwork 6739,10120 7055,10220
 Friedenauer Hˆhe: Baustellenverkehr	q1 6293,7875 6260,7899 6132,7893
 Friedenauer Hˆhe: gemeinsamer Rad- und Gehweg	q1 6132,7893 6131,7916 6011,7911 5810,7883
@@ -726,7 +727,7 @@ Kiautschoustr.: Fuﬂg‰nger, Bordsteine	q4 6837,14848 6880,14861
 (Warschauer Br¸cke - Tamara-Danz-Str.): Fuﬂg‰nger, Bordstein	q4 13514,11208 13503,11179 13479,11147
 (Blenheimstr. - B‰rensteinstr.): Fuﬂg‰nger bzw. Parkplatzverkehr	q2 21163,15289 21263,15291 21350,15292 21361,15270
 (Blenheimstr. - B‰rensteinstr.): Fuﬂg‰nger bzw. Parkplatzverkehr	q2 21163,15289 21195,15271 21262,15271 21361,15270
-(Blenheimstr. - B‰rensteinstr.): Fuﬂg‰nger	q2 21361,15270 21369,15252
+(Blenheimstr. - B‰rensteinstr.): Fuﬂg‰nger, Engstellen durch illegal parkende Autos	q3 21361,15270 21369,15252
 (Aldi/Getr‰nke Hoffmann-Parkplatz): Parkplatzverkehr	q2 20184,14140 20187,14155 20219,14163 20217,14256 20262,14255
 Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getr‰nke-Hoffmann-Parkplatz): Parkplatz	q1 13202,11666 13186,11692 13173,11788
@@ -1540,7 +1541,7 @@ Am Spektesee: einige Fuﬂg‰nger	q1 -5732,15319 -5883,15339 -5956,15360 -5993,1538
 (Spektefeld): einige Fuﬂg‰nger	q1 -5674,15609 -5743,15634 -5845,15653 -5882,15644 -5936,15620 -5983,15572 -6011,15481 -5993,15388
 (Spektefeld): einige Fuﬂg‰nger	q1 -6011,15481 -6018,15481 -6018,15394 -6008,15338 -6084,15276 -6120,15249 -6147,15204 -6184,15162
 (Wolfshorst - Spektewiesen): einige Fuﬂg‰nger, eng	q2 -6573,15254 -6584,15311
-(am Burgwallgraben): einige Fuﬂg‰nger, eng	q2 -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
+(am Burgwallgraben): einige Fuﬂg‰nger, eng	q2 -3654,13293 -3644,13232 -3586,13141 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
 (Ziegelhof - Burgwallgraben): Fuﬂg‰nger	q2 -3651,13476 -3654,13293
 (Burgwallgraben - Krowelstr.): einige Fuﬂg‰nger, Rampe	q2 -3457,13028 -3458,13006 -3457,12960
 Kerstenweg: Fuﬂg‰nger, Bordsteine	q2 -3711,13378 -3813,13404
@@ -2356,7 +2357,7 @@ Alemannenstr.: eng und kurvig	q1 20694,1175 20729,1239 20796,1289
 Windhuker Str.: einige Fuﬂg‰nger	q1 5426,16539 5712,16245 5748,16235
 (Waltraudstr. - Clayallee): 1,5m breit, einige Fuﬂg‰nger	q2 919,4815 935,4814 1253,4788 1447,4757
 (Stresemannstr. - Wilhelmstr.): einige Fuﬂg‰nger	q3 9215,10607 9368,10641
-(Weg im Hochzeitspark): Fuﬂg‰nger, gesch¸tzte Gr¸nanlage, Bordstein	q2 20547,16485 20553,16403 20583,16317
+(Weg im Hochzeitspark): Fuﬂg‰nger, gesch¸tzte Gr¸nanlage, Bordstein	q2 20557,16485 20553,16403 20583,16317
 Voigtstr.: einige Fuﬂg‰nger	q4 14836,12826 14835,12801
 (Uferweg an der Scharfen Lanke): Fuﬂg‰nger	q1 -4204,11432 -4246,11438
 (Gorgasring - Nonnendammallee): gemeinsamer Geh- und Radweg, nicht besonders breit	q2 -695,14819 -676,14773 -679,14743 -928,14643
@@ -2836,6 +2837,7 @@ Rudolf-Schwarz-Str.: einige Fuﬂg‰nger, Bordsteine	q3 13107,14318 13087,14332
 Franckepark: Fuﬂg‰nger	q2 9389,6348 9346,6352
 (Arendsweg - Landsberger Allee [Nebenfahrbahn]): Radfahren verboten	q4 17251,14525 17184,14526
 (Karl-Marx-Allee - Marchlewskistr.): Fuﬂg‰nger, Bordstein	q4 12950,12340 12965,12341 12972,12361
+An der Schule [Rad- und Gehweg]: einige Fuﬂg‰nger	q1 24747,11524 24768,11616 24759,11666
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

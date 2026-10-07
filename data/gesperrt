@@ -1749,8 +1749,8 @@ Bahntrasse	3nocross::ignrte 15875,1796 15835,1747 15799,1690 15729,1573
 Zwickauer Damm -> Feuchtwangerweg: Bahntrasse	3::igndisp 15799,1690 15835,1747 15788,1747
 Feuchtwangerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 15788,1747 15835,1747 15875,1796
 Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23272,15660 23388,15637 23411,15632 23568,15603 23617,15594
-Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 23218,15671 23243,15820
-Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23272,15660
+Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 23218,15671 23223,15703
+Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23223,15703 23218,15671 23272,15660
 Brigitte-Reimann-Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23363,15517 23388,15637 23272,15660
 Zossener Str. -> Brigitte-Reimann-Str.: Straßenbahntrasse	3::igndisp 23411,15632 23388,15637 23363,15517
 Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
@@ -3586,6 +3586,7 @@ Schwingtor	BNP:5:-191:trailer=10 4183,13725
 Drängelgitter	BNP:3:-262:trailer=10 -1940,24464
 Drängelgitter	BNP:3:-113:trailer=10 4277,23296
 Drängelgitter	BNP:3:-93:trailer=10 5829,7827
+Schranke	BNP:3:14:trailer=10 23382,11760
 Tor, geschlossen	BNP:10:-231:trailer=15 -761,16641
 Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
@@ -3683,6 +3684,7 @@ Paul-und-Paula-Promenade: wird gebaut	2::inwork 14886,10748 14909,10732 14984,10
 Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,12754
 (Ingeborg-Drewitz-Allee - Alt-Moabit): wegen Bauarbeiten gesperrt	2::inwork 7588,12734 7623,12764
 Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,11913
+Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Rampe wegen einer Baustraße gesperrt	2::inwork 7809,12901 7801,12910 7788,12907 7787,12918
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840

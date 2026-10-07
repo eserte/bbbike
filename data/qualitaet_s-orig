@@ -1279,7 +1279,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
-#: last_checked: 2026-09-01
+#: last_checked: 2026-10-07
 #: check_frequency: 60d
 #: next_check: 2026-11-30 (planb)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
@@ -2483,11 +2483,11 @@ Landsberger Allee: neu asphaltierter Radweg	Q0; 18831,14823 18553,14678
 #: source_id: 2147342864 (inaktiv)
 #: source_id: 2147345560 (Radwegarbeiten) (inaktiv)
 #: check_frequency: 360d vvv
-#: last_checked: 2026-08-05 vvv
+#: last_checked: 2026-10-07 vvv
 Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
-#: last_checked: 2026-03-04
+#: last_checked: 2026-10-07
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: by: ^^^
@@ -3653,9 +3653,9 @@ Alfred-Döblin-Str.: Beton	Q0 20489,16386 20286,16494 20232,16522
 (S-Bhf. Raoul-Wallenberg-Str. - Alfred-Döblin-Str.): Beton	Q0 20198,16322 20286,16494
 # REMOVED --- x(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Beton	Q0- 20328,16473 20336,16495
 #: corrected_by: mapillary (Beton, Q0- -> ..., neu gemacht)
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20336,16495 20395,16475 20409,16486 20520,16479 20547,16485
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20336,16495 20395,16475 20409,16486 20520,16479 20557,16485
 #: corrected_by: mapillary (alter Asphalt mit einigen Hebungen, Q1- -> ..., neu gemacht)
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20547,16485 20815,16469 20851,16454
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20557,16485 20815,16469 20851,16454
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Beton	Q0- 20851,16454 20898,16420
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): neuer Asphalt mit einigen Aufpflasterungen	Q1+ 20898,16420 20923,16435 20996,16429
 #: corrected_by: mapillary (Verbundsteinpflaster, Q1 -> ..., neu gemacht)
@@ -4324,7 +4324,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 #: XXX werden hier Abschnitte des Münsterberger Wegs verbessert, z.B. (neu) asphaltiert?
 #: osm_watch: way id="100280204" version="12"
 #: osm_watch: way id="688671074" version="11"
-#: last_checked: 2026-04-08
+#: last_checked: 2026-10-07
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23363,11600 23225,11649
@@ -4337,7 +4337,7 @@ Münsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776
 #: XXX wird hier wieder der alte Zustand hergestellt?
 #: osm_watch[closed]: note 4661800 2
 #: osm_watch: way id="24205371" version="24"
-#: last_checked: 2026-04-08
+#: last_checked: 2026-10-07
 #: check_frequency: 90d
 Münsterberger Weg: wassergebundene Decke, Unebenheiten	Q1- 22886,11776 22701,11843
 Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940
@@ -7117,7 +7117,7 @@ Eugen-Roth-Weg: Asphalt	Q0 20048,12830 20037,12707
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1516926.php (vermutlich ist hier ein anderer Abschnitt gemeint, westlich der Rosenfelder Str.)
 #: osm_watch: way id="4689097" version="34"
 #: XXX Wird hier die Fahrbahn saniert?
-#: last_checked: 2026-08-25
+#: last_checked: 2026-10-07
 #: check_frequency: 180d
 Einbecker Str.: löchriger Asphalt	Q1- 17876,11217 17764,11371
 Alex-Wedding-Str.: Asphalt	Q0 11045,13183 11085,13239 11146,13328
@@ -8131,7 +8131,7 @@ Pfarrhufenweg: Kopfsteinpflaster	Q2 25599,13069 25684,13172
 Feldrain: Beton	Q0 25666,13725 25607,13459 25609,13232 25632,13214
 Feldrain: Kopfsteinpflaster	Q2 25632,13214 25684,13172
 Feldrain: Asphalt	Q0 25684,13172 25723,13137 25730,13130
-Am Rosenhag: Asphalt	Q0 25163,13494 25287,13464 25373,13447 25487,13444 25607,13459 25722,13490
+Am Rosenhag: Asphalt mit leichten Schäden	Q0- 25163,13494 25287,13464 25373,13447 25487,13444 25607,13459 25722,13490
 Am Schlehdorn: Asphalt	Q0 26006,13750 25928,13816 25923,14081 25922,14153
 Ginsterweg: glatt gepflastert	Q1 26175,14088 26173,14154
 An den Siedlergärten: Kleinsteinpflaster	Q1- 25745,13512 25784,13698 25800,13774 25801,13918 25778,14058 25776,14149
@@ -8675,7 +8675,8 @@ Kienbergstr.: Asphalt	Q0 20936,14770 20991,14774 21003,14789
 Schragenfeldstr.: Beton	Q0 20980,14914 21027,14886 21083,14878 21097,14907 21095,15003 21211,15009
 Klausdorfer Str.: Asphalt	Q0 23137,15978 23178,15968 23271,15948
 Klausdorfer Str.: Asphalt	Q0- 23271,15948 23267,15928 23243,15820
-Klausdorfer Str.: Asphalt	Q0 23243,15820 23218,15671
+Klausdorfer Str.: Asphalt	Q0 23243,15820 23223,15703 23218,15671
+Zossener Str. [Parallelstraße]: Asphalt	Q0 23573,15627 23417,15662 23223,15703
 Stephan-Born-Str.: Asphalt	Q0 23267,15928 23359,15912 23439,15898 23466,15892
 Stephan-Born-Str.: Verbundsteinpflaster	Q1+ 23271,15948 23280,15978 23450,15943 23439,15898
 Klausdorfer Str.: Asphalt	Q0 23178,15968 23151,15837 23243,15820
@@ -10829,7 +10830,8 @@ Mühlenweg (Karow): Verbundsteinpflaster	Q1 15347,22275 15411,22369 15445,22352
 (entlang des Hechtgrabens): Asphalt	Q0 16163,18780 16325,18796
 Alfred-Jung-Str.: Asphalt	Q0 15224,13269 15347,13268 15479,13273
 (Hafersteig - Wuhlgartenweg): Beton	Q1 20835,12200 20824,12177 20823,12139
-Kieler Str. (Mahlsdorf) [Wohngebiet]: Verbundsteinpflaster	Q1+ 25850,13400 25766,13289
+#: note: relativ schmaler Verbundsteinpflasterstreifen, daneben sind Rasengittersteine (breiterer Streifen)
+Kieler Str. (Mahlsdorf) [Wohngebiet]: Verbundsteinpflaster	Q1 25850,13400 25766,13289
 (Marderweg - Kieler Str. [Wohngebiet]): unbefestigter Pfad	Q2 25795,13257 25780,13274
 (Marderweg - Kieler Str. [Wohngebiet]): Verbundsteinpflaster	Q1+ 25780,13274 25766,13289
 # REMOVED --- (Feldrain - Marderweg): unbefestigter Weg	Q2 25723,13137 25814,13240
@@ -11327,7 +11329,7 @@ Oberspreestr. [Nebenfahrbahn]: Asphalt	Q0 19445,5271 19451,5262 19532,5234 19572
 Helene-Weigel-Platz: Asphalt	Q0 19628,13517 19625,13576
 (westlicher Wuhlewanderweg): teilweise Schotter	Q1- 22110,13639 22140,13649 22263,13758 22347,13858
 (westlicher Wuhlewanderweg): wassergebundene Decke	Q1 22347,13858 22404,13984 22407,14111 22416,14148
-westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinpflasterabschnitte	Q1 22416,14148 22462,14172 22639,14384 22679,14450 22670,14520 22620,14673 22528,14769 22455,14815 22462,14846 22439,14873 22378,14904 22323,15119
+westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinpflasterabschnitte	Q1 22416,14148 22462,14172 22639,14384 22679,14450 22670,14520 22603,14690 22527,14784 22455,14815 22456,14849 22439,14873 22378,14904 22367,14918 22351,15028 22323,15119
 (Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1- 18132,10183 18114,10215
 (Erieseering - am Tränkegraben): Parkweg	Q1- 18114,10215 18085,10244 18076,10324 18042,10392
 (Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1 18042,10392 18039,10398
@@ -11480,7 +11482,7 @@ Straße 357: Kopfsteinpflaster	Q2 -6046,14253 -6053,14278
 Straße 357: unbefestigte Straße	Q2 -6053,14278 -6064,14321 -6091,14391 -6146,14317 -6064,14321
 Nordenhamer Str.: Beton	Q0 -4170,13809 -4182,13691
 (Bullengraben - Seeburger Str./Seecktstr.): Verbundsteinpflaster	Q0- -4368,13387 -4334,13338 -4320,13296
-(am Burgwallgraben): wassergebundene Decke	Q1 -3654,13293 -3644,13232 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
+(am Burgwallgraben): wassergebundene Decke	Q1 -3654,13293 -3644,13232 -3586,13141 -3570,13116 -3457,13028 -3401,13013 -3371,13020 -3348,13055 -3337,13111
 (Ziegelhof - Burgwallgraben): wassergebundene Decke	Q1 -3651,13476 -3654,13293
 (Burgwallgraben - Krowelstr.): Kleinsteinpflaster	Q1 -3457,13028 -3458,13006
 (Burgwallgraben - Krowelstr.): wassergebundene Decke/Gehwegplatten	Q1 -3458,13006 -3457,12960
@@ -11509,8 +11511,8 @@ Sella-Hasse-Str.: Beton	Q0 20840,16777 20734,16819
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): Gehwegplatten/Betonplatten	Q1 21278,16685 21142,16730
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): Kleinsteinpflaster	Q1- 21142,16730 21077,16710
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): Verbundsteinpflaster	Q1 21077,16710 21019,16698 21011,16700
-Walter-Felsenstein-Str.: Asphalt	Q0 20792,16951 20770,16901 20734,16819 20617,16614
-(Walter-Felsenstein-Str. - Raoul-Wallenberg-Str.): Beton	Q0 20617,16614 20547,16485 20528,16470 20489,16386 20477,16361 20460,16353 20389,16209 20372,16173
+Walter-Felsenstein-Str.: Asphalt	Q0 20792,16951 20770,16901 20734,16819 20635,16639 20617,16614
+(Walter-Felsenstein-Str. - Raoul-Wallenberg-Str.): Beton	Q0 20635,16639 20640,16632 20621,16602 20557,16485 20528,16470 20489,16386 20477,16361 20460,16353 20389,16209 20372,16173
 Marzahner Promenade: Beton	Q0- 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15717 20527,15654 20226,15512
 # REMOVED (keine Instandsetzungsarbeiten mehr, keine wesentliche Verbesserung) --- #: by: https://nitter.cz/VIZ_Berlin/status/1617486809470013442#m (Ende Februar 2023?) --- #: source_id: viz2021:13.54537,52.542117,17.10.2022,10:12 (Fahrbahninstandsetzung bis 9.12.2022) (inaktiv) --- #: osm_watch: way id="8014720" version="35" --- #: XXX Nach der Instandsetzung bessere Qualität, vielleicht asphaltiert? --- #: last_checked: 2023-05-06 --- #: check_frequency: 90d --- #: next_check: 2023-02-28
 Marzahner Promenade: Beton	Q0- 20226,15512 19960,15337 19875,15324 19768,15361 19681,15405
@@ -11585,7 +11587,7 @@ Wischbergweg: unbefestigt, teilweise holprig	Q2 13898,18597 13900,18642
 (Eichhorster Str. - Schorfheidestr.): Gehwegplatten	Q0- 21825,18689 21828,18701 21860,18718 21875,18717
 Mehrower Allee [Wohngebiet]: Asphalt	Q0 20588,16992 20657,16959 20770,16901
 Mehrower Allee [Wohngebiet]: Asphalt	Q0 20657,16959 20682,17010
-(Weg im Hochzeitspark): Verbundsteinpflaster	Q1+ 20547,16485 20553,16403 20583,16317
+(Weg im Hochzeitspark): Verbundsteinpflaster	Q1+ 20557,16485 20553,16403 20583,16317
 (Parkplatz Le Prom): Asphalt	Q0 19987,15280 19953,15286 19838,15222 19784,15191 19619,15262
 (Parkplatz Le Prom): Asphalt	Q0 19838,15222 19830,15239 19775,15276
 (Marzahner Promenade - Parkplatz Le Prom): Verbundsteinpflaster/Gehwegplatten	Q1+ 19768,15361 19759,15336 19782,15309 19775,15276
@@ -13324,7 +13326,7 @@ Metropolitan Park: Asphalt	Q0 -8088,13594 -7984,13649 -7926,13709 -7893,13781 -7
 (Einbecker Str. - Frankfurter Allee): geflickter Asphalt	Q1 17020,11748 17034,11797 17221,11777 17251,11789
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): Asphalt	Q0 19872,16563 19881,16561 19890,16559 19931,16568 20158,16519
 (Bitterfelder Str./Otto-Rosenberg-Str. - Weg entlang der S-Bahn): unbefestigt	Q2 19896,16611 19890,16559
-Märkische Allee [Wohngebiet]: Asphalt	Q0- 20459,16697 20439,16709 20430,16744 20473,16829 20507,16845 20588,16992
+Märkische Allee [Wohngebiet]: Asphalt	Q0- 20456,16699 20439,16709 20430,16744 20473,16829 20507,16845 20588,16992
 David-Friedländer-Weg: Betonpflaster	Q0- 20727,18726 20901,18793 21038,18851 21036,18888 21028,18915 20998,18980
 Christian-Dohm-Weg: Betonpflaster	Q0- 20760,18812 20894,18861 21028,18915
 #: by: mapillary
@@ -14298,6 +14300,7 @@ Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 82
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-streit-um-116-baeume-und-neuen-radweg/
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-116-baeume-ein-radweg-protest-vorm-rathaus/
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-vor-dem-umbau-buerger-kaempfen-weiter-gegen-baumfaellungen/ (geplanter Beginn der Bauarbeiten: 1. Quartal 2027)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/nach-entscheidung-des-berliner-verwaltungsgerichts-geplante-fallung-von-mehr-als-100-baumen-in-reinickendorf-verschoben-16095631.html
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: last_checked: 2026-06-07 vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv
@@ -14719,6 +14722,8 @@ Buschkrugallee [64]: Betonpflaster	Q0- 13460,5834 13427,5849 13190,5794
 # 
 #: by: mapillary
 Wuhletalstr. [Wohngebiet]: Beton	Q1 21140,17486 21128,17426 21081,17329
+# 
+Blumeneschenweg: Asphalt	Q0 23363,11600 23403,11721 23375,11731 23382,11760
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -17817,7 +17822,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="14"
 #: osm_watch: way id="1033468087" version="5"
-#: last_checked: 2026-09-06
+#: last_checked: 2026-10-07
 #: check_frequency: 90d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14906,15859 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -18175,9 +18180,11 @@ Kuckhoffstr.: guter Beton	Q0- 9054,19496 9039,19486 8987,19449 8824,19360 8792,1
 Lemkestr.: Asphalt	Q0- 26610,14049 26464,13884
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Beton)
 Lemkestr.: Beton	Q0- 26464,13884 26301,13691 26120,13486 25961,13304
-#: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt/Kopfsteinpflaster)
+#: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt/Kopfsteinpflaster) vvv
 Lemkestr.: Asphalt	Q0; 25961,13304 25872,13191 25801,13101
-Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
+#: note: auf dem gepflasterten Streifen wird geparkt, meistens kann man wohl auf dem Asphalt fahren
+Lemkestr.: Asphalt, Kopfsteinpflaster am Rand	Q1-; 25801,13101 25872,13191 25961,13304
+#: corrected_by ^^^
 #: confirmed_by: srt
 #: next_check_id: LEMKE-2020
 #: XXX Asphaltierung geplant
@@ -18231,12 +18238,12 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 # REMOVED (keine Termine mehr?) --- #: next_check: 2026-07-30 vvv
 #: osm_watch: way id="593503609" version="12"
 #: osm_watch: way id="40267304" version="19"
-#: last_checked: 2026-04-08
+#: last_checked: 2026-10-07
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25620,12872
 # REMOVED --- #: osm_watch: way id="24204822" version="32"
 #: osm_watch: way id="9925057" version="27"
 #: osm_watch: way id="628125261" version="10"
-#: last_checked: 2026-06-24
+#: last_checked: 2026-10-07
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25191,12343 25149,12266 25109,12196
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -21086,7 +21093,7 @@ Blenheimstr.: Beton	Q0 20908,15313 20910,15266 20910,15176
 # 
 #: by: knut B. (flanter), mike: vvv
 #: corrected_by: srt (Q1 -> Q0-) vvv
-Mittenwalder Str. (Hellersdorf): guter Beton	Q0- 23411,15632 23441,15780 23466,15892 23469,15907 23562,15882
+Mittenwalder Str. (Hellersdorf): guter Beton	Q0- 23411,15632 23417,15662 23441,15780 23466,15892 23469,15907 23562,15882
 Mittenwalder Str. (Hellersdorf): guter Beton	Q0- 23562,15882 23570,15854 23548,15753 23441,15780
 #: corrected_by ^^^
 #: by: ^^^
@@ -32064,7 +32071,7 @@ Franzstr. (Wilhelmstadt): Asphalt	Q0 -3637,12668 -3446,12728 -3275,12769
 Wörther Str. (Wilhelmstadt): Kopfsteinpflaster	Q2- -3444,12573 -3446,12728 -3448,12834 -3451,12911
 Metzer Str. (Wilhelmstadt): Kopfsteinpflaster	Q2 -3693,13012 -3715,13003 -3817,13002 -3923,13060
 #: confirmed_by: srt
-Krowelstr.: Asphalt	Q0 -3301,12864 -3392,12928 -3457,12960 -3519,12980 -3698,13168 -3730,13281
+Krowelstr.: Asphalt	Q0 -3301,12864 -3392,12928 -3457,12960 -3519,12980 -3584,13040 -3635,13094 -3698,13168 -3730,13281
 #: confirmed_by: srt
 Straßburger Str. (Spandau, Wilhelmstadt): Asphalt	Q0 -3730,13281 -3711,13378 -3692,13480 -3689,13513 -3672,13597 -3614,13724
 #: corrected_by: srt (added KS)

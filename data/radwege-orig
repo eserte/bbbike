@@ -1437,6 +1437,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 #: by: https://www.berliner-zeitung.de/article/bruecke-oder-tunnel-unter-der-spree-die-wichtigste-entscheidung-zur-a100-nach-lichtenberg-verzoegert-sich-weiter-10185054
 #: by: https://www.entwicklungsstadt.de/elsenbruecke-in-treptow-und-die-a100-gibt-es-bald-zwei-autobruecken-ueber-die-spree/
 #: by: https://www.entwicklungsstadt.de/abrisse-kosten-und-zeitplan-wie-steht-es-um-die-a100-verlaengerung/
+#: by: https://www.entwicklungsstadt.de/a100-nach-der-wahl-weiterbauen-oder-am-treptower-park-stoppen/
 #: also_indoor: url https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/elsenbruecke/
 #: source_id: 2147343116 (inaktiv)
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet) (inaktiv)
@@ -1850,7 +1851,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-09-13 vvv
+#: last_checked: 2026-10-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1871,7 +1872,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="60"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-10-06 (osm) vvv
+#: last_checked: 2026-10-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -3450,7 +3451,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-09-16
+#: last_checked: 2026-10-07
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3461,7 +3462,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-09-16
+#: last_checked: 2026-10-07
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -3701,10 +3702,10 @@ Straßenbahnkap mit Gehwegplatten	RW1;RW1 9274,13963 9285,13965 9383,13986
 # 
 #: historical_note: früher Busspur gilt Mo-Fr 6-18 Uhr	RW5;
 #: note: Busspur ist nicht für Radfahrer freigegeben (obwohl es keine Radwegbenutzungspflicht gibt)
-neu asphaltiert, 2m breit, für Radfahrer freigegeben Busspur gilt Mo-Fr 6-18 Uhr	RW1; 12640,13814 12701,13873 12766,13942
+neu asphaltiert, 2m breit	RW1; 12640,13814 12701,13873 12766,13942
 #: historical_note: früher (bis 2024/2025): Busspur gilt Mo-Fr 6-18 Uhr, RW5; außerdem hat hier noch ein alter enger Radweg existiert, der aber nicht weiter "beworben" wurde
 #: note: Busspur ist nicht für Radfahrer freigegeben (obwohl es keine Radwegbenutzungspflicht gibt)
-neu asphaltiert, 2m breit, für Radfahrer freigegeben Busspur gilt Mo-Fr 6-18 Uhr	RW1; 12766,13942 12856,14042 12901,14093
+neu asphaltiert, 2m breit	RW1; 12766,13942 12856,14042 12901,14093
 # 
 	RW3; 12901,14093 12856,14042 12766,13942 12701,13873 12640,13814
 	RW4;RW3 12640,13814 12578,13800
@@ -4903,6 +4904,7 @@ Verbundsteinpflaster	RW2; -4647,12269 -4903,12055
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13329 (Bau im Sommer (2026?))
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/mit-dem-fahrrad-durch-berlin-spandau-auf-diesen-sechs-strecken-werden-neue-radwege-geplant-15697183.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26599.pdf (Erwähnung, Länge 160m, Strecke ist aber 203m lang)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/besserer-radverkehr-am-stadtrand-neue-angebote-neue-strecken-neue-ideen--das-fahrrad-update-fur-spandau-16105167.html
 #: XXX Gehwegplatten sollen durch Asphalt ersetzt werden, Verbreiterung auf 2,5m
 #: last_checked: 2026-09-02
 #: check_frequency: 120d
@@ -5112,7 +5114,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2026-09-10 vvv
+#: last_checked: 2026-10-07 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -5392,13 +5394,13 @@ Verbundsteinpflaster	RW1; 15030,3286 14994,3245
 #: note: Hansastr. Richtung SW
 Verbundsteinpflaster	RW1; 16837,17440 16578,17285 16525,17253
 alter Beton, Radweg nur aufgemalt	RW1; 16525,17253 16460,17214
-#: note: kurze Abschnitte mit Verbundsteinpflasterradweg
-Gehweg für Radfahrer frei	RW1; 16460,17214 16352,17150 16318,17128 16296,17114 16139,17017
 #: next_check_id: HANSA-2025
-#: last_checked: 2026-09-06 vvv
+#: last_checked: 2026-10-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2026: Gehweg für Radfahrer frei, RW1; vvv
+#: note: kurze Abschnitte mit Verbundsteinpflasterradweg
+provisorischer gemeinsamer Rad- und Gehweg	RW2; 16460,17214 16352,17150 16318,17128 16296,17114 16139,17017
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 16139,17017 15986,16922 15929,16870
 	RW0; 15929,16870 15875,16816 15776,16721 15735,16698 15662,16649
 #: historical_note ^^^
@@ -5417,7 +5419,7 @@ provisorischer gemeinsamer Rad- und Gehweg	RW2; 15662,16649 15437,16491
 #: note: zwischen Indira-Gandhi-Str. und Orankeweg ist die südliche Fahrbahn komplett gesperrt, Radfahrer Richtung Hohenschönhausen müssen zusammen mit Fußgängern den Hochbord benutzen, Richtung Westen auch, aber das ist zumindest am Orankeweg nicht ausgeschildert -> handicap ja/nein? q1? q2? -> erstmal nicht
 #: XXX später wiederherstellen:	RW3; 15130,16098 14967,15885 14936,15857 14808,15788
 #: XXX später wiederherstellen: die letzten Meter werden als benutzungspflichtiger Radweg auf dem Hochbord geführt	RW3; 14808,15788 14653,15738
-#: last_checked: 2026-09-06
+#: last_checked: 2026-10-07
 #: check_frequency: 60d
 #: next_check: 2027-01-15 (VIZ-Verkehrsmeldung + planb)
 gemeinsamer Geh- und Radweg	RW2; 15130,16098 14967,15885 14936,15857 14808,15788 14653,15738
@@ -5432,7 +5434,7 @@ gemeinsamer Geh- und Radweg	RW2; 14653,15738 14808,15788 14936,15857 14967,15885
 	RW3; 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
 die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Radfahrer frei) geführt	RW10; 15297,16321 15437,16491
 #: next_check_id: HANSA-2025
-#: last_checked: 2026-09-06
+#: last_checked: 2026-10-07
 #: check_frequency: 30d
 #: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
 #: historical_note: früher (bis 2026): Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
@@ -5530,7 +5532,7 @@ Verbundsteinpflaster	RW1; 20323,16706 20390,16663
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/tiefbau-und-landschaftsplanungsamt/fahr-rat/protokoll_fahrrat_26-02-2025.pdf
 #: source_id: viz2021:13.55154,52.55437,22.09.2025,18:00 (Nachtsperrung, bis 23.09.2025) (inaktiv)
 #: source_id: planb2026:13.5513287,52.55294667,18.11.2024, ("Fahrstreifen-Verschwenkung", bis 31.12.2026)
-#: last_checked: 2026-08-05 vvv
+#: last_checked: 2026-10-07 vvv
 #: check_frequency: 150d vvv
 #: next_check: 2026-12-31 (ex-VIZ-Verkehrsmeldung, planb) vvv
 #: XXX früher: Verbundsteinpflaster	RW1;
@@ -5726,7 +5728,7 @@ neu asphaltiert	RW1; 17286,7173 17211,7280
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/praesentation-zur-sitzung-vom-09-05-2022.pdf ("keine Mittel")
 #: source_id: 2147342739
-#: last_checked: 2026-09-06 vvv
+#: last_checked: 2026-10-07 vvv
 #: check_frequency: 180d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str., Richtung Westen
@@ -6247,7 +6249,7 @@ Gehweg für Radfahrer frei, alter Asphalt mit vielen Unebenheiten	RW1; 15642,1917
 #: historical_note: bis etwa 2022/2023 Radwege, dann Bauarbeiten mit Verengung und "Nivellierung" der Radwege, seit ca. 2025 sieht es so aus, als ob es hier nicht-ausgeschilderte und ohne Piktogramme versehene Radspuren gibt
 #: XXX Wird sich die Radverkehrsanlage noch ändern?
 #: source_id: planb2026:13.48334398,52.57730345,28.07.2025,07:00 ("Fahrstreifen-Reduzierung", bis 08.12.2026)
-#: source_id: LMS-BR:414867/72 viz2021:13.48328,52.58301,06.07.2026,07:00 (bis 07.09.2026) (bis 30.09.2026) (bis 08.12.2026)
+#: source_id: LMS-BR:414867/72 viz2021:13.48328,52.58301,06.07.2026,07:00 vizapi2026:669/2026 (bis 07.09.2026) (bis 30.09.2026) (bis 08.12.2026)
 #: osm_watch: note 3817921 6
 #: last_checked: 2026-09-13 (osm note)
 #: next_check: 2026-12-08 (planb + VIZ-Verkehrsmeldung)
@@ -8886,7 +8888,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2026-09-10
+#: last_checked: 2026-10-07
 #: check_frequency: 45d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8913,7 +8915,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2026-09-10 vvv
+#: last_checked: 2026-10-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: osm_watch: way id="335479077" version="25"
@@ -9210,6 +9212,8 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-zeitung.de/article/radweg-in-der-kantstrasse-soll-weg-jetzt-muss-das-gericht-entscheiden-10372029 (bis Ende September 2026 keine Umbauarbeiten)
 #: by: https://www.entwicklungsstadt.de/kantstrasse-radweg-bleibt-vorerst-erhalten-gericht-prueft-rueckbau/
 #: by: https://www.tagesspiegel.de/berlin/senat-verzichtet-auf-ruckbau-im-september-radweg-an-der-berliner-kantstrasse-bleibt-vorerst-erhalten-16054105.html
+#: by: https://www.berliner-zeitung.de/article/kantstrasse-radweg-bleibt-waehrend-der-bauarbeiten-erhalten-10461101 (Status Quo bis Frühjahr 2027)
+#: by: https://www.entwicklungsstadt.de/radweg-oder-busspur-in-der-kantstrasse-gericht-erhoeht-druck-im-streit/
 #: source_id: LMS-BR:379465/72 viz2021:13.30931,52.50658,11.08.2025,07:00 viz2021:13.30931,52.50658, (Bauarbeiten Höhe Krumme Str., bis 28.11.2025) (inaktiv)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
@@ -9217,7 +9221,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: note: im Bereich Savignyplatz Bauarbeiten, Richtung Osten möglicherweise keine Radspur
 #: note: zwischen Krumme Str. und Wilmersdorfer Str. Richtung Westen praktisch keine Radspur mehr
 #: last_checked: 2026-10-06 vvv
-#: check_frequency: 30d vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2026-09-01 (Tsp+entwicklungsstadt: Rückbau?) vvv
 #: note: Kantstr., Richtung Osten
 provisorischer Radstreifen hinter den parkenden Autos	RW4; 3795,11098 3975,11087 4100,11078 4289,11060 4415,11053 4532,11046 4709,11036
@@ -10025,6 +10029,8 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 # 
 #: historical_note: Fahrradstraße seit 2025/2026
 	RW7;RW7 3425,4541 3501,4435 3557,4355 3587,4312 3643,4232
+#: historical_note: Fahrradstraße seit Sep/Okt 2026
+	RW7;RW7 3643,4232 3766,4058 3777,4042 3870,3914
 # 
 #: historical_note: seit etwa 2025/2026
 	RW3;RW3 11073,-2037 10983,-2116 10756,-2128
@@ -10049,4 +10055,6 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 # 
 #: historical_note: seit etwa September/Oktober 2026
 	RW7;RW7 8864,7676 8900,7643 8956,7598 9021,7552 9073,7496 9097,7469 9148,7418
+# 
+	RW6;RW6 23363,11600 23403,11721 23375,11731 23382,11760
 # 
