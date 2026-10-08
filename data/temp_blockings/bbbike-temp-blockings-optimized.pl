@@ -5493,11 +5493,12 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 #: source_id: LMS-BR:408948/72 viz2021:13.44444,52.48166,21.05.2026,09:00 vizapi2026:499/2026 (bis 28.08.2026) (zwischenzeitlich nur noch bei vizapi2026, bis 31.10.2026)
 #: source_id: planb2026:13.45012105,52.47955018,09.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.08.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.45012105,52.47955018,09.05.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.44947274,52.47920544,09.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026; mittlerweile (Sommer 2026) ist eine Durchfahrt wieder möglich, zumindest inoffiziell
 #: osm_watch: note 4794007 2
 #: last_checked: 2026-10-06 vvv
-#: check_frequency: 10d vvv
-#: next_check: 2026-10-31 (ex-planb + vizapi2026) vvv
+#: check_frequency: 30d vvv
+#: next_check: 2026-12-31 (planb) vvv
 # REMOVED --- #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung, planb) vvv
 # REMOVED --- #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
@@ -5983,7 +5984,7 @@ Brückenabriss, Komplettsperrung	2::inwork 2924,15914 2892,15983 2809,16143
 #: source_id: viz2021:13.286611,52.641435,19.08.2024,07:00 (neue Baustelle, nur Kfz-Verkehr, bis 26.08.2024) (bis 23.08.2024) (inaktiv)
 #: source_id: LMS-BR:381984/72 viz2021:13.29204,52.63667,02.09.2025,06:00 (bis 05.01.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:399443/72 viz2021:13.29213,52.635,19.02.2026,07:00 (bis 21.05.2026) (inaktiv)
-#: source_id: LMS-BR:408929/72 viz2021:13.29229,52.63873,21.05.2026,07:00 (bis 21.08.2026) (inaktiv) (bis 02.09.2026) (inaktiv) (bis 25.09.2026) (bis 07.10.2026)
+#: source_id: LMS-BR:408929/72 viz2021:13.29229,52.63873,21.05.2026,07:00 (bis 21.08.2026) (inaktiv) (bis 02.09.2026) (inaktiv) (bis 25.09.2026) (bis 07.10.2026) (inaktiv)
 #: source_id: planb2026:13.29215302,52.63946896,21.05.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (bis 02.09.2026) (bis 25.09.2026) (inaktiv)
 #: source_id: planb2026:13.29215302,52.63946896,04.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 15.10.2026)
 # REMOVED --- #: also_indoor: traffic (ex-H,G,B,W)
@@ -7140,7 +7141,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-09-15 vvv
+#: last_checked: 2026-10-08 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -7269,7 +7270,7 @@ Wolziger Zeile: Rampe gesperrt	2::inwork 10391,-2624 10373,-2575 10394,-2567
 #: source_id: adac:969740805 (bis 12.12.2025) (neue ID -> inaktiv)
 #: source_id: adac:794067672 (bis 12.12.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026) (bis 19.06.2026) (bis 31.07.2026) (bis 14.08.2026) (bis 09.10.2026)
-#: source_id: planb2026:13.3159967,52.43456243,18.06.2026, ("Vollsperrung beider Fahrbahnen", Bäkestraße, bis 14.08.2026) (inaktiv) (bis 09.10.2026)
+#: source_id: planb2026:13.3159967,52.43456243,18.06.2026, ("Vollsperrung beider Fahrbahnen", Bäkestraße, bis 14.08.2026) (inaktiv) (bis 09.10.2026) (inaktiv)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
 #: also_indoor: traffic (G,T,W)
@@ -8558,7 +8559,7 @@ westliche Rüdigerstr.: Einfahrt verboten	q3::inwork; 16397,12397 16259,12419
 #: source_id: vizapi2026:17/2025 (bis 28.10.2026)
 #: note: laut Halteverbotsschilder bis 01.07.2026, laut Verkehrsportalen (z.B. rbb) bis 12.05.2026
 #: osm_watch: note 4846255 2
-#: osm_watch: way id="1429845843" version="5"
+#: osm_watch: way id="1429845843" version="6"
 #: also_indoor: traffic (T,H,G)
 #: last_checked: 2026-10-06 vvv
 #: check_frequency: 90d vvv
@@ -8977,7 +8978,7 @@ Bötzowstr.: Kreuzungsbereich vermutlich betroffen	q3::inwork 12280,13880 12361,1
 #: source_id: planb2026:13.44989871,52.50304685,28.04.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 01.11.2027)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-08
 #: check_frequency: 120d
 #: next_check: 2027-11-01 (planb)
 	q4::inwork 13408,10837 13436,10903
@@ -9931,7 +9932,7 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
 #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_339081
 #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_349187
 #: source_id: bvg2024:21#1e19a92e-36f6-4510-a634-63a077ad6ab4 (bis 2026-09-07)
-#: source_id: LMS-BR:409559/72 viz2021:13.51705,52.48181,26.05.2026,07:00 vizapi2026:505/2026 (Ehrlichstr., bis 04.08.2026) (bis 21.09.2026) (bis 11.10.2026)
+#: source_id: LMS-BR:409559/72 viz2021:13.51705,52.48181,26.05.2026,07:00 vizapi2026:505/2026 (Ehrlichstr., bis 04.08.2026) (bis 21.09.2026) (bis 11.10.2026) (bei vizapi2026 bis 14.10.2026)
 #: source_id: LMS-BR:409558/72 viz2021:13.5113,52.48421,26.05.2026,07:00 vizapi2026:509/2026 (Blockdammweg, bis 26.09.2026) (bis 05.10.2026) (bis 12.10.2026)
 #: source_id: planb2026:13.52464066,52.47856838,18.05.2026, ("Vollsperrung beider Fahrbahnen", Ehrlichstr., bis 11.10.2026)
 #: source_id: planb2026:13.51311063,52.48348885,02.03.2026, ("Vollsperrung beider Fahrbahnen", Blockdammweg, bis 05.10.2026)
@@ -10534,7 +10535,7 @@ Am Wiesenrain: Einbahnstraßenregelung	q3::inwork; 23931,5992 24122,6007
 #: note: wegen der Kürze der Baustelle: q4 -> q3
 #: note: Laut Baustellenschild der Wasserbetriebe Bauarbeiten bis Oktober 2027 (!)
 #: XXX Sind die Bauarbeiten beendet?
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-08
 #: check_frequency: 30d
 #: next_check: 2026-12-11 (planb)
 # REMOVED --- #: next_check: 2027-10-31 (Wasserbetriebe, evtl. Gesamtmaßnahme)
@@ -10671,7 +10672,18 @@ Manfred-von-Richthofen-Str.	q4::inwork; 9229,8718 9158,8706 9093,8665 9011,8605
          'type' => 'handicap',
          'until' => 1806505200
        },
-       undef,
+       {
+         'data' => '#: also_indoor: traffic (T,G)
+#: source_id: planb2026:13.37772529,52.4176902,26.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026)
+#: source_id: planb2026:13.37772529,52.4176902,26.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026)
+	q4::inwork 8827,1289 8822,1238
+',
+         'from' => 1779746400,
+         'id' => 4697,
+         'text' => 'Wehnertstr.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 31.10.2026',
+         'type' => 'handicap',
+         'until' => 1793462400
+       },
        undef,
        undef,
        undef,
@@ -10902,7 +10914,7 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
 #: note: der Bürgersteig ist nicht nur eng, sondern teilweise auch unangenehm zu fahren: Charlottenburger Platten, gepflasterte Ausfahrten, unzureichende abgesenkte Bordsteine
 #: traffic_note: Etwas Ausweichverkehr via Engeldamm - illegale Überfahrt zum Mariannenplatz - Wrangelstr., evtl. wird es mit der Zeit mehr werden.
 #: source_id: LMS-BR:420723/72 viz2021:13.42828,52.50735,31.08.2026,04:00 vizapi2026:853/2026 (bis 26.10.2026)
-#: last_checked: 2026-10-06 vvv
+#: last_checked: 2026-10-08 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2026-12-31 vvv
 Köpenicker Str.: getrennter Rad- und Gehweg	q2::inwork; 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
@@ -11245,16 +11257,7 @@ Am Weidendamm	q4::inwork; 9286,12886 9323,12895
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LMS-BR:422956/72 viz2021:13.32885,52.48515,21.09.2026,07:00 (bis 08.10.2026)
-	q4::inwork 5347,8732 5343,8858
-',
-         'from' => 1789880400,
-         'id' => 4766,
-         'text' => 'Gerdauer Str.: Tiefbauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 21.09.2026 07:00 bis 08.10.2026',
-         'type' => 'handicap',
-         'until' => 1791496740
-       },
+       undef,
        {
          'data' => '#: source_id: LMS-BR:423777/72 viz2021:13.27184,52.53652, (Reisstr.)
 #: source_id: LMS-BR:423773/72 viz2021:13.27358,52.53614, (Ohmstr.)
@@ -11606,6 +11609,31 @@ An der Nordbahn: Sanierung mit Sperrung	2::inwork 7160,19752 7104,19802 6950,199
          'text' => 'An der Nordbahn: Sanierung des Mauerwegs, Sperrung voraussichtlich vom 5.10.2026 bis Frühjahr 2027',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.aktives-adlershof.de/aktuelles?date=20261007 ("Dörpfeldstraße gesperrt", 19. Oktober bis 16. Dezember 2026 in zwei Bauabschnitten)
+#: source_id: planb2026:13.54714994,52.43753519,19.10.2026, ("Vollsperrung beider Fahrbahnen", Bereich Marktplatz Adlershof, 19.10.2026 bis 16.12.2026)
+#: next_check: 2026-10-18 (planb + aktives-adlershof (1 Tag vorher))
+# XXX next_check: 2026-11-12 (nächster Bauabschnitt)
+Dörpfeldstraße zwischen Friedenstraße - Hackenbergstraße	q4::inwork 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
+# XXX 2.BA: Dörpfeldstraße zwischen Anna-Seghers-Straße - Gellertstraße	q4::inwork 20012,3532 20082,3578
+',
+         'from' => 1792274400,
+         'id' => 4793,
+         'text' => 'Dörpfeldstr.: Gleisbauarbeiten, Sperrung in Höhe Marktplatz Adlershof, voraussichtlich vom 19. Oktober 2026 bis 13. November 2026',
+         'type' => 'handicap',
+         'until' => 1794610799
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261008
+#: source_id: vizapi2026:1042/2026 (09.10.2026 21:00 bis 12.10.2026 04:00)
+	2::inwork 8595,9495 8358,9568 8192,9619
+',
+         'from' => 1791410400,
+         'id' => 4794,
+         'text' => 'Yorckstr.: Brückeneinhebung, Komplettsperrung zwischen Bautzener Str. und Katzbachstr, vom 09.10.2026 21:00 bis 12.10.2026 04:00',
+         'type' => 'handicap',
+         'until' => 1791770400
        }
      
 );

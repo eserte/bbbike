@@ -4158,7 +4158,7 @@ Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
 # 
 #: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: note: mit festen Zäunen gesperrt
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-08
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
 # 
 # REMOVED (Landstraße entfernt) --- #: next_check_id: FANGSCHLEUSE-2026
@@ -4355,7 +4355,7 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 #: source_id: planb2026:13.43631736,52.51181578,17.08.2026,08:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv) (bis 28.08.2026) (inaktiv)
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
 #: historical_note: am Anfang der Bauarbeiten war der Gehwegbereich schmaler: schmaler Gehweg, Fußgänger, Bordstein, q4+::inwork
-#: last_checked: 2026-08-29
+#: last_checked: 2026-09-24 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2027-03-31 (entwicklungsstadt, planb)
 # REMOVED --- Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,11888
@@ -4475,11 +4475,12 @@ Magdeburger Str. (Brandenburg)	2::inwork -48735,-304 -47897,-353
 #: by: https://www.deutsches-architekturforum.de/thread/11524-bv-%C3%B6stlich-der-heidestra%C3%9Fe-und-otto-weidt-platz-europacity/?postID=784716#post784716
 #: by: https://entwicklungsstadt.de/europacity-neues-schulz-hotel-entsteht-an-der-heidestrasse-18/ (Eröffnung Anfang 2027)
 #: by: https://www.entwicklungsstadt.de/heidestrasse-18-rohbau-des-neuen-schulz-hotels-waechst-sichtbar-in-die-hoehe/
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/europacity-riverside-nordhafenquartier.148/page-4#post-27997
 #: osm_watch[closed]: note 4940349 2
 #: osm_watch: way id="423457085" version="17"
 #: source_id: planb2026:13.36504453,52.53376599,11.08.2025,06:00 ("Fahrstreifen-Reduzierung", bis 30.07.2027)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
-#: last_checked: 2026-07-26 (mapillary) vvv
+#: last_checked: 2026-09-26 (architektur-urbanistik) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-03-15 (entwicklungsstadt) vvv
 #: osm_watch: way id="752856111" version="16"
@@ -4758,7 +4759,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="4612427" version="23"
 #: source_id: planb2026:13.41545231,52.51320684,25.03.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2027)
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-09-19
+#: last_checked: 2026-10-08
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2027-06-30 (entwicklungsstadt)
 #: next_check: 2027-12-31 (planb)
@@ -5269,7 +5270,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
 #: osm_watch: note 4853760 1
-#: last_checked: 2026-10-06 vvv
+#: last_checked: 2026-10-08 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
