@@ -42468,7 +42468,7 @@ EOF
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt für alle außer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einmündung ist die westliche Fahrbahnhälfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-09
 #: check_frequency: 30d
 #: next_check: 2026-10-20 (planb + VIZ-Verkehrsmeldung; wenn fertig -> alten Eintrag reaktivieren)
 # REMOVED --- #: next_check: 2027-05-31 (planb)
@@ -42975,7 +42975,7 @@ EOF
 #: source_id: LMS-BR:421555/72 viz2021:13.34514,52.53909,07.09.2026,06:00 vizapi2026:909/2026 (zwischen Buchstr. und Föhrer Str. Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 19.09.2026) (inaktiv)
 #: source_id: LMS-BR:422260/72 viz2021:13.348504,52.539088,14.09.2026,06:00 (Baustelle zwischen Föhrer Str. und Fehmarner Str., bis 26.09.2026) (inaktiv)
 #: source_id: LMS-BR:422273/72 viz2021:13.34873,52.53891,14.09.2026,07:00 vizapi2026:908/2026 (Markierungsarbeiten zwischen Buchstr. und Fehmarner Str., Vollsperrung für Kfz-Verkehr, bis 02.10.2026) (inaktiv)
-#: source_id: vizapi2026:910/2026 (zwischen Fehmarner Straße und Torfstraße Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 02.10.2026)
+#: source_id: vizapi2026:910/2026 (zwischen Fehmarner Straße und Torfstraße Markierungsarbeiten, Vollsperrung für Kfz-Verkehr, bis 02.10.2026) (inaktiv)
 Nordufer: zwischen Tegeler Str. und Föhrer Str.	q4::inwork 7129,14787 7000,14832 6929,14845 6849,14831 6824,14821 6709,14782 6596,14740
 # REMOVED (hier anscheinend schon fertig) --- Nordufer: zwischen Tegeler Str. und Föhrer Str.	q4::inwork 6596,14740 6513,14725 6334,14756
 # REMOVED (kürzere Variante) ---	q4::inwork 7000,14832 6929,14845 6849,14831
@@ -46699,11 +46699,11 @@ EOF
        data  => <<EOF,
 #: note: laut rbb bis 19.01.2025 (nun inaktiv)
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
-#: source_id: LMS-BR:418130/72 viz2021:13.33775,52.50366,03.08.2026,07:00 (Kraneinsatz bis 09.10.2026)
-#: also_indoor: traffic (re-H,re-G,re-T,re-W)
+#: source_id: LMS-BR:418130/72 viz2021:13.33775,52.50366,03.08.2026,07:00 (Kraneinsatz bis 09.10.2026) (inaktiv)
+#: also_indoor: traffic (re-H,re-G,ex-T,re-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
 #: last_checked: 2026-10-06
-#: check_frequency: 30d (traffic)
+#: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 90d
 Marburger Str.	q3::inwork 5802,10621 5907,10821
 EOF
@@ -47629,11 +47629,12 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: source_id: planb2026:13.36006937,52.47725114,18.11.2024,07:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026) (inaktiv)
+#: source_id: LMS-BR:424850/72 viz2021:13.362877,52.476175, (bis 31.10.2026)
 #: also_indoor: traffic (B,T,G)
 #: osm_watch: note 4847574 3
 #: last_checked: 2026-09-11
 #: check_frequency: 90d
-# REMOVED --- #: next_check: 2026-08-31 (planb)
+#: next_check: 2026-10-31 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-11-30 (Pressemitteilung)
 #: note: im östlichen Bereich unklar: es gibt noch ein Schild "Einfahrt verboten, Radfahrer in 60m", aber der Bürgersteig ist bereits ab Wilhelm-Kabus-Str. deutlich verengt, deshalb auch hier q2; es gibt auch ein weiteres Einfahrt-verboten-Schild, deshalb nun q4
 Ella-Barowsky-Str. ab Wilhelm-Kabus-Str.	q4::inwork; 7696,7771 7632,7807
@@ -49586,7 +49587,7 @@ EOF
 #: also_indoor: traffic (ex-G,T,no-H,no-W)
 #: source_id: planb2026:13.3422831,52.44531015,19.05.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026) (vorfristig inaktiv) (bis 02.07.2027)
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: last_checked: 2026-09-19 (traffic) vvv
+#: last_checked: 2026-10-09 (traffic) vvv
 #: check_frequency: 21d (traffic) vvv
 #: next_check: 2027-08-02 (planb) vvv
 # REMOVED --- #: note: hier Halteverbotsschilder bis 4.11.2025
@@ -50140,6 +50141,7 @@ EOF
 #: source_id: LMS-BR:401269/72 viz2021:13.49069,52.51518,09.03.2026,07:00 vizapi2026:166/2026 (bis 18.05.2026) (bis 22.05.2026) (bis 12.06.2026) (bis 03.07.2026) (bis 14.08.2026) (bis 21.08.2026) (bis 25.08.2026 + weitere Arbeiten) (bis 02.10.2026) (bis 13.11.2026)
 #: source_id: planb2026:13.49109735,52.51540484,03.03.2026, ("Sperrung einer Fahrtrichtung", bis 21.08.2026) (inaktiv) (bis 13.11.2026)
 #: source_id: planb2026:13.49222562,52.51611978,31.08.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 02.10.2026) (bis 13.11.2026)
+#: source_id: planb2026:13.49096107,52.51529035,12.10.2026,07:00 ("Sicherung gemäß Vz.-plan", kurzer Abschnitt in der Schottstr., bis 26.10.2026)
 # REMOVED (alte Bauarbeiten von 2025) --- #: note: bei rbb bis 31.07.2025 verlängert --- #: note: durch die Umwege + Bordsteine ist q4 berechtigt ---	q4::inwork; 16397,12397 16485,12384 16583,12371
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260308 (neue Bauarbeiten 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
@@ -50594,10 +50596,12 @@ EOF
      },
      { from  => undef, # 1752606169, # 2025-07-15 21:02
        until => undef, # $isodate2epoch->("2025-12-18 15:00:00"), # 1758319200, # 2025-09-20 00:00
+       dont_check_date => 1,
 #      text  => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz sowie vor Hermannstr., voraussichtlich bis September 2025',
 #      text  => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, voraussichtlich bis Dezember 2025',
 #      text  => 'Thomasstr.: Sperrung vor Hermannstr., Ende der Bauarbeiten unbekannt',
-       text  => 'Kirchhofweg: Bauarbeiten vor der Hermannstr., Umwege, geplant bis Mitte September 2026, evtl. werden die Bauarbeiten verlängert',
+#      text  => 'Kirchhofweg: Bauarbeiten vor der Hermannstr., Umwege, geplant bis Mitte September 2026, evtl. werden die Bauarbeiten verlängert',
+       text  => 'Kirchhofweg: Bauarbeiten vor der Hermannstr., Umwege, geplant bis Mitte September 2026, möglicherweise bereits beendet',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: THOMAS-2025
@@ -50609,8 +50613,7 @@ EOF
 #: note: Überquerungsmöglichkeit nun ca. 30m südlich der Kreuzung; mittlerweile manchmal ein möglicher direkter Weg, evtl. nur außerhalb der Arbeitszeiten
 #: last_checked: 2026-10-06
 #: check_frequency: 14d
-# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-09-15 (ex-planb)
-#: next_check: 2026-12-31 (infravelo, mobilitaetsrat)
+#: next_check: 2026-10-09 (BA-Pressemitteilung)
 Kirchhofweg: Umwege vor der Hermannstr./Thomasstr.	q2::inwork 11687,7284 12185,7381
 # REMOVED #: note: kurzer Abschnitt gesperrt (~40m) + Bordsteine, deshalb q3 --- Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
 # REMOVED (alte Meldung) --- #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg --- #: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
@@ -52790,7 +52793,7 @@ EOF
 EOF
      },
      { from  => 1769925600, # 2026-02-01 07:00
-       until => $isodate2epoch->("2026-10-09 23:59:59"), # $isodate2epoch->("2026-08-07 17:00:00"), # undef, # $isodate2epoch->("2026-06-05 23:59:59"), # undef, # 1774195200, # 2026-03-22 17:00
+       until => 1791579835, # $isodate2epoch->("2026-10-09 23:59:59"), # $isodate2epoch->("2026-08-07 17:00:00"), # undef, # $isodate2epoch->("2026-06-05 23:59:59"), # undef, # 1774195200, # 2026-03-22 17:00
 #      text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 02.02.2026 bis 30.04.2026',
 #      text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, bis Anfang Juni 2026',
 #      text  => 'Knesebeckstr.: Einbahnstraße zwischen Savignyplatz und Mommsenstr., offen Richtung Norden, Ende der Bauarbeiten unbekannt',
@@ -52802,7 +52805,7 @@ EOF
 #: source_id: LMS-BR:403129/72 viz2021:13.32184,52.5019, (südlicher Abschnitt) (bis 30.04.2026) (bis 05.06.2026) (bis 30.07.2026)
 #: source_id: LMS-BR:412910/72 viz2021:13.32186,52.50204,22.06.2026,07:00 (zwischen Kudamm und Savignyplatz, bis 07.08.2026) (inaktiv)
 #: source_id: LMS-BR:412911/72 viz2021:13.32181,52.50279,22.06.2026,07:00 (Mommsenstr., bis 07.08.2026) (inaktiv)
-#: source_id: LMS-BR:422946/72 (nur vizapi2026, bis 09.10.2026)
+#: source_id: LMS-BR:422946/72 (nur vizapi2026, bis 09.10.2026) (inaktiv)
 #: source_id: planb2026:13.32209614,52.50271589,22.06.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 07.08.2026) (inaktiv)
 # REMOVED --- #: also_indoor: traffic (G,T,H,W)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mougzc3dhs25
@@ -54001,11 +54004,12 @@ EOF
 #: by: https://fahrinfo.vbb.de/him-uploads/1779880055285_0.jpg
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=11191 (Antrag)
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260714
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261009
 #: source_id[inactive]: bvg2024:21#HIM_FREETEXT_338258 (ab 26.5.2026)
 #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_339081
 #: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_349187
 #: source_id: bvg2024:21#1e19a92e-36f6-4510-a634-63a077ad6ab4 (bis 2026-09-07)
-#: source_id: LMS-BR:409559/72 viz2021:13.51705,52.48181,26.05.2026,07:00 vizapi2026:505/2026 (Ehrlichstr., bis 04.08.2026) (bis 21.09.2026) (bis 11.10.2026) (bei vizapi2026 bis 14.10.2026)
+#: source_id: LMS-BR:409559/72 viz2021:13.51705,52.48181,26.05.2026,07:00 vizapi2026:505/2026 (Ehrlichstr., bis 04.08.2026) (bis 21.09.2026) (bis 11.10.2026) (bis 14.10.2026)
 #: source_id: LMS-BR:409558/72 viz2021:13.5113,52.48421,26.05.2026,07:00 vizapi2026:509/2026 (Blockdammweg, bis 26.09.2026) (bis 05.10.2026) (bis 12.10.2026)
 #: source_id: planb2026:13.52464066,52.47856838,18.05.2026, ("Vollsperrung beider Fahrbahnen", Ehrlichstr., bis 11.10.2026)
 #: source_id: planb2026:13.51311063,52.48348885,02.03.2026, ("Vollsperrung beider Fahrbahnen", Blockdammweg, bis 05.10.2026)
@@ -54200,17 +54204,17 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-08-24 00:00:00"), # 1780200000, # 2026-05-31 06:00
-       until => $isodate2epoch->("2026-10-09 23:59:59"), # $isodate2epoch->("2026-09-25 23:59:59"), # 1781881200, # 2026-06-19 17:00
+       until => $isodate2epoch->("2026-10-23 23:59:59"), # $isodate2epoch->("2026-09-25 23:59:59"), # 1781881200, # 2026-06-19 17:00
 #      text  => 'Seelingstr.: Sperrung zwischen Sophie-Charlotten-Str. und Danckelmannstr., evtl. ist auch der Radverkehr betroffen, vom 01.06.2026 06:00 bis 19.06.2026 17:00',
-       text  => 'Seelingstr.: Sperrung zwischen Danckelmannstr. und Nehringstr., evtl. ist auch der Radverkehr betroffen, vom 24.08.2026 06:00 bis voraussichtlich 09.10.2026',
+       text  => 'Seelingstr.: Sperrung zwischen Danckelmannstr. und Nehringstr., evtl. ist auch der Radverkehr betroffen, vom 24.08.2026 06:00 bis voraussichtlich 23.10.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:410355/72 viz2021:13.288284,52.515211,01.06.2026,06:00 (bis 19.06.2026) (inaktiv)
 # REMOVED ---	q4::inwork 2686,12051 2485,12032
 #: source_id: planb2026:13.29237017,52.51538613,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 07.09.2026) (inaktiv)
 #: source_id: LMS-BR:419944/72 viz2021:13.29075,52.51534,24.08.2026,07:00 (bis 07.09.2026) (bis 25.09.2026) (inaktiv)
-#: source_id: LMS-BR:423758/72 viz2021:13.29075,52.51534,29.09.2026,07:00 (bis 09.10.2026)
-#: source_id: LMS-BR:423625/72 viz2021:13.293703,52.515506,28.09.2026,07:00 (bis 09.10.2026)
+#: source_id: LMS-BR:423758/72 viz2021:13.29075,52.51534,29.09.2026,07:00 (bis 09.10.2026) (bis 23.10.2026)
+#: source_id: LMS-BR:423625/72 viz2021:13.293703,52.515506,28.09.2026,07:00 (bis 09.10.2026) (inaktiv)
 #: source_id: planb2026:13.2939394,52.5154944,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 25.09.2026) (inaktiv)
 #: source_id: planb2026:13.29098992,52.51534596,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.10.2026)
 Seelingstr.	q4::inwork 2686,12051 2920,12070
@@ -54842,8 +54846,8 @@ EOF
 #: source_id: LMS-BR:415649/72 viz2021:13.41002,52.52861,13.07.2026,07:00 vizapi2026:691/2026 (bis 22.12.2028)
 #: osm_watch: note 5394140 1
 #: note: die ersten drei Wochen nur gesperrt, ohne dass an der Oberfläche sichtbare Bauarbeiten wären
-#: last_checked: 2026-10-02 (mapillary) vvv
-#: check_frequency: 21d (am Anfang höhere Frequenz) vvv
+#: last_checked: 2026-10-09 vvv
+#: check_frequency: 30d (am Anfang höhere Frequenz) vvv
 #: next_check: 2028-12-22 (VIZ-Verkehrsmeldung) vvv
 #: priority: #A
 Rosa-Luxemburg-Str.: Fahrbahn Richtung Süden gesperrt	q4::inwork; 10741,13685 10777,13614 10797,13575 10828,13464
@@ -55072,7 +55076,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1685646.php
 #: by: https://www.entwicklungsstadt.de/s-bahnhof-hirschgarten-deutsche-bahn-kuendigt-neue-sperrungen-an/
 #: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/HZ_berlin-frankfurt-oder-bundesgrenze_hirschgarten_zeitplan_20260916.pdf
-#: source_id: planb2026:13.60287447,52.45758671,06.05.2024, ("Vollsperrung beider Fahrbahnen", bis 31.12.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.60287447,52.45758671,06.05.2024, ("Vollsperrung beider Fahrbahnen", bis 31.12.2026) (vorfristig inaktiv) (bis 31.08.2027)
 #: note: 2024-08-05 - 2024-10-18: Sperrung zwischen Hausnummern 16A und 19 für Kfz, Radfahrer können wohl über der Randbereich ausweichen (evtl. mit q3-Einschränkung?)
 #: note: 2024-10-18 - 2026-10-29: Einbahnstraßenregelung an dieser Stelle, offen Richtung Osten, zum Radverkehr keine Information (vor Ort keine Freigabe für Radfahrer)
 #: note: 2026-07-18 Sa: Durchfahrt offiziell verboten, aber problemlos möglich (evtl. immer an Wochenenden/außerhalb von Arbeitszeiten?)
@@ -55081,7 +55085,8 @@ EOF
 #: last_checked: 2026-09-17 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 60d vvv
-#: next_check: 2026-10-29 (alte DB-Planung) vvv
+# REMOVED --- #: next_check: 2026-10-29 (alte DB-Planung) vvv
+#: next_check: 2027-08-31 (planb) vvv
 #: note: eigentlich 1s:q3:inwork
 Am Wiesenrain: Einbahnstraßenregelung	q3::inwork; 23931,5992 24122,6007
 #: next_check ^^^
@@ -55652,6 +55657,7 @@ EOF
        data  => <<'EOF',
 #: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 vizapi2026:805/2026 (bis 24.08.2026 + weitere Arbeiten) (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026)
 #: source_id: planb2026:13.46032981,52.4391609,10.08.2026, ("Sicherung gemäß Vz.-plan", bis 24.08.2026) (inaktiv) (bis 04.09.2026) (inaktiv)
+#: source_id: vizapi2026:806/2026 (Vollsperrung Laubsängerweg, bis 21.10.2026 + weitere Arbeiten)
 #: osm_watch: note 5414689 2
 #: also_indoor: traffic (G,T,H,W)
 #: XXX Laut osm note von SGA Nk bis vorauss. Ende 2026
@@ -56504,25 +56510,10 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1791579126, # undef, # XXX
        text  => 'Koppenplatz: temporäre Sperrung der Fahrbahn',
        type  => 'handicap',
        data  => <<'EOF',
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_31_2001_2076_online.pdf (Teileinziehung von öffentlichem Straßenland)
-#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13874 (Anfrage)
-#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13896 (Antrag)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf (Teileinziehung von öffentlichem Straßenland)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/mitte/betonbanke-statt-poller-an-der-berliner-auguststrasse-entsteht-eine-kleine-fussgangerzone-16112836.html
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1722342.php (Eröffnung der Fußgängerzone am 28. Oktober 2026)
-#: source_id: planb2026:13.39810882,52.52733192,14.09.2026,00:01 ("Vollsperrung beider Fahrbahnen", nur Koppenplatz, bis 02.11.2026)
-#: source_id: LMS-BR:422682/72 viz2021:13.39783,52.5277, (nur Koppenplatz, bis 02.11.2026)
-#: also_indoor: traffic (no-G,no-T,no-H.no-W)
-#: XXX Vorbereitung für die neue Fußgängerzone
-#: last_checked: 2026-10-02 (mapillary)
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2026-09-14 (planb)
-# REMOVED --- #: next_check: 2026-09-21 (Halteverbotsschilder)
-#: next_check: 2026-10-28 (BA-Pressemitteilung)
 	q4::inwork 9961,13502 9946,13550
 EOF
      },
@@ -56630,15 +56621,17 @@ EOF
      },
      { from  => $isodate2epoch->("2026-10-18 00:00:00"),
        until => $isodate2epoch->("2026-11-13 23:59:59"),
-       text  => 'Dörpfeldstr.: Gleisbauarbeiten, Sperrung in Höhe Marktplatz Adlershof, voraussichtlich vom 19. Oktober 2026 bis 13. November 2026',
+       text  => 'Dörpfeldstr.: Gleisbauarbeiten, Sperrung der Fahrbahn in Höhe Marktplatz Adlershof, Gehwege für Radfahrer frei, voraussichtlich vom 19. Oktober 2026 bis 13. November 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.aktives-adlershof.de/aktuelles?date=20261007 ("Dörpfeldstraße gesperrt", 19. Oktober bis 16. Dezember 2026 in zwei Bauabschnitten)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1723358.php ("Radfahrende können die entsprechend ausgeschilderten Gehwege in Schrittgeschwindigkeit mit nutzen")
+#: by: https://viz.berlin.de/aktuelle-meldungen/baumassnahmen-in-der-dorpfeldstrasse-19.10-bis-16.12.26/
 #: source_id: planb2026:13.54714994,52.43753519,19.10.2026, ("Vollsperrung beider Fahrbahnen", Bereich Marktplatz Adlershof, 19.10.2026 bis 16.12.2026)
 #: next_check: 2026-10-18 (planb + aktives-adlershof (1 Tag vorher))
 # XXX next_check: 2026-11-12 (nächster Bauabschnitt)
-Dörpfeldstraße zwischen Friedenstraße - Hackenbergstraße	q4::inwork 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
-# XXX 2.BA: Dörpfeldstraße zwischen Anna-Seghers-Straße - Gellertstraße	q4::inwork 20012,3532 20082,3578
+Dörpfeldstraße zwischen Friedenstraße - Hackenbergstraße	q3::inwork 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
+# XXX 2.BA: Dörpfeldstraße zwischen Anna-Seghers-Straße - Gellertstraße	q3::inwork 20012,3532 20082,3578
 EOF
      },
      { from  => $isodate2epoch->("2026-10-08 00:00:00"),
@@ -56647,8 +56640,45 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261008
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mxhhbqvtwb23
 #: source_id: vizapi2026:1042/2026 (09.10.2026 21:00 bis 12.10.2026 04:00)
+#: source_id: LMS-BR:424860/72 viz2021:13.37093,52.49266,09.10.2026,21:30 (bis 12.10.2026)
 	2::inwork 8595,9495 8358,9568 8192,9619
+EOF
+     },
+     { from  => 1791669600, # 2026-10-11 00:00
+       until => 1793401200, # 2026-10-31 00:00
+       text  => 'Dietzgenstr./Schönhauser Str./Schillerstr.: Bauarbeiten im Kreuzungsbereich, evtl. ist der Radverkehr betroffen, vom 12.10.2026 bis 30.10.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1721843.php (12. - 30. Oktober 2026)
+#: by: https://viz.berlin.de/aktuelle-meldungen/pankow-sperrung-der-kreuzung-dietzgenstrasse-schonhauser-strasse-schillerstrasse-12-30.10.26/
+#: by: https://www.entwicklungsstadt.de/vollsperrung-in-pankow-strassenbau-trifft-auch-die-tramlinie-m1/
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261009
+	q4::inwork 9983,20581 10066,20494 10088,20570
+	q4::inwork 10178,20525 10066,20494 10064,20437
+EOF
+     },
+     { from  => 1791669600, # 2026-10-11 00:00
+       until => 1795215600, # 2026-11-21 00:00
+       text  => 'Tassostr.: Leitungsarbeiten, Anbindung an die Berliner Allee gesperrt, vom 12.10.2026 bis voraussichtlich 20.11.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261009
+#: source_id: planb2026:13.44808156,52.54700524,10.06.2026, ("Sicherung gemäß Vz.-plan", bis 20.11.2026)
+	q4::inwork 13623,15954 13614,15984 13625,16054
+EOF
+     },
+     { from  => 1791669600, # 2026-10-11 00:00
+       until => $isodate2epoch->("2027-04-30 23:59:59"),
+       text  => 'Genter Str.: Umgestaltung, Sperrung auch für den Radverkehr, vom 12.10.2026 bis April 2027',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.entwicklungsstadt.de/umgestaltung-im-wedding-entsiegelung-der-genter-strasse-bis-2027/ (Baubeginn September 2026)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1723504.php ("Klimaangepasste Umgestaltung der Genter Straße" ab 12. Oktober 2026 bis April 2027, Sperrung auch für den Radverkehr)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/klimaangepasster-aufenthalt-und-erholungsort-genter-strasse-1680391.php
+#: next_check: 2026-10-12 (BA-Pressemitteilung)
+Genter Str.: Umgestaltung	q4::inwork 7064,15515 7012,15571
 EOF
      },
     );

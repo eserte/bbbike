@@ -226,6 +226,15 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (entfernt) --- #: also_indoor: traffic (G,H) --- #: XXX Parkverbotsschilder bis zum 20.6.2021 --- #: add_fragezeichen: Sind die Bauarbeiten in der Pettenkoferstr. bereits beendet? --- #: last_checked: 2021-05-17 --- #: next_check: 2021-06-20 --- # REMOVED --- #: valid: -20210620 --- Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbahn	q3::inwork 14858,12765 14836,12826
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13161,11795 13066,11854# 
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
+# 
+#: source_id: planb2026:13.44849499,52.5121092,12.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026)
+#: next_check: 2026-10-12 vvv
+#: valid: 20261012-20261016 vvv
+Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
+Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
+#: valid ^^^
+#: next_check ^^^
+# 
 # REMOVED --- #: last_checked: 2016-07-27 --- #: check_frequency: 14d --- Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12413,11901 12366,11808
 # REMOVED --- #: XXX laut fritz bis 09.09.2016 --- #: last_checked: 2016-08-07 --- #: next_check: 2016-09-09 --- Lange Str.: Bauarbeiten, Kreuzungsbereich gesperrt, 2x Bordsteine	q3::inwork 11993,11978 12238,11931
 # REMOVED --- : source_id: LMS-BR_r_LMS-BR_73434 --- #: source_id: 2147340364 --- #: source_id: LMS-BR_r_LMS-BR_78589 --- #: source_id: 2147340546 --- #: XXX bis Mitte Dezember --- #: last_checked: 2016-12-12 --- #: next_check: 2016-12-19 --- #: priority: #A --- #: valid: -20161219 --- Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbrücke gesperrt, Gehweg für Radfahrer frei	q3::inwork 12645,11673 12551,11515
@@ -540,15 +549,6 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
 ### Mitte ###
-# 
-#: by: https://www.tagesschau.de/inland/regional/berlin/rbb-tickets-fuer-volksbad-der-berliner-volksbuehne-ab-dienstag-erhaeltlich-100.html
-#: osm_watch: way id="31619761" version="16"
-#: osm_watch: note 5452482 1
-#: last_checked: 2026-10-02 (mapillary)
-# REMOVED --- #: next_check: 2026-10-01 (Tagesschau)
-#: next_check: 2026-10-07 (vermutete Abbauarbeiten)
-#: valid: -20261007
-Rosa-Luxemburg-Platz: temporäres Volksbad auf der Fahrbahn	q4 10828,13464 10931,13419
 # 
 # REMOVED (geprüft: keine Baustelle mehr) --- #: source_id: planb2026:13.3804937,52.51755219,03.08.2026, ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv)
 # REMOVED --- #: source_id: planb2026:13.3804937,52.51755219,18.08.2026, ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
@@ -5766,6 +5766,8 @@ Gabriel-Max-Str.: Fußgängerzone für Radfahrer frei	q1+ 14065,11605 14049,11553
 Niemannstr.: Fußgängerzone für Radfahrer frei	q1+ 14254,11377 14211,11229
 # 
 Maxstr.: Fußgängerzone für Radfahrer frei	q1+ 7781,15804 7738,15838
+# 
+Koppenplatz: Fußgängerzone für Radfahrer frei	q1- 9961,13502 9946,13550
 # 
 #: note: Grünanlagenschild ohne Zusatzschilder
 Staakener Feldstr.: einige Fußgänger	q1 -7647,13985 -7716,14031

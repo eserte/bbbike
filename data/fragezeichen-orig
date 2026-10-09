@@ -1486,6 +1486,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: source_id: planb2026:13.49223129,52.55866135,08.09.2025, (bis 27.07.2026) (inaktiv)
 #: source_id: planb2026:13.48041976,52.55368539,05.08.2026, ("Sicherung gemäß Vz.-plan", bis 29.10.2026)
 #: source_id: LMS-BR:419243/72 viz2021:13.48997,52.55798,12.08.2026,07:00 vizapi2026:826/2026 (bis 04.09.2026) (bis 29.10.2026)
+#: source_id: LMS-BR:424777/72 viz2021:13.49483,52.55973,09.10.2026,07:00 (bis 29.10.2026)
 #: XXX Fertigstellung laut osm note sogar erst Anfang 2027
 #: last_checked: 2026-10-07
 #: check_frequency: 30d
@@ -1503,6 +1504,7 @@ Hansastr.: Radspuren in Arbeit (2,5m breit) + Sanierung der Fahrbahn	?::inwork 1
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9331 (Antrag, Erwähnung)
 #: by: https://entwicklungsstadt.de/hohenschoenhausen-zwoelf-baustellen-an-hauptstrassen-bis-2026-geplant/ (zukünftige Sperrung (auch Straßenbahn): 2. März bis 26. Juli 2026; Radweg wird bis Ende Oktober 2026 fertig gestellt)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1714014.php (Radfahrstreifen, Abschluss bis Ende 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mxg6bd2acv23 (Verengung zwischen Feldtmannstr. und Liebermannstr. bis Ende Oktober 2026)
 #: source_id: 2147344016 (bis Ende Mai 2019) (inaktiv)
 #: source_id: viz2021:13.50019,52.56161,24.01.2023,15:30 (bis 21.04.2023) (inaktiv)
 #: source_id: viz2021:13.497383,52.560544,25.11.2022,10:00 (Kanalarbeiten bis 25.1.2023) (bis 21.4.2023) (inaktiv) (bis 4.9.2023) (bis 15.9.2023) (bis 29.9.2023) (bis 20.10.2023) (inaktiv)
@@ -3732,9 +3734,9 @@ Finckensteinallee/Baseler Str.: Zebrastreifen geplant	?::projected 3147,2888 317
 #: last_checked: 2026-08-05
 #: check_frequency: 180d
 Poelchaustr./Langhoffstr.: Zebrastreifen geplant	?::projected 19807,14492 19817,14459 19803,14430
-#: source_id: planb2026:13.5695489,52.56911679,06.08.2026, ("Gegenverkehrsanlage (LZA)", bis 08.09.2026) (vorfristig inaktiv) (bis 12.10.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mspc4umjkw24
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibyqgyree2igqtfs6xy4d42oo5xhynevqcmmd2loplslxb3bfklum
+#: source_id: planb2026:13.5695489,52.56911679,06.08.2026, ("Gegenverkehrsanlage (LZA)", bis 08.09.2026) (vorfristig inaktiv) (bis 12.10.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:418999/72 viz2021:13.56848,52.56949,10.08.2026,07:00 vizapi2026:808/2026 (bis 08.09.2026) (inaktiv) (bis 12.10.2026) (nur noch bei der alten API)
 #: note: nicht in der sen/uvk-Liste aufgeführt
 #: last_checked: 2026-06-16 (mapillary)
@@ -3803,7 +3805,7 @@ Am Falkenberg/Gartenstadtweg: Zebrastreifen geplant	?::projected 21680,948 21685
 #: by ^^^
 # 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (Finanzierung unklar, vermutlich nicht 2023)
-#: last_checked: 2026-09-13
+#: last_checked: 2026-10-09
 #: check_frequency: 180d
 Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,12718 12347,12699
 # 
@@ -4216,6 +4218,19 @@ Lisa-Fittko-Str.: Baustellenfläche und Brache, Weg existiert im südlichen Abschn
 #: check_frequency: 14d (traffic)
 Zwiestädter Str.: Sperrung der Fahrbahn, auch für den Radverkehr?	? 13392,7648 13513,7532
 # 
+#: source_id: planb2026:13.33310668,52.49077497,13.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 24.10.2026)
+#: next_check: 2026-10-13
+Prinzregentenstr.: Bauarbeiten, Sperrung, auch für den Radverkehr?	? 5618,9607 5627,9362
+# 
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/28012026_fahrrat_protokoll_praesentation.pdf (60m lang)
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10059
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1723697.php (60m lang, geschützt, vom Kfz-Verkehr getrennte Signaliserung, Markierungsarbeiten im Oktober 2026)
+#: by: https://viz.berlin.de/aktuelle-meldungen/geschutzte-radverkehrsanlage-in-der-oberlandstrasse/
+#: last_checked: 2026-10-09 (BA-Pressemitteilung)
+#: check_frequency: 30d
+#: next_check: 2026-10-31 (BA-Pressemitteilung)
+Oberlandstr.: geschützte Radverkehrsanlage geplant	?::projected; 10613,6437 10505,6417
+# 
 #: section ^^^
 #: ignore ^^^
 #
@@ -4333,11 +4348,11 @@ Malteserstr.: Busspur geplant, evtl. auch für Radfahrer frei	?; 7539,1529 7630,1
 #: source_id: viz2021:13.40645,52.398143,27.07.2022,07:00 (Leitungsarbeiten, bis 2.11.2022) (inaktiv)
 #: source_id: viz2021:13.406583,52.396514,10.06.2025,07:00 (Leitungsarbeiten, bis 31.12.2025) (inaktiv)
 #: source_id: viz2021:13.406732,52.393143,25.06.2025,07:00 (Buswendemöglichkeit (wegen der Leitungsarbeiten?), bis 06.10.2025) (inaktiv)
-#: source_id: LMS-BR:371939/72 viz2021:13.40677,52.39382, vizapi2026:159/2026 (bis 27.02.2026) (bis 17.07.2026) (bis 30.09.2026) (bis 23.10.2026)
+#: source_id: LMS-BR:371939/72 viz2021:13.40677,52.39382, vizapi2026:159/2026 (bis 27.02.2026) (bis 17.07.2026) (bis 30.09.2026) (bis 23.10.2026) (bei vizapi2026 bis 09.11.2026)
 #: source_id: planb2026:13.40660171,52.39378081,10.06.2025, ("Sperrung einer Fahrtrichtung", bis 30.09.2026) (inaktiv)
 #: last_checked: 2026-06-13
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2026-10-23 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-11-09 (VIZ-Verkehrsmeldung)
 Lichtenrader Damm: Busspur geplant, evtl. auch für Radfahrer frei	?; 10822,-806 10849,-1332
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11431.pdf
@@ -5758,7 +5773,7 @@ Diedersdorfer Weg: entsteht hier eine neue Fahrradstraße?	? 7668,471 7760,440 78
 #: by: https://entwicklungsstadt.de/wp-content/uploads/2021/10/EWS-ZEHLENDORFER-BOGEN-4.jpg (keine Änderung bei der Einmündung erkennbar, Kirchstr. soll teilweise Einbahnstraße werden)
 #: by: https://entwicklungsstadt.de/rathaus-zehlendorf-warum-der-baustart-fruehestens-2029-realistisch-ist/
 #: osm_watch: node id="30134834" version="6"
-#: last_checked: 2025-10-15
+#: last_checked: 2026-06-22 (mapillary)
 #: check_frequency: 360d
 Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maßnahmen?	?::projected 587,2935 600,2922 606,2904
 # 
@@ -7740,7 +7755,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: XXX laut rbb und viz wird zwischen Koppenstr. und Straße der Pariser Kommune ein Radfahrstreifen eingerichtet (stimmt aber nicht)
 # REMOVED --- #: XXX in der Realität wird zurzeit zwischen Andreasstr. und der Koppenstr.; mittlerweile bis Straße der Pariser Kommune gearbeitet (Fahrspur abgesperrt, alter Radweg wird abgebrochen, provisorischer Radweg auf dem Gehweg)
 #: XXX zwischenzeitlich Bauarbeiten zwischen Strausberger Platz und Andreasstr. (Führung auf der Fahrbahn)
-#: last_checked: 2026-08-26 vvv
+#: last_checked: 2026-10-09 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-06-06 vvv
 Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,12540 12352,12509
@@ -7760,7 +7775,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: note 4669630 2
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-09
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7941,7 +7956,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="4"
-#: last_checked: 2026-10-05
+#: last_checked: 2026-10-09
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7949,7 +7964,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-10-08
+#: last_checked: 2026-10-09
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -10101,9 +10116,10 @@ Schönerlinder Brücke: Neubau geplant	?::projected 11980,24276 11959,24220
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1676508.php (Beschluss, angestrebte Benennung zum 20. Januar 2027)
 #: by: https://www.tagesspiegel.de/berlin/israelische-holocaust-gedenkstatte-berlin-benennt-strasse-am-bundestag-nach-yad-vashem-15669206.html
 #: by: https://www.entwicklungsstadt.de/regierungsviertel-dorotheenstrasse-wird-yad-vashem-strasse/
-#: last_checked: 2026-10-06
-# REMOVED --- #: check_frequency: 180d
-#: next_check: 2027-01-20 (Pressemitteilung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_43_3025_3096_online.pdf (Umbenennung mit Wirksamkeit am 20. Januar 2027)
+#: priority: #A
+#: last_checked: 2026-10-09 (Amtsblatt)
+#: next_check: 2027-01-20 (Pressemitteilung + Amtsblatt)
 Dorotheenstr. (Mitte): Umbenennung zu Yad-Vashem-Straße am 20.1.2027	?::projected 8540,12420 8775,12457
 # 
 #: by: https://bvv-spandau.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13329 (bis Herbst 2026)
@@ -10403,6 +10419,10 @@ Tannenstr.: Fahrbahnerneuerung, danach vielleicht bessere Qualität?	? 2056,25035
 #: next_check: 2027-04-30 (BA-Pressemitteilung)
 # REMOVED --- #: next_check: 2027-12-31 (Tsp (old))
 (Metzer Platz -) Krowelstr. - Havelufer: mögliche (Fußweg?)Verbindung	? -3693,13012 -3584,13040 -3635,13094 -3586,13141 -3526,13196
+# 
+#: by: https://www.infravelo.de/projekt/giesebrechtstrasse/ (2. Quartal 2027 - 4. Quartal 2027)
+#: next_check: 2027-12-31
+Giesebrechtstr.: Umgestaltung im Bereich des Hindemithplatzes (geschützter Radfahrstreifen)	?::projected 3912,10699 3881,10699
 # 
 ######################################################################
 #
@@ -13055,6 +13075,7 @@ Schumacher-Quartier: neues Viertel entsteht	?::projected 3976,17559 4849,17312 4
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/mehr-platz-fur-technologieunternehmen-im-berliner-norden-zweites-baugrundstuck-der-urban-tech-republic-kommt-auf-den-markt-16131998.html
 #: by: https://www.entwicklungsstadt.de/flughafen-tegel-das-naechste-grundstueck-kommt-auf-den-markt/
 #: by: https://www.tagesspiegel.de/berlin/die-bvg-nennt-sie-m20-das-sind-die-plane-fur-berlins-neue-tramlinie-zum-kurt-schumacher-platz-16134226.html (Bau der Straßenbahnlinie bis 2034?)
+#: by: https://www.rbb24.de/panorama/beitrag/2026/10/neue-strassenbahn-linie-m20-tram-berlin.html
 #: XXX werden die alten Zufahrtstraßen während der Bauarbeiten noch benutzbar sein?
 #: last_checked: 2026-06-07
 #: check_frequency: 720d
@@ -13781,6 +13802,7 @@ Bebauungsplan 3-43 (Brunnengalerie Buch - Süd): ein neuer Geh/Radweg in Fortsetz
 #: by: https://www.entwicklungsstadt.de/neue-s-bahn-linie-s15-in-berlin-so-geht-der-ausbau-jetzt-weiter/ (Mitte bis Ende der 2030er Jahre)
 #: by: https://www.tagesspiegel.de/berlin/brandenburger-tor-wird-jahrelang-endstation-berliner-nord-sud-tunnel-muss-noch-langer-als-geplant-unterbrochen-werden-15766024.html
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/oeffentlicher-personennahverkehr/projekte-in-umsetzung/s-bahn-linie-s21/
+#: by: https://beteiligung.bund.de/DE/VorhabenFindenUndBeteiligen/Details/Vorhaben.html?id=V-E100860 (Planänderung)
 #: XXX mögliche Sperrungen im Oberflächenverkehr (laut U-10-04_Verkehrsstudie.pdf):
 #: XXX - Ebertstr. (2030-2035), in den Phasen 1 und 3 südlich Straße des 17. Juni, in Phase 2 auch nördlich davon
 #: XXX - einige Wege im Spreebogenpark (aber nicht der Weg zur Gustav-Heinemann-Brücke), evtl. auch der Spreeuferweg?
