@@ -217,8 +217,10 @@ sub run_checks {
 	       $from_d, $from_m, $from_y,
 	       $until_d, $until_m, $until_y);
 	    my $matched;
+	    my $check_text = $o->{text};
+	    $check_text =~ s{\s+\(Stand .*?\)}{};
 	    # XXX avoid code duplication!
-	    if ($o->{text} =~ m{
+	    if ($check_text =~ m{
 				   (?:
 				       (?<from_gerdayrange>$german_ranges_rx)\b\s*
 				   |   (?<from_d>\d+)\.
@@ -248,7 +250,7 @@ sub run_checks {
 		$until_m = defined $+{until_germonth} ? $german_month_to_num{$+{until_germonth}} : $+{until_m};
 		$until_y = $+{until_y};
 		$matched = 1;
-	    } elsif ($o->{text} =~ m{
+	    } elsif ($check_text =~ m{
 					\bbis(?:\s+voraussichtlich)?\s+
 					(?:
 					    (?<until_gerdayrange>$german_ranges_rx)\b\s*
@@ -265,7 +267,7 @@ sub run_checks {
 		$until_m = defined $+{until_germonth} ? $german_month_to_num{$+{until_germonth}} : $+{until_m};
 		$until_y = $+{until_y};
 		$matched = 1;
-	    } elsif ($o->{text} =~ m{
+	    } elsif ($check_text =~ m{
 					\bbis(?:\s+voraussichtlich)?\s+
 					(?:
 					    (?<until_germonth>$german_month_rx)
