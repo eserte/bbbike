@@ -1976,7 +1976,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
 # REMOVED (mittlerweile: Spielstraße) --- #: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
 #: osm_watch: way id="74868383" version="28"
-#: last_checked: 2026-07-26 (mapillary)
+#: last_checked: 2026-10-10
 #: check_frequency: 90d
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238 7697,14187
@@ -1988,7 +1988,7 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7769,14300 7802,14250 7
 #: note: ggfs. qualitaet/handicap-Einträge anpassen
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 #: osm_watch: way id="645343614" version="8"
-#: last_checked: 2026-07-26 (mapillary)
+#: last_checked: 2026-10-10
 #: check_frequency: 90d
 (Heidestr./Kieler Brücke - George-Stephenson-Str.)	NN 7612,14325 7529,14274
 Lisa-Fittko-Str.	N 7820,13994 7734,13944
@@ -14029,7 +14029,7 @@ Soltauer Str.	N 3377,19325 3483,19190 3749,19031
 (Breitenbachstr. - Soltauer Str.)	NN 3909,19002 3738,19007
 Quäkerstr.	N 3733,18376 3738,18573 3731,18601 3713,18621 3562,18712
 Foxweg	N 3731,18601 3758,18613 3848,18611
-Auguste-Viktoria-Allee	N 5225,18070 4905,18142 4786,18168 4690,18185 4609,18199 4531,18217 4414,18243 4291,18264 4182,18288 4094,18307 4009,18322 3909,18342 3876,18348 3733,18376
+Auguste-Viktoria-Allee	N 5225,18070 4905,18142 4786,18168 4690,18185 4609,18199 4531,18217 4414,18243 4291,18264 4182,18288 4094,18307 4009,18322 3909,18342 3876,18348 3855,18352 3733,18376
 General-Barby-Str.	N 4320,17805 4370,18039 4414,18243 4461,18475 4458,18613 4466,18831 4474,18983
 General-Barby-Str.	NN 4474,18983 4475,18998
 Zobeltitzstr.	N 3733,18376 3674,18372 3663,18187 3799,18159 3871,18144 3970,18126 4053,18108 4139,18091 4248,18066 4370,18039
@@ -14039,7 +14039,8 @@ Berenhorststr.	N 4816,17712 4862,17934 4905,18142
 (Scharnweberstr. - Berenhorststr.)	NN 4801,17623 4830,17710
 Belowstr.	N 4946,17701 4992,17908
 Klixstr. (Reinickendorf)	N 3833,17929 3871,18144 3909,18342
-(Weg am Kienhorstgraben)	NN 3876,18348 3799,18159 3723,17979 3706,17931
+(Weg am Kienhorstgraben)	NN 3876,18348 3855,18300 3799,18159 3723,17979 3706,17931
+(Weg am Kienhorstgraben)	NN 3855,18352 3855,18300
 Engelmannweg	N 4558,18342 4531,18217 4492,18013 4462,17892 4429,17763
 Am Doggelhof	N 4462,17892 4537,17874
 General-Woyna-Str.	N 4461,18475 4340,18497 4291,18264 4248,18066 4200,17848 4187,17765
@@ -16727,7 +16728,7 @@ Hassoweg	N 19677,498 19726,628 19741,671 19781,767
 Strelitzer Str.	N 9856,14204 9800,14306 9679,14511 9621,14624 9517,14785
 (Unterführung S-Bhf. Waidmannslust)	NN 4598,22066 4620,22079 4655,22100 4689,22058 4712,22068
 (Unterführung S-Bhf. Waidmannslust)	N 4712,22068 4740,22075
-Nimrodstr.	N 4584,22107 4464,22014 4355,21967 4098,21809 3818,21603 3730,21540
+Nimrodstr.	N 4584,22107 4464,22014 4355,21967 4098,21809 3900,21663 3818,21603 3730,21540
 (Nimrodstr. - Waldpark Steinberg)	NN 3730,21540 3670,21496
 Am Packereigraben	NN 4208,21159 4190,21181 4156,21175 3979,21211
 Rosentreterpromenade	N 4423,20848 4245,21105 4226,21133 4208,21159
@@ -18491,7 +18492,8 @@ Rue Simone de Beauvoir	N 4527,21843 4490,21893 4575,21958
 (Weg in der Cité Foch)	NN 4510,21506 4537,21497 4589,21525 4646,21630 4636,21648 4631,21656 4698,21705
 (Weg in der Cité Foch)	NN 4596,21629 4636,21648
 (Weg in der Cité Foch)	NN 4650,21466 4634,21457 4589,21525
-(Weg in der Cité Foch - Place Molière)	NN 4510,21506 4455,21482 4414,21476 4382,21493
+(Weg in der Cité Foch - Place Molière)	NN 4510,21506 4455,21482 4404,21477 4382,21493
+(Steinbergpark - Cité Foch)	NN 3986,21590 4012,21621 4004,21651 4020,21675 4052,21681 4084,21714 4104,21726 4131,21732 4153,21742
 Holstweg	N -1013,2579 -878,2265
 (Weg parallel zur S-Bahn)	NN 26890,5858 27096,5828 28655,5588 28709,5599 29145,5537 29176,5517 29450,5435 30038,5338 30077,5331
 (Gelfertstr. - Faradayweg)	NN 2166,4858 2175,4845 2185,4831
@@ -20141,7 +20143,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-10-08 vvv
+#: last_checked: 2026-10-10 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

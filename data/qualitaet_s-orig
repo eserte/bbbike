@@ -32,17 +32,17 @@
 #: by: https://entwicklungsstadt.de/cite-foch-dreizuegige-holzschule-als-notloesung-fuer-geplantes-wohnquartier/
 # REMOVED --- #: XXX Privatstraßen; fehlen beide in Berlin.coords.data, laut DPAG-Mitteilungsblatt und LOR 06/2025 PLZ=13469 für beide vvv --- #: XXX laut osm existiert die Rue Édith Piaf bereits
 #: add_fragezeichen: Wurde die Fahrbahndecke gemacht? vvv
-#: last_checked: 2026-06-07
+#: last_checked: 2026-10-10
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-08-06 (osm)
 # REMOVED (deleted) --- #: osm_watch: way id="439884079" version="12"
 #: osm_watch: way id="1420335622" version="7"
-#: osm_watch: note 5332948 1
+#: osm_watch: note 5332948 2
 Rue Édith Piaf: fester Sand, etwas Schotter	Q2 4444,21780 4410,21830 4236,21701 4235,21691
 #: osm_watch: way id="439885059" version="8"
 #: osm_watch: way id="1441876331" version="4"
-#: osm_watch: note 5332946 1
-#: last_checked: 2026-06-07
+#: osm_watch: note 5332946 2
+#: last_checked: 2026-10-10
 #: check_frequency: 120d
 Rue Simone de Beauvoir: fester Sand	Q2 4527,21843 4490,21893 4575,21958
 # REMOVED --- #: XXX ^^^
@@ -534,7 +534,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-10-08
+#: last_checked: 2026-10-10
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -766,7 +766,7 @@ Alt-Buch: Asphalt	Q0 17011,25830 16847,25778 16602,25646 16593,25640 16414,25575
 Müggelseedamm: Kopfsteinpflaster, OK	Q1 26620,4936 26971,5025 27047,5075 27097,5108
 Dahlwitzer Landstr.: Asphalt	Q0 25584,6029 25579,5958
 Auguste-Viktoria-Str.: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	Q1- 2682,8821 2672,8611 2670,8563 2664,8458 2660,8392
-Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3876,18348 3909,18342 4009,18322
+Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3855,18352 3876,18348 3909,18342 4009,18322
 Hüttenweg: Kleinsteinpflaster	Q1 1573,5152 1964,5070
 Birnbaumer Str.: Beton	Q1 21576,6644 21639,6602
 #: note: und in der kälteren Jahreszeit kann es an einigen Stellen leicht matschig sein
@@ -1914,11 +1914,9 @@ Medebacher Weg: Asphalt	Q0 1886,19835 1896,19801
 Am Borsigturm: Asphalt	Q0 1896,19801 1945,19622 1966,19548
 Brünowplatz: Kopfsteinpflaster	Q2 1825,20047 1804,20009 1840,19990 1862,20025 1825,20047
 #: by: Alex (kruschkopp...): vvv
-#: confirmed_by: srt (einige wellige Stellen gibt es hier)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1709865.php (Sanierung bis zur KW 37/2026)
-#: add_fragezeichen: Nach den Bauarbeiten besserer Asphalt?
-#: next_check: 2026-09-11
-Miraustr.: mäßiger Asphalt	Q1+ 3323,20547 3344,20453 3380,20270
+#: historical_note: früher (bis September 2026): mäßiger Asphalt, Q1+
+#: corrected_by: srt (neu gemacht)
+Miraustr.: Asphalt	Q0 3323,20547 3344,20453 3380,20270
 #: corrected_by: srt (unbedeutende Schadstellen: mäßiger Asphalt -> ...; mittlerweile neu gemacht)
 Miraustr.: guter Asphalt	Q0 3380,20270 3572,20020 3629,19938 3820,19688
 #: note: laut ADFC-Karte mäßig/schlecht geeignet
@@ -1928,6 +1926,9 @@ Miraustr.: guter Asphalt	Q0 3820,19688 4006,19443
 #: confirmed_by: srt
 Miraustr.: Asphalt	Q0 4006,19443 4170,19079 4190,19048
 #: by: ^^^
+Innungstr.: westliche Fahrbahnseite mit Kopfsteinpflaster	Q2; 4006,19443 3810,19133
+Innungstr.: östliche Fahrbahnseite asphaltiert	Q0; 3810,19133 4006,19443
+Innungstr.: Beton	Q0 3810,19133 3749,19031
 Schaperstr.: Asphalt, einige Schäden	Q0- 5700,10226 5597,10299 5450,10338
 Bleibtreustr.: Kopfsteinpflaster	Q2 4719,11206 4709,11036 4704,10951 4692,10829 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2- 5164,8740 5192,8737 5228,8729 5347,8732 5498,8726
@@ -5252,7 +5253,7 @@ KGA Plötzensee: Verbundsteinpflaster, teilweise etwas uneben, zweispurig	Q1- 496
 (KGA Plötzensee, Hauptweg): Asphalt	Q0 4963,15259 4883,15289 4777,15398
 (KGA Plötzensee, Hauptweg): Verbundsteinpflaster, zweispurig	Q1 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
-(Am Hohenzollernkanal): Asphalt, teilweise erhebliche Wurzelschäden	Q1- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779
+(Am Hohenzollernkanal): Asphalt, teilweise erhebliche Wurzelschäden	Q2- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922
 (Am Hohenzollernkanal): Asphalt	Q0 4378,15922 4381,15931 4369,15950 4131,16017 4111,15999 4089,15978
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768
@@ -10605,7 +10606,7 @@ Rue Dominique Larrey: Beton mit Schäden	Q1- 3738,16648 3659,16507 3624,16445
 (Am Hohenzollernkanal - Kurt-Schumacher-Damm): Asphalt	Q0 3252,15781 3268,15787 3272,15801 3237,15858
 #: next_check_id: UFERWEGHOHENZOLLERNKANAL-2026
 #: XXX früher Asphalt, Q0; evtl. nur wegen der Bauarbeiten provisorisch aufgeschütteter Kies für die Baufahrzeuge?
-#: last_checked: 2026-06-25 (mapillary)
+#: last_checked: 2026-10-10
 #: check_frequency: 90d
 #: next_check: 2028-06-01 (VIZ)
 (Am Hohenzollernkanal - Kurt-Schumacher-Damm): loser Schotter	Q2- 3237,15858 3307,15984
@@ -12210,8 +12211,8 @@ Waschbärweg: Verbundsteinpflaster	Q1+ 26160,12538 26246,12648 26250,12656 26300,
 (Triftpark): Parkweg, etwas Schotter	Q1- 4538,20621 4486,20638 4433,20715 4341,20765 4225,20775 4203,20792
 (Am Grüngürtel - Weg zwischen Triftstr. und Eichborndamm): Parkweg	Q1 4597,20508 4626,20577
 (Rosentreterpromenade - Hermsdorfer Str.): Parkweg	Q1 4315,21142 4587,20947 4600,20972 4626,20960 4644,20952
-(Weg in der Cité Foch - Place Molière): Gehwegplatten	Q0- 4510,21506 4455,21482
-(Weg in der Cité Foch - Place Molière): Verbundsteinpflaster	Q1 4455,21482 4414,21476 4382,21493
+(Weg in der Cité Foch - Place Molière): Gehwegplatten	Q1+ 4510,21506 4455,21482
+(Weg in der Cité Foch - Place Molière): Verbundsteinpflaster	Q1 4455,21482 4404,21477 4382,21493
 (Weg am Packereigraben - Schluchseestr.): wassergebundene Decke	Q1 5471,22092 5470,22101
 (Weg am Packereigraben - Schluchseestr.): Beton	Q0 5470,22101 5469,22114
 (Weg am Packereigraben - Schluchseestr.): Gehwegplatten	Q0- 5469,22114 5443,22210
@@ -13938,12 +13939,14 @@ An der alten Gärtnerei: Asphalt	Q0 10879,3719 10888,3787 10898,3865 10922,3917 1
 Lübbener Str.: Asphalt, einige Löcher	Q1 12729,10515 12608,10294
 Weichselstr. - Sasarsteig: Verbundsteinpflaster	Q1 12330,8636 12300,8613 12274,8607
 Weichselstr. - Sasarsteig: Mosaikpflaster	Q1 12274,8607 12276,8590 12165,8566
-(Weg am Kienhorstgraben): Asphalt	Q0 3876,18348 3799,18159 3723,17979
+(Weg am Kienhorstgraben): Asphalt	Q0 3876,18348 3855,18300 3799,18159 3723,17979
+(Weg am Kienhorstgraben): Asphalt	Q0 3855,18352 3855,18300
 #: next_check_id: U6-2022
 #: XXX Wird dieser Abschnitt auch asphaltiert? Vielleicht nach den Bauarbeiten an der Seidelstraßenbrücke?
 #: XXX_osm laut osm fälschlicherweise Verbundsteinpflaster; zwischenzeitlich Komplettsperrung
 #: osm_watch: way id="5059946" version="8"
-#: last_checked: 2026-05-19
+#: osm_watch: note 4876470 2
+#: last_checked: 2026-10-10
 #: check_frequency: 120d
 #: next_check: 2026-12-01 (berliner-zeitung (Ende 2026))
 (Weg am Kienhorstgraben): unbefestigter Weg, Schotter	Q2 3723,17979 3706,17931
@@ -14724,6 +14727,10 @@ Buschkrugallee [64]: Betonpflaster	Q0- 13460,5834 13427,5849 13190,5794
 Wuhletalstr. [Wohngebiet]: Beton	Q1 21140,17486 21128,17426 21081,17329
 # 
 Blumeneschenweg: Asphalt	Q0 23363,11600 23403,11721 23375,11731 23382,11760
+# 
+(Steinbergpark - Cité Foch): wassergebundene Decke	Q1 3986,21590 4012,21621 4004,21651 4020,21675 4052,21681 4084,21714 4104,21726
+(Steinbergpark - Cité Foch): Verbundsteinpflaster	Q1 4104,21726 4131,21732
+(Steinbergpark - Cité Foch): wassergebundene Decke	Q1 4131,21732 4153,21742
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 
@@ -16044,9 +16051,12 @@ Kneippstr.: schlechtes Kopfsteinpflaster	Q3 2891,23829 3015,23913
 #: confirmed_by: srt
 Waldsteg: Asphalt, einige Schäden	Q0- 8364,19166 8337,19160 8277,19210 8166,19308 7940,19521 7849,19614 7851,19631 7857,19693
 #: confirmed_by: srt
-Niederstr.: altes grobes Kopfsteinpflaster	Q3; 7634,19793 7769,19736 7857,19693
+Niederstr.: altes grobes Kopfsteinpflaster	Q3; 7769,19736 7857,19693
 #: corrected_by: srt (added Asphaltstreifen)
-Niederstr.: altes grobes Kopfsteinpflaster, teilweise provisorischer Asphaltstreifen	Q3+; 7857,19693 7769,19736 7634,19793
+Niederstr.: altes grobes Kopfsteinpflaster, teilweise provisorischer Asphaltstreifen	Q3+; 7857,19693 7769,19736
+#: historical_note: früher altes grobes Kopfsteinpflaster (Richtung Hauptstr. mit teilweise provisorischen Asphaltstreifen), Q3;Q3+
+#: corrected_by: srt (neu gemacht)
+Niederstr.: Asphalt	Q0 7769,19736 7634,19793
 #: by ^^^
 # 
 #: by: Thomas Dobrzinski
@@ -16710,7 +16720,7 @@ Strelitzer Str.: Kopfsteinpflaster	Q2 9856,14204 9800,14306 9679,14511 9621,1462
 #: by: Horst Schmidt:
 #: confirmed_by: Corinna Orth ("Kopfsteinpflaster und Schlaglöcher"):
 #: confirmed_by: srt (im mittleren Abschnitt)
-Nimrodstr.: schlechtes Kopfsteinpflaster	Q3 4584,22107 4464,22014 4355,21967 4098,21809 3818,21603 3730,21540 3670,21496
+Nimrodstr.: schlechtes Kopfsteinpflaster	Q3 4584,22107 4464,22014 4355,21967 4098,21809 3900,21663 3818,21603 3730,21540 3670,21496
 # 
 #: by: Christel Klapötke: vvv
 #: corrected_by: srt (schlechter Sandweg, Q3 -> ...)
@@ -20963,7 +20973,8 @@ Orchideenweg: Beton	Q1+ 16221,3248 16618,2965 16541,2866
 Brassenpfad: guter Beton	Q0 23641,3342 23452,3613 23337,3762 23316,3778
 # 
 #: by: Holger (weltenbrand):
-Graf-Haeseler-Str.: gutes Kopfsteinpflaster	Q1 4096,17890 4139,18091 4182,18288
+#: corrected_by: srt (gutes Kopfsteinpflaster, Q1 -> ...)
+Graf-Haeseler-Str.: Kleinsteinpflaster	Q1- 4096,17890 4139,18091 4182,18288
 # 
 #: by: Kerstin Goldbeck:
 #: corrected_by: srt (gutes Kopfsteinpflaster -> ...) vvv
@@ -22761,8 +22772,13 @@ Laböer Str.: Asphalt	Q0 9484,16395 9594,16384
 #: note: 13 km/h als Höchstgeschwindigkeit angegeben
 Forchheimer Str.: mäßiges Kopfsteinpflaster	Q2- 11487,17984 11488,17946 11540,17684
 # 
-#: by: Güntert Eisert
-An der Nordbahn: asphaltiert	Q0 7184,19663 7121,19726 6659,20135
+#: by: Güntert Eisert vvv
+#: confirmed_by: srt
+An der Nordbahn: asphaltiert	Q0 7184,19663 7121,19726
+#: corrected_by: srt (asphaltiert, Q0 -> ...)
+#: note: an einigen Stellen wurde der Asphalt durch eine wassergebundene Decke ersetzt, vermutlich wegen der Wurzelhebungen
+An der Nordbahn: asphaltiert, einige Wurzelhebungen	Q1+ 7121,19726 6659,20135
+#: by ^^^
 # 
 #: by: joachim fischer:
 #: confirmed_by: srt (zumindest das Kopfsteinpflaster)
@@ -30754,8 +30770,8 @@ Narzissenpfad: Asphalt	Q0 -7387,14951 -7523,14969
 # 
 #: by: Brian (scuba...)
 #: note: "kleine Nebenstraße, Vorsicht Kita mit Ein- und Aussteigenden"
-#: corrected_by: srt (gut asphaltiert -> )
-Engelroder Weg: Beton	Q0 6269,21748 6245,21798 6211,21870 6162,21938
+#: corrected_by: srt (gut asphaltiert, Q0 -> ...)
+Engelroder Weg: Beton	Q0- 6269,21748 6245,21798 6211,21870 6162,21938
 # 
 #: by: Freisendorf
 #: confirmed_by: srt
@@ -35033,5 +35049,6 @@ Einmündungsbereich asphaltiert	Q0 12601,7284
 #: historical_note: seit etwa Sommer 2026
 #: note: Aufpflasterung
 Einmündungsbereich mit Betonsteinpflaster	Q0- 3571,11451
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 7769,19736
 #: ignore ^^^
 #: section ^^^

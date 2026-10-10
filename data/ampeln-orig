@@ -49,7 +49,7 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 (bis 15.10.2026)
-#: last_checked: 2026-10-08
+#: last_checked: 2026-10-10
 #: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261015
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
@@ -90,11 +90,13 @@ Allee der Kosmonauten/Meeraner Str.	X::inwork 18382,13492
 # REMOVED --- #: next_check: 2026-12-12 (VIZ-Verkehrsmeldung zur möglicherweise verknüpften Baustelle)
 # REMOVED --- Allee der Kosmonauten/Krankenhauszufahrt	X::inwork::alternating 17779,13457
 # 
+#: next_check_id: FELD-2026
 #: source_id: LMS-BR:417487/72 viz2021:13.38351,52.53674,29.07.2026,07:00 (bis 16.10.2026)
+#: source_id: planb2026:13.38382088,52.53641823,28.07.2026, ("Gegenverkehrsanlage (LZA)", bis 18.12.2026)
 #: note: Richtung Süden wird der Radverkehr mit Benutzungspflicht über den Bürgersteig (Charlottenburger Platten) geführt (etwa 120m)
-#: last_checked: 2026-09-15
-#: next_check: 2026-10-16
-#: valid: -20261016
+#: last_checked: 2026-10-10
+#: next_check: 2026-12-18 (planb)
+#: valid: -20261218
 Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 # 
 # REMOVED (möglicherweise an der Kreuzung Sterndamm, Erweiterung der bestehenden Ampelanlage) --- #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260724
@@ -3892,7 +3894,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	F -6053,1224
 #: note: Anforderungsampel
 	F 6522,12662
-#: by: mapillary
+#: note: Kontaktschleife in der Rue Georges Vallerey
 	X 4775,21522
 #: XXX_prog: gilt nicht für rechtsabbiegende Radfahrer in der Relation Breitscheidplatz (NO) - Schildhornstr. (SO)
 	X 4074,6681
@@ -4581,7 +4583,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: XXX temporär
 #: osm_watch: node id="3779924761" version="12"
 #: osm_watch: note 5445919 3
-#: last_checked: 2026-08-26
+#: last_checked: 2026-10-10
 #: next_check: 2027-06-04 (planb + VIZ-Verkehrsmeldung)
 #: valid: -20270604
 	F::inwork 7480,14660

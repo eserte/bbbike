@@ -886,7 +886,7 @@ Gehwegplatten	RW2; 5198,17433 5109,17507
 Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 4801,17623 4683,17669 4584,17704 4429,17763 4392,17777 4320,17805 4200,17848 4096,17890 4016,17918
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben vvv
-#: last_checked: 2026-05-19 vvv
+#: last_checked: 2026-10-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-01 (berliner-zeitung (Ende 2026)) vvv
 #: XXX Benutzungspflicht nur temporär? früher R1;
@@ -906,7 +906,7 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2268,19919 2224,
 #: note: Scharnweberstraße/Seidelstr./Berliner Str., Richtung Wedding
 #: next_check_id: U6-2022
 #: XXX früher RW1, jetzt temporäre Benutzungspflicht, Busspur ist dort, wo es Bürgersteigradwege gibt, nicht für Radfahrer freigegeben; außerdem Zweirichtungsradweg im Bereich der Seidelstraßenbrücke vvv
-#: last_checked: 2026-08-25 (mapillary) vvv
+#: last_checked: 2026-10-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-01 (berliner-zeitung (Ende 2026)) vvv
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-18 Uhr, hohe Busfrequenz	RW5; 2015,20336 2044,20289 2109,20188 2169,20095 2224,20007 2268,19919
@@ -1497,7 +1497,7 @@ Fahrradschleuse	RW3; 7612,14325 7566,14404
 Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7829,14665
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
-#: last_checked: 2026-08-26 vvv
+#: last_checked: 2026-10-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
 #: XXX früher RW1;, nun Benutzungspflicht
@@ -3218,7 +3218,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-10-06 vvv
+#: last_checked: 2026-10-10 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -5964,11 +5964,9 @@ alte Gehwegplatten, halbhoher Bord gegen Gehweg	RW1; 2537,22139 2533,22253 2587,
 Asphalt mit erheblichen Wurzelhebungen	RW2; 2188,20910 2117,21081 1958,21301 1864,21479
 	RW2; 1864,21479 1942,21564
 alte Betonplatten mit Hebungen	RW1; 1942,21564 2071,21636 2250,21639 2305,21680 2319,21701
-#: by: Rudolf Kionke vvv
-sehr schmal, holprig wegen Baumwurzeln	RW1;RW1 3216,20531 3323,20547 3563,20589 3604,20603 3915,20711 4047,20748 4126,20771 4203,20792
+#: by: Rudolf Kionke
 #: confirmed_by: srt
-sehr schmal, holprig wegen Baumwurzeln	RW1;RW1 4203,20792 4261,20808 4423,20848
-#: by: ^^^
+sehr schmal, wenig Abstand zu parkenden Autos, holprig wegen Baumwurzeln	RW1;RW1 3216,20531 3323,20547 3563,20589 3604,20603 3915,20711 4047,20748 4126,20771 4203,20792 4261,20808 4423,20848
 	RW3; 4280,19110 4357,19261
 # REMOVED --- #: add_fragezeichen: sind die Radspuren Richtung Norden bereits markiert worden? vvv --- #: osm_watch: way id="205989870" version="8" vvv --- #: last_checked: 2016-10-03 vvv --- #: check_frequency: 14d vvv --- holpriges Verbundsteinpflaster, teilweise ragen parkende Autos rein	RW1; 4357,19261 4497,19539 4611,19769 --- RW1; 4611,19769 4728,20003
 	RW3; 4357,19261 4497,19539 4611,19769 4728,20003
@@ -8521,7 +8519,7 @@ asphaltiert, breit	RW1;RW9 18374,4307 18228,4168
 	RW6;RW6 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706
 	RW6;RW6 11725,3835 11742,3770 11703,3730
 Verbundsteinpflaster	RW1; 3909,19002 4138,19015 4190,19048
-Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133
+Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133 3546,19477
 # 
 #: next_check_id: STUBENRAUCH-2025
 #: source_id[inactive]: bvg2024:m11#HIM_FREETEXT_266466 (bis 2025-02-28) (bis 2025-03-30) (inaktiv)
@@ -8615,7 +8613,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", bis 22.10.2026)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-10-08
+#: last_checked: 2026-10-10
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -10054,6 +10052,7 @@ Tempo 10	RW6;RW6 15125,5869 14959,5850 14919,5834 14833,5829 14668,5838
 	RW1;RW1 -1517,10971 -1523,11012
 # 
 	RW7;RW7 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831
+	RW7;RW7 7000,14832 7129,14787 7143,14794
 # 
 #: historical_note: seit etwa September/Oktober 2026
 	RW7;RW7 8864,7676 8900,7643 8956,7598 9021,7552 9073,7496 9097,7469 9148,7418

@@ -16,44 +16,6 @@
 #: valid: -20261015
 Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 # 
-# REMOVED (Einfahrt-verboten-Schild steht nicht mehr) --- #: next_check_id: AMWIEZENERBAHNHOF-2024
-# REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
-# REMOVED --- #: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
-# REMOVED --- #: by: https://www.deutsches-architekturforum.de/thread/3986-bauprojekte-am-wriezener-bahnhof-friedrichshain/?postID=767122#post767122
-# REMOVED --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Grundstücksnummerierungen)
-# REMOVED --- #: by: https://edge.tech/de/buildings/edge-friedrichspark-berlin (Fertigstellung Q1 2026)
-# REMOVED --- #: by: https://edge.tech/portfolio/friedrichspark (Fertigstellung weiterhin Q1 2026)
-# REMOVED --- #: by: https://entwicklungsstadt.de/neubauprojekt-an-der-strasse-der-pariser-kommune-nach-abriss-des-plattenbaus-startet-das-bauvorhaben/
-# REMOVED --- #: by: https://entwicklungsstadt.de/buerokomplex-edge-friedrichspark-installation-der-fassade-beginnt/
-# REMOVED --- #: by: https://entwicklungsstadt.de/friedrichshain-kreuzberg-fuenf-stadtentwicklungsprojekte-im-ueberblick/
-# REMOVED --- #: by: https://entwicklungsstadt.de/edge-friedrichspark-markante-fassade-praegt-neuen-buerokomplex-in-friedrichshain/
-# REMOVED --- #: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-so-soll-der-neubau-in-friedrichshain-aussehen/
-# REMOVED --- #: by: https://www.entwicklungsstadt.de/baustellen-update-am-ostbahnhof-edge-friedrichspark-nimmt-gestalt-an/ (im Laufe des Jahres 2026 bezugsfertig)
-# REMOVED --- #: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-b-yard-baustelle-im-ueberblick/ ("B.YARD", Fertigstellung: Ende 2027/Anfang 2028)
-# REMOVED --- #: by: https://www.entwicklungsstadt.de/edge-friedrichspark-am-ostbahnhof-commerzbank-wird-ankermieter/
-# REMOVED --- #: by: https://www.entwicklungsstadt.de/b-yard-im-bau-60-wohnungen-und-kulturflaechen-entstehen-am-ostbahnhof/
-# REMOVED --- #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/90-millionen-projekt-in-berlin-riesiges-burogebaude-entsteht-am-ostbahnhof-15791460.html
-# REMOVED --- #: by: https://www.entwicklungsstadt.de/b-yard-in-friedrichshain-auf-der-baustelle-geht-es-jetzt-in-die-hoehe/
-# REMOVED --- #: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
-# REMOVED --- #: also_indoor: traffic (B)
-# REMOVED --- #: osm_watch: way id="1120450475" version="6"
-# REMOVED --- #: osm_watch: note 4180739 2
-# REMOVED --- #: source_id: planb2026:13.44213814,52.51076044,05.01.2026,06:00 ("Gehwegvollsperrung", Wriezener Karree, bis 30.07.2026) (inaktiv)
-# REMOVED --- #: source_id: planb2026:13.43879907,52.51156593,14.04.2026, ("Fahrstreifen-Verschwenkung", Straße der Pariser Kommune, bis 31.03.2028)
-# REMOVED --- #: source_id: planb2026:13.4389493,52.51163164,20.04.2026,06:00 ("Fahrstreifen-Verschwenkung", bis 31.03.2028)
-# REMOVED --- #: source_id: planb2026:13.4421069,52.5107065,24.08.2026,10:30 ("Fahrbahneinengung", bis 30.09.2026)
-# REMOVED --- #: last_checked: 2026-08-24 vvv
-# REMOVED --- #: check_frequency: 30d vvv
-# REMOVED --- # REMOVED --- #: next_check: 2026-07-30 (planb) vvv
-# REMOVED --- #: next_check: 2028-03-31 (entwicklungsstadt, planb) vvv
-# REMOVED --- #: osm_watch: way id="1054783030" version="9"
-# REMOVED --- Am Wriezener Bahnhof: Einfahrt verboten	q3::inwork; 12758,11915 12788,11898 12944,11760
-# REMOVED --- # REMOVED (nicht mehr?) --- Am Wriezener Bahnhof: Dokumentation	? 12944,11760 12993,11717 12986,11699 12959,11631
-# REMOVED --- # REMOVED (nicht mehr?) --- #: osm_watch: way id="154381294" version="22" --- Wriezener Karree: Dokumentation	? 12959,11631 12728,11850
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-# REMOVED --- #: last_checked ^^^
-# 
 # REMOVED --- #: XXX Laut Halteverbotsschildern möglicherweise bis Ende November 2026 ("31.11.2026" (sic!))
 # REMOVED --- #: last_checked: 2026-05-16 (Fahrbahn wieder offen)
 # REMOVED --- #: check_frequency: 10d
@@ -107,7 +69,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 #: next_check_id: PETERSBURGER-2024
 #: last_checked: 2026-10-07 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
-#: source_id: planb2026:13.45274687,52.51888366,19.08.2024, ("Sperrung einer Fahrtrichtung", bis 31.12.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.45274687,52.51888366,19.08.2024, ("Sperrung einer Fahrtrichtung", bis 31.12.2026) (vorfristig inaktiv) (bis 31.12.2026)
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="16"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
@@ -145,7 +107,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="35"
 #: osm_watch: way id="1072662717" version="39"
-#: last_checked: 2026-10-08
+#: last_checked: 2026-10-10
 #: check_frequency: 90d
 #: next_check: 2026-10-22 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -156,7 +118,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026)
 #: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026)
 #: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026)
-#: last_checked: 2026-10-08 vvv
+#: last_checked: 2026-10-10 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-10-16 (planb) vvv
 Singerstr.: Sperrung an der Einmündung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
@@ -213,7 +175,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,1318
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-09-15 vvv
+#: last_checked: 2026-10-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (Tsp, planb) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -982,6 +944,14 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 #: valid: -20261218
 Tempelherrenstr.: Baustelleneinrichtung blockiert den Radweg	q4::inwork 10180,9852 10190,9872
 # 
+#: source_id: LMS-BR:423027/72 viz2021:13.39866,52.4964,22.09.2026,07:00 vizapi2026:984/2026 (bis 28.12.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mw3g6efh6q2n (sieht nach "Gehweg frei für Radfahrer" aus)
+#: last_checked: 2026-10-08
+#: check_frequency: 30d
+#: next_check: 2026-12-28
+#: valid: -20261228
+Johanniterstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 10066,10071 10251,9979
+# 
 #: source_id: LMS-BR:380721/72 viz2021:13.40045,52.4905, (bis 31.12.2026)
 #: source_id: planb2026:13.40268317,52.48973279,13.05.2025, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
 #: osm_watch: way id="1061707899" version="11"
@@ -994,11 +964,11 @@ Tempelherrenstr.: Baustelleneinrichtung blockiert den Radweg	q4::inwork 10180,98
 #: valid: -20261231 vvv
 #: note: einige Abschnitte der Fahrbahn nur noch mit Schotterdecke
 #: note: mittlerweile ist der Radweg hinter der Absperrung verschwunden
-Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Gehweg für Radfahrer frei	q2-::inwork; 10198,9405 10290,9604 10306,9640
+Baerwaldstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2-::inwork; 10198,9405 10290,9604 10306,9640
 #: note: hier ist etwas mehr Platz und weniger Fußgänger/Gastronomie
-Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Gehweg für Radfahrer frei	q2::inwork; 10306,9640 10361,9755 10405,9795
+Baerwaldstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork; 10306,9640 10361,9755 10405,9795
 #: historical_note: hier gab's weniger Probleme mit der Baustelleneinrichtung, deshalb q1- statt q2, mittlerweile auch recht eng -> q2
-Baerwaldstr.: Bauarbeiten, Fahrbahn offiziell gesperrt, Engstellen am Hochbordradweg	q2::inwork; 10357,9807 10361,9755 10306,9640 10290,9604 10198,9405
+Baerwaldstr.: Bauarbeiten, Fahrbahn gesperrt, Engstellen am Hochbordradweg	q2::inwork; 10357,9807 10361,9755 10306,9640 10290,9604 10198,9405
 #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -1099,13 +1069,13 @@ Stienitzseestr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 26228,5041 26
 # 
 ### Moabit ###
 # 
-# REMOVED (laut osm ist die Fahrbahn nun offen, allerdings noch mit Verengung) --- #: source_id: planb2026:13.35334176,52.53143774,28.11.2022, ("Sicherung gemäß Vz.-plan", bis 30.09.2026)
-# REMOVED --- #: source_id: LMS-BR:325489/72 viz2021:13.358912,52.537703, (bis 25.09.2026) (bis 13.11.2026) (bei vizapi2026 bis 13.11.2026)
-# REMOVED --- #: osm_watch[closed]: note 5403292 2
-# REMOVED --- #: last_checked: 2026-08-26
-# REMOVED --- #: next_check: 2026-09-25 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20260930
-# REMOVED --- Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,14599 7368,14573
+#: source_id: planb2026:13.35334176,52.53143774,28.11.2022, ("Sicherung gemäß Vz.-plan", bis 30.09.2026) (bis 30.11.2026)
+#: source_id: LMS-BR:325489/72 viz2021:13.358912,52.537703, (bis 25.09.2026) (bis 13.11.2026) (bei vizapi2026 bis 13.11.2026)
+#: osm_watch: note 5403292 4
+#: last_checked: 2026-10-10
+#: next_check: 2026-11-30 (planb)
+#: valid: -20261130
+Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,14599 7368,14573
 # 
 # REMOVED --- #: source_id: LMS-BR:397184/72 viz2021:13.35084,52.52032, (kein Endedatum) (bis 27.03.2026) (bis 04.03.2026) (inaktiv)
 # REMOVED --- #: also_indoor: traffic (no-G,T,no-W)
@@ -1461,6 +1431,7 @@ Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzender Hoch
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3ml3ex3sqks2i (nur der östliche Strang der Ontarioseestr. betroffen?)
 #: by: https://www.entwicklungsstadt.de/autohaus-abriss-am-tierpark-was-in-lichtenberg-gebaut-wird/ (Fertigstellung November 2027)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-am-tierpark-124.1552/#post-27828
+#: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=11299 (Bebauungsplan 11-32)
 #: source_id: LMS-BR:407167/72 viz2021:13.52329,52.49559,05.05.2026,07:00 (bis 31.05.2027)
 #: source_id: planb2026:13.52339081,52.4953266,18.03.2026, ("Fahrstreifen-Reduzierung" in der Sewanstr., bis 31.05.2027)
 #: note: außerdem ist die Einbahnstraßenregelung in der restlichen Ontarioseestr. aufgehoben, aber eher geringer verkehrlicher Wert für den Radverkehr
@@ -5399,8 +5370,10 @@ Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Uferweg am Paul-Lincke-Ufer): Fußgänger, besonders an schönen Tagen	q2- 11735,10022 11756,9990 11948,9895 12045,9843 12116,9825 12165,9786 12280,9728 12432,9652 12596,9587 12639,9547 12703,9522 12718,9529
 #: note ^^^
 (Uferweg - Lausitzer Str.): Rampe, enge Kurven	q3 11948,9895 11946,9913
-#: note: Grünanlage, kein explizites Radfahrverbot
-(Weg am Kienhorstgraben): einige Fußgänger	q3 3876,18348 3799,18159 3723,17979 3706,17931
+#: note: Grünanlage, kein explizites Radfahrverbot vvv
+(Weg am Kienhorstgraben): einige Fußgänger	q2 3876,18348 3855,18300 3799,18159 3723,17979 3706,17931
+(Weg am Kienhorstgraben): einige Fußgänger	q2 3855,18352 3855,18300
+#: note ^^^
 #: XXX_prog: BS an beiden Enden, ansonsten trotzdem q3
 (Holzmarktstr. - Ifflandstr.): Fußgänger, Bordsteine	q3 11515,12293 11584,12258 11589,12296
 #: note: Gehweg, Radfahrer frei
@@ -5654,14 +5627,9 @@ Anna-Seghers-Str.: enge und unübersichtliche Kurve	q1 19795,3945 19821,4018 1988
 #: note: einige davon kaum umfahrbar, manchmal parken hier auch Autos
 Quartiersweg: einige Bodenschwelle	q1 7498,8062 7516,8063 7622,7986 7623,7885 7621,7813
 # 
-#: note: Grünanlagen-Schild ohne Zusatzschilder am östlichen Ende, am westlichen Ende fehlt es
+#: historical_note: vor der Umgestaltung 2026: Grünanlagen-Schild ohne Zusatzschilder am östlichen Ende, am westlichen Ende fehlt es
+#: note: zurzeit (Oktober 2026) keine Grünanlagen-Schilder
 #: note: Zobeltitzstraße (Rosengarten)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_04_0213_0280_online.pdf (Teileinziehung von Straßenland)
-#: XXX Werden hier durch die Teileinziehung explizite Radfahren-verboten-Schilder aufgestellt?
-#: XXX zurzeit wird die Parkanlage umgestaltet
-#: osm_watch: note 5214226 2
-#: last_checked: 2026-08-12
-#: check_frequency: 60d
 Zobeltitzstr.: einige Fußgänger	q2 4370,18039 4492,18013
 # 
 #: note: Grünanlagen-Schild ohne Zusatzschilder
@@ -5768,6 +5736,8 @@ Niemannstr.: Fußgängerzone für Radfahrer frei	q1+ 14254,11377 14211,11229
 Maxstr.: Fußgängerzone für Radfahrer frei	q1+ 7781,15804 7738,15838
 # 
 Koppenplatz: Fußgängerzone für Radfahrer frei	q1- 9961,13502 9946,13550
+# 
+Pekinger Platz: Fußgängerzone für Radfahrer frei	q1 6849,14831 6929,14845 7000,14832
 # 
 #: note: Grünanlagenschild ohne Zusatzschilder
 Staakener Feldstr.: einige Fußgänger	q1 -7647,13985 -7716,14031
@@ -6212,6 +6182,9 @@ Franckepark: Fußgänger	q2 9389,6348 9346,6352
 # 
 #: note: von Norden kommend nicht ausgeschildert, von Süden kommend explizit als Fußweg ausgeschildert
 An der Schule [Rad- und Gehweg]: einige Fußgänger	q1 24747,11524 24768,11616 24759,11666
+# 
+#: note: Grünanlagenschild ohne Zusatzschilder
+(Steinbergpark - Cité Foch): Grünanlage, einige Fußgänger	q2 3986,21590 4012,21621 4004,21651 4020,21675 4052,21681 4084,21714 4104,21726 4131,21732 4153,21742
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

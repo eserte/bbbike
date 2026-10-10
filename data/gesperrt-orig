@@ -1658,7 +1658,7 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: also_indoor: webcam https://webcam-profi.de/bilder/charite/berlin/dhzc/cam1/image.jpg
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
-#: last_checked: 2026-08-08 (webcam) vvv
+#: last_checked: 2026-10-10 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2028-12-31 (entwicklungsstadt) vvv
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
@@ -3552,7 +3552,7 @@ Drängelgitter	BNP:3::trailer=10 -4760,13980
 # REMOVED (Parkplatz existiert nicht mehr) --- #: note: explizite "Radfahren verboten"-Schilder --- Schranke	BNP:3::trailer=10 8828,13434
 Schranke	BNP:3::trailer=10 8262,17361
 Schranke, enge Umfahrung	BNP:5::trailer=15 8352,17285
-Schranke	BNP:3::trailer=10 4347,21531
+# REMOVED (offen, vielleicht immer; außerdem kommt man ansonsten vermutlich gut vorbei) --- Schranke	BNP:3::trailer=10 4347,21531
 enge Stelle durch zwei Baumstämme	BNP:1::trailer=5 3803,24652
 Drängelgitter und Stufe	BNP:5::trailer=15 6143,20464
 #: note: Stufe nicht gesehen, aber wahrscheinlich vvv
@@ -4144,6 +4144,58 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: AMWIEZENERBAHNHOF-2024
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
+#: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
+#: by: https://www.deutsches-architekturforum.de/thread/3986-bauprojekte-am-wriezener-bahnhof-friedrichshain/?postID=767122#post767122
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2024_45_3355_3406_online.pdf (Grundstücksnummerierungen)
+#: by: https://edge.tech/de/buildings/edge-friedrichspark-berlin (Fertigstellung Q1 2026)
+#: by: https://edge.tech/portfolio/friedrichspark (Fertigstellung weiterhin Q1 2026)
+#: by: https://entwicklungsstadt.de/neubauprojekt-an-der-strasse-der-pariser-kommune-nach-abriss-des-plattenbaus-startet-das-bauvorhaben/
+#: by: https://entwicklungsstadt.de/buerokomplex-edge-friedrichspark-installation-der-fassade-beginnt/
+#: by: https://entwicklungsstadt.de/friedrichshain-kreuzberg-fuenf-stadtentwicklungsprojekte-im-ueberblick/
+#: by: https://entwicklungsstadt.de/edge-friedrichspark-markante-fassade-praegt-neuen-buerokomplex-in-friedrichshain/
+#: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-so-soll-der-neubau-in-friedrichshain-aussehen/
+#: by: https://www.entwicklungsstadt.de/baustellen-update-am-ostbahnhof-edge-friedrichspark-nimmt-gestalt-an/ (im Laufe des Jahres 2026 bezugsfertig)
+#: by: https://www.entwicklungsstadt.de/strasse-der-pariser-kommune-b-yard-baustelle-im-ueberblick/ ("B.YARD", Fertigstellung: Ende 2027/Anfang 2028)
+#: by: https://www.entwicklungsstadt.de/edge-friedrichspark-am-ostbahnhof-commerzbank-wird-ankermieter/
+#: by: https://www.entwicklungsstadt.de/b-yard-im-bau-60-wohnungen-und-kulturflaechen-entstehen-am-ostbahnhof/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/90-millionen-projekt-in-berlin-riesiges-burogebaude-entsteht-am-ostbahnhof-15791460.html
+#: by: https://www.entwicklungsstadt.de/b-yard-in-friedrichshain-auf-der-baustelle-geht-es-jetzt-in-die-hoehe/
+#: also_indoor: traffic (B)
+#: osm_watch: way id="1120450475" version="6"
+#: osm_watch: note 4180739 2
+#: source_id: planb2026:13.44213814,52.51076044,05.01.2026,06:00 ("Gehwegvollsperrung", Wriezener Karree, bis 30.07.2026) (inaktiv)
+#: source_id: planb2026:13.43879907,52.51156593,14.04.2026, ("Fahrstreifen-Verschwenkung", Straße der Pariser Kommune, bis 31.03.2028)
+#: source_id: planb2026:13.4389493,52.51163164,20.04.2026,06:00 ("Fahrstreifen-Verschwenkung", bis 31.03.2028)
+#: source_id: planb2026:13.4421069,52.5107065,24.08.2026,10:30 ("Fahrbahneinengung", bis 30.09.2026)
+#: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
+#: last_checked: 2026-10-10 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2028-03-31 (entwicklungsstadt, planb) vvv
+#: osm_watch: way id="1054783030" version="9"
+Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q3::inwork 12758,11915 12788,11898 12944,11760
+#: note: hier steht ein Einbahnstraßenschild, aber kein entsprechendes Einfahrt-verboten-Schild
+Wriezener Karree	1s:q3::inwork 12959,11631 12728,11850
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: source_id: planb2026:13.42740166,52.51323867,15.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2029)
+#: osm_watch: note 5547170 2
+#: priority: #C
+#: last_checked: 2026-10-10
+#: check_frequency: 180d
+#: next_check: 2029-12-31 (planb)
+# REMOVED (hier nicht) --- Mehlbeerenweg (Sackgasse): Bauarbeiten, Sperrung, ist der Radverkehr betroffen?	? 11993,11978 11940,11982
+Mehlbeerenweg (Sackgasse): Bauarbeiten, Sperrung	2::inwork 11940,11982 11909,11985
+# 
+#: also_indoor: traffic (G,no-T,no-H,W)
+#: osm_watch: note 5564820 1
+#: last_checked: 2026-10-10
+#: check_frequency: 30d (traffic)
+Rue Racine: Sperrung (Fahrbahn und Bürgersteig)	2::inwork 4334,21540 4307,21506
+# 
 #: next_check_id: SCHWARZERWEG-2026
 #: note: siehe auch unbegrenzten Eintrag in bbbike-temp-blockings
 #: osm_watch: way id="1417905902" version="5"
@@ -4193,7 +4245,7 @@ Streustr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3::inwork 12890,16121 12675,1
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msrv4hnc6s2l (bis Mitte 2027)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie7d4xrms4jdia3kvcuf7pkmxcwzdwysmuuroyjzggf6d7vzvon2a
 #: note: außerdem: Fußgängerampel Richtung Tegeler Str. verschoben; Radwegbenutzungspflicht im Baustellenbereich
-#: last_checked: 2026-08-12
+#: last_checked: 2026-10-10
 #: next_check: 2027-06-04 (planb + VIZ-Verkehrsmeldung)
 Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14660 7514,14687 7533,14702 7911,15008
 # 
@@ -4480,7 +4532,7 @@ Magdeburger Str. (Brandenburg)	2::inwork -48735,-304 -47897,-353
 #: osm_watch: way id="423457085" version="17"
 #: source_id: planb2026:13.36504453,52.53376599,11.08.2025,06:00 ("Fahrstreifen-Reduzierung", bis 30.07.2027)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
-#: last_checked: 2026-09-26 (architektur-urbanistik) vvv
+#: last_checked: 2026-10-10 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-03-15 (entwicklungsstadt) vvv
 #: osm_watch: way id="752856111" version="16"
@@ -4794,7 +4846,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 2
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2026-10-01 (osm)
+#: last_checked: 2026-10-10
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -5080,7 +5132,7 @@ Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite dur
 #: by: https://pbs.twimg.com/media/GHmOVdIWUAAGVLn?format=jpg&name=medium (laut Baustellenplan noch immer gesperrt)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12280 (Öffnung nicht möglich)
 #: osm_watch: node id="1736425250" version="5"
-#: last_checked: 2026-07-14 (okas)
+#: last_checked: 2026-10-10
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2026-12-01 (berliner-zeitung (Ende 2026))
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
@@ -5159,6 +5211,7 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: by: https://www.deutsches-architekturforum.de/thread/11488-gottesh%C3%A4user-in-berlin/?postID=799674#post799674
 #: by: https://www.entwicklungsstadt.de/bernhard-lichtenberg-haus-am-bebelplatz-neubau-zeigt-seine-fassade/
 #: osm_watch: way id="28120501" version="15"
+#: source_id: planb2026:13.39547991,52.51516663,27.04.2020, ("Sicherung nach Regelplan", nur die Straße "Hinter der Katholischen Kirche", bis 28.02.2027)
 #: last_checked: 2026-09-02
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2026-09-01 (erzbistumberlin)
@@ -5174,7 +5227,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: source_id: planb2026:13.43551948,52.50901002,01.04.2026, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
-#: last_checked: 2026-09-15
+#: last_checked: 2026-10-10
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (Tsp, planb)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5341,7 +5394,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,1015
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 # REMOVED (keine Updates mehr) --- #: also_indoor: webcam https://portal1915.webcam-profi.de/
-#: last_checked: 2026-07-26 (mapillary) vvv
+#: last_checked: 2026-10-10 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2027-04-15 (jtre.de, entwicklungsstadt (Frühjahr 2027)) vvv
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
@@ -5479,7 +5532,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-10
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5676,7 +5729,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2026-09-14 (mapillary) vvv
+#: last_checked: 2026-10-10 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188 (inaktiv)
 #: osm_watch: way id="593108603" version="3"
