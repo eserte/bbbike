@@ -159,7 +159,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-10-05
+#: last_checked: 2026-10-11
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -1041,7 +1041,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2026-09-12 vvv
+#: last_checked: 2026-10-11 vvv
 #: check_frequency: 120d vvv
 Rollbergstr.: Kopfsteinpflaster	Q2- 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Kopfsteinpflaster	Q2 12407,8177 12545,8209 12714,8249
@@ -4939,7 +4939,8 @@ Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1+ 12911,15865 12871,15882
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1 12871,15882 12783,15921
 (Eichbuschallee - Plänterwald): Waldweg/Schotter	Q2+ 16144,7882 16534,8182
-Lakegrund: Beton	Q1+ 16406,7430 16368,7425 16195,7398
+#: historical_note: früher (bis 2026) Beton, Q1+
+Lakegrund: Beton und Rasengittersteine	Q1 16406,7430 16368,7425 16195,7398
 Eschenbachstr.: Kopfsteinpflaster	Q2 16290,7160 16375,7070
 Stormstr. (Baumschulenweg): Kopfsteinpflaster	Q2 16328,7005 16234,7100
 Schöntaler Weg: Asphalt	Q0 16089,7041 15988,7129
@@ -12571,7 +12572,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-10-09
+#: last_checked: 2026-10-11
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920

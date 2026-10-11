@@ -4144,6 +4144,25 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12387 (Einwohneranfrage zur geplanten Umgestaltung)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/protokoll-mobilitaetswenderat-09062026.pdf (Schulzone wird nicht als Fußgängerzone umgesetzt)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1712757.php (Umgestaltung zwischen Rigaer Str. und Weidenweg; keine Termine)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260911
+#: by: https://www.entwicklungsstadt.de/liebigstrasse-in-friedrichshain-umbau-fuer-sichere-schulwege-startet/ (Umsetzung im Herbst 2026 vorgesehen)
+#: source_id: planb2026:13.4571375,52.51779983,14.09.2026,06:00 ("Haltverbote", bis 18.12.2026)
+#: osm_watch: way id="295627704" version="21"
+#: historical_note: früherer Eintrag: Einrichtung einer Spielstraße
+#: priority: #D
+#: last_checked: 2026-10-11
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2026-11-30 (entwicklungsstadt)
+#: next_check: 2026-12-18 (planb)
+Liebigstr.: Umgestaltungsarbeiten, Einbahnstraßenregelung	1s:q4::inwork 13991,12522 14058,12709
+# REMOVED (hier vermutlich nicht) --- Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522
+# 
 #: next_check_id: AMWIEZENERBAHNHOF-2024
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
 #: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
@@ -4163,17 +4182,17 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/90-millionen-projekt-in-berlin-riesiges-burogebaude-entsteht-am-ostbahnhof-15791460.html
 #: by: https://www.entwicklungsstadt.de/b-yard-in-friedrichshain-auf-der-baustelle-geht-es-jetzt-in-die-hoehe/
 #: also_indoor: traffic (B)
-#: osm_watch: way id="1120450475" version="6"
+# REMOVED --- #: osm_watch: way id="1120450475" version="6"
 #: osm_watch: note 4180739 2
 #: source_id: planb2026:13.44213814,52.51076044,05.01.2026,06:00 ("Gehwegvollsperrung", Wriezener Karree, bis 30.07.2026) (inaktiv)
 #: source_id: planb2026:13.43879907,52.51156593,14.04.2026, ("Fahrstreifen-Verschwenkung", Straße der Pariser Kommune, bis 31.03.2028)
 #: source_id: planb2026:13.4389493,52.51163164,20.04.2026,06:00 ("Fahrstreifen-Verschwenkung", bis 31.03.2028)
-#: source_id: planb2026:13.4421069,52.5107065,24.08.2026,10:30 ("Fahrbahneinengung", bis 30.09.2026)
+#: source_id: planb2026:13.4421069,52.5107065,24.08.2026,10:30 ("Fahrbahneinengung", bis 30.09.2026) (inaktiv)
 #: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
 #: last_checked: 2026-10-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2028-03-31 (entwicklungsstadt, planb) vvv
-#: osm_watch: way id="1054783030" version="9"
+#: osm_watch: way id="1054783030" version="10"
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q3::inwork 12758,11915 12788,11898 12944,11760
 #: note: hier steht ein Einbahnstraßenschild, aber kein entsprechendes Einfahrt-verboten-Schild
 Wriezener Karree	1s:q3::inwork 12959,11631 12728,11850
@@ -4286,7 +4305,7 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-11
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-07-01
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
@@ -4342,7 +4361,7 @@ Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 #: XXX ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-10-07
+#: last_checked: 2026-10-11
 Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
 # 
 #: next_check_id: DUNCKERBRUECKE-2026
@@ -4878,7 +4897,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-10-05 vvv
+#: last_checked: 2026-10-11 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
 #: osm_watch: way id="852517037" version="6"
@@ -5310,7 +5329,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-10-05 vvv
+#: last_checked: 2026-10-11 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # REMOVED (Treppe ist frei, und dann noch 35m Uferweg) --- Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027

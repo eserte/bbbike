@@ -6,6 +6,16 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260917 (Baustellenampel)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvreuhygbe2y (Bereich KGA)
+#: source_id: LMS-BR:422789/72 viz2021:13.469268,52.472618,18.09.2026,07:00 vizapi2026:962/2026 (Baustellenampel, 18.09.2026 bis 06.12.2026)
+#: source_id: planb2026:13.46990981,52.47294148,18.09.2026, ("Gegenverkehrsanlage (LZA)", bis 15.10.2026)
+#: note: Gegenverkehrsregelung auf der Fahrbahn (betrifft die Hochbordradwege nicht); Sperrung des Übergangs am Heidekampgraben, kann etwa 40m nordöstlich (hier mit Ampel) umfahren werden
+#: last_checked: 2026-10-11
+#: next_check: 2026-12-06 (VIZ-Verkehrsmeldung)
+#: valid: -20261206
+Dammweg/Heidekampgraben	X::inwork 14989,7574
+# 
 #: next_check_id: ERKNERFRIEDRICH-2026
 #: last_checked: 2026-09-17
 #: next_check: 2027-05-31
@@ -49,7 +59,7 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 (bis 15.10.2026)
-#: last_checked: 2026-10-10
+#: last_checked: 2026-10-11
 #: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261015
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
@@ -1791,6 +1801,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: on:  2013-09-27 Tue 11:30
 #: off: 2018-10-03 holiday 16:00
 #: off: 2022-01-23 Sun 13:00
+#: off: 2026-10-11 Sun 12:16
 #: off_rule: outside_schooltime
 	X 14758,7373
 # 
@@ -1801,6 +1812,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: off: 2020-10-04 Sun 13:00
 #: off: 2020-12-20 Sun 13:00
 #: off: 2023-09-23 Sun 13:45
+#: off: 2026-10-11 Sun 12:13
 #: off_rule: Sun
 	F 15553,7408
 # 
@@ -4696,6 +4708,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	X 12015,24351
 # 
 #: historical_note: Inbetriebnahme am 9.10.2026
+#: note: Anforderungsampel für Radfahrer in der Relation Thomasstr. - Kirchhofweg sowie für Linksabbieger aus der Hermannstr. (sowohl zur Thomasstr. als auch zum Kirchhofweg)
 	X 12185,7381
 # 
 #: note: Anforderungsampel für Radfahrer in der Relation Brachvogelstr. - Mittenwalder Str.

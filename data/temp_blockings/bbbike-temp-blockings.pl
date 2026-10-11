@@ -36109,9 +36109,11 @@ EOF
      },
      { from  => undef, # $isodate2epoch->("2023-11-13 00:00:00"), # undef, # 
        until => undef, # 1720014980, # dont_check_date => 1, until => undef, # $isodate2epoch->("2024-03-29 23:59:59"), # 1676574342, # undef, # XXX
+       dont_check_date => 1,
 #      text  => 'Jahnstr./Rungiusstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt (Stand Mitte Januar 2023)',
 #      text  => 'Jahnstr.: Bauarbeiten zwischen Rungiusstr. und Mackenroder Weg, Einbahnstraße, offen Richtung Westen, vom 13.11.2023 bis voraussichtlich 28.06.2024',
-       text  => 'Jahnstr.: Hochbauarbeiten zwischen Rungiusstr. und Priesterweg, kurze Einbahnstraßenregelung, voraussichtlich bis Ende 2026',
+#      text  => 'Jahnstr.: Hochbauarbeiten zwischen Rungiusstr. und Priesterweg, kurze Einbahnstraßenregelung, voraussichtlich bis Ende 2026',
+       text  => 'Jahnstr.: Hochbauarbeiten zwischen Rungiusstr. und Priesterweg, kurzer Abschnitt der Fahrbahn gesperrt, voraussichtlich bis Ende 2026',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: source_id: viz2021:13.44079,52.46081,13.11.2023,07:00 (bis 08.12.2023) (inaktiv) --- #: source_id: viz2021:13.43816,52.46045,08.12.2023,00:00 (bis 29.03.2024) (inaktiv) --- #: also_indoor: traffic (ex-B,ex-G,ex-W)
@@ -36127,10 +36129,12 @@ EOF
 #: source_id: planb2026:13.4422304,52.46092562,01.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", 01.10.2026 bis 30.11.2026)
 #: note: Halteverbotsschilder bis 18.12.2026
 #: also_indoor: traffic (no-G,T[later],no-W,no-H)
-#: last_checked: 2026-08-02 (mapillary)
+#: last_checked: 2026-10-11
 #: check_frequency: 60d
-#: next_check: 2026-12-18 (Halteverbotsschilder, planb)
-Jahnstr.	q3::inwork; 13027,6168 13227,6209
+#: next_check: 2026-11-03 (planb (2. Eintrag mit Vollsperrung))
+Jahnstr.	q3::inwork 13027,6168 13227,6209
+# REMOVED --- #: next_check: 2026-12-18 (Halteverbotsschilder, planb)
+# REMOVED --- Jahnstr.	q3::inwork; 13027,6168 13227,6209
 EOF
      },
      { from  => undef, # 
@@ -36779,7 +36783,7 @@ EOF
 #: source_id: planb2026:13.4396586,52.47929897,27.05.2024,07:00 ("Fahrstreifen-Reduzierung", bis 31.07.2026) (bis 30.09.2026) (bis 18.10.2026)
 #: note: Halteverbotsschilder bis 30.09.2025
 #: also_indoor: traffic (none)
-#: last_checked: 2026-10-05
+#: last_checked: 2026-10-11
 #: check_frequency: 14d
 #: next_check: 2026-10-18 (planb)
 	q3::inwork; 12805,8194 12873,8218 12911,8232
@@ -36790,7 +36794,8 @@ EOF
        until => undef, # 1729943528, # undef, # 1654702215, # undef, # XXX
 #      text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, sowie mögliche Bauarbeiten bis zur Wildenbruchstr. (hier noch nicht offiziell geöffnet) (Stand Anfang August 2024)',
 #      text  => 'Weserstr.: Bauarbeiten zwischen Fuldastr. und Elbestr., Fahrbahn gesperrt, enger gemeinsamer Rad- und Gehweg auf dem Hochbord, Umwege im Kreuzungsbereich Elbestr. (Stand Mitte August 2024)',
-       text  => 'Weserstr.: Bauarbeiten zwischen Innstr. und Treptower Str. sowie in der Treptower Str. zwischen Weserstr. und Stuttgarter Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+#      text  => 'Weserstr.: Bauarbeiten zwischen Innstr. und Treptower Str. sowie in der Treptower Str. zwischen Weserstr. und Stuttgarter Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Weserstr.: Bauarbeiten zwischen Roseggerstr. und Treptower Str. sowie in der Treptower Str. zwischen Weserstr. und Stuttgarter Str., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WESER-2021
@@ -36809,13 +36814,14 @@ EOF
 #: source_id: planb2026:13.44947274,52.47920544,09.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 #: note: laut Baustellenschild der Wasserbetriebe bis Februar 2028; mittlerweile am Baustellenschild Weserstr./Innstr. nur bis August 2026; mittlerweile (Sommer 2026) ist eine Durchfahrt wieder möglich, zumindest inoffiziell
 #: osm_watch: note 4794007 2
-#: last_checked: 2026-10-06 vvv
+#: last_checked: 2026-10-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (planb) vvv
 # REMOVED --- #: next_check: 2026-08-28 (VIZ-Verkehrsmeldung, planb) vvv
 # REMOVED --- #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Baustellenabsperrung steht auf bzw. vor dem Bürgersteigradweg; keine Freigabe der Gehwege; Umleitungsempfehlung für den Radverkehr via Stuttgarter Str.
-Weserstr. zwischen Innstr. und Treptower Str.	q4::inwork 13217,8493 13384,8354 13566,8212
+# REMOVED (hier keine Verbotsschild mehr, zumindest an der Innstr.) --- Weserstr. zwischen Innstr. und Treptower Str.	q4::inwork 13217,8493 13384,8354
+Weserstr. zwischen Roseggerstr. und Treptower Str.	q4::inwork 13384,8354 13566,8212
 #: source_id: bvg2024:171#HIM_FREETEXT_286260 (zwischenzeitlich entfernt)
 #: by: https://fahrinfo.vbb.de/him-uploads/1748254774225_Kartenausschnitt_Treptower_Str.png
 #: also_indoor: traffic (ex-T)
@@ -42356,7 +42362,7 @@ EOF
 # REMOVED (vorfristig entfernt) --- #: add_fragezeichen: Ist der Einmündungsbereich weiterhin gesperrt? vvv
 # REMOVED --- #: last_checked: 2023-08-18 vvv
 # REMOVED --- #: check_frequency: 14d vvv
-	q2::inwork 12185,7381 12368,7423 12564,7467
+	q2::inwork 12185,7381 12216,7388 12368,7423 12564,7467
 	q2::inwork 12368,7423 12396,7312
 # REMOVED --- #: check_frequency ^^^
 # REMOVED --- #: last_checked ^^^
@@ -49670,7 +49676,7 @@ EOF
 #: next_check_id: WOENNICH-2026
 #: also_indoor: traffic (none)
 #: source_id: planb2026:13.50005796,52.50966566,25.11.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026) (inaktiv)
-#: source_id: planb2026:13.50018566,52.50978023,07.10.2026,07:00 ("Sicherung nach Regelplan", bis 10.10.2026)
+#: source_id: planb2026:13.50018566,52.50978023,07.10.2026,07:00 ("Sicherung nach Regelplan", bis 10.10.2026) (inaktiv)
 #: osm_watch: note 4806167 2
 #: note: Halteverbotsschilder ursprünglich bis 31.03.2026, mittlerweile 30.09.2026
 #: last_checked: 2026-09-08 (mapillary: Sackgassenschild)
@@ -50597,7 +50603,7 @@ EOF
 EOF
      },
      { from  => undef, # 1752606169, # 2025-07-15 21:02
-       until => undef, # $isodate2epoch->("2025-12-18 15:00:00"), # 1758319200, # 2025-09-20 00:00
+       until => 1791718902, # undef, # $isodate2epoch->("2025-12-18 15:00:00"), # 1758319200, # 2025-09-20 00:00
        dont_check_date => 1,
 #      text  => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz sowie vor Hermannstr., voraussichtlich bis September 2025',
 #      text  => 'Thomasstr.: Sperrung zwischen Mittelweg und Karl-Marx-Platz, voraussichtlich bis Dezember 2025',
@@ -50611,13 +50617,10 @@ EOF
 #: source_id: LMS-BR:376390/72 viz2021:13.44057,52.47376, (bis 19.09.2025) (bis 19.10.2025) (bis 22.12.2025) (bis 18.12.2025) (inaktiv)
 #: source_id: planb2026:13.42938086,52.47090502,13.04.2026, ("Sicherung gemäß Vz.-plan", bis 15.09.2026) (vorfristig inaktiv)
 # REMOVED --- #: also_indoor: traffic (ex-G,T,no-H,no-W)
-#: XXX im Zusammenhang mit den Arbeiten an der Ampel
 #: note: Überquerungsmöglichkeit nun ca. 30m südlich der Kreuzung; mittlerweile manchmal ein möglicher direkter Weg, evtl. nur außerhalb der Arbeitszeiten
-#: last_checked: 2026-10-06
-#: check_frequency: 14d
-#: next_check: 2026-10-09 (BA-Pressemitteilung)
+# REMOVED --- #: XXX im Zusammenhang mit den Arbeiten an der Ampel --- #: last_checked: 2026-10-06 --- #: check_frequency: 14d --- #: next_check: 2026-10-09 (BA-Pressemitteilung)
 Kirchhofweg: Umwege vor der Hermannstr./Thomasstr.	q2::inwork 11687,7284 12185,7381
-# REMOVED #: note: kurzer Abschnitt gesperrt (~40m) + Bordsteine, deshalb q3 --- Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12185,7381
+# REMOVED #: note: kurzer Abschnitt gesperrt (~40m) + Bordsteine, deshalb q3 --- Thomasstr. vor Hermannstr.	q3::inwork 12368,7423 12216,7388 12185,7381
 # REMOVED (alte Meldung) --- #: note: laut rbb beide Richtungen, allerdings gibt es Richtung Westen einen Hochbordradweg --- #: note: für Radfahrer existiert eine Umleitungsempfehlung ab Ilsestr. (evtl. weiter via Schierker Str.?)
 # REMOVED (nicht mehr) --- Thomasstr. vor Karl-Marx-Str.	q4::inwork; 12918,7600 12972,7602
 EOF
@@ -51540,7 +51543,7 @@ EOF
 #: osm_watch: note 5465754 3
 #: note: gesperrter Bereich ist nur kurz, ca. 25m, deshalb q2
 #: add_fragezeichen: Ist die Anbindung der Corinthstr. an den Markgrafendamm weiterhin gesperrt?
-#: last_checked: 2026-10-05
+#: last_checked: 2026-10-11
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2026-09-30 (planb)
 #: next_check: 2026-10-31 (Halteverbotsschilder)
@@ -54226,7 +54229,7 @@ EOF
 #: source_id: LMS-BR:423758/72 viz2021:13.29075,52.51534,29.09.2026,07:00 (bis 09.10.2026) (bis 23.10.2026)
 #: source_id: LMS-BR:423625/72 viz2021:13.293703,52.515506,28.09.2026,07:00 (bis 09.10.2026) (inaktiv)
 #: source_id: planb2026:13.2939394,52.5154944,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 25.09.2026) (inaktiv)
-#: source_id: planb2026:13.29098992,52.51534596,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.10.2026) (inaktiv) (bis 23.10.2026)
+#: source_id: planb2026:13.29098992,52.51534596,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.10.2026) (inaktiv) (bis 23.10.2026) (vorfristig inaktiv)
 Seelingstr.	q4::inwork 2686,12051 2920,12070
 EOF
      },
@@ -55279,13 +55282,13 @@ EOF
 #: source_id: planb2026:13.38263329,52.48208211,21.04.2026,07:00 ("Fahrbahneinengung", bis 14.09.2026) (inaktiv) (bis 31.07.2027)
 #: source_id: LMS-BR:415346/72 vizapi2026:699/2026 (bis 08.05.2027 + weitere Arbeiten) (bis 31.07.2027)
 #: osm_watch: note 5278398 5
-#: osm_watch: way id="151571095" version="28"
-#: osm_watch: way id="1152289359" version="5"
-#: osm_watch: way id="318665525" version="13"
-#: osm_watch: way id="1546133695" version="2"
+#: osm_watch: way id="151571095" version="29"
+#: osm_watch: way id="1152289359" version="6"
+#: osm_watch: way id="318665525" version="14"
+#: osm_watch: way id="1546133695" version="3"
 #: also_indoor: traffic (G[zu kurz],T[zu lang],H[zu kurz],W[zu kurz])
 #: note: bei rbb: "bis Mitte nächsten Jahres (2027) gesperrt"
-#: last_checked: 2026-09-12
+#: last_checked: 2026-10-11 (osm)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-09-14 (planb)
 #: next_check: 2028-03-15 (entwicklungsstadt)
@@ -56673,6 +56676,8 @@ EOF
 #: by: https://www.entwicklungsstadt.de/vollsperrung-in-pankow-strassenbau-trifft-auch-die-tramlinie-m1/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261009
 #: source_id: planb2026:13.40173478,52.58947293,12.10.2026, ("Vollsperrung beider Fahrbahnen", Dietzgenstr., bis 30.10.2026)
+#: source_id: bvg2024:107#HIM_FREETEXT_367213
+#: source_id: bvg2024:124#HIM_FREETEXT_367212
 Dietzgenstr.	q4::inwork 10064,20437 10066,20494 10088,20570
 Schönhauser Str. - Schillerstr.	q4::inwork 9983,20581 10066,20494 10178,20525
 EOF
