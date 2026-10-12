@@ -1063,15 +1063,16 @@ sub handle_ropeway_stations {
 }    
 
 sub handle_railway_stations_like {
-    my($r) = @_;
+    my($r, $dir) = @_;
     my $cat = $r->[Strassen::CAT];
     if ($cat eq 'Ropeway') {
 	return handle_ropeway_stations($r);
     }
     my $is_ubahn = $cat =~ m{^U};
     my $is_sbahn = $cat =~ m{^S};
-    my $is_abandoned = $cat =~ m{0$};
+    my $is_disused = $cat =~ m{0$};
     my $is_construction = $cat =~ m{Bau$};
+    my $is_osm_abandoned = $dir && $dir->{'osm.abandoned'} && $dir->{'osm.abandoned'}->[0] && $dir->{'osm.abandoned'}->[0] eq 'yes';
     my $is_optimize_for_mapnik_bbbike_style = $optimize_for_mapnik_style == OPTIMIZE_FOR_MAPNIK_STYLE_BBBIKE;
     my $name = (
 		$is_optimize_for_mapnik_bbbike_style
@@ -1085,7 +1086,9 @@ sub handle_railway_stations_like {
 			    ? 'construction'
 			    : 'station' # no distinction between halt and station
 			   ),
-		($is_abandoned ? ("abandoned" => "yes") : ()),
+		($is_disused
+		 ? ($is_osm_abandoned ? ("abandoned" => "yes") : ("disused" => "yes"))
+		 : ()),
 		($is_construction ? ("construction" => "station") : ()), # more construction-related attribs set later
 		name => $name,
 	       );
