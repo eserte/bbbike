@@ -7145,7 +7145,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-10-08 vvv
+#: last_checked: 2026-10-12 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -7211,7 +7211,7 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
 # REMOVED --- #: osm_watch: node id="1650096479" version="8"
 #: osm_watch: way id="1168938182" version="14"
 # REMOVED --- #: osm_watch: way id="837927791" version="14"
-#: osm_watch: way id="1168938183" version="10"
+#: osm_watch: way id="1168938183" version="11"
 #: osm_watch: note 5094173 5
 #: osm_watch[closed]: note 4283578 4
 #: also_indoor: search Wolziger_Zeile
@@ -8963,7 +8963,7 @@ Bötzowstr.: Kreuzungsbereich vermutlich betroffen	q3::inwork 12280,13880 12361,1
 #: source_id: planb2026:13.44989871,52.50304685,28.04.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 01.11.2027)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-10-08
+#: last_checked: 2026-10-12
 #: check_frequency: 120d
 #: next_check: 2027-11-01 (planb)
 	q4::inwork 13408,10837 13436,10903
@@ -9521,6 +9521,7 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
 #: by[nocache]: https://www.uvp-verbund.de/documents-ige-ng/igc_be/27B18CBA-A54C-4B76-B3FF-2B1F76A96A23/Alle_Unterlagen_gesiegelt%2F3_Lageplan_gesiegelt.pdf (Baustelleneinrichtungsfläche)
 #: by: https://www.entwicklungsstadt.de/strassenbahnlinie-21-neue-bvg-anlage-am-blockdammweg-in-karlshorst/ (bis Nov 2026)
 #: osm_watch: note 5193492 6
+#: source_id: LMS-BR:409558/72 viz2021:13.5113,52.48421,26.05.2026,07:00 vizapi2026:509/2026 (Blockdammweg, bis 26.09.2026) (bis 05.10.2026) (bis 12.10.2026) (bis 07.12.2026)
 #: source_id: planb2026:13.51311063,52.48348885,02.03.2026, ("Vollsperrung beider Fahrbahnen", bis 06.09.2026) (vorfristig inaktiv) (bis 05.10.2026) (bis 07.12.2026)
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
@@ -9530,7 +9531,7 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
 # REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
 # REMOVED --- #: next_check: 2026-11-15 (pardok, geplantes Ende der Bauarbeiten) vvv
 # REMOVED --- #: next_check: 2026-10-05 (planb) vvv
-#: next_check: 2026-12-07 (planb) vvv
+#: next_check: 2026-12-07 (planb + VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1456917114" version="4"
 Blockdammweg, Rampe	2::inwork 17754,8863 17762,8855 17904,8924
 #: osm_watch: way id="10861731" version="41"
@@ -9799,7 +9800,17 @@ Baustelleneinrichtungsfläche	2::inwork 19045,6959 19080,6986
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 266400483 (bis 14.05.2026) (inaktiv)
+#: source_id: 266401296 (bis 23.10.2026)
+	2::inwork 74990,18281 74976,18303 74959,18332
+',
+         'from' => 1792360800,
+         'id' => 4601,
+         'text' => 'Gusow-Platkow: B167: Bahnübergang gesperrt, evtl. ist auch der Radverkehr betroffen, 20.10.2026 07:00 Uhr bis 23.10.2026 07:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1792731600
+       },
        undef,
        {
          'data' => '#: also_indoor: traffic (ex-T,ex-G,no-H,no-W)
@@ -9890,54 +9901,7 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: EHRLICH-2026
-#: note: "Erhaltungsmaßnahme", keine Radspur
-#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/linie-21/bau-zwischenendstelle-blockdammweg-erhaltungsmassnahme-ehrlichstrasse
-#: by: https://fahrinfo.vbb.de/him-uploads/1779880055285_0.jpg
-#: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=11191 (Antrag)
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260714
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261009
-#: source_id[inactive]: bvg2024:21#HIM_FREETEXT_338258 (ab 26.5.2026)
-#: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_339081
-#: source_id[inactive]: bvg2024:n40#HIM_FREETEXT_349187
-#: source_id: bvg2024:21#1e19a92e-36f6-4510-a634-63a077ad6ab4 (bis 2026-09-07)
-#: source_id: LMS-BR:409559/72 viz2021:13.51705,52.48181,26.05.2026,07:00 vizapi2026:505/2026 (Ehrlichstr., bis 04.08.2026) (bis 21.09.2026) (bis 11.10.2026) (bis 14.10.2026)
-#: source_id: LMS-BR:409558/72 viz2021:13.5113,52.48421,26.05.2026,07:00 vizapi2026:509/2026 (Blockdammweg, bis 26.09.2026) (bis 05.10.2026) (bis 12.10.2026)
-#: source_id: planb2026:13.52464066,52.47856838,18.05.2026, ("Vollsperrung beider Fahrbahnen", Ehrlichstr., bis 11.10.2026)
-#: source_id: planb2026:13.51311063,52.48348885,02.03.2026, ("Vollsperrung beider Fahrbahnen", Blockdammweg, bis 05.10.2026)
-#: note: Bauabschnitt 1: 26.05. bis vsl. 10.07.2026
-#: note: in der Liepnitzstr. keine Einbahnstraßenregelung, sondern über weite Teile Halteverbot auf beiden Seiten
-#: note: Bauabschnitt 2: vsl. 10.07. bis vsl. 06.09.2026
-#: note: neue Planung: bis 21.09.2026 bleibt die Ehrlichstr. gesperrt, der Kreuzungsbereich Blockdammweg/Ehrlichstr. bis zum 12.10.2026
-#: also_indoor: traffic (G,T,H,W)
-#: last_checked: 2026-09-16 vvv
-# REMOVED --- #: check_frequency: 3d (2. BA?) vvv
-#: next_check: 2026-10-12 (VIZ-Verkehrsmeldung) vvv
-# REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18461,8377 18391,8425 18322,8470
-# REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18322,8470 18228,8537 18151,8589
-# REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18151,8589 18086,8634 18009,8687
-# REMOVED (hier fertig) --- Ehrlichstr.: Sperrung der Fahrbahn, schmale Gehwege für Radfahrer frei	q3::inwork 18009,8687 17997,8695 17929,8742 17879,8773
-Blockdammweg: Fahrbahn gesperrt	q3::inwork 17632,8856 17702,8855
-Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn, schmaler Gehweg für Radfahrer frei	q3::inwork; 17702,8855 17720,8854 17736,8850 17879,8773
-Blockdammweg/Ehrlichstr.: Sperrung der Fahrbahn und des nördlichen Bürgersteigs	q4::inwork; 17879,8773 17736,8850 17720,8854 17702,8855
-# REMOVED (hier nicht) --- Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17856,8162 17793,8225 17753,8290 17707,8328 17652,8349 17617,8363 17588,8413 17581,8422 17554,8458 17533,8505 17521,8549 17515,8567 17497,8623 17468,8692
-# REMOVED (mittlerweile mit Radfahrer frei) --- Hönower Wiesenweg: Einbahnstraßenregelung	q4::inwork; 17468,8692 17449,8720 17443,8729 17416,8767 17380,8858
-# REMOVED (hier für Radfahrer frei, wird aber weiter nicht wiederholt) --- Wandlitzstr.: Einbahnstraßenregelung	q4::inwork; 18704,8427 18627,8475
-# REMOVED (mittlerweile hier auch Radfahrer frei) --- Wandlitzstr.: Einbahnstraßenregelung	q4::inwork; 18627,8475 18557,8525 18494,8569 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895
-# REMOVED (mittlerweile mit Radfahrer frei) --- Trautenauer Str.: Einbahnstraßenregelung	q4::inwork; 17879,8773 17851,8662 17846,8644
-# REMOVED (mittlerweile Radfahrer frei) --- Müritzstr.: Einbahnstraßenregelung	q4::inwork; 18147,8895 18009,8687
-# REMOVED (vermutlich nun auch Radfahrer frei?) --- Georg-Klingenberg-Str.: Einbahnstraßenregelung	q4::inwork; 17846,8644 17792,8660 17668,8696 17659,8698 17468,8692
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1779660000,
-         'id' => 4612,
-         'text' => 'Ehrlichstr./Blockdammweg: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Blockdammweg und Trautenauer Str., vom 26.05.2026 bis voraussichtlich 12.10.2026',
-         'type' => 'handicap',
-         'until' => 1791842399
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: LMS-BR:409562/72 viz2021:13.303816,52.502718,26.05.2026,07:00 (bis 30.11.2026)
@@ -10414,7 +10378,7 @@ Eisenbahnstr. zwischen Kastanienweg und An der Föhse	q4::inwork -21277,-3302 -21
 #: osm_watch: note 5183324 3
 #: source_id: planb2026:13.42048743,52.50798798,11.07.2026, ("Vollsperrung beider Fahrbahnen", bis 30.10.2026)
 #: XXX Nach den Bauarbeiten müssen vermutlich gesperrt_car-orig-Einträge erzeugt werden.
-#: last_checked: 2026-08-28 (mapillary)
+#: last_checked: 2026-10-12
 #: check_frequency: 30d
 #: next_check: 2026-10-30 (planb)
 # REMOVED --- #: next_check: 2026-11-30 (BA-Pressemitteilung)
@@ -10517,7 +10481,7 @@ Am Wiesenrain: Einbahnstraßenregelung	q3::inwork; 23931,5992 24122,6007
 #: note: wegen der Kürze der Baustelle: q4 -> q3
 #: note: Laut Baustellenschild der Wasserbetriebe Bauarbeiten bis Oktober 2027 (!)
 #: XXX Sind die Bauarbeiten beendet?
-#: last_checked: 2026-10-10
+#: last_checked: 2026-10-12
 #: check_frequency: 30d
 #: next_check: 2026-12-11 (planb)
 # REMOVED --- #: next_check: 2027-10-31 (Wasserbetriebe, evtl. Gesamtmaßnahme)
@@ -10897,7 +10861,7 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
 #: note: der Bürgersteig ist nicht nur eng, sondern teilweise auch unangenehm zu fahren: Charlottenburger Platten, gepflasterte Ausfahrten, unzureichende abgesenkte Bordsteine
 #: traffic_note: Etwas Ausweichverkehr via Engeldamm - illegale Überfahrt zum Mariannenplatz - Wrangelstr., evtl. wird es mit der Zeit mehr werden.
 #: source_id: LMS-BR:420723/72 viz2021:13.42828,52.50735,31.08.2026,04:00 vizapi2026:853/2026 (bis 26.10.2026)
-#: last_checked: 2026-10-08 vvv
+#: last_checked: 2026-10-12 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2026-12-31 vvv
 Köpenicker Str.: getrennter Rad- und Gehweg	q2::inwork; 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
@@ -11430,7 +11394,7 @@ Parkplatz Rasthof Avus: Baustellenfläche, komplett gesperrt	2::inwork 1870,10406
        {
          'data' => '#: source_id: planb2026:13.29590686,52.48274139,01.01.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 #: note: laut planb nur ein kleiner Abschnitt betroffen, deshalb q4 -> q3
-	q3::inwork 3131,8435 2885,8513
+	q3::inwork 3131,8427 2894,8471 2867,8497
 ',
          'from' => 1791271902,
          'id' => 4781,
@@ -11580,6 +11544,7 @@ An der Nordbahn: Sanierung mit Sperrung	2::inwork 7218,19723 7200,19715 7160,197
          'data' => '#: by: https://www.aktives-adlershof.de/aktuelles?date=20261007 ("Dörpfeldstraße gesperrt", 19. Oktober bis 16. Dezember 2026 in zwei Bauabschnitten)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1723358.php ("Radfahrende können die entsprechend ausgeschilderten Gehwege in Schrittgeschwindigkeit mit nutzen")
 #: by: https://viz.berlin.de/aktuelle-meldungen/baumassnahmen-in-der-dorpfeldstrasse-19.10-bis-16.12.26/
+#: by: https://www.entwicklungsstadt.de/bauarbeiten-in-adlershof-doerpfeldstrasse-wird-bis-dezember-gesperrt/
 #: source_id: planb2026:13.54714994,52.43753519,19.10.2026, ("Vollsperrung beider Fahrbahnen", Bereich Marktplatz Adlershof, 19.10.2026 bis 16.12.2026)
 #: next_check: 2026-10-18 (planb + aktives-adlershof (1 Tag vorher))
 # XXX next_check: 2026-11-12 (nächster Bauabschnitt)
@@ -11592,24 +11557,15 @@ Dörpfeldstraße zwischen Friedenstraße - Hackenbergstraße	q3::inwork 20219,3661 2
          'type' => 'handicap',
          'until' => 1794610799
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261008
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mxhhbqvtwb23
-#: source_id: vizapi2026:1042/2026 (09.10.2026 21:00 bis 12.10.2026 04:00)
-#: source_id: LMS-BR:424860/72 viz2021:13.37093,52.49266,09.10.2026,21:30 (bis 12.10.2026)
-	2::inwork 8595,9495 8358,9568 8192,9619
-',
-         'from' => 1791410400,
-         'id' => 4794,
-         'text' => 'Yorckstr.: Brückeneinhebung, Komplettsperrung zwischen Bautzener Str. und Katzbachstr, vom 09.10.2026 21:00 bis 12.10.2026 04:00',
-         'type' => 'handicap',
-         'until' => 1791770400
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1721843.php (12. - 30. Oktober 2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/pankow-sperrung-der-kreuzung-dietzgenstrasse-schonhauser-strasse-schillerstrasse-12-30.10.26/
 #: by: https://www.entwicklungsstadt.de/vollsperrung-in-pankow-strassenbau-trifft-auch-die-tramlinie-m1/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261009
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidioh5ideh6oy5xqmpnpbdhr3bnl22ezkyg5s2sadunxz5zoq3aea (zwei provisorische LSA in der Kastanienallee)
+#: source_id: LMS-BR:425144/72 viz2021:13.4017,52.59009, vizapi2026:1055/2026 (bis 30.10.2026)
+#: source_id: LMS-BR:425147/72 viz2021:13.4017,52.59009, (bis 30.10.2026)
 #: source_id: planb2026:13.40173478,52.58947293,12.10.2026, ("Vollsperrung beider Fahrbahnen", Dietzgenstr., bis 30.10.2026)
 #: source_id: bvg2024:107#HIM_FREETEXT_367213
 #: source_id: bvg2024:124#HIM_FREETEXT_367212

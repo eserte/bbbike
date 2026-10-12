@@ -377,7 +377,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-10-11 vvv
+#: last_checked: 2026-10-12 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -634,9 +634,9 @@ Verbundsteinpflaster	RW1; 3521,9059 3565,9057 3688,9051 3760,9052 3816,9052 3831
 #: note: vor der Ampel kurzer Schutzstreifen mit Pollern
 	RW1; 3467,9045 3521,9059
 	RW2; 3379,8969 3427,9010 3467,9045
-	RW1; 3379,8969 3158,8763 2966,8586 2915,8540 2885,8513 2857,8487 2713,8357 2661,8307 2539,8196 2397,8064 2335,7994 2277,7932 2207,7850 2112,7754
+	RW1; 3379,8969 3158,8763 2966,8586 2915,8540 2867,8497 2857,8487 2713,8357 2661,8307 2539,8196 2397,8064 2335,7994 2277,7932 2207,7850 2112,7754
 	RW1; 2112,7754 2207,7850 2277,7932 2335,7994 2397,8064
-teilweise unebenes Verbundsteinpflaster, relativ breit	RW1; 2397,8064 2539,8196 2661,8307 2713,8357 2857,8487 2885,8513 2915,8540 2966,8586 3158,8763 3379,8969
+teilweise unebenes Verbundsteinpflaster, relativ breit	RW1; 2397,8064 2539,8196 2661,8307 2713,8357 2857,8487 2867,8497 2915,8540 2966,8586 3158,8763 3379,8969
 # REMOVED (ehemalige Radwege nun explizit Fußgängern vorbehalten) ---	RW1;RW1 -2774,10345 -2568,10271 -2331,10237 -2117,10298 -1947,10272 -1860,10317 -1545,10660 -1504,10736 -1501,10833 -1517,10971 -1523,11012
 alter Asphalt, recht eng	RW9;RW1 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
 holpriger (alter Asphalt) und enger Gehweg für Radfahrer frei	RW1;RW1 -3296,3686 -3680,3160 -3768,3069 -4001,2858
@@ -6193,8 +6193,8 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 	RW1;RW1 2660,8392 2713,8357
 	RW1;RW1 2713,8357 2773,8332 2889,8301 3003,8274 3117,8248
 Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 3042,7465 3084,7599
-	RW1; 3084,7599 3094,7790 3107,7997 3108,8052 3117,8248 3131,8435 3137,8538 3158,8763
-asphaltiert, leicht uneben, wenig Platz zu parkenden Autos	RW1; 3158,8763 3137,8538 3131,8435 3117,8248
+	RW1; 3084,7599 3094,7790 3107,7997 3108,8052 3117,8248 3131,8427 3137,8538 3158,8763
+asphaltiert, leicht uneben, wenig Platz zu parkenden Autos	RW1; 3158,8763 3137,8538 3131,8427 3117,8248
 Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 3117,8248 3108,8052 3107,7997 3094,7790 3084,7599 3042,7465
 	RW0;RW1 3117,8248 3218,8233 3230,8230 3332,8207 3665,8131 3779,8105
 	RW1;RW1 3779,8105 4106,8031

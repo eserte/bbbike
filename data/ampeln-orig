@@ -59,9 +59,11 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 (bis 15.10.2026)
-#: last_checked: 2026-10-11
-#: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
-#: valid: -20261015
+#: last_checked: 2026-10-12
+#: check_frequency: 14d
+# REMOVED (vermutete Verlängerung) --- #: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: valid: -20261015
+#: valid: -20261231
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # REMOVED --- Straße der Pariser Kommune: vermutete (Hoch?)Bauarbeiten, evtl. mit (Teil)Sperrung der Straße?	? 12822,12067 12833,12154 12854,12287
 # 
