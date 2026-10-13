@@ -5071,7 +5071,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058 (letzter Stand 16.09.2021: Zwischenbericht)
 #: XXX wird hier saniert?
 #: osm_watch: way id="22047751" version="26"
-#: last_checked: 2026-09-13
+#: last_checked: 2026-10-13
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15659,15759
@@ -12572,7 +12572,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-10-11
+#: last_checked: 2026-10-13
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -26878,7 +26878,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="9"
-#: last_checked: 2026-09-13
+#: last_checked: 2026-10-13
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16357,15328 16406,15452
@@ -30905,7 +30905,8 @@ Bissingzeile: Kopfsteinpflaster	Q2- 8119,10797 8070,10680
 # REMOVED --- Herkulesufer: Kleinpflaster	Q2 7575,11076 7252,11188
 Herkulesufer: Kleinsteinpflaster	Q2+ 7233,11189 7160,11186 7135,11171 7142,11145 6920,11064 6882,11061
 #: corrected_by: srt (Q0 -> Q1+)
-Berolinastr.: Beton	Q1+ 11560,13232 11476,13052 11440,12976 11419,12944 11541,12886 11601,12858
+#: historical_note: früher (bis 2026) mit Q1+ getaggt, mittlerweile gibt es mehr Schäden (wegen der Bauarbeiten?) -> Q1-
+Berolinastr.: Beton	Q1- 11560,13232 11476,13052 11440,12976 11419,12944 11541,12886 11601,12858
 #: corrected_by: srt (Beton, Q2 -> )
 Berolinastr.: Asphalt	Q0 11476,13052 11590,12995 11609,12986 11659,12962 11673,12955 11771,12909
 #: confirmed_by: srt

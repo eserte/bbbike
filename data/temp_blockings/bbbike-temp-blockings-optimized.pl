@@ -6489,7 +6489,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
          'data' => '#: next_check_id: U6-2022
 #: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-wasserstra%C3%9Fen-geb%C3%A4ude/?postID=749262#post749262
 #: source_id: viz2021:13.298741,52.573871,27.03.2023,09:00 (bis 31.12.2024) (bis 31.12.2025) (inaktiv)
-#: source_id: LMS-BR:296321/72 viz2021:13.29736,52.57318,27.03.2023,09:00 (bis 31.12.2025) (inaktiv) (bis 31.12.2025) (bis 31.12.2026)
+#: source_id: LMS-BR:296321/72 viz2021:13.29736,52.57318,27.03.2023,09:00 vizapi2026:1063/2026 (bis 31.12.2025) (inaktiv) (bis 31.12.2025) (bis 31.12.2026)
 #: source_id: planb2026:13.2990355,52.57395562,28.04.2025,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 #: osm_watch: note 4444221 3
 #: note: außerhalb der Arbeitszeiten (gesehen 2023-10-03) kann die Fahrbahn offen sein
@@ -6606,7 +6606,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: source_id: LMS-BR:368378/72 viz2021:13.40319,52.52474,09.05.2025,07:00 (bis 04.06.2025) (inaktiv) (bis 04.06.2026) (inaktiv)
 #: source_id: viz2021:13.40319,52.52474, (Gleisbauarbeiten, bis 07.11.2025) (inaktiv)
 #: source_id: planb2026:13.40266273,52.52398849,05.05.2025, ("Sperrung einer Fahrtrichtung", bis 31.05.2027)
-#: source_id: planb2026:13.40234154,52.5236632,04.08.2026, ("Sicherung gemäß Vz.-plan", hier über die Sophienstr. hinaus, bis 14.09.2026) (vorfristig inaktiv) (bis 20.10.2026)
+#: source_id: planb2026:13.40234154,52.5236632,04.08.2026, ("Sicherung gemäß Vz.-plan", hier über die Sophienstr. hinaus, bis 14.09.2026) (vorfristig inaktiv) (bis 20.10.2026) (vorfristig inaktiv)
 #: source_id: vizapi2026:785/2026 (bis 14.09.2026) (inaktiv) (bis 18.09.2026) (inaktiv)
 #: source_id: LMS-BR:422801/72 viz2021:13.40243,52.52363, vizapi2026:965/2026 (hier bis Sophienstr., bis 20.10.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m2o2qvma2k2q (Gleisbauarbeiten Oct - Nov 2025)
@@ -6628,7 +6628,8 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: osm_watch: way id="84960597" version="29"
 #: last_checked: 2026-10-09
 #: check_frequency: 30d
-#: next_check: 2026-10-20 (planb + VIZ-Verkehrsmeldung; wenn fertig -> alten Eintrag reaktivieren)
+#: next_check: 2026-10-13 (in planb inaktiv; wenn fertig -> alten Eintrag reaktivieren)
+# REMOVED --- #: next_check: 2026-10-20 (planb + VIZ-Verkehrsmeldung; wenn fertig -> alten Eintrag reaktivieren)
 # REMOVED --- #: next_check: 2027-05-31 (planb)
 # REMOVED (nach den Gleisbauarbeiten reaktivieren) --- Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: note: eigentlich schon q4- wegen regem Fußgängerverkehr, z.B. langsame Touristen
@@ -6636,6 +6637,7 @@ Rosenthaler Str.	q4::inwork 10321,13259 10313,13227 10270,13101
 # REMOVED (hier nicht voll gesperrt) --- Rosenthaler Str.	q4::inwork 10340,13337 10321,13259
 # REMOVED (nur geringe Einschränkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
 ',
+         'dont_check_date' => 1,
          'from' => 1785794400,
          'id' => 3899,
          'text' => 'Rosenthaler Str.: Gleisbauarbeiten zwischen Sophienstr. und Hackescher Markt, geplant ab 04.08.2026 bis 20.10.2026',
@@ -6967,17 +6969,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1546998.php
-	q4::temp::play 9570,10566 9556,10666
-',
-         'from' => 1777240800,
-         'id' => 4046,
-         'recurring' => 1,
-         'text' => 'Friedrichstr.: zwischen Rahel-Varnhagen-Promenande und Franz-Klühs-Str. jeden Dienstag von 13:30 bis 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 28. April bis zum 13. Oktober (außer Sommerferien) ',
-         'type' => 'gesperrt',
-         'until' => 1791909000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -7145,7 +7137,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-10-12 vvv
+#: last_checked: 2026-10-13 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -8589,7 +8581,7 @@ Schiffbauerdamm, Richtung Westen: nur für Fußgänger	q4::inwork; 9025,12727 8870,
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (ex-G,ex-T,ex-B)
 #: source_id: planb2026:13.41359234,52.51568692,13.12.2023, ("Fahrstreifen-Reduzierung" in der Stralauer Allee, bis 30.10.2026) (vorfristig inaktiv)
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-13
 #: check_frequency: 14d
 #: next_check: 2026-10-30 (ex-planb)
 	q4::inwork 10951,12249 10957,12401
@@ -9349,7 +9341,7 @@ Rudolf-Breitscheid-Str.	q4::inwork -8483,-1543 -8469,-1541
 #: osm_watch[closed]: note 4953642 2
 #: osm_watch: note 5246727 5
 #: source_id: LMS-BR:407366/72 viz2021:13.45315,52.52627,06.05.2026,20:00 (Kraneinsatz, bis 08.05.2026) (inaktiv)
-#: last_checked: 2026-09-13 vvv
+#: last_checked: 2026-10-13 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2026-12-31 (planb) vvv
 #: osm_watch: way id="1528007580" version="1"
@@ -9666,12 +9658,13 @@ Blockdammweg - Wandlitzstr.	2::inwork 17736,8850 17754,8863 17915,8945
 #: source_id: planb2026:13.49222078,52.54990296,24.04.2026,07:00 ("Sicherung gemäß Vz.-plan", westliche Oberseestraße, bis 26.08.2026) (bis 17.12.2026)
 #: source_id: planb2026:13.49148089,52.54944583,09.02.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 17.12.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-09-13 vvv
+#: last_checked: 2026-10-13 vvv
 #: check_frequency: 30d (traffic) vvv
 #: next_check: 2026-12-17 (planb (späterer der beiden Termine)) vvv
-Sabinensteig: Einbahnstraßenregelung	q4::inwork; 16395,16099 16442,15926
-Oberseestr. (östlicher Abschnitt): Einbahnstraßenregelung	q4::inwork; 16442,15926 16491,15874 16537,15827
+# REMOVED (seit etwa Ende Sep/Anfang Okt 2026 offen) --- Sabinensteig: Einbahnstraßenregelung	q4::inwork; 16395,16099 16442,15926
+# REMOVED (seit etwa Ende Sep/Anfang Okt 2026 offen) --- Oberseestr. (östlicher Abschnitt): Einbahnstraßenregelung	q4::inwork; 16442,15926 16491,15874 16537,15827
 Oberseestr. (mittlerer Abschnitt): Abschnitt der Straße gesperrt	q4::inwork 16442,15926 16369,16003
+Oberseestr. (östlicher Abschnitt jenseits Degnerstr.): Fahrbahn gesperrt	q4::inwork 16537,15827 16615,15737
 #: note: vermutete Sperrung
 Oberseestr. (westlicher Abschnitt)	q4::inwork 16369,16003 16322,16049 16208,16087
 Käthestr.: Abschnitt der Straße gesperrt	q4::inwork 16369,16003 16349,15935 16351,15914
@@ -9683,7 +9676,7 @@ Käthestr.: Abschnitt der Straße gesperrt	q4::inwork 16369,16003 16349,15935 1635
 ',
          'from' => undef,
          'id' => 4576,
-         'text' => 'Sabinensteig, Oberseestr., Käthestr.: Bauarbeiten, Einbahnstraßenregelung bzw. Sperrung, Ende der Bauarbeiten unbekannt',
+         'text' => 'Oberseestr., Käthestr.: Bauarbeiten, Fahrbahnsperrung, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -9814,9 +9807,9 @@ Baustelleneinrichtungsfläche	2::inwork 19045,6959 19080,6986
        undef,
        {
          'data' => '#: also_indoor: traffic (ex-T,ex-G,no-H,no-W)
-#: add_fragezeichen: Sind die Bauarbeiten vorzeitig beendet?
+#: add_fragezeichen: Wurden die Bauarbeiten vorzeitig beendet?
 #: source_id: planb2026:13.32567635,52.42505107,09.01.2026,06:00 ("Vollsperrung beider Fahrbahnen", Jägerstr., bis 24.07.2026) (inaktiv)
-#: source_id: planb2026:13.3249997,52.42487496,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", Brauerstr.+Jägerstr.; bis 04.12.2026) (inaktiv) (bis 04.12.2026)
+#: source_id: planb2026:13.3249997,52.42487496,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", Brauerstr.+Jägerstr.; bis 04.12.2026) (vorfristig inaktiv) (bis 04.12.2026) (vorfristig inaktiv)
 #: last_checked: 2026-08-14 (traffic)
 #: check_frequency: 30d (traffic, später Frequenz hochsetzen)
 #: next_check: 2026-12-04 (planb)
@@ -10055,9 +10048,11 @@ Seelingstr.	q4::inwork 2686,12051 2920,12070
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G[later],T,ex-W[later],H[later])
 #: source_id: planb2026:13.33831777,52.60234858,23.03.2026, (verspätet eingefügt, "Vollsperrung beider Fahrbahnen", bis 28.08.2026) (bis 02.10.2026) (inaktiv)
+#: source_id: vizapi2026:1065/2026 (sehr spät angelegt, bis 13.11.2026)
 #: last_checked: 2026-10-10
-#: check_frequency: 30d (traffic)
+# REMOVED --- #: check_frequency: 30d (traffic)
 # REMOVED --- #: next_check: 2026-10-02 (planb)
+#: next_check: 2026-11-13 (vizapi2026)
 	q4::inwork 5552,21824 5665,21733
 ',
          'from' => undef,
@@ -10481,7 +10476,7 @@ Am Wiesenrain: Einbahnstraßenregelung	q3::inwork; 23931,5992 24122,6007
 #: note: wegen der Kürze der Baustelle: q4 -> q3
 #: note: Laut Baustellenschild der Wasserbetriebe Bauarbeiten bis Oktober 2027 (!)
 #: XXX Sind die Bauarbeiten beendet?
-#: last_checked: 2026-10-12
+#: last_checked: 2026-10-13
 #: check_frequency: 30d
 #: next_check: 2026-12-11 (planb)
 # REMOVED --- #: next_check: 2027-10-31 (Wasserbetriebe, evtl. Gesamtmaßnahme)
@@ -10496,7 +10491,7 @@ Am Wiesenrain: Einbahnstraßenregelung	q3::inwork; 23931,5992 24122,6007
        {
          'data' => '#: source_id: planb2026:13.48092968,52.5389072,13.05.2024,06:00 (bis 31.08.2026) (bis 13.11.2026)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2026-09-13
+#: last_checked: 2026-10-13
 #: next_check: 2026-11-13 (planb)
 #	2::inwork 15536,14956 15568,14901
 	q3::inwork 15536,14956 15568,14901 15580,14880
@@ -11053,7 +11048,9 @@ Kressenweg	q4::inwork; 23573,10975 23648,11265
        {
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvhdvlfoul2g
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4hwtrvxovsbdxnc4nemj6ahzomfhitvqpb6evh5prkv5oujx6fq
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261013 (Stromnetzarbeiten Höhe Sieversbrücke bis Februar 2027)
 #: source_id: LMS-BR:422269/72 viz2021:13.35402,52.44333,14.09.2026,07:00 vizapi2026:928/2026 (bis 17.02.2027)
+#: source_id: vizapi2026:1064/2026 (Sieversbrücke, aber falsch geolokalisiert (benachbarte Brücke!), bis 17.02.2027)
 #: source_id: planb2026:13.35365283,52.4418069,14.10.2026, ("Fahrstreifen-Reduzierung", bis 17.02.2027)
 # suboptimales Routing: besser wäre eine Teilung der Fahrbahnen der Kaiser-Wilhelm-Str., oder eine Lösung mit DH
 Maulbronner Ufer -> Kaiser-Wilhelm-Str.	3::inwork 7307,4087 7161,4110 7162,4058
@@ -11207,7 +11204,17 @@ Am Weidendamm	q4::inwork; 9286,12886 9323,12895
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR:422956/72 viz2021:13.32885,52.48515,21.09.2026,07:00 (bis 08.10.2026) (inaktiv)
+#: source_id: planb2026:13.32883141,52.48610895,21.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026)
+	q4::inwork 5347,8732 5343,8858
+',
+         'from' => 1789880400,
+         'id' => 4766,
+         'text' => 'Gerdauer Str.: Tiefbauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 21.09.2026 07:00 bis 30.10.2026',
+         'type' => 'handicap',
+         'until' => 1793401199
+       },
        {
          'data' => '#: source_id: LMS-BR:423777/72 viz2021:13.27184,52.53652, (Reisstr.)
 #: source_id: LMS-BR:423773/72 viz2021:13.27358,52.53614, (Ohmstr.)
@@ -11564,6 +11571,7 @@ Dörpfeldstraße zwischen Friedenstraße - Hackenbergstraße	q3::inwork 20219,3661 2
 #: by: https://www.entwicklungsstadt.de/vollsperrung-in-pankow-strassenbau-trifft-auch-die-tramlinie-m1/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261009
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidioh5ideh6oy5xqmpnpbdhr3bnl22ezkyg5s2sadunxz5zoq3aea (zwei provisorische LSA in der Kastanienallee)
+#: by: https://www.tagesspiegel.de/berlin/auch-tramverkehr-zeitweise-unterbrochen-wichtige-kreuzung-in-berlin-pankow-ist-fur-drei-wochen-gesperrt-16151524.html
 #: source_id: LMS-BR:425144/72 viz2021:13.4017,52.59009, vizapi2026:1055/2026 (bis 30.10.2026)
 #: source_id: LMS-BR:425147/72 viz2021:13.4017,52.59009, (bis 30.10.2026)
 #: source_id: planb2026:13.40173478,52.58947293,12.10.2026, ("Vollsperrung beider Fahrbahnen", Dietzgenstr., bis 30.10.2026)
@@ -11615,6 +11623,28 @@ Ackerstr.	q3::inwork 9048,14681 8945,14764
          'text' => 'Feldstr./Ackerstr.: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, voraussichtlich bis Mitte Dezember 2026',
          'type' => 'handicap',
          'until' => 1797634799
+       },
+       {
+         'data' => '#: source_id: vizapi2026:1066/2026 (bis 30.01.2027)
+#: source_id: planb2026:13.36265722,52.42825742,05.10.2026,07:00 ("Fahrstreifen-Reduzierung", hier nur bis Wichurastr., bis 30.01.2027)
+	q4::inwork; 7517,2574 7555,2540 7602,2522 7667,2501 7704,2482 7777,2447
+',
+         'from' => 1791151200,
+         'id' => 4799,
+         'text' => 'Belßstr.: Leitungsarbeiten, Einbahnstraßenregelung, Richtung Osten zwischen Wendellstr. und Haynauer Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 30.01.2027 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1801324800
+       },
+       {
+         'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,728847,867508#msg-867508
+#: source_id: planb2026:13.5403819,52.4325485,25.09.2026,07:00 ("Fahrbahneinengung", bis 23.12.2026)
+	q4::inwork; 19890,3186 19848,3140 19778,3064
+',
+         'from' => 1791914722,
+         'id' => 4800,
+         'text' => 'Ernst-Augustin-Str.: Einbahnstraßenregelung zwischen Willi-Schwabe-Str. und Franz-Ehrlich-Str., offen Richtung Nordosten, voraussichtlich bis 23.12.2026',
+         'type' => 'handicap',
+         'until' => 1798066800
        }
      
 );

@@ -69,7 +69,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-10-07 vvv
+#: last_checked: 2026-10-13 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: planb2026:13.45274687,52.51888366,19.08.2024, ("Sperrung einer Fahrtrichtung", bis 31.12.2026) (vorfristig inaktiv) (bis 31.12.2026)
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
@@ -117,12 +117,12 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 # 
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
 # 
-#: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026)
+#: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (bis 20.11.2026)
 #: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026)
 #: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026)
 #: last_checked: 2026-10-12 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2026-10-16 (planb) vvv
+#: next_check: 2026-11-20 (planb) vvv
 Singerstr.: Sperrung an der Einmündung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
 # REMOVED (eigentlich hier auch, aber es existiert bereits ein handicap-Eintrag an dieser Stelle, deshalb wird der nächste Abschnitt mit q4 getaggt) --- Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q3::inwork 12735,12131 12691,12042
 Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q4::inwork 12691,12042 12648,11953
@@ -135,7 +135,7 @@ Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q4::inwork 12691,1204
 #: source_id: planb2026:13.44005683,52.52346346,15.08.2024,07:00 ("Sicherung gemäß Vz.-plan", bis 31.10.2026)
 #: also_indoor: traffic (ex-G,T,no-H,W[later])
 #: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
-#: last_checked: 2026-10-06 (traffic)
+#: last_checked: 2026-10-13
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-11-13 (planb)
 #: valid: -20261113
@@ -193,7 +193,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 #: source_id: planb2026:13.44849499,52.5121092,12.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026)
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026)
-#: last_checked: 2026-10-12 vvv
+#: last_checked: 2026-10-13 vvv
 #: next_check: 2026-10-16 vvv
 #: valid: 20261012-20261016 vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
@@ -589,7 +589,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-10-08 vvv
+#: last_checked: 2026-10-13 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
@@ -717,7 +717,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-09-14
+#: last_checked: 2026-10-13
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung, entwicklungsstadt)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
@@ -1235,11 +1235,13 @@ Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 ### Wilmersdorf ###
 # 
+#: next_check_id: A100-MECKLENBURGISCHE-2026
 #: source_id: planb2026:13.31995822,52.47872413,28.08.2026, ("Sicherung gemäß Vz.-plan", bis 31.07.2027)
 #: osm_watch: note 5546534 3
 #: last_checked: 2026-10-06
-#: check_frequency: 120d
-#: next_check: 2027-07-31
+#: check_frequency: 60d
+#: next_check: 2026-11-15 (entwicklungsstadt)
+# REMOVED --- #: next_check: 2027-07-31 (planb)
 Detmolder Str.: Baustelleneinrichtungsfläche, Radweg gesperrt	q4::inwork; 4786,8007 4711,8013
 # 
 # REMOVED (traffic) --- #: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) (inaktiv) vvv --- #: also_indoor: traffic (B,G,ex-H) vvv --- #: last_checked: 2022-12-06 (research) vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-11-30 vvv --- # REMOVED --- #: valid: -20221130 vvv --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4324,8899 4451,8874 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q2::inwork 4451,8874 4777,8870 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4449,8999 4451,8874 4456,8703 --- # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: source_id ^^^

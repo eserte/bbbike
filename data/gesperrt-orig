@@ -4229,7 +4229,7 @@ Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
 # 
 #: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: note: mit festen Zäunen gesperrt
-#: last_checked: 2026-10-12
+#: last_checked: 2026-10-13
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
 # 
 # REMOVED (Landstraße entfernt) --- #: next_check_id: FANGSCHLEUSE-2026
@@ -4319,7 +4319,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-09-14
+#: last_checked: 2026-10-13
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4444,7 +4444,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 vizapi2026:100/2026 (bis 05.05.2026) (bis 22.07.2026) (bis 01.10.2026) (bis 25.03.2027)
 #: source_id: planb2026:13.42640002,52.52310299,03.02.2026, ("Fahrstreifen-Reduzierung", bis 01.10.2026) (bis 25.03.2027)
 #: note: außerdem ist die verkehrsrechtliche Situation der Einfahrt Richtung Weydemeyerstr. für Radfahrer unklar: komplett gesperrt oder nicht? Durchfahrt war bislang immer möglich.
-#: last_checked: 2026-10-09
+#: last_checked: 2026-10-13
 #: next_check: 2027-03-25 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20270325
 (Berolinastr. - Mollstr.): wegen Tiefbauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
@@ -5078,12 +5078,13 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/erweiterungsbau-ausw%C3%A4rtige-amt-kurstra%C3%9Fe.249/page-2#post-22844
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/auswaertiges-amt/kurstrasse-33-35.html (Fertigstellung 2027/2028) (mittlerweile 404)
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/berlin/politik-und-verwaltung/auswaertiges-amt/kurstrasse-33-35/projektinformation.html (Fertigstellung geplant 2030)
+#: by: https://www.entwicklungsstadt.de/seit-fuenf-jahren-baustelle-was-am-auswaertigen-amt-in-berlin-entsteht/ (Fertigstellung 2030 geplant)
 #: also_indoor: traffic (B,W,G,T)
 #: note: für Fußgänger gibt es mittlerweile einen asphaltierten, nicht geradlinig geführten Notweg im Parkbereich
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-09-19
+#: last_checked: 2026-10-13
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -5409,12 +5410,13 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,1015
 #: by: https://www.entwicklungsstadt.de/nordhafen-living-office-mixed-use-projekt-in-der-europacity-vor-naechster-etappe/ (Fertigstellung Frühjahr 2027)
 #: by: https://www.entwicklungsstadt.de/nordhafen-living-in-der-europacity-wohnen-arbeiten-am-wasser/
 #: by: https://www.entwicklungsstadt.de/82-meter-hoch-upbeat-in-der-europacity-ist-fertiggestellt/
+#: by: https://www.entwicklungsstadt.de/nach-vier-jahren-bauzeit-dkb-uebernimmt-neues-hochhaus-in-der-berliner-europacity/
 #: source_id: viz2021:13.362267,52.536335,05.02.2024,07:00 (Leitungsarbeiten, in der Heidestr., bis 29.03.2024) (inaktiv)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
 # REMOVED (keine Updates mehr) --- #: also_indoor: webcam https://portal1915.webcam-profi.de/
 #: last_checked: 2026-10-10 vvv
-#: check_frequency: 120d vvv
+#: check_frequency: 90d vvv
 #: next_check: 2027-04-15 (jtre.de, entwicklungsstadt (Frühjahr 2027)) vvv
 George-Stephenson-Str.: Hochbauarbeiten, gesperrt	2::inwork 7487,14472 7446,14403
 George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgersteig frei	2s:q4:inwork 7446,14403 7529,14274
@@ -5542,7 +5544,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://molkenmarkt.berlin.de/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf (Aufstellungsbeschluss 1-14-2 (zwischen Jüdenstr. und Klosterstr.))
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-13
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5551,7 +5553,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-10-10
+#: last_checked: 2026-10-13
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
