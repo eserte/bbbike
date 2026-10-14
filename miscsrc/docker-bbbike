@@ -151,6 +151,18 @@ sub _dockerfile_fix_sources_list ($) {
 RUN echo 'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260831/ bullseye main'                   >  /etc/apt/sources.list
 RUN echo 'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260831/ bullseye-security main' >> /etc/apt/sources.list
 EOF
+    } elsif ($optref->{dist} eq 'debian' && $optref->{distver} eq 'buster') {
+	# XXX 404s for some packages, use a reasonably fresh snapshot
+	$dockerfile .= <<EOF;
+RUN echo 'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20250601/ buster main'                  >  /etc/apt/sources.list
+RUN echo 'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20250601/ buster/updates main' >> /etc/apt/sources.list
+EOF
+    } elsif ($optref->{dist} eq 'debian' && $optref->{distver} eq 'stretch') {
+	# XXX 404s for some packages, use a reasonably fresh snapshot
+	$dockerfile .= <<EOF;
+RUN echo 'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20220601/ stretch main'                  >  /etc/apt/sources.list
+RUN echo 'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20220601/ stretch/updates main' >> /etc/apt/sources.list
+EOF
     } elsif ($optref->{dist} eq 'debian' && _is_archived_debian($optref->{distver})) {
 	$dockerfile .= <<EOF;
 RUN echo 'deb [check-valid-until=no] http://archive.debian.org/debian $optref->{distver} main'                  >  /etc/apt/sources.list
