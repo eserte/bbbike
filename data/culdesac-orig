@@ -1700,10 +1700,15 @@ westliches Sackgassenende	culdesac 18711,2338
 	culdesac -9586,7076
 #: note: für Fußgänger gibt es eine Verbindung zum Mauerweg
 	culdesac_pseudo -9197,7058
+	culdesac 9550,8483
+	culdesac 9462,8408
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 9812,8665
+	culdesac_pseudo 9363,8469
+	culdesac_pseudo 9502,8600
 	culdesac_pseudo 6470,18763
 	culdesac_pseudo 7935,5230
 	culdesac_pseudo 12605,13818

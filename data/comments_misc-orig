@@ -544,6 +544,15 @@ Hausdurchfahrt	CP2; 17601,5374 17538,5301
 # 
 (Diedersdorfer Weg - Nahmitzer Damm): entlang des Bundesinstitus für Risikobewertung	CS 7760,440 7810,461 7809,509 7837,516 7848,500 7910,518 8018,500 8075,499
 # 
+Flughafengelände: Hausdurchfahrt	CS 9378,8448 9363,8469
+Flughafengelände: Hausdurchfahrt	CS 9363,8469 9401,8510
+Flughafengelände: Hausdurchfahrt	CS 9451,8548 9502,8600
+Flughafengelände: Hausdurchfahrt	CS 9502,8600 9541,8570
+# 
+Bayernring/Tempelhofer Damm - Flughafengelände: Privatgrundstück / Betreten und Befahren nur für Berechigte	CP2; 9238,8410 9292,8404
+Flughafengelände: Betriebsstraße / Weiterfahrt nur für Berechtigte	CP2; 9606,8676 9763,8667
+Flughafengelände: Nur für Berechtigte	CP2; 9589,8519 9550,8483
+# 
 #: section ^^^
 # 
 ######################################################################
@@ -1708,7 +1717,7 @@ Charles-Tellier-Platz: nicht ausgeschildert	CS -14665,481 -14626,465 -14622,440 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: note: laut fis-broker 1:5000 ist das tatsächlich die Falkoniergasse
 #: XXX wird hier noch ausgeschildert?
-#: osm_watch: way id="546927052" version="11"
+#: osm_watch: way id="546927052" version="12"
 #: last_checked: 2026-09-02
 #: check_frequency: 90d
 Falkoniergasse: nicht ausgeschildert	CP2; 9939,12174 9909,12261
@@ -2184,7 +2193,7 @@ bereits vor der Einmündung als "Neheimer Str." ausgeschildert	CP2; 1735,19045 1
 Lichtenberger Str. [Wohngebiet]: nicht ausgeschildert	CP2; 11947,12494 11867,12284
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-14
 #: check_frequency: 90d
 #: next_check: 2027-06-30
 Friedenauer Höhe: nicht ausgeschildert	CS 6293,7875 6260,7899 6132,7893 6131,7916 6011,7911 5810,7883
@@ -2332,6 +2341,8 @@ Heilkräuterweg: nicht ausgeschildert	CP2; 8475,22241 8559,22200
 Mohnblütenweg: nicht ausgeschildert, Krankenhausparkplatz	CS 21712,215 21688,312
 # 
 ausgeschildert Am Reiherhorst	CP2; 20640,16632 20621,16602
+# 
+ausgeschildert Zur Mörchinger Str.	CP2; 1322,3287 1334,3267
 # 
 #: section ^^^
 # DO NOT ADD ANYTHING AFTER THIS POINT!

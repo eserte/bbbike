@@ -374,7 +374,7 @@ Rapsstr.	1 755,15123 702,15274 693,15335 665,15414 659,15469
 Im Heidewinkel	1 1065,15229 1009,15400 978,15496 877,15474 772,15460
 Teufelsseestr.	1 445,11165 438,11236
 Auerhahnbalz	1 723,4572 697,4605 668,4653 650,4712 636,4765
-Flughafen Tempelhof	1 9364,8640 9451,8548 9401,8510 9321,8607
+Flughafen Tempelhof	1 9364,8640 9451,8548
 Zufahrt zu Germaniagarten/Oberlandgarten	1 11240,6350 11205,6358 11200,6372 11211,6384 11244,6379 11272,6374 11278,6359 11266,6347 11240,6350
 Germaniagarten	1 11224,6244 11206,6252 11220,6323 11237,6326 11252,6319 11243,6246 11224,6244
 Oberlandgarten	1 11246,6403 11230,6413 11238,6470 11253,6473 11269,6466 11264,6409 11246,6403
@@ -1066,6 +1066,7 @@ Mittelstreifen	3nocross::ignrte 16785,17524 16761,17561 16677,17678
 Darßer Str. -> Perler Str.: Mittelstreifen	3::igndisp 16785,17524 16761,17561 16453,17611
 Perler Str. -> Darßer Str.: Mittelstreifen	3::igndisp 16453,17611 16761,17561 16677,17678
 Radickestr.	1 20861,3814 20835,3795
+Camphausenstr.	1 365,1842 360,1860 368,1868 380,1866 386,1849
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3344,7 +3345,8 @@ Drängelgitter	BNP:5:43 7509,8929
 Schranke	BNP:3:62 8248,20933
 Schranke	BNP:5:-174 21342,12753
 Drängelgitter	BNP:3:7:trailer=5 22061,15168
-Drängelgitter kann ohne Absteigen passiert werden	BNP:2:-199 1388,3197
+Drängelgitter kann ohne Absteigen passiert werden	BNP:2:-236 1380,3191
+Drängelgitter kann ohne Absteigen passiert werden	BNP:2:-211 1334,3267
 Drängelgitter	BNP:5:72 11010,-378
 Drängelgitter	BNP:5:-42 22268,11285
 Drängelgitter und Schranke	BNP:5:-156:trailer=15 14274,12190

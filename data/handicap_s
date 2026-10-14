@@ -68,7 +68,6 @@ Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6260,7899 6132,7893
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6132,7893 6131,7916 6011,7911 5810,7883
 Erich-Boltze-Str., Verlängerung: Hochbauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
 Stavangerstr.: Sperrung der Fahrbahn, Radverkehr wird über den schmalen Bürgersteig geführt	q2::inwork 10845,16770 10883,16824
-Mühlenstr.: Sperrung der Fahrbahn im Bereich der Bahnbrücke, Gehweg für Radfahrer frei	q3::inwork 10495,17658 10573,17566
 Buckower Chaussee: Anbindungen an die Nebenstraßen werden noch erstellt	q4::inwork 8977,505 9004,481 9031,484
 Buckower Chaussee [Nebenstraße]: Absperrung auf der Fahrbahn, ggfs. auf den Bürgersteig wechseln	q3::inwork 9149,568 9115,556
 Kranoldplatz (Lichterfelde): Bauarbeiten, Sperrung der südlichen Spange	q4::inwork 5317,2345 5417,2383
@@ -614,7 +613,7 @@ Am Bahndamm: einige Fußgänger, schmal	q2 7769,4315 7795,4242 8016,3651 8055,3547
 Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Teltowkanalpromenade: schmale und kurvige Unterführung	q2 4778,3352 4815,3382 4822,3431
-Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
+Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1248,1675
 (Unterführung): Rampen	q2 -8334,14461 -8251,14440 -8256,14418 -8227,14408 -8287,14411
 Viktoriapark: starke Steigung, Fußgänger, Grünanlage	q4; 8598,9074 8695,9079 8827,9086 8883,9089
 Viktoriapark: starkes Gefälle, Fußgänger, Grünanlage	q3; 8883,9089 8827,9086 8695,9079 8598,9074
@@ -1206,7 +1205,7 @@ Varian-Fry-Str.: Fußgänger	q2 8374,11479 8389,11378
 Georg-Steger-Weg und Verlängerung: Fußgänger	q2 1508,2243 1603,2615 1635,2720 1652,2770 1641,2914
 Am Schweizerhof: Bordstein	q2 1177,1940 1191,1944
 Werner-Sylten-Weg: Fußgänger	q1 1016,737 1022,738 1129,763 1267,789
-(Heinrich-Laehr-Park - Schönower Park): Fußgänger	q1 1249,1672 1177,1940 1113,2143 1074,2209
+(Heinrich-Laehr-Park - Schönower Park): Fußgänger	q1 1248,1675 1177,1940 1113,2143 1074,2209
 Lorcher Str.: eng, Fußgänger	q2 4273,7002 4206,7040 4184,7053 4160,7043
 Lorcher Str.: Fußgänger	q1 4160,7043 4068,7040
 Crellestr.: Fußgänger, Straßencafés	q2 7484,9066 7524,9093 7570,9124
@@ -2845,6 +2844,11 @@ Franckepark: Fußgänger	q2 9389,6348 9346,6352
 (Karl-Marx-Allee - Marchlewskistr.): Fußgänger, Bordstein	q4 12950,12340 12965,12341 12972,12361
 An der Schule [Rad- und Gehweg]: einige Fußgänger	q1 24747,11524 24768,11616 24759,11666
 (Steinbergpark - Cité Foch): Grünanlage, einige Fußgänger	q2 3986,21590 4012,21621 4004,21651 4020,21675 4052,21681 4084,21714 4104,21726 4131,21732 4153,21742
+(Flughafengelände): Rampe, einige Fußgänger	q2 9363,8469 9401,8510
+(Flughafengelände): Rampe, einige Fußgänger	q2 9451,8548 9502,8600
+(Flughafengelände): Einfahrt nur für Berechtigte	q3; 9541,8570 9502,8600
+(Flughafengelände - Friesenstr.): eng, einige Fußgänger	q3 9812,8665 9807,8682
+(Golßener Str. - Flughafengelände): einige Fußgänger	q3 10209,8661 10205,8647 10142,8655
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3264,7 +3268,7 @@ Greveweg: enge Straße	q1 8276,5601 8279,5794
 Hobeckweg: enge Straße	q0 27190,13327 27414,13508 27530,13627 27556,13641
 Rosenorter Steig: enge Straße	q0 -1349,23497 -1451,23525 -1535,23575 -1617,23624 -1700,23671
 Straße 40 (Blankenburg): enge Straße	q0 14893,20583 14945,20748 15035,21026
-(Mörchinger Str. - Berliner Str.): Fußgänger	q2 1393,3183 1388,3197 1338,3300
+(Mörchinger Str. - Berliner Str.): Fußgänger	q2 1389,3185 1380,3191 1334,3267 1322,3287
 Biesentaler Str.: Aufpflasterungen, leicht zu umfahren	q0 9030,16853 9245,16758
 Tassostr.: enge Straße	q1 13623,15954 13614,15984 13625,16054 13639,16113 13654,16152 13645,16192 13677,16281
 An der Wildbahn: viele parkende Autos in enger Straße	q1 -1581,22553 -1447,22522 -1333,22495 -1270,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
@@ -3600,7 +3604,7 @@ Jochen-Klepper-Weg: kombinierter Rad- und Fußweg, Fußgänger haben Vorrang	q1 -30
 Frommpromenade: enge Straße	q0 5463,20461 5350,20495 5257,20551
 Brodersenstr.: enge Straße	q0 6033,19611 5885,19920 5804,20047
 Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4659,3065 4866,3371
-Eduard-Spranger-Promenade: Grünanlage, Verbot für Radfahrer	q4 4317,2638 4328,2652 4659,3065
+Eduard-Spranger-Promenade: Grünanlage, aber offizielle Umleitung für den Radverkehr	q1 4317,2638 4328,2652 4659,3065
 Rosenplüterweg: enge Straße	q0 3657,26240 3431,26192 3328,26193
 Bulgenbachweg: enge Straße	q0 3431,26192 3452,26160 3478,26119 3520,26081 3574,26060 3647,26060
 Schmöckwitzwerder Süd: enge Straße	q1 30343,-3454 30133,-3840
