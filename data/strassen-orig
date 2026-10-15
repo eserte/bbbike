@@ -249,12 +249,14 @@ Am Johannistisch	N 10029,9989 10111,9942
 #: historical_note: früher (bis 2025) als NH kategorisiert, wegen der neuen Fahrradstraße degradiert
 Blücherstr. (Kreuzberg)	N 10564,9292 10580,9361 10429,9514 10306,9640 10147,9804 10144,9856
 Blücherstr. (Kreuzberg)	H 10144,9856 10006,9942 9950,9987 9922,10010 9827,10051 9521,10010 9448,10014
-Blücherplatz	N 9521,10010 9536,10064 9579,10122 9631,10142 9702,10129
-Blücherplatz	NN 9579,10122 9599,10175
-Blücherplatz	NN 9599,10175 9631,10142
-(Blücherplatz - Zossener Str.)	NN 9702,10129 9827,10051
-(Blücherplatz - Waterloo-Ufer)	NN 9631,10142 9687,10180
-(Blücherplatz - Johanniterstr.)	NN 9702,10129 9816,10119 9837,10117
+#: oldname: -20261016: Blücherplatz vvv
+Eva-Mamlok-Platz	N 9521,10010 9536,10064 9579,10122 9631,10142 9702,10129
+Eva-Mamlok-Platz	NN 9579,10122 9599,10175
+Eva-Mamlok-Platz	NN 9599,10175 9631,10142
+#: oldname ^^^
+(Eva-Mamlok-Platz - Zossener Str.)	NN 9702,10129 9827,10051
+(Eva-Mamlok-Platz - Waterloo-Ufer)	NN 9631,10142 9687,10180
+(Eva-Mamlok-Platz - Johanniterstr.)	NN 9702,10129 9816,10119 9837,10117
 Baerwaldstr.	N 10123,9233 10198,9405
 Baerwaldstr.	NH 10198,9405 10290,9604 10306,9640 10361,9755 10357,9807
 Baerwaldstr.	NH 10361,9755 10405,9795
@@ -2697,7 +2699,7 @@ Bellermannstr.	NN 9446,16060 9405,16081
 Bellermannstr.	N 9405,16081 9307,16190 9259,16236 9248,16248 9200,16295 9178,16317 9156,16339 9099,16398 8921,16578
 Heidebrinker Str.	N 9216,16022 9205,16137 9259,16236
 Zingster Str. (Gesundbrunnen)	N 9307,16190 9277,16154 9265,16109 9276,16032
-Behmstr.	NH 9123,15963 9184,16013 9216,16022 9276,16032 9446,16060 9765,16106 9811,16112 10005,16150 10045,16157 10291,16193
+Behmstr.	NH 9123,15963 9184,16013 9216,16022 9276,16032 9446,16060 9765,16106 9811,16112 10005,16150 10045,16157 10067,16160 10291,16193
 Soldiner Str. (Gesundbrunnen)	N 9611,16741 9579,16770 9442,16830 9299,16889 9082,16982
 Soldiner Str. (Gesundbrunnen)	H 9082,16982 8904,17059 8870,17073 8860,17077 8677,17154 8561,17198 8539,17197 8449,17196
 Stockholmer Str.	N 8860,17077 8950,17219 8973,17301 8985,17335
@@ -20177,7 +20179,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-10-12 vvv
+#: last_checked: 2026-10-15 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131

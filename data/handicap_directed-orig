@@ -593,10 +593,13 @@ Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden 
 # REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (Querungsmöglichkeit Straßmannstr. bis Mitte November 2026 gesperrt)
+#: XXX prüfen, ob die Sperrung der Mühsamstr. aufgehoben wurde und nun die Querungsmöglichkeit Straßmannstr. gesperrt ist
 #: last_checked: 2026-10-11 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2026-09-15 (SenUVK site) vvv
-#: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-10-15 vvv
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/?date=20260612 (bis September 2026)
 Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=190:h=q3,100:tl 13747,12642 13695,12643 13681,12624
 Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=190:h=q3,100:tl 13761,12690 13695,12643 13681,12624
@@ -659,7 +662,8 @@ Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 #: next_check_id: BAEKEBRUECKE-2022
 #: note: Sind das eigenständige Leitungsarbeiten, oder sind sie mit den Bauarbeiten an der Bäkebrücke verknüpft?
 #: source_id: viz2021:13.310358,52.430965,02.09.2024,07:00 (Leitungsarbeiten, bis 11.11.2025) (inaktiv)
-#: source_id: LMS-BR:345047/72 viz2021:13.3097,52.43127, (bis 11.11.2025) (bis 27.03.2026) (bis 31.01.2027)
+#: source_id: LMS-BR:345047/72 viz2021:13.3097,52.43127, vizapi2026:1068/2026 (bis 11.11.2025) (bis 27.03.2026) (bis 31.01.2027)
+#: source_id: planb2026:13.31226698,52.43038925,08.12.2025, ("geänderte Führung im Knotenpunkt", bis 25.11.2026)
 #: last_checked: 2026-10-14 vvv
 #: next_check: 2027-01-31 (VIZ-Verkehrsmeldung) vvv
 #: valid: -20270131 vvv
@@ -834,7 +838,7 @@ B2: Bauarbeiten, Radverkehr wieder zurück auf die rechte Seite	DH:tl=30 16644,21
 #: source_id: 266501853 (Anbindung Behelfsumfahrung, bis 16.10.2026)
 #: XXX Umweg für Radfahrer wegen Brückenarbeiten
 #: osm_watch: note 5301244 2 vvv
-#: last_checked: 2026-08-23 (mapillary) vvv
+#: last_checked: 2026-08-25 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-16 (Verkehrsmeldung) vvv
 Hennigsdorf, Havelbrücke	DH:len=117:h=q1,117:tl -2808,25489 -2446,25386

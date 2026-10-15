@@ -26,7 +26,6 @@ Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 1366
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
 Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung an der Dörpfeldstr.	q3::inwork 20592,3633 20449,3799
-Gartenstr. (Gesundbrunnen): Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 8570,15107 8663,14960
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
@@ -91,8 +90,8 @@ Pariser Platz: Fußgänger	q2 8637,12258 8641,12227 8643,12208 8705,12217 8728,122
 Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 Brandenburger Tor: Fußgänger	q2 8637,12258 8592,12252 8538,12245
 Potsdamer Platz: Fußgänger	q3 8542,11502 8442,11555
-Blücherplatz: reger Fußgängerverkehr	q4 9579,10122 9599,10175
-Blücherplatz: Fußgängerverkehr	q4 9599,10175 9631,10142
+Eva-Mamlok-Platz: reger Fußgängerverkehr	q4 9579,10122 9599,10175
+Eva-Mamlok-Platz: Fußgängerverkehr	q4 9599,10175 9631,10142
 Hallesches Tor: reger Fußgängerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fußgängerverkehr	q3 9593,10238 9592,10263
 Mehringplatz: Fußgänger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9535,10299 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
@@ -430,7 +429,7 @@ Am Zeughaus: Fußgängerzone	q3 9919,12613 9953,12533 9984,12426
 Steinmetzstr.: Fußgängerzone, Radfahren erlaubt	q1 7625,9771 7657,9942 7698,10147
 Lützowplatz: Einbahnstraße, Ausweichen auf Gehweg	q3; 7002,11034 6873,11011
 Zauritzweg: Fußgänger	q1 4182,11831 4194,11703
-(Blücherplatz - Zossener Str.): Fußgänger, Grünanlage	q4 9702,10129 9827,10051
+(Eva-Mamlok-Platz - Zossener Str.): Fußgänger, Grünanlage	q4 9702,10129 9827,10051
 Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
 Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8373
@@ -710,7 +709,7 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 (Hornbach-Parkplatz): Parkplatzverkehr	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 (Lidl-Parkplatz): Parkplatzverkehr	q1 11962,15681 12058,15621
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
-(Blücherplatz - Waterloo-Ufer): Fußgänger, Bordsteine	q4 9631,10142 9687,10180
+(Eva-Mamlok-Platz - Waterloo-Ufer): Fußgänger, Bordsteine	q4 9631,10142 9687,10180
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 Mergenthalerring: Asphaltschwellen, können teilweise umfahren werden	q1 14425,8116 14563,8243 14422,8407
 Grazer Platz: Fußgänger, Bordsteine	q2 6546,6724 6530,6786 6529,6798
@@ -1253,7 +1252,7 @@ Elisabeth-Schwarzhaupt-Platz: einige Fußgänger	q1 9274,13963 9167,14127
 (Erkelenzdamm - Prinzessinnenstr.): Bordsteine, parkende Autos, Fußgänger	q4 11192,10629 11145,10638
 (Bethanienpark): Fußgänger	q2 11804,10846 11776,10860 11752,10878 11668,10916
 (Bethanienpark): Fußgänger, Bordstein	q3 11668,10916 11589,10947
-(Blücherplatz - Johanniterstr.): Fußgänger, Grünanlage, Bordstein	q4 9702,10129 9816,10119 9837,10117
+(Eva-Mamlok-Platz - Johanniterstr.): Fußgänger, Grünanlage, Bordstein	q4 9702,10129 9816,10119 9837,10117
 Idealpassage: Fußgänger, eng, Schrittgeschwindigkeit	q3 12434,8776 12582,8651
 (entlang der Hedwigskathedrale): Fußgänger, Radfahren verboten, eine (umfahrbare) Stufe	q4 9808,12182 9775,12178 9771,12190 9747,12205
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): enger Weg, Bordsteine	q3 12944,11760 13052,11867

@@ -231,7 +231,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2026-10-14
+#: last_checked: 2026-10-15
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -243,7 +243,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2026-10-14 vvv
+#: last_checked: 2026-10-15 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -538,8 +538,8 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
 #: last_checked: 2026-10-14
 #: check_frequency: 90d
-#: next_check: 2026-10-22 (planb)
-# REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
+# REMOVED (wird wohl verlängert) --- #: next_check: 2026-10-22 (planb)
+#: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
 Revaler Str.: Asphalt/Kopfsteinpflaster oder Verbundsteinpflaster	Q1; 13473,11456 13565,11492 13588,11490
@@ -2671,7 +2671,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 #: by: https://www.luisenstadt-mitte.de/projekte/rungestrasse-strasse-am-koellnischen-park-0 (kein konkretes Datum; "Asphaltierung der Fahrgassen")
 #: by: https://www.luisenstadt-mitte.de/drupal/web/projekte/rungestrasse-strasse-am-koellnischen-park-0 (alternative URL)
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster?
-#: last_checked: 2026-06-16
+#: last_checked: 2026-10-15
 #: check_frequency: 120d
 Rungestr.: Kopfsteinpflaster	Q2- 11185,11883 11291,11876 11380,11863 11507,11860
 # 
@@ -9473,8 +9473,8 @@ Rüdigerstr.: Beton mit Schäden	Q1 16397,12397 16259,12419
 #: note: Richtung Osten teilweise mit unebenem Asphaltstreifen 
 Rüdigerstr.: schlechtes Kopfsteinpflaster	Q3+ 16259,12419 16147,12434
 Rüdigerstr.: mäßiges Kopfsteinpflaster	Q2- 16147,12434 16080,12441
-(Blücherplatz - Johanniterstr.): Gehwegplatten	Q0- 9702,10129 9816,10119 9837,10117
-(Blücherplatz - Zossener Str.): Gehwegplatten	Q0- 9702,10129 9827,10051
+(Eva-Mamlok-Platz - Johanniterstr.): Gehwegplatten	Q0- 9702,10129 9816,10119 9837,10117
+(Eva-Mamlok-Platz - Zossener Str.): Gehwegplatten	Q0- 9702,10129 9827,10051
 Idealpassage: Asphalt	Q0- 12434,8776 12582,8651
 Hüttigpfad: Verbundsteinpflaster	Q1 4810,15000 4724,15055 4668,15066 4598,15057 4459,15066
 (entlang der Hedwigskathedrale): Pflasterung	Q2+ 9808,12182 9775,12178 9771,12190 9747,12205

@@ -111,8 +111,8 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 #: osm_watch: way id="1072662717" version="40"
 #: last_checked: 2026-10-14
 #: check_frequency: 90d
-#: next_check: 2026-10-22 (planb)
-# REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
+# REMOVED (wird wohl verlängert) --- #: next_check: 2026-10-22 (planb)
+#: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
@@ -120,7 +120,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (bis 20.11.2026)
 #: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026)
 #: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026)
-#: last_checked: 2026-10-12 vvv
+#: last_checked: 2026-10-15 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-11-20 (planb) vvv
 Singerstr.: Sperrung an der Einmündung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
@@ -192,11 +192,11 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
 # 
 #: source_id: planb2026:13.44849499,52.5121092,12.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026)
+#: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026)
 #: also_indoor: traffic (G,T,H,W)
-#: last_checked: 2026-10-13 vvv
-#: next_check: 2026-10-16 vvv
-#: valid: 20261012-20261016 vvv
+#: last_checked: 2026-10-15 vvv
+#: next_check: 2026-10-20 vvv
+#: valid: 20261012-20261020 vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
 Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
 #: valid ^^^
@@ -426,19 +426,6 @@ Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung an der Dörpfelds
 # 
 ### Wedding/Gesundbrunnen ###
 # 
-#: next_check_id: GARTEN-2026
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260911 (Arbeiten für eine Fußgängerzone (?), Sperrung für Kfz-Verkehr)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvg36bttsf2v
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibisq3tu5izlu3k4dgsnc7aapstmj6nngiz7c3a5dd5cva5nhf2ta (Gehwege für Radfahrer frei)
-#: also_indoor: traffic (G,T,H,W)
-#: source_id: planb2026:13.37940933,52.54020766,14.09.2026,00:01 ("Vollsperrung beider Fahrbahnen", bis 02.11.2026)
-#: source_id: LMS-BR:419978/72 viz2021:13.37989,52.540521, vizapi2026:869/2026 (bis 04.09.2026) ("Herstellung einer Fußgängerzone", bei vizapi2026 weiterhin aktiv, bis 02.11.2026) (inaktiv)
-#: source_id: LMS-BR:422254/72 viz2021:13.37944,52.54047,14.09.2026,04:00 (Sperrung, bis 02.11.2026) (vorfristig inaktiv)
-#: last_checked: 2026-10-06 (traffic)
-#: check_frequency: 45d
-#: next_check: 2026-11-02 (VIZ-Verkehrsmeldung + planb)
-Gartenstr. (Gesundbrunnen): Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 8570,15107 8663,14960
-# 
 # REMOVED (weitgehend offen) --- #: next_check_id: PEKINGERPLATZ-2025
 # REMOVED --- #: next_check_id: NORDUFER-2025
 # REMOVED --- #: note: laut Baustellenschild bis 01/2026
@@ -506,6 +493,8 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: by: https://www.entwicklungsstadt.de/burgsdorfstrasse-ruine-in-wedding-verschwindet-nach-jahrelangem-streit/
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13867 (Einwohneranfrage)
 #: by: https://weddingweiser.de/die-mauer-kommt-weg-burgsdorfstrasse-soll-wieder-oeffnen/ (am 16. Oktober 2026 offen)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1726002.php
+#: by: https://www.entwicklungsstadt.de/burgsdorfstrasse-in-wedding-was-kommt-nach-dem-abriss/
 #: osm_watch: way id="549316654" version="50"
 #: osm_watch: note 4844974 6
 #: source_id: planb2026:13.3631258,52.54306464,18.08.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.08.2026) (inaktiv) (bis 31.10.2026)
@@ -1049,7 +1038,8 @@ Baerwaldstr.: Bauarbeiten, Fahrbahn gesperrt, Engstellen am Hochbordradweg	q2::i
 #: next_check_id: HAEMMERLING-2022
 #: osm_watch: way id="24695200" version="20"
 #: last_checked: 2026-06-17
-#: check_frequency: 120d
+# REMOVED (reactivate later) --- #: check_frequency: 120d
+#: next_check: 2026-12-14 (Ende der Sperrung)
 Hämmerlingstr. - Alte Försterei: Engstelle wegen Bauarbeiten	q3::inwork 22000,6245 21958,6248
 # 
 # REMOVED (Bauarbeiten weitgehende fertig) --- #: next_check_id: WUHLHEIDE-2021 --- #: last_checked: 2022-03-06 --- #: check_frequency: 45d --- Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7124 20629,7189 20575,7226
@@ -1855,11 +1845,11 @@ Pariser Platz: Fußgänger	q2 8804,12280 8722,12268 8637,12258
 Brandenburger Tor: Fußgänger	q2 8637,12258 8592,12252 8538,12245
 # 
 Potsdamer Platz: Fußgänger	q3 8542,11502 8442,11555
-#: XXX_prog BS (Bordstein zum Blücherplatz hin, aber ansonsten wohl q3 beibehalten)
+#: XXX_prog BS (Bordstein zum Eva-Mamlok-Platz hin, aber ansonsten wohl q3 beibehalten)
 #: note: früher "q3"
-Blücherplatz: reger Fußgängerverkehr	q4+ 9579,10122 9599,10175
+Eva-Mamlok-Platz: reger Fußgängerverkehr	q4+ 9579,10122 9599,10175
 #: note: früher "q3"
-Blücherplatz: Fußgängerverkehr	q4+ 9599,10175 9631,10142
+Eva-Mamlok-Platz: Fußgängerverkehr	q4+ 9599,10175 9631,10142
 #: note: in Südrichtung Bushaltestelle benutzen:
 Hallesches Tor: reger Fußgängerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fußgängerverkehr	q3 9593,10238 9592,10263
@@ -2369,7 +2359,7 @@ Zauritzweg: Fußgänger	q1 4182,11831 4194,11703
 #: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
 #: note: abgeflachte Bordsteine existieren
 #: note: früher "q2"
-(Blücherplatz - Zossener Str.): Fußgänger, Grünanlage	q4+ 9702,10129 9827,10051
+(Eva-Mamlok-Platz - Zossener Str.): Fußgänger, Grünanlage	q4+ 9702,10129 9827,10051
 Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 # 
 #: next_check_id: SPREEWALDBAD-2024
@@ -2865,9 +2855,9 @@ Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 #: next_check: 2027-08-31 (entwicklungsstadt)
 Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313 6978,10319 6941,10329
 # 
-#: XXX_prog BS: Bordstein am Blücherplatz, aber eine abgeflachte Stelle existiert, am Waterloo-Ufer existiert eigentlich auch eine abgeflachte Stelle
+#: XXX_prog BS: Bordstein am Eva-Mamlok-Platz, aber eine abgeflachte Stelle existiert, am Waterloo-Ufer existiert eigentlich auch eine abgeflachte Stelle
 #: note: früher "q2"
-(Blücherplatz - Waterloo-Ufer): Fußgänger, Bordsteine	q4+ 9631,10142 9687,10180
+(Eva-Mamlok-Platz - Waterloo-Ufer): Fußgänger, Bordsteine	q4+ 9631,10142 9687,10180
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 #: XXX_prog: für Anhänger vielleicht q2
 #: note: hängt von den parkenden Autos ab...
@@ -3616,7 +3606,7 @@ Elisabeth-Schwarzhaupt-Platz: einige Fußgänger	q1 9274,13963 9167,14127
 #: XXX_prog BS (östliches Ende nur, westliches Ende ist abgesenkt)
 #: note: neues FH-KB-Grünanlagenschild mit einem durchgestrichenen Radfahrer
 #: note: früher "q2"
-(Blücherplatz - Johanniterstr.): Fußgänger, Grünanlage, Bordstein	q4+ 9702,10129 9816,10119 9837,10117
+(Eva-Mamlok-Platz - Johanniterstr.): Fußgänger, Grünanlage, Bordstein	q4+ 9702,10129 9816,10119 9837,10117
 Idealpassage: Fußgänger, eng, Schrittgeschwindigkeit	q3 12434,8776 12582,8651
 #: XXX_prog BS (die umfahrbare Stufe vielleicht in ein BS umwandeln? Oder auch nicht)
 (entlang der Hedwigskathedrale): Fußgänger, Radfahren verboten, eine (umfahrbare) Stufe	q4 9808,12182 9775,12178 9771,12190 9747,12205

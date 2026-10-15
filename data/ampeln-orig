@@ -70,8 +70,8 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: unterschiedliche Halteverbote: teilweise erst ab 13.08.2026 (Hildegard-Jadamowitz-Str.), teilweise schon ab 03.08.2026. Vorbereitete Einfahrt-verboten-Tafeln für die Fredersdorfer Str. an der Marchlewskistr. In der Marchlewskistr. und Hildegard-Jadamowitz-Str. wurde Richtung Norden und Westen ab Wedekindstr. eine Busspur (!) markiert
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 (bis 15.10.2026) (bis 20.10.2026)
-#: last_checked: 2026-10-13
+#: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026)
+#: last_checked: 2026-10-15
 #: check_frequency: 14d
 #: next_check: 2026-10-20 (VIZ-Verkehrsmeldung)
 #: valid: -20261020
@@ -174,7 +174,7 @@ Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,1858
 Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
-#: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026) (bis 16.10.2026) (bis 02.07.2027)
+#: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026) (bis 16.10.2026) (bis 02.07.2027) (bei vizapi2026 mittlerweile falscher Text)
 #: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026) (inaktiv) (bis 02.07.2027) (vorfristig inaktiv)
 #: last_checked: 2026-09-06 (mapillary)
 #: next_check: 2027-07-02 (VIZ-Verkehrsmeldung + ex-planb)

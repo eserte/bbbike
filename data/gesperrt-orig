@@ -1055,7 +1055,7 @@ Lindenstr. (Straßenbahntrasse)	1s:q3::igndisp 21605,5687 21623,5661 21706,5541 2
 #: by: https://berliner-abendblatt.de/2022/03/25/138713/
 #: by: https://unternehmen.bvg.de/pressemitteilung/gleise-glaetten/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211600.php
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/pyramidenbruecke/ (voraussichtliche Bauzeit: 2022 bis 2027)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/pyramidenbruecke/ (voraussichtliche Bauzeit: 2022 bis 2027) (Bauzeit nun bis 2028)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/pyramidenbruecke/ (alternative URL)
 #: by: https://entwicklungsstadt.de/grossbaustelle-koepenick-zwischen-verkehrschaos-und-infrastruktur-offensive/
 #: by: https://www.entwicklungsstadt.de/pyramidenbruecke-in-koepenick-bauarbeiten-gehen-voran/
@@ -4235,7 +4235,7 @@ Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
 # 
 #: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: note: mit festen Zäunen gesperrt
-#: last_checked: 2026-10-13
+#: last_checked: 2026-10-15
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
 # 
 # REMOVED (Landstraße entfernt) --- #: next_check_id: FANGSCHLEUSE-2026
@@ -4836,7 +4836,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="4612427" version="23"
 #: source_id: planb2026:13.41545231,52.51320684,25.03.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2027)
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-10-12
+#: last_checked: 2026-10-15
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2027-06-30 (entwicklungsstadt)
 #: next_check: 2027-12-31 (planb)
@@ -5336,7 +5336,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2026-10-11 vvv
+#: last_checked: 2026-10-15 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # REMOVED (Treppe ist frei, und dann noch 35m Uferweg) --- Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027
