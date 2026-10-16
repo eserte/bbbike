@@ -49,6 +49,7 @@ my $new_file;
 my $with_notes = 1;
 my $method = 'overpass';
 my $diff_context = 0;
+my $cache = 1; # if available for the method
 GetOptions(
 	   "show-unchanged" => \$show_unchanged,
 	   "diff!" => \$show_diffs,
@@ -58,10 +59,11 @@ GetOptions(
 	   "new-file=s" => \$new_file,
 	   'without-notes' => sub { $with_notes = 0 },
 	   'method=s' => \$method,
+	   'cache!' => \$cache,
 	   'diff-context=i' => \$diff_context,
 	   'overpass-api-url=s' => \$overpass_api_url,
 	  )
-    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-diff-context lines] [-osm-watch-list ...] [-new-file ...] [-without-notes] [-method overpass|api|osm-file] [-overpass-api-url ...]\n";
+    or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-diff-context lines] [-osm-watch-list ...] [-new-file ...] [-without-notes] [-method overpass|api|osm-file] [-overpass-api-url ...] [--nocache]\n";
 
 if ($method !~ m{^(osm-file|api|overpass)$}) {
     die "Allowed methods are 'overpass', 'api' and 'osm-file', specified was '$method'";
@@ -84,7 +86,9 @@ if ($show_diffs || $with_notes || $method eq 'api' || $method eq 'overpass') {
     $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 }
 if ($method eq 'api') { # caching not needed with overpass
-    if (eval { require HTTP::Cache::Transparent; 1 }) {
+    if (!$cache) {
+	warn "INFO: caching disabled.\n";
+    } elsif (eval { require HTTP::Cache::Transparent; 1 }) {
 	my $cache_dir = "$ENV{HOME}/.cache/check-osm-watch-list";
 	require File::Path;
 	File::Path::make_path($cache_dir);
