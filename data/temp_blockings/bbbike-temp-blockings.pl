@@ -434,7 +434,7 @@ EOF
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20221108
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2024/pressemitteilung.1483109.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/berlins-grosste-fussgangerzone-kunftiger-betreiber-fur-den-spandauer-weihnachtsmarkt-gefunden-13354381.html
-#: osm_watch: node id="9278469937" version="7"
+#: osm_watch: node id="9278469937" version="8"
 	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
 	2::xmas -3275,14407 -3338,14333
 	2::xmas -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
@@ -13561,11 +13561,13 @@ EOF
 	2::inwork 41421,91345 41388,91325 41367,91312
 EOF
      },
-     { from  => 1227394800, # 2008-11-23 00:00
-       until => 1227913200, # 2008-11-29 00:00
-       text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 24.11.2008-28.11.2008 ',
+     { from  => 1792296000, # 2026-10-18 06:00, # 1227394800, # 2008-11-23 00:00
+       until => 1793386800, # 2026-10-30 20:00, # 1227913200, # 2008-11-29 00:00
+#      text  => 'K 7318 Blankenburg - Potzlow Bahnübergang in der OD Seehausen Gleisbauarbeiten Vollsperrung 24.11.2008-28.11.2008 ',
+       text  => 'Seehausen: Bauarbeiten am Bahnübergang, Sperrung, evtl. ist auch der Radverkehr betroffen, 19.10.2026 bis 30.10.2026',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 26730255_1 (bis 30.10.2026)
 	2::inwork 41421,91345 41388,91325 41367,91312
 EOF
      },
@@ -39304,6 +39306,7 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260520
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mmdujl3mb22v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiawd4l7pt4nipu37zmnmubsynixb5fgxcsn63weypvgyqquipmvju
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1726836.php (Bauarbeiten abgeschlossen)
 #: source_id: viz2021:13.29209,52.64198,15.11.2022,07:30 (bis 07.08.2023) (inaktiv)
 #: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (bis 30.09.2023) (inaktiv)
 #: source_id: viz2021:13.288951,52.641822,28.07.2023,07:00 (bis 07.05.2024) (bis 14.12.2023) (inaktiv)
@@ -46030,7 +46033,7 @@ EOF
 #: source_id: viz2021:13.316371,52.434473,17.06.2025,07:00 (für Kfz-Verkehr, bis 12.12.2025) (inaktiv)
 #: source_id: adac:969740805 (bis 12.12.2025) (neue ID -> inaktiv)
 #: source_id: adac:794067672 (bis 12.12.2025) (neue ID -> inaktiv)
-#: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026) (bis 19.06.2026) (bis 31.07.2026) (bis 14.08.2026) (bis 09.10.2026) (inaktiv)
+#: source_id: LMS-BR:372717/72 viz2021:13.31662,52.4344,17.06.2025,07:00 viz2021:13.31662,52.4344, (bis 12.12.2025) (bis 20.03.2026) (bis 19.06.2026) (bis 31.07.2026) (bis 14.08.2026) (bis 09.10.2026) (inaktiv) (bis 31.12.2026)
 #: source_id: planb2026:13.3159967,52.43456243,18.06.2026, ("Vollsperrung beider Fahrbahnen", Bäkestraße, bis 14.08.2026) (inaktiv) (bis 09.10.2026) (inaktiv) (bis 31.12.2026)
 #: also_indoor: search Bäkebrücke
 #: note: traffic natürlich nur die Bäkebrücke betreffend
@@ -48329,21 +48332,21 @@ EOF
 	q3::inwork 13741,13107 13692,13221 13644,13332
 EOF
      },
-     { from  => 1739720880, # 2025-02-16 16:48
-       until => $isodate2epoch->("2025-09-30 17:00:00"), # $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
+     { from  => 1792177355, # 1739720880, # 2025-02-16 16:48
+       until => $isodate2epoch->("2026-10-30 23:59:59"),  # $isodate2epoch->("2025-09-30 17:00:00"), # $isodate2epoch->("2025-06-13 18:00:00"), # 1740076930, # 1745690400, # 2025-04-26 20:00
 #      text  => 'Dickensweg: Bauarbeiten zwischen Ragniter Allee und Passenheimer Str., Sperrung, außerdem gesperrt: Scottweg; evtl. sind auch Radfahrer betroffen, vom 17.02.2025 bis 13.06.2025',
-       text  => 'Scottweg: Fahrbahn gesperrt, Bürgersteig für Radfahrer frei, bis 30.09.2025',
+#      text  => 'Scottweg: Fahrbahn gesperrt, Bürgersteig für Radfahrer frei, bis 30.09.2025',
+       text  => 'Scottweg: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 30.10.2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.232425,52.508314,17.02.2025,16:48 (bis 26.04.2025) (vorzeitig inaktiv)
 #: source_id: adac:1610923972 (bis 13.06.2025 17:00 Uhr) (inaktiv)
 #: source_id: adac:1389146504 (bis 31.07.2025) (bis 15.08.2025) (bis 30.09.2025) (neue ID -> inaktiv)
 #: source_id: viz2021:13.23143,52.50934, (bis 15.08.2025) (bis 30.09.2025) (inaktiv)
-#: source_id: LMS-BR:405374/72 viz2021:13.231178,52.509307,20.04.2026,06:00 (neue Bauarbeiten westlich der Passenheimer Str., ignoriert, bis 16.10.2026)
+#: source_id: LMS-BR:405374/72 viz2021:13.231178,52.509307,20.04.2026,06:00 (neue Bauarbeiten westlich der Passenheimer Str., ignoriert, bis 16.10.2026) (jetzt eingetragen, bis 30.10.2026)
 # REMOVED --- #: note: bei rbb noch da und wurde bis zum 13.06.2025 verlängert, nun entfernt --- Dickensweg	q4::inwork -1304,11183 -1062,11214
-#: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt, mittlerweile bis 15.08.2025
-# REMOVED --- #: next_check: 2025-04-30
-Scottweg	q3::inwork -1317,11300 -966,11382
+# REMOVED --- #: note: laut rbb nur bis 30.04.2025; nun wieder beim rbb da: Scottweg bis 31.07.2025 gesperrt, mittlerweile bis 15.08.2025 --- Scottweg	q3::inwork -1317,11300 -966,11382
+Scottweg zwischen Passenheimer Str. und Dickensweg	q4::inwork -1317,11300 -1403,11279 -1431,11258 -1434,11172
 EOF
      },
      { from  => 1739772000, # 2025-02-17 07:00
@@ -50202,18 +50205,18 @@ EOF
 EOF
      },
      { from  => 1750748520, # 2025-06-24 09:02
-       until => $isodate2epoch->("2026-10-15 23:59:59"), # $isodate2epoch->("2026-06-01 23:59:59"), # $isodate2epoch->("2026-03-02 23:59:59"), # undef, # 1761951540, # 2025-10-31 23:59
+       until => $isodate2epoch->("2026-12-28 23:59:59"), # $isodate2epoch->("2026-06-01 23:59:59"), # $isodate2epoch->("2026-03-02 23:59:59"), # undef, # 1761951540, # 2025-10-31 23:59
 #      text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, vom 25.06.2025 09:02 bis 31.10.2025',
 #      text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, voraussichtlich bis 02.03.2026',
-       text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, voraussichtlich bis 15. Oktober 2026',
+       text  => 'Frithjofstr.: Bauarbeiten, zwischen Sigurdstr. und Romain-Rolland-Str. ist die Fahrbahn gesperrt, voraussichtlich bis 28. Dezember 2026',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.436693,52.578566,17.06.2025,07:00 (hier explizit auch Radverkehr, bis 31.10.2025) (inaktiv)
-#: source_id: LMS-BR:373761/72 viz2021:13.43909,52.5791,25.06.2025,09:02 viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026) (inaktiv) (bis 01.06.2026) (bis 22.06.2026) (bis 15.10.2026)
+#: source_id: LMS-BR:373761/72 viz2021:13.43909,52.5791,25.06.2025,09:02 viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026) (inaktiv) (bis 01.06.2026) (bis 22.06.2026) (bis 15.10.2026) (bis 28.12.2026)
 #: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
 #: note: Länge der Sperrung etwa 100m, deshalb q4 -> q3
 #: last_checked: 2026-10-05 (mapillary)
-#: next_check: 2026-10-15 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-28 (VIZ-Verkehrsmeldung)
 	q3::inwork 12627,19317 12457,19248
 EOF
      },
@@ -51546,7 +51549,7 @@ EOF
 #: next_check_id: MARKGRAFENDAMM-2022
 #: source_id: planb2026:13.46545743,52.49884577,27.07.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 28.08.2026) (bis 30.09.2026) (inaktiv)
 #: source_id: planb2026:13.46545743,52.49884577,18.08.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026)
-#: source_id: planb2026:13.46532471,52.49881497,25.03.2026,07:00 ("Sicherung gemäß Vz.-plan", kleinerer Bereich in der Corinthstr., bis 15.10.2026)
+#: source_id: planb2026:13.46532471,52.49881497,25.03.2026,07:00 ("Sicherung gemäß Vz.-plan", kleinerer Bereich in der Corinthstr., bis 15.10.2026) (inaktiv)
 #: osm_watch: note 5465754 3
 #: note: gesperrter Bereich ist nur kurz, ca. 25m, deshalb q2
 #: add_fragezeichen: Ist die Anbindung der Corinthstr. an den Markgrafendamm weiterhin gesperrt?
@@ -53198,7 +53201,7 @@ EOF
 #: source_id: planb2026:13.51311063,52.48348885,02.03.2026, ("Vollsperrung beider Fahrbahnen", bis 06.09.2026) (vorfristig inaktiv) (bis 05.10.2026) (bis 07.12.2026)
 #: XXX Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird danach enger
 #: note: Halteverbotsschilder auf der Rampe gelten bis zum 8.6.2026
-#: last_checked: 2026-09-16 vvv
+#: last_checked: 2026-10-15 (bahninfo-forum) vvv
 #: check_frequency: 60d vvv
 # REMOVED (wird sehr wahrscheinlich verlängert) (tatsächlich weiterhin Baustelle) --- #: next_check: 2026-06-08 (Halteverbotsschilder) vvv
 # REMOVED --- #: next_check: 2026-09-01 (pardok) vvv
@@ -55606,6 +55609,7 @@ EOF
 #: next_check_id: ZOSSENMELLENSEE-2025
 #: by: https://www.berlin-dresden.de/bautagebuch.html?date=20260817
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden/infobauarbeiten?date=20260818
+#: source_id: 267201643 (19.10.2026 bis 30.10.2026)
 Klausdorf - Zossen (Thomas-Müntzer-Straße): Sperrung des Bahnübergangs	2::inwork 13014,-22300 13528,-21855 13960,-21244
 EOF
      },
@@ -55687,7 +55691,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 vizapi2026:805/2026 (bis 24.08.2026 + weitere Arbeiten) (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026)
-#: source_id: planb2026:13.46032981,52.4391609,10.08.2026, ("Sicherung gemäß Vz.-plan", bis 24.08.2026) (inaktiv) (bis 04.09.2026) (inaktiv) (bis 21.10.2026)
+#: source_id: planb2026:13.46032981,52.4391609,10.08.2026, ("Sicherung gemäß Vz.-plan", bis 24.08.2026) (inaktiv) (bis 04.09.2026) (inaktiv) (nun ohne Laubsängerweg, bis 21.10.2026) (bis 25.11.2026)
 #: source_id: vizapi2026:806/2026 (Vollsperrung Laubsängerweg, bis 21.10.2026 + weitere Arbeiten)
 #: osm_watch: note 5414689 2
 #: also_indoor: traffic (G,T,H,W)
@@ -56215,6 +56219,7 @@ EOF
        data  => <<'EOF',
 #: source_id: planb2026:13.29535039,52.50338607,28.09.2026, ("Vollsperrung beider Fahrbahnen", bis 09.02.2027)
 #: source_id: LMS-BR:423626/72 viz2021:13.290644,52.502749,28.09.2026,07:00 (bis 09.02.2027)
+#: also_indoor: traffic (no-G,T,H,no-W)
 #: add_fragezeichen: Ist die Rönnestr. mittlerweile gesperrt?
 #: last_checked: 2026-10-06
 #: check_frequency: 14d
@@ -56353,7 +56358,7 @@ EOF
      { from  => undef, # 
        until => undef, # XXX
 #      text  => 'Reisstr., Hefnersteig, Ohmstr., Voltastr.: Wasserrohrbruch, Sperrung',
-       text  => 'Hefnersteig, Ohmstr., Wernerwerkdamm: Wasserrohrbruch, Sperrung',
+       text  => 'Hefnersteig, Ohmstr., Wernerwerkdamm: Wasserrohrbruch, Sperrung, voraussichtlich bis Dezember 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: source_id: LMS-BR:423777/72 viz2021:13.27184,52.53652, (Reisstr.) (inaktiv)
@@ -56362,14 +56367,17 @@ EOF
 #: source_id: LMS-BR:423776/72 viz2021:13.27016,52.53655, (Voltastr.) (inaktiv)
 #: source_id: LMS-BR:423775/72 viz2021:13.270998,52.536517, (Wehneltsteig) (inaktiv)
 #: source_id: LMS-BR:423805/72 viz2021:13.27112,52.535, (Wernerwerkdamm)
+#: source_id: planb2026:13.26818649,52.53534648,03.10.2026, ("Vollsperrung beider Fahrbahnen", verspätet, bis 18.12.2026)
 #: by: https://www.tagesspiegel.de/berlin/dpa-grosseinsatz-in-berlin-spandau-nach-21-stunden-beendet-16104968.html
 #: by: https://www.morgenpost.de/berlin/article413283874/mega-wasserrohrbruch-in-der-siemensstadt-15-gebaeude-unter-wasser.html
+#: next_check: 2026-12-18 (planb) vvv
 	2::inwork 1432,14169 1479,14343
 	2::inwork 1420,14369 1392,14287 1364,14191
 # REMOVED --- Reisstr.	2::inwork 1361,14384 1314,14207
 # REMOVED --- Voltastr.	2::inwork 1246,14384 1200,14227
 # REMOVED --- Wehneltsteig	2::inwork 1305,14384 1256,14217
 	2::inwork 1314,14207 1364,14191 1432,14169
+#: next_check ^^^
 EOF
      },
      { from  => 1791090000, # 2026-10-04 07:00
@@ -56628,10 +56636,11 @@ EOF
      },
      { from  => 1792274400, # 2026-10-18 00:00
        until => 1792792799, # 2026-10-23 23:59
-       text  => 'Bucher Str.: Bauarbeiten zwischen Töpperweg und Schönerlinder Str., Sperrung, voraussichtlich vom 19. Oktober 2026 bis 23. Oktober 2026',
+       text  => 'Bucher Str.: Bauarbeiten zwischen Töpperweg und Schönerlinder Str., Sperrung, evtl. ist auch der Radverkehr betroffen, voraussichtlich vom 19. Oktober 2026 bis 23. Oktober 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1721853.php
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261016 (hier nur Kfz-Verkehr)
 	q4::inwork 12374,23152 12280,23116 12185,23021
 EOF
      },

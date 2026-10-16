@@ -69,15 +69,14 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-10-13 vvv
+#: last_checked: 2026-10-16 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: planb2026:13.45274687,52.51888366,19.08.2024, ("Sperrung einer Fahrtrichtung", bis 31.12.2026) (vorfristig inaktiv) (bis 31.12.2026)
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083527067" version="16"
 Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13622,12806 13818,12897
-#: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
-#: osm_watch: way id="182614432" version="29"
-Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
+# REMOVED --- #: source_id: viz2021:13.450785,52.522415,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
+# REMOVED --- Straßmannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13530,13014 13741,13107
 #: source_id: viz2021:13.449828,52.522165,23.08.2024,07:00 (bis 16.09.2024) (inaktiv) (bis 30.09.2027) (vorfristig inaktiv)
 #: osm_watch: way id="1083535036" version="18"
 #: osm_watch: way id="1119255054" version="15"
@@ -118,11 +117,11 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
 # 
 #: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (bis 20.11.2026)
-#: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026)
-#: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026)
+#: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026) (bis 20.11.2026)
+#: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026) (bis 20.11.2026)
 #: last_checked: 2026-10-15 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2026-11-20 (planb) vvv
+#: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
 Singerstr.: Sperrung an der Einmündung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
 # REMOVED (eigentlich hier auch, aber es existiert bereits ein handicap-Eintrag an dieser Stelle, deshalb wird der nächste Abschnitt mit q4 getaggt) --- Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q3::inwork 12735,12131 12691,12042
 Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q4::inwork 12691,12042 12648,11953
@@ -191,7 +190,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13161,11795 13066,11854# 
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
 # 
-#: source_id: planb2026:13.44849499,52.5121092,12.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.44849499,52.5121092,12.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (vorfristig inaktiv) (bis 20.10.2026)
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026)
 #: also_indoor: traffic (G,T,H,W)
 #: last_checked: 2026-10-15 vvv
@@ -470,42 +469,6 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 # 
 # REMOVED (bestätigt) --- #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20180406/ --- #: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html --- #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72 --- #: source_id: 2147342637 --- #: also_indoor: traffic (G) --- #: last_checked: 2018-12-28 --- #: next_check: 2019-02-28 --- #: valid: -20190228 --- Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Februar 2019	q2::inwork 7368,14573 7314,14599 7167,14666
-# 
-#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
-#: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
-#: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12522 (Anfrage)
-#: by: https://checkpoint.tagesspiegel.de/langmeldung/1dzjkywbb8otc9uvnkoamh (Abriss voraussichtlich in der zweiten Jahreshälfte 2025)
-#: by: https://www.tagesspiegel.de/berlin/bezirk-lasst-verfallenes-haus-abreissen-strasse-in-berlin-wedding-soll-nach-siebenjahriger-sperrung-wieder-offnen-13073440.html (Aufhebung der Straßensperrung zum Jahresende (2025))
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/burgsdorfstra%C3%9Fe-1-ruine.390/#post-24473
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12918 (Anfrage)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12957 (Antrag: dauerhafte Sperrung der Straße)
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2025/pressemitteilung.1578057.php (Abriss beginnt am 10. Juli 2025 und wird ca. acht Wochen dauern)
-#: by: https://entwicklungsstadt.de/wedding-bezirk-mitte-beginnt-abriss-der-einsturzgefaehrdeten-burgsdorfstrasse-1/
-#: by: https://weddingweiser.de/endlich-abriss-in-der-burgsdorfstrasse/ (Verzögerung des Abrisses, vielleicht bis 30. September 2025)
-#: by: https://www.morgenpost.de/bezirke/mitte/article409774113/das-baum-haus-tiere-verhindern-abriss-der-beruehmten-ruine-in-wedding.html
-#: by: https://entwicklungsstadt.de/wedding-geplanter-abriss-der-ruine-in-der-burgsdorfstrasse-gestoppt/
-#: by: https://entwicklungsstadt.de/abriss-der-ruine-in-der-burgsdorfstrasse-in-mitte-hat-begonnen/ (Abriss bis Jahresende 2025)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1077_ds_2020_vi_eine-dauerhafte-sperrung-der-burgsdorfstrasse.pdf
-#: by: https://www.entwicklungsstadt.de/abriss-in-der-burgsdorfstrasse-1-ruine-in-wedding-fast-vollstaendig-verschwunden/
-#: by: https://www.tagesspiegel.de/berlin/bezirke/mitte/geisterhaus-in-berlin-wedding-schrottimmobilie-legte-uber-acht-jahre-strasse-lahm--erst-jetzt-folgt-der-abriss-15407901.html
-#: by: https://www.entwicklungsstadt.de/burgsdorfstrasse-ruine-in-wedding-verschwindet-nach-jahrelangem-streit/
-#: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13867 (Einwohneranfrage)
-#: by: https://weddingweiser.de/die-mauer-kommt-weg-burgsdorfstrasse-soll-wieder-oeffnen/ (am 16. Oktober 2026 offen)
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1726002.php
-#: by: https://www.entwicklungsstadt.de/burgsdorfstrasse-in-wedding-was-kommt-nach-dem-abriss/
-#: osm_watch: way id="549316654" version="50"
-#: osm_watch: note 4844974 6
-#: source_id: planb2026:13.3631258,52.54306464,18.08.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.08.2026) (inaktiv) (bis 31.10.2026)
-#: add_fragezeichen: Besteht die Sperrung noch immer?
-#: also_indoor: traffic (G,re-H,T[permanent],no-W)
-#: last_checked: 2026-10-01 (daf)
-#: check_frequency: 45d
-#: next_check: 2026-10-16 (weddingweiser)
-# REMOVED --- #: next_check: 2026-10-21 (planb)
-#: valid: 20171026-20261016
-Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
 ### Mitte ###
 # 
@@ -1612,7 +1575,7 @@ Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6132,7893 6131,7916 6011,7911 5
 #: osm_watch: note 5163520 5
 #: add_fragezeichen: Ist die Fahrbahn wegen der Hochbauarbeiten weiterhin gesperrt?
 #: note: Laut Baustellenschild bis Anfang 2027
-#: last_checked: 2026-09-13
+#: last_checked: 2026-10-16
 #: check_frequency: 90d
 #: next_check: 2027-03-15
 Erich-Boltze-Str., Verlängerung: Hochbauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
@@ -1771,9 +1734,9 @@ Kranoldplatz (Lichterfelde): Bauarbeiten, Sperrung der südlichen Spange	q4::inwo
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lycdxxhmxk2c (nur Kfz-Verkehr)
 #: source_id: LMS-BR:382669/72 viz2021:13.29708,52.43252,08.09.2025,07:00 viz2021:13.29708,52.43252, vizapi2026:196/2025 (hier keine Einschränkung auf den Kfz-Verkehr, bis 09.01.2026) (bis 30.01.2026) (bis 01.03.026) (bis 04.09.2026) (bis 30.10.2026)
 #: source_id: planb2026:13.30225823,52.43231703,06.07.2026,07:00 (hier: "keine Fahrbahn-Einschränkung", bis 31.07.2026) (inaktiv)
-#: source_id: planb2026:13.29499928,52.43257687,08.09.2025, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (bis 30.10.2026)
+#: source_id: planb2026:13.29499928,52.43257687,08.09.2025, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (bis 30.10.2026) (vorfristig inaktiv)
 #: last_checked: 2026-05-09 vvv
-#: next_check: 2026-10-30 (planb + VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-10-30 (ex-planb + VIZ-Verkehrsmeldung) vvv
 #: valid: -20261030 vvv
 # REMOVED (Baustelle ist gewandert) --- Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	DH:h=q2,294 3313,2842 3171,2848 3025,2858 3019,2858
 #: note: auf der Fahrbahn gilt eine Einbahnstraßenregelung, frei Richtung Osten

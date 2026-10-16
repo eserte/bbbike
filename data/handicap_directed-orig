@@ -593,20 +593,21 @@ Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden 
 # REMOVED --- #: last_checked ^^^
 # 
 #: next_check_id: PETERSBURGER-2024
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (Querungsmöglichkeit Straßmannstr. bis Mitte November 2026 gesperrt)
-#: XXX prüfen, ob die Sperrung der Mühsamstr. aufgehoben wurde und nun die Querungsmöglichkeit Straßmannstr. gesperrt ist
-#: last_checked: 2026-10-11 vvv
+# REMOVED (ja) --- #: XXX prüfen, ob die Sperrung der Mühsamstr. aufgehoben wurde und nun die Querungsmöglichkeit Straßmannstr. gesperrt ist
+#: last_checked: 2026-10-16 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2026-09-15 (SenUVK site) vvv
-# REMOVED --- #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
-#: next_check: 2026-10-15 vvv
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/?date=20260612 (bis September 2026)
-Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=190:h=q3,100:tl 13747,12642 13695,12643 13681,12624
-Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=190:h=q3,100:tl 13761,12690 13695,12643 13681,12624
+# REMOVED --- #: next_check: 2026-10-15 vvv
+#: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
+# REMOVED (wieder offen) --- #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/?date=20260612 (bis September 2026)
+# REMOVED --- Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=190:h=q3,100:tl 13747,12642 13695,12643 13681,12624
+# REMOVED --- Bersarinplatz/Petersburger Str.: Umweg in Richtung Matternstr. nötig, schmaler Weg, Anforderungsampel	DH:len=190:h=q3,100:tl 13761,12690 13695,12643 13681,12624
+Bersarinplatz/Petersburger Str.: Umweg in Richtung Norden nötig, Anforderungsampel	DH:len=40:tl 13747,12642 13695,12643 13681,12624
+Bersarinplatz/Petersburger Str.: Umweg in Richtung Norden nötig, Anforderungsampel	DH:len=40:tl 13761,12690 13695,12643 13681,12624
 #: osm_watch[closed]: note 4639045 5
 #: osm_watch: node id="13657024133" version="1"
-#Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
-Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, schmaler Weg, Anforderungsampel	DH:len=25:h=q3,100:tl 13695,12643 13685,12664 13622,12806
+Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
+# REMOVED (wieder der "normale" Weg) --- Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, schmaler Weg, Anforderungsampel	DH:len=25:h=q3,100:tl 13695,12643 13685,12664 13622,12806
 # REMOVED (temporär) --- Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13685,12664 13622,12806 13579,12904
 #: osm_watch: node id="13657024132" version="1"
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13481,13128 13434,13234 13383,13349
@@ -616,6 +617,7 @@ Matternstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über ein
 #: source_id: viz2021:13.450155,52.523434,23.08.2024,07:00 (bis 30.09.2027) (inaktiv)
 Petersburger Str. - Ebelingstr.: Ebelingstr. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,124 13530,13014 13481,13128 13598,13180
 Ebelingstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,115 13598,13180 13481,13128 13434,13234
+Straßmannstr. - Petersburger Str.: nur ein schmaler Gehweg auf der Petersburger Str. vorhanden	DH:h=q4,240 13741,13107 13530,13014 13481,13128 13434,13234
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -835,7 +837,7 @@ B2: Bauarbeiten, Radverkehr wieder zurück auf die rechte Seite	DH:tl=30 16644,21
 #: by: https://www.hennigsdorf.de/index.php?La=1&object=tx,3590.20797.1&NavID=2713.41.1
 #: by: https://www.hennigsdorf.de/index.php?object=tx,3590.6&ModID=7&FID=3590.23845.1 (Abschluss der Vorbereitungsarbeiten 2026)
 #: by: https://www.deutsches-architekturforum.de/thread/11269-kleinere-bauprojekte-im-berliner-umland/?postID=799087#post799087
-#: source_id: 266501853 (Anbindung Behelfsumfahrung, bis 16.10.2026)
+#: source_id: 266501853 (Anbindung Behelfsumfahrung, bis 16.10.2026) (inaktiv)
 #: XXX Umweg für Radfahrer wegen Brückenarbeiten
 #: osm_watch: note 5301244 2 vvv
 #: last_checked: 2026-08-25 (mapillary) vvv

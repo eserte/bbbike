@@ -1777,6 +1777,7 @@ Tannhäuserstr.: Kopfsteinpflaster	Q2 18125,9676 17890,9580 17720,9533 17549,9529
 #: historical_note: früher (bis 23. April 2025): Asphalt mit Schäden, Q1+
 #: note: etwa 90m wurden saniert
 Stedingerweg: Asphalt	Q0 13636,14900 13733,14813
+#: note: ein Abschnitt wurde saniert, Rest weiterhin schadhaft
 Stedingerweg: Asphalt mit Schäden	Q1+ 13733,14813 13908,14654
 Stedingerweg: Asphalt	Q0+ 13908,14654 13933,14622 13947,14513
 Hauptstr: sandiger und hoplriger Fahrweg	Q3 9675,26957 9583,26769 9577,26725 9694,26558 9721,26449
@@ -12583,8 +12584,10 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Weg am CleanTech Business Park): fester Belag	Q0 19647,16633 19601,16679 19631,16704 19749,17028 19788,17076 19845,17235 19907,17429
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
+#: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026)
+#: begin_check: 2026-10-30
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-10-13
+#: last_checked: 2026-10-16
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -23594,8 +23597,9 @@ Ritterstr. (Lichterfelde): Asphalt	Q0 4821,2954 5115,2803
 #: corrected_by: srt (-> neu gemacht)
 #: note: Parkstreifen mit Kleinsteinpflaster
 Senheimer Str.: Asphalt mit gepflasterten Parkstreifen	Q0- 2510,25350 2506,25398 2502,25544 2515,25666 2519,25772
-#: corrected_by: Wolfhard Schleese (Q3 -> Q2, Kleinpflastersteine)
-Senheimer Str.: mäßig befahrbare Kleinpflastersteine	Q2 2519,25772 2496,25915 2484,25984 2490,26126
+#: corrected_by: Wolfhard Schleese (Q3 -> Q2, mäßig befahrbare Kleinpflastersteine)
+#: corrected_by: srt (-> neu gemacht)
+Senheimer Str.: Asphalt mit gepflasterten Parkstreifen	Q0- 2519,25772 2496,25915 2484,25984 2490,26126
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Verbundsteinpflaster)
 Senheimer Str.: Verbundsteinpflaster	Q1- 2490,26126 2531,26251 2540,26280 2552,26327 2562,26379 2560,26475
 #: confirmed_by: srt

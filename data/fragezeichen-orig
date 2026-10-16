@@ -477,6 +477,7 @@ Köpenicker Landstraße: Radfahrstreifen bis Trojanstr.	?::projected; 15303,8343 1
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bauliche Umsetzung ab 4. Quartal 2026)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1722022.php (Fahrbahnerneuerung zwischen Rethelstr. und der Ludwig-Richter-Str., vom 12. bis 30. Oktober 2026, Erwähnung der Radverkehrsanlage)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261016 (Bauarbeiten ab 19.10.2026)
 #: osm_watch: note 5077050 4
 #: last_checked: 2026-09-06 (mapillary)
 #: next_check: 2026-10-30 (BA-Pressemitteilung)
@@ -1413,6 +1414,8 @@ Schmöckwitzwerder Nord - Brücke: Verbesserung der Befahrbarkeit	?::inwork 30390,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706217.php (Precision Grinding: Vorarbeiten ab dem 31. August 2026, voraussichtlicher Abschluss am 30. September 2026)
 #: by: https://www.entwicklungsstadt.de/holperstrecke-vor-dem-aus-was-sich-am-gruenauer-weg-in-schmoeckwitz-veraendert/
 #: by: https://www.infravelo.de/projekt/gruenauer-weg/ (3. Quartal 2026 - 4. Quartal 2026)
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/vo020_r.asp?VOLFDNR=8304
+#: by: https://bvv-treptow-koepenick.berlin.de/pi-r/___tmp/tmp/45081036/SlR2x2URSlwammB8WbrzYuv3iV1HlU0tZXnuXfSz/tHFAerYq/76-Anlagen/04/B1310SB.pdf (im September/Oktober 2026 ... Kopfsteinpflaster ... geglättet)
 #: osm_watch: way id="260757211" version="15"
 #: osm_watch: note 5475630 2
 # REMOVED (wird korrigiert) --- #: XXX laut osm mittlerweile surface=concrete, allerdings ist das Tagging widersprüchlich, siehe https://www.openstreetmap.org/changeset/97202846
@@ -1642,7 +1645,7 @@ Malteserstr: Verbesserung -> evtl. Radspuren? ("Teilabschnitte")	?::projected 77
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8378 (Antrag)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1287579.php (Arbeiten an den Hecken, bis Ende Februar 2023)
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/mehr-sicherheit-fuer-radfahrer_a371210
-#: last_checked: 2026-09-16 (mapillary)
+#: last_checked: 2026-10-13 (mapillary)
 #: check_frequency: 150d
 Mühlenstr.: Verbesserung der Radinfrastruktur -> evtl. Radspuren oder Asphaltierung?	?::projected 1238,2599 1324,2603 1406,2607 1426,2607 1524,2611 1603,2615 1703,2620 1750,2636 1885,2697 2000,2748
 # 
@@ -6687,7 +6690,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: by: https://www.berliner-woche.de/karow/c-verkehr/der-ueberweg-soll-kommen_a331769
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/infrastruktur/bau-von-querungshilfen/ (Vorplanung)
 #: priority: #D
-#: last_checked: 2026-08-10 (mapillary)
+#: last_checked: 2026-10-14 (mapillary)
 #: check_frequency: 120d
 Blankenburger Chaussee Höhe Beuthener Str./Straße 43: ein Zebrastreifen soll hier realisiert werden	?::projected 15057,22288 15094,22290 15134,22293
 # 
@@ -7696,54 +7699,6 @@ Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12
 # REMOVED (aktualisiert) --- #: source_id: LS/721-E/19/134 (bis 30.4.2022) (inaktiv) --- #: last_checked: 2022-02-13 (mapillary) --- #: next_check: 2022-04-30 --- # REMOVED (realisiert) --- Wandlitz - Wensickendorf: Radwegbau	?::inwork 11192,38568 10878,38650 10471,38685 10407,38693 --- Wandlitz - Wensickendorf: Radwegbau, weitgehend realisiert, aber die Ausschilderung fehlt noch	?::inwork 10407,38693 10356,38700 10251,38712 10181,38717 10139,38721 9981,38735 9866,38743 9343,38794 9329,38795 9056,38825 8954,38837 8873,38845 8740,38857
 # REMOVED (hier vermutlich nicht) --- Wandlitz - Wensickendorf: Radwegbau	?::inwork 8740,38857 8665,38862 8643,38865 8518,38881 8240,38876 7990,38846 7950,38843 7836,38835 7698,38825 7632,38828 7465,38830
 # 
-#: next_check_id: SCHOENFLIESSER-2023
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1054982.php (kein konkretes Datum (außer für Baumfällungen: Ende Februar 2021))
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1456596.php ("Basis für weitere Straßensanierungsmaßnahmen")
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/1405-schoenfliesser-strasse-reinickendorf.jpg
-#: by: https://www.berliner-woche.de/frohnau/c-verkehr/schoenfliesser-strasse-wieder-frei_a418323
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12320 (Ersuchen zur Senheimer Str.)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12415 (Anfrage zur Senheimer Str.)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12419 (Anfrage zur Senheimer Str.)
-#: by: https://www.berliner-woche.de/frohnau/c-umwelt/beim-neubau-der-senheimer-strasse-sollen-aktuell-mehr-als-60-baeume-verschwinden_a419510
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1466688.php (Neubau der Senheimer Str. zwischen Schönfließer Straße und der Zeltinger Straße ab 2025)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12482 (Anfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12491 (Einwohneranfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12492 (Einwohneranfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12493 (Einwohneranfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12495 (Einwohneranfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12496 (Einwohneranfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12511 (Anfrage)
-#: by: https://www.berliner-woche.de/frohnau/c-verkehr/umbau-der-senheimer-strasse-cdu-stadtraetin-schrod-thiel-wartet-baumgutachten-ab_a421225 (Gollanczstr. ab 2026, Markgrafenstr. ab 2031)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12592 (Anfrage)
-#: by: https://www.berliner-woche.de/frohnau/c-umwelt/senheimer-strasse-engagement-der-anwohner-rettet-die-meisten-baeume_a425214 (Start der Bauarbeiten im Frühjahr 2025)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=12630 (Einwohneranfrage)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1507152.php (Informationsveranstaltung)
-#: by: https://www.berliner-woche.de/wittenau/c-umwelt/neue-plaene-fuer-die-senheimer-strasse_a430805
-#: by: https://www.berliner-woche.de/frohnau/c-verkehr/in-der-senheimer-strasse-sollen-nur-noch-elf-statt-74-baeume-gefaellt-werden_a431428 (Bauzeit voraussichtlich August 2025 - Sommer 2026)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1529404.php (Baumfällungen im Februar 2025)
-#: by: https://www.berliner-woche.de/frohnau/c-verkehr/baustart-in-der-senheimer-strasse_a435575
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20250308 (Baubeginn: ab 1. bzw. 2.Quartal 2025, Bauende: 2.Quartal 2026)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.1405294.php
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/strassenbaumassnahmen-im-bezirk-reinickendorf/04_lp_01.pdf
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/strassenbaumassnahmen-im-bezirk-reinickendorf/04_lp_02.pdf
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/strassenbaumassnahmen-im-bezirk-reinickendorf/04_lp_03.pdf
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=13242 (Anfrage)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/baume-im-berliner-norden-gerettet-strassensanierung-billiger-als-geplant-13767154.html
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1592822.php (Neubau startet im September 2025; 1. BA: von Schönfließer Straße bis einschließlich Kreuzung Huttenstraße; Radverkehr bleibt die ganze Zeit gewährleistet; Abschluss der Bauarbeiten: Oktober 2026)
-#: by: https://entwicklungsstadt.de/frohnau-senheimer-strasse-wird-ab-september-fuer-ein-jahr-zur-baustelle/
-#: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (Schönfließer Straße: Straßensanierung bis 7.8.2023) (bis 8.9.2023) (bis 30.9.2023) (inaktiv)
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten in der Schönfließer Straße beendet?
-#: osm_watch: way id="54440179" version="32"
-#: osm_watch: way id="1294888596" version="3"
-#: osm_watch: way id="1294888597" version="4"
-# REMOVED --- #: next_check: 2025-12-31 (Ende 1. BA; temp-blockings-Eintrag anpassen)
-# REMOVED --- #: next_check: 2026-10-31 (BA-Pressemitteilung)
-#: last_checked: 2026-06-07
-#: check_frequency: 150d
-#: next_check: 2026-10-15 (planb)
-Senheimer Str.: Bauarbeiten, Asphaltierung	?::inwork 2490,26126 2484,25984 2496,25915 2519,25772
-# REMOVED (hier realisiert) --- Senheimer Str.: Bauarbeiten, kommt es dabei zu Änderungen (z.B. Asphaltierungen?)	?::inwork 2519,25772 2515,25666 2502,25544 2506,25398 2510,25350
-# 
 #: osm_watch: way id="920903753" version="10"
 #: source_id: viz2021:13.28683,52.63925,15.08.2025,07:00 (Kraneinsatz, bis 22.08.2025) (inaktiv)
 #: last_checked: 2025-06-01
@@ -7868,7 +7823,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="4"
-#: last_checked: 2026-10-11
+#: last_checked: 2026-10-16
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -8987,11 +8942,11 @@ Ella-Barowsky-Str.: Umbauarbeiten, dabei entsteht ein Radweg	?::inwork 7499,7880
 #: by: https://www.entwicklungsstadt.de/suedkreuz-hochhaus-bsr-zentrale-bueros/
 #: by: https://www.entwicklungsstadt.de/schoeneberger-linse-so-entwickelt-sich-das-quartier-am-suedkreuz/
 #: by: https://www.entwicklungsstadt.de/bsr-campus-am-suedkreuz-wer-die-345-millionen-euro-finanzieren-soll/
-#: source_id: planb2026:13.36277335,52.47577167,01.04.2026, ("Sicherung gemäß Vz.-plan", bis 31.12.2028) (vorfristig inaktiv)
+#: source_id: planb2026:13.36277335,52.47577167,01.04.2026, ("Sicherung gemäß Vz.-plan", bis 31.12.2028) (vorfristig inaktiv) (bis 31.12.2028)
 #: XXX Bebauungsplan XI-231abb
 #: last_checked: 2026-09-03
 #: check_frequency: 720d
-#: next_check: 2028-12-31 (entwicklungsstadt)
+#: next_check: 2028-12-31 (entwicklungsstadt + planb)
 Quartiersweg - Wilhelm-Kabus-Str.: geplanter Geh- und Radweg	?::projected 7639,7974 7698,7923
 # 
 # REMOVED (teilweise) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2024/pressemitteilung.1438580.php --- #: next_check: 2024-05-01 --- Heerstr. (Kaulsdorf): wird nach den Bauarbeiten die Fahrbahn asphaltiert sein?	? 22129,9702 21988,9766 21859,9822 21842,9829
@@ -9278,7 +9233,7 @@ Französische Str./Markgrafenstr.: neue Ampel sollte 2025 entstehen	? 9624,12153 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10678 (Bebauungsplan 11-192)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/Y8IWNCkTxPRb3qEGD9B2FDhWv3rLvvvQ4hITiaRp/rESlfSVA/13-Anlagen/04/attach_A9AF.pdf
 #: XXX außerdem: Straßenflächen der Max-Brunnow-Str. in diesem Bereich entfallen; bleibt der Rad- und Gehweg oder wird es zu einem reinen Fußgängerweg?
-#: last_checked: 2026-08-12
+#: last_checked: 2026-10-16
 #: check_frequency: 1000d
 Arthur-Weisbrodt-Str./Max-Brunnow-Str.: direkte Anbindung zur Thaerstraßenbrücke?	?::projected 14170,13496 14109,13449
 # 
@@ -9289,7 +9244,7 @@ Arthur-Weisbrodt-Str./Max-Brunnow-Str.: direkte Anbindung zur Thaerstraßenbrücke
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6551 (FGÜ Karower Damm/Treseburger Straße im Rahmen des Baus der Brücke)
 #: source_id: planb2026:13.47080468,52.6015366,14.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", parallele Nebenfahrbahn, bis 27.11.2026)
 #: XXX vor den eigentlichen Bauarbeiten wird auf der westlichen Seite eine Behelfsbrücke für den Rad- und Fußverkehr erstellt (Benutzungspflicht?)
-#: last_checked: 2026-08-27 (mapillary)
+#: last_checked: 2026-10-14 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-09-30 (SenMVKU-Seite, Beginn der Bauarbeiten: Mitte 2026)
 #: next_check: 2031-12-31 (SenMVKU-Seite, Ende der Bauarbeiten: 2031)
@@ -9833,13 +9788,16 @@ Friedenstr.: Umbau der RVA (Protektion), Mittelinsel am Knick Platz der Vereinte
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/protokoll-mobilitaetswenderat-09062026.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1724714.php (gegenläufige Einbahnstraßen, keine Termine)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1667360.php
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/26-05-04-rigaer-strasse.pdf (gegenläufige Einbahnstraßen voraussichtlich im 3. Quartal 2026)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/26-05-04-rigaer-strasse.pdf (Seite 13: gegenläufige Einbahnstraßen voraussichtlich im 3. Quartal 2026)
 #: by: https://bsky.app/profile/baxhain.bsky.social/post/3mxqpw227cs2m
+#: by: https://www.entwicklungsstadt.de/fahrradstrasse-rigaer-strasse-einbahnstrassen-sollen-autoverkehr-reduzieren/
 #: priority: #D
 #: last_checked: 2026-10-13
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2024-12-31
-Rigaer Str.: Einbahnstraßenregelungen für den Autoverkehr	? 13761,12578 13991,12522 14091,12494 14133,12482 14266,12446 14451,12396 14538,12371 14748,12314 15003,12241 15104,12216
+#: next_check: 2026-10-16 (erste Einbahnstraßenabschnitte bereits realisiert)
+# REMOVED (hier bereits realisiert) --- Rigaer Str.: Einbahnstraßenregelungen für den Autoverkehr	? 13761,12578 13991,12522
+Rigaer Str.: Einbahnstraßenregelungen für den Autoverkehr	? 13991,12522 14091,12494 14133,12482 14266,12446 14451,12396 14538,12371 14748,12314 15003,12241 15104,12216
 # 
 #: next_check_id: NORD52-2019
 #: by: https://www.entwicklungsstadt.de/10-jahre-bauen-am-wasser-letzte-etappe-fuer-quartier-52-nord-in-gruenau/ (Fertigstellung 2026/2027)
@@ -10090,20 +10048,16 @@ Thomasiusstr. - Wilsnacker Str.: Fahrradstraße soll realisiert werden	?::project
 #: by: https://www.entwicklungsstadt.de/neuer-zeitplan-diese-sperrungen-treffen-den-s-bahnhof-zehlendorf/
 #: by: https://www.entwicklungsstadt.de/s-bahnhof-zehlendorf-neue-zugaenge-und-groessere-bruecke-geplant/
 #: also_indoor: url https://bauprojekte.deutschebahn.com/p/berlin-zehlendorf/infobauarbeiten
-#: XXX Sperrung des östlichen Personentunnels: ab 11. September 2026. Der Radtunnel bleibt offen, Fußgänger und Radfahrer müssen sich den Weg teilen. Mittlerweile 19.10.2026 - 08.12.2026.
-#: XXX Sperrung des Teltower Damms (für den Kfz-Verkehr, aber auch für den Rad+Fußgängerverkehr?): 31.10.2026 bis 01.11.2026 + 28.11.2026 bis 29.11.2026
-#: XXX "Anpassung" der Radverkehrsführung: 29. September bis 2. November 2026 (aber wie wird es aussehen?)
+#: XXX Sperrung des östlichen Personentunnels: ab 11. September 2026. Der Radtunnel bleibt offen, Fußgänger und Radfahrer müssen sich den Weg teilen. Mittlerweile 19.10.2026 - 08.12.2026. Mittlerweile Sperrzeiten: 30.10.-2.11.2026 + 4.12.-7.12.2026.
+#: XXX Sperrung des Teltower Damms (für den Kfz-Verkehr, aber auch für den Rad+Fußgängerverkehr?): 31.10.2026 bis 01.11.2026 + 28.11.2026 bis 29.11.2026. Mittlerweile 31.10.2026 für 4 Stunden + 28.11.-29.11.2026
+#: XXX "Anpassung" der Radverkehrsführung: 29. September bis 2. November 2026 (aber wie wird es aussehen?) (am 10.14.2026 waren keine Änderungen zu sehen)
 #: last_checked: 2026-10-14
-#: check_frequency: 30d (Anpassung der Radverkehrsführung?)
+# REMOVED --- #: check_frequency: 30d (Anpassung der Radverkehrsführung?)
+#: next_check: 2026-10-30 (Sperrung des östlichen Personentunnels)
 # REMOVED --- #: check_frequency: 720d
 # REMOVED (noch nicht passiert) --- #: next_check: 2026-09-29 (BA-Pressemitteilung: Radverkehrsführung wird angepasst)
 # REMOVED --- #: next_check: 2030-12-31 (BA)
 S-Bhf. Zehlendorf, Neubau der Eisenbahnüberführung: mögliche bauzeitliche Einschränkungen	?::projected 720,2718 749,2616
-# 
-#: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=6914
-#: last_checked: 2026-07-28 (mapillary)
-#: check_frequency: 90d
-Straße 42: verkehrsberuhigter Bereich soll entstehen	? 15271,22527 15377,22452 15442,22412
 # 
 #: url: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/service-und-organisationseinheiten/klima-und-internationales/gartenstrasse-rudolfplatz-1656614.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_29_1813_1900_online.pdf
@@ -10265,17 +10219,6 @@ Manfred-von-Richthofen-Str.: Fahrradstraße entsteht vermutlich nach den Leitungs
 #: by: https://www.stromnetz.berlin/fur-berlin/johannisthal/ (ab 19.10.2026 für vier Wochen)
 #: next_check: 2026-10-19
 Königsheideweg: mögliche Gegenverkehrsregelung	? 16062,5242 15870,5251 15807,5286
-# 
-#: next_check_id: BLOCKDAMMWEG-2026
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
-#: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10210 (neue URL)
-#: osm_watch: note 5033316 2
-#: XXX noch provisorisch, wird verstetigt --- in Zukunft wird der gesamte Knotenpunkt bis zur Blockdammweg-Rampe durch die Ampelanlage erfasst
-#: XXX zwischenzeitlich: provisorische Fußgängerampel	F::inwork 17720,8854
-#: last_checked: 2026-09-16
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2026-10-05 (planb)
-Blockdammweg/Ehrlichstr.: hier wird eine Ampelanlage entstehen	? 17741,8872 17720,8854 17738,8826
 # 
 #: by: https://marzahn-hellersdorf.com/bodenschwellen-sollen-tempo-auf-kienbergpark-weg-bremsen/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/marzahn-hellersdorf/ohne-kennzeichen-unterwegs-neue-massnahmen-sollen-scooter-rennen-in-ostberliner-park-stoppen-16153564.html
@@ -13172,6 +13115,8 @@ U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1701592.php
 #: by: https://www.entwicklungsstadt.de/wohnungen-oder-wildbienen-streit-um-das-rias-gelaende-in-britz/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_41_2873_2920_online.pdf (FNP-Änderung 05/17)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_44_3097_3152_online.pdf (zur FNP-Änderung)
+#: by: https://www.berlin.de/sen/stadtentwicklung/_assets/planung/flaechennutzungsplanung/wirksame-aenderungen/0517.pdf
 #: note: Projektname "Britzer Terrassen"
 #: osm_watch: note 3245865 2
 #: last_checked: 2026-06-13

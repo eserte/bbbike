@@ -6,6 +6,17 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: next_check_id: BLOCKDAMMWEG-2026
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
+#: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10210 (neue URL)
+#: osm_watch: note 5033316 2
+#: XXX noch provisorisch, wird verstetigt --- in Zukunft wird der gesamte Knotenpunkt bis zur Blockdammweg-Rampe durch die Ampelanlage erfasst
+#: XXX zwischenzeitlich:
+#: last_checked: 2026-10-15 (bahninfo-forum)
+#: check_frequency: 60d
+provisorische Fußgängerampel	F::inwork 17720,8854
+# REMOVED --- #: next_check: 2026-10-05 (planb)
+# 
 #: next_check_id: STEGLITZERDAMM-2026
 #: last_checked: 2026-10-14 vvv
 #: check_frequency: 90d vvv
@@ -115,11 +126,11 @@ Allee der Kosmonauten/Meeraner Str.	X::inwork 18382,13492
 # REMOVED --- Allee der Kosmonauten/Krankenhauszufahrt	X::inwork::alternating 17779,13457
 # 
 #: next_check_id: FELD-2026
-#: source_id: LMS-BR:417487/72 viz2021:13.38351,52.53674,29.07.2026,07:00 (bis 16.10.2026)
+#: source_id: LMS-BR:417487/72 viz2021:13.38351,52.53674,29.07.2026,07:00 vizapi2026:760/2026 (bis 16.10.2026) (bis 18.12.2026)
 #: source_id: planb2026:13.38382088,52.53641823,28.07.2026, ("Gegenverkehrsanlage (LZA)", bis 18.12.2026)
 #: note: Richtung Süden wird der Radverkehr mit Benutzungspflicht über den Bürgersteig (Charlottenburger Platten) geführt (etwa 120m)
 #: last_checked: 2026-10-10
-#: next_check: 2026-12-18 (planb)
+#: next_check: 2026-12-18 (planb + VIZ-Verkehrsmeldung)
 #: valid: -20261218
 Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 # 
@@ -175,9 +186,9 @@ Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
 #: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026) (bis 16.10.2026) (bis 02.07.2027) (bei vizapi2026 mittlerweile falscher Text)
-#: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026) (inaktiv) (bis 02.07.2027) (vorfristig inaktiv)
+#: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026) (inaktiv) (bis 02.07.2027) (vorfristig inaktiv) (bis 02.07.2027)
 #: last_checked: 2026-09-06 (mapillary)
-#: next_check: 2027-07-02 (VIZ-Verkehrsmeldung + ex-planb)
+#: next_check: 2027-07-02 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20270702
 Siemensstr./Borstellstr.	X::inwork 6219,4336
 # 
@@ -4692,7 +4703,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: next_check_id: CHAUSSEE-2026
 #: osm_watch: node id="26748289" version="10"
 #: XXX möglicherweise im Zusammenhang mit den neuen Bauarbeiten in der Chausseestr.
-#: last_checked: 2026-08-26
+#: last_checked: 2026-10-14 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2028-05-11 (VIZ-Verkehrsmeldung)
 #: valid: -20280511
