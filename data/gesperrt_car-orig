@@ -1641,9 +1641,12 @@ Voigtstr.	2:Anlieger 14709,12156 14748,12314 14776,12418
 Voigtstr.	2:Anlieger 14776,12418 14798,12502 14801,12517 14814,12626 14832,12755 14835,12801
 Pettenkoferstr.	2:Anlieger 14836,12826 14858,12765 14935,12596 14996,12462
 Pettenkoferstr	2:Anlieger 15005,12443 15046,12355 15058,12329 15104,12216 15110,12107
-#: historical_note: früher Anlieger frei, ab Oktober 2026 Einbahnstraßenregelung
+#: historical_note: früher Anlieger frei, ab Oktober 2026 Einbahnstraßenregelung vvv
 Rigaer Str.	1 13761,12578 13991,12522
-Rigaer Str.	2:Anlieger 13991,12522 14091,12494 14133,12482 14266,12446 14451,12396 14538,12371 14748,12314 15003,12241 15104,12216 15175,12180
+Rigaer Str.	1 14266,12446 14133,12482
+Rigaer Str.	1 14266,12446 14451,12396 14538,12371
+#: historical_note ^^^
+Rigaer Str.	2:Anlieger 14538,12371 14748,12314 15003,12241 15104,12216 15175,12180
 Silvio-Meier-Str.	2:Anlieger 14381,12207 14451,12396
 Waldeyerstr	2:Anlieger 14926,12129 15003,12241
 # 
@@ -2571,4 +2574,23 @@ Gutzmannstr.: Einfahrt für Kfz verboten	1 339,1484 374,1472
 # 
 (Flughafengelände)	1 9292,8375 9300,8334 9342,8313 9395,8340 9414,8380 9377,8415
 (Flughafengelände)	1 9606,8676 9647,8593 9645,8563 9589,8519 9541,8570 9563,8622 9570,8678
+# 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
+#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12387 (Einwohneranfrage zur geplanten Umgestaltung)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/protokoll-mobilitaetswenderat-09062026.pdf (Schulzone wird nicht als Fußgängerzone umgesetzt)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1712757.php (Umgestaltung zwischen Rigaer Str. und Weidenweg; keine Termine)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260911
+#: by: https://www.entwicklungsstadt.de/liebigstrasse-in-friedrichshain-umbau-fuer-sichere-schulwege-startet/ (Umsetzung im Herbst 2026 vorgesehen)
+#: source_id: planb2026:13.4571375,52.51779983,14.09.2026,06:00 ("Haltverbote", bis 18.12.2026)
+#: osm_watch: way id="295627704" version="21"
+#: historical_note: früherer Eintrag: Einrichtung einer Spielstraße
+#: priority: #D
+#: last_checked: 2026-10-17
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2026-11-30 (entwicklungsstadt)
+#: next_check: 2026-12-18 (planb)
+Liebigstr.: Umgestaltungsarbeiten, Einbahnstraßenregelung, Radfahrer frei	1 13991,12522 14058,12709
+# REMOVED (hier vermutlich nicht) --- Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522
 # 

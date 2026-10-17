@@ -360,10 +360,12 @@ Halker Zeile: Asphalt	Q0 10282,-280 10379,-551 10473,-799
 #: by: Jürgen Schulz-Brüssel
 #: confirmed_by: srt
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 18773,10028
+#: source_id: planb2026:13.52717408,52.49469004,06.10.2025,07:00 ("Fahrbahneinengung", bis 31.12.2026)
 #: osm_watch: way id="1379412008" version="1"
 #: XXX nach den Bauarbeiten vermutlich wieder: sehr guter Asphalt, Q0
 #: last_checked: 2026-08-25
 #: check_frequency: 60d
+#: next_check: 2026-12-31 (planb)
 Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
 Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18844,10058 19124,10175 19401,10295 19675,10410 19711,10426
 Alemannenstr.: Asphalt	Q0 -3360,2917 -3417,2886
@@ -14204,7 +14206,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen?
-#: last_checked: 2026-09-16
+#: last_checked: 2026-10-17
 #: check_frequency: 30d
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 # 
@@ -21129,7 +21131,7 @@ Güntherstr.: schlechtes Kopfsteinpflaster, einige Asphaltflicken	Q2-; 17771,8349
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> kleinteiliges Kopfsteinpflaster, Q2+ -> neu gemacht)
 #: next_check_id: MERLERWEG-2026
 #: XXX wann wird hier vollständig asphaltiert?
-#: last_checked: 2026-08-05
+#: last_checked: 2026-10-17
 #: check_frequency: 60d
 Merler Weg: Asphalt ohne letzte Deckschicht	Q1 19180,13219 19027,13242
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> kleinteiliges Kopfsteinpflaster, Q2+)

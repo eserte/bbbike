@@ -222,7 +222,7 @@ Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026) (1. Quartal 2027 - 4. Quartal 2027)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
 #: source_id: bvg2024:194#HIM_FREETEXT_341095 (Umleitung, evtl. gibt es hier Bauarbeiten?) (-> nichts gesehen)
-#: last_checked: 2026-10-07 vvv
+#: last_checked: 2026-10-17 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
@@ -4149,25 +4149,6 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
-#: by: https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12387 (Einwohneranfrage zur geplanten Umgestaltung)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/protokoll-mobilitaetswenderat-09062026.pdf (Schulzone wird nicht als Fußgängerzone umgesetzt)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1712757.php (Umgestaltung zwischen Rigaer Str. und Weidenweg; keine Termine)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php?date=20260911
-#: by: https://www.entwicklungsstadt.de/liebigstrasse-in-friedrichshain-umbau-fuer-sichere-schulwege-startet/ (Umsetzung im Herbst 2026 vorgesehen)
-#: source_id: planb2026:13.4571375,52.51779983,14.09.2026,06:00 ("Haltverbote", bis 18.12.2026)
-#: osm_watch: way id="295627704" version="21"
-#: historical_note: früherer Eintrag: Einrichtung einer Spielstraße
-#: priority: #D
-#: last_checked: 2026-10-11
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-11-30 (entwicklungsstadt)
-#: next_check: 2026-12-18 (planb)
-Liebigstr.: Umgestaltungsarbeiten, Einbahnstraßenregelung	1s:q4::inwork 13991,12522 14058,12709
-# REMOVED (hier vermutlich nicht) --- Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522
-# 
 #: next_check_id: AMWIEZENERBAHNHOF-2024
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
 #: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
@@ -5033,7 +5014,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-09-17
+#: last_checked: 2026-10-17
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -5041,7 +5022,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-09-17 vvv
+#: last_checked: 2026-10-17 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5353,7 +5334,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
 #: osm_watch: note 4853760 1
-#: last_checked: 2026-10-14 vvv
+#: last_checked: 2026-10-16 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759

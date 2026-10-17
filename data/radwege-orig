@@ -1032,7 +1032,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-10-13
+#: last_checked: 2026-10-17
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -2531,6 +2531,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: source_id: viz2021:13.503014,52.480172,19.07.2021,07:00 (Leitungsarbeiten bis 6.8.2021) (inaktiv)
 #: source_id: viz2021:13.506418,52.475944,06.09.2021,08:00 (Leitungsarbeiten bis 1.1.2022, allerdings in die andere Richtung) (mittlerweile bis 31.3.2022) (bis 17.6.2022) (inaktiv)
 #: source_id: viz2021:13.501478,52.482757,21.06.2021,10:00 (Leitungsarbeiten bis 28.5.2022) (bis 13.6.2022) (inaktiv)
+#: source_id: planb2026:13.50839546,52.47414971,19.10.2026,07:00 ("Fahrstreifen-Reduzierung", bis 31.12.2026)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
@@ -4795,11 +4796,12 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2026-08-17 (planb) vvv
 #: next_check: 2026-12-31 (infravelo) vvv
-#: source_id: planb2026:13.46826637,52.47225026,23.06.2026,07:00 ("Gehwegvollsperrung", bis 13.12.2026) (vorfristig inaktiv) (bis 16.11.2026) (bis 16.10.2026)
+#: source_id: planb2026:13.46826637,52.47225026,23.06.2026,07:00 ("Gehwegvollsperrung", bis 13.12.2026) (vorfristig inaktiv) (bis 16.11.2026) (bis 16.10.2026) (inaktiv)
+#: source_id: planb2026:13.46669078,52.47156043,16.10.2026,07:00 ("Fahrstreifen-Verschwenkung", bis 30.10.2026)
 #: historical_note: früher: alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg, RW1;; seit ungefähr 2025 existiert eine Absperrung vor den schlimmsten Wurzelhebungen; etwa ab 2026 Provisorium
 	RW0; 14853,7451 14775,7385 14758,7373
 #: source_id: planb2026:13.46660341,52.47141375,04.05.2026,07:00 ("Gehwegvollsperrung", bis 17.08.2026) (inaktiv)
-#: source_id: planb2026:13.46550531,52.47084166,12.08.2026,07:00 ("Gehwegvollsperrung", bis 16.11.2026) (bis 16.10.2026)
+#: source_id: planb2026:13.46550531,52.47084166,12.08.2026,07:00 ("Gehwegvollsperrung", bis 16.11.2026) (bis 16.10.2026) (inaktiv)
 #: historical_note: früher (bis ca. 2026): alte Gehwegplatten, deutliche Schäden und Wurzelhebungen, Bord gegen Gehweg, RW1;
 provisorische Radwegführung auf der Fahrbahn	RW4; 14758,7373 14708,7325 14658,7280 14617,7243
 #: next_check ^^^
@@ -10069,4 +10071,8 @@ Gehweg für Radfahrer frei	RW1; 6388,7999 6443,7971
 # 
 #: historical_note: seit etwa Sommer/Herbst 2026
 	RW6;RW6 15271,22527 15377,22452 15442,22412
+# 
+#: by: https://www.entwicklungsstadt.de/verkehrskonzept-schillerkiez-erste-massnahmen-in-neukoelln-umgesetzt/
+#: note: existiert vermutlich nur, um die Kfz-Einbahnstraßenregelung zu unterstreichen
+	RW3; 11632,8302 11647,8227
 # 

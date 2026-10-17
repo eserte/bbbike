@@ -58,7 +58,7 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzender Hochbauarbeiten	q1::inwork 17526,14531 17656,14549 17824,14572
 Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 18552,10135 18585,10024
-Gustav-Tempel-Str.: kurzes Stück Bürgersteig	q3 15261,10738 15245,10719
+Gustav-Tempel-Str.: kurzes Stück Bürgersteig oder unbefestigte Verbindung	q3 15261,10738 15245,10719
 Bärensteinstr.: Sperrung der Fahrbahn vor dem Blumberger Damm	q3::inwork 21497,15227 21599,15213
 Nollendorfstr.: Bauarbeiten, Sperrung der Fahrbahn an der Einmündung Eisenacher Str.	q3::inwork 6739,10120 7055,10220
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6260,7899 6132,7893
@@ -3804,7 +3804,6 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einba
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Dolgenseestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17774,9934 17761,9971 17559,10024
 Köpenicker Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp::igndisp; 21137,11346 21137,11294
-Liebigstr.: Umgestaltungsarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::inwork::igndisp; 13991,12522 14058,12709
 Am Wriezener Bahnhof: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::inwork::igndisp; 12758,11915 12788,11898 12944,11760
 Wriezener Karree: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::inwork::igndisp; 12959,11631 12728,11850
 Streustr.: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::inwork::igndisp; 12890,16121 12675,16214
