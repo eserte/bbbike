@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         OSM Watched Notes
 // @namespace    https://www.openstreetmap.org/
-// @version      0.1
-// @description  Show selected OSM notes in blue on the map
+// @version      0.2
+// @description  Show selected OSM notes in orange on the map
 // @match        https://www.openstreetmap.org/*
 // @grant        GM_getValue
 // @grant        GM_setValue
@@ -100,7 +100,7 @@ function loadWatchedNotes() {
 }
 
 /*
- * Change the color of an existing OSM note marker to blue.
+ * Change the color of an existing OSM note marker to orange.
  *
  * OSM uses an SVG <use> element whose "color" attribute contains
  * the CSS variable for the marker color.
@@ -116,7 +116,7 @@ function recolorMarker(marker) {
 
     for (const element of marker._icon.querySelectorAll('use')) {
         if (element.hasAttribute('color')) {
-            element.setAttribute('color', 'var(--marker-blue)');
+            element.setAttribute('color', 'orange');
         }
     }
 
