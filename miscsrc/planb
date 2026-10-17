@@ -324,7 +324,7 @@ sub cmd_fetch {
 
     my @cmd2 = (
 	$^X, $any2bbd_path,
-	'-geojson-name', '.properties.strasse .properties.einschr bbbikeid=.properties.bbbikeid rating=.properties.bewertung .properties.dat_beginn .properties.dat_ende',
+	'-geojson-name', '.properties.strasse .properties.einschr id=.properties.importid bbbikeid=.properties.bbbikeid rating=.properties.bewertung .properties.dat_beginn .properties.dat_ende',
 	$temp_geojson,
 	'-o', '/tmp/all_planb_bbbikeid.bbd'
     );
@@ -332,7 +332,8 @@ sub cmd_fetch {
 
     print "Find records in use and adjust categories...\n";
 
-    #my $sourceids = get_source_ids(); # XXX NYI!
+    my $sourceids = get_source_ids();
+    my($current_sourceids, $inactive_sourceids) = ($sourceids->{current}, $sourceids->{inactive});
 
     my $s_in = Strassen->new_stream('/tmp/all_planb_bbbikeid.bbd');
     my $s_out = Strassen->new;
@@ -363,7 +364,8 @@ sub cmd_fetch {
 	    my($r,$dir) = @_;
 
 	    my $cat;
-	    if ($r->[Strassen::NAME] =~ /INUSE/) { # XXX NYI!
+	    my($planb_id) = $r->[Strassen::NAME] =~ m{\bbbbikeid=(\S+)};
+	    if ($planb_id && ($current_sourceids->{$planb_id} || $inactive_sourceids->{$planb_id})) {
 		$cat = 'PBinuse';
 	    } else {
 		my $tense = q{f};
