@@ -283,6 +283,8 @@ sub cmd_fetch {
 	print "Compress geojson...\n";
 	gzip(\$resp_content => "$geojson_gz~")
 	    or die "Can't gzip to $geojson_gz~: $GzipError";
+	rename "$geojson_gz~", $geojson_gz
+	    or die "Error while renaming $geojson_gz~ to $geojson_gz: $!";
 
 	print "Convert to bbd...\n";
 	open my $ofh, '>', "$tmpfile"
