@@ -544,13 +544,7 @@ sub cmd_diff {
 	# Fancy mode
 	binmode STDOUT, ':utf8';
 
-	my $bbbike_root = BBBikeUtil::bbbike_root();
-	my $current_yml = "$bbbike_root/tmp/sourceid-current.yml";
-	my $inactive_yml = "$bbbike_root/tmp/sourceid-inactive.yml";
-
-	require BBBikeYAML;
-	my $current_sourceids = -f $current_yml ? eval { BBBikeYAML::LoadFile($current_yml) } : {};
-	my $inactive_sourceids = -f $inactive_yml ? eval { BBBikeYAML::LoadFile($inactive_yml) } : {};
+	my $sourceids = get_source_ids();
 
 	my %old_records;
 	{
@@ -618,7 +612,7 @@ sub cmd_diff {
 	if (@additions) {
 	    print "=== NEW EVENTS (" . scalar(@additions) . ") ===\n";
 	    for my $rec (@additions) {
-		my $stable_info = get_stable_id_info($rec, $current_sourceids, $inactive_sourceids);
+		my $stable_info = get_stable_id_info($rec, $sourceids);
 		printf "[NEW] Prio: %2d | %s | %s - %s | ID: %s %s | %s\n",
 		    $rec->{prio},
 		    $rec->{desc},
@@ -636,7 +630,7 @@ sub cmd_diff {
 	    for my $chg (@changes) {
 		my $old = $chg->{old};
 		my $new = $chg->{new};
-		my $stable_info = get_stable_id_info($new, $current_sourceids, $inactive_sourceids);
+		my $stable_info = get_stable_id_info($new, $sourceids);
 		printf "[CHANGED] Prio: %2d | %s | ID: %s %s\n",
 		    $chg->{prio},
 		    $new->{desc},
@@ -697,7 +691,7 @@ sub calculate_prio {
 }
 
 sub get_stable_id_info {
-    my ($rec, $current_sourceids, $inactive_sourceids) = @_;
+    my ($rec, $sourceids) = @_;
 
     my $stable_id = $rec->{bbbikeid} || "";
     my $first_coord = $rec->{coords}->[0] || "";
@@ -705,6 +699,9 @@ sub get_stable_id_info {
 
     my $matched_inuse = 0;
     my $matched_was_inuse = 0;
+
+    my $current_sourceids = $sourceids->{current};
+    my $inactive_sourceids = $sourceids->{inactive};
 
     if ($stable_id) {
 	if ($current_sourceids->{$stable_id}) {
@@ -794,6 +791,18 @@ sub parse_bbd_line {
 	coords	   => \@coords,
 	stable_key => $stable_key,
     };
+}
+
+sub get_source_ids {
+    my $bbbike_root = BBBikeUtil::bbbike_root();
+    my $current_yml = "$bbbike_root/tmp/sourceid-current.yml";
+    my $inactive_yml = "$bbbike_root/tmp/sourceid-inactive.yml";
+
+    require BBBikeYAML;
+    my $current_sourceids = -f $current_yml ? eval { BBBikeYAML::LoadFile($current_yml) } : {};
+    my $inactive_sourceids = -f $inactive_yml ? eval { BBBikeYAML::LoadFile($inactive_yml) } : {};
+
+    return { current => $current_sourceids, inactive => $inactive_sourceids };
 }
 
 sub _content_error {
