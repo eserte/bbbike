@@ -12,8 +12,11 @@ use LWP::UserAgent;
 use File::Temp;
 use IO::Compress::Gzip qw(gzip $GzipError);
 use IO::Uncompress::Gunzip qw(gunzip $GunzipError);
+use Time::Local qw(timelocal);
+use Tie::IxHash;
 
 use BBBikeUtil;
+use Strassen::Core;
 
 my $ca_temp_file;
 
@@ -327,63 +330,69 @@ sub cmd_fetch {
     );
     system(@cmd2) == 0 or die "Command '@cmd2' failed: $?\n";
 
-    print "Adjust categories...\n";
-    my $replacestrassen_path = "$bbbike_root/miscsrc/replacestrassen";
-    my @cmd3 = (
-	$^X, $replacestrassen_path,
-	'-addglobdir', 'category_color.PB3p=#d73027',
-	'-addglobdir', 'category_color.PB3s=#d73027',
-	'-addglobdir', 'category_color.PB3f=#d73027',
-	'-addglobdir', 'category_color.PB2p=#fdae61',
-	'-addglobdir', 'category_color.PB2s=#fdae61',
-	'-addglobdir', 'category_color.PB2f=#fdae61',
-	'-addglobdir', 'category_color.PB1p=#4575b4',
-	'-addglobdir', 'category_color.PB1s=#4575b4',
-	'-addglobdir', 'category_color.PB1f=#4575b4',
-	'-addglobdir', 'line_dash.PB3s=1,4',
-	'-addglobdir', 'line_dash.PB3f=2,4',
-	'-addglobdir', 'line_dash.PB2s=1,4',
-	'-addglobdir', 'line_dash.PB2f=2,4',
-	'-addglobdir', 'line_dash.PB1s=1,4',
-	'-addglobdir', 'line_dash.PB1f=2,4',
-	'-recexpr', q{
-use Time::Local qw(timelocal);
-my $tense = q{f};
-if (my($d1,$m1,$y1, $d2,$m2,$y2) = $_->[Strassen::NAME] =~ /(\d{2})\.(\d{2})\.(\d{4})\s+(\d{2})\.(\d{2})\.(\d{4})$/) {
-    my $from  = timelocal(0,0,0,$d1,$m1-1,$y1);
-    my $until = timelocal(0,0,0,$d2,$m2-1,$y2);
-    if ($from > time) {
-	$tense = q{f}; # future
-    } elsif (($until - $from)/86400 <= 7) { # rough calculation, inaccuracies on DST switches are accepted
-	$tense = q{s}; # short
-    } else {
-	$tense = q{p}; # present
-    }
-}
-my $prio = 2;
-if ($_->[Strassen::NAME] =~ m{(Vollsperrung|Sperrung einer Fahrtrichtung)}) {
-    $prio = 3;
-} elsif ($_->[Strassen::NAME] =~ m{(Haltverbote|keine Fahrbahn-Einschr.*nkung)}) {
-    $prio = 1;
-}
-my $cat = qq{PB$prio$tense};
-$_->[Strassen::CAT] = ($_->[Strassen::CAT] =~ /^F:/ ? "F:" : "") . $cat;
-},
-	$bbd_raw
+    print "Find records in use and adjust categories...\n";
+
+    #my $sourceids = get_source_ids(); # XXX NYI!
+
+    my $s_in = Strassen->new_stream('/tmp/all_planb_bbbikeid.bbd');
+    my $s_out = Strassen->new;
+    tie my %glob_dirs, 'Tie::IxHash', (
+	'map' => ['polar'],
+	'encoding' => ['utf-8'],
+	'category_color.PB3p' => ['#d73027'],
+	'category_color.PB3s' => ['#d73027'],
+	'category_color.PB3f' => ['#d73027'],
+	'category_color.PB2p' => ['#fdae61'],
+	'category_color.PB2s' => ['#fdae61'],
+	'category_color.PB2f' => ['#fdae61'],
+	'category_color.PB1p' => ['#4575b4'],
+	'category_color.PB1s' => ['#4575b4'],
+	'category_color.PB1f' => ['#4575b4'],
+	'category_color.PBinuse' => ['#800080'],
+	'line_dash.PB3s' => ['1,4'],
+	'line_dash.PB3f' => ['2,4'],
+	'line_dash.PB2s' => ['1,4'],
+	'line_dash.PB2f' => ['2,4'],
+	'line_dash.PB1s' => ['1,4'],
+	'line_dash.PB1f' => ['2,4'],
     );
 
-    open my $cat_fh, ">", "/tmp/all_planb_cat.bbd" or die "Can't write /tmp/all_planb_cat.bbd: $!\n";
-    my $pid = open(my $pipe, "-|", @cmd3);
-    if (defined $pid) {
-	while (<$pipe>) {
-	    print $cat_fh $_;
+    $s_out->set_global_directives(\%glob_dirs);
+    $s_in->read_stream(
+	sub {
+	    my($r,$dir) = @_;
+
+	    my $cat;
+	    if ($r->[Strassen::NAME] =~ /INUSE/) { # XXX NYI!
+		$cat = 'PBinuse';
+	    } else {
+		my $tense = q{f};
+		if (my($d1,$m1,$y1, $d2,$m2,$y2) = $r->[Strassen::NAME] =~ /(\d{2})\.(\d{2})\.(\d{4})\s+(\d{2})\.(\d{2})\.(\d{4})$/) {
+		    my $from  = timelocal(0,0,0,$d1,$m1-1,$y1);
+		    my $until = timelocal(0,0,0,$d2,$m2-1,$y2);
+		    if ($from > time) {
+			$tense = q{f}; # future
+		    } elsif (($until - $from)/86400 <= 7) { # rough calculation, inaccuracies on DST switches are accepted
+			$tense = q{s}; # short
+		    } else {
+			$tense = q{p}; # present
+		    }
+		}
+		my $prio = 2;
+		if ($r->[Strassen::NAME] =~ m{(Vollsperrung|Sperrung einer Fahrtrichtung)}) {
+		    $prio = 3;
+		} elsif ($r->[Strassen::NAME] =~ m{(Haltverbote|keine Fahrbahn-Einschr.*nkung)}) {
+		    $prio = 1;
+		}
+		$cat = qq{PB$prio$tense};
+	    }
+	    $r->[Strassen::CAT] = ($r->[Strassen::CAT] =~ /^F:/ ? "F:" : "") . $cat;
+
+	    $s_out->push($r);
 	}
-	close $pipe;
-    } else {
-	die "Can't run replacestrassen: $!\n";
-    }
-    close $cat_fh
-	or die "Error running '@cmd3'";
+    );
+    $s_out->write('/tmp/all_planb_cat.bbd');
+
     print "fetch complete!\n";
 }
 
