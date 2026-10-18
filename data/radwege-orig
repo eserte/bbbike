@@ -1956,7 +1956,7 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2026-10-02 (osm) vvv
+#: last_checked: 2026-10-18 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
@@ -2548,7 +2548,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: by: https://www.entwicklungsstadt.de/dauersperrung-richtung-ostkreuz-warum-hier-seit-2018-nichts-passiert/
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-09-17 vvv
+#: last_checked: 2026-10-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -3379,7 +3379,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-10-15 vvv
+#: last_checked: 2026-10-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-09-30 (planb) vvv
@@ -3412,7 +3412,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026) (bis 30.11.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-10-15
+#: last_checked: 2026-10-18
 #: check_frequency: 30d
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-09-30 (planb)
@@ -4798,6 +4798,7 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: next_check: 2026-12-31 (infravelo) vvv
 #: source_id: planb2026:13.46826637,52.47225026,23.06.2026,07:00 ("Gehwegvollsperrung", bis 13.12.2026) (vorfristig inaktiv) (bis 16.11.2026) (bis 16.10.2026) (inaktiv)
 #: source_id: planb2026:13.46669078,52.47156043,16.10.2026,07:00 ("Fahrstreifen-Verschwenkung", bis 30.10.2026)
+#: source_id: bvg2024:377#HIM_FREETEXT_368578 (Verlegung der Haltestelle Steinbockstraße)
 #: historical_note: früher: alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg, RW1;; seit ungefähr 2025 existiert eine Absperrung vor den schlimmsten Wurzelhebungen; etwa ab 2026 Provisorium
 	RW0; 14853,7451 14775,7385 14758,7373
 #: source_id: planb2026:13.46660341,52.47141375,04.05.2026,07:00 ("Gehwegvollsperrung", bis 17.08.2026) (inaktiv)
@@ -5496,13 +5497,13 @@ schmaler Unterstreifen gegen parkende Autos, Beton	RW1; 22645,6431 22534,6249
 Gehweg für Radfahrer frei	RW1; 22467,6135 22656,6142 22700,6138 22777,6151 22857,6155
 	RW1;RW1 21979,5208 22023,5160 22033,5148 22078,5093 22101,5064 22128,5003
 # 
-#: next_check_id: ALTSTADTKOEPENICK-2024
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260421
-#: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, vizapi2026:360/2026 (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026) (bis 27.11.2026)
-#: last_checked: 2026-09-17
-#: next_check: 2026-11-27
-#: valid: -20261127
-gemeinsamer Geh- und Radweg während der Bauarbeiten	RW2;RW2 22128,5003 22133,4986 22154,4923 22196,4847
+# REMOVED --- #: next_check_id: ALTSTADTKOEPENICK-2024
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260421
+# REMOVED --- #: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, vizapi2026:360/2026 (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026) (bis 27.11.2026)
+# REMOVED --- #: last_checked: 2026-09-17
+# REMOVED --- #: next_check: 2026-11-27
+# REMOVED --- #: valid: -20261127
+# REMOVED --- gemeinsamer Geh- und Radweg während der Bauarbeiten	RW2;RW2 22128,5003 22133,4986 22154,4923 22196,4847
 # 
 Gehweg für Radfahrer frei, Gehwegplatten	RW1; 26620,4936 26971,5025 27047,5075 27097,5108
 #: note: Richtung Westen nicht offiziell freigegeben, aber die Radwegführung ab Fürstenwalder Damm könnte einen Zweirichtungsradweg suggerieren
@@ -6947,7 +6948,7 @@ asphaltiert	RW1; 18215,12123 18215,11690
 #: by: Uli Döbler:
 	RW6;RW6 -117,5092 -85,4949 -48,4888
 # REMOVED (hier nicht) ---	RW6;RW6 15858,10202 15894,10251
-	RW6;RW6 15990,10185 15894,10251 15823,10300 15753,10353 15688,10400 15633,10442
+	RW6;RW6 15990,10185 15894,10251 15833,10293 15823,10300 15753,10353 15688,10400 15633,10442
 # REMOVED (hier nicht) ---	RW6;RW6 15823,10300 15788,10252
 	RW6;RW6 15643,10201 15716,10303
 # REMOVED (hier nicht) ---	RW6;RW6 15716,10303 15753,10353
@@ -7732,7 +7733,7 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: osm_watch: way id="1163982841" version="5"
 #: osm_watch: way id="408367258" version="5"
 #: source_id: planb2026:13.57928174,52.45848464,01.03.2023, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (vorfristig inaktiv) (bis 01.03.2027)
-#: last_checked: 2026-05-31
+#: last_checked: 2026-10-18
 #: check_frequency: 150d
 #: next_check: 2027-03-01 (planb)
 	RW0; 22365,6149 22467,6135
@@ -7747,8 +7748,8 @@ Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-14888.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11872 (Anfrage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/3JiUuGUPaDxFZ0g6A1VIvvYCMReAwaqrB1FmFf7y/oRsROOQz/22-Anlagen/02/MA_0935_VI.pdf (vorläufig ausgesetzt)
-#: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
-#: last_checked: 2026-09-19 vvv
+#: XXX wird aus der Radspur in der Prinzenallee eine Busspur? mittlerweile (Anfang November 2024, Mitte Dezember 2024, Mitte Oktober 2026) gibt es ein paar Meter temporäre Busspur mit Gelbmarkierung vvv
+#: last_checked: 2026-10-16 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv

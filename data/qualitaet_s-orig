@@ -363,7 +363,7 @@ Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 1
 #: source_id: planb2026:13.52717408,52.49469004,06.10.2025,07:00 ("Fahrbahneinengung", bis 31.12.2026)
 #: osm_watch: way id="1379412008" version="1"
 #: XXX nach den Bauarbeiten vermutlich wieder: sehr guter Asphalt, Q0
-#: last_checked: 2026-08-25
+#: last_checked: 2026-10-18
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
 Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
@@ -1319,7 +1319,7 @@ Görlitzer Str.: Kopfsteinpflaster; Schwellen an der Kreuzung Cuvrystr.	Q2; 12905
 Landjägerstr.: Asphalt	Q0 22495,4523 22458,4565
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX nach den Bauarbeiten wird vermutlich der provisorische Asphalt entfernt; dann wieder "Kopfsteinpflaster, Q2" vvv
-#: last_checked: 2026-09-17 vvv
+#: last_checked: 2026-10-18 vvv
 #: next_check: 2027-03-31 vvv
 Alter Markt: Asphalt	Q0 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Asphalt	Q0 22390,4702 22388,4737 22377,4836
@@ -1767,8 +1767,8 @@ Nitzwalder Str.: Asphalt	Q0 21325,8217 21461,8094 21535,8026
 Nitzwalder Str.: Asphalt	Q0 21519,8006 21578,7947
 Nitzwalder Str.: unbefestigter Weg	Q2 21578,7947 21593,7934
 Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967
-#: historical_note: früher (bis 2026) mit Q0 getaggt
-Kaulsdorfer Str.: Asphalt mit einigen Schäden	Q0- 22075,6967 22189,6668 22193,6659 22305,6404 22325,6385
+#: historical_note: früher (bis 2026) mit Q0 getaggt, dann Q0-, mittlerweile Q1+
+Kaulsdorfer Str.: Asphalt mit einigen Schäden	Q1+ 22075,6967 22189,6668 22193,6659 22305,6404 22325,6385
 Marksburgstr.: Asphalt	Q0 19048,9146 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
 Marksburgstr.: Asphalt mit einigen Schäden	Q1+ 19048,9146 19131,9187 19195,9249
 Walkürenstr.: Asphalt	Q0- 18070,9292 18022,9324
@@ -3548,7 +3548,7 @@ Hauptstr. (Rummelsburg) [Wohngebiet]: Asphalt	Q0 15536,10511 15499,10455 15475,1
 An der Bucht: Asphalt	Q0 15358,10562 15430,10508 15499,10455 15566,10411 15583,10399 15652,10348 15716,10303 15788,10252 15858,10202 15952,10134
 An den Knabenhäusern: Verbundsteinpflaster	Q1+ 15513,10298 15578,10250 15621,10217 15643,10201 15711,10149
 Lina-Morgenstern-Str.: Asphalt	Q0 15643,10201 15716,10303 15753,10353
-Vicki-Baum-Str.: Asphalt	Q0 15990,10185 15894,10251 15823,10300 15753,10353 15688,10400 15633,10442
+Vicki-Baum-Str.: Asphalt	Q0 15990,10185 15894,10251 15833,10293 15823,10300 15753,10353 15688,10400 15633,10442
 Alice-und-Hella-Hirsch-Ring: Asphalt	Q0 15823,10300 15788,10252 15711,10149 15753,10117 15779,10097 15858,10202 15894,10251
 Charlotte-Salomon-Hain: Kopfsteinpflaster	Q2 15753,10117 15716,10065
 Paula-Fürst-Str.: Asphalt	Q0 15779,10097 15874,10025
@@ -4138,10 +4138,12 @@ Blaurackenweg: Asphalt mit Rissen und Schäden	Q1 17613,7989 17647,8071 17532,812
 Am Weihenhorst: Asphalt mit Schäden	Q1- 17634,8167 17658,8216
 Spatzensteig: Asphalt, einige Risse	Q0- 17698,8136 17733,8202
 Kalkscheunenstr.: Beton	Q0- 9385,13174 9401,13072
-Unter der Kranbahn: Beton	Q0 18423,6285 18381,6134 18367,6086
+Unter der Kranbahn: Beton	Q0 18423,6285 18381,6134 18365,6078 18363,6071
 Platz am Kaisersteg: Gehwegpflasterung	Q0- 18381,6134 18428,6123
 Platz am Kaisersteg: Kleinsteinpflaster	Q1 18428,6123 18417,6068
-Platz am Kaisersteg: Gehwegpflasterung	Q0- 18417,6068 18422,6013 18420,6009
+Platz am Kaisersteg: Gehwegpflasterung	Q0- 18417,6068 18414,6052 18422,6013 18420,6009
+Platz am Kaisersteg: Asphalt	Q0 18422,6013 18363,6071
+(Platz am Kaisersteg - Rathenauhallen): Asphalt mit Unebenheiten	Q1 18363,6071 18259,6110
 Kaisersteg: Asphalt, leicht uneben	Q0- 18420,6009 18393,5964 18353,5897 18324,5847
 Britzer Str.: Asphalt	Q0 18470,5600 18380,5520 18370,5511 18307,5440 18214,5354 18080,5376
 Farnstr.: Asphalt	Q0 19402,4900 19384,5010 19328,5188
@@ -5873,7 +5875,7 @@ Am Maria-Jankowski-Park: Verbundsteinpflaster	Q1 22090,5402 22006,5460
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (vom 27. Februar 2022: Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
 #: osm_watch: way id="45478588" version="17"
-#: last_checked: 2026-08-02
+#: last_checked: 2026-10-18
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22035,5217 22055,5279 22057,5305 22056,5350
@@ -12589,7 +12591,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 #: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026)
 #: begin_check: 2026-10-30
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-10-16
+#: last_checked: 2026-10-18
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920

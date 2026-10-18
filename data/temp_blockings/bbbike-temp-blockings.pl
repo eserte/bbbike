@@ -30468,7 +30468,7 @@ EOF
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe',
        data  => <<EOF,
 # REMOVED (-> gesperrt-orig) --- #: next_check_id: STRALAUER-2019 --- #: XXX Umleitungsstrecke und Stralauer Allee abfahren --- #: XXX ggfs. zu einer permanenten Sperrung machen --- #: source_id: 2147343910 --- #: last_checked: 2019-03-19 --- #: next_check: 2019-12-20
-	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
+	q4::inwork; 14103,10489 14170,10675 14199,10685 14289,10663 14312,10657 14490,10610 14641,10552
 EOF
      },
      { from  => 1553192269, # 2019-03-21 19:17
@@ -40090,7 +40090,8 @@ EOF
 #: source_id: viz2021:13.579251,52.458484,09.06.2023,10:00 (bis 28.08.2023) (inaktiv)
 #: source_id: viz2021:13.579435,52.458663,20.02.2023,10:44 (bis 29.02.2028) (bis 30.06.2028) (bis 28.02.2028) (bis 28.02.2026) (inaktiv)
 #: source_id: LMS-BR:351546/72 viz2021:13.57935,52.45857, viz2021:13.579628,52.458891, (bis 29.02.2028)
-#: source_id: planb2026:13.57928174,52.45848464,01.03.2023, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (vorfristig inaktiv) (bis 01.03.2027)
+#: source_id: planb2026:13.57928174,52.45848464,01.03.2023, ("Sicherung gemäß Vz.-plan", Am Bahndamm bis Elcknerplatz, bis 31.08.2026) (vorfristig inaktiv) (bis 01.03.2027)
+#: source_id: planb2026:13.57442278,52.45287776,12.06.2023, ("Fahrbahneinengung", Stellingdamm bis Friedrichshagener Str., evtl. die Busspur?, bis 28.02.2027)
 # REMOVED (ja) --- #: XXX Tatsächlich auch für Radfahrer/Fußgänger gesperrt? Gibt es vielleicht eine Umwegsmöglichkeit durch den Bahnhof?
 # REMOVED (offizielle Umleitungsstrecke für Radfahrer) --- XXX Wird vielleicht die Hämmerlingstr. temporär während dieser Zeit geöffnet?
 #: note: eigentlich q4-, wegen des zusätzlichen Umwegs
@@ -40099,7 +40100,7 @@ EOF
 #: osm_watch: way id="37861386" version="34"
 #: osm_watch: way id="1231148375" version="16"
 #: priority: #B
-#: last_checked: 2026-10-02 (osm)
+#: last_checked: 2026-10-18
 #: check_frequency: 120d
 #: next_check: 2027-03-01 (planb)
 	q4::inwork; 22431,6068 22467,6135
@@ -41303,13 +41304,13 @@ EOF
 #: source_id: planb2026:13.50989979,52.49288278,01.12.2025,06:00 (Hönower Weg im gesperrten Abschnitt: "Vollsperrung beider Fahrbahnen", bis 29.08.2026) (inaktiv)
 #: source_id: planb2026:13.50856246,52.49155942,20.04.2026,07:00 (westlich Neuer Feldweg: "Fahrbahneinengung", bis 26.02.2027)
 #: source_id: planb2026:13.50599279,52.49211836,01.12.2025,06:00 (westlich+östlich Neuer Feldweg: "Vollsperrung beider Fahrbahnen", bis 26.02.2027)
-#: last_checked: 2026-09-27 (osm) vvv
+#: last_checked: 2026-10-18 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 #: check_frequency: 45d vvv
 #: next_check: 2027-02-28 (Aushang) vvv
 #: XXX: mögliche Engstelle zum westlichen Hönower Weg, beobachten! (empfohlene Umleitungsstrecke muss erstmal nicht benutzt werden; mittlerweile gibt es von Betriebsbahnhof Rummelsburg her kommend keine Umleitungs- oder Radfahren-verboten-Schilder mehr; mittlerweile (2026-07-18) aber doch wieder Radfahren-verboten-Schilder; 2026-07-25: nur noch Umleitungsschilder, keine Radfahren-verboten-Schilder mehr; 2026-07-29: Radfahren-verboten-Schilder sind wieder da; 2026-09-05: noch immer Radfahren-verboten-Schilder und Umleitungsschilder)
 Hönower Weg	2::inwork 17383,9719 17471,9688
-östliche Dolgenseestr.	2::inwork 17471,9688 17480,9721
+# REMOVED (hier mittlerweile offen) --- östliche Dolgenseestr.	2::inwork 17471,9688 17480,9721
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -44043,7 +44044,7 @@ EOF
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
-#: last_checked: 2026-08-17 (okas)
+#: last_checked: 2026-10-16 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -48298,7 +48299,7 @@ EOF
 # REMOVED (hier mittlerweile offen) --- Platzfläche	q3::inwork 22111,4562 22096,4503
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: also_indoor: traffic (G,T,H,A,W)
-#: last_checked: 2026-09-17 vvv
+#: last_checked: 2026-10-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-02-03 (planb,VIZ-Verkehrsmeldung) vvv
 Kietzer Str. - Kirchstr.	q4::inwork 22324,4586 22314,4604 22284,4653 22246,4711
@@ -49075,7 +49076,7 @@ EOF
 #: note: Kabel-Tiefbau abgeschlossen, Ecke Gutenbergstraße Spülbohrung abgeschlossen; 2026-04-18 Sat 12:32: Durchfahrt verboten, aber Bauzäune waren teilweise weggeschoben; Anbindung an Rohrtrasse ab voraussichtlich Mitte Mai 2026
 #: also_indoor: traffic (no-T,ex-G[nur Flemmingstr])
 #: source_id: planb2026:13.57061465,52.44806569,10.07.2026, ("Vollsperrung beider Fahrbahnen", bis 01.12.2026)
-#: last_checked: 2026-09-17 vvv
+#: last_checked: 2026-10-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-01 (planb) vvv
 # REMOVED --- Gutenbergstr.: Fahrbahn offiziell gesperrt, Durchfahrt manchmal (außerhalb der Arbeitszeiten?) möglich	q3::inwork 21903,4848 21848,4882
@@ -49093,11 +49094,11 @@ Flemmingstr.: Fahrbahn gesperrt	q4::inwork 21848,4882 21856,4910
 #: source_id: planb2026:13.55412862,52.43801228,01.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (inaktiv)
 #: note: Vollsperrung aufgrund Kabelgrube bis Ende Juni 2026; Vollsperrung aufgrund Kabelgrube bis voraussichtlich August 2026
 #: also_indoor: traffic (ex-T,G)
-#: last_checked: 2026-09-19 (traffic)
+#: last_checked: 2026-10-18
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-08-31 (stromnetz website)
 # REMOVED --- #: next_check: 2026-08-14 (planb)
-Wassermannstr.: Radickestr. - Dörpfeldstr. gesperrt	q4::inwork 20776,3753 20637,3919
+Wassermannstr.: kurze Sperrung im Abschnitt Radickestr. - Dörpfeldstr.	q3::inwork 20776,3753 20637,3919
 # 
 #: note: laut Website Vollsperrung bis Juni 2026
 #: also_indoor: traffic (ex-G,no-T,no-W,no-H)
@@ -50723,7 +50724,7 @@ EOF
 #: also_indoor: traffic (G[zu lang?],no-T,no-W,no-H)
 #: osm_watch: way id="1163982841" version="5"
 #: add_fragezeichen: Ist die Schubertstr. weiterhin wegen Bauarbeiten gesperrt?
-#: last_checked: 2026-06-17
+#: last_checked: 2026-10-18
 # REMOVED --- #: check_frequency: 14d (traffic)
 #: check_frequency: 90d
 #: next_check: 2027-12-31 (DB)
@@ -51276,7 +51277,7 @@ EOF
 #: also_indoor: traffic (G,H,no-T)
 #: source_id: planb2026:13.40313508,52.53788086,25.08.2025,06:00 ("Vollsperrung beider Fahrbahnen", bis 27.02.2027)
 #: by: https://www.entwicklungsstadt.de/arkonaplatz-in-mitte-aus-der-bauluecke-wird-ein-neues-wohnhaus/ (geplante Fertigstellung Mitte 2027)
-#: last_checked: 2026-10-06 (mapillary)
+#: last_checked: 2026-10-16 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2027-02-27 (planb)
 	q4::inwork 10189,14649 10273,14689
@@ -51560,7 +51561,7 @@ EOF
 #: osm_watch: note 5465754 3
 #: note: gesperrter Bereich ist nur kurz, ca. 25m, deshalb q2
 #: add_fragezeichen: Ist die Anbindung der Corinthstr. an den Markgrafendamm weiterhin gesperrt?
-#: last_checked: 2026-10-11
+#: last_checked: 2026-10-18
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2026-09-30 (planb)
 #: next_check: 2026-10-31 (Halteverbotsschilder)
@@ -52267,7 +52268,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: ELLABAROWSKY-2024
-#: also_indoor: traffic (ex-G,T,ex-W,ex-H[nur nördlich])
+#: also_indoor: traffic (ex-G,T,ex-W,re-H[nur nördlich])
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/s%C3%BCdkreuz-iii-%E2%80%93-gotenstra%C3%9Fe-ella-barowsky-stra%C3%9Fe.1267/page-4#post-27571
 #: by: https://www.entwicklungsstadt.de/quartiersprojekt-bella-am-suedkreuz-spektakulaere-bilder-der-schoeneberger-grossbaustelle/ ("B'Ella")
 #: source_id: planb2026:13.36006937,52.47725114,18.11.2024,07:00 ("Sperrung einer Fahrtrichtung", Ella-Barowsky-Str., aber auch Kreuzungsbereich Gotenstr. in der Fläche enthalten, bis 31.08.2026) (inaktiv)
@@ -52275,7 +52276,7 @@ EOF
 #: note: laut osm note mittlerweile ein schmaler Weg frei -> bestätigt, mit Umwegen: mittlerweile ist der östliche Bürgersteig normal freigegeben
 #: osm_watch: note 4847575 8
 #: osm_watch: note 5200828 3
-#: last_checked: 2026-10-06 vvv
+#: last_checked: 2026-10-18 vvv
 #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2025-12-21
 #	2::inwork 7497,7761 7499,7880
@@ -53236,9 +53237,9 @@ EOF
 #: source_id: LMS-BR:401270/72 viz2021:13.38605,52.51546,09.03.2026,07:00 vizapi2026:720/2026 (westliche Behrenstr., bis 17.07.2026) (bis 12.01.2027) (bis 31.01.2027)
 #: source_id: LMS-BR:401276/72 viz2021:13.38904,52.51565,09.03.2026,07:00 (östliche Behrenstr., auch für den Radverkehr relevant, bis 17.07.2026) (bis 31.07.2026) (bis 28.08.2026) (inaktiv)
 #: source_id: LMS-BR:401277/72 viz2021:13.38623,52.51459,09.03.2026,07:00 (Glinkastr., bis 17.07.2026) (bis 31.07.2026) (bis 28.08.2026) (inaktiv)
-#: source_id: planb2026:13.38606696,52.51542617,22.09.2025, ("Sicherung gemäß Vz.-plan", bis 17.09.2026) (bis 17.10.2026)
+#: source_id: planb2026:13.38606696,52.51542617,22.09.2025, ("Sicherung gemäß Vz.-plan", bis 17.09.2026) (bis 17.10.2026) (inaktiv)
 #: source_id: planb2026:13.38150047,52.51510383,12.01.2026, ("Sperrung einer Fahrtrichtung", westliche Behrenstr., vor Ort für Radfahrer frei, bis 17.01.2027)
-#: also_indoor: traffic (ex?-G,T,no-H,no-W)
+#: also_indoor: traffic (ex?-G,T,no-H,W[later])
 #: note: Bauarbeiten bis Mitte Juli 2026, es wird nur der Autoverkehr genannt
 # REMOVED --- #: next_check: 2026-03-09 (VIZ)
 # REMOVED (für Radfahrer existiert eine Furt) --- Behrenstr.: gilt die Sperrung auch für Radfahrer?	?::inwork 9164,12172 9064,12156 9054,12154 8861,12125
@@ -53721,7 +53722,8 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiagfo5b3th22qpmdtsb3lvk57qcmjmcv777fefzyf3fdt5lcm62sa
 #: source_id: LMS-BR:405614/72 viz2021:13.5281,52.46354,22.04.2026,07:00 (bis 31.03.2027)
 #: source_id: planb2026:13.52740438,52.46387925,15.04.2026,07:00 ("Fahrstreifen-Reduzierung" (An der Wuhlheide), bis 31.03.2027)
-#: note: Länge etwa 30m, kann am Wochenende/außerhalb der Arbeitszeiten offen sein (gesehen 2026-09-05 Sat 11:19, 2026-09-17 Thu 08:23), deshalb: q4 -> q3
+#: note: Länge etwa 30m, deshalb: q4 -> q3
+#: note: Kann am Wochenende/außerhalb der Arbeitszeiten offen sein (gesehen 2026-09-05 Sat 11:19, 2026-09-17 Thu 08:23), aber auch geschlossen (gesehen 2026-10-18 Sun 13:02)
 	q3::inwork 18700,6604 18771,6699
 EOF
      },
@@ -54774,7 +54776,7 @@ EOF
 #: source_id: LMS-BR:418661/72 viz2021:13.39892,52.53262, vizapi2026:810/2026 (Veteranenstr., bis 31.08.2026) (bis 29.01.2027) (inaktiv) (bis 07.09.2027) (nur noch in vizapi2026 aktiv) (bis 26.10.2026)
 #: also_indoor: traffic (T,G[later],H,W)
 #: note: Für den Radverkehr ist eine Umleitung über Fehrbelliner Str. - Choriner Str. (und vermutlich weiter über Schwedter Str.) ausgeschildert, beide Richtungen
-#: last_checked: 2026-10-12 (mapillary) vvv
+#: last_checked: 2026-10-16 (mapillary) vvv
 #: check_frequency: 21d (am Anfang höhere Frequenz) vvv
 #: next_check: 2027-01-29 (planb + VIZ-Verkehrsmeldung) vvv
 Kastanienallee: Gleisbauarbeiten	q4::inwork 10370,14158 10426,14262 10497,14391 10530,14452
@@ -55672,7 +55674,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/mauerpark-in-pankow-schwedter-strasse-nach-absenkungen-gesperrt/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/erneute-sperrung-im-berliner-mauerpark-schon-wieder-boden-abgerutscht--ist-eine-unterirdische-baustelle-der-grund-15958943.html
 #: add_fragezeichen: Ist die Fahrbahn der Schwedter Str. weiterhin gesperrt?
-#: last_checked: 2026-10-12 (mapillary)
+#: last_checked: 2026-10-16 (mapillary)
 	q4::inwork 10130,15653 10186,15481
 EOF
      },
@@ -56013,7 +56015,8 @@ EOF
      { from  => undef,
        until => $isodate2epoch->("2026-12-31 23:59:59"),
 #      text  => 'An der Wuhlheide/Fontanestr.: Überqueren wegen der Abbrucharbeiten nicht möglich, voraussichtlich bis Ende November 2026',
-       text  => 'An der Wuhlheide/Fontanestr.: Überqueren wegen der Abbrucharbeiten nicht möglich; Gesamtmaßnahme bis voraussichtlich Dezember 2026',
+#      text  => 'An der Wuhlheide/Fontanestr.: Überqueren wegen der Abbrucharbeiten nicht möglich; Gesamtmaßnahme bis voraussichtlich Dezember 2026',
+       text  => 'An der Wuhlheide/Fontanestr. und Rummelsburger Str./Mentelinstr.: Überqueren wegen der Abbrucharbeiten nicht möglich; Gesamtmaßnahme bis voraussichtlich Dezember 2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1697213.php (Arbeiten ab 27.7.2026)
@@ -56027,13 +56030,16 @@ EOF
 #: source_id: planb2026:13.51817625,52.46741302,31.07.2026, ("Fahrstreifen-Reduzierung", bis 30.11.2026)
 #: osm_watch: note 5494303 1
 #: XXX evtl. wandern die Arbeiten zur nördlichen Rampe
-#: last_checked: 2026-09-17 vvv
+#: last_checked: 2026-10-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 (SenUVK-Seite) vvv
 # generiert mit:
 #   ./miscsrc/convert2hafas -specsperre=strassen =(printf "\t3nocross 18404,6946 18225,7004 18010,7137\n") | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/'
 An der Wuhlheide -> Fontanestr.	3::inwork 18404,6946 18225,7004 18240,6845
 Fontanestr. -> An der Wuhlheide	3::inwork 18240,6845 18225,7004 18010,7137
+#: historical_note: später dazugekommen
+Rummelsburger Str. -> Mentelinstr.	3::inwork 18010,7137 17847,7356 17833,7351
+Mentelinstr. -> Rummelsburger Str.	3::inwork 17833,7351 17847,7356 17769,7465
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked  ^^^
@@ -56652,6 +56658,7 @@ EOF
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1721853.php
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261016 (hier nur Kfz-Verkehr)
+#: source_id: vizapi2026:1081/2026 (bis 23.10.2026)
 	q4::inwork 12374,23152 12280,23116 12185,23021
 EOF
      },
@@ -56708,7 +56715,9 @@ EOF
 #: by: https://viz.berlin.de/aktuelle-meldungen/baumassnahmen-in-der-dorpfeldstrasse-19.10-bis-16.12.26/
 #: by: https://www.entwicklungsstadt.de/bauarbeiten-in-adlershof-doerpfeldstrasse-wird-bis-dezember-gesperrt/
 #: source_id: planb2026:13.54714994,52.43753519,19.10.2026, ("Vollsperrung beider Fahrbahnen", Bereich Marktplatz Adlershof, 19.10.2026 bis 16.12.2026)
-#: next_check: 2026-10-18 (planb + aktives-adlershof (1 Tag vorher))
+#: source_id: vizapi2026:1082/2026 (bis 03.11.2026)
+#: last_checked: 2026-10-18
+#: next_check: 2026-10-19 (planb + aktives-adlershof (1 Tag vorher))
 # XXX next_check: 2026-11-12 (nächster Bauabschnitt)
 Dörpfeldstraße zwischen Friedenstraße - Hackenbergstraße	q3::inwork 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
 # XXX 2.BA: Dörpfeldstraße zwischen Anna-Seghers-Straße - Gellertstraße	q3::inwork 20012,3532 20082,3578
@@ -56849,12 +56858,16 @@ EOF
      },
      { from  => 1762642800, # 2025-11-09 00:00
        until => 1793833200, # 2026-11-05 00:00
-       text  => 'Wolfshagener Str.: Bauarbeiten, Sperrung der Fahrbahn, evtl. ist der Radverkehr betroffen, vom 10.11.2025 bis 04.11.2026',
+#      text  => 'Wolfshagener Str.: Bauarbeiten, Sperrung der Fahrbahn, evtl. ist der Radverkehr betroffen, vom 10.11.2025 bis 04.11.2026',
+       text  => 'Wolfshagener Str.: Bauarbeiten, Sperrung der Fahrbahn, vom 10.11.2025 bis 04.11.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: planb2026:13.41221222,52.57319984,10.11.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.11.2026)
 #: also_indoor: traffic (G,T,no-H,no-W)
-	q4::inwork 10729,18584 10813,18627 10860,18650
+Wolfshagener Str.: kurze Sperrung der Fahrbahn (etwa 20m)	q4::inwork 10729,18584 10813,18627
+# REMOVED (hier nicht) ---	q4::inwork 10813,18627 10860,18650
+Wolfshagener Str.: Sperrung der Fahrbahn	q4::inwork 10860,18650 10905,18671
+Wolfshagener Str.: kurze Sperrung vor Amalienstr	q2::inwork 10905,18671 11220,18992
 EOF
      },
      { from  => 1788127200, # 2026-08-31 00:00
@@ -56865,6 +56878,17 @@ EOF
 #: source_id: planb2026:13.46858665,52.51662049,01.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 10.11.2026)
 #: also_indoor: traffic (none)
 	q4::inwork 14776,12418 14748,12314
+EOF
+     },
+     { from  => 1791842400, # 2026-10-13 00:00
+       until => 1795129199, # 2026-11-19 23:59
+       text  => 'Kienbergpark: nördlicher Rundweg ist gesperrt, vom 14.10.2026 bis voraussichtlich Mitte November 2026',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.kienbergpark.de/service-infos/presse-news/detail/sperrung-des-noerdlichen-rundwegs-wolkenweg/
+#: by: https://www.kienbergpark.de/fileadmin/kienbergpark/images/07_PDFs_und_Dokumente/261014-Sperrung-noerdl.Rundweg.pdf
+#: by: https://marzahn-hellersdorf.com/wolkenweg-im-kienbergpark-bis-mitte-november-gesperrt/
+	2::inwork 22670,14520 22603,14690 22527,14784 22455,14815 22417,14837 22380,14831 22331,14793 22254,14793 22199,14744 22164,14722 22108,14710
 EOF
      },
     );

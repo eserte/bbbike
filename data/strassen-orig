@@ -829,7 +829,9 @@ An den Knabenhäusern	NN 15513,10298 15578,10250 15621,10217 15643,10201 15711,10
 Alice-und-Hella-Hirsch-Ring	N 15823,10300 15788,10252 15711,10149 15753,10117 15779,10097 15858,10202 15894,10251
 Lina-Morgenstern-Str.	N 15643,10201 15716,10303 15753,10353
 (Hauptstr. [Nebenfahrbahn] - Vicki-Baum-Str.)	NN 15600,10465 15623,10449
-Vicki-Baum-Str.	N 15990,10185 15894,10251 15823,10300 15753,10353 15688,10400 15633,10442
+Vicki-Baum-Str.	N 15990,10185 15894,10251 15833,10293
+Vicki-Baum-Str.	NN 15833,10293 15823,10300
+Vicki-Baum-Str.	N 15823,10300 15753,10353 15688,10400 15633,10442
 Vicki-Baum-Str.	NN 15633,10442 15623,10449
 Charlotte-Salomon-Hain	N 15753,10117 15716,10065
 Paula-Fürst-Str.	N 15779,10097 15874,10025
@@ -11697,12 +11699,13 @@ Lausitzer Platz	NN 12274,10612 12328,10442
 Görlitzer Str.	N 12328,10442 12608,10294 12682,10258 12767,10216 12905,10143 13035,10076 13220,9980
 Cuvrystr.	N 13035,10076 13132,10239 13151,10276 13197,10355 13249,10445 13292,10513 13325,10565
 Taborstr.	N 13283,10069 13262,10147 13271,10193 13369,10337
-Bossestr.	N 14218,10430 14265,10579 14312,10657
+Bossestr.	N 14218,10430 14265,10579 14280,10605 14312,10657
+Bossestr.	N 14280,10605 14289,10663
 # 
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: priority: #A vvv --- #: last_checked: 2020-07-08 vvv --- #: next_check: 2020-07-10 vvv --- #: valid: !20190319-20200717 vvv --- 
-Persiusstr.	NH 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
+Persiusstr.	NH 14170,10675 14199,10685 14289,10663 14312,10657 14490,10610 14641,10552
 Rochowstr.	NH 14170,10675 14103,10489
-# REMOVED --- #: valid ^^^ --- #: valid: 20190319-20200717 vvv --- Persiusstr.	HH 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552 --- Rochowstr.	HH 14170,10675 14103,10489 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: priority ^^^
+# REMOVED --- #: valid ^^^ --- #: valid: 20190319-20200717 vvv --- Persiusstr.	HH 14170,10675 14199,10685 14289,10663 14312,10657 14490,10610 14641,10552 --- Rochowstr.	HH 14170,10675 14103,10489 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: priority ^^^
 # 
 Pfarrstr.	N 15279,10862 15359,11115 15461,11313
 Pfarrstr.	NH 15461,11313 15476,11341
@@ -15512,8 +15515,10 @@ Marienstr. (Oberschöneweide)	N 18670,6132 18767,6268 18812,6330
 Klarastr. (Oberschöneweide)	N 18676,6333 18574,6197
 #: oldname: 1896-2010: Laufener Str.
 Lauffener Str.	N 18428,6123 18473,6265
-Unter der Kranbahn	NN 18423,6285 18381,6134 18367,6086
-Platz am Kaisersteg	NN 18381,6134 18428,6123 18417,6068 18422,6013 18420,6009
+Unter der Kranbahn	NN 18423,6285 18381,6134 18365,6078 18363,6071
+Platz am Kaisersteg	NN 18381,6134 18428,6123 18417,6068 18414,6052 18422,6013 18420,6009
+Platz am Kaisersteg	NN 18422,6013 18363,6071
+(Platz am Kaisersteg - Rathenauhallen)	NN 18363,6071 18259,6110
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_0712/nachricht2911.html
 Kaisersteg	NN 18324,5847 18353,5897 18393,5964 18420,6009
 Waldowplatz	N 19283,6123 19290,6114 19325,6105 19344,6119 19345,6150 19333,6165 19303,6170 19282,6152 19283,6123
@@ -16291,7 +16296,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: osm_watch: way id="38776757" version="18"
-#: last_checked: 2026-09-17
+#: last_checked: 2026-10-18
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -16687,7 +16692,7 @@ Baikalstr.	N 17210,10350 17255,10510 17276,10617
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf (Benennung von Wegen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="21"
-#: last_checked: 2026-09-17
+#: last_checked: 2026-10-18
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
@@ -19520,7 +19525,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7221 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7343 (Antrag) (abgelehnt)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/5TQj0X86Z3AV6QO6ibyHnoLSeLd4YmEqqKXJTU7c/vMYbgDSP/73-Anlagen/06/B1481SB.pdf (Schlussbericht)
-#: last_checked: 2026-05-31
+#: last_checked: 2026-10-18
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044

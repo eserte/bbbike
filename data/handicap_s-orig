@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
-#: last_checked: 2026-10-12
+#: last_checked: 2026-10-18
 #: check_frequency: 14d
 #: next_check: 2026-10-20 (VIZ-Verkehrsmeldung)
 #: valid: -20261020
@@ -193,7 +193,8 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: source_id: planb2026:13.44849499,52.5121092,12.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (vorfristig inaktiv) (bis 20.10.2026)
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026)
 #: also_indoor: traffic (G,T,H,W)
-#: last_checked: 2026-10-15 vvv
+#: note: manchmal (außerhalb der Arbeitszeiten? am Wochenende) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45)
+#: last_checked: 2026-10-18 vvv
 #: next_check: 2026-10-20 vvv
 #: valid: 20261012-20261020 vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
@@ -396,15 +397,15 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: source_id: planb2026:13.54992368,52.43804574,03.08.2026,06:00 ("Vollsperrung beider Fahrbahnen", Arndtstr. und Nipkowstr., bis 25.09.2026) (inaktiv)
 #: source_id: planb2026:13.54988628,52.43806477,07.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", nur Arndtstr., bis 08.01.2027)
 #: add_fragezeichen: Bestehen die Sperrungen weiterhin? vvv
-#: next_check: 2026-09-25 (planb) vvv
+#: next_check: 2026-11-30 (Baustellenschild) vvv
 #: valid: -20261130 vvv
 #: also_indoor: traffic (ex-G,T,H[later],no-W)
 # REMOVED (mittlerweile wohl eine Sperrung, keine Einbahnstraße mehr) --- Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung	q4::inwork; 20592,3633 20449,3799
-#: last_checked: 2026-10-06 (traffic)
-Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung an der Dörpfeldstr.	q3::inwork 20592,3633 20449,3799
-# REMOVED --- #: also_indoor: traffic (G,T,H,no-W)
-# REMOVED --- #: last_checked: 2026-09-16 (traffic)
-# REMOVED --- Nipkowstr.: mögliche Bauarbeiten	q4::inwork 20352,3744 20499,3572
+#: last_checked: 2026-10-18
+Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 20592,3633 20449,3799
+# REMOVED (keine Sperrung mehr, nur die übliche Einbahnstraße) --- #: also_indoor: traffic (G,T,H,no-W)
+# REMOVED --- #: last_checked: 2026-10-18
+# REMOVED --- Nipkowstr.: mögliche Bauarbeiten	q4::inwork 20499,3572 20352,3744
 #: valid ^^^
 #: next_check ^^^
 #: add_fragezeichen ^^^
@@ -1409,7 +1410,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-10-17
+#: last_checked: 2026-10-18
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig oder unbefestigte Verbindung	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -4222,8 +4223,8 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2026-08-09 vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2026-10-18 vvv
+#: check_frequency: 150d vvv
 #: osm_watch: way id="26995453" version="13"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
 #: osm_watch: way id="979814386" version="5"
@@ -4238,6 +4239,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Uferweg an der Spree): einige Fußgänger	q1 18192,5931 18118,5953
 #: note: hier kein explizites Radfahrverbot, vielleicht wird das noch geändert
 (Am Werkstor/Kupferkamp - Uferweg): einige Fußgänger	q1 18075,5880 18118,5953
+(Platz am Kaisersteg - Rathenauhallen): Grünanlage, einige Fußgänger	q2 18363,6071 18259,6110
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17031,18647
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
@@ -5879,6 +5881,8 @@ Annastr.: einige Fußgänger	q3 5920,2693 5930,2671
 (Zingster Str. - Am Berl): Grünanlage, einige Fußgänger	q3 16534,18689 16607,18709 16656,18742
 # 
 (Hauptstr. [Nebenfahrbahn] - Vicki-Baum-Str.): Fußgänger, niedrige Bordsteine	q2 15600,10465 15623,10449
+Vicki-Baum-Str.: Verengung, einige Fußgänger	q2 15833,10293 15823,10300
+Vicki-Baum-Str.: Gehwegüberfahrt	q2 15633,10442 15623,10449
 # 
 #: note: Gehweg, keine Freigabe für Radfahrer
 Hebammensteigbrücke: Fußgänger	q3 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783

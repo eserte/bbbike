@@ -82,7 +82,7 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026)
-#: last_checked: 2026-10-15
+#: last_checked: 2026-10-18
 #: check_frequency: 14d
 #: next_check: 2026-10-20 (VIZ-Verkehrsmeldung)
 #: valid: -20261020
@@ -369,7 +369,7 @@ Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage, kann ausgeschaltet sei
 # REMOVED --- Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
 # 
 #: next_check_id: ALTSTADTKOEPENICK-2024
-#: last_checked: 2026-09-17
+#: last_checked: 2026-10-18
 #: check_frequency: 180d
 #: next_check: 2027-05-09 (Ausschreibungsunterlagen)
 Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
@@ -767,12 +767,13 @@ Gürtelstr./Weserstr.	F::inwork 15016,11431
 #: source_id: viz2021:13.572881,52.460427,11.03.2024,12:00 (bis 27.09.2024) (bis 20.12.2024) (bis 20.12.2024 + weitere Arbeiten) (bis 31.12.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: LMS-BR:397125/72 viz2021:13.572811,52.460558, (bis 06.01.2027)
 # REMOVED --- #: note: Länge der Gegenverkehrsregelung: östlicher Abschnitt ca. 50m, nördlicher Abschnitt ca. 40m
-#: last_checked: 2026-06-17 vvv
+#: last_checked: 2026-10-18 vvv
 # REMOVED --- #: check_frequency: 120d vvv
 #: next_check: 2026-12-14 (Ende der Sperrung) vvv
 # REMOVED --- #: next_check: 2027-12-31 (DB) vvv
 #: valid: -20271231 vvv
 Hämmerlingstr./Am Bahndamm: Gegenverkehrsregelung	X::inwork::alternating 21984,6317
+#: note: hier möglicherweise während Sperrungen der Bahnbrücke inaktiv (aber dann auch irrelevant)
 Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating  22000,6245
 # REMOVED (wurde wieder entfernt) --- #: note: Fußgängerampel befindet sich etwas westlich der Einmündung --- #: last_checked: 2023-03-26 --- #: check_frequency: 120d --- Am Bahndamm/Forumszufahrt	F::inwork 22296,6170
 #: valid ^^^
@@ -784,19 +785,19 @@ Hämmerlingstr./südlich Bahnbrücke: Gegenverkehrsregelung	X::inwork::alternating 
 #: note: anstelle des Zebrastreifens, also eigentlich nordöstlich des eingetragenen Punktes
 #: note: wurde am 2026-07-13 bei der VIZ als "temporär außer Betrieb" gemeldet, am 2026-07-29 nicht eingeschaltet gewesen
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7596 (Antrag auf Verstetigung)
-#: last_checked: 2026-07-29
+#: last_checked: 2026-10-18
 #: check_frequency: 120d
 Gehsener Str./Hoernlestr.	F::inwork 22395,6821
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2026-07-29
+#: last_checked: 2026-10-18
 #: check_frequency: 120d
 Kaulsdorfer Str./Wongrowitzer Steig	F::inwork 22035,7146
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2026-06-17
+#: last_checked: 2026-10-18
 #: check_frequency: 120d
 Kaulsdorfer Str./Bahrendorfer Str.	F::inwork 21956,7428
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2026-05-31
+#: last_checked: 2026-10-18
 #: check_frequency: 120d
 Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
@@ -806,11 +807,11 @@ Kaulsdorfer Str./Feuersteiner Str.	F::inwork 21708,7981
 #: check_frequency: 120d
 Köpenicker Str./Dubickstr.	F::inwork 21079,8931
 #: note: anstelle des Zebrastreifens, also eigentlich nördlich des eingetragenen Punktes
-#: last_checked: 2026-05-31
+#: last_checked: 2026-10-18
 #: check_frequency: 120d
 Köpenicker Str./Hadubrandstr.	F::inwork 21055,8374
 #: note: anstelle des Zebrastreifens, also eigentlich südlich des eingetragenen Punktes
-#: last_checked: 2026-05-31
+#: last_checked: 2026-10-18
 #: check_frequency: 120d
 Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 
@@ -894,9 +895,10 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 
 #: source_id: LMS-BR:398036/72 viz2021:13.440587,52.591508,04.02.2026,10:30 (bis 30.03.2026) (inaktiv)
 #: source_id: planb2026:13.44132325,52.59124561,19.10.2026, ("Gegenverkehrsanlage (LZA)", bis 11.12.2026)
+#: note: laut Bushaltestellenaushang vermutlich erst ab 20.10.2026?
 #: last_checked: 2026-03-22 (mapillary) vvv
-#: next_check: 2026-10-19 vvv
-#: valid: 20261019-20261112 vvv
+#: next_check: 2026-10-20 vvv
+#: valid: 20261020-20261112 vvv
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork::alternating 12672,20720
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork::alternating 12723,20691
 #: valid ^^^

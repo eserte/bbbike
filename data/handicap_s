@@ -24,7 +24,7 @@ Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrb
 Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 13664,9073
 Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,6892
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
-Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung an der Dörpfeldstr.	q3::inwork 20592,3633 20449,3799
+Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4::inwork 20592,3633 20449,3799
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
@@ -1699,6 +1699,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Uferweg an der Spree - Kaisersteg): einige Fußgänger	q1 18352,5884 18335,5854 18324,5847
 (Uferweg an der Spree): einige Fußgänger	q1 18192,5931 18118,5953
 (Am Werkstor/Kupferkamp - Uferweg): einige Fußgänger	q1 18075,5880 18118,5953
+(Platz am Kaisersteg - Rathenauhallen): Grünanlage, einige Fußgänger	q2 18363,6071 18259,6110
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (Weg im Wustrower Park): einige Fußgänger, eng	q2 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17031,18647
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
@@ -2715,6 +2716,8 @@ Annastr.: einige Fußgänger	q3 5920,2693 5930,2671
 (Zingster Str. - Am Berl): einige Fußgänger	q2 16504,18692 16534,18689
 (Zingster Str. - Am Berl): Grünanlage, einige Fußgänger	q3 16534,18689 16607,18709 16656,18742
 (Hauptstr. [Nebenfahrbahn] - Vicki-Baum-Str.): Fußgänger, niedrige Bordsteine	q2 15600,10465 15623,10449
+Vicki-Baum-Str.: Verengung, einige Fußgänger	q2 15833,10293 15823,10300
+Vicki-Baum-Str.: Gehwegüberfahrt	q2 15633,10442 15623,10449
 Hebammensteigbrücke: Fußgänger	q3 13193,21700 13168,21706 13135,21715 13121,21678 13124,21718 13046,21734 13014,21775 13008,21783
 (Weg am Jacob-und-Wilhelm-Grimm-Zentrum): Fußgänger, Radfahrer absteigen	q4 9435,12698 9561,12723
 (Babelsberger Str. - Volkspark Wilmersdorf): Bordstein, einige Fußgänger	q3 5799,8356 5782,8344

@@ -126,7 +126,7 @@ Alter Markt	1 22470,4691 22395,4678
 Futranplatz	1 22388,4737 22451,4749
 #: next_check_id: ALTSTADTKOEPENICK-2024
 #: XXX Einbahnstraßenregelung temporär aufgehoben
-#: last_checked: 2026-09-17
+#: last_checked: 2026-10-18
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2026-08-24 (VIZ-Verkehrsmeldung zur Kirchstr.)
 #: next_check: 2027-02-03 (planb)
@@ -483,7 +483,7 @@ Kavalierstr.	1 10621,18837 10729,18584
 #: next_check_id: WOLLANK-2024
 #: XXX Einbahnstraßenregelung umgedreht
 #: osm_watch: way id="4637773" version="31"
-#: last_checked: 2026-04-21 (mapillary)
+#: last_checked: 2026-10-16 (mapillary)
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Kattegatstr.	1 9469,17560 9323,17667
 Waldhüterpfad	1 510,4202 371,4453 301,4643
@@ -3285,6 +3285,7 @@ tragen (4 Stufen)	0:10 6953,19939
 tragen (Treppe, 13+6 Stufen)	0:25 5813,7813
 tragen (Treppe, 8 Stufen oder Rampe)	0:15 -9678,6426
 tragen (Treppe, 13+13 Stufen)	0:30 19245,4073
+tragen (Treppe, 3 Stufen)	0:10 18365,6078
 #
 #: section ^^^
 ###################################################################
@@ -4653,9 +4654,9 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="5"
 #: osm_watch: way id="867830687" version="8"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-10-07
-#: check_frequency: 30d
-#: next_check: 2026-11-30 (pardok + entwicklungsstadt: Herbst 2026)
+#: last_checked: 2026-10-18
+#: check_frequency: 21d
+#: next_check: 2026-12-20 (pardok + entwicklungsstadt: Herbst 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
 # 
 # REMOVED (mittlerweile (oder schon immer): man kommt an der Baustelle vorbei, etwas verwinkelt, aber lohnt nicht, temporär eine Degradierung q2->q3 vorzunehmen) --- #: priority: #B --- #: last_checked: 2025-04-30 --- #: next_check: 2025-07-31 (Halteverbotsschilder) --- Gounodstr.: Durchfahrt vor der Picasso-Grundschule wegen Bauarbeiten gesperrt	2::inwork 14251,15828 14366,15877
@@ -4682,7 +4683,7 @@ Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12727,1074 12772,1019
 #: note: siehe auch Kattegatstr. --- hier muss die Einbahnstraßenregelung umgedreht werden
 #: source_id: bvg2024:250#HIM_FREETEXT_308566 (zwischenzeitlich entfernt)
 #: source_id: bvg2024:250#HIM_FREETEXT_307841 (zwischenzeitlich entfernt, 2x)
-#: last_checked: 2026-08-17 (okas) vvv
+#: last_checked: 2026-10-16 (mapillary) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: osm_watch: way id="1199394070" version="8"
 Sternstr.: temporäre Einbahnstraßenregelung	1::inwork 9323,17667 9383,17757
@@ -4691,7 +4692,7 @@ Nordbahnstr.: temporäre Einbahnstraßenregelung	1::inwork 9383,17757 9544,17629
 #: next_check ^^^
 #: last_checked ^^^
 #: note: existiert auch als temp_blockings-Eintrag
-#: last_checked: 2026-08-24 (baustellen-doku)
+#: last_checked: 2026-10-16 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 Wilhelm-Kuhr-Str. - Wollankstr. (ehem. Mauerstreifen): Sperrung wegen Bauarbeiten	2::inwork 9586,17665 9461,17795
@@ -4806,7 +4807,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date der landuse=construction-Fläche 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
-#: last_checked: 2026-08-25
+#: last_checked: 2026-10-18
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-08-24 (SenSBW-Pressemitteilung: Schulbeginn)
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -5189,7 +5190,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026) (inaktiv)
 #: source_id: planb2026:13.48630282,52.4933522,09.07.2025, ("Sicherung gemäß Vz.-plan" (rund um die Baustelle), bis 31.12.2026)
-#: last_checked: 2026-09-17
+#: last_checked: 2026-10-18
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (Pressemitteilung SenSBW, planb)
 # REMOVED --- #: next_check: 2027-06-30
