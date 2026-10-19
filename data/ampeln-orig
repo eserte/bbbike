@@ -77,16 +77,16 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mswtaq6n522d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihkzzqkj6vhnvdduehk6n42jv3e2oawhepxd5bdllhlcpeip2jbua
 #: by: https://www.bahninfo-forum.de/read.php?9,854720,864795#msg-864795
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261019 (Umbau der Baustelle, bis Ende Dez 2026)
 #: note: Indizien: vorbereitete Baustellenampeln, vorbereitete Ersatzbushaltestellen (evtl. gültig ab 11.6.2026), vorbereitete Umleitungstafeln -> laut planb wird es wohl eine Einbahnstraßenregelung geben, auch in Hildegard-Jadamowitz-Str. und Marchlewskistr., Richtung? auch für den Radverkehr?
 #: note: unterschiedliche Halteverbote: teilweise erst ab 13.08.2026 (Hildegard-Jadamowitz-Str.), teilweise schon ab 03.08.2026. Vorbereitete Einfahrt-verboten-Tafeln für die Fredersdorfer Str. an der Marchlewskistr. In der Marchlewskistr. und Hildegard-Jadamowitz-Str. wurde Richtung Norden und Westen ab Wedekindstr. eine Busspur (!) markiert
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026)
-#: last_checked: 2026-10-18
+#: last_checked: 2026-10-19
 #: check_frequency: 14d
 #: next_check: 2026-10-20 (VIZ-Verkehrsmeldung)
-#: valid: -20261020
-# REMOVED --- #: valid: -20261231
+#: valid: -20261231
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # REMOVED --- Straße der Pariser Kommune: vermutete (Hoch?)Bauarbeiten, evtl. mit (Teil)Sperrung der Straße?	? 12822,12067 12833,12154 12854,12287
 # 
@@ -223,7 +223,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 # REMOVED --- Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
-#: last_checked: 2026-09-02
+#: last_checked: 2026-10-19
 #: next_check: 2027-01-12
 #: valid: -20270112
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
@@ -613,7 +613,7 @@ Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # REMOVED --- #: next_check_id: RUNGE-2023 --- #: source_id: viz2021:13.417345,52.512721,24.10.2023,11:00 (bis 23.11.2023) (inaktiv) --- #: last_checked: 2023-10-31 (mapillary) --- #: next_check: 2023-11-23 --- #: valid: -20231123 --- Brückenstr./Rungestr.: Gegenverkehrsregelung	X::inwork::alternating 11291,11876
 # 
 #: next_check_id: METZER-2023
-#: last_checked: 2026-09-19
+#: last_checked: 2026-10-19
 #: check_frequency: 90d
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
 # REMOVED (wird vermutlich länger dauern (2029?)) --- #: valid: -20251219
@@ -895,6 +895,9 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 # 
 #: source_id: LMS-BR:398036/72 viz2021:13.440587,52.591508,04.02.2026,10:30 (bis 30.03.2026) (inaktiv)
 #: source_id: planb2026:13.44132325,52.59124561,19.10.2026, ("Gegenverkehrsanlage (LZA)", bis 11.12.2026)
+#: source_id: bvg2024:150#HIM_FREETEXT_368988 (Haltestellenverlegung ab 20.10.2026)
+#: source_id: vizapi2026:1104/2026 (bis 11.12.2026)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261019 (Baustellenampel auf Höhe der A114 bis Mitte Dez 2026)
 #: note: laut Bushaltestellenaushang vermutlich erst ab 20.10.2026?
 #: last_checked: 2026-03-22 (mapillary) vvv
 #: next_check: 2026-10-20 vvv
@@ -4305,7 +4308,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-09-19 vvv
+#: last_checked: 2026-10-19 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 4

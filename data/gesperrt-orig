@@ -1656,10 +1656,11 @@ Südring, Virchow-Klinikum	1 6073,14892 6106,14890
 #: by: https://entwicklungsstadt.de/charite-baut-fuer-die-zukunft-so-wird-der-campus-virchow-transformiert/
 #: by: https://entwicklungsstadt.de/campus-virchow-klinikum-tiefbauarbeiten-fuer-das-neue-herzzentrum-laufen/ (Fertigstellung 2028, Inbetriebnahme 2029)
 #: by: https://www.entwicklungsstadt.de/neubau-der-charite-im-wedding-hier-waechst-eines-der-modernsten-herzzentren-europas/
-#: also_indoor: webcam https://webcam-profi.de/bilder/charite/berlin/dhzc/cam1/image.jpg
+# REMOVED (letztes Bild 2026-09-04) --- #: also_indoor: webcam https://webcam-profi.de/bilder/charite/berlin/dhzc/cam1/image.jpg
+#: also_indoor: webcam https://0204i26j48.bautvplus.de/cam1/image.jpg
 #: XXX wegen Bauarbeiten komplett gesperrt --- vermutlich wird die Straße dauerhaft zurückgebaut
 #: XXX früherer Eintrag: Südring, Virchow-Klinikum	1 6106,14890 6118,14889 6158,14851
-#: last_checked: 2026-10-10 vvv
+#: last_checked: 2026-10-19 (webcam) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2028-12-31 (entwicklungsstadt) vvv
 Südring, Virchow-Klinikum	2::inwork 6106,14890 6118,14889 6158,14851 6180,14806 6210,14808 6252,14812
@@ -4217,7 +4218,7 @@ Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
 # 
 #: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: note: mit festen Zäunen gesperrt
-#: last_checked: 2026-10-15
+#: last_checked: 2026-10-19
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
 # 
 # REMOVED (Landstraße entfernt) --- #: next_check_id: FANGSCHLEUSE-2026
@@ -4307,7 +4308,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-10-13
+#: last_checked: 2026-10-19
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4803,7 +4804,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-schulgeb%C3%A4ude-in-modulbauweise-r%C3%B6merweg-39.1498/#post-25322
 #: by: https://www.berlin.de/sen/sbw/presse/pressemeldungen/pressemitteilung.1596137.php (Richtfest; Start zum Schuljahr 2026/2027)
 #: by: https://entwicklungsstadt.de/lichtenberg-richtfest-fuer-neue-holz-compartmentschule-am-roemerweg/
-#: osm_watch: way id="25796737" version="23"
+#: osm_watch: way id="25796737" version="24"
 #: osm_watch: way id="1272701939" version="5"
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date der landuse=construction-Fläche 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
@@ -5076,7 +5077,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-10-13
+#: last_checked: 2026-10-19
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -5403,6 +5404,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13980,10221 14126,10176 14202,1015
 #: by: https://www.entwicklungsstadt.de/nordhafen-living-in-der-europacity-wohnen-arbeiten-am-wasser/
 #: by: https://www.entwicklungsstadt.de/82-meter-hoch-upbeat-in-der-europacity-ist-fertiggestellt/
 #: by: https://www.entwicklungsstadt.de/nach-vier-jahren-bauzeit-dkb-uebernimmt-neues-hochhaus-in-der-berliner-europacity/
+#: by: https://www.entwicklungsstadt.de/100-mio-euro-gesichert-neues-gebaeude-in-der-europacity-geht-auf-die-zielgerade/
 #: source_id: viz2021:13.362267,52.536335,05.02.2024,07:00 (Leitungsarbeiten, in der Heidestr., bis 29.03.2024) (inaktiv)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 # REMOVED (host does not exist anymore) --- #: also_indoor: webcam https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php
@@ -5536,7 +5538,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://molkenmarkt.berlin.de/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf (Aufstellungsbeschluss 1-14-2 (zwischen Jüdenstr. und Klosterstr.))
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-10-13
+#: last_checked: 2026-10-19
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5545,7 +5547,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-10-13
+#: last_checked: 2026-10-19
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5886,12 +5888,12 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: also_indoor: traffic
-#: last_checked: 2026-08-13 vvv
+#: last_checked: 2026-10-18 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 # REMOVED --- #: valid: -20221230
 #: osm_watch: way id="154807176" version="68"
-#: osm_watch: way id="186329816" version="52"
+#: osm_watch: way id="186329816" version="53"
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
 #: osm_watch: way id="692480577" version="41"
 #: osm_watch: way id="692480576" version="40"
