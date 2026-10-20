@@ -38,6 +38,8 @@ Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
+Zossener Str.: Sperrung vor der Gneisenaustr., Radfahrer frei	q2::inwork 9820,9718 9790,9528
+Solmsstr.: Sperrung vor der Gneisenaustr., Radfahrer frei	q2::inwork 9705,9732 9676,9564
 Tempelherrenstr.: Baustelleneinrichtung blockiert den Radweg	q4::inwork 10180,9852 10190,9872
 Johanniterstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 10066,10071 10251,9979
 Baerwaldstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork; 10198,9405 10290,9604 10306,9640
@@ -2467,7 +2469,6 @@ Bruno-Baum-Grünzug: Grünanlage, Fußgänger	q3 20260,15434 20245,15394 20004,15251
 (Zur Waage - Zur Innung): Grünanlage, einige Fußgänger	q3 14067,13050 14086,13090
 Baruther Str.: asphaltierte Kissen (2x)	q1 9837,9856 9723,9842
 Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
-Solmsstr.: asphaltierte Kissen (2x)	q1 9705,9732 9676,9564
 Fürbringerstr.: asphaltierte Kissen (2x)	q1 9705,9732 9820,9718
 Blücherstr.: asphaltierte Kissen (2x)	q1 10306,9640 10429,9514 10580,9361
 (Nordpromenade, entlang der S-Bahn): einige Fußgänger	q2 20640,12095 20807,12083
@@ -2631,6 +2632,7 @@ Niemannstr.: Fußgängerzone für Radfahrer frei	q1 14254,11377 14211,11229
 Maxstr.: Fußgängerzone für Radfahrer frei	q1 7781,15804 7738,15838
 Koppenplatz: Fußgängerzone für Radfahrer frei	q1 9961,13502 9946,13550
 Pekinger Platz: Fußgängerzone für Radfahrer frei	q1 6849,14831 6929,14845 7000,14832
+Stuttgarter Str.: Fußgängerzone für Radfahrer frei	q0 13663,8011 13633,8036 13554,8101
 Staakener Feldstr.: einige Fußgänger	q1 -7647,13985 -7716,14031
 (Glühwürmchenweg - Pionierstr.): einige Fußgänger	q1 -6048,16292 -5959,16235 -5924,16458
 (Seydlitzstr. - Lehrter Str.): eng, wenn BVG-Busse hier parken	q3 7613,13517 7651,13447
@@ -2849,6 +2851,8 @@ An der Schule [Rad- und Gehweg]: einige Fußgänger	q1 24747,11524 24768,11616 247
 (Flughafengelände): Einfahrt nur für Berechtigte	q3; 9541,8570 9502,8600
 (Flughafengelände - Friesenstr.): eng, einige Fußgänger	q3 9812,8665 9807,8682
 (Golßener Str. - Flughafengelände): einige Fußgänger	q3 10209,8661 10205,8647 10142,8655
+Koppenstr. [Nebenstraße]: möglicher Parkplatz-/Lieferverkehr	q1; 12518,12120 12538,12110 12471,11969
+(Am Treptower Park - Elsenstr.): einige Fußgänger	q1 14149,9546 14203,9715 14181,9729
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3775,6 +3779,7 @@ Lynarstr. - Charlottenbrunner Str.: Radweg nur in eine Richtung: gegen die Einba
 Daumstr. [Radweg]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -1315,14912 -1336,14786
 Emser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 4762,10332 4764,10350
 (Erschließungsstraße hinter der George-Stephenson-Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 7679,14030 7658,13994 7378,14420 7386,14436 7446,14403
+Koppenstr. [Nebenstraße]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 12471,11969 12538,12110 12518,12120
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829

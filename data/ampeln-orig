@@ -63,12 +63,12 @@ Erkner	X::inwork 34742,2111
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-10-07
 #: check_frequency: 30d
-#: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
+#: next_check: 2026-11-12 (VIZ-Verkehrsmeldung)
 #: valid: -20261029
 Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 #: last_checked: 2026-10-07
 #: check_frequency: 30d
-#: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
+#: next_check: 2026-11-12 (VIZ-Verkehrsmeldung)
 #: valid: -20261029
 Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 # 
@@ -78,15 +78,17 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihkzzqkj6vhnvdduehk6n42jv3e2oawhepxd5bdllhlcpeip2jbua
 #: by: https://www.bahninfo-forum.de/read.php?9,854720,864795#msg-864795
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261019 (Umbau der Baustelle, bis Ende Dez 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mybxjp2jzx2y
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiarpzdowtpnydruu7vrhl7k4iuswvbser3tbgvi5euzqsinwjrdie
 #: note: Indizien: vorbereitete Baustellenampeln, vorbereitete Ersatzbushaltestellen (evtl. gültig ab 11.6.2026), vorbereitete Umleitungstafeln -> laut planb wird es wohl eine Einbahnstraßenregelung geben, auch in Hildegard-Jadamowitz-Str. und Marchlewskistr., Richtung? auch für den Radverkehr?
 #: note: unterschiedliche Halteverbote: teilweise erst ab 13.08.2026 (Hildegard-Jadamowitz-Str.), teilweise schon ab 03.08.2026. Vorbereitete Einfahrt-verboten-Tafeln für die Fredersdorfer Str. an der Marchlewskistr. In der Marchlewskistr. und Hildegard-Jadamowitz-Str. wurde Richtung Norden und Westen ab Wedekindstr. eine Busspur (!) markiert
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026)
-#: last_checked: 2026-10-19
+#: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026) (bis 21.12.2026)
+#: last_checked: 2026-10-20
 #: check_frequency: 14d
-#: next_check: 2026-10-20 (VIZ-Verkehrsmeldung)
-#: valid: -20261231
+#: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
+#: valid: -20261221
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # REMOVED --- Straße der Pariser Kommune: vermutete (Hoch?)Bauarbeiten, evtl. mit (Teil)Sperrung der Straße?	? 12822,12067 12833,12154 12854,12287
 # 
@@ -98,10 +100,11 @@ Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # REMOVED --- #: valid: -20261102
 # REMOVED --- Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 # 
-#: source_id: LMS-BR:424355/72 viz2021:13.436618,52.592582,05.10.2026,07:00 vizapi2026:1022/2026 (bis 02.11.2026)
+#: source_id: LMS-BR:424355/72 viz2021:13.436618,52.592582,05.10.2026,07:00 vizapi2026:1022/2026 (bis 02.11.2026) (bis 06.11.2026)
 #: source_id: planb2026:13.43573837,52.59336128,01.10.2026, ("Gegenverkehrsanlage (LZA)", 01.10.2026 bis 02.11.2026)
-#: next_check: 2026-11-02 (VIZ-Verkehrsmeldung + planb)
-#: valid: -20261102
+#: source_id: planb2026:13.43577661,52.59332489,21.10.2026, ("Gegenverkehrsanlage (LZA)", bis 06.11.2026)
+#: next_check: 2026-11-06 (VIZ-Verkehrsmeldung + planb)
+#: valid: -20261106
 Bahnhofstr.: Gegenverkehrsregelung	X::inwork::alternating 12332,20962
 # 
 # REMOVED --- #: source_id: LMS-BR:412099/72 viz2021:13.22465,52.58966,16.06.2026,09:00 vizapi2026:584/2026 (bis 18.09.2026) (inaktiv)
@@ -198,8 +201,13 @@ Siemensstr./Borstellstr.	X::inwork 6219,4336
 # REMOVED --- Auguste-Viktoria-Allee/General-Barby-Str.: Gegenverkehrsregelung	X::inwork::alternating 4414,18243
 # 
 #: next_check_id: GNEISENAU-2026
+#: by: https://www.morgenpost.de/berlin/article411773337/gneisenaustrasse-grossbaustelle-startet-mit-einem-jahr-verzoegerung.html (sechs Bauphasen bis voraussichtlich 2028/2029)
+#: by: https://www.entwicklungsstadt.de/kreuzberg-gneisenaustrasse-u-bahn-sanierung-startet/
+#: source_id: LMS-BR:405089/72 viz2021:13.40555,52.4895,17.04.2026,10:00 (bis 31.12.2026) (mittlerweile bis Mehringdamm)
+#: source_id: LMS-BR:425973/72 viz2021:13.39854,52.49281, (Sperrung der Schleichermacherstr., bis 31.12.2026)
 #: note: eigentlich knapp östlich der Kreuzung; baustellenbedingt muss auch der Radverkehr im Zuge der Schleiermacherstr. die Ampel benutzen
-#: last_checked: 2026-10-08
+#: last_checked: 2026-10-20
+#: check_frequency: 60d
 #: next_check: 2026-12-31
 Gneisenaustr./Schleiermacherstr.: provisorische Fußgängerampel	F::inwork 10032,9456
 # 
@@ -896,11 +904,13 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: source_id: LMS-BR:398036/72 viz2021:13.440587,52.591508,04.02.2026,10:30 (bis 30.03.2026) (inaktiv)
 #: source_id: planb2026:13.44132325,52.59124561,19.10.2026, ("Gegenverkehrsanlage (LZA)", bis 11.12.2026)
 #: source_id: bvg2024:150#HIM_FREETEXT_368988 (Haltestellenverlegung ab 20.10.2026)
-#: source_id: vizapi2026:1104/2026 (bis 11.12.2026)
+#: source_id: LMS-BR:425980/72 viz2021:13.440325,52.591585,20.10.2026,08:00 vizapi2026:1104/2026 (bis 11.12.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261019 (Baustellenampel auf Höhe der A114 bis Mitte Dez 2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mybu5iyqg22o
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreianicmftuacupzy5xjktk6ung6ab3iawdmffdxn67m6xhvfmrapty (auch Sperrung des südlichen Maronensperlingwegs)
 #: note: laut Bushaltestellenaushang vermutlich erst ab 20.10.2026?
 #: last_checked: 2026-03-22 (mapillary) vvv
-#: next_check: 2026-10-20 vvv
+#: next_check: 2026-11-12 (VIZ-Verkehrsmeldung) vvv
 #: valid: 20261020-20261112 vvv
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork::alternating 12672,20720
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork::alternating 12723,20691

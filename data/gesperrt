@@ -1067,6 +1067,10 @@ Darßer Str. -> Perler Str.: Mittelstreifen	3::igndisp 16785,17524 16761,17561 16
 Perler Str. -> Darßer Str.: Mittelstreifen	3::igndisp 16453,17611 16761,17561 16677,17678
 Radickestr.	1 20861,3814 20835,3795
 Camphausenstr.	1 365,1842 360,1860 368,1868 380,1866 386,1849
+Koppenstr. [Nebenstraße]	1s 12471,11969 12538,12110 12518,12120
+Mittelstreifen	3nocross::ignrte 14089,9610 14181,9729 14196,9749
+Elsenstr. -> Am Treptower Park: Mittelstreifen	3::igndisp 14196,9749 14181,9729 14203,9715
+Am Treptower Park -> Elsenstr.: Mittelstreifen	3::igndisp 14203,9715 14181,9729 14089,9610
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172

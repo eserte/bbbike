@@ -159,7 +159,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="23"
-#: last_checked: 2026-10-11
+#: last_checked: 2026-10-20
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -574,7 +574,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: last_checked: 2026-09-15 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2026-09-14 (planb: Sperrung) vvv
-#: osm_watch: way id="169459736" version="21"
+#: osm_watch: way id="169459736" version="23"
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 #: osm_watch: way id="25278674" version="32"
 Gerichtstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -3859,6 +3859,7 @@ Mauerweg Lichterfelde: Asphalt	Q0 4406,-910 4081,-425 4038,-362 4046,-299 4034,-
 Alexanderufer: Asphalt	Q0 8315,13042 8315,13181 8314,13323
 Alexanderufer: Asphalt	Q0 8314,13323 8356,13404 8365,13431 8362,13466 8354,13523 8342,13536 8332,13548
 Koppenstr.: Asphalt	Q0 12532,12150 12573,12227 12592,12472 12632,12630
+Koppenstr. [Nebenstraße]: Beton	Q1 12471,11969 12538,12110 12518,12120
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/de/bild_tvo_april_2007_2.shtml
 (Weg unterhalb der Spindlersfelder Str.): Verbundsteinpflaster	Q0- 21108,4725 21130,4596 21130,4481
 #: note: in diesem Bereich existiert keine Trennung zwischen Geh- und Radweg
@@ -4058,7 +4059,7 @@ Preußstr.: Asphalt	Q0 12325,15328 12367,15396
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11255,16313
 Niederlagstr.: Asphalt	Q0 9943,12364 9955,12300 9959,12281 9972,12184
 Werdersche Rosenstr.: Asphalt	Q0 9883,12251 9909,12261 9959,12281
-Müncheberger Str.: Asphalt	Q0- 12450,11980 12558,11920
+Müncheberger Str.: Asphalt	Q0- 12450,11980 12471,11969 12558,11920
 Müncheberger Str.: mäßiger Asphalt	Q1+ 12558,11920 12617,11888
 Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9293,5919
 Kolonie Albrechtshöhe: wassergebundene Decke	Q1 10260,5953 10215,5959 9955,5993
@@ -14772,6 +14773,8 @@ Blumeneschenweg: Asphalt	Q0 23363,11600 23403,11721 23375,11731 23382,11760
 (Flughafengelände): Asphalt	Q0 9541,8570 9589,8519 9645,8563 9647,8593 9606,8676
 (Flughafengelände): Asphalt	Q0 9589,8519 9550,8483
 (Flughafengelände): Kleinsteinpflaster/Verbundsteinpflaster	Q1 9414,8380 9442,8387 9462,8408
+# 
+(Am Treptower Park - Elsenstr.): Betonpflaster	Q1+ 14149,9546 14203,9715 14181,9729
 # 
 ######################### User Contributions #################################
 #: section: User Contributions (anonymous) vvv 

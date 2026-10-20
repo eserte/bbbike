@@ -377,7 +377,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-10-14 vvv
+#: last_checked: 2026-10-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -571,7 +571,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-10-15 vvv
+#: last_checked: 2026-10-20 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1310,8 +1310,8 @@ Verbundsteinpflaster, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 
 	RW2; 13316,6320 13307,6359 13294,6386 13261,6456 13236,6489 13248,6452 13275,6382 13289,6355 13316,6320
 	RW2;RW1 13316,6320 13355,6235
 	RW1;RW1 13355,6235 13430,6086
-	RW4; 14089,9610 14196,9749
-Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
+	RW4; 14089,9610 14181,9729 14196,9749
+Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14181,9729 14089,9610
 	RW4; 14196,9749 14244,9812 14289,9870
 #: historical_note: während der 1+1-Führung auf der provisorischen Elsenbrücke: geschützte Radspur
 #: note: im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt
@@ -1466,7 +1466,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-10-15 vvv
+#: last_checked: 2026-10-20 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14405,10027 14501,10169 14558,10264
@@ -3223,7 +3223,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-10-10 vvv
+#: last_checked: 2026-10-20 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3379,7 +3379,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-10-18 vvv
+#: last_checked: 2026-10-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-09-30 (planb) vvv
@@ -3412,7 +3412,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026) (bis 30.11.2026)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-10-18
+#: last_checked: 2026-10-20
 #: check_frequency: 30d
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-09-30 (planb)
@@ -5402,7 +5402,7 @@ alter Beton, Radweg nur aufgemalt	RW1; 16525,17253 16460,17214
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-10-07 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-11-12 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2026: Gehweg für Radfahrer frei, RW1; vvv
 #: note: kurze Abschnitte mit Verbundsteinpflasterradweg
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 16460,17214 16352,17150 16318,17128 16296,17114 16139,17017
@@ -5441,7 +5441,7 @@ die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Ra
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-10-07
 #: check_frequency: 30d
-#: next_check: 2026-10-29 (planb + VIZ-Verkehrsmeldung)
+#: next_check: 2026-11-12 (VIZ-Verkehrsmeldung)
 #: historical_note: früher (bis 2026): Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Bauarbeiten bis etwa Frühjahr 2026: provisorischer gemeinsamer Geh- und Radweg, RW2;
@@ -6344,12 +6344,12 @@ Verbundsteinpflasterradweg	RW1; 17791,14639 17768,14686 17745,14734 17693,14840 
 Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15588 17405,15454 17424,15400 17432,15378 17609,15006 17638,14945
 #: next_check_id: WEISSETAUBE-2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-wei%C3%9Fe-taube.161/page-3#post-26792
-#: source_id: planb2026:13.51369864,52.5358353,01.05.2026, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (bis 31.10.2026)
+#: source_id: planb2026:13.51369864,52.5358353,01.05.2026, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (bis 31.10.2026) (bis 31.03.2027)
 #: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
 #: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734 17768,14686 17791,14639 17824,14572
 #: last_checked: 2026-09-15 (luftbildsuche)
 #: check_frequency: 60d
-#: next_check: 2026-10-31 (planb)
+#: next_check: 2027-03-31 (planb)
 	RW0; 17638,14945 17684,14858 17693,14840 17745,14734 17768,14686 17791,14639 17824,14572
 	RW3; 17824,14572 17848,14523
 # 
@@ -8151,7 +8151,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2026-10-11 vvv
+#: last_checked: 2026-10-20 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8703,8 +8703,7 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 	RW4; 7714,13223 7759,13246
 	RW6;RW6 7781,14238 7802,14250 7769,14300 7757,14318 7735,14305
 	RW6;RW6 7930,14060 7973,13991
-#: note: früher (vor 2022) 10km/h
-	RW6;RW6 13554,8101 13633,8036
+# REMOVED (Okt 2026 zur Fußgängerzone gemacht) --- #: note: früher (vor 2022) 10km/h ---	RW6;RW6 13554,8101 13633,8036
 	RW6;RW6 12509,8318 12382,8292 12368,8356
 	RW3;RW3 5582,6360 5701,6386 5781,6404 5823,6413
 	RW6;RW6 7518,5753 7666,5734

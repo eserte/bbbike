@@ -13,8 +13,8 @@
 #: next_check_id: STRDPARISERKOMMUNE-2026
 #: last_checked: 2026-10-18
 #: check_frequency: 14d
-#: next_check: 2026-10-20 (VIZ-Verkehrsmeldung)
-#: valid: -20261231
+#: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
+#: valid: -20261221
 Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 # 
 # REMOVED --- #: XXX Laut Halteverbotsschildern möglicherweise bis Ende November 2026 ("31.11.2026" (sic!))
@@ -118,7 +118,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (bis 20.11.2026)
 #: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026) (bis 20.11.2026)
 #: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026) (bis 20.11.2026)
-#: last_checked: 2026-10-19 vvv
+#: last_checked: 2026-10-20 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
 Singerstr.: Sperrung an der Einmündung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
@@ -190,12 +190,12 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
 # 
 #: source_id: planb2026:13.44849499,52.5121092,12.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (vorfristig inaktiv) (bis 20.10.2026)
-#: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026)
-#: also_indoor: traffic (G,T,H,W)
+#: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026) (bis 30.10.2026)
+#: also_indoor: traffic (ex-G,ex-T,H,ex-W)
 #: note: manchmal (außerhalb der Arbeitszeiten? am Wochenende) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45)
-#: last_checked: 2026-10-19 vvv
-#: next_check: 2026-10-20 vvv
-#: valid: 20261012-20261020 vvv
+#: last_checked: 2026-10-20 vvv
+#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung) vvv
+#: valid: 20261012-20261030 vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
 Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
 #: valid ^^^
@@ -895,6 +895,29 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 
 # 
 ### Kreuzberg ###
 # 
+#: next_check_id: GNEISENAU-2026
+#: source_id: bvg2024:140#HIM_FREETEXT_367821
+#: source_id: bvg2024:248#HIM_FREETEXT_367823
+#: source_id: bvg2024:248#HIM_FREETEXT_367824
+#: source_id: planb2026:-
+#: source_id: bvg2024:n7#HIM_FREETEXT_368827 (Haltestellenverlegung ab 19.10.2026)
+#: also_indoor: traffic (no-G,T,no-H,W[user note])
+#: by: https://fahrinfo.vbb.de/him-uploads/1791875087684_Kartenausschnitt_Gneisenaustr.jpg
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261020
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mybz4u2rn22m
+#: note: Zumindest in der Anfangsphase Stau und Chaos...
+#: last_checked: 2026-10-20 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2026-12-31 vvv
+#: source_id: LMS-BR:425971/72 viz2021:13.39447,52.4917, (bis 31.12.2026)
+Zossener Str.: Sperrung vor der Gneisenaustr., Radfahrer frei	q2::inwork 9820,9718 9790,9528
+#: source_id: LMS-BR:425970/72 viz2021:13.39317,52.49342, (bis 31.12.2026)
+#: XXX Achtung: nach den Bauarbeiten die asphatierten Kissen wieder aktivieren!!!
+Solmsstr.: Sperrung vor der Gneisenaustr., Radfahrer frei	q2::inwork 9705,9732 9676,9564
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: source_id: planb2026:13.40010762,52.49438384,10.12.2025,07:00 ("Sicherung gemäß Vz.-plan", Blücherstr./Urbanstr., bis 18.12.2026)
 #: source_id: planb2026:13.40137423,52.49550722,08.04.2026, ("Vollsperrung beider Fahrbahnen", Tempelherrenstr., bis 28.12.2026)
 #: note: Es ist unklar, welcher der beiden planb-Einträge der richtige ist.
@@ -918,7 +941,7 @@ Johanniterstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::in
 #: osm_watch: way id="4611912" version="40"
 #: osm_watch: way id="8005348" version="32"
 #: osm_watch: way id="8005347" version="29"
-#: last_checked: 2026-10-08 vvv
+#: last_checked: 2026-10-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung, planb) vvv
 #: valid: -20261231 vvv
@@ -2334,6 +2357,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: by: https://www.entwicklungsstadt.de/wellenbad-kreuzberg-sanierung-macht-fortschritte/ (bis Ende 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/dauerbaustelle-berliner-hallenbader-stadtbad-schoneberg-soll-mitte-2026-wieder-offnen--verzogerungen-beim-wellenbad-am-spreewaldplatz-15470876.html
 #: by: https://www.entwicklungsstadt.de/wellenbad-am-spreewaldplatz-dach-geoeffnet-fliesen-entfernt/
+#: by: https://www.entwicklungsstadt.de/wellenbad-in-kreuzberg-zeitplan-erneut-verschoben-kosten-bei-51-millionen-euro/ (voraussichtlich bis 2028)
 #: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3
@@ -2343,7 +2367,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: source_id: planb2026:13.43196346,52.4975659,01.02.2024,07:00 (hier: "Haltverbote", bis 31.12.2026)
 #: last_checked: 2026-10-14
 #: check_frequency: 180d
-#: next_check: 2027-12-31 (entwicklungsstadt)
+#: next_check: 2028-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
 # 
 #: XXX_prog BS auf beiden Seiten, ansonsten q2 oder q2+ (GPS-Tracks anschauen)
@@ -5387,7 +5411,7 @@ Bruno-Baum-Grünzug: Grünanlage, Fußgänger	q3 20260,15434 20245,15394 20004,15251
 (Zur Waage - Zur Innung): Grünanlage, einige Fußgänger	q3 14067,13050 14086,13090
 Baruther Str.: asphaltierte Kissen (2x)	q1 9837,9856 9723,9842
 Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
-Solmsstr.: asphaltierte Kissen (2x)	q1 9705,9732 9676,9564
+# (temporär entfernt) --- Solmsstr.: asphaltierte Kissen (2x)	q1 9705,9732 9676,9564
 Fürbringerstr.: asphaltierte Kissen (2x)	q1 9705,9732 9820,9718
 #: note: sowie ein weiterer umfahrbarer Kissen an der nordwestlichen Einfahrt sowie eine umfahrbare Fahrbahnschwelle an der südöstlichen Einfahrt
 Blücherstr.: asphaltierte Kissen (2x)	q1 10306,9640 10429,9514 10580,9361
@@ -5704,6 +5728,9 @@ Maxstr.: Fußgängerzone für Radfahrer frei	q1+ 7781,15804 7738,15838
 Koppenplatz: Fußgängerzone für Radfahrer frei	q1- 9961,13502 9946,13550
 # 
 Pekinger Platz: Fußgängerzone für Radfahrer frei	q1 6849,14831 6929,14845 7000,14832
+# 
+#: note: derzeit (Oktober 2026) ohne "Straßenmöbel", außerhalb der Schulzeiten unproblematisch
+Stuttgarter Str.: Fußgängerzone für Radfahrer frei	q0- 13663,8011 13633,8036 13554,8101
 # 
 #: note: Grünanlagenschild ohne Zusatzschilder
 Staakener Feldstr.: einige Fußgänger	q1 -7647,13985 -7716,14031
@@ -6151,6 +6178,10 @@ An der Schule [Rad- und Gehweg]: einige Fußgänger	q1 24747,11524 24768,11616 247
 (Flughafengelände): Einfahrt nur für Berechtigte	q3; 9541,8570 9502,8600
 (Flughafengelände - Friesenstr.): eng, einige Fußgänger	q3 9812,8665 9807,8682
 (Golßener Str. - Flughafengelände): einige Fußgänger	q3 10209,8661 10205,8647 10142,8655
+# 
+Koppenstr. [Nebenstraße]: möglicher Parkplatz-/Lieferverkehr	q1; 12518,12120 12538,12110 12471,11969
+# 
+(Am Treptower Park - Elsenstr.): einige Fußgänger	q1 14149,9546 14203,9715 14181,9729
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv
