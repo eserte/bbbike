@@ -236,7 +236,7 @@ sub cmd_fetch_one {
 	}
 
 	print "#: source_id: $id (\"$einschr\", bis $dat_ende)\n";
-	print "#: next_check: $dat_beginn_iso\n" if defined $dat_beginn_iso;
+	print "#: next_check: $dat_beginn_iso (planb)\n" if defined $dat_beginn_iso;
     }
 }
 
