@@ -9,7 +9,7 @@ Rough installation procedure on a Debian system:
 
          sudo apt-get install bmake apache2 cgi-mapserver \
                               mapserver-bin libclass-accessor-perl \
-                              libxbase-perl libtext-unidecode-perl \
+                              libdbd-xbase-perl libtext-unidecode-perl \
 			      libwww-mechanize-formfiller-perl \
 			      ttf-bitstream-vera libtemplate-perl
 
@@ -17,13 +17,14 @@ Rough installation procedure on a Debian system:
 
          (cd ../../cgi && bmake httpd.conf)
 
-     The resulting httpd.conf should be included into apache, e.g.
+     The resulting httpd.conf should be included into apache, e.g. by
+     using a2ensite or running something like this:
 
-         (cd /etc/apache2/conf.d && sudo ln -s .../bbbike/cgi/httpd.conf bbbike.conf)
+         (cd /etc/apache2/sites-enabled && sudo ln -s .../bbbike/cgi/httpd.conf bbbike.conf)
 
      Restart apache:
 
-         sudo /etc/init.d/apache2 restart
+         sudo systemctl restart apache2
 
    * Create a bbbike.cgi.config. The provided bbbike-debian.cgi.config
      should be good enough:
@@ -36,15 +37,12 @@ Rough installation procedure on a Debian system:
 
    * Create the mapserver templates and mapfiles:
 
-         touch -t 197001010000 Makefile.local.inc
-         bmake
+         ./doit.pl --dest-dir . --host localhost --location-style bbbike --bbbike-dir ../.. templates permissions
 
    * Point your browser to http://localhost/bbbike/cgi/bbbike.cgi
      bbbike should appear. In the footer there's a link to the
      mapserver.
 
    * These instructions restrict to just using http://localhost. To
-     use a real (external) hostname run
-
-         touch -t 197001010000 Makefile.automatic.inc
-         bmake TARGET=automatic WWW_HOST=www.example.com
+     use a real (external) hostname use another host name for the
+     --host option in above command.
