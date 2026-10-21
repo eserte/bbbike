@@ -222,7 +222,7 @@ Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026) (1. Quartal 2027 - 4. Quartal 2027)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
 #: source_id: bvg2024:194#HIM_FREETEXT_341095 (Umleitung, evtl. gibt es hier Bauarbeiten?) (-> nichts gesehen)
-#: last_checked: 2026-10-17 vvv
+#: last_checked: 2026-10-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
@@ -4294,6 +4294,8 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: by: https://www.entwicklungsstadt.de/goerlitzer-bruecken-in-alt-treptow-schadensanalyse-soll-klarheit-bringen/
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26838.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/2026-06-08-protokoll-ag-mobilitaet.pdf
+#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/hiermit-stellen-wir-berliner-senat-und-deutscher-bahn-ein-ultimatum-aktivisten-drohen-mit-offnung-von-geschlossener-brucke-am-gorlitzer-park-16180357.html
+#: by: https://www.entwicklungsstadt.de/goerlitzer-bruecken-initiative-goerli-24-7-droht-mit-eigenmaechtiger-oeffnung/
 #: osm_watch: note 5278957 5
 #: osm_watch: way id="24042478" version="20"
 #: alias: Görlitzer Bahnbrücken
@@ -4434,7 +4436,7 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: osm_watch: way id="1495906089" version="1"
 #: osm_watch: way id="971631807" version="9"
 #: osm_watch: way id="971631806" version="9"
-#: last_checked: 2026-08-26
+#: last_checked: 2026-10-21
 #: check_frequency: 60d
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
@@ -4442,7 +4444,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 vizapi2026:100/2026 (bis 05.05.2026) (bis 22.07.2026) (bis 01.10.2026) (bis 25.03.2027)
 #: source_id: planb2026:13.42640002,52.52310299,03.02.2026, ("Fahrstreifen-Reduzierung", bis 01.10.2026) (bis 25.03.2027)
 #: note: außerdem ist die verkehrsrechtliche Situation der Einfahrt Richtung Weydemeyerstr. für Radfahrer unklar: komplett gesperrt oder nicht? Durchfahrt war bislang immer möglich.
-#: last_checked: 2026-10-13
+#: last_checked: 2026-10-21
 #: next_check: 2027-03-25 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20270325
 (Berolinastr. - Mollstr.): wegen Tiefbauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
@@ -4660,7 +4662,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="5"
 #: osm_watch: way id="867830687" version="8"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-10-18
+#: last_checked: 2026-10-21
 #: check_frequency: 21d
 #: next_check: 2026-12-20 (pardok + entwicklungsstadt: Herbst 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4811,11 +4813,13 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: by: https://entwicklungsstadt.de/lichtenberg-richtfest-fuer-neue-holz-compartmentschule-am-roemerweg/
 #: osm_watch: way id="25796737" version="24"
 #: osm_watch: way id="1272701939" version="5"
+#: source_id: planb2026:13.52192808,52.49221042,28.07.2026,07:00 ("Fahrbahneinengung", Römerweg, bis 31.12.2026)
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date der landuse=construction-Fläche 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
 #: last_checked: 2026-10-18
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-08-24 (SenSBW-Pressemitteilung: Schulbeginn)
+#: next_check: 2026-12-31 (planb (benachbarte Baustelle))
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
@@ -4828,7 +4832,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="4612427" version="23"
 #: source_id: planb2026:13.41545231,52.51320684,25.03.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2027)
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-10-15
+#: last_checked: 2026-10-21
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2027-06-30 (entwicklungsstadt)
 #: next_check: 2027-12-31 (planb)
@@ -4863,7 +4867,7 @@ Am Alten Flugplatz: Straße gesperrt	2::inwork 19697,8776 19754,8809 19778,8823 1
 #: osm_watch[closed]: note 4126450 4
 #: osm_watch: note 4719416 2
 #: XXX bei osm nun teilweise als wieder offen gekennzeichnet, aber das ist wohl ein StreetComplete-Unfall
-#: last_checked: 2026-10-10
+#: last_checked: 2026-10-21
 #: check_frequency: 360d
 #: next_check: 2028-12-31
 # REMOVED (Süd/Westseite ist weiterhin frei für Radfahrer/Fußgänger) --- Nordufer/Sylter Str.: Sperrung, angeblich auch für Fußgänger und Radfahrer	? 6334,14756 6213,14777 5984,14819 5848,14977
@@ -5021,7 +5025,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-10-17
+#: last_checked: 2026-10-21
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -5029,7 +5033,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-10-17 vvv
+#: last_checked: 2026-10-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5082,7 +5086,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-10-19
+#: last_checked: 2026-10-21
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -5274,7 +5278,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # 
 #: next_check_id: STRD17JUNI-2021
 #: osm_watch: way id="1080224659" version="12"
-#: last_checked: 2026-10-15 (osm) vvv
+#: last_checked: 2026-10-19 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung) vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913

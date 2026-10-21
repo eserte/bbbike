@@ -1239,7 +1239,7 @@ Am Roten Stein: Kopfsteinpflaster	Q2 -7257,4581 -7172,4565 -7037,4540 -6990,4531
 Tegeler Weg: Asphalt	Q0 7458,14643 7429,14667
 Tegeler Weg: Kopfsteinpflaster	Q2 7429,14667 7353,14767
 Tegeler Weg: Kopfsteinpflaster	Q2 7308,14814 7259,14870
-Tegeler Weg: Asphalt	Q0 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109 7085,15226 6996,15319
+Tegeler Weg: Asphalt	Q0 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109 7085,15226 6989,15323
 Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870
 #: historical_note: früher Kopfsteinpflaster, Q2
 Lynarstr.: Asphalt	Q0 7259,14870 7409,14954
@@ -1871,7 +1871,7 @@ Maxstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7781,15804 7738,15838
 Maxstr.: Asphalt	Q0 7738,15838 7663,15906 7622,15946
 #: confirmed_by: srt
 Maxstr.: mäßiges Kopfsteinpflaster	Q2 7622,15946 7543,16016 7474,16086
-Genter Str.: Asphalt	Q0 7270,15307 7138,15437 7064,15515 7012,15571
+Genter Str.: Asphalt	Q0 7270,15307 7132,15445 7064,15515 7012,15571
 Genter Str.: mäßiges Kopfsteinpflaster	Q2 7012,15571 6919,15666 6802,15790 6661,15921
 Am Walde: Asphalt	Q0 17771,7880 17678,7850 17590,7828 17527,7812
 Prager Platz: gutes Kleinsteinpflaster	Q1 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
@@ -6968,7 +6968,7 @@ Limburger Str.: Kopfsteinpflaster	Q2 6562,15177 6716,15310
 Limburger Str.: Asphalt	Q0 6716,15310 6736,15328 6749,15339
 Limburger Str.: Asphalt	Q0 6749,15339 6815,15398 6835,15412 6869,15441 6884,15456
 Limburger Str.: Kopfsteinpflaster	Q2 6884,15456 6950,15514 7012,15571
-Elise-und-Otto-Hampel-Weg: Gehwegplatten	Q0- 7012,15571 7129,15686 7115,15702 7129,15717
+Elise-und-Otto-Hampel-Weg: Gehwegplatten	Q0- 7012,15571 7129,15686 7115,15702 7125,15712
 Zeppelinplatz: Asphalt	Q0 6862,15615 6950,15514
 Pasewalker Str. (Wedding): Kopfsteinpflaster	Q2 7891,15417 7875,15589
 Litfaß-Platz: gepflastert	Q1 10347,12881 10312,12982
@@ -12415,7 +12415,7 @@ Sportpromenade: Asphalt	Q0 25646,-209 25574,-38 25537,167 25461,254 25172,345 24
 Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10228,15488 10234,15490
 # REMOVED (nein, by mapillary) --- #: XXX hat sich mit der Neugestaltung etwas geändert? --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.635732.php
 Zeppelinplatz: Kleinsteinpflaster	Q1 6794,15553 6884,15456
-Beuth-Hochschule: Verbundsteinpflaster	Q1 6884,15456 6996,15319
+Beuth-Hochschule: Verbundsteinpflaster	Q1 6884,15456 6989,15323
 Lydia-Rabinowitsch-Str.: Asphalt	Q0 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 Hedwig-Porschütz-Str.: Asphalt	Q0 7652,14257 7735,14305
 Hedwig-Porschütz-Str.: glatt gepflastert	Q2+ 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238
@@ -12592,7 +12592,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 #: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026)
 #: begin_check: 2026-10-30
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-10-19
+#: last_checked: 2026-10-21
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -14209,7 +14209,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen?
-#: last_checked: 2026-10-17
+#: last_checked: 2026-10-21
 #: check_frequency: 30d
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 # 
@@ -16737,7 +16737,7 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10373,18887 10358,18882
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=5094 (möglicher Baustart ... im Frühling 2027)
 #: osm_watch: way id="4764684" version="35"
 #: osm_watch: way id="26790073" version="23"
-#: last_checked: 2026-07-23 (mapillary)
+#: last_checked: 2026-10-19 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2027-04-15 (BVV-Drucksache: möglicher Baustart  im Frühling 2027)
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
@@ -18084,8 +18084,9 @@ Lansstr.: Kleinsteinpflaster	Q1- 3054,5677 2958,5598 2864,5526 2792,5471
 Krumme Str. (Bohnsdorf): Beton	Q0 21941,-422 22000,-470 22065,-478 22145,-486 22168,-487 22197,-490 22261,-464
 # 
 #: by: Angelika (bt): vvv
-Prinz-Eugen-Str.: mäßiges Kopfsteinpflaster	Q2 7532,15849 7648,15741 7796,15600
-Antonstr.: Asphalt	Q0 7393,15476 7518,15605 7648,15741 7738,15838
+#: confirmed_by: srt
+Prinz-Eugen-Str.: mäßiges Kopfsteinpflaster	Q2 7533,15865 7646,15749 7796,15600
+Antonstr.: Asphalt	Q0 7393,15476 7518,15605 7646,15749 7738,15838
 #: by: ^^^
 # 
 #: by: Hubertus Fürther: vvv
@@ -19326,14 +19327,19 @@ Unterbaumstr.: Asphalt	Q0 8553,12991 8578,13020
 Mönkeberger Str.: asphaltiert	Q0 9475,16307 9582,16296 9725,16281
 Ellerbeker Str.: Kopfsteinpflaster	Q2 9725,16281 9727,16188
 #: corrected_by: srt (fester Sand -> Beton)
-(Schwartzkopffstr. - Gartenstr.): Beton	Q0 8825,14401 8868,14442 8913,14485
+(Schwartzkopffstr. - Gartenstr.): Beton	Q0 8825,14401 8868,14442 8917,14487
 #: corrected_by: srt (fester Sand -> Beton)
-(Schwartzkopffstr. - Gartenstr.): Beton	Q0 8913,14485 8839,14635
+(Schwartzkopffstr. - Gartenstr.): Beton	Q0 8906,14500 8839,14635
 #: confirmed_by: srt
 (Schwartzkopffstr. - Gartenstr.): Kopfsteinpflaster	Q2 8839,14635 8848,14638 8938,14521 8953,14528
+#: corrected_by: srt (fester Sand -> ) vvv
+#: note: Kopfsteinpflaster mit Gleisresten vvv
+(Schwartzkopffstr. - Gartenstr.): Kopfsteinpflaster und schmaler Betonstreifen	Q1 8906,14500 8917,14487
+(Park auf dem Nordbahnhof): Kopfsteinpflaster und schmaler Betonstreifen	Q1 8917,14487 8997,14390
+#: note ^^^
+#: corrected_by ^^^
 #: corrected_by: srt (fester Sand -> )
-#: note: teilweise ist der Weg halb Beton, halb wassergebundene Decke
-(Park auf dem Nordbahnhof): Beton	Q0 8913,14485 9119,14255 9175,14193 9181,14186
+(Park auf dem Nordbahnhof): Beton	Q0 8997,14390 9119,14255 9175,14193 9181,14186
 #: confirmed_by: srt
 (Park auf dem Nordbahnhof): betonierte Rampe	Q0 9181,14186 9147,14151 9224,14169
 (Park auf dem Nordbahnhof): betonierte Rampe	Q0 9147,14151 9070,14058
@@ -19434,7 +19440,7 @@ Karlstadter Str.: Kopfsteinpflaster	Q2 11492,18347 11579,18184 11602,18133 11655
 # 
 #: by: christoph (stauden): vvv
 #: confirmed_by: mapillary, srt
-Utrechter Str.: Kopfsteinpflaster	Q2 7024,15810 7061,15852 7177,15984 7279,16057
+Utrechter Str.: Kopfsteinpflaster	Q2 7021,15807 7061,15852 7181,15987 7279,16057
 #: corrected_by: mapillary (Kopfsteinpflaster, Q2 -> ...)
 Utrechter Str.: Verbundsteinpflaster	Q1 7279,16057 7294,16068 7333,16072
 #: confirmed_by: mapillary
@@ -31850,21 +31856,22 @@ Riehlstr.: Asphalt	Q0 2365,11179 2340,11223 2350,11269 2393,11381 2391,11478
 Dresselstr.: Kopfsteinpflaster	Q2 2308,11288 2350,11269
 #: confirmed_by: srt
 Dresselsteig: Asphalt	Q0 2219,11324 2228,11317 2300,11292 2308,11288
-Amsterdamer Str.: Kopfsteinpflaster mit Bodenwellen	Q2 6914,15908 7077,16078 7158,16167
-Turiner Str.: Kopfsteinpflaster mit Bodenwellen	Q2 6965,16190 7077,16078 7177,15984 7354,15817
-Turiner Str.: Asphalt	Q0 7354,15817 7436,15746
+Amsterdamer Str.: Kopfsteinpflaster mit Bodenwellen	Q2 6914,15908 7080,16082 7158,16167
+#: confirmed_by: srt
+Turiner Str.: Kopfsteinpflaster mit Bodenwellen	Q2 6965,16190 7080,16082 7181,15987 7358,15822
+Turiner Str.: Asphalt	Q0 7358,15822 7430,15753
 #: corrected_by: srt (Kopfsteinpflaster mit Bodenwellen, Q2 -> ...)
 Groninger Str.: Asphalt	Q0 7393,16566 7409,16542 7415,16502
 #: confirmed_by: srt
 Groninger Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7415,16502 7433,16375 7458,16207 7474,16086
 Hochstädter Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7543,16016 7727,16223
-Ruheplatzstr.: Asphalt	Q0 7436,15746 7518,15605 7627,15412
+Ruheplatzstr.: Asphalt	Q0 7430,15753 7518,15605 7627,15412
 (Müllerstr. - Gerichtstr.): Gehwegplatten	Q0 7607,15282 7723,15417
 #: confirmed_by: srt
 Ostender Str.: Kopfsteinpflaster	Q2 6474,15278 6628,15411
 #: confirmed_by: srt
 Ostender Str.: Asphalt	Q0 6628,15411 6649,15427 6794,15553
-Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7024,15810
+Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7021,15807
 #: historical_note: früher (vor den Bauarbeiten für das Heinrich-Hertz-Gymnasium) Asphalt, Q0, mittlerweile deutliche Schäden
 (Zufahrt Str. d. Pariser Kommune): Asphalt mit Schäden	Q1- 12577,11804 12617,11888
 (Zufahrt Str. d. Pariser Kommune): Beton	Q1+ 12617,11888 12648,11953
@@ -34934,7 +34941,7 @@ Einmündungsbereich asphaltiert	Q0 6820,4347
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3959,3444
 Einmündungsbereich mit Kopfsteinpflaster	Q2+ 7032,4635
 #: by: mapillary
-Kreuzungsbereich mit Verbundsteinpflaster	Q1 7177,15984
+Kreuzungsbereich mit Verbundsteinpflaster	Q1 7181,15987
 Einmündungsbereich asphaltiert	Q0 6629,16538
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6879,18743
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 7882,18209
@@ -35006,7 +35013,7 @@ Einmündungsbereich mit Kleinsteinpflaster	Q1- 4441,12559
 Einmündungsbereich mit Kleinsteinpflaster	Q1- 4441,12578
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 7543,16016
 Einmündungsbereich asphaltiert	Q0 7441,15909
-Kreuzungsbereich asphaltiert	Q0 7354,15817
+Kreuzungsbereich asphaltiert	Q0 7358,15822
 Kreuzungsbereich asphaltiert	Q0 7796,15600
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 9808,-339
 Kreuzungsbereich mit unebenem Kleinsteinpflaster	Q2 5888,3343
@@ -35058,7 +35065,7 @@ Kreuzungsbereich mit abgefrästem Kopfsteinpflaster	Q1- 12478,13903
 Kreuzungsbereich asphaltiert	Q0 8947,5434
 Einmündungsbereich asphaltiert	Q0 8872,5484
 Einmündungsbereich asphaltiert	Q0 3865,6758
-Kreuzungsbereich asphaltiert	Q0 7648,15741
+Kreuzungsbereich asphaltiert	Q0 7646,15749
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9474,15714
 Einmündungsbereich mit Kopfsteinpflaster	Q2 10105,14608
 Kreuzungsbereich mit Asphalt und Kopfsteinpflaster	Q2 18019,5786

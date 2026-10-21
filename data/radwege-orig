@@ -954,10 +954,10 @@ Abschnitt mit Bushaltestelle	RW3; 7911,15008 7845,15066
 	RW4; 7845,15066 7745,15160
 provisorische Radspur, mit Baken abgetrennt	RW4; 7745,15160 7669,15227
 #: note: außer an Bushaltestellen und Ausfahrten
-Poller	RW4; 7669,15227 7607,15282 7464,15409 7393,15476 7277,15586
-Radspur mit Bushaltestelle	RW3; 7277,15586 7198,15656
+Poller	RW4; 7669,15227 7607,15282 7464,15409 7393,15476 7272,15582
+Radspur mit Bushaltestelle	RW3; 7272,15582 7198,15647
 #: note: außer an Bushaltestellen und Ausfahrten
-Poller	RW3; 7198,15656 7129,15717 7024,15810 6936,15888 6914,15908
+Poller	RW3; 7198,15647 7125,15712 7021,15807 6936,15888 6914,15908
 Radspur mit Bushaltestelle	RW3; 6914,15908 6851,15964
 	RW3; 6851,15964 6781,16026
 # 
@@ -965,13 +965,13 @@ Radspur mit Bushaltestelle	RW3; 6914,15908 6851,15964
 Radspur mit Bushaltestelle	RW3; 6781,16026 6851,15964
 	RW3; 6851,15964 6914,15908
 #: note: außer an Bushaltestellen und Ausfahrten
-Poller	RW3; 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
+Poller	RW3; 6914,15908 6936,15888 7021,15807 7125,15712 7198,15647 7272,15582
 #: by: https://nitter.cz/SenUMVKBerlin/status/1562762461107077120#m
 #: by: https://nitter.cz/pic/media%2FFbAMK1wX0AA6fhO.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFbAMK16WYAAXk7e.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFbAMK1wXkAAdDLa.jpg%3Fname%3Dorig
 #: note: außer an Bushaltestellen und Ausfahrten
-Poller	RW4; 7277,15586 7393,15476 7464,15409 7607,15282 7669,15227
+Poller	RW4; 7272,15582 7393,15476 7464,15409 7607,15282 7669,15227
 	RW4; 7669,15227 7745,15160
 Poller	RW3; 7745,15160 7845,15066 7911,15008
 # REMOVED --- #: note: frühere Markierung auf dem Gehweg scheint verschwunden zu sein ---	RW0; 7845,15066 7911,15008
@@ -1105,8 +1105,9 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026) (bis 22.09.2026) (bis 13.11.2026)
 #: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026) (vorfristig inaktiv) (bis 27.09.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.41257309,52.54443858,02.10.2026, ("Fahrstreifen-Reduzierung", bis 13.11.2026)
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2026-08-11 vvv
+#: last_checked: 2026-10-19 (mapillary) vvv
 #: next_check: 2026-11-13 (VIZ-Verkehrsmeldung) vvv
 #: XXX nach den Bauarbeiten wiederherstellen: Radspur, niedrige Protektion	RW4;
 provisorische Radwegführung über Hochbord	RW2; 10925,15581 10917,15525
@@ -1497,7 +1498,7 @@ Fahrradschleuse	RW3; 7612,14325 7566,14404
 Radweg am Anfang nur aufgemalt, die letzten 110m etwas neueres Verbundsteinpflaster	RW1; 8057,14876 7960,14794 7829,14665
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: source_id: LMS-BR:400640/72 viz2021:13.36314,52.53583,03.03.2026,05:00 (bis 03.03.2027)
-#: last_checked: 2026-10-10 vvv
+#: last_checked: 2026-10-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-03-03 vvv
 #: XXX früher RW1;, nun Benutzungspflicht
@@ -1934,8 +1935,9 @@ Radspur hinter den parkenden Autos	RW4; 7482,4416 7450,4397 7410,4373 7366,4345 
 	RW1;RW1 6214,13225 6228,13324
 Radspur hinter den parkenden Autos	RW4; 6228,13324 6230,13532 6230,13596
 # REMOVED (Provisorium beendet) --- #: by: http://www.dafmap.de/d/berlin.html?id=3875&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-11-30) --- #: by: http://www.berliner-woche.de/moabit/verkehr/jeweils-nur-ein-fahrstreifen-d140483.html (bis April 2019?) --- #: source_id: 2147342177 --- #: last_checked: 2018-09-18 --- #: check_frequency: 60d --- provisorische Radspur	RW3; 6228,13324 6230,13532 6230,13596
-Radspur hinter den parkenden Autos	RW3; 6230,13596 6227,13938 6230,13596
-	RW1; 6230,13596 6230,13532
+Radspur hinter den parkenden Autos	RW3; 6230,13596 6227,13938
+Radspur hinter den parkenden Autos, Asphalt mit Unebenheiten	RW3; 6227,13938 6230,13596
+Verbundsteinpflaster	RW1; 6230,13596 6230,13532
 Radspur hinter den parkenden Autos, bis auf die letzten Meter	RW3; 6230,13532 6228,13324
 	RW1;RW1 9442,16610 9331,16624 9210,16638 8952,16666 8759,16684
 	RW2;RW1 8759,16684 8721,16689 8503,16716 8467,16718
@@ -2531,7 +2533,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: source_id: viz2021:13.503014,52.480172,19.07.2021,07:00 (Leitungsarbeiten bis 6.8.2021) (inaktiv)
 #: source_id: viz2021:13.506418,52.475944,06.09.2021,08:00 (Leitungsarbeiten bis 1.1.2022, allerdings in die andere Richtung) (mittlerweile bis 31.3.2022) (bis 17.6.2022) (inaktiv)
 #: source_id: viz2021:13.501478,52.482757,21.06.2021,10:00 (Leitungsarbeiten bis 28.5.2022) (bis 13.6.2022) (inaktiv)
-#: source_id: planb2026:13.50839546,52.47414971,19.10.2026,07:00 ("Fahrstreifen-Reduzierung", bis 31.12.2026)
+#: source_id: planb2026:13.50839546,52.47414971,19.10.2026,07:00 ("Fahrstreifen-Reduzierung", bis 31.12.2026) (vorfristig inaktiv)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
@@ -2656,9 +2658,9 @@ rote Gehwegplatten	RW1; 5819,21057 5596,21043 5524,21034 5379,21016 5188,20884 5
 #: by: ^^^
 # 
 #: note: Schulstr., Richtung Südwesten
-Gehwegplatten, teilweise schadhaft	RW1; 8093,16438 7987,16332 7818,16166 7622,15946 7532,15849 7436,15746 7277,15586
+Gehwegplatten, teilweise schadhaft	RW1; 8093,16438 7987,16332 7818,16166 7622,15946 7533,15865 7430,15753 7272,15582
 #: note: Schulstr., Richtung Nordwesten
-Gehwegplatten, teilweise schadhaft	RW1; 7277,15586 7436,15746 7532,15849 7622,15946 7818,16166 7987,16332 8093,16438
+Gehwegplatten, teilweise schadhaft	RW1; 7272,15582 7430,15753 7533,15865 7622,15946 7818,16166 7987,16332 8093,16438
 # 
 Busspur gilt Mo-Sa 7-20 Uhr	RW5; 7089,11073 7248,11143 7461,11051 7579,11032
 Busspur gilt Mo-Fr 7-20 Uhr	RW5; 7579,11032 7747,11075 7980,11070
@@ -3457,7 +3459,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-10-07
+#: last_checked: 2026-10-21
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3468,7 +3470,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-10-07
+#: last_checked: 2026-10-21
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -3852,18 +3854,18 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 5184,17855 5172,17789
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 5172,17789 5159,17726 5144,17659 5138,17630 5121,17559
 Gehwegplatten	RW1; 5121,17559 5109,17507
 # 
-	RW1; 7277,15586 7138,15437 6996,15319
+	RW1; 7272,15582 7132,15445 6989,15323
 # REMOVED (2025-10-12: die provisorische Radspur ist noch da, aber der neue Radweg kann schon befahren werden) --- #: next_check_id: WEDDINGADVANCEDLABS-2025 --- #: osm_watch: note 3417116 11 --- #: XXX Radweg wird neu asphaltiert --- #: last_checked: 2025-09-24
 #: historical_note: früher (bis 2025): alte Gehwegplatten
-neu asphaltiert	RW1; 6996,15319 6833,15215
+neu asphaltiert	RW1; 6989,15323 6833,15215
 abschnittsweise neu asphaltiert	RW1; 6833,15215 6715,15152
 #: XXX Bauarbeiten, hier wird auch asphaltiert
-#: osm_watch: note 5275733 3
-#: last_checked: 2026-09-19
+#: osm_watch: note 5275733 4
+#: last_checked: 2026-10-21
 alte Gehwegplatten	RW1; 6715,15152 6626,15104
 alte Gehwegplatten	RW1; 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
 Verbundsteinpflaster	RW1; 6334,14756 6445,14893 6504,14969 6528,15000 6561,15041 6626,15104
-alte Gehwegplatten	RW1; 6626,15104 6715,15152 6833,15215 6996,15319 7138,15437 7277,15586
+alte Gehwegplatten	RW1; 6626,15104 6715,15152 6833,15215 6989,15323 7132,15445 7272,15582
 asphaltiert	RW1;RW1 6334,14756 6288,14661
 Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 4228,19024 4144,18896 4070,18695
 Radspur hinter parkenden Autos, wenig Platz zu parkenden Autos	RW1; 4070,18695 4009,18322 3970,18126 3946,18003
@@ -6344,9 +6346,10 @@ Verbundsteinpflasterradweg	RW1; 17791,14639 17768,14686 17745,14734 17693,14840 
 Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15588 17405,15454 17424,15400 17432,15378 17609,15006 17638,14945
 #: next_check_id: WEISSETAUBE-2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-wei%C3%9Fe-taube.161/page-3#post-26792
-#: source_id: planb2026:13.51369864,52.5358353,01.05.2026, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (bis 31.10.2026) (bis 31.03.2027)
+#: source_id: planb2026:13.51369864,52.5358353,01.05.2026, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (bis 31.10.2026) (bis 31.03.2027) (vorfristig inaktiv)
+#: source_id: planb2026:13.51369864,52.5358353,01.05.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.03.2027)
 #: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
-#: XXX: alter Eintrag: Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734 17768,14686 17791,14639 17824,14572
+# ACTIVATE_LATER --- Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734 17768,14686 17791,14639 17824,14572
 #: last_checked: 2026-09-15 (luftbildsuche)
 #: check_frequency: 60d
 #: next_check: 2027-03-31 (planb)
@@ -6497,7 +6500,7 @@ asphaltiert	RW1; 17169,11677 17020,11748
 	RW6;RW6 2953,11830 2956,11790
 	RW6;RW6 2795,12480 2817,12334 2658,12312
 	RW6;RW6 7441,15909 7316,16024 7279,16057 7158,16167 7051,16264
-	RW6;RW6 7061,15852 7177,15984 7279,16057 7294,16068 7333,16072 7474,16086
+	RW6;RW6 7061,15852 7181,15987 7279,16057 7294,16068 7333,16072 7474,16086
 #: note: Sömmeringstr., Wintersteinstr., Richard-Wagner-Str. Richtung Süden (Opernroute Nord)
 Grün/Rotbeschichtung	RW4; 3711,13210 3711,13098 3714,12949 3716,12925
 Grünbeschichtung, teilweise mit niedrigen Pollern	RW4; 3716,12925 3734,12715

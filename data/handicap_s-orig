@@ -11,6 +11,15 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
+#: source_id: bvg2024:240#HIM_FREETEXT_366164
+#: last_checked: 2026-10-21
+#: check_frequency: 21d
+#: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
+#: valid: -20261221
+# REMOVED (Einbahnstraße, aber extra Radspur Richtung Westen) --- Rüdersdorfer Str.: wird es hier Bauarbeiten mit Sperrung geben?	?; 12891,12008 12822,12067
+Straße der Pariser Kommune: Radverkehrsführung auf dem Hochbord, eng und Umwege	q2::inwork; 12822,12067 12833,12154
+# 
+#: next_check_id: STRDPARISERKOMMUNE-2026
 #: last_checked: 2026-10-18
 #: check_frequency: 14d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
@@ -118,7 +127,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (bis 20.11.2026)
 #: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026) (bis 20.11.2026)
 #: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026) (bis 20.11.2026)
-#: last_checked: 2026-10-20 vvv
+#: last_checked: 2026-10-21 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
 Singerstr.: Sperrung an der Einmündung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
@@ -189,12 +198,12 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13161,11795 13066,11854# 
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
 # 
-#: source_id: planb2026:13.44849499,52.5121092,12.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (vorfristig inaktiv) (bis 20.10.2026)
+#: source_id: planb2026:13.44849499,52.5121092,12.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (vorfristig inaktiv) (bis 20.10.2026) (bis 30.10.2026)
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026) (bis 30.10.2026)
 #: also_indoor: traffic (ex-G,ex-T,H,ex-W)
-#: note: manchmal (außerhalb der Arbeitszeiten? am Wochenende) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45)
-#: last_checked: 2026-10-20 vvv
-#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung) vvv
+#: note: manchmal (außerhalb der Arbeitszeiten? am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45)
+#: last_checked: 2026-10-21 vvv
+#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung + planb) vvv
 #: valid: 20261012-20261030 vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
 Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -453,20 +462,20 @@ Arndtstr. (Adlershof): Bauarbeiten der Wasserbetriebe, Sperrung der Fahrbahn	q4:
 # 
 #: XXX Wie lange bleibt der Container hier? Hat es was mit den Bauarbeiten an der TFH zu tun?
 #: osm_watch: way id="998905878" version="3"
-#: last_checked: 2026-07-08
+#: last_checked: 2026-10-21
 #: check_frequency: 120d
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 # 
-#: next_check_id: WEDDINGADVANCEDLABS-2025
-#: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
-#: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
-#: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
-#: by: https://www.entwicklungsstadt.de/forschung-lehre-zukunft-bht-eroeffnet-laborneubau-wal-in-wedding/
-# REMOVED --- #: osm_watch: way id="885130938" version="7"
-#: last_checked: 2026-09-11
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2024-10-01
-(Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
+# REMOVED (noch nicht ganz fertig, aber Engstelle ist weg) ---#: next_check_id: WEDDINGADVANCEDLABS-2025
+# REMOVED ---#: XXX laut osm opening_date=2024-10-01, "Wedding Advanced Laboratories"
+# REMOVED ---#: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=761049#post761049
+# REMOVED ---#: by: https://entwicklungsstadt.de/neues-laborgebaeude-wal-der-bht-in-wedding-kurz-vor-fertigstellung/ (Bezug ab ab August 2025)
+# REMOVED ---#: by: https://www.entwicklungsstadt.de/forschung-lehre-zukunft-bht-eroeffnet-laborneubau-wal-in-wedding/
+# REMOVED ---# REMOVED --- #: osm_watch: way id="885130938" version="7"
+# REMOVED ---#: last_checked: 2026-09-11
+# REMOVED ---#: check_frequency: 30d
+# REMOVED ---# REMOVED --- #: next_check: 2024-10-01
+# REMOVED ---(Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 # 
 # REMOVED (bestätigt) --- #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20180406/ --- #: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html --- #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72 --- #: source_id: 2147342637 --- #: also_indoor: traffic (G) --- #: last_checked: 2018-12-28 --- #: next_check: 2019-02-28 --- #: valid: -20190228 --- Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Februar 2019	q2::inwork 7368,14573 7314,14599 7167,14666
 # 
@@ -501,7 +510,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-10-12
+#: last_checked: 2026-10-21
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -1079,7 +1088,7 @@ Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,1459
 #: osm_watch: way id="1392961223" version="7"
 #: osm_watch: note 5390781 1
 #: also_indoor: traffic (T,ex-G[viel zu kurz?],re-W,re-H)
-#: last_checked: 2026-09-19
+#: last_checked: 2026-10-21
 #: check_frequency: 45d
 #: next_check: 2026-11-13 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-11-30 (pardok)
@@ -1432,7 +1441,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-10-18
+#: last_checked: 2026-10-21
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig oder unbefestigte Verbindung	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -3247,7 +3256,8 @@ Zum kleinen Pfuhl: Fußgänger	q3 12162,1651 12207,1704
 (Katzengrabensteg - Bellevuepark): Fußgänger	q1 22581,4932 22632,4958 22726,5328
 Katzengrabensteg: Fußgänger	q1 22581,4932 22484,4868 22433,4887 22439,4838
 Samoastr.: Fußgänger	q1 6886,15156 6833,15215
-Nazarethkirchstr.: einige Bodenschwellen	q0- 7543,16016 7441,15909 7354,15817 7198,15656
+(Lütticher Str. - Luxemburger Str. (über das Gelände der Beuth-Hochschule)): Hochschulgelände, einige Fußgänger	q1 6736,15328 6748,15313 6833,15215
+Nazarethkirchstr.: einige Bodenschwellen	q0- 7543,16016 7441,15909 7358,15822 7198,15647
 (Landsberger Allee - Treffurter Str.): Fußgänger	q2 18057,14549 18119,14599
 #: XXX_prog BS auf der östlichen Seite, auf der westlichen nur, wenn man von Norden aus der Storkower kommt
 #: note: früher "q2"
@@ -3261,7 +3271,7 @@ Rolandstr.: Fußgänger	q1 11380,19783 11229,19706 11134,19655
 Kongostr.: Fußgänger, Radfahren offiziell nicht erlaubt	q2 6244,16096 6202,16041 6119,15965
 Sambesistr.: enge Straße	q1 5968,15914 5787,15741
 Ugandastr.: enge Straße	q1 6071,15768 5906,15623
-Elise-und-Otto-Hampel-Weg: Fußgänger	q2 7012,15571 7129,15686 7115,15702 7129,15717
+Elise-und-Otto-Hampel-Weg: Fußgänger	q2 7012,15571 7129,15686 7115,15702 7125,15712
 Litfaß-Platz: Fußgängerzone, Radfahren erlaubt	q3 10347,12881 10312,12982
 (Finkenweg - Mariendorfer Damm): Fußgänger	q1 9360,4996 9239,4980
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/55re.pdf/file?y=2011
@@ -3823,9 +3833,10 @@ Tigerfinkweg: Bordstein	q3 12963,19971 12952,19947
 (Weg im Acker-Park): Radfahren verboten, Bordstein an der Bergstr.	q4 9873,13872 9816,13857 9810,13866 9741,13850
 # 
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang vvv
-Park auf dem Nordbahnhof: Fußgänger	q1 9224,14169 9147,14151 9181,14186 9175,14193 9119,14255 8913,14485 8839,14635 8848,14638 8938,14521 8953,14528
+#: note: kurios: das Grünanlagenschild bei der Einfahrt auf die Rampe von der Südseite hat ein Zusatzschild mit diesem Text, aber ein weiteres Zusatzschild mit einem Radfahren-verboten-Symbol
+Park auf dem Nordbahnhof: Fußgänger	q1 9224,14169 9147,14151 9181,14186 9175,14193 9119,14255 8997,14390 8917,14487 8906,14500 8839,14635 8848,14638 8938,14521 8953,14528
 Park auf dem Nordbahnhof: Fußgänger	q1 9147,14151 9070,14058
-Park auf dem Nordbahnhof: Fußgänger	q1 8913,14485 8868,14442 8825,14401
+Park auf dem Nordbahnhof: Fußgänger	q1 8917,14487 8868,14442 8825,14401
 Park auf dem Nordbahnhof: Fußgänger	q1 9175,14193 9144,14169 9081,14232 8868,14442
 Park auf dem Nordbahnhof: Fußgänger	q1 9119,14255 9081,14232 8992,14176
 #: note ^^^

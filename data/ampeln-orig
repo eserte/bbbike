@@ -85,8 +85,8 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026) (bis 21.12.2026)
-#: last_checked: 2026-10-20
-#: check_frequency: 14d
+#: last_checked: 2026-10-21
+#: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
 #: valid: -20261221
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
@@ -153,7 +153,7 @@ Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 #: source_id: planb2026:13.47959962,52.50191162,06.07.2026, ("Gegenverkehrsanlage (LZA)", bis 16.12.2026)
 #: by: https://fahrinfo.vbb.de/him-uploads/1783411426440_Kartenausschnitt_N_ldnerplatz.jpg
 #: note: Länge der Gegenverkehrsregelung: 150m
-#: last_checked: 2026-10-17
+#: last_checked: 2026-10-21
 #: next_check: 2026-12-16 (VIZ-Verkehrsmeldung, planb)
 #: valid: -20261216
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
@@ -182,7 +182,7 @@ Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,1858
 #: next_check_id: WOLLANK-2024
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7373 (Antrag auf Verstetigung)
 #: source_id: planb2026:13.38387014,52.57273303,15.06.2026, ("Gegenverkehrsanlage (LZA)", bis 04.09.2026) (vorfristig inaktiv) (bis 23.10.2026)
-#: last_checked: 2026-08-27 (mapillary)
+#: last_checked: 2026-10-19 (mapillary)
 #: next_check: 2026-10-23 (planb)
 # REMOVED --- #: next_check: 2026-12-31
 Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
@@ -203,6 +203,8 @@ Siemensstr./Borstellstr.	X::inwork 6219,4336
 #: next_check_id: GNEISENAU-2026
 #: by: https://www.morgenpost.de/berlin/article411773337/gneisenaustrasse-grossbaustelle-startet-mit-einem-jahr-verzoegerung.html (sechs Bauphasen bis voraussichtlich 2028/2029)
 #: by: https://www.entwicklungsstadt.de/kreuzberg-gneisenaustrasse-u-bahn-sanierung-startet/
+#: by: https://www.bvg.de/de/unternehmen/herzensprojekte/u-gneisenaustrasse
+#: by: https://www.nbb-netzgesellschaft.de/presse/pressemitteilungen/drei-fuer-zukunftssichere-technik-unter-der-gneisenaustrass/
 #: source_id: LMS-BR:405089/72 viz2021:13.40555,52.4895,17.04.2026,10:00 (bis 31.12.2026) (mittlerweile bis Mehringdamm)
 #: source_id: LMS-BR:425973/72 viz2021:13.39854,52.49281, (Sperrung der Schleichermacherstr., bis 31.12.2026)
 #: note: eigentlich knapp östlich der Kreuzung; baustellenbedingt muss auch der Radverkehr im Zuge der Schleiermacherstr. die Ampel benutzen
@@ -215,7 +217,7 @@ Gneisenaustr./Schleiermacherstr.: provisorische Fußgängerampel	F::inwork 10032,9
 #: osm_watch: node id="13704066872" version="1"
 #: osm_watch: node id="13704066873" version="1"
 #: note: manchmal bekommt man zügig nach Betätigen der Anforderung grün (gesehen: 2026-04-15 Wed 10:20) (mit Wartzezeit: 2026-08-12 Wed 10:50)
-#: last_checked: 2026-08-26
+#: last_checked: 2026-10-21
 #: check_frequency: 90d
 #: next_check: 2028-03-03
 Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
@@ -681,13 +683,14 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.471417,52.507338,11.06.2025,07:00 (bis 31.03.2027) (inaktiv)
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
+#: source_id: planb2026:13.47083207,52.50670538,11.06.2025, ("Sicherung gemäß Vz.-plan", bis 31.03.2027)
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-10-07
+#: last_checked: 2026-10-21
 #: check_frequency: 120d
-#: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2027-03-31 (VIZ-Verkehrsmeldung + planb)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 # REMOVED --- #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026 --- #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot --- #: last_checked: 2026-04-03 --- #: check_frequency: 10d --- #: check_frequency: 120d --- #: next_check: 2026-03-31 (Halteverbotsschilder) --- Gürtelstr.	F::inwork 15153,11691
@@ -1662,7 +1665,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7368,14573
 	X 7180,14419
 	X 7123,14367
-	X 7277,15586
+	X 7272,15582
 	X 6626,15104
 	X 6781,16026
 	X 7681,16769
@@ -2163,7 +2166,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 7745,15160
 	X 7464,15409
 	X 7393,15476
-	X 7024,15810
+	X 7021,15807
 	X 6659,16133
 	X 6098,16630
 	X 5772,16919
@@ -2854,7 +2857,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog: nicht relevant für rechtsabbiegende Radfahrer in der Fahrtrichtung Nordwest - Südwest
 	X 6555,15827
 	X 6422,15708
-	X 7436,15746
+	X 7430,15753
 	X 7622,15946
 	X 8206,17594
 	X 8759,16684
@@ -2953,8 +2956,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6288,14661
 	X 6281,14630
 #: XXX_prog ^^^
-	X 7138,15437
-	X 6996,15319
+	X 7132,15445
+	X 6989,15323
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
 	X 8622,13696
 	X 8572,13671
