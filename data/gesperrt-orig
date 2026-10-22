@@ -1068,7 +1068,7 @@ Lindenstr. (Straßenbahntrasse)	1s:q3::igndisp 21605,5687 21623,5661 21706,5541 2
 #: source_id: viz2021:13.566839,52.455334,11.03.2024,21:00 (nur Kfz-Verkehr, bis 12.03.2024) (inaktiv)
 #: source_id: LMS-BR:263717/72 viz2021:13.56657,52.45535, (bis 31.12.2027)
 #: osm_watch: way id="428260957" version="8"
-#: last_checked: 2026-09-17 vvv
+#: last_checked: 2026-10-20 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung) vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -4222,7 +4222,7 @@ Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
 # 
 #: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: note: mit festen Zäunen gesperrt
-#: last_checked: 2026-10-20
+#: last_checked: 2026-10-22
 #: check_frequency: 90d
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
 # 
@@ -4339,11 +4339,12 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119 22860,-5130
 # 
 #: source_id: LMS-BR:410555/72 viz2021:13.37994,52.52093, (bis 21.12.2028)
+#: source_id: planb2026:13.37979908,52.52088621,03.12.2025, ("Vollsperrung beider Fahrbahnen", bis 21.12.2028)
 #: osm_watch: note 2514010 15
 #: XXX Es gibt zwar eine offizielle Umleitungsstrecke auch für Radfahrer zur Margarete-Steffin-Str., aber diese führt über eine Wiese (!)
 #: last_checked: 2026-10-06
 #: check_frequency: 120d
-#: next_check: 2028-12-21
+#: next_check: 2028-12-21 (VIZ-Verkehrsmeldung + planb)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12780
 # 
 #: next_check_id: URBANTECHREPUBLIC-2022
@@ -4832,7 +4833,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="4612427" version="23"
 #: source_id: planb2026:13.41545231,52.51320684,25.03.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2027)
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-10-21
+#: last_checked: 2026-10-22
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2027-06-30 (entwicklungsstadt)
 #: next_check: 2027-12-31 (planb)

@@ -2396,7 +2396,7 @@ Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,116
 	RW3; 10133,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
 #: next_check_id: GERTRAUDENBRUECKE-2025
-#: last_checked: 2026-10-19 vvv
+#: last_checked: 2026-10-22 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
 #: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
@@ -2478,7 +2478,7 @@ Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
-#: last_checked: 2026-10-19
+#: last_checked: 2026-10-22
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
@@ -4603,7 +4603,7 @@ Gehweg für Radfahrer frei	RW1; 21365,5832 21303,5826
 # REMOVED (hier nicht, siehe https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1124786.php ) --- Gehweg für Radfahrer frei	RW1; 21569,5730 21600,5694 21605,5687 21623,5661 21706,5541 21789,5427
 Gehweg für Radfahrer frei	RW1; 21789,5427 21706,5541 21623,5661
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: last_checked: 2026-09-17
+#: last_checked: 2026-10-20 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
 #: XXX nach den Bauarbeiten wieder aktivieren: Gehweg für Radfahrer frei	RW1; 21623,5661 21605,5687 21600,5694 21569,5730 21522,5771
@@ -6350,7 +6350,7 @@ Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15
 #: source_id: planb2026:13.51369864,52.5358353,01.05.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.03.2027)
 #: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
 # ACTIVATE_LATER --- Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734 17768,14686 17791,14639 17824,14572
-#: last_checked: 2026-09-15 (luftbildsuche)
+#: last_checked: 2026-10-20 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2027-03-31 (planb)
 	RW0; 17638,14945 17684,14858 17693,14840 17745,14734 17768,14686 17791,14639 17824,14572
