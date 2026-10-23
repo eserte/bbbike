@@ -293,7 +293,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8217,11455 8145,11438 8
 # REMOVED (existiert nicht mehr) --- #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
 #: by: srt
 #: XXX: temporäre Radspur
-#: osm_watch: way id="305483806" version="13"
+#: osm_watch: way id="305483806" version="14"
 #: osm_watch: way id="25042039" version="39"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
 #: last_checked: 2026-09-07
@@ -1032,7 +1032,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-10-17
+#: last_checked: 2026-10-23
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3404,6 +3404,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: by: https://www.entwicklungsstadt.de/friedrichshain-the-fizz-am-markgrafendamm-eroeffnet-im-fruehjahr-2026/
 #: by: https://www.entwicklungsstadt.de/the-fizz-in-friedrichshain-neubau-soll-noch-im-sommer-eroeffnen/
 #: by: https://www.entwicklungsstadt.de/bis-zu-1-675-euro-miete-was-steckt-hinter-dem-the-fizz-am-ostkreuz/
+#: by: https://www.entwicklungsstadt.de/the-fizz-in-friedrichshain-eroeffnet-350-studentenapartments-am-markgrafendamm/
 #: source_id: viz2021:13.46568,52.499,22.11.2021,12:01 (bis 28.02.2023) (inaktiv)
 #: source_id: viz2021:13.465194,52.498114,20.11.2021,11:55 (bis 31.03.2023) (bis 31.5.2023) (bis 31.7.2023) (bis 31.8.2023) (bis 30.09.2023) (inaktiv) (bis 15.12.2023) (bis 30.06.2024) (vorfristig inaktiv)
 #: source_id[inactive]: bvg2021:m43#BVG315176_0
@@ -3459,7 +3460,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-10-21
+#: last_checked: 2026-10-23
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3470,7 +3471,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-10-21
+#: last_checked: 2026-10-23
 #: next_check: 2027-03-31
 #: valid: !20250611-20270331
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -4501,7 +4502,9 @@ Schild "Schritt fahren"	RW6; 9901,18522 10006,18502 10013,18545 9994,18595 9916,
 #: by: ^^^
 #: by: René (refan):
 #: confirmed_by: srt
-	RW2; 17886,5587 17808,5669 17782,5698 17728,5756
+	RW2; 17886,5587 17808,5669 17782,5698
+#: historical_note: bis zu den Bauarbeiten Okt 2026: RW2;
+	RW5; 17782,5698 17728,5756
 Busspur ist immer gültig	RW5; 17728,5756 17782,5698 17808,5669
 #: historical_note: früher auch mit Leitboys, wurden im September 2023 wieder abgebaut
 #: note: für Rechtsabbieger in den Sterndamm gibt es einen separaten Radweg, Verbundsteinpflaster und Asphalt
@@ -8619,7 +8622,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: by: https://www.entwicklungsstadt.de/friedrichshain-bueroneubau-hainwerk-vor-fertigstellung-voll-vermietet/
 #: by: https://www.entwicklungsstadt.de/hainwerk-in-friedrichshain-erreicht-volle-hoehe-erste-fassade-sichtbar/
 #: osm_watch: way id="278197510" version="11"
-#: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", bis 22.10.2026)
+#: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", bis 22.10.2026) (inaktiv)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
 #: last_checked: 2026-10-14
@@ -9221,6 +9224,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-zeitung.de/article/kantstrasse-radweg-bleibt-waehrend-der-bauarbeiten-erhalten-10461101 (Status Quo bis Frühjahr 2027)
 #: by: https://www.entwicklungsstadt.de/radweg-oder-busspur-in-der-kantstrasse-gericht-erhoeht-druck-im-streit/
 #: by: https://www.tagesspiegel.de/berlin/rein-politisch-motiviert-deutsche-umwelthilfe-hat-interne-akten-zum-radweg-an-der-kantstrasse-erstritten-16139475.html
+#: by: https://www.tagesspiegel.de/berlin/radweg-streit-in-der-berliner-kantstrasse-aktivisten-ubermalen-lieferzonen-markierungen-16191706.html
 #: source_id: LMS-BR:379465/72 viz2021:13.30931,52.50658,11.08.2025,07:00 viz2021:13.30931,52.50658, (Bauarbeiten Höhe Krumme Str., bis 28.11.2025) (inaktiv)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen

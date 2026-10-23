@@ -12592,7 +12592,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 #: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026)
 #: begin_check: 2026-10-30
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-10-22
+#: last_checked: 2026-10-23
 #: check_frequency: 45d
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
@@ -14679,6 +14679,8 @@ Am Dorfanger - Parkanlage: Parkweg	Q1 4799,20517 4790,20493
 Alandstr.: Asphalt	Q0 -384,15782 -504,15869 -552,15903 -809,16106
 Rotfederstr.: Asphalt	Q0 -809,16106 -866,16042
 (Rotfederstr. - Buswendeschleife): Asphalt	Q0 -866,16042 -917,15981 -943,15948
+#: by: https://www.entwicklungsstadt.de/insel-gartenfeld-ein-rundgang-zwischen-neubauten-abriss-und-industriegeschichte/#
+Rotfederstr.: Asphalt	Q0 -337,15846 -384,15782
 Moderlieschenstr.: alter Asphalt	Q0- -384,15782 -444,15710
 Moderlieschenstr.: Asphalt	Q0 -444,15710 -607,15832 -732,15940
 #: note: Platten mit Metall eingefasst
@@ -21579,6 +21581,9 @@ Pfahlerstr.: guter Asphalt	Q0 5541,18435 5423,18438 5301,18447
 # 
 #: by: Joachim Kotowski: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
+#: next_check_id: FUCHSSTEINERWEG-2026
+#: XXX bekommt bis Oktober 2027 eine neue Fahrbahn ("wasserdurchlässiges Drainpflaster")
+#: next_check: 2026-12-31 (Pressemitteilung: nächster Bauabschnitt, siehe temp_blockings-Eintrag)
 Fuchssteinerweg: Asphalt mit starken Schäden	Q2 2531,25368 2667,25367 2728,25386 2749,25418 2794,25514
 #: corrected_by: Wolfhard Schleese (Kopfsteinpflaster -> Kleinpflastersteine)
 #: confirmed_by: srt (zumindest "Kleinpflastersteine")

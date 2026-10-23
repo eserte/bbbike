@@ -40927,7 +40927,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m4pc2hy2222m (nur Kfz-Verkehr)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihxae6yc7tkdnwkpk3p6kcldi2cou2vfz2rxfea5l2corukhfwnxm@jpeg (Einm¸ndungsbereich Virchowstr. ist auch betroffen; Sperrung der Fahrbahn bis Tankstelle; Sackgassenschild mit Radfahrer frei, allerdings keine weitere Ausschilderung f¸r Radfahrer)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1717396.php (Abschluss der Bauarbeiten in der Margarete-Sommer-Str.)
-#: source_id: LMS-BR:388768/72 viz2021:13.43856,52.52885,03.11.2025,06:00 (bis 23.10.2026)
+#: source_id: LMS-BR:388768/72 viz2021:13.43856,52.52885,03.11.2025,06:00 (bis 23.10.2026) (versp‰tet inaktiv)
 #: source_id: planb2026:13.4422772,52.53109634,03.11.2025,06:00 ("Vollsperrung beider Fahrbahnen", Fl‰che zu klein, bis 23.10.2026)
 # REMOVED (Bauarbeiten beendet) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-24 ---	q3::inwork 12707,13706 12640,13814
 #: note: neue Sperrung von 2025
@@ -42039,7 +42039,7 @@ EOF
 #: source_id: bvg2024:194#HIM_FREETEXT_369023 (Umleitung ab 20.10.2026)
 #: source_id: bvg2024:240#HIM_FREETEXT_369022 (Umleitung ab 20.10.2026)
 # REMOVED (alter Eintrag) --- #: note: eigentlich ist schon ab Schlichtallee die Einfahrt nur f¸r den Linienverkehr erlaubt --- #: XXX nach den Bauarbeiten vermutlich wieder bessere Qualit‰t --- #: last_checked: 2023-08-07 vvv --- #: next_check: 2023-08-11 vvvv --- L¸ckstr.	q4::inwork; 16153,10818 16300,10753 16313,10747 16468,10695 --- Giselastr.	q4::inwork; 16227,10991 16192,10907 16153,10818 --- #: next_check ^^^ --- #: last_checked ^^^
-#: source_id: planb2026:13.49478651,52.50057663,20.10.2026, ("Sperrung einer Fahrtrichtung", L¸ckstr. zwischen Wˆnnichstr. und Weitlingstr., bis 30.10.2026)
+#: source_id: planb2026:13.49478651,52.50057663,20.10.2026, ("Sperrung einer Fahrtrichtung", L¸ckstr. zwischen Wˆnnichstr. und Weitlingstr., bis 30.10.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:426020/72 viz2021:13.49293,52.50097, (zwischen Weitlingstr. und Wˆnnichstr., bis 30.11.2026) (bis 30.10.2026)
 #: source_id: vizapi2026:1118/2026 (bis 30.10.2026)
 #: last_checked: 2026-10-21 vvv
@@ -44881,7 +44881,9 @@ EOF
 # REMOVED (alter Eintrag) --- #: note: Umleitungsstrecke f¸r Radfahrer via Corinthstr., Bˆdikerstr., Persiusstr. existiert
 #: source_id: viz2021:13.464968,52.497948,14.11.2024,06:00 (bis 15.11.2024) (inaktiv)
 #: source_id: viz2021:13.46469,52.49743,28.07.2025,05:00 (bis 01.08.2025) (inaktiv)
+#: source_id: planb2026:13.46471483,52.49743289,26.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 27.10.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luys2l4pgs2r
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261023 (Sperrung, 26.10.2026 bis 27.10.2026, f¸r Radverkehr frei)
 #: note: f¸r Nov 2024 bleibt unklar, ob Radfahrer betroffen waren
 #: note: f¸r Jul/Aug 2025 wurde f¸r Radfahrer eine Umleitungsstrecke via Persiusstr. - Bˆdikerstr. - Corinthstr. ausgeschildert, f¸r den MIV weitl‰ufig ¸ber Modersohnstr.
 #: note: Jul/Aug 2025: offiziell f¸r Radfahrer gesperrt (am s¸dlichen Ende explizites Radfahren-verboten-Schild an der Corinthstr., am nˆrdlichen Ende Verbot-f¸r-alle-Schild an der Persiusstr., praktisch konnte man durchfahren und wurde auch von den Streckenposten nicht daran gehindert)
@@ -45849,7 +45851,8 @@ EOF
 #      text  => 'Wolziger Zeile: Unterf¸hrung wegen Bauarbeiten voraussichtlich bis Ende Mai 2026 gesperrt, evtl. werden die Bauarbeiten verl‰ngert',
 #      text  => 'Wolziger Zeile: Unterf¸hrung weitgehend fertig, aber noch nicht offiziell freigegeben',
 #      text  => 'Wolziger Zeile: Unterf¸hrung weitgehend fertig, aber nur teilweise f¸r Fuﬂg‰nger freigegeben',
-       text  => 'Wolziger Zeile: Unterf¸hrung weitgehend fertig, aber nur teilweise f¸r Fuﬂg‰nger freigegeben, vollst‰ndige Erˆffnung voraussichtlich im Oktober 2026',
+#      text  => 'Wolziger Zeile: Unterf¸hrung weitgehend fertig, aber nur teilweise f¸r Fuﬂg‰nger freigegeben, vollst‰ndige Erˆffnung voraussichtlich im Oktober 2026',
+       text  => 'Wolziger Zeile: Treppe gesperrt, voraussichtlich bis Herbst 2026',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLZIGERZEILE-2024
@@ -45872,7 +45875,7 @@ EOF
 #: by: https://www.berliner-zeitung.de/mensch-metropole/start-der-dresdner-bahn-in-berlin-steht-bevor-bald-faehrt-erstmals-ein-ice-durch-lichtenrade-li.10004430 (vor Weihnachten 2025 werden die Treppen erˆffnet, im April 2026 die Rampen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1628173.php
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26162.pdf (Erˆffnung im Juli 2026?)
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20260909 (Erˆffnung voraussichtlich im Oktober 2026)
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20260909 (Erˆffnung voraussichtlich im Oktober 2026) (Rampen sind seit dem 21.10.2026 offen, Treppe noch gesperrt, bis Herbst 2026)
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/zeitplan?date=20260909
 #: source_id: viz2021:13.39948,52.38249,03.02.2025,10:46 (bis 30.06.2025) (inaktiv)
 #: source_id: viz2021:13.399297,52.382412,01.07.2024,07:00 (bis 30.06.2025) (inaktiv)
@@ -45886,7 +45889,7 @@ EOF
 #: osm_watch: way id="1168938182" version="14"
 # REMOVED --- #: osm_watch: way id="837927791" version="14"
 #: osm_watch: way id="1168938183" version="11"
-#: osm_watch: note 5094173 5
+#: osm_watch: note 5094173 6
 #: osm_watch[closed]: note 4283578 4
 #: also_indoor: search Wolziger_Zeile
 #: add_fragezeichen: Wurde die Unterf¸hrung mittlerweile vollst‰ndig freigegeben? vvv
@@ -45894,10 +45897,10 @@ EOF
 # REMOVED --- #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-08-31 (planb) vvv
 # REMOVED --- #: next_check: 2026-07-31 (pardok) vvv
-#: next_check: 2026-10-30 (DB website: Erˆffnung voraussichtlich im Oktober 2026 + planb) vvv
-Wolziger Zeile: Unterf¸hrung und Rampe nur f¸r Fuﬂg‰nger frei	q4::inwork 10307,-2633 10391,-2624
-Wolziger Zeile: Rampe gesperrt	2::inwork 10391,-2624 10373,-2575 10394,-2567
-# REMOVED (freigegeben) --- Wolziger Zeile: Treppe	2::inwork 10391,-2624 10400,-2629 10420,-2644
+#: next_check: 2026-11-20 (DB website: Erˆffnung voraussichtlich im Herbst 2026) vvv
+# REMOVED (freigegeben) --- Wolziger Zeile: Unterf¸hrung und Rampe nur f¸r Fuﬂg‰nger frei	q4::inwork 10307,-2633 10391,-2624
+# REMOVED (freigegeben) --- Wolziger Zeile: Rampe gesperrt	2::inwork 10391,-2624 10373,-2575 10394,-2567
+Wolziger Zeile: Treppe	2::inwork 10391,-2624 10400,-2629 10420,-2644
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
@@ -49294,10 +49297,13 @@ EOF
        text  => 'Heesestr.: Sperrung der Fahrbahn, evtl. ist der Radverkehr betroffen, voraussichtlich bis Anfang Dezember 2026',
        type  => 'handicap',
        data  => <<EOF,
-# REMOVED (alte Sperrung) --- #: also_indoor: traffic (re-G[S¸dendstr+ex-Heesestr],ex-T[S¸dendstr],ex-W[S¸dendstr],A[Heesestr+S¸dendstr])
 #: also_indoor: traffic (no-G,T,no-W,no-H)
-#: source_id: planb2026:13.32579475,52.45558476,01.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 01.12.2026)
+#: source_id: planb2026:13.32579475,52.45558476,01.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 01.12.2026) (vorfristig inaktiv)
+#: last_checked: 2026-10-23 (traffic)
+#: check_frequency: 10d (traffic)
+#: next_check: 2026-12-01 (ex-planb)
 	q4::inwork 5183,5437 5274,5557 5276,5622
+# REMOVED (alte Sperrung) --- #: also_indoor: traffic (re-G[S¸dendstr+ex-Heesestr],ex-T[S¸dendstr],ex-W[S¸dendstr],A[Heesestr+S¸dendstr])
 # REMOVED (alte Sperrung) --- #: osm_watch: way id="1237862681" version="7"
 # REMOVED (alte Sperrung) --- #: osm_watch: way id="1237862680" version="3"
 # REMOVED (alte Sperrung) --- #: osm_watch: way id="1237862682" version="4"
@@ -49809,7 +49815,7 @@ EOF
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: LMS-BR:374539/72 viz2021:13.29402,52.48994, (Salzbrunner Str., bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: bvg2024:110#HIM_FREETEXT_284868 (zwischenzeitlich entfernt, 2x)
-#: source_id: planb2026:13.29413931,52.49034723,30.01.2026, ("Gegenverkehrsanlage (LZA)", bis 31.08.2026) (inaktiv) (bis 22.10.2026)
+#: source_id: planb2026:13.29413931,52.49034723,30.01.2026, ("Gegenverkehrsanlage (LZA)", bis 31.08.2026) (inaktiv) (bis 22.10.2026) (inaktiv)
 #: source_id: vizapi2026:332/2026 (bis 31.08.2026) (bis 09.09.2026) (bis 22.10.2026)
 #: source_id: LMS-BR:420436/72 viz2021:13.29383,52.49126,28.08.2026,00:00 (bis 09.09.2026) (bis 22.10.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
@@ -51821,21 +51827,23 @@ EOF
 #      text  => 'Hufelandstr./Bˆtzowstr.: Sanierungsarbeiten, Sperrung der Fahrbahn',
 #      text  => 'Hufelandstr.: Sanierungsarbeiten, Sperrung der Fahrbahn, ab 24. Juli 2026 bis Ende September 2026',
 #      text  => 'Hufelandstr.: mˆgliche Sperrung der Fahrbahn wegen Markierungsarbeiten, ab 24. Juli 2026 bis Ende September 2026 (Stand Mitte August 2026: nur Absperrungen am ˆstlichen und westlichen Ende)',
-       text  => 'Hufelandstr.: mˆgliche Teilsperrungen der Fahrbahn wegen Markierungsarbeiten, ab Anfang September 2026 bis Oktober 2026',
+#      text  => 'Hufelandstr.: mˆgliche Teilsperrungen der Fahrbahn wegen Markierungsarbeiten, ab Anfang September 2026 bis Oktober 2026',
+       text  => 'Hufelandstr.: mˆgliche Teilsperrungen der Fahrbahn wegen Markierungsarbeiten, ab Anfang September 2026 bis Anfang November 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: HUFELAND-2025
 #: source_id: viz2021:13.42956,52.533,13.10.2025,07:00 (bis 21.10.2025) (inaktiv)
 #: source_id: planb2026:13.43737859,52.52968831,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 10.09.2026) (bis 23.10.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.4372411,52.52966861,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 23.10.2026)
-#: source_id: LMS-BR:416895/72 viz2021:13.42956,52.533,24.07.2026,07:00 vizapi2026:731/2026 (bis 10.09.2026) (inaktiv) (bis 23.10.2026)
+#: source_id: LMS-BR:416895/72 viz2021:13.42956,52.533,24.07.2026,07:00 vizapi2026:731/2026 (bis 10.09.2026) (inaktiv) (bis 23.10.2026) (bis 06.11.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260723
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrejch5oai2e
 #: note: widerspr¸chliche Angaben: laut VIZ-Verkehrs¸bersicht ab 24.7.2026 und der Radverkehr ist auch betroffen, laut planb Start bereits am 23.7.2026, laut Pressemitteilung ab 29.7.2026 und es wird nur der Kfz-Verkehr erw‰hnt
 #: note: laut Tsp wurden die Absperrungen wieder abgebaut, weiter geht's Anfang September 2026
 # REMOVED (fertig) --- Hufelandstr.: Bau einer Fahrradstraﬂe, Fahrbahn gesperrt, schmale B¸rgersteige frei f¸r Radfahrer	q3::inwork 12077,14186 12228,14083 12361,13985
 #: last_checked: 2026-10-22
-#: check_frequency: 7d
+#: check_frequency: 10d
+#: next_check: 2026-11-06 (VIZ-Verkehrs¸bersicht)
 Hufelandstr.: Bau einer Fahrradstraﬂe, Fahrbahn gesperrt, schmale B¸rgersteige frei f¸r Radfahrer	q3::inwork 12361,13985 12478,13903 12582,13834 12578,13800
 # REMOVED (keine Beeintr‰chtigungen (mehr?)) ---  Bˆtzowstr.: Kreuzungsbereich vermutlich betroffen	q3::inwork 12280,13880 12361,13985 12423,14066
 # REMOVED --- #: last_checked: 2025-10-21 vvv
@@ -53897,7 +53905,7 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: source_id: 266400483 (bis 14.05.2026) (inaktiv)
-#: source_id: 266401296 (bis 23.10.2026)
+#: source_id: 266401296 (bis 23.10.2026) (inaktiv)
 	2::inwork 74990,18281 74976,18303 74959,18332
 EOF
      },
@@ -54409,12 +54417,11 @@ EOF
        data  => <<'EOF',
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G[later],T,ex-W[later],H[later])
-#: source_id: planb2026:13.33831777,52.60234858,23.03.2026, (versp‰tet eingef¸gt, "Vollsperrung beider Fahrbahnen", bis 28.08.2026) (bis 02.10.2026) (inaktiv)
+#: source_id: planb2026:13.33831777,52.60234858,23.03.2026, (versp‰tet eingef¸gt, "Vollsperrung beider Fahrbahnen", bis 28.08.2026) (bis 02.10.2026) (inaktiv) (bis 13.11.2026)
 #: source_id: vizapi2026:1065/2026 (sehr sp‰t angelegt, bis 13.11.2026)
 #: last_checked: 2026-10-10
 # REMOVED --- #: check_frequency: 30d (traffic)
-# REMOVED --- #: next_check: 2026-10-02 (planb)
-#: next_check: 2026-11-13 (vizapi2026)
+#: next_check: 2026-11-13 (vizapi2026 + planb)
 	q4::inwork 5552,21824 5665,21733
 EOF
      },
@@ -55124,7 +55131,7 @@ EOF
        text  => 'Karwendelstr.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 vizapi2026:722/2026 (bis 04.09.2026) (inaktiv) (bei vizapi2026 bis 23.10.2026)
+#: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 vizapi2026:722/2026 (bis 04.09.2026) (inaktiv) (bei vizapi2026 bis 23.10.2026) (bei vizapi2026 bis 27.10.2026)
 #: source_id: planb2026:13.30963347,52.43415371,01.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.09.2026) (inaktiv) (bis 23.10.2026)
 #: source_id: planb2026:13.31216617,52.43399261,08.09.2025, ("Sicherung gem‰ﬂ Vz.-plan", Teil der groﬂen Baustelle am Hindenburgdamm, bis 29.11.2026)
 #: source_id: LMS-BR:382708/72 vizapi2026:205/2025 (Karwendelstraﬂe ist vom Hindenburgdamm f¸r den Kfz-Verkehr abgeh‰ngt, Sackgasse, bis 29.11.2026)
@@ -56692,9 +56699,11 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1728526.php
 #: by: https://viz.berlin.de/aktuelle-meldungen/unverzugliche-sperrung-von-strassen-geh-und-radwegabschnitten-rund-um-den-bierpinsel-in-steglitz/
 #: by: https://www.entwicklungsstadt.de/sperrungen-an-der-schlossstrasse-in-steglitz-so-geht-es-jetzt-am-bierpinsel-weiter/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/weil-fassadenteile-absturzen-konnten-schutzkreis-um-den-steglitzer-bierpinsel-ausgeweitet--verkehr-massiv-gestort-16185978.html
+#: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/maroder-bierpinsel-in-der-berliner-schlossstrasse-sorgt-fur-verkehrs-wild-west-maximal-schlecht-geregelt-16188117.html
 #: source_id: planb2026:-
-#: source_id: bvg2024:282#HIM_FREETEXT_363348
-#: source_id: bvg2024:m48#HIM_FREETEXT_369411 (Umleitung) (mittlerweile nur kein Halt Kieler Straﬂe)
+#: source_id[inactive]: bvg2024:282#HIM_FREETEXT_363348
+#: source_id[inactive]: bvg2024:m48#HIM_FREETEXT_369411 (Umleitung) (mittlerweile nur kein Halt Kieler Straﬂe)
 #: source_id: vizapi2026:1124/2026 (Schildhornstr., Joachim-Tiburtius-Br¸cke, kein Endedatum)
 #: source_id: vizapi2026:1123/2026 (Schloﬂstr., kein Endedatum)
 #: source_id: LMS-BR:426177/72 viz2021:13.32841,52.46026, (Joachim-Tiburtius-Br¸cke, kein Endedatum)
@@ -56711,14 +56720,15 @@ Joachim-Tiburtius-Br¸cke: gesperrt (f¸r den Radverkehr irrelevant)	2::inwork 533
 EOF
      },
      { from  => 1792274400, # 2026-10-18 00:00
-       until => 1792792799, # 2026-10-23 23:59
+       until => 1792780071, # 1792792799, # 2026-10-23 23:59
        text  => 'Bucher Str.: Bauarbeiten zwischen Tˆpperweg und Schˆnerlinder Str., Sperrung, evtl. ist auch der Radverkehr betroffen, voraussichtlich vom 19. Oktober 2026 bis 23. Oktober 2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2026/pressemitteilung.1721853.php
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261016 (hier nur Kfz-Verkehr)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3my7cibff2q2o (hier nur Kfz-Verkehr)
-#: source_id: LMS-BR:425833/72 viz2021:13.43367,52.61242,19.10.2026,07:00 vizapi2026:1081/2026 (bis 23.10.2026)
+#: source_id: LMS-BR:425833/72 viz2021:13.43367,52.61242,19.10.2026,07:00 vizapi2026:1081/2026 (bis 23.10.2026) (inaktiv)
+#: source_id: planb2026:13.43366374,52.6123985,19.10.2026, ("Fahrstreifen-Reduzierung", bis 23.10.2026)
 	q4::inwork 12374,23152 12280,23116 12185,23021
 EOF
      },
@@ -57073,6 +57083,36 @@ EOF
 #: also_indoor: traffic (G[later],T,H,W[later])
 #: last_checked: 2026-10-20 (mapillary)
 	q4::inwork 12649,6833 12395,6785
+EOF
+     },
+     { from  => 1793746800, # 2026-11-04 00:00
+       until => undef,
+       text  => 'Wuhlewanderweg: Sanierung zwischen Hoppendorfer Str. und Am Bahndamm, Sperrung f¸r den Radverkehr, voraussichtlich vom 5. November 2026 bis Ende Januar 2027',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1730332.php (f¸r Radverkehr gesperrt, "f¸r Zufuﬂgehende ist die Nutzung eingeschr‰nkt mˆglich" -> deshalb q4 statt 2)
+#: XXX Nach den Bauarbeiten mˆglicherweise keine Asphaltsch‰den mehr -> pr¸fen und ggfs. qualitaet_s-orig anpassen!
+#: next_check: 2027-01-31 (BA-Pressemitteilung) vvv
+	q4::inwork 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252 21590,7211 21896,6937 21976,6848 22050,6619
+	q4::inwork 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414
+#: next_check ^^^
+EOF
+     },
+     { from  => 1793487600, # 2026-11-01 00:00
+       until => $isodate2epoch->("2026-12-31 23:59:59"),
+       text  => 'Fuchssteinerweg/Markgrafenstraﬂe: Erneuerung der Kreuzung, Sperrung, vom 2.11.2026 bis Dezember 2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: FUCHSSTEINERWEG-2026
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1730290.php
+#: by: https://www.entwicklungsstadt.de/fuchssteinerweg-in-frohnau-naechste-baustelle-dauert-bis-ende-2027/
+#: note: q4 -> q3, weil nur der Kreuzungsbereich betroffen ist
+#: XXX: 2. BA zwischen Markgrafenstraﬂe - Katzensteg M‰rz bis Juni 2027
+#: XXX: 3. BA bis Zeltinger Str. Juni bis Oktober 2027
+#: next_check: 2026-12-31 vvv
+	q3::inwork 2826,25577 2794,25514 2749,25418
+	q3::inwork 2867,25406 2794,25514 2697,25593
+#: next_check ^^^
 EOF
      },
     );

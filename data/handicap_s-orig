@@ -114,9 +114,9 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 1
 # 
 #: next_check_id: REVALER-2024
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
-#: osm_watch: way id="1072662716" version="36"
-#: osm_watch: way id="1072662717" version="40"
-#: last_checked: 2026-10-14
+#: osm_watch: way id="1072662716" version="37"
+#: osm_watch: way id="1072662717" version="41"
+#: last_checked: 2026-10-22 (osm)
 #: check_frequency: 90d
 # REMOVED (wird wohl verlängert) --- #: next_check: 2026-10-22 (planb)
 #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -502,11 +502,11 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 # 
 #: also_indoor: traffic (no-G,T[later],no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
-#: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026) (inaktiv)
-#: source_id: planb2026:13.38976332,52.5093633,26.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026)
+#: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026) (inaktiv) (bis 08.01.2027)
+#: source_id: planb2026:13.38976332,52.5093633,26.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (vorfristig inaktiv, siehe oben)
 #: last_checked: 2026-10-19
 #: check_frequency: 21d
-#: next_check: 2026-10-30 (planb)
+#: next_check: 2027-01-08 (planb)
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
@@ -1492,10 +1492,10 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig oder unbefestigte Verbindung	q3 152
 ### Marzahn ###
 # 
 #: source_id: planb2026:13.56952995,52.53995683,21.09.2026, ("Fahrstreifen-Reduzierung", bis 23.10.2026)
-#: source_id: LMS-BR:424013/72 vizapi2026:1009/2026 (bis 23.10.2026)
+#: source_id: LMS-BR:424013/72 vizapi2026:1009/2026 (bis 23.10.2026) (bis 06.11.2026)
 #: last_checked: 2026-10-07
-#: next_check: 2026-10-23
-#: valid: -20261023
+#: next_check: 2026-11-06 (VIZ-Verkehrsmeldung)
+#: valid: -20261106
 Bärensteinstr.: Sperrung der Fahrbahn vor dem Blumberger Damm	q3::inwork 21497,15227 21599,15213
 # 
 # REMOVED (bei allen Verkehrsdiensten entfernt) --- #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
@@ -4666,8 +4666,22 @@ Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11804,10
 (Schloßpark - Blankenburger Str.): für Radfahrer offiziell verboten, Bordstein, kurze Rampe	q4 10569,19395 10578,19417 10525,19592
 (Schnellerstr. - Uferstr.): Fußgänger, besonders zu Geschäftszeiten	q2 17628,5865 17678,5916
 (Schnellerstr. - Uferstr.): Parkplatzverkehr, besonders zu Geschäftszeiten	q1 17678,5916 17847,6089
+# 
 #: note: unklar: von Osten her ist Lieferverkehr frei, manchmal parken Autos vor dem Bürgeramt; von Westen sieht es wie ein Bürgersteig aus
+#: next_check_id: SCHOENEWEIDE-2026
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1730517.php (Rückbau Fußgängertunnel Schöneweide, ab 26.10.2026)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/tunnelbau/tunnel-schoeneweide/ (Bauzeit für den Rückbau: 2025 - 2027)
+#: by: https://www.entwicklungsstadt.de/bahnhofsumfeld-schoeneweide-naechste-baustelle-betrifft-den-fussgaengertunnel/
+#: by: https://viz.berlin.de/aktuelle-meldungen/ruckbau-fussgangertunnel-schoneweide-ab-26.10.2026/ (bis 3. Quartal 2027)
+#: by: https://viz.berlin.de/site/assets/files/2350/fussgangertunnel.png (temporäre Ampel an der alten Stelle)
+#: source_id: LMS-BR:425838/72 viz2021:13.50984,52.45636, vizapi2026:1101/2026 (bis 21.05.2027, bei vizapi2026 bis 26.10.2026)
+#: source_id: planb2026:13.51310176,52.4542095,19.10.2026, ("Sicherung gemäß Vz.-plan", bis 21.05.2027)
+#: next_check: 2026-10-26
+#: valid: 20261026-20270930
+Schnellerstr.: Baustelleneinrichtungsfläche, Fußgänger	q4::inwork 17728,5756 17807,5730
+#: valid: 20270930-
 Schnellerstr.: einige Fußgänger	q2 17728,5756 17807,5730
+# 
 an den Gewächshäusern: kurvig	q2 17659,12823 17638,12813 17637,12785
 #: note: unklar: am östlichen Ende ein Fußgänger-Schild ohne Zusatzzeichen, am westlichen Ende keine Ausschilderung (deshalb: q1 -> q2)
 Hampstedtstr.: einige Fußgänger	q2 749,2616 816,2658
