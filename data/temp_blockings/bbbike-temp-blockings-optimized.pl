@@ -6677,13 +6677,13 @@ M¸nsterlandstr.: Umleitungsstrecke	q4::inwork; 16575,11013 16702,10972
 # REMOVED --- #: osm_watch: way id="36892597" version="40" --- Rosenthaler Str.	q4::inwork 10341,13376 10340,13337 10321,13259 10313,13227
 #: note: offiziell gesperrt f¸r alle auﬂer Trams, Einsatzfahrzeuge, Baustellenfahrzeuge; kurz vor der Einm¸ndung ist die westliche Fahrbahnh‰lfte gesperrt
 #: osm_watch: way id="84960597" version="29"
-#: last_checked: 2026-10-09
+#: last_checked: 2026-10-21 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2026-12-21 (planb + VIZ-Verkehrsmeldung; wenn fertig -> alten Eintrag reaktivieren)
 # REMOVED --- #: next_check: 2027-05-31 (planb)
 # REMOVED (nach den Gleisbauarbeiten reaktivieren) --- Rosenthaler Str.	q4::inwork; 10313,13227 10270,13101
 #: note: eigentlich schon q4- wegen regem Fuﬂg‰ngerverkehr, z.B. langsame Touristen
-Rosenthaler Str.	q4::inwork 10321,13259 10313,13227 10270,13101
+Rosenthaler Str.	q4::inwork 10340,13337 10321,13259 10313,13227 10270,13101
 # REMOVED (hier nicht voll gesperrt) --- Rosenthaler Str.	q4::inwork 10340,13337 10321,13259
 # REMOVED (nur geringe Einschr‰nkungen, man kommt problemlos bis zur Kreuzung) --- Gipsstr.	q3::inwork 10341,13376 10199,13446
 ',
