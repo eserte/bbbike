@@ -28,9 +28,10 @@ BEGIN {
 use CGI;
 use Getopt::Long;
 
-use BBBikeTest qw(check_cgi_testing maybe_skip_mail_sending_tests);
+use BBBikeTest qw(check_cgi_testing maybe_skip_mail_sending_tests lwp_github_hack);
 
 check_cgi_testing;
+lwp_github_hack;
 
 my $cgi_dir = $ENV{BBBIKE_TEST_CGIDIR} || "http://localhost/bbbike/cgi";
 my $html_dir = $ENV{BBBIKE_TEST_HTMLDIR};

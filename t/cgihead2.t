@@ -18,7 +18,7 @@ use lib (
 	 $FindBin::RealBin,
 	);
 use BBBikeVar;
-use BBBikeTest qw(check_cgi_testing check_network_testing on_author_system);
+use BBBikeTest qw(check_cgi_testing check_network_testing on_author_system lwp_github_hack);
 use File::Basename;
 use Sys::Hostname qw(hostname);
 use Time::HiRes qw(time);
@@ -37,6 +37,7 @@ BEGIN {
 check_cgi_testing;
 check_network_testing;
 on_author_system;
+lwp_github_hack;
 
 use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-msdownload)$};
 

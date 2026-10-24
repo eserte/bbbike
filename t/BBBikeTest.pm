@@ -67,7 +67,7 @@ sub xpath_checks ($$&);
 	      get_cgi_config selenium_diag noskip_diag
 	      pdfinfo pdfinfo_with_exiftool pdfinfo_with_poppler
 	      checkpoint_apache_errorlogs output_apache_errorslogs
-	      my_note
+	      my_note lwp_github_hack
 	    ),
 	   @opt_vars);
 
@@ -996,6 +996,7 @@ sub check_devel_cover_testing () {
 
 sub _is_author_system () {
     my $fqdn = _get_fqdn;
+    return 1 if $ENV{BBBIKE_AUTHOR_SYSTEM};
     defined $fqdn && $fqdn =~ m{\.(rezic|herceg)\.de$},
 }
 
@@ -1460,6 +1461,21 @@ sub my_note (@) {
     } else {
 	Test::More::diag(@notes);
     }
+}
+
+# GitHub downloads may generate excessive response headers, larger than
+# LWP's limit of 8k.
+# See
+# - https://github.com/libwww-perl/libwww-perl/issues/460
+# - https://github.com/hacs/integration/issues/5643
+sub lwp_github_hack () {
+    for my $i (0 .. $#LWP::Protocol::http::EXTRA_SOCK_OPTS - 1) {
+	if ($LWP::Protocol::http::EXTRA_SOCK_OPTS[$i] eq 'MaxLineLength' &&
+	    $LWP::Protocol::http::EXTRA_SOCK_OPTS[$i+1] eq '0') {
+	    return; # hack already applied
+	}
+    }
+    push @LWP::Protocol::http::EXTRA_SOCK_OPTS, MaxLineLength => 0;
 }
 
 # Report values on failures and unclean exits. Especially useful if

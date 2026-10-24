@@ -25,8 +25,9 @@ use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
 use File::Temp qw(tempfile);
 use Getopt::Long;
 
-use BBBikeTest qw(check_cgi_testing zip_ok get_std_opts $cgidir checkpoint_apache_errorlogs output_apache_errorslogs);
+use BBBikeTest qw(check_cgi_testing zip_ok get_std_opts $cgidir checkpoint_apache_errorlogs output_apache_errorslogs lwp_github_hack);
 check_cgi_testing; # may exit
+lwp_github_hack;
 
 plan tests => 6;
 
