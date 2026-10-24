@@ -1,11 +1,3 @@
-# Prerequisites:
-#   perl5.003-Dist mit Gtk bundled (nur für babybike, nicht for tkbabybike)
-#   pppd auf iPAQ bereit gemacht (siehe WiKi)
-#   rsync-Daemon auf iPAQ bereit gemacht (Verzeichnis erstellen)
-#   ssh auf iPAQ bereit gemacht (keygen etc.)
-#   Zeichensatz 5x7-ISO8859-1 kopieren, ins fonts.alias eintragen und rehash
-#      machen
-
 # To run tkbabybike on a normal desktop system first "make update" has to
 # be executed.
 
@@ -20,6 +12,14 @@
 #
 #     make update PERL=pistachio-perl BBBIKEDRAW_RENDERER=Imager
 #
+
+# Following the prerequisites to run on old handhelds:
+#   perl5.003-Dist mit Gtk bundled (nur für babybike, nicht for tkbabybike)
+#   pppd auf iPAQ bereit gemacht (siehe WiKi)
+#   rsync-Daemon auf iPAQ bereit gemacht (Verzeichnis erstellen)
+#   ssh auf iPAQ bereit gemacht (keygen etc.)
+#   Zeichensatz 5x7-ISO8859-1 kopieren, ins fonts.alias eintragen und rehash
+#      machen
 
 IPAQUSER=		root
 IPAQHOST=		ipaq
