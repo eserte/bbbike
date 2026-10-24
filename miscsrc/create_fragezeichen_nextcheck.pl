@@ -35,6 +35,7 @@ my $remove_non_coords;
 my $handle_mapillary_section;
 my $line_dash = '8, 5';
 my $line_width = 5;
+my $outfile;
 
 my @actions;
 
@@ -55,9 +56,10 @@ GetOptions(
 	   "no-fragezeichen-mode" => sub { push @actions, sub { $fragezeichen_mode = 0 } },
 	   "indoor-mode"          => sub { push @actions, sub { $door_mode = 'in' } },
 	   "outdoor-mode"         => sub { push @actions, sub { $door_mode = 'out' } },
+	   "o|outfile=s"          => \$outfile,
 	   "<>"                   => sub { my $f = $_[0]; push @actions, sub { handle_file($f) } },
 	  )
-    or die "usage: $0 [--today YYYY-MM-DD] [--verbose] [--fragezeichen-mode|--no-fragezeichen-mode|--indoor-mode|--outdoor-mode] [--handle-mapillary-section] [--coloring ...|--standard-coloring] ...\n";
+    or die "usage: $0 [--today YYYY-MM-DD] [--verbose] [--fragezeichen-mode|--no-fragezeichen-mode|--indoor-mode|--outdoor-mode] [--handle-mapillary-section] [--coloring ...|--standard-coloring] [-o ...] ...\n";
 
 if ($today !~ m{^\d{4}-\d{2}-\d{2}$}) {
     die "Unexpected argument for --today '$today', expected YYYY-MM-DD\n";
@@ -95,6 +97,15 @@ if ($coloring) {
     }
 }
 
+my $ofh;
+my $tempfile;
+if (defined $outfile) {
+    my $tempfile = "$outfile.$$.~";
+    open $ofh, '>', $tempfile
+	or die "Can't write to $tempfile: $!";
+    select $ofh;
+}
+
 if ($do_preamble) {
     binmode STDOUT, ':encoding(utf-8)';
     print <<"EOF";
@@ -121,6 +132,11 @@ EOF
 
 for my $action (@actions) {
     $action->();
+}
+
+if (defined $tempfile && defined $outfile) {
+    rename $tempfile, $outfile
+	or die "Error while renaming $tempfile to $outfile: $!";
 }
 
 sub handle_file {
