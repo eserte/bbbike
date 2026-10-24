@@ -85,7 +85,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.4468,52.50269,14.12.2022,13:24 (bis 13.1.2023) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022) (bis 27.12.2022) (bis 27.1.2023) (bis 31.1.2023) (inaktiv)
 # REMOVED --- #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022, mittlerweile bis 27.1.2023 (Ehrenbergstr. - Bossestr.)
-#: last_checked: 2026-10-16
+#: last_checked: 2026-10-24
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13549,10741 13596,10722
@@ -2435,7 +2435,7 @@ Buckower Damm: ein Zweirichtungsradweg soll entstehen	?::projected 12939,1469 12
 #: source_id: bvg2024:165#HIM_FREETEXT_357977 (Umleitung via Wrangelstr. ab 31.08.2026)
 #: source_id[inactive]: bvg2024:140#HIM_FREETEXT_357976 (ab 31.08.2026)
 #: XXX Umleitung des Busverkehrs über die Wrangelstr. -> wird es hier eine Einbahnstraßenregelung geben (-> vermutlich nicht; allerdings werden gerade noch provisorische Bushaltestellen (2x?) gebaut)? Außerdem: es sieht so aus, als ob es eine provisorische Überfahrt zwischen Engeldamm und Bethaniendamm geben könnte -> wurde am 2026-08-20 asphaltiert.
-#: last_checked: 2026-10-14
+#: last_checked: 2026-10-24
 #: check_frequency: 45d
 #: next_check: 2026-12-21 (planb, infravelo, VIZ-Verkehrsmeldung)
 Köpenicker Str.: Umbau der Radfahrstreifen (Protektion, Verbreiterung)	?::inwork 12060,11323 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
@@ -3664,7 +3664,7 @@ Lausitzer/Reichenberger Str.: zwei Zebrastreifen geplant	?::projected 12032,1014
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (noch keine Mittelzusage)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (Umsetzung 2022 unwahrscheinlich)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (Finanzierung unklar)
-#: last_checked: 2026-09-02
+#: last_checked: 2026-10-24
 #: check_frequency: 120d
 Möckernstr./Obentrautstr.: Zebrastreifen geplant	?::projected 8809,10190 8790,10157 8769,10139
 # REMOVED (weitgehend realisiert) --- #: last_checked: 2021-03-18 (parlamentarische Anfrage) --- #: check_frequency: 120d --- Schönfließer Str./Gollanzcstr.: Zebrastreifen geplant	?::projected 2082,26098 2112,26066 2147,26039
@@ -4187,6 +4187,8 @@ Trautenaustr.: geplante Bauarbeiten, Sperrung, auch für den Radverkehr?	? 5176,9
 #: next_check ^^^
 # 
 #: source_id: planb2026:13.40681875,52.49467244,26.10.2026, ("Vollsperrung beider Fahrbahnen", bis 28.02.2027)
+#: XXX vor der Wilmsstr. gibt es bereits jetzt eine Engstelle mit Gegenverkehrsregelung
+#: last_checked: 2026-10-24
 #: next_check: 2026-10-26 (planb)
 Geibelstr.: geplante Bauarbeiten, Sperrung, auch für den Radverkehr?	? 10564,9755 10627,9912
 # 
@@ -6031,7 +6033,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 # REMOVED (nicht realisiert) --- #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="27"
 #: note: zurzeit existiert hier nur ein provisorisch asphaltierter Radweg
-#: last_checked: 2026-10-08
+#: last_checked: 2026-10-24
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-02-11
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?; 10006,9942 9950,9987
@@ -6711,7 +6713,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
 #: XXX mittlerweile Bauarbeiten hinter der Kreuzung Zeughofstr. Richtung NW, unklare Einbahnstraßenregelung; 2024-05-27: alle Einfahrt-verboten-Schilder haben nun Radfahrer-frei-Zusatzschilder, bei den Einbahnstraßenschildern fehlen sie weiterhin; mittlerweile scheint diese Baustelle fertig zu sein
 #: priority: #D
-#: last_checked: 2026-10-14
+#: last_checked: 2026-10-24
 #: check_frequency: 60d
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
 # 
@@ -9976,7 +9978,7 @@ Rudolf-Rühl-Allee: Brücke am S-Bhf. Wuhlheide (Köpenicker-Allee-Brücke) soll san
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/26_03_18_praesentation_mobilitaetswenderat.pdf (auch ab Herbst 2026?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1715283.php (erst 2028?)
 #: XXX außerdem Einbahnstraße für Kfz-Verkehr
-#: last_checked: 2026-08-24
+#: last_checked: 2026-10-24
 # REMVOED --- #: next_check: 2026-10-31 (Mobilitätsrat-Präsentation)
 #: next_check: 2028-12-31 (BA-Pressemitteilung)
 Carl-Herz-Ufer: Planung einer Fahrradstraße + Asphaltierung	?::projected 10627,9912 10602,9957 10500,10081
@@ -10346,6 +10348,17 @@ Schönhauser Allee: Gleisbauarbeiten, offiziell Umweg (~350m) für den Radverkehr 
 #: next_check: 2027-12-31 (infravelo)
 Nikolsburger Platz - Nikolsburger Str.: Planung eines Zweirichtungsradwegs + Fahrradstraße	?::projected 5374,9619 5291,9675 5232,9776
 # REMOVED (hier vermutlich nicht (Länge der Fahrradstraße stimmt ansonsten nicht) --- Nikolsburger Platz - Nikolsburger Str.: Planung eines Zweirichtungsradwegs + Fahrradstraße entstehen	?::projected 5232,9776 5219,9808
+# 
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25976.pdf (ab 2026)
+#: osm_watch: note 5562180 2
+#: XXX welcher der beiden Abschnitte ist gemeint, oder etwa beide? vvv
+#: last_checked: 2026-10-24 vvv
+#: next_check: 2027-06-30 vvv
+Planufer: Abschleifen des Kopfsteinpflasters	?::projected 11543,10015 11507,10004 11485,10029
+Planufer: Abschleifen des Kopfsteinpflasters	?::projected 11177,9935 11160,9932 10929,9897 10914,9887
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
 # 
 ######################################################################
 #
@@ -13239,7 +13252,7 @@ ULAP-Quartier: wird es eine Verbindung unter der Stadtbahn geben?	? 7787,12994 7
 #: by: https://www.entwicklungsstadt.de/dragonerareal-in-kreuzberg-bebauungsplan-macht-weg-fuer-470-wohnungen-frei/
 #: XXX laut osm Eröffnung des Rathausblocks 2027-04, mittlerweile 2030-10
 #: osm_watch: way id="1147649159" version="3"
-#: last_checked: 2026-10-14
+#: last_checked: 2026-10-24
 #: check_frequency: 720d
 #: next_check: 2030-10-31 (wbm website)
 Dragonerareal: werden hier Wege/Straße entstehen?	? 9203,9859 9411,9997

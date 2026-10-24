@@ -55972,10 +55972,11 @@ EOF
 #: source_id: LMS-BR:420723/72 viz2021:13.42828,52.50735,31.08.2026,04:00 vizapi2026:853/2026 (bis 26.10.2026)
 #: last_checked: 2026-10-14 vvv
 #: check_frequency: 45d vvv
-#: next_check: 2026-12-31 vvv
+#: next_check: 2026-10-24 vvv
+# ACTIVATE_LATER --- #: next_check: 2026-12-31 vvv
 Köpenicker Str.: getrennter Rad- und Gehweg	q2::inwork; 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
 Brommystr.: ggfs. Anbindung unterbrochen	q4::inwork 12521,11016 12582,11103
-Pfuelstr.: ggfs. Anbindung unterbrochen	q4::inwork 12951,10839 12879,10750
+# REMOVED (seit Verschwenkung auf andere Fahrbahnseite offen) --- aPfuelstr.: ggfs. Anbindung unterbrochen	q4::inwork 12951,10839 12879,10750
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -57113,6 +57114,32 @@ EOF
 	q3::inwork 2826,25577 2794,25514 2749,25418
 	q3::inwork 2867,25406 2794,25514 2697,25593
 #: next_check ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Uferweg am Urbanhafen: Bauarbeiten, Sperrung',
+       type  => 'gesperrt',
+       data  => <<'EOF',
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1315207.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-infrastruktur-und-staedtebaufoerderung/sds-urbanstrasse/urbanhafen-planung-zur-sanierung-der-uferwege-und-gruenflaechen-1183884.php
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/fuehrung-zum-urbanhafen_a378889
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11047 (Anfrage)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1440360.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-infrastruktur-und-staedtebaufoerderung/sds-urbanstrasse/urbanhafen-uferwege-und-freiflaechen-beteiligung-zur-planung-online-und-vor-ort-vom-6-bis-31-mai-2024-1183884.php
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/plaene-zum-urbanhafen_a414080
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1460598.php (Infoveranstaltung)
+#: by: https://www.berliner-woche.de/kreuzberg/c-umwelt/inforunde-zum-urbanhafen_a420020
+#: by: https://entwicklungsstadt.de/hallesches-ufer-sieben-projekte-zwischen-stillstand-und-aufbruch/
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/26_03_18_praesentation_mobilitaetswenderat.pdf (ab Herbst 2026)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/26-03-18-protokoll-mobilitaetswenderat.pdf (Gesamtfertigstellung 2028)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1715283.php (Baubeginn an der Baerwaldbrücke Anfang Oktober 2026)
+#: by: https://www.entwicklungsstadt.de/zwei-jahre-bauzeit-uferwege-am-urbanhafen-werden-erneuert/
+#: XXX wird es Sperrungen geben? wie wird die Situation für Radfahrer nach der Umgestaltung aussehen?
+#: last_checked: 2026-10-24
+#: check_frequency: 90d
+#: next_check: 2028-12-31 (BA-Pressemitteilung)
+Uferweg am Südufer des Urbanhafens/Landwehrkanals: Erneuerung	2::inwork 10929,9897 10914,9925 10602,10006
 EOF
      },
     );

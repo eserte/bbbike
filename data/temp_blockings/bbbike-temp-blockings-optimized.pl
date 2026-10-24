@@ -10034,23 +10034,7 @@ Bäumerplan: Sperrung der Fahrbahn	q4::inwork 8527,8293 8482,8227
          'type' => 'handicap',
          'until' => 1793487599
        },
-       {
-         'data' => '#: source_id: LMS-BR:410355/72 viz2021:13.288284,52.515211,01.06.2026,06:00 (bis 19.06.2026) (inaktiv)
-# REMOVED ---	q4::inwork 2686,12051 2485,12032
-#: source_id: planb2026:13.29237017,52.51538613,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 07.09.2026) (inaktiv)
-#: source_id: LMS-BR:419944/72 viz2021:13.29075,52.51534,24.08.2026,07:00 (bis 07.09.2026) (bis 25.09.2026) (inaktiv)
-#: source_id: LMS-BR:423758/72 viz2021:13.29075,52.51534,29.09.2026,07:00 (bis 09.10.2026) (bis 23.10.2026)
-#: source_id: LMS-BR:423625/72 viz2021:13.293703,52.515506,28.09.2026,07:00 (bis 09.10.2026) (inaktiv)
-#: source_id: planb2026:13.2939394,52.5154944,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 25.09.2026) (inaktiv)
-#: source_id: planb2026:13.29098992,52.51534596,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.10.2026) (inaktiv) (bis 23.10.2026) (vorfristig inaktiv)
-Seelingstr.	q4::inwork 2686,12051 2920,12070
-',
-         'from' => 1787522400,
-         'id' => 4624,
-         'text' => 'Seelingstr.: Sperrung zwischen Danckelmannstr. und Nehringstr., evtl. ist auch der Radverkehr betroffen, vom 24.08.2026 06:00 bis voraussichtlich 23.10.2026',
-         'type' => 'handicap',
-         'until' => 1792792799
-       },
+       undef,
        undef,
        undef,
        {
@@ -10932,10 +10916,11 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
 #: source_id: LMS-BR:420723/72 viz2021:13.42828,52.50735,31.08.2026,04:00 vizapi2026:853/2026 (bis 26.10.2026)
 #: last_checked: 2026-10-14 vvv
 #: check_frequency: 45d vvv
-#: next_check: 2026-12-31 vvv
+#: next_check: 2026-10-24 vvv
+# ACTIVATE_LATER --- #: next_check: 2026-12-31 vvv
 Köpenicker Str.: getrennter Rad- und Gehweg	q2::inwork; 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
 Brommystr.: ggfs. Anbindung unterbrochen	q4::inwork 12521,11016 12582,11103
-Pfuelstr.: ggfs. Anbindung unterbrochen	q4::inwork 12951,10839 12879,10750
+# REMOVED (seit Verschwenkung auf andere Fahrbahnseite offen) --- aPfuelstr.: ggfs. Anbindung unterbrochen	q4::inwork 12951,10839 12879,10750
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -11972,6 +11957,33 @@ Zwiestädter Str.: Sperrung der Fahrbahn (ungefähr 100m)	q4::inwork 13392,7648 13
          'text' => 'Fuchssteinerweg/Markgrafenstraße: Erneuerung der Kreuzung, Sperrung, vom 2.11.2026 bis Dezember 2026',
          'type' => 'handicap',
          'until' => 1798757999
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1315207.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-infrastruktur-und-staedtebaufoerderung/sds-urbanstrasse/urbanhafen-planung-zur-sanierung-der-uferwege-und-gruenflaechen-1183884.php
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/fuehrung-zum-urbanhafen_a378889
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11047 (Anfrage)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1440360.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-infrastruktur-und-staedtebaufoerderung/sds-urbanstrasse/urbanhafen-uferwege-und-freiflaechen-beteiligung-zur-planung-online-und-vor-ort-vom-6-bis-31-mai-2024-1183884.php
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/plaene-zum-urbanhafen_a414080
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1460598.php (Infoveranstaltung)
+#: by: https://www.berliner-woche.de/kreuzberg/c-umwelt/inforunde-zum-urbanhafen_a420020
+#: by: https://entwicklungsstadt.de/hallesches-ufer-sieben-projekte-zwischen-stillstand-und-aufbruch/
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/26_03_18_praesentation_mobilitaetswenderat.pdf (ab Herbst 2026)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/mobilitaetswenderat/26-03-18-protokoll-mobilitaetswenderat.pdf (Gesamtfertigstellung 2028)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1715283.php (Baubeginn an der Baerwaldbrücke Anfang Oktober 2026)
+#: by: https://www.entwicklungsstadt.de/zwei-jahre-bauzeit-uferwege-am-urbanhafen-werden-erneuert/
+#: XXX wird es Sperrungen geben? wie wird die Situation für Radfahrer nach der Umgestaltung aussehen?
+#: last_checked: 2026-10-24
+#: check_frequency: 90d
+#: next_check: 2028-12-31 (BA-Pressemitteilung)
+Uferweg am Südufer des Urbanhafens/Landwehrkanals: Erneuerung	2::inwork 10929,9897 10914,9925 10602,10006
+',
+         'from' => undef,
+         'id' => 4821,
+         'text' => 'Uferweg am Urbanhafen: Bauarbeiten, Sperrung',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
