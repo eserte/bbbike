@@ -83,11 +83,11 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Indizien: vorbereitete Baustellenampeln, vorbereitete Ersatzbushaltestellen (evtl. gültig ab 11.6.2026), vorbereitete Umleitungstafeln -> laut planb wird es wohl eine Einbahnstraßenregelung geben, auch in Hildegard-Jadamowitz-Str. und Marchlewskistr., Richtung? auch für den Radverkehr?
 #: note: unterschiedliche Halteverbote: teilweise erst ab 13.08.2026 (Hildegard-Jadamowitz-Str.), teilweise schon ab 03.08.2026. Vorbereitete Einfahrt-verboten-Tafeln für die Fredersdorfer Str. an der Marchlewskistr. In der Marchlewskistr. und Hildegard-Jadamowitz-Str. wurde Richtung Norden und Westen ab Wedekindstr. eine Busspur (!) markiert
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
-#: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv) (bis 21.12.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026) (bis 21.12.2026)
 #: last_checked: 2026-10-21
 #: check_frequency: 21d
-#: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-21 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261221
 Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # REMOVED --- Straße der Pariser Kommune: vermutete (Hoch?)Bauarbeiten, evtl. mit (Teil)Sperrung der Straße?	? 12822,12067 12833,12154 12854,12287
@@ -181,7 +181,7 @@ Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,1858
 # 
 #: next_check_id: WOLLANK-2024
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7373 (Antrag auf Verstetigung)
-#: source_id: planb2026:13.38387014,52.57273303,15.06.2026, ("Gegenverkehrsanlage (LZA)", bis 04.09.2026) (vorfristig inaktiv) (bis 23.10.2026)
+#: source_id: planb2026:13.38387014,52.57273303,15.06.2026, ("Gegenverkehrsanlage (LZA)", bis 04.09.2026) (vorfristig inaktiv) (bis 23.10.2026) (inaktiv)
 #: last_checked: 2026-10-19 (mapillary)
 #: next_check: 2026-10-23 (planb)
 # REMOVED --- #: next_check: 2026-12-31

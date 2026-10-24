@@ -671,7 +671,7 @@ Kantstr.: Logistik Markt	q3::xmas 5613,10963 5488,10978
 Londoner Str.: Richtung Müllerstr. gesperrt	q4::inwork; 5953,17131 5847,17018
 # REMOVED (hier offen) --- Londoner Str.: Richtung Müllerstr. gesperrt	q4::inwork; 5847,17018 5772,16919
 #: source_id: planb2026:13.33999397,52.55923963,18.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 07.09.2026) (bis 30.10.2026)
-#: source_id: planb2026:13.3409746,52.55986448,07.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 17.10.2026) (bis 23.10.2026)
+#: source_id: planb2026:13.3409746,52.55986448,07.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 17.10.2026) (bis 23.10.2026) (inaktiv)
 #: last_checked: 2026-10-21
 #: next_check: 2026-10-30 (planb)
 Themsestr.: Asphaltierungsarbeiten, Sperrung der Fahrbahn	q4::inwork 6017,17073 5909,16967 5847,17018
@@ -6564,6 +6564,7 @@ Hönower Weg	2::inwork 17383,9719 17471,9688
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261020 (hier nur für den Kfz-Verkehr gesperrt)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mycpvmque22a (bis Ende Oktober 2026)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibsdbeywkqckxk5njct3wck6dah6ibudl6gwobtgqfyzvrwrndaeu (hier keine Ausnahme für den Radverkehr)
+#: by: https://www.morgenpost.de/bezirke/lichtenberg/article413472612/mehrtaegige-sperrungen-in-lichtenberg-wegen-strassenbauarbeiten.html
 #: source_id[inactive]: bvg2021:194#BVG325855_0
 #: source_id: viz2021:13.492961,52.500962,07.08.2023,07:00 (hier nur Kfz-Verkehr, hier nur bis 11.08.2023) (inaktiv)
 #: source_id: bvg2024:194#HIM_FREETEXT_369023 (Umleitung ab 20.10.2026)
@@ -8988,7 +8989,7 @@ Corinthstr.	q2::inwork 14447,10491 14608,10409
          'data' => '#: next_check_id: HUFELAND-2025
 #: source_id: viz2021:13.42956,52.533,13.10.2025,07:00 (bis 21.10.2025) (inaktiv)
 #: source_id: planb2026:13.43737859,52.52968831,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 10.09.2026) (bis 23.10.2026) (vorfristig inaktiv)
-#: source_id: planb2026:13.4372411,52.52966861,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 23.10.2026)
+#: source_id: planb2026:13.4372411,52.52966861,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 23.10.2026) (inaktiv)
 #: source_id: LMS-BR:416895/72 viz2021:13.42956,52.533,24.07.2026,07:00 vizapi2026:731/2026 (bis 10.09.2026) (inaktiv) (bis 23.10.2026) (bis 06.11.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260723
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrejch5oai2e
@@ -10283,7 +10284,7 @@ Schillerstr.	q4::inwork 3460,11441 3522,11447 3571,11451
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiag7pw6g3bvggb46asuojgj4hjw4sfwg5eofj7vtoibzrzf7gw74e
 #: by: https://www.tagesspiegel.de/berlin/bezirke/mitte/ein-bisschen-existenzgefahrdend-bvg-baustelle-blockiert-eine-der-bekanntesten-kiezmeilen-berlins-fur-monate-16107598.html
 #: by: https://www.entwicklungsstadt.de/kastanienallee-bleibt-gesperrt-bvg-baustelle-dauert-bis-dezember/
-#: source_id: planb2026:13.40452117,52.53329753,31.07.2026, ("Vollsperrung beider Fahrbahnen", bis 29.01.2027) (vorfristig inaktiv) (bis 29.01.2027) (vorfristig inaktiv)
+#: source_id: planb2026:13.40452117,52.53329753,31.07.2026, ("Vollsperrung beider Fahrbahnen", bis 29.01.2027) (vorfristig inaktiv) (bis 29.01.2027) (vorfristig inaktiv) (bis 29.01.2027)
 #: source_id: LMS-BR:418663/72 viz2021:13.40671,52.53572, vizapi2026:811/2026 (Kastanienallee, bis 31.08.2026) (bis 29.01.2027) (nur noch in vizapi2026 aktiv) (bis 29.01.2027)
 #: source_id: LMS-BR:418661/72 viz2021:13.39892,52.53262, vizapi2026:810/2026 (Veteranenstr., bis 31.08.2026) (bis 29.01.2027) (inaktiv) (bis 07.09.2027) (nur noch in vizapi2026 aktiv) (bis 26.10.2026)
 #: also_indoor: traffic (T,G[later],H,W)
@@ -10460,7 +10461,7 @@ Fahlandgasse: provisorische Einbahnstraßenregelung	q4::inwork; 7675,17538 7675,1
        },
        {
          'data' => '#: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 vizapi2026:722/2026 (bis 04.09.2026) (inaktiv) (bei vizapi2026 bis 23.10.2026) (bei vizapi2026 bis 27.10.2026)
-#: source_id: planb2026:13.30963347,52.43415371,01.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.09.2026) (inaktiv) (bis 23.10.2026)
+#: source_id: planb2026:13.30963347,52.43415371,01.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.09.2026) (inaktiv) (bis 23.10.2026) (inaktiv)
 #: source_id: planb2026:13.31216617,52.43399261,08.09.2025, ("Sicherung gemäß Vz.-plan", Teil der großen Baustelle am Hindenburgdamm, bis 29.11.2026)
 #: source_id: LMS-BR:382708/72 vizapi2026:205/2025 (Karwendelstraße ist vom Hindenburgdamm für den Kfz-Verkehr abgehängt, Sackgasse, bis 29.11.2026)
 #: also_indoor: traffic (G,T,H,W)
@@ -10637,7 +10638,7 @@ Borussiastr.	q3::inwork 8846,6781 9046,6784 9245,6791
 #: by: https://www.entwicklungsstadt.de/neue-piazza-und-quartiersplatz-grossbaustelle-am-platz-der-luftbruecke/
 #: source_id: planb2026:13.38263329,52.48208211,21.04.2026,07:00 ("Fahrbahneinengung", bis 14.09.2026) (inaktiv) (bis 31.07.2027)
 #: source_id: LMS-BR:415346/72 vizapi2026:699/2026 (bis 08.05.2027 + weitere Arbeiten) (bis 31.07.2027)
-#: osm_watch: note 5278398 5
+#: osm_watch: note 5278398 6
 #: osm_watch: way id="151571095" version="29"
 #: osm_watch: way id="1152289359" version="6"
 #: osm_watch: way id="318665525" version="14"
@@ -11775,17 +11776,7 @@ Wolfshagener Str.: kurze Sperrung vor Amalienstr	q2::inwork 10905,18671 11220,18
          'type' => 'handicap',
          'until' => 1793833200
        },
-       {
-         'data' => '#: source_id: planb2026:13.46858665,52.51662049,01.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 10.11.2026)
-#: also_indoor: traffic (none)
-	q4::inwork 14776,12418 14748,12314
-',
-         'from' => 1788127200,
-         'id' => 4806,
-         'text' => 'Voigtstr.: Bauarbeiten, Sperrung der Fahrbahn zwischen Rigaer Str. und Schreinerstr., vom 01.09.2026 bis 10.11.2026',
-         'type' => 'handicap',
-         'until' => 1794351600
-       },
+       undef,
        {
          'data' => '#: by: https://www.kienbergpark.de/service-infos/presse-news/detail/sperrung-des-noerdlichen-rundwegs-wolkenweg/
 #: by: https://www.kienbergpark.de/fileadmin/kienbergpark/images/07_PDFs_und_Dokumente/261014-Sperrung-noerdl.Rundweg.pdf
@@ -11984,6 +11975,17 @@ Uferweg am Südufer des Urbanhafens/Landwehrkanals: Erneuerung	2::inwork 10929,98
          'text' => 'Uferweg am Urbanhafen: Bauarbeiten, Sperrung',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: planb2026:13.32335574,52.43222908,27.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.12.2026)
+#: also_indoor: traffic (no-G,T[umfangreicher],H[kürzer],no-W)
+	q4::inwork 5115,2803 5079,2929 5196,2960
+',
+         'from' => 1785103200,
+         'id' => 4822,
+         'text' => 'Marienplatz: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 14.12.2026',
+         'type' => 'handicap',
+         'until' => 1797289200
        }
      
 );

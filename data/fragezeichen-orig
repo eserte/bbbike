@@ -3784,10 +3784,11 @@ Emser Str./Ilsestr.: wird hier ein Zebrastreifen gebaut?	? 12610,7104 12648,7080
 #: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12559
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2025/vzbbvv1304_vi_geld_ressourcen_ausbau_weissenhoeher_str_verhindern.pdf (weiterhin in Planung)
 #: by: https://pascalgrothe.de/neue-zebrastreifen-in-biesdorf/
+#: by: https://marzahn-hellersdorf.com/fussgaengerueberweg-weissenhoeher-strasse-fertig-gebaut-aber-ohne-licht/ (noch 3 bis 7 Monate?)
 #: note: nicht in der sen/uvk-Liste aufgeführt
 #: priority: #D
 #: last_checked: 2026-10-07
-#: check_frequency: 90d
+#: check_frequency: 120d
 Weißenhöher Str./Arno-Philippsthal-Str.: Zebrastreifen geplant	?::projected 20633,11497 20641,11488 20649,11479
 # 
 # REMOVED (umgesetzt) --- #: last_checked: 2019-07-15 (mapillary) --- #: next_check: 2019-11-01 --- #: priority: #D --- Auguste-Viktoria-Allee/General-Barby-Str.: wird hier ein Zebrastreifen gebaut?	?::projected 4403,18278 4421,18243 4440,18209
@@ -8381,10 +8382,11 @@ Hennickendorf - B1/Rüdersdorf: existiert hier ein Zweirichtungsradweg auf der ös
 #: by: https://www.o-sp.de/download/lbvbrandenburg/189017
 #: by: https://www.nordkurier.de/regional/uckermark/templin-hofft-auf-grossen-radweg-nach-prenzlau-2060632
 #: by: https://www.nordkurier.de/regional/uckermark/faehrkrugbruecke-wird-erst-ab-2025-gebaut-1575714 (zwischen 2025 und 2027)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~20-10-2026-b109-start-brueckenneubau-kanal-am-faehrkrug (Gesamtbaumaßnahme bis 2031, Verkehr bleibt weitestgehend aufrechterhalten)
 #: source_id: LS/721-E/20/088 (bis 31.12.2024) (bis 31.12.2025) (inaktiv) (bis 30.12.2026) (bis 31.12.2026)
 #: osm_watch: way id="245862156" version="10"
 #: XXX der Radweg soll auf der Nordseite weitergeführt werden, und gleich hinter der Einmündung enden
-#: next_check: 2026-12-31 (Verkehrsmeldung)
+#: next_check: 2031-12-31 (ls.brandenburg: Gesamtbaumaßnahme)
 Templin-Fährkrug: Neubau Brücke mit Radweg	?::projected 18881,80833 18937,80848 19036,81068
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=68289
@@ -8556,10 +8558,12 @@ Blumberg (B158): Verlegung der Elisenauer Str., Kreisverkehr mit Zebrastreifen, 
 #: by: https://www.o-sp.de/download/lbvbrandenburg/253696
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~23-12-2025-rueckblick-2025-ausblick-2026 (Beginn 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~04-09-2026-b-112_ou-frankfurt-oder-einrichtung-baustrasse (Baubeginn Oktober 2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-10-2026-b-112_startschuss-fuer-die-vollendung (bis 2029)
 #: osm_watch: way id="903813269" version="6" brb
 #: note: bei osm als "B112n" bezeichnet (evtl. wird die jetzige B112 zwischen FF und Lebus degradiert?)
-#: last_checked: 2026-09-04 (ls.brandenburg)
-#: check_frequency: 120d (indoor research)
+#: last_checked: 2026-10-19 (ls.brandenburg)
+#: check_frequency: 360d (indoor research)
+#: next_check: 2029-12-31 (ls.brandenburg)
 Ortsumgehung Frankfurt (Oder) (B112): wird neu gebaut, vermutlich als Kfz-Straße	?::projected 82404,-2102 82517,-1615 82629,-1322 82614,-981 82550,-827 82104,23 81847,376 81606,941 81590,1098 81648,1391 81796,1569 82137,1762 82224,1904 82297,2290 82291,2544 82249,2761 82345,3712 82460,3920 82795,4421 82895,4663 82901,4947 82870,5140 82789,5237
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plandetail?pid=43953
@@ -8826,6 +8830,7 @@ Falkentaler Steig: entsteht hier ein Zebrastreifen?	? 2842,24293 2903,24264 2971
 #: by: https://pascalgrothe.de/heesestrasse-tempo-30-und-fussgaengerueberweg-in-sicht/ (Planung ist abgeschlossen)
 #: by: https://pascalgrothe.de/neue-zebrastreifen-in-biesdorf/
 #: by: https://pascalgrothe.de/heesestrasse-schwabenallee-muessen-baeume-fuer-den-zebrastreifen-beschnitten-oder-gefaellt-werden/
+#: by: https://marzahn-hellersdorf.com/fussgaengerueberweg-weissenhoeher-strasse-fertig-gebaut-aber-ohne-licht/ (kein konkreter Fertigstellungstermin)
 #: source_id: planb2026:13.56532975,52.49315464,31.08.2026,07:00 ("Sicherung gemäß Vz.-plan", vielleicht für den Zebrastreifen?, bis 16.10.2026) (inaktiv)
 #: osm_watch: note 5587332 1
 #: priority: #D
@@ -10111,7 +10116,7 @@ Thomasiusstr. - Wilsnacker Str.: Fahrradstraße soll realisiert werden	?::project
 #: by: https://www.entwicklungsstadt.de/neuer-zeitplan-diese-sperrungen-treffen-den-s-bahnhof-zehlendorf/
 #: by: https://www.entwicklungsstadt.de/s-bahnhof-zehlendorf-neue-zugaenge-und-groessere-bruecke-geplant/
 #: also_indoor: url https://bauprojekte.deutschebahn.com/p/berlin-zehlendorf/infobauarbeiten
-#: source_id: planb2026:13.25981555,52.42927677,20.10.2026, ("Vollsperrung beider Fahrbahnen", bis 16.12.2026)
+#: source_id: planb2026:13.25981555,52.42927677,20.10.2026, ("Vollsperrung beider Fahrbahnen", bis 16.12.2026) (vorfristig inaktiv)
 #: source_id: bvg2024:101#HIM_FREETEXT_368979 (Haltestellenverlegung ab 20.10.2026)
 #: XXX Sperrung des östlichen Personentunnels: ab 11. September 2026. Der Radtunnel bleibt offen, Fußgänger und Radfahrer müssen sich den Weg teilen. Mittlerweile 19.10.2026 - 08.12.2026. Mittlerweile Sperrzeiten: 30.10.-2.11.2026 + 4.12.-7.12.2026.
 #: XXX Sperrung des Teltower Damms (für den Kfz-Verkehr, aber auch für den Rad+Fußgängerverkehr?): 31.10.2026 bis 01.11.2026 + 28.11.2026 bis 29.11.2026. Mittlerweile 31.10.2026 für 4 Stunden + 28.11.-29.11.2026
@@ -10274,9 +10279,11 @@ Manfred-von-Richthofen-Str.: Fahrradstraße entsteht vermutlich nach den Leitungs
 # 
 #: by: https://marzahn-hellersdorf.com/bodenschwellen-sollen-tempo-auf-kienbergpark-weg-bremsen/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/marzahn-hellersdorf/ohne-kennzeichen-unterwegs-neue-massnahmen-sollen-scooter-rennen-in-ostberliner-park-stoppen-16153564.html
+#: by: https://www.kienbergpark.de/service-infos/presse-news/detail/sicher-unterwegs-fuer-ein-respektvolles-miteinander-im-kienbergpark/ (23. Oktober 2026: Installation von Bodenschwellen)
 #: XXX die Bodenschwellen wurden anscheinend wieder abmontiert; an zwei Stellen sind noch die Schraubenmuttern im Boden zu sehen
 #: last_checked: 2026-10-07
 #: check_frequency: 60d
+#: next_check: 2026-10-23 (kienbergpark.de)
 Gottfried-Funeck-Weg: werden die Bodenschwellen wieder montiert?	? 21450,14576 21822,14480 21925,14500 21948,14501 21985,14513 22026,14501 22061,14471 22172,14287 22416,14148 22503,14104
 # 
 #: by: https://www.nd-aktuell.de/artikel/1202509.bvg-berlin-tram-m-wird-auf-jahre-zerhackt.html (Mitte Dezember bis einschließlich Januar 2028)
@@ -10359,6 +10366,14 @@ Planufer: Abschleifen des Kopfsteinpflasters	?::projected 11177,9935 11160,9932 
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
+# 
+#: source_id: planb2026:13.39953472,52.50875397,02.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 09.11.2026)
+#: next_check: 2026-11-02 (planb)
+Axel-Springer-Str.: Bauarbeiten geplant, Sperrung, wird der Radverkehr betroffen sein?	? 10116,11485 10072,11384
+# 
+#: source_id: planb2026:13.24639501,52.51119904,07.11.2026,17:00 ("Vollsperrung beider Fahrbahnen", bis 17.11.2026)
+#: next_check: 2026-11-07 (planb)
+Trakehner Allee: Bauarbeiten geplant, Sperrung, wird der Radverkehr betroffen sein?	? -157,11943 -278,11843 -496,11720
 # 
 ######################################################################
 #

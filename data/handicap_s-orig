@@ -503,7 +503,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: also_indoor: traffic (no-G,T[later],no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
 #: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026) (inaktiv) (bis 08.01.2027)
-#: source_id: planb2026:13.38976332,52.5093633,26.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (vorfristig inaktiv, siehe oben)
+#: source_id: planb2026:13.38976332,52.5093633,26.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (siehe oben, vorfristig inaktiv)
 #: last_checked: 2026-10-19
 #: check_frequency: 21d
 #: next_check: 2027-01-08 (planb)
@@ -1496,8 +1496,9 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig oder unbefestigte Verbindung	q3 152
 # 
 ### Marzahn ###
 # 
-#: source_id: planb2026:13.56952995,52.53995683,21.09.2026, ("Fahrstreifen-Reduzierung", bis 23.10.2026)
+#: source_id: planb2026:13.56952995,52.53995683,21.09.2026, ("Fahrstreifen-Reduzierung", bis 23.10.2026) (inaktiv)
 #: source_id: LMS-BR:424013/72 vizapi2026:1009/2026 (bis 23.10.2026) (bis 06.11.2026)
+#: also_indoor: traffic (T,H)
 #: last_checked: 2026-10-07
 #: next_check: 2026-11-06 (VIZ-Verkehrsmeldung)
 #: valid: -20261106
