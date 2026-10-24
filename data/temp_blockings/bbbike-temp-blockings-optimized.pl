@@ -9023,7 +9023,7 @@ Hufelandstr.: Bau einer Fahrradstraße, Fahrbahn gesperrt, schmale Bürgersteige f
 #: source_id: planb2026:13.44989871,52.50304685,28.04.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 01.11.2027) (vorfristig inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-10-16
+#: last_checked: 2026-10-24
 #: check_frequency: 120d
 #: next_check: 2027-11-01 (planb)
 	q4::inwork 13408,10837 13436,10903
@@ -10802,7 +10802,7 @@ Klausdorf - Zossen (Thomas-Müntzer-Straße): Sperrung des Bahnübergangs	2::inwork
 #: source_id: planb2026:13.32578128,52.52650206,10.11.2025,06:00 (Fahrbahneinengung, bis 30.09.2027)
 #: source_id: planb2026:13.32717823,52.52613825,14.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 18.09.2026) (inaktiv)
 #: source_id: planb2026:13.32717823,52.52613825,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 02.10.2026) (inaktiv)
-#: last_checked: 2026-08-19
+#: last_checked: 2026-10-21 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-09-30
 	q4::inwork; 5202,13266 4959,13347

@@ -44883,6 +44883,7 @@ EOF
 #: source_id: viz2021:13.464968,52.497948,14.11.2024,06:00 (bis 15.11.2024) (inaktiv)
 #: source_id: viz2021:13.46469,52.49743,28.07.2025,05:00 (bis 01.08.2025) (inaktiv)
 #: source_id: planb2026:13.46471483,52.49743289,26.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 27.10.2026)
+#: source_id: vizapi2026:1139/2026 (26.10.2026 bis 27.10.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3luys2l4pgs2r
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261023 (Sperrung, 26.10.2026 bis 27.10.2026, für Radverkehr frei)
 #: note: für Nov 2024 bleibt unklar, ob Radfahrer betroffen waren
@@ -51914,7 +51915,7 @@ EOF
 #: source_id: planb2026:13.44989871,52.50304685,28.04.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 01.11.2027) (vorfristig inaktiv)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-10-16
+#: last_checked: 2026-10-24
 #: check_frequency: 120d
 #: next_check: 2027-11-01 (planb)
 	q4::inwork 13408,10837 13436,10903
@@ -54297,7 +54298,7 @@ EOF
 # REMOVED ---	q4::inwork 2686,12051 2485,12032
 #: source_id: planb2026:13.29237017,52.51538613,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 07.09.2026) (inaktiv)
 #: source_id: LMS-BR:419944/72 viz2021:13.29075,52.51534,24.08.2026,07:00 (bis 07.09.2026) (bis 25.09.2026) (inaktiv)
-#: source_id: LMS-BR:423758/72 viz2021:13.29075,52.51534,29.09.2026,07:00 (bis 09.10.2026) (bis 23.10.2026)
+#: source_id: LMS-BR:423758/72 viz2021:13.29075,52.51534,29.09.2026,07:00 (bis 09.10.2026) (bis 23.10.2026) (inaktiv)
 #: source_id: LMS-BR:423625/72 viz2021:13.293703,52.515506,28.09.2026,07:00 (bis 09.10.2026) (inaktiv)
 #: source_id: planb2026:13.2939394,52.5154944,24.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 25.09.2026) (inaktiv)
 #: source_id: planb2026:13.29098992,52.51534596,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.10.2026) (inaktiv) (bis 23.10.2026) (vorfristig inaktiv)
@@ -55710,7 +55711,7 @@ EOF
 #: source_id: planb2026:13.32578128,52.52650206,10.11.2025,06:00 (Fahrbahneinengung, bis 30.09.2027)
 #: source_id: planb2026:13.32717823,52.52613825,14.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 18.09.2026) (inaktiv)
 #: source_id: planb2026:13.32717823,52.52613825,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 02.10.2026) (inaktiv)
-#: last_checked: 2026-08-19
+#: last_checked: 2026-10-21 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-09-30
 	q4::inwork; 5202,13266 4959,13347
