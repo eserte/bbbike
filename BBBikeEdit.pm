@@ -2143,10 +2143,23 @@ sub click {
 			if ($source_file =~ m{^/}) {
 			    $abs_source_file = $source_file;
 			} else {
-			    for (@Strassen::datadirs) {
-				if (-f "$_/$source_file") {
-				    $abs_source_file = "$_/$source_file";
-				    last;
+			FIND_SOURCE_FILE: {
+				# for non-absolute source_file, prefer a relative file
+				if (defined $file && $file =~ m{^/}) {
+				    require Cwd;
+				    require File::Basename;
+				    my $dir = File::Basename::dirname(Cwd::realpath($file));
+				    if (-f "$dir/$source_file") {
+					$abs_source_file = "$dir/$source_file";
+					last FIND_SOURCE_FILE;
+				    }
+				}
+				# otherwise check in standard datadirs paths
+				for (@Strassen::datadirs) {
+				    if (-f "$_/$source_file") {
+					$abs_source_file = "$_/$source_file";
+					last FIND_SOURCE_FILE;
+				    }
 				}
 			    }
 			}
