@@ -6,6 +6,21 @@
 #   Zeichensatz 5x7-ISO8859-1 kopieren, ins fonts.alias eintragen und rehash
 #      machen
 
+# To run tkbabybike on a normal desktop system first "make update" has to
+# be executed.
+
+# Note: for the "update" target the following variables might be
+# required to be set:
+# - PERL: use a different perl if the system/standard perl does
+#         not have all required modules installed
+# - BBBIKEDRAW_RENDERER: use Mapnik or GD or Imager if MapServer
+#                        is not available
+#
+# For example:
+#
+#     make update PERL=pistachio-perl BBBIKEDRAW_RENDERER=Imager
+#
+
 IPAQUSER=		root
 IPAQHOST=		ipaq
 IPAQTMPDEST=		$(IPAQUSER)@$(IPAQHOST):/tmp
@@ -35,7 +50,7 @@ BRB_BBOX=		-90550,106350,105550,-81650
 # find perl scripts and modules
 FIND_PERL_SCRIPTS=-type f -a \( -name "*.pm" -o -name "*.pl" -o -name "*.cgi" -o -name "tkbabybike" -o -name "babybike" \)
 
-REMOVE_COMMENTS=	grep -v '^\#'
+REMOVE_COMMENTS=	grep -a -v '^\#'
 
 all:
 
@@ -58,7 +73,7 @@ update_rest:
 	gzip -9 < ${DATADIR}/fragezeichen > data/fragezeichen.gz
 	cat ${DATADIR}/orte ${DATADIR}/orte2 | $(REMOVE_COMMENTS) | gzip -9 > data/orte.gz
 #	../miscsrc/create_plz_file '(Potsdam)' ${DATADIR}/landstrassen > /tmp/Potsdam.coords.data
-	grep '[^|]$$' ${DATADIR}/Berlin.coords.data > /tmp/Berlin.coords.data-noempty
+	grep -a '[^|]$$' ${DATADIR}/Berlin.coords.data > /tmp/Berlin.coords.data-noempty
 #	env LC_ALL=de_DE.ISO_8859-1 cat /tmp/Berlin.coords.data-noempty /tmp/Potsdam.coords.data | sort > data/Berlin.coords.data
 	env LC_ALL=de_DE.ISO_8859-1 cat /tmp/Berlin.coords.data-noempty ${DATADIR}/Potsdam.coords.data | sort > data/Berlin.coords.data
 
@@ -125,7 +140,7 @@ do-image-berlin:
 
 tile-image-berlin:
 	[ -d images/berlin_tiles ] || mkdir images/berlin_tiles
-	../miscsrc/tilemap -hardlink -image /tmp/berlin.ppm -destdir images/berlin_tiles -geometry 100x100 -conf /tmp/berlin.conf
+	${PERL} ../miscsrc/tilemap -hardlink -image /tmp/berlin.ppm -destdir images/berlin_tiles -geometry 100x100 -conf /tmp/berlin.conf
 
 cleanup-berlin-tiles:
 	cd images/berlin_tiles && rm -f *.xpm *.xpm.gz
@@ -147,7 +162,7 @@ do-image-brb:
 
 tile-image-brb:
 	-mkdir images/brb_tiles
-	../miscsrc/tilemap -hardlink -image /tmp/brb.ppm -destdir images/brb_tiles -geometry 100x100 -conf /tmp/brb.conf
+	${PERL} ../miscsrc/tilemap -hardlink -image /tmp/brb.ppm -destdir images/brb_tiles -geometry 100x100 -conf /tmp/brb.conf
 
 cleanup-brb-tiles:
 	cd images/brb_tiles && rm -f *.xpm *.xpm.gz
@@ -206,7 +221,7 @@ image_brb:
 ######################################################################
 # Overview button
 image_small_berlin:
-	../miscsrc/small_berlinmap.pl -geometry 60x45 -normbg '#c0c0c0' -fill -includepotsdam
+	${PERL} ../miscsrc/small_berlinmap.pl -geometry 60x45 -normbg '#c0c0c0' -fill -includepotsdam
 	cp /tmp/berlin_small.dim images
 	giftopnm /tmp/berlin_small.gif | ppmtoxpm > images/berlin_small.xpm
 
@@ -418,7 +433,7 @@ image_koethen_tiles:
 	    -minplacecat 0 \
 	    -o /tmp/koethen.png -dimfile images/koethen_tiles/koethen.dim
 	pngtopnm /tmp/koethen.png > /tmp/koethen.ppm
-	perl -I$HOME/lib/perl ../miscsrc/tilemap -image /tmp/koethen.ppm -destdir images/koethen_tiles -geometry 100x100 -conf /tmp/koethen.conf
+	${PERL} -I$HOME/lib/perl ../miscsrc/tilemap -image /tmp/koethen.ppm -destdir images/koethen_tiles -geometry 100x100 -conf /tmp/koethen.conf
 
 ######################################################################
 # von Berlin bis zur Uckermark
@@ -469,7 +484,7 @@ image_uckermark_tiles:
 	    -minplacecat 0 \
 	    -o /tmp/uckermark.png -dimfile images/uckermark_tiles/uckermark.dim
 	pngtopnm /tmp/uckermark.png > /tmp/uckermark.ppm
-	perl -I$HOME/lib/perl ../miscsrc/tilemap -image /tmp/uckermark.ppm -destdir images/uckermark_tiles -geometry 100x100 -conf /tmp/uckermark.conf
+	${PERL} -I$HOME/lib/perl ../miscsrc/tilemap -image /tmp/uckermark.ppm -destdir images/uckermark_tiles -geometry 100x100 -conf /tmp/uckermark.conf
 
 rsync-uckermark: do-rsync-uckermark smallscreen-generate-cache-uckermark
 
