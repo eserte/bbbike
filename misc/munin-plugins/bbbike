@@ -51,7 +51,7 @@ my $config = {
     'pref' => [
         qw/speed cat_np cat_N1 cat_N2 cat_H1 cat_H2 cat_N_RW cat_N_RW1
           quality_np quality_Q0 quality_Q1 specialvehicle_np specialvehicle_trailer specialvehicle_childseat
-          unlit ferry/
+          unlit ferry bicycleroad_yes bicycleroad_np/
     ],
     'maptype' => [
         qw/bing_birdview bing_hybrid bing_map cycle hike_bike hybrid mapnik mapnik_bw mapnik_de
@@ -466,6 +466,9 @@ sub count_pref {
                 if ( my $s = $q->param("pref_specialvehicle") || "np" ) {
                     $res->{"specialvehicle_$s"}++;
                 }
+		if ( my $s = $q->param("pref_bicycleroad") || "np") {
+                    $res->{"bicycleroad_$s"}++;
+		}
                 $res->{"ferry"}++ if $q->param("pref_ferry");
                 $res->{"unlit"}++ if $q->param("pref_unlit");
             }
