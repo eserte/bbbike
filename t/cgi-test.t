@@ -59,7 +59,7 @@ my $json_xs_3_tests = 4;
 my $yaml_tests = 7;
 my $xml_libxml_tests = 30;
 #plan 'no_plan';
-plan tests => 280 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $json_xs_3_tests + $yaml_tests + $xml_libxml_tests;
+plan tests => 289 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $json_xs_3_tests + $yaml_tests + $xml_libxml_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips", "debug"),
 	       )) {
@@ -920,6 +920,7 @@ SKIP: {
     expected_tag $resp, 'error.sessionexpired';
 }
 
+# bicycle road optimization/preference
 { # south-to-north with bicycle roads
     my %route_endpoints = (startc => '5370,6486', # Rheinstr./Bundesallee
 			   zielc  => '5467,9866', # Bundesallee/Nachodstr.
@@ -956,6 +957,39 @@ SKIP: {
     my $content = $resp->decoded_content;
     unlike_html $content, qr{rechts.*Handjerystr};
     unlike_html $content, qr{Prinzregentenstr};
+}
+
+{
+    my %route_endpoints = (startc => '-11099,-1573', # Nuthestr/Muehlenstr (Potsdam)
+			   zielc  => '-11657,-1018', # Humboldtbruecke (Potsdam)
+			   pref_bicycleroad => 'yes',
+			  );
+    my $resp = bbbike_cgi_search +{ %route_endpoints }, 'bicycle road optimization';
+    expected_tag $resp, 'rm.route.html';
+    my $content = $resp->decoded_content;
+    like_html $content, qr{Park Babelsberg}, 'use bicycle road, SE to NW';
+}
+
+{
+    my %route_endpoints = (startc => '-11657,-1018', # Humboldtbruecke (Potsdam)
+			   zielc  => '-11099,-1573', # Nuthestr/Muehlenstr (Potsdam)
+			   pref_bicycleroad => 'yes',
+			  );
+    my $resp = bbbike_cgi_search +{ %route_endpoints }, 'bicycle road optimization';
+    expected_tag $resp, 'rm.route.html';
+    my $content = $resp->decoded_content;
+    like_html $content, qr{Park Babelsberg}, 'use bicycle road, NW to SE';
+}
+
+{
+    my %route_endpoints = (startc => '-11099,-1573', # Nuthestr/Muehlenstr (Potsdam)
+			   zielc  => '-11657,-1018', # Humboldtbruecke (Potsdam)
+			   # no pref_bicycleroad set
+			  );
+    my $resp = bbbike_cgi_search +{ %route_endpoints }, 'without bicycle road optimization';
+    expected_tag $resp, 'rm.route.html';
+    my $content = $resp->decoded_content;
+    like_html $content, qr{Nuthestr}, 'no bicycle road, SE to NW';
 }
 
 # one test
