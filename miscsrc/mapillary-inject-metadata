@@ -50,7 +50,6 @@ if (!$token) {
 
 my $ua = LWP::UserAgent->new;
 my $url_short = 'https://graph.mapillary.com';
-my $url = "$url_short/graphql";
 $ua->default_header(Authorization => "OAuth $token");
 
 my $image_id_to_make = $with_make ? create_image_id_to_make_cache(@filenames) : {};
