@@ -229,7 +229,7 @@ use vars qw($handicap_s_optimierung %handicap_s_speed
 	    $handicap_directed_net);
 
 use vars qw($radwege_optimierung $radwege_net $N_RW_optimization $N_RW1_optimization $N_RW_net
-	    %radwege_speed $bicycle_road_opimization $non_bicycle_roads_net $green_optimization $green_net
+	    %radwege_speed $bicycle_road_opimization $bicycle_roads_net $green_optimization $green_net
 	    $special_vehicle_rb
 	    $unlit_streets_optimization $unlit_streets_net
 	   );

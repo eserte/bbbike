@@ -52,6 +52,7 @@ return
      "nur sehr gute Beläge bevorzugen (rennradtauglich)" => "use only very good surfaces", # XXX rennradtauglich?
      "Ampeln vermeiden" => "Avoid traffic lights",
      "Grüne Wege" => "Green ways", # XXX ways???
+     "Fahrradstraßen bevorzugen" => "Prefer bicycle roads",
      "bevorzugen" => "prefer",
      "stark bevorzugen" => "strongly prefer",
      # XXX no translation for winteroptimierung (will I ever use it again?)
@@ -170,7 +171,7 @@ Bildgr&ouml;&szlig;e, Bildformat und Detailreichtum %s bis %s kB. PDFs sind %s b
      'Radweg/spur' => 'cycle path or lane',
      'Radweg' => 'cycle path',
      'Radspur' => 'cycle lane',
-     'Fahrradstraße' => 'cycle street',
+     'Fahrradstraße' => 'bicycle road',
      'Busspur' => 'bus lane',
      # 'Nebenfahrbahn' => 'XXX',
      'Fähre' => 'Ferry',

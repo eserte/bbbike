@@ -59,7 +59,7 @@ my $json_xs_3_tests = 4;
 my $yaml_tests = 7;
 my $xml_libxml_tests = 30;
 #plan 'no_plan';
-plan tests => 274 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $json_xs_3_tests + $yaml_tests + $xml_libxml_tests;
+plan tests => 280 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $json_xs_3_tests + $yaml_tests + $xml_libxml_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips", "debug"),
 	       )) {
@@ -920,7 +920,7 @@ SKIP: {
     expected_tag $resp, 'error.sessionexpired';
 }
 
-{
+{ # south-to-north with bicycle roads
     my %route_endpoints = (startc => '5370,6486', # Rheinstr./Bundesallee
 			   zielc  => '5467,9866', # Bundesallee/Nachodstr.
 			   pref_bicycleroad => 'yes',
@@ -932,7 +932,21 @@ SKIP: {
     like_html $content, qr{Prinzregentenstr};
 }
 
-{
+{ # north-to-south with bicycle roads
+    my %route_endpoints = (startc => '5467,9866', # Bundesallee/Nachodstr.
+			   zielc  => '5370,6486', # Rheinstr./Bundesallee
+			   pref_bicycleroad => 'yes',
+			  );
+    my $resp = bbbike_cgi_search +{ %route_endpoints }, 'bicycle road optimization';
+    expected_tag $resp, 'rm.route.html';
+    my $content = $resp->decoded_content;
+    like_html $content, qr{links.*Trautenaustr};
+    like_html $content, qr{rechts.*Prinzregentenstr};
+    like_html $content, qr{Handjerystr};
+    like_html $content, qr{links.*Bundesallee};
+}
+
+{ # south-to-south without bicycle roads
     my %route_endpoints = (startc => '5370,6486', # Rheinstr./Bundesallee
 			   zielc  => '5467,9866', # Bundesallee/Nachodstr.
 			   # no pref_bicycleroad set
