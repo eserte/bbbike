@@ -52566,11 +52566,13 @@ EOF
      { from  => undef,
        until => undef,
 #      text  => 'Bettina-von-Arnim-Ufer: Bauarbeiten, Sperrung, Ende unbekannt (Stand April 2026: Uferweg ist gesperrt)',
-       text  => 'Bettina-von-Arnim-Ufer: Bauarbeiten, Engstelle, Ende unbekannt',
+       text  => 'Bettina-von-Arnim-Ufer: Bauarbeiten, Engstelle, voraussichtlich bis Ende Februar 2027',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: next_check_id: KANZLERPARK-2024
 #: by: https://bsky.app/profile/clakoh.bsky.social/post/3m5yiqga4722n (bis Ende Februar 2026?)
+#: osm_watch: way id="571451414" version="8"
+#: osm_watch: way id="875774535" version="7"
 #: osm_watch: way id="1126186878" version="7"
 #: osm_watch[closed]: note 5130610 7
 #: osm_watch[closed]: note 5130626 1
@@ -52579,7 +52581,7 @@ EOF
 # REMOVED --- #: XXX auch laut osm note bis 28.2.2026 gesperrt --- #: XXX am nordöstlichen Ende Absperrungen, die teilweise weggeschoben sind, am südwestlichen Ende massive Holzzäune, kein Durchkommen möglich
 #: last_checked: 2026-08-26
 #: check_frequency: 60d
-# REMOVED (kann nicht gehalten werden) --- #: next_check: 2026-02-28
+#: next_check: 2027-02-28 (bsky)
 	q4::inwork 7745,12603 7782,12623
 # REMOVED ---	2::inwork 7782,12623 7934,12734 8006,12853
 EOF
