@@ -98,6 +98,7 @@ use vars qw($VERSION $VERBOSE
 	    @temp_blocking $temp_blocking_epoch
 	    $use_cgi_compress_gzip $use_bbbikedraw_pdf_compress $max_matches
 	    $use_winter_optimization $winter_hardness $winter_no_RW1
+	    $bicycle_roads_net
 	    $with_lang_switch
 	    $newstreetform_encoding
 	    $use_region_image
@@ -879,7 +880,7 @@ use vars qw(%handicap_speed);
 		  );
 my %quality_speed; # this is set later, because of different speeds if pref_quality=Q0 is set
 
-@pref_keys = qw/speed cat quality ampel green specialvehicle unlit ferry winter fragezeichen/;
+@pref_keys = qw/speed cat quality ampel green specialvehicle unlit ferry winter fragezeichen bicycleroad/;
 
 CGI->import('-no_xhtml');
 
@@ -904,6 +905,7 @@ undef $g_str; # XXX because it may already contain landstrassen etc.
 undef $net; # dito
 undef $kr;
 undef $comments_net; # XXX because it may or may not contain qualitaet_l
+undef $bicycle_roads_net; # XXX because it may contain comments_cyclepath or not, depending on scope
 
 # reset per request
 $now_use_apache_session = $use_apache_session;
@@ -1367,7 +1369,6 @@ function ${type}char_byebye(Evt) { return any_byebye("${type}char", Evt); }
 function ${type}char_detail(Evt) { return any_detail("${type}char", Evt); }
 
 // --></script>
-
 EOF
     } else {
 	_zoom_hack_init();
@@ -3071,6 +3072,7 @@ sub set_cookie {
 
 use vars qw($default_speed $default_cat $default_quality
 	    $default_ampel $default_routen $default_green $default_specialvehicle
+	    $default_bicycleroad
 	    $default_unlit $default_ferry $default_winter
 	    $default_fragezeichen);
 
@@ -3088,6 +3090,7 @@ sub get_settings_defaults {
 	$default_green = 2;
     }
     $default_specialvehicle = (defined $c{"pref_specialvehicle"} ? $c{"pref_specialvehicle"} : '');
+    $default_bicycleroad = (defined $c{"pref_bicycleroad"} && $c{"pref_bicycleroad"} eq 'yes' ? 1 : 0);
     $default_unlit   = (defined $c{"pref_unlit"}   ? $c{"pref_unlit"}   : "");
     $default_ferry   = (defined $c{"pref_ferry"}   ? $c{"pref_ferry"}   : "");
     $default_winter  = (defined $c{"pref_winter"}  ? $c{"pref_winter"}  : "");
@@ -3241,6 +3244,9 @@ EOF
 <option @{[ $specialvehicle_checked->("trailer")   ]}>@{[ M("Anhänger") ]}
 <option @{[ $specialvehicle_checked->("childseat") ]}>@{[ M("Kindersitz mit Kind") ]}
 </select></td></tr>
+EOF
+    print <<EOF;
+<tr><td><label for="pref_bicycleroad">@{[ M("Fahrradstraßen bevorzugen") ]}:</label></td><td><input type=checkbox name="pref_bicycleroad" id="pref_bicycleroad" value="yes" @{[ $default_bicycleroad?"checked":"" ]}></td></tr>
 EOF
     if (!$osm_data || do {
 	my $geo = get_geography_object();
@@ -3450,6 +3456,37 @@ sub search_coord {
 	} else {
 	    # ignore pref_winter
 	}
+    }
+
+    # Fahrradstraßen-Optimierung
+    if (!$disable_other_optimizations && defined $q->param('pref_bicycleroad') && $q->param('pref_bicycleroad') eq 'yes') {
+	if (!$bicycle_roads_net) {
+	    require Storable;
+	    my $src_s = get_cyclepath_streets_as_stream();
+	    my $s = Strassen->new;
+	    $src_s->read_stream
+		(
+		    sub {
+			my($r) = @_;
+			if ($r->[Strassen::CAT()] =~ m{^RW7\b}) {
+			    my $new_r = Storable::dclone($r);
+			    $new_r->[Strassen::CAT()] = 'RW7;';
+			    $s->push($new_r);
+			}
+		    }
+		);
+	    $bicycle_roads_net = StrassenNetz->new($s);
+	    $bicycle_roads_net->make_net_cat(-obeydir => 1, -usecache => 0);
+	}
+
+	my $penalty_noncycleroads_koeff = 1.5;
+	push @penalty_subs, sub {
+	    my($p, $next_node, $last_node) = @_;
+	    if (!$bicycle_roads_net->{Net}{$last_node}{$next_node}) {
+		$p *= $penalty_noncycleroads_koeff;
+	    }
+	    $p;
+	};
     }
 
     # Ampeloptimierung
@@ -6242,6 +6279,18 @@ sub get_cyclepath_streets {
     }
 }
 
+sub get_cyclepath_streets_as_stream {
+    my($scope) = shift || $q->param("scope") || "city";
+    if ($scope eq 'city') {
+	Strassen->new_stream('radwege_exact');
+    } else {
+	MultiStrassen->new_stream(
+	    Strassen->new_stream('radwege_exact'),
+	    Strassen->new_stream('comments_cyclepath'),
+	);
+    }
+}
+
 sub get_streets {
     my($scope) = shift || $q->param("scope") || "city";
     $scope =~ s/^all,//;
@@ -8266,7 +8315,6 @@ EOF
 <h3 id="disclaimer">Disclaimer</h3>
 Es wird keine Gewähr für die Inhalte dieser Site sowie verlinkter Sites übernommen.
 <hr>
-
 EOF
 
     print <<EOF;

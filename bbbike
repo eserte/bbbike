@@ -18332,7 +18332,7 @@ sub do_search {
     }
 
     if ($bicycle_road_opimization) {
-	if (!$non_bicycle_roads_net) {
+	if (!$bicycle_roads_net) {
 	    require Storable;
 	    my $src_s = get_cyclepath_streets_as_stream();
 	    my $s = Strassen->new;
@@ -18347,15 +18347,15 @@ sub do_search {
 			}
 		    }
 		);
-	    $non_bicycle_roads_net = StrassenNetz->new($s);
-	    $non_bicycle_roads_net->make_net_cat(-obeydir => 1, -usecache => 0); # no caching, because source is generated on-the-fly
+	    $bicycle_roads_net = StrassenNetz->new($s);
+	    $bicycle_roads_net->make_net_cat(-obeydir => 1, -usecache => 0); # no caching, because source is generated on-the-fly
 	}
 
 	my $penalty_noncycleroads_koeff = 1.5; # for now hard-coded
 	$extra_args{BicycleRoadOptimization} =
 	    {PenaltySub => sub {
 		 my($p, $next_node, $last_node) = @_;
-		 if (!$non_bicycle_roads_net->{Net}{$last_node}{$next_node}) {
+		 if (!$bicycle_roads_net->{Net}{$last_node}{$next_node}) {
 		     $p *= $penalty_noncycleroads_koeff;
 		 }
 		 $p;
@@ -19257,7 +19257,7 @@ sub make_net {
     undef $strcat_net;
     undef $radwege_net;
     undef $N_RW_net;
-    undef $non_bicycle_roads_net;
+    undef $bicycle_roads_net;
     undef $green_net;
     undef $unlit_streets_net;
     undef $steigung_net;
