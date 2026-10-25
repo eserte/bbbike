@@ -212,7 +212,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: source_id: viz2021:13.18669,52.43221,17.09.2024,07:00 (bis 07.10.2024) (inaktiv)
 #: source_id: viz2021:13.188156,52.433161,17.09.2024,07:00 (Fahrbahnsanierung, bis 30.10.2024) (inaktiv)
 #: osm_watch: way id="4323788" version="28"
-#: osm_watch: way id="23109081" version="24"
+#: osm_watch: way id="23109081" version="25"
 #: osm_watch: way id="41108858" version="23"
 #: last_checked: 2026-10-13 (mapillary)
 #: check_frequency: 120d
@@ -8749,7 +8749,7 @@ Stubenrauchstr.: geschützte Radstreifen (mit Leitboys) waren geplant	? 16135,213
 #: check_frequency: 120d
 Mariannenstr./Georgenstr.: Fußgängerüberweg (Zebrastreifen?) in Planung	? 6050,1383 6029,1357 6011,1306
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1709191.php (Bauarbeiten für einen Fußgängerüberweg vom 14.09. - 23.10.2026; Sperrung der Fahrbahn, Radverkehr wird vorbeigeführt)
-#: source_id: planb2026:13.33109458,52.42015808,14.09.2026,07:00 ("Vollsperrung beider Fahrbahnen" (nördlich des möglichen Zebrastreifens), bis 23.10.2026)
+#: source_id: planb2026:13.33109458,52.42015808,14.09.2026,07:00 ("Vollsperrung beider Fahrbahnen" (nördlich des möglichen Zebrastreifens), bis 23.10.2026) (inaktiv)
 #: last_checked: 2026-08-02
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2026-10-23 (BA-Pressemitteilung + planb)
@@ -9877,7 +9877,7 @@ Verlängerung des Uferwegs?	? 22239,2644 22197,2612
 # 
 #: next_check_id: NAGASAKIPLATZ-2026
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5398
-#: last_checked: 2026-10-06 (osm)
+#: last_checked: 2026-10-24 (osm)
 #: next_check: 2027-03-31
 Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Ampelanlage wird wohl verschoben	? -8483,-1530 -8469,-1541 -8447,-1553
 # 
@@ -12256,7 +12256,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: osm_watch: way id="124182482" version="10"
 #: last_checked: 2026-10-20
 #: check_frequency: 120d
-# REMOVED (anderer Abschnitt) --- #: next_check: 2026-06-26
+#: next_check: 2028-12-31 (luisenstadt-mitte)
 Uferweg geplant	?::projected 11827,11720 11676,11839 11375,11994
 # 
 # REMOVED --- #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf --- #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: I/2019 bis IV/2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.751474.php --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/waldbacher-weg-bruecke/index.shtml --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/waldbacher-weg-bruecke/de/vorhaben.shtml --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828308.php (Fertigstellung 1. Quartal 2020) --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/neue-fussgaengerbruecke-montiert_a224536 --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/waldbacher-weg-bruecke/de/bau.shtml (Ersatzneubau wurde am 28.11.2019 mit provisorischen Treppenanlagen freigegeben) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Straßenlandwidmung) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.974458.php (Eröffnung am 13.8.2020) --- #: by: https://abendblatt-berlin.de/2020/08/14/berlin-bioesdorf-ersatz-fuer-die-alte-bruecke-am-waldbacher-weg-ist-fertig/ --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_42_5125_5208_online.pdf (Einziehung von Straßenland) --- #: XXX vermutlich müssen die Treppenpunkte nach der Rampenanbindung versetzt werden --- #: last_checked: 2020-06-22 vvv --- #: next_check: 2020-08-13 vvv --- # REMOVED --- #: osm_watch: way id="688677632" version="2" --- Waldbacher-Weg-Brücke: Rampen in Bau	?::inwork 20315,12061 20307,12027 --- # REMOVED --- #: osm_watch: way id="688677633" version="3" --- Waldbacher-Weg-Brücke: Rampen in Bau	?::inwork 20363,12057 20359,12035 --- #: next_check ^^^ --- #: last_checked ^^^

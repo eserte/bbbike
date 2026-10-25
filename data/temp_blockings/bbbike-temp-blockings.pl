@@ -52692,7 +52692,7 @@ EOF
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/frost-posse-in-babelsberg-busse-fahren-wochenlang-umleitung--trotz-verschobener-baustelle-15213887.html
 # REMOVED (last_checked ist nun in fragezeichen-orig) --- #: last_checked: 2026-02-25 (mapillary)
 #: osm_watch: way id="10612721" version="27"
-#: osm_watch: way id="1221275926" version="13"
+#: osm_watch: way id="1221275926" version="14"
 August-Bebel-Str.	q4::inwork -8444,-1691 -8469,-1541
 #: osm_watch: way id="24969126" version="20"
 August-Bebel-Str.	q4::inwork -8469,-1541 -8485,-1445
