@@ -98,7 +98,7 @@ use vars qw($VERSION $VERBOSE
 	    @temp_blocking $temp_blocking_epoch
 	    $use_cgi_compress_gzip $use_bbbikedraw_pdf_compress $max_matches
 	    $use_winter_optimization $winter_hardness $winter_no_RW1
-	    $non_bicycle_roads_net
+	    $bicycle_roads_net
 	    $with_lang_switch
 	    $newstreetform_encoding
 	    $use_region_image
@@ -905,6 +905,7 @@ undef $g_str; # XXX because it may already contain landstrassen etc.
 undef $net; # dito
 undef $kr;
 undef $comments_net; # XXX because it may or may not contain qualitaet_l
+undef $bicycle_roads_net; # XXX because it may contain comments_cyclepath or not, depending on scope
 
 # reset per request
 $now_use_apache_session = $use_apache_session;
@@ -3459,7 +3460,7 @@ sub search_coord {
 
     # Fahrradstraßen-Optimierung
     if (!$disable_other_optimizations && defined $q->param('pref_bicycleroad') && $q->param('pref_bicycleroad') eq 'yes') {
-	if (!$non_bicycle_roads_net) {
+	if (!$bicycle_roads_net) {
 	    require Storable;
 	    my $src_s = get_cyclepath_streets_as_stream();
 	    my $s = Strassen->new;
@@ -3474,14 +3475,14 @@ sub search_coord {
 			}
 		    }
 		);
-	    $non_bicycle_roads_net = StrassenNetz->new($s);
-	    $non_bicycle_roads_net->make_net_cat(-obeydir => 1, -usecache => 0);
+	    $bicycle_roads_net = StrassenNetz->new($s);
+	    $bicycle_roads_net->make_net_cat(-obeydir => 1, -usecache => 0);
 	}
 
 	my $penalty_noncycleroads_koeff = 1.5;
 	push @penalty_subs, sub {
 	    my($p, $next_node, $last_node) = @_;
-	    if (!$non_bicycle_roads_net->{Net}{$last_node}{$next_node}) {
+	    if (!$bicycle_roads_net->{Net}{$last_node}{$next_node}) {
 		$p *= $penalty_noncycleroads_koeff;
 	    }
 	    $p;
