@@ -6184,8 +6184,9 @@ Brückenabriss, Komplettsperrung	2::inwork 2924,15914 2892,15983 2809,16143
 #: priority: #A
 #: add_fragezeichen: Besteht die Sperrung des Uferwegs weiterhin? vvv
 #: last_checked: 2026-05-09 vvv
-#: check_frequency: 170d vvv
-#: next_check: 2026-12-31 (Baustellenschild) vvv
+#: check_frequency: 180d vvv
+#: next_check: 2026-10-31 vvv
+# ACTIVATE_LATER --- #: next_check: 2026-12-31 (Baustellenschild) vvv
 ab Wismarer Str. gesperrt	2::inwork 3698,1450 3821,1725 3980,2102
 #: osm_watch: way id="46907541" version="19"
 #: osm_watch: way id="1116849053" version="5"
@@ -6972,7 +6973,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2026-08-26
+#: last_checked: 2026-10-25
 # REMOVED --- #: next_check: 2026-04-30 (Schilder vor Ort)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-10-30 (Schilder vor Ort)
@@ -8619,7 +8620,7 @@ Rüdigerstr.: Überfahrt vermutlich nicht direkt möglich	q3::inwork; 16397,12397 1
 #: osm_watch: way id="1429845843" version="6"
 #: also_indoor: traffic (T,H,G)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-10-19 vvv
+#: last_checked: 2026-10-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-10-28 (VIZ-Verkehrsmeldung + planb) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -9328,7 +9329,7 @@ Fehrbelliner Str.	2::temp -3761,15604 -3727,15695
 #: osm_watch[closed]: note 5096118 2
 #: add_fragezeichen: Gibt es die Engstelle weiterhin?
 # REMOVED --- #: XXX auch laut osm note bis 28.2.2026 gesperrt --- #: XXX am nordöstlichen Ende Absperrungen, die teilweise weggeschoben sind, am südwestlichen Ende massive Holzzäune, kein Durchkommen möglich
-#: last_checked: 2026-08-26
+#: last_checked: 2026-10-25
 #: check_frequency: 60d
 #: next_check: 2027-02-28 (bsky)
 	q4::inwork 7745,12603 7782,12623
@@ -10430,7 +10431,7 @@ Eisenbahnstr. zwischen Kastanienweg und An der Föhse	q4::inwork -21277,-3302 -21
 #: osm_watch: note 5183324 3
 #: source_id: planb2026:13.42048743,52.50798798,11.07.2026, ("Vollsperrung beider Fahrbahnen", bis 30.10.2026)
 #: XXX Nach den Bauarbeiten müssen vermutlich gesperrt_car-orig-Einträge erzeugt werden.
-#: last_checked: 2026-10-12
+#: last_checked: 2026-10-25
 #: check_frequency: 30d
 #: next_check: 2026-10-30 (planb)
 # REMOVED --- #: next_check: 2026-11-30 (BA-Pressemitteilung)
@@ -10917,13 +10918,22 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
 #: note: der Bürgersteig ist nicht nur eng, sondern teilweise auch unangenehm zu fahren: Charlottenburger Platten, gepflasterte Ausfahrten, unzureichende abgesenkte Bordsteine
 #: traffic_note: Etwas Ausweichverkehr via Engeldamm - illegale Überfahrt zum Mariannenplatz - Wrangelstr., evtl. wird es mit der Zeit mehr werden.
 #: source_id: LMS-BR:420723/72 viz2021:13.42828,52.50735,31.08.2026,04:00 vizapi2026:853/2026 (bis 26.10.2026)
-#: last_checked: 2026-10-14 vvv
+#: last_checked: 2026-10-25 vvv
 #: check_frequency: 45d vvv
-#: next_check: 2026-10-24 vvv
-# ACTIVATE_LATER --- #: next_check: 2026-12-31 vvv
+#: next_check: 2026-12-31 vvv
 Köpenicker Str.: getrennter Rad- und Gehweg	q2::inwork; 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
-Brommystr.: ggfs. Anbindung unterbrochen	q4::inwork 12521,11016 12582,11103
-# REMOVED (seit Verschwenkung auf andere Fahrbahnseite offen) --- aPfuelstr.: ggfs. Anbindung unterbrochen	q4::inwork 12951,10839 12879,10750
+Audre-Lorde-Str.: Barriere vor Köpenicker Str.	q2::inwork 12185,10900 12314,11152
+Pücklerstr.: Barriere vor Köpenicker Str.	q2::inwork 12272,10840 12416,11084
+Eisenbahnstr.: Barriere vor Köpenicker Str.	q2::inwork 12363,10781 12509,11025
+Zeughofstr.: Barriere vor Köpenicker Str.	q2::inwork 12531,10676 12683,10896
+## generiert mit: ./miscsrc/convert2hafas -specsperre=strassen =(printf "\\t3nocross 12124,11280 12314,11152 12416,11084 12509,11025\\n") | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\'
+#       3nocross::ignrte 12124,11280 12314,11152 12416,11084 12509,11025
+Audre-Lorde-Str. -> Köpenicker Str.	3::inwork 12185,10900 12314,11152 12124,11280
+Köpenicker Str. -> Audre-Lorde-Str.	3::inwork 12416,11084 12314,11152 12185,10900
+Köpenicker Str. -> Pöcklerstr.	3::inwork 12509,11025 12416,11084 12272,10840
+Pöcklerstr. -> Köpenicker Str.	3::inwork 12272,10840 12416,11084 12314,11152
+# REMOVED (seit Verschwenkung auf andere Fahrbahnseite offen) --- Brommystr.: ggfs. Anbindung unterbrochen	q4::inwork 12521,11016 12582,11103
+# REMOVED (seit Verschwenkung auf andere Fahrbahnseite offen) --- Pfuelstr.: ggfs. Anbindung unterbrochen	q4::inwork 12951,10839 12879,10750
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

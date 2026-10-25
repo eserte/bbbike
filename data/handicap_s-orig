@@ -140,9 +140,9 @@ Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q4::inwork 12691,1204
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 --- #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut --- #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv) --- #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024) (inaktiv) --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-02-16 vvv --- #: valid: -20231229 vvv --- Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229 --- Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026) (bis 13.11.2026)
 #: source_id: planb2026:13.44005683,52.52346346,15.08.2024,07:00 ("Sicherung gemäß Vz.-plan", bis 31.10.2026)
-#: also_indoor: traffic (ex-G,T,no-H,W[later])
+#: also_indoor: traffic (re-G,T,no-H,W[later])
 #: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
-#: last_checked: 2026-10-13
+#: last_checked: 2026-10-25 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-11-13 (planb)
 #: valid: -20261113
@@ -629,7 +629,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
 #: source_id: planb2026:13.38375056,52.51772337,26.11.2017, ("Fahrstreifen-Reduzierung", bis 30.04.2028)
-#: last_checked: 2026-10-19 vvv
+#: last_checked: 2026-10-25 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -765,7 +765,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: also_indoor: traffic
 #: source_id: planb2026:13.39082309,52.51741878,25.07.2023, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
 #: priority: #B vvv
-#: last_checked: 2026-09-19 vvv
+#: last_checked: 2026-10-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (entwicklungsstadt, planb) vvv
 #: osm_watch: way id="153698394" version="19"
@@ -4680,13 +4680,16 @@ Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11804,10
 #: by: https://www.entwicklungsstadt.de/bahnhofsumfeld-schoeneweide-naechste-baustelle-betrifft-den-fussgaengertunnel/
 #: by: https://viz.berlin.de/aktuelle-meldungen/ruckbau-fussgangertunnel-schoneweide-ab-26.10.2026/ (bis 3. Quartal 2027)
 #: by: https://viz.berlin.de/site/assets/files/2350/fussgangertunnel.png (temporäre Ampel an der alten Stelle)
-#: source_id: LMS-BR:425838/72 viz2021:13.50984,52.45636, vizapi2026:1101/2026 (bis 21.05.2027, bei vizapi2026 bis 26.10.2026)
+#: source_id: LMS-BR:425838/72 viz2021:13.50984,52.45636, vizapi2026:1101/2026 (bis 21.05.2027, bei vizapi2026 vom 19.10.2026 bis 26.10.2026)
 #: source_id: planb2026:13.51310176,52.4542095,19.10.2026, ("Sicherung gemäß Vz.-plan", bis 21.05.2027)
-#: next_check: 2026-10-26
+#: source_id: bvg2024:160#HIM_FREETEXT_369877
+#: next_check: 2026-10-26 (Beginn?) vvv
+# ACTIVATE_LATER: #: next_check: 2027-05-21 (VIZ-Verkehrsmeldung + planb) vvv
 #: valid: 20261026-20270930
 Schnellerstr.: Baustelleneinrichtungsfläche, Fußgänger	q4::inwork 17728,5756 17807,5730
 #: valid: 20270930-
 Schnellerstr.: einige Fußgänger	q2 17728,5756 17807,5730
+#: next_check ^^^
 # 
 an den Gewächshäusern: kurvig	q2 17659,12823 17638,12813 17637,12785
 #: note: unklar: am östlichen Ende ein Fußgänger-Schild ohne Zusatzzeichen, am westlichen Ende keine Ausschilderung (deshalb: q1 -> q2)
