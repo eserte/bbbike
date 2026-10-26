@@ -6,6 +6,15 @@
 #: section: Temporäre Ampeln vvv
 #: temporary vvv
 # 
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3myqy5lkrl72l
+#: by: https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiewfriawkerrwesn2qusf33bocizcznykdeypfyrwqgidsslwbozm
+#: source_id: vizapi2026:1137/2026 (26.10.2026 bis 13.11.2026)
+#: source_id: LMS-BR:426544/72 viz2021:13.48513,52.51587,26.10.2026,08:00 (bis 13.11.2026)
+#: note: Laut Verkehrszeichenplan Richtung Norden Gehweg für Radfahrer frei; in beiden Richtungen Radfahrüberholverbot; Linksabbiegen vom Stasimuseum nicht erlaubt
+#: next_check: 2026-11-13 (vizapi2026)
+#: valid: 20261026-20261113
+Ruschestr.: Gegenverkehrsregelung	X::inwork::alternating 15886,12190
+# 
 #: next_check_id: BLOCKDAMMWEG-2026
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10210
 #: by: https://bvv-lichtenberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10210 (neue URL)
@@ -190,6 +199,7 @@ Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 #: next_check_id: SIEMENSBORSTELL-2026
 #: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026) (bis 16.10.2026) (bis 02.07.2027) (bei vizapi2026 mittlerweile falscher Text)
 #: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026) (inaktiv) (bis 02.07.2027) (vorfristig inaktiv) (bis 02.07.2027)
+#: source_id: vizapi2026:1145/2026 (Instandsetzung der Siemensbrücke -> evtl. gibt's die Ampel noch immer? bis 02.07.2027)
 #: last_checked: 2026-09-06 (mapillary)
 #: next_check: 2027-07-02 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20270702

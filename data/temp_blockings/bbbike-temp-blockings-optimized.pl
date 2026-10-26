@@ -5320,7 +5320,7 @@ Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
 #: by: https://www.entwicklungsstadt.de/panorama-hotel-am-adenauerplatz-nimmt-form-an-hotel-wohnen-und-bueros-geplant/
 #: by: https://www.entwicklungsstadt.de/panorama-hotel-am-adenauerplatz-fassade-veraendert-das-fruehere-hotel/
 # REMOVED --- #: note: vermutlich nur im Bereich Sybelstr. 14 --- #: also_indoor: traffic (ex-H,ex-G,ex-B,ex-T,ex-W)
-#: osm_watch: way id="1300235970" version="3"
+#: osm_watch: way id="1300235970" version="4"
 #: osm_watch: note 5206969 1
 # REMOVED --- #: osm_watch: way id="1039329567" version="6"
 # REMOVED (beendet) --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2024-11-04 (architektur-urbanistik)
@@ -7734,7 +7734,7 @@ Am Schwanenberg: einige Fußgänger, Grünanlage	q4 15752,9385 15793,9334
 #: osm_watch: node id="13935525208" version="1"
 #: osm_watch[closed]: note 5293716 1
 #: source_id: planb2026:13.37440267,52.47750014,09.09.2024,06:00 ("Vollsperrung beider Fahrbahnen", bis 26.01.2029)
-#: last_checked: 2026-10-06
+#: last_checked: 2026-10-26 (daf)
 # REMOVED --- #: check_frequency: 30d (traffic)
 #: check_frequency: 90d
 #: next_check: 2029-01-26 (planb)
@@ -8950,7 +8950,7 @@ Kaiserdamm -> Fritschestr.: Richtung Osten/Norden	3 3159,11562 3320,11583 3287,1
 #: osm_watch: note 5465754 3
 #: note: gesperrter Bereich ist nur kurz, ca. 25m, deshalb q2
 #: add_fragezeichen: Ist die Anbindung der Corinthstr. an den Markgrafendamm weiterhin gesperrt?
-#: last_checked: 2026-10-18
+#: last_checked: 2026-10-26
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2026-09-30 (planb)
 #: next_check: 2026-10-31 (Halteverbotsschilder)
@@ -10119,21 +10119,7 @@ Bäumerplan: Sperrung der Fahrbahn	q4::inwork 8527,8293 8482,8227
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1672272.php (01.06.2026-12.10.2026)
-#: by: https://viz.berlin.de/aktuelle-meldungen/grundhafte-strassenbaumassnahmen-in-der-filandastrasse/
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mnvwiyezw22e (bis Ende Oktober 2026)
-#: by: https://www.entwicklungsstadt.de/filandastrasse-in-steglitz-neue-bauphase-mit-sperrung-geplant/
-#: note: bedeutet die Umleitung, dass das Radfahren hier explizit verboten wird?
-#: source_id: LMS-BR:411397/72 viz2021:13.33133,52.45317,10.06.2026,07:00 (bis 30.10.2026)
-Neue Filandastr.: Sanierungsarbeiten, Umleitung des Radverkehrs	q4::inwork 5583,5179 5610,5227 5643,5301 5666,5392 5672,5469 5671,5489
-',
-         'from' => 1780981200,
-         'id' => 4635,
-         'text' => 'Neue Filandastr.: Bauarbeiten zwischen Albrechtstr. und Südendstr., Verengung der Fahrbahn, für den Radverkehr existieren Umleitungsstrecken, vom 10.06.2026 bis 30.10.2026',
-         'type' => 'handicap',
-         'until' => 1793401140
-       },
+       undef,
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=798765#post798765
 #: osm_watch: way id="1431729132" version="5"
@@ -10287,18 +10273,27 @@ Schillerstr.	q4::inwork 3460,11441 3522,11447 3571,11451
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiag7pw6g3bvggb46asuojgj4hjw4sfwg5eofj7vtoibzrzf7gw74e
 #: by: https://www.tagesspiegel.de/berlin/bezirke/mitte/ein-bisschen-existenzgefahrdend-bvg-baustelle-blockiert-eine-der-bekanntesten-kiezmeilen-berlins-fur-monate-16107598.html
 #: by: https://www.entwicklungsstadt.de/kastanienallee-bleibt-gesperrt-bvg-baustelle-dauert-bis-dezember/
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261026 (Umbau der Baustelle)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3myrlafvnkk2g
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie6dspl6w3itfw33226bcne7n5nrw5f567iy5krtff72vk5ntgbwi
 #: source_id: planb2026:13.40452117,52.53329753,31.07.2026, ("Vollsperrung beider Fahrbahnen", bis 29.01.2027) (vorfristig inaktiv) (bis 29.01.2027) (vorfristig inaktiv) (bis 29.01.2027)
 #: source_id: LMS-BR:418663/72 viz2021:13.40671,52.53572, vizapi2026:811/2026 (Kastanienallee, bis 31.08.2026) (bis 29.01.2027) (nur noch in vizapi2026 aktiv) (bis 29.01.2027)
-#: source_id: LMS-BR:418661/72 viz2021:13.39892,52.53262, vizapi2026:810/2026 (Veteranenstr., bis 31.08.2026) (bis 29.01.2027) (inaktiv) (bis 07.09.2027) (nur noch in vizapi2026 aktiv) (bis 26.10.2026)
+#: source_id: LMS-BR:418661/72 viz2021:13.39892,52.53262, vizapi2026:810/2026 (Veteranenstr., bis 31.08.2026) (bis 29.01.2027) (inaktiv) (bis 07.09.2027) (nur noch in vizapi2026 aktiv) (bis 26.10.2026) (bis 20.12.2026)
 #: also_indoor: traffic (T,G[later],H,W)
 #: note: Für den Radverkehr ist eine Umleitung über Fehrbelliner Str. - Choriner Str. (und vermutlich weiter über Schwedter Str.) ausgeschildert, beide Richtungen
 #: last_checked: 2026-10-19 (mapillary) vvv
 #: check_frequency: 21d (am Anfang höhere Frequenz) vvv
 #: next_check: 2027-01-29 (planb + VIZ-Verkehrsmeldung) vvv
 Kastanienallee: Gleisbauarbeiten	q4::inwork 10370,14158 10426,14262 10497,14391 10530,14452
-Zionskirchplatz: Gleisbauarbeiten	q4::inwork 10426,14262 10391,14280 10304,14254
+# REMOVED (hier mittlerweile wieder offen) --- Zionskirchplatz: Gleisbauarbeiten	q4::inwork 10426,14262 10391,14280
+Zionskirchplatz: Gleisbauarbeiten	q4::inwork 10391,14280 10304,14254
 # REMOVED (hier nicht) --- Zionskirchplatz: Gleisbauarbeiten	q4::inwork 10304,14254 10282,14212
-Veteranenstr.: Gleisbauarbeiten	q4::inwork 10002,14092 10282,14212
+#: historical_note: seit 2026-10-27 vermutlich nur verkürzt (Kreuzungsbereich Fehrbelliner Str.?), deshalb q4->q3
+Veteranenstr.: Gleisbauarbeiten	q3::inwork 10002,14092 10282,14212
+#: historical_note: seit 2026-10-27
+Veteranenstr.: Gleisbauarbeiten	q4::inwork 10304,14254 10282,14212
+#: historical_note: seit 2026-10-27, vermutete Position
+Fehrbelliner Str./Veteranenstr.: Gleisbauarbeiten im Kreuzungsbereich	q3::inwork 10282,14212 10370,14158
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -10833,13 +10828,14 @@ Klausdorf - Zossen (Thomas-Müntzer-Straße): Sperrung des Bahnübergangs	2::inwork
        undef,
        {
          'data' => '#: next_check_id: FLIESS-2026
+#: next_check: 2026-10-30
 	q4::inwork 18164,5701 18019,5786
 ',
          'from' => 1787436000,
          'id' => 4722,
-         'text' => 'Fließstr.: Bauarbeiten, Sperrung der Fahrbahn, voraussichlich vom 24.08.2026 bis 30.10.2026',
+         'text' => 'Fließstr.: Bauarbeiten, Sperrung der Fahrbahn, voraussichlich vom 24.08.2026 bis 30.10.2026, evtl. werden die Bauarbeiten verlängert',
          'type' => 'handicap',
-         'until' => 1793401200
+         'until' => undef
        },
        {
          'data' => '#: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 vizapi2026:805/2026 (bis 24.08.2026 + weitere Arbeiten) (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026) (bis 25.11.2026)
@@ -10917,10 +10913,10 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
          'data' => '#: next_check_id: KOEPENICKER-2026
 #: note: der Bürgersteig ist nicht nur eng, sondern teilweise auch unangenehm zu fahren: Charlottenburger Platten, gepflasterte Ausfahrten, unzureichende abgesenkte Bordsteine
 #: traffic_note: Etwas Ausweichverkehr via Engeldamm - illegale Überfahrt zum Mariannenplatz - Wrangelstr., evtl. wird es mit der Zeit mehr werden.
-#: source_id: LMS-BR:420723/72 viz2021:13.42828,52.50735,31.08.2026,04:00 vizapi2026:853/2026 (bis 26.10.2026)
+#: source_id: LMS-BR:420723/72 viz2021:13.42828,52.50735,31.08.2026,04:00 vizapi2026:853/2026 (bis 26.10.2026) (bis 21.12.2026)
 #: last_checked: 2026-10-25 vvv
 #: check_frequency: 45d vvv
-#: next_check: 2026-12-31 vvv
+#: next_check: 2026-12-21 (VIZ-Verkehrsmeldung) vvv
 Köpenicker Str.: getrennter Rad- und Gehweg	q2::inwork; 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
 Audre-Lorde-Str.: Barriere vor Köpenicker Str.	q2::inwork 12185,10900 12314,11152
 Pücklerstr.: Barriere vor Köpenicker Str.	q2::inwork 12272,10840 12416,11084
@@ -11115,7 +11111,7 @@ Rhinstr.: Fahrbahn und Bürgersteig Richtung Süden gesperrt, Kfz-Verkehr wird übe
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mxsoehgy3j25 (südlich Sieversbrücke)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib2pjbu6hax2etdko5myesqz2qtxrkmxpxopm5ucnbr6w7kyawdiy (Richtung Süden Gehweg Radfahrer frei)
 #: source_id: LMS-BR:422269/72 viz2021:13.35402,52.44333,14.09.2026,07:00 vizapi2026:928/2026 (bis 17.02.2027)
-#: source_id: LMS-BR:369608/72 vizapi2026:1064/2026 (Sieversbrücke, aber falsch geolokalisiert (benachbarte Brücke!) (Baustelle südlich der Brücke, also nicht diesen Eintrag betreffend), bis 17.02.2027)
+#: source_id: LMS-BR:369608/72 vizapi2026:1064/2026 (Sieversbrücke, aber falsch geolokalisiert (benachbarte Brücke!) (Baustelle südlich der Brücke, also nicht diesen Eintrag betreffend), bis 17.02.2027) (mittlerweile bei vizapi2026 richtig geolokalisiert, dann wäre aber der Eintrag an dieser Stelle hier falsch)
 #: source_id: planb2026:13.35365283,52.4418069,14.10.2026, ("Fahrstreifen-Reduzierung", bis 17.02.2027)
 #: note: man könnte über die niedrige Mittelstreifenbarriere tragen, oder nimmt die provisorische Ampel an der Crailsheimer Str.
 # suboptimales Routing: besser wäre eine Teilung der Fahrbahnen der Kaiser-Wilhelm-Str., oder eine Lösung mit DH
@@ -11219,6 +11215,7 @@ Raumerstr. - Gneiststr.	q4::inwork 11040,15398 11112,15387 11223,15319
          'data' => '#: next_check_id: WUNDTSTR-2026
 #: source_id: planb2026:13.29447596,52.51332498,29.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.04.2027)
 #: source_id: LMS-BR:423757/72 viz2021:13.2935,52.5119,29.09.2026,07:00 (bis 30.04.2027)
+#: source_id: LMS-BR:426529/72 viz2021:13.293929,52.512269,26.10.2026,07:00 (bis 30.04.2027)
 #: osm_watch: note 5559906 1
 #: note: Halteverbotsschilder bis 30.04.2027
 # REMOVED --- #: XXX Haben die Bauarbeiten tatsächlich schon begonnen? Ist die Straße auch für den Radverkehr gesperrt? --- #: next_check: 2026-09-29 vvv
@@ -11317,6 +11314,7 @@ Am Weidendamm	q4::inwork; 9286,12886 9323,12895
 #: source_id: planb2026:13.36059545,52.44672497,28.09.2026, ("Sicherung gemäß Vz.-plan", bis 25.06.2027)
 #: source_id: LMS-BR:424351/72 viz2021:13.35492,52.44891,05.10.2026,07:00 vizapi2026:1020/2026 (hier nur Kfz) (bis 25.06.2027)
 #: also_indoor: traffic (G,T,H,W)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mwll2b6mvc2u (zum Linksabbiegen Attilastr. -> Crailsheimer Str. ab 28.09.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mx3ztj3ho522
 #: by: https://fahrinfo.vbb.de/him-uploads/1790945337602_282_1_3.jpg
 #: traffic_note: Mehr Verkehr in der Crailsheimer Str.; Stauung vor der Ampel Attilastr. möglich
@@ -11854,6 +11852,7 @@ Zwiestädter Str.: Sperrung der Fahrbahn (ungefähr 100m)	q4::inwork 13392,7648 13
        },
        {
          'data' => '#: source_id: planb2026:13.28863802,52.4793914,26.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.12.2026)
+#: source_id: LMS-BR:426514/72 viz2021:13.287606,52.479421,26.10.2026,06:00 (bis 04.12.2026)
 	q4::inwork 2642,8040 2474,8046 2433,8018
 ',
          'from' => 1792882800,
@@ -11998,6 +11997,128 @@ Uferweg am Südufer des Urbanhafens/Landwehrkanals: Erneuerung	2::inwork 10929,98
          'text' => 'Marienplatz: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, bis 14.12.2026',
          'type' => 'handicap',
          'until' => 1797289200
+       },
+       {
+         'data' => '#: by: https://bauprojekte.deutschebahn.com/p/berlin_s_1_estw/infobauarbeiten (17. September 2026 bis 8. Februar 2027)
+#: by: https://bauprojekte.deutschebahn.com/media/projects/12483/docs/HZ_berlin_s-bahn_s1_schoenfliess_20260824.pdf
+#: by: https://www.bahninfo-forum.de/read.php?9,861793,866635#msg-866635 (hier Sperrung ab 28.9.2026)
+#: also_indoor: traffic (G,T,no-H,no-W)
+#: last_checked: 2026-10-25 (traffic)
+#: next_check: 2027-02-08 (DB)
+	2::inwork 5438,29434 5359,28848 5320,28548
+',
+         'from' => 1789596000,
+         'id' => 4823,
+         'text' => 'Bahnübergang am S-Bhf. Schönfließ: Sperrung, voraussichtlich bis 08.02.2027',
+         'type' => 'gesperrt',
+         'until' => 1802127599
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731029.php
+#: by: https://www.entwicklungsstadt.de/vollsperrung-der-doerpfeldstrasse-in-adlershof-wird-bis-maerz-2027-gebaut/
+#: XXX nach den Bauarbeiten: möglicherweise wird der vorhandene Hochbordradweg asphaltiert sein?
+	q4::inwork 20834,4035 21053,4162 21129,4217 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
+',
+         'from' => 1794092400,
+         'id' => 4824,
+         'text' => 'Dörpfeldstr. und Ottomar-Geschke-Str.: Fahrbahnsanierung zwischen Waldstr. und Oberspreestr., Fahrbahn und Radweg betroffen, ab 9.11.2026 bis voraussichtlich Ende März 2027',
+         'type' => 'gesperrt',
+         'until' => 1806530399
+       },
+       {
+         'data' => '#: source_id: LMS-BR:426528/72 viz2021:13.29695,52.48803,26.10.2026,07:00 (bis 04.12.2026)
+#: source_id: planb2026:- (allerdings gibt es südlich der Charlottenbrunner eine Baustelle, die auch bei traffic.T gezeigt wird)
+#: also_indoor: traffic (G,H[südlich Charlottenbrunner],H,W)
+	q4::inwork 3180,9015 3196,9193
+',
+         'from' => 1792908000,
+         'id' => 4825,
+         'text' => 'Cunostr.: Bauarbeiten zwischen Charlottenbrunner Str. und Friedrichsruher Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 26.10.2026 07:00 bis 04.12.2026 17:00',
+         'type' => 'handicap',
+         'until' => 1796400000
+       },
+       {
+         'data' => '#: source_id: planb2026:13.40681875,52.49467244,26.10.2026, ("Vollsperrung beider Fahrbahnen", bis 28.02.2027)
+#: source_id: LMS-BR:426531/72 viz2021:13.40578,52.49344,26.10.2026,07:00 (bis 28.02.2027)
+#: note: vor der Wilmsstr. gab es schon vor der Vollsperrung eine Engstelle mit Gegenverkehrsregelung
+# REMOVED --- #: last_checked: 2026-10-24 --- #: next_check: 2026-10-26 (planb)
+Geibelstr.	q4::inwork 10564,9755 10627,9912
+# 
+',
+         'from' => 1792969200,
+         'id' => 4826,
+         'text' => 'Geibelstr.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, vom 26.10.2026 bis 28.02.2027',
+         'type' => 'handicap',
+         'until' => 1803855599
+       },
+       {
+         'data' => '#: source_id: LMS-BR:426532/72 viz2021:13.40754,52.57388,26.10.2026,07:00 (bis 27.11.2026)
+#: source_id: planb2026:13.40422588,52.57304788,26.10.2026, ("Sicherung gemäß Vz.-plan", bis 27.11.2026)
+	q4::inwork 10205,18575 10359,18646
+',
+         'from' => 1792908000,
+         'id' => 4827,
+         'text' => 'Parkstr.: Bauarbeiten zwischen Elisabethweg und Pestalozzistr., vom 26.10.2026 07:00 bis 27.11.2026 23:59',
+         'type' => 'handicap',
+         'until' => 1795820340
+       },
+       {
+         'data' => '#: source_id: planb2026:13.33310668,52.49077497,13.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 24.10.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.33310668,52.49077497,26.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 06.11.2026)
+#: also_indoor: traffic (none)
+# REMOVED --- #: last_checked: 2026-10-25 (traffic) --- #: check_frequency: 3d (traffic)
+# REMOVED --- #: next_check: 2026-10-26 (planb: neuer Beginn?)
+Prinzregentenstr.: Bauarbeiten, Sperrung, auch für den Radverkehr?	q4::inwork 5618,9607 5627,9362
+',
+         'from' => 1792969200,
+         'id' => 4828,
+         'text' => 'Prinzregentenstr.: Bauarbeiten zwischen Prager Platz und Güntzelstr., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 26.10.2026 07:00 bis 06.11.2026 17:00',
+         'type' => 'handicap',
+         'until' => 1794005999
+       },
+       {
+         'data' => '#: source_id: bvg2024:140#HIM_FREETEXT_370300
+#: source_id: bvg2024:140#HIM_FREETEXT_370299
+#: source_id: LMS-BR:426607/72 viz2021:13.418245,52.499404,
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mysegwizbk2b
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mysenevlxc2b
+#: also_indoor: traffic (no-G,T,no-H,no-W)
+#: last_checked: 2026-10-26 (traffic)
+#: check_frequency: 3d
+#: next_check: 2026-11-02 (vizapi2026-Enddatum)
+Adalbertstr.	q4::inwork 11393,10390 11389,10463 11411,10515 11463,10642
+',
+         'from' => undef,
+         'id' => 4829,
+         'text' => 'Adalbertstr.: Wasserrohrbruch, Sperrung, evtl. ist der Radverkehr auch betroffen, Ende unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: vizapi2026:1144/2026 (bis 06.11.2026)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261026
+#: note: vermutlich nur ein kurzes Stück, deshalb q4 -> q3
+	q3::inwork 6377,13321 6366,13716
+',
+         'from' => 1792994400,
+         'id' => 4830,
+         'text' => 'Lübecker Str.: Bauarbeiten mit Sperrung an der Turmstr., vom 27.10.2026 07:00 Uhr bis 06.11.2026 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1793980800
+       },
+       {
+         'data' => '#: source_id: planb2026:13.28162521,52.43585692,26.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.11.2026)
+#: also_indoor: traffic (no-G,T,H[kurz],no-W)
+# REMOVED --- #: next_check: 2026-10-26 (planb) vvv
+Curtiusstr.: geplante Bauarbeiten, Sperrung, auch für den Radverkehr?	q4::inwork 2198,3169 2256,3172 2289,3331
+Gräfenberger Weg: geplante Bauarbeiten, Sperrung, auch für den Radverkehr?	q4::inwork 2256,3172 2346,3077
+# REMOVED --- #: next_check ^^^
+',
+         'from' => 1792969200,
+         'id' => 4831,
+         'text' => 'Curtiusstr./Gräfenberger Weg: Bauarbeiten, Sperrung, evtl. ist der Radverkehr betroffen, 26.10.2026 bis 24.11.2026',
+         'type' => 'handicap',
+         'until' => 1795561199
        }
      
 );
