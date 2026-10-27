@@ -577,7 +577,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-10-20 vvv
+#: last_checked: 2026-10-27 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -3231,7 +3231,7 @@ Fahrradschleuse	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) (2. Quartal 2027 - 3. Quartal 2027) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2026-10-20 vvv
+#: last_checked: 2026-10-27 vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: note: Andreasstr., Richtung Norden
 	RW4; 12180,11657 12204,11748 12207,11763 12238,11931 12279,12113 12295,12197
@@ -3388,10 +3388,8 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
 #: last_checked: 2026-10-26 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung) vvv
-# REMOVED --- #: next_check: 2026-09-30 (planb) vvv
-#: next_check: 2026-10-31 (Halteverbotsschilder) vvv
+#: check_frequency: 14d vvv
+#: next_check: 2027-01-29 (planb) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
 provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: next_check ^^^
@@ -3419,13 +3417,13 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026) (inaktiv)
 #: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026) (bis 31.10.2026)
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026) (bis 30.11.2026)
+#: source_id: planb2026:13.46512046,52.49807953,11.03.2024,06:00 ("Fahrstreifen-Reduzierung", bis 29.01.2027)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
 #: last_checked: 2026-10-26
-#: check_frequency: 30d
-# REMOVED (wird vermutlich verlängert) --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2026-09-30 (planb)
-#: next_check: 2026-10-31 (Halteverbotsschilder)
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2026-10-31 (Halteverbotsschilder)
+#: next_check: 2027-01-29 (planb)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
 #	RW3; 14641,10552 14608,10409
 #die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
@@ -3467,10 +3465,10 @@ relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
 #: last_checked: 2026-10-23
-#: next_check: 2027-03-31
-#: valid: !20250611-20270331
+#: next_check: 2027-12-31
+#: valid: !20250611-20271231
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
-#: valid: 20250611-20270331
+#: valid: 20250611-20271231
 Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note ^^^
 #: note: Gürtelstr./Neue Bahnhofstr., Richtung Norden
@@ -3478,10 +3476,10 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
 #: last_checked: 2026-10-23
-#: next_check: 2027-03-31
-#: valid: !20250611-20270331
+#: next_check: 2027-12-31
+#: valid: !20250611-20271231
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
-#: valid: 20250611-20270331
+#: valid: 20250611-20271231
 Tempo 20 und Radfahrüberholverbot	RW0; 14945,11300 15016,11431
 relativ schmale Radspuren	RW3; 15016,11431 15055,11505 15106,11598
 # REMOVED --- #: last_checked: 2026-03-30 --- #: check_frequency: 10d ---#: next_check: 2026-03-31 --- #: valid: -20260410 --- Tempo 20 und Radfahrüberholverbot	RW0; 15106,11598 15153,11691 --- #: valid: !-20260410
@@ -8321,7 +8319,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2026-09-21 (mapillary) vvv
+#: last_checked: 2026-10-26 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -9562,13 +9560,16 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: by: https://www.entwicklungsstadt.de/radweg-an-der-schoeneberger-strasse-bau-startet-nach-fast-zehn-jahren/
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10189
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/260507_fahrrat_protokoll-und-ppt.pdf (geschützer Radstreifen zwischen Alboinstr. und Eresburgstr. (555m --- das würde aber bis zur Manteuffelstr. reichen), Breite 2,38m)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261027 (Erwähnung der Arbeiten für die RVA Höhe Ringbahnstr.)
 #: XXX Laut infravelo gibt es auch eine Ampel (vermutlich in Höhe Borussiastraße); mittlerweile ist nur von einer Erneuerung der Ampelanlage an der Alboinstr. die Rede
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16) (inaktiv)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
 #: source_id: viz2021:13.377485,52.466729,13.11.2023,06:00 (Leitungsarbeiten bis 01.12.2023) (inaktiv)
 #: source_id: LMS-BR:406426/72 viz2021:13.37196,52.46981, vizapi2026:390/2026 (Umbau Knotenpunkt und Modernisierung der LZA an der Alboinstr./A100, bis 27.10.2026) (bis 15.01.2027)
+#: source_id: LMS-BR:426671/72 viz2021:13.37412,52.46869, vizapi2026:1153/2026 (Schöneberger Str./Ringbahnstr., Fahrbahnverengung, bis 30.11.2026)
 #: source_id: planb2026:13.37313754,52.46918969,07.04.2026, ("Sicherung gemäß Vz.-plan", an der Alboinstr./A100, bis 27.10.2026) (vorfristig inaktiv) (bis 15.01.2027)
 #: source_id: planb2026:13.37804884,52.46634064,13.07.2026, ("Sicherung gemäß Vz.-plan", Schöneberger/Borussiastr., bis 27.11.2026)
+#: source_id: planb2026:13.37429521,52.46852017,27.10.2026,06:00 ("Fahrstreifen-Reduzierung", Schöneberger Str./Ringbahnstr., bis 30.11.2026)
 #: osm_watch: way id="4357826" version="25"
 #: osm_watch: way id="354645907" version="21"
 #: osm_watch: way id="354645904" version="15"

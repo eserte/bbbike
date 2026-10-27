@@ -202,7 +202,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeu
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026) (bis 30.10.2026)
 #: also_indoor: traffic (ex-G,ex-T,H,ex-W)
 #: note: manchmal (auﬂerhalb der Arbeitszeiten? am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45)
-#: last_checked: 2026-10-21 vvv
+#: last_checked: 2026-10-27 vvv
 #: next_check: 2026-10-30 (VIZ-Verkehrsmeldung + planb) vvv
 #: valid: 20261012-20261030 vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einm¸ndungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
@@ -504,7 +504,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 #: note: nur ein kurzer Abschnitt ist gesperrt
 #: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026) (inaktiv) (bis 08.01.2027)
 #: source_id: planb2026:13.38976332,52.5093633,26.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (siehe oben, vorfristig inaktiv)
-#: last_checked: 2026-10-19
+#: last_checked: 2026-10-27
 #: check_frequency: 21d
 #: next_check: 2027-01-08 (planb)
 Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
@@ -629,7 +629,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
 #: source_id: planb2026:13.38375056,52.51772337,26.11.2017, ("Fahrstreifen-Reduzierung", bis 30.04.2028)
-#: last_checked: 2026-10-25 vvv
+#: last_checked: 2026-10-27 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -655,7 +655,7 @@ Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 9011,12423 9028,123
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: by: https://www.entwicklungsstadt.de/vom-forschungsstandort-zur-hochschule-robert-koch-forum-auf-dem-weg-zur-neuen-nutzung/ (Abschluss 2027)
 #: osm_watch: way id="153698413" version="24"
-#: last_checked: 2026-10-14 (osm)
+#: last_checked: 2026-10-27
 #: check_frequency: 60d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
@@ -1200,8 +1200,8 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 #: osm_watch: note 5181118 1
 #: osm_watch: way id="4491984" version="29"
 #: XXX etwa 60m der Fahrbahn sind gesperrt
-#: also_indoor: traffic (ex-G,T,ex-W)
-#: last_checked: 2026-10-06
+#: also_indoor: traffic (re-G,T,ex-W)
+#: last_checked: 2026-10-26 (traffic)
 #: check_frequency: 120d
 #: next_check: 2026-11-20 (planb)
 #: note: "Notfall"-valid-Direktive
@@ -2405,7 +2405,7 @@ Hebbelstr.: Fuﬂg‰nger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: osm_watch: note 5350535 2
 #: osm_watch: way id="30909343" version="27"
 #: source_id: planb2026:13.43196346,52.4975659,01.02.2024,07:00 (hier: "Haltverbote", bis 31.12.2026)
-#: last_checked: 2026-10-25
+#: last_checked: 2026-10-27
 #: check_frequency: 180d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fuﬂg‰nger, Engstellen	q3 12341,10218 12292,10374
@@ -4708,7 +4708,7 @@ Mariannenplatz: einige Fuﬂg‰nger, insbesondere vor dem Bethanienhaus	q2 11804,10
 #: by: https://www.entwicklungsstadt.de/bahnhof-schoeneweide-rueckbau-des-fussgaengertunnels-beginnt/
 #: source_id: LMS-BR:425838/72 viz2021:13.50984,52.45636, vizapi2026:1101/2026 (bis 21.05.2027, bei vizapi2026 vom 19.10.2026 bis 26.10.2026)
 #: source_id: planb2026:13.51310176,52.4542095,19.10.2026, ("Sicherung gem‰ﬂ Vz.-plan", bis 21.05.2027)
-#: source_id: bvg2024:160#HIM_FREETEXT_369877
+#: source_id[inactive]: bvg2024:160#HIM_FREETEXT_369877
 #: source_id: LMS-BR:426521/72 viz2021:13.5122,52.45492,26.10.2026,06:00 vizapi2026:1143/2026 (bis 21.05.2027)
 #: next_check: 2026-10-26 (Beginn?) vvv
 # ACTIVATE_LATER: #: next_check: 2027-05-21 (VIZ-Verkehrsmeldung + planb) vvv

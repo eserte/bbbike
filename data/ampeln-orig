@@ -9,7 +9,7 @@
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3myqy5lkrl72l
 #: by: https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiewfriawkerrwesn2qusf33bocizcznykdeypfyrwqgidsslwbozm
 #: source_id: vizapi2026:1137/2026 (26.10.2026 bis 13.11.2026)
-#: source_id: LMS-BR:426544/72 viz2021:13.48513,52.51587,26.10.2026,08:00 (bis 13.11.2026)
+#: source_id: LMS-BR:426544/72 viz2021:13.48513,52.51587,26.10.2026,08:00 vizapi2026:1137/2026 (bis 13.11.2026)
 #: note: Laut Verkehrszeichenplan Richtung Norden Gehweg für Radfahrer frei; in beiden Richtungen Radfahrüberholverbot; Linksabbiegen vom Stasimuseum nicht erlaubt
 #: next_check: 2026-11-13 (vizapi2026)
 #: valid: 20261026-20261113
@@ -180,7 +180,7 @@ Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 vizapi2026:587/2026 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026) (inaktiv)
 #: also_indoor: traffic (ex-G,T)
-#: last_checked: 2026-10-25 (traffic)
+#: last_checked: 2026-10-27 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-10-23 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260911
@@ -197,9 +197,8 @@ Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,1858
 Heinrich-Mann-Str./Hermann-Hesse-Str.	X::inwork 9279,18724
 # 
 #: next_check_id: SIEMENSBORSTELL-2026
-#: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, (bis 28.08.2026) (bis 16.10.2026) (bis 02.07.2027) (bei vizapi2026 mittlerweile falscher Text)
+#: source_id: LMS-BR:369608/72 viz2021:13.34035,52.44547, vizapi2026:1145/2026 (bis 28.08.2026) (bis 16.10.2026) (bis 02.07.2027) (bei vizapi2026 mittlerweile falscher Text) (jetz richtig: Instandsetzung der Siemensbrücke -> evtl. gibt's die Ampel noch immer? bis 02.07.2027)
 #: source_id: planb2026:13.33846256,52.44412197,19.05.2025, ("Sicherung gemäß Vz.-plan", bis 28.08.2026) (inaktiv) (bis 02.07.2027) (vorfristig inaktiv) (bis 02.07.2027)
-#: source_id: vizapi2026:1145/2026 (Instandsetzung der Siemensbrücke -> evtl. gibt's die Ampel noch immer? bis 02.07.2027)
 #: last_checked: 2026-09-06 (mapillary)
 #: next_check: 2027-07-02 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20270702
@@ -699,14 +698,14 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: source_id: viz2021:13.471924,52.508017,24.01.2023,09:00 (bis 30.06.2024) (inaktiv)
 #: source_id: viz2021:13.471417,52.507338,11.06.2025,07:00 (bis 31.03.2027) (inaktiv)
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: source_id: planb2026:13.47083207,52.50670538,11.06.2025, ("Sicherung gemäß Vz.-plan", bis 31.03.2027)
+#: source_id: planb2026:13.47083207,52.50670538,11.06.2025, ("Sicherung gemäß Vz.-plan", bis 31.03.2027) (bis 31.12.2027)
 # REMOVED --- #: note: eigentlich zwei Ampeln, nördlich und südlich der Einmündung; Anforderungsampeln; außerdem mittlerweile eine Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
 #: last_checked: 2026-10-23
 #: check_frequency: 120d
-#: next_check: 2027-03-31 (VIZ-Verkehrsmeldung + planb)
+#: next_check: 2027-12-31 (planb)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
 # 
 # REMOVED --- #: note: Halteverbotsschilder bis 31.12.2025, mittlerweile bis 31.03.2026 --- #: note: Anforderungsampel; außerdem Engstelle ohne Radspuren, dafür Tempo 20 + Radfahrüberholverbot --- #: last_checked: 2026-04-03 --- #: check_frequency: 10d --- #: check_frequency: 120d --- #: next_check: 2026-03-31 (Halteverbotsschilder) --- Gürtelstr.	F::inwork 15153,11691
@@ -927,8 +926,9 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261019 (Baustellenampel auf Höhe der A114 bis Mitte Dez 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mybu5iyqg22o
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreianicmftuacupzy5xjktk6ung6ab3iawdmffdxn67m6xhvfmrapty (auch Sperrung des südlichen Maronensperlingwegs)
-#: note: laut Bushaltestellenaushang vermutlich erst ab 20.10.2026?
-#: last_checked: 2026-03-22 (mapillary) vvv
+# REMOVED --- #: note: laut Bushaltestellenaushang vermutlich erst ab 20.10.2026?
+#: note: Gilt nur auf der Fahrbahn, nicht auf dem Radweg Richtung Westen.
+#: last_checked: 2026-10-26 (mapillary) vvv
 #: next_check: 2026-11-12 (VIZ-Verkehrsmeldung) vvv
 #: valid: 20261020-20261112 vvv
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork::alternating 12672,20720

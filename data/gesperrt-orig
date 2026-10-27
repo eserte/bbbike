@@ -4288,12 +4288,13 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/2026-06-08-protokoll-ag-mobilitaet.pdf
 #: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/hiermit-stellen-wir-berliner-senat-und-deutscher-bahn-ein-ultimatum-aktivisten-drohen-mit-offnung-von-geschlossener-brucke-am-gorlitzer-park-16180357.html
 #: by: https://www.entwicklungsstadt.de/goerlitzer-bruecken-initiative-goerli-24-7-droht-mit-eigenmaechtiger-oeffnung/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/nach-ultimatum-von-aktivisten-in-berlin-unbekannte-beschadigen-brucken-absperrung-am-gorlitzer-park-16201810.html
 #: osm_watch: note 5278957 5
 #: osm_watch: way id="24042478" version="20"
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
-#: last_checked: 2026-10-20
+#: last_checked: 2026-10-26 (Tsp)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-07-01
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
@@ -4358,7 +4359,7 @@ Petersburger Str.: Überquerung in Höhe Straßmannstr. nicht möglich	3nocross::inw
 # REMOVED --- #: last_checked: 2026-10-11 --- Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
 # 
 #: next_check_id: DUNCKERBRUECKE-2026
-#: last_checked: 2026-10-02 (osm)
+#: last_checked: 2026-10-26 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-09-30 (mögliche Nutzung durch den Rad+Fußverkehr)
 Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
@@ -5228,9 +5229,9 @@ Mittelheide: umgefallene Baumstämme	2 24356,7644 24275,7550
 #: by: https://www.entwicklungsstadt.de/bernhard-lichtenberg-haus-am-bebelplatz-neubau-zeigt-seine-fassade/
 #: osm_watch: way id="28120501" version="15"
 #: source_id: planb2026:13.39547991,52.51516663,27.04.2020, ("Sicherung nach Regelplan", nur die Straße "Hinter der Katholischen Kirche", bis 28.02.2027)
-#: last_checked: 2026-09-02
+#: last_checked: 2026-10-25
 #: check_frequency: 60d
-# REMOVED --- #: next_check: 2026-09-01 (erzbistumberlin)
+#: next_check: 2027-02-28 (planb)
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 # 
 # REMOVED --- #: by: mapillary --- #: last_checked: 2022-02-05 (mapillary) --- #: check_frequency: 90d --- Ackerstr. (Schulzendorf): Hochbauarbeiten, Straße gesperrt	2::inwork 22996,-4983 22962,-5193
@@ -5339,7 +5340,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
 #: osm_watch: note 4853760 1
-#: last_checked: 2026-10-25 vvv
+#: last_checked: 2026-10-27 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5893,13 +5894,12 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: also_indoor: traffic
 #: XXX tatsächlich schon wieder offen?
-#: last_checked: 2026-10-18 (osm) vvv
+#: last_checked: 2026-10-27 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2026-10-26 (osm) vvv
-# ACTIVATE_LATER --- #: next_check: 2026-12-31 vvv
+#: next_check: 2026-12-31 vvv
 #: osm_watch: way id="154807176" version="69"
 #: osm_watch: way id="186329816" version="53"
-Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
+Friedrich-List-Ufer: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
 #: osm_watch: way id="692480577" version="42"
 #: osm_watch: way id="692480576" version="41"
 Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,13304 7989,13302

@@ -19,7 +19,7 @@
 #: next_check_id: NEUEBAHNHOF-2025
 #: note: oft eine schmale Gasse frei, der Autostau geht üblicherweise bis zur Weserstr. (gesehen: 2026-03-30 Mon 12:44, 2026-04-03 Fri 11:26 Karfreitag)
 #: last_checked: 2026-10-23
-#: next_check: 2027-03-31
+#: next_check: 2027-12-31
 Neue Bahnhofstr.	Jam; 15016,11431 14945,11300 14918,11249
 # 
 #: next_check_id: STUBENRAUCH-2025
@@ -58,10 +58,8 @@ Stubenrauchstr.	Jam; 16891,3129 16853,3078 16831,3049 16786,2989 16703,2888 1667
 #: note: zwischenzeitlich hat der Markgrafendamm ab Kurve bis vor der Einmündung Persiusstr. eine provisorische Busspur bekommen (Herbst 2025 - Frühling 2026)
 #: traffic_note: durch den permanenten Stau gibt es erheblichen Ausweichverkehr über die Persiusstr. - Rochowstr.; in der anderen Richtung ebenso wegen Stau in der Stralauer Allee; das ist seit der 2+2-Verkehrsführung zwischenzeitlich nicht mehr so schlimm, meistens nur am Morgen etwas Stau; nun (Spätsommer 2026) wieder mehr Staus
 #: last_checked: 2026-10-26
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-07-31 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: next_check: 2026-09-30 (planb)
-#: next_check: 2026-10-31 (Halteverbotsschilder)
+#: check_frequency: 14d
+#: next_check: 2027-01-29 (planb)
 Markgrafendamm	Jam; 14641,10552 14608,10409 14558,10264
 # 
 # REMOVED (mittlerweile Sackgasse für den Autoverkehr) --- #: note: seit einiger Zeit (A100-Eröffnung?) reicht der Stau bis in die Corinthstr. rein
