@@ -3622,6 +3622,13 @@ Straßmannstr. -> Petersburger Str.: Überquerung in Höhe Straßmannstr. nicht mögl
 Straßmannstr. -> Straßmannstr.: Überquerung in Höhe Straßmannstr. nicht möglich	3::igndisp::inwork 13470,12990 13530,13014 13741,13107
 Straßmannstr. -> Petersburger Str.: Überquerung in Höhe Straßmannstr. nicht möglich	3::igndisp::inwork 13741,13107 13530,13014 13579,12904
 Straßmannstr. -> Straßmannstr.: Überquerung in Höhe Straßmannstr. nicht möglich	3::igndisp::inwork 13741,13107 13530,13014 13470,12990
+Überquerung in Höhe Kochhannstr. nicht möglich	3nocross::ignrte::inwork 13481,13128 13434,13234 13383,13349
+Petersburger Str. -> Kochhannstr.: Überquerung in Höhe Kochhannstr. nicht möglich	3::igndisp::inwork 13383,13349 13434,13234 13548,13290
+Petersburger Str. -> Kochhannstr.: Überquerung in Höhe Kochhannstr. nicht möglich	3::igndisp::inwork 13481,13128 13434,13234 13339,13196
+Kochhannstr. -> Petersburger Str.: Überquerung in Höhe Kochhannstr. nicht möglich	3::igndisp::inwork 13339,13196 13434,13234 13383,13349
+Kochhannstr. -> Kochhannstr.: Überquerung in Höhe Kochhannstr. nicht möglich	3::igndisp::inwork 13339,13196 13434,13234 13548,13290
+Kochhannstr. -> Petersburger Str.: Überquerung in Höhe Kochhannstr. nicht möglich	3::igndisp::inwork 13548,13290 13434,13234 13481,13128
+Kochhannstr. -> Kochhannstr.: Überquerung in Höhe Kochhannstr. nicht möglich	3::igndisp::inwork 13548,13290 13434,13234 13339,13196
 Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
 Überqueren wegen Bauarbeiten nicht möglich	3nocross::ignrte::inwork 14771,14048 14871,14087 14954,14119
 Landsberger Allee -> Anton-Saefkow-Pl.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 14954,14119 14871,14087 14903,14003

@@ -1038,7 +1038,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-10-23
+#: last_checked: 2026-10-28
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -1845,7 +1845,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.infravelo.de/projekt/petersburger-strasse/ (2. Quartal 2024 - 1. Quartal 2027) (3. Quartal 2024 - 1. Quartal 2027) (3. Quartal 2024 - 4. Quartal 2027)
 #: note: früher das infravelo-Projekt "petersburger-strasse-1"
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2024/pressemitteilung.1482741.php (grundhafte Erneuerung: 2,50 m breite Radwege; neue Ampel am Bersarinplatz; Abschluss im III. Quartal 2027)
-#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (neue Verkehrsführung ab 16.9.2024) (Abschluss des 1. BA nun IV. Quartal 2026) (1. BA bis I. Quartal 2027)
+#: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (neue Verkehrsführung ab 16.9.2024) (Abschluss des 1. BA nun IV. Quartal 2026) (1. BA bis I. Quartal 2027) (bis IV. Quartal 2028)
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/petersburger-strasse/lageplan_blatt1.pdf
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/petersburger-strasse/lageplan_blatt2.pdf
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/petersburger-strasse/lageplan_blatt3.pdf
@@ -1859,7 +1859,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-10-19 vvv
+#: last_checked: 2026-10-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1880,12 +1880,14 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="60"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-10-19 vvv
+#: last_checked: 2026-10-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 provisorische Radwegführung	RW2; 13695,12643 13685,12664
-provisorische Radspur	RW4; 13685,12664 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234
+provisorische Radspur	RW4; 13685,12664 13622,12806 13579,12904 13530,13014 13481,13128
+#: historical_note: bis etwa Oktober 2026 wurde der Radverkehr über eine provisorische Radspur auf der westlichen Fahrbahn geführt
+provisorische Radwegführung über den Hochbord	RW2;  13481,13128 13434,13234
 #: historical_note: bis etwa Anfang 2026 wurde der Radverkehr über die alte Fahrbahn geführt (als RW4; getaggt), mittlerweile über den Hochbord
 provisorische Radwegführung über den Hochbord	RW2; 13434,13234 13383,13349 13375,13367 13330,13468
 #: next_check ^^^
@@ -2556,7 +2558,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: by: https://www.entwicklungsstadt.de/dauersperrung-richtung-ostkreuz-warum-hier-seit-2018-nichts-passiert/
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-10-18 vvv
+#: last_checked: 2026-10-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -3464,7 +3466,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-10-23
+#: last_checked: 2026-10-28
 #: next_check: 2027-12-31
 #: valid: !20250611-20271231
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3475,7 +3477,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-10-23
+#: last_checked: 2026-10-28
 #: next_check: 2027-12-31
 #: valid: !20250611-20271231
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -4508,6 +4510,7 @@ Schild "Schritt fahren"	RW6; 9901,18522 10006,18502 10013,18545 9994,18595 9916,
 #: confirmed_by: srt
 	RW2; 17886,5587 17808,5669 17782,5698
 #: next_check_id: SCHOENEWEIDE-2026
+#: last_checked: 2026-10-28
 #: next_check: 2027-05-21 (planb + VIZ-Verkehrsmeldung)
 #: historical_note: bis zu den Bauarbeiten Okt 2026: RW2;
 	RW5; 17782,5698 17728,5756
@@ -9566,7 +9569,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
 #: source_id: viz2021:13.377485,52.466729,13.11.2023,06:00 (Leitungsarbeiten bis 01.12.2023) (inaktiv)
 #: source_id: LMS-BR:406426/72 viz2021:13.37196,52.46981, vizapi2026:390/2026 (Umbau Knotenpunkt und Modernisierung der LZA an der Alboinstr./A100, bis 27.10.2026) (bis 15.01.2027)
-#: source_id: LMS-BR:426671/72 viz2021:13.37412,52.46869, vizapi2026:1153/2026 (Schöneberger Str./Ringbahnstr., Fahrbahnverengung, bis 30.11.2026)
+#: source_id: LMS-BR:426671/72 viz2021:13.37412,52.46869, vizapi2026:1153/2026 (Schöneberger Str./Ringbahnstr., Fahrbahnverengung, bis 30.11.2026) (bei vizapi2026 entfernt)
 #: source_id: planb2026:13.37313754,52.46918969,07.04.2026, ("Sicherung gemäß Vz.-plan", an der Alboinstr./A100, bis 27.10.2026) (vorfristig inaktiv) (bis 15.01.2027)
 #: source_id: planb2026:13.37804884,52.46634064,13.07.2026, ("Sicherung gemäß Vz.-plan", Schöneberger/Borussiastr., bis 27.11.2026)
 #: source_id: planb2026:13.37429521,52.46852017,27.10.2026,06:00 ("Fahrstreifen-Reduzierung", Schöneberger Str./Ringbahnstr., bis 30.11.2026)

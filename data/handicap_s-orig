@@ -20,8 +20,8 @@
 Straße der Pariser Kommune: Radverkehrsführung auf dem Hochbord, eng und Umwege	q2::inwork; 12822,12067 12833,12154
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
-#: last_checked: 2026-10-18
-#: check_frequency: 14d
+#: last_checked: 2026-10-28
+#: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
 #: valid: -20261221
 Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
@@ -77,7 +77,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-10-25 (osm) vvv
+#: last_checked: 2026-10-28 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: planb2026:13.45274687,52.51888366,19.08.2024, ("Sperrung einer Fahrtrichtung", bis 31.12.2026) (vorfristig inaktiv) (bis 31.12.2026)
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
@@ -97,11 +97,12 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: osm_watch: way id="1108260165" version="12"
 #: note: etwa 30m lang
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
-#: osm_watch: note 5191913 3
-#: last_checked: 2026-09-08 vvv
+#: osm_watch: note 5191913 4
+#: last_checked: 2026-10-28 vvv
 #: check_frequency: 45d vvv
-Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q3::inwork; 13434,13234 13383,13349
-Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 13375,13367 13330,13468
+Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q3::inwork; 13530,13014 13481,13128 13434,13234
+Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q3::inwork; 13434,13234 13383,13349
+Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q2::inwork; 13383,13349 13375,13367 13330,13468
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check ^^^
@@ -197,20 +198,6 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (entfernt) --- #: also_indoor: traffic (G,H) --- #: XXX Parkverbotsschilder bis zum 20.6.2021 --- #: add_fragezeichen: Sind die Bauarbeiten in der Pettenkoferstr. bereits beendet? --- #: last_checked: 2021-05-17 --- #: next_check: 2021-06-20 --- # REMOVED --- #: valid: -20210620 --- Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbahn	q3::inwork 14858,12765 14836,12826
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13161,11795 13066,11854# 
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
-# 
-#: source_id: planb2026:13.44849499,52.5121092,12.10.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (vorfristig inaktiv) (bis 20.10.2026) (bis 30.10.2026)
-#: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026) (bis 30.10.2026)
-#: also_indoor: traffic (ex-G,ex-T,H,ex-W)
-#: note: manchmal (außerhalb der Arbeitszeiten? am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45)
-#: last_checked: 2026-10-27 vvv
-#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung + planb) vvv
-#: valid: 20261012-20261030 vvv
-Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
-Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-# 
 # REMOVED --- #: last_checked: 2016-07-27 --- #: check_frequency: 14d --- Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12413,11901 12366,11808
 # REMOVED --- #: XXX laut fritz bis 09.09.2016 --- #: last_checked: 2016-08-07 --- #: next_check: 2016-09-09 --- Lange Str.: Bauarbeiten, Kreuzungsbereich gesperrt, 2x Bordsteine	q3::inwork 11993,11978 12238,11931
 # REMOVED --- : source_id: LMS-BR_r_LMS-BR_73434 --- #: source_id: 2147340364 --- #: source_id: LMS-BR_r_LMS-BR_78589 --- #: source_id: 2147340546 --- #: XXX bis Mitte Dezember --- #: last_checked: 2016-12-12 --- #: next_check: 2016-12-19 --- #: priority: #A --- #: valid: -20161219 --- Straße der Pariser Kommune: Wasserrohrbruch, Fahrbahn unter der Bahnbrücke gesperrt, Gehweg für Radfahrer frei	q3::inwork 12645,11673 12551,11515
@@ -552,6 +539,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: by: https://bvg-projekt.de/spatenstich-ersatzneubau-waisentunnel/
 #: source_id: LMS-BR:400532/72 viz2021:13.41502,52.51579,02.03.2026,07:00 (Stralauer Str., bis 05.05.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:404062/72 viz2021:13.41502,52.51579,07.04.2026,07:00 (Stralauer Str., bis 24.04.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.41495893,52.51503983,09.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", westlich der Einmündung Rolandufer/Littenstr., bis 23.03.2027)
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
 #: last_checked: 2026-10-19 vvv
 #: check_frequency: 30d vvv
@@ -1447,7 +1435,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-10-21
+#: last_checked: 2026-10-28
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig oder unbefestigte Verbindung	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -1770,16 +1758,18 @@ Buckower Chaussee [Nebenstraße]: Absperrung auf der Fahrbahn, ggfs. auf den Bürg
 #: next_check: 2027-08-06 (planb)
 Kranoldplatz (Lichterfelde): Bauarbeiten, Sperrung der südlichen Spange	q4::inwork 5317,2345 5417,2383
 # 
+#: next_check_id: FINCKENSTEINALLEE-2026
 #: note: laut VIZ-Verkehrsmeldung ist nur der Kfz-Verkehr betroffen; bis zur Baseler Str. gibt's auch einen Hochbordradweg
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lycdxxhmxk2c (nur Kfz-Verkehr)
-#: source_id: LMS-BR:382669/72 viz2021:13.29708,52.43252,08.09.2025,07:00 viz2021:13.29708,52.43252, vizapi2026:196/2025 (hier keine Einschränkung auf den Kfz-Verkehr, bis 09.01.2026) (bis 30.01.2026) (bis 01.03.026) (bis 04.09.2026) (bis 30.10.2026)
+#: source_id: LMS-BR:382669/72 viz2021:13.29708,52.43252,08.09.2025,07:00 viz2021:13.29708,52.43252, vizapi2026:196/2025 (hier keine Einschränkung auf den Kfz-Verkehr, bis 09.01.2026) (bis 30.01.2026) (bis 01.03.026) (bis 04.09.2026) (bis 30.10.2026) (bis 08.12.2026)
 #: source_id: planb2026:13.30225823,52.43231703,06.07.2026,07:00 (hier: "keine Fahrbahn-Einschränkung", bis 31.07.2026) (inaktiv)
 #: source_id: planb2026:13.29499928,52.43257687,08.09.2025, ("Sicherung gemäß Vz.-plan", bis 04.09.2026) (bis 30.10.2026) (vorfristig inaktiv)
-#: source_id: planb2026:13.29279892,52.43270502,09.11.2026, ("Sperrung einer Fahrtrichtung" (welche?), zwischen Kommandantenstr. und Ringstr., 09.11.2026 bis bis 31.07.2027)
+#: source_id: planb2026:13.29279892,52.43270502,09.11.2026, ("Sperrung einer Fahrtrichtung" (welche?), zwischen Kommandantenstr. und Ringstr., 09.11.2026 bis bis 31.07.2027) (vorfristig inaktiv)
 #: also_indoor: traffc (G[an der Theklastr],T[Thekla bis Baseler],H[Thekla bis Kommandantenstr],W[Potsdamer bis Paulinen])
-#: last_checked: 2026-05-09 vvv
-#: next_check: 2026-10-30 (ex-planb + VIZ-Verkehrsmeldung) vvv
-#: valid: -20261030 vvv
+#: last_checked: 2026-10-28 (traffic) vvv
+#: next_check: 2026-12-08 (VIZ-Verkehrsmeldung) vvv
+#: valid: -20261208 vvv
+# REMOVED (reactivate?) --- #: valid: -20261231 vvv
 # REMOVED (Baustelle ist gewandert) --- Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	DH:h=q2,294 3313,2842 3171,2848 3025,2858 3019,2858
 #: note: auf der Fahrbahn gilt eine Einbahnstraßenregelung, frei Richtung Osten
 Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	q2::inwork; 3641,2827 3456,2835 3313,2842 3171,2848
@@ -1798,26 +1788,26 @@ Potsdamer Str.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3644,293
 # 
 ### Mahlsdorf ###
 # 
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1726502.php (26. bis zum 30. Oktober 2026, keine Angabe zum Radverkehr)
-#: by: https://www.entwicklungsstadt.de/neue-vollsperrungen-im-berliner-osten-hultschiner-damm-dicht/
-#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261023 (hier nur Kfz-Verkehr, beide Baustellen)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3myqxi5ume522
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicr2grlefvmy4aca3cwn2uia55q6u4uxco7srk26lhoihjlrsvlcq (Elsenstr., Sackgasse nur Fußgänger frei Richtung Osten)
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3myqxelu2hu2v
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiducncys4ugw3cbc33ilx4qqrjlo53l5svym6twtfii3drltyx3fy (Einbahnstraßenregelungen in der Wulfsberger Str. und Pilgramer Str. wegen der Sperrung Hultschiner Damm, keine Freigabe für den Radverkehr erkennbar)
-#: source_id: bvg2024:398#HIM_FREETEXT_368318 (Umleitung via Alt-Mahlsdorf/Neuenhagener Straße)
-#: source_id: bvg2024:398#HIM_FREETEXT_368319 (-"-)
-#: source_id: vizapi2026:1134/2026 (26.10.2026 bis 30.10.2026)
-#: source_id: LMS-BR:426519/72 viz2021:13.60713,52.50104,26.10.2026,06:00 vizapi2026:1134/2026 (Elsenstr., bis 30.10.2026)
-#: source_id: LMS-BR:426520/72 viz2021:13.61095,52.49545,26.10.2026,06:00 vizapi2026:1133/2026 (Hultschiner Damm, bis 30.10.2026)
-#: next_check: 2026-10-30 vvv
-#: valid: -20261030 vvv
-Elsenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork; 24229,10843 24363,10818 24458,10800
-# REMOVED --- #: note: "Fahrbahnsanierungen", hier vermutlich wegen der vorhandenen Radwege nicht betroffen --- Hultschiner Damm: Bauarbeiten, ist der Radverkehr betroffen?	? 24558,10358 24653,10580
-Wulfsberger Str.: Einbahnstraßenregelung	q3::inwork; 24797,10309 24796,10451 24802,10481
-Pilgramer Str.: Einbahnstraßenregelung	q3::inwork; 25048,10317 24984,10204
-#: valid ^^^
-#: next_check ^^^
+# REMOVED (aus organisatorischen Gründen vorfristig herausgenommen) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1726502.php (26. bis zum 30. Oktober 2026, keine Angabe zum Radverkehr)
+# REMOVED --- #: by: https://www.entwicklungsstadt.de/neue-vollsperrungen-im-berliner-osten-hultschiner-damm-dicht/
+# REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261023 (hier nur Kfz-Verkehr, beide Baustellen)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3myqxi5ume522
+# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicr2grlefvmy4aca3cwn2uia55q6u4uxco7srk26lhoihjlrsvlcq (Elsenstr., Sackgasse nur Fußgänger frei Richtung Osten)
+# REMOVED --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3myqxelu2hu2v
+# REMOVED --- #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiducncys4ugw3cbc33ilx4qqrjlo53l5svym6twtfii3drltyx3fy (Einbahnstraßenregelungen in der Wulfsberger Str. und Pilgramer Str. wegen der Sperrung Hultschiner Damm, keine Freigabe für den Radverkehr erkennbar)
+# REMOVED --- #: source_id: bvg2024:398#HIM_FREETEXT_368318 (Umleitung via Alt-Mahlsdorf/Neuenhagener Straße)
+# REMOVED --- #: source_id: bvg2024:398#HIM_FREETEXT_368319 (-"-)
+# REMOVED --- #: source_id: vizapi2026:1134/2026 (26.10.2026 bis 30.10.2026)
+# REMOVED --- #: source_id: LMS-BR:426519/72 viz2021:13.60713,52.50104,26.10.2026,06:00 vizapi2026:1134/2026 (Elsenstr., bis 30.10.2026)
+# REMOVED --- #: source_id: LMS-BR:426520/72 viz2021:13.61095,52.49545,26.10.2026,06:00 vizapi2026:1133/2026 (Hultschiner Damm, bis 30.10.2026)
+# REMOVED --- #: next_check: 2026-10-30 vvv
+# REMOVED --- #: valid: -20261030 vvv
+# REMOVED --- Elsenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork; 24229,10843 24363,10818 24458,10800
+# REMOVED --- # REMOVED --- #: note: "Fahrbahnsanierungen", hier vermutlich wegen der vorhandenen Radwege nicht betroffen --- Hultschiner Damm: Bauarbeiten, ist der Radverkehr betroffen?	? 24558,10358 24653,10580
+# REMOVED --- Wulfsberger Str.: Einbahnstraßenregelung	q3::inwork; 24797,10309 24796,10451 24802,10481
+# REMOVED --- Pilgramer Str.: Einbahnstraßenregelung	q3::inwork; 25048,10317 24984,10204
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
 # 
 # REMOVED (offizieller linksseitiger Rad/Gehweg) --- #: next_check_id: PILGRAMER-2019 --- #: XXX wann sind die Bauarbeiten beendet? --- #: next_check: 2021-01-05 --- #: valid: -20210105 --- Pilgramer Str.: Einbahnstraßenregelung, ggfs. auf linken Gehweg ausweichen	q3::inwork; 25138,11215 25139,11104 25143,10961
 # 
@@ -4288,7 +4278,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden? vvv
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: last_checked: 2026-10-18 vvv
+#: last_checked: 2026-10-28 vvv
 #: check_frequency: 150d vvv
 #: osm_watch: way id="26995453" version="13"
 (Uferweg an der Spree): Radfahren verboten, enge Rampe	q4 18695,5453 18667,5467
@@ -4304,7 +4294,11 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Uferweg an der Spree): einige Fußgänger	q1 18192,5931 18118,5953
 #: note: hier kein explizites Radfahrverbot, vielleicht wird das noch geändert
 (Am Werkstor/Kupferkamp - Uferweg): einige Fußgänger	q1 18075,5880 18118,5953
+# 
 (Platz am Kaisersteg - Rathenauhallen): Grünanlage, einige Fußgänger	q2 18363,6071 18259,6110
+(Platz am Kaisersteg - Rathenauhallen): schmal, einige Fußgänger	q3 18259,6110 18218,6128
+(an den Rathenauhallen): Liefer- und Parkplatzverkehr	q2+ 18191,6363 18122,6148 18213,6111 18243,6098
+# 
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17031,18647
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
@@ -4710,13 +4704,18 @@ Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11804,10
 #: source_id: planb2026:13.51310176,52.4542095,19.10.2026, ("Sicherung gemäß Vz.-plan", bis 21.05.2027)
 #: source_id[inactive]: bvg2024:160#HIM_FREETEXT_369877
 #: source_id: LMS-BR:426521/72 viz2021:13.5122,52.45492,26.10.2026,06:00 vizapi2026:1143/2026 (bis 21.05.2027)
-#: next_check: 2026-10-26 (Beginn?) vvv
+#: note: am 28.10.2026 war die Baustelleneinrichtung noch in vollen Gange, die Platzfläche war noch befahrbar
+#: last_checked: 2026-10-28 vvv
+#: check_frequency: 14d (höhere Frequenz am Anfang) vvv
+#: next_check: 2027-09-30 (VIZ: bis 3. Quartal 2027) vvv
 # ACTIVATE_LATER: #: next_check: 2027-05-21 (VIZ-Verkehrsmeldung + planb) vvv
 #: valid: 20261026-20270930
 Schnellerstr.: Baustelleneinrichtungsfläche, Fußgänger	q4::inwork 17728,5756 17807,5730
 #: valid: 20270930-
 Schnellerstr.: einige Fußgänger	q2 17728,5756 17807,5730
 #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 an den Gewächshäusern: kurvig	q2 17659,12823 17638,12813 17637,12785
 #: note: unklar: am östlichen Ende ein Fußgänger-Schild ohne Zusatzzeichen, am westlichen Ende keine Ausschilderung (deshalb: q1 -> q2)

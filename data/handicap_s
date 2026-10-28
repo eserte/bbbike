@@ -9,16 +9,15 @@ Mühsamstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfu
 Straßmannstr.: Baustelleneinrichtung zwischen Petersburger Str. und Petersburger Platz, Sperrung der Fahrbahn	q4::inwork 13530,13014 13470,12990
 Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgängerfurt	q2::inwork 13548,13290 13434,13234
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
-Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q3::inwork; 13434,13234 13383,13349
-Petersburger Str.: gemeinsamer Rad- und Gehweg, Umwege	q2::inwork; 13383,13349 13375,13367 13330,13468
+Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q3::inwork; 13530,13014 13481,13128 13434,13234
+Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q3::inwork; 13434,13234 13383,13349
+Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q2::inwork; 13383,13349 13375,13367 13330,13468
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 Singerstr.: Sperrung an der Einmündung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
 Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q4::inwork 12691,12042 12648,11953
 Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,13185 12842,13070
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
-Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
-Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), teilweise sehr enger Gehweg (parkende Autos auf dem Bürgersteig!) für Radfahrer frei	q3::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für Radfahrer frei	q3::inwork; 7625,5231 7694,5135
 Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10392,-2595 10394,-2567
@@ -75,9 +74,6 @@ Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	q2::inwork; 3
 Paulinenstr.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3318,3046 3313,2842
 Kadettenweg: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3459,2944 3456,2835
 Potsdamer Str.: Anbindung Finckensteinallee gesperrt, Umwege	q3::inwork 3644,2937 3641,2827
-Elsenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork; 24229,10843 24363,10818 24458,10800
-Wulfsberger Str.: Einbahnstraßenregelung	q3::inwork; 24797,10309 24796,10451 24802,10481
-Pilgramer Str.: Einbahnstraßenregelung	q3::inwork; 25048,10317 24984,10204
 Fürst-Bismarck-Steg: Engstelle	q3 3879,22574 3907,22560
 (Wuhlewanderweg - Parchimer Str.): einige Fußgänger	q1 22031,12208 22080,12218
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
@@ -1707,6 +1703,8 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Uferweg an der Spree): einige Fußgänger	q1 18192,5931 18118,5953
 (Am Werkstor/Kupferkamp - Uferweg): einige Fußgänger	q1 18075,5880 18118,5953
 (Platz am Kaisersteg - Rathenauhallen): Grünanlage, einige Fußgänger	q2 18363,6071 18259,6110
+(Platz am Kaisersteg - Rathenauhallen): schmal, einige Fußgänger	q3 18259,6110 18218,6128
+(an den Rathenauhallen): Liefer- und Parkplatzverkehr	q2 18191,6363 18122,6148 18213,6111 18243,6098
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (Weg im Wustrower Park): einige Fußgänger, eng	q2 17206,18332 17162,18304 17087,18434 17102,18490 17057,18587 17031,18647
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984

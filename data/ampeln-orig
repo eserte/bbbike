@@ -180,7 +180,7 @@ Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 vizapi2026:587/2026 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026) (inaktiv)
 #: also_indoor: traffic (ex-G,T)
-#: last_checked: 2026-10-27 (traffic)
+#: last_checked: 2026-10-28 (traffic)
 #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-10-23 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260911
@@ -261,11 +261,11 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 # 
 #: also_indoor: webcam https://0507e26k59.bautvplus.de/
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
-#: source_id: planb2026:13.42219032,52.51114479,11.09.2025,07:00 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026)
+#: source_id: planb2026:13.42219032,52.51114479,11.09.2025,07:00 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026) (vorfristig inaktiv)
 #: note: eigentlich zwei Fußgängerampeln
 #: last_checked: 2026-10-25
 #: check_frequency: 60d
-#: next_check: 2026-11-04 (planb)
+#: next_check: 2026-11-04 (ex-planb)
 Michaelbrücke	F::inwork 11676,11839
 # 
 # REMOVED --- #: next_check_id: KOENIGSHEIDEWEG-2025
@@ -389,6 +389,7 @@ Stubenrauchstr./Ehrenpreisweg: provisorische Ampelanlage, kann ausgeschaltet sei
 # REMOVED --- Oranienburger Str.: Gegenverkehrsregelung	X::inwork::alternating 9476,13293
 # 
 #: next_check_id: ALTSTADTKOEPENICK-2024
+#: source_id: planb2026:13.57796009,52.44411182,22.12.2024, ("Sicherung gemäß Vz.-plan", bis 16.06.2027)
 #: last_checked: 2026-10-18
 #: check_frequency: 180d
 #: next_check: 2027-05-09 (Ausschreibungsunterlagen)
@@ -595,11 +596,11 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 # 
 #: next_check_id: KIEFHOLZMOERIKE-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
-#: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 (bis 21.08.2026) (bis 30.10.2026)
+#: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 (bis 21.08.2026) (bis 30.10.2026) (bis 13.11.2026)
 #: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv) (bis 30.10.2026)
 #: last_checked: 2026-09-09
-#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung, planb)
-#: valid: 20260601-20261030
+#: next_check: 2026-11-13 (VIZ-Verkehrsmeldung)
+#: valid: 20260601-20261113
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # 
 # REMOVED --- #: XXX Schnellerstraße (Niederschöneweide) in beiden Richtungen zwischen Rudower Straße und Köllnische Straße: Kabelschachtsanierung, Gegenverkehrsregelung durch Baustellenampel, vom 25.03.2024 11:00 bis 03.05.2024 17:00 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772165269927981192 --- #: by: https://pbs.twimg.com/media/GJSQEhiXwAAgVQE?format=jpg&name=large (außerdem Anbindung Rudower Str. (von Süden her) gesperrt) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784806818113327427 --- #: by: https://pbs.twimg.com/media/GMGdMBjXMAAwCqG?format=jpg&name=large --- #: source_id: viz2021:13.526211,52.452649,25.03.2024,11:00 (bis 03.05.2024) (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.529,52.452235,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.52392,52.45312,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: next_check: 2024-05-24 --- #: valid: -20240524 --- Schnellerstr./Köllnische Str.: Gegenverkehrsregelung	X::inwork::alternating 18955,5320
@@ -703,7 +704,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-10-23
+#: last_checked: 2026-10-28
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (planb)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -5060,6 +5061,8 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: section ^^^
 ################################################################################
 #: section: Ampeln elsewhere vvv
+	B 1309,34160
+	B -60348,61203
 	X 68591,73201
 	X 32130,-604
 #: note: Anforderungsampel im Zuge des Radwegs

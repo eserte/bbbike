@@ -594,7 +594,7 @@ Nordhafenbrücke: Radfahrer Richtung Heidestr. müssen auf den gegenüberliegenden 
 # 
 #: next_check_id: PETERSBURGER-2024
 # REMOVED (ja) --- #: XXX prüfen, ob die Sperrung der Mühsamstr. aufgehoben wurde und nun die Querungsmöglichkeit Straßmannstr. gesperrt ist
-#: last_checked: 2026-10-19 vvv
+#: last_checked: 2026-10-28 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2026-09-15 (SenUVK site) vvv
 # REMOVED --- #: next_check: 2026-10-15 vvv
@@ -609,8 +609,9 @@ Bersarinplatz/Petersburger Str.: Umweg in Richtung Norden nötig, Anforderungsamp
 Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13695,12643 13685,12664 13622,12806
 # REMOVED (wieder der "normale" Weg) --- Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, schmaler Weg, Anforderungsampel	DH:len=25:h=q3,100:tl 13695,12643 13685,12664 13622,12806
 # REMOVED (temporär) --- Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13685,12664 13622,12806 13579,12904
+# REMOVED (früher hier: 13481,13128 13434,13234 13383,13349)
 #: osm_watch: node id="13657024132" version="1"
-Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13481,13128 13434,13234 13383,13349
+Petersburger Str.: Radverkehr muss die Fahrbahnseite wechseln, Anforderungsampel	DH:len=25:tl 13530,13014 13481,13128
 Petersburger Str. - Matternstr.: Matternstr. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,107 13622,12806 13579,12904 13788,13002
 #: source_id: viz2021:13.451515,52.521453,23.08.2024,07:00 (bis 30.09.2027) (inaktiv)
 Matternstr. - Petersburger Str.: Radspur der Petersburger Str. kann nur über einen schmalen Gehweg erreicht werden	DH:h=q4,120 13788,13002 13579,12904 13530,13014
@@ -747,11 +748,11 @@ Krahmerstr. - Stockweg: Verbindung gesperrt, Umweg über 100m südlich gelegene Üb
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2025/pressemitteilung.1614884.php (17.11.2025 bis September 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m5uy6otmjs2v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid7c6nz4ocq4ym77hrvbmr5wph3fuip2nlgs7n3uxoinmvbamwpbq@jpeg
-#: source_id: LMS-BR:390463/72 viz2021:13.31636,52.44039,18.11.2025,07:00 vizapi2026:515/2025 (bis 28.09.2026) (bis 30.10.2026)
+#: source_id: LMS-BR:390463/72 viz2021:13.31636,52.44039,18.11.2025,07:00 vizapi2026:515/2025 (bis 28.09.2026) (bis 30.10.2026) (bis 15.12.2026)
 #: source_id: planb2026:13.31622592,52.44039446,04.11.2025, ("Sicherung gemäß Vz.-plan", bis 28.09.2026) (bis 30.10.2026)
 #: last_checked: 2025-12-06 (mapillary)
-#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung + planb)
-#: valid: 20251117-20261030
+#: next_check: 2026-12-15 (VIZ-Verkehrsmeldung)
+#: valid: 20251117-20261215
 Dürerstr. - Hindenburgdamm: voraussichtlich keine Abbiegemöglichkeit, linken Bürgersteig benutzen	DH:h=q4,160 4476,3820 4570,3884 4551,4042
 # 
 # REMOVED --- #: next_check_id: FRANKFURTERALLEE-2025

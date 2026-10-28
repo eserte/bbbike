@@ -222,7 +222,7 @@ Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
 #: by: https://www.infravelo.de/projekt/lueckstrasse/ (1. Quartal 2026 - 4. Quartal 2026) (1. Quartal 2027 - 4. Quartal 2027)
 #: XXX Umbau der Kreuzung sowie Aufhebung der Einbahnstraßenregelung für Radfahrer vvv
 #: source_id: bvg2024:194#HIM_FREETEXT_341095 (Umleitung, evtl. gibt es hier Bauarbeiten?) (-> nichts gesehen)
-#: last_checked: 2026-10-21 vvv
+#: last_checked: 2026-10-28 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
@@ -304,7 +304,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9665 (Beschlussempfehlung: Freigabe für Radfahrer)
 #: XXX wird die Einbahnstraße in der Marksburgstr. für Radfahrer freigegeben?
 #: osm_watch: way id="1047414962" version="7"
-#: last_checked: 2026-09-05
+#: last_checked: 2026-10-28
 #: check_frequency: 100d
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18025,6700 18076,6693 18119,6693 18158,6689 18254,6679 18339,6660 18494,6588
@@ -4353,10 +4353,13 @@ Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 #: next_check_id: PETERSBURGER-2024
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (Querungsmöglichkeit Straßmannstr. bis Mitte November 2026 gesperrt)
 #: osm_watch: way id="182614432" version="29"
-#: last_checked: 2026-10-16
-#: next_check: 2026-11-15 (SenUVK-Seite)
+#: last_checked: 2026-10-28 vvv
+#: next_check: 2026-11-15 (SenUVK-Seite zur Straßmannstr.) vvv
 Petersburger Str.: Überquerung in Höhe Straßmannstr. nicht möglich	3nocross::inwork 13481,13128 13530,13014 13579,12904
+Petersburger Str.: Überquerung in Höhe Kochhannstr. nicht möglich	3nocross::inwork 13481,13128 13434,13234 13383,13349
 # REMOVED --- #: last_checked: 2026-10-11 --- Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: DUNCKERBRUECKE-2026
 #: last_checked: 2026-10-26 (mapillary)
@@ -4656,8 +4659,8 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="5"
 #: osm_watch: way id="867830687" version="8"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-10-26
-#: check_frequency: 21d
+#: last_checked: 2026-10-28
+#: check_frequency: 14d
 #: next_check: 2026-12-20 (pardok + entwicklungsstadt: Herbst 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
 # 
@@ -4869,8 +4872,8 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 # 
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
-#: osm_watch: way id="1263834183" version="5"
-#: last_checked: 2026-10-25
+#: osm_watch: way id="1263834183" version="6"
+#: last_checked: 2026-10-27 (osm)
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (Schilder vor Ort)
 # REMOVED --- #: valid: -20251030
@@ -5019,7 +5022,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-10-21
+#: last_checked: 2026-10-26 (architektur-urbanistik)
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
