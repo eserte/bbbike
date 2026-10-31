@@ -5523,7 +5523,7 @@ EOF
        text  => 'K 6425 Rudolf-Breitscheid-Allee OD Neuenhagen, zw. Am Friedhof u. Krz. Hönower Chaussee Straßen- uned Gehwegbau halbseitig gesperrt; Einbahnstraße 17.07.2006-30.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 29743,14143 29093,13456
+	q4::inwork 29743,14143 29522,13909 29093,13456
 EOF
      },
      { from  => 1152482400, # 2006-07-10 00:00
@@ -7053,7 +7053,7 @@ EOF
        text  => 'L 338 Rosa-Luxemburg-Damm/ Hauptstr. Bahnübergang in der OL Neuenhagen Erneu. Gleisanlagen Vollsperrung 18.11.2006-21.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 30092,13751 30727,13245 30795,13191 30815,13170 30910,13101 30961,12993 30982,12947
+	2::inwork 30092,13751 30727,13245 30795,13191 30815,13170 30865,13134 30910,13101 30961,12993 30982,12947
 EOF
      },
      { from  => undef, # 
@@ -9527,7 +9527,7 @@ EOF
        text  => 'L 338 R.-Luxemburg-Damm, Hauptstr. Bahnübergang in der OL Neuenhagen Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 30795,13191 30815,13170 30910,13101 30961,12993 30982,12947
+	2::inwork 30795,13191 30815,13170 30865,13134 30910,13101 30961,12993 30982,12947
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -9620,7 +9620,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006151',
        data  => <<EOF,
-	1::inwork 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905
+	1::inwork 14988,11130 15060,11006 15093,10942 15113,10916 15144,10905
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -16605,13 +16605,14 @@ EOF
 #      text  => 'L 338 Rosa-Luxemburg-Damm, Hauptstraße Bahnübergang in Neuenhagen Gleiserneuerung Vollsperrung 12.09.2009-14.09.2009 ',
 #      text  => 'Neuenhagen: Sperrung des Bahnübergangs vom 06.10.2024 05:00 Uhr bis 08.10.2024 07:00 Uhr',
 #      text  => 'Neuenhagen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, vom 17.04.2026 22:00 Uhr bis 22.04.2026 06:00 Uhr',
-       text  => 'Neuenhagen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 13.11.2026 22:00 Uhr bis 16.11.2026 06:00 Uhr',
+       text  => 'Neuenhagen: Sperrung des Bahnübergangs, 13.11.2026 22:00 Uhr bis 16.11.2026 06:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://marzahn-hellersdorf.com/gleisarbeiten-bei-neuenhagen-s5-faehrt-nicht-bahnuebergang-hauptstrasse-voll-gesperrt/ (auch für Fußgänger)
 #: source_id: 246401377 (bis 08.10.2024) (inaktiv)
 #: source_id: 266400241 (bis 22.04.2026)
 #: source_id: 266401352 (bis 16.11.2026)
-	2::inwork 30910,13101 30815,13170 30795,13191
+	2::inwork 30910,13101 30865,13134 30815,13170 30795,13191
 EOF
      },
      { from  => 1258844400, # 2009-11-22 00:00
@@ -57161,16 +57162,17 @@ EOF
 	q4::inwork 12649,6833 12395,6785
 EOF
      },
-     { from  => 1793746800, # 2026-11-04 00:00
+     { from  => $isodate2epoch->("2026-11-01 00:00:00"), # 1793746800, # 2026-11-04 00:00
        until => undef,
-       text  => 'Wuhlewanderweg: Sanierung zwischen Hoppendorfer Str. und Am Bahndamm, Sperrung für den Radverkehr, voraussichtlich vom 5. November 2026 bis Ende Januar 2027',
+       text  => 'Wuhlewanderweg: Sanierung zwischen Hoppendorfer Str. und Am Bahndamm, Sperrung für den Radverkehr, voraussichtlich vom 2. November 2026 bis Ende Januar 2027',
        type  => 'handicap',
        data  => <<'EOF',
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1730332.php (für Radverkehr gesperrt, "für Zufußgehende ist die Nutzung eingeschränkt möglich" -> deshalb q4 statt 2)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article413521823/berlin-wuhletalweg-in-treptow-koepenick-monatelang-gesperrt-sanierung-gegen-sturzgefahr.html (bereits ab 2.11.2026?)
 #: XXX Nach den Bauarbeiten möglicherweise keine Asphaltschäden mehr -> prüfen und ggfs. qualitaet_s-orig anpassen!
 #: next_check: 2027-01-31 (BA-Pressemitteilung) vvv
 	q4::inwork 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252 21590,7211 21896,6937 21976,6848 22050,6619
-	q4::inwork 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414
+	q4::inwork 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22027,6608
 #: next_check ^^^
 EOF
      },
@@ -57343,14 +57345,15 @@ EOF
      },
      { from  => $isodate2epoch->("2026-10-26 00:00:00"),
        until => $isodate2epoch->("2026-11-24 23:59:59"),
-       text  => 'Curtiusstr./Gräfenberger Weg: Bauarbeiten, Sperrung, evtl. ist der Radverkehr betroffen, 26.10.2026 bis 24.11.2026',
+       text  => 'Curtiusstr./Gräfenberger Weg: Bauarbeiten, Sperrung der Fahrbahn, 26.10.2026 bis 24.11.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: planb2026:13.28162521,52.43585692,26.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.11.2026)
+#: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article413521562/neue-baustelle-in-lichterfelde-sperrt-anwohner-ploetzlich-aus.html ("Radfahrer frei"-Schild, aber vermutlich sind nur die Gehwege frei)
 #: also_indoor: traffic (no-G,T,H[kurz],no-W)
 # REMOVED --- #: next_check: 2026-10-26 (planb) vvv
-Curtiusstr.: geplante Bauarbeiten, Sperrung, auch für den Radverkehr?	q4::inwork 2198,3169 2256,3172 2289,3331
-Gräfenberger Weg: geplante Bauarbeiten, Sperrung, auch für den Radverkehr?	q4::inwork 2256,3172 2346,3077
+Curtiusstr.	q4::inwork 2198,3169 2256,3172 2289,3331
+Gräfenberger Weg	q4::inwork 2256,3172 2346,3077
 # REMOVED --- #: next_check ^^^
 EOF
      },

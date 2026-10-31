@@ -13835,9 +13835,11 @@ Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
 Chlodwigstr.: Asphalt	Q0 8499,5016 8433,5108 8356,5195
 Paul-Schmidt-Str.: Beton	Q0- 8264,5383 8242,5427 8212,5445 8165,5447 8059,5457 8038,5514
-(Ostkreuz, Zugang Marktstr.): Kopfsteinpflaster	Q2 15088,10950 15069,10927
-(Ostkreuz, Zugang Marktstr.): provisorischer Asphalt	Q1+ 15069,10927 15054,10910 14945,10945
-(Ostkreuz, Zugang Marktstr.): Asphalt	Q0 14945,10945 14902,10967 14808,10978
+#: historical_note: vor der Umgestaltung bis 2026: Kopfsteinpflaster, Q2
+(Ostkreuz, Zugang Marktstr.): Kleinsteinpflaster	Q1 15093,10942 15069,10927
+#: historical_note: bei der ersten Öffnung mit Fußgängerschutztunnel: provisorischer Asphalt, Q1+
+(Ostkreuz, Zugang Marktstr.): Kleinsteinpflaster	Q1 15069,10927 15052,10918 14941,10955 14902,10967
+(Ostkreuz, Zugang Marktstr.): Asphalt	Q0 14902,10967 14808,10978
 (Heino-Schmieden-Weg - Alt-Biesdorf): Verbundsteinpflaster	Q1 20831,11604 20840,11604 20830,11610
 (Heino-Schmieden-Weg - Alt-Biesdorf): schlechtes Kopfsteinpflaster	Q3+ 20830,11610 20838,11631
 Weißenhöher Str. [69-71]: Verbundsteinpflaster	Q1+ 20569,11492 20582,11558
@@ -14331,6 +14333,7 @@ Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 82
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-116-baeume-ein-radweg-protest-vorm-rathaus/
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-vor-dem-umbau-buerger-kaempfen-weiter-gegen-baumfaellungen/ (geplanter Beginn der Bauarbeiten: 1. Quartal 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/nach-entscheidung-des-berliner-verwaltungsgerichts-geplante-fallung-von-mehr-als-100-baumen-in-reinickendorf-verschoben-16095631.html
+#: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14623 (Antwort)
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: last_checked: 2026-06-07 vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv

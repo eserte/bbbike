@@ -2315,14 +2315,15 @@ Pestalozzistr.	q4::temp:clock 4101,11233 3981,11232
        undef,
        undef,
        {
-         'data' => '#: source_id: 246401377 (bis 08.10.2024) (inaktiv)
+         'data' => '#: by: https://marzahn-hellersdorf.com/gleisarbeiten-bei-neuenhagen-s5-faehrt-nicht-bahnuebergang-hauptstrasse-voll-gesperrt/ (auch für Fußgänger)
+#: source_id: 246401377 (bis 08.10.2024) (inaktiv)
 #: source_id: 266400241 (bis 22.04.2026)
 #: source_id: 266401352 (bis 16.11.2026)
-	2::inwork 30910,13101 30815,13170 30795,13191
+	2::inwork 30910,13101 30865,13134 30815,13170 30795,13191
 ',
          'from' => 1794517200,
          'id' => 1875,
-         'text' => 'Neuenhagen: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 13.11.2026 22:00 Uhr bis 16.11.2026 06:00 Uhr',
+         'text' => 'Neuenhagen: Sperrung des Bahnübergangs, 13.11.2026 22:00 Uhr bis 16.11.2026 06:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1794805200
        },
@@ -11680,15 +11681,16 @@ Zwiestädter Str.: Sperrung der Fahrbahn (ungefähr 100m)	q4::inwork 13392,7648 13
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1730332.php (für Radverkehr gesperrt, "für Zufußgehende ist die Nutzung eingeschränkt möglich" -> deshalb q4 statt 2)
+#: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article413521823/berlin-wuhletalweg-in-treptow-koepenick-monatelang-gesperrt-sanierung-gegen-sturzgefahr.html (bereits ab 2.11.2026?)
 #: XXX Nach den Bauarbeiten möglicherweise keine Asphaltschäden mehr -> prüfen und ggfs. qualitaet_s-orig anpassen!
 #: next_check: 2027-01-31 (BA-Pressemitteilung) vvv
 	q4::inwork 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252 21590,7211 21896,6937 21976,6848 22050,6619
-	q4::inwork 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414
+	q4::inwork 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22027,6608
 #: next_check ^^^
 ',
-         'from' => 1793746800,
+         'from' => 1793487600,
          'id' => 4819,
-         'text' => 'Wuhlewanderweg: Sanierung zwischen Hoppendorfer Str. und Am Bahndamm, Sperrung für den Radverkehr, voraussichtlich vom 5. November 2026 bis Ende Januar 2027',
+         'text' => 'Wuhlewanderweg: Sanierung zwischen Hoppendorfer Str. und Am Bahndamm, Sperrung für den Radverkehr, voraussichtlich vom 2. November 2026 bis Ende Januar 2027',
          'type' => 'handicap',
          'until' => undef
        },
@@ -11837,15 +11839,16 @@ Prinzregentenstr.: Bauarbeiten, Sperrung, auch für den Radverkehr?	q4::inwork 56
        undef,
        {
          'data' => '#: source_id: planb2026:13.28162521,52.43585692,26.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.11.2026)
+#: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article413521562/neue-baustelle-in-lichterfelde-sperrt-anwohner-ploetzlich-aus.html ("Radfahrer frei"-Schild, aber vermutlich sind nur die Gehwege frei)
 #: also_indoor: traffic (no-G,T,H[kurz],no-W)
 # REMOVED --- #: next_check: 2026-10-26 (planb) vvv
-Curtiusstr.: geplante Bauarbeiten, Sperrung, auch für den Radverkehr?	q4::inwork 2198,3169 2256,3172 2289,3331
-Gräfenberger Weg: geplante Bauarbeiten, Sperrung, auch für den Radverkehr?	q4::inwork 2256,3172 2346,3077
+Curtiusstr.	q4::inwork 2198,3169 2256,3172 2289,3331
+Gräfenberger Weg	q4::inwork 2256,3172 2346,3077
 # REMOVED --- #: next_check ^^^
 ',
          'from' => 1792969200,
          'id' => 4831,
-         'text' => 'Curtiusstr./Gräfenberger Weg: Bauarbeiten, Sperrung, evtl. ist der Radverkehr betroffen, 26.10.2026 bis 24.11.2026',
+         'text' => 'Curtiusstr./Gräfenberger Weg: Bauarbeiten, Sperrung der Fahrbahn, 26.10.2026 bis 24.11.2026',
          'type' => 'handicap',
          'until' => 1795561199
        },
