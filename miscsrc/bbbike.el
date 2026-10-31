@@ -176,7 +176,7 @@
     (if sel
 	(let ((rx sel)
 	      is-coords)
-	  (if (string-match "^\\(CHANGED\\|NEW\\|REMOVED\\)\t.*\t\\([^\t]+\\)\t\\(INUSE\\)?$" rx)
+	  (if (string-match "^\\(CHANGED\\|NEW\\|REMOVED\\)\t.*\t\\([^\t]+\\)\t\\(INUSE\\|WAS_INUSE\\)?$" rx)
 	      (setq rx (concat "#:[ ]*source_id:?[ ]*" (substring rx (match-beginning 2) (match-end 2))))
 	    (if (string-match " " rx)
 		(progn
@@ -724,7 +724,7 @@
 	(description "")
 	source-id)
     (cond
-     ((string-match "\t\\([A-Za-z0-9_/.-]+\\)\t\\(INUSE\\)?$" sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
+     ((string-match "\t\\([A-Za-z0-9_/.-]+\\)\t\\(INUSE\\|WAS_INUSE\\)?$" sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
      ((string-match (concat "\\(" bbbike-lmsbr-short-regexp " " bbbike-viz2021-regexp "\\|" bbbike-lmsbr-short-regexp "\\|" bbbike-viz2021-regexp "\\|" bbbike-lsbrb-regexp "\\|" bbbike-adac-regexp "\\)") sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
      ((string-match "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/\\(.*\\)" sel) (setq source-id (concat "bvg2021:" (substring sel (match-beginning 1) (match-end 1)))))
      (t (error "No X selection or X selection does not contain a source-id")))
