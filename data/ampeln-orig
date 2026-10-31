@@ -43,7 +43,7 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: source_id: LMS-BR:422789/72 viz2021:13.469268,52.472618,18.09.2026,07:00 vizapi2026:962/2026 (Baustellenampel, 18.09.2026 bis 06.12.2026)
 #: source_id: planb2026:13.46990981,52.47294148,18.09.2026, ("Gegenverkehrsanlage (LZA)", bis 15.10.2026) (vorfristig inaktiv)
 #: note: Gegenverkehrsregelung auf der Fahrbahn (betrifft die Hochbordradwege nicht); Sperrung des Übergangs am Heidekampgraben, kann etwa 40m nordöstlich (hier mit Ampel) umfahren werden
-#: last_checked: 2026-10-11
+#: last_checked: 2026-10-27 (mapillary)
 #: next_check: 2026-12-06 (VIZ-Verkehrsmeldung)
 #: valid: -20261206
 Dammweg/Heidekampgraben	X::inwork 14989,7574
@@ -94,7 +94,7 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv) (bis 21.12.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026) (bis 21.12.2026)
-#: last_checked: 2026-10-21
+#: last_checked: 2026-10-31
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261221
@@ -167,21 +167,21 @@ Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
 #: valid: -20261216
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 # 
-#: source_id: LMS-BR:402270/72 viz2021:13.19778,52.54712, vizapi2026:225/2026 (bis 19.06.2026) (bis 14.08.2026) (bis 30.10.2026)
-#: source_id: LMS-BR:402269/72 viz2021:13.19778,52.54712, (provisorische Ampel, bis 19.06.2026) (bis 14.08.2026) (inaktiv)
-#: source_id: planb2026:13.422525,52.48200987,16.07.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026) (inaktiv)
-#: source_id: planb2026:13.19900774,52.54672302,18.03.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.10.2026)
-#: note: außerdem sind beide Anbindungen der Ackerstr. gesperrt, kleinere Umwege notwendig
-#: also_indoor: traffic (no-G,T,H,no-W)
-#: last_checked: 2026-07-08
-#: next_check: 2026-10-30 (VIZ-Verkehrsmeldung, planb)
-#: valid: -20261030
-Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
+#  REMOVED --- #: source_id: LMS-BR:402270/72 viz2021:13.19778,52.54712, vizapi2026:225/2026 (bis 19.06.2026) (bis 14.08.2026) (bis 30.10.2026)
+#  REMOVED --- #: source_id: LMS-BR:402269/72 viz2021:13.19778,52.54712, (provisorische Ampel, bis 19.06.2026) (bis 14.08.2026) (inaktiv)
+#  REMOVED --- #: source_id: planb2026:13.422525,52.48200987,16.07.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026) (inaktiv)
+#  REMOVED --- #: source_id: planb2026:13.19900774,52.54672302,18.03.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 30.10.2026) (inaktiv)
+#  REMOVED --- #: note: außerdem sind beide Anbindungen der Ackerstr. gesperrt, kleinere Umwege notwendig
+#  REMOVED --- #: also_indoor: traffic (no-G,T,H,no-W)
+#  REMOVED --- #: last_checked: 2026-07-08
+#  REMOVED --- #: next_check: 2026-10-30 (VIZ-Verkehrsmeldung, planb)
+#  REMOVED --- #: valid: -20261030
+#  REMOVED --- Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 vizapi2026:587/2026 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026) (inaktiv)
 #: also_indoor: traffic (ex-G,T)
-#: last_checked: 2026-10-28 (traffic)
-#: check_frequency: 3d (traffic)
+#: last_checked: 2026-10-31 (traffic)
+#: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-10-23 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260911
 #: XXX prolonged until end of year
@@ -405,8 +405,8 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
 #: last_checked: 2026-10-06
 #: check_frequency: 30d (traffic)
-#: next_check: 2026-11-27 (VIZ-Verkehrsmeldung)
-#: valid: -20261127
+#: next_check: 2026-11-30 (planb)
+#: valid: -20261130
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2953,9371
 # 
 # REMOVED --- #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
@@ -597,7 +597,7 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 #: next_check_id: KIEFHOLZMOERIKE-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
 #: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 (bis 21.08.2026) (bis 30.10.2026) (bis 13.11.2026)
-#: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv) (bis 30.10.2026)
+#: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv) (bis 30.10.2026) (inaktiv)
 #: last_checked: 2026-09-09
 #: next_check: 2026-11-13 (VIZ-Verkehrsmeldung)
 #: valid: 20260601-20261113
@@ -620,7 +620,8 @@ Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 #: next_check_id: SCHOENEWEIDE-2026
 # REMOVED (alter Eintrag) --- #: next_check_id: SCHOENEWEIDE-2018 --- #: next_check_id: STERNDAMM-2023 --- #: source_id: viz2021:13.509919,52.456406,02.11.2023,06:00 (bis 30.06.2024) (bis 15.08.2024) (bis 16.08.2024) --- #: source_id: viz2021:13.509893,52.456325,14.06.2024,14:49 (bis 15.08.2024) (inaktiv) --- #: source_id: viz2021:13.509919,52.456406,16.08.2024,07:00 (bis 16.08.2024) (inaktiv) --- #: source_id: viz2021:13.509919,52.456406,16.08.2024,18:00 (bis 06.09.2024) --- #: last_checked: 2024-08-17 --- #: check_frequency: 90d --- #: next_check: 2024-08-16 --- #: valid: -20240906
 #: note: etwa 20m südöstlich
-#: next_check: 2026-10-26 (Beginn?)
+#: last_checked: 2026-10-27 (mapillary)
+#: next_check: 2027-09-30
 #: valid: 20261026-20270930
 Michael-Brückner-Str.	F::inwork 17808,5669
 # 
@@ -5780,7 +5781,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 19909,-2863
 #: next_check_id: BER-20XX vvv
 #: XXX: Ampel noch ausgeschaltet --- oder ist es eine "Dunkelampel"? vvv
-#: last_checked: 2026-09-21
+#: last_checked: 2026-10-27 (mapillary)
 #: check_frequency: 90d
 	F0 18517,-4502
 #: osm_watch: node id="1736933178" version="6"

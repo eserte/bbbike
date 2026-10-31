@@ -1595,11 +1595,10 @@ Grünbeschichtung	RW3;RW3 2997,4378 2852,4584 2756,4709 2742,4727 2735,4736 2596,
 	RW3;RW3 2659,6499 2711,6698 2714,6857 2723,7029
 # 
 #: note: Thielallee, Richtung Norden
-	RW4; 2308,3862 2348,4026
-	RW3; 2348,4026 2372,4127 2407,4280
-	RW4; 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
+	RW4; 2308,3862 2348,4026 2372,4127 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
 #: note: Thielallee, Richtung Süden
-	RW4?; 2596,4907 2573,4889 2531,4733 2461,4556 2445,4471 2429,4385 2417,4327 2407,4280 2372,4127 2348,4026 2308,3862
+	RW4?; 2596,4907 2573,4889 2531,4733 2461,4556
+	RW4; 2461,4556 2445,4471 2429,4385 2417,4327 2407,4280 2372,4127 2348,4026 2308,3862
 # 
 Radweg nur aufgemalt	RW1; 4246,9406 4057,9648
 Radweg nur aufgemalt	RW1; 4057,9648 4246,9406
@@ -1876,11 +1875,11 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="823635969" version="34"
+#: osm_watch: way id="823635969" version="35"
 #: osm_watch: way id="4615746" version="60"
 #: osm_watch: way id="1082929723" version="15"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-10-28 vvv
+#: last_checked: 2026-10-29 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -3417,7 +3416,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id[inactive]: bvg2024:m43#HIM_FREETEXT_222564
 #: source_id[inactive]: bvg2024:HIM_FREETEXT_247779
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026) (inaktiv)
-#: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026) (bis 31.10.2026)
+#: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026) (bis 31.10.2026) (bis 19.01.2027)
 #: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026) (bis 30.11.2026)
 #: source_id: planb2026:13.46512046,52.49807953,11.03.2024,06:00 ("Fahrstreifen-Reduzierung", bis 29.01.2027)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
@@ -4806,13 +4805,13 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: by: https://www.entwicklungsstadt.de/neukoelln-baut-radweg-am-dammweg-um-parkplaetze-fallen-weg/
 #: osm_watch: note 4883566 11
 #: XXX Verlegung der RVA zwischen Widderstraße und der Sonnenallee auf die Fahrbahn (allerdings werden die letzten 50m als Hochbordradweg geführt); aktuell Arbeiten zwischen Aronsstr. und Sonnenallee
-#: last_checked: 2026-10-11 vvv
-#: check_frequency: 45d vvv
+#: last_checked: 2026-10-27 (mapillary) vvv
+#: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-08-17 (planb) vvv
 #: next_check: 2026-12-31 (infravelo) vvv
 #: source_id: planb2026:13.46826637,52.47225026,23.06.2026,07:00 ("Gehwegvollsperrung", bis 13.12.2026) (vorfristig inaktiv) (bis 16.11.2026) (bis 16.10.2026) (inaktiv)
-#: source_id: planb2026:13.46669078,52.47156043,16.10.2026,07:00 ("Fahrstreifen-Verschwenkung", bis 30.10.2026)
-#: source_id: bvg2024:377#HIM_FREETEXT_368578 (Verlegung der Haltestelle Steinbockstraße)
+#: source_id: planb2026:13.46669078,52.47156043,16.10.2026,07:00 ("Fahrstreifen-Verschwenkung", bis 30.10.2026) (inaktiv)
+#: source_id[inactive]: bvg2024:377#HIM_FREETEXT_368578 (Verlegung der Haltestelle Steinbockstraße)
 #: historical_note: früher: alte Gehwegplatten, deutliche Schäden und erhebliche Wurzelhebungen, Bord gegen Gehweg, RW1;; seit ungefähr 2025 existiert eine Absperrung vor den schlimmsten Wurzelhebungen; etwa ab 2026 Provisorium
 	RW0; 14853,7451 14775,7385 14758,7373
 #: source_id: planb2026:13.46660341,52.47141375,04.05.2026,07:00 ("Gehwegvollsperrung", bis 17.08.2026) (inaktiv)
@@ -5133,7 +5132,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2026-10-19 vvv
+#: last_checked: 2026-10-31 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -5415,8 +5414,8 @@ Verbundsteinpflaster	RW1; 16837,17440 16578,17285 16525,17253
 alter Beton, Radweg nur aufgemalt	RW1; 16525,17253 16460,17214
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-10-07 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2026-11-12 (VIZ-Verkehrsmeldung) vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: next_check: 2026-12-23 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2026: Gehweg für Radfahrer frei, RW1; vvv
 #: note: kurze Abschnitte mit Verbundsteinpflasterradweg
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 16460,17214 16352,17150 16318,17128 16296,17114 16139,17017
@@ -5426,7 +5425,7 @@ provisorischer gemeinsamer Rad- und Gehweg	RW2; 16139,17017 15986,16922 15929,16
 #: historical_note: bis 2026: Gehweg für Radfahrer frei, die letzten 60 Meter sind benutzungspflichtig, RW1;
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 15662,16649 15437,16491
 #: last_checked ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: next_check ^^^
 	RW3; 15437,16491 15297,16321 15236,16241 15194,16186 15130,16098
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgonry5ias2l
@@ -5454,8 +5453,8 @@ gemeinsamer Geh- und Radweg	RW2; 14653,15738 14808,15788 14936,15857 14967,15885
 die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Radfahrer frei) geführt	RW10; 15297,16321 15437,16491
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-10-07
-#: check_frequency: 30d
-#: next_check: 2026-11-12 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2026-12-23 (VIZ-Verkehrsmeldung)
 #: historical_note: früher (bis 2026): Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Bauarbeiten bis etwa Frühjahr 2026: provisorischer gemeinsamer Geh- und Radweg, RW2;
@@ -7369,7 +7368,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-10-25 vvv
+#: last_checked: 2026-10-31 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -9236,6 +9235,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/rein-politisch-motiviert-deutsche-umwelthilfe-hat-interne-akten-zum-radweg-an-der-kantstrasse-erstritten-16139475.html
 #: by: https://www.tagesspiegel.de/berlin/radweg-streit-in-der-berliner-kantstrasse-aktivisten-ubermalen-lieferzonen-markierungen-16191706.html
 #: source_id: LMS-BR:379465/72 viz2021:13.30931,52.50658,11.08.2025,07:00 viz2021:13.30931,52.50658, (Bauarbeiten Höhe Krumme Str., bis 28.11.2025) (inaktiv)
+#: source_id: planb2026:13.31467663,52.50621667,01.10.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 06.11.2026)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei
@@ -9946,7 +9946,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 6994,9288 7118,9315
 #: osm_watch[closed]: note 4803321 2
 #: source_id: planb2026:13.35661917,52.49021456,15.05.2026,00:01 ("-", bis 03.03.2027)
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2026-09-05 (mapillary)
+#: last_checked: 2026-10-27 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2027-03-03 (planb)
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7118,9315 7202,9329 7299,9346
@@ -9957,7 +9957,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 7418,9366 7299,9346
 #: next_check_id: GRUNEWALDSTR-2025
 #: next_check_id: ELSSHOLZ-2025
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2026-09-05 (mapillary)
+#: last_checked: 2026-10-27 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2027-03-03 (planb)
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7299,9346 7202,9329 7118,9315
@@ -10098,5 +10098,5 @@ Gehweg für Radfahrer frei	RW1; 6388,7999 6443,7971
 	RW3; 11632,8302 11647,8227
 # 
 #: historical_note: Realisierung der Fahrradstraße Sep/Okt 2026
-	RW7;RW7 12077,14186 12228,14083 12361,13985
+	RW7;RW7 12077,14186 12228,14083 12361,13985 12478,13903
 # 

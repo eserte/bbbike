@@ -4237,6 +4237,7 @@ Ludwig-Prandtl-Str.: wann wird die Straße geöffnet?	2::inwork 20078,-1029 20346,
 #: last_checked ^^^
 # 
 #: source_id: planb2026:13.44173022,52.55043528,04.05.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 28.02.2027)
+#: source_id: planb2026:13.44051962,52.55079254,28.10.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 28.02.2027)
 #: note: Einbahnstraßenregelung nur in einem Abschnitt, deshalb q4->q3
 #: last_checked: 2026-08-12
 #: check_frequency: 120d
@@ -4659,7 +4660,7 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 #: osm_watch: way id="656149821" version="5"
 #: osm_watch: way id="867830687" version="8"
 #: osm_watch: note 5102399 3
-#: last_checked: 2026-10-28
+#: last_checked: 2026-10-29
 #: check_frequency: 14d
 #: next_check: 2026-12-20 (pardok + entwicklungsstadt: Herbst 2026)
 (Ostkreuz, Zugang Marktstr.): Zuwegung wegen Bauarbeiten an den Vorplätzen gesperrt	2::inwork 15069,10927 15054,10910 14945,10945 14902,10967
@@ -4824,6 +4825,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: by: https://www.berliner-woche.de/mitte/c-bauen/maerkisches-museum-oeffnet-sich-fuer-die-stadtgesellschaft_a367415 (Stand 2022: Sanierung des Marinehauses bis 2026)
 #: by: https://entwicklungsstadt.de/marinehaus-berlin-mitte-sanierung-hat-begonnen/ (Hauptbaumaßnahmen bis 2027)
 #: by: https://www.stadtmuseum.de/museum/marinehaus
+#: by: https://www.entwicklungsstadt.de/marinehaus-in-mitte-aus-einem-lost-place-wird-ein-neues-kulturzentrum/ (geplante bauliche Fertigstellung: Juli 2028)
 #: historical_note: früher: Bauarbeiten, Einbahnstraßenregelung, q3::inwork;
 #: osm_watch: note 4211143 4
 #: osm_watch: way id="4612427" version="23"
@@ -4831,8 +4833,8 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: also_indoor: traffic (G,W)
 #: last_checked: 2026-10-22
 #: check_frequency: 45d
-# REMOVED --- #: next_check: 2027-06-30 (entwicklungsstadt)
 #: next_check: 2027-12-31 (planb)
+# ACTIVATE_LATER --- #: next_check: 2028-07-31 (entwicklungsstadt)
 Am Köllnischen Park: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 11185,11883 11160,12071
 # 
 #: next_check_id: GARTENSTADTKARLSHORST-2025
@@ -5330,6 +5332,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
+#: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/uferweg-an-der-spree-hat-lucken-1-kilometer-umweg-in-berlin-weil-100-meter-fehlen-16198753.html
 #: last_checked: 2026-10-26 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
@@ -5900,11 +5903,11 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: last_checked: 2026-10-27 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
-#: osm_watch: way id="154807176" version="69"
+#: osm_watch: way id="154807176" version="70"
 #: osm_watch: way id="186329816" version="53"
 Friedrich-List-Ufer: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
-#: osm_watch: way id="692480577" version="42"
-#: osm_watch: way id="692480576" version="41"
+#: osm_watch: way id="692480577" version="43"
+#: osm_watch: way id="692480576" version="42"
 Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,13304 7989,13302
 # REMOVED --- Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8099,13391 8098,13419
 #: next_check ^^^

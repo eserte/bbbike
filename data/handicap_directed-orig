@@ -530,7 +530,7 @@ Landsberger Allee	DH:t=60 19015,14901 18831,14823 18553,14678
 # REMOVED --- #: source_id ^^^
 # 
 #: next_check_id: MARGGRAFFBRUECKE-2023
-#: last_checked: 2026-09-05 vvv
+#: last_checked: 2026-10-27 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2025-09-11 (Umstellung der Verkehrsführung (auf die andere Brückenhälfte)) vvv
 #: next_check: 2027-06-30 (VIZ-Verkehrsmeldung) vvv
@@ -749,10 +749,10 @@ Krahmerstr. - Stockweg: Verbindung gesperrt, Umweg über 100m südlich gelegene Üb
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m5uy6otmjs2v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreid7c6nz4ocq4ym77hrvbmr5wph3fuip2nlgs7n3uxoinmvbamwpbq@jpeg
 #: source_id: LMS-BR:390463/72 viz2021:13.31636,52.44039,18.11.2025,07:00 vizapi2026:515/2025 (bis 28.09.2026) (bis 30.10.2026) (bis 15.12.2026)
-#: source_id: planb2026:13.31622592,52.44039446,04.11.2025, ("Sicherung gemäß Vz.-plan", bis 28.09.2026) (bis 30.10.2026)
+#: source_id: planb2026:13.31622592,52.44039446,04.11.2025, ("Sicherung gemäß Vz.-plan", bis 28.09.2026) (bis 30.10.2026) (bis 31.12.2026)
 #: last_checked: 2025-12-06 (mapillary)
-#: next_check: 2026-12-15 (VIZ-Verkehrsmeldung)
-#: valid: 20251117-20261215
+#: next_check: 2026-12-15 (VIZ-Verkehrsmeldung; planb geht länger)
+#: valid: 20251117-20261231
 Dürerstr. - Hindenburgdamm: voraussichtlich keine Abbiegemöglichkeit, linken Bürgersteig benutzen	DH:h=q4,160 4476,3820 4570,3884 4551,4042
 # 
 # REMOVED --- #: next_check_id: FRANKFURTERALLEE-2025
@@ -818,6 +818,7 @@ Alfred-Kowalke-Str.: Baustellenampel und Gegenverkehrsregelung	DH:tl 18027,11244
 #: next_check_id: B2-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260902 (3.9.2026 bis bis März 2027)
 #: source_id: LMS-BR:421063/72 viz2021:13.505,52.59649,03.09.2026,09:00 vizapi2026:902/2026 (zwischen Umspannwerk und Am Luchgraben Stromnetzarbeiten, Fahrbahnverschwenkung, bis 18.03.2027)
+#: source_id: planb2026:13.49282517,52.59164175,30.10.2026, ("Sicherung gemäß Vz.-plan", bis 20.11.2026)
 #: osm_watch: way id="515470948" version="12"
 #: osm_watch[closed]: note 5378808 2
 #: XXX vielleicht wird auch der Radweg wieder neu gemacht?
@@ -837,7 +838,7 @@ B2: Bauarbeiten, Radverkehr wieder zurück auf die rechte Seite	DH:tl=30 16644,21
 #: by: https://www.deutsches-architekturforum.de/thread/11269-kleinere-bauprojekte-im-berliner-umland/?postID=799087#post799087
 #: by: https://www.entwicklungsstadt.de/600-tonnen-muessen-ueber-die-havel-hennigsdorfs-neue-bruecke-zieht-um/
 #: source_id: 266501853 (Anbindung Behelfsumfahrung, bis 16.10.2026) (inaktiv)
-#: source_id: 266501854 (Nachtsperrung, Nrückeneinhub, 30.10.2026 bis 31.10.2026)
+#: source_id: 266501854 (Nachtsperrung, Nrückeneinhub, 30.10.2026 bis 31.10.2026) (inaktiv)
 #: XXX Umweg für Radfahrer wegen Brückenarbeiten
 #: osm_watch: note 5301244 2 vvv
 #: last_checked: 2026-08-25 (mapillary) vvv

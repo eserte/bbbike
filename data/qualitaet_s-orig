@@ -700,7 +700,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10226,14568 10311,14391
 #: by: https://mittemachen-berlin.de/die-vorhabenliste-des-bezirksamtes-mitte-von-berlin/ (Erwähnung einer Radverkehrsmaßnahme (vielleicht Fahrradstraße?) sogar bis Behmstr. + Ausbau in diesem Abschnitt, Projektzeitraum bis 2027)
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
-#: last_checked: 2026-09-15 (mapillary)
+#: last_checked: 2026-10-31
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (ex-infravelo; BA: Projektzeitraum)
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -2380,7 +2380,7 @@ Voigtstr.: Kopfsteinpflaster	Q2 14748,12314 14776,12418 14798,12502 14801,12517 
 Friedrichshaller Str.: Kopfsteinpflaster	Q2- 3084,7599 2911,7686 2786,7721
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 2786,7721 2774,7655
 Christburger Str.: Kopfsteinpflaster	Q2 11633,14631 11912,14486
-Christburger Str.: Asphalt	Q0 11912,14486 12177,14335
+Christburger Str.: Asphalt, einige schadhafte Stellen	Q0- 11912,14486 12177,14335
 Pasteurstr.: Asphalt	Q0 12188,14350 12335,14246 12486,14143
 Pasteurstr.: Kopfsteinpflaster	Q2 12486,14143 12594,14065 12766,13942
 Ebelingstr.: Kopfsteinpflaster	Q2 13481,13128 13598,13180 13692,13221
@@ -12081,7 +12081,7 @@ Advokatensteig: Asphalt mit einigen Wurzelschäden	Q1 22162,452 22221,465 22251,5
 (Am Seegraben - Schützenstr.): Asphalt	Q0 19996,-740 19978,-712
 (Wilhelm-Hoff-Str. - James-Franck-Str.): Asphalt	Q0 18828,3196 18822,3188 18724,3091 18716,3082 18707,3074 18613,2983 18601,2971
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7692 (Antrag für eine Sanierung) (Zwischenbericht)
-#: last_checked: 2026-09-09 (BA: 1. Zwischenbericht)
+#: last_checked: 2026-10-27 (mapillary)
 #: check_frequency: 360d
 Adlergestell: Radweg wechselnd mäßiger Beton und Verbundsteinpflaster	Q1 21242,2048 21388,1895
 Adlergestell: Beton	Q0- 21388,1895 21515,1785 21800,1644 21856,1573
@@ -12593,14 +12593,13 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 (Weg am CleanTech Business Park): fester Belag	Q0 19647,16633 19601,16679 19631,16704 19749,17028 19788,17076 19845,17235 19907,17429
 (Kleiner Tiergarten): Mosaikpflaster und wassergebundene Decke	Q1- 6390,13187 6377,13321
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_313676 (kein Endedatum)
-#: source_id: bvg2024:240#HIM_FREETEXT_370275 (Umleitung ab 30.10.2026)
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_370275 (Umleitung ab 30.10.2026)
 #: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026)
 #: source_id: vizapi2026:1158/2026 (Kraneinsatz 30.10.2026 bis 31.10.2026, hier: Sperrung für Kfz-Verkehr)
-#: begin_check: 2026-10-30
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-10-28
+#: last_checked: 2026-10-31
 #: check_frequency: 45d
-#: next_check: 2026-10-30 (planb + BVG: wird es auch für den Radverkehr eine Sperrung geben?)
+# REMOVED --- #: next_check: 2026-10-30 (planb + BVG: wird es auch für den Radverkehr eine Sperrung geben?)
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
 Grünberger Str.: Asphalt mit einigen Schäden	Q0-; 14006,11843 13696,11920
 #: note: in der Nähe der Straßenbahnschienen aber keine Schäden mehr
