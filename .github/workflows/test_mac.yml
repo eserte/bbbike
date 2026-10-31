@@ -61,6 +61,8 @@ jobs:
           PATH="/usr/local/opt/libxml2/bin:$PATH" LDFLAGS="-L/usr/local/opt/libxml2/lib" CPPFLAGS="-I/usr/local/opt/libxml2/include" PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig" cpanm --quiet --notest XML::LibXML || ( cat ~/.cpanm/work/*/build.log; false )
           # https://rt.cpan.org/Ticket/Display.html?id=153923
           cpanm --quiet 'GD~<=2.78'
+          # temporary, as this supports OpenSSL 4.x recently added to Mac OS
+          cpanm --quiet --notest CHRISN/Net-SSLeay-1.97_01.tar.gz
           cpanm --quiet --notest \
               Archive::Zip \
               CDB_File MLDBM \
