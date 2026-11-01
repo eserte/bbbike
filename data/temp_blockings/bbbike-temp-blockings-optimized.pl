@@ -2755,7 +2755,7 @@ Ein/Ausgang Oderstraße/Crashgate mit Drehtor	1::night 11608,7267 11598,7264
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3214,7 +3214,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => undef,
          'id' => 2413,
          'recurring' => 1,
-         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: Oktober 8.00 - 18.00 Uhr)',
+         'text' => 'Friedhofswege nachts gesperrt (Öffnungszeiten: November 8.00 - 17.00 Uhr)',
          'until' => undef
        },
        undef,
@@ -4914,7 +4914,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.entwicklungsstadt.de/am-kadewe-faellt-das-geruest-quantum-p1-zeigt-neue-fassade/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: source_id: planb2026:13.34062458,52.50232614,01.04.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.05.2027)
-#: source_id: planb2026:13.34071993,52.50238073,14.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", nur kleiner Bereich an der Tauenzienstraße, bis 31.10.2026)
+#: source_id: planb2026:13.34071993,52.50238073,14.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", nur kleiner Bereich an der Tauenzienstraße, bis 31.10.2026) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="23"
 #: osm_watch: way id="687428752" version="2"
@@ -6717,9 +6717,9 @@ Metzer Str.: Fahrbahn gesperrt	q3::inwork; 10933,14122 11006,14087
 # aktuelles Bauvorhaben (Botschaft von Bangladesh)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-botschaft-bangladesh-tiergartenstr-neben-canisius-kolleg.1197/#post-24583
 #: source_id: planb2026:13.35625607,52.50931328,03.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 29.08.2026) (vorfristig inaktiv) (bis 25.09.2026) (bis 16.10.2026) (inaktiv)
-#: source_id: planb2026:13.35621089,52.5092219,05.02.2026,00:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026)
+#: source_id: planb2026:13.35621089,52.5092219,05.02.2026,00:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026) (inaktiv)
 #: osm_watch: way id="46886611" version="11"
-#: also_indoor: traffic (re-G,re-W,no-H,T[basemap])
+#: also_indoor: traffic (ex-G,T[basemap],no-H,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
 #: note: offiziell gesperrt, Absperrungen können aber weggeschoben sein
@@ -7525,7 +7525,7 @@ Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026)
+         'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-06-2026-l91-wachow_ausbau-der-ortsdurchfahrt (bis III. Quartal 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-09-2026-l91-wachow_fertigstellung-verschiebt-sich-in-den-novemberdezember (bis Anfang Dezember 2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
@@ -7586,8 +7586,8 @@ Grolmanstr. (südöstlicher Abschnitt): Einbahnstraße	q3::inwork; 5040,10707 4930,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: source_id: planb2026:13.36006937,52.47725114,18.11.2024,07:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026) (inaktiv)
-#: source_id: planb2026:13.3630073,52.47624192,27.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 31.10.2026)
-#: source_id: LMS-BR:424850/72 viz2021:13.362877,52.476175, (bis 31.10.2026)
+#: source_id: planb2026:13.3630073,52.47624192,27.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 31.10.2026) (inaktiv)
+#: source_id: LMS-BR:424850/72 viz2021:13.362877,52.476175, (bis 31.10.2026) (inaktiv)
 #: also_indoor: traffic (B[basemap],T[basemap],G[basemap])
 #: osm_watch: note 4847574 3
 #: last_checked: 2026-10-28 (traffic)
@@ -8206,36 +8206,7 @@ Gellertstr.: Sperrung	q4::inwork 20148,3490 20237,3392
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (no-G,T,no-W,no-H)
-#: source_id: planb2026:13.32579475,52.45558476,01.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 01.12.2026) (vorfristig inaktiv)
-#: last_checked: 2026-10-23 (traffic)
-#: check_frequency: 10d (traffic)
-#: next_check: 2026-12-01 (ex-planb)
-	q4::inwork 5183,5437 5274,5557 5276,5622
-# REMOVED (alte Sperrung) --- #: also_indoor: traffic (re-G[Südendstr+ex-Heesestr],ex-T[Südendstr],ex-W[Südendstr],A[Heesestr+Südendstr])
-# REMOVED (alte Sperrung) --- #: osm_watch: way id="1237862681" version="7"
-# REMOVED (alte Sperrung) --- #: osm_watch: way id="1237862680" version="3"
-# REMOVED (alte Sperrung) --- #: osm_watch: way id="1237862682" version="4"
-# REMOVED (alte Sperrung) --- #: osm_watch[closed]: note 4544910 5
-# REMOVED (alte Sperrung) --- #: osm_watch[closed]: note 4544909 3
-# REMOVED (alte Sperrung) --- #: osm_watch[closed]: note 4544105 3
-# REMOVED (alte Sperrung) --- #: osm_watch: way id="4871838" version="31"
-# REMOVED (alte Sperrung) --- #: osm_watch: way id="1237862688" version="3"
-# REMOVED (alte Sperrung) --- #: osm_watch: note 4832179 5
-# REMOVED (ja) --- #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv --- #: last_checked: 2026-03-22 (traffic) vvv --- #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2026-02-13
-# REMOVED ---	q3::inwork 5280,5714 5276,5622 5274,5557
-# REMOVED (alte Sperrung) --- Heesestr.: Sperrung der Fahrbahn	q4::inwork 5276,5622 5274,5557
-# REMOVED (alte Sperrung) --- Südendstr.: Sperrung nur im Kreuzungsbereich	q3::inwork 5274,5557 5466,5523
-# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 4312,
-         'text' => 'Heesestr.: Sperrung der Fahrbahn, evtl. ist der Radverkehr betroffen, voraussichtlich bis Anfang Dezember 2026',
-         'type' => 'handicap',
-         'until' => 1796165999
-       },
+       undef,
        {
          'data' => '#: source_id: planb2026:13.33187108,52.44705489,01.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 08.02.2027) (vorfristig inaktiv) (bis 08.02.2027)
 #: also_indoor: traffic (G,T,no-H,no-W)
@@ -9915,18 +9886,7 @@ Bäumerplan: Sperrung der Fahrbahn	q4::inwork 8527,8293 8482,8227
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: LMS-BR:410346/72 viz2021:13.371186,52.584284,01.06.2026,06:00 (bis 31.07.2026) (bis 31.10.2026)
-#: source_id: planb2026:13.37123252,52.58395673,01.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 31.10.2026)
-# REMOVED (hier nicht) ---	q4::inwork 8231,19806 8043,19725 8030,19762
-	q4::inwork 8030,19762 8000,19819
-',
-         'from' => 1780200000,
-         'id' => 4623,
-         'text' => 'Heegermühler Weg: Bauarbeiten zwischen Marthastr. und Siegfried-Baruch-Weg, Fahrbahn gesperrt, voraussichtlich bis Ende Oktober 2026',
-         'type' => 'handicap',
-         'until' => 1793487599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -10834,17 +10794,7 @@ Windscheidstr.: unter der Brücke nicht gesperrt, Sperrung erst im Kreuzungsberei
          'type' => 'handicap',
          'until' => 1796079600
        },
-       {
-         'data' => '#: source_id: planb2026:13.32799454,52.46706694,24.03.2025,06:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026)
-#: also_indoor: traffic (G,T,no-H,no-W)
-	q4::inwork 5184,6723 5219,6723
-',
-         'from' => 1788240586,
-         'id' => 4739,
-         'text' => 'Fröaufstr.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, voraussichtlich bis Ende Oktober 2026',
-         'type' => 'handicap',
-         'until' => 1793487599
-       },
+       undef,
        {
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~11-08-2026-fahrbahnsanierung-und-radwegerneuerung-bei-uetz-paaren-ab-september-2026 (ab Mitte September 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~28-08-2026-baubeginn-bei-uetz-paaren_fahrbahnsanierung-und-radwegerneuerung (9. September 2026 bis Mitte November 2026)
@@ -11888,8 +11838,8 @@ Trautenaustr.: Bauarbeiten, Sperrung, auch für den Radverkehr?	q4::inwork 5176,9
 #: source_id: planb2026:13.44849499,52.5121092,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 20.11.2026)
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026) (bis 30.10.2026) (bis 20.11.2026)
 #: also_indoor: traffic (ex-G,ex-T,H,ex-W)
-#: note: manchmal (außerhalb der Arbeitszeiten? am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45, 2026-10-27 Tue 17:25, 2026-10-31 Sat 13:00) oder auch Am Comeniusplatz (seen 2026-10-28 Wed 17:44)
-#: last_checked: 2026-10-31 vvv
+#: note: manchmal (außerhalb der Arbeitszeiten? am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45, 2026-10-27 Tue 17:25, 2026-10-31 Sat 13:00) oder auch Am Comeniusplatz (seen 2026-10-28 Wed 17:44, 2026-11-01 Sun 09:43)
+#: last_checked: 2026-11-01 vvv
 #: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
 Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13275,11830 13406,11896

@@ -33873,7 +33873,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/am-kadewe-faellt-das-geruest-quantum-p1-zeigt-neue-fassade/
 #: source_id: viz2021:13.34068,52.50249,22.04.2024,19:20 (Straße wieder frei (stimmt das? -> nein)) (inaktiv)
 #: source_id: planb2026:13.34062458,52.50232614,01.04.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.05.2027)
-#: source_id: planb2026:13.34071993,52.50238073,14.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", nur kleiner Bereich an der Tauenzienstraße, bis 31.10.2026)
+#: source_id: planb2026:13.34071993,52.50238073,14.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", nur kleiner Bereich an der Tauenzienstraße, bis 31.10.2026) (inaktiv)
 #: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="362719487" version="23"
 #: osm_watch: way id="687428752" version="2"
@@ -42934,9 +42934,9 @@ EOF
 # aktuelles Bauvorhaben (Botschaft von Bangladesh)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-botschaft-bangladesh-tiergartenstr-neben-canisius-kolleg.1197/#post-24583
 #: source_id: planb2026:13.35625607,52.50931328,03.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 29.08.2026) (vorfristig inaktiv) (bis 25.09.2026) (bis 16.10.2026) (inaktiv)
-#: source_id: planb2026:13.35621089,52.5092219,05.02.2026,00:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026)
+#: source_id: planb2026:13.35621089,52.5092219,05.02.2026,00:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026) (inaktiv)
 #: osm_watch: way id="46886611" version="11"
-#: also_indoor: traffic (re-G,re-W,no-H,T[basemap])
+#: also_indoor: traffic (ex-G,T[basemap],no-H,ex-W)
 # REMOVED --- #: note: Halteverbotsschilder bis Ende März 2024; Länge des Baustellenbereichs etwa 70m, deshalb q3; mittlerweile Halteverbotsschilder bis 31.07.2024
 #: add_fragezeichen: Existiert die Sperrung noch immer?
 #: note: offiziell gesperrt, Absperrungen können aber weggeschoben sein
@@ -47384,7 +47384,7 @@ EOF
        text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Dezember 2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026)
+#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026) (inaktiv)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-06-2026-l91-wachow_ausbau-der-ortsdurchfahrt (bis III. Quartal 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-09-2026-l91-wachow_fertigstellung-verschiebt-sich-in-den-novemberdezember (bis Anfang Dezember 2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
@@ -47700,8 +47700,8 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2024/pressemitteilung.1504881.php (Bauarbeiten dauern zwei Jahre)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartier-s%C3%BCdkreuz-tempelhofer-weg-sch%C3%B6neberger-linse.898/page-3#post-24229
 #: source_id: planb2026:13.36006937,52.47725114,18.11.2024,07:00 ("Sperrung einer Fahrtrichtung", bis 31.08.2026) (inaktiv)
-#: source_id: planb2026:13.3630073,52.47624192,27.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 31.10.2026)
-#: source_id: LMS-BR:424850/72 viz2021:13.362877,52.476175, (bis 31.10.2026)
+#: source_id: planb2026:13.3630073,52.47624192,27.07.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 31.10.2026) (inaktiv)
+#: source_id: LMS-BR:424850/72 viz2021:13.362877,52.476175, (bis 31.10.2026) (inaktiv)
 #: also_indoor: traffic (B[basemap],T[basemap],G[basemap])
 #: osm_watch: note 4847574 3
 #: last_checked: 2026-10-28 (traffic)
@@ -49315,17 +49315,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2026-12-01 23:59:59"), # 1775049780, # undef, # 1750741521, # undef, # XXX
+       until => 1793545202, #  $isodate2epoch->("2026-12-01 23:59:59"), # 1775049780, # undef, # 1750741521, # undef, # XXX
 #      text  => 'Heesestr.: Sperrung der Fahrbahn an der Kreuzung Althoffstr., Ende der Bauarbeiten unbekannt',
 #      text  => 'Heesestr./Südendstr.: Sperrung der Fahrbahn zwischen Althoffstr. und Südendstr. sowie im Kreuzungsbereich Südendstr., Ende der Bauarbeiten unbekannt',
        text  => 'Heesestr.: Sperrung der Fahrbahn, evtl. ist der Radverkehr betroffen, voraussichtlich bis Anfang Dezember 2026',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (no-G,T,no-W,no-H)
+#: also_indoor: traffic (no-G,ex-T,no-W,no-H)
 #: source_id: planb2026:13.32579475,52.45558476,01.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 01.12.2026) (vorfristig inaktiv)
-#: last_checked: 2026-10-23 (traffic)
-#: check_frequency: 10d (traffic)
-#: next_check: 2026-12-01 (ex-planb)
+# REMOVED --- #: last_checked: 2026-10-23 (traffic) --- #: check_frequency: 10d (traffic) --- #: next_check: 2026-12-01 (ex-planb)
 	q4::inwork 5183,5437 5274,5557 5276,5622
 # REMOVED (alte Sperrung) --- #: also_indoor: traffic (re-G[Südendstr+ex-Heesestr],ex-T[Südendstr],ex-W[Südendstr],A[Heesestr+Südendstr])
 # REMOVED (alte Sperrung) --- #: osm_watch: way id="1237862681" version="7"
@@ -54311,7 +54309,7 @@ EOF
        text  => 'Heegermühler Weg: Bauarbeiten zwischen Marthastr. und Siegfried-Baruch-Weg, Fahrbahn gesperrt, voraussichtlich bis Ende Oktober 2026',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: LMS-BR:410346/72 viz2021:13.371186,52.584284,01.06.2026,06:00 (bis 31.07.2026) (bis 31.10.2026)
+#: source_id: LMS-BR:410346/72 viz2021:13.371186,52.584284,01.06.2026,06:00 (bis 31.07.2026) (bis 31.10.2026) (inaktiv)
 #: source_id: planb2026:13.37123252,52.58395673,01.06.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 31.10.2026)
 # REMOVED (hier nicht) ---	q4::inwork 8231,19806 8043,19725 8030,19762
 	q4::inwork 8030,19762 8000,19819
@@ -57395,8 +57393,8 @@ EOF
 #: source_id: planb2026:13.44849499,52.5121092,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 20.11.2026)
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026) (bis 30.10.2026) (bis 20.11.2026)
 #: also_indoor: traffic (ex-G,ex-T,H,ex-W)
-#: note: manchmal (außerhalb der Arbeitszeiten? am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45, 2026-10-27 Tue 17:25, 2026-10-31 Sat 13:00) oder auch Am Comeniusplatz (seen 2026-10-28 Wed 17:44)
-#: last_checked: 2026-10-31 vvv
+#: note: manchmal (außerhalb der Arbeitszeiten? am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45, 2026-10-27 Tue 17:25, 2026-10-31 Sat 13:00) oder auch Am Comeniusplatz (seen 2026-10-28 Wed 17:44, 2026-11-01 Sun 09:43)
+#: last_checked: 2026-11-01 vvv
 #: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
 Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13275,11830 13406,11896

@@ -467,7 +467,7 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3my7enxqtwf2y
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731033.php
 #: by: https://www.entwicklungsstadt.de/am-treptower-park-drei-kilometer-neue-radfahrstreifen-bis-ende-2026-geplant/
-#: source_id: bvg2024:165#HIM_FREETEXT_368574 (Verlegung der Haltestelle Klingerstraße)
+#: source_id[inactive]: bvg2024:165#HIM_FREETEXT_368574 (Verlegung der Haltestelle Klingerstraße)
 #: source_id: LMS-BR:425840/72 viz2021:13.46717,52.4853,19.10.2026,07:00 vizapi2026:1085/2026 (19.10.2026 bis 06.11.2026)
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_370282 (Kein Halt: Klingerstraße)
 #: osm_watch: note 5077050 5
@@ -3762,7 +3762,8 @@ Am Falkenberg/Gartenstadtweg: Zebrastreifen geplant	?::projected 21680,948 21685
 #: by ^^^
 # 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/massnahmepaket-fuer-fussgaenger-geschnuert_a380776 (Finanzierung unklar, vermutlich nicht 2023)
-#: last_checked: 2026-10-28
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-24946.pdf (vom Februar 2026: für 2026 geplant)
+#: last_checked: 2026-11-01
 #: check_frequency: 180d
 Lebuser/Palisadenstr.: Zebrastreifen geplant	?::projected 12418,12728 12384,12718 12347,12699
 # 
@@ -4190,6 +4191,8 @@ Lisa-Fittko-Str.: Baustellenfläche und Brache, Weg existiert im südlichen Abschn
 Oberlandstr.: geschützte Radverkehrsanlage geplant	?::projected; 10613,6437 10505,6417
 # 
 #: source_id: planb2026:13.31303853,52.46004657,02.11.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 22.01.2027)
+#: also_indoor: traffic (none)
+#: last_checked: 2026-11-01 (traffic)
 #: next_check: 2026-11-02 (planb)
 Gritznerstr.: geplante Bauarbeiten, Sperrung, auch für den Radverkehr?	? 4380,6049 4312,5889
 # 
@@ -6719,14 +6722,6 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: check_frequency: 60d
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
 # 
-#: by: http://www.berliner-woche.de/schoeneberg/verkehr/barbarossastrasse-noch-sicherer-d130318.html
-#: osm_watch: way id="1436484466" version="1"
-#: priority: #D
-#: last_checked: 2026-07-04
-# REMOVED --- #: check_frequency: 90d
-#: check_frequency: 120d
-Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563 6219,9549 6242,9525
-# 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5913
 #: by: https://www.berliner-woche.de/karow/c-verkehr/der-ueberweg-soll-kommen_a331769
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/fussverkehr/infrastruktur/bau-von-querungshilfen/ (Vorplanung)
@@ -7733,7 +7728,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: note 4669630 2
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2026-10-28
+#: last_checked: 2026-11-01
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7866,7 +7861,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by[removed]: https://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert, aber dieser existiert auch nicht mehr, Redirect auf Projektkarte?!)
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse-gruenberger-strasse/ (zwischenzeitlich gab's einen kombinierten Eintrag, mittlerweile gelöscht)
 #: osm_watch: way id="1146013214" version="4"
-#: last_checked: 2026-10-31
+#: last_checked: 2026-11-01
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-09-30
@@ -7874,7 +7869,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-10-31
+#: last_checked: 2026-11-01
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -10353,21 +10348,15 @@ Puschkinallee - Am Treptower Park: wie wird die endgültige Ausschilderung ausseh
 #: next_check: 2026-12-31 (osm note)
 Am Eichgarten: Fahrradstraße?	? 5787,4400 5865,4353 5981,4342 6007,4340
 # 
-#: source_id: planb2026:13.51752112,52.45478683,26.10.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 01.11.2027)
-#: also_indoor: traffic (none)
-#: note: Einfahrt gesperrt für alle, Baustellenbereich nur 20m, am 2026-10-28 war die volle Fahrbahnbreite befahrbar
-#: last_checked: 2026-10-28
-# REMOVED --- #: check_frequency: 3d (traffic)
-#: next_check: 2026-11-01 (planb: Ende)
-Fennstr.: Bauarbeiten, Einbahnstraßenregelung (welche Richtung?) geplant, wird der Radverkehr betroffen sein?	? 18257,5743 18236,5548
-# 
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1725763.php (bis 6.11.2026)
 #: next_check: 2026-11-06
 Rückertstr. (Steglitz): ändert sich bei der Fahrbahnwiederherstellung etwas?	? 4028,6099 4118,6091 4238,6080
 # 
 #: source_id: planb2026:13.32129636,52.42974215,01.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 05.04.2027)
 #: also_indoor: traffic (none)
-#: next_check: 2026-11-01
+#: last_checked: 2026-11-01 (traffic)
+#: check_frequency: 3d (traffic)
+# REMOVED ---  #: next_check: 2026-11-01 (planb)
 Marienstr. (Lichterfelde): Bauarbeiten geplant, wird der Radverkehr betroffen sein?	? 4972,2541 4968,2543 5065,2715 5115,2803 5117,2804
 # 
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3myebzikjlz2l (Gesamtbaumaßnahme bis Mitte November 2026)
@@ -10411,10 +10400,14 @@ Trakehner Allee: Bauarbeiten geplant, Sperrung, wird der Radverkehr betroffen se
 Kummersdorf Gut - Sperenberg: wurde irgendwo hier ein Radweg gebaut?	?::inwork 9300,-34066 9068,-34115 8564,-34625 8340,-34842 8218,-34884 7351,-35307 5971,-35320 5765,-35529 5865,-35773 5750,-36364
 # 
 #: source_id: planb2026:13.31717111,52.60798147,02.11.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 23.12.2026)
+#: also_indoor: traffic (none)
+#: last_checked: 2026-11-01 (traffic)
 #: next_check: 2026-11-02 (planb)
 Artemisstr.: geplante Bauarbeiten, mögliche Einbahnstraßenregelung (welche Richtung?), wird der Radverkehr betroffen sein?	? 4119,22634 4232,22458 4280,22383 4279,22383
 # 
 #: source_id: planb2026:13.41984844,52.54584686,02.11.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 02.08.2027)
+#: also_indoor: traffic (none)
+#: last_checked: 2026-11-01 (traffic)
 #: next_check: 2026-11-02 (planb)
 Stargarder Str./Lychener Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 11290,15669 11407,15595 11502,15527
 # 
@@ -10427,6 +10420,8 @@ Gudvanger Str./Krüger Str.: geplante Bauarbeiten, wird der Radverkehr betroffen 
 Joachim-Karnatz-Allee: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 7077,12575 7139,12589
 # 
 #: source_id: planb2026:13.4904534,52.50150704,02.11.2026, ("Vollsperrung beider Fahrbahnen", bis 13.11.2026)
+#: also_indoor: traffic (none)
+#: last_checked: 2026-11-01 (traffic)
 #: next_check: 2026-11-02 (planb)
 Lückstr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 16153,10818 16300,10753
 # 
