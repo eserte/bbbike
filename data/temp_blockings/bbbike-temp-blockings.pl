@@ -36146,7 +36146,7 @@ EOF
 #: source_id: planb2026:13.44281239,52.46101267,15.07.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 18.12.2026)
 #: source_id: planb2026:13.4422304,52.46092562,01.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", 01.10.2026 bis 30.11.2026)
 #: note: Halteverbotsschilder bis 18.12.2026
-#: also_indoor: traffic (no-G,T[later],no-W,no-H)
+#: also_indoor: traffic (no-G,ex-T[later],no-W,no-H)
 #: last_checked: 2026-10-11
 #: check_frequency: 60d
 #: next_check: 2026-11-03 (planb (2. Eintrag mit Vollsperrung))
@@ -39522,7 +39522,7 @@ EOF
 #: note: 2024 hat die Sperrung vor dem 2024-11-15 angefangen ...
 #: note: 2025 hat die Sperrung vor dem 2025-11-09 angefangen, und es wurde am 2026-01-14 noch immer abgebaut
 #: by: https://www.weihnachten-an-der-spree.de/
-#: osm_watch: node id="11346915244" version="3"
+#: osm_watch: node id="11346915244" version="4"
 # REMOVED (2024 hier nicht gesperrt) ---	2::xmas 13558,10704 13531,10673 13527,10660
 	2::xmas 13531,10673 13418,10724
 	2::xmas 13558,10704 13531,10673 13527,10660
@@ -42033,10 +42033,11 @@ EOF
 	q4::inwork; 9044,13711 9094,13648
 EOF
      },
-     { from  => $isodate2epoch->("2026-10-19 00:00:00"), # 1691272800, # 2023-08-06 00:00
-       until => $isodate2epoch->("2026-10-30 23:59:59"), # $isodate2epoch->("2026-11-30 23:59:59"), # $isodate2epoch->("2023-08-11 18:00:00"), # 1691791199, # 2023-08-11 23:59
+     { from  => $isodate2epoch->("2026-11-02 00:00:00"), # $isodate2epoch->("2026-10-19 00:00:00"), # 1691272800, # 2023-08-06 00:00
+       until => $isodate2epoch->("2026-11-13 17:00:00"), # $isodate2epoch->("2026-10-30 23:59:59"), # $isodate2epoch->("2026-11-30 23:59:59"), # $isodate2epoch->("2023-08-11 18:00:00"), # 1691791199, # 2023-08-11 23:59
 #      text  => 'Lückstraße: Bauarbeiten, zwischen Giselastr. und Weitlingstr. gesperrt, Radfahrer sind auch betroffen, außerdem Einbahnstraßenregelung in der Giselastr., vom 7. August bis voraussichtlich 11. August 2023, evtl. noch zwei Wochen länger',
-       text  => 'Lückstraße: Bauarbeiten, Einbahnstraßenregelung, auch Einbahnstraßen auf der Umfahrungsstrecke (Münsterlandstr., Rupprechtstr., Giselastr.), voraussichtlich vom 20.10.2026 bis 30.10.2026',
+#      text  => 'Lückstraße: Bauarbeiten, Einbahnstraßenregelung, auch Einbahnstraßen auf der Umfahrungsstrecke (Münsterlandstr., Rupprechtstr., Giselastr.), voraussichtlich vom 20.10.2026 bis 30.10.2026',
+       text  => 'Lückstraße: Bauarbeiten zwischen Giselastr. und Emanuelstr., Sperrung, vom 03.11.2026 07:00 Uhr bis 13.11.2026 17:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2023/pressemitteilung.1349184.php
@@ -42045,6 +42046,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mycpvmque22a (bis Ende Oktober 2026)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreibsdbeywkqckxk5njct3wck6dah6ibudl6gwobtgqfyzvrwrndaeu (hier keine Ausnahme für den Radverkehr)
 #: by: https://www.morgenpost.de/bezirke/lichtenberg/article413472612/mehrtaegige-sperrungen-in-lichtenberg-wegen-strassenbauarbeiten.html
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261102 (neue Sperrung 3.11.-13.11.2026)
 #: source_id[inactive]: bvg2021:194#BVG325855_0
 #: source_id: viz2021:13.492961,52.500962,07.08.2023,07:00 (hier nur Kfz-Verkehr, hier nur bis 11.08.2023) (inaktiv)
 #: source_id[inactive]: bvg2024:194#HIM_FREETEXT_369023 (Umleitung ab 20.10.2026)
@@ -42053,12 +42055,17 @@ EOF
 #: source_id: planb2026:13.49478651,52.50057663,20.10.2026, ("Sperrung einer Fahrtrichtung", Lückstr. zwischen Wönnichstr. und Weitlingstr., bis 30.10.2026) (vorfristig inaktiv) (bis 30.10.2026)
 #: source_id: LMS-BR:426020/72 viz2021:13.49293,52.50097, (zwischen Weitlingstr. und Wönnichstr., bis 30.11.2026) (bis 30.10.2026) (inaktiv)
 #: source_id: vizapi2026:1118/2026 (bis 30.10.2026)
+#: source_id: planb2026:13.4904534,52.50150704,02.11.2026, ("Vollsperrung beider Fahrbahnen", bis 13.11.2026)
+#: source_id: vizapi2026:1175/2026 (03.11.2026 bis 13.11.2026)
+#: also_indoor: traffic (none)
+# REMOVED --- #: last_checked: 2026-11-01 (traffic) --- #: next_check: 2026-11-02 (planb)
+Lückstr.	q4::inwork 16153,10818 16300,10753
 # REMOVED --- #: last_checked: 2026-10-21 vvv --- #: next_check: 2026-10-30 (vizapi2026 + VIZ-Verkehrsmeldung) vvv --- #: next_check: 2026-10-30 (vizapi2026; Achtung: bei VIZ-Verkehrsmeldung einen Monat länger!) (wurde korrigiert) vvv
-Lückstr.: eigentliche Bauarbeiten	q4::inwork; 16597,10651 16576,10658 16497,10685 16468,10695
-Lückstr.: nur der Kreuzungsbereich Weitlingstr. betroffen	q2::inwork; 16468,10695 16313,10747
-Weitlingstr.: Kreuzungsbereich betroffen	q2::inwork; 16468,10695 16537,10895
-Giselastr. - Rupprechtstr.: Umleitungsstrecke	q4::inwork; 16153,10818 16192,10907 16227,10991 16334,10958 16374,10946 16452,10922 16537,10895
-Münsterlandstr.: Umleitungsstrecke	q4::inwork; 16575,11013 16702,10972
+# REMOVED --- Lückstr.: eigentliche Bauarbeiten	q4::inwork; 16597,10651 16576,10658 16497,10685 16468,10695
+# REMOVED --- Lückstr.: nur der Kreuzungsbereich Weitlingstr. betroffen	q2::inwork; 16468,10695 16313,10747
+# REMOVED --- Weitlingstr.: Kreuzungsbereich betroffen	q2::inwork; 16468,10695 16537,10895
+# REMOVED --- Giselastr. - Rupprechtstr.: Umleitungsstrecke	q4::inwork; 16153,10818 16192,10907 16227,10991 16334,10958 16374,10946 16452,10922 16537,10895
+# REMOVED --- Münsterlandstr.: Umleitungsstrecke	q4::inwork; 16575,11013 16702,10972
 # REMOVED (hier keine Einbahnstraße) --- Münsterlandstr.: Umleitungsstrecke	q4::inwork; 16702,10972 16597,10651
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
 EOF
@@ -45758,7 +45765,7 @@ EOF
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-10-27 vvv
+#: last_checked: 2026-11-02 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -47384,7 +47391,7 @@ EOF
        text  => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Dezember 2026',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026) (inaktiv)
+#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026) (inaktiv) (bis 30.11.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-06-2026-l91-wachow_ausbau-der-ortsdurchfahrt (bis III. Quartal 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-09-2026-l91-wachow_fertigstellung-verschiebt-sich-in-den-novemberdezember (bis Anfang Dezember 2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
@@ -50589,9 +50596,9 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/7961-molkenmarkt-klosterviertel-neuplanung-und-kleinere-bv/?postID=791331#post791331
 #: also_indoor: traffic (ex-G,ex-T,ex-B)
 #: source_id: planb2026:13.41359234,52.51568692,13.12.2023, ("Fahrstreifen-Reduzierung" in der Stralauer Allee, bis 30.10.2026) (vorfristig inaktiv)
-#: last_checked: 2026-10-19
+#: last_checked: 2026-11-02
 #: check_frequency: 14d
-#: next_check: 2026-10-30 (ex-planb)
+# REMOVED --- #: next_check: 2026-10-30 (ex-planb)
 	q4::inwork 10951,12249 10957,12401
 EOF
      },
@@ -55249,7 +55256,7 @@ EOF
 #: note: wegen der Kürze der Baustelle: q4 -> q3
 #: note: Laut Baustellenschild der Wasserbetriebe Bauarbeiten bis Oktober 2027 (!)
 #: XXX Sind die Bauarbeiten beendet?
-#: last_checked: 2026-10-22
+#: last_checked: 2026-11-02
 #: check_frequency: 30d
 #: next_check: 2026-12-11 (planb)
 # REMOVED --- #: next_check: 2027-10-31 (Wasserbetriebe, evtl. Gesamtmaßnahme)
@@ -56664,12 +56671,13 @@ EOF
 EOF
      },
      { from  => 1790546400, # 2026-09-28 00:00
-       until => 1793660400, # 2026-11-03 00:00
-       text  => 'Billerbecker Weg: Leitungsarbeiten, Einbahnstraßenregelung zwischen Finnentroper Weg und Erndtebrücker Weg, offen Richtung Westen, bis 02.11.2026',
+       until => $isodate2epoch->("2026-12-18 23:59:59"), # 1793660400, # 2026-11-03 00:00
+#      text  => 'Billerbecker Weg: Leitungsarbeiten, Einbahnstraßenregelung zwischen Finnentroper Weg und Erndtebrücker Weg, offen Richtung Westen, bis 02.11.2026',
+       text  => 'Billerbecker Weg: Leitungsarbeiten, Einbahnstraßenregelung zwischen Finnentroper Weg und Erndtebrücker Weg, offen Richtung Westen, bis 18.12.2026',
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: planb2026:13.28551313,52.57478964,28.09.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 02.11.2026)
-#: source_id: LMS-BR:423618/72 viz2021:13.28434,52.57465,28.09.2026,06:00 vizapi2026:997/2026 (bis 02.11.2026)
+#: source_id: LMS-BR:423618/72 viz2021:13.28434,52.57465,28.09.2026,06:00 vizapi2026:997/2026 (bis 02.11.2026) (bis 18.12.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mwkhu3z7su2e
 	q4::inwork; 2117,18632 2196,18642 2323,18653 2413,18655 2498,18657
 EOF
@@ -56855,7 +56863,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3my7bxsvvus2b (nur Kfz-Verkehr)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/mein-schreibtisch-wackelt-ab-7-uhr-fahrradstrasse-im-berliner-sudosten-wird-zu-schleichweg-fur-lkws-16214673.html
 #: source_id: planb2026:13.54714994,52.43753519,19.10.2026, ("Vollsperrung beider Fahrbahnen", Bereich Marktplatz Adlershof, 19.10.2026 bis 16.12.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:425829/72 viz2021:13.547613,52.437736,19.10.2026,07:00 vizapi2026:1082/2026 (bis 03.11.2026)
+#: source_id: LMS-BR:425829/72 viz2021:13.547613,52.437736,19.10.2026,07:00 vizapi2026:1082/2026 (bis 03.11.2026) (bis 13.11.2026)
 #: also_indoor: traffic (G,T,H,W)
 #: last_checked: 2026-10-18
 # REMOVED --- #: next_check: 2026-10-19 (planb + aktives-adlershof (1 Tag vorher))
@@ -57082,7 +57090,7 @@ EOF
        data  => <<'EOF',
 #: source_id: planb2026:13.44862116,52.47313244,31.08.2026, ("Vollsperrung beider Fahrbahnen", bis 13.11.2026)
 #: also_indoor: traffic (no-G,T,no-W,no-H)
-#: last_checked: 2026-10-20
+#: last_checked: 2026-11-02 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-11-13 (planb)
 Zwiestädter Str.: Sperrung der Fahrbahn (ungefähr 100m)	q4::inwork 13392,7648 13513,7532
@@ -57393,8 +57401,8 @@ EOF
 #: source_id: planb2026:13.44849499,52.5121092,28.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 20.11.2026)
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026) (bis 30.10.2026) (bis 20.11.2026)
 #: also_indoor: traffic (ex-G,ex-T,H,ex-W)
-#: note: manchmal (außerhalb der Arbeitszeiten? am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45, 2026-10-27 Tue 17:25, 2026-10-31 Sat 13:00) oder auch Am Comeniusplatz (seen 2026-10-28 Wed 17:44, 2026-11-01 Sun 09:43)
-#: last_checked: 2026-11-01 vvv
+#: note: manchmal (außerhalb der Arbeitszeiten und am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45, 2026-10-27 Tue 17:25, 2026-10-31 Sat 13:00) oder auch Am Comeniusplatz (seen 2026-10-28 Wed 17:44, 2026-11-01 Sun 09:43)
+#: last_checked: 2026-11-02 vvv
 #: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
 Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13275,11830 13406,11896
@@ -57423,6 +57431,19 @@ EOF
 #: next_check_id: SCHOENHAUSERALLEEBRUECKE-2026
 #: next_check: 2028-03-15
 	q4::inwork 10729,16042 10975,16010
+EOF
+     },
+     { from  => 1793574000, # 2026-11-02 00:00
+       until => 1795215600, # 2026-11-21 00:00
+       text  => 'Seydlitzstr.: Anbindung an die Kaiser-Wilhelm-Str. gesperrt, 02.11.2026 bis 20.11.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mzckxv43ck2l
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic7splyli3v6g3l6y73vt55idfpbspoxhygxmeyqryuay3fpxhsqu
+#: source_id: planb2026:13.3378782,52.43178582,02.11.2026, ("Fahrstreifen-Reduzierung", bis 20.11.2026)
+#: source_id: LMS-BR:427207/72 viz2021:13.33812,52.43195,02.11.2026,07:00 vizapi2026:1166/2026 (Kaiser-Wilhelm-Str., bis 20.11.2026)
+#: source_id: LMS-BR:427208/72 viz2021:13.338142,52.431938,02.11.2026,07:00 (Seydlitzstr., bis 20.11.2026)
+	q4::inwork 6105,2826 6182,2737
 EOF
      },
     );

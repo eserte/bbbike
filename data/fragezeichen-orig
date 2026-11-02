@@ -1084,7 +1084,7 @@ Verlängerte Kiehnwerderallee: Weg bis zum Britzer Zweigkanal soll hergestellt we
 Köpenicker Landstraße - Chris-Gueffroy-Allee	?::projected 16747,6813 16485,6377 16122,6084 15720,5951 15584,5946 15143,5936
 # 
 #: XXX Bd.2
-#: osm_watch: way id="148117201" version="13"
+#: osm_watch: way id="148117201" version="14"
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3miats6neb22y
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihh3kybdxscnfintdsmoyuvu7ypubf62j5xsusqulmukg66qowf5q
 #: source_id: viz2021:13.552006,52.399468,13.12.2021,08:00 (Gasleitungsbau bis 31.1.2022) (inaktiv)
@@ -3293,6 +3293,7 @@ Thomasstr.: wird die Straße zur Fahrradstraße?	? 12185,7381 12216,7388 12368,742
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf (Baubeginn frühestens 06/2026; evtl. wird der Abschnitt östlich der Treptower Str. früher in Angriff genommen)
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-6-mobilitaetsrat.pdf (Baubeginn 09/2026)
 #: by: https://newsletter.kms-sonne.de/mailing/101/9505258/0/c96f07b302/index.html
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2026/pressemitteilung.1733699.php (erster Abschnitt: zwischen Innstraße und Roseggerstraße)
 #: source_id: planb2026:13.44684425,52.4803995,02.11.2026,07:00 ("Vollsperrung beider Fahrbahnen", Innstr. bis Roseggerstr., bis 02.05.2027)
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED --- #: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr. --- #: last_checked: 2022-12-04 --- #: next_check: 2022-12-10 --- Weserstr./Weichselstr.: Modalfilter geplant	?::projected 12590,8977 12740,8862
@@ -4546,7 +4547,7 @@ Cottbusser Str.: Fahrradstraße geplant	?::projected 23104,14827 23175,14823 2322
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731053.php (Modalfilter/Diagonalsperre, Einbau am 9. November 2026, außerdem Kfz-Einbahnstraßenregelung im Zuge N<->O (welche Richtung?))
 #: by: https://www.entwicklungsstadt.de/zehn-poller-veraendern-den-kungerkiez-das-gilt-bald-fuer-autofahrer/
 #: source_id: viz2021:13.449644,52.490923,02.05.2023,07:00 (Leitungsarbeiten, Fahrtrichtung für Kfz gesperrt, bis 30.06.2023) (bis 04.07.2023) (inaktiv)
-#: osm_watch: note 5010017 28
+#: osm_watch: note 5010017 29
 #: osm_watch: way id="506295118" version="28"
 #: osm_watch: way id="841291503" version="16"
 #: last_checked: 2026-10-15 vvv
@@ -5845,7 +5846,7 @@ Schottstr./Alfredstr./Fanningerstr.: Fußgängerüberweg (Zebrastreifen?) entsteht	
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2026-10-25
+#: last_checked: 2026-11-02
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2024-07-17
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
@@ -6166,6 +6167,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: by: https://www.berliner-zeitung.de/article/schoenhauser-allee-das-ist-der-neue-zeitplan-fuer-berlins-komplizierteste-brueckenbaustelle-10519951 (Hauptbaumaßnahme 2028 bis Ende 2032)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1732545.php (Verkehrssicherungsarbeiten ab 2.11.2026; vorbereitende Arbeiten ab 13. November 2026; Sperrung der Fahrbahn der Dänenstr. zwischen Hausnummern 1 und 5)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/start-der-mega-baustelle-in-berlin-sperrungen-und-verkehrseinschrankungen-durch-neubau-der-schonhauser-allee-brucke-16213102.html
+#: by: https://www.entwicklungsstadt.de/schoenhauser-allee-bruecke-grossbaustelle-startet-erste-sperrungen/
 #: source_id: planb2026:13.41360487,52.54964222,02.11.2026, ("Sicherung gemäß Vz.-plan", Dänenstr. und Schönhauser Allee, bis 28.02.2027)
 #: XXX wird es Einschränkungen geben? -> ja, vermutlich Sperrung der Fahrbahn der Dänenstr.
 #: last_checked: 2026-08-11
@@ -7728,7 +7730,7 @@ Karl-Marx-Allee: Radweg vor Andreasstr. wird verbreitert	?::projected; 12134,125
 #: osm_watch: note 4669630 2
 #: XXX nach Fertigstellung Eintrag in handicap_directed anpassen/entfernen
 #: note: Furten sind da, zusätzliche Ampeln noch nicht; mittlerweile (Jan 2025) neue Absperrungen auf der Südseite, Halteverbotsschilder bis 30.06.2025
-#: last_checked: 2026-11-01
+#: last_checked: 2026-11-02
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
 Koppenstr.: Übergangsmöglichkeit für Radfahrer entsteht	?::inwork 12568,12512 12592,12472 12560,12444
@@ -7869,7 +7871,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-11-01
+#: last_checked: 2026-11-02
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8200,7 +8202,7 @@ Marggraffbrücke: Abriss und Neubau	?::inwork 16677,6892 16720,6845
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~01-12-2025-b5-baustart-od-treplin-fruehjahr-2026 (Fertigstellung Mitte 2028)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~27-02-2026-grundhafter-ausbau-der-b-5 (bis Mitte 2027)
 #: source_id: LS/221-F/24/020 (vorbereitende Arbeiten? bis 22.02.2024) (inaktiv)
-#: source_id: LS/221-F/26/011 (bis 30.06.2027)
+#: source_id: LS/221-F/26/011 (bis 30.06.2027) (vorfristig inaktiv)
 #: osm_watch: way id="480741330" version="6"
 #: osm_watch: way id="1508193102" version="1"
 #: osm_watch: note 5204240 1
@@ -8415,7 +8417,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-10-27
+#: last_checked: 2026-11-02
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8869,6 +8871,7 @@ Kaulsdorfer Galgen: wird der Gehweg für Radfahrer freigegeben?	? 22842,12070 226
 #: by: https://www.entwicklungsstadt.de/fuer-die-westumfahrung-in-koepenick-bruecke-wird-komplett-abgerissen/ (Wuhlebrücke Am Bahndamm soll neu gebaut werden)
 #: by: https://www.entwicklungsstadt.de/westumfahrung-bahnhofstrasse-neue-bruecke-veraendert-die-haemmerlingstrasse/
 #: by: https://www.entwicklungsstadt.de/westumfahrung-koepenick-strassenbau-an-der-haemmerlingstrasse-sorgt-fuer-staus/
+#: by: https://www.entwicklungsstadt.de/westumfahrung-bahnhofstrasse-kommt-die-strasse-auch-ohne-tvo/
 #: XXX Außerdem in den Planfeststellungsunterlagen:
 #: XXX - Ampelanlage Am Bahndamm/Alte Kaulsdorfer Str.
 #: XXX - eine Unterführung für Radfahrer/Fußgänger entlang der Wuhle am Ostufer und im Anschluss eine Rampe zurück zum Straße Am Bahndamm, danach geht's am Westufer weiter; man soll also eine Schleife fahren; außerdem gibt es Treppen zu beiden Seiten der Straße Am Bahndamm
@@ -9858,6 +9861,7 @@ Friedenstr.: Umbau der RVA (Protektion), Mittelinsel am Knick Platz der Vereinte
 #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/bezirk-beginnt-mit-umbau-rigaer-strasse-in-berlin-soll-sicherer-werden--fur-radfahrende-16165403.html
 #: by: https://bsky.app/profile/baxhain.bsky.social/post/3mxqpw227cs2m
 #: by: https://www.entwicklungsstadt.de/fahrradstrasse-rigaer-strasse-einbahnstrassen-sollen-autoverkehr-reduzieren/
+#: by: https://www.entwicklungsstadt.de/neue-regeln-in-der-rigaer-strasse-was-autofahrer-jetzt-wissen-muessen/
 #: priority: #D
 #: last_checked: 2026-10-28 vvv
 #: check_frequency: 10d vvv
@@ -10128,9 +10132,9 @@ Thomasiusstr. - Wilsnacker Str.: Fahrradstraße soll realisiert werden	?::project
 #: also_indoor: url https://bauprojekte.deutschebahn.com/p/berlin-zehlendorf/infobauarbeiten
 #: source_id: planb2026:13.25981555,52.42927677,20.10.2026, ("Vollsperrung beider Fahrbahnen", bis 16.12.2026) (vorfristig inaktiv) (bis 16.12.2026)
 #: source_id: bvg2024:101#HIM_FREETEXT_368979 (Haltestellenverlegung ab 20.10.2026)
-#: source_id: bvg2024:101#HIM_FREETEXT_370457 (Umleitung ab 31.10.2026)
-#: source_id: bvg2024:112#HIM_FREETEXT_370458 (Umleitung ab 31.10.2026)
-#: source_id: LMS-BR:427013/72 viz2021:13.25894,52.43184,31.10.2026,00:00 (Sperrung für Kfz bis 01.11.2026)
+#: source_id[inactive]: bvg2024:101#HIM_FREETEXT_370457 (Umleitung ab 31.10.2026)
+#: source_id[inactive]: bvg2024:112#HIM_FREETEXT_370458 (Umleitung ab 31.10.2026)
+#: source_id: LMS-BR:427013/72 viz2021:13.25894,52.43184,31.10.2026,00:00 (Sperrung für Kfz bis 01.11.2026) (inaktiv)
 #: XXX Sperrung des östlichen Personentunnels: ab 11. September 2026. Der Radtunnel bleibt offen, Fußgänger und Radfahrer müssen sich den Weg teilen. Mittlerweile 19.10.2026 - 08.12.2026. Mittlerweile Sperrzeiten: 30.10.-2.11.2026 + 4.12.-7.12.2026.
 #: XXX Sperrung des Teltower Damms (für den Kfz-Verkehr, aber auch für den Rad+Fußgängerverkehr?): 31.10.2026 bis 01.11.2026 + 28.11.2026 bis 29.11.2026. Mittlerweile 31.10.2026 für 4 Stunden + 28.11.-29.11.2026
 #: XXX "Anpassung" der Radverkehrsführung: 29. September bis 2. November 2026 (aber wie wird es aussehen?) (am 10.14.2026 waren keine Änderungen zu sehen)
@@ -10384,8 +10388,9 @@ Planufer: Abschleifen des Kopfsteinpflasters	?::projected 11177,9935 11160,9932 
 #: last_checked ^^^
 # 
 #: source_id: planb2026:13.39953472,52.50875397,02.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 09.11.2026)
-#: last_checked: 2026-10-27
-#: next_check: 2026-11-02 (planb)
+#: note: noch keine Anzeichen für Bauarbeiten
+#: last_checked: 2026-11-02
+# REMOVED --- #: next_check: 2026-11-02 (planb)
 Axel-Springer-Str.: Bauarbeiten geplant, Sperrung, wird der Radverkehr betroffen sein?	? 10116,11485 10072,11384
 # 
 #: source_id: planb2026:13.24639501,52.51119904,07.11.2026,17:00 ("Vollsperrung beider Fahrbahnen", bis 17.11.2026)
@@ -10419,15 +10424,13 @@ Gudvanger Str./Krüger Str.: geplante Bauarbeiten, wird der Radverkehr betroffen 
 #: next_check: 2026-11-09 (planb)
 Joachim-Karnatz-Allee: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 7077,12575 7139,12589
 # 
-#: source_id: planb2026:13.4904534,52.50150704,02.11.2026, ("Vollsperrung beider Fahrbahnen", bis 13.11.2026)
-#: also_indoor: traffic (none)
-#: last_checked: 2026-11-01 (traffic)
-#: next_check: 2026-11-02 (planb)
-Lückstr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 16153,10818 16300,10753
-# 
 #: source_id: planb2026:13.4633402,52.49950126,03.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 20.11.2026)
 #: next_check: 2026-11-03 (planb)
 Corinthstr./Bödikerstr.: geplante Bauarbeiten, mögliche Sperrung des Kreuzungsbereichs, ist der Radverkehr betroffen?	? 14265,10579 14447,10491 14608,10409
+# 
+#: source_id: planb2026:13.44918849,52.47350022,16.11.2026, ("Vollsperrung beider Fahrbahnen", bis 14.04.2027)
+#: next_check: 2026-11-16 (planb)
+Böhmische Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 13566,7649 13553,7594 13513,7532 13499,7505 13518,7477
 # 
 ######################################################################
 #
@@ -13011,6 +13014,7 @@ Süßdoldenweg: früher Planstraße H, vermutlich entsteht hier die neue Straße, gen
 #: by: https://www.entwicklungsstadt.de/vom-flughafen-zum-wohnquartier-in-tegel-beginnt-ein-neues-kapitel/
 #: by: https://www.tagesspiegel.de/berlin/wohnen-auf-dem-ehemaligen-tegeler-flughafen-baustart-fur-neues-quartier-steht-kurz-bevor--aber-die-strassenbahn-kommt-spater-16013373.html
 #: by: https://www.entwicklungsstadt.de/schumacher-quartier-darf-keine-insel-werden-wie-txl-mit-dem-kiez-wachsen-soll/
+#: by: https://www.entwicklungsstadt.de/schumacher-quartier-wie-ein-neues-zentrum-den-verkehr-buendeln-soll/
 #: osm_watch: way id="1004141226" version="6"
 #: XXX neue Straßen; aus dem Autobahnzubringer wird vermutlich eine Stadtstraße werden
 #: alias: Kurt-Schumacher-Quartier
@@ -13510,6 +13514,7 @@ Rhenaniabrücke: Neubau geplant	?::projected -1095,15865 -1006,15833
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1715995.php
 #: by: https://www.entwicklungsstadt.de/hochhaus-an-der-warschauer-bruecke-faellt-jetzt-eine-vorentscheidung/
 #: by: https://www.tagesspiegel.de/berlin/berliner-wirtschaft/fakten-schaffen-vor-dem-ende-von-schwarz-rot-berliner-senat-forciert-hochhausplane-in-friedrichshain-und-in-der-city-west-16140241.html
+#: by: https://www.entwicklungsstadt.de/167-meter-turm-in-friedrichshain-neue-entscheidung-bringt-bauvorhaben-voran/
 #: last_checked: 2025-07-12
 #: check_frequency: 720d
 Tamara-Danz-Str. - Rudolfstr.: wird hier eine Fuß- und Radwegverbindung entstehen?	? 13540,11148 13527,11110
@@ -14742,8 +14747,8 @@ Am Küssel (Potsdam-Grube): Qualität?	? -19243,2246 -19505,2798
 #: by: http://www.potsdam.de/cms/dokumente/10081131_1189396/883b581e/abl05_11.pdf
 #: XXX fehlen alle in Potsdam.coords.data vvv
 #: XXX PLZ=14476
-#: osm_watch: way id="49481031" version="18" brb
-#: XXX laut osm nicht mehr highway=living_street, surface=paving_stones sondern residential+asphalt und fertig
+#: osm_watch: way id="49481031" version="19" brb
+#: XXX laut osm highway=residential, surface=asphalt und fertig
 Zum Mühlenteich (Potsdam-Golm): Qualität? Bereits fertig gebaut? Ist die Straße verkehrsberuhigt?	?::inwork -19022,109 -19192,166
 #: XXX PLZ? vvv
 Schwalbenhof (Potsdam-Golm): Qualität?	? -19279,-106 -19186,-132

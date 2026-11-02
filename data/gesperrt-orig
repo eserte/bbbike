@@ -105,6 +105,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10167 (Vorlage zur Beschlussfassung: 7-100 VE, nicht verkehrsrelevant)
 #: by: https://www.entwicklungsstadt.de/neubau-bella-was-am-suedkreuz-bereits-zu-sehen-ist/
 #: by: https://www.entwicklungsstadt.de/vom-areal-zum-kiez-bella-verdichtet-das-umfeld-am-suedkreuz/
+#: by: https://www.entwicklungsstadt.de/grundsteinlegung-fuer-bella-berlin-neues-stadtquartier-am-suedkreuz-waechst/
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="26"
 #: osm_watch: way id="1430487470" version="2"
@@ -4291,14 +4292,14 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: by: https://www.entwicklungsstadt.de/goerlitzer-bruecken-initiative-goerli-24-7-droht-mit-eigenmaechtiger-oeffnung/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/nach-ultimatum-von-aktivisten-in-berlin-unbekannte-beschadigen-brucken-absperrung-am-gorlitzer-park-16201810.html
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-27256.pdf
+#: by: https://www.entwicklungsstadt.de/goerlitzer-bruecken-neue-details-zur-sanierung-und-moeglichen-wiedereroeffnung/
 #: osm_watch: note 5278957 5
 #: osm_watch: way id="24042478" version="20"
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
 #: last_checked: 2026-10-26 (Tsp)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-07-01
+#: check_frequency: 60d
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
 # REMOVED (Wege zwischen den Brücken bleiben offen) --- Görlitzer Brücken: Sperrung droht	2::inwork 13146,9903 13141,9911
 # REMOVED (Wege zwischen den Brücken bleiben offen) --- Görlitzer Brücken: Sperrung droht	2::inwork 13970,9349 13940,9376
@@ -4310,7 +4311,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-10-19
+#: last_checked: 2026-11-02
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4816,7 +4817,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="4612427" version="23"
 #: source_id: planb2026:13.41545231,52.51320684,25.03.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2027)
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-10-22
+#: last_checked: 2026-11-02
 #: check_frequency: 45d
 #: next_check: 2027-12-31 (planb)
 # ACTIVATE_LATER --- #: next_check: 2028-07-31 (entwicklungsstadt)
@@ -5533,7 +5534,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://molkenmarkt.berlin.de/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf (Aufstellungsbeschluss 1-14-2 (zwischen Jüdenstr. und Klosterstr.))
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-10-19
+#: last_checked: 2026-11-02
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5542,7 +5543,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-10-19
+#: last_checked: 2026-11-02
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
