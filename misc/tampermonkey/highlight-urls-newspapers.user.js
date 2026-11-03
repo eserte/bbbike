@@ -1,15 +1,16 @@
 // ==UserScript==
 // @name         URL-Links hervorheben mit Set (Berliner Zeitungen, Debugging)
 // @namespace    http://tampermonkey.net/
-// @version      1.7
+// @version      1.8
 // @description  Hebt Links hervor, deren href in externer URL-Liste steht; mit Debug-Logs; nur auf tagesspiegel.de und anderen Berliner Zeitungen
-// @author       Dein Name
+// @author       Slaven Rezic
 // @match        https://*.tagesspiegel.de/*
 // @match        https://*.morgenpost.de/*
 // @match        https://*.berliner-zeitung.de/*
 // @match        https://*.nd-aktuell.de/*
 // @match        https://entwicklungsstadt.de/*
 // @match        https://*.entwicklungsstadt.de/*
+// @match        https://www.bahninfo-forum.de/*
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
