@@ -727,8 +727,29 @@
      ((string-match "\t\\([A-Za-z0-9_/.-]+\\)\t\\(INUSE\\|WAS_INUSE\\)?$" sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
      ((string-match (concat "\\(" bbbike-lmsbr-short-regexp " " bbbike-viz2021-regexp "\\|" bbbike-lmsbr-short-regexp "\\|" bbbike-viz2021-regexp "\\|" bbbike-lsbrb-regexp "\\|" bbbike-adac-regexp "\\)") sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
      ((string-match "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/\\(.*\\)" sel) (setq source-id (concat "bvg2021:" (substring sel (match-beginning 1) (match-end 1)))))
-     (t (error "No X selection or X selection does not contain a source-id")))
-    (if (string-match " \\(bis \\(voraussichtlich \\)?[0-9][0-9]?\\.[0-9][0-9]?\\.[0-9][0-9][0-9][0-9]\\)" sel)
+     ((string-match "from=\\([0-3][0-9]\\.[01][0-9]\\.[0-9][0-9][0-9][0-9]\\)? .* to=\\([0-3][0-9]\\.[01][0-9]\\.[0-9][0-9][0-9][0-9]\\)?.*lms_id=\\([^ ]+\\)? id=\\(vizapi2026:[^ ]+\\)?" sel)
+      (let ((from   (condition-case nil (substring sel (match-beginning 1) (match-end 1)) (error "")))
+	    (to     (condition-case nil (substring sel (match-beginning 2) (match-end 2)) (error "")))
+	    (lms-id (condition-case nil (substring sel (match-beginning 3) (match-end 3)) (error "")))
+	    (id     (condition-case nil (substring sel (match-beginning 4) (match-end 4)) (error "")))
+	    )
+	(if (or (not (string= from "")) (not (string= to "")))
+	    (progn
+	      (setq source-id (concat (if (not (string= lms-id "")) lms-id "")
+				      (if (and (not (string= lms-id "")) (not (string= id ""))) " " "")
+				      (if (not (string= id "")) id "")))
+	      (if (or (not (string= from "")) (not (string= to "")))
+		  (setq description (concat " ("
+					    (if (not (string= from "")) from "")
+					    (if (and (not (string= from "")) (not (string= to ""))) " " "")
+					    (if (not (string= to "")) (concat "bis " to) "")
+					    ")"
+					    )))))))
+     )
+    (if (not source-id)
+	(error "No X selection or X selection does not contain a source-id"))
+    (if (and (string= description "")
+	     (string-match " \\(bis \\(voraussichtlich \\)?[0-9][0-9]?\\.[0-9][0-9]?\\.[0-9][0-9][0-9][0-9]\\)" sel))
 	(setq description (concat " (" (substring sel (match-beginning 1) (match-end 1)) ")")))
     (beginning-of-line)
     (insert (concat "#: source_id: " source-id description "\n"))))
@@ -747,6 +768,7 @@
 				    "\\|https://www.aktives-adlershof.de/aktuelles"
 				    "\\|https://www.bwb.de/de/baustelleninformationen.php"
 				    "\\|https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/"
+				    "\\|https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php"
 				    "\\)") url))
       (setq url (concat url "?date=" (format-time-string "%Y%m%d"))))
     (beginning-of-line)
