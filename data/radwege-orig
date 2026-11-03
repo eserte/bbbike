@@ -472,7 +472,10 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11507,9114 11500,9116
 #: note: vor der Wildenbruchstr. ein paar Meter Verbundsteinpflasterradweg
 	RW7; 13217,8493 13124,8562 13033,8628
 #: historical_note ^^^
-	RW1;RW1 13217,8493 13384,8354 13566,8212 13724,8090
+	RW1;RW1 13217,8493 13384,8354
+#: historical_note: früher RW1;RW1, seit etwa Herbst 2026 nicht mehr benutzbar
+	RW0;RW0 13384,8354 13566,8212
+	RW1;RW1 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
 Radweg nur aufgemalt, schadhafter Gehweg	RW1; 13891,7961 13724,8090
 # REMOVED (hier gibt es keinen Radweg mehr) --- #: XXX ist der Radweg komplett aufgehoben? vvv--- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20131219.1210.392853.html vvv --- altes Verbundsteinpflaster	RW1;RW1 13946,7918 13919,7707
@@ -1473,7 +1476,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14181,9729 14089,961
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-10-26 vvv
+#: last_checked: 2026-11-03 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14405,10027 14501,10169 14558,10264
@@ -2006,7 +2009,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren -> mittlerweile ist der Bürgersteig + Radweg wieder offen, wird noch die Busspur kommen?
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-10-18 (webcam)
+#: last_checked: 2026-11-03
 #: check_frequency: 21d
 #: next_check: 2026-11-30 (VIZ-Verkehrsmeldung)
 	RW1; 14174,7505 14305,7415
@@ -3388,7 +3391,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-10-26 vvv
+#: last_checked: 2026-11-03 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2027-01-29 (planb) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
@@ -3421,7 +3424,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46512046,52.49807953,11.03.2024,06:00 ("Fahrstreifen-Reduzierung", bis 29.01.2027)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-10-26
+#: last_checked: 2026-11-03
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-10-31 (Halteverbotsschilder)
 #: next_check: 2027-01-29 (planb)
@@ -4817,7 +4820,8 @@ mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,580
 #: source_id: planb2026:13.46660341,52.47141375,04.05.2026,07:00 ("Gehwegvollsperrung", bis 17.08.2026) (inaktiv)
 #: source_id: planb2026:13.46550531,52.47084166,12.08.2026,07:00 ("Gehwegvollsperrung", bis 16.11.2026) (bis 16.10.2026) (inaktiv)
 #: historical_note: früher (bis ca. 2026): alte Gehwegplatten, deutliche Schäden und Wurzelhebungen, Bord gegen Gehweg, RW1;
-provisorische Radwegführung auf der Fahrbahn	RW4; 14758,7373 14708,7325 14658,7280 14617,7243
+#: historical_note: zwischendurfh (Sommer-Herbst 2026): provisorische Radwegführung auf der Fahrbahn, RW4;
+	RW0; 14758,7373 14708,7325 14658,7280 14617,7243
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7117,7 +7121,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2026-10-06 vvv
+#: last_checked: 2026-11-01 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche

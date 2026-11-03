@@ -110,8 +110,8 @@ Straße der Pariser Kommune/Hildegard-Jadamowitz-Str.	X::inwork 12854,12287
 # REMOVED --- Bahnhofstr./Eweststr.: Gegenverkehrsregelung	X::inwork::alternating 12298,21015
 # 
 #: source_id: LMS-BR:424355/72 viz2021:13.436618,52.592582,05.10.2026,07:00 vizapi2026:1022/2026 (bis 02.11.2026) (bis 06.11.2026)
-#: source_id: planb2026:13.43573837,52.59336128,01.10.2026, ("Gegenverkehrsanlage (LZA)", 01.10.2026 bis 02.11.2026)
-#: source_id: planb2026:13.43577661,52.59332489,21.10.2026, ("Gegenverkehrsanlage (LZA)", bis 06.11.2026)
+#: source_id: planb2026:13.43573837,52.59336128,01.10.2026, ("Gegenverkehrsanlage (LZA)", 01.10.2026 bis 02.11.2026) (inaktiv)
+#: source_id: planb2026:13.43577661,52.59332489,21.10.2026, ("Gegenverkehrsanlage (LZA)", bis 06.11.2026) (inaktiv)
 #: next_check: 2026-11-06 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261106
 Bahnhofstr.: Gegenverkehrsregelung	X::inwork::alternating 12332,20962
@@ -180,7 +180,7 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 # 
 #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 vizapi2026:587/2026 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026) (inaktiv)
 #: also_indoor: traffic (ex-G,T)
-#: last_checked: 2026-10-31 (traffic)
+#: last_checked: 2026-11-03 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-10-23 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: valid: -20260911

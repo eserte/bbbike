@@ -120,9 +120,11 @@ Weserstr.: Asphalt	Q0 12740,8862 12881,8750
 #: historical_note: bis Frühjahr 2024: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität, Q2+
 Weserstr.: Asphalt	Q0 12881,8750 13033,8628
 Weserstr.: Asphalt	Q0 13033,8628 13124,8562 13217,8493
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+ 13217,8493 13384,8354 13566,8212
+Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+ 13217,8493 13384,8354
+#: historical_note: früher (bis ca. Herbst 2026) zusätzlich "schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität" und Q2+, mittlerweile sind die Radwege nicht mehr nutzbar
+Weserstr.: Kopfsteinpflaster	Q2 13384,8354 13566,8212
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+; 13566,8212 13724,8090
-#: source_id: planb2026:13.45164896,52.47816322,10.08.2026,07:00 ("Gehwegvollsperrung", bis 15.11.2026)
+#: source_id: planb2026:13.45164896,52.47816322,10.08.2026,07:00 ("Gehwegvollsperrung", bis 15.11.2026) (bis 18.11.2026)
 #: historical_note: früher auch: "schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität" und Q2+, aber zurzeit sind die Radwege wegen Bauarbeiten nicht benutzbar
 Weserstr.: Kopfsteinpflaster	Q2; 13724,8090 13566,8212
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0- 15077,11910 14986,11760 14946,11697 14849,11539
@@ -13836,10 +13838,10 @@ Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
 Chlodwigstr.: Asphalt	Q0 8499,5016 8433,5108 8356,5195
 Paul-Schmidt-Str.: Beton	Q0- 8264,5383 8242,5427 8212,5445 8165,5447 8059,5457 8038,5514
 #: historical_note: vor der Umgestaltung bis 2026: Kopfsteinpflaster, Q2
-(Ostkreuz, Zugang Marktstr.): Kleinsteinpflaster	Q1 15093,10942 15069,10927
+(Ostkreuz, Zugang Marktstr.): glattes Kleinsteinpflaster	Q1 15093,10942 15069,10927
 #: historical_note: bei der ersten Öffnung mit Fußgängerschutztunnel: provisorischer Asphalt, Q1+
-(Ostkreuz, Zugang Marktstr.): Kleinsteinpflaster	Q1 15069,10927 15052,10918 14941,10955 14902,10967
-(Ostkreuz, Zugang Marktstr.): Asphalt	Q0 14902,10967 14808,10978
+(Ostkreuz, Zugang Marktstr.): glattes Kleinsteinpflaster	Q1 15069,10927 15052,10918 14940,10949 14852,10973
+(Ostkreuz, Zugang Marktstr.): Asphalt	Q0 14852,10973 14808,10978
 (Heino-Schmieden-Weg - Alt-Biesdorf): Verbundsteinpflaster	Q1 20831,11604 20840,11604 20830,11610
 (Heino-Schmieden-Weg - Alt-Biesdorf): schlechtes Kopfsteinpflaster	Q3+ 20830,11610 20838,11631
 Weißenhöher Str. [69-71]: Verbundsteinpflaster	Q1+ 20569,11492 20582,11558
@@ -14198,7 +14200,7 @@ Bahamasbogen: Verbundsteinpflaster	Q1+ -2759,18843 -2621,18840 -2482,18836 -2485
 #: XXX bleibt der unbefestigte Abschnitt?
 #: osm_watch: way id="993271092" version="2"
 #: priority: #C
-#: last_checked: 2026-05-08
+#: last_checked: 2026-05-10 (mapillary)
 #: check_frequency: 180d
 (Mauerweg - Lohmühlenstr.): unbefestigt/Verbundsteinpflaster	Q2+ 13128,9726 13156,9702
 # 

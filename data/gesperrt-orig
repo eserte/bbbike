@@ -4208,7 +4208,7 @@ Rue Racine: Sperrung (Fahrbahn und Bürgersteig)	2::inwork 4334,21540 4307,21506
 #: osm_watch: way id="1257637878" version="4"
 #: osm_watch[closed]: note 5142999 2
 #: also_indoor: traffic (G,no-T[aber Umfahrung sichtbar],no-H,no-W)
-#: last_checked: 2026-10-05
+#: last_checked: 2026-11-03 (traffic)
 #: check_frequency: 30d (traffic)
 #: next_check: 2027-12-31
 Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
@@ -4298,7 +4298,7 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
-#: last_checked: 2026-10-26 (Tsp)
+#: last_checked: 2026-11-03
 #: check_frequency: 60d
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
 # REMOVED (Wege zwischen den Brücken bleiben offen) --- Görlitzer Brücken: Sperrung droht	2::inwork 13146,9903 13141,9911
@@ -4548,7 +4548,7 @@ Magdeburger Str. (Brandenburg)	2::inwork -48735,-304 -47897,-353
 #: by: https://www.entwicklungsstadt.de/heidestrasse-18-rohbau-des-neuen-schulz-hotels-waechst-sichtbar-in-die-hoehe/
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/europacity-riverside-nordhafenquartier.148/page-4#post-27997
 #: osm_watch[closed]: note 4940349 2
-#: osm_watch: way id="423457085" version="17"
+#: osm_watch: way id="423457085" version="18"
 #: source_id: planb2026:13.36504453,52.53376599,11.08.2025,06:00 ("Fahrstreifen-Reduzierung", bis 30.07.2027)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
 #: last_checked: 2026-10-10 vvv
@@ -4884,7 +4884,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 #: note: Bauzaun wieder geschlossen: 2024-10-23 (Mi) 18:12 (nordöstliche Seite), 2024-10-28 (Mo) abends (Sonnenallee), 2024-11-02 (Sa) abends (alles an der Kiefholzstr.), 2024-12-27 (Fr) mittags (nordöstliche Seite), 2025-01-16 (Do) mittags (alles an der Kiefholzstr.), 2025-02-21 (Fr) mittags (alles an der Kiefholzstr.)
 #: note: an der Dieselstraße alle vier Bauzäune offen, gesehen: 2024-12-05 (Do) mittags, 2025-03-19 (Mi) mittags
 #: note: an der Kiefholzstr. alle zwei Bauzäune offen, gesehen: 2025-03-19 (Mi) mittags, 2025-04-09 (Mi) mittags, 2025-05-13 (Di) mittags
-#: last_checked: 2026-10-20 vvv
+#: last_checked: 2026-11-03 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-06-20 (Tsp, Fahrrat (Frühjahr 2026)) vvv
 #: osm_watch: way id="852517037" version="6"
@@ -5010,7 +5010,7 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: note: Danach mit Mapillary abfahren!
 #: priority: #C
-#: last_checked: 2026-10-26 (architektur-urbanistik)
+#: last_checked: 2026-11-03
 #: check_frequency: 30d
 # REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
 Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
@@ -5018,7 +5018,7 @@ Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-10-21 vvv
+#: last_checked: 2026-11-03 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5082,17 +5082,16 @@ Kurstr.: Bauarbeiten, Fahrbahn und Gehwege gesperrt	2::inwork 10230,11839 10122,
 # 
 #: next_check_id: TELTOWKANALUFERWEG-2023
 #: note: siehe auch Eintrag in temp_blockings (URLs und osm watches dort)
-#: by: Karsten S.: wieder (temporär?) frei
 #: last_checked: 2026-05-09 vvv
-#: check_frequency: 180d vvv
-#: next_check: 2026-10-31 vvv
-#: valid: -20261031 vvv
+# REMOVED --- #: check_frequency: 180d vvv
+#: next_check: 2026-11-30 vvv
+#: valid: -20261130 vvv
 Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
 # REMOVED (offen) --- Uferweg am Teltowkanal	2::inwork 3980,2102 4209,2641 4220,2664
 # REMOVED (offen, allerdings stehen hier Bauzäune rum) --- Uferweg am Teltowkanal	2::inwork 4209,2641 4247,2652 4272,2704 4274,2717
 #: valid ^^^
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED (offiziell nun offen) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/am-generalshof-1-k%C3%B6penick.874/#post-22500 --- # REMOVED (landuse=construction wurde entfernt) --- #: osm_watch: way id="770592585" version="5" --- #: XXX Hochbauarbeiten sind fertig, allerdings wird noch an der Straße und der neuen Anbindung was gemacht; mittlerweile kann man (manchmal?) gut passieren (gesehen 2024-09-01 (Sun) mittags) --- #: last_checked: 2024-12-04 --- #: check_frequency: 21d --- Am Generalshof: Hochbauarbeiten, Fahrbahn offiziell noch gesperrt	2::inwork 22057,5305 22095,5344

@@ -6639,9 +6639,12 @@ Glanzstr.	N 16328,7005 16433,6892 16588,6724
 Neue Bahnhofstr.	H 15016,11431 14945,11300 14918,11249
 Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14817,11068 14798,11058 14760,11044
 # REMOVED (wurde zurückgebaut) --- (provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14712,11039 14727,11005 14808,10978
-# historical_note: vor der Umgestaltung bis 2026: N, osm.highway: service
-(Ostkreuz, Zugang Marktstr.)	NN 15093,10942 15069,10927
-(Ostkreuz, Zugang Marktstr.)	NN 15069,10927 15052,10918 14941,10955 14902,10967 14808,10978
+#: osm.highway: service
+(Ostkreuz, Zugang Marktstr.)	N 15093,10942 15069,10927
+#: historical_note: früher (zu Zeiten des Fußgängerschutztunnels) NN
+#: osm.highway: service
+(Ostkreuz, Zugang Marktstr.)	N 15069,10927 15052,10918 14940,10949 14852,10973
+(Ostkreuz, Zugang Marktstr.)	NN 14852,10973 14808,10978
 (Neue Bahnhofstr. - Bahnhof Ostkreuz)	NN 14798,11058 14809,11037 14808,10978 14851,10966
 (Sonntagstr. - Bahnhof Ostkreuz)	NN 14808,10978 14760,11044
 Sonntagstr.	N 14760,11044 14669,11157 14598,11245 14535,11327 14453,11439 14460,11455
