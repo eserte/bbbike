@@ -397,7 +397,9 @@ for my $cgiurl (@urls) {
 
     {
 	# Test comments_points (category 0, CARRY) (as part of Bemerkungen)
-	my $content = std_get "$action?startname=Sonntagstr.&startplz=10245&startc=14798%2C10985&zielname=Markgrafendamm&zielplz=10245&zielc=14794%2C10844&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&scope=", testname => 'Tragen test';
+	# NOTE: route preferences have to be tuned to avoid a route via Vorplatz Marktstr. - Karlshorster Str. - Hauptstr.
+	#       Using pref_speed=15 instead of 20 seems to be sufficient.
+	my $content = std_get "$action?startname=Sonntagstr.&startplz=10245&startc=14798%2C10985&zielname=Markgrafendamm&zielplz=10245&zielc=14794%2C10844&pref_seen=1&pref_speed=15&pref_cat=&pref_quality=&scope=", testname => 'Tragen test';
 	like_html $content, qr/(Sekunden|Minuten).*Zeitverlust/, "Zeitverlust in text";
     }
 
