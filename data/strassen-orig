@@ -2741,7 +2741,7 @@ Germaniagarten	N 11240,6350 11237,6326 11220,6323 11206,6252 11224,6244 11243,62
 (Zufahrtstraße zu Oberlandgarten/Germaniagarten)	N 11278,6359 11272,6374 11244,6379 11211,6384 11200,6372
 Rohrbeckstr.	N 11339,6341 11432,6325 11479,6319
 Schwanheimer Str.	N 11404,6141 11432,6325
-Oberlandstr.	H 10377,6417 10446,6414 10505,6417 10613,6437 10943,6498 11142,6535 11250,6555 11344,6572 11436,6588 11561,6610 11689,6634
+Oberlandstr.	H 10377,6417 10403,6416 10446,6414 10505,6417 10613,6437 10943,6498 11142,6535 11250,6555 11344,6572 11436,6588 11561,6610 11689,6634
 Komturbrücke	H 10243,5777 10243,5683
 Schätzelbergstr.	H 10243,5683 10238,5592 10230,5498 10208,5237
 Industriestr.	N 10931,5516 10238,5592
@@ -3371,7 +3371,7 @@ Douglasienweg	N 11594,4107 11633,4117
 #: oldname ^^^
 Wochenendweg	N 11401,4198 11408,4190 11444,4153 11547,4127
 Am Bergpfuhl	N 11817,4355 11838,4248 11831,4231 11814,4227 11790,4226 11780,4235 11752,4351
-Buckower Damm	H 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12694,2758 12694,2570 12694,2544 12694,2517 12703,2454 12712,2378 12738,2162 12817,2031 12911,1815 12940,1547 12939,1469 12938,1348 12941,1256 12984,1011
+Buckower Damm	H 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12694,2758 12694,2570 12694,2544 12694,2517 12703,2454 12712,2378 12738,2162 12817,2031 12911,1815 12940,1547 12939,1469 12938,1348 12941,1256 12967,1108 12984,1011
 Alt-Britz	NN 12564,4308 12594,4324
 Alt-Britz	N 12594,4324 12678,4389 12836,4649 12916,4757 13018,5071 13045,5119 13239,5203 13250,5234
 Pätzer Str.	N 12885,5205 12963,5199 13045,5119
@@ -4081,14 +4081,14 @@ Nahmitzer Damm	H 8742,343 8872,391 9004,481
 #: oldname: -200910: Straße 490 (zwischen Hildburghauser und Marienfelder)
 Friedenfelser Str.	H 7668,471 7688,544 7729,691 7757,834 7759,906 7753,994
 # 
-Buckower Chaussee	N 8533,525 8742,475 8977,505 9004,481
+Buckower Chaussee	N 8533,525 8742,475 8988,508 9004,481
 #: carriageway_width: 12m (aber nur im Bereich des Bahnübergangs, ansonsten breiter, mit Mittelstreifen)
 # REMOVED --- #: next_check_id: BUCKOWERCHAUSSEE-2022 --- #: priority: #A --- #: next_check: 2025-10-08 vvv --- #: valid: !20220124-20251009
 Buckower Chaussee	H 9004,481 9079,531 9135,551 9196,570 9289,595 9365,615 9858,744
 # REMOVED --- #: valid: 20220124-20251009 --- Buckower Chaussee	NH 9004,481 9079,531 9135,551 9196,570 9289,595 9365,615 9858,744 --- #: next_check ^^^
 Buckower Chaussee	H 9858,744 10047,813 10187,872 10276,906 10324,925 10427,968
 #: osm.highway: service
-Buckower Chaussee [Nebenstraße unter der Brücke]	N 9004,481 9031,484 9158,546 9149,568 9115,556 8977,505
+Buckower Chaussee [Nebenstraße unter der Brücke]	N 9004,481 9031,484 9158,546 9149,568 9115,556 8988,508
 # 
 Heinitzweg	N 10276,906 10232,1015 10232,1025 10248,1055 10325,1083
 Heinitzweg	NN 10325,1083 10379,1097
@@ -6643,8 +6643,8 @@ Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14817,11068 14798,11058 1
 (Ostkreuz, Zugang Marktstr.)	N 15093,10942 15069,10927
 #: historical_note: früher (zu Zeiten des Fußgängerschutztunnels) NN
 #: osm.highway: service
-(Ostkreuz, Zugang Marktstr.)	N 15069,10927 15052,10918 14940,10949 14852,10973
-(Ostkreuz, Zugang Marktstr.)	NN 14852,10973 14808,10978
+(Ostkreuz, Zugang Marktstr.)	N 15069,10927 15052,10918 14940,10949
+(Ostkreuz, Zugang Marktstr.)	NN 14940,10949 14852,10973 14808,10978
 (Neue Bahnhofstr. - Bahnhof Ostkreuz)	NN 14798,11058 14809,11037 14808,10978 14851,10966
 (Sonntagstr. - Bahnhof Ostkreuz)	NN 14808,10978 14760,11044
 Sonntagstr.	N 14760,11044 14669,11157 14598,11245 14535,11327 14453,11439 14460,11455
@@ -11526,8 +11526,8 @@ Klausdorfer Weg	N 10505,-2552 10648,-2547 10833,-2544 10989,-2543
 Rohrbachstr.	N 9658,-2640 9658,-2419 9650,-2135
 # 
 # REMOVED (früher bis 1.7.2024 Bahnübergang) --- Wolziger Zeile	N 10392,-2595 10362,-2604 10307,-2633
-(Unterführung Wolziger Zeile)	NN 10307,-2633 10391,-2624 10373,-2575 10394,-2567
-(Unterführung Wolziger Zeile)	NN 10391,-2624 10400,-2629 10420,-2644
+(Unterführung Wolziger Zeile)	NN 10307,-2633 10389,-2634 10373,-2575 10394,-2567
+(Unterführung Wolziger Zeile)	NN 10389,-2634 10398,-2636 10420,-2644
 # 
 Wolziger Zeile	N 10334,-2618 10307,-2633 10287,-2644
 Wolziger Zeile	N 10259,-2660 10287,-2644 10253,-2643 10085,-2643 9969,-2643 9872,-2642 9762,-2642 9658,-2640 9608,-2642
@@ -13633,7 +13633,7 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: XXX ändert sich durch die (teilweise?) Straßenlandwidmung etwas?
 #: osm_watch: way id="156346093" version="11"
 #: osm_watch: way id="23106203" version="17"
-#: last_checked: 2026-08-26
+#: last_checked: 2026-11-04
 #: check_frequency: 150d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113
 #: note: Auf Brandenburger Seite verläuft gleich nebenan der Grenzweg
@@ -14340,7 +14340,6 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-EISNER-2020
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: XXX Gehweg wird vermutlich verlegt
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20200424/ (Bild 31)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9438 (Antrag, wurde zurückgezogen, siehe nächster Antrag)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9546 (Antrag)
@@ -14348,8 +14347,9 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,835781#msg-835781 ("Immerhin wird es den Südzugang weiterhin geben" --- auf der östlichen oder westlichen Seite der Bahngleise?)
 #: by: https://www.tagesspiegel.de/berlin/im-dezember-wird-die-dresdner-bahn-eroffnet-ein-blick-hinter-die-larmschutzwande-der-neuen-berliner-strecke-14133110.html (Wiederherstellung der Verbindung)
 #: osm_watch: way id="1325894268" version="4"
+#: XXX wird es wieder eine Anbindung an den S-Bahnhof geben?
 #: historical_note: früher als "(Eisnerstr. - S-Bhf Buckower Chaussee)" bezeichnet
-#: last_checked: 2026-03-25
+#: last_checked: 2026-11-04
 #: check_frequency: 180d
 (ehemaliger Weg zum S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9310,245
 # 
@@ -17051,7 +17051,7 @@ Juchaczweg	N 14126,3225 14180,3334
 #: osm_watch: way id="721901188" version="1"
 #: osm_watch: way id="138144497" version="10"
 #: priority: #C
-#: last_checked: 2026-04-29
+#: last_checked: 2026-11-04
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-07-01
 (Klinikum Neukölln)	N 14180,3334 14227,3438

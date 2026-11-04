@@ -119,16 +119,18 @@ Grünbeschichtung	RW3; 9146,10284 9111,10090 9078,9916 9047,9750
 	RW1;RW1 8769,9295 8774,9534 8777,9601
 neu asphaltiert, relativ breit	RW1; 8777,9601 8778,9759 8779,9812
 alter Verbundsteinpflasterradweg	RW1; 8779,9812 8779,9829 8779,9851 8784,9972 8790,10157
-#: source_id: planb2026:13.38002097,52.49796024,06.03.2025,07:00 ("Sperrung einer Fahrtrichtung", bis 31.07.2027)
+#: source_id: planb2026:13.38002097,52.49796024,06.03.2025,07:00 ("Sperrung einer Fahrtrichtung", bis 31.07.2027) (vorfristig inaktiv)
+#: source_id: planb2026:13.37988823,52.49738494,03.11.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 30.08.2027)
 #: osm_watch: way id="1089751372" version="8"
 #: last_checked: 2026-10-25
-#: check_frequency: 120d
-#: next_check: 2027-07-31
+#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2027-08-30 (planb)
 # ACTIVATE_LATER --- neu asphaltiert	RW1; 8790,10157 8808,10290 8810,10305
 provisorische Radspur	RW3; 8790,10157 8808,10290 8810,10305
 	RW1;RW1 8810,10305 8824,10366 8885,10523 8926,10626
 	RW1; 8926,10626 8941,10663 9022,10857
-gemeinsamer Geh- und Radweg	RW2;RW9 12938,1348 12941,1256 12984,1011
+gemeinsamer Geh- und Radweg, asphaltiert	RW2;RW9 12938,1348 12941,1256 12967,1108 12984,1011
 #: historical_note: früher gab es hier einen Verbundsteinpflasterradweg, später wurde die Benutzung verboten (Gehwegschäden), mittlerweile (2025) wurde der Radweg zurückgebaut
 	RW0; 9022,10857 8941,10663 8926,10626
 	RW2;RW1 9521,10010 9448,10014
@@ -1879,10 +1881,10 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="823635969" version="35"
-#: osm_watch: way id="4615746" version="60"
+#: osm_watch: way id="4615746" version="61"
 #: osm_watch: way id="1082929723" version="18"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-10-29 (osm) vvv
+#: last_checked: 2026-11-03 (osm) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1930,6 +1932,9 @@ neues Verbundsteinpflaster, allerdings schon erste Unebenheiten	RW1; 14023,4475 
 	RW1; 14295,4462 14023,4475
 	RW1;RW1 9504,6653 9673,6646 9735,6636 9863,6617 10101,6596 10186,6527
 	RW1;RW1 10613,6437 10943,6498 11142,6535
+#: historical_note: seit Oktober 2026
+#: note: keine Leitboys im Bushaltestellenbereich
+Leitboys	RW3; 10613,6437 10505,6417 10446,6414 10403,6416
 Verbundsteinpflasterradweg	RW2; 7902,893 7884,851 7867,831 7757,834
 Verbundsteinpflasterradweg	RW1; 7757,834 7867,831 7884,851 7902,893
 	RW2;RW2 7668,471 7688,544 7729,691 7757,834
@@ -2543,7 +2548,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: source_id: viz2021:13.503014,52.480172,19.07.2021,07:00 (Leitungsarbeiten bis 6.8.2021) (inaktiv)
 #: source_id: viz2021:13.506418,52.475944,06.09.2021,08:00 (Leitungsarbeiten bis 1.1.2022, allerdings in die andere Richtung) (mittlerweile bis 31.3.2022) (bis 17.6.2022) (inaktiv)
 #: source_id: viz2021:13.501478,52.482757,21.06.2021,10:00 (Leitungsarbeiten bis 28.5.2022) (bis 13.6.2022) (inaktiv)
-#: source_id: planb2026:13.50839546,52.47414971,19.10.2026,07:00 ("Fahrstreifen-Reduzierung", bis 31.12.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.50839546,52.47414971,19.10.2026,07:00 ("Fahrstreifen-Reduzierung", bis 31.12.2026) (vorfristig inaktiv) (bis 31.12.2026)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
@@ -2560,7 +2565,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: by: https://www.entwicklungsstadt.de/dauersperrung-richtung-ostkreuz-warum-hier-seit-2018-nichts-passiert/
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-10-28 vvv
+#: last_checked: 2026-11-04 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -3041,21 +3046,21 @@ neues Verbundsteinpflaster	RW1; 10427,968 10324,925 10276,906
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und Sa 9-18 Uhr	RW1; 9858,744 10047,813 10187,872 10276,906 10324,925
 #: note: Buckower Chausse, Richtung Westen
 	RW1; 9858,744 9365,615
-	RW4; 9365,615 9289,595
-provisorisch geschützt	RW4; 9289,595 9196,570
+Grünbeschichtung	RW4; 9365,615 9289,595
+Grünbeschichtung, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 9289,595 9196,570
 #: historical_note: früher (vor Bau der Brücke) Hochbordradweg, RW1 vvv
 Bushaltestelle	RW4; 9196,570 9135,551
-	RW4; 9135,551 9079,531 9004,481
+Grünbeschichtung	RW4; 9135,551 9079,531 9004,481
 #: historical_note ^^^
 	RW1; 9004,481 8872,391 8742,343
 #: note: Buckower Chaussee, Richtung Osten
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8742,343 8872,391 9004,481
 #: historical_note: früher (vor Bau der Brücke) Hochbordradweg + Busspur, RW1
-	RW4; 9004,481 9079,531
-	RW4; 9079,531 9135,551
+Grünbeschichtung	RW4; 9004,481 9079,531
+Grünbeschichtung	RW4; 9079,531 9135,551
 Bushaltestelle	RW4; 9135,551 9196,570
-provisorisch geschützt	RW4; 9196,570 9289,595
-	RW4; 9289,595 9365,615
+Grünbeschichtung, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 9196,570 9289,595
+Grünbeschichtung	RW4; 9289,595 9365,615
 Radweg nur aufgemalt	RW1; 9365,615 9858,744
 # 
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 8742,343 8583,327 8470,335 8383,351 8251,401 8075,499 7937,583 7847,638
@@ -4512,7 +4517,7 @@ Schild "Schritt fahren"	RW6; 9901,18522 10006,18502 10013,18545 9994,18595 9916,
 #: confirmed_by: srt
 	RW2; 17886,5587 17808,5669 17782,5698
 #: next_check_id: SCHOENEWEIDE-2026
-#: last_checked: 2026-10-28
+#: last_checked: 2026-11-04
 #: next_check: 2027-05-21 (planb + VIZ-Verkehrsmeldung)
 #: historical_note: bis zu den Bauarbeiten Okt 2026: RW2;
 	RW5; 17782,5698 17728,5756
@@ -5447,10 +5452,11 @@ provisorischer gemeinsamer Rad- und Gehweg	RW2; 15662,16649 15437,16491
 gemeinsamer Geh- und Radweg	RW2; 15130,16098 14967,15885 14936,15857 14808,15788 14653,15738
 # 
 #: note: Hansastr. Richtung NO
+#: next_check_id: HANSA-2025
 #: XXX später wiederherstellen: die ersten Meter werden auf dem Hochbord geführt	RW3; 14653,15738 14808,15788
 #: XXX später wiederherstellen:	RW3; 14808,15788 14936,15857 14967,15885
 #: last_checked: 2026-09-06
-#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 60d
 #: next_check: 2027-01-15 (VIZ-Verkehrsmeldung + planb)
 gemeinsamer Geh- und Radweg	RW2; 14653,15738 14808,15788 14936,15857 14967,15885
 	RW3; 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
@@ -8122,7 +8128,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2026-10-11 vvv
+#: last_checked: 2026-11-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -8169,7 +8175,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2026-10-20 vvv
+#: last_checked: 2026-11-04 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8582,7 +8588,7 @@ Verbundsteinpflaster	RW1;RW1 3909,19002 3810,19133 3546,19477
 #: osm_watch: note 4862755 1
 #: also_indoor: traffic (H,G,B,T,A,W)
 #: XXX Bauarbeiten der Wasserbetriebe, provisorische Verkehrsführung, laut Baustellenschild bis Oktober 2026 vvv
-#: last_checked: 2026-08-02 vvv
+#: last_checked: 2026-11-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 #: note: Stubenrauchstr. Richtung Nordosten
@@ -9475,14 +9481,14 @@ Leitboys	RW4; 9254,6542 9249,6642
 #: source_id: viz2021:13.385351,52.448083,27.06.2024,10:00 (bis 17.07.2024, Gesamtbaumaßnahme bis Ende Juli 2024) (inaktiv)
 #: source_id: LMS-BR:347435/72 viz2021:13.38458,52.45267,23.09.2024,17:00 viz2021:13.38458,52.45267, (bis 01.11.2024) (bis 31.12.2025) (bis 26.06.2026) (inaktiv)
 #: source_id: LMS-BR:415838/72 viz2021:13.38457,52.45276, (bis 15.10.2026) (bis 11.12.2026)
+#: source_id: planb2026:13.38429327,52.45349575,02.02.2022, ("Sicherung gemäß Vz.-plan", bis 11.12.2026)
 #: XXX Wird es hier auch eine permanente Radspur geben?
 #: priority: #B
-#: last_checked: 2026-08-08 vvv
+#: last_checked: 2026-11-04 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2026-12-11 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-12-11 (VIZ-Verkehrsmeldung + planb) vvv
 #: osm_watch: way id="4526218" version="32"
-#: note: keine Benutzungspflicht
-#: historical_note: früher (bis 2026?) provisorischer Radweg auf dem Bürgersteig
+#: historical_note: früher (bis 2026?) provisorischer Radweg (ohne Benutzungspflicht) auf dem Bürgersteig
 provisorische Radspur	RW4; 9206,5193 9196,5272 9188,5333 9176,5413
 provisorische Radwegführung auf dem Bürgersteig	RW2; 9176,5413 9161,5535
 #: next_check ^^^
@@ -9627,11 +9633,11 @@ Tempo 10	RW6;RW6 14531,11142 14513,11075
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings, Gesamtbaumaßnahme bis 2024) (bis 27.07.2024) (bis 30.11.2024) (bis 31.01.2025) (bis 28.02.2025) (bis 17.03.2025) (bis 26.03.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.37431,52.42642,18.01.2024,09:34 (bis 30.04.2024) (inaktiv)
 #: source_id: viz2021:13.37431,52.42642,11.03.2025,14:27 (bis 26.03.2025) (inaktiv)
-#: last_checked: 2026-08-02 vvv
+#: last_checked: 2026-11-04 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung) vvv
-#: note: wobei Richtung Norden das Schild abhanden gekommen ist (siehe Mapillary-Bilder vom 30.10.2025)
-# REMOVED (nicht mehr) --- provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
+# REMOVED (wieder da) --- #: note: wobei Richtung Norden das Schild abhanden gekommen ist (siehe Mapillary-Bilder vom 30.10.2025)
+provisorischer gemeinsamer Rad- und Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 provisorische Radspur	RW4; 8579,2265 8560,2181 8490,2084
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -10103,4 +10109,6 @@ Gehweg für Radfahrer frei	RW1; 6388,7999 6443,7971
 # 
 #: historical_note: Realisierung der Fahrradstraße Sep/Okt 2026
 	RW7;RW7 12077,14186 12228,14083 12361,13985 12478,13903
+# 
+	RW6;RW6 14180,3334 14227,3438
 # 

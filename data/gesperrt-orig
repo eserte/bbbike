@@ -211,12 +211,11 @@ Spreestr.	1 17877,5860 17810,5736 17807,5730 17782,5698
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreifbvsfliejhy4sbashirdwsaw6wdrjtn2oajvwovcyoked53e72xy (vermutlich weiterhin keine Einbahnstraßenregelung?)
 #: osm_watch: note 4996305 1
-#: osm_watch: way id="1025420899" version="9"
 #: add_fragezeichen: Gilt die Einbahnstraßenregelung wieder?
-#: last_checked: 2026-08-26
-#: check_frequency: 60d
-#: next_check: 2026-11-05 (VIZ-Verkehrsmeldung)
-Buckower Chaussee	1no 8742,475 8977,505 9004,481
+#: last_checked: 2026-11-04
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2027-02-15 (VIZ-Verkehrsmeldung)
+Buckower Chaussee	1no 8742,475 8988,508 9004,481
 # 
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
 Archibaldweg	1s:q4 15674,10851 15777,10897 15820,10916 15870,10938
@@ -871,7 +870,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
 #: osm_watch: way id="5111625" version="18"
-#: last_checked: 2026-08-26
+#: last_checked: 2026-11-04
 #: check_frequency: 270d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
@@ -1434,7 +1433,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/einbahnstrassenregelung-nicht-fuer-radler_a400589 (siehe Antrag oben)
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="31540773" version="22"
-#: last_checked: 2026-04-29
+#: last_checked: 2026-11-04
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
 # 
@@ -3274,7 +3273,7 @@ tragen (Treppe, 10+9 Stufen)	0:25 22110,2643
 tragen (Treppe, ca. 50 Stufen)	0:70 12386,8274
 tragen (Treppe, 18 Stufen)	0:25 -5558,12918
 tragen (Treppe)	0:30 -46087,-1491
-tragen (Treppe, 11+10 Stufen)	0:35 10400,-2629
+tragen (Treppe, 11+10 Stufen)	0:35 10398,-2636
 tragen (Treppe, 3 Stufen)	0:10 4799,20517
 #: note: hier möglicherweise mit einer Steighilfe (automatisch fahrendes schmales Band?)
 tragen (zwei Treppen)	0:60 51766,-59693
@@ -4393,10 +4392,12 @@ Baustraße im Zeuthener Winkel: wird als öffentliche Straße neu gebaut	2::inwork 
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13066 (Anfrage)
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13178 (Antrag)
 #: by: https://bvv-mitte.berlin.de/pi-r/vo020_r.asp?VOLFDNR=13694 (Antrag)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2026/1356_bav_vzk.pdf (Erhaltungsmaßnahme 2028/2029)
 #: osm_watch: way id="27457006" version="31"
 #: note: war mal in temp_blockings
 #: last_checked: 2026-08-27 (mapillary)
-#: check_frequency: 180d
+#: check_frequency: 540d
+#: next_check: 2029-12-31 (BA)
 Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_32_3341_3408_online.pdf
@@ -4618,7 +4619,7 @@ Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10409,12597 10438,12671 1
 # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: STUBENRAUCH-2025
-#: last_checked: 2026-08-02 vvv
+#: last_checked: 2026-11-04 vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung) vvv
 Stubenrauchstr./Windenweg: Überfahrt bauzeitlich gesperrt (mit Barriere)	3nocross 16242,2279 16306,2364 16382,2464
 #: historical_note: am Anfang kurze unechte Einbahnstraße und Einfahrt verboten
@@ -4653,22 +4654,6 @@ Bitterfelder Brücke: Zugang gesperrt	2::inwork 20354,16563 20336,16581 20297,165
 # 
 # REMOVED (mittlerweile (oder schon immer): man kommt an der Baustelle vorbei, etwas verwinkelt, aber lohnt nicht, temporär eine Degradierung q2->q3 vorzunehmen) --- #: priority: #B --- #: last_checked: 2025-04-30 --- #: next_check: 2025-07-31 (Halteverbotsschilder) --- Gounodstr.: Durchfahrt vor der Picasso-Grundschule wegen Bauarbeiten gesperrt	2::inwork 14251,15828 14366,15877
 # REMOVED --- #: by: http://www.berliner-woche.de/johannisthal/bauen/neues-stadtquartier-geplant-d160577.html (geplanter Abschluss 2022, Baubeginn 2019) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_55_6227_6354_online.pdf --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/index.shtml --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/download/vorhabenbezogener_Bebauungsplan9-17VE.pdf --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/download/14_Verkehrsanlagenplanung.pdf --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-17ve/download/15_Erlaeuterung-Verkehrsanlagenplanung.pdf --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1065149.php (FNP-Anpassung) --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1114398.php (Vorlage zur Beschlussfassung) --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/baubeginn-fuer-583-wohnungen-und-eine-kita-am-eisenhutweg-anfang-2022_a331385 (westlicher Teil: Bauarbeiten 2022 - 2027) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (FNP-Anpassung) --- #: by: https://entwicklungsstadt.de/am-eisenhutweg-in-johannisthal-entsteht-ein-neues-wohnquartier/ --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/grundsteinlegung-fuer-knapp-600-wohnungen-und-eine-kita-im-eisenhutweg_a348008 --- #: by: https://www.deutsches-architekturforum.de/thread/14936-wohnquartier-am-eisenhutweg-degewo-johannisthal-treptow-k%C3%B6penick/?postID=720354#post720354 --- #: by: https://abload.de/img/eisenhut_lageplan_skaaqkk9.jpg --- #: note: für den westlichen Teil (bis zum "Knick" des Eisenhutwegs) wird ein Bebauungsplan 9-17VE aufgestellt; für den östlichen Teil bis Höhe Straße am Flugplatz gibt es noch keine Planungen, also wurde dieser erst einmal rausgenommen --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/xv-58bb-1/index.shtml (östlicher Teil, Bebauungsplan XV-58bb-1) --- #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/xv-58bb-1/download/XV-58bb-1_Bebauungsplanentwurf.pdf (hier: keine Wege/Straßen) --- #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlg4S2Y4NVh3QUE3OXdVLmpwZw== --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_08_0725_0852_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_28_2981_3084_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/richtfest-gefeiert-am-eisenhutweg_a393890 (bezugsfertig ab 2026) --- #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2023/pressemitteilung.1387435.php (Bebauungsplan für den östlichen Teil) --- #: by: https://kw-development.com/bauvorhaben-berlin/eisenhutweg-54-76/ (Fertigstellung 2026) --- #: by: https://www.degewo.de/wachstum/neubau/treptow-koepenick/eisenhutweg-54-76 --- #: by: https://www.luftbildsuche.de/info/luftbilder/neubau-mehrfamilienhaus-wohnanlage-eisenhutweg-berlin-deutschland-637647.html --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/eisenhutweg-adlershof.1012/#post-23644 --- #: source_id: viz2021:13.508467,52.430571,19.07.2022,13:00 (Leitungsarbeiten bis 2.10.2022, Gegenverkehrsregelung) (bis 4.11.2022) (inaktiv) --- #: source_id: viz2021:13.50906,52.430203,22.11.2023,05:00 (Kranabbau bis 23.11.2023) (inaktiv) --- #: source_id: viz2021:13.509368,52.430018,11.09.2024,10:00 (bis 04.10.2024) (bis 18.10.2024) (bis 01.11.2024) (inaktiv) --- # REMOVED (nein) --- #: XXX betreffen die Leitungsarbeiten auch den Radverkehr (z.B. durch die Einrichtung eines Zweirichtungsradwegs?) --- #: osm_watch: way id="1154764619" version="2" --- #: XXX hier wird vermutlich eine Einbahnstraße im Uhrzeigersinn sein --- #: last_checked: 2024-12-27 --- #: check_frequency: 60d --- #: next_check: 2026-01-01 --- Eisenhutweg [Wohngebiet]: wegen Hochbauarbeiten noch gesperrt	2::inwork 17741,2824 17688,2744 17471,2872 17569,2987
-# 
-#: next_check_id: BUCKOWERFELDER-2024
-#: last_checked: 2026-07-24 (osm) vvv
-#: check_frequency: 90d vvv
-#: next_check: 2026-12-31 vvv
-# REMOVED (laut osm hier offen) --- #: osm_watch: way id="946008571" version="9" --- An den Buckower Feldern: Hochbauarbeiten, gesperrt	2::inwork 12745,1116 12716,1088
-#: XXX außerdem Anbindung zum Mauerweg geplant
-#: osm_watch: way id="1344518197" version="3"
-#: osm_watch: way id="1420324060" version="4"
-# REMOVED (laut osm hier offen) --- Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12704,1102 12716,1088 12727,1074
-Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12727,1074 12772,1019
-# REMOVED (fertig) --- Gensweg: Hochbauarbeiten, gesperrt	2::inwork 12772,1019 12808,968
-# REMOVED (fertig) --- #: XXX außerdem Anbindung zum Mauerweg geplant --- #: osm_watch: way id="946008579" version="8" --- # REMOVED (laut osm hier offen) --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12861,1102 12868,1085 --- Dyrekeweg: Hochbauarbeiten, gesperrt	2::inwork 12868,1085 12860,1057 12882,999
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 #: next_check_id: WOLLANK-2024
 #: XXX vermutlich wegen der Bauarbeiten an der Brücke Wollankstraße vvv
@@ -5185,7 +5170,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026) (inaktiv)
 #: source_id: planb2026:13.48630282,52.4933522,09.07.2025, ("Sicherung gemäß Vz.-plan" (rund um die Baustelle), bis 31.12.2026)
-#: last_checked: 2026-10-18
+#: last_checked: 2026-11-04
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (Pressemitteilung SenSBW, planb)
 # REMOVED --- #: next_check: 2027-06-30
@@ -5331,7 +5316,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
 #: osm_watch: note 4853760 1
-#: last_checked: 2026-10-27 vvv
+#: last_checked: 2026-11-04 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5880,6 +5865,7 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 # 
 #: next_check_id: S21-BA2
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261104 (neue Bauphase beim Europaplatz)
 #: source_id: 2147340791 (möglicherweise inaktiv)
 #: source_id: viz2021:13.370715,52.524195,15.10.2012,08:00 (bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)

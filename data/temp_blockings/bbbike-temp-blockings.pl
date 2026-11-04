@@ -3527,13 +3527,14 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1797,-1804 -1896,-1924 -1958,-2007 -2023,-2143
 EOF
      },
-     { from  => $isodate2epoch->("2026-11-22 00:00:00"), # 1 Tag Vorlauf
+     { from  => $isodate2epoch->("2026-11-12 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2027-01-03 22:00:00"), # 1357513199, # 2013-0
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 11, start => "2021-01-01T00:00:00"]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 23. November 2026 bis voraussichtlich 03. Januar 2027',
+       recurrences => [['yearly', days => 12, months => 11, start => "2021-01-01T00:00:00"]],
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem Sperrung der Kantstr. an der Einmündung Budapester Str., vom 13. November 2026 bis 03. Januar 2027',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html
 #: by: https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html
 #: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article410506383/weihnachtsmarkt-city-west-wichtige-strassen-bleiben-drei-jahre-zu.html
 #: by: https://www.entwicklungsstadt.de/umbau-des-breitscheidplatzes-sicherungskonzept-fuer-den-platz-ab-2026/
@@ -3545,22 +3546,22 @@ EOF
 	2::xmas 5656,10876 5652,11004
 #: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
-#: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html (2020)
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
 #: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
 #: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1854159990417715576 (Weihnachten 2024)
 #: by: https://pbs.twimg.com/media/GbtMrO0XEA4eUJj?format=jpg&name=large (Tauentzienstr.: Radfahrer frei)
+#: by: https://www.morgenpost.de/bezirke/charlottenburg-wilmersdorf/article413583982/warum-der-weihnachtsmarkt-am-breitscheidplatz-dieses-jahr-so-frueh-wie-nie-startet.html
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089 (inaktiv)
 #: source_id: viz2021:13.333081,52.505208,09.11.2023,12:00 (Sperrung nur für Kfz-Verkehr, bis 15.01.2024) (inaktiv)
 #: source_id: viz2021:13.331602,52.505283,07.11.2024,07:00 (bis 12.01.2025) (inaktiv)
 #: source_id: viz2021:13.33567,52.50437,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Rankestr., bis 12.01.2025) (inaktiv)
 #: source_id: viz2021:13.33931,52.50323,07.11.2024,07:00 (Sperrung für Kfz-Verkehr in der Tauentzienstr., bis 12.01.2025) (inaktiv)
-#: note: 2022+2023+2025 ist die Fahrbahn gesperrt
-Kantstr.: Weihnachtsmarkt, Gehweg frei	q4::xmas 5613,10963 5652,11004
-#: note: etwa 70m frei befahrbar
-Kantstr.: Logistik Markt	q3::xmas 5613,10963 5488,10978
+# REMOVED (mittlerweile dauerhaft in handicap) --- #: note: 2022+2023+2025 ist die Fahrbahn gesperrt
+# REMOVED --- Kantstr.: Weihnachtsmarkt, Gehweg frei	q4::xmas 5613,10963 5652,11004
+# REMOVED --- #: note: etwa 70m frei befahrbar
+# REMOVED --- Kantstr.: Logistik Markt	q3::xmas 5613,10963 5488,10978
 EOF
      },
      { from  => 1132606608, # 2005-11-21 21:56
@@ -26444,7 +26445,7 @@ EOF
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvabz4fpyk2c (Staatsbesuch beendet, gemeldet 11.09.2026 um 11:48)
 #: source_id: viz2021:13.322084,52.512028,10.06.2024,13:00 (hier bereits ab Ernst-Reuter-Platz (bei rbb: Anlieger frei), bis 12.06.2024) (inaktiv)
 #: source_id: viz2021:13.331732,52.505347,10.06.2024,13:00 (bis 12.06.2024) (inaktiv)
-#: source_id: vizapi2026:920/2026 (bis 12.09.2026 12:00) (inaktiv) (03.11.2026 bis 04.11.2026)
+#: source_id: vizapi2026:920/2026 (bis 12.09.2026 12:00) (inaktiv) (03.11.2026 bis 04.11.2026) (inaktiv)
 #: note: um das Hotel Waldorf Astoria herum; das Ausmaß der Sperrungen kann etwas variieren
 Hardenbergstr.	2::temp 5542,11075 5652,11004
 Kantstr.	2::temp 5652,11004 5613,10963 5488,10978
@@ -31481,9 +31482,9 @@ EOF
 #: osm_watch[closed]: note 3210197 6
 #: osm_watch: way id="4792216" version="20"
 #: osm_watch: way id="1148659680" version="8"
-#: last_checked: 2026-10-28 (traffic)
-#: check_frequency: 14d (traffic)
-# REMOVED --- #: check_frequency: 30d (non-traffic)
+#: last_checked: 2026-11-04
+# REMOVED --- #: check_frequency: 14d (traffic)
+#: check_frequency: 30d (non-traffic)
 # REMOVED --- #: next_check: 2025-03-26 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
@@ -34695,7 +34696,7 @@ EOF
 #: also_indoor: traffic (G,B)
 #: note: bei rbb weiterhin "in beiden Richtungen gesperrt"
 #: by: https://twitter.com/VIZ_Berlin/status/1459408184053932037 (nur Richtung Norden)
-# REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
+# REMOVED ---	q4::inwork 12984,1011 12967,1108 12941,1256 12938,1348
 	q4::inwork; 12940,1547 12939,1469 12938,1348
 EOF
      },
@@ -38381,7 +38382,7 @@ EOF
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
 #: note: laut rbb Bauzustandsänderung am 16.07.2025, dauert bis März 2026 (Bahnhofstr. bis 01.03.2026, Goltzstr. bis 31.03.2026 (?))
 #: XXX die südliche Mellener Str. wird ab dem 3.8.2026 abgehängt
-#: last_checked: 2026-09-15 (Pressemitteilung) vvv
+#: last_checked: 2026-11-04 vvv
 #: check_frequency: 60d (traffic) vvv
 #: next_check: 2027-12-31 (planb) vvv
 Bahnhofstr.	q4::inwork; 10465,-2129 10509,-2128 10631,-2130 10756,-2128
@@ -43397,6 +43398,7 @@ EOF
 	        ["2026-09-12", "2026-09-13"],
 	        ["2026-10-02", "2026-10-04"],
 	        ["2026-11-07", "2026-11-08"],
+	        ["2027-04-03", "2027-04-04"],
 	    ], $text);
 	    $text .= ": nächster Termin " . $epoch2dedate->($ret->{from}) . " bis " . $epoch2dedate->($ret->{until});
 	    (from => $ret->{from}-86400, until => $ret->{until}, text => $text);
@@ -43407,8 +43409,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://oldthing.de/riesenflohmarkt
-#: XXX Termine 2027 eintragen
-#: next_check: 2026-11-09 vvv
+#: XXX Termine 2027 eintragen (und Vorjahr austragen)
+#: next_check: 2027-04-01 vvv
 #: note: dieser Abschnitt kann auch wegen eines Zirkuszelts gesperrt sein (gesehen Mitte August 2026)
 	q4::temp:clock 18741,8125 18676,8096
 	q4::temp:clock 18676,8096 18702,8160
@@ -45878,7 +45880,7 @@ EOF
 #      text  => 'Wolziger Zeile: Unterführung weitgehend fertig, aber noch nicht offiziell freigegeben',
 #      text  => 'Wolziger Zeile: Unterführung weitgehend fertig, aber nur teilweise für Fußgänger freigegeben',
 #      text  => 'Wolziger Zeile: Unterführung weitgehend fertig, aber nur teilweise für Fußgänger freigegeben, vollständige Eröffnung voraussichtlich im Oktober 2026',
-       text  => 'Wolziger Zeile: Treppe gesperrt, außerdem Sperrung der Fahrbahn Horstwalder Str. - Goltzstr., voraussichtlich bis Herbst 2026',
+       text  => 'Wolziger Zeile: Treppe gesperrt, außerdem Sperrung der Fahrbahn Horstwalder Str. - Goltzstr., geplant bis Herbst 2026, evtl. wird die Sperrung verlängert',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WOLZIGERZEILE-2024
@@ -45915,18 +45917,18 @@ EOF
 #: osm_watch: way id="1168938182" version="14"
 # REMOVED --- #: osm_watch: way id="837927791" version="14"
 #: osm_watch: way id="1168938183" version="11"
-#: osm_watch: note 5094173 6
+#: osm_watch: note 5094173 7
 #: osm_watch[closed]: note 4283578 4
 #: also_indoor: search Wolziger_Zeile
 #: add_fragezeichen: Wurde die Unterführung mittlerweile vollständig freigegeben? vvv
-#: last_checked: 2026-08-26 vvv
+#: last_checked: 2026-11-04 vvv
 # REMOVED --- #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2026-08-31 (planb) vvv
 # REMOVED --- #: next_check: 2026-07-31 (pardok) vvv
-#: next_check: 2026-11-20 (DB website: Eröffnung voraussichtlich im Herbst 2026) vvv
-# REMOVED (freigegeben) --- Wolziger Zeile: Unterführung und Rampe nur für Fußgänger frei	q4::inwork 10307,-2633 10391,-2624
-# REMOVED (freigegeben) --- Wolziger Zeile: Rampe gesperrt	2::inwork 10391,-2624 10373,-2575 10394,-2567
-Wolziger Zeile: Treppe	2::inwork 10391,-2624 10400,-2629 10420,-2644
+#: next_check: 2026-11-30 (DB website: Eröffnung voraussichtlich im Herbst 2026) vvv
+# REMOVED (freigegeben) --- Wolziger Zeile: Unterführung und Rampe nur für Fußgänger frei	q4::inwork 10307,-2633 10389,-2634
+# REMOVED (freigegeben) --- Wolziger Zeile: Rampe gesperrt	2::inwork 10389,-2634 10373,-2575 10394,-2567
+Wolziger Zeile: Treppe	2::inwork 10389,-2634 10398,-2636 10420,-2644
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
@@ -45938,8 +45940,8 @@ Wolziger Zeile: Treppe	2::inwork 10391,-2624 10400,-2629 10420,-2644
 #: next_check_id: WOLZIGERZEILE-2024
 #: source_id: planb2026:13.39962825,52.38248763,01.07.2024,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.08.2026) (inaktiv)
 #: also_indoor: traffic (no-G,T,no-H,no-W)
-#: last_checked: 2026-10-31 (traffic)
-#: check_frequency: 10d (traffic)
+#: last_checked: 2026-11-04
+#: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-08-31 (planb)
 # REMOVED --- #: next_check: 2026-10-30 (DB website: Eröffnung voraussichtlich im Oktober 2026 + planb)
 Horstwalder Str. - Goltzstr.: Arbeiten an der Unterführung Wolziger Zeile, Fahrbahn gesperrt	q4::inwork 10420,-2644 10392,-2595 10394,-2567
@@ -47865,11 +47867,12 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11]],
 #      text  => 'Wintermarkt am Humboldt-Forum: gesperrt vom 19. November 2025 bis 04. Januar 2026',
-       text  => 'Wintermarkt am Humboldt-Forum: gesperrt vom 18. November 2026 bis 03. Januar 2027',
+       text  => 'Wintermarkt am Humboldt-Forum: gesperrte Wege vom 18. November 2026 bis 03. Januar 2027',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/8360550-3496862-weihnachtsmarkt-am-humboldt-forum.html
 #: by: https://wintermarkt-schlossplatz.de/
+#: by: https://www.entwicklungsstadt.de/weihnachtsmarkt-am-berliner-schloss-neue-angebote-und-lichtshows-ab-november/
 #: note: im Internet teilweise als "Weihnachtsmarkt", teilweise als "Wintermarkt" zu finden, letzteres scheint aber korrekt zu sein
 	2::xmas 10152,12491 10168,12444
 	2::xmas 10095,12392 10168,12444 10263,12508
@@ -49854,9 +49857,9 @@ EOF
 #: source_id: LMS-BR:420436/72 viz2021:13.29383,52.49126,28.08.2026,00:00 (bis 09.09.2026) (bis 22.10.2026) (bis 27.11.2026) (bei vizapi2026 entfernt)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lpj4janlu22d
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreieoxnaeeenrcjdkkjtqbwnfljsi557yxmwhfa4tcrbr5hm4bdzu2i@jpeg
-#: also_indoor: traffic (re-T,G,ex-H)
+#: also_indoor: traffic (ex-T,G,ex-H)
 #: add_fragezeichen: Bestehen die Einschränkungen weiterhin? vvv
-#: last_checked: 2026-10-06 vvv
+#: last_checked: 2026-11-04 (traffic) vvv
 #: check_frequency: 30d (traffic) vvv
 #: next_check: 2026-11-30 (planb) vvv
 Caspar-Theiß-Str.: Einbahnstraßenregelung	q4::inwork; 2924,9391 2953,9371
@@ -50574,7 +50577,7 @@ EOF
 #: source_id: LMS-BR:375632/72 viz2021:13.38017,52.51979,09.07.2025,07:00 (bis 12.05.2026) (bis 28.10.2026) (vorfristig inaktiv) (bis 28.10.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:406326/72 viz2021:13.38017,52.51979,28.04.2026,10:00 (bis 28.10.2026) (bis 31.08.2028)
 #: source_id: vizapi2026:17/2025 (bis 28.10.2026)
-#: source_id: planb2026:13.38013957,52.51948663,03.07.2025, ("Gegenverkehrsanlage (LZA)", Ampel in der Luisenstr., aber auch der Schiffbauerdamm, bis 28.10.2026) (inaktiv)
+#: source_id: planb2026:13.38013957,52.51948663,03.07.2025, ("Gegenverkehrsanlage (LZA)", Ampel in der Luisenstr., aber auch der Schiffbauerdamm, bis 28.10.2026) (inaktiv) (bis 27.11.2026)
 #: note: laut Halteverbotsschilder bis 01.07.2026, laut Verkehrsportalen (z.B. rbb) bis 12.05.2026
 #: osm_watch: note 4846255 2
 #: osm_watch: way id="1429845843" version="6"
@@ -51874,7 +51877,7 @@ EOF
 #: next_check_id: HUFELAND-2025
 #: source_id: viz2021:13.42956,52.533,13.10.2025,07:00 (bis 21.10.2025) (inaktiv)
 #: source_id: planb2026:13.43737859,52.52968831,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 10.09.2026) (bis 23.10.2026) (vorfristig inaktiv)
-#: source_id: planb2026:13.4372411,52.52966861,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 23.10.2026) (inaktiv)
+#: source_id: planb2026:13.4372411,52.52966861,23.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 23.10.2026) (inaktiv) (bis 06.11.2026)
 #: source_id: LMS-BR:416895/72 viz2021:13.42956,52.533,24.07.2026,07:00 vizapi2026:731/2026 (bis 10.09.2026) (inaktiv) (bis 23.10.2026) (bis 06.11.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/?date=20260723
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mrejch5oai2e
@@ -51883,7 +51886,7 @@ EOF
 # REMOVED (fertig) --- Hufelandstr.: Bau einer Fahrradstraße, Fahrbahn gesperrt, schmale Bürgersteige frei für Radfahrer	q3::inwork 12077,14186 12228,14083 12361,13985
 #: last_checked: 2026-10-31
 #: check_frequency: 10d
-#: next_check: 2026-11-06 (VIZ-Verkehrsübersicht)
+#: next_check: 2026-11-06 (VIZ-Verkehrsübersicht + planb)
 Hufelandstr.: Bau einer Fahrradstraße, Fahrbahn gesperrt, schmale Bürgersteige frei für Radfahrer	q3::inwork 12361,13985 12478,13903 12582,13834 12578,13800
 # REMOVED (keine Beeinträchtigungen (mehr?)) ---  Bötzowstr.: Kreuzungsbereich vermutlich betroffen	q3::inwork 12280,13880 12361,13985 12423,14066
 # REMOVED --- #: last_checked: 2025-10-21 vvv
@@ -51952,7 +51955,7 @@ EOF
 #: source_id: planb2026:13.44989871,52.50304685,28.04.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 01.11.2027) (vorfristig inaktiv) (bis 01.11.2027)
 #: note: Halteverbotsschilder bis 09.01.26, mittlerweile stehen sie nicht mehr
 #: note: Ausweichen auf den Weg auf dem Mittelstreifen ist möglich
-#: last_checked: 2026-10-25
+#: last_checked: 2026-11-04
 #: check_frequency: 120d
 #: next_check: 2027-11-01 (planb)
 	q4::inwork 13408,10837 13436,10903
@@ -52026,7 +52029,7 @@ EOF
 #: source_id: viz2021:13.32047,52.49975, (kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.31913,52.49968, (kein Endedatum) (inaktiv)
 #: source_id: LMS-BR:385513/72 viz2021:13.32149,52.49982, (bis 30.11.2025) (bis 30.11.2026)
-#: source_id: planb2026:13.31909513,52.49945665,01.06.2025, (nur "Fahrstreifen-Verschwenkung", bis 30.11.2026) (vorfristig inaktiv) (bis 30.11.2026)
+#: source_id: planb2026:13.31909513,52.49945665,01.06.2025, (nur "Fahrstreifen-Verschwenkung", bis 30.11.2026) (vorfristig inaktiv) (bis 30.11.2026) (vorfristig inaktiv)
 #: also_indoor: traffic (G,T,H,W)
 Lietzenburger Str.	q3::inwork 4764,10350 4659,10335 4485,10307
 Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
@@ -55802,11 +55805,12 @@ EOF
      },
      { from  => 1787436000, # 2026-08-23 00:00
        until => undef, # 1793401200, # 2026-10-31 00:00
-       text  => 'Fließstr.: Bauarbeiten, Sperrung der Fahrbahn, geplant vom 24.08.2026 bis 30.10.2026, voraussichtlich werden die Bauarbeiten verlängert',
+#      text  => 'Fließstr.: Bauarbeiten, Sperrung der Fahrbahn, geplant vom 24.08.2026 bis 30.10.2026, voraussichtlich werden die Bauarbeiten verlängert',
+       text  => 'Fließstr.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: FLIESS-2026
-#: last_checked: 2026-10-28
+#: last_checked: 2026-11-04
 # REMOVED (wird wahrscheinlich verlängert) --- #: next_check: 2026-10-30
 	q4::inwork 18164,5701 18019,5786
 EOF
@@ -55822,10 +55826,10 @@ EOF
 #: source_id: vizapi2026:806/2026 (Vollsperrung Laubsängerweg, bis 21.10.2026 + weitere Arbeiten) (inaktiv)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3myeccemlgq2s
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreif7gfgb37gowtfx7uulfpi6kqmiyr4p2ghdc6u7s3rlkgrdg2xr7q (Laubsängerweg weiterhin als gesperrt gekennzeichnet)
-#: osm_watch: note 5414689 2
+#: osm_watch: note 5414689 3
 #: also_indoor: traffic (G,T,H,W)
 #: XXX Laut osm note von SGA Nk bis vorauss. Ende 2026
-#: last_checked: 2026-08-22
+#: last_checked: 2026-11-04
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2026-11-25 (VIZ-Verkehrsmeldung + planb)
 # REMOVED --- #: next_check: 2026-12-31 (SGA Nk)
@@ -55947,16 +55951,17 @@ L 50 bei Bärenklau	2::inwork 92750,-49233 91931,-49367 91624,-49518 90899,-50114
 EOF
      },
      { from  => 1785621600, # 2026-08-02 00:00
-       until => $isodate2epoch->("2026-10-30 23:59:59"), # 1790805600, # 2026-10-01 00:00
+       until => $isodate2epoch->("2026-11-20 23:59:59"), # 1790805600, # 2026-10-01 00:00
 #      text  => 'Tieckstr.: Sperrung der Fahrbahn zwischen Borsigstr. und Gartenstr., vom 03.08.2026 bis 30.09.2026',
-       text  => 'Tieckstr.: Sperrung der Fahrbahn zwischen Borsigstr. und Gartenstr., vom 03.08.2026 bis 30.10.2026',
+       text  => 'Tieckstr.: Sperrung der Fahrbahn zwischen Borsigstr. und Gartenstr., vom 03.08.2026 bis 20.11.2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: source_id: planb2026:13.39111648,52.53015145,03.08.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026) (bis 30.10.2026)
+#: source_id: planb2026:13.39111648,52.53015145,03.08.2026, ("Vollsperrung beider Fahrbahnen", bis 20.11.2026)
 #: note: nur ein Abschnitt, deshalb q4 -> q3
 #: note: chaotische Ausschilderung: Einbahnstraße Richtung Westen, Radfahrer frei, aber dann gleich ein Einfahrt-verboten-Schild (siehe Mapillary vom 23.9.2026), aber die Fahrbahn ist komplett gesperrt
 #: last_checked: 2026-10-21
-#: next_check: 2026-10-30 (planb)
+#: next_check: 2026-11-20 (planb)
 	q3::inwork 9373,13769 9514,13826
 EOF
      },
@@ -56353,7 +56358,7 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:423049/72 viz2021:13.37986,52.52131,22.09.2026,00:00 vizapi2026:987/2026 (Luisenstr., bis 31.08.2028)
-#: source_id: planb2026:-
+#: source_id: planb2026:13.37986877,52.5209144,26.08.2026,06:00 ("Vollsperrung beider Fahrbahnen", Luisenstr., bis 30.11.2026)
 #: note: die Luisenstr. ist hier für den Kfz-Verkehr gesperrt, Furt für den Radverkehr existiert
 #: last_checked: 2026-10-19 (mapillary)
 #: check_frequency: 90d
@@ -56788,6 +56793,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/sperrungen-an-der-schlossstrasse-in-steglitz-so-geht-es-jetzt-am-bierpinsel-weiter/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/weil-fassadenteile-absturzen-konnten-schutzkreis-um-den-steglitzer-bierpinsel-ausgeweitet--verkehr-massiv-gestort-16185978.html
 #: by: https://www.tagesspiegel.de/berlin/bezirke/steglitz-zehlendorf/maroder-bierpinsel-in-der-berliner-schlossstrasse-sorgt-fur-verkehrs-wild-west-maximal-schlecht-geregelt-16188117.html
+#: by: https://www.entwicklungsstadt.de/sperrungen-am-bierpinsel-koennten-neun-nieten-pro-platte-das-problem-loesen/
 #: source_id: planb2026:-
 #: source_id[inactive]: bvg2024:282#HIM_FREETEXT_363348
 #: source_id[inactive]: bvg2024:m48#HIM_FREETEXT_369411 (Umleitung) (mittlerweile nur kein Halt Kieler Straße) (wieder aktiv) (wieder inaktiv)
@@ -56876,7 +56882,7 @@ EOF
 #: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/mein-schreibtisch-wackelt-ab-7-uhr-fahrradstrasse-im-berliner-sudosten-wird-zu-schleichweg-fur-lkws-16214673.html
 #: source_id: planb2026:13.54714994,52.43753519,19.10.2026, ("Vollsperrung beider Fahrbahnen", Bereich Marktplatz Adlershof, 19.10.2026 bis 16.12.2026) (vorfristig inaktiv) (bis 16.12.2026)
 #: source_id: LMS-BR:425829/72 viz2021:13.547613,52.437736,19.10.2026,07:00 vizapi2026:1082/2026 (bis 03.11.2026) (bis 13.11.2026)
-#: also_indoor: traffic (G,T,H,W)
+#: also_indoor: traffic (ex-G,ex-T,H,W)
 #: last_checked: 2026-10-18
 # REMOVED --- #: next_check: 2026-10-19 (planb + aktives-adlershof (1 Tag vorher))
 #: next_check: 2026-11-03 (VIZ-Verkehrsmeldung: möglicher nächster Bauabschnitt?)
@@ -57442,6 +57448,8 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: SCHOENHAUSERALLEEBRUECKE-2026
+#: note: gesperrter Bereich ist etwa 140m lang
+#: last_checked: 2026-11-03 (mapillary)
 #: next_check: 2028-03-15
 	q4::inwork 10729,16042 10975,16010
 EOF

@@ -617,7 +617,8 @@ Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 1
 Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: historical_note: früher (bis Juni 2026): Asphalt, einige Schäden, Q0-; (Richtung Süden)
 Adalbertstr.: Asphalt	Q0 11640,11067 11589,10947 11552,10863
-Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237
+#: historical_note: früher (bis Herbst 2026) Q0, mittlerweile haben sich schon Wellen (leichte Schlaglöcher? Wurzelhebungen?) gebildet
+Oderstr.: Asphalt, leicht wellig	Q0- 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237
 #: next_check_id: ODER-2022
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn 
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
@@ -634,7 +635,7 @@ Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 1156
 #: osm_watch: note 5203545 3
 #: note: Kopfsteinpflaster auf der Fahrbahn nur Q2-, im nördlichen Abschnitt sogar Q3+
 #: XXX laut SGA Neukölln Baustart Mitte 2028, nach Arbeiten der BWB
-#: last_checked: 2026-10-06
+#: last_checked: 2026-11-04
 #: check_frequency: 180d
 #: next_check: 2028-12-31 (infravelo)
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11593,7237 11607,7145 11617,7083 11652,6879
@@ -1065,8 +1066,8 @@ Schillerpromenade: Kopfsteinpflaster	Q2 11713,7899 11738,7790 11763,7687 11785,7
 Säntisstr.: Asphalt mit einigen Schlaglöchern	Q0- 8892,802 8741,685 8652,617
 Säntisstr.: schlechtes Kopfsteinpflaster	Q3 8652,617 8533,525
 Alt-Marienfelde/Buckower Chaussee: Kopfsteinpflaster	Q2 8742,475 8533,525 8482,536 8250,655 8114,722 8000,729 7909,775
-Buckower Chaussee: Asphalt mit einigen Unebenheiten	Q0- 9004,481 8977,505 8742,475
-Buckower Chaussee [Nebenstraße unter der Brücke]: Asphalt	Q0 9004,481 9031,484 9158,546 9149,568 9115,556 8977,505
+Buckower Chaussee: Asphalt mit einigen Unebenheiten	Q0- 9004,481 8988,508 8742,475
+Buckower Chaussee [Nebenstraße unter der Brücke]: Asphalt	Q0 9004,481 9031,484 9158,546 9149,568 9115,556 8988,508
 Alt-Marienfelde: Asphalt	Q0 7909,775 7857,802
 Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8000,729 8194,617 8250,655
 Ratiborstr.: Kopfsteinpflaster	Q2 12718,9529 12739,9576 12834,9738
@@ -6292,7 +6293,7 @@ Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
 #: XXX bleibt es hier beim Asphalt?
 #: osm_watch: way id="70130294" version="8"
 #: priority: #C
-#: last_checked: 2026-07-11
+#: last_checked: 2026-11-04
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2023-05-01
 (Weg im Johannisthaler Park): Asphalt mit einigen schadhaften Stellen	Q0- 17760,4867 17659,4849 17580,4761
@@ -12599,7 +12600,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 #: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026)
 #: source_id: vizapi2026:1158/2026 (Kraneinsatz 30.10.2026 bis 31.10.2026, hier: Sperrung für Kfz-Verkehr)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-11-01
+#: last_checked: 2026-11-04
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-10-30 (planb + BVG: wird es auch für den Radverkehr eine Sperrung geben?)
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
@@ -13805,7 +13806,7 @@ Bruno-Baum-Str.: Asphalt	Q0 19997,15122 19893,14947 19867,14886 19793,14728 1976
 #: by: https://www.entwicklungsstadt.de/richtfest-fuer-oder-so-waechst-das-wohnquartier-nahe-tempelhofer-feld/ (geplante Fertigstellung: März 2027)
 #: osm_watch: way id="933570857" version="6"
 #: XXX die Straße wird neu gemacht, wird evtl. nach den Hochbauarbeiten komplettiert
-#: last_checked: 2026-09-04 (mapillary)
+#: last_checked: 2026-11-04
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (entwicklungsstadt, porr website)
 (Verlängerung der Siegfriedstr.): Asphalt ohne letzte Deckschicht	Q1+ 11664,6796 11488,6781
@@ -14537,7 +14538,7 @@ Gensweg: Beton	Q0 12657,1154 12673,1140
 Gensweg: Asphalt	Q0 12673,1140 12692,1117
 Gensweg: Betonpflaster	Q0- 12692,1117 12704,1102
 Gensweg: Kleinsteinpflaster	Q1 12704,1102 12716,1088 12727,1074
-Gensweg: Betonpflaster	Q0- 12772,1019 12808,968
+Gensweg: Betonpflaster	Q0- 12727,1074 12772,1019 12808,968
 (Gensweg - Mauerweg): Asphalt	Q0 12808,968 12823,939
 Am Mühlanger: Betonpflaster	Q0- 12673,1140 12738,1213
 Am Mühlanger: Betonpflaster	Q0- 12738,1213 12802,1285
@@ -14714,7 +14715,7 @@ Fürst-Bismarck-Steg: Holzbohlen	Q1- 3879,22574 3907,22560
 # 
 (Wohnquartier Bruno-Taut-Straße): Betonsteinpflaster	Q0- 21685,916 21723,969 21714,985 21781,1019 21883,1034 21889,1000
 # 
-(Unterführung Wolziger Zeile): Asphalt	Q0 10307,-2633 10391,-2624 10373,-2575 10394,-2567
+(Unterführung Wolziger Zeile): Asphalt	Q0 10307,-2633 10389,-2634 10373,-2575 10394,-2567
 # 
 (Hoppendorfer Str. - Dammheide): Waldweg	Q2+ 21989,7953 22061,8050 22074,8103
 (Waldstr. - Dammheide): Waldweg	Q2+ 22155,8446 22153,8432 22102,8399 22070,8212 22047,8159 22043,8126
@@ -25760,7 +25761,7 @@ Hainstr.: guter Asphalt	Q0 18380,5520 18371,5541 18367,5645 18349,5730 18312,582
 #: osm_watch: way id="151368582" version="14"
 #: osm_watch: note 5604669 1
 #: XXX Asphaltierung geplant
-#: last_checked: 2026-10-28
+#: last_checked: 2026-11-04
 # REMOVED (wird wahrscheinlich verlängert) --- #: next_check: 2026-10-30
 Fließstr.: mäßiges Kopfsteinpflaster	Q2 18164,5701 18019,5786
 #: confirmed_by: srt

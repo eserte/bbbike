@@ -346,7 +346,7 @@ Ritterstr.: Kopfsteinpflaster	Q2 10585,10766 10511,10800 10397,10852 10103,10989
 Adalbertstr.: Kopfsteinpflaster, Asphaltstreifen neben den parkenden Autos	Q1; 11656,11106 11726,11265 11808,11482
 Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 Adalbertstr.: Asphalt	Q0 11640,11067 11589,10947 11552,10863
-Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237
+Oderstr.: Asphalt, leicht wellig	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2 11593,7237 11607,7145 11617,7083 11652,6879
 Friedelstr.: Asphalt	Q0 12085,9778 12074,9689 12066,9558 12054,9429 12074,9217
 Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster	Q2 12074,9217 12078,9055
@@ -630,8 +630,8 @@ Schillerpromenade: Kopfsteinpflaster	Q2 11713,7899 11738,7790 11763,7687 11785,7
 Säntisstr.: Asphalt mit einigen Schlaglöchern	Q0 8892,802 8741,685 8652,617
 Säntisstr.: schlechtes Kopfsteinpflaster	Q3 8652,617 8533,525
 Alt-Marienfelde/Buckower Chaussee: Kopfsteinpflaster	Q2 8742,475 8533,525 8482,536 8250,655 8114,722 8000,729 7909,775
-Buckower Chaussee: Asphalt mit einigen Unebenheiten	Q0 9004,481 8977,505 8742,475
-Buckower Chaussee [Nebenstraße unter der Brücke]: Asphalt	Q0 9004,481 9031,484 9158,546 9149,568 9115,556 8977,505
+Buckower Chaussee: Asphalt mit einigen Unebenheiten	Q0 9004,481 8988,508 8742,475
+Buckower Chaussee [Nebenstraße unter der Brücke]: Asphalt	Q0 9004,481 9031,484 9158,546 9149,568 9115,556 8988,508
 Alt-Marienfelde: Asphalt	Q0 7909,775 7857,802
 Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8000,729 8194,617 8250,655
 Ratiborstr.: Kopfsteinpflaster	Q2 12718,9529 12739,9576 12834,9738
@@ -11997,7 +11997,7 @@ Gensweg: Beton	Q0 12657,1154 12673,1140
 Gensweg: Asphalt	Q0 12673,1140 12692,1117
 Gensweg: Betonpflaster	Q0 12692,1117 12704,1102
 Gensweg: Kleinsteinpflaster	Q1 12704,1102 12716,1088 12727,1074
-Gensweg: Betonpflaster	Q0 12772,1019 12808,968
+Gensweg: Betonpflaster	Q0 12727,1074 12772,1019 12808,968
 (Gensweg - Mauerweg): Asphalt	Q0 12808,968 12823,939
 Am Mühlanger: Betonpflaster	Q0 12673,1140 12738,1213
 Am Mühlanger: Betonpflaster	Q0 12738,1213 12802,1285
@@ -12113,7 +12113,7 @@ Karl-Schmidt-Rottluff-Weg: Asphalt stellenweise mit Unebenheiten und Schäden	Q1 
 Fürst-Bismarck-Steg: Holzbohlen	Q1 3879,22574 3907,22560
 (Bertramstr. - Wanderweg): unbefestigt	Q2 5046,24000 5050,23984
 (Wohnquartier Bruno-Taut-Straße): Betonsteinpflaster	Q0 21685,916 21723,969 21714,985 21781,1019 21883,1034 21889,1000
-(Unterführung Wolziger Zeile): Asphalt	Q0 10307,-2633 10391,-2624 10373,-2575 10394,-2567
+(Unterführung Wolziger Zeile): Asphalt	Q0 10307,-2633 10389,-2634 10373,-2575 10394,-2567
 (Hoppendorfer Str. - Dammheide): Waldweg	Q2 21989,7953 22061,8050 22074,8103
 (Waldstr. - Dammheide): Waldweg	Q2 22155,8446 22153,8432 22102,8399 22070,8212 22047,8159 22043,8126
 (Charlotte-E.-Pauly-Str. - Peter-Hille-Str.): Verbundsteinpflaster	Q1 25018,4987 25111,4978 25123,4988

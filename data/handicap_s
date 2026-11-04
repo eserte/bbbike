@@ -18,6 +18,7 @@ Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q4::inwork 12691,1204
 Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,13185 12842,13070
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
+Mariendorfer Damm: Gehweg für Radfahrer frei, Engstellen	q2::inwork; 9621,3155 9720,2887
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), teilweise sehr enger Gehweg (parkende Autos auf dem Bürgersteig!) für Radfahrer frei	q3::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für Radfahrer frei	q3::inwork; 7625,5231 7694,5135
 Heidelberger Str.: Einbahnstraßenregelung	q3::inwork; 14011,8787 13837,8932 13664,9073
@@ -66,7 +67,8 @@ Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6260,7899 6132,7893
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6132,7893 6131,7916 6011,7911 5810,7883
 Erich-Boltze-Str., Verlängerung: Hochbauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
 Stavangerstr.: Sperrung der Fahrbahn, Radverkehr wird über den schmalen Bürgersteig geführt	q2::inwork 10845,16770 10883,16824
-Buckower Chaussee: Anbindungen an die Nebenstraßen werden noch erstellt	q4::inwork 8977,505 9004,481 9031,484
+Wehnertstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 8827,1289 8822,1238
+Buckower Chaussee: Anbindungen an die Nebenstraßen werden noch erstellt	q4::inwork 8988,508 9004,481
 Buckower Chaussee [Nebenstraße]: Absperrung auf der Fahrbahn, ggfs. auf den Bürgersteig wechseln	q3::inwork 9149,568 9115,556
 Kranoldplatz (Lichterfelde): Bauarbeiten, Sperrung der südlichen Spange	q4::inwork 5317,2345 5417,2383
 Finckensteinallee: Bauarbeiten, schmaler Gehweg für Radfahrer frei	q2::inwork; 3641,2827 3456,2835 3313,2842 3171,2848
@@ -779,8 +781,7 @@ Uferweg: Fußgänger	q1 3559,12793 3641,12753 3747,12679
 Uferweg: Fußgänger, Biergarten	q3 3747,12679 3819,12676 3862,12675
 Uferweg: Fußgänger	q1 3862,12675 3938,12687 4038,12693 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q2 4456,12918 4514,12936 4581,13066 4582,13086 4576,13121 4592,13127 4613,13210 4617,13243
-(Ostkreuz, Zugang Marktstr.): einige Fußgänger, relativ breiter Platz	q0 15093,10942 15069,10927 15052,10918 14940,10949
-(Ostkreuz, Zugang Marktstr.): Fußgänger	q4 14940,10949 14852,10973
+(Ostkreuz, Zugang Marktstr.): einige Fußgänger, relativ viel Platz	q0 15093,10942 15069,10927 15052,10918 14940,10949 14852,10973
 (Ostkreuz, Zugang Marktstr.): Fußgänger	q4 14852,10973 14808,10978
 (Neue Bahnhofstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q4 14798,11058 14809,11037 14808,10978
 (Sonntagstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q4 14760,11044 14808,10978 14851,10966
@@ -1978,7 +1979,7 @@ Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11804,10
 (Schloßpark - Blankenburger Str.): für Radfahrer offiziell verboten, Bordstein, kurze Rampe	q4 10569,19395 10578,19417 10525,19592
 (Schnellerstr. - Uferstr.): Fußgänger, besonders zu Geschäftszeiten	q2 17628,5865 17678,5916
 (Schnellerstr. - Uferstr.): Parkplatzverkehr, besonders zu Geschäftszeiten	q1 17678,5916 17847,6089
-Schnellerstr.: Baustelleneinrichtungsfläche, Fußgänger	q4::inwork 17728,5756 17807,5730
+Schnellerstr.: Baustelleneinrichtungsfläche, Fußgänger	q3::inwork 17728,5756 17807,5730
 an den Gewächshäusern: kurvig	q2 17659,12823 17638,12813 17637,12785
 Hampstedtstr.: einige Fußgänger	q2 749,2616 816,2658
 (Oderstr. - Kirchhofweg): einige Fußgänger	q2 11565,7402 11602,7375 11656,7375 11677,7351 11687,7284

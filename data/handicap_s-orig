@@ -296,6 +296,12 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 ### Mariendorf ###
 # 
+#: next_check_id: MADAMM-2026
+#: note: siehe auch handicap_directed-Eintrag
+#: last_checked: 2026-11-04
+#: next_check: 2027-01-15 (VIZ-Verkehrsmeldung)
+Mariendorfer Damm: Gehweg für Radfahrer frei, Engstellen	q2::inwork; 9621,3155 9720,2887
+# 
 #: next_check_id: ROEBLING-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf4dnag3yg2z (nur Kfz-Verkehr, bis November 2026 geplant)
 #: source_id: LMS-BR:399339/72 viz2021:13.35937,52.4567,18.02.2026,07:00 (bis 13.11.2026)
@@ -1049,12 +1055,12 @@ Stienitzseestr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 26228,5041 26
 # 
 ### Moabit ###
 # 
-#: source_id: planb2026:13.35334176,52.53143774,28.11.2022, ("Sicherung gemäß Vz.-plan", bis 30.09.2026) (bis 30.11.2026)
+#: source_id: planb2026:13.35334176,52.53143774,28.11.2022, ("Sicherung gemäß Vz.-plan", bis 30.09.2026) (bis 30.11.2026) (bis 18.12.2026)
 #: source_id: LMS-BR:325489/72 viz2021:13.358912,52.537703, (bis 25.09.2026) (bis 13.11.2026) (bei vizapi2026 bis 13.11.2026)
 #: osm_watch: note 5403292 5
 #: last_checked: 2026-10-10
-#: next_check: 2026-11-30 (planb)
-#: valid: -20261130
+#: next_check: 2026-12-18 (planb)
+#: valid: -20261218
 Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,14599 7368,14573
 # 
 # REMOVED --- #: source_id: LMS-BR:397184/72 viz2021:13.35084,52.52032, (kein Endedatum) (bis 27.03.2026) (bis 04.03.2026) (inaktiv)
@@ -1365,7 +1371,7 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026) (ab Kanalstr., bis 30.09.2026) (mittlerweile ab Neuköllner Str., bis 30.09.2026) (bis 31.12.2026)
 #: source_id: planb2026:13.49473836,52.43124572,25.02.2025, ("Sperrung einer Fahrtrichtung", bis 30.09.2026) (inaktiv) (bis 31.12.2026)
 #: source_id: planb2026:13.48550459,52.42414361,06.03.2025, ("Fahrstreifen-Reduzierung", bis 31.12.2026)
-#: last_checked: 2026-08-02 vvv
+#: last_checked: 2026-11-04 vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung + planb) vvv
 # REMOVED --- #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
 # REMOVED (nicht mehr) --- Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
@@ -1480,11 +1486,11 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig oder unbefestigte Verbindung	q3 152
 ### Marzahn ###
 # 
 #: source_id: planb2026:13.56952995,52.53995683,21.09.2026, ("Fahrstreifen-Reduzierung", bis 23.10.2026) (inaktiv)
-#: source_id: LMS-BR:424013/72 vizapi2026:1009/2026 (bis 23.10.2026) (bis 06.11.2026)
+#: source_id: LMS-BR:424013/72 vizapi2026:1009/2026 (bis 23.10.2026) (bis 06.11.2026) (bis 13.11.2026)
 #: also_indoor: traffic (T,H)
 #: last_checked: 2026-10-07
-#: next_check: 2026-11-06 (VIZ-Verkehrsmeldung)
-#: valid: -20261106
+#: next_check: 2026-11-13 (VIZ-Verkehrsmeldung)
+#: valid: -20261113
 Bärensteinstr.: Sperrung der Fahrbahn vor dem Blumberger Damm	q3::inwork 21497,15227 21599,15213
 # 
 # REMOVED (bei allen Verkehrsdiensten entfernt) --- #: note: Halteverbotsschilder seit Nov 2024, kein Endedatum
@@ -1699,6 +1705,12 @@ Stavangerstr.: Sperrung der Fahrbahn, Radverkehr wird über den schmalen Bürgerst
 # 
 ### Marienfelde ###
 # 
+#: also_indoor: traffic (G,T,no-H,no-W)
+#: source_id: planb2026:-
+#: last_checked: 2026-11-04
+#: check_frequency: 14d (traffic)
+Wehnertstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 8827,1289 8822,1238
+# 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260707 (bis Ende August 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mq4bvxr3sf2z
@@ -1707,16 +1719,19 @@ Stavangerstr.: Sperrung der Fahrbahn, Radverkehr wird über den schmalen Bürgerst
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msagudcygk2b
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidvo2akpr4ik7t2dzkvfu7ie5f2kwyvakumzcrezznxuyn7b4fdqq (aktuelle Meldung zu Arbeiten am östlichen Ende der neuen Brücke)
 #: source_id: LMS-BR:415125/72 viz2021:13.38021,52.41036,08.07.2026,07:00 vizapi2026:679/2026 (bis 23.08.2026) (inaktiv) (bis 05.10.2026) (bei vizapi2026 bis 05.11.2026) (bis 05.11.2026)
-#: source_id: LMS-BR:418266/72 viz2021:13.39268,52.4127,04.08.2026,07:00 vizapi2026:782/2026 (östlich der Brücke, bis 28.08.2026) (inaktiv) (bis 05.11.2026)
+#: source_id: LMS-BR:418266/72 viz2021:13.39268,52.4127,04.08.2026,07:00 vizapi2026:782/2026 (östlich der Brücke, bis 28.08.2026) (inaktiv) (bis 05.11.2026) (bis 15.02.2027)
 #: source_id: planb2026:13.37629824,52.40919079,26.05.2023, ("Vollsperrung beider Fahrbahnen", Hauptfahrbahn, bis 05.10.2026) (bis 05.11.2026)
 #: XXX wird es auch Änderungen bei den RVA auf der Hauptfahrbahn geben?
-#: last_checked: 2026-08-26 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2026-11-05 (VIZ-Verkehrsmeldung + planb) vvv
-Buckower Chaussee: Anbindungen an die Nebenstraßen werden noch erstellt	q4::inwork 8977,505 9004,481 9031,484
+#: last_checked: 2026-11-04 vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: next_check: 2027-02-15 (VIZ-Verkehrsmeldung) vvv
+#: osm_watch: way id="1025420899" version="9"
+Buckower Chaussee: Anbindungen an die Nebenstraßen werden noch erstellt	q4::inwork 8988,508 9004,481
+# REMOVED (hier fertig) --- Buckower Chaussee: Anbindungen an die Nebenstraßen werden noch erstellt	q4::inwork 9004,481 9031,484
+#: osm_watch: way id="1326250886" version="3"
 Buckower Chaussee [Nebenstraße]: Absperrung auf der Fahrbahn, ggfs. auf den Bürgersteig wechseln	q3::inwork 9149,568 9115,556
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED (nicht mehr relevant) --- #: next_check_id: BUCKOWERCHAUSSEE-2022
@@ -2977,9 +2992,7 @@ Uferweg: Fußgänger	q1 3862,12675 3938,12687 4038,12693 4147,12699 4206,12691 424
 (Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q2 4456,12918 4514,12936 4581,13066 4582,13086 4576,13121 4592,13127 4613,13210 4617,13243
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fußgänger	q4 5938,12848 5922,12765
 #: historical_note: früher: Fußgängerschutztunnel, Radfahrer sollen absteigen, q4+ (allerdings: nicht so viel Fußgängerverkehr --- q3 oder manchmal gar q2 theoretisch möglich)
-(Ostkreuz, Zugang Marktstr.): einige Fußgänger, relativ breiter Platz	q0- 15093,10942 15069,10927 15052,10918 14940,10949
-#: note: hier auch noch nicht so viele Fußgänger --- theoretisch q3 möglich
-(Ostkreuz, Zugang Marktstr.): Fußgänger	q4+ 14940,10949 14852,10973
+(Ostkreuz, Zugang Marktstr.): einige Fußgänger, relativ viel Platz	q0- 15093,10942 15069,10927 15052,10918 14940,10949 14852,10973
 (Ostkreuz, Zugang Marktstr.): Fußgänger	q4+ 14852,10973 14808,10978
 (Neue Bahnhofstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q4+ 14798,11058 14809,11037 14808,10978
 (Sonntagstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q4+ 14760,11044 14808,10978 14851,10966
@@ -4699,13 +4712,13 @@ Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11804,10
 #: source_id: planb2026:13.51310176,52.4542095,19.10.2026, ("Sicherung gemäß Vz.-plan", bis 21.05.2027)
 #: source_id[inactive]: bvg2024:160#HIM_FREETEXT_369877
 #: source_id: LMS-BR:426521/72 viz2021:13.5122,52.45492,26.10.2026,06:00 vizapi2026:1143/2026 (bis 21.05.2027)
-#: note: am 28.10.2026 war die Baustelleneinrichtung noch in vollen Gange, die Platzfläche war noch befahrbar
-#: last_checked: 2026-10-28 vvv
+#: note: am 28.10.2026 war die Baustelleneinrichtung noch in vollen Gange, die Platzfläche war noch befahrbar; am 04.11.2026 gab es hier eine Baustelleneinrichtung. aber noch relativ viel Platz für den Fußgängerverkehr
+#: last_checked: 2026-11-04 vvv
 #: check_frequency: 14d (höhere Frequenz am Anfang) vvv
 #: next_check: 2027-09-30 (VIZ: bis 3. Quartal 2027) vvv
 # ACTIVATE_LATER: #: next_check: 2027-05-21 (VIZ-Verkehrsmeldung + planb) vvv
 #: valid: 20261026-20270930
-Schnellerstr.: Baustelleneinrichtungsfläche, Fußgänger	q4::inwork 17728,5756 17807,5730
+Schnellerstr.: Baustelleneinrichtungsfläche, Fußgänger	q3-::inwork 17728,5756 17807,5730
 #: valid: 20270930-
 Schnellerstr.: einige Fußgänger	q2 17728,5756 17807,5730
 #: next_check ^^^

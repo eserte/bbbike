@@ -878,4 +878,15 @@ Borstellstr. -> Am Eichgarten: Umweg	DH:len=20:h=q3,20 6309,4328 6219,4336 6210,
 #: next_check: 2029-12-31  (bbr.bund site)
 Stresemannstr. -> Niederkirchnerstr.: Linksabbiegen vom Radweg aus wegen Barrieren nicht möglich, Umweg	DH:len=100 8631,11334 8720,11226 8833,11241
 # 
+#: next_check_id: MADAMM-2026
+#: note: siehe auch handicap_s-Eintrag
+#: source_id: planb2026:13.39811428,52.41984293,06.03.2026, ("Fahrstreifen-Verschwenkung", bis 12.12.2031)
+#: source_id: LMS-BR:401940/72 viz2021:13.38981,52.43428, vizapi2026:204/2026 (bis 15.01.2027)
+#: last_checked: 2026-11-04 vvv
+#: next_check: 2027-01-15 (VIZ-Verkehrsmeldung) vvv
+Mariendorfer Damm: Umweg an der Körtingstr.	DH:len=65 9510,3446 9621,3155 9720,2887
+Hundsteinweg -> Mariendorfer Damm: Umweg an der Körtingstr.	DH:len=65 9675,3150 9621,3155 9720,2887
+#: next_check ^^^
+#: last_checked ^^^
+# 
 #: temporary ^^^
