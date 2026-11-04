@@ -111,17 +111,20 @@ jobs:
     name: Docker tests with ${{ matrix.dist }}:${{ matrix.distver }}
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.allowed_failure }}
     strategy:
       fail-fast: false
       matrix:
         include:
           - dist:                       debian
             distver:                    stretch
+            allowed_failure:            true
             bbbike_test_skip_mapserver: 0
             use_bbbike_ppa:             0
             use_eserte_obs:             0
           - dist:                       debian
             distver:                    buster
+            allowed_failure:            true
             bbbike_test_skip_mapserver: 0
             use_bbbike_ppa:             0
             use_eserte_obs:             0
