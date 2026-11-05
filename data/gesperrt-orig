@@ -109,7 +109,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="26"
 #: osm_watch: way id="1430487470" version="2"
-#: last_checked: 2026-10-06
+#: last_checked: 2026-11-05
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -4457,6 +4457,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260304
 #: by: https://www.entwicklungsstadt.de/mehrjaehrige-sperrung-in-mitte-u6-bauarbeiten-legen-teil-der-chausseestrasse-lahm/
 #: source_id: LMS-BR:400896/72 viz2021:13.38226,52.53129,05.03.2026,07:00 (bis 11.05.2026) (bis 11.05.2028)
+#: source_id: planb2026:13.38301586,52.5305563,13.01.2026, ("Sperrung einer Fahrtrichtung", bis 11.05.2028)
 #: osm_watch: way id="1471571709" version="2"
 #: osm_watch: way id="4597200" version="35"
 #: osm_watch: way id="1108289467" version="12"
@@ -4465,7 +4466,7 @@ Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwor
 #: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert laut Verkehrszeichenplan eine Furt an der Baustelle vorbei
 #: last_checked: 2026-10-14 (mapillary) vvv
 #: check_frequency: 120d vvv
-#: next_check: 2028-05-11 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2028-05-11 (VIZ-Verkehrsmeldung + planb) vvv
 Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s:q4::inwork 8870,13926 8831,13973 8732,14098
 # REMOVED (hier nicht) --- Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9070,14058 9011,14019
 Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9011,14019 8870,13926
@@ -4782,11 +4783,11 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: by: https://entwicklungsstadt.de/lichtenberg-richtfest-fuer-neue-holz-compartmentschule-am-roemerweg/
 #: osm_watch: way id="25796737" version="24"
 #: osm_watch: way id="1272701939" version="5"
-#: source_id: planb2026:13.52192808,52.49221042,28.07.2026,07:00 ("Fahrbahneinengung", Römerweg, bis 31.12.2026)
+#: source_id: planb2026:13.52192808,52.49221042,28.07.2026,07:00 ("Fahrbahneinengung", Römerweg, bis 31.12.2026) (vorfristig inaktiv)
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date der landuse=construction-Fläche 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
 #: last_checked: 2026-10-18
-#: check_frequency: 45d
+#: check_frequency: 21d
 # REMOVED --- #: next_check: 2026-08-24 (SenSBW-Pressemitteilung: Schulbeginn)
 #: next_check: 2026-12-31 (planb (benachbarte Baustelle))
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -5316,7 +5317,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
 #: osm_watch: note 4853760 1
-#: last_checked: 2026-11-04 vvv
+#: last_checked: 2026-11-05 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759

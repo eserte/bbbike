@@ -71,14 +71,14 @@ Erkner	X::inwork 34742,2111
 # 
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-10-07
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2026-11-12 (VIZ-Verkehrsmeldung)
-#: valid: -20261029
+#: valid: -20261112
 Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 #: last_checked: 2026-10-07
 #: check_frequency: 30d
-#: next_check: 2026-11-12 (VIZ-Verkehrsmeldung)
-#: valid: -20261029
+# REMOVED --- #: next_check: 2026-11-12 (VIZ-Verkehrsmeldung)
+#: valid: -20261112
 Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
@@ -1400,7 +1400,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7480,7683
 #: next_check_id: ELLABAROWSKY-2024
 #: XXX Ampelanlage wird neu gebaut
-#: last_checked: 2026-10-06
+#: last_checked: 2026-11-05
+#: check_frequency: 90d
 	X0::inwork 7499,7880
 	X 7497,8168
 	X 7193,7950

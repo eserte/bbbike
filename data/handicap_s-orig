@@ -117,10 +117,10 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q2::inwork; 13383,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="37"
 #: osm_watch: way id="1072662717" version="41"
-#: last_checked: 2026-10-24
+#: last_checked: 2026-11-05
 #: check_frequency: 90d
-# REMOVED (wird wohl verlängert) --- #: next_check: 2026-10-22 (planb)
-#: next_check: 2027-12-31 (entwicklungsstadt)
+#: next_check: 2028-04-30 (planb)
+# REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
 Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,11538
 # 
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
@@ -139,14 +139,14 @@ Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q4::inwork 12691,1204
 #: last_checked ^^^
 # 
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 --- #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut --- #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv) --- #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024) (inaktiv) --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-02-16 vvv --- #: valid: -20231229 vvv --- Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229 --- Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-#: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026) (bis 13.11.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026) (bis 13.11.2026) (vorfristig inaktiv) (bis 14.12.2026)
 #: source_id: planb2026:13.44005683,52.52346346,15.08.2024,07:00 ("Sicherung gemäß Vz.-plan", bis 31.10.2026) (inaktiv)
 #: also_indoor: traffic (re-G,T,no-H,W[later])
 #: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
 #: last_checked: 2026-10-31
 #: check_frequency: 14d (traffic)
-#: next_check: 2026-11-13 (planb)
-#: valid: -20261113
+#: next_check: 2026-12-14 (planb)
+#: valid: -20261214
 Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,13185 12842,13070
 # 
 # REMOVED (beendet) --- #: next_check_id: STRALAUERALLEE-2023 --- #: last_checked: 2024-04-09 --- # REMOVED --- #: check_frequency: 30d --- #: check_frequency: 3d --- # REMOVED --- #: next_check: 2024-04-09 --- # REMOVED --- #: valid: -20240409 --- #: valid: -20240412 --- Stralauer Allee: Radfahrer und Fußgänger teilen sich einen engen und holprigen Weg	q2::inwork; 13596,10722 13549,10741 13496,10763
@@ -1485,11 +1485,11 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig oder unbefestigte Verbindung	q3 152
 # 
 ### Marzahn ###
 # 
-#: source_id: planb2026:13.56952995,52.53995683,21.09.2026, ("Fahrstreifen-Reduzierung", bis 23.10.2026) (inaktiv)
+#: source_id: planb2026:13.56952995,52.53995683,21.09.2026, ("Fahrstreifen-Reduzierung", bis 23.10.2026) (inaktiv) (bis 13.11.2026)
 #: source_id: LMS-BR:424013/72 vizapi2026:1009/2026 (bis 23.10.2026) (bis 06.11.2026) (bis 13.11.2026)
 #: also_indoor: traffic (T,H)
 #: last_checked: 2026-10-07
-#: next_check: 2026-11-13 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-11-13 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261113
 Bärensteinstr.: Sperrung der Fahrbahn vor dem Blumberger Damm	q3::inwork 21497,15227 21599,15213
 # 
@@ -1507,10 +1507,10 @@ Bärensteinstr.: Sperrung der Fahrbahn vor dem Blumberger Damm	q3::inwork 21497,1
 # 
 ### Schöneberg ###
 # 
-#: also_indoor: traffic (G,T,no-H,no-W)
+#: also_indoor: traffic (ex-G,ex-T,no-H,W[later])
 #: source_id: planb2026:13.35122591,52.49760019,23.02.2026,06:00 ("Fahrbahneinengung", Eisenacher+Nollendorfstr., bis 06.11.2026)
-#: last_checked: 2026-11-01 (mapillary: Sackgassenschild)
-#: check_frequency: 21d (traffic)
+#: last_checked: 2026-11-05 (traffic)
+#: check_frequency: 3d (traffic)
 #: next_check: 2026-11-06 (planb)
 Nollendorfstr.: Bauarbeiten, Sperrung der Fahrbahn an der Einmündung Eisenacher Str.	q3::inwork 6739,10120 7055,10220
 # 
@@ -1718,7 +1718,7 @@ Wehnertstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 8827,1289 8822,1238
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260803 (Umbau der Baustelle, weiterhin bis Ende August 2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3msagudcygk2b
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidvo2akpr4ik7t2dzkvfu7ie5f2kwyvakumzcrezznxuyn7b4fdqq (aktuelle Meldung zu Arbeiten am östlichen Ende der neuen Brücke)
-#: source_id: LMS-BR:415125/72 viz2021:13.38021,52.41036,08.07.2026,07:00 vizapi2026:679/2026 (bis 23.08.2026) (inaktiv) (bis 05.10.2026) (bei vizapi2026 bis 05.11.2026) (bis 05.11.2026)
+#: source_id: LMS-BR:415125/72 viz2021:13.38021,52.41036,08.07.2026,07:00 vizapi2026:679/2026 (bis 23.08.2026) (inaktiv) (bis 05.10.2026) (bei vizapi2026 bis 05.11.2026) (bis 05.11.2026) (inaktiv)
 #: source_id: LMS-BR:418266/72 viz2021:13.39268,52.4127,04.08.2026,07:00 vizapi2026:782/2026 (östlich der Brücke, bis 28.08.2026) (inaktiv) (bis 05.11.2026) (bis 15.02.2027)
 #: source_id: planb2026:13.37629824,52.40919079,26.05.2023, ("Vollsperrung beider Fahrbahnen", Hauptfahrbahn, bis 05.10.2026) (bis 05.11.2026)
 #: XXX wird es auch Änderungen bei den RVA auf der Hauptfahrbahn geben?
@@ -2406,7 +2406,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: osm_watch: note 5350535 2
 #: osm_watch: way id="30909343" version="27"
 #: source_id: planb2026:13.43196346,52.4975659,01.02.2024,07:00 (hier: "Haltverbote", bis 31.12.2026)
-#: last_checked: 2026-10-27
+#: last_checked: 2026-11-05
 #: check_frequency: 180d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
@@ -6011,7 +6011,12 @@ Am Teltowkanal: zahlreiche Temposchwellen, abwechselnd rechts und links umfahrba
 # 
 Ulsterstr.: enge Straße	q0- 13575,8378 13641,8470
 # 
-(Gotenstr. - Ella-Barowsky-Str.): Fußgänger, Lieferverkehr	q3 7497,7761 7551,7851
+#: next_check_id: CHARLOTTEWOLFFPLATZ-2026
+#: last_checked: 2026-11-05
+#: check_frequency: 120d
+#: next_check: 2028-12-31
+# REMOVED (ursprünglicher Eintrag, evtl. sieht es nach dem Umbau ganz anders aus) ---  (Gotenstr. - Ella-Barowsky-Str.): Fußgänger, Lieferverkehr	q3 7497,7761 7551,7851
+(Gotenstr. - Ella-Barowsky-Str.): Bauarbeiten, sehr schmaler Durchgang	q4::inwork 7497,7761 7551,7851
 # 
 (Raschdorffstr./Ribbeweg - Amendestr.): Fußgänger, Grünanlage	q2 7872,18204 7897,18147 7919,18083
 # 

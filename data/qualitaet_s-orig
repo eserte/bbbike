@@ -542,10 +542,10 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-10-24
+#: last_checked: 2026-11-05
 #: check_frequency: 90d
-# REMOVED (wird wohl verlängert) --- #: next_check: 2026-10-22 (planb)
-#: next_check: 2027-12-31 (entwicklungsstadt)
+#: next_check: 2028-04-30 (planb)
+# REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
 Revaler Str.: Kopfsteinpflaster	Q2; 13588,11490 13565,11492 13473,11456
 #: note: Hauptfahrbahn mit Asphalt/Kopfsteinpflaster und Straßenbahnschienen, Nebenfahrbahn mit Verbundsteinpflaster
 Revaler Str.: Asphalt/Kopfsteinpflaster oder Verbundsteinpflaster	Q1; 13473,11456 13565,11492 13588,11490
@@ -3601,7 +3601,7 @@ Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 #: XXX bleibt der Asphalt?
 #: historical_note: früher (bis Ende August 2026): Gehwegplatten, Q0-
 #: note: Richtung Nordwesten eigentlich nur für den Linienverkehr frei (Verbotsschild überdeckt das Fußgängerschild), aber in der Gegenrichtung ist Gehweg, Radfahrer frei weiterhin sichtbar
-#: last_checked: 2026-10-12
+#: last_checked: 2026-11-05
 #: next_check: 2026-12-31
 Melchiorstr. - Mariannenplatz: Asphalt	Q0 11917,11186 11944,11152
 (Weg am Humboldthain): Betonpflaster mit breiten Fugen	Q2 9255,15816 9092,15789
@@ -9458,7 +9458,8 @@ Sebnitzer Weg: Kopfsteinpflaster	Q2 16282,1052 16227,997
 (Rumeyplan, Grünanlage): unbefestigter Weg	Q1- 8907,7773 8895,7797
 (Rumeyplan - Kanzlerweg): unbefestigter Weg	Q1- 8895,7797 8839,7904
 Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q0- 8482,8364 8394,8313 8333,8303 8276,8295
-Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8265,8092 8260,7911 8260,7803 8263,7611
+# REMOVED (entfernt, vermutlich mittlerweile besser) --- Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8276,8295 8259,8265 8265,8092
+Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q1+ 8265,8092 8260,7911 8260,7803 8263,7611
 #: historical_note: früher (bis Sommer 2026): Asphalt über Beton, einige Schäden, Q0-, nach den Leitungsarbeiten ausgebessert
 Mussehlstr.: Asphalt	Q0 8982,8781 8926,8682
 #: historical_note: früher Q0-, mittlerweile gibt es einige schlechtere Stellen, z.B. im Einmündungsbereich Schulenburgring
@@ -32545,6 +32546,9 @@ Am Waldidyll: Beton mit einigen Schäden	Q1 2390,22581 2384,22689 2418,22878
 # 
 #: by: Jean-Michael [AM] vvv
 #: corrected_by: srt (Asphalt mit vielen Schlaglöchern, Q2 -> ) vvv
+#: next_check_id: PANNWITZ-2026
+#: XXX vielleicht wird nach den Bauarbeiten die Qualität besser sein?
+#: next_check: 2026-11-06 (planb)
 Pannwitzstr.: schadhafter Beton	Q2+ 4280,19110 4384,19089 4471,19124 4546,19197 4608,19287
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20111006.1020.360727.html
 Pannwitzstr.: sehr guter Asphalt	Q0+ 4608,19287 4690,19446
