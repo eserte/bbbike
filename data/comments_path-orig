@@ -680,7 +680,7 @@ Einfahrt an der Bushaltestelle Zedlitzberg	CP2; -11528,3111 -11395,3270
 # 
 #: next_check_id: BKATREPTOW-2025
 #: XXX früher, evtl. wieder herstellen: Puschkinallee - Eichenstr.: ggfs. schon die Überquerungshilfe vor dem Schlesischen Busch benutzen und durch die Grünanlage (asphaltierter Weg) fahren
-#: last_checked: 2026-10-06
+#: last_checked: 2026-11-06
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Puschkinallee - Eichenstr.: ggfs. schon die provisorische Ampel am Schlesischen Busch benutzen und durch die Grünanlage fahren	PI; 13579,10146 13711,10022 13782,9954 13805,10007 13842,10095
@@ -838,10 +838,12 @@ Weg befindet sich links hinter dem Zebrastreifen	CP; 22735,5328 22726,5328 22632
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mxq7oqtsew25
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihgeue5hlsuat4q372konqyvouxuuepzkyckpnti5vedhkq5t2aiy
 #: by: https://www.entwicklungsstadt.de/verkehrschaos-in-koepenick-baustelle-legt-busverkehr-lahm-massive-staus/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1735689.php (bis 4.12.2026)
+#: by: https://www.entwicklungsstadt.de/neue-staus-in-koepenick-friedrichshagener-strasse-wird-gesperrt/
 #: source_id: LMS-BR:425225/72 viz2021:13.59334,52.45162,13.10.2026,07:00 vizapi2026:1057/2026 (bis 10.11.2026)
 #: source_id: planb2026:13.59212371,52.45130951,12.10.2026, ("Fahrstreifen-Reduzierung", bis 10.11.2026) (vorfristig inaktiv)
-#: next_check: 2026-11-10 (VIZ-Verkehrsmeldung + planb) vvv
-#: valid: -20261110 vvv
+#: next_check: 2026-12-04 (BA-Pressemitteilung) vvv
+#: valid: -20261204 vvv
 Bellevuestr. -> Fürstenwalder Damm: entweder schon die erste Fußgängerampel zum Überqueren benutzen oder langen Umweg bis Friedrichshagener Str. wählen	CP; 23384,5541 23402,5483 23492,5488
 Salvador-Allende-Brücke -> Friedrichshagener Str.: entweder schon die erste Fußgängerampel zum Überqueren benutzen oder langen Umweg bis Fürstenwalder Damm wählen	CP; 23420,5159 23404,5325 23293,5289
 #: valid ^^^

@@ -582,7 +582,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-11-05 vvv
+#: last_checked: 2026-11-06 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1478,7 +1478,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14181,9729 14089,961
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-11-03 vvv
+#: last_checked: 2026-11-06 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14405,10027 14501,10169 14558,10264
@@ -2411,7 +2411,7 @@ Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,116
 	RW3; 10133,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
 #: next_check_id: GERTRAUDENBRUECKE-2025
-#: last_checked: 2026-11-02 vvv
+#: last_checked: 2026-11-06 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
 #: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
@@ -2460,10 +2460,11 @@ Busspur ist immer gültig	RW5; 10376,11879 10391,11898 10423,11936 10460,11979 10
 #: source_id: viz2021:13.407104,52.515187,15.07.2024,08:00 (bis 30.09.2024, Gesamtbaumaßnahme bis 2029) (bis 31.12.2024) (bis 31.12.2029) (inaktiv)
 #: source_id: viz2021:13.406041,52.514152,04.04.2024,07:00 (bis 25.11.2024) (bis 17.12.2024) (bis 24.01.2025) (bis 27.01.2025 + weitere Arbeiten) (inaktiv)
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
+#: source_id: planb2026:13.40538641,52.51376419,05.11.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2029)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
 #: last_checked: 2026-11-02 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2029-12-31 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2029-12-31 (planb + ex-VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
 provisorische Radspur, mit Barriere	RW4; 10512,12039 10550,12096 10574,12131 10625,12206 10646,12234
 provisorische Radspur	RW4; 10646,12234 10625,12206 10574,12131
@@ -2493,7 +2494,7 @@ Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
-#: last_checked: 2026-11-02
+#: last_checked: 2026-11-06
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
@@ -3396,7 +3397,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-11-03 vvv
+#: last_checked: 2026-11-06 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2027-01-29 (planb) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
@@ -3429,7 +3430,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46512046,52.49807953,11.03.2024,06:00 ("Fahrstreifen-Reduzierung", bis 29.01.2027)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-11-03
+#: last_checked: 2026-11-06
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-10-31 (Halteverbotsschilder)
 #: next_check: 2027-01-29 (planb)
@@ -4017,8 +4018,14 @@ Radweg größtenteils nur aufgemalt	RW1;RW1 9732,15581 9646,15737 9623,15777 9494,
 	RW2;RW2 9494,15998 9459,16029 9446,16060
 #: historical_note: früher (bis Dezember 2025): RW2;
 	RW4; 15166,8489 15303,8343
-	RW2; 15303,8343 15357,8286 15557,8077
-	RW1; 15557,8077 15920,7697
+#: historical_note: früher (bis Oktober/November 2026):	RW2;
+	RW4; 15303,8343 15357,8286
+	RW2; 15357,8286 15404,8237
+#: historical_note: früher (bis Oktober/November 2026):	RW2;
+	RW4; 15404,8237 15505,8132
+	RW2; 15505,8132 15557,8077
+#: historical_note: früher (bis Oktober/November 2026):	RW1;
+	RW4; 15557,8077 15920,7697
 asphaltiert, einige Wurzelhebungen	RW2; 15920,7697 16195,7398 16259,7328
 asphaltiert, akzeptable Qualität	RW2; 16259,7328 16353,7226 16377,7200
 #: note: einige Leitboys vor der Kreuzung Baumschulenstr.
@@ -4029,7 +4036,7 @@ neu asphaltiert	RW2; 16377,7200 16353,7226 16259,7328
 asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW2; 16259,7328 16195,7398 15920,7697
 asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW1; 15920,7697 15557,8077
 #: historical_note: früher (bis 2025/2026) benutzungspflichtig
-asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW1; 15557,8077 15357,8286 15303,8343 15166,8489
+asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW1; 15557,8077 15505,8132 15404,8237 15357,8286 15303,8343 15166,8489
 #: note: einige Leitboys vor der Kreuzung Baumschulenstr.
 Grünbeschichtung	RW4; 16428,7144 16563,7012
 #: note: bestehendes Radwegschild ist durchgestrichen

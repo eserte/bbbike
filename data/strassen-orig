@@ -1259,7 +1259,7 @@ Schweidnitzer Str.	N 3225,9844 3220,9598
 Warmbrunner Str.	NN 3158,8763 3106,8780
 Warmbrunner Str.	N 3106,8780 3056,8784 2961,8793 2832,8805 2682,8821 2559,8833 2388,8852
 Warmbrunner Str.	H 2388,8852 2322,8857
-Herthastr. (Grunewald)	N 2322,8857 2282,8869 2190,8903 2059,8954 1920,9009 1937,9253
+Herthastr. (Grunewald)	N 2322,8857 2282,8869 2190,8903 2043,8962 1920,9009 1937,9253
 Fechnerstr.	N 5022,8879 5004,8935 4958,8981 4920,9000 4815,9098 4755,9154
 Leon-Jessel-Platz	NN 4755,9154 4735,9171 4700,9179
 Wegenerstr. (Wilmersdorf)	N 4699,9202 4619,9200 4495,9184 4467,9163
@@ -1352,6 +1352,7 @@ Gotenstr. (Schöneberg)	N 7497,8168 7494,8354 7490,8593 7485,8777
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/projekte/artikel.1709938.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1732790.php (Neubau Charlotte-Wolff-Platz beginnt ab 5.11.2026)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1735472.php
+#: by: https://www.entwicklungsstadt.de/charlotte-wolff-platz-am-suedkreuz-22-millionen-euro-fuer-neuen-stadtplatz/
 #: XXX Charlotte-Wolff-Platz: wird hier ein Platz mit diesem Namen entstehen?
 #: last_checked: 2026-11-05
 #: check_frequency: 180d
@@ -2137,8 +2138,8 @@ Gartenstr. (Mitte, Gesundbrunnen)	N 9670,13637 9535,13801 9514,13826 9383,13986
 Gartenstr. (Mitte, Gesundbrunnen)	NH 9383,13986 9224,14169 9118,14306 9081,14363 8953,14528 8870,14637 8692,14923
 #: historical_note: früher bei BBBike H
 Gartenstr. (Mitte, Gesundbrunnen)	NH 8663,14960 8656,14947 8660,14929 8671,14919 8692,14923 8701,14932 8700,14956 8685,14966 8663,14960
-#: historical_note: früher bei BBBike H
-Gartenstr. (Mitte, Gesundbrunnen)	NH 8663,14960 8570,15107
+#: historical_note: früher bei BBBike H, vor der Umgestaltung zur Fußgängerzone NH
+Gartenstr. (Mitte, Gesundbrunnen)	NN 8663,14960 8570,15107
 Eschersheimer Str.	N 11672,6737 11689,6634 11713,6380 11740,6338
 #: osm.highway: service
 (Holzmannstr. - Nackenheimer Weg)	N 11487,6276 11617,6300
@@ -6422,7 +6423,7 @@ Kiehnwerderallee	NN 16388,8821 16436,8687 16490,8432 16534,8182 16602,7810 16620
 (Eierhäuschen - Kiehnwerderallee)	NN 16619,8606 16578,8586 16436,8687
 (Uferweg - Kiehnwerderallee)	NN 16657,8443 16490,8432
 (Fähre - Kiehnwerderallee)	NN 16655,7572 16620,7574
-Köpenicker Landstr.	HH 15166,8489 15303,8343 15357,8286 15557,8077 15920,7697 16195,7398 16259,7328 16353,7226 16377,7200 16428,7144 16563,7012 16627,6945 16677,6892 16720,6845 16747,6813 16805,6747 16838,6708
+Köpenicker Landstr.	HH 15166,8489 15303,8343 15357,8286 15404,8237 15505,8132 15557,8077 15920,7697 16195,7398 16259,7328 16353,7226 16377,7200 16428,7144 16563,7012 16627,6945 16677,6892 16720,6845 16747,6813 16805,6747 16838,6708
 Rixdorfer Str. (Niederschöneweide, Johannisthal, Baumschulenweg)	H 16868,5938 17056,6133 17160,6239
 Rixdorfer Str. (Niederschöneweide, Johannisthal, Baumschulenweg)	N 17160,6239 17216,6308
 Radenzer Str.	N 15996,6144 16012,6177 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374
@@ -11909,8 +11910,10 @@ Landgrafenstr.	N 6607,10801 6681,10959 6742,11099
 Burggrafenstr. (Tiergarten)	N 6266,10927 6278,10949 6472,11049
 Alvenslebenstr. (Schöneberg)	N 7526,9969 7657,9942 7757,9918 7866,9902
 Kirchbachstr. (Schöneberg)	N 7725,9748 7757,9918
+#: historical_note: früher bei BBBike H, vor der Umgestaltung der angrenzenden Gartenstr. NH
+Gerichtstr.	N 8570,15107 8456,15235
 #: historical_note: früher bei BBBike H
-Gerichtstr.	NH 8570,15107 8456,15235 8315,15293 8303,15298 8290,15304 8268,15312 8091,15377 8024,15401
+Gerichtstr.	NH 8456,15235 8315,15293 8303,15298 8290,15304 8268,15312 8091,15377 8024,15401
 Gerichtstr.	N 7891,15417 7808,15417
 Gerichtstr.	NN 7808,15417 7765,15417
 Gerichtstr.	N 7765,15417 7723,15417 7627,15412 7464,15409
@@ -20140,7 +20143,7 @@ Niersteiner Str.	N 1677,9404 1562,9436
 Hasensprung (Grunewald)	NN 1485,8845 1474,8859 1440,8903 1415,8937 1394,8965 1374,8992 1360,9012 1324,9057 1316,9067
 Herbertstr. (Grunewald)	N 2113,9266 2056,9446
 Herbertstr. (Grunewald)	N 2165,9155 2183,9101 2282,8869
-Schleinitzstr.	N 2183,9101 2059,8954
+Schleinitzstr.	N 2183,9101 2043,8962
 Wangenheimstr.	N 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 2559,8833
 Humboldtstr. (Grunewald)	N 2449,8902 2453,9156 2467,9425 2477,9551 2484,9671
 Kudowastr.	N 2831,8590 2832,8805 2829,9076 2829,9259
@@ -20198,7 +20201,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-11-02 vvv
+#: last_checked: 2026-11-06 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
@@ -21371,7 +21374,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: osm_watch: note 2562671 9
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: viz2021:13.338005,52.51368,16.03.2021,08:00 (hier: Einschränkungen an der Gegenfahrbahn, bis 10.1.2025) (bis 31.08.2026) (inaktiv)
-#: source_id: LMS-BR:233438/72 viz2021:13.33801,52.51361,09.01.2025,11:20 viz2021:13.33801,52.51361, (bis 31.08.2026) (bis 31.12.2027) (bei vizapi2026 vorfristig entfernt) (bei vizapi2026 wieder da) (bei vizapi2026 wieder vorfristig entfernt)
+#: source_id: LMS-BR:233438/72 viz2021:13.33801,52.51361,09.01.2025,11:20 viz2021:13.33801,52.51361, (bis 31.08.2026) (bis 31.12.2027) (bei vizapi2026 vorfristig entfernt) (bei vizapi2026 wieder da) (bei vizapi2026 wieder vorfristig entfernt) (bei vizapi2026 wieder da)
 #: last_checked: 2026-10-19 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)

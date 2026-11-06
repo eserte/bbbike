@@ -233,7 +233,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2- 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2026-10-15
+#: last_checked: 2026-11-06
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -245,7 +245,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2026-10-25 vvv
+#: last_checked: 2026-11-06 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -575,7 +575,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2025/bav_1040.pdf (keine Priorisierung)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
 #: osm_watch[closed]: note 3954718 5 (Fahrradstraße?)
-#: last_checked: 2026-09-15 vvv
+#: last_checked: 2026-11-05 (mapillary) vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2026-09-14 (planb: Sperrung) vvv
 #: osm_watch: way id="169459736" version="23"
@@ -12472,7 +12472,9 @@ Darguner Str.: Beton	Q0- 17566,18680 17635,18591
 (Verlängerung des Kapellenwegs): unbefestigte Straße	Q2 10667,23684 10685,23707 10724,23744 10885,23830
 Ideallee: unbefestigte Straße	Q2 11069,23647 10971,23838 10813,24126
 Bambusweg: unbefestigte Straße	Q2 10667,23684 10687,23684 10708,23696 10747,23718 10785,23740 10842,23773 10887,23796 10927,23816 10971,23838
-Reichenberger Str.: Asphalt mit einigen Schäden	Q1+ 11100,10530 11121,10521 11145,10510 11291,10438
+#: historical_note: früher: Asphalt mit einigen Schäden, Q1+, mittlerweile besser
+Reichenberger Str.: Asphalt	Q0 11100,10530 11121,10521 11145,10510
+Reichenberger Str.: Asphalt mit einigen Schäden	Q1+ 11145,10510 11291,10438
 Reichenberger Str.: Asphalt	Q0 11291,10438 11393,10390
 (Zufahrt zum Stadtbad Tiergarten): Verbundsteinpflaster	Q1 7332,13367 7306,13418
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): wassergebundene Decke	Q1 21992,13045 22141,13036 22171,12965
@@ -32010,7 +32012,7 @@ Herbertstr. (Grunewald): Asphalt	Q0 2113,9266 2056,9446
 #: confirmed_by: srt
 Herbertstr. (Grunewald): Asphalt	Q0 2165,9155 2183,9101 2282,8869
 #: confirmed_by: srt
-Schleinitzstr.: Asphalt	Q0 2183,9101 2059,8954
+Schleinitzstr.: Asphalt	Q0 2183,9101 2043,8962
 Wangenheimstr.: Asphalt	Q0 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 2559,8833
 #: confirmed_by: srt
 Humboldtstr. (Grunewald): Asphalt	Q0 2449,8902 2453,9156 2467,9425 2477,9551 2484,9671

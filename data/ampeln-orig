@@ -41,7 +41,7 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260917 (Baustellenampel)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvreuhygbe2y (Bereich KGA)
 #: source_id: LMS-BR:422789/72 viz2021:13.469268,52.472618,18.09.2026,07:00 vizapi2026:962/2026 (Baustellenampel, 18.09.2026 bis 06.12.2026)
-#: source_id: planb2026:13.46990981,52.47294148,18.09.2026, ("Gegenverkehrsanlage (LZA)", bis 15.10.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.46990981,52.47294148,18.09.2026, ("Gegenverkehrsanlage (LZA)", bis 15.10.2026) (vorfristig inaktiv) (bis 01.12.2026)
 #: note: Gegenverkehrsregelung auf der Fahrbahn (betrifft die Hochbordradwege nicht); Sperrung des Übergangs am Heidekampgraben, kann etwa 40m nordöstlich (hier mit Ampel) umfahren werden
 #: last_checked: 2026-10-27 (mapillary)
 #: next_check: 2026-12-06 (VIZ-Verkehrsmeldung)
@@ -141,7 +141,7 @@ Allee der Kosmonauten/Meeraner Str.	X::inwork 18382,13492
 #: source_id: LMS-BR:417487/72 viz2021:13.38351,52.53674,29.07.2026,07:00 vizapi2026:760/2026 (bis 16.10.2026) (bis 18.12.2026)
 #: source_id: planb2026:13.38382088,52.53641823,28.07.2026, ("Gegenverkehrsanlage (LZA)", bis 18.12.2026)
 #: note: Richtung Süden wird der Radverkehr mit Benutzungspflicht über den Bürgersteig (Charlottenburger Platten) geführt (etwa 120m)
-#: last_checked: 2026-10-10
+#: last_checked: 2026-11-05 (mapillary)
 #: next_check: 2026-12-18 (planb + VIZ-Verkehrsmeldung)
 #: valid: -20261218
 Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
@@ -178,15 +178,15 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork::alternating 15433,10765
 #  REMOVED --- #: valid: -20261030
 #  REMOVED --- Falkenhagener Str./Ackerstr. (Spandau)	X::inwork::alternating -3696,15463
 # 
-#: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 vizapi2026:587/2026 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026) (inaktiv)
-#: also_indoor: traffic (ex-G,T)
-#: last_checked: 2026-11-03 (traffic)
-#: check_frequency: 4d (traffic)
-# REMOVED --- #: next_check: 2026-10-23 (VIZ-Verkehrsmeldung)
-# REMOVED --- #: valid: -20260911
-#: XXX prolonged until end of year
-#: valid: -20261231
-Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,18585
+# REMOVED --- #: source_id: LMS-BR:411972/72 viz2021:13.38059,52.57406,15.06.2026,08:00 vizapi2026:587/2026 (bis 04.09.2026) (vermutete Verlängerung) (inaktiv) (bis 23.10.2026) (inaktiv)
+# REMOVED --- #: also_indoor: traffic (ex-G,T)
+# REMOVED --- #: last_checked: 2026-11-05 (mapillary: existiert nicht mehr)
+# REMOVED --- #: check_frequency: 4d (traffic)
+# REMOVED --- # REMOVED --- #: next_check: 2026-10-23 (VIZ-Verkehrsmeldung)
+# REMOVED --- # REMOVED --- #: valid: -20260911
+# REMOVED --- #: XXX prolonged until end of year
+# REMOVED --- #: valid: -20261231
+# REMOVED --- Provinzstr./Frühlingstr.: Gegenverkehrsregelung	X::inwork::alternating 8648,18585
 # 
 #: next_check_id: WOLLANK-2024
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7373 (Antrag auf Verstetigung)
@@ -596,11 +596,11 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 # 
 #: next_check_id: KIEFHOLZMOERIKE-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
-#: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 (bis 21.08.2026) (bis 30.10.2026) (bis 13.11.2026)
+#: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 vizapi2026:528/2026 (bis 21.08.2026) (bis 30.10.2026) (bis 13.11.2026) (bis 25.11.2026)
 #: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv) (bis 30.10.2026) (inaktiv)
 #: last_checked: 2026-09-09
-#: next_check: 2026-11-13 (VIZ-Verkehrsmeldung)
-#: valid: 20260601-20261113
+#: next_check: 2026-11-25 (VIZ-Verkehrsmeldung)
+#: valid: 20260601-20261125
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # 
 # REMOVED --- #: XXX Schnellerstraße (Niederschöneweide) in beiden Richtungen zwischen Rudower Straße und Köllnische Straße: Kabelschachtsanierung, Gegenverkehrsregelung durch Baustellenampel, vom 25.03.2024 11:00 bis 03.05.2024 17:00 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772165269927981192 --- #: by: https://pbs.twimg.com/media/GJSQEhiXwAAgVQE?format=jpg&name=large (außerdem Anbindung Rudower Str. (von Süden her) gesperrt) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784806818113327427 --- #: by: https://pbs.twimg.com/media/GMGdMBjXMAAwCqG?format=jpg&name=large --- #: source_id: viz2021:13.526211,52.452649,25.03.2024,11:00 (bis 03.05.2024) (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.529,52.452235,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.52392,52.45312,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: next_check: 2024-05-24 --- #: valid: -20240524 --- Schnellerstr./Köllnische Str.: Gegenverkehrsregelung	X::inwork::alternating 18955,5320
