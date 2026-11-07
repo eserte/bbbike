@@ -3001,6 +3001,7 @@ tragen (Treppe, 13+6 Stufen)	0:25:-4 5813,7813
 tragen (Treppe, 8 Stufen oder Rampe)	0:15:-253 -9678,6426
 tragen (Treppe, 13+13 Stufen)	0:30:-36 19245,4073
 tragen (Treppe, 3 Stufen)	0:10:15 18365,6078
+tragen (Treppe, 24 Stufen)	0:30:36 3758,12697
 Schranke	BNP:3:-130:trailer=10 18638,11479
 Schranke	BNP:10:-180:trailer=30 18965,11706
 Schranke	BNP:3:-164:trailer=10 17793,10382
@@ -3610,7 +3611,7 @@ Fennstr. -> Nordhafenpark: im Baustellenbereich Überqueren nicht möglich	3::ignd
 Nordhafenpark -> Fennstr.: im Baustellenbereich Überqueren nicht möglich	3::igndisp::inwork 7560,14670 7533,14702 7514,14687
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
 Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 10821,12153 10660,12176 10591,12203 10583,12206
-(Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): noch nicht freigegeben, Bauzäune	2::inwork 5812,7826 5829,7827 6147,7840
+(Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): noch nicht freigegeben, Bauzäune	2::inwork 5812,7826 5829,7827 6134,7839
 Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119 22860,-5130
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12780
 Knoten am ehemaligen Flughafen Tegel: Rückbau	2::inwork 2996,15930 3009,15965 2988,15999 2954,16006 2846,15986 2818,15966 2810,15931 2828,15903
@@ -3727,6 +3728,7 @@ Friedrich-List-Ufer: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwor
 Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,13304 7989,13302
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
+Bahnhof Fangschleuse: Bahnübergang wird durch eine Überführung ersetzt	2::inwork 39265,180 39244,292 39213,374 39284,437 39339,627 39281,799 39265,846
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
 Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 Carolabrücke (Dresden): Brücke teilweise eingestürzt, der Rest ist gesperrt	2::inwork 36969,-149635 37090,-149991

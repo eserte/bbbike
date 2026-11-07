@@ -425,7 +425,7 @@ Große Präsidentenstr.	1 10105,13004 10219,13102
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-11_-sitzung-am-26_03_2025.pdf (geplant)
 #: source_id: viz2021:13.312025,52.498061,30.07.2024,07:00 (Sackgasse, bis 28.02.2025) (keine Erwähnung der Sackgasse mehr, bis 30.04.2025) (bis 16.06.2025) (inaktiv)
 #: osm_watch: way id="4437134" version="19"
-#: last_checked: 2026-09-11
+#: last_checked: 2026-11-07
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-02-28
 Duisburger Str.	1 4183,10144 3880,10154
@@ -3283,6 +3283,7 @@ tragen (Treppe, 13+6 Stufen)	0:25 5813,7813
 tragen (Treppe, 8 Stufen oder Rampe)	0:15 -9678,6426
 tragen (Treppe, 13+13 Stufen)	0:30 19245,4073
 tragen (Treppe, 3 Stufen)	0:10 18365,6078
+tragen (Treppe, 24 Stufen)	0:30 3758,12697
 #
 #: section ^^^
 ###################################################################
@@ -4297,7 +4298,7 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
-#: last_checked: 2026-11-03
+#: last_checked: 2026-11-07
 #: check_frequency: 60d
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
 # REMOVED (Wege zwischen den Brücken bleiben offen) --- Görlitzer Brücken: Sperrung droht	2::inwork 13146,9903 13141,9911
@@ -4323,10 +4324,10 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: by: https://www.deutsches-architekturforum.de/thread/13397-stadtquartier-friedenauer-h%C3%B6he-in-bau/?postID=770057#post770057
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_41_2873_2920_online.pdf (Eingeschränkte Widmung von Straßenland)
 #: osm_watch: way id="1323938020" version="13"
-#: last_checked: 2026-10-14
+#: last_checked: 2026-11-07
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2027-06-30
-(Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): noch nicht freigegeben, Bauzäune	2::inwork 5812,7826 5829,7827 6147,7840
+(Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): noch nicht freigegeben, Bauzäune	2::inwork 5812,7826 5829,7827 6134,7839
 # 
 #: osm_watch: way id="1501210794" version="2"
 #: last_checked: 2026-06-10
@@ -5317,7 +5318,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
 #: osm_watch: note 4853760 1
-#: last_checked: 2026-11-05 vvv
+#: last_checked: 2026-11-07 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5448,7 +5449,7 @@ George-Stephenson-Str.: Hochbauarbeiten, Fahrbahn gesperrt, westlicher Bürgerste
 #: XXX - temporärer Weg in W-O-Richtung südlich der Baustelleneinrichtungsfläche (etwa 8162,10177 8248,10159)
 # REMOVED --- #: osm_watch: way id="223707973" version="11"
 #: osm_watch: way id="848716360" version="15"
-#: last_checked: 2026-09-03
+#: last_checked: 2026-11-07
 #: check_frequency: 120d
 #: next_check: 2028-10-01 (entwicklungsstadt: Beginn der Bauarbeiten)
 #: priority: #A
@@ -5915,6 +5916,32 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 # 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: next_check_id: FANGSCHLEUSE-2026
+#: by: https://www.deutschebahn.com/de/presse/presse-regional/pr-berlin-de/aktuell/presseinformationen/Fuer-laengere-Zuege-und-mehr-Gueterverkehr-Symbolischer-Spatenstich-fuer-neuen-Bahnhof-Fangschleuse-13350096
+#: by: https://bauprojekte.deutschebahn.com/p/fangschleuse-bf (bis Ende 2026)
+#: by: https://www.bahninfo-forum.de/read.php?9,648905,825340#msg-825340
+#: by: https://www.schiene.de/news-9529/Bahnhof-Fangschleuse-soll-im-August-2026-in-Betrieb-gehen.html
+#: by: https://www.tagesspiegel.de/potsdam/brandenburg/einsteigen-bitte-bahnhof-fangschleuse-soll-im-august-2026-in-betrieb-gehen-14076101.html
+#: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-10-2025-umgestaltung-der-l-23-am-bahnhof-fangschleuse (Sperrung der L23 ab Ende Juli 2026, Verkehrsfreigabe Dezember 2026)
+#: by: https://www.entwicklungsstadt.de/re1-strecke-berlin-frankfurt-oder-auf-der-zielgeraden-das-veraendert-sich-im-august/ (Inbetriebnahme gestaffelt am 15. und 24. August 2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~06-08-2026-zufahrt-zum-neuen-bahnhof-fangschleuse-ueber-knotenpunkt-l-23l38 (neue Zufahrt zum Bahnhof)
+#: by: https://www.ls.brandenburg.de/sixcms/media.php/9/L%2023%20B%C3%9C-Beseitigung%20Fangschleuse%20Vollsperrung%20Umleitungsphase%20Karten%202%20PM%2006-08-26.pdf
+#: by: https://www.gruenheide-im-blick.de/neuer-bahnhof-fangschleuse-inbetriebnahme-am-14-15-august-anbindung-ist-bereit/
+#: by: https://www.entwicklungsstadt.de/re1-faehrt-wieder-durch-umstieg-zwischen-berlin-und-frankfurt-oder-entfaellt/
+#: by: https://unternehmen.vbb.de/presse/bahnhof-fangschleuse-eingeweiht/ (offizielle Einweihung am 11.9.2026)
+#: by: https://www.youtube.com/watch?v=1Bw_OhoFu9Y
+#: by: https://www.entwicklungsstadt.de/bahnhof-fangschleuse-eroeffnet-mehr-kapazitaet-fuer-den-re1/
+#: url: https://www.youtube.com/@vinziger1974/videos
+# REMOVED --- #: XXX Wurde der Bahnübergang bereits für den Fußgänger- und Radverkehr gesperrt?
+# REMOVED --- #: osm_watch: way id="860486098" version="7"
+#: osm_watch: way id="1367158749" version="9"
+#: osm_watch[closed]: note 5026614 2
+#: osm_watch[closed]: note 4699893 3
+#: last_checked: 2026-11-05 (youtube)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2026-08-16 (Verschiebung der Eröffnung)
+Bahnhof Fangschleuse: Bahnübergang wird durch eine Überführung ersetzt	2::inwork 39265,180 39244,292 39213,374 39284,437 39339,627 39281,799 39265,846
 # 
 # REMOVED (aus landstrassen-orig entfernt) --- #: next_check_id: MAHLOWUNTERFUEHRUNG-2023 --- #: next_check: 2023-12-31 --- Trebbiner Straße (Mahlow): Bahnübergang gesperrt, neue Unterführung wird gebaut	2::inwork 11065,-5338 11077,-5335 11119,-5326
 # REMOVED (laut osm zurückgebaut) --- #: next_check_id: BERLINERMAHLOW-2021 --- #: by: osm --- #: by: https://www.bahninfo-forum.de/read.php?9,654720,702391#msg-702391 --- #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/ --- #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn?date=20230316 (voraussichtliche Freigabe am 16. März 2023) --- #: note: laut osm Sperrung bis 01/2023 --- #: osm_watch: way id="663005792" version="11" brb --- #: also_indoor: traffic --- #: last_checked: 2023-03-16 (osm, offen!) vvv --- # REMOVED --- #: check_frequency: 360d vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2023-01-31 vvv --- Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470 --- tragen (Treppe) oder Aufzug benutzen	0:35 10860,-4393 --- tragen (Treppe) oder Aufzug benutzen	0:35 10888,-4384 --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^

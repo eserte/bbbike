@@ -10519,7 +10519,7 @@ Sternbergpromenade: Asphalt	Q0 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -
 Am Bullengraben: sehr guter Asphalt	Q0 -6272,13472 -6265,13475 -6209,13499 -6076,13583 -6020,13598 -5963,13593
 Kerrweg: unbefestigte Straße	Q2 -6269,13464 -6189,13497 -6125,13540 -6010,13586 -5962,13584 -5917,13582
 Straße zum Müggelturm: Beton, Fugen, stellenweise mit dünnem Asphaltüberzug	Q1 25008,2889 25010,2794 24978,2634 24981,2565 24982,2519 24963,2495 24641,2074 24630,2034 24634,1974 24673,1888 24726,1837 24883,1740 24973,1690 25269,1598 25399,1629 25438,1638 25573,1609 25701,1587 25725,1561 25711,1481
-Lohmeyerstr.: Kopfsteinpflaster	Q2 3348,12314 3416,12473
+Lohmeyerstr.: unebenes Kopfsteinpflaster	Q2 3348,12314 3402,12479
 Jutta-Langenau-Str.: Verbundsteinpflaster	Q1 17610,16307 17643,16322 17821,16395 17863,16416 17877,16423
 Harry-Glaß-Str.: Verbundsteinpflaster	Q1 17610,16400 17643,16322
 Joachim-Böhmer-Str.: Verbundsteinpflaster	Q1 17821,16395 17791,16467 17776,16504 17709,16559 17676,16582
@@ -11974,6 +11974,7 @@ Ungarnstr.: Fahrbahn betoniert und Radweg mit Verbundsteinpflaster, beide mit Sc
 Ungarnstr.: Fahrbahn asphaltiert (leicht uneben) und Radweg mit schadhaften Verbundsteinpflaster	Q0 7583,16872 7394,16836 7267,16784 7177,16715 7106,16646 7056,16587
 Friedenauer Höhe: Asphalt	Q0 6293,7875 6260,7899 6132,7893
 Friedenauer Höhe: Betonsteinpflaster	Q0 6132,7893 6131,7916 6011,7911 5810,7883
+Friedenauer Höhe: Betonsteinpflaster	Q0 6134,7839 6132,7893
 (Reinbeckstr. - Spreeufer): Kopfsteinpflaster	Q2 18310,6223 18298,6199
 (Reinbeckstr. - Spreeufer): Beton	Q1 18298,6199 18282,6184 18259,6110
 (Reinbeckstr. - Spreeufer): Gehwegplatten	Q0 18259,6110 18242,6067
@@ -12165,6 +12166,7 @@ Blumeneschenweg: Asphalt	Q0 23363,11600 23403,11721 23375,11731 23382,11760
 (Flughafengelände): Asphalt	Q0 9589,8519 9550,8483
 (Flughafengelände): Kleinsteinpflaster/Verbundsteinpflaster	Q1 9414,8380 9442,8387 9462,8408
 (Am Treptower Park - Elsenstr.): Betonpflaster	Q1 14149,9546 14203,9715 14181,9729
+Sigmaringer Str.: Asphalt und Betonpflaster	Q0 4699,9202 4685,9418 4657,9481
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13411,7 +13413,7 @@ Elsastr. (Friedenau): Asphalt	Q0 5490,7651 5493,7590 5492,7543
 Ortrudstr.: Asphalt	Q0 5493,7590 5353,7617
 Kundrystr.: Asphalt	Q0 5450,7494 5350,7554
 Straße am Güterbahnhof Wilmersdorf: Kopfsteinpflaster	Q3 6273,7849 6147,7840
-(Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): Asphalt	Q0 5812,7826 5829,7827 6147,7840
+(Hannah-Höch-Weg - Straße am Güterbahnhof Wilmersdorf): Asphalt	Q0 5812,7826 5829,7827 6134,7839 6147,7840
 Schnackenburgstr.: Asphalt	Q0 5636,7540 5812,7536
 Stierstr.: Asphalt	Q0 5957,7773 5956,7686 5955,7420
 Hähnelstr.: Asphalt	Q0 5812,7685 5956,7686 6118,7688 6144,7677
@@ -13557,7 +13559,7 @@ Hallandstr.: Asphalt	Q0 11590,16878 11549,16880
 Hallandstr.: Kopfsteinpflaster	Q2 11549,16880 11499,16883 11364,16887 11270,16890 10992,16829
 Kornburger Weg: Asphalt	Q0 -3309,17153 -3327,16832 -3343,16573
 Am Berl: Beton	Q0 16919,18635 16793,18809 16718,18758 16782,18658 16746,18632 16801,18544
-Am Spreebord: Asphalt	Q0 3734,12715 3828,12697 3981,12709
+Am Spreebord: Asphalt	Q0 3734,12715 3767,12709 3828,12697 3981,12709
 Am Spreebord: Kopfsteinpflaster	Q2 3981,12709 4071,12720
 Am Spreebord: Asphalt	Q0 4071,12720 4124,12721 4217,12711 4234,12710
 Am Spreebord: Asphalt	Q0 4234,12710 4303,12692

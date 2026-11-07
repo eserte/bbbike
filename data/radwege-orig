@@ -87,7 +87,8 @@ Gehwegplatten	RW1; 9570,8715 9761,8688 9807,8682
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt 5-19 Uhr	RW1; 9807,8682 9761,8688 9570,8715 9395,8726 9272,8781 9229,8785
 #: note: außerdem kann man ab der Fußgängerampel Columbiatheater den parallel verlaufenden breiten asphaltierten Weg auf dem Ex-Flughafen-Gelände nutzen
 	RW3; 9807,8682 10209,8661
-Verbundsteinpflaster	RW2; 10209,8661 9807,8682
+#: historical_note: früher benutzungspflichtig
+Verbundsteinpflaster	RW1; 10209,8661 9807,8682
 	RW4;RW4 8389,9087 8471,9244 8499,9253 8598,9269 8769,9295 8970,9323
 wobei das Radwegschild parallel zur Fahrtrichung steht	RW4; 8970,9323 9082,9338 9154,9347 9211,9354
 	RW3; 9211,9354 9154,9347 9082,9338 8970,9323
@@ -122,7 +123,7 @@ alter Verbundsteinpflasterradweg	RW1; 8779,9812 8779,9829 8779,9851 8784,9972 87
 #: source_id: planb2026:13.38002097,52.49796024,06.03.2025,07:00 ("Sperrung einer Fahrtrichtung", bis 31.07.2027) (vorfristig inaktiv)
 #: source_id: planb2026:13.37988823,52.49738494,03.11.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 30.08.2027)
 #: osm_watch: way id="1089751372" version="8"
-#: last_checked: 2026-10-25
+#: last_checked: 2026-11-07
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-08-30 (planb)
@@ -385,7 +386,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-11-05 vvv
+#: last_checked: 2026-11-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -762,7 +763,7 @@ die letzten 30 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 #: note: Otto-Suhr-Allee, Richtung SW
 #: note: im Bereich der Bushaltestelle kein Radweg mehr
 	RW0; 3279,12533 3328,12512 3350,12502
-	RW1; 3350,12502 3416,12473 3472,12447 3612,12377
+	RW1; 3350,12502 3402,12479 3472,12447 3612,12377
 	RW2; 3612,12377 3761,12298
 für Radfahrer freigegebene Busspur gilt 6-20 Uhr	RW1; 3761,12298 4000,12183 4032,12167
 #: note: Busspur in Mittellage
@@ -779,8 +780,8 @@ Gehwegplatten, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 4507,119
 #: historical_note: früher hier benutzungspflichtig
 Gehwegplatten	RW1; 4032,12167 4000,12183 3761,12298
 #: historical_note: früher (vor Mai 2023) eingeschränkte Gültigkeit Mo-Fr 9-20 Uhr
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 3761,12298 3612,12377 3472,12447 3416,12473
-	RW1; 3416,12473 3350,12502
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 3761,12298 3612,12377 3472,12447 3402,12479
+	RW1; 3402,12479 3350,12502
 	RW2; 3350,12502 3328,12512 3279,12533
 # 
 Bushaltestelle	RW5; 3279,12533 3212,12526
@@ -5409,7 +5410,7 @@ Verbundsteinpflaster	RW1;RW1 7115,3003 7049,3005 6914,3093 6788,3181
 Verbundsteinpflaster	RW2;RW2 6788,3181 6712,3237
 enger Radweg, kein Unterstreifen gegen parkende Autos	RW1;RW1 4061,7992 4067,7726 4066,7514 4064,7396 4063,7287
 	RW1;RW1 4787,7788 4789,7859 4786,8007 4780,8309 4778,8354 4772,8513
-	RW1;RW1 4415,9343 4374,9409 4381,9620 4398,9723 4422,9869 4439,9983 4456,10092 4478,10218 4485,10307
+Verbundsteinpflaster	RW1;RW1 4415,9343 4374,9409 4381,9620 4398,9723 4422,9869 4439,9983 4456,10092 4478,10218 4485,10307
 	RW1;RW1 4957,9437 4842,9458 4752,9474 4699,9505
 	RW7;RW7 20948,9847 20943,9543 20938,9293 20937,9229 20936,9156 20932,8956 20967,8716 21010,8379
 Verbundsteinpflaster mit Unebenheiten, schmal	RW1; 11149,-1274 11120,-976 11099,-857 11054,-740
@@ -6223,7 +6224,7 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 	RW1;RW1 2654,9757 2664,9744 2719,9671 2730,9621
 	RW6;RW6 4517,9401 4495,9184
 	RW6;RW6 4699,9202 4619,9200 4495,9184
-	RW6;RW6 4920,9000 4815,9098 4755,9154
+	RW6;RW6 4920,9000 4815,9098 4735,9171
 	RW6;RW6 4657,9481 4685,9418 4699,9202 4700,9179 4713,8997 4689,8953
 	RW6;RW6 4713,8997 4920,9000
 	RW1;RW1 2660,8392 2713,8357
@@ -7132,7 +7133,7 @@ Gehwegplatten	RW1;RW1 193,12070 262,12085
 Gehwegplatten	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2026-11-01 (mapillary) vvv
+#: last_checked: 2026-11-07 vvv
 #: check_frequency: 90d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str., Richtung Gedächtniskirche
@@ -8133,7 +8134,7 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
 #: note: im ungeschützten Abschnitt oft zugeparkt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben vvv
 #: priority: #D vvv
-#: last_checked: 2026-11-04 vvv
+#: last_checked: 2026-11-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2025-07-31 (VIZ-Verkehrsmeldung) vvv
 	RW3; 12150,8764 12318,8645 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408
@@ -8180,7 +8181,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung? Radwegschilder vvv
 #: priority: #D vvv
-#: last_checked: 2026-11-04 vvv
+#: last_checked: 2026-11-07 vvv
 #: check_frequency: 30d vvv
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 	RW3; 12714,8249 12689,8289 12639,8344
@@ -8192,8 +8193,9 @@ Fahrradschleuse	RW3; 12639,8344 12598,8390
 #: priority ^^^
 #: XXX ^^^
 	RW1; 11880,8955 11831,8989
-# note: Ende Karl-Marx-Str.
+#: note: Ende Karl-Marx-Str.
 # 
+#: note: oft teilweise oder komplett zugeparkt
 	RW4; 12517,8546 12494,8501
 # 
 	RW7;RW7 -2135,17633 -2048,17654
@@ -8231,7 +8233,8 @@ Fahrradschleuse	RW3; 9141,12320 9164,12172
 #: confirmed_by: srt
 	RW6;RW6 -3006,15534 -3134,15578 -3179,15574
 	RW6;RW6 9303,12718 9171,12758
-Tempo 10	RW6;RW6 12755,9188 12845,9304 12837,9353
+#: historical_note: früher nur Tempo 10, jetzt "richtig" verkehrsberuhigt
+	RW6;RW6 12755,9188 12845,9304 12837,9353
 # 
 asphaltiert	RW1;RW1 20774,3050 20839,3163 20927,3292 20972,3334 21062,3406 21156,3477 21198,3522 21244,3571
 Tempo 10	RW6;RW6 13559,12779 13470,12990
@@ -8645,10 +8648,11 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: by: https://www.entwicklungsstadt.de/friedrichshain-bueroneubau-hainwerk-vor-fertigstellung-voll-vermietet/
 #: by: https://www.entwicklungsstadt.de/hainwerk-in-friedrichshain-erreicht-volle-hoehe-erste-fassade-sichtbar/
 #: osm_watch: way id="278197510" version="12"
-#: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", bis 22.10.2026) (inaktiv) (bis 30.04.2028)
+#: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", Gubener+Revaler, bis 22.10.2026) (inaktiv) (bis 30.04.2028)
+#: source_id: planb2026:13.4508501,52.50859501,06.11.2026, ("Fahrstreifen-Reduzierung", Warschauer Str., bis 30.04.2028)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-11-05
+#: last_checked: 2026-11-07
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -8822,7 +8826,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2026-10-25
+#: last_checked: 2026-11-07
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -9250,7 +9254,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.tagesspiegel.de/berlin/rein-politisch-motiviert-deutsche-umwelthilfe-hat-interne-akten-zum-radweg-an-der-kantstrasse-erstritten-16139475.html
 #: by: https://www.tagesspiegel.de/berlin/radweg-streit-in-der-berliner-kantstrasse-aktivisten-ubermalen-lieferzonen-markierungen-16191706.html
 #: source_id: LMS-BR:379465/72 viz2021:13.30931,52.50658,11.08.2025,07:00 viz2021:13.30931,52.50658, (Bauarbeiten Höhe Krumme Str., bis 28.11.2025) (inaktiv)
-#: source_id: planb2026:13.31467663,52.50621667,01.10.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 06.11.2026)
+#: source_id: planb2026:13.31467663,52.50621667,01.10.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 06.11.2026) (inaktiv)
 #: note: mittlerweile hat die Disziplin nachgelassen und es wird teilweise auf der Radspur geparkt, gesehen Richtung Westen Höhe Uhlandstr. am 2024-11-28
 #: note: zumindest in Höhe Witzlebenstr. keine Radwegschilder mehr, nur gelbmarkierte Spur mit Bus/Rad-Piktogrammen
 #: note: zwischen Uhlandstr. und Savignyplatz vermutlich nur temporär (Bauarbeiten) Busspur, Radfahrer frei

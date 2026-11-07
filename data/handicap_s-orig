@@ -117,7 +117,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q2::inwork; 13383,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="37"
 #: osm_watch: way id="1072662717" version="41"
-#: last_checked: 2026-11-05
+#: last_checked: 2026-11-07
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -1137,9 +1137,11 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260911 (Leitungsarbeiten, bis Mitte Dez 2026 Sperrung für den Kfz-Verkehr Richtung Osten)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvhdhbjylp2n (bis Mitte Dez 2026)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiefcctrjnw357paidtjkftxmf4samejtdohdsh5tkpa63hqpx5avq (Gehweg für Radfahrer frei)
+#: note: teilweise recht eng und recht viel Fußgängerverkehr, deshalb q2 -> q3
+#: last_checked: 2026-11-07
 #: next_check: 2026-12-18 (planb + vizapi2026)
 #: valid: -20261218
-Kurfürstenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt, Gehweg für Radfahrer frei	q2::inwork; 7121,10609 7181,10587 7315,10537
+Kurfürstenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt, Gehweg für Radfahrer frei	q3::inwork; 7121,10609 7181,10587 7315,10537
 # 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
@@ -1195,17 +1197,6 @@ Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
 #: note: "Notfall"-valid-Direktive
 #: valid: -20261231
 Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, ggfs. Bordsteine, Umwege	q4::inwork 5669,10704 5782,10884
-# 
-#: next_check_id: ABBESTR-2021
-#: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
-#: by: https://www.deutsches-architekturforum.de/thread/14781-physikalisch-technische-bundesanstalt-campus-um-und-neubauten/?postID=724237#post724237
-#: by: https://entwicklungsstadt.de/charlottenburg-ein-verborgenes-wissenschaftsquartier-wird-neu-erfunden/ (zu Bauarbeiten auf dem PTB-Gelände, keine explizite Erwähnung dieser Stelle)
-#: osm_watch: way id="152832871" version="26"
-#: osm_watch: way id="1132383957" version="2"
-#: note: mittlerweile eine Art "Drängelgitter" aus dem Bauzaun gemacht; mittlerweile ist nur der westliche Gehweg frei
-#: last_checked: 2026-06-26
-#: check_frequency: 120d
-Abbestr.: Bauzaun, Umfahrung notwendig	q4::inwork 4674,12076 4698,12124
 # 
 # REMOVED (laut viz fertig) --- #: next_check_id: FASANEN-2021 --- #: source_id: 2147346973 (Fernwärmebaustelle in Höhe Kantstr., bis März 2022) --- #: source_id: 2147346972 (- " -) --- #: source_id: viz2021:13.329043,52.505488,12.03.2021,09:00 (bis 5.3.2022) (inaktiv) --- #: source_id: viz2021:13.32784,52.505061,22.12.2021,06:00 (bis 5.3.2022) --- #: XXX evtl. sind die Einschränkungen auf der Nordseite aufgehoben? --- #: last_checked: 2022-01-15 --- #: check_frequency: 90d --- #: next_check: 2022-03-05 --- #: valid: -20220305 --- # REMOVED (hier nicht mehr) --- Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5241,11060 5236,10994 --- Fasanenstr.: Engstelle südliche de Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5236,10994 5232,10947 5230,10919
 # REMOVED (aufgehoben) --- #: next_check_id: ENGLISCHESTR-2017 --- #: osm_watch: way id="503096340" version="3" --- #: source_id: LMS-BR_r_LMS-BR_121156_LMS-BR_72 --- #: XXX laut fritz bis 2019-04-30 --- #: also_indoor: traffic (H) --- #: last_checked: 2019-09-08 --- #: check_frequency: 60d --- Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5417,11949 5518,12159
@@ -1507,12 +1498,12 @@ Bärensteinstr.: Sperrung der Fahrbahn vor dem Blumberger Damm	q3::inwork 21497,1
 # 
 ### Schöneberg ###
 # 
-#: also_indoor: traffic (ex-G,ex-T,no-H,W[later])
-#: source_id: planb2026:13.35122591,52.49760019,23.02.2026,06:00 ("Fahrbahneinengung", Eisenacher+Nollendorfstr., bis 06.11.2026)
-#: last_checked: 2026-11-06 (traffic)
-#: check_frequency: 3d (traffic)
+# REMOVED --- #: also_indoor: traffic (ex-G,ex-T,no-H,W[later])
+# REMOVED --- #: source_id: planb2026:13.35122591,52.49760019,23.02.2026,06:00 ("Fahrbahneinengung", Eisenacher+Nollendorfstr., bis 06.11.2026) (inaktiv)
+# REMOVED --- #: last_checked: 2026-11-06 (traffic)
+# REMOVED --- #: check_frequency: 3d (traffic)
 # REMOVED --- #: next_check: 2026-11-06 (planb)
-Nollendorfstr.: Bauarbeiten, Sperrung der Fahrbahn an der Einmündung Eisenacher Str.	q3::inwork 6739,10120 7055,10220
+# REMOVED --- Nollendorfstr.: Bauarbeiten, Sperrung der Fahrbahn an der Einmündung Eisenacher Str.	q3::inwork 6739,10120 7055,10220
 # 
 # REMOVED --- #: XXX Hohenstaufenstraße (Schöneberg) in beiden Richtungen im Kreuzungsbereich Eisenacher Straße: Leitungsarbeiten, eine Baustellenampel regelt den Verkehr, vom 28.03.2024 07:00 bis 29.05.2024 17:00 --- verlängert
 # REMOVED --- #: source_id: viz2021:13.349791,52.494637,28.03.2024,07:00 (bis 29.05.2024) (bis 14.06.2024) (bis 13.06.2024) (inaktiv)
@@ -1552,11 +1543,12 @@ Nollendorfstr.: Bauarbeiten, Sperrung der Fahrbahn an der Einmündung Eisenacher 
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-10-14 vvv
+#: last_checked: 2026-11-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Höhe: Baustellenverkehr	q1 6293,7875 6260,7899 6132,7893
 Friedenauer Höhe: gemeinsamer Rad- und Gehweg	q1 6132,7893 6131,7916 6011,7911 5810,7883
+Friedenauer Höhe: einige Fußgänger, Baustelle	q1 6134,7839 6132,7893
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2282,7 +2274,7 @@ Bernburger Treppe: Rampen	q4+ 8536,11063 8525,11063 8526,11080 8515,11065 8519,1
 #: XXX_prog: BS (ohne q2)
 (Hohenzollerndamm - Charlottenbrunner Str.): Gehweg, Bordstein	q3 3336,9021 3315,9009
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
-Leon-Jessel-Platz: Fußgänger	q2 4700,9179 4735,9171 4755,9154
+Leon-Jessel-Platz: Fußgänger	q2 4700,9179 4735,9171
 #: note: mit Schild "Gehweg, Radfahrer frei"
 Nikolsburger Platz: Fußgänger	q2 5374,9619 5291,9675
 #: note: hier kein Zeichen "Gehweg, Radfahrer frei"
@@ -2406,7 +2398,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: osm_watch: note 5350535 2
 #: osm_watch: way id="30909343" version="27"
 #: source_id: planb2026:13.43196346,52.4975659,01.02.2024,07:00 (hier: "Haltverbote", bis 31.12.2026)
-#: last_checked: 2026-11-05
+#: last_checked: 2026-11-07
 #: check_frequency: 180d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
