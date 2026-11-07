@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2006,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2006,2023,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 BEGIN {
@@ -53,8 +52,15 @@ BEGIN {
     #}
 }
 
-if (!GetOptions("v+" => \$v)) {
-    die "usage: $0 [-v]";
+my($start_coord, $goal1_coord, $goal2_coord);
+
+if (!GetOptions(
+    "v+" => \$v,
+    "start=s"      => \$start_coord,
+    "goal|goal1=s" => \$goal1_coord,
+    "goal2=s"      => \$goal2_coord,
+)) {
+    die "usage: $0 [-v] [-start x,y] [-goal1 x,y] [-goal2 x,y]\n";
 }
 if (defined $v && $v > 0) {
     Strassen::set_verbose(1);
@@ -91,13 +97,13 @@ pass("Initialization");
 
 ok(defined &Strassen::Inline::search_c, "Search sub defined");
 
-my($start_coord, $goal1_coord, $goal2_coord);
 # pick up some random coords
 my $s = Strassen->new("strassen");
 my $inacc = Strassen->new("inaccessible_strassen");
 # XXX check for inaccessible_strassen, otherwise skip!
 my $inacc_hash = $inacc->get_hashref;
 for my $coordref (\$start_coord, \$goal1_coord, \$goal2_coord) {
+    next if defined $$coordref;
     while(1) {
 	$$coordref = $s->get(rand($#{$s->{Data}}))->[Strassen::COORDS][0];
 	last if (!exists $inacc_hash->{$$coordref});
