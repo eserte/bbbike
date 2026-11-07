@@ -53,6 +53,7 @@ BEGIN {
 }
 
 my($start_coord, $goal1_coord);
+my($start_coord_is_rand, $goal1_coord_is_rand);
 
 if (!GetOptions(
     "v+" => \$v,
@@ -101,10 +102,15 @@ my $s = Strassen->new("strassen");
 my $inacc = Strassen->new("inaccessible_strassen");
 # XXX check for inaccessible_strassen, otherwise skip!
 my $inacc_hash = $inacc->get_hashref;
-for my $coordref (\$start_coord, \$goal1_coord) {
+for my $def (
+    [\$start_coord, \$start_coord_is_rand],
+    [\$goal1_coord, \$goal1_coord_is_rand],
+) {
+    my($coordref, $is_rand_ref) = @$def;
     next if defined $$coordref;
     while(1) {
 	$$coordref = $s->get(rand($#{$s->{Data}}))->[Strassen::COORDS][0];
+	$$is_rand_ref = 1;
 	last if (!exists $inacc_hash->{$$coordref});
     }
 }
@@ -118,7 +124,21 @@ $net->make_net;
 $net->make_sperre("gesperrt", Type => [qw(einbahn sperre wegfuehrung)]);
 
 @arr = Strassen::Inline::search_c($net, $start_coord, $goal1_coord);
-ok(!(!@arr || ref $arr[0] ne 'ARRAY'), "Path result between $start_coord and $goal1_coord");
+SKIP: {
+    my $has_result = @arr && ref $arr[0] eq 'ARRAY';
+    if (!$has_result) {
+	# Possible reason: wegfuehrung blocks the route to goal coordinate.
+	# Check with standard search
+	my $res = $net->search($start_coord, $goal1_coord);
+	my $std_has_result = $res && ref $res->[StrassenNetz::RES_PATH] eq 'ARRAY';
+	if (!$std_has_result) {
+	    skip "The search between $start_coord and $goal1_coord did not find a result, but also not using the normal search method", 1;
+	}
+	fail "No result between $start_coord and $goal1_coord (unexpected, normal search found something";
+    } else {
+	pass "Path result between $start_coord and $goal1_coord";
+    }
+}
 
 {
     my $handle;
