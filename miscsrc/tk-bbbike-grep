@@ -7,6 +7,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use Cwd qw(cwd);
+use File::Glob qw(bsd_glob);
 use Getopt::Long;
 use Tk;
 use Tk::PNG;
@@ -34,10 +35,8 @@ for my $add_org_file ("$ENV{HOME}/src/bbbike-aux/tmp/bplan.org") {
 	push @add_bbbike_grep, '--add-org-file', $add_org_file;
     }
 }
-for my $add_plain_file ("$ENV{HOME}/backup/changedetection.io/url-watches.json") {
-    if (-r $add_plain_file) {
-	push @add_bbbike_grep, '--add-file-with-encoding', $add_plain_file.':utf-8';
-    }
+for my $add_plain_file (bsd_glob("$ENV{HOME}/backup/changedetection.io/*/watch.json")) {
+    push @add_bbbike_grep, '--add-file-with-encoding', $add_plain_file.':utf-8';
 }
 
 # XXX actually it would be good if we could determine which emacs is available,
