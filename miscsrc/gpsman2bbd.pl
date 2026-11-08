@@ -322,6 +322,9 @@ EOF
 
 	    my $frequency = $track_attrs->{"srt:frequency"};
 	    if ($frequency) {
+		if ($frequency =~ /^(\d+(?:\.\d+)?)km$/) {
+		    $frequency = $1 * 1000;
+		}
 		$frequency =~ s{\D}{}; # remove "m"
 	    }
 
