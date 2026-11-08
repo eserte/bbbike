@@ -4197,7 +4197,7 @@ Mehlbeerenweg (Sackgasse): Bauarbeiten, Sperrung	2::inwork 11940,11982 11909,119
 # 
 #: also_indoor: traffic (G,no-T,no-H,W)
 #: osm_watch: note 5564820 1
-#: last_checked: 2026-10-10
+#: last_checked: 2026-11-08 (traffic)
 #: check_frequency: 30d (traffic)
 Rue Racine: Sperrung (Fahrbahn und Bürgersteig)	2::inwork 4334,21540 4307,21506
 # 
@@ -4323,7 +4323,7 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: next_check_id: FRIEDENAUERHOEHE-2024
 #: by: https://www.deutsches-architekturforum.de/thread/13397-stadtquartier-friedenauer-h%C3%B6he-in-bau/?postID=770057#post770057
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_41_2873_2920_online.pdf (Eingeschränkte Widmung von Straßenland)
-#: osm_watch: way id="1323938020" version="13"
+#: osm_watch: way id="1323938020" version="14"
 #: last_checked: 2026-11-07
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2027-06-30
@@ -5873,11 +5873,11 @@ Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,1
 #: source_id: LMS-BR:290429/72 viz2021:13.3707,52.52584,03.01.2023,13:38 viz2021:13.3707,52.52584, (bis 31.12.2026)
 #: also_indoor: traffic
 #: XXX tatsächlich schon wieder offen?
-#: last_checked: 2026-10-27 vvv
+#: last_checked: 2026-11-07 (osm) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 #: osm_watch: way id="154807176" version="70"
-#: osm_watch: way id="186329816" version="53"
+#: osm_watch: way id="186329816" version="54"
 Friedrich-List-Ufer: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304 8099,13391
 #: osm_watch: way id="692480577" version="43"
 #: osm_watch: way id="692480576" version="42"
@@ -5935,7 +5935,7 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: url: https://www.youtube.com/@vinziger1974/videos
 # REMOVED --- #: XXX Wurde der Bahnübergang bereits für den Fußgänger- und Radverkehr gesperrt?
 # REMOVED --- #: osm_watch: way id="860486098" version="7"
-#: osm_watch: way id="1367158749" version="9"
+#: osm_watch: way id="1367158749" version="10"
 #: osm_watch[closed]: note 5026614 2
 #: osm_watch[closed]: note 4699893 3
 #: last_checked: 2026-11-05 (youtube)

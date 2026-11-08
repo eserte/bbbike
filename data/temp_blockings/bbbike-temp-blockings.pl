@@ -3064,7 +3064,7 @@ EOF
        text  => 'K 6424; (Dahlwitzer Landstr.-Münchehofe-B 1); OD Münchehofe Straßenausbau Vollsperrung 12.09.2005-31.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 28619,9588 26920,8985
+	q4 28612,9587 26920,8985
 EOF
      },
      { from  => 1127772000, # 2005-09-27 00:00
@@ -28880,7 +28880,7 @@ EOF
 #: source_id: LMS-BR:304601/72 viz2021:13.31363,52.52105,26.06.2023,06:00 viz2021:13.31363,52.52105, (bis 30.06.2025) (bis 01.12.2025) (bis 30.10.2026) (inaktiv)
 #: source_id: LMS-BR:410370/72 viz2021:13.310944,52.521154,01.06.2026,07:00 (bis 31.12.2026)
 #: source_id: planb2026:13.31197359,52.52094154,03.07.2026,00:00 ("Sicherung gemäß Vz.-plan", bis 31.07.2027)
-#: osm_watch: note 5620662 1
+#: osm_watch: note 5620662 2
 #: osm_watch: way id="684672823" version="8"
 #: also_indoor: traffic (H,ex-G,T,W)
 # REMOVED --- #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung (längere der beiden))
@@ -39482,7 +39482,7 @@ EOF
 #: osm_watch: way id="1144627217" version="6"
 #: also_indoor: traffic (re-W,re-G[in basemap],ex-T,H)
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2026-10-10 (traffic)
+#: last_checked: 2026-11-08 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2027-03-31 (VIZ-Verkehrsmeldung + planb)
@@ -46653,7 +46653,7 @@ EOF
 #: osm_watch: way id="105827213" version="13"
 #: osm_watch: way id="1328520022" version="2"
 #: osm_watch: note 4244536 6
-#: last_checked: 2026-10-10 (finowkanal.info)
+#: last_checked: 2026-11-08 (finowkanal.info)
 #: check_frequency: 30d
 #: next_check: 2026-12-31 (https://www.openstreetmap.org/changeset/182437146: laut Bauleiter)
 	2::inwork 24769,48739 24781,48768 24766,48828
@@ -46790,9 +46790,9 @@ EOF
 #: note: laut rbb bis 19.01.2025 (nun inaktiv)
 #: note: gesperrter Bereich etwa 60m lang, deshalb q3 statt q4
 #: source_id: LMS-BR:418130/72 viz2021:13.33775,52.50366,03.08.2026,07:00 (Kraneinsatz bis 09.10.2026) (inaktiv)
-#: also_indoor: traffic (re-G,re-T,ex-H,ex-W)
+#: also_indoor: traffic (ex-G,re-T,ex-H,ex-W)
 #: add_fragezeichen: Ist die Sperrung mittlerweile schon aufgehoben?
-#: last_checked: 2026-10-26 (traffic)
+#: last_checked: 2026-11-08 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: check_frequency: 90d
 Marburger Str.	q3::inwork 5802,10621 5907,10821
@@ -48567,7 +48567,7 @@ EOF
 #: note: nördliches Tor geschlossen, südliches Tor nicht geprüft (gesehen 2025-03-08 Sa 11:30, 2026-04-03 Fri 11:07 Karfreitag)
 #: note: beide Tore verschlossen (gesehen 2024-11-16 Sat, 2025-09-21 Sun 10:05)
 #: osm_watch: way id="207757723" version="8"
-#: osm_watch: way id="275795707" version="5"
+#: osm_watch: way id="275795707" version="6"
 #: osm_watch: node id="676243408" version="4"
 #: osm_watch: node id="2804650438" version="4"
 #: last_checked: 2026-09-16 vvv
@@ -50570,7 +50570,7 @@ EOF
 #: also_indoor: url https://www.finowkanal.info/wasserwelt/schleusensanierung/einschraenkungen-im-baustellenbereich/
 #: note: laut umap-Karte Eröffnung Ende 2025 (Stand März 2026); bei osm nur die Schleusenüberfahrt als gesperrt gekennzeichnet
 #: osm_watch: way id="996266699" version="2"
-#: last_checked: 2026-10-10 (finowkanal.info)
+#: last_checked: 2026-11-08 (finowkanal.info)
 	2::inwork 32161,48811 32138,48820 32115,48816 31984,48916
 EOF
      },
@@ -50592,10 +50592,10 @@ EOF
 #: source_id: planb2026:13.38013957,52.51948663,03.07.2025, ("Gegenverkehrsanlage (LZA)", Ampel in der Luisenstr., aber auch der Schiffbauerdamm, bis 28.10.2026) (inaktiv) (bis 27.11.2026)
 #: note: laut Halteverbotsschilder bis 01.07.2026, laut Verkehrsportalen (z.B. rbb) bis 12.05.2026
 #: osm_watch: note 4846255 2
-#: osm_watch: way id="1429845843" version="6"
+#: osm_watch: way id="1429845843" version="7"
 #: also_indoor: traffic (T,H,G,W)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-10-27 vvv
+#: last_checked: 2026-11-07 (osm) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2028-08-31 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2026-07-01 (Halteverbotsschilder) vvv
@@ -52804,7 +52804,7 @@ EOF
 #: by: https://www.morgenpost.de/bezirke/reinickendorf/article410918440/citC3A9-foch-die-wasserbetriebe-raeumen-das-chaos-der-franzosen-auf.html
 #: source_id: planb2026:13.31938198,52.60248883,13.10.2025, ("Sicherung gemäß Vz.-plan", bis 30.09.2026) (vorfristig inaktiv) (bis 26.04.2027)
 #: also_indoor: traffic (G[later],T[later],no-H,no-W)
-#: last_checked: 2026-10-10 vvv
+#: last_checked: 2026-11-08 (traffic) vvv
 #: check_frequency: 30d (traffic) vvv
 #: next_check: 2027-04-26 (planb) vvv
 	q4::inwork 4655,21939 4527,21843
@@ -53632,7 +53632,7 @@ EOF
 #: source_id: planb2026:13.49148089,52.54944583,09.02.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 17.12.2026)
 #: source_id: planb2026:13.49675113,52.54640183,01.10.2026, ("Sicherung gemäß Vz.-plan", Oberseestr. jenseits Degnerstr., bis 17.12.2026)
 #: add_fragezeichen: Sind die Bauarbeiten beendet? vvv
-#: last_checked: 2026-10-13 vvv
+#: last_checked: 2026-11-08 vvv
 #: check_frequency: 30d (traffic) vvv
 #: next_check: 2026-12-17 (planb (späterer der beiden Termine)) vvv
 # REMOVED (seit etwa Ende Sep/Anfang Okt 2026 offen) --- Sabinensteig: Einbahnstraßenregelung	q4::inwork; 16395,16099 16442,15926
@@ -53813,7 +53813,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: historical_note: ursprünglich war ein Umweg über die benachbarte Wohnanlage möglich, jetzt gibt es diese Möglichkeit nicht mehr
 #: note: außerdem eine Einbahnstraßenregelung (ohne Radfahrerfreigabe) in der Lahmertstr. (Richtung Osten ab Friedrich-Wolf-Str. gesperrt), evtl. im Zusammenhang mit diesen Bauarbeiten
-#: last_checked: 2026-10-10 (traffic)
+#: last_checked: 2026-11-08 (traffic)
 #: check_frequency: 30d (traffic)
 #: next_check: 2026-12-18 (planb)
 	2::inwork 22130,1961 22004,2149
@@ -54042,13 +54042,13 @@ EOF
      { from  => undef, # 
        until => undef, # 1784611335, # undef, # XXX
 #      text  => 'Auguste-Viktoria-Allee/General-Barby-Str./Engelmannweg: Bauarbeiten, Sperrungen von Fahrbahnen und Einbahnstraßenregelungen, teilweise größere Umwege notwendig, Ende der Bauarbeiten unbekannt',
-       text  => 'Auguste-Viktoria-Allee/Engelmannweg: Bauarbeiten, Sperrungen von Fahrbahnen und Einbahnstraßenregelungen, Ende der Bauarbeiten unbekannt',
+       text  => 'Auguste-Viktoria-Allee/Engelmannweg/Zobeltitzstr.: Bauarbeiten, Sperrungen von Fahrbahnen und Einbahnstraßenregelungen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
 #: next_check_id: AUGUSTEVIKTORIAALLEE-2026
-#: also_indoor: traffic (G[nur Engelmannweg],T[mittlerweile mit Engelmannweg],H[mittlerweile ein Abschnitt der Allee],no-A,ex-W)
+#: also_indoor: traffic (ex-G[nur Engelmannweg],T[mittlerweile mit Engelmannweg],H[mittlerweile ein Abschnitt der Allee],no-A,ex-W)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.82473.php (Knotenpunkt Auguste-Viktoria-Allee/Antonienstraße, also weter westlich, ist das die gleiche Baumaßnahme? 2. Quartal 2026 bis 4. Quartal 2026)
-#: last_checked: 2026-10-10 vvv
+#: last_checked: 2026-11-08 (traffic) vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED (hier nicht mehr) --- General-Barby-Str.: Sperrung vor der Auguste-Viktoria-Allee, lange Umwege notwendig	q4::inwork 4461,18475 4414,18243
 #: source_id: planb2026:13.31899723,52.56867159,05.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026) (bis 02.10.2026)
@@ -54070,6 +54070,10 @@ Auguste-Viktoria-Allee: Einbahnstraßenregelung	q4::inwork; 4414,18243 4531,18217
 # REMOVED (hier nicht (mehr?)) --- Auguste-Viktoria-Allee: mögliche Sperrung der Fahrbahn	q4::inwork 3876,18348 3909,18342 4009,18322
 # REMOVED (hier nicht mehr?) --- Auguste-Viktoria-Allee: mögliche Sperrung der Fahrbahn	q4::inwork; 4009,18322 4094,18307 4182,18288 4291,18264
 # REMOVED (hier nicht mehr?) --- Auguste-Viktoria-Allee: mögliche Sperrung der Fahrbahn, Radweg existiert, aber vielleicht Einschränkungen?	q3::inwork; 4291,18264 4182,18288 4094,18307 4009,18322
+#: also_indoor: traffic (G,T,W[nur Teil der Hechelstr.],H)
+#: source_id: planb2026:-
+Zobeltitzstr./Hechelstr.	q4::inwork 4644,17978 4739,17960 4862,17934
+Hechelstr./Zobeltitzstr.	q4::inwork 4786,18168 4739,17960 4683,17669
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -55126,7 +55130,7 @@ EOF
 #: source_id: vizapi2026:1107/2026 (bis 30.06.2027)
 #: also_indoor: traffic (re-G,T,H,re-W)
 #: add_fragezeichen: Besteht die Sperrung des Geh- und Radwegs im Kapweg weiterhin?
-#: last_checked: 2026-10-10
+#: last_checked: 2026-11-08 (traffic)
 #: check_frequency: 30d (traffic)
 # REMOVED --- #: next_check: 2026-08-19 (VIZ-Verkehrsmeldung)
 #: next_check: 2027-06-30 (vizapi2026)
@@ -55659,7 +55663,7 @@ EOF
 #: also_indoor: traffic (G[nur Börne,länger],T[Börne+Streu,andere Seiten],H[nur Börne,andere Seite],W[nur Börne,länger])
 #: source_id: LMS-BR:416623/72 viz2021:13.44817,52.54937, (bis 18.12.2026)
 #: source_id: planb2026:13.44761636,52.5484792,12.01.2026, ("Vollsperrung beider Fahrbahnen", bis 29.01.2027) (vorfristig inaktiv)
-#: last_checked: 2026-10-07 vvv
+#: last_checked: 2026-11-08 vvv
 #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) vvv
 # REMOVED --- #: next_check: 2027-01-29 (ex-planb) vvv
 Börnestr.	q4::inwork 13312,16027 13263,15930
@@ -55716,7 +55720,7 @@ EOF
        data  => <<'EOF',
 #: next_check_id: HANSA-2025
 #: note: entweder den gegenüberliegenden Gehweg benutzen, oder der ausgeschilderten Umleitung via Falkenberger Str. und Giersstr. folgen; in der Giersstr. wurde der Bürgersteig zum Geh- und Radweg (benutzungspflichtig) gemacht
-#: last_checked: 2026-10-07
+#: last_checked: 2026-11-08
 #: check_frequency: 30d
 #: next_check: 2026-12-23 (VIZ-Verkehrsmeldung)
 	q4::inwork; 15929,16870 15875,16816 15776,16721 15735,16698 15662,16649
@@ -56785,7 +56789,7 @@ EOF
        text  => 'Lexisstr.: Bauarbeiten, Sperrung der Fahrbahn, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: planb2026:13.44268945,52.48997582,28.09.2026, ("Vollsperrung beider Fahrbahnen", bis 30.10.2026)
+#: source_id: planb2026:13.44268945,52.48997582,28.09.2026, ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (inaktiv)
 #: note: Länge der Sperrung etwa 40m, deshalb q4 -> q3
 #: last_checked: 2026-11-07
 Lexisstr.	q3::inwork 13063,9422 12987,9481
@@ -57303,6 +57307,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731029.php
 #: by: https://www.entwicklungsstadt.de/vollsperrung-der-doerpfeldstrasse-in-adlershof-wird-bis-maerz-2027-gebaut/
 #: by: https://www.entwicklungsstadt.de/doerpfeldstrasse-vor-dem-wandel-was-nach-den-monatelangen-sperrungen-kommt/
+#: by: https://www.entwicklungsstadt.de/vollsperrung-ab-montag-doerpfeldstrasse-monatelang-dicht/
 #: XXX nach den Bauarbeiten: möglicherweise wird der vorhandene Hochbordradweg asphaltiert sein?
 #: next_check: 2027-03-31 (BA-Pressemitteilung: geplantes Ende)
 	q4::inwork 20834,4035 21053,4162 21129,4217 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
@@ -57448,7 +57453,7 @@ EOF
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026) (bis 30.10.2026) (bis 20.11.2026)
 #: also_indoor: traffic (ex-G,ex-T,H,ex-W)
 #: note: manchmal (außerhalb der Arbeitszeiten und am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45, 2026-10-27 Tue 17:25, 2026-10-31 Sat 13:00) oder auch Am Comeniusplatz (seen 2026-10-28 Wed 17:44, 2026-11-01 Sun 09:43)
-#: last_checked: 2026-11-06 vvv
+#: last_checked: 2026-11-08 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
@@ -57525,6 +57530,19 @@ EOF
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
 #: last_checked: 2026-11-07
 	q4::inwork; 13190,9750 13251,9829
+EOF
+     },
+     { from  => 1793919600, # 2026-11-06 00:00
+       until => 1797030000, # 2026-12-12 00:00
+       text  => 'Bornitzstr.: Sperrung der Fahrbahn zwischen Am Gutspark und Ruschestr., voraussichtlich bis 11.12.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check_id: BORNITZ-2026
+#: source_id: planb2026:13.48581988,52.52085312,06.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", zwischen Ruschestr. und Am Gutspark, bis 11.12.2026)
+#: also_indoor: traffic (G[later],T,no-H,no-W)
+#: last_checked: 2026-11-08
+#: next_check: 2026-12-11 (planb)
+	q4::inwork 15950,12886 15747,12880
 EOF
      },
     );

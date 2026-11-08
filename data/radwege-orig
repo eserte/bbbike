@@ -1044,7 +1044,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14582,12174 14621,12168 14709,
 #: source_id: viz2021:13.468303,52.514356,27.02.2023,10:00 (bis 21.04.2023) (bis 5.5.2023) (bis 8.5.2023) (bis 9.6.2023) (inaktiv)
 #: source_id: viz2021:13.472849,52.513853,13.06.2023,06:00 (Leitungsbaustelle, bis 28.07.2023) (bis 31.08.2023) (bis 15.09.2023) (inaktiv)
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2026-10-28
+#: last_checked: 2026-11-08
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2023-02-24
 	RW2; 14994,12121 15110,12107 15361,12071
@@ -3760,7 +3760,7 @@ Bushaltestelle	RW0; 11785,13625 11823,13635 11868,13646 11907,13655
 #: osm_watch: way id="420112505" version="14"
 #: osm_watch: way id="420112509" version="17"
 #: osm_watch: way id="966685279" version="10"
-#: last_checked: 2026-10-16 vvv
+#: last_checked: 2026-11-08 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2028-12-31 (infravelo) vvv
 #: note: Storkower Str., Richtung Südosten
@@ -5428,7 +5428,7 @@ Verbundsteinpflaster	RW1; 15030,3286 14994,3245
 Verbundsteinpflaster	RW1; 16837,17440 16578,17285 16525,17253
 alter Beton, Radweg nur aufgemalt	RW1; 16525,17253 16460,17214
 #: next_check_id: HANSA-2025
-#: last_checked: 2026-10-07 vvv
+#: last_checked: 2026-11-08 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2026-12-23 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2026: Gehweg für Radfahrer frei, RW1; vvv
@@ -5458,7 +5458,6 @@ provisorischer gemeinsamer Rad- und Gehweg	RW2; 15662,16649 15437,16491
 gemeinsamer Geh- und Radweg	RW2; 15130,16098 14967,15885 14936,15857 14808,15788 14653,15738
 # 
 #: note: Hansastr. Richtung NO
-#: next_check_id: HANSA-2025
 #: XXX später wiederherstellen: die ersten Meter werden auf dem Hochbord geführt	RW3; 14653,15738 14808,15788
 #: XXX später wiederherstellen:	RW3; 14808,15788 14936,15857 14967,15885
 #: last_checked: 2026-09-06
@@ -5468,7 +5467,7 @@ gemeinsamer Geh- und Radweg	RW2; 14653,15738 14808,15788 14936,15857 14967,15885
 	RW3; 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
 die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Radfahrer frei) geführt	RW10; 15297,16321 15437,16491
 #: next_check_id: HANSA-2025
-#: last_checked: 2026-10-07
+#: last_checked: 2026-11-08
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2026-12-23 (VIZ-Verkehrsmeldung)
 #: historical_note: früher (bis 2026): Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816

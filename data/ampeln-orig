@@ -77,15 +77,15 @@ Erkner	X::inwork 34742,2111
 # REMOVED --- Scheidemannstr./Reichstag	F::inwork 8373,12416
 # 
 #: next_check_id: HANSA-2025
-#: last_checked: 2026-10-07
+#: last_checked: 2026-11-08
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-11-12 (VIZ-Verkehrsmeldung)
-#: valid: -20261112
+#: next_check: 2026-12-23 (VIZ-Verkehrsmeldung)
+#: valid: -20261223
 Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
-#: last_checked: 2026-10-07
+#: last_checked: 2026-11-08
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-11-12 (VIZ-Verkehrsmeldung)
-#: valid: -20261112
+#: next_check: 2026-12-23 (VIZ-Verkehrsmeldung)
+#: valid: -20261223
 Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
@@ -101,7 +101,7 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv) (bis 21.12.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026) (bis 21.12.2026)
-#: last_checked: 2026-11-01
+#: last_checked: 2026-11-08
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261221

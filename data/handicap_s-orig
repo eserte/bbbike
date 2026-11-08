@@ -20,7 +20,7 @@
 Straße der Pariser Kommune: Radverkehrsführung auf dem Hochbord, eng und Umwege	q2::inwork; 12822,12067 12833,12154
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
-#: last_checked: 2026-11-01
+#: last_checked: 2026-11-08
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
 #: valid: -20261221
@@ -77,7 +77,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-10-28 vvv
+#: last_checked: 2026-11-08 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: planb2026:13.45274687,52.51888366,19.08.2024, ("Sperrung einer Fahrtrichtung", bis 31.12.2026) (vorfristig inaktiv) (bis 31.12.2026)
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
@@ -1595,7 +1595,7 @@ Friedenauer Höhe: einige Fußgänger, Baustelle	q1 6134,7839 6132,7893
 #: osm_watch: note 5163520 5
 #: add_fragezeichen: Ist die Fahrbahn wegen der Hochbauarbeiten weiterhin gesperrt?
 #: note: Laut Baustellenschild bis Anfang 2027
-#: last_checked: 2026-10-16
+#: last_checked: 2026-11-08
 #: check_frequency: 90d
 #: next_check: 2027-03-15
 Erich-Boltze-Str., Verlängerung: Hochbauarbeiten, Fahrbahn gesperrt	q3::inwork 13158,14117 13252,14179
@@ -2467,7 +2467,7 @@ Dieffenbachstr.: Bodenschwellen	q0- 11346,9655 11541,9576
 Oppelner Str.: Bodenschwellen	q0- 12897,10439 12968,10564 12978,10581
 #: XXX_prog: für Anhänger q1
 #: note: drei Schwellen
-Mohneweg: einige Bodenschwellen	q0- 19624,377 19652,366 19728,362
+Mohnweg: einige Bodenschwellen	q0- 19624,377 19652,366 19728,362
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 # 
 # REMOVED --- #: XXX nach den Bauarbeiten wiederherstellen:
