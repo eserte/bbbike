@@ -2,15 +2,13 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeRouting.pm,v 1.44 2007/05/31 20:04:11 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2001,2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2001,2003,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeRouting;
@@ -43,7 +41,6 @@ require myclassstruct;
 	 Velocity => "\$",
 	 UseXS => "\$", UseCache => "\$",
 	 PreferCache => "\$",
-	 UseNetServer => "\$",
 	 ZIPLookArgs => "\$",
 	 SearchArgs => "\$", Algorithm => "\$",
 	 CGI => "\$", BrowserInfo => "\$",
@@ -145,7 +142,6 @@ sub init_context {
     $context->Velocity(kmh2ms(20));
     $context->Scope("city");
     $context->UseXS(1);
-    $context->UseNetServer(0);
     $context->UseCache(1);
     $context->PreferCache(0);
     $context->Algorithm("A*");
@@ -310,7 +306,6 @@ sub init_net {
 				}
 			    }
 			},
-			NoNewFromServer => !$context->UseNetServer,
 		       ));
 	}
     }

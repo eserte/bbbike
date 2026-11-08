@@ -2,15 +2,13 @@
 # -*- perl -*-
 
 #
-# $Id: generate_cache.pl,v 1.4 2003/08/24 23:29:56 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # pre-generate caches
@@ -41,7 +39,6 @@ Strassen::set_verbose($v);
 my $routing = BBBikeRouting->new->init_context;
 my $context = $routing->Context;
 $context->Algorithm($algorithm);
-$context->UseNetServer(0);
 $context->UseCache(1);
 $context->UseXS(0); # see comment in tkbabybike
 $context->PreferCache(1);

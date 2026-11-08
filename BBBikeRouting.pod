@@ -111,11 +111,6 @@ creation.
 Use caches, if possible. This will speed up the creation of some
 internal data structures.
 
-=item UseNetServer
-
-Use the net server started by the C<bbbikestrserver> script.
-This can be used instead of the XS and Cache speedups.
-
 =item SearchArgs
 
 An array reference with more search arguments. See the
@@ -210,6 +205,12 @@ contain one-way streets, blocked streets, and blocked paths. Extra
 blocked streets for cars only should be put into the file
 F<data/gesperrt_car>. It is assumed that there are no blocked streets
 for pedestrians at all.
+
+=head2 HISTORY
+
+Until 2026-11-08 the field C<UseNetServer> was available, which was
+used in conjuction with the C<bbbikestrserver>, which was also
+removed.
 
 =head1 AUTHOR
 

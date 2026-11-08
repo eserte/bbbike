@@ -16,58 +16,6 @@ use strict;
 use vars @StrassenNetz::EXPORT_OK;
 
 ### AutoLoad Sub
-sub new_from_server {
-    my $class = shift;
-    my $server_name = shift || 'bbb';
-    # nachgucken, ob vielleicht str_server.pl läuft
-
-    my $net;
-
-    my $try_sharelite = sub {
-	require IPC::ShareLite;
-        local $SIG{__DIE__};
-	require Storable;
-	my %options = (
-		       -key => '1211', # XXX get from var
-		       -create => 'no',
-		       -exclusive => 'no',
-		       -destroy => 'no',
-		      );
-	my $share = IPC::ShareLite->new(%options) or die $!;
-	warn "Shared memory anzapfen...\n" if ($VERBOSE);
-	$net = Storable::thaw($share->fetch);
-	use_data_format($FMT_HASH) if $net;
-    };
-
-    my $try_shareable = sub {
-	require IPC::Shareable;
-	IPC::Shareable->VERSION(0.60); # no more no/yes
-	my %options = (
-		       'key' => 'paint',
-		       'create' => 0,
-		       'exclusive' => 0,
-		       'mode' => 0644,
-		       'destroy' => 0,
-		      );
-	warn "Shared memory anzapfen...\n" if ($VERBOSE);
-	tie $net, 'IPC::Shareable', $server_name, \%options;
-	#tie $net->{Net}, 'IPC::Shareable', $server_name."1", \%options;
-	#tie $net->{Net2Name}, 'IPC::Shareable', $server_name."2", \%options;
-	use_data_format($FMT_HASH) if $net;
-    };
-
-    eval { $try_sharelite->() };
-    warn $@ if !$net && $VERBOSE;
-    return $net if $net;
-
-    eval { $try_shareable->() };
-    warn $@ if !$net && $VERBOSE;
-    return $net if $net;
-
-    undef;
-}
-
-### AutoLoad Sub
 sub statistics {
     my $self = shift;
     my $msg = '';

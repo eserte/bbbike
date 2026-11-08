@@ -79,23 +79,19 @@ sub new {
     bless $self, $class;
 }
 
-# verwendet entweder new_from_server (wenn nicht NoNewFromServer spezifiziert
-# wurde) oder new
+# formerly used either new_from_server (unless NoNewFromServer was not specified) or new
+# now it's just enw left
 # XXX einheitliches Mapping strassen/multistrassen => shareable object
 # XXX $class vs. __PACKAGE__?
 ### AutoLoad Sub
 sub new_from_best {
     my($class, %args) = @_;
     my $net;
-    $net = __PACKAGE__->new_from_server
-	unless $args{NoNewFromServer};
-    if (!$net) {
-	die "Missing Strassen parameter" if !$args{Strassen};
-	$net = __PACKAGE__->new($args{Strassen});
-	if ($args{OnCreate}) {
-	    my $meth = $args{OnCreate};
-	    $meth->($net);
-	}
+    die "Missing Strassen parameter" if !$args{Strassen};
+    $net = __PACKAGE__->new($args{Strassen});
+    if ($args{OnCreate}) {
+	my $meth = $args{OnCreate};
+	$meth->($net);
     }
     $net;
 }

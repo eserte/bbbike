@@ -45,7 +45,7 @@ my $num_tests = 80; # basic number of tests
 use vars qw($single $all $common $bench $v $do_xxx);
 
 use vars qw($token %times $previous_path $previous_token
-	    $usexs $algorithm @algorithm $usenetserver $usecache $cachetype);
+	    $usexs $algorithm @algorithm $usecache $cachetype);
 
 $common = 1;
 if (!GetOptions("full|slow|all" => sub { $all = 1 },
@@ -56,14 +56,13 @@ if (!GetOptions("full|slow|all" => sub { $all = 1 },
 
 		"usexs!"        => sub { $common = 0; $usexs = $_[1] },
 		'algorithm=s@'  => sub { $common = 0; push @algorithm, $_[1] },
-		"usenetserver!" => sub { $common = 0; $usenetserver = $_[1] },
 		"usecache!"     => sub { $common = 0; $usecache = $_[1] },
 		"cachetype=s"   => sub { $common = 0; $cachetype = $_[1] },
 	       )) {
     die <<EOF;
 usage: $0 [-full|-slow|-all] [-single] [-bench] [-v [-v ...]] [-xxx]
           [-[no]usexs] [-algorithm A*|C-A*|C-A*-2]
-          [-[no]usenetserver] [-[no]usecache] [-cachetype ...]
+          [-[no]usecache] [-cachetype ...]
 EOF
 }
 
@@ -74,31 +73,26 @@ if (defined $v && $v > 1) {
     Strassen::set_verbose(1);
 }
 
-my $bbbikestrserver = "$FindBin::RealBin/../miscsrc/bbbikestrserver";
-if (-r $bbbikestrserver) {
-    system($^X, $bbbikestrserver, "-restart");
-}
-
 my @runs;
 
 #$StrassenNetz::use_heap = 1;#XXX
 
 if ($common) {
     push @runs,
-	#xs,ns,cache,cachetype,algorithm,extra options
+	#xs,cache,cachetype,algorithm,extra options
 	(
-	 [1, 0, 1, "CDB_File", "C-A*"], # standard bbbike with C-A* set
-	 [1, 0, 1, "CDB_File", "C-A*-2"], # radlstadtplan
-	 [1, 0, 1, "Storable", "A*"], # as above, without CDB_File
-	 [0, 0, 1, "Storable", "A*"], # standard bbbike without anything
-	 [1, 0, 1, "CDB_File", "A*"], # standard bbbike with compilation
+	 [1, 1, "CDB_File", "C-A*"], # standard bbbike with C-A* set
+	 [1, 1, "CDB_File", "C-A*-2"], # radlstadtplan
+	 [1, 1, "Storable", "A*"], # as above, without CDB_File
+	 [0, 1, "Storable", "A*"], # standard bbbike without anything
+	 [1, 1, "CDB_File", "A*"], # standard bbbike with compilation
 
-	 [1, 0, 1, "CDB_File", "A*"], # cgi on radzeit (?)
+	 [1, 1, "CDB_File", "A*"], # cgi on radzeit (?)
 
 	);
 } elsif (!$all) {
     for my $algorithm (@algorithm) {
-	push @runs, [$usexs, $usenetserver, $usecache,
+	push @runs, [$usexs, $usecache,
 		     $cachetype, $algorithm];
     }
 } else {
@@ -120,21 +114,12 @@ if ($common) {
     }
 
     for $usexs (0, 1) {
-	for $usenetserver (0, 1) {
-	    next if ($usenetserver && !-r $bbbikestrserver);
-	    for $usecache (0, 1) {
-		my @trycache = $usecache ? @cachetypes : undef;
-		for $cachetype (@trycache) {
-		    for $algorithm ("C-A*-2", "C-A*", "A*") {
-			# remove meaningless combinations:
-			if ($algorithm =~ /^C-A*/) {
-			    next if $usenetserver;
-			    # $usexs is probably meaningful, because of some
-			    # helper functions like strecke_XS
-			}
-			push @runs, [$usexs, $usenetserver, $usecache,
-				     $cachetype, $algorithm];
-		    }
+	for $usecache (0, 1) {
+	    my @trycache = $usecache ? @cachetypes : undef;
+	    for $cachetype (@trycache) {
+		for $algorithm ("C-A*-2", "C-A*", "A*") {
+		    push @runs, [$usexs, $usecache,
+				 $cachetype, $algorithm];
 		}
 	    }
 	}
@@ -144,7 +129,7 @@ if ($common) {
 plan tests => $num_tests * @runs;
 
 for my $rundef (@runs) {
-    ($usexs, $usenetserver, $usecache, $cachetype, $algorithm)
+    ($usexs, $usecache, $cachetype, $algorithm)
 	= @$rundef;
  SKIP: {
 	skip "C-A*-2 does not work on Windows (because of mmap)", $num_tests
@@ -154,17 +139,13 @@ for my $rundef (@runs) {
 	    $times{$token} += $t->[$_] for (1..4);
 	} else {
 	    if (@runs > 1) {
-		print "# xs=$usexs netserver=$usenetserver cache=$usecache cachetype=$cachetype algorithm=$algorithm\n";
+		print "# xs=$usexs cache=$usecache cachetype=$cachetype algorithm=$algorithm\n";
 	    }
 	    do_tests();
 	}
     }
 }
 
-
-if (-r $bbbikestrserver) {
-    system($^X, $bbbikestrserver, "-stop");
-}
 
 if ($bench) {
     print STDERR join("\n",
@@ -177,7 +158,6 @@ sub _my_init_context {
     my $context = shift;
     $context->Algorithm($algorithm)       if defined $algorithm;
     $context->UseXS($usexs)               if defined $usexs;
-    $context->UseNetServer($usenetserver) if defined $usenetserver;
     $context->UseCache($usecache)         if defined $usecache;
     $context->MultipleChoices(0);
 }
@@ -203,7 +183,7 @@ sub do_tests {
     if ($do_xxx) { goto XXX }
 
     $previous_token = $token;
-    $token = "Algorithm=".$context->Algorithm.", UseXS=".$context->UseXS.", UseNetServer=".$context->UseNetServer.", UseCache=".$context->UseCache.(defined $cachetype ? " ($cachetype)" : "");
+    $token = "Algorithm=".$context->Algorithm.", UseXS=".$context->UseXS.", UseCache=".$context->UseCache.(defined $cachetype ? " ($cachetype)" : "");
     if ($v) {
 	print STDERR "$token\n";
     }
