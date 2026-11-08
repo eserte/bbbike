@@ -34,7 +34,7 @@ use IPC::Run qw(run);
     }
 }
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 my $osm_watch_list = "$bbbike_rootdir/tmp/osm_watch_list";
 my $osm_file = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
@@ -94,8 +94,8 @@ if ($method eq 'api') { # caching not needed with overpass
 	File::Path::make_path($cache_dir);
 	HTTP::Cache::Transparent::init({
 	    BasePath => $cache_dir,
-	    MaxAge   => 24,
-	    NoUpdate => 86400,
+	    MaxAge   => 12,
+	    NoUpdate => 12*3600,
 	});
 	# XXX probably need to implement a cleanup mechanism
     } else {
