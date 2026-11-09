@@ -16057,6 +16057,7 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: source_id: planb2026:13.42596967,52.49412526,01.01.2026, ("Vollsperrung beider Fahrbahnen", 01.01.2026 bis 31.12.2028, 3-Jahres-Verlängerung?)
 #: note: der Auf/Abbau dürfte mindestens eine weitere Stunde dauern, in tempex eingerechnet
 #: tempex: (tu,fr) T10:00-T19:30, sa T10:00-T18:00
 	q4::temp:clock 11543,10015 11669,9987 11880,9874
@@ -33541,7 +33542,7 @@ EOF
 #: source_id: LMS-BR:228995/72 viz2021:13.42885,52.47792,01.04.2025,12:21 viz2021:13.42885,52.47792, viz2021:13.42885,52.47792, (bis 31.12.2025) (bis 31.12.2026)
 #: source_id: planb2026:13.42897892,52.47801051,07.07.2025, ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 #: osm_watch: way id="495949633" version="19"
-#: osm_watch: note 4199651 6
+#: osm_watch: note 4199651 7
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mainzer-strasse-bis-maerz-gesperrt_a425301
 #: add_fragezeichen: Bestehen die Bauarbeiten weiterhin?
 #: also_indoor: traffic (G,H,B,T,W,A)
@@ -45779,7 +45780,7 @@ EOF
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-11-06 vvv
+#: last_checked: 2026-11-09 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 #  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
@@ -50617,7 +50618,7 @@ EOF
 #: also_indoor: traffic (ex-G,ex-T,ex-B)
 #: source_id: planb2026:13.41359234,52.51568692,13.12.2023, ("Fahrstreifen-Reduzierung" in der Stralauer Allee, bis 30.10.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:427613/72 viz2021:13.41227,52.51584, vizapi2026:1209/2026 (Verengung in der Stralauer Allee, bis 16.11.2026)
-#: last_checked: 2026-11-02
+#: last_checked: 2026-11-09
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-10-30 (ex-planb)
 	q4::inwork 10951,12249 10957,12401
@@ -51646,7 +51647,7 @@ EOF
 #: source_id: planb2026:13.46532471,52.49881497,25.03.2026,07:00 ("Sicherung gemäß Vz.-plan", kleinerer Bereich in der Corinthstr., bis 15.10.2026) (inaktiv)
 #: source_id: planb2026:13.4633402,52.49950126,03.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 20.11.2026)
 #: add_fragezeichen: Ist die Anbindung der Corinthstr. an der Bödikerstr. weiterhin gesperrt?
-#: last_checked: 2026-11-03
+#: last_checked: 2026-11-09
 #: next_check: 2026-11-20 (planb)
 Corinthstr./Bödikerstr.: Bauarbeiten, Sperrung östlich des Kreuzungsbereichs	q3::inwork 14447,10491 14608,10409
 # REMOVED --- #: next_check_id: BAB100-2022 --- #: note: Halteverbotsschilder bis 16.02.2026
@@ -52552,6 +52553,7 @@ EOF
 #: source_id: planb2026:-
 #: source_id: LMS-BR:420184/72 viz2021:13.29665,52.50146, (bis 31.10.2026) (inaktiv)
 #: source_id: planb2026:13.2970004,52.50135621,09.11.2026,07:00 ("Fahrstreifen-Reduzierung", bis 31.03.2027)
+#: source_id: LMS-BR:427843/72 viz2021:13.296683,52.501449,09.11.2026,07:00 (bis 31.03.2027)
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten abgeschlossen? vvv --- #: last_checked: 2026-07-20 (traffic) vvv --- #: check_frequency: 14d (traffic) vvv
 # REMOVED --- #: next_check: 2026-01-31 vvv
 # REMOVED (hier fertig) --- Damaschkestr.: komplett gesperrt	q4::inwork 3027,10560 3123,10504
@@ -55293,7 +55295,7 @@ EOF
 #: note: wegen der Kürze der Baustelle: q4 -> q3
 #: note: Laut Baustellenschild der Wasserbetriebe Bauarbeiten bis Oktober 2027 (!)
 #: XXX Sind die Bauarbeiten beendet?
-#: last_checked: 2026-11-06
+#: last_checked: 2026-11-09
 #: check_frequency: 30d
 #: next_check: 2026-12-11 (planb)
 # REMOVED --- #: next_check: 2027-10-31 (Wasserbetriebe, evtl. Gesamtmaßnahme)
@@ -55450,6 +55452,8 @@ EOF
 #: by: https://www.entwicklungsstadt.de/mehr-gruen-mehr-raum-bauarbeiten-am-platz-der-luftbruecke-gestartet/ (erster Bauabschnitt bis Anfang 2028)
 #: by: https://www.entwicklungsstadt.de/luftbruecke-am-flughafen-tempelhof-geschichte-und-umbau/
 #: by: https://www.entwicklungsstadt.de/neue-piazza-und-quartiersplatz-grossbaustelle-am-platz-der-luftbruecke/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1736304.php
+#: by: https://www.entwicklungsstadt.de/grossbaustelle-am-platz-der-luftbruecke-planung-erhaelt-bundesweiten-preis/
 #: source_id: planb2026:13.38263329,52.48208211,21.04.2026,07:00 ("Fahrbahneinengung", bis 14.09.2026) (inaktiv) (bis 31.07.2027)
 #: source_id: LMS-BR:415346/72 vizapi2026:699/2026 (bis 08.05.2027 + weitere Arbeiten) (bis 31.07.2027)
 #: osm_watch: note 5278398 6
@@ -55683,7 +55687,7 @@ EOF
 #: source_id: planb2026:-
 #: osm_watch: note 4999840 2
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-10-27 (mapillary)
+#: last_checked: 2026-11-09 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 8179,18756 8257,18684 8425,18542
 EOF
@@ -57308,6 +57312,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/vollsperrung-der-doerpfeldstrasse-in-adlershof-wird-bis-maerz-2027-gebaut/
 #: by: https://www.entwicklungsstadt.de/doerpfeldstrasse-vor-dem-wandel-was-nach-den-monatelangen-sperrungen-kommt/
 #: by: https://www.entwicklungsstadt.de/vollsperrung-ab-montag-doerpfeldstrasse-monatelang-dicht/
+#: source_id: bvg2024:n64#HIM_FREETEXT_372814
 #: XXX nach den Bauarbeiten: möglicherweise wird der vorhandene Hochbordradweg asphaltiert sein?
 #: next_check: 2027-03-31 (BA-Pressemitteilung: geplantes Ende)
 	q4::inwork 20834,4035 21053,4162 21129,4217 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
@@ -57419,10 +57424,10 @@ EOF
        text  => 'Schwendenerstr.: Bauarbeiten, Sperrung, evtl. ist auch der Radverkehr betroffen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (G,T,H,no-W)
-#: last_checked: 2026-10-27 (traffic)
+#: also_indoor: traffic (G,ex-T,ex-H,no-W)
+#: last_checked: 2026-11-09 (traffic)
 #: source_id: planb2026:13.29440223,52.45257935,29.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", allerdings hier östlich der Fabeckstr., bis 18.12.2026)
-#: check_frequency: 14d (traffic)
+#: check_frequency: 7d (traffic)
 #: next_check: 2026-12-18 (planb)
 	q4::inwork 3072,5062 2992,5011
 EOF
@@ -57453,7 +57458,7 @@ EOF
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026) (bis 30.10.2026) (bis 20.11.2026)
 #: also_indoor: traffic (ex-G,ex-T,H,ex-W)
 #: note: manchmal (außerhalb der Arbeitszeiten und am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45, 2026-10-27 Tue 17:25, 2026-10-31 Sat 13:00) oder auch Am Comeniusplatz (seen 2026-10-28 Wed 17:44, 2026-11-01 Sun 09:43)
-#: last_checked: 2026-11-08 vvv
+#: last_checked: 2026-11-09 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
@@ -57516,8 +57521,10 @@ EOF
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261106
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mzu6j7qums23
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiezuqsluk7drexzzrw5wcnksr5bslbmcr2mddb5p5lfxtgfq42uja
 #: source_id: planb2026:13.4089743,52.53027122,03.11.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 20.01.2027)
-#: source_id: vizapi2026:1191/2026 (09.11.2026 bis 21.01.2027)
+#: source_id: LMS-BR:427851/72 viz2021:13.41032,52.52984,09.11.2026,07:00 vizapi2026:1191/2026 (09.11.2026 bis 21.01.2027)
 	q4::inwork; 10779,13793 10703,13832
 EOF
      },
@@ -57543,6 +57550,51 @@ EOF
 #: last_checked: 2026-11-08
 #: next_check: 2026-12-11 (planb)
 	q4::inwork 15950,12886 15747,12880
+EOF
+     },
+     { from  => 1794092400, # 2026-11-08 00:00
+       until => 1798498800, # 2026-12-29 00:00
+       text  => 'Düppelstr.: Bauarbeiten, Sperrung an der Kreuzung Kieler Str., vom 9.11.2026 bis 28.12.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: also_indoor: traffic (G,no-T,H,W)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mzu6s7nffu2y
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreia4ahfsntw6vpvyi4bfvbigd32jynrgjcte4l7gokjgvvmozyzrnu
+#: by: https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreidf6e33pii4quagcqow27uhkxcvnj23li26rtngplpcqqb7jx4ksa (keine Ausnahme für den Radverkehr zu sehen)
+#: source_id: bvg2024:170#HIM_FREETEXT_372505
+#: source_id: planb2026:13.32602539,52.45791691,09.11.2026, ("Sicherung gemäß Vz.-plan", bis 28.12.2026)
+#: source_id: LMS-BR:427852/72 viz2021:13.32488,52.45825,09.11.2026,07:00 vizapi2026:1200/2026 ("Vollsperrung für den Kfz-Verkehr", 09.11.2026 bis 07.12.2026)
+#: next_check: 2026-12-07 (VIZ-Verkehrsmeldung: früheres Ende?)
+Düppelstr.	q4::inwork 5141,5744 5114,5705
+EOF
+     },
+     { from  => 1794205959, # 2026-11-09 07:32
+       until => 1797894000, # 2026-12-22 00:00
+       text  => 'Torstr. -> Mollstr.: Überfahrt in Höhe Karl-Liebknecht-Str. gesperrt, 09.11.2026 bis 21.12.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mzu5kt4fa42y
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiadd3ixvstx4vljk6yuwzjl2zzfj25fhe47vmc6me2jdwjdiggz64
+#: by: https://fahrinfo.vbb.de/him-uploads/1793604220906_1.jpg
+#: source_id: planb2026:13.41635987,52.52663132,10.11.2026, ("Fahrstreifen-Reduzierung", bis 20.12.2026)
+#: source_id: bvg2024:142#HIM_FREETEXT_369942
+#: source_id: LMS-BR:427845/72 viz2021:13.41564,52.52676,09.11.2026,07:00 (bis 21.12.2026)
+#: source_id: LMS-BR:427846/72 viz2021:13.41537,52.52689,09.11.2026,07:00 (bis 21.12.2026)
+#: source_id: LMS-BR:427844/72 viz2021:13.415369,52.526891,09.11.2026,07:00 vizapi2026:1199/2026 ("Gleisbauarbeiten", 09.11.2026 bis 21.12.2026)
+#: note: offizielle Umleitung möglicherweise über Fußgängerampel Wadzeckstr.
+#: note: Torstr. -> Prenzlauer Allee und Prenzlauer Allee -> Mollstr.: möglicherweise ist es effizienter, die Fußgängerüberwege zu benutzen
+	3::inwork 11111,13518 11160,13492 11216,13451
+EOF
+     },
+     { from  => $isodate2epoch->("2026-11-09 00:00:00"),
+       until => $isodate2epoch->("2026-12-04 23:59:59"),
+       text  => 'Joachim-Karnatz-Allee: Bauarbeiten, mögliche Sperrung der Fahrbahn, evtl. ist auch der Radverkehr betroffen, 09.11.2026 bis 04.12.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: source_id: planb2026:13.35627482,52.5194664,09.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 04.12.2026)
+#: also_indoor: traffic (no-G,T,no-W,no-H)
+# REMOVED --- #: next_check: 2026-11-09 (planb)
+Joachim-Karnatz-Allee	q4::inwork 7077,12575 7139,12589
 EOF
      },
     );
