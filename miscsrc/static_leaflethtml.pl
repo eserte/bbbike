@@ -26,7 +26,7 @@ use BBBikeLeaflet::Template;
 my $root_url = 'http://bbbike.de';
 my $shortcut_icon;
 my $geojson_file;
-my $geojsonp_url;
+my @geojsonp_urls;
 my $show_feature_list = 1;
 my $leaflet_ver;
 my $title;
@@ -34,7 +34,7 @@ my $disable_routing;
 GetOptions(
 	   'rooturl=s'              => \$root_url,
 	   'geojson|geojson-file=s' => \$geojson_file,
-	   'geojsonp-url=s'         => \$geojsonp_url,
+	   'geojsonp-url=s'         => \@geojsonp_urls,
 	   'show-feature-list!'     => \$show_feature_list,
 	   'leafletver=s'           => \$leaflet_ver,
 	   'title=s'                => \$title,
@@ -43,7 +43,7 @@ GetOptions(
 	  )
     or die "usage: $0 [-rooturl ...] [-geojson ... | -geojsonp-url ...] [-title ...] [-disable-routing] [-shortcut-icon url]\n";
 
-($geojson_file && $geojsonp_url)
+($geojson_file && @geojsonp_urls)
     and die "Can't use -geojson and -geojsonp-url together.\n";
 
 my $title_html;
@@ -55,7 +55,7 @@ if (defined $title) {
 my $tpl = BBBikeLeaflet::Template->new(
 				       root_url     => $root_url,
 				       geojson_file => $geojson_file,
-				       geojsonp_url  => $geojsonp_url,
+				       geojsonp_urls => \@geojsonp_urls,
 				       show_feature_list => $show_feature_list,
 				       leaflet_ver => $leaflet_ver,
 				       title_html => $title_html,

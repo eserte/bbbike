@@ -668,21 +668,31 @@ function doLeaflet() {
     if (initialRouteGeojson) {
 	showRoute(initialRouteGeojson);
 	setViewLatLng = L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]);
-    } else if (initialGeojson) {
+    } else if ((typeof initialGeojsons !== 'undefined' && initialGeojsons.length) || initialGeojson) {
+	var allGeojsons = (typeof initialGeojsons !== 'undefined' && initialGeojsons.length) ? initialGeojsons : [ initialGeojson ];
+	var id = 0;
 	if (show_feature_list) { // auto-id numbering
-	    var features = initialGeojson.features;
-	    if (!features && initialGeojson.type == 'Feature') {
-		features = [ initialGeojson ];
-	    }
-	    var id = 0;
-	    for(var i = 0; i < features.length; i++) {
-		features[i].properties.id = ++id;
+	    for(var j = 0; j < allGeojsons.length; j++) {
+		var gj = allGeojsons[j];
+		var features = gj.features;
+		if (!features && gj.type == 'Feature') {
+		    features = [ gj ];
+		}
+		if (features) {
+		    for(var i = 0; i < features.length; i++) {
+			features[i].properties.id = ++id;
+		    }
+		}
 	    }
 	}
 	currentLayer = map; // XXX hacky! must be set before creating geoJson layer (which would call onEachFeature callback)
-	var l = L.geoJson(initialGeojson, stdGeojsonLayerOptions);
-	l.addTo(map);
-	setViewLayer = l;
+	var layerGroup = L.featureGroup();
+	for(var j = 0; j < allGeojsons.length; j++) {
+	    var l = L.geoJson(allGeojsons[j], stdGeojsonLayerOptions);
+	    layerGroup.addLayer(l);
+	}
+	layerGroup.addTo(map);
+	setViewLayer = layerGroup;
     } else {
 	var lat = q.get("mlat");
 	var lon = q.get("mlon");
@@ -712,21 +722,28 @@ function doLeaflet() {
 	map.setView(setViewLatLng, setViewZoom);
     }
 
-    if (show_feature_list && initialGeojson) {
+    if (show_feature_list && ((typeof initialGeojsons !== 'undefined' && initialGeojsons.length) || initialGeojson)) {
 	var listHtml = '';
-	var features = initialGeojson.features;
-	if (!features && initialGeojson.type == 'Feature') {
-	    features = [ initialGeojson ];
-	}
-	if (!features || !features.length) {
-	    listHtml += 'no features in geojson file<br>';
-	} else {
-	    for(var i = 0; i < features.length; i++) {
-		var featureProperties = features[i].properties
-		if (featureProperties) {
-		    listHtml += "\n" + '<a href="javascript:showMarker(' + featureProperties.id + ')">' + featureProperties.name + '</a><br><hr>';
+	var allGeojsons = (typeof initialGeojsons !== 'undefined' && initialGeojsons.length) ? initialGeojsons : [ initialGeojson ];
+	var totalFeaturesCount = 0;
+	for(var j = 0; j < allGeojsons.length; j++) {
+	    var gj = allGeojsons[j];
+	    var features = gj.features;
+	    if (!features && gj.type == 'Feature') {
+		features = [ gj ];
+	    }
+	    if (features && features.length) {
+		totalFeaturesCount += features.length;
+		for(var i = 0; i < features.length; i++) {
+		    var featureProperties = features[i].properties;
+		    if (featureProperties) {
+			listHtml += "\n" + '<a href="javascript:showMarker(' + featureProperties.id + ')">' + featureProperties.name + '</a><br><hr>';
+		    }
 		}
 	    }
+	}
+	if (!totalFeaturesCount) {
+	    listHtml += 'no features in geojson file<br>';
 	}
 
 	setFeatureListContent(listHtml);

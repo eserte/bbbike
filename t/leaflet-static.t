@@ -73,4 +73,27 @@ eq_or_diff $html3, $html, 'as_string output is the same';
     }
 }
 
+{
+    my $blt = BBBikeLeaflet::Template->new(geojsonp_url => "http://example.com/single.jsonp");
+    my $html = $blt->as_string;
+    like_html $html, qr{<script type="application/javascript" src="http://example\.com/single\.jsonp"></script>}, 'single geojsonp_url found';
+    like_html $html, qr{function geoJsonResponse\(geoJson\)}, 'geoJsonResponse callback defined';
+    like_html $html, qr{initialGeojsons\.push\(geoJson\)}, 'geoJsonResponse pushes to initialGeojsons';
+}
+
+{
+    my $blt = BBBikeLeaflet::Template->new(geojsonp_urls => ["http://example.com/one.jsonp", "http://example.com/two.jsonp"]);
+    my $html = $blt->as_string;
+    like_html $html, qr{<script type="application/javascript" src="http://example\.com/one\.jsonp"></script>}, 'first geojsonp_url found';
+    like_html $html, qr{<script type="application/javascript" src="http://example\.com/two\.jsonp"></script>}, 'second geojsonp_url found';
+}
+
+{
+    my $ofh2 = IO::Pipe->new->reader($^X, $script, '-rooturl', '', '--no-show-feature-list', '--geojsonp-url', 'http://example.com/cmd1.jsonp', '--geojsonp-url', 'http://example.com/cmd2.jsonp')
+	or die $!;
+    my $html_cli = do { local $/; <$ofh2> };
+    like_html $html_cli, qr{<script type="application/javascript" src="http://example\.com/cmd1\.jsonp"></script>}, 'cli first geojsonp_url found';
+    like_html $html_cli, qr{<script type="application/javascript" src="http://example\.com/cmd2\.jsonp"></script>}, 'cli second geojsonp_url found';
+}
+
 __END__
