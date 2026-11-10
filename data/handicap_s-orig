@@ -12,7 +12,7 @@
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
 #: source_id: bvg2024:240#HIM_FREETEXT_366164
-#: last_checked: 2026-11-09
+#: last_checked: 2026-11-10
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
 #: valid: -20261221
@@ -128,7 +128,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (bis 20.11.2026)
 #: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026) (bis 20.11.2026)
 #: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026) (bis 20.11.2026)
-#: last_checked: 2026-11-09 vvv
+#: last_checked: 2026-11-10 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
 Singerstr.: Sperrung an der Einmündung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
@@ -312,9 +312,9 @@ Mariendorfer Damm: Gehweg für Radfahrer frei, Engstellen	q2::inwork; 9621,3155 9
 #: valid: -20261113
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), teilweise sehr enger Gehweg (parkende Autos auf dem Bürgersteig!) für Radfahrer frei	q3::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260706 (weitere Arbeiten bis ca. 2029)
-#: source_id: planb2026:13.36252186,52.45206699,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 13.11.2026)
+#: source_id: planb2026:13.36252186,52.45206699,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 13.11.2026) (vorfristig inaktiv)
 #: last_checked: 2026-07-19
-#: next_check: 2026-11-13 (VIZ + planb)
+#: next_check: 2026-11-13 (VIZ + ex-planb)
 #: valid: -20261113
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für Radfahrer frei	q3::inwork; 7625,5231 7694,5135
 # 
@@ -668,7 +668,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX verursachende Bauarbeiten sind die am House of One
 #: osm_watch: way id="194079586" version="5"
-#: last_checked: 2026-11-09
+#: last_checked: 2026-11-10
 #: check_frequency: 90d
 #: next_check: 2028-03-31 (VIZ-Verkehrsmeldung, entwicklungsstadt)
 Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 10418,12016 10460,11979

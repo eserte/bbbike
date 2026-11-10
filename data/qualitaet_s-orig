@@ -1288,7 +1288,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: osm_watch: way id="934995901" version="14"
 #: osm_watch: way id="934995899" version="16"
 #: osm_watch: way id="22820618" version="25"
-#: source_id: planb2026:13.46027116,52.50926464,04.06.2026,07:35 ("Fahrstreifen-Reduzierung", bis 30.11.2026)
+#: source_id: planb2026:13.46027116,52.50926464,04.06.2026,07:35 ("Fahrstreifen-Reduzierung", bis 30.11.2026) (vorfristig inaktiv)
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
@@ -12602,6 +12602,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_370275 (Umleitung ab 30.10.2026)
 #: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026)
 #: source_id: vizapi2026:1158/2026 (Kraneinsatz 30.10.2026 bis 31.10.2026, hier: Sperrung für Kfz-Verkehr)
+#: source_id: bvg2024:240#HIM_FREETEXT_373030 (ab 16.11.2026)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
 #: last_checked: 2026-11-04
 #: check_frequency: 45d
@@ -19524,12 +19525,13 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: by: https://mein.berlin.de/projekte/gutspark-neukladow-touristische-gelandeerschliessu/
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1699630.php
 #: by: https://www.entwicklungsstadt.de/gutspark-neukladow-wird-erneuert-das-sind-die-naechsten-schritte/
+#: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/neue-rosen-neue-plane-neue-wege-der-gutspark-neukladow-wird-zur-berliner-schonheit-16251299.html (Asphaltarbeiten: 9.11.-27.11.2026 (voraussichtlich))
 #: XXX Hier soll asphaltiert werden
 #: osm_watch: way id="205746338" version="10"
 #: osm_watch: note 5515221 1
-#: last_checked: 2026-09-12 (osm note)
+#: last_checked: 2026-11-09 (Tsp)
 # REMOVED --- #: check_frequency: 45d
-#: next_check: 2026-11-15 (BA-Pressemitteilung (Herbst 2026))
+#: next_check: 2026-11-27 (Tsp)
 #: corrected_by: srt (wassergebundene Decke, etwas sandig, Q1- -> ..., Bauzustand)
 Ernst-Liesegang-Ufer: unbefestigte Baustraße	Q2 -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 #: corrected_by: srt (wassergebundene Decke, Q1 -> ..., Bauzustand)
