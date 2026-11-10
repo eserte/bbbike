@@ -37,6 +37,7 @@ sub new {
     my $show_expired_session_msg = delete $args{show_expired_session_msg};
     my $geojson_file             = delete $args{geojson_file};
     my $geojsonp_url             = delete $args{geojsonp_url};
+    my $geojsonp_urls            = delete $args{geojsonp_urls};
     my $replay_trk               = delete $args{replay_trk};
     my $loc                      = delete $args{loc};
     my $show_feature_list        = delete $args{show_feature_list};
@@ -46,6 +47,15 @@ sub new {
     my $title_html               = delete $args{title_html};
 
     die 'Unhandled arguments: ' . join(', ', keys %args) if %args;
+
+    my @all_geojsonp_urls;
+    if ($geojsonp_urls) {
+	push @all_geojsonp_urls, (ref $geojsonp_urls eq 'ARRAY' ? @$geojsonp_urls : $geojsonp_urls);
+    }
+    if ($geojsonp_url) {
+	push @all_geojsonp_urls, (ref $geojsonp_url eq 'ARRAY' ? @$geojsonp_url : $geojsonp_url);
+    }
+    @all_geojsonp_urls = grep { defined $_ && length $_ } @all_geojsonp_urls;
 
     if ($enable_accel && !$enable_upload) { # no sense to enable accelerometer without upload functionality
 	$enable_upload = 1;
@@ -65,7 +75,7 @@ sub new {
 	   route_title              => $route_title,
 	   show_expired_session_msg => $show_expired_session_msg,
 	   geojson_file             => $geojson_file,
-	   geojsonp_url             => $geojsonp_url,
+	   geojsonp_urls            => \@all_geojsonp_urls,
 	   replay_trk               => $replay_trk,
 	   loc                      => $loc,
 	   show_feature_list        => $show_feature_list,
@@ -91,7 +101,7 @@ sub process {
     my $route_title              = $self->{route_title};
     my $show_expired_session_msg = $self->{show_expired_session_msg};
     my $geojson_file             = $self->{geojson_file};
-    my $geojsonp_url             = $self->{geojsonp_url};
+    my $geojsonp_urls            = $self->{geojsonp_urls} || ($self->{geojsonp_url} ? [ $self->{geojsonp_url} ] : []);
     my $replay_trk               = $self->{replay_trk};
     my $loc                      = $self->{loc};
     my $show_feature_list        = $self->{show_feature_list};
@@ -180,13 +190,15 @@ sub process {
 	}
 
 	if (m{\Q<!-- INSERT JSONP HERE -->}) {
-	    if ($geojsonp_url) {
-		print qq{<script>function geoJsonResponse(geoJson) { initialGeojson = geoJson }</script>\n};
-		print qq{<script type="application/javascript" src="$geojsonp_url"></script>\n};
+	    if (@$geojsonp_urls) {
+		print $ofh qq{<script>function geoJsonResponse(geoJson) { if (typeof initialGeojsons !== 'undefined') { initialGeojsons.push(geoJson); } if (!initialGeojson) { initialGeojson = geoJson; } }</script>\n};
+		for my $url (@$geojsonp_urls) {
+		    print $ofh qq{<script type="application/javascript" src="$url"></script>\n};
+		}
 	    }
 	    if ($replay_trk) {
-		print qq{<script>function getReplayTrkJsonResponse(json) { replayTrkJson = json }</script>\n};
-		print qq{<script type="application/javascript" src="$replay_trk"></script>\n};
+		print $ofh qq{<script>function getReplayTrkJsonResponse(json) { replayTrkJson = json }</script>\n};
+		print $ofh qq{<script type="application/javascript" src="$replay_trk"></script>\n};
 	    }
 	    next;
 	}

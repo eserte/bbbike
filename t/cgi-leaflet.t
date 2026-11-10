@@ -48,6 +48,19 @@ my $base_url = "$cgidir/bbbikeleaflet.cgi";
     tidy_check $content, 'tidy check for base URL';
     like $content, qr{var initialRouteGeojson = null;}, 'no initial coords';
     like $content, qr{var initialGeojson = null;}, 'no initial coords';
+    like $content, qr{var initialGeojsons = \[\];}, 'empty initialGeojsons array';
+}
+
+{
+    my $url = "$base_url?geojsonp_url=http://example.com/one.jsonp&geojsonp_url=http://example.com/two.jsonp";
+    my $resp = $ua->get($url);
+    ok $resp->is_success, "Fetching with multiple geojsonp_url is OK"
+	or diag $resp->status_line;
+    my $content = $resp->decoded_content(charset => 'none');
+    tidy_check $content, 'tidy check with multiple geojsonp_url';
+    like $content, qr{<script type="application/javascript" src="http://example\.com/one\.jsonp"></script>}, 'first geojsonp_url script';
+    like $content, qr{<script type="application/javascript" src="http://example\.com/two\.jsonp"></script>}, 'second geojsonp_url script';
+    like $content, qr{initialGeojsons\.push\(geoJson\)}, 'initialGeojsons push logic present';
 }
 
 {
