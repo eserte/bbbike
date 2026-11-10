@@ -352,12 +352,16 @@ sub cmd_fetch {
 	'category_color.PB1s' => ['#4575b4'],
 	'category_color.PB1f' => ['#4575b4'],
 	'category_color.PBinuse' => ['#800080'],
-	'line_dash.PB3s' => ['1,4'],
-	'line_dash.PB3f' => ['2,4'],
-	'line_dash.PB2s' => ['1,4'],
-	'line_dash.PB2f' => ['2,4'],
-	'line_dash.PB1s' => ['1,4'],
-	'line_dash.PB1f' => ['2,4'],
+	## note: all features are areas, so line_dash does not work
+	#'line_dash.PB3s' => ['1,4'],
+	#'line_dash.PB3f' => ['2,4'],
+	#'line_dash.PB2s' => ['1,4'],
+	#'line_dash.PB2f' => ['2,4'],
+	#'line_dash.PB1s' => ['1,4'],
+	#'line_dash.PB1f' => ['2,4'],
+	'category_stipple.PB3s' => ['stip.xbm'],
+	'category_stipple.PB2s' => ['stip.xbm'],
+	'category_stipple.PB1s' => ['stip.xbm'],
     );
 
     $s_out->set_global_directives(\%glob_dirs);
