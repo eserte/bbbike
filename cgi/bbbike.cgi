@@ -975,12 +975,11 @@ if ($q->param("tmp")) {
 		-x_tag => "rm.tmp.$ext",
 		@no_cache);
     binmode STDOUT;
-    open TMP, $file or die "Can't open file $file: $!";
+    open my $tmpfh, '<', $file or die "Can't open file $file: $!";
     local $/ = \8192;
-    while(<TMP>) {
+    while(<$tmpfh>) {
 	print $_;
     }
-    close TMP;
     my_exit(0);
 }
 
@@ -2863,7 +2862,7 @@ sub get_kreuzung {
 	    }
 	}
 	if (defined $q->param($type."hnr") && $q->param($type."hnr") ne "") {
-	    print " " . $q->param($type . "hnr");
+	    print " " . CGI::escapeHTML($q->param($type . "hnr"));
 	}
 	if ($oldname_match) {
 	    print _display_oldname($oldname_match);
