@@ -20,6 +20,16 @@ my $epoch2dedate = sub {
     $y+=1900;
     "$d.$m.$y";
 };
+my $std_de_daterange_msg = sub {
+    my($ret) = @_;
+    my $from_term  = (defined $ret->{from}
+                     ? (!defined $ret->{until} ? 'vom ' : '') . $epoch2dedate->($ret->{from})
+                     : '');
+    my $until_term = (defined $ret->{until}
+                     ? ($from_term ne '' ? ' ' : '') . 'bis ' . $epoch2dedate->($ret->{until})
+                     : ($from_term ne '' ? ', ' : '') . 'Ende unbekannt');
+    $from_term . $until_term;
+};
 my $next_interval = sub {
     my($intervals, $debug_text) = @_;
     my $last_ret;
@@ -34,7 +44,7 @@ my $next_interval = sub {
 	    until => $until_epoch,
 	};
 	if ($ENV{BBBIKE_TEMP_BLOCKINGS_DEBUG}) {
-	    warn "DEBUG: next_interval - $debug_text: from: @{[ $epoch2dedate->($from_epoch) ]}, until: @{[ $until_epoch ? $epoch2dedate->($until_epoch) : q{<no end>} ]}\n";
+	    warn "DEBUG: next_interval - $debug_text: " . $std_de_daterange_msg->({ from => $from_epoch, until => $until_epoch }) . "\n";
 	    next;
 	}
 	last if time <= $until_epoch;
@@ -18061,7 +18071,7 @@ EOF
 	        ["2027-01-01", undef],
 	    ], $text);
 	    if ($ret->{until}) {
-	        $text .= ', nächster Zeitraum ' . $epoch2dedate->($ret->{from}) . ' bis ' . $epoch2dedate->($ret->{until});
+	        $text .= ', nächster Zeitraum ' . $std_de_daterange_msg->($ret);
 	    }
 	    (from => $ret->{from}-86400, until => $ret->{until}, text => $text);
        },
@@ -43416,7 +43426,7 @@ EOF
 	        ["2026-11-07", "2026-11-08"],
 	        ["2027-04-03", "2027-04-04"],
 	    ], $text);
-	    $text .= ": nächster Termin " . $epoch2dedate->($ret->{from}) . " bis " . $epoch2dedate->($ret->{until});
+	    $text .= ": nächster Termin " . $std_de_daterange_msg->($ret);
 	    (from => $ret->{from}-86400, until => $ret->{until}, text => $text);
        },
 #       from  => 1701471600, # 2023-12-02 00:00
@@ -55773,7 +55783,7 @@ EOF
 	        ["2026-11-28", "2026-12-05"],
 	        ["2027-01-25", "2027-02-22"],
 	    ], $text);
-	    $text .= ", nächster Termin geplant: " . $epoch2dedate->($ret->{from}) . " bis " . $epoch2dedate->($ret->{until});
+	    $text .= ", nächster Termin geplant: " . $std_de_daterange_msg->($ret);
 	    (from => $ret->{from}-86400, until => $ret->{until}, text => $text);
        },
        type  => 'gesperrt',
