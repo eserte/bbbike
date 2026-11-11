@@ -639,7 +639,7 @@ Rathausstr. - Frankfurter Allee: Fußgängerampel auf der linken Seite benutzen	CP
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
 #: XXX ändert sich die Ausschilderung? vvv
-#: last_checked: 2026-10-28 vvv
+#: last_checked: 2026-11-11 vvv
 #: historical_note: früher: ausgeschildert "zur Salzmannstraße Huronseestraße"
 nicht ausgeschildert, Richtung Salzmannstr./Huronseestr.	CP2; 16900,9861 16895,9922
 #: historical_note: früher: ausgeschildert "zur Sewanstraße"
@@ -841,8 +841,12 @@ Weg befindet sich links hinter dem Zebrastreifen	CP; 22735,5328 22726,5328 22632
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1735689.php (Verlängerung bis 4.12.2026)
 #: by: https://www.entwicklungsstadt.de/neue-staus-in-koepenick-friedrichshagener-strasse-wird-gesperrt/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261110
-#: source_id: LMS-BR:425225/72 viz2021:13.59334,52.45162,13.10.2026,07:00 vizapi2026:1057/2026 (bis 10.11.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mzz76rgn7c2h (bis 5.12.2026)
+#: source_id: LMS-BR:425225/72 viz2021:13.59334,52.45162,13.10.2026,07:00 vizapi2026:1057/2026 (bis 10.11.2026) (bis 11.12.2026)
 #: source_id: planb2026:13.59212371,52.45130951,12.10.2026, ("Fahrstreifen-Reduzierung", bis 10.11.2026) (vorfristig inaktiv) (bis 11.12.2026)
+#: source_id: vizapi2026:1218/2026 (Sperrung für Kfz-Verkehr (Friedrichshagener Str.), 11.11.2026 bis 11.12.2026)
+#: source_id: LMS-BR:428075/72 viz2021:13.59334,52.45162, (Friedrichshagener Str., bis 11.12.2026)
+#: XXX unklar, ob nach der Umstellung der Baustelle (11.11.2026) diese Einschränkungen noch weiterhin bestehen
 #: next_check: 2026-12-04 (BA-Pressemitteilung) vvv
 #: valid: -20261211 vvv
 Bellevuestr. -> Fürstenwalder Damm: entweder schon die erste Fußgängerampel zum Überqueren benutzen oder langen Umweg bis Friedrichshagener Str. wählen	CP; 23384,5541 23402,5483 23492,5488

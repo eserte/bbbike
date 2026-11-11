@@ -2505,7 +2505,8 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,99
 (Dolgenseestr., Erschließungsweg): einige Fußgänger	q2 17288,9952 17412,9911
 (Dolgenseestr., Parkplatz): Parkplatzverkehr	q2 17391,9746 17475,9722
 (Dolgenseestr., Parkplatz): Bordstein mit Anrampung	q1 17475,9722 17480,9721
-(Weg im Hönower Grünzug): Fußgänger	q3 17480,9721 17498,9714 17595,9674 17643,9662 17690,9660 17773,9670
+(Weg im Hönower Grünzug): Grünanlage, Radfahren verboten	q4 17480,9721 17498,9714 17595,9674
+(Weg im Hönower Grünzug): Fußgänger	q3 17595,9674 17643,9662 17690,9660 17773,9670
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8099,13391 8106,13393
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): Rampe, einige Fußgänger	q3 8106,13393 8111,13358 8119,13396
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8119,13396 8174,13397
@@ -2855,6 +2856,7 @@ An der Schule [Rad- und Gehweg]: einige Fußgänger	q1 24747,11524 24768,11616 247
 (Golßener Str. - Flughafengelände): einige Fußgänger	q3 10209,8661 10205,8647 10142,8655
 Koppenstr. [Nebenstraße]: möglicher Parkplatz-/Lieferverkehr	q1; 12518,12120 12538,12110 12471,11969
 (Am Treptower Park - Elsenstr.): einige Fußgänger	q1 14149,9546 14203,9715 14181,9729
+Gottfried-Funeck-Weg: vier Bodenschwellen, einige Fußgänger	q1 22416,14148 22172,14287 22061,14471 22026,14501
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11908,19255 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11929,19281
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3760,6 +3762,7 @@ Enckestr. - Friedrichstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::
 (Straße vor dem Berliner Ensemble): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9153,12928 9212,12969
 Grüne Aue: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 Am Heidehof: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -1410,2726 -1571,2669 -1612,2785
+Mellenseestr. [Wohngebiet]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17626,9744 17633,9898
 Mellenseestr. [Wohngebiet]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17763,9729 17749,9811 17738,9922
 Mellenseestr. [Wohngebiet]: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 17920,9698 17868,9823 17838,9956
 Lilli-Henoch-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12357,15020 12388,14926

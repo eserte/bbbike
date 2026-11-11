@@ -792,12 +792,17 @@ Wilhelm-Leuschner-Str.: schlechtes Kopfsteinpflaster (Potsdam)	Q3 -10059,374 -10
 Gutenbergstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -12886,-869 -13025,-901 -13158,-930 -13264,-952 -13433,-991
 Gutenbergstr. (Potsdam): mäßiger Beton	Q1 -13433,-991 -13553,-1020 -13576,-1026
 Jägerstr. (Potsdam): mäßiges Kopfsteinpflaster, südlich der Brandenburger Str. eher schlechter	Q2 -13064,-715 -13058,-740 -13025,-901 -12999,-1000 -12973,-1106
+# 
+#: historical_note: früher, vor dem Abfräsen des Kopfsteinpflasters (Anfang November 2026): Kopfsteinpflaster, Q2
+#: by: osm, Tsp
+Dortustr. (Potsdam): abgefrästes Kopfsteinpflaster	Q1- -13187,-1150 -13173,-1039 -13158,-930 -13140,-766
 #: by: https://www.tagesspiegel.de/potsdam/landeshauptstadt/radfahren-ohne-ruttel-arger-potsdam-glattet-historisches-pflaster-16104934.html
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5631 (bis 06.11.2026)
-#: XXX Abfräsen des Kopfsteinpflasters, danach vielleicht Q1-?
-#: add_fragezeichen: Wurde das Kopfsteinpflaster abgefräst? Ist die Fahrbahnqualität besser geworden?
+#: osm_watch: way id="1409255373" version="1"
 #: next_check: 2026-11-06
-Dortustr. (Potsdam): Kopfsteinpflaster	Q2 -13187,-1150 -13173,-1039 -13158,-930 -13140,-766 -13137,-737
+#: add_fragezeichen: Wurde das Kopfsteinpflaster der Dortustr. auch zwischen den Fahrbahnen der Hegelallee abgefräst?
+Dortustr. (Potsdam): Kopfsteinpflaster	Q2 -13140,-766 -13137,-737
+# 
 Bäckerstr. (Potsdam): Asphalt	Q0 -13314,-1226 -13287,-1231 -13202,-1250
 Lindenstr. (Potsdam): Kopfsteinpflaster	Q2 -13231,-763 -13236,-797 -13264,-952 -13289,-1071 -13305,-1176 -13314,-1226 -13350,-1403
 Lindenstr. (Potsdam): Asphalt	Q0 -13350,-1403 -13366,-1499
@@ -1510,6 +1515,7 @@ Buchholz - Altlandsberg: Asphalt	Q0 36198,20464 36076,20353 35445,20123 35131,20
 #: note: teilweise fehlt die oberste Deckschicht
 #: XXX Instandsetzungsarbeiten, danach besserer Asphalt?
 #: source_id: 266002238 (bis 02.10.2026) (inaktiv)
+#: osm_watch: way id="241594963" version="13"
 #: next_check: 2026-10-02
 Birkholz - Bernau: unebener Asphalt	Q1+ 21715,25404 21690,26512 21579,26703
 	Q0 21955,30976 21646,30961 21001,30933 20794,30899 20305,30649 20199,30616 19803,30493 19414,30188 19274,30131 19137,30094 18900,30531 18749,30698 18722,30727 18676,30738 18580,30715 18299,30636 17927,30552 17187,30287 16843,30303 16285,30712 16114,31034 15175,31221 14857,31087 14769,31050 14656,31041 14550,31033 14462,31021 14341,30839 14234,30808 14201,30799 12955,30436 12677,30445 12653,30446 12466,30452 11616,30519 11078,30562 10592,31345 10232,31427

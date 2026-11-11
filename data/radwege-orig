@@ -3475,7 +3475,7 @@ relativ schmale Radspuren	RW3; 15153,11691 15106,11598
 relativ schmale Radspuren	RW3; 15106,11598 15055,11505 15016,11431
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-10-28
+#: last_checked: 2026-11-11
 #: next_check: 2027-12-31
 #: valid: !20250611-20271231
 relativ schmale Radspuren	RW3; 15016,11431 14945,11300 14918,11249
@@ -3486,7 +3486,7 @@ Tempo 20 und Radfahrüberholverbot	RW0; 15016,11431 14945,11300 14918,11249
 #: note: Querparker, lange Fahrzeuge ragen in die schmalen Radspuren rein vvv
 #: next_check_id: NEUEBAHNHOF-2025
 #: source_id: LMS-BR:371988/72 viz2021:13.47033,52.50617,11.06.2025,07:00 (bis 31.03.2027)
-#: last_checked: 2026-10-28
+#: last_checked: 2026-11-11
 #: next_check: 2027-12-31
 #: valid: !20250611-20271231
 relativ schmale Radspuren	RW3; 14945,11300 15016,11431
@@ -8726,6 +8726,8 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 	RW6;RW6 16152,3562 16227,3660
 	RW6;RW6 16254,3489 16338,3578
 	RW6;RW6 2021,2890 2108,2883
+#: note: zumindest während der Bauarbeiten als verkehrsberuhigter Bereich ausgeschildert, vielleicht bleibt das dauerhaft
+	RW6;RW6 17485,12240 17540,12222
 	RW6;RW6 17540,12222 17764,12238 17790,12255
 	RW1; 3884,1187 3895,1219
 	RW3; 3895,1219 3884,1187
@@ -10120,4 +10122,6 @@ Gehweg für Radfahrer frei	RW1; 6388,7999 6443,7971
 	RW7;RW7 12077,14186 12228,14083 12361,13985 12478,13903
 # 
 	RW6;RW6 14180,3334 14227,3438
+# 
+	RW6;RW6 21677,11017 21817,11076
 # 

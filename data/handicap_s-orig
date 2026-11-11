@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
-#: source_id: bvg2024:240#HIM_FREETEXT_366164
+#: source_id[inactive]: bvg2024:240#HIM_FREETEXT_366164
 #: last_checked: 2026-11-10
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
@@ -305,7 +305,7 @@ Mariendorfer Damm: Gehweg für Radfahrer frei, Engstellen	q2::inwork; 9621,3155 9
 #: next_check_id: ROEBLING-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf4dnag3yg2z (nur Kfz-Verkehr, bis November 2026 geplant)
 #: source_id: LMS-BR:399339/72 viz2021:13.35937,52.4567,18.02.2026,07:00 (bis 13.11.2026)
-#: source_id: planb2026:13.36103702,52.45337263,18.02.2026, ("Sperrung einer Fahrtrichtung", bis 13.11.2026)
+#: source_id: planb2026:13.36103702,52.45337263,18.02.2026, ("Sperrung einer Fahrtrichtung", bis 13.11.2026) (vorfristig inaktiv)
 #: note: außerdem drei Fußgängerampeln mit Anforderung, nur für die Fahrbahn und damit für den Verkehr Richtung Norden relevant
 #: last_checked: 2026-07-19
 #: next_check: 2026-11-13 (VIZ + planb)
@@ -1426,7 +1426,7 @@ Ontarioseestr.: Abschnitt der Fahrbahn gesperrt	q3-::inwork 18552,10135 18585,10
 #: XXX wird es noch eine offizielle Verbindung zwischen Hauptstr. und Radweg bzw. Gustav-Tempel-Str. geben?
 #: XXX mittlerweile gibt es auch eine unbefestigte Verbindung, ist aber bei Regenwetter ziemlich matschig
 #: note: Gehwegarbeiten auf der Hauptstr. hinter Karlshorster Str. bis Ende August 2025, vielleicht für eine erneuerte Anbindung?
-#: last_checked: 2026-10-28
+#: last_checked: 2026-11-11
 Gustav-Tempel-Str.: kurzes Stück Bürgersteig oder unbefestigte Verbindung	q3 15261,10738 15245,10719
 # REMOVED (hier nicht mehr) --- Gustav-Tempel-Str.: Bauarbeiten, Absperrungen, ggfs. auf Bürgersteig ausweichen	q3::inwork 15245,10719 15236,10684
 # 
@@ -2620,7 +2620,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.bvg.de/de/unternehmen/herzensprojekte/erneuerung-endhaltestelle-lichtenberg (Eröffnung des Planfeststellungsverfahrens vielleicht 2026, Umsetzung 2029/2030)
 #: osm_watch: way id="223184082" version="10"
 #: note: kann zugeparkt sein, gesehen: 2026-06-03 Wed 12:18
-#: last_checked: 2026-06-17
+#: last_checked: 2026-11-11
 #: check_frequency: 360d
 #: next_check: 2029-06-30 (bvg)
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng, kann zugeparkt sein	q3 16535,11920 16512,11894
@@ -4458,7 +4458,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 #: osm_watch: way id="27944267" version="25"
 #: osm_watch[closed]: note 5299211 2
 #: XXX alter Eintrag: (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): enge Brücke, Fußgänger	q3 22171,12965 22196,12961
-#: last_checked: 2026-06-24
+#: last_checked: 2026-11-11
 #: check_frequency: 360d
 #: next_check: 2027-06-30 (marzahn-hellersdorf live: frühester realistischer Termin)
 Wuhlesteg (Bibersteg): Behelfsbrücke, eng	q4+::inwork 22171,12965 22196,12961
@@ -5530,8 +5530,13 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,99
 (Dolgenseestr., Parkplatz): Parkplatzverkehr	q2 17391,9746 17475,9722
 #: XXX_prog BS (nur zur Parkplatzseite hin, bleibt die Anrampung dauerhaft?)
 (Dolgenseestr., Parkplatz): Bordstein mit Anrampung	q1 17475,9722 17480,9721
+# 
+#: historical_note: früher: Grünanlagenschild ohne Zusatzschilder, seit etwa Herbst 2026 mit Zusatzschild
+#: note: explizites Radfahrverbot
+(Weg im Hönower Grünzug): Grünanlage, Radfahren verboten	q4 17480,9721 17498,9714 17595,9674
 #: note: Grünanlagenschild ohne Zusatzschilder
-(Weg im Hönower Grünzug): Fußgänger	q3 17480,9721 17498,9714 17595,9674 17643,9662 17690,9660 17773,9670
+(Weg im Hönower Grünzug): Fußgänger	q3 17595,9674 17643,9662 17690,9660 17773,9670
+# 
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8099,13391 8106,13393
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): Rampe, einige Fußgänger	q3 8106,13393 8111,13358 8119,13396
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8119,13396 8174,13397
@@ -6248,6 +6253,9 @@ An der Schule [Rad- und Gehweg]: einige Fußgänger	q1 24747,11524 24768,11616 247
 Koppenstr. [Nebenstraße]: möglicher Parkplatz-/Lieferverkehr	q1; 12518,12120 12538,12110 12471,11969
 # 
 (Am Treptower Park - Elsenstr.): einige Fußgänger	q1 14149,9546 14203,9715 14181,9729
+# 
+#: note: jedes Hindernis besteht aus einem überlappenden Paar mit Durchfahrtmöglichkeit in der Mitte
+Gottfried-Funeck-Weg: vier Bodenschwellen, einige Fußgänger	q1 22416,14148 22172,14287 22061,14471 22026,14501
 # 
 ######################### User Contributions #################################
 #: section: User Contributions vvv

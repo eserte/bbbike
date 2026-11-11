@@ -366,7 +366,7 @@ Richard-Kolkwitz-Weg: sehr guter Asphalt	Q0 18703,9997 18708,10000 18715,10003 1
 #: by: https://www.entwicklungsstadt.de/richard-kolkwitz-weg-48-neue-wohnungen-am-tierpark-in-karlshorst-fast-fertig/ (Verfügbarkeit der Wohnungen ab April 2027)
 #: osm_watch: way id="1379412008" version="1"
 #: XXX nach den Bauarbeiten vermutlich wieder: sehr guter Asphalt, Q0
-#: last_checked: 2026-10-18
+#: last_checked: 2026-11-11
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (planb)
 Richard-Kolkwitz-Weg: unbefestigter Weg entlang der Baustelle	Q2 18773,10028 18844,10058
@@ -1288,13 +1288,13 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: osm_watch: way id="934995901" version="14"
 #: osm_watch: way id="934995899" version="16"
 #: osm_watch: way id="22820618" version="25"
-#: source_id: planb2026:13.46027116,52.50926464,04.06.2026,07:35 ("Fahrstreifen-Reduzierung", bis 30.11.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.46027116,52.50926464,04.06.2026,07:35 ("Fahrstreifen-Reduzierung", bis 30.11.2026) (vorfristig inaktiv) (bis 28.02.2027)
 #: XXX laut osm-Note passiert die Asphaltierung (+ Ausweisung als Fahrradstraße) bis Mai 2025
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: historical_note: bis 2025 noch mit Q2 kategorisiert, ist aber schlechter geworden (Q2-)
 #: last_checked: 2026-10-27
 #: check_frequency: 60d
-#: next_check: 2026-11-30 (planb)
+#: next_check: 2027-02-28 (planb)
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2- 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
 Seumestr.: Kopfsteinpflaster	Q2- 14395,11753 14358,11656 14305,11514 14254,11377
@@ -3029,16 +3029,17 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 #: by: https://mein.berlin.de/ideas/2023-16489/ (bekommt dieser Platz nach Ende der Bauarbeiten den Namen Hermann-Mächtig-Platz?)
 #: by: https://www.entwicklungsstadt.de/wo-in-lichtenberg-kuenftig-beton-und-asphalt-verschwinden-sollen/
 #: source_id[inactive]: bvg2024:256#HIM_FREETEXT_307497
-#: osm_watch: note 4294376 10
+#: osm_watch: note 4294376 11
 #: osm_watch: way id="1025072174" version="5"
 #: source_id: planb2026:13.50921404,52.51499445,11.05.2026,07:00 ("Fahrbahneinengung", bis 31.03.2027)
-#: last_checked: 2026-09-08
-#: check_frequency: 60d
-# REMOVED --- #: check_frequency: 120d
+#: XXX Wird es nach Ende der Bauarbeiten nur einen Asphaltstreifen geben oder die gesamte Breite asphaltiert sein? Außerdem scheint die endgültige Lage der Fahrgasse nun etwas weiter südlicher als bislang zu sein.
+#: last_checked: 2026-11-11
+#: check_frequency: 120d
 #: next_check: 2027-03-31 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (nachhaltige-erneuerung website)
 #: XXX wiederherstellen: (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphaltstreifen	Q0 17540,12222 17485,12240
-(Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster, Schotter (Asphaltstreifen wegen Bauarbeiten nicht befahrbar)	Q2 17540,12222 17485,12240
+# REMOVED (während der Bauarbeiten) --- (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster, Schotter (Asphaltstreifen wegen Bauarbeiten nicht befahrbar)	Q2 17540,12222 17485,12240
+(Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphalt	Q0 17540,12222 17485,12240
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphalt	Q0 17485,12240 17471,12243
 Gudrunstr.: Asphalt	Q0 17471,12243 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16865,11931
 # REMOVED (neu asphaltiert) --- #: XXX eventuell wurde hier neu asphaltiert, prüfen! --- Marzahner Chaussee (bis zur Kurve): mäßiger Asphalt	Q1; 19173,13478 19194,13272
@@ -3695,7 +3696,7 @@ Wuhlewanderweg: guter Beton (zweispurig)	Q0 22717,16142 22670,16063 22623,15959 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11953 (Anfrage zur Sanierung: Mittel im Zeitraum 2025-2028 sind berücksichtigt)
 #: by: https://bvv-marzahn-hellersdorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=12703 (Anfrage)
 #: XXX wird die Qualität hier verbessert (siehe auch mudways)?
-#: last_checked: 2026-06-24
+#: last_checked: 2026-11-11
 #: check_frequency: 360d
 Wuhlewanderweg: guter Parkweg	Q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
 Wuhlewanderweg: Kleinsteinpflaster	Q1- 22244,11311 22268,11285
@@ -3808,11 +3809,11 @@ Salzmannstr.: Asphalt	Q0 16847,10092 16855,10127 16887,10271 16941,10487
 Kohlweißlingstr.: Asphalt	Q0 21535,11267 21598,11190 21637,11115 21677,11017 21723,10920
 Kohlweißlingstr.: Verbundsteinpflaster	Q1 21723,10920 21765,10834
 Augenfalterstr.: Asphalt	Q0 21513,11137 21598,11190 21733,11278
-Zitronenfalterweg: Asphalt	Q0 21820,11069 21677,11017 21578,10977
+Zitronenfalterweg: Asphalt	Q0 21817,11076 21677,11017 21578,10977
 Distelfalterstr.: Asphalt	Q0 21856,10981 21723,10920
 #: corrected_by: Heike (helabe...) (Verbundsteinpflaster -> Asphalt) (corrected back -> Verbundsteinpflaster!)
 Distelfalterstr.: Verbundsteinpflaster	Q1 21723,10920 21601,10864
-Schillerfalterstr.: Asphalt	Q0 21733,11278 21776,11179 21820,11069 21856,10981 21861,10970
+Schillerfalterstr.: Asphalt	Q0 21733,11278 21776,11179 21817,11076 21856,10981 21861,10970
 Schillerfalterstr.: Verbundsteinpflaster	Q0- 21861,10970 21896,10892 21950,10776
 Wuhletal: unbefestigter Weg	Q2 21950,10863 21894,10983 21745,11333
 Zu den Faltern: unbefestigter Weg	Q2 21861,10970 21894,10983 21917,10991 21930,10996
@@ -8822,7 +8823,7 @@ Straßenbahntrasse zum Alexanderplatz: Radwege auf Gehweg/Betonplatten	Q0- 11139,
 (Landschaftspark Herzberge): Beton	Q1 17507,12781 17637,12785 17638,12813 17659,12823 17662,12918 17679,12933 17674,13022
 (Landschaftspark Herzberge): Beton	Q1 17491,13125 17498,13015 17499,12998 17507,12781
 (Landschaftspark Herzberge): Beton	Q1 17499,12998 17314,12990
-Hiltrudstr.: welliger Asphalt	Q1- 21261,13922 21272,14036 21287,14163 21302,14282 21329,14488
+Hiltrudstr.: welliger Asphalt, einige Schäden	Q1- 21261,13922 21272,14036 21287,14163 21302,14282 21329,14488
 Hiltrudstr.: Verbundsteinpflaster und Beton	Q1 21329,14488 21334,14544
 Hirseweg: Asphalt	Q0 20743,13184 20836,13170 20918,13161 21003,13152 21113,13138 21214,13126 21253,13120
 Maisweg: Beton, Asphalt und Verbundsteinpflaster	Q0- 21003,13152 21039,13464
@@ -12462,7 +12463,8 @@ Schlotterkammsteig: wassergebundene Decke	Q1 16251,-586 16254,-575 16271,-522 16
 (Streuobstwiese Hornkleepfad): Asphalt	Q0 18830,1497 18827,1490 18951,1454 18996,1453 19034,1441
 (Parkplatz Getränke Hoffmann): Verbundsteinpflaster	Q1+ 18647,12354 18715,12348
 (Springpfuhlpark - Murtzaner Ring): Beton	Q0- 19535,14448 19593,14452
-(westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): unbefestigter Weg	Q2+ 22347,13858 22389,13824 22426,13735
+#: historical_note: früher als unbefestigter Weg, Q2+ getaggt
+(westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): wassergebundene Decke	Q1 22347,13858 22389,13824 22426,13735
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Holzbohlen	Q1- 22426,13735 22445,13720 22457,13713
 (Rebhuhnweg - Landsberger Allee): Beton	Q1+ 20571,15530 20580,15586
 (Landsberger Allee - Marzahner Promenade): Betonplatten	Q1 20580,15586 20555,15631 20527,15654
@@ -21166,7 +21168,7 @@ Güntherstr.: schlechtes Kopfsteinpflaster, einige Asphaltflicken	Q2-; 17771,8349
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> kleinteiliges Kopfsteinpflaster, Q2+ -> neu gemacht)
 #: next_check_id: MERLERWEG-2026
 #: XXX wann wird hier vollständig asphaltiert?
-#: last_checked: 2026-10-17
+#: last_checked: 2026-11-11
 #: check_frequency: 60d
 Merler Weg: Asphalt ohne letzte Deckschicht	Q1 19180,13219 19027,13242
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> kleinteiliges Kopfsteinpflaster, Q2+)

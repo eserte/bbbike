@@ -892,4 +892,15 @@ Hundsteinweg -> Mariendorfer Damm: Umweg an der Körtingstr.	DH:len=65 9675,3150 
 #: next_check ^^^
 #: last_checked ^^^
 # 
+#: next_check_id: HERZBERGADK-2026
+#: source_id: planb2026:13.51171522,52.52481845,26.10.2026, ("Gegenverkehrsanlage (LZA)", bis 18.12.2026)
+#: last_checked: 2026-11-11 vvv
+#: next_check: 2026-12-18 vvv
+#: valid: -20261218 vvv
+Allee der Kosmonauten -> Herzbergstr.: Umweg	DH:len=50:h=q3,25 17766,13437 17688,13430 17479,13434
+Herzbergstr. -> Allee der Kosmonauten: Umweg	DH:len=50:h=q3,25 17479,13434 17688,13430 17766,13437
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+# 
 #: temporary ^^^

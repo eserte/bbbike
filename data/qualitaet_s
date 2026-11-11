@@ -2103,7 +2103,7 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 (Kolonie Friedrichsfelde Nord, entlang der Fernwärmeleitung): Schotter	Q2 17790,12255 17832,12244
 (Kolonie Friedrichsfelde Nord, entlang der Fernwärmeleitung): feiner Kies, relativ glatt	Q1 17832,12244 18135,12246 18142,12260 18180,12262 18216,12262
 (Am Städtischen Zentralfriedhof): asphaltiert	Q0 17790,12255 17764,12238 17540,12222
-(Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster, Schotter (Asphaltstreifen wegen Bauarbeiten nicht befahrbar)	Q2 17540,12222 17485,12240
+(Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphalt	Q0 17540,12222 17485,12240
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Asphalt	Q0 17485,12240 17471,12243
 Gudrunstr.: Asphalt	Q0 17471,12243 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16865,11931
 (Eichhörnchensteig - Wildpfad): enger Waldpfad	Q2 1449,7519 1485,7651 1509,7700
@@ -2658,10 +2658,10 @@ Salzmannstr.: Asphalt	Q0 16847,10092 16855,10127 16887,10271 16941,10487
 Kohlweißlingstr.: Asphalt	Q0 21535,11267 21598,11190 21637,11115 21677,11017 21723,10920
 Kohlweißlingstr.: Verbundsteinpflaster	Q1 21723,10920 21765,10834
 Augenfalterstr.: Asphalt	Q0 21513,11137 21598,11190 21733,11278
-Zitronenfalterweg: Asphalt	Q0 21820,11069 21677,11017 21578,10977
+Zitronenfalterweg: Asphalt	Q0 21817,11076 21677,11017 21578,10977
 Distelfalterstr.: Asphalt	Q0 21856,10981 21723,10920
 Distelfalterstr.: Verbundsteinpflaster	Q1 21723,10920 21601,10864
-Schillerfalterstr.: Asphalt	Q0 21733,11278 21776,11179 21820,11069 21856,10981 21861,10970
+Schillerfalterstr.: Asphalt	Q0 21733,11278 21776,11179 21817,11076 21856,10981 21861,10970
 Schillerfalterstr.: Verbundsteinpflaster	Q0 21861,10970 21896,10892 21950,10776
 Wuhletal: unbefestigter Weg	Q2 21950,10863 21894,10983 21745,11333
 Zu den Faltern: unbefestigter Weg	Q2 21861,10970 21894,10983 21917,10991 21930,10996
@@ -7077,7 +7077,7 @@ Straßenbahntrasse zum Alexanderplatz: Radwege auf Gehweg/Betonplatten	Q0 11139,1
 (Landschaftspark Herzberge): Beton	Q1 17507,12781 17637,12785 17638,12813 17659,12823 17662,12918 17679,12933 17674,13022
 (Landschaftspark Herzberge): Beton	Q1 17491,13125 17498,13015 17499,12998 17507,12781
 (Landschaftspark Herzberge): Beton	Q1 17499,12998 17314,12990
-Hiltrudstr.: welliger Asphalt	Q1 21261,13922 21272,14036 21287,14163 21302,14282 21329,14488
+Hiltrudstr.: welliger Asphalt, einige Schäden	Q1 21261,13922 21272,14036 21287,14163 21302,14282 21329,14488
 Hiltrudstr.: Verbundsteinpflaster und Beton	Q1 21329,14488 21334,14544
 Hirseweg: Asphalt	Q0 20743,13184 20836,13170 20918,13161 21003,13152 21113,13138 21214,13126 21253,13120
 Maisweg: Beton, Asphalt und Verbundsteinpflaster	Q0 21003,13152 21039,13464
@@ -10351,7 +10351,7 @@ Schlotterkammsteig: wassergebundene Decke	Q1 16251,-586 16254,-575 16271,-522 16
 (Streuobstwiese Hornkleepfad): Asphalt	Q0 18830,1497 18827,1490 18951,1454 18996,1453 19034,1441
 (Parkplatz Getränke Hoffmann): Verbundsteinpflaster	Q1 18647,12354 18715,12348
 (Springpfuhlpark - Murtzaner Ring): Beton	Q0 19535,14448 19593,14452
-(westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): unbefestigter Weg	Q2 22347,13858 22389,13824 22426,13735
+(westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): wassergebundene Decke	Q1 22347,13858 22389,13824 22426,13735
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Holzbohlen	Q1 22426,13735 22445,13720 22457,13713
 (Rebhuhnweg - Landsberger Allee): Beton	Q1 20571,15530 20580,15586
 (Landsberger Allee - Marzahner Promenade): Betonplatten	Q1 20580,15586 20555,15631 20527,15654

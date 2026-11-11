@@ -1560,12 +1560,7 @@ Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Skalitzer Str.: Mittelstreifen, Bordsteine	3nocross 12930,10621 12899,10595 12731,10547
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 # REMOVED (-> handicap_s) --- Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
-#: next_check_id: HOENOWERWEG-2025
-#: XXX temporär aufgehobene Einbahnstraßenregelung, später Kategorie bwieder zu "1s:q4" ändern
-#: last_checked: 2026-08-25
-#: check_frequency: 90d
-#: next_check: 2027-02-28
-Mellenseestr. [Wohngebiet]	1no 17626,9744 17633,9898
+Mellenseestr. [Wohngebiet]	1s:q4 17626,9744 17633,9898
 Mellenseestr. [Wohngebiet]	1s:q4 17763,9729 17749,9811 17738,9922
 Mellenseestr. [Wohngebiet]	1s:q4 17920,9698 17868,9823 17838,9956
 # REMOVED (eigentlich weitgehend beendet) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2022-05-06 --- #: check_frequency: 14d --- #: valid: 20220510-
@@ -4575,7 +4570,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: note 4964987 1
 #: source_id: planb2026:13.47278542,52.50619727,03.03.2025,07:00 (bis 31.03.2027)
 #: note: anfangs (Sep 2025) mit einem Bauzaun gesperrt, jetzt (Jun 2026) eine Schranke
-#: last_checked: 2026-06-03
+#: last_checked: 2026-11-11
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2026-08-28 (Halteverbotsschilder in der Straße "Am Bremsenwerk")
 #: next_check: 2027-03-31 (planb)
@@ -4788,8 +4783,8 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: source_id: planb2026:13.52192808,52.49221042,28.07.2026,07:00 ("Fahrbahneinengung", Römerweg, bis 31.12.2026) (vorfristig inaktiv)
 #: XXX Neubau: Integrierte Sekundarschule (ISS) in Karlshorst
 #: XXX laut osm opening_date der landuse=construction-Fläche 2026-08-24 (könnte passen, erster Schultag nach den Sommerferien 2026)
-#: last_checked: 2026-10-18
-#: check_frequency: 21d
+#: last_checked: 2026-11-11
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-08-24 (SenSBW-Pressemitteilung: Schulbeginn)
 #: next_check: 2026-12-31 (planb (benachbarte Baustelle))
 (Römerweg - Weg entlang der Bahnstrecke): Hochbauarbeiten, Weg gesperrt	2::inwork 18452,9755 18421,9764 18436,9842 18445,9887
@@ -6022,6 +6017,7 @@ Hinter dem Schlosspark: Weg möglicherweise gesperrt	2::inwork -1675,40140 -1707,
 Ostrau: Brücke über die Riede komplett gesperrt	2::inwork -82085,-88996 -82093,-88974
 # 
 #: XXX evtl. nach den Bauarbeiten besseres Pflaster?
+#: osm_watch: way id="129195723" version="3"
 #: last_checked: 2026-05-16
 #: check_frequency: 180d
 Aribertstr. (Köthen): Bauarbeiten, Fahrbahn gesperrt	2s:q4:inwork -85324,-74675 -85353,-74839 -85366,-74925
