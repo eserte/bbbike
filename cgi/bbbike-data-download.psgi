@@ -91,6 +91,24 @@ my $app = sub {
 	$req->new_response($status, $headers, @_)->finalize;
     };
 
+    my $real_use_data_dir = realpath($use_data_dir);
+    if (!defined $real_use_data_dir) {
+	die "ERROR: should never happen: realpath '$use_data_dir' does not resolve\n";
+    }
+    my $real_path = realpath($path);
+    if (!defined $real_path) {
+	warn "ERROR: suspicious path '$path' cannot be resolved to a real path, refusing...\n";
+	return $std_new_response->(400);
+    }
+    if (-e $real_path && !-f $real_path) {
+	warn "ERROR: suspicious path '$path' is not a plain file, refusing...\n";
+	return $std_new_response->(400);
+    }
+    if ($real_path ne $real_use_data_dir && index($real_path, "$real_use_data_dir/") != 0) {
+	warn "ERROR: suspicious path '$path' (resolved to '$real_path') not under '$real_use_data_dir/', refusing...\n";
+	return $std_new_response->(400);
+    }
+
     if (_not_modified($h, $path)) {
 	return $std_new_response->(304);
     }
