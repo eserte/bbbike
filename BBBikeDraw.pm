@@ -86,7 +86,7 @@ sub new {
     if ($self->{Module}) {
 	# some king of untainting
 	(my $module = $self->{Module}) =~ s/[^A-Za-z_0-9:]+//g;
-	$pkg = "BBBikeDraw::" . $self->{Module};
+	$pkg = "BBBikeDraw::" . $module;
 	if ($pkg->can("init")) {
 	    # already loaded...
 	} else {
