@@ -144,7 +144,7 @@ sub new_by_magic_or_suffix {
 sub new_by_magic {
     my($class, $filename, %args) = @_;
     if (defined $filename) {
-	open my $fh, $filename
+	open my $fh, '<', $filename
 	    or die "Can't open $filename: $!";
 	read($fh, my($buf), 1024);
 	if      ($buf =~ m{<gpx\b}) {
