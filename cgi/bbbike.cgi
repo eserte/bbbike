@@ -5346,7 +5346,6 @@ EOF
   	    }
 	    print ">\n";
 	    print "<input type=hidden name=center value=''>\n";
-#XXX not yet	    print "<input type=hidden name='as_attachment' value=''>\n";
 	    print qq{<input type=submit name=interactive value="@{[ M("Karte zeigen") ]}">};
 	    if (!$is_m) {
 		print qq{ <span style="font-size:smaller;">(@{[ M("neues Fenster wird ge&ouml;ffnet") ]})</span>};
@@ -5354,7 +5353,6 @@ EOF
 	    if ($is_printable) {
 	        print " <label><input type=checkbox name=outputtarget value='print' " . ($default_print?"checked":"") . "> " . M("f&uuml;r Druck optimieren") . "</label>";
 	    }
-#XXX not yet	    print " <input type=checkbox name='cb_attachment'> als Download";
 	    print "&nbsp;&nbsp; <span class=nobr>" . M("Ausgabe als") . ": <select name=imagetype " . ($bi->{'can_javascript'} ? "onchange='enable_size_details_buttons()'" : "") . ">\n";
 	    print " <optgroup label=\"" . M("Statische Karte") . ":\">\n";
 	    print " <option " . $imagetype_checked->("png") . ">PNG\n" if $graphic_format eq 'png';
@@ -6882,9 +6880,6 @@ sub http_header {
 
     my @add_header_args;
     push @add_header_args, (-Vary => "User-Agent");
-    if ($q->param("as_attachment")) {
-	push @add_header_args, -Content_Disposition => "attachment;file=" . $q->param("as_attachment");
-    }
     if ($use_cgi_compress_gzip &&
 	eval { require CGI::Compress::Gzip;
 	       CGI::Compress::Gzip->VERSION(0.22);
