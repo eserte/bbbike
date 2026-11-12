@@ -1117,7 +1117,7 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 # REMOVED --- #: XXX wegen Hochbaustelle noch nicht fertiggestellt; abschnittsweise wird es hier eine Bushaltestelle geben
 #: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 (bis 10.09.2026) (bis 22.09.2026) (bis 13.11.2026)
 #: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026) (vorfristig inaktiv) (bis 27.09.2026) (vorfristig inaktiv)
-#: source_id: planb2026:13.41257309,52.54443858,02.10.2026, ("Fahrstreifen-Reduzierung", bis 13.11.2026)
+#: source_id: planb2026:13.41257309,52.54443858,02.10.2026, ("Fahrstreifen-Reduzierung", bis 13.11.2026) (vorfristig inaktiv)
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 #: last_checked: 2026-10-19 (mapillary) vvv
 #: next_check: 2026-11-13 (VIZ-Verkehrsmeldung) vvv
@@ -1603,8 +1603,7 @@ Grünbeschichtung	RW3;RW3 2997,4378 2852,4584 2756,4709 2742,4727 2735,4736 2596,
 #: note: Thielallee, Richtung Norden
 	RW4; 2308,3862 2348,4026 2372,4127 2407,4280 2417,4327 2429,4385 2445,4471 2461,4556 2531,4733 2573,4889 2596,4907
 #: note: Thielallee, Richtung Süden
-	RW4?; 2596,4907 2573,4889 2531,4733 2461,4556
-	RW4; 2461,4556 2445,4471 2429,4385 2417,4327 2407,4280 2372,4127 2348,4026 2308,3862
+	RW4; 2596,4907 2573,4889 2531,4733 2461,4556 2445,4471 2429,4385 2417,4327 2407,4280 2372,4127 2348,4026 2308,3862
 # 
 Radweg nur aufgemalt	RW1; 4246,9406 4057,9648
 Radweg nur aufgemalt	RW1; 4057,9648 4246,9406

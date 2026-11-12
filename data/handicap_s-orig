@@ -143,7 +143,7 @@ Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q4::inwork 12691,1204
 #: source_id: planb2026:13.44005683,52.52346346,15.08.2024,07:00 ("Sicherung gemäß Vz.-plan", bis 31.10.2026) (inaktiv)
 #: also_indoor: traffic (re-G,T,no-H,W[later])
 #: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
-#: last_checked: 2026-10-31
+#: last_checked: 2026-11-12 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-12-14 (planb)
 #: valid: -20261214
@@ -304,18 +304,19 @@ Mariendorfer Damm: Gehweg für Radfahrer frei, Engstellen	q2::inwork; 9621,3155 9
 # 
 #: next_check_id: ROEBLING-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf4dnag3yg2z (nur Kfz-Verkehr, bis November 2026 geplant)
-#: source_id: LMS-BR:399339/72 viz2021:13.35937,52.4567,18.02.2026,07:00 (bis 13.11.2026)
+#: also_indoor: traffic (G,T,H,W)
+#: source_id: LMS-BR:399339/72 viz2021:13.35937,52.4567,18.02.2026,07:00 (bis 13.11.2026) (bis 15.01.2027)
 #: source_id: planb2026:13.36103702,52.45337263,18.02.2026, ("Sperrung einer Fahrtrichtung", bis 13.11.2026) (vorfristig inaktiv)
 #: note: außerdem drei Fußgängerampeln mit Anforderung, nur für die Fahrbahn und damit für den Verkehr Richtung Norden relevant
-#: last_checked: 2026-07-19
-#: next_check: 2026-11-13 (VIZ + planb)
-#: valid: -20261113
+#: last_checked: 2026-11-12 (traffic)
+#: next_check: 2027-01-15 (VIZ-Verkehrsmeldung)
+#: valid: -20270115
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), teilweise sehr enger Gehweg (parkende Autos auf dem Bürgersteig!) für Radfahrer frei	q3::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260706 (weitere Arbeiten bis ca. 2029)
 #: source_id: planb2026:13.36252186,52.45206699,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 13.11.2026) (vorfristig inaktiv)
 #: last_checked: 2026-07-19
-#: next_check: 2026-11-13 (VIZ + ex-planb)
-#: valid: -20261113
+#: next_check: 2027-01-15 (VIZ-Verkehrsmeldung)
+#: valid: -20270115
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für Radfahrer frei	q3::inwork; 7625,5231 7694,5135
 # 
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1355154731493191681 --- #: XXX laut rbbtext bis zum 12.2.2021 gesperrt --- #: source_id: 2147346843 (kein Endedatum) --- #: also_indoor: traffic (H,G) --- #: last_checked: 2021-01-29 (viz twitter) --- #: check_frequency: 14d --- #: next_check: 2021-02-12 --- Rixdorfer Str.: Wasserrohrbruch, einige Meter Fahrbahn hinter der Eisenacher Str. Richtung Süden gesperrt	q2::inwork; 10412,4552 10288,4354
@@ -1056,7 +1057,7 @@ Stienitzseestr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 26228,5041 26
 ### Moabit ###
 # 
 #: source_id: planb2026:13.35334176,52.53143774,28.11.2022, ("Sicherung gemäß Vz.-plan", bis 30.09.2026) (bis 30.11.2026) (bis 18.12.2026)
-#: source_id: LMS-BR:325489/72 viz2021:13.358912,52.537703, (bis 25.09.2026) (bis 13.11.2026) (bei vizapi2026 bis 13.11.2026)
+#: source_id: LMS-BR:325489/72 viz2021:13.358912,52.537703, (bis 25.09.2026) (bis 13.11.2026) (bei vizapi2026 bis 13.11.2026) (bis 04.12.2026)
 #: osm_watch: note 5403292 5
 #: last_checked: 2026-10-10
 #: next_check: 2026-12-18 (planb)
@@ -1074,16 +1075,16 @@ Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,1459
 # 
 #: next_check_id: PERLEBERGER-2024
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26857.pdf (Ende der Bauarbeiten für November 2026 geplant, auch an der Perleberger Brücke)
-#: source_id: LMS-BR:325283/72 viz2021:13.34718,52.53079, vizapi2026:881/2026 (bis 05.11.2025) (inaktiv) (bis 25.09.2026) (bei vizapi2026 bis 30.09.2026) (bis 13.11.2026)
+#: source_id: LMS-BR:325283/72 viz2021:13.34718,52.53079, vizapi2026:881/2026 (bis 05.11.2025) (inaktiv) (bis 25.09.2026) (bei vizapi2026 bis 30.09.2026) (bis 13.11.2026) (bis 04.12.2026)
 #: source_id[inactive]: bvg2024:m27#HIM_FREETEXT_302033 (zwischenzeitlich mehrmals entfernt)
 #: source_id: bvg2024:m27#db4ac361-e96f-419c-ae3d-4b8cc4d7ba11
 #: source_id: bvg2024:m27#HIM_FREETEXT_348335
 #: osm_watch: way id="1392961223" version="7"
 #: osm_watch: note 5390781 1
-#: also_indoor: traffic (T,ex-G[viel zu kurz?],re-W,re-H)
-#: last_checked: 2026-10-21
-#: check_frequency: 45d
-#: next_check: 2026-11-13 (VIZ-Verkehrsmeldung)
+#: also_indoor: traffic (T[basemap],re-G[later],re-W,re-H)
+#: last_checked: 2026-11-12 (traffic)
+#: check_frequency: 14d (traffic)
+#: next_check: 2026-12-04 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-11-30 (pardok)
 Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6230,13596 6366,13716 6493,13822 6646,13951
 # REMOVED (hier nicht mehr) --- Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bürgersteig	q1-::inwork; 6646,13951 6730,14021 6818,14102 6992,14251
@@ -1107,7 +1108,7 @@ Perleberger Str.: provisorischer benutzungspflichtiger Radweg auf einem engen Bü
 #: osm_watch[closed]: note 3913793 11
 #: osm_watch[closed]: note 4157644 3
 #: osm_watch: way id="1283287449" version="5"
-#: last_checked: 2026-09-14 (osm)
+#: last_checked: 2026-11-12 (webcam)
 #: check_frequency: 60d
 #: next_check: 2027-03-15 (caimmo website: Anfang 2027)
 (Jean-Monnet-Str. - Europaplatz Nord): Engstellen durch Baustelleneinrichtungen	q2::inwork 7995,13537 7963,13489

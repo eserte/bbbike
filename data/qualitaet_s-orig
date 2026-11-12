@@ -6449,9 +6449,14 @@ Boviststr.: Plattenweg (Längsplatten)	Q2 21510,-1724 21544,-1563
 Kleine Waldstr.: Asphalt	Q0 21205,-1763 21214,-1710
 Kleine Waldstr.: unbefestigte Straße	Q2 21214,-1710 21222,-1654
 Kleine Waldstr.: Asphalt	Q0 21214,-1710 21306,-1714 21409,-1717 21510,-1724 21563,-1728
+# 
+#: next_check_id: A117-2024
+#: add_fragezeichen: Wegoberfläche (Beschaffenheit, Qualität) nach den Bauarbeiten? vvv
 (Kleine Waldstr. - Waldstr.): Asphalt mit Schäden	Q1 21510,-1724 21509,-1790 21531,-1819
 (Kleine Waldstr. - Waldstr.): Kleinsteinpflaster	Q1- 21531,-1819 21590,-1810
 (Kleine Waldstr. - Waldstr.): Asphalt mit Schäden	Q1 21590,-1810 21645,-1741 21657,-1726
+#: add_fragezeichen ^^^
+# 
 Waldstr.: etwas unebener und rauer Asphalt	Q1 21593,-1728 21646,-1725
 #: historical_note: etwas unebener und rauer Asphalt, Q1 (neu gemacht?)
 Waldstr.: Asphalt	Q0 21646,-1725 21657,-1726 21754,-1706
@@ -12606,7 +12611,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 #: source_id: vizapi2026:1158/2026 (Kraneinsatz 30.10.2026 bis 31.10.2026, hier: Sperrung für Kfz-Verkehr)
 #: source_id: bvg2024:240#HIM_FREETEXT_373030 (ab 16.11.2026)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-11-04
+#: last_checked: 2026-11-12
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-10-30 (planb + BVG: wird es auch für den Radverkehr eine Sperrung geben?)
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
@@ -14226,7 +14231,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen?
-#: last_checked: 2026-10-26 (architektur-urbanistik)
+#: last_checked: 2026-11-12 (daf)
 #: check_frequency: 30d
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 # 
@@ -14343,6 +14348,7 @@ Marlene-Dietrich-Platz: unebenes Kleinsteinpflaster	Q2+ 8253,11306 8280,11296 82
 #: by: https://www.entwicklungsstadt.de/ollenhauerstrasse-vor-dem-umbau-buerger-kaempfen-weiter-gegen-baumfaellungen/ (geplanter Beginn der Bauarbeiten: 1. Quartal 2027)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/nach-entscheidung-des-berliner-verwaltungsgerichts-geplante-fallung-von-mehr-als-100-baumen-in-reinickendorf-verschoben-16095631.html
 #: by: https://bvv-reinickendorf.berlin.de/pi-r/vo020_r.asp?VOLFDNR=14623 (Antwort)
+#: by: https://www.entwicklungsstadt.de/ute-bonde-haelt-an-baumfaellungen-fest-116-baeume-in-reinickendorf-weiter-bedroht/
 #: XXX geplante Sanierung der Fahrbahn, dabei gibt es hier vielleicht auch Verbesserungen; was wird mit den vorhandenen Hochbordabschnitten? vvv
 #: last_checked: 2026-06-07 vvv
 #: next_check: 2031-12-31 (infravelo, BA-Seite) vvv
@@ -32559,7 +32565,7 @@ Am Waldidyll: Beton mit einigen Schäden	Q1 2390,22581 2384,22689 2418,22878
 #: corrected_by: srt (Asphalt mit vielen Schlaglöchern, Q2 -> ) vvv
 #: next_check_id: PANNWITZ-2026
 #: XXX vielleicht wird nach den Bauarbeiten die Qualität besser sein?
-#: next_check: 2026-11-06 (planb)
+#: next_check: 2026-12-18 (planb)
 Pannwitzstr.: schadhafter Beton	Q2+ 4280,19110 4384,19089 4471,19124 4546,19197 4608,19287
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20111006.1020.360727.html
 Pannwitzstr.: sehr guter Asphalt	Q0+ 4608,19287 4690,19446
