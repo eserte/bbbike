@@ -6451,11 +6451,12 @@ Kleine Waldstr.: unbefestigte Straße	Q2 21214,-1710 21222,-1654
 Kleine Waldstr.: Asphalt	Q0 21214,-1710 21306,-1714 21409,-1717 21510,-1724 21563,-1728
 # 
 #: next_check_id: A117-2024
-#: add_fragezeichen: Wegoberfläche (Beschaffenheit, Qualität) nach den Bauarbeiten? vvv
-(Kleine Waldstr. - Waldstr.): Asphalt mit Schäden	Q1 21510,-1724 21509,-1790 21531,-1819
-(Kleine Waldstr. - Waldstr.): Kleinsteinpflaster	Q1- 21531,-1819 21590,-1810
-(Kleine Waldstr. - Waldstr.): Asphalt mit Schäden	Q1 21590,-1810 21645,-1741 21657,-1726
-#: add_fragezeichen ^^^
+#: historical_note: vor den Bauarbeiten 2024-2026: Asphalt mit Schäden, Q1
+(Kleine Waldstr. - Waldstr.): Asphalt	Q0 21510,-1724 21509,-1790 21531,-1819
+#: historical_note: vor den Bauarbeiten 2024-2026: Kleinsteinpflaster, Q1-
+(Kleine Waldstr. - Waldstr.): Verbundsteinpflaster	Q1+ 21531,-1819 21590,-1810
+#: historical_note: vor den Bauarbeiten 2024-2026: Asphalt mit Schäden, Q1
+(Kleine Waldstr. - Waldstr.): Asphalt	Q0 21590,-1810 21645,-1741 21657,-1726
 # 
 Waldstr.: etwas unebener und rauer Asphalt	Q1 21593,-1728 21646,-1725
 #: historical_note: etwas unebener und rauer Asphalt, Q1 (neu gemacht?)
@@ -8074,6 +8075,8 @@ Werderstr.: schadhafter Asphalt	Q2+ -2158,17613 -2091,17603 -2026,17592 -1899,17
 (Zufahrt Villa Borsig): Asphalt	Q0 436,20558 426,20420 443,20357 430,20338
 (Berliner Str. - Tegeler Hafen): Verbundsteinpflaster	Q1 1872,20683 1741,20566
 Greenwichpromenade: Asphalt	Q0 1269,20271 1340,20209 1397,20125
+#: by: https://www.entwicklungsstadt.de/600-000-tulpen-fuer-tegel-greenwichpromenade-veraendert-sich/ (Sanierung des Radweg 2027 (hier?))
+#: next_check: 2027-11-30 (entwicklungsstadt)
 Greenwichpromenade: wassergebundene Decke und Rasengittersteine	Q1 1397,20125 1557,19765
 Im Saatwinkel: Verbundsteinpflaster	Q1+ -814,16830 -914,16830
 Im Saatwinkel: Asphalt	Q0 -914,16830 -916,16641
@@ -12609,9 +12612,9 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_370275 (Umleitung ab 30.10.2026)
 #: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026)
 #: source_id: vizapi2026:1158/2026 (Kraneinsatz 30.10.2026 bis 31.10.2026, hier: Sperrung für Kfz-Verkehr)
-#: source_id: bvg2024:240#HIM_FREETEXT_373030 (ab 16.11.2026)
+#: source_id: bvg2024:240#HIM_FREETEXT_373030 (ab 16.11.2026, vermutlich auch nur ein Kraneinsatz)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-11-12
+#: last_checked: 2026-11-13
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-10-30 (planb + BVG: wird es auch für den Radverkehr eine Sperrung geben?)
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775

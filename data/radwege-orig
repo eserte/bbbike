@@ -1093,8 +1093,18 @@ neu asphaltiert	RW2; 10884,14952 10881,15047
 neu asphaltiert	RW2; 10883,15129 10884,15152
 Radspur, niedrige Protektion	RW4; 10884,15152 10886,15251
 asphaltiert	RW2; 10886,15251 10887,15287
-Radspur, niedrige Protektion	RW4; 10887,15287 10902,15422 10917,15525
-Bushaltestelle	RW5; 10917,15525 10925,15581
+Radspur, niedrige Protektion	RW4; 10887,15287 10902,15422
+#: next_check_id: BUCHHOLZER-2026
+#: last_checked: 2026-11-13 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2026-11-27 (VIZ-Verkehrsmeldung) vvv
+# ACTIVATE_LATER --- Radspur, niedrige Protektion	RW4; 10902,15422 10917,15525
+provisorische Radwegführung über Hochbord	RW2; 10902,15422 10917,15525
+# ACTIVATE_LATER --- Bushaltestelle	RW5; 10917,15525 10925,15581
+provisorische Radwegführung über Hochbord	RW2; 10917,15525 10925,15581
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 Radspur, niedrige Protektion	RW4; 10925,15581 10941,15697
 #: historical_note: früher: Gehwegplatten, RW2;, zwischendurch bis etwa März 2026 wegen einer Hochbaustelle provisorische Führung über den Bürgersteig
 Radspur, niedrige Protektion	RW4; 10941,15697 10953,15787
@@ -1119,12 +1129,12 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 #: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026) (vorfristig inaktiv) (bis 27.09.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.41257309,52.54443858,02.10.2026, ("Fahrstreifen-Reduzierung", bis 13.11.2026) (vorfristig inaktiv)
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2026-10-19 (mapillary) vvv
-#: next_check: 2026-11-13 (VIZ-Verkehrsmeldung) vvv
-#: XXX nach den Bauarbeiten wiederherstellen: Radspur, niedrige Protektion	RW4;
+#: last_checked: 2026-11-13 vvv
+# REMOVED --- #: next_check: 2026-11-13 (VIZ-Verkehrsmeldung) vvv
+# # ACTIVATE_LATER --- Radspur, niedrige Protektion	RW4; 10925,15581 10917,15525 10902,15422
 provisorische Radwegführung über Hochbord	RW2; 10925,15581 10917,15525
 provisorische Radwegführung über Hochbord	RW2; 10917,15525 10902,15422
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 Radspur, niedrige Protektion	RW4; 10902,15422 10887,15287 10883,15251
@@ -1571,14 +1581,15 @@ Verbundsteinpflaster mit deutlichen Unebenheiten	RW2; 3910,6949 3784,6985 3688,7
 	RW1; 4672,8031 4581,8048 4461,8105
 #: XXX hier ist ein Zweirichtungsradweg geplant
 #: by: https://api.fixmyberlin.de/api/plannings/216
-#: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2027 - 4. Quartal 2027)
+#: by: https://www.infravelo.de/projekt/detmolder-strasse-1/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023) (1. Quartal 2024 - 4. Quartal 2024) (3. Quartal 2025 - 4. Quartal 2026) (1. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2027 - 4. Quartal 2027) (4. Quartal 2027 - 4. Quartal 2028)
 #: note: früher infravelo-Projekt "detmolder-strasse"
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/mobilitaetsrat/mobilitaetsrat-protokoll-der-11_-sitzung-am-26_03_2025.pdf (nach den Bauarbeiten der Wasserbetriebe 2026)
 #: by: https://www.tagesspiegel.de/berlin/kaum-noch-neue-radwege-in-berlin-ausbau-stockt-fordermittel-verfallen-15506512.html (2026)
 #: osm_watch: way id="963841938" version="11"
+#: XXX Sanierung und Verbreiterung auf 2,5m geplant
 #: last_checked: 2026-10-06
 #: check_frequency: 540d
-#: next_check: 2027-12-31 (infravelo)
+#: next_check: 2028-12-31 (infravelo)
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4786,8007 4711,8013
 # REMOVED (es gibt nun wieder eine provisorische Radspur) --- #: by: https://www.deutsches-architekturforum.de/thread/14397-jaho-berlin-mitte-in-planung/?postID=723414#post723414 --- #: by: https://www.art-invest.de/projekt/jaho-berlin/ (Fertigstellung: 2025) --- #: source_id: viz2021:13.418119,52.51549,23.08.2022,05:00 (bis 23.10.2022) --- #: XXX Einschränkung wegen Hochbauarbeiten (JaHo) --- #: XXX früher: geschützter Radstreifen, Grünbeschichtung, RW4; --- #: last_checked: 2022-09-20 --- #: check_frequency: 60d --- #: next_check: 2025-01-01
@@ -1863,7 +1874,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-10-28 vvv
+#: last_checked: 2026-11-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1884,7 +1895,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="61"
 #: osm_watch: way id="1082929723" version="18"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-11-03 (osm) vvv
+#: last_checked: 2026-11-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1973,13 +1984,13 @@ neu asphaltiert	RW2; 22292,5774 22236,5633
 #: next_check_id: BAHNHOFSTRKOEPENICK-2022
 #: source_id: viz2021:13.578463,52.457551,09.10.2023,12:00 (Verengung der Fahrbahn, bis 24.11.2023) (bis 28.06.2024) (bis 25.10.2024) (bis 21.10.2024, weitere Arbeiten im Anschluss) (bis 23.10.2024) (inaktiv)
 #: source_id: viz2021:13.57973,52.45902,27.06.2024,16:53 (bis 21.10.2024) (inaktiv)
-#: last_checked: 2026-10-18 vvv
+#: last_checked: 2026-11-12 (osm) vvv
 #: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2024-10-21 vvv
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, früher: gemeinsamer Geh- und Radweg	RW2;
 	RW0; 22431,6068 22467,6135
 #: XXX Bauarbeiten, Bürgersteig ist abgesperrt, Suggestivstreifen ist nicht der Rede Wert, Tempo 20 + Radfahrüberholverbot, früher:	RW2;
-#: osm_watch: way id="910439501" version="27"
+#: osm_watch: way id="910439501" version="28"
 #: osm_watch: note 3599331 7
 	RW0; 22467,6135 22431,6068
 # REMOVED --- #: next_check ^^^
@@ -2411,7 +2422,7 @@ Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,116
 	RW3; 10133,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
 #: next_check_id: GERTRAUDENBRUECKE-2025
-#: last_checked: 2026-11-10 vvv
+#: last_checked: 2026-11-13 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
 #: XXX früher: #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m --- #: note: früher: Busspur gilt Mo-Fr 7-19 Uhr --- Busspur ist immer gültig	RW5;
@@ -2494,7 +2505,7 @@ Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879
 #: next_check_id: GERTRAUDENBRUECKE-2025
 #: XXX früher: Busspur gilt Mo-Fr 6-20 Uhr	RW5;
-#: last_checked: 2026-11-10
+#: last_checked: 2026-11-13
 #: check_frequency: 90d
 provisorische Radspur	RW4; 10376,11879 10349,11847 10314,11804 10299,11786
 # REMOVED --- #: XXX temporäre Radwegführung --- #: last_checked: 2023-01-05 --- #: check_frequency: 30d --- temporäre Führung als Bürgersteigradweg	RW1; 10873,12577 10951,12637 --- # wieder herstellen:	RW4; 10873,12577 10951,12637
@@ -5146,7 +5157,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.43331,52.53623,15.01.2024,15:40 (bis 01.07.2024) (inaktiv)
 #: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: priority: #D vvv
-#: last_checked: 2026-10-31 vvv
+#: last_checked: 2026-11-13 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2024-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -8337,7 +8348,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019) ("abgeschlossen")
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2026-11-04 (mapillary) vvv
+#: last_checked: 2026-11-13 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -8924,7 +8935,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12970,13996 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2026-10-07
+#: last_checked: 2026-11-13
 #: check_frequency: 45d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -8951,7 +8962,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022) (bis 3.3.2023) (bis 28.5.2023) (inaktiv) (bis 29.9.2023) (bis 15.1.2024) (bis 1.7.2024) (bis 31.7.2024) (inaktiv)
 #: note: laut rbb nun bis 29.9.2023
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2026-10-07 vvv
+#: last_checked: 2026-11-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-09-30 (infravelo) vvv
 #: osm_watch: way id="335479077" version="25"

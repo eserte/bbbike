@@ -17,7 +17,7 @@ Dudenstr./Burgherrenstr.	F::inwork 9076,8783
 #: by: https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiewfriawkerrwesn2qusf33bocizcznykdeypfyrwqgidsslwbozm
 #: source_id: vizapi2026:1137/2026 (26.10.2026 bis 13.11.2026)
 #: source_id: LMS-BR:426544/72 viz2021:13.48513,52.51587,26.10.2026,08:00 vizapi2026:1137/2026 (bis 13.11.2026) (bis 27.11.2026)
-#: source_id: planb2026:13.48461863,52.51375262,26.10.2026, ("Gegenverkehrsanlage (LZA)", bis 13.11.2026)
+#: source_id: planb2026:13.48461863,52.51375262,26.10.2026, ("Gegenverkehrsanlage (LZA)", bis 13.11.2026) (inaktiv)
 #: note: Laut Verkehrszeichenplan Richtung Norden Gehweg für Radfahrer frei; in beiden Richtungen Radfahrüberholverbot; Linksabbiegen vom Stasimuseum nicht erlaubt
 #: next_check: 2026-11-27 (VIZ-Verkehrsmeldung)
 #: valid: 20261026-20261127
@@ -102,7 +102,7 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv) (bis 21.12.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026) (bis 21.12.2026)
-#: last_checked: 2026-11-10
+#: last_checked: 2026-11-13
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261221
@@ -4359,7 +4359,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-10-25 vvv
+#: last_checked: 2026-11-13 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 4

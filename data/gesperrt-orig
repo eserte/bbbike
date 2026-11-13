@@ -4163,7 +4163,7 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: by: https://www.entwicklungsstadt.de/b-yard-in-friedrichshain-auf-der-baustelle-geht-es-jetzt-in-die-hoehe/
 #: also_indoor: traffic (B)
 # REMOVED --- #: osm_watch: way id="1120450475" version="6"
-#: osm_watch: note 4180739 2
+#: osm_watch[closed]: note 4180739 2
 #: source_id: planb2026:13.44213814,52.51076044,05.01.2026,06:00 ("Gehwegvollsperrung", Wriezener Karree, bis 30.07.2026) (inaktiv)
 #: source_id: planb2026:13.43879907,52.51156593,14.04.2026, ("Fahrstreifen-Verschwenkung", Straße der Pariser Kommune, bis 31.03.2028)
 #: source_id: planb2026:13.4389493,52.51163164,20.04.2026,06:00 ("Fahrstreifen-Verschwenkung", bis 31.03.2028)
@@ -4172,7 +4172,8 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: last_checked: 2026-10-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2028-03-31 (entwicklungsstadt, planb) vvv
-#: osm_watch: way id="1054783030" version="10"
+#: osm_watch: way id="1054783030" version="11"
+#: osm_watch: way id="1578265708" version="1"
 Am Wriezener Bahnhof: Einbahnstraßenregelung	1s:q3::inwork 12758,11915 12788,11898 12944,11760
 #: note: hier steht ein Einbahnstraßenschild, aber kein entsprechendes Einfahrt-verboten-Schild
 Wriezener Karree	1s:q3::inwork 12959,11631 12728,11850
@@ -4352,16 +4353,18 @@ Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 #: next_check_id: PETERSBURGER-2024
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (Querungsmöglichkeit Straßmannstr. bis Mitte November 2026 gesperrt)
 #: osm_watch: way id="182614432" version="29"
-#: last_checked: 2026-10-28 vvv
-#: next_check: 2026-11-15 (SenUVK-Seite zur Straßmannstr.) vvv
+#: last_checked: 2026-11-13 vvv
+#: check_frequency: 7d vvv
+# REMOVED ---  #: next_check: 2026-11-15 (SenUVK-Seite zur Straßmannstr.) vvv
 Petersburger Str.: Überquerung in Höhe Straßmannstr. nicht möglich	3nocross::inwork 13481,13128 13530,13014 13579,12904
 Petersburger Str.: Überquerung in Höhe Kochhannstr. nicht möglich	3nocross::inwork 13481,13128 13434,13234 13383,13349
 # REMOVED --- #: last_checked: 2026-10-11 --- Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: DUNCKERBRUECKE-2026
-#: last_checked: 2026-10-26 (mapillary)
+#: last_checked: 2026-11-13
 #: check_frequency: 120d
 #: next_check: 2027-09-30 (mögliche Nutzung durch den Rad+Fußverkehr)
 Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
@@ -4800,7 +4803,7 @@ Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,
 #: osm_watch: way id="4612427" version="23"
 #: source_id: planb2026:13.41545231,52.51320684,25.03.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2027)
 #: also_indoor: traffic (G,W)
-#: last_checked: 2026-11-06
+#: last_checked: 2026-11-13
 #: check_frequency: 45d
 #: next_check: 2027-12-31 (planb)
 # ACTIVATE_LATER --- #: next_check: 2028-07-31 (entwicklungsstadt)
@@ -5055,7 +5058,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-11-10
+#: last_checked: 2026-11-13
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
