@@ -420,7 +420,7 @@ Gregor-Mendel-Str. (Potsdam)	1 -13596,-508 -13415,-506 -13257,-512 -13182,-515
 Donaustr.	1 12150,8884 12198,8887
 Altstadt Köpenick: nur für Busse frei	2 22388,4737 22390,4702
 #: note: Luftbild
-Köpenicker Landstr.: Mittelstreifen	3nocross 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697
+Köpenicker Landstr.: Mittelstreifen	3nocross 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 16166,7429 15920,7697
 #: note: Luftbild
 Buschallee: Straßenbahntrasse	3nocross 14809,16525 15134,16499 15142,16499
 Alt Mahlsdorf: Mittelstreifen	3nocross 24806,11261 24893,11252 25138,11215
@@ -1067,7 +1067,7 @@ Europaplatz	1 7989,13302 7938,13302
 Am Kupfergraben	1 9754,12775 9815,12705 9870,12657
 #: note: Radfahrer benutzen den asphaltierten Parkstreifen, der entgegen der Einbahnstraßenrichtung freigegeben ist
 Am Treptower Park	1 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14257,9432 14169,9525
-Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14745,8912
+Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14898,8753 14852,8799 14842,8809 14808,8845 14745,8912
 # REMOVED (spätestens seit 2025 ist das Linksabbiegen wieder erlaubt) --- Am Treptower Park - Elsenstr.	3 14169,9525 14149,9546 14089,9610 14060,9574 14020,9524 13973,9465
 Czeminskistr.	1 7600,8921 7563,8871
 Berlinickestr.	1 5080,5498 5016,5401
@@ -2409,14 +2409,25 @@ Max-Sabersky-Allee (Teltow)	1 2696,189 2902,329
 # 
 Melchiorstr.: Fahrradstraße ohne Freigabe für Anleiger	2 11507,11355 11542,11342
 # 
+#: next_check_id: LANGENSCHEIDTBRUECKE-2025
+#: by: https://www.tagesspiegel.de/berlin/hitze-beschadigte-das-bauwerk-brucke-in-berlin-schoneberg-nach-feuer-gesperrt-15061564.html
+#: by: https://viz.berlin.de/aktuelle-meldungen/langenscheidtbrucke-in-schoneberg-nach-brand-fur-kfz-verkehr-gesperrt/ (nur Kfz-Verkehr betroffen)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mab4uqycg22s
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1627650.php
+#: by: https://www.tagesspiegel.de/berlin/weitere-prufungen-an-bauwerk-notig-brucke-in-berlin-schoneberg-bleibt-nach-feuer-fur-autofahrer-gesperrt-15061564.html
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10082 (Antrag)
+#: by: https://bvv-tempelhof-schoeneberg.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10187 (Antrag)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1681029.php (bis Mitte 2027?)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26254.pdf (mindestens bis Herbst 2026)
 #: by: https://www.entwicklungsstadt.de/langenscheidtbruecke-in-schoeneberg-neuer-zeitplan-nennt-details/
 #: note: normalerweise: Langenscheidtbrücke	1 7647,9196 7735,9121
 #: osm_watch: note 5097733 3
 #: XXX wegen Brandschaden für Kfz-Verkehr komplett gesperrt
+#: also_indoor: traffic (G,no-T,H[basemap?],no-W)
 #: priority: #C
-#: last_checked: 2026-10-27 (mapillary)
-#: next_check: 2026-11-15 (pardok (Herbst 2026))
+#: last_checked: 2026-11-14 (traffic)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2026-11-15 (pardok (Herbst 2026))
 Langenscheidtbrücke	2::inwork 7647,9196 7735,9121
 # 
 Schützenstr.	1 19978,-712 19896,-746
@@ -2568,7 +2579,7 @@ An der Kirche (Groß Glienicke)	1 -9717,6669 -10053,6676
 # 
 (Friedhofsgasse - Heinrich-Mann-Allee [Nebenfahrbahn])	1 -12001,-2495 -12017,-2511
 # 
-Köpenicker Landstraße -> Eichbuschallee: Linksabbiegen nicht erlaubt	3 16195,7398 15920,7697 15763,7569
+Köpenicker Landstraße -> Eichbuschallee: Linksabbiegen nicht erlaubt	3 16195,7398 16166,7429 15920,7697 15763,7569
 # 
 Gutzmannstr.: Einfahrt für Kfz verboten	1 339,1484 374,1472
 # 
@@ -2595,4 +2606,17 @@ Liebigstr.: Umgestaltungsarbeiten, Einbahnstraßenregelung, Radfahrer frei	1 1399
 # REMOVED (hier vermutlich nicht) --- Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522
 # 
 Gensweg: Poller	3 * 12772,1019 12727,1074
+# 
+#: historical_note: seit November 2026
+#: note: Diagonalfilter
+Bouchéstr.	3 13489,9456 13602,9581 13642,9624
+Bouchéstr. -> Kiefholzstr.	3 13489,9456 13602,9581 13450,9714
+Kiefholzstr.	3 13715,9455 13602,9581 13450,9714
+Kiefholzstr. -> Bouchéstr.	3 13715,9455 13602,9581 13642,9624
+Bouchéstr.	3 13642,9624 13602,9581 13489,9456
+Bouchéstr. -> Kiefholzstr.	3 13642,9624 13602,9581 13715,9455
+Kiefholzstr.	3 13450,9714 13602,9581 13715,9455
+Kiefholzstr. -> Bouchéstr.	3 13450,9714 13602,9581 13489,9456
+#: note: Einbahnstraße, Radfahrer frei
+Bouchéstr - Kiefholzstr.	1 13642,9624 13602,9581 13450,9714 13251,9829
 # 

@@ -518,10 +518,10 @@ Krokusstr.	1 16738,2717 16739,2736 16677,2856
 Gregor-Mendel-Str. (Potsdam)	1 -13596,-508 -13415,-506 -13257,-512 -13182,-515
 Donaustr.	1 12150,8884 12198,8887
 Altstadt Köpenick: nur für Busse frei	2 22388,4737 22390,4702
-Mittelstreifen	3nocross::ignrte 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 15920,7697
+Mittelstreifen	3nocross::ignrte 16428,7144 16377,7200 16353,7226 16259,7328 16195,7398 16166,7429 15920,7697
 Köpenicker Landstr. -> Trojanstr.: Mittelstreifen	3::igndisp 16377,7200 16353,7226 16290,7160
 Trojanstr. -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16290,7160 16353,7226 16259,7328
-Köpenicker Landstr. -> Lakegrund: Mittelstreifen	3::igndisp 15920,7697 16195,7398 16368,7425
+Köpenicker Landstr. -> Lakegrund: Mittelstreifen	3::igndisp 16166,7429 16195,7398 16368,7425
 Lakegrund -> Köpenicker Landstr.: Mittelstreifen	3::igndisp 16368,7425 16195,7398 16259,7328
 Straßenbahntrasse	3nocross::ignrte 14809,16525 15134,16499 15142,16499
 Buschallee -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 14809,16525 15134,16499 15131,16618
@@ -1647,7 +1647,7 @@ Schloßplatz - Rathausbrücke	3 10199,12251 10285,12306 10357,12356
 Europaplatz	1 7989,13302 7938,13302
 Am Kupfergraben	1 9754,12775 9815,12705 9870,12657
 Am Treptower Park	1 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14257,9432 14169,9525
-Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14745,8912
+Am Treptower Park	1 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14898,8753 14852,8799 14842,8809 14808,8845 14745,8912
 Czeminskistr.	1 7600,8921 7563,8871
 Berlinickestr.	1 5080,5498 5016,5401
 Sembritzkistr.: nur für Radfahrer	3 7157,5418 7199,5479 7245,5568
@@ -2849,7 +2849,7 @@ Theodor-Fontane-Str. (Groß Glienicke): Zufahrt zur B2 verboten	1 -9839,6877 -984
 Ribbeckweg (Groß Glienicke)	1 -9720,6589 -9928,6599 -9932,6558
 An der Kirche (Groß Glienicke)	1 -9717,6669 -10053,6676
 (Friedhofsgasse - Heinrich-Mann-Allee [Nebenfahrbahn])	1 -12001,-2495 -12017,-2511
-Köpenicker Landstraße -> Eichbuschallee: Linksabbiegen nicht erlaubt	3 16195,7398 15920,7697 15763,7569
+Köpenicker Landstraße -> Eichbuschallee: Linksabbiegen nicht erlaubt	3 16195,7398 16166,7429 15920,7697 15763,7569
 Gutzmannstr.: Einfahrt für Kfz verboten	1 339,1484 374,1472
 (Flughafengelände)	1 9292,8375 9300,8334 9342,8313 9395,8340 9414,8380 9377,8415
 (Flughafengelände)	1 9606,8676 9647,8593 9645,8563 9589,8519 9541,8570 9563,8622 9570,8678
@@ -2857,3 +2857,12 @@ Liebigstr.: Umgestaltungsarbeiten, Einbahnstraßenregelung, Radfahrer frei	1 1399
 Gensweg: Poller	3 12713,962 12772,1019 12727,1074
 Gensweg: Poller	3 12808,968 12772,1019 12727,1074
 Gensweg: Poller	3 12868,1085 12772,1019 12727,1074
+Bouchéstr.	3 13489,9456 13602,9581 13642,9624
+Bouchéstr. -> Kiefholzstr.	3 13489,9456 13602,9581 13450,9714
+Kiefholzstr.	3 13715,9455 13602,9581 13450,9714
+Kiefholzstr. -> Bouchéstr.	3 13715,9455 13602,9581 13642,9624
+Bouchéstr.	3 13642,9624 13602,9581 13489,9456
+Bouchéstr. -> Kiefholzstr.	3 13642,9624 13602,9581 13715,9455
+Kiefholzstr.	3 13450,9714 13602,9581 13715,9455
+Kiefholzstr. -> Bouchéstr.	3 13450,9714 13602,9581 13489,9456
+Bouchéstr - Kiefholzstr.	1 13642,9624 13602,9581 13450,9714 13251,9829

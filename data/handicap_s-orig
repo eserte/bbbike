@@ -309,14 +309,16 @@ Mariendorfer Damm: Gehweg für Radfahrer frei, Engstellen	q2::inwork; 9621,3155 9
 #: source_id: planb2026:13.36103702,52.45337263,18.02.2026, ("Sperrung einer Fahrtrichtung", bis 13.11.2026) (vorfristig inaktiv)
 #: note: außerdem drei Fußgängerampeln mit Anforderung, nur für die Fahrbahn und damit für den Verkehr Richtung Norden relevant
 #: last_checked: 2026-11-12 (traffic)
+#: check_frequency: 120d
 #: next_check: 2027-12-31 (VIZ-Verkehrsmeldung)
 #: valid: -20271231
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), teilweise sehr enger Gehweg (parkende Autos auf dem Bürgersteig!) für Radfahrer frei	q3::inwork; 7497,5610 7477,5475 7492,5415 7625,5231
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260706 (weitere Arbeiten bis ca. 2029)
-#: source_id: planb2026:13.36252186,52.45206699,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 13.11.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.36252186,52.45206699,29.06.2026, ("Sicherung gemäß Vz.-plan", bis 13.11.2026) (vorfristig inaktiv) (bis 31.12.2027)
 #: last_checked: 2026-07-19
-#: next_check: 2027-01-15 (VIZ-Verkehrsmeldung)
-#: valid: -20270115
+#: check_frequency: 120d
+#: next_check: 2027-12-31 (planb)
+#: valid: -20271231
 Röblingstr.: Sperrung der Fahrbahn (Einbahnstraßenregelung), linker Gehweg für Radfahrer frei	q3::inwork; 7625,5231 7694,5135
 # 
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1355154731493191681 --- #: XXX laut rbbtext bis zum 12.2.2021 gesperrt --- #: source_id: 2147346843 (kein Endedatum) --- #: also_indoor: traffic (H,G) --- #: last_checked: 2021-01-29 (viz twitter) --- #: check_frequency: 14d --- #: next_check: 2021-02-12 --- Rixdorfer Str.: Wasserrohrbruch, einige Meter Fahrbahn hinter der Eisenacher Str. Richtung Süden gesperrt	q2::inwork; 10412,4552 10288,4354
@@ -366,7 +368,7 @@ Güldenhofer Ufer: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 16630,6800 16677,689
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
 #: XXX laut osm "Baustellenzufahrt Elsenbrücke"; könnte aber auch mit dem Bauvorhaben "Molecules" zu tun haben (wahrscheinlicher?)
 #: osm_watch: way id="1008972168" version="10"
-#: last_checked: 2026-07-23
+#: last_checked: 2026-11-14
 #: check_frequency: 120d
 #: next_check: 2029-06-30 (agromex website)
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149
@@ -1212,11 +1214,11 @@ Rankestr.: Einmündungsbereich Breitscheidplatz gesperrt, Ausweichen auf Gehweg, 
 # 
 #: next_check_id: A100-MECKLENBURGISCHE-2026
 #: source_id: planb2026:13.31995822,52.47872413,28.08.2026, ("Sicherung gemäß Vz.-plan", bis 31.07.2027)
+#: source_id: vizapi2026:894/2026 (Leitungsarbeiten, bis 31.07.2027)
 #: osm_watch: note 5546534 3
 #: last_checked: 2026-10-06
 #: check_frequency: 60d
-#: next_check: 2026-11-15 (entwicklungsstadt)
-# REMOVED --- #: next_check: 2027-07-31 (planb)
+#: next_check: 2027-07-31 (planb + vizapi2026)
 Detmolder Str.: Baustelleneinrichtungsfläche, Radweg gesperrt	q4::inwork; 4786,8007 4711,8013
 # 
 # REMOVED (traffic) --- #: source_id: viz2021:13.31563,52.48654,21.03.2022,07:00 (bis 30.11.2022) (inaktiv) vvv --- #: also_indoor: traffic (B,G,ex-H) vvv --- #: last_checked: 2022-12-06 (research) vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-11-30 vvv --- # REMOVED --- #: valid: -20221130 vvv --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4324,8899 4451,8874 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q2::inwork 4451,8874 4777,8870 --- Berliner Str./Mannheimer Str.: Bauarbeiten, Kreuzungsbereich gesperrt, Umwege	q3::inwork 4449,8999 4451,8874 4456,8703 --- # REMOVED --- #: valid ^^^ --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: source_id ^^^
@@ -1251,9 +1253,9 @@ Detmolder Str.: Baustelleneinrichtungsfläche, Radweg gesperrt	q4::inwork; 4786,8
 # REMOVED --- #: next_check: 2028-11-30 (entwicklungsstadt)
 Brockenstr.: Hochbauarbeiten, Sperrung der Fahrbahn	q4::inwork 13687,8734 13575,8593
 # 
-#: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2; mittlerweile sind die Einbahnstraßenschilder an der Elsenstr. verschwunden; mittlerweile (2026-10-05) gibt es nur noch ein aktives Schild "Vorgeschriebene Fahrtrichtung geradeaus", das andere ist weggedreht)
+#: note: Einbahnstraßenschilder nur an der Elsenstr.; auf der Seite der Wildenbruchstr. gibt es Schilder "Vorgeschriebene Fahrtrichtung geradeaus"; Engstelle ist nicht besonders lang, deshalb q2; mittlerweile sind die Einbahnstraßenschilder an der Elsenstr. verschwunden; mittlerweile (2026-10-05, 2026-11-14) gibt es nur noch ein aktives Schild "Vorgeschriebene Fahrtrichtung geradeaus", das andere ist weggedreht)
 #: source_id: planb2026:13.4472157,52.48491004,21.01.2025, ("Fahrbahneinengung", bis 31.07.2026) (bis 26.02.2027)
-#: last_checked: 2026-10-05
+#: last_checked: 2026-11-14
 #: check_frequency: 120d
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2027-02-26 (planb)
@@ -1479,10 +1481,10 @@ Gustav-Tempel-Str.: kurzes Stück Bürgersteig oder unbefestigte Verbindung	q3 152
 # 
 ### Marzahn ###
 # 
-#: source_id: planb2026:13.56952995,52.53995683,21.09.2026, ("Fahrstreifen-Reduzierung", bis 23.10.2026) (inaktiv) (bis 13.11.2026)
+#: source_id: planb2026:13.56952995,52.53995683,21.09.2026, ("Fahrstreifen-Reduzierung", bis 23.10.2026) (inaktiv) (bis 13.11.2026) (inaktiv)
 #: source_id: LMS-BR:424013/72 vizapi2026:1009/2026 (bis 23.10.2026) (bis 06.11.2026) (bis 13.11.2026) (inaktiv)
 #: also_indoor: traffic (G[later?],T,ex-H)
-#: last_checked: 2026-11-13 (traffic)
+#: last_checked: 2026-11-14 (traffic)
 #: check_frequency: 3d
 # REMOVED --- #: next_check: 2026-11-13 (VIZ-Verkehrsmeldung + planb)
 # REMOVED (use end of year instead) --- #: valid: -20261113

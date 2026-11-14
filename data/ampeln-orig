@@ -50,8 +50,8 @@ provisorische Fußgängerampel	F::inwork 17720,8854
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mvreuhygbe2y (Bereich KGA)
 #: source_id: LMS-BR:422789/72 viz2021:13.469268,52.472618,18.09.2026,07:00 vizapi2026:962/2026 (Baustellenampel, 18.09.2026 bis 06.12.2026)
 #: source_id: planb2026:13.46990981,52.47294148,18.09.2026, ("Gegenverkehrsanlage (LZA)", bis 15.10.2026) (vorfristig inaktiv) (bis 01.12.2026)
-#: note: Gegenverkehrsregelung auf der Fahrbahn (betrifft die Hochbordradwege nicht); Sperrung des Übergangs am Heidekampgraben, kann etwa 40m nordöstlich (hier mit Ampel) umfahren werden
-#: last_checked: 2026-10-27 (mapillary)
+#: note: Gegenverkehrsregelung auf der Fahrbahn, betrifft den Hochbordradweg Richtung Osten nicht, Richtung Westen muss man entweder die Fahrbahn benutzen oder auf die gegenüberliegende Seite wechseln; Sperrung des Übergangs am Heidekampgraben, kann etwa 40m nordöstlich (hier mit Ampel) umfahren werden
+#: last_checked: 2026-11-14
 #: next_check: 2026-12-06 (VIZ-Verkehrsmeldung)
 #: valid: -20261206
 Dammweg/Heidekampgraben	X::inwork 14989,7574
@@ -616,7 +616,8 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 #: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv) (bis 30.10.2026) (inaktiv) (bis 18.02.2027)
 #: note: siehe auch temp blocking-Eintrag
 #: last_checked: 2026-09-09
-#: next_check: 2027-02-18 (planb)
+#: next_check: 2026-11-18 (VIZ-Verkehrsmeldung)
+# ACTIVATE_LATER --- #: next_check: 2027-02-18 (planb)
 #: valid: 20260601-20270218
 Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
 # 
@@ -4371,6 +4372,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	X::inwork 9286,12886
 #: note: war am 2023-12-23 und 2023-12-29 ausgeschaltet, am 2024-01-03 und danach wieder an
 #: osm_watch: node id="6583929470" version="3"
+#: source_id: planb2026:13.39074527,52.51631683,01.03.2022, ("Fahrstreifen-Reduzierung", Kreuzungsbereich UdL/Charlottenstr., bis 20.12.2026)
 	X::inwork 9475,12365
 # REMOVED (nicht mehr gesehen) --- X::inwork 9343,12464
 #: check_frequency ^^^

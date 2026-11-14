@@ -2409,8 +2409,8 @@ Nymphenburger Str. -> Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit
 Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross::ignrte 15899,14598 15968,14684 16033,14756
 Große-Leege-Str. -> Verdener Gasse: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15899,14598 15968,14684 15946,14702
 Verdener Gasse -> Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15946,14702 15968,14684 16033,14756
-Mittelstreifen mit Bordsteienen	3nocross::ignrte 16259,7328 16195,7398 15920,7697
-Köpenicker Landstr. -> Lakegrund: Mittelstreifen mit Bordsteienen	3::igndisp 15920,7697 16195,7398 16368,7425
+Mittelstreifen mit Bordsteienen	3nocross::ignrte 16259,7328 16195,7398 16166,7429 15920,7697
+Köpenicker Landstr. -> Lakegrund: Mittelstreifen mit Bordsteienen	3::igndisp 16166,7429 16195,7398 16368,7425
 Lakegrund -> Köpenicker Landstr.: Mittelstreifen mit Bordsteienen	3::igndisp 16368,7425 16195,7398 16259,7328
 Straßenbahntrasse	3nocross::ignrte 19053,2890 19021,2946 18949,3073
 Zum Trudelturm -> Max-Born-Str.: Straßenbahntrasse	3::igndisp 19101,3028 19021,2946 19053,2890
@@ -3687,7 +3687,6 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 (Betriebsweg Beermannstr. - Görlitzer Bahndamm): gesperrt	2::inwork 14103,9316 14088,9294 14081,9268
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
-Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14245,7059 14261,7164 14323,7403
 Zwieseler Str. - Regener Str.: Bauarbeiten, Fahrbahn gesperrt	2::inwork 19705,9039 19638,9070
 An der Streuobstwiese: kann noch durch Bauzäune abgesperrt sein	2::inwork 12628,22604 12668,22537
 Helmut-Rupprecht-Str.: noch gesperrt	2::inwork 22470,3109 22476,3035 22485,2937
