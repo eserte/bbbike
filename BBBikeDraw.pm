@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2008,2012,2016,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2008,2012,2016,2024,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeDraw;
@@ -20,7 +19,7 @@ use Carp qw(confess);
 
 use vars qw($images_dir $VERSION $bahn_bau_rx $tunnel_qr);
 
-$VERSION = 3.66;
+$VERSION = 3.67;
 
 $bahn_bau_rx = qr{^[SRU](?:0|Bau|G|P)(?:::|$)}; # auch ignorieren: Güterbahnen, Parkbahnen
 
@@ -50,7 +49,6 @@ sub new {
     $self->{Bg}        = delete $args{Bg}; # "white"/"#rrggbb" . "transparent"
     $self->{Interlaced} = exists $args{Interlaced} ? delete $args{Interlaced} : 1;
     $self->{UseFlags}  = delete $args{UseFlags};
-#XXX del???    $self->{Width}     = delete $args{Width}; # boolean # XXX hmmm, this is not in use? because of Width/Height members???
     $self->{RouteWidth}= delete $args{RouteWidth}; # width of route
     $self->{RouteDotted}=delete $args{RouteDotted}; # draw dotted route
     $self->{StrLabel}  = delete $args{StrLabel};
@@ -138,8 +136,9 @@ sub new_from_cgi {
     }
     my @oldcoords = BBBikeCGI::Util::my_multi_param($q, 'oldcoords');
     $args{OldCoords} = [ split(/[!; ]/, $oldcoords[0]) ] if @oldcoords;
-    $args{MarkerPoint} = $q->param('markerpoint')
-      if defined $q->param('markerpoint');
+    if (defined $q->param('markerpoint') && $q->param('markerpoint') =~ /^[0-9, .-]+$/) {
+	$args{MarkerPoint} = $q->param('markerpoint')
+    }	
     $args{Draw}      = [ BBBikeCGI::Util::my_multi_param($q, 'draw') ]
       if defined $q->param('draw');
     $args{Scope}     = $q->param('scope')
@@ -166,8 +165,10 @@ sub new_from_cgi {
 # 	if defined $q->param('drawwidth');
     $args{StrLabel} = [ BBBikeCGI::Util::my_multi_param($q, 'strlabel') ]
 	if defined $q->param('strlabel');
-    $args{ImageType} = $q->param('imagetype')
-	if defined $q->param('imagetype');
+    if (defined $q->param('imagetype') && $q->param('imagetype') =~ /^[a-zA-Z.-]+$/) {
+	$args{ImageType} = $q->param('imagetype');
+    }
+	
     $args{Module} = $q->param('module')
 	if defined $q->param('module');
     $args{CGI} = $q;
@@ -191,6 +192,10 @@ sub init {
 		die "* in Geometry/Height is only possible if set_bbox is called before init";
 	    }
 	    $self->{Height} = $self->{Width} * ($self->{Max_y}-$self->{Min_y}) / ($self->{Max_x}-$self->{Min_x});
+	}
+
+	if ($self->{Width} > 6000 || $self->{Height} > 6000) {
+	    die "Width ($self->{Width}) and/or Height ($self->{Height}) too large: max. 6000 allowed";
 	}
     }
     $self;

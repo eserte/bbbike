@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003-2008,2010,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003-2008,2010,2016,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeDraw::MapServer;
@@ -22,7 +21,7 @@ use Carp qw(confess);
 use vars qw($VERSION $DEBUG %color %outline_color %width);
 
 $DEBUG = 0 if !defined $DEBUG;
-$VERSION = '1.46';
+$VERSION = '1.47';
 
 {
     package BBBikeDraw::MapServer::Conf;
@@ -184,8 +183,9 @@ $VERSION = '1.46';
 	my $self = bless {}, $package;
 	$self->Width($w);
 	$self->Height($h);
-	$self->ImageType($args{imagetype}) 
-	    if defined $args{imagetype};
+	if (defined $args{imagetype} && $args{imagetype} =~ /^[a-zA-Z.-]+$/) {
+	    $self->ImageType($args{imagetype});
+	}
 	$self->SmallScreen($args{smallscreen}) 
 	    if defined $args{smallscreen};
 	$self;

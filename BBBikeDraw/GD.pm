@@ -3,12 +3,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2014,2016,2024 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2014,2016,2024,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package BBBikeDraw::GD;
@@ -39,7 +38,7 @@ sub AUTOLOAD {
 }
 
 $DEBUG = 0;
-$VERSION = '1.70';
+$VERSION = '1.71';
 
 my $use_truecolor = 0; # XXX with 1 segfaults (still with 2.0.33, seen on amd64-freebsd).
 
@@ -1024,10 +1023,10 @@ sub draw_route {
 	    my $images_dir = $self->get_images_dir;
 	    my $imgfile;
 	    $imgfile = "$images_dir/flag2_bl" . ($self->suffix eq 'png' ? '_noalpha' : '') . '.' . $self->suffix;
-	    if (open(GIF, $imgfile)) {
-		binmode GIF;
-		my $start_flag = $self->{GD_Image}->newFromImage(\*GIF);
-		close GIF;
+	    if (open(my $GIF, '<', $imgfile)) {
+		binmode $GIF;
+		my $start_flag = $self->{GD_Image}->newFromImage($GIF);
+		close $GIF;
 		if ($start_flag) {
 		    my($w, $h) = $start_flag->getBounds;
 		    my($x, $y) = &$transpose(@{ $multi_c1[0][0] });
@@ -1043,10 +1042,10 @@ sub draw_route {
 	    }
 
 	    $imgfile = "$images_dir/flag_ziel" . ($self->suffix eq 'png' ? '_noalpha' : '') . '.' . $self->suffix;
-	    if (open(GIF, $imgfile)) {
-		binmode GIF;
-		my $end_flag = $self->{GD_Image}->newFromImage(\*GIF);
-		close GIF;
+	    if (open(my $GIF, '<', $imgfile)) {
+		binmode $GIF;
+		my $end_flag = $self->{GD_Image}->newFromImage($GIF);
+		close $GIF;
 		if ($end_flag) {
 		    my($w, $h) = $end_flag->getBounds;
 		    my($x, $y) = &$transpose(@{ $multi_c1[-1][-1] });
@@ -1326,15 +1325,15 @@ sub read_image {
 
     my $images_dir = $self->get_images_dir;
     my $imgfile = "$images_dir/$basename." . $self->suffix;
-    if (open(GIF, $imgfile)) {
-	binmode GIF;
-	$img = $self->{GD_Image}->newFromImage(\*GIF);
+    if (open(my $GIF, '<', $imgfile)) {
+	binmode $GIF;
+	$img = $self->{GD_Image}->newFromImage($GIF);
 	if ($img) {
 	    ($w, $h) = $img->getBounds;
 	} else {
 	    warn "$imgfile exists, but can't be read by GD";
 	}
-	close GIF;
+	close $GIF;
     }
     ($img, $w, $h);
 }
