@@ -48,7 +48,7 @@ sub new_from_cgi {
 	    push @c, [ split /[!; ]/, $coords ];
 	}
     }
-    $self->{MultiCoords} = [@c];
+    $self->set_coords([@c]);
     $self->{CGI}    = $q;
     $self->{DEBUG}  = $q->param("debug");
     if (defined $q->param("center")) {
@@ -74,12 +74,19 @@ sub narrowest_scope {
 sub set_coords {
     my($self, $coords) = @_;
     if (!UNIVERSAL::isa($coords, "ARRAY")) {
-	$self->{MultiCoords} = [[ $coords ]];
+	$coords = [[ $coords ]];
     } elsif (!UNIVERSAL::isa($coords->[0], "ARRAY")) {
-	$self->{MultiCoords} = [ $coords ];
+	$coords = [ $coords ];
     } else {
-	$self->{MultiCoords} = $coords;
+	# keep $coords
     }
+    my $new_coords;
+    for my $elem (@$coords) {
+	push @$new_coords, [ grep {
+	    /^-?\d+(?:\.\d+)?,-?\d+(?:\.\d+)?$/
+	} @$elem ];
+    }
+    $self->{MultiCoords} = $new_coords;
 }
 
 sub has_coords {
