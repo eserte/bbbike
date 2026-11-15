@@ -8,8 +8,7 @@
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use CGI qw(:standard -oldstyle_urls);
@@ -84,7 +83,15 @@ if ($set eq 'ziel') {
     # XXX Delete more params... or use -pass mode?
     $q2->delete($_) for (qw(img.x img.y map zoomdir zoomsize mode
 			    orig_mode orig_zoomdir imgxy imgext));
-    my $bbbikeurl = param("bbbikeurl") || "http://www/~eserte/bbbike/cgi/bbbike.cgi";
+    my $bbbikeurl = param("bbbikeurl") || die "Missing mandatory paramter bbbikeurl";
+    require URI;
+    my $u = URI->new($bbbikeurl);
+    if (!$u) {
+	die "Cannot construct URI object from bbbikeurl parameter";
+    }
+    if ($u->host ne BBBikeCGI::Util::my_server_name($q2)) {
+	die "Unexpected host in bbbikeurl parameter: '" . $u->host . "', expected '" . BBBikeCGI::Util::my_server_name($q2) . "'";
+    }
     print redirect("$bbbikeurl?" . $q2->query_string);
 } elsif ($set eq 'start') {
     push_INC();
