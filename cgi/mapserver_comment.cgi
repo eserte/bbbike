@@ -236,7 +236,7 @@ eval {
 
     } elsif (
 	     $q->request_method() eq 'OPTIONS' &&
-	     ($q->http('origin')||'') =~ m{^https?://localhost(:\d+)?}
+	     ($q->http('origin')||'') =~ m{\Ahttps?://localhost(?::\d+)?\z}
 	    ) {
 	# CORS handling, part one - a Preflighted request
 	print $q->header(
@@ -455,7 +455,7 @@ eval {
 	    	    (
 		     -cookie => $cookie,
 		     # CORS handling, part two
-		     ($origin && $origin =~ m{^https?://localhost(:\d+)?} ? (-Access_Control_Allow_Origin => $origin) : ()),
+		     ($origin && $origin =~ m{\Ahttps?://localhost(?::\d+)?\z} ? (-Access_Control_Allow_Origin => $origin) : ()),
 		    ),
 	    $q->start_html(-title=>"Kommentar abgesandt",
 		           -style=>{'src'=>"$bbbike_html/bbbike.css"}),
@@ -477,7 +477,7 @@ sub error_msg {
 	  $q->a({-href=>"mailto:$to?" . CGI->new({subject => "BBBike-Kommentar (fallback)",
 					      body=>$comment})->query_string},$to),
 	  " mit dem folgenden Inhalt versenden:",$q->br(),$q->br(),
-	  $q->pre($comment),
+	  $q->pre(BBBikeCGI::Util::my_escapeHTML($comment)),
 	  $q->end_html,
 	 );
     exit;
