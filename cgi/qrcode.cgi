@@ -5,12 +5,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -45,11 +44,11 @@ sub cgi {
     binmode STDOUT;
     print $q->header('image/png');
     my $url_arg = $q->self_url;
-    $url_arg =~ s{/qrcode\.cgi(?:/(\.l|\.h))?}{};
+    $url_arg =~ s{/qrcode\.cgi(?:/(\.l|\.p))?}{};
     if ($1) {
 	my $host = (
 		    $1 eq '.l' ? 'bbbike.de' :
-		    $1 eq '.h' ? 'bbbike.v.timesink.de' :
+		    $1 eq '.p' ? 'bbbike-pps-bookworm' :
 		    die "UNEXPECTED ERROR ($1)"
 		   );
 	debug "Requested change of host to '$host'";
