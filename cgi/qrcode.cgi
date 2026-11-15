@@ -18,7 +18,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 use BBBikeCGI::Util ();
 
-our $IMPL = 'Imager'; # preferred, as it can encode longer strings than GD
+our $IMPL = 'Imager'; # or 'GD'
 our $DEBUG = 0;
 
 sub debug ($) {
@@ -29,7 +29,7 @@ sub debug ($) {
 sub gd_qrcode_png {
     my $url = shift;
     require GD::Barcode::QRcode;
-    GD::Barcode::QRcode->new($url, { Ecc => 'L', Version=>12, ModuleSize => 4})->plot->png; # maximum is about 350 bytes
+    GD::Barcode::QRcode->new($url, { Ecc => 'L', ModuleSize => 4})->plot->png; # maximum is about 350 bytes
 }
 
 sub imager_qrcode_png {
@@ -60,6 +60,16 @@ sub cgi {
 	$u->host($host);
 	$url_arg = $u->as_string;
     }
+
+    # according to https://www.qrcode.com/en/about/version.html limit
+    # for version 40 is 2953 bytes, however the actual limit for the
+    # Imager implementation is somewhat lower
+    if (length $url_arg > ($IMPL eq 'Imager' ? 2938 : 2953)) {
+	warn "qrcode.cgi: URL too long (" . length($url_arg) . " bytes), return 414 response.\n";
+	print $q->header(-status => '414 URI Too Long', -type => 'text/plain'), "URL too long\n";
+	return;
+    }
+
     debug "Transformed URL: '$url_arg'";
     print $q->header(
 	-type => 'image/png',

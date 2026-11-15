@@ -61,6 +61,11 @@ $ua->env_proxy;
     is_barcode($resp, type => "QR-Code", is_data => $exp_url);
 }
 
+{
+    my $resp = $ua->get("$qrcode_cgi/" . "x"x3000);
+    is $resp->code, 414, "got URL too long response";
+}
+
 sub is_barcode {
     my($http_resp, %checks) = @_;
     my $number_of_checks = 1 + scalar keys %checks;
