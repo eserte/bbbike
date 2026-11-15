@@ -94,9 +94,8 @@ if ($set eq 'ziel') {
     print redirect("$bbbikeurl?" . $q2->query_string);
 } elsif ($set eq 'start') {
     require BBBikeMapserver;
-    require FindBin; $FindBin::RealBin = $FindBin::RealBin; # peacify -w
     my $ms = BBBikeMapserver->new();
-    $ms->read_config("$FindBin::RealBin/bbbike.cgi.config");
+    $ms->read_config("$realbin/bbbike.cgi.config");
 
     my @layers;
     my $q2 = CGI->new(query_string());
@@ -118,9 +117,8 @@ if ($set eq 'ziel') {
 			);
 } else { # pass
     require BBBikeVar;
-    require FindBin; $FindBin::RealBin = $FindBin::RealBin; # peacify -w
     $BBBike::BBBIKE_MAPSERVER_URL = $BBBike::BBBIKE_MAPSERVER_URL; # peacify -w
-    do "$FindBin::RealBin/bbbike.cgi.config";
+    do "$realbin/bbbike.cgi.config";
     if (!defined $mapserver_prog_url) {
 	warn "Fallback to standard Mapserver URL";
 	$mapserver_prog_url = $BBBike::BBBIKE_MAPSERVER_URL;
