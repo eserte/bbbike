@@ -44,6 +44,7 @@ sub imager_qrcode_png {
 
 sub cgi {
     require CGI;
+    local $CGI::DISABLE_UPLOADS = 1;
     my $q = CGI->new;
     binmode STDOUT;
     my $url_arg = BBBikeCGI::Util::my_url($q, -path_info => 1, -query => 1);
