@@ -45,21 +45,33 @@ for my $key ($q->param) {
 }
 
 $ENV{QUERY_STRING} = $qq->query_string;
-exec $bbbike_cgi;
+$ENV{REQUEST_METHOD} = 'GET'; # in case a POST came in
+delete @ENV{qw(CONTENT_LENGTH CONTENT_TYPE PATH_INFO)};
+exec { $bbbike_cgi } $bbbike_cgi
+    or die "Cannot exec $bbbike_cgi: $!";
 
 sub cgi_error {
     my $message = shift;
     print $q->header(
 	-status => '400 Bad Request',
-	-type => 'text/html',
+	-type => 'text/plain',
     );
     print $message;
     exit 0;
 }
 
+use constant COORD_RX => qr{\A\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*\z};
+
 sub swap_latlon {
     my $latlon = shift;
-    my($lat,$lon) = split /,/, $latlon;
+    my($lat,$lon) = $latlon =~ COORD_RX
+        or cgi_error('Invalid point parameter, expected lat,lon');
+    if (abs($lat) > 90) {
+        cgi_error("lat part of point parameter out of range");
+    }
+    if (abs($lon) > 180) {
+        cgi_error("lon part of point parameter out of range");
+    }
     join ',', $lon, $lat;
 }
 
