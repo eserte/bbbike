@@ -17,9 +17,10 @@ Dudenstr./Burgherrenstr.	F::inwork 9076,8783
 #: by: https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiewfriawkerrwesn2qusf33bocizcznykdeypfyrwqgidsslwbozm
 #: source_id: vizapi2026:1137/2026 (26.10.2026 bis 13.11.2026)
 #: source_id: LMS-BR:426544/72 viz2021:13.48513,52.51587,26.10.2026,08:00 vizapi2026:1137/2026 (bis 13.11.2026) (bis 27.11.2026)
-#: source_id: planb2026:13.48461863,52.51375262,26.10.2026, ("Gegenverkehrsanlage (LZA)", bis 13.11.2026) (inaktiv)
+#: source_id: planb2026:13.48461863,52.51375262,26.10.2026, ("Gegenverkehrsanlage (LZA)", bis 13.11.2026) (inaktiv) (bis 27.11.2026)
 #: note: Laut Verkehrszeichenplan Richtung Norden Gehweg für Radfahrer frei; in beiden Richtungen Radfahrüberholverbot; Linksabbiegen vom Stasimuseum nicht erlaubt
-#: next_check: 2026-11-27 (VIZ-Verkehrsmeldung)
+#: last_checked: 2026-11-15
+#: next_check: 2026-11-27 (VIZ-Verkehrsmeldung + planb)
 #: valid: 20261026-20261127
 Ruschestr.: Gegenverkehrsregelung	X::inwork::alternating 15886,12190
 # 
@@ -157,7 +158,7 @@ Allee der Kosmonauten/Meeraner Str.	X::inwork 18382,13492
 #: source_id: LMS-BR:417487/72 viz2021:13.38351,52.53674,29.07.2026,07:00 vizapi2026:760/2026 (bis 16.10.2026) (bis 18.12.2026)
 #: source_id: planb2026:13.38382088,52.53641823,28.07.2026, ("Gegenverkehrsanlage (LZA)", bis 18.12.2026)
 #: note: Richtung Süden wird der Radverkehr mit Benutzungspflicht über den Bürgersteig (Charlottenburger Platten) geführt (etwa 120m)
-#: last_checked: 2026-11-05 (mapillary)
+#: last_checked: 2026-11-13 (mapillary)
 #: next_check: 2026-12-18 (planb + VIZ-Verkehrsmeldung)
 #: valid: -20261218
 Gärtnerstr./Feldstr.: Gegenverkehrsregelung	X::inwork::alternating 8953,14528
@@ -723,7 +724,7 @@ Schönhauser Allee/Kollwitzstr.: provisorische Ampel	F::inwork 10908,13978
 #: note: mittlerweile nur eine Ampel zwischen Weserstr. und Wiesenstr., etwa 45m nordöstlich der Weserstr.; Anforderungsampel
 #: note: Halteverbotsschilder bis 30.09.2025
 #: note: während der Sperrung Nov/Dez 2025 ausgeschaltet
-#: last_checked: 2026-11-11
+#: last_checked: 2026-11-15
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (planb)
 Gürtelstr./Weserstr.	F::inwork 15016,11431
@@ -948,7 +949,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreianicmftuacupzy5xjktk6ung6ab3iawdmffdxn67m6xhvfmrapty (auch Sperrung des südlichen Maronensperlingwegs)
 # REMOVED --- #: note: laut Bushaltestellenaushang vermutlich erst ab 20.10.2026?
 #: note: Gilt nur auf der Fahrbahn, nicht auf dem Radweg Richtung Westen.
-#: last_checked: 2026-10-26 (mapillary) vvv
+#: last_checked: 2026-11-13 (mapillary) vvv
 #: next_check: 2026-12-11 (VIZ-Verkehrsmeldung) vvv
 #: valid: 20261020-20261211 vvv
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork::alternating 12672,20720
@@ -2120,6 +2121,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 17159,17631
 	X 17418,16014
 	X 15896,13547
+# note: Richtung Westen: Anforderung für rechtsabbiegende Radfahrer in die Liebenwalder Str., geradeaus fahrende Radfahrer haben eine verkürzte Grünphase
 	X 16852,14412
 	X 11451,13301
 	X 4016,17918
@@ -3054,12 +3056,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 14771,14048
 	X 15912,13153
 	X 15850,14308
-#: note: Anforderungsampel für rechtsabbiegende Radfahrer in die Zechliner Str.
+#: note: Richtung Westen: Anforderungsampel für rechtsabbiegende Radfahrer in die Zechliner Str., geradeaus fahrende Radfahrer haben eine verkürzte Grünphase
 #: note: von der Zechliner Str. ist auf der Fahrbahn nur das Rechtsabbiegen erlaubt; stattdessen Fußgängerampel nehmen, mit langen Wartezeiten, auf der Mittelinsel "gegenläufig" geschaltet (siehe auch handicap_directed-Eintrag)
 	X 16314,14361
 	F 15562,14869
 # REMOVED (Fußgängerampel ist jetzt etwas weiter südwestlich) ---	X 16331,15486
-#: note: Anforderung für rechtsabbiegende Radfahrer in den Arendsweg
+#: note: Richtung Westen: Anforderung für rechtsabbiegende Radfahrer in den Arendsweg, geradeaus fahrende Radfahrer haben eine verkürzte Grünphase
 	X 17254,14451
 	X 17488,15766
 #: note: Anforderung für Radfahrer aus beiden Richtungen zur Ferdinand-Schultze-Str.
@@ -3841,6 +3843,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 1722,271
 	F 9391,3651
 #: note: Anforderungsampel
+#: XXX_prog: gilt nicht für Radfahrer Richtung Westen
 	F 16590,14386
 # 
 #: off: 2022-08-12 Fri 23:50
@@ -4211,7 +4214,8 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	X 3429,13227
 	X 7733,8023
 #: note: Anforderungsampel (N-S-Relation)
-	X 17533,14484
+#: XXX_prog gilt nicht für Radfahrer Richtung Westen
+	F 17533,14484
 	X 18166,14277
 #: XXX_prog gilt auch für das Linksabbiegen in die Wadzeckstr.
 #: note: Anforderungsampel
@@ -4243,7 +4247,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 	F 20173,18306
 #: XXX_prog: Ampel gilt nicht für Radfahrer auf dem Zweirichtungsradweg
 	F -8603,6973
-#: XXX_prog: Ampel gilt nicht für Radfahrer
+#: XXX_prog: Ampel gilt nicht für Radfahrer (beide Richtungen)
 	F 15468,13700
 # 
 #: off: 2015-07-19 Sun 15:30

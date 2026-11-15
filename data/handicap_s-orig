@@ -1386,11 +1386,6 @@ Stubenrauchstr.: Gehwegbenutzung, schmal	q2::inwork; 16703,2888 16786,2989
 # REMOVED --- #: valid: -20260730
 # REMOVED --- Rathausstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 15670,12022 15685,12154
 # 
-#: next_check_id: WEISSETAUBE-2025
-#: last_checked: 2026-09-15 (luftbildsuche)
-#: check_frequency: 60d
-Landsberger Allee [Nebenfahrbahn]: verschmutzte Fahrbahn wegen angrenzender Hochbauarbeiten	q1-::inwork 17526,14531 17656,14549 17824,14572
-# 
 # REMOVED --- #: next_check_id: TRAM21-2025
 # REMOVED --- #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_306982 (ab 22.11.2025) (zwischenzeitlich inaktiv)
 # REMOVED --- #: source_id: viz2021:13.47353,52.50308,22.11.2025,08:00 (bis 14.12.2025)
@@ -5827,6 +5822,9 @@ Straße 3: vier Aufpflasterungen	q1+ 18816,19648 19071,19576
 (Weg am Rüdickengraben): einige Fußgänger	q1- 17004,17471 17185,17388 17377,17309 17392,17315
 #: note ^^^
 # 
+Straßenbahnübergang	q2 15528,14470 15516,14445
+#: note: Z-Übergang
+Straßenbahnübergang	q3 15378,14546 15376,14537 15367,14536
 Straßenbahnübergang	q3 17790,17126 17799,17145
 Straßenbahnübergang	q3 17861,17099 17866,17116
 Straßenbahnhaltestelle	q3 17799,17145 17811,17140 17866,17116

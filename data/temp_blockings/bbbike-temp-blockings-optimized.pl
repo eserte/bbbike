@@ -5541,7 +5541,7 @@ Jahnstr.	q3::inwork 13027,6168 13227,6209
 #: also_indoor: traffic (B,H(unvollständig),G)
 # REMOVED --- #: osm_watch: way id="1047544509" version="3"
 #: osm_watch: way id="1047544510" version="3"
-#: osm_watch: note 3065138 16
+#: osm_watch: note 3065138 17
 #: note: Ende Mitte 2026 oder Mitte 2027?
 #: last_checked: 2026-11-14 vvv
 #: check_frequency: 90d vvv
@@ -6037,13 +6037,13 @@ Brückenabriss, Komplettsperrung	2::inwork 2924,15914 2892,15983 2809,16143
 #: source_id: planb2026:13.49371374,52.51834777,12.10.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 13.11.2026) (inaktiv)
 #: source_id: planb2026:13.49378597,52.51834355,13.11.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 04.12.2026)
 #: add_fragezeichen: Besteht die Sperrung der Fahrbahn weiterhin?
-#: last_checked: 2026-11-12 (traffic)
-#: next_check: 2026-11-13 (planb, 1. Eintrag)
-	q4::inwork 16284,12616 16409,12612
+#: last_checked: 2026-11-15
+# REMOVED --- #: next_check: 2026-11-13 (planb, 1. Eintrag) ---	q4::inwork 16284,12616 16409,12612
+	q4::inwork 16409,12612 16432,12612 16470,12612
 ',
          'from' => undef,
          'id' => 3643,
-         'text' => 'Gotlindestr.: Fahrbahn zwischen Plonzstr. und Schottstr., geplant bis Mitte November 2026, evtl. wird die Sperrung verlängert',
+         'text' => 'Gotlindestr.: Fahrbahn zwischen Schottstr. und Atzpodienstr., geplant bis Anfang Dezember 2026',
          'type' => 'handicap',
          'until' => 1796425199
        },
@@ -7209,9 +7209,8 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
 #: last_checked: 2026-11-13 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
-#: next_check: 2026-11-15 (Aktivierung der nächsten Sperrung) vvv
-# REMOVED ---  #: next_check: 2026-12-31 (Ende des 2. BA) vvv
-#  REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-12-31 (Ende des 2. BA) vvv
+# REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
 #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
 Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q2::inwork 10001,11577 9925,11568
 # Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
@@ -7221,7 +7220,8 @@ Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q4::inwork 9925,11568 9737,11546 971
 #: note: etwa die Hälfte der Straße ist normal offen, dann geht\'s über eine Auffahrt auf einen sehr breiten Gehweg --- eigentlich q3+; mittlerweile können die Absperungen weggeschoben sein
 Jerusalemer Str. (Süd): Baustelleneinrichtungsfläche	q2::inwork 9925,11568 9936,11469
 Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
-# ACTIVATE_LATER 2026-11-16: Charlottenstr./Krausenstr.: Sperrung des Kreuzungsbereichs	q3::inwork 9569,11631 9581,11523 9593,11424
+#: next_check: 2026-11-16 (ist hier tatsächlich gesperrt?)
+Charlottenstr./Krausenstr.: Sperrung des Kreuzungsbereichs	q3::inwork 9569,11631 9581,11523 9593,11424
 # ACTIVATE_LATER I. Quartal 2027: Krausenstr.: zwischen Charlottenstr. und Friedrichstr. gesperrt	q4::inwork 9581,11523 9456,11513
 #: next_check ^^^
 #: check_frequency ^^^
@@ -7233,7 +7233,7 @@ Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
 ',
          'from' => 1719266400,
          'id' => 4095,
-         'text' => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Einschränkungen in der Markgrafenstr., voraussichtlich bis Mitte 2027',
+         'text' => 'Krausenstr.: Bauarbeiten zwischen Axel-Springer-Str. und Jerusalemer Str. (Nord), Sperrung der Fahrbahn, außerdem Sperrung der Kreuzung Charlottenstr./Krausenstr. und Einschränkungen in der Markgrafenstr., voraussichtlich bis Mitte 2027',
          'type' => 'handicap',
          'until' => 1814457600
        },
@@ -8619,7 +8619,7 @@ Lange Str.: mittlerweile auch für Radfahrer Einbahnstraße	q4::inwork; 11993,1197
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgm5uqd4622g (im Anschluss weitere Arbeiten)
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiabwxz7iwxzbkt5hyvsngt6mx6n7uviqcuneun2xtbncnycgfc64y@jpeg
 #: also_indoor: traffic (no-G,T,H,no-W)
-#: last_checked: 2026-10-17 vvv
+#: last_checked: 2026-11-15 vvv
 #: next_check: 2026-12-02 (vizapi2026 + planb) vvv
 Schottstr.	q4::inwork; 16276,12273 16397,12397
 nördliche Schottstr.: Kreuzungsbereich gesperrt	q4::inwork 16409,12612 16397,12397
@@ -10576,8 +10576,8 @@ Am Wiesenrain: Einbahnstraßenregelung	q3::inwork; 23931,5992 24122,6007
        {
          'data' => '#: source_id: planb2026:13.48092968,52.5389072,13.05.2024,06:00 (bis 31.08.2026) (bis 13.11.2026) (inaktiv)
 #: add_fragezeichen: Wurden die Bauarbeiten beendet?
-#: last_checked: 2026-10-13
-#: next_check: 2026-11-13 (planb)
+#: last_checked: 2026-11-15
+# REMOVED --- #: next_check: 2026-11-13 (planb)
 #	2::inwork 15536,14956 15568,14901
 	q3::inwork 15536,14956 15568,14901 15580,14880
 ',
@@ -10813,7 +10813,7 @@ Klausdorf - Zossen (Thomas-Müntzer-Straße): Sperrung des Bahnübergangs	2::inwork
 #: by: https://www.entwicklungsstadt.de/mauerpark-in-pankow-schwedter-strasse-nach-absenkungen-gesperrt/
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/erneute-sperrung-im-berliner-mauerpark-schon-wieder-boden-abgerutscht--ist-eine-unterirdische-baustelle-der-grund-15958943.html
 #: add_fragezeichen: Ist die Fahrbahn der Schwedter Str. weiterhin gesperrt?
-#: last_checked: 2026-10-31
+#: last_checked: 2026-11-13 (mapillary)
 	q4::inwork 10130,15653 10186,15481
 ',
          'from' => undef,
@@ -12100,7 +12100,7 @@ Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::i
        {
          'data' => '#: also_indoor: traffic (no-G,T,no-H,no-W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2026-11-07
+#: last_checked: 2026-11-14 (mapillary)
 	q4::inwork; 13190,9750 13251,9829
 ',
          'from' => undef,

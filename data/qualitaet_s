@@ -8655,6 +8655,7 @@ Richard-Sorge-Str. [Wohngebiet]: Verbundsteinpflaster	Q1 13168,13013 13126,13104
 Matenzeile: Beton	Q0 17365,17632 17474,17478 17582,17335 17714,17285
 (Vulkanstr./Landsberger Allee - Große-Leege-Str.): Verbundsteinpflaster	Q1 15923,14334 15922,14344 15920,14357
 (Parkplatz an der Altenhofer Str.): Beton	Q0 15675,14360 15516,14445 15367,14519 15324,14540
+(Parkplatz an der Altenhofer Str.): Beton	Q1 15468,14430 15354,14489 15367,14519 15367,14536
 (Weg zum Hohenschönhauser Tor): Asphalt	Q0 15367,14519 15225,14545
 (Anlieferung Hohenschönhauser Tor): Verbundsteinpflaster	Q1 15120,14481 15225,14545 15174,14638
 (Weißenseer Weg/Landsberger Allee - Park am Fennpfuhl): Betonplatten	Q1 15256,14237 15249,14218 15221,14198 15225,14150 15204,14087
@@ -19188,7 +19189,8 @@ Zeiler Weg: Kopfsteinpflaster	Q2 11495,18129 11579,18184 11665,18237 11750,18273
 Stuckstr.: Asphalt	Q0 14439,8987 14525,8894 14615,8799
 Gotlindestr.: Asphalt	Q0 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566
 Gotlindestr.: Beton mit Schäden	Q1 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284,12616
-Gotlindestr.: Beton mit Schäden	Q1 16284,12616 16409,12612
+Gotlindestr.: Beton mit Schäden	Q1; 16284,12616 16409,12612
+Gotlindestr.: neuer Beton	Q0; 16409,12612 16284,12616
 Gotlindestr.: Beton mit Schäden	Q1 16409,12612 16432,12612 16470,12612 16576,12612
 Gotlindestr.: Asphalt	Q0 16576,12612 16720,12614
 Gotlindestr.: Beton mit Schäden	Q1 16720,12614 16859,12613

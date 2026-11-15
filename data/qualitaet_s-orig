@@ -432,7 +432,7 @@ Manteuffelstr.: Kopfsteinpflaster	Q2 11735,10022 11829,10192 11949,10414
 Aachener Str.: Kopfsteinpflaster	Q2- 4672,8031 4687,8306 4629,8461
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6409 (Forderung nach einem fahrradfreundlichen Belag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WgMHJpYzbvb3tm7aTotsve5Kk4WGN2FNMENAra9e/PkLsRYvY/19-Anlagen/05/B0891ZB2.pdf (2. Zwischenbericht)
-#: last_checked: 2026-11-07
+#: last_checked: 2026-11-14 (mapillary)
 #: check_frequency: 180d
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
@@ -443,7 +443,8 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/2026-03-02-protokoll_ag-mobilitaet.pdf ("Belagwechsel ... nicht geplant")
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
-#: osm_watch: way id="4686083" version="33"
+#: osm_watch: way id="4686083" version="34"
+#: osm_watch: way id="1129427793" version="7"
 #: last_checked: 2026-11-14
 #: check_frequency: 360d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
@@ -702,7 +703,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10226,14568 10311,14391
 #: by: https://mittemachen-berlin.de/die-vorhabenliste-des-bezirksamtes-mitte-von-berlin/ (Erwähnung einer Radverkehrsmaßnahme (vielleicht Fahrradstraße?) sogar bis Behmstr. + Ausbau in diesem Abschnitt, Projektzeitraum bis 2027)
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: XXX Stand Mitte Mai 2024: Bauarbeiten sind absehbar; provisorische Ampel an der Swinemünder Str./Gleimstr. vorbereitet; außerdem wird es wohl eine Einbahnstraßenregelung Richtung Norden geben
-#: last_checked: 2026-10-31
+#: last_checked: 2026-11-13 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-03-31 (ex-infravelo; BA: Projektzeitraum)
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -10584,6 +10585,7 @@ Richard-Sorge-Str. [Wohngebiet]: Verbundsteinpflaster	Q1+ 13168,13013 13126,1310
 Matenzeile: Beton	Q0- 17365,17632 17474,17478 17582,17335 17714,17285
 (Vulkanstr./Landsberger Allee - Große-Leege-Str.): Verbundsteinpflaster	Q1+ 15923,14334 15922,14344 15920,14357
 (Parkplatz an der Altenhofer Str.): Beton	Q0 15675,14360 15516,14445 15367,14519 15324,14540
+(Parkplatz an der Altenhofer Str.): Beton	Q1 15468,14430 15354,14489 15367,14519 15367,14536
 (Weg zum Hohenschönhauser Tor): Asphalt	Q0 15367,14519 15225,14545
 (Anlieferung Hohenschönhauser Tor): Verbundsteinpflaster	Q1 15120,14481 15225,14545 15174,14638
 (Weißenseer Weg/Landsberger Allee - Park am Fennpfuhl): Betonplatten	Q1 15256,14237 15249,14218 15221,14198 15225,14150 15204,14087
@@ -11899,7 +11901,8 @@ Giselhersteig: Verbundsteinpflaster	Q1+ 17438,12448 17433,12414
 (Giselhersteig - Nibelungenring): Verbundsteinpflaster	Q1+ 17386,12456 17382,12421
 (Giselhersteig - Hadburgpfad): Verbundsteinpflaster	Q1+ 17491,12439 17486,12407
 #: historical_note: bis Apr 2025 noch mit Q0- getaggt, aber mittlerweile hat es sich verschlechtert
-(Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt, Wurzelhebungen	Q1+ 17110,14187 17224,14151 17236,14140
+#: historical_note: bis Nov 2026 mit Q1+ getaggt, weitere Verschlechterung
+(Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt, Wurzelhebungen	Q1 17110,14187 17224,14151 17236,14140
 Treptower Park: wassergebundene Decke	Q1 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
 (Treptower Park, mittlerer Weg): wassergebundene Decke	Q1 15184,9373 15249,9337
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0 14705,9578 14791,9537
@@ -14214,7 +14217,7 @@ Bahamasbogen: Verbundsteinpflaster	Q1+ -2759,18843 -2621,18840 -2482,18836 -2485
 #: XXX bleibt der unbefestigte Abschnitt?
 #: osm_watch: way id="993271092" version="2"
 #: priority: #C
-#: last_checked: 2026-11-07
+#: last_checked: 2026-11-14 (mapillary)
 #: check_frequency: 180d
 (Mauerweg - Lohmühlenstr.): unbefestigt/Verbundsteinpflaster	Q2+ 13128,9726 13156,9702
 # 
@@ -33339,7 +33342,9 @@ Stuckstr.: Asphalt	Q0 14439,8987 14525,8894 14615,8799
 Gotlindestr.: Asphalt	Q0 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566
 #: corrected_by: srt (changed wording: Ausbesserungen -> Schäden, one part with Q1-) vvv
 Gotlindestr.: Beton mit Schäden	Q1 15947,12626 16000,12625 16071,12623 16112,12622 16132,12621 16284,12616
-Gotlindestr.: Beton mit Schäden	Q1- 16284,12616 16409,12612
+Gotlindestr.: Beton mit Schäden	Q1; 16284,12616 16409,12612
+#: historical_note: nach den Bauarbeiten im Nov 2026 neu gemacht
+Gotlindestr.: neuer Beton	Q0-; 16409,12612 16284,12616
 Gotlindestr.: Beton mit Schäden	Q1 16409,12612 16432,12612 16470,12612 16576,12612
 #: corrected_by: srt (Beton mit Schäden, Q1 -> ..., neu gemacht)
 Gotlindestr.: Asphalt	Q0- 16576,12612 16720,12614

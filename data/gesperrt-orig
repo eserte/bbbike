@@ -4143,6 +4143,15 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: WEISSETAUBE-2025
+#: historical_note: früher: verschmutzte Fahrbahn wegen angrenzender Hochbauarbeiten, q1-::inwork
+#: osm_watch: note 5634153 1
+#: osm_watch: way id="25792971" version="15"
+#: osm_watch: way id="1095056486" version="1"
+#: last_checked: 2026-11-15
+#: check_frequency: 60d
+Landsberger Allee [Nebenfahrbahn]: wegen Tiefbauarbeiten gesperrt	2::inwork 17526,14531 17656,14549 17824,14572
+# 
 #: next_check_id: AMWIEZENERBAHNHOF-2024
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/friedrichspark-projekt-wriezener-karree.752/page-3#post-22659
 #: by: https://www.immobilienmanager.de/berlin-edge-und-primco-entwickeln-buerocampus-am-ostbahnhof-21022024 (Fertigstellung für das Frühjahr 2026 geplant)
@@ -4295,7 +4304,7 @@ Fennstr.: im Baustellenbereich Überqueren nicht möglich	3nocross::inwork 7480,14
 #: alias: Görlitzer Bahnbrücken
 #: add_fragezeichen: Sind die Görlitzer Brücken noch immer gesperrt?
 #: note: Mittlerweile wurden zumindest an der Landwehrkanalbrücke und an der Elsenstraßenbrücke feste Zäune aufgebaut.
-#: last_checked: 2026-11-09
+#: last_checked: 2026-11-14 (mapillary)
 #: check_frequency: 60d
 Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,9868 13146,9903
 # REMOVED (Wege zwischen den Brücken bleiben offen) --- Görlitzer Brücken: Sperrung droht	2::inwork 13146,9903 13141,9911
@@ -4883,7 +4892,7 @@ Magnus-Hirschfeld-Ufer: Sperrung in Höhe Kanzlergarten	2::inwork 7856,12746 7772
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14261,8851 14264,8829 14274,8816 14278,8796 14287,8688 14258,8438 14267,8339 14301,8244 14373,8081 14375,8057
 # REMOVED (deleted) --- #: osm_watch: way id="1199465847" version="2"
 #: osm_watch: way id="801304797" version="6"
-#: osm_watch: note 4793178 5
+#: osm_watch: note 4793178 8
 Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14375,8057 14406,8003 14410,7986 14430,7891 14434,7707 14388,7549 14357,7468 14329,7448 14305,7415
 # REMOVED (-> temp blockings) --- #: osm_watch: way id="612109178" version="4" --- Weg entlang der A100, westliche Seite: gesperrt, Durchfahrt wegen festen Toren nicht möglich	2::inwork 14245,7059 14261,7164 14323,7403
 # REMOVED --- #: next_check ^^^
@@ -5087,7 +5096,7 @@ Uferweg am Teltowkanal	2::inwork 4064,2293 4209,2641
 #: osm_watch: node id="12731777446" version="1"
 #: osm_watch: node id="9448539551" version="1"
 #: historical_note: früher: je nach Lage der Bauzäune "Durchfahrt nicht erlaubt" oder "Durchfahrt durch Bauzäune versperrt", am 2023-10-18 waren die Bauzäune weggeschoben, aber Schilder haben die Durchfahrt weiterhin verboten; mittlerweile (Februar 2024) wohl wieder dauerhaft versperrt; am 2024-06-18 mittags offen; am 2024-07-19 abends geschlossen; am 2024-10-14 mittags offen; am 2024-12-05 mittags offen und es sind keine Schilder erkennbar, die die Durchfahrt verbieten; am 2025-01-27 ebenso
-#: last_checked: 2026-08-22
+#: last_checked: 2026-11-14 (mapillary)
 # REMOVED --- #: check_frequency: 30d
 #: check_frequency: 90d
 Dieselstr. - westlicher Mergenthalerring: Durchfahrt auf der südlichen Seite durch Bauzaun versperrt, auf nördlicher Seite ein permanentes Tor	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278 14256,8501
@@ -5937,7 +5946,7 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: osm_watch: way id="1367158749" version="10"
 #: osm_watch[closed]: note 5026614 2
 #: osm_watch[closed]: note 4699893 3
-#: last_checked: 2026-11-05 (youtube)
+#: last_checked: 2026-11-14 (youtube)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-08-16 (Verschiebung der Eröffnung)
 Bahnhof Fangschleuse: Bahnübergang wird durch eine Überführung ersetzt	2::inwork 39265,180 39244,292 39213,374 39284,437 39339,627 39281,799 39265,846
@@ -5953,12 +5962,12 @@ Bahnhof Fangschleuse: Bahnübergang wird durch eine Überführung ersetzt	2::inwork
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 # REMOVED --- #: osm_watch: way id="765539341" version="17" brb
-#: last_checked: 2026-09-07 (osm)
+#: last_checked: 2026-11-14 (osm)
 #: check_frequency: 180d
-#: osm_watch: way id="1285592463" version="8" brb
+#: osm_watch: way id="1285592463" version="9" brb
 # REMOVED (hier offen) --- Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12802,-1485 -12708,-1445
 #: XXX Evtl. heißt dieser Abschnitt "Alter Markt" (siehe osm)?
-#: osm_watch: way id="90781221" version="22" brb
+#: osm_watch: way id="90781221" version="23" brb
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
 # 
 # REMOVED --- #: next_check_id: AMALTENMARKT-2018 --- #: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz --- #: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf --- #: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."; bei osm mittlerweile offen --- #: osm_watch: way id="760022943" version="19" brb --- #: last_checked: 2024-07-24 (osm) --- #: check_frequency: 60d --- Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12780,-1558 -12719,-1542
