@@ -74,7 +74,6 @@ if ($set eq 'ziel') {
 	$q2->append(-name => "layer", -values => ["route"]);
     }
     $q2->param("mapext", scalar param("imgext")) if defined param("imgext");
-    push_INC();
     require BBBikeMapserver;
     my $scope; $scope = BBBikeMapserver::scope_by_map(scalar param("map"))
 	if defined param("map");
@@ -94,7 +93,6 @@ if ($set eq 'ziel') {
     }
     print redirect("$bbbikeurl?" . $q2->query_string);
 } elsif ($set eq 'start') {
-    push_INC();
     require BBBikeMapserver;
     require FindBin; $FindBin::RealBin = $FindBin::RealBin; # peacify -w
     my $ms = BBBikeMapserver->new(-tmpdir => "/tmp"); # XXX do not hardcode
@@ -119,7 +117,6 @@ if ($set eq 'ziel') {
 			 (@layers ? (-layers => \@layers) : ()),
 			);
 } else { # pass
-    push_INC();
     require BBBikeVar;
     require FindBin; $FindBin::RealBin = $FindBin::RealBin; # peacify -w
     $BBBike::BBBIKE_MAPSERVER_URL = $BBBike::BBBIKE_MAPSERVER_URL; # peacify -w
@@ -129,14 +126,4 @@ if ($set eq 'ziel') {
 	$mapserver_prog_url = $BBBike::BBBIKE_MAPSERVER_URL;
     }
     print redirect($mapserver_prog_url . "?" . query_string());
-}
-
-# XXX do not hardcode!
-sub push_INC {
-    require FindBin;
-    push @INC, ("$FindBin::RealBin/..",
-		"/home/e/eserte/src/bbbike",
-		"/srv/www/bbbike-webserver/BBBike",
-		"/root/work/bbbike-webserver/BBBike",
-	       );
 }
