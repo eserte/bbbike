@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2005,2013,2015,2023 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2005,2013,2015,2023,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
 # convert from bbbike to mapserver
@@ -26,14 +25,6 @@ use BBBikeMapserver::Bbox;
 sub new {
     my($class, %args) = @_;
     my $self = bless {}, $class;
-    $self->{TmpDir} = $args{-tmpdir};
-    if (!$self->{TmpDir}) {
-	require File::Spec;
-	$self->{TmpDir} = File::Spec->tmpdir();
-    }
-    if (!$self->{TmpDir}) {
-	die "Can't set TmpDir";
-    }
     CGI->import(qw(-oldstyle_urls)); # call as late as possible
     $self->{CGI} = CGI->new;
     $self;

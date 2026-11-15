@@ -95,7 +95,7 @@ if ($set eq 'ziel') {
 } elsif ($set eq 'start') {
     require BBBikeMapserver;
     require FindBin; $FindBin::RealBin = $FindBin::RealBin; # peacify -w
-    my $ms = BBBikeMapserver->new(-tmpdir => "/tmp"); # XXX do not hardcode
+    my $ms = BBBikeMapserver->new();
     $ms->read_config("$FindBin::RealBin/bbbike.cgi.config");
 
     my @layers;

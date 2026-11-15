@@ -5764,7 +5764,7 @@ sub overview_map {
 
 sub start_mapserver {
     require BBBikeMapserver;
-    my $ms = BBBikeMapserver->new_from_cgi($q, -tmpdir => $tmp_dir);
+    my $ms = BBBikeMapserver->new_from_cgi($q);
     $ms->read_config("$config_master.config");
     $ms->set_coords("8593,12243"); # Brandenburger Tor
     $ms->start_mapserver(-route => 0,
@@ -5833,7 +5833,7 @@ sub draw_route {
     if (defined $q->param('imagetype') &&
 	$q->param('imagetype') =~ /^mapserver/) {
 	require BBBikeMapserver;
-	my $ms = BBBikeMapserver->new_from_cgi($q, -tmpdir => $tmp_dir);
+	my $ms = BBBikeMapserver->new_from_cgi($q);
 	$ms->read_config("$config_master.config");
 	my $layers;
 	if (defined $q->param("layer")) { # Mapserver styled parameters
