@@ -13,6 +13,10 @@
 #
 
 use strict;
+use warnings;
+use FindBin;
+use lib "$FindBin::RealBin/..";
+use BBBikeCGI::Util ();
 
 our $IMPL = 'Imager';
 our $DEBUG = 0;
@@ -42,8 +46,7 @@ sub cgi {
     require CGI;
     my $q = CGI->new;
     binmode STDOUT;
-    print $q->header('image/png');
-    my $url_arg = $q->self_url;
+    my $url_arg = BBBikeCGI::Util::my_url($q, -path_info => 1, -query => 1);
     $url_arg =~ s{/qrcode\.cgi(?:/(\.l|\.p))?}{};
     if ($1) {
 	my $host = (
@@ -58,6 +61,7 @@ sub cgi {
 	$url_arg = $u->as_string;
     }
     debug "Transformed URL: '$url_arg'";
+    print $q->header(-type => 'image/png', '-x-qrcode-url' => $url_arg);
     if ($IMPL eq 'Imager') {
 	debug 'Use Imager implementation';
 	print imager_qrcode_png($url_arg);
