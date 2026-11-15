@@ -754,11 +754,21 @@
     (beginning-of-line)
     (insert (concat "#: source_id: " source-id description "\n"))))
 
+(defun bbbike--url-remove-tracking-parameters (raw-url)
+  (let* ((parameters '("utm_source" "utm_medium" "utm_campaign"
+                      "utm_term" "utm_content"))
+         (regexp (concat "[?&]\\(?:" (regexp-opt parameters) "\\)=[^&#]*"))
+         (url (replace-regexp-in-string regexp "" raw-url)))
+    (if (and (not (equal url raw-url))
+             (string-suffix-p "?" url))
+        (substring url 0 -1)
+      url)))
+
 ;;; works best together with the firefox addon found in .../bbbike/misc/firefox-currenturl-addon
 (defun bbbike-insert-current-url ()
   "Read ~/Downloads/current_url.txt and insert '#: by: URL' on a new line below the current one."
   (interactive)
-  (let ((url (bbbike-get-current-url)))
+  (let ((url (bbbike--url-remove-tracking-parameters (bbbike-get-current-url))))
     (when (or (string= url "https://viz.berlin.de/aktuelle-meldungen/vizverkehrsvorschau/")
 	      (string= url "https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/")
 	      (string= url "https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-fur-das-wochenende/")
