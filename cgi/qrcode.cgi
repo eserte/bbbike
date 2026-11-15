@@ -18,7 +18,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 use BBBikeCGI::Util ();
 
-our $IMPL = 'Imager';
+our $IMPL = 'Imager'; # preferred, as it can encode longer strings than GD
 our $DEBUG = 0;
 
 sub debug ($) {
@@ -29,7 +29,7 @@ sub debug ($) {
 sub gd_qrcode_png {
     my $url = shift;
     require GD::Barcode::QRcode;
-    GD::Barcode::QRcode->new($url, { Ecc => 'L', Version=>12, ModuleSize => 4})->plot->png;
+    GD::Barcode::QRcode->new($url, { Ecc => 'L', Version=>12, ModuleSize => 4})->plot->png; # maximum is about 350 bytes
 }
 
 sub imager_qrcode_png {
