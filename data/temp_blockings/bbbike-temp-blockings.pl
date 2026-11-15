@@ -57388,7 +57388,7 @@ EOF
 #: by: https://www.entwicklungsstadt.de/doerpfeldstrasse-vor-dem-wandel-was-nach-den-monatelangen-sperrungen-kommt/
 #: by: https://www.entwicklungsstadt.de/vollsperrung-ab-montag-doerpfeldstrasse-monatelang-dicht/
 #: also_indoor: traffic (none)
-#: source_id[inactive]: bvg2024:n64#HIM_FREETEXT_372814
+#: source_id: bvg2024:n64#HIM_FREETEXT_372814 (inaktiv) (wieder aktiv)
 #: XXX nach den Bauarbeiten: möglicherweise wird der vorhandene Hochbordradweg asphaltiert sein?
 #: next_check: 2027-03-31 (BA-Pressemitteilung: geplantes Ende)
 	q4::inwork 20834,4035 21053,4162 21129,4217 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
