@@ -61,7 +61,11 @@ sub cgi {
 	$url_arg = $u->as_string;
     }
     debug "Transformed URL: '$url_arg'";
-    print $q->header(-type => 'image/png', '-x-qrcode-url' => $url_arg);
+    print $q->header(
+	-type => 'image/png',
+	'-x-qrcode-url' => $url_arg,
+	'-cache-control' => 'public, max-age=' . (7*24*3600),
+    );
     if ($IMPL eq 'Imager') {
 	debug 'Use Imager implementation';
 	print imager_qrcode_png($url_arg);

@@ -40,6 +40,7 @@ $ua->env_proxy;
 	or diag $resp->dump;
     is $resp->content_type, 'image/png', 'png by content-type';
     like $resp->header('x-qrcode-url'), $exp_url, 'debugging header with QRCode URL';
+    like $resp->header('cache-control'), qr{public,\s*max-age=}, 'response is cacheable';
     my $data = $resp->decoded_content;
     image_ok(\$data);
     is_barcode($resp, type => "QR-Code", like_data => $exp_url);
@@ -54,6 +55,7 @@ $ua->env_proxy;
     #     Requested change of host to 'bbbike.de'
     is $resp->content_type, 'image/png', 'png by content-type';
     is $resp->header('x-qrcode-url'), $exp_url, 'debugging header with QRCode URL';
+    like $resp->header('cache-control'), qr{public,\s*max-age=}, 'response is cacheable';
     my $data = $resp->decoded_content;
     image_ok(\$data);
     is_barcode($resp, type => "QR-Code", is_data => $exp_url);
