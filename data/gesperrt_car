@@ -1,6 +1,8 @@
 #: #: -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen (nur für Autofahrer)
 #:
+Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Friedrichstr.	1::inwork 8732,14098 8831,13973 8870,13926
+Habersaathstr.: Sperrung der Durchfahrt für Kfz-Verkehr	2::inwork 8732,14098 8571,13999
 Soorstr.: temporäre Einbahnstraßenregelung für Kfz	1 1792,11889 1917,12367
 Lindenallee: temporäre Einbahnstraßenregelung für Kfz	1 1664,12332 1690,12407
 Ahornallee: temporäre Einbahnstraßenregelung für Kfz	1 1768,12174 1788,12252 1799,12291 1822,12372
@@ -1885,7 +1887,7 @@ Berliner Str - Bernstorffstr.: nur für BVG-Busse erlaubt	3 1955,20435 2015,20336
 Waidmannsluster Damm	3nocross::ignrte 3216,21431 3238,21448 3280,21477
 Waidmannsluster Damm -> Schollenhof: Waidmannsluster Damm	3::igndisp 3216,21431 3238,21448 3155,21572
 Schollenhof -> Waidmannsluster Damm: Waidmannsluster Damm	3::igndisp 3155,21572 3238,21448 3280,21477
-Weydemeyerstr.	1 11896,13075 11904,13052 12053,12984 12054,12903
+Weydemeyerstr.	1 11896,13075 11904,13052 12052,12977 12054,12903
 Herrfurthstr.	1 11979,8014 11833,7980
 Kottbusser Damm - Böckhstr.: Abbiegen verboten	3 11623,9841 11673,9720 11640,9710
 Zechliner Str. - Landsberger Allee: Abbiegen verboten	3 16304,14434 16314,14361 16590,14386

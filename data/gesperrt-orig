@@ -4317,7 +4317,7 @@ Görlitzer Brücken: Sperrung	2::inwork 13940,9376 13476,9720 13282,9828 13207,986
 #: osm_watch: way id="345088393" version="7"
 #: osm_watch: way id="125513277" version="8"
 #: XXX laut osm note wieder offen -> bestätigt, allerdings stehen die Bauzäune noch da und könnten wieder für eine Sperrung sorgen
-#: last_checked: 2026-11-10
+#: last_checked: 2026-11-16
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-05-01 (Tsp: Neubau der Brücke ab Mai 2025)
@@ -4451,41 +4451,15 @@ Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,1188
 #: next_check: 2028-03-03
 Uferweg am Nordhafen: wegen Bauarbeiten an der Nordhafenbrücke gesperrt	2::inwork 7653,14570 7695,14545 7753,14528
 # 
+#: next_check_id: PLDVEREINTENNATIONEN-2026
 #: source_id: LMS-BR:400004/72 viz2021:13.425248,52.523224,25.02.2026,07:00 vizapi2026:100/2026 (bis 05.05.2026) (bis 22.07.2026) (bis 01.10.2026) (bis 25.03.2027)
 #: source_id: planb2026:13.42640002,52.52310299,03.02.2026, ("Fahrstreifen-Reduzierung", bis 01.10.2026) (bis 25.03.2027)
-#: note: außerdem ist die verkehrsrechtliche Situation der Einfahrt Richtung Weydemeyerstr. für Radfahrer unklar: komplett gesperrt oder nicht? Durchfahrt war bislang immer möglich.
-#: last_checked: 2026-10-21
+#: note: außerdem ist die verkehrsrechtliche Situation der Einfahrt Richtung Weydemeyerstr. für Radfahrer unklar: komplett gesperrt oder nicht? Durchfahrt war meistens möglich, aber nicht immer -> siehe temp-blockings-Eintrag
+#: last_checked: 2026-11-16
+#: check_frequency: 21d
 #: next_check: 2027-03-25 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20270325
 (Berolinastr. - Mollstr.): wegen Tiefbauarbeiten gesperrt	2::inwork 11870,13024 11878,13046 11896,13075
-# 
-#: next_check_id: CHAUSSEE-2026
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgajtghhk22z (bis Mitte 2028)
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic7uvofh3wrzpb7wyvjerbuse4cytqqbdur2lbewv4g3yj6exeobi@jpeg
-#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigbzjnvlhpronxht3kltljejlvulbku2mwya5iobwkufrdryx7ud4@jpeg
-#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260304
-#: by: https://www.entwicklungsstadt.de/mehrjaehrige-sperrung-in-mitte-u6-bauarbeiten-legen-teil-der-chausseestrasse-lahm/
-#: also_indoor: traffic (G[S->N offen],T[S->N offen],H[S->N offen],W[unklare Richtung])
-#: source_id: LMS-BR:400896/72 viz2021:13.38226,52.53129,05.03.2026,07:00 (bis 11.05.2026) (bis 11.05.2028)
-#: source_id: planb2026:13.38301586,52.5305563,13.01.2026, ("Sperrung einer Fahrtrichtung", bis 11.05.2028)
-#: osm_watch: way id="1471571709" version="2"
-#: osm_watch: way id="4597200" version="35"
-#: osm_watch: way id="1108289467" version="12"
-#: osm_watch[closed]: note 5192591 2
-#: osm_watch[closed]: note 5192593 1
-#: osm_watch: note 5634948 1
-#: note: außerdem ist die Habersaathstr. für den Kfz-Verkehr gesperrt, für den Radverkehr existiert laut Verkehrszeichenplan eine Furt an der Baustelle vorbei
-#: XXX möglicherweise wurde die Einbahnstraßenrichtung umgedreht
-#: last_checked: 2026-10-14 (mapillary) vvv
-#: check_frequency: 120d vvv
-#: next_check: 2026-11-02 (BVG) vvv
-# REMOVED --- #: next_check: 2028-05-11 (VIZ-Verkehrsmeldung + planb) vvv
-Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s:q4::inwork 8870,13926 8831,13973 8732,14098
-# REMOVED (hier nicht) --- Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9070,14058 9011,14019
-Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9011,14019 8870,13926
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 # REMOVED (gab's nur für kurze Zeit) --- #: also_indoor: traffic (no-T,no-G)
 # REMOVED --- #: note: Lieferverkehr frei, kurze Engstelle (ca. 20-30m)
@@ -4860,7 +4834,7 @@ Virchow-Klinikum: Zufahrt gesperrt	2::inwork 6213,14777 6210,14808
 #: next_check_id: KANZLERPARK-2024
 #: note: ein temp_blockings-Eintrag existiert ebenfalls
 #: osm_watch: way id="1263834183" version="6"
-#: last_checked: 2026-10-27 (osm)
+#: last_checked: 2026-11-15 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2026-12-31 (Schilder vor Ort)
 # REMOVED --- #: valid: -20251030
@@ -5044,7 +5018,7 @@ Paul-und-Paula-Promenade: wird gebaut	2::inwork 14886,10748 14909,10732 14984,10
 #: by: https://entwicklungsstadt.de/regierungsviertel-hier-waechst-die-erweiterung-des-bundeskanzleramtes/
 #: by: https://www.entwicklungsstadt.de/erweiterung-des-bundeskanzleramtes-baukoerper-steht-neue-bruecke-wartet-auf-ihren-einbau/
 #: source_id: planb2026:13.36217895,52.52071288,01.01.2025, ("Vollsperrung beider Fahrbahnen", südliche Fahrbahn der Ingeborg-Drewitz-Allee, bis 10.01.2028)
-#: last_checked: 2026-10-25 vvv
+#: last_checked: 2026-11-15 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2028-01-10 (planb) vvv
 #: osm_watch: way id="1357789475" version="6"
@@ -5071,7 +5045,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-11-13
+#: last_checked: 2026-11-16
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -5532,7 +5506,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://molkenmarkt.berlin.de/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf (Aufstellungsbeschluss 1-14-2 (zwischen Jüdenstr. und Klosterstr.))
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-11-10
+#: last_checked: 2026-11-16
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5541,7 +5515,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-11-10
+#: last_checked: 2026-11-16
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5829,7 +5803,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: osm_watch: way id="276821479" version="6"
 #: osm_watch: note 3748854 1
 #: source_id: planb2026:13.440102,52.50770775,20.01.2025,07:00 ("Fahrstreifen-Reduzierung" (angrenzende Mariane-von-Rantzau-Str.), bis 31.12.2026)
-#: last_checked: 2026-11-05 (daf)
+#: last_checked: 2026-11-16
 #: check_frequency: 60d
 #: next_check: 2027-12-31 (entwicklungsstadt)
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,11316 12713,11372

@@ -3,6 +3,34 @@
 #:
 #: temporary vvv
 # 
+#: next_check_id: CHAUSSEE-2026
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgajtghhk22z (bis Mitte 2028)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreic7uvofh3wrzpb7wyvjerbuse4cytqqbdur2lbewv4g3yj6exeobi@jpeg
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigbzjnvlhpronxht3kltljejlvulbku2mwya5iobwkufrdryx7ud4@jpeg
+#: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260304
+#: by: https://www.entwicklungsstadt.de/mehrjaehrige-sperrung-in-mitte-u6-bauarbeiten-legen-teil-der-chausseestrasse-lahm/
+#: also_indoor: traffic (G[S->N offen],T[S->N offen],H[S->N offen],W[unklare Richtung])
+#: source_id: LMS-BR:400896/72 viz2021:13.38226,52.53129,05.03.2026,07:00 (bis 11.05.2026) (bis 11.05.2028)
+#: source_id: planb2026:13.38301586,52.5305563,13.01.2026, ("Sperrung einer Fahrtrichtung", bis 11.05.2028)
+#: osm_watch: way id="1471571709" version="2"
+#: osm_watch: way id="4597200" version="35"
+#: osm_watch: way id="1108289467" version="12"
+#: osm_watch[closed]: note 5192591 2
+#: osm_watch[closed]: note 5192593 1
+#: osm_watch: note 5634948 1
+#: last_checked: 2026-11-16 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2028-05-11 (VIZ-Verkehrsmeldung + planb) vvv
+# REMOVED (ursprüngliche Sperrung) --- Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Wedding	1s:q4::inwork 8870,13926 8831,13973 8732,14098
+Chausseestr.: Tunneldeckensanierung zwischen Zinnowitzer Str. und Habersaathstr., Sperrung der Fahrbahn Richtung Friedrichstr.	1::inwork 8732,14098 8831,13973 8870,13926
+#: note: für den Radverkehr existiert eine Furt an der Baustelle vorbei
+Habersaathstr.: Sperrung der Durchfahrt für Kfz-Verkehr	2::inwork 8732,14098 8571,13999
+# REMOVED (hier nicht) --- Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9070,14058 9011,14019
+# REMOVED (hier nicht mehr) --- Zinnowitzer Str.: Einbahnstraßenregelung wegen des Umleitungsverkehrs	1s:q4::inwork 9011,14019 8870,13926
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 # REMOVED (wurde anscheinend seit der Eröffnung der neuen Brückenhälfte wieder aufgehoben) --- #: next_check_id: BAB100-2022 --- #: by: https://www.berliner-zeitung.de/mensch-metropole/stau-vor-der-elsenbruecke-in-treptow-so-will-der-senat-das-chaos-an-der-a100-lindern-li.2355775 --- #: by: https://www.tagesspiegel.de/berlin/a100-chaos-in-berlin-treptow-senat-ordnet-neue-verkehrsfuhrung-an-der-elsenbrucke-an-14306087.html --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2025/pressemitteilung.1596919.php (kurzfristige Umsetzung) --- #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3lyk4bsgssc25 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1597396.php --- #: by: https://entwicklungsstadt.de/staus-nach-a100-eroeffnung-neue-massnahmen-fuer-die-elsenstrasse/ --- #: by: https://www.tagesspiegel.de/berlin/verkehrschaos-am-a100-abschnitt-neue-verkehrsfuhrung-an-der-berliner-elsenstrasse-wird-umgesetzt--busspur-bekommt-schutz-14318111.html --- #: by: https://www.morgenpost.de/berlin/article409965464/wie-der-senat-das-a100-chaos-in-den-griff-bekommen-will.html --- #: by: https://entwicklungsstadt.de/verkehrsdaten-elsenbruecke-durchschnittsgeschwindigkeit-sinkt-nach-a100-eroeffnung/ --- #: priority: #D --- #: last_checked: 2026-03-12 --- #: check_frequency: 90d --- Markgrafendamm -> Alt-Stralau: Sperrung der Linksabbiegespur	3 14608,10409 14558,10264 14619,10223
 # 
 #: next_check_id: A100-RINGBAHNBRUECKE-2025
@@ -1238,7 +1266,7 @@ Karl-Marx-Str./Karl-Marx-Platz: Mittelinsel	3nocross 12972,7602 12987,7560 13015
 Berliner Str - Bernstorffstr.: nur für BVG-Busse erlaubt	3 1955,20435 2015,20336 2133,20413
 Waidmannsluster Damm	3nocross 3216,21431 3238,21448 3280,21477
 # REMOVED (ein "Radfahrer frei"-Schild existiert schon, zwei müssen noch folgen --- mittlerweile existieren schon fast alle) --- #: XXX Öffnung der Einbahnstraße für Radfahrer? --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6514 --- #: last_checked: 2015-11-16
-Weydemeyerstr.	1 11896,13075 11904,13052 12053,12984 12054,12903
+Weydemeyerstr.	1 11896,13075 11904,13052 12052,12977 12054,12903
 # REMOVED (ja) --- #: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben? --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4783 --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to010.asp?SILFDNR=2578 --- #: last_checked: 2015-11-03
 Herrfurthstr.	1 11979,8014 11833,7980
 Kottbusser Damm - Böckhstr.: Abbiegen verboten	3 11623,9841 11673,9720 11640,9710

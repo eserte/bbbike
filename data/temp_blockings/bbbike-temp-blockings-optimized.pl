@@ -4404,6 +4404,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigahx3ogo5wg7bfpohobk2ql3pslkssjxcvozbtqa2ronntwwmsci
 #: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026)
 #: source_id: bvg2024:240#HIM_FREETEXT_373030 (ab 16.11.2026, vermutlich auch nur ein Kraneinsatz)
+#: source_id: LMS-BR:428580/72 viz2021:13.45706,52.51172,16.11.2026,05:00 (bis 21.11.2026)
 	q4::inwork 14006,11843 14127,11811
 ',
          'from' => 1794783600,
@@ -7014,7 +7015,7 @@ Radwegverbindung	q4::temp:clock 10656,9333 10670,9286
 #: XXX: laut BBR-Projektleitung voraussichtlich bis zum 2. Quartal 2025 gesperrt; evtl. später Sperrung am Ostufer?
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: priority: #A
-#: last_checked: 2026-10-27 (osm)
+#: last_checked: 2026-11-15 (mapillary)
 # REMOVED --- #: next_check: 2026-04-30 (Schilder vor Ort)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2025-10-30 (Schilder vor Ort)
@@ -7208,21 +7209,19 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: XXX 2. BA soll bis Ende IV. Quartal 2026 abgeschlossen sein
 #: XXX mittlerweile ist der 3. BA zwischen Charlottenstraße und Friedrichstraße geplant
 #: XXX Im Endzustand: für den Kfz-Verkehr Einbahnstraßenregelung zwischen Markgrafenstr. und Jerusalemer Str. (offen Richtung Westen), offen für Radfahrer
-#: last_checked: 2026-11-13 vvv
+#: last_checked: 2026-11-16 vvv
 #: check_frequency: 30d (bleibt die neue Sperrung erstmal stabil?) vvv
 #: next_check: 2026-12-31 (Ende des 2. BA) vvv
 # REMOVED --- #: next_check: 2027-07-01 (VIZ-Verkehrsmeldung) vvv
-#: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2
-Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q2::inwork 10001,11577 9925,11568
+# REMOVED (mittlerweile weitgehend offen) --- #: note: in diesem Abschnitt eigentlich keine größeren Bauarbeiten, gut befahrbar, deshalb q2 --- Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q2::inwork 10001,11577 9925,11568
 # Krausenstr./Jerusalemer Str.: Fahrbahn abschnittsweise gesperrt, Bordsteine/Schotterstraße/Bürgersteig	q3::inwork 9925,11568 10001,11577 9992,11682
 #: note: Krausenstr. ist in diesem Abschnitt eine geschotterte Baustraße, manchmal (z.B. im Winter) keine Sperrungen und dann eingeschränkt befahrbar
 #: note: mittlerweile (Mitte November 2026) laufen schon Asphaltierungsarbeiten
 Krausenstr.: Fahrbahn gesperrt, Bauarbeiten	q4::inwork 9925,11568 9737,11546 9711,11543 9581,11523
-#: note: etwa die Hälfte der Straße ist normal offen, dann geht\'s über eine Auffahrt auf einen sehr breiten Gehweg --- eigentlich q3+; mittlerweile können die Absperungen weggeschoben sein
-Jerusalemer Str. (Süd): Baustelleneinrichtungsfläche	q2::inwork 9925,11568 9936,11469
+# REMOVED (mittlerweile weitgehend offen) --- #: note: etwa die Hälfte der Straße ist normal offen, dann geht\'s über eine Auffahrt auf einen sehr breiten Gehweg --- eigentlich q3+; mittlerweile können die Absperungen weggeschoben sein --- Jerusalemer Str. (Süd): Baustelleneinrichtungsfläche	q2::inwork 9925,11568 9936,11469
 Markgrafenstr.: Baustelleneinrichtungsfläche	q3::inwork 9725,11445 9711,11543
-#: next_check: 2026-11-16 (ist hier tatsächlich gesperrt?)
-Charlottenstr./Krausenstr.: Sperrung des Kreuzungsbereichs	q3::inwork 9569,11631 9581,11523 9593,11424
+#: note: zwar ist nur der Kreuzungsbereich gesperrt, aber auch der östliche Bürgersteig ist gesperrt, und auf der westlichen Seite kommt man nur auf Umwegen vorbei, eng -> q4
+Charlottenstr./Krausenstr.: Sperrung des Kreuzungsbereichs	q4::inwork 9569,11631 9581,11523 9593,11424
 # ACTIVATE_LATER I. Quartal 2027: Krausenstr.: zwischen Charlottenstr. und Friedrichstr. gesperrt	q4::inwork 9581,11523 9456,11513
 #: next_check ^^^
 #: check_frequency ^^^
@@ -7586,22 +7585,19 @@ Zur Alten Börse - Merler Weg	2::temp 18736,13080 18749,13158
 #: osm_watch: way id="336698811" version="10"
 #: osm_watch: way id="860389744" version="11"
 #: osm_watch: way id="1430491605" version="4"
-#: note: hier relativ eng und viel Fußgängerverkehr, deshalb q4
-#: last_checked: 2026-10-18 (osm)
-# REMOVED --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
-#: next_check: 2026-11-17 (ls.brandenburg)
 # REMOVED --- Friedrichstr., 1. BA	q3::inwork 34421,1950 34359,2165
-Friedrichstr., 2. BA	q4::inwork 34359,2165 34250,2546
+# REMOVED --- #: note: hier relativ eng und viel Fußgängerverkehr, deshalb q4 --- #: last_checked: 2026-10-18 (osm) --- #: next_check: 2026-12-18 (VIZ-Verkehrsmeldung) --- #: next_check: 2026-11-17 (ls.brandenburg) --- Friedrichstr., 2. BA	q4::inwork 34359,2165 34250,2546
 #: osm_watch: way id="5057517" version="23"
 #: also_indoor: traffic (T,G)
-#: note: hier sind die Radwege fast in der gesamten Breite verfügbar, deshalb q3
+#: note: hier waren die Radwege fast in der gesamten Breite verfügbar, deshalb ursprünglich q3
 #: last_checked: 2026-10-20 (mapillary)
-#: next_check: 2026-11-17 (ls.brandenburg, danach q4?)
-Flakenfließbrücke	q3::inwork 34250,2546 34175,2637 34152,2749
+# REMOVED --- #: next_check: 2026-11-17 (ls.brandenburg, danach q4?)
+#: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
+Flakenfließbrücke	q4::inwork 34250,2546 34175,2637 34152,2749
 ',
          'from' => 1742079600,
          'id' => 4189,
-         'text' => 'Erkner, Friedrichstr. und Flakenfließbrücke: Bauarbeiten, mögliche Beeinträchtigungen, möglicherweise bis voraussichtlich Frühjahr 2027',
+         'text' => 'Erkner, Flakenfließbrücke und Friedrichstr.: Bauarbeiten, mögliche Beeinträchtigungen, bis voraussichtlich Frühjahr 2027',
          'type' => 'gesperrt',
          'until' => 1811775600
        },
@@ -8718,7 +8714,7 @@ Schiffbauerdamm, Richtung Westen: nur für Fußgänger	q4::inwork; 9025,12727 8870,
 #: also_indoor: traffic (ex-G,ex-T,ex-B)
 #: source_id: planb2026:13.41359234,52.51568692,13.12.2023, ("Fahrstreifen-Reduzierung" in der Stralauer Allee, bis 30.10.2026) (vorfristig inaktiv)
 #: source_id: LMS-BR:427613/72 viz2021:13.41227,52.51584, vizapi2026:1209/2026 (Verengung in der Stralauer Allee, bis 16.11.2026)
-#: last_checked: 2026-11-10
+#: last_checked: 2026-11-16
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-10-30 (ex-planb)
 	q4::inwork 10951,12249 10957,12401
@@ -9121,7 +9117,7 @@ Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
          'data' => '#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3qzc47p322v
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreie4ttkavuqqddanxdwr2we44ig6cbud7vdgdyd7gn5en3ebrgunfu@jpeg (möglicherweise auch der Hochbordradweg gesperrt?)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3m3rmbftbms2g (Gustav-Adolf-Str. angeblich offen)
-#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 (bis 13.05.2026) (bis 21.06.2026) (bis 06.07.2026) (bis 21.08.2026) (bis 13.11.2026) (bis 07.12.2026)
+#: source_id: LMS-BR:387548/72 viz2021:13.44438,52.55784,22.10.2025,07:00 vizapi2026:417/2026 (bis 13.05.2026) (bis 21.06.2026) (bis 06.07.2026) (bis 21.08.2026) (bis 13.11.2026) (bis 07.12.2026) (bis 31.12.2026)
 #: source_id: bvg2024:156#HIM_FREETEXT_303396 (zwischenzeitlich entfernt)
 #: source_id: planb2026:13.45429623,52.56206157,20.10.2025,06:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (inaktiv)
 #: source_id: planb2026:13.45430719,52.56206198,03.08.2026,06:00 ("Sperrung einer Fahrtrichtung", Verlängerung der Sperrung bis Große Seestr., 03.08.2026 bis 13.11.2026) (inaktiv)
@@ -9136,9 +9132,9 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
 ',
          'from' => 1761110409,
          'id' => 4476,
-         'text' => 'Gustav-Adolf-Str.: Sperrung der Fahrbahn Richtung Nordosten (Bürgersteig für Radfahrer frei), außerdem Sperrung der Anbindung Amalienstr, voraussichtlich bis 07.12.2026',
+         'text' => 'Gustav-Adolf-Str.: Sperrung der Fahrbahn Richtung Nordosten (Bürgersteig für Radfahrer frei), außerdem Sperrung der Anbindung Amalienstr, voraussichtlich bis Ende Dezember 2026',
          'type' => 'handicap',
-         'until' => 1796684399
+         'until' => 1798757999
        },
        undef,
        undef,
@@ -10390,7 +10386,7 @@ Fehrbelliner Str./Veteranenstr.: Gleisbauarbeiten im Kreuzungsbereich	q3::inwork
 #: source_id: LMS-BR:415649/72 viz2021:13.41002,52.52861,13.07.2026,07:00 vizapi2026:691/2026 (bis 22.12.2028)
 #: osm_watch: note 5394140 1
 #: note: die ersten drei Wochen nur gesperrt, ohne dass an der Oberfläche sichtbare Bauarbeiten wären
-#: last_checked: 2026-10-21 vvv
+#: last_checked: 2026-11-16 vvv
 #: check_frequency: 30d (am Anfang höhere Frequenz) vvv
 #: next_check: 2028-12-22 (VIZ-Verkehrsmeldung) vvv
 #: priority: #A
@@ -10889,21 +10885,7 @@ Klausdorf - Zossen (Thomas-Müntzer-Straße): Sperrung des Bahnübergangs	2::inwork
          'until' => 1797893999
        },
        undef,
-       {
-         'data' => '#: source_id: planb2026:13.39111648,52.53015145,03.08.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 30.09.2026) (bis 30.10.2026) (bis 20.11.2026)
-#: source_id: planb2026:13.39111648,52.53015145,03.08.2026, ("Vollsperrung beider Fahrbahnen", bis 20.11.2026) (vorfristig inaktiv)
-#: note: nur ein Abschnitt, deshalb q4 -> q3
-#: note: chaotische Ausschilderung: Einbahnstraße Richtung Westen, Radfahrer frei, aber dann gleich ein Einfahrt-verboten-Schild (siehe Mapillary vom 23.9.2026), aber die Fahrbahn ist komplett gesperrt
-#: last_checked: 2026-10-21
-#: next_check: 2026-11-20 (planb)
-	q3::inwork 9373,13769 9514,13826
-',
-         'from' => 1785621600,
-         'id' => 4730,
-         'text' => 'Tieckstr.: Sperrung der Fahrbahn zwischen Borsigstr. und Gartenstr., vom 03.08.2026 bis 20.11.2026',
-         'type' => 'gesperrt',
-         'until' => 1795215599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -11210,7 +11192,7 @@ Plazfläche	q4::inwork 2869,11690 2910,11697
 #: source_id: planb2026:13.38924486,52.52195129,18.05.2026,07:00 ("Fahrbahneinengung", westliche Baustelle, bis 10.08.2029)
 #: source_id: planb2026:13.38998881,52.52202693,13.07.2026,08:00 ("Intervallsperrung", östliche Baustelle, bis 30.10.2026) (vorfristig inaktiv) (bis 30.11.2026)
 #: also_indoor: traffic (G,T,no-H,no-W)
-#: last_checked: 2026-11-13
+#: last_checked: 2026-11-16
 #: check_frequency: 30d
 #: next_check: 2029-08-10
 Am Weidendamm	q4::inwork; 9286,12886 9323,12895
@@ -11717,7 +11699,7 @@ Wolfshagener Str.: kurze Sperrung vor Amalienstr	q2::inwork 10905,18671 11220,18
        {
          'data' => '#: source_id: planb2026:13.39481475,52.51151815,28.09.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 30.11.2026)
 #: also_indoor: traffic (no-G,T,H,no-W)
-#: last_checked: 2026-10-21
+#: last_checked: 2026-11-16
 #: next_check: 2026-11-30
 Kronenstr.: Sperrung einer Fahrtrichtung	q4::inwork; 9896,11760 9692,11732
 ',
@@ -11755,7 +11737,7 @@ Kronenstr.: Sperrung einer Fahrtrichtung	q4::inwork; 9896,11760 9692,11732
        {
          'data' => '#: source_id: planb2026:13.44862116,52.47313244,31.08.2026, ("Vollsperrung beider Fahrbahnen", bis 13.11.2026) (inaktiv)
 #: also_indoor: traffic (no-G,T,no-W,no-H)
-#: last_checked: 2026-11-14
+#: last_checked: 2026-11-16 (traffic)
 #: check_frequency: 14d (traffic)
 # REMOVED --- #: next_check: 2026-11-13 (planb)
 Zwiestädter Str.: Sperrung der Fahrbahn (ungefähr 100m)	q4::inwork 13392,7648 13513,7532
@@ -11916,15 +11898,17 @@ Uferweg am Südufer des Urbanhafens/Landwehrkanals: Erneuerung	2::inwork 10929,98
 #: by: https://www.entwicklungsstadt.de/vollsperrung-der-doerpfeldstrasse-in-adlershof-wird-bis-maerz-2027-gebaut/
 #: by: https://www.entwicklungsstadt.de/doerpfeldstrasse-vor-dem-wandel-was-nach-den-monatelangen-sperrungen-kommt/
 #: by: https://www.entwicklungsstadt.de/vollsperrung-ab-montag-doerpfeldstrasse-monatelang-dicht/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1739597.php (ab 16.11.2026)
+#: by: https://www.entwicklungsstadt.de/doerpfeldstrasse-monatelange-sperrung-verschoben/
 #: also_indoor: traffic (none)
 #: source_id: bvg2024:n64#HIM_FREETEXT_372814 (inaktiv) (wieder aktiv)
 #: XXX nach den Bauarbeiten: möglicherweise wird der vorhandene Hochbordradweg asphaltiert sein?
 #: next_check: 2027-03-31 (BA-Pressemitteilung: geplantes Ende)
 	q4::inwork 20834,4035 21053,4162 21129,4217 21146,4229 21179,4249 21193,4305 21206,4387 21332,4655
 ',
-         'from' => 1794092400,
+         'from' => 1794697200,
          'id' => 4824,
-         'text' => 'Dörpfeldstr. und Ottomar-Geschke-Str.: Fahrbahnsanierung zwischen Waldstr. und Oberspreestr., Fahrbahn und Radweg betroffen, geplant vom 9.11.2026 bis Ende März 2027',
+         'text' => 'Dörpfeldstr. und Ottomar-Geschke-Str.: Fahrbahnsanierung zwischen Waldstr. und Oberspreestr., Fahrbahn und Radweg betroffen, geplant vom 16.11.2026 bis Ende März 2027',
          'type' => 'gesperrt',
          'until' => 1806530399
        },
@@ -12024,7 +12008,7 @@ Trautenaustr.: Bauarbeiten, Sperrung, auch für den Radverkehr?	q4::inwork 5176,9
 #: source_id: LMS-BR:425168/72 viz2021:13.448076,52.512543,12.10.2026,00:00 (bis 16.10.2026) (bis 20.10.2026) (bis 30.10.2026) (bis 20.11.2026)
 #: also_indoor: traffic (ex-G,ex-T,H,ex-W)
 #: note: manchmal (außerhalb der Arbeitszeiten und am Wochenende?) mit weggeschobenen Barrieren im Zuge der Gubener Str. (seen 2026-10-18 Sun 09:45, 2026-10-27 Tue 17:25, 2026-10-31 Sat 13:00) oder auch Am Comeniusplatz (seen 2026-10-28 Wed 17:44, 2026-11-01 Sun 09:43)
-#: last_checked: 2026-11-13 vvv
+#: last_checked: 2026-11-16 vvv
 #: check_frequency: 10d vvv
 #: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
 Gubener Str./Am Comeniusplatz: Bauarbeiten, Sperrung im Einmündungsbereich	q3::inwork 13467,11778 13406,11896 13352,12003
@@ -12154,7 +12138,7 @@ Düppelstr.	q4::inwork 5141,5744 5114,5705
 #: by: https://fahrinfo.vbb.de/him-uploads/1793604220906_1.jpg
 #: by: https://www.berliner-zeitung.de/article/baustellen-chaos-in-mitte-pendler-brauchen-ueber-eine-stunde-statt-20-minuten-10584202
 #: source_id: planb2026:13.41635987,52.52663132,10.11.2026, ("Fahrstreifen-Reduzierung", bis 20.12.2026)
-#: source_id: bvg2024:142#HIM_FREETEXT_369942
+#: source_id[inactive]: bvg2024:142#HIM_FREETEXT_369942
 #: source_id: LMS-BR:427845/72 viz2021:13.41564,52.52676,09.11.2026,07:00 (bis 21.12.2026)
 #: source_id: LMS-BR:427846/72 viz2021:13.41537,52.52689,09.11.2026,07:00 (bis 21.12.2026) (bei vizapi2026 entfernt) (und wieder da)
 #: source_id: LMS-BR:427844/72 viz2021:13.415369,52.526891,09.11.2026,07:00 vizapi2026:1199/2026 ("Gleisbauarbeiten", 09.11.2026 bis 21.12.2026)
@@ -12248,7 +12232,7 @@ Joachim-Karnatz-Allee	q4::inwork 7077,12575 7139,12589
          'data' => '#: source_id: planb2026:13.46255915,52.51080594,02.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 02.04.2027)
 #: also_indoor: traffic (no-G,T,no-H,no-W)
 #: XXX Kranaufbau, evtl. kann man danach wieder passieren?
-#: last_checked: 2026-11-15
+#: last_checked: 2026-11-16
 #: check_frequency: 14d
 #: next_check: 2027-04-02
 	q4::inwork 14395,11753 14358,11656
@@ -12284,12 +12268,12 @@ Joachim-Karnatz-Allee	q4::inwork 7077,12575 7139,12589
          'until' => 1806530400
        },
        {
-         'data' => '#: source_id: LMS-BR:428201/72 viz2021:13.442709,52.516065, vizapi2026:1225/2026 (bis 04.12.2026)
+         'data' => '#: source_id: LMS-BR:428201/72 viz2021:13.442709,52.516065, vizapi2026:1225/2026 (bis 04.12.2026) (mittlerweile bei vizapi2026 fälschlicherweise entfernt)
 #: source_id: bvg2024:240#HIM_FREETEXT_373052
 #: source_id: bvg2024:347#HIM_FREETEXT_373054
 #: by: https://fahrinfo.vbb.de/him-uploads/1794573933925_1.jpg
 #: note: der östliche Bürgersteig grenzt an eine Grünfläche und ist nicht besonders frequentiert
-#: last_checked: 2026-11-13
+#: last_checked: 2026-11-16
 #: check_frequency: 14d
 #: next_check: 2026-12-04
 	q4::inwork 13086,12186 13019,12316
@@ -12323,7 +12307,7 @@ Joachim-Karnatz-Allee	q4::inwork 7077,12575 7139,12589
          'until' => 1797634800
        },
        {
-         'data' => '#: next_check: PLANUFER-2026
+         'data' => '#: next_check_id: PLANUFER-2026
 Planufer	q4::inwork 10914,9887 10929,9897 11160,9932
 Planufer: Kreuzungsbereich Admiralbrücke	q3::inwork 11295,9958 11177,9935
 Admiralbrücke	q4::inwork 11177,9935 11199,9993
@@ -12333,6 +12317,18 @@ Admiralbrücke	q4::inwork 11177,9935 11199,9993
          'text' => 'Planufer: Abschleifen des Kopfsteinpflasters zwischen Dieffenbachstr. und Admiralbrücke, Sperrung, evtl. ist auch der Radverkehr betroffen, geplant 16.11.2026 bis 18.12.2026',
          'type' => 'handicap',
          'until' => 1797634800
+       },
+       {
+         'data' => '#: next_check_id: PLDVEREINTENNATIONEN-2026
+	q4::inwork 11904,13052 11896,13075
+#: note: hier nur einige Meter gesperrt, deshalb: q4 -> q3
+	q3::inwork 12052,12977 11904,13052
+',
+         'from' => 1794783600,
+         'id' => 4857,
+         'text' => 'Platz der Vereinten Nationen (Abzweig zur Weydemeyerstr./Palisadenstr.): Bauarbeiten an der Mollstr., Fahrbahn kann gesperrt sein, möglicherweise bis 25.03.2027',
+         'type' => 'handicap',
+         'until' => 1806015600
        }
      
 );
