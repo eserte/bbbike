@@ -29284,14 +29284,18 @@ EOF
 	q4::inwork; 6248,6388 6095,6358
 EOF
      },
-     { from => 1533579833,
-       until => $isodate2epoch->("2018-09-18 18:00:00"),
-       text => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis Mitte September 2018',
-       type => 'handicap',
-       data => <<EOF,
-#: source_id: 2147342987
-#: next_check: 2018-09-19
-	q4::inwork; 13515,11969 13696,11920
+     { from  => $isodate2epoch->("2026-11-16 00:00:00"), # 1533579833,
+       until => $isodate2epoch->("2026-11-21 11:00:00"), # $isodate2epoch->("2018-09-18 18:00:00"),
+#      text  => 'Grünberger Str.: Sperrung der Fahrbahn zwischen Kadiner Str. und Warschauer Str., Richtung Osten, voraussichtlich bis Mitte September 2018',
+       text  => 'Grünberger Str.: Kraneinsatz, Sperrung der Fahrbahn zwischen Simon-Dach-Str. und Gabriel-Max-Str., 16.11.2026 bis 21.11.2026 11 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+# REMOVED --- #: source_id: 2147342987 --- #: next_check: 2018-09-19 ---	q4::inwork; 13515,11969 13696,11920
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3n2flniktjk2g
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigahx3ogo5wg7bfpohobk2ql3pslkssjxcvozbtqa2ronntwwmsci
+#: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026)
+#: source_id: bvg2024:240#HIM_FREETEXT_373030 (ab 16.11.2026, vermutlich auch nur ein Kraneinsatz)
+	q4::inwork 14006,11843 14127,11811
 EOF
      },
      { from  => 1533580222, # 2018-08-06 20:30
@@ -42885,7 +42889,7 @@ EOF
 #: by: https://www.nd-aktuell.de/artikel/1197646.bvg-berlin-sogar-die-u-bahn-wird-langsamer.html (bis 2029?)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/dauerbaustelle-in-berlin-prenzlauer-berg-neuer-endtermin-steht--wird-er-diesmal-wirklich-eingehalten-15569872.html (voraussichtlich bis Juni 2027)
 #: note: Ein Radfahren-verboten-Schild steht an der Schönhauser Allee Richtung Norden, aber bezieht sich das auf die abgesperrte Radspur oder auch die Fahrbahn? Manchmal ist das Schild auch umgedreht (siehe Mapillary 2024-06-01), meistens nicht (gesehen: 2024-05-17, 2024-09-18, 2024-09-29, 2024-11-03, 2024-12-11, 2025-01-15, 2026-03-02). Radfahrer benutzen hier die Fahrbahn.
-#: last_checked: 2026-10-19 vvv
+#: last_checked: 2026-11-14 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-01 (Tsp + planb + VIZ-Verkehrsmeldung) vvv
 Schönhauser Allee: Radspur gesperrt	q4::inwork; 10908,13978 10933,14122
@@ -44143,7 +44147,7 @@ EOF
 #: add_fragezeichen: Ist der Weg entlang des Bahndamms noch gesperrt?
 #: note: existiert nun auch als gesperrt-orig-Eintrag
 #: XXX laut osm opening_date=2028
-#: last_checked: 2026-10-16 (mapillary)
+#: last_checked: 2026-11-14 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (osm)
 	2::inwork 9586,17665 9461,17795
@@ -50350,7 +50354,7 @@ EOF
 #: source_id: LMS-BR:373761/72 viz2021:13.43909,52.5791,25.06.2025,09:02 viz2021:13.43909,52.5791, (bis 31.10.2025) (inaktiv) (wieder aktiv, kein Endedatum) (bis 02.03.2026) (inaktiv) (bis 01.06.2026) (bis 22.06.2026) (bis 15.10.2026) (bis 28.12.2026)
 #: source_id: adac:1492119592 (bis voraussichtlich 31.10.2025) (neue ID -> inaktiv)
 #: note: Länge der Sperrung etwa 100m, deshalb q4 -> q3
-#: last_checked: 2026-10-05 (mapillary)
+#: last_checked: 2026-11-14 (mapillary)
 #: next_check: 2026-12-28 (VIZ-Verkehrsmeldung)
 	q3::inwork 12627,19317 12457,19248
 EOF
@@ -53562,19 +53566,20 @@ EOF
 EOF
      },
      { from  => 1774506839, # 2026-03-26 07:33
-       until => $isodate2epoch->("2026-11-13 23:59:59"), # $isodate2epoch->("2026-11-30 23:59:59"), # $isodate2epoch->("2026-09-10 23:59:59"),
+       until => undef, # $isodate2epoch->("2026-11-13 23:59:59"), # $isodate2epoch->("2026-11-30 23:59:59"), # $isodate2epoch->("2026-09-10 23:59:59"),
 #      text  => 'Milastr.: Anbindung an die Schönhauser Allee gesperrt, evtl. ist auch der Radverkehr betroffen, bis Mitte September 2026',
 #      text  => 'Milastr.: Anbindung an die Schönhauser Allee (Fahrbahn) gesperrt, voraussichtlich bis Ende November 2026',
-       text  => 'Milastr.: Anbindung an die Schönhauser Allee (Fahrbahn) gesperrt, voraussichtlich bis Mitte November 2026',
+       text  => 'Milastr.: Anbindung an die Schönhauser Allee (Fahrbahn) gesperrt, geplant bis Mitte November 2026, evtl. wird die Baustelle verlängert',
        type  => 'handicap',
        data  => <<'EOF',
-#: next_check_id: SCHOENHAUSERALLEE-2024
+#: next_check_id: MILA-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mhwuh3kyg22m
 #: source_id: LMS-BR:402968/72 viz2021:13.4126,52.54523,26.03.2026,07:00 vizapi2026:255/2026 (bis 10.09.2026) (bis 22.09.2026) (zwischenzeitlich nur noch bei der alten API aktiv) (bis 13.11.2026)
 #: source_id: planb2026:13.41270765,52.54491963,16.03.2026, ("Sicherung gemäß Vz.-plan", bis 10.09.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026) (vorfristig inaktiv) (bis 27.09.2026) (vorfristig inaktiv)
 #: note: Länge der Sperrung: ca. 50m (könnte für q4+/q3- reichen, sobald es unterstützt wird)
-# REMOVED (ja) --- #: XXX existiert die Sperrung weiterhin? --- #: next_check: 2026-07-29
+#: XXX existiert die Sperrung weiterhin?
+#: last_checked: 2026-11-14 (mapillary)
 	q4::inwork 10768,15534 10917,15525
 EOF
      },
@@ -53915,7 +53920,7 @@ EOF
 #: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026) (vorfristig inaktiv) (bis 27.09.2026) (vorfristig inaktiv)
 #: note: geschätzt ist der halbe Straßenabschnitt gesperrt
 #: XXX existiert die Sperrung weiterhin?
-#: last_checked: 2026-11-13
+#: last_checked: 2026-11-14 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2026-11-27 (VIZ-Verkehrsmeldung)
 	q4::inwork 11055,15504 10917,15525
@@ -54835,7 +54840,7 @@ EOF
 #: osm_watch: way id="542223826" version="16"
 #: source_id: planb2026:-
 #: note: Mittlerweile zwei Wände über die gesamte Straße, abschließbare Türen, waren am 2026-11-01 Sun 11:30 offen
-#: last_checked: 2026-11-01 (mapillary)
+#: last_checked: 2026-11-14 (mapillary)
 # REMOVED --- #: next_check: 2026-02-01
 	2::inwork 11412,17823 11335,17807
 EOF
@@ -54966,7 +54971,7 @@ EOF
 #: source_id: LMS-BR:418661/72 viz2021:13.39892,52.53262, vizapi2026:810/2026 (Veteranenstr., bis 31.08.2026) (bis 29.01.2027) (inaktiv) (bis 07.09.2027) (nur noch in vizapi2026 aktiv) (bis 26.10.2026) (bis 20.12.2026)
 #: also_indoor: traffic (T,G[later],H,W)
 #: note: Für den Radverkehr ist eine Umleitung über Fehrbelliner Str. - Choriner Str. (und vermutlich weiter über Schwedter Str.) ausgeschildert, beide Richtungen
-#: last_checked: 2026-11-13 vvv
+#: last_checked: 2026-11-14 (mapillary) vvv
 #: check_frequency: 21d (am Anfang höhere Frequenz) vvv
 #: next_check: 2027-01-29 (planb + VIZ-Verkehrsmeldung) vvv
 Kastanienallee: Gleisbauarbeiten	q4::inwork 10370,14158 10426,14262 10497,14391 10530,14452
@@ -57742,7 +57747,7 @@ EOF
 #: source_id: planb2026:13.46255915,52.51080594,02.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 02.04.2027)
 #: also_indoor: traffic (no-G,T,no-H,no-W)
 #: XXX Kranaufbau, evtl. kann man danach wieder passieren?
-#: last_checked: 2026-11-12
+#: last_checked: 2026-11-15
 #: check_frequency: 14d
 #: next_check: 2027-04-02
 	q4::inwork 14395,11753 14358,11656
@@ -57804,6 +57809,17 @@ EOF
 #: source_id: planb2026:13.31912192,52.42821212,14.09.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 18.12.2026)
 #: also_indoor: traffic (no-G,T,no-H,W)
 	q4::inwork 4868,2370 4968,2543
+EOF
+     },
+     { from  => 1794811575, # 2026-11-16 07:46
+       until => 1797634800, # 2026-12-19 00:00
+       text  => 'Planufer: Abschleifen des Kopfsteinpflasters zwischen Dieffenbachstr. und Admiralbrücke, Sperrung, evtl. ist auch der Radverkehr betroffen, geplant 16.11.2026 bis 18.12.2026',
+       type  => 'handicap',
+       data  => <<'EOF',
+#: next_check: PLANUFER-2026
+Planufer	q4::inwork 10914,9887 10929,9897 11160,9932
+Planufer: Kreuzungsbereich Admiralbrücke	q3::inwork 11295,9958 11177,9935
+Admiralbrücke	q4::inwork 11177,9935 11199,9993
 EOF
      },
     );

@@ -555,7 +555,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: osm_watch: way id="4632077" version="36"
 #: osm_watch: note 4459974 4
 #: XXX infravelo-Planung: nördlich Thulestr. geschützte Radfahrstreifen, südlich ohne Protektion; außerdem Umbau der Kreuzung Stahlheimer Straße/Wisbyer Straße, so dass auch eine "legale" Fahrtmöglichkeit von Süd nach Nord besteht
-#: last_checked: 2026-11-01 (mapillary)
+#: last_checked: 2026-11-14 (mapillary)
 #: check_frequency: 150d
 #: next_check: 2028-12-31 (infravelo)
 # REMOVED --- #: next_check: 2026-12-31 (Tsp: 1. BA)
@@ -4409,7 +4409,7 @@ Grellstr.: 120m Hochbordradweg vor der Prenzlauer Allee geplant	?::projected; 12
 #: by: https://www.tagesspiegel.de/berlin/letzte-chance-fur-die-baume-an-der-berliner-torstrasse-uber-den-umstrittenen-strassenausbau-soll-bald-entschieden-werden-16083890.html
 #: by: https://www.entwicklungsstadt.de/torstrasse-vor-dem-umbau-schafft-der-berliner-senat-jetzt-fakten/ (Baumfällungen frühestens im Januar 2027, oder doch früher?)
 #: by: https://www.tagesspiegel.de/berlin/torstrasse-kantstrasse-und-tempelhofer-damm-verkehrssenatorin-bonde-treibt-umstrittene-umbauten-weiter-voran-16279332.html
-#: last_checked: 2026-11-13
+#: last_checked: 2026-11-14 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-10-15 (Tsp: Baubeginn)
 Torstr.: Planung von Radwegen	?::projected 10177,13766 9917,13741 9797,13691 9670,13637 9579,13604 9508,13578 9391,13535 9353,13521 9212,13471
@@ -5545,7 +5545,7 @@ Schwedter Str.: Fahrradstraße zwischen Choriner Str. und Schönhauser Allee	?::pr
 #: by: https://www.tagesspiegel.de/berlin/bezirke/pankow/neuer-zeitplan-nach-jahrelanger-verzogerung-mit-pollern-oder-ohne-in-prenzlauer-berg-werden-zwei-neue-fahrradstrassen-eingerichtet-15061167.html (frühestens ab 2026)
 #: by: https://www.morgenpost.de/berlin/article411153220/pankow-setzt-auf-radverkehr-eine-neue-fahrradstrasse-entsteht.html (ab September 2026)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25981.pdf (Umsetzung 2027 avisiert)
-#: last_checked: 2026-10-19
+#: last_checked: 2026-11-14 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-12-31 (pardok)
 Saarbrücker Str.: soll Fahrradstraße werden	? 10895,13961 11052,13870 11116,13830 11251,13667
@@ -8043,6 +8043,8 @@ Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14031,9
 #: by: https://www.entwicklungsstadt.de/neue-radwege-in-plaenterwald-so-veraendert-sich-der-verkehr/ (Arbeiten für den Abschnitt ab Bahnüberführung 19.11.2026 bis 11.12.2026)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1736328.php (Anradeln am 12.11.2026)
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261113 (Asphaltsanierung ab 16.11.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3n2frroav2v2u
+#: by: https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiaodvra7omko64n4cis5ppgpx7v645bnuzrnempbrmey4qomd26x4 (während der Bauarbeiten evtl. keine Überquerungsmöglichkeit in Höhe Herkomerstr. und Rethelstr.)
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_368574 (Verlegung der Haltestelle Klingerstraße)
 #: source_id: LMS-BR:425840/72 viz2021:13.46717,52.4853,19.10.2026,07:00 vizapi2026:1085/2026 (19.10.2026 bis 06.11.2026) (bis 13.11.2026) (bis 12.11.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:165#HIM_FREETEXT_370282 (Kein Halt: Klingerstraße)
@@ -10260,7 +10262,7 @@ Marienstr. (Lichterfelde): Bauarbeiten geplant, wird der Radverkehr betroffen se
 #: source_id: LMS-BR:426069/72 viz2021:13.41432,52.54079,21.10.2026,07:00 vizapi2026:1102/2026 (Danziger Str., bis 13.11.2026) (bis 17.11.2026)
 #: source_id: planb2026:13.4142852,52.5407084,19.10.2026,07:00 ("geänderte Führung im Knotenpunkt", bis 13.11.2026) (vorfristig inaktiv)
 #: note: eine Umleitungsausschilderung für den Radverkehr war am 2026-11-13 ausgeschildert, aber man ist relativ komfortabel über die Danziger Str. gekommen
-#: last_checked: 2026-11-13
+#: last_checked: 2026-11-14 (mapillary)
 #: check_frequency: 8d
 #: next_check: 2026-11-17 (VIZ-Verkehrsmeldung: Ende)
 Schönhauser Allee: Gleisbauarbeiten, offiziell Umweg (~350m) für den Radverkehr via Danziger Str./Lychener Str. geplant	?; 10884,14952 10881,15047 10883,15129
@@ -10269,12 +10271,15 @@ Schönhauser Allee: Gleisbauarbeiten, offiziell Umweg (~350m) für den Radverkehr 
 Nikolsburger Platz - Nikolsburger Str.: Planung eines Zweirichtungsradwegs + Fahrradstraße	?::projected 5374,9619 5291,9675 5232,9776
 # REMOVED (hier vermutlich nicht (Länge der Fahrradstraße stimmt ansonsten nicht) --- Nikolsburger Platz - Nikolsburger Str.: Planung eines Zweirichtungsradwegs + Fahrradstraße entstehen	?::projected 5232,9776 5219,9808
 # 
+#: next_check: PLANUFER-2026
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25976.pdf (ab 2026)
 #: by: https://meinauftrag.rib.de/public/publications/613937
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1737097.php ("nun beginnen ... Abschleifarbeiten", "während der Bauarbeiten wird der Fuß- und Radverkehr umgeleitet")
 #: by: https://www.entwicklungsstadt.de/kreuzberg-sieben-millionen-euro-fuer-die-neugestaltung-des-urbanhafens/
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261113 (Straßenbauarbeiten zwischen Dieffenbachstr. und Admiralbrücke, 16.11.2026 bis Ende Dezember 2026, Sperrung nur für den Kfz-Verkehr erwähnt)
-#: also_indoor: traffic (none)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3n2fr7tg3ve27
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreihpy2juyffy2d4f3qhx5fsmyido2ba232lii4wezvyjx6obssz724 (auch die Admiralbrücke ist abgesperrt)
+#: also_indoor: traffic (G,T,H,W)
 #: source_id: vizapi2026:1234/2026 (für Kfz-Verkehr voll gesperrt, 16.11.2026 bis 18.12.2026)
 #: osm_watch: note 5562180 3
 #: last_checked: 2026-11-05 vvv
@@ -10376,6 +10381,14 @@ Waldsteg: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 8364,19166
 #: source_id: planb2026:13.37358011,52.48770226,23.11.2026, ("Vollsperrung beider Fahrbahnen", bis 15.01.2027)
 #: next_check: 2026-11-23 (planb)
 Monumentenstr./Kreuzbergstr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 8480,9080 8389,9087 8180,9099
+# 
+#: source_id: planb2026:13.58021032,52.43890134,30.11.2026,07:00 ("Sperrung einer Fahrtrichtung", bis 26.02.2027)
+#: next_check: 2026-11-30 (planb)
+Charlottenstr. (Köpenick): geplante Einbahnstraßenregelung, wird der Radverkehr betroffen sein?	? 22456,3889 22538,3889
+# 
+#: source_id: planb2026:13.3166597,52.46440901,30.11.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.01.2027)
+#: next_check: 2026-11-30 (planb)
+Gritznerstr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 4555,6403 4630,6534
 # 
 ######################################################################
 #
