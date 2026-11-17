@@ -3602,7 +3602,7 @@ Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
 #: XXX bleibt der Asphalt?
 #: historical_note: früher (bis Ende August 2026): Gehwegplatten, Q0-
 #: note: Richtung Nordwesten eigentlich nur für den Linienverkehr frei (Verbotsschild überdeckt das Fußgängerschild), aber in der Gegenrichtung ist Gehweg, Radfahrer frei weiterhin sichtbar
-#: last_checked: 2026-11-05
+#: last_checked: 2026-11-17
 #: next_check: 2026-12-31
 Melchiorstr. - Mariannenplatz: Asphalt	Q0 11917,11186 11944,11152
 (Weg am Humboldthain): Betonpflaster mit breiten Fugen	Q2 9255,15816 9092,15789
@@ -8561,6 +8561,9 @@ Mylauer Weg: Asphalt	Q0 24017,14613 23873,14527
 Mylauer Weg: Verbundsteinpflaster	Q1+ 23873,14527 23801,14500
 (Kastanienallee - Weg entlang der U-Bahn): Asphalt	Q0 23778,14568 23792,14561 23793,14573
 (Kastanienallee - Weg entlang der U-Bahn): Kopfsteinpflaster	Q2+ 23793,14573 23795,14604 23786,14631
+#: XXX bei osm mittlerweile smoothness=very_bad wegen der Wurzelhebungen -> ist es in der letzten fünf Jahren schlechter geworden?
+#: osm_watch: way id="45835269" version="12"
+#: osm_watch[closed]: note 5396317 3
 (Weg entlang der U-Bahn): Asphalt mit Wurzelhebungen	Q1 23786,14631 23980,14707
 (Weg entlang der U-Bahn): Asphalt	Q0 23980,14707 23995,14722 24136,14785 24228,14825
 (Weg entlang der U-Bahn): Beton	Q1+ 24228,14825 24263,14838 24313,14839 24356,14850 24380,14861

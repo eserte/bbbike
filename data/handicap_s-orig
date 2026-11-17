@@ -12,7 +12,7 @@
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_366164
-#: last_checked: 2026-11-13
+#: last_checked: 2026-11-17
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
 #: valid: -20261221
@@ -125,18 +125,18 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 # 
 # REMOVED (vorzeitig fertig geworden) --- #: last_checked: 2025-09-26 --- #: check_frequency: 14d --- #: next_check: 2025-10-10 --- #: valid: -20251010 --- Singerstr.: kurze Sperrung an der Koppenstr.	q3::inwork 12532,12150 12691,12042
 # 
-#: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (bis 20.11.2026)
-#: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026) (bis 20.11.2026)
-#: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026) (bis 20.11.2026)
-#: last_checked: 2026-11-13 vvv
-#: check_frequency: 21d vvv
-#: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
-Singerstr.: Sperrung an der Einmündung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
-# REMOVED (eigentlich hier auch, aber es existiert bereits ein handicap-Eintrag an dieser Stelle, deshalb wird der nächste Abschnitt mit q4 getaggt) --- Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q3::inwork 12735,12131 12691,12042
-Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q4::inwork 12691,12042 12648,11953
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (vorzeitig fertig geworden, gesehen am 17.11.2026) --- #: source_id: planb2026:13.43774486,52.51379589,31.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 16.10.2026) (bis 20.11.2026)
+# REMOVED --- #: source_id: LMS-BR:420753/72 viz2021:13.437799,52.513756,31.08.2026,07:00 (hier: Franz-Mehring-Platz, bis 16.10.2026) (bis 20.11.2026)
+# REMOVED --- #: source_id: LMS-BR:420752/72 viz2021:13.43777,52.51372,31.08.2026,07:00 (hier: Singerstr., bis 16.10.2026) (bis 20.11.2026)
+# REMOVED --- #: last_checked: 2026-11-13 vvv
+# REMOVED --- #: check_frequency: 21d vvv
+# REMOVED --- #: next_check: 2026-11-20 (planb + VIZ-Verkehrsmeldung) vvv
+# REMOVED --- Singerstr.: Sperrung an der Einmündung Franz-Mehring-Platz	q3::inwork 12691,12042 12532,12150
+# REMOVED --- # REMOVED (eigentlich hier auch, aber es existiert bereits ein handicap-Eintrag an dieser Stelle, deshalb wird der nächste Abschnitt mit q4 getaggt) --- Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q3::inwork 12735,12131 12691,12042
+# REMOVED --- Franz-Mehring-Platz: Sperrung an der Einmündung Singerstr.	q4::inwork 12691,12042 12648,11953
+# REMOVED --- #: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: last_checked ^^^
 # 
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX Landsberger Allee (Friedrichshain) stadtauswärts in Höhe Matthiasstraße: Baustelle, Fahrbahn auf einen Fahrstreifen verengt, Matthiasstraße gesperrt, vom 07.11.2023 10:54 bis 01.12.2023 17:00 --- #: note: eigentlich Gehweg für Radfahrer frei, somit könnten Radfahrer theoretisch auf der Fahrbahn fahren, aber hier gibt's keinen guten Zugang und die Fahrbahn ist möglicherweise auch zugestaut --- #: source_id: viz2021:13.438586,52.523696,07.11.2023,10:54 (bis 01.12.2023) (bis 29.12.2023) (inaktiv) --- #: source_id: viz2021:13.439714,52.523759,27.11.2023,15:27 (bis 26.01.2024) (bis 09.02.2024) (bis 16.02.2024) (inaktiv) --- #: also_indoor: traffic (ex-G,ex-B,ex-W) --- #: last_checked: 2024-02-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2024-02-16 vvv --- #: valid: -20231229 vvv --- Landsberger Allee: Engstelle in Höhe Matthiasstr.	q2::inwork; 12711,13150 12786,13185 12878,13229 --- Matthiasstr.: Sperrung im Einmündungsbereich Landsberger Allee	q2::inwork 12786,13185 12842,13070 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: source_id: planb2026:13.44048783,52.52294197,10.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 09.09.2026) (bis 13.11.2026) (vorfristig inaktiv) (bis 14.12.2026)
@@ -488,15 +488,6 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 # REMOVED --- #: next_check: 2026-08-15 (planb)
 # REMOVED --- An der Kommandantur: Gerüstbauarbeiten, Fahrbahn gesperrt	q4::inwork 9943,12364 9996,12372
 # 
-# REMOVED (vorfristig frei) --- #: also_indoor: traffic (no-G,T[later],no-H,no-W)
-# REMOVED --- #: note: nur ein kurzer Abschnitt ist gesperrt
-# REMOVED --- #: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026) (inaktiv) (bis 08.01.2027)
-# REMOVED --- #: source_id: planb2026:13.38976332,52.5093633,26.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (siehe oben, vorfristig inaktiv)
-# REMOVED --- #: last_checked: 2026-10-27
-# REMOVED --- #: check_frequency: 21d
-# REMOVED --- #: next_check: 2027-01-08 (planb)
-# REMOVED --- Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
-# 
 #: next_check_id: MAERKISCHESMUSEUM-2026
 #: last_checked: 2026-11-13
 #: check_frequency: 45d
@@ -760,6 +751,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2026-12-31 (entwicklungsstadt, planb) vvv
 #: osm_watch: way id="153698394" version="19"
+#: osm_watch: note 3954721 5
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 # REMOVED (offen) --- #: also_indoor: traffic (ex-H,ex-G) --- #: osm_watch: way id="114667396" version="13" --- Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 # REMOVED --- #: next_check ^^^
@@ -1367,7 +1359,7 @@ Hüttenroder Weg: Hochbauarbeiten, Engstelle	q2::inwork; 13279,8947 13455,8800
 #: source_id: LMS-BR:376771/72 viz2021:13.48561,52.42415, (bis 30.06.2026) (bis 28.08.2026) (ab Kanalstr., bis 30.09.2026) (mittlerweile ab Neuköllner Str., bis 30.09.2026) (bis 31.12.2026)
 #: source_id: planb2026:13.49473836,52.43124572,25.02.2025, ("Sperrung einer Fahrtrichtung", bis 30.09.2026) (inaktiv) (bis 31.12.2026)
 #: source_id: planb2026:13.48550459,52.42414361,06.03.2025, ("Fahrstreifen-Reduzierung", bis 31.12.2026)
-#: last_checked: 2026-11-04 vvv
+#: last_checked: 2026-11-12 (mapillary) vvv
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung + planb) vvv
 # REMOVED --- #: next_check: 2026-10-31 (BVV, bei VIZ allerdings länger) vvv
 # REMOVED (nicht mehr) --- Kanalstr.: Fahrbahn vor der Stubenrauchstr. gesperrt	q2::inwork 17284,2636 16786,2989
@@ -1698,12 +1690,6 @@ Stavangerstr.: Sperrung der Fahrbahn, Radverkehr wird über den schmalen Bürgerst
 # REMOVED (laut osm sind die Bauarbeiten beendet) --- #: next_check_id: BOHNSDORFERKREISEL-2017 --- #: source_id: 2147341295 --- #: osm_watch: way id="410955359" version="3" --- #: last_checked: 2017-08-07 --- #: check_frequency: 30d --- Am Falkenberg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 21862,807 21870,803 22007,711
 # 
 ### Marienfelde ###
-# 
-#: also_indoor: traffic (G,T,no-H,no-W)
-#: source_id: planb2026:-
-#: last_checked: 2026-11-04
-#: check_frequency: 14d (traffic)
-Wehnertstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 8827,1289 8822,1238
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260707 (bis Ende August 2026)
@@ -2400,7 +2386,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: osm_watch: note 5350535 2
 #: osm_watch: way id="30909343" version="27"
 #: source_id: planb2026:13.43196346,52.4975659,01.02.2024,07:00 (hier: "Haltverbote", bis 31.12.2026)
-#: last_checked: 2026-11-07
+#: last_checked: 2026-11-17
 #: check_frequency: 180d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fußgänger, Engstellen	q3 12341,10218 12292,10374
