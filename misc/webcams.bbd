@@ -26,6 +26,7 @@ https://www.youtube.com/watch?v=iEDMWm0G3Io	WCbroken 5953,12035 5852,11932
 http://berlin-webcam.illustriertestadt.de/	WCbroken 6692,11096 6787,11112
 # 
 #: note: Kamera bewegt sich und zeigt einen Ausschnitt zwischen Alexanderplatz und Breitscheidplatz
+#: note: derzeit (18.11.2026) nicht abspielbar (networkError_manifestParsingError)
 #: osm_watch: node id="11081244851" version="4"
 https://livespotting.tv/deutschland/berlin/w6wqy7il	WC 5504,12092 5519,12059
 # 
@@ -51,7 +52,7 @@ https://livespotting.tv/deutschland/berlin/w6wqy7il	WC 5504,12092 5519,12059
 #: note: letztes Bild am 2025-08-27
 https://portal1915.webcam-profi.de/	WCbroken 7374,14526 7418,14453
 # 
-https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg	WC 7988,13315 7990,13418
+# REMOVED (404) --- https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg	WC 7988,13315 7990,13418
 # 
 https://1223a25j44.bautvplus.de/cam1/image.jpg	WC 7804,13297 7866,13383
 #: section ^^^
@@ -63,12 +64,7 @@ https://1223a25j44.bautvplus.de/cam1/image.jpg	WC 7804,13297 7866,13383
 #: note: schwenkbar, kann auch in andere Richtungen zeigen
 https://www.berlin.de/webcams/4350926-4350835-rbb-fernsehzentrum.html	WC 1674,11250 1712,11133
 # 
-#: note: Indexseite: http://www.olympiastadion-berlin.de/index.php?id=80
-#: note: Seite existiert noch, aber keine Webcam-Bilder (Stand 19.2.2022 + 17.11.2023 + 19.11.2024 + 18.05.2025)
-# früher: http://www.olympiastadion-berlin.de/webcam2.php	WC -642,11931 -752,11907
-# früher: http://www.olympiastadion-berlin.de/webcam3.php	WC -517,11940 -627,11928
-# früher: http://www.olympiastadion-berlin.de/webcam5.php	WC -1262,11788 -1185,11806
-https://olympiastadion.berlin/de/webcams_de/	WCbroken -1262,11788 -1185,11806
+# REMOVED (Seite existiert nicht mehr) --- #: note: Indexseite: http://www.olympiastadion-berlin.de/index.php?id=80 --- #: note: Seite existiert noch, aber keine Webcam-Bilder (Stand 19.2.2022 + 17.11.2023 + 19.11.2024 + 18.05.2025) --- # früher: http://www.olympiastadion-berlin.de/webcam2.php	WC -642,11931 -752,11907 --- # früher: http://www.olympiastadion-berlin.de/webcam3.php	WC -517,11940 -627,11928 --- # früher: http://www.olympiastadion-berlin.de/webcam5.php	WC -1262,11788 -1185,11806 --- https://olympiastadion.berlin/de/webcams_de/	WCbroken -1262,11788 -1185,11806
 # 
 #: note: Rundblick, Kamerafahrt
 #: note: auch bei YouTube: https://www.youtube.com/watch?v=LAJiFSw2ICc
@@ -146,16 +142,16 @@ https://www.finanzen.de/webcam	WCbroken 13440,10498 13368,10637
 #: section ^^^
 # 
 #: section Marzahn vvv
-#: note: Livestream (möglicherweise seit Nov 2025?) nicht mehr verfügbar
+#: historical_note: Livestream (möglicherweise seit Nov 2025?) nicht mehr verfügbar
 https://www.youtube-nocookie.com/embed/wdyYC9hiAW4	WCbroken 20264,14544 20162,14547
-https://gruen-berlin.contempo-webcam.de/	WC 21510,14984 21564,14941
+#: historical_note: "Der Betrieb dieser Kamera wurde eingestellt." - letztes Bild vom 1.4.2026
+https://gruen-berlin.contempo-webcam.de/	WCbroken 21510,14984 21564,14941
 #: section ^^^
 # 
 #: section ^^^
 # 
 #: section Potsdam vvv
-#: note: Lange Brücke/Babelsberger Str.
-https://www.mobil-potsdam.de/de/verkehrsmeldungen/webcams-mobile/	WC -12493,-1897 -12529,-1858
+# REMOVED (404) --- #: note: Lange Brücke/Babelsberger Str. --- https://www.mobil-potsdam.de/de/verkehrsmeldungen/webcams-mobile/	WC -12493,-1897 -12529,-1858
 # REMOVED (existiert nicht mehr) --- #: note: vom Hotel Mercure Richtung Garnisonkirche --- https://garnisonkirche-potsdam.de/baufortschritt/webcam/	WC -12720,-1747 -12791,-1707
 #: section ^^^
 # 
