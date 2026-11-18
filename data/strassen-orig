@@ -1425,7 +1425,7 @@ Kleineweg	N 9097,7469 9145,7522 9120,7600 9115,7645
 Kleineweg	N 9132,7661 9130,7810 9130,8029 9128,8251
 Kaiserkorso	N 9128,8251 9128,8414 9135,8633 9093,8665
 Leonhardyweg	N 9040,7648 9035,7810 9033,8029 9032,8254
-Ringbahnstr. (Tempelhof)	N 8460,6959 8723,6958 9050,6960 9242,6962 9457,6959 9706,6802 9861,6693 9863,6617
+Ringbahnstr. (Tempelhof)	N 8460,6959 8723,6958 9050,6960 9242,6962 9462,6958 9706,6802 9861,6693 9863,6617
 Borussiastr.	N 8653,6781 8750,6779 8846,6781 9046,6784 9245,6791 9511,6797 9706,6802
 Fuhrmannstr.	N 9504,6653 9511,6797
 #: note: einige Kartenwerke bezeichnen den Weg als "Straße 20a", vor Ort keine Straßenschilder vorhanden
@@ -2743,7 +2743,7 @@ Germaniagarten	N 11240,6350 11237,6326 11220,6323 11206,6252 11224,6244 11243,62
 (Zufahrtstraße zu Oberlandgarten/Germaniagarten)	N 11278,6359 11272,6374 11244,6379 11211,6384 11200,6372
 Rohrbeckstr.	N 11339,6341 11432,6325 11479,6319
 Schwanheimer Str.	N 11404,6141 11432,6325
-Oberlandstr.	H 10377,6417 10403,6416 10446,6414 10505,6417 10613,6437 10943,6498 11142,6535 11250,6555 11344,6572 11436,6588 11561,6610 11689,6634
+Oberlandstr.	H 10377,6417 10403,6416 10446,6414 10505,6417 10613,6437 10943,6498 11150,6535 11250,6555 11344,6572 11436,6588 11561,6610 11689,6634
 Komturbrücke	H 10243,5777 10243,5683
 Schätzelbergstr.	H 10243,5683 10238,5592 10230,5498 10208,5237
 Industriestr.	N 10931,5516 10238,5592
@@ -2832,7 +2832,7 @@ Kienheideweg	NN 13511,5675 13612,5698
 Am Mickelbruch	N 13441,5553 13414,5655
 (Gottlieb-Dunkel-Str. - Schaffhausener Str.)	NN 11522,6160 11404,6141
 Schaffhausener Str.	NN 11456,6103 11429,6122 11404,6141
-Schaffhausener Str.	N 11404,6141 11304,6147 11209,6166 11118,6189 11148,6381 11160,6464 11142,6535
+Schaffhausener Str.	N 11404,6141 11304,6147 11209,6166 11118,6189 11148,6381 11160,6464 11150,6535
 (Schaffhausener Str. - Teilestr.)	NN 11429,6122 11395,6096 11280,6096 11244,6080 11221,6031 11164,6007 11077,6028 11068,6006
 Bacharacher Str.	N 11304,6147 11339,6341 11339,6351 11344,6572
 Holzmannstr.	N 11436,6588 11479,6319 11487,6276 11502,6194 11522,6160
@@ -3252,6 +3252,7 @@ Hohenschönhauser Str. (Fennpfuhl, Prenzlauer Berg) [76-64]	N 14754,14406 14682,1
 #: by: https://www.howoge.de/immobiliensuche/neubauprojekte/weissenseer-weg.html (Baustart: 4. Quartal 2026, Fertigstellung: 4. Quartal 2029)
 #: by: https://www.dmsw.de/projekte-architektur/weissenseer-weg
 #: by: https://cdn.prod.website-files.com/5c6a8b9ed8c2274b1749e981/64c7d88e693027544f731c43_136_LP.jpg
+#: by: https://www.entwicklungsstadt.de/berlins-erste-2-in-1-schule-lichtenberg-bekommt-432-grundschulplaetze/
 #: source_id: planb2026:13.47028348,52.53609285,07.09.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 01.07.2028)
 #: XXX Werden die bestehenden Wege/Straße im Zuge der neuen Bebauung geändert? Zumindest wird es eine direkte Verbindung zum Weißenseer Weg geben, schon weitgehend fertig, noch nicht freigegeben vvv
 #: note: zurzeit (2026-10-13) sind alle bei BBBike eingetragenen Straßen/Wegverbindungen frei; Hochbauarbeiten (für eine Schule?) derzeit zwischen Stellerweg und dem O-W-Verbindungsweg
@@ -13190,7 +13191,7 @@ Saatwinkler Steg	NN -1073,16610 -995,16701 -992,16688 -993,16682
 Halligweg	N -779,16591 -910,16608 -916,16641 -993,16682 -1437,17052 -1458,17089
 August-Froehlich-Str.	NH 18111,2135 18199,1811
 An der Werderlake	N 18199,1811 18266,1715
-Ortolanweg	N 15263,3617 15177,3669 15055,3787 14955,3884 14911,4009 14854,4078 14806,4125 14737,4175 14489,4343 14302,4379 14267,4379 14239,4367
+Ortolanweg	N 15263,3617 15177,3669 15055,3787 14977,3863 14955,3884 14911,4009 14854,4078 14806,4125 14737,4175 14489,4343 14302,4379 14267,4379 14239,4367
 Schirmvogelweg	N 14854,3587 14859,3602 14957,3696 15055,3787 15103,3835
 #: note: bei osm "Rübenweg", keine Schilder vor Ort
 (Schirmvogelweg, Verlängerung)	NN 15103,3835 15165,3915
@@ -13199,6 +13200,10 @@ Kohlmeisenweg	N 14991,3547 14954,3447
 Grasmückenweg	N 14911,3568 14877,3475
 Grasmückenweg	NN 14877,3475 14822,3409
 Hochspannungsweg (Buckow)	N 14725,3617 14768,3651 14858,3768
+#: osm.highway: service
+Hochspannungsweg (Buckow)	N 14858,3768 14880,3799 14895,3816 14929,3813
+#: osm.highway: service
+Hochspannungsweg (Buckow)	N 14884,3770 14929,3813 14977,3863
 Wiedehopfweg	N 15039,3612 14957,3696 14924,3739
 Kielingerstr.	N 14295,4462 14302,4379
 Giesebrechtstr.	N 4157,10418 4153,10453 4030,10575 4017,10585 3997,10607 3912,10699 3881,10699

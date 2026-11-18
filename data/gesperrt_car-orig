@@ -1252,10 +1252,11 @@ Königsweg: Poller	3 -745,2320 -790,2300 -844,2268 -878,2265
 #: by: https://entwicklungsstadt.de/umgestaltung-des-bahnhofsvorplatzes-in-lichterfelde-west-starten-die-ersten-bauarbeiten/
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1709687.php (Umgestaltung ab 14. September 2026, 1. BA bis zur Adventszeit, Abschluss im Frühsommer 2027)
 #: by: https://www.entwicklungsstadt.de/lichterfelde-west-bahnhofsvorplatz-wird-ab-september-umgestaltet/
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1740864.php (Pause ab 27.11.2026)
 #: XXX wird die Einbahnstraßenregelung umgedreht, dann offen von Bahnhof zur Drakestr.?
 #: osm_watch: way id="65369044" version="16"
 #: osm_watch: note 4846294 17
-#: last_checked: 2026-10-14
+#: last_checked: 2026-11-18 (BA-Pressemitteilung)
 #: check_frequency: 120d
 #: next_check: 2027-07-01 (entwicklungsstadt)
 Hans-Sachs-Str.	1 3141,4023 3214,4066
@@ -2648,4 +2649,6 @@ Kiefholzstr. -> Bouchéstr.	3 13450,9714 13602,9581 13489,9456
 #: note: Einbahnstraße, Radfahrer frei
 Bouchéstr - Kiefholzstr.	1 13642,9624 13602,9581 13450,9714
 Bouchéstr - Kiefholzstr.	1 13251,9829 13450,9714
+# 
+Hochspannungsweg (Buckow): Poller	3 * 14880,3799 *
 # 

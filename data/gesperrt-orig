@@ -136,7 +136,7 @@ Alt-Köpenick	1no 22144,4660 22175,4730 22198,4800 22196,4847
 Wuhletalstr.	1 20691,17463 20727,17558 20769,17650 20855,17807 20912,17872
 #: next_check_id: KNOTENMARZAHN-2022
 #: XXX früher Einbahnstraßen
-#: last_checked: 2026-09-15 (luftbildsuche) vvv
+#: last_checked: 2026-11-18 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2026-12-31 vvv
 Knoten Märkische/Landsberger Allee	2::inwork 19015,14901 19175,14968
@@ -146,9 +146,9 @@ Knoten Märkische/Landsberger Allee	1no 19200,14963 19157,14948 19015,14901
 Knoten Märkische/Landsberger Allee	1no 19254,15000 19309,15023 19364,15045 19512,15092 19565,15106 19694,15141 19852,15201
 Knoten Märkische/Landsberger Allee	1 19254,15000 19200,14963
 Knoten Märkische/Landsberger Allee	2::inwork 19408,15007 19350,14997 19214,14966 19200,14963
-#: osm_watch: way id="30884033" version="25"
+#: osm_watch: way id="30884033" version="26"
 Knoten Märkische/Landsberger Allee	2::inwork 19452,14807 19464,14971 19408,15007
-#: osm_watch: way id="4696050" version="25"
+#: osm_watch: way id="4696050" version="26"
 Knoten Märkische/Landsberger Allee	2::inwork 19852,15201 19744,15128 19614,15061 19408,15007
 #: osm_watch: way id="30884034" version="26"
 Knoten Märkische/Landsberger Allee	2::inwork 19516,14993 19551,14961 19615,14960 19643,15025 19614,15061
@@ -3255,6 +3255,7 @@ tragen (8 weite Stufen)	0:30 18121,10314
 tragen (insgesamt 61 Stufen)	0:60 -3126,1798
 tragen (Treppe, 33 Stufen)	0:35 10110,15678
 tragen (Treppe) oder Aufzug benutzen	0:30 39964,102370
+#: note: es gibt auch eine Rampe, die sich schon fast am Bürgersteig von "An der Mole" befindet
 tragen (Treppe, 6 Stufen)	0:15 14918,10769
 tragen (Treppe, 4 Stufen)	0:10 7733,5893
 #: note: außerdem noch ein Bordstein am Wendehammer
@@ -4343,7 +4344,8 @@ Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119
 # 
 #: source_id: LMS-BR:410555/72 viz2021:13.37994,52.52093, (bis 21.12.2028)
 #: source_id: planb2026:13.37979908,52.52088621,03.12.2025, ("Vollsperrung beider Fahrbahnen", bis 21.12.2028)
-#: osm_watch: note 2514010 15
+#: osm_watch[closed]: note 2514010 15
+#: osm_watch: way id="4592739" version="36"
 #: XXX Es gibt zwar eine offizielle Umleitungsstrecke auch für Radfahrer zur Margarete-Steffin-Str., aber diese führt über eine Wiese (!)
 #: last_checked: 2026-10-06
 #: check_frequency: 120d
@@ -4754,10 +4756,10 @@ Erpetal - S-Bhf. Hirschgarten: Baustraße, gesperrt für öffentlichen Verkehr	2::i
 (Landsberger Allee - Frank-Schweitzer-Str.): wird zurückgebaut	2::inwork 19330,15006 19400,15027
 # 
 #: next_check_id: KNOTENMARZAHN-2022
-#: osm_watch: way id="26244466" version="26"
+#: osm_watch: way id="26244466" version="27"
 #: source_id: viz2021:13.537278,52.53939,24.10.2023,10:00 (Gegenverkehrsregelung Frank-Schweitzer-Str., bis 27.02.2024) (bis 07.05.2024) (bis 29.05.2024) (bis 05.09.2024) (bis 10.10.2024) (bis 31.12.2024) (mittlerweile Vollsperrung, bis 31.12.2026) (inaktiv)
 #: source_id: LMS-BR:316070/72 viz2021:13.53642,52.53865, (bis 31.12.2026)
-#: last_checked: 2026-09-15 (luftbildsuche)
+#: last_checked: 2026-11-18 (osm)
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (VIZ-Verkehrsmeldung)
 Frank-Schweitzer-Str.: unterhalb des Marzahner Knotens gesperrt	2::inwork 19414,15132 19424,15068 19400,15027 19339,14930
@@ -4982,17 +4984,9 @@ Jeanne-Baret-Str.: noch gesperrt	2::inwork 22485,2937 22737,2956
 # REMOVED --- #: osm_watch: way id="1195364871" version="3" --- #: note: am 2023-04-25 gab es einen recht schmalen Durchgang, mit einem Fahrrad ist man noch gerade so durchgekommen; am 2023-05-04 auch der gleiche schmale Durchgang, aber ein davor geparktes Auto hätte vielleicht einiges an Rangierarbeit verursacht; am 2023-05-16 existiert wieder ein schmaler Durchgang -> von gesperrt nach handicap_s verschoben, am 2023-06-15 kein Kran mehr, aber nun wieder komplett gesperrt --- #: last_checked: 2023-09-21 --- Caroline-von-Humboldt-Weg: Hochbauarbeiten, Fahrbahn gesperrt	2::inwork 9961,12094 10050,11942
 # 
 #: next_check_id: RUMMELSBURGERBUCHT-2021
-#: note: Danach mit Mapillary abfahren!
-#: priority: #C
-#: last_checked: 2026-11-03
-#: check_frequency: 30d
-# REMOVED (hier offen) --- Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14927,10807 14918,10769
-Rummelsburger Seeblick: noch nicht freigegeben	2::inwork 14918,10769 14909,10732
-# 
-#: next_check_id: RUMMELSBURGERBUCHT-2021
 # REMOVED --- #: note: Weitere Sperrungen sind in temp blockings, dort wo schon Häuser mit evtl. bezogenen Wohnungen stehen
 #: XXX Wann sind die Straßen offen? vvv
-#: last_checked: 2026-11-12 (daf) vvv
+#: last_checked: 2026-11-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED (offen) --- An den Eiswerken	2::inwork 15004,10791 14994,10732
 An den Eiswerken: mit Bauzaun abgesperrt, manchmal offen	2::inwork 14994,10732 14984,10677
@@ -5159,7 +5153,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 #: osm_watch[closed]: note 3831047 3
 #: source_id: LMS-BR:400692/72 viz2021:13.488547,52.494996, (Verengung in der Hauptstr., bis 13.03.2026) (bis 27.03.2026) (bis 02.04.2026) (bis 09.04.2026) (bis 17.04.2026) (inaktiv)
 #: source_id: planb2026:13.48630282,52.4933522,09.07.2025, ("Sicherung gemäß Vz.-plan" (rund um die Baustelle), bis 31.12.2026)
-#: last_checked: 2026-11-04
+#: last_checked: 2026-11-18
 #: check_frequency: 180d
 #: next_check: 2026-12-31 (Pressemitteilung SenSBW, planb)
 # REMOVED --- #: next_check: 2027-06-30
@@ -5305,7 +5299,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
 #: osm_watch: note 4853760 1
-#: last_checked: 2026-11-17 vvv
+#: last_checked: 2026-11-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5507,6 +5501,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://molkenmarkt.berlin.de/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf (Aufstellungsbeschluss 1-14-2 (zwischen Jüdenstr. und Klosterstr.))
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-in-berlin-bauplaene-millionenbudget-und-zeitplan-bis-2034/
+#: by: https://www.entwicklungsstadt.de/molkenmarkt-in-berlin-534-mio-euro-fuer-planung-und-noch-keine-einzige-wohnung/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
 #: last_checked: 2026-11-16
 #: check_frequency: 180d
@@ -5803,10 +5798,10 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.entwicklungsstadt.de/jahrelange-verzoegerungen-jetzt-steht-der-termin-fuer-hochhaeuser-brooks-on-east/ (bezugsfertig drittes Quartal 2027)
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data, PLZ=10243 laut LOR)
 #: osm_watch: node id="10239151904" version="1"
-#: osm_watch: way id="276821479" version="6"
-#: osm_watch: note 3748854 1
+#: osm_watch: way id="276821479" version="8"
+#: osm_watch: note 3748854 2
 #: source_id: planb2026:13.440102,52.50770775,20.01.2025,07:00 ("Fahrstreifen-Reduzierung" (angrenzende Mariane-von-Rantzau-Str.), bis 31.12.2026)
-#: last_checked: 2026-11-16
+#: last_checked: 2026-11-18 (osm)
 #: check_frequency: 60d
 #: next_check: 2027-09-30 (entwicklungsstadt)
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12825,11316 12713,11372

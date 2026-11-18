@@ -2771,8 +2771,8 @@ Donaustr: Beton	Q0 12643,8533 12765,8435
 Straße 645: Asphalt	Q0 11424,8284 11434,8194 11419,8077 11450,7921 11472,7899
 Jollenseglerstr.: Verbundsteinpflaster	Q0 14921,10047 14879,9961
 Am Jüdischen Museum: wassergebundene Decke	Q1 9770,10590 9992,10626
-(Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt	Q0 11148,6381 11162,6379 11200,6372 11205,6358 11240,6350 11266,6347 11278,6359 11339,6351
-(Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt	Q0 11278,6359 11272,6374 11244,6379 11211,6384 11200,6372
+(Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt/Beton	Q0 11148,6381 11162,6379 11200,6372 11205,6358 11240,6350 11266,6347 11278,6359 11339,6351
+(Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt/Beton	Q0 11278,6359 11272,6374 11244,6379 11211,6384 11200,6372
 Oberlandgarten: Beton	Q0 11244,6379 11246,6403 11264,6409 11269,6466 11253,6473 11238,6470 11230,6413 11246,6403
 Germaniagarten: Beton	Q0 11240,6350 11237,6326 11220,6323 11206,6252 11224,6244 11243,6246 11252,6319 11237,6326
 Rohrbeckstr.: Asphalt	Q0 11339,6341 11432,6325 11479,6319
@@ -5117,6 +5117,9 @@ Kohlmeisenweg: Beton	Q0 14991,3547 14954,3447
 Grasmückenweg: Kopfsteinpflaster	Q2 14911,3568 14877,3475
 Grasmückenweg: Gehwegplatten	Q1 14877,3475 14822,3409
 Hochspannungsweg (Buckow): Asphalt	Q0 14725,3617 14768,3651 14858,3768
+Hochspannungsweg (Buckow): Verbundsteinpflaster	Q1 14858,3768 14880,3799
+Hochspannungsweg (Buckow): unbefestigt	Q2 14880,3799 14895,3816 14929,3813
+Hochspannungsweg (Buckow): unbefestigt	Q2 14884,3770 14929,3813 14977,3863
 Rotkehlchenweg (Buckow): Beton	Q0 13909,3845 14099,3772
 (Rotkehlchenweg - Kormoranweg): Verbundsteinpflaster	Q1 14099,3772 14189,3732
 Rotschwanzweg: Beton mit einigen Schäden	Q1 13852,3721 14141,3614
@@ -11467,6 +11470,7 @@ An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1 24530,12296 24556,12181 24554,12100
 Hönower Str.: Asphalt	Q0 24554,12100 24556,12056 24563,11980
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1 24563,11980 24575,11932
+Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1 9242,7325 9148,7418
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 9093,8665 9158,8706 9229,8718
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 9229,8718 9158,8706 9093,8665
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676

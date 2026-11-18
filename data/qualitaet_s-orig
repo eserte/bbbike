@@ -542,7 +542,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-11-16
+#: last_checked: 2026-11-18
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -3944,8 +3944,8 @@ Straße 645: Asphalt	Q0 11424,8284 11434,8194 11419,8077 11450,7921 11472,7899
 Jollenseglerstr.: Verbundsteinpflaster	Q0- 14921,10047 14879,9961
 #: note: Pfützen bei Regen
 Am Jüdischen Museum: wassergebundene Decke	Q1- 9770,10590 9992,10626
-(Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt	Q0 11148,6381 11162,6379 11200,6372 11205,6358 11240,6350 11266,6347 11278,6359 11339,6351
-(Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt	Q0 11278,6359 11272,6374 11244,6379 11211,6384 11200,6372
+(Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt/Beton	Q0- 11148,6381 11162,6379 11200,6372 11205,6358 11240,6350 11266,6347 11278,6359 11339,6351
+(Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt/Beton	Q0- 11278,6359 11272,6374 11244,6379 11211,6384 11200,6372
 Oberlandgarten: Beton	Q0- 11244,6379 11246,6403 11264,6409 11269,6466 11253,6473 11238,6470 11230,6413 11246,6403
 Germaniagarten: Beton	Q0- 11240,6350 11237,6326 11220,6323 11206,6252 11224,6244 11243,6246 11252,6319 11237,6326
 Rohrbeckstr.: Asphalt	Q0 11339,6341 11432,6325 11479,6319
@@ -6649,6 +6649,11 @@ Kohlmeisenweg: Beton	Q0 14991,3547 14954,3447
 Grasmückenweg: Kopfsteinpflaster	Q2 14911,3568 14877,3475
 Grasmückenweg: Gehwegplatten	Q1 14877,3475 14822,3409
 Hochspannungsweg (Buckow): Asphalt	Q0 14725,3617 14768,3651 14858,3768
+#: by: mapillary vvv
+Hochspannungsweg (Buckow): Verbundsteinpflaster	Q1 14858,3768 14880,3799
+Hochspannungsweg (Buckow): unbefestigt	Q2 14880,3799 14895,3816 14929,3813
+Hochspannungsweg (Buckow): unbefestigt	Q2 14884,3770 14929,3813 14977,3863
+#: by ^^^
 Rotkehlchenweg (Buckow): Beton	Q0 13909,3845 14099,3772
 (Rotkehlchenweg - Kormoranweg): Verbundsteinpflaster	Q1 14099,3772 14189,3732
 Rotschwanzweg: Beton mit einigen Schäden	Q1+ 13852,3721 14141,3614
@@ -12617,7 +12622,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_370275 (Umleitung ab 30.10.2026)
 #: source_id: vizapi2026:1158/2026 (Kraneinsatz 30.10.2026 bis 31.10.2026, hier: Sperrung für Kfz-Verkehr)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-11-16
+#: last_checked: 2026-11-18
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-10-30 (planb + BVG: wird es auch für den Radverkehr eine Sperrung geben?)
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
@@ -13795,6 +13800,7 @@ Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24530,12296 24556,121
 #: historical_note: früher (bis November 2024): Asphalt, einige Schäden und Unebenheiten, Q1+
 Hönower Str.: Asphalt	Q0 24554,12100 24556,12056 24563,11980
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q1+ 24563,11980 24575,11932
+Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1+ 9242,7325 9148,7418
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1+; 9093,8665 9158,8706 9229,8718
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1; 9229,8718 9158,8706 9093,8665
 #: historical_note: bis April 2025 Q0-
@@ -14237,7 +14243,7 @@ Ulrich-Plenzdorf-Str.: Asphalt	Q0 14994,10732 15071,10716 15151,10699
 An den Eiswerken: Asphalt	Q0 15004,10791 14994,10732 14984,10677
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX Wie wird der endgültige Belag aussehen?
-#: last_checked: 2026-11-12 (daf)
+#: last_checked: 2026-11-18
 #: check_frequency: 30d
 Paul-und-Paula-Promenade: unbefestigte Baustraße	Q2 14886,10748 14909,10732 14984,10677
 # 
@@ -20254,8 +20260,8 @@ Raabestr.: schlechtes Kopfsteinpflaster, enge Asphaltrandstreifen teilweise zuge
 Teltower Weg: sandiger Waldweg	Q3- -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -182,5927 -119,5885
 # 
 #: by: Helm Dirk: vvv
-#: confirmed_by: srt
-Holzmannstr.: Kopfsteinpflaster	Q2 11436,6588 11479,6319 11487,6276 11502,6194
+#: corrected_by: srt (Q2 -> Q2-)
+Holzmannstr.: Kopfsteinpflaster	Q2- 11436,6588 11479,6319 11487,6276 11502,6194
 #: corrected_by: srt
 Holzmannstr.: Asphalt	Q0 11502,6194 11522,6160
 #: by: ^^^
@@ -35177,5 +35183,7 @@ Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 7769,19736
 Einmündungsbereich asphaltiert	Q0 484,1879
 Einmündungsbereich asphaltiert	Q0 530,1893
 Einmündungsbereich asphaltiert	Q0 565,1903
+Einmündungsbereich mit Kopfsteinpflaster	Q2- 11479,6319
+Einmündungsbereich asphaltiert	Q0 11617,6300
 #: ignore ^^^
 #: section ^^^

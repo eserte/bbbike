@@ -1944,7 +1944,7 @@ Verbundsteinpflasterradweg, holprig	RW1; 13671,4490 13571,4493 13485,4496 13394,
 neues Verbundsteinpflaster, allerdings schon erste Unebenheiten	RW1; 14023,4475 14295,4462
 	RW1; 14295,4462 14023,4475
 	RW1;RW1 9504,6653 9673,6646 9735,6636 9863,6617 10101,6596 10186,6527
-	RW1;RW1 10613,6437 10943,6498 11142,6535
+	RW1;RW1 10613,6437 10943,6498 11150,6535
 #: historical_note: seit Oktober 2026
 #: note: keine Leitboys im Bushaltestellenbereich
 Leitboys	RW3; 10613,6437 10505,6417 10446,6414 10403,6416
@@ -2595,7 +2595,7 @@ neu asphaltiert	RW1; 17527,7812 17611,7690 17681,7589 17769,7465
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25986.pdf (bleibt es bei einem Radfahrstreifen? Fertigstellung offen)
 #: by: https://www.entwicklungsstadt.de/dauersperrung-richtung-ostkreuz-warum-hier-seit-2018-nichts-passiert/
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2026-11-04 vvv
+#: last_checked: 2026-11-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (infravelo) vvv
 recht welliger Asphalt	RW1; 18010,7137 17847,7356 17769,7465
@@ -3426,7 +3426,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-11-14 vvv
+#: last_checked: 2026-11-18 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2027-01-29 (planb) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
@@ -3459,7 +3459,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46512046,52.49807953,11.03.2024,06:00 ("Fahrstreifen-Reduzierung", bis 29.01.2027)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-11-14
+#: last_checked: 2026-11-18
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-10-31 (Halteverbotsschilder)
 #: next_check: 2027-01-29 (planb)
@@ -5683,7 +5683,8 @@ alter Asphalt	RW1; 12901,14093 12972,14173 12992,14196 13026,14234
 	RW1;RW3 13026,14234 13057,14267
 	RW4;RW4 16122,6084 16169,6064 16510,5917 16868,5938
 	RW2; 16868,5938 17056,6133 17160,6239
-gemeinsamer Geh- und Radweg	RW1; 17160,6239 17056,6133 16868,5938
+#: historical_note: früher gemeinsamer Geh- und Radweg, RW1;
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 17160,6239 17056,6133 16868,5938
 	RW2;RW2 17160,6239 17231,6179 17293,6230
 	RW4;RW2 9873,18364 9905,18329
 	RW4; 9873,18364 9888,18445 9897,18496
@@ -7399,6 +7400,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1822854272523931990
 #: by: https://entwicklungsstadt.de/buerohaus-fuer-den-bundestag-sanierung-in-berlin-mitte-laeuft-noch-bis-2027/
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
+#: by: https://www.entwicklungsstadt.de/bundestagsbueros-in-mitte-historische-fassade-nach-sanierung-wieder-sichtbar/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
 #: last_checked: 2026-10-31 (daf) vvv
 #: check_frequency: 90d vvv
@@ -8669,7 +8671,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: source_id: planb2026:13.4508501,52.50859501,06.11.2026, ("Fahrstreifen-Reduzierung", Warschauer Str., bis 30.04.2028)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-11-16
+#: last_checked: 2026-11-18
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
