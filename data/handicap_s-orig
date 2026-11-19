@@ -12,7 +12,7 @@
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_366164
-#: last_checked: 2026-11-17
+#: last_checked: 2026-11-19
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
 #: valid: -20261221
@@ -117,7 +117,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q2::inwork; 13383,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="37"
 #: osm_watch: way id="1072662717" version="41"
-#: last_checked: 2026-11-18
+#: last_checked: 2026-11-19
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -489,7 +489,7 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 # REMOVED --- An der Kommandantur: Gerüstbauarbeiten, Fahrbahn gesperrt	q4::inwork 9943,12364 9996,12372
 # 
 #: next_check_id: MAERKISCHESMUSEUM-2026
-#: last_checked: 2026-11-13
+#: last_checked: 2026-11-19
 #: check_frequency: 45d
 #: next_check: 2027-06-30 (entwicklungsstadt)
 Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem provisorisch asphaltierten Bürgersteig geführt	q2+::inwork 11160,12071 11111,12027 11054,11992
@@ -534,7 +534,7 @@ Wallstr. (Mitte): Verschwenkung, Radverkehr wird abschnittsweise auf dem proviso
 #: source_id: planb2026:13.41495893,52.51503983,09.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", westlich der Einmündung Rolandufer/Littenstr., bis 23.03.2027)
 #: osm_watch: way id="1545312631" version="1"
 #: XXX Waisentunnel: Neubau, geplante Einschränkungen (Rolandufer gesperrt (noch nicht gesperrt), Littenstr. Gehweg frei (bereits gesperrt)); am 2026-02-21 war die Littenstr. wieder frei; am 2026-03-28 die Fahrbahn der Littenstr. wieder gesperrt + Verengung am Rolandufer
-#: last_checked: 2026-11-16 vvv
+#: last_checked: 2026-11-19 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2030-12-31 (entwicklungsstadt) vvv
 Littenstr.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
@@ -625,6 +625,8 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,124
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/unter-den-linden-62-68-schadowstra%C3%9Fe.608/page-2#post-23515
 #: by: https://www.entwicklungsstadt.de/elisabeth-selbert-haus-unter-den-linden-rohbau-waechst-fertigstellung-fuer-2026-geplant/
 #: by: https://www.entwicklungsstadt.de/unter-den-linden-elisabeth-selbert-haus-waechst-sichtbar-in-die-hoehe-ist-aber-im-verzug/ (Fertigstellung 2026 unwahrscheinlich)
+#: by: https://www.entwicklungsstadt.de/unter-den-linden-bundestagsneubau-erreicht-neue-bauphase/
+#: by: https://www.entwicklungsstadt.de/harte-gegensaetze-bundestagsneubauten-in-berlin-mitte-rahmen-historisches-schadowhaus-ein/
 #: osm_watch: way id="4402037" version="28"
 #: osm_watch: way id="1241756428" version="2"
 #: next_check: 2026-12-31 (entwicklungsstadt)
