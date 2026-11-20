@@ -117,7 +117,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q2::inwork; 13383,13
 #: note: f¸r Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="37"
 #: osm_watch: way id="1072662717" version="41"
-#: last_checked: 2026-11-19
+#: last_checked: 2026-11-20
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -900,7 +900,7 @@ Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261020
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mybz4u2rn22m
 #: note: Zumindest in der Anfangsphase Stau und Chaos...
-#: last_checked: 2026-11-18 (traffic) vvv
+#: last_checked: 2026-11-20 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-31 vvv
 #: source_id: LMS-BR:425971/72 viz2021:13.39447,52.4917, (bis 31.12.2026)
@@ -915,7 +915,7 @@ Solmsstr.: Sperrung vor der Gneisenaustr., Radfahrer frei	q2::inwork 9705,9732 9
 #: source_id: planb2026:13.40010762,52.49438384,10.12.2025,07:00 ("Sicherung gem‰ﬂ Vz.-plan", Bl¸cherstr./Urbanstr., bis 18.12.2026)
 #: source_id: planb2026:13.40137423,52.49550722,08.04.2026, ("Vollsperrung beider Fahrbahnen", Tempelherrenstr., bis 28.12.2026)
 #: note: Beide planb-Eintr‰ge sind wohl relevant.
-#: last_checked: 2026-10-24 vvv
+#: last_checked: 2026-11-20 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-18 vvv
 #: valid: -20261218 vvv
@@ -928,7 +928,8 @@ Tempelherrenstr.: Baustelleneinrichtung blockiert die Fahrbahn	q4::inwork 10190,
 # 
 #: source_id: LMS-BR:423027/72 viz2021:13.39866,52.4964,22.09.2026,07:00 vizapi2026:984/2026 (bis 28.12.2026)
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mw3g6efh6q2n (sieht nach "Gehweg frei f¸r Radfahrer" aus)
-#: last_checked: 2026-10-24
+#: note: mittlerweile nur Richtung Osten mit "Radfahrer frei"-Schild, Richtung Westen ist es abhanden gekommen oder wurde absichtlich entfernt
+#: last_checked: 2026-11-20
 #: check_frequency: 30d
 #: next_check: 2026-12-28
 #: valid: -20261228
@@ -1529,10 +1530,11 @@ Gustav-Tempel-Str.: kurzes St¸ck B¸rgersteig oder unbefestigte Verbindung	q3 152
 ### Friedenau ###
 # 
 #: next_check_id: FRIEDENAUERHOEHE-2024
-#: last_checked: 2026-11-07 vvv
+#: last_checked: 2026-11-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-06-30 vvv
 Friedenauer Hˆhe: Baustellenverkehr	q1 6293,7875 6260,7899 6132,7893
+#: note: inkonsistente Ausschilderung: am westlichen Ende "gemeinsamer Rad- und Gehweg", am ˆstlichen Ende "Verbot f¸r motorisierte Fahrzeuge"
 Friedenauer Hˆhe: gemeinsamer Rad- und Gehweg	q1 6132,7893 6131,7916 6011,7911 5810,7883
 Friedenauer Hˆhe: einige Fuﬂg‰nger, Baustelle	q1 6134,7839 6132,7893
 #: next_check ^^^
@@ -2377,8 +2379,8 @@ Hebbelstr.: Fuﬂg‰nger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: osm_watch[closed]: note 4103526 2
 #: osm_watch: note 5350535 2
 #: osm_watch: way id="30909343" version="27"
-#: source_id: planb2026:13.43196346,52.4975659,01.02.2024,07:00 (hier: "Haltverbote", bis 31.12.2026)
-#: last_checked: 2026-11-18
+#: source_id: planb2026:13.43196346,52.4975659,01.02.2024,07:00 (hier: "Haltverbote", bis 31.12.2026) (bis 31.10.2027)
+#: last_checked: 2026-11-20
 #: check_frequency: 180d
 #: next_check: 2028-12-31 (entwicklungsstadt)
 Spreewaldplatz: Fuﬂg‰nger, Engstellen	q3 12341,10218 12292,10374
@@ -2863,9 +2865,9 @@ Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 #: note: h‰ngt von den parkenden Autos ab...
 Mergenthalerring: Asphaltschwellen, kˆnnen teilweise umfahren werden	q1 14425,8116 14563,8243 14422,8407
 Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6724 6530,6786 6529,6798
-(Vorarlberger Damm - Kleingartenkolonie): Fuﬂg‰nger	q1 6817,7101 6852,7246 6843,7293
-(Nordmannzeile - Kleingartenkolonie): Fuﬂg‰nger	q2 6811,7266 6820,7287 6843,7293
-(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7445 7307,7457
+(Vorarlberger Damm - Kleingartenkolonie): Fuﬂg‰nger	q1 6817,7101 6852,7246 6844,7287
+(Nordmannzeile - Kleingartenkolonie): Fuﬂg‰nger	q2 6811,7266 6815,7280 6844,7287
+(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7445 7284,7459 7300,7449
 Achenbachpromenade: Fuﬂg‰nger, Radfahren erlaubt	q1 8763,8780 8748,8587 8722,8527 8715,8459
 Wildensteiner Str.: enge Straﬂe	q0- 18627,8475 18528,8331
 Wildensteiner Str.: enge Straﬂe	q1 18528,8331 18416,8163 18365,8094 18333,8059
@@ -4620,7 +4622,7 @@ An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11405,3631 11430,3540 11
 (Am Biesdorfer Baggersee): Fuﬂg‰nger, Badebetrieb an schˆnen Tagen	q2 20121,10869 20116,10837 20126,10802 20161,10765 20191,10768 20390,10850 20399,10867 20393,10889
 (Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q1 20393,10889 20354,10963 20354,11025 20362,11166 20335,11258 20334,11321 20346,11337
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: XXX entfernen, sobald die eigentliche Straﬂe offen ist --- #: last_checked: 2017-11-05 --- #: next_check: 2017-12-21 --- (Gehweg an der zuk¸nftigen Minna-Todenhagen-Str.): einige Fuﬂg‰nger	q2 17681,7589 17470,7473 17294,7367
-Dalandweg: schmale und kurvenreiche Straﬂe	q1 5120,4318 5226,4259 5250,4298 5311,4270 5356,4249 5385,4236 5541,4305
+Dalandweg: schmale und kurvenreiche Straﬂe	q1 5120,4318 5184,4283 5226,4259 5250,4298 5311,4270 5356,4249 5385,4236 5541,4305
 (Spreeuferweg): einige Fuﬂg‰nger	q1 21090,5417 21085,5451 20827,5431
 (KGA Am Freibad Oberspree): einige Fuﬂg‰nger	q1 20827,5431 20829,5418 20849,5266 20851,5255
 (Zufahrt zum Gewerbegebiet): Parkplatzverkehr	q1 25312,11186 25298,11118 25298,10966 25297,10892
@@ -5992,11 +5994,13 @@ Am Teltowkanal: zahlreiche Temposchwellen, abwechselnd rechts und links umfahrba
 Ulsterstr.: enge Straﬂe	q0- 13575,8378 13641,8470
 # 
 #: next_check_id: CHARLOTTEWOLFFPLATZ-2026
-#: last_checked: 2026-11-05
+#: osm_watch: way id="1330693842" version="3"
+#: note: explizites Radfahrverbot (per angehefteten Zetteln)
+#: last_checked: 2026-11-20
 #: check_frequency: 120d
 #: next_check: 2028-12-31
 # REMOVED (urspr¸nglicher Eintrag, evtl. sieht es nach dem Umbau ganz anders aus) ---  (Gotenstr. - Ella-Barowsky-Str.): Fuﬂg‰nger, Lieferverkehr	q3 7497,7761 7551,7851
-(Gotenstr. - Ella-Barowsky-Str.): Bauarbeiten, sehr schmaler Durchgang	q4::inwork 7497,7761 7551,7851
+(Gotenstr. - Ella-Barowsky-Str.): Bauarbeiten, abschnittweise sehr schmaler Durchgang	q4::inwork 7497,7761 7551,7851
 # 
 (Raschdorffstr./Ribbeweg - Amendestr.): Fuﬂg‰nger, Gr¸nanlage	q2 7872,18204 7897,18147 7919,18083
 # 
@@ -6318,7 +6322,8 @@ Eschershauser Weg: parkende Autos, un¸bersichtlich	q1 -190,4776 -146,4814 -97,48
 Begasstr.: eng	q1 6276,6995 6408,7008
 # 
 #: by: Martina Urban: vvv
-Friedrichsruher Str.: sehr eng	q1 6629,5946 6508,5931 6326,5912 6124,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
+#: corrected_by: srt/policy (sehr eng, q1 -> ...)
+Friedrichsruher Str.: eng	q0- 6629,5946 6508,5931 6326,5912 6124,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
 #: corrected_by: srt/policy
 Schˆnhauser Str.: eng	q0- 5809,6383 5824,6240 5836,6138 5845,6049 5847,5961 5851,5863 5850,5765
 #: corrected_by: srt/policy
@@ -6326,7 +6331,8 @@ Jeverstr.: eng	q0- 5682,5798 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5
 #: by: ^^^
 # 
 #: by: Hanswalter Schramm:
-Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2717,3600
+#: corrected_by: srt (Fuﬂ- und Radweg -> ...)
+Friedrichstr. (Lichterfelde): Fuﬂweg f¸r Radfahrer frei	q1 2890,3561 2717,3600
 #: by: rjoop: vvv
 #: corrected_by: srt (fr¸her (?) eng)
 (Bucher Teiche - Schˆnerlinder Chaussee): einige Fuﬂg‰nger	q1 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
@@ -6501,7 +6507,7 @@ M¸hlenbecker Weg: Fuﬂg‰nger	q1 20150,15678 20321,16043 20330,16040
 #: by: Marijke Maij
 #: corrected_by: srt (q1 -> q2)
 #: note: Gr¸nanlage, aber keine weiteren Zusatzschilder
-(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger, Kleingartenweg	q2 6843,7293 6847,7314 7089,7398 7097,7419 7220,7445
+(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger, Kleingartenweg	q2 6844,7287 6840,7309 7089,7398 7097,7419 7220,7445
 # REMOVED (nicht besonders eng) --- #: by: Michael C.: --- Herschelstr.: enge Wohnstraﬂe	q1 3200,13277 3240,13464 3262,13547 3280,13625
 #: by: Skander Morgenthaler:
 #: corrected_by: srt (Radweg zwischen Fuﬂweg und Spielplatz -> ...)
@@ -6697,7 +6703,7 @@ Johanna-Stegen-Str.: Fuﬂg‰nger	q2 5557,4523 5479,4568 5397,4611 5371,4609 5316,4
 Vionvillestr.: Fuﬂg‰nger	q2 5557,4523 5589,4617
 Rezonvillestr.: Fuﬂg‰nger	q2 5589,4617 5607,4610
 Am Stadtpark (Steglitz): Fuﬂg‰nger	q2 5658,4548 5746,4514 5821,4480
-(Stadtpark Steglitz): Fuﬂg‰nger	q2 5806,4840 5772,4766 5736,4686 5724,4670 5676,4552 5658,4548
+(Stadtpark Steglitz): Fuﬂg‰nger	q2 5806,4840 5772,4766 5736,4686 5724,4670 5671,4554 5658,4548
 Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5334,4857 5356,4892 5377,4901 5436,4983
 # REMOVED (falsch gewesen) --- #: XXX ist hier eine Parkplatzzufahrt? --- (Zufahrt Landsberger Allee): Fuﬂg‰nger	q2 13445,13376 13419,13435
 # REMOVED --- #: note: fr¸her q2, w‰ren die mˆglich gewesen? --- (Zufahrt Landsberger Allee): Fuﬂg‰nger	q4+ 13419,13435 13574,13505

@@ -123,7 +123,7 @@ alter Verbundsteinpflasterradweg	RW1; 8779,9812 8779,9829 8779,9851 8784,9972 87
 #: source_id: planb2026:13.38002097,52.49796024,06.03.2025,07:00 ("Sperrung einer Fahrtrichtung", bis 31.07.2027) (vorfristig inaktiv)
 #: source_id: planb2026:13.37988823,52.49738494,03.11.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 30.08.2027)
 #: osm_watch: way id="1089751372" version="8"
-#: last_checked: 2026-11-07
+#: last_checked: 2026-11-20
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-08-30 (planb)
@@ -386,7 +386,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-11-17 vvv
+#: last_checked: 2026-11-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -738,11 +738,11 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6477,8654 6485,8639
 #: note: Vorarlberger Damm, Richtung Osten
 Gehwegplatten mit Unebenheiten	RW1; 6389,7196 6500,7172 6640,7138 6762,7109
 #: by: https://twitter.com/VIZ_Berlin/status/1497262265833340928
-neuer Asphalt, relativ breit	RW1; 6762,7109 6817,7101 6894,7102 6991,7126 7101,7198 7227,7352 7296,7443 7307,7457 7338,7498
+neuer Asphalt, relativ breit	RW1; 6762,7109 6817,7101 6894,7102 6991,7126 7101,7198 7227,7352 7296,7443 7300,7449 7338,7498
 Asphalt	RW1; 7338,7498 7422,7607
 Gehwegplatten mit Unebenheiten	RW1; 7422,7607 7480,7683
 #: note: Vorarlberger Damm, Richtung Westen
-Gehwegplatten mit Unebenheiten, teilweise Bord zum Gehweg	RW1; 7480,7683 7422,7607 7338,7498 7307,7457 7296,7443 7227,7352 7101,7198 6991,7126 6894,7102 6817,7101 6762,7109 6640,7138 6500,7172 6389,7196
+Gehwegplatten mit Unebenheiten, teilweise Bord zum Gehweg	RW1; 7480,7683 7422,7607 7338,7498 7300,7449 7296,7443 7227,7352 7101,7198 6991,7126 6894,7102 6817,7101 6762,7109 6640,7138 6500,7172 6389,7196
 	RW1; 4061,6753 4021,6729
 	RW1; 4074,6681 4103,6716
 	RW1; 4021,6729 3938,6651 3925,6604
@@ -1761,11 +1761,11 @@ asphaltiert	RW1; 6107,4718 6102,4726 6048,4797 6003,4857 6029,4902
 asphaltiert	RW1;RW1 6107,4718 6116,4707 6203,4630
 #: historical_note: früher mit Benutzungspflicht
 Verbundsteinpflaster	RW1; 6071,6559 6168,6467
-Verbundsteinpflaster	RW1; 6168,6467 6213,6423 6248,6388 6343,6297 6494,6128
+Verbundsteinpflaster	RW1; 6168,6467 6213,6423 6248,6388 6329,6310 6343,6297 6494,6128
 #: historical_note: früher (bis 2019/2020): für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 6494,6128 6629,5946 6696,5854
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-10 Uhr	RW1; 6696,5854 6629,5946 6494,6128 6343,6297
-Verbundsteinpflaster, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 und 14-17 Uhr	RW1; 6343,6297 6248,6388 6213,6423
+Verbundsteinpflaster, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 und 14-17 Uhr	RW1; 6343,6297 6329,6310 6248,6388 6213,6423
 Verbundsteinpflaster	RW1; 6213,6423 6168,6467
 #: historical_note: früher mit Benutzungspflicht
 Verbundsteinpflaster	RW1; 6168,6467 6071,6559
@@ -2805,7 +2805,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: osm_watch: way id="142161214" version="25"
 #: XXX Wilhelm-Kabus-Str.: eventuell wird der Gehweg Richtung Süden für Radfahrer freigegeben
 #: XXX zurzeit ist ein Abschnitt des Gehwegs wegen Bauarbeiten für das BSR-Hochhaus komplett gesperrt: check_frequency von 120d -> 180d erhöht
-#: last_checked: 2026-11-05
+#: last_checked: 2026-11-20
 # REMOVED --- #: check_frequency: 120d
 #: check_frequency: 180d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
@@ -3904,8 +3904,8 @@ Gehwegplatten	RW1; 5121,17559 5109,17507
 neu asphaltiert	RW1; 6989,15323 6833,15215
 abschnittsweise neu asphaltiert	RW1; 6833,15215 6715,15152
 #: XXX Bauarbeiten, hier wird auch asphaltiert
-#: osm_watch: note 5275733 4
-#: last_checked: 2026-10-21
+#: osm_watch: note 5275733 5
+#: last_checked: 2026-11-20 (osm note)
 alte Gehwegplatten	RW1; 6715,15152 6626,15104
 alte Gehwegplatten	RW1; 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
 Verbundsteinpflaster	RW1; 6334,14756 6445,14893 6504,14969 6528,15000 6561,15041 6626,15104
@@ -4840,10 +4840,22 @@ die letzten Meter mit benutzungspflichtiger Radspur	RW3; 8870,14637 8692,14923
 	RW6;RW6 -2647,14532 -2652,14559 -2656,14582 -2668,14635 -2682,14681 -2688,14703 -2704,14748 -2735,14848 -2622,14876 -2591,14783 -2704,14748
 	RW1; 2669,5677 2678,5621 2717,5578
 teilweise nur mäßige Radwege	RW1;RW1 2717,5578 2746,5537 2792,5471 2835,5410 2913,5294 3072,5062 3185,4894
-	RW3;RW3 3707,5758 3574,5717
-unebenes Verbundsteinpflaster, schmal	RW1; 3574,5717 3489,5690 3355,5655 3160,5671 3054,5677 2970,5676 2909,5674 2823,5672 2771,5674 2669,5677 2574,5688
+#: source_id: LMS-BR:358502/72 viz2021:13.29862,52.45778, (bis 18.12.2026)
+#: source_id: planb2026:13.29559809,52.4561845,22.01.2025, ("Sicherung gemäß Vz.-plan", bis 18.12.2026)
+#: last_checked: 2026-11-20 vvv
+#: next_check: 2026-12-18 vvv
+#: valid: -20261218
+kein Radweg, Radfahrüberholverbot, 20km/h	RW0; 3707,5758 3574,5717 3489,5690 3355,5655 3160,5671
+#: valid: !-20261218 vvv
+	RW3; 3707,5758 3574,5717
+unebenes Verbundsteinpflaster, schmal	RW1; 3574,5717 3489,5690 3355,5655 3160,5671
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+unebenes Verbundsteinpflaster, schmal	RW1; 3160,5671 3054,5677 2970,5676 2909,5674 2823,5672 2771,5674 2669,5677 2574,5688
 mäßiges Verbundsteinpflaster, schmal	RW1; 2574,5688 2669,5677 2771,5674 2823,5672
 unebenes Verbundsteinpflaster, kurvig, schmal	RW1; 2823,5672 2909,5674 2970,5676 3054,5677 3160,5671 3355,5655 3489,5690 3574,5717
+	RW3; 3574,5717 3707,5758
 mäßiges Verbundsteinpflaster	RW1; 2574,5688 2477,5694 2320,5743 2314,5745 2165,5790 2137,5798 2106,5808 2030,5833 1909,5872 1746,5922
 mäßiges Verbundsteinpflaster, schmal	RW1; 1746,5922 1909,5872 2030,5833 2106,5808 2137,5798 2165,5790 2314,5745 2320,5743 2477,5694 2574,5688
 # 
@@ -5091,7 +5103,7 @@ Gehweg für Radfahrer frei	RW1; -7050,199 -7050,152
 	RW1;RW1 -1012,3465 -968,3438 -800,3409 -741,3410 -645,3434 -548,3467 -478,3509 -370,3585 -267,3657
 	RW1;RW1 -267,3657 -141,3715 -92,3724 16,3744 181,3771 199,3774 263,3779 394,3694 458,3697
 	RW1;RW 458,3697 627,3749 732,3780
-	RW1;RW1 732,3780 891,3828 1015,3858 1139,3876 1276,3892 1389,3900 1462,3906 1523,3904 1603,3906 1664,3907 1741,3907 1778,3905 1800,3903 1939,3893 1987,3888 2160,3854 2230,3823
+	RW1;RW1 732,3780 891,3828 1015,3858 1139,3876 1276,3892 1389,3900 1462,3906 1523,3904 1593,3906 1664,3907 1741,3907 1778,3905 1800,3903 1939,3893 1987,3888 2160,3854 2230,3823
 	RW9;RW1 3196,6415 3147,6384
 	RW1;RW9 3196,6415 3216,6393
 #: historical_note: früher (bis 17./18. August 2026): unebener Asphalt, Wurzelhebungen, kein Unterstreifen gegen parkende Autos, RW1;RW1
@@ -5448,7 +5460,7 @@ alter Beton, Radweg nur aufgemalt	RW1; 16525,17253 16460,17214
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-11-08 vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2026-12-23 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-12-15 (VIZ-Verkehrsmeldung) vvv
 #: historical_note: bis 2026: Gehweg für Radfahrer frei, RW1; vvv
 #: note: kurze Abschnitte mit Verbundsteinpflasterradweg
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 16460,17214 16352,17150 16318,17128 16296,17114 16139,17017
@@ -5487,7 +5499,7 @@ die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Ra
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-11-08
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-12-23 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-15 (VIZ-Verkehrsmeldung)
 #: historical_note: früher (bis 2026): Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15875,16816
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 15437,16491 15662,16649 15735,16698 15776,16721 15875,16816 15929,16870 15986,16922 16139,17017
 #: historical_note: früher (bis Herbst 2025): Gehweg für Radfahrer frei, RW1;, während der Bauarbeiten bis etwa Frühjahr 2026: provisorischer gemeinsamer Geh- und Radweg, RW2;
@@ -6405,7 +6417,7 @@ Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15
 	RW4; 17424,15947 17427,15930 17450,15856
 Verbundsteinpflaster	RW2; 17450,15856 17488,15766
 	RW2;RW2 17424,15947 17418,16014
-	RW6;RW6 4172,5918 4238,6080 4268,6154 4298,6239 4339,6315 4379,6390 4407,6445
+	RW6;RW6 4166,5919 4229,6080 4268,6154 4298,6239 4339,6315 4379,6390 4407,6445
 Verbundsteinpflaster	RW1;RW1 7774,647 7706,541
 	RW6;RW6 5705,13359 5725,13566 5743,13772 5782,14067 5786,14106
 # REMOVED ---	RW;RW 16442,22505 16499,22789 16517,22868 16543,22942 16566,23007 16587,23067 16627,23187 16683,23354 16699,23402 16730,23492 16745,23548 16770,23593 16783,23615
@@ -7552,7 +7564,7 @@ vereinzelte Baken	RW4; 5689,5109 5635,5145
 #: by ^^^
 Asphalt mit leichten Schäden	RW1; 4430,5324 4437,5335 4527,5475 4558,5525 4671,5697
 Asphalt mit einigen Schäden	RW1; 4671,5697 4558,5525 4527,5475 4437,5335 4430,5324
-	RW3;RW3 4520,5793 4406,5850 4312,5889 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
+	RW3;RW3 4520,5793 4406,5850 4312,5889 4166,5919 4010,5888 3931,5825 3850,5801 3707,5758
 	RW6;RW6 4305,12377 4358,12365 4520,12358
 Fahrradschleuse	RW3; 9858,10350 9873,10285
 	RW1; 17383,16197 17425,16165
@@ -8671,7 +8683,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: source_id: planb2026:13.4508501,52.50859501,06.11.2026, ("Fahrstreifen-Reduzierung", Warschauer Str., bis 30.04.2028)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-11-18
+#: last_checked: 2026-11-20
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -8847,7 +8859,7 @@ Gehweg für Radfahrer frei	RW1; 20611,14445 20474,14442 20367,14429
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2026-11-07
+#: last_checked: 2026-11-20
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2024-09-26
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -9987,7 +9999,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 6994,9288 7118,9315
 #: osm_watch[closed]: note 4803321 2
 #: source_id: planb2026:13.35661917,52.49021456,15.05.2026,00:01 ("-", bis 03.03.2027)
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2026-10-27 (mapillary)
+#: last_checked: 2026-11-20
 #: check_frequency: 90d
 #: next_check: 2027-03-03 (planb)
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7118,9315 7202,9329 7299,9346
@@ -9998,7 +10010,7 @@ Leitboys bzw. Radspur hinter parkenden Autos	RW4; 7418,9366 7299,9346
 #: next_check_id: GRUNEWALDSTR-2025
 #: next_check_id: ELSSHOLZ-2025
 #: XXX Wann wird die Radspur freigegeben?
-#: last_checked: 2026-10-27 (mapillary)
+#: last_checked: 2026-11-20
 #: check_frequency: 90d
 #: next_check: 2027-03-03 (planb)
 Leitboys, wegen Hochbauarbeiten abgesperrt	RW0; 7299,9346 7202,9329 7118,9315

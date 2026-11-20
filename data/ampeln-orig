@@ -81,12 +81,12 @@ Erkner	X::inwork 34742,2111
 #: next_check_id: HANSA-2025
 #: last_checked: 2026-11-08
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2026-12-23 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261223
 Hansastr./Liebermannstr.: provisorische Ampel	X::inwork 16139,17017
 #: last_checked: 2026-11-08
 #: check_frequency: 30d
-#: next_check: 2026-12-23 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-15 (VIZ-Verkehrsmeldung)
 #: valid: -20261223
 Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 # 
@@ -985,6 +985,7 @@ Bahnhofstr./Briesingstr.: provisorische Ampel	?::inwork 10310,-2136
 #: section: Ampeln und Bahnübergänge in Berlin vvv
 #: next_check_id: TRAM21-2025
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25406.pdf (verkehrsrechtliche Anordnung bis Ende 2028)
+#: by: https://www.bund-berlin.de/service/presse/detail/news/unruehmliches-jubilaeum-ein-jahr-teileinstellung-der-tram-21/
 #: source_id: planb2026:13.46625734,52.50861358,12.12.2025, ("geänderte Führung im Knotenpunkt", bis 31.12.2028)
 #: note: provisorische Fußgängerampel, außerdem Signalisierung für Autofahrer Richtung Südosten wegen möglicher rangierender Straßenbahnen
 #: note: Anforderungsampel
@@ -1420,7 +1421,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7480,7683
 #: next_check_id: ELLABAROWSKY-2024
 #: XXX Ampelanlage wird neu gebaut
-#: last_checked: 2026-11-12 (daf)
+#: last_checked: 2026-11-20
 #: check_frequency: 90d
 	X0::inwork 7499,7880
 	X 7497,8168
@@ -2453,7 +2454,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 14709,12156
 #: XXX_prog nicht relevant für Radfahrer Richtung Osten oder beim Einbiegen ins oder Abbiegen aus dem Wohngebiet
 	X 16214,11935
-	X 6575,8469
+#: note: Fußgängerampel befindet sich nördlich der Einmündung; Dominicusstr. -> Fritz-Elsas-Str.: Linksabbiegen ohne Ampel auf der Fahrbahn möglich, Anforderung bei Verwendung der kombinierten Fuß+Radwegampel
+	F 6575,8469
 	X 5352,7428
 	X 8249,16741
 	X 7970,17087

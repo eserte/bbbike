@@ -707,9 +707,9 @@ Nollendorfplatz [Parkplatz]: Baustelle, Parkplatz gesperrt	q4::inwork 7036,10313
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 Mergenthalerring: Asphaltschwellen, kˆnnen teilweise umfahren werden	q1 14425,8116 14563,8243 14422,8407
 Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6724 6530,6786 6529,6798
-(Vorarlberger Damm - Kleingartenkolonie): Fuﬂg‰nger	q1 6817,7101 6852,7246 6843,7293
-(Nordmannzeile - Kleingartenkolonie): Fuﬂg‰nger	q2 6811,7266 6820,7287 6843,7293
-(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7445 7307,7457
+(Vorarlberger Damm - Kleingartenkolonie): Fuﬂg‰nger	q1 6817,7101 6852,7246 6844,7287
+(Nordmannzeile - Kleingartenkolonie): Fuﬂg‰nger	q2 6811,7266 6815,7280 6844,7287
+(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7445 7284,7459 7300,7449
 Achenbachpromenade: Fuﬂg‰nger, Radfahren erlaubt	q1 8763,8780 8748,8587 8722,8527 8715,8459
 Wildensteiner Str.: enge Straﬂe	q0 18627,8475 18528,8331
 Wildensteiner Str.: enge Straﬂe	q1 18528,8331 18416,8163 18365,8094 18333,8059
@@ -1928,7 +1928,7 @@ An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11405,3631 11430,3540 11
 (Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q1 20346,11337 20331,11326 20227,11290 20201,11216 20188,11133 20161,11033 20121,10869
 (Am Biesdorfer Baggersee): Fuﬂg‰nger, Badebetrieb an schˆnen Tagen	q2 20121,10869 20116,10837 20126,10802 20161,10765 20191,10768 20390,10850 20399,10867 20393,10889
 (Am Biesdorfer Baggersee): einige Fuﬂg‰nger	q1 20393,10889 20354,10963 20354,11025 20362,11166 20335,11258 20334,11321 20346,11337
-Dalandweg: schmale und kurvenreiche Straﬂe	q1 5120,4318 5226,4259 5250,4298 5311,4270 5356,4249 5385,4236 5541,4305
+Dalandweg: schmale und kurvenreiche Straﬂe	q1 5120,4318 5184,4283 5226,4259 5250,4298 5311,4270 5356,4249 5385,4236 5541,4305
 (Spreeuferweg): einige Fuﬂg‰nger	q1 21090,5417 21085,5451 20827,5431
 (KGA Am Freibad Oberspree): einige Fuﬂg‰nger	q1 20827,5431 20829,5418 20849,5266 20851,5255
 (Zufahrt zum Gewerbegebiet): Parkplatzverkehr	q1 25312,11186 25298,11118 25298,10966 25297,10892
@@ -2738,7 +2738,7 @@ Am Teltowkanal: zahlreiche Temposchwellen, abwechselnd rechts und links umfahrba
 (Dˆberitzer Gr¸nzug - Klara-Franke-Str.): einige Fuﬂg‰nger, flache Bordsteinkante	q3 7642,13815 7630,13810
 (Dˆberitzer Gr¸nzug - KGA Lehrter Str.): einige Fuﬂg‰nger	q1 7819,13559 7795,13528
 Ulsterstr.: enge Straﬂe	q0 13575,8378 13641,8470
-(Gotenstr. - Ella-Barowsky-Str.): Bauarbeiten, sehr schmaler Durchgang	q4::inwork 7497,7761 7551,7851
+(Gotenstr. - Ella-Barowsky-Str.): Bauarbeiten, abschnittweise sehr schmaler Durchgang	q4::inwork 7497,7761 7551,7851
 (Raschdorffstr./Ribbeweg - Amendestr.): Fuﬂg‰nger, Gr¸nanlage	q2 7872,18204 7897,18147 7919,18083
 (Stellerweg): einige Fuﬂg‰nger, Kleingartenanlage	q1 14608,14701 14790,14656
 (Hohenschˆnhauser Str., Verbindungsweg): einige Fuﬂg‰nger, abgeschr‰gte Bordsteine	q2 14839,14586 14715,14547
@@ -2881,10 +2881,10 @@ Engadiner Weg: enge Straﬂe, evtl. Gegenverkehr	q1 3716,2063 3818,2070 3851,2148 
 Am Triftpark: Temposchwellen	q2 4450,20388 4407,20412 4386,20444 4407,20482 4436,20531 4498,20515
 Eschershauser Weg: parkende Autos, un¸bersichtlich	q1 -190,4776 -146,4814 -97,4849 -48,4888 10,4932 110,4950
 Begasstr.: eng	q1 6276,6995 6408,7008
-Friedrichsruher Str.: sehr eng	q1 6629,5946 6508,5931 6326,5912 6124,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
+Friedrichsruher Str.: eng	q0 6629,5946 6508,5931 6326,5912 6124,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
 Schˆnhauser Str.: eng	q0 5809,6383 5824,6240 5836,6138 5845,6049 5847,5961 5851,5863 5850,5765
 Jeverstr.: eng	q0 5682,5798 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5836,6138
-Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2717,3600
+Friedrichstr. (Lichterfelde): Fuﬂweg f¸r Radfahrer frei	q1 2890,3561 2717,3600
 (Bucher Teiche - Schˆnerlinder Chaussee): einige Fuﬂg‰nger	q1 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
 (Schloﬂpark Charlottenburg, westlicher Weg): Fuﬂg‰nger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Schloﬂpark Charlottenburg): Fuﬂg‰nger	q1 2953,13489 2925,13516 2858,13530
@@ -2946,7 +2946,7 @@ Wilseder Str.: eng mit ein- und ausparkenden Autos	q1 6295,5158 6276,4915
 H¸nensteig: Fuﬂg‰nger	q2 6395,5154 6405,5238 6100,5254
 (Ringstr. - Gersdorfstr. (Kolonie Marienhˆhe)): Kleingartenanlage, Fuﬂg‰nger (schieben!), tiefe Steinregenabl‰ufe quer zum Weg, Bordstein	q4 7911,4465 7925,4477 8027,4571 8076,4606 8192,4710
 M¸hlenbecker Weg: Fuﬂg‰nger	q1 20150,15678 20321,16043 20330,16040
-(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger, Kleingartenweg	q2 6843,7293 6847,7314 7089,7398 7097,7419 7220,7445
+(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger, Kleingartenweg	q2 6844,7287 6840,7309 7089,7398 7097,7419 7220,7445
 Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
 Konradinstr.: enge Straﬂe	q0 8575,5202 8556,5234 8632,5331 8674,5357 8872,5484 8887,5564
 (Livl‰ndische Str. - Schoelerpark): Fuﬂg‰nger, f¸r Radfahrer freigegeben	q1 5166,8467 5212,8602
@@ -3047,7 +3047,7 @@ Johanna-Stegen-Str.: Fuﬂg‰nger	q2 5557,4523 5479,4568 5397,4611 5371,4609 5316,4
 Vionvillestr.: Fuﬂg‰nger	q2 5557,4523 5589,4617
 Rezonvillestr.: Fuﬂg‰nger	q2 5589,4617 5607,4610
 Am Stadtpark (Steglitz): Fuﬂg‰nger	q2 5658,4548 5746,4514 5821,4480
-(Stadtpark Steglitz): Fuﬂg‰nger	q2 5806,4840 5772,4766 5736,4686 5724,4670 5676,4552 5658,4548
+(Stadtpark Steglitz): Fuﬂg‰nger	q2 5806,4840 5772,4766 5736,4686 5724,4670 5671,4554 5658,4548
 Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5334,4857 5356,4892 5377,4901 5436,4983
 (Verl‰ngerte Wallenbergstr.): Fuﬂg‰nger, schmal	q3 4143,8501 3992,8487
 (Zufahrt zur Kolonie Hohenzollerndamm): Fuﬂg‰nger, Poller	q2 3751,8796 3858,8786
