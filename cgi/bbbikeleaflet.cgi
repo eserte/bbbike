@@ -39,7 +39,7 @@ my $devel              = $q->param('devel') || 0;
 my $route_title        = $q->param('routetitle');
 my $replay_trk         = $q->param('replaytrk');
 my $loc                = $q->param('loc');
-my $geojsonp_url       = $q->param('geojsonp_url');
+my @geojsonp_urls      = BBBikeCGI::Util::my_multi_param($q, 'geojsonp_url');
 my $show_feature_list  = $q->param('fl') || 0; # feature list can currently only be enabled together with a geojsonp_url
 my $show_expired_session_msg;
 my $http_status;
@@ -106,7 +106,7 @@ my $tpl = BBBikeLeaflet::Template->new
      route_title              => $route_title,
      replay_trk               => $replay_trk,
      loc                      => $loc,
-     geojsonp_url             => $geojsonp_url,
+     geojsonp_urls            => \@geojsonp_urls,
     );
 $tpl->process(\*STDOUT);
 
