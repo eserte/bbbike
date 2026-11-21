@@ -256,6 +256,9 @@ sub lookup_id_in_file {
             if (defined $rec->{viz2025_id} && $rec->{viz2025_id} eq $id) {
                 return ($rec, $key);
             }
+            if (defined $rec->{orig_id} && $rec->{orig_id} eq $id) {
+                return ($rec, $key);
+            }
         }
     }
 
