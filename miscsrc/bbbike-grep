@@ -67,6 +67,7 @@ my $searchterm_type = 'fixed';
 my $case_insens     = 1;
 my $also_reverse_coords = 1;
 my $limit;
+my $limit_per_file;
 
 my $with_filename = 1;
 my $with_line_number;
@@ -83,6 +84,7 @@ GetOptions(
 	   'n|line-number'         => \$with_line_number,
 	   'b|byte-offset'         => \$with_byte_offset,
 	   'limit=i'               => \$limit,
+	   'limit-per-file=i'      => \$limit_per_file,
 	   'filename!'             => \$with_filename,
 	   'h'                     => sub { $with_filename = 0 },
 	   'add-file=s'            => sub { push @search_file_defs, $_[1] },
@@ -247,6 +249,7 @@ sub do_search {
 		}
 		$local_hits++;
 		last if defined $limit && $local_hits + $hits >= $limit; # limit this file
+		last if defined $limit_per_file && $local_hits >= $limit_per_file;
 	    } elsif ($is_temp_blockings_pl) {
 		if ($is_temp_blockings_pl_preamble) {
 		    if (/^\@temp_blocking\s*=/) {

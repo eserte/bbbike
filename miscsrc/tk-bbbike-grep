@@ -149,8 +149,8 @@ sub run_grep {
 	}
     }
 	
-    # XXX -limit 100 may be too small: /bahnhofstr/ has currently 317 matches
-    my @cmd = ("$bbbike_root/miscsrc/bbbike-grep", $term_type_opt, "-limit", 100, "-reldir", cwd(), "--byte-offset", @add_bbbike_grep, "--", $grep_word);
+    # note: -limit-per-file 50 may be too small: /bahnhofstr/ has currently 317 matches
+    my @cmd = ("$bbbike_root/miscsrc/bbbike-grep", $term_type_opt, "-limit-per-file", 50, "-reldir", cwd(), "--byte-offset", @add_bbbike_grep, "--", $grep_word);
     #warn "@cmd";
     open my $fh, '-|', @cmd or die $!;
     binmode $fh, ':utf8';
