@@ -1010,6 +1010,7 @@ Steigung 2.5% (Diestelmeyerstr.)	St; 12690,12769 12833,12920
 Steigung 2.5% (Berghauser Str.)	St; 27658,877 27471,664
 Steigung 2.5% (Bellermannstr.)	St; 9259,16236 9307,16190
 Steigung 2.5% (Auf dem Mühlenberg)	St; 6723,22924 6778,22950
+Steigung 2.5% (Auerstr.)	St; 13198,12796 13273,12902
 Steigung 2.5% (Am Ortsrand)	St; -4546,9381 -4645,9365
 Steigung 2.5% (Alter Bernauer Heerweg)	St; 6948,22862 7004,22881
 Steigung 2.5% (Alter Bernauer Heerweg)	St; 6770,22801 6779,22804
@@ -1105,7 +1106,6 @@ Steigung 2.4% (Briesestr.)	St; 12788,8101 12671,8077
 Steigung 2.4% (Bornstedter Str.)	St; 2551,9995 2590,9949
 Steigung 2.4% (Boddinstr.)	St; 12216,8323 12168,8313
 Steigung 2.4% (Berghofer Weg)	St; 30950,3985 30979,3941
-Steigung 2.4% (Auerstr.)	St; 13202,12790 13273,12902
 Steigung 2.4% (Am Fölzberg)	St; 6887,23070 6907,23067
 Steigung 2.4% (Am Fichtenberg)	St; 4185,5349 4259,5390
 Steigung 2.4% (Am Fichtenberg)	St; 4134,5284 4185,5349
@@ -1225,7 +1225,7 @@ Steigung 2.2% (Pilgramer Str.)	St; 25147,10487 25150,10555
 Steigung 2.2% (Petersburger Str.)	St; 13695,12643 13685,12664
 Steigung 2.2% (Petersburger Str.)	St; 13685,12664 13622,12806
 Steigung 2.2% (Ortelsburger Allee)	St; -57,11006 -82,11178
-Steigung 2.2% (Mühsamstr.)	St; 13371,12694 13506,12752
+Steigung 2.2% (Mühsamstr.)	St; 13369,12698 13506,12752
 Steigung 2.2% (Mönchsheimer Str.)	St; 30757,3974 30821,3951
 Steigung 2.2% (Mönchsheimer Str.)	St; 30687,3999 30757,3974
 Steigung 2.2% (Möllendorffstr.)	St; 15420,12178 15443,12222
@@ -1325,7 +1325,6 @@ Steigung 2.1% (Oberseestr.)	St; 15891,16041 15856,15924
 Steigung 2.1% (Neckarsulmer Str.)	St; 7585,4154 7537,4257
 Steigung 2.1% (Neckarsulmer Str.)	St; 7537,4257 7533,4293
 Steigung 2.1% (Neckarsulmer Str.)	St; 7533,4293 7482,4416
-Steigung 2.1% (Mühsamstr.)	St; 13273,12649 13371,12694
 Steigung 2.1% (Möllendorffstr.: linker Gehweg bis zur Deutschmeisterstr., ggfs. absteigen)	St; 15420,12178 15435,12226
 Steigung 2.1% (Möllendorffstr.)	St; 15361,12071 15420,12178
 Steigung 2.1% (Mozartstr. (Biesdorf))	St; 20173,11971 20176,12071
@@ -1427,6 +1426,7 @@ Steigung 2.0% (Nennhauser Damm)	St; -7457,13957 -7456,14073
 Steigung 2.0% (Nennhauser Damm)	St; -7456,14073 -7455,14144
 Steigung 2.0% (Nennhauser Damm)	St; -7455,14144 -7457,14317
 Steigung 2.0% (Mühsamstr.)	St; 13559,12779 13622,12806
+Steigung 2.0% (Mühsamstr.)	St; 13267,12651 13369,12698
 Steigung 2.0% (Morusstr.)	St; 12466,7946 12462,7965
 Steigung 2.0% (Mittelweg (Neukölln))	St; 12918,7600 12771,7679
 Steigung 2.0% (Marienburger Str.)	St; 12077,14186 11821,14317
@@ -1891,8 +1891,8 @@ Steigung 1.7% (Belforter Str.)	St; 11299,14112 11270,14131
 Steigung 1.7% (Belforter Str.)	St; 11109,14235 11188,14184
 Steigung 1.7% (Bauernheideweg)	St; 31154,4547 31258,4560
 Steigung 1.7% (August-Froehlich-Str.)	St; 18111,2135 18199,1811
-Steigung 1.7% (Auerstr.)	St; 13067,12583 13202,12790
-Steigung 1.7% (Auerstr.)	St; 13025,12523 13067,12583
+Steigung 1.7% (Auerstr.)	St; 13061,12581 13198,12796
+Steigung 1.7% (Auerstr.)	St; 13023,12526 13061,12581
 Steigung 1.7% (Aschaffenburger Str. (Schöneberg, Wilmersdorf))	St; 5991,9284 6044,9223
 Steigung 1.7% (Am Fölzberg)	St; 6865,23103 6887,23070
 Steigung 1.7% (Alt-Kladow)	St; -7080,4896 -7170,4962
@@ -2238,8 +2238,8 @@ Steigung 1.4% (Rothenbücherweg)	St; -4651,9487 -4657,9594
 Steigung 1.4% (Rothenbücherweg)	St; -4645,9365 -4651,9487
 Steigung 1.4% (Rosenfelder Str.)	St; 17169,11677 17251,11789
 Steigung 1.4% (Richterstr. (Mariendorf))	St; 9099,4204 9115,4117
-Steigung 1.4% (Richard-Sorge-Str.)	St; 13457,12505 13371,12694
-Steigung 1.4% (Richard-Sorge-Str.)	St; 13371,12694 13273,12902
+Steigung 1.4% (Richard-Sorge-Str.)	St; 13457,12505 13369,12698
+Steigung 1.4% (Richard-Sorge-Str.)	St; 13369,12698 13273,12902
 Steigung 1.4% (Preußenstr.)	St; 20767,1336 20796,1289
 Steigung 1.4% (Preußenstr.)	St; 20761,1345 20767,1336
 Steigung 1.4% (Potsdamer Chaussee (Zehlendorf, Nikolassee, Schlachtensee))	St; -2074,2258 -2280,2177
@@ -2266,7 +2266,7 @@ Steigung 1.4% (Markomannenstr.)	St; 20700,1363 20647,1208
 Steigung 1.4% (Markgrafenstr. (Mariendorf))	St; 9020,4890 9247,4915
 Steigung 1.4% (Markgrafenstr. (Mahlsdorf, Kaulsdorf))	St; 24551,12614 24651,12560
 Steigung 1.4% (Mainzer Str. (Neukölln))	St; 12104,8299 12116,8247
-Steigung 1.4% (Löwestr. (Friedrichshain))	St; 13273,12649 13202,12790
+Steigung 1.4% (Löwestr. (Friedrichshain))	St; 13267,12651 13198,12796
 Steigung 1.4% (Ludwigshöheweg)	St; 27263,839 27202,770
 Steigung 1.4% (Lindenallee (Weißensee))	St; 14248,16202 14295,16076
 Steigung 1.4% (Lehmfeldsteig)	St; 19602,1989 19564,1871

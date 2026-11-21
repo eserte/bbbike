@@ -20674,7 +20674,7 @@ EOF
 	2::temp 12632,12630 12592,12472
 	2::temp 13448,12340 13476,12461
 	2::temp 13552,12435 13543,12326
-#zukünftig, wenn dieser Weg eingetragen ist:	2::temp 13163,12382 13176,12500
+#zukünftig, wenn dieser Weg eingetragen ist:	2::temp 13163,12382 13177,12503
 # REMOVED --- #: tempex ^^^
 EOF
      },
@@ -29296,7 +29296,7 @@ EOF
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigahx3ogo5wg7bfpohobk2ql3pslkssjxcvozbtqa2ronntwwmsci
 #: source_id: planb2026:13.45806331,52.51153757,30.10.2026,05:00 ("Vollsperrung beider Fahrbahnen", zwischen Simon-Dach-Str. und Gabriel-Max-Str., bis 17.11.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_373030 (ab 16.11.2026, vermutlich auch nur ein Kraneinsatz) (vorfristig inaktiv)
-#: source_id: LMS-BR:428580/72 viz2021:13.45706,52.51172,16.11.2026,05:00 (bis 21.11.2026)
+#: source_id: LMS-BR:428580/72 viz2021:13.45706,52.51172,16.11.2026,05:00 (bis 21.11.2026) (inaktiv)
 # REMOVED --- #: next_check: 2026-11-17
 	q4::inwork 14006,11843 14127,11811
 EOF
@@ -32134,7 +32134,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-08-02 (abgesperrt) --- #: check_frequency: 30d
-	2::inwork 13232,12628 13091,12563
+	2::inwork 13228,12632 13086,12569
 EOF
      },
      { from  => undef, # 
@@ -32561,7 +32561,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.993677.php (22.9.2020 - Tag der Spielstraßen --- nicht eingetragen)
 # REMOVED --- S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp::play 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
 S1 - Bänschstr. zwischen Voigtstr. und Pettenkoferstr. Südseite	q4::temp::play 14798,12502 15005,12443
-S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp::play 13457,12505 13371,12694 13273,12902
+S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp::play 13457,12505 13369,12698 13273,12902
 S3 - Gärtnerstr. zwischen Wühlischstr. und Grünberger Str.	q4::temp::play 14211,11552 14247,11681 14272,11775
 S4 - Krossener Str. zwischen Gabriel-Max-Str. und Seumestr.	q4::temp::play 14102,11715 14247,11681 14358,11656
 Gabriel-Max-Str.	q4::temp::play 14127,11811 14102,11715
@@ -34224,9 +34224,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (weitgehend offen) --- #: next_check_id: AUER-2021 --- #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken); außerdem gibt's eine Einbahnstraßenregelung für Autos --- #: XXX laut rbb bis 30.7.2021 --- #: also_indoor: traffic (G,H) --- #: priority: #A vvv --- #: last_checked: 2021-07-11 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2021-07-30 vvv
-# REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
-	q4::inwork 13067,12583 13202,12790
-	q4::inwork; 13273,12902 13202,12790
+# REMOVED (hier fertig) ---	q4::inwork 13023,12526 13061,12581
+	q4::inwork 13061,12581 13198,12796
+	q4::inwork; 13273,12902 13198,12796
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ -- #: last_checked ^^^ --- #: priority ^^^
 EOF
      },
@@ -34480,7 +34480,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 # REMOVED --- #: XXX wird diese Spielstraße verstetigt? --- #: last_checked: 2021-05-13 --- #: next_check: 2022-05-17
-	q4::temp::play 13273,12902 13371,12694
+	q4::temp::play 13273,12902 13369,12698
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-04-30 00:00:00") }, # 1 Tag Vorlauf
@@ -36181,7 +36181,8 @@ EOF
 # REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?) --- #: note: Halteverbotsschilder mittlerweile bis 07.06.2024, nun bis 28.06.2024 --- #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv --- #: last_checked: 2024-06-22 vvv --- #: next_check: 2024-06-28 vvv --- Jahnstr.	q4::inwork; 12833,6127 13027,6168 --- Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127 --- : next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
-#: source_id: planb2026:13.44281239,52.46101267,15.07.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 18.12.2026) (vorfristig inaktiv) (bis 12.03.2027)
+#: source_id: planb2026:13.44281239,52.46101267,15.07.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 18.12.2026) (vorfristig inaktiv) (bis 12.03.2027) (ersetzt und inaktiv)
+#: source_id: planb2026:13.44281239,52.46101267,14.07.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 12.03.2027)
 #: source_id: planb2026:13.4422304,52.46092562,01.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", 01.10.2026 bis 30.11.2026)
 #: note: Halteverbotsschilder bis 18.12.2026
 #: also_indoor: traffic (no-G,ex-T[later],no-W,no-H)
@@ -52658,13 +52659,15 @@ EOF
 	q4::inwork 10437,11352 10593,11120
 EOF
      },
-     { from  => 1766077200, # 2025-12-18 18:00
-       until => 1766372400, # 2025-12-22 04:00
-       text  => 'Brandenburg, Potsdamer Str.: Sperrung der Bahnbrücke, vom 19.12.2025 18:00 bis voraussichtlich 22.12.2025 04:00',
+     { from  => $isodate2epoch->("2026-11-22 00:00:00"), # 1766077200, # 2025-12-18 18:00
+       until => $isodate2epoch->("2026-11-25 18:00:00"), # 1766372400, # 2025-12-22 04:00
+#      text  => 'Brandenburg, Potsdamer Str.: Sperrung der Bahnbrücke, vom 19.12.2025 18:00 bis voraussichtlich 22.12.2025 04:00',
+       text  => 'Brandenburg, Potsdamer Str.: mögliche Sperrung beider Rad- und Gehwege über der Bahnbrücke, vom 23.11.2026 bis 25.11.2026',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2025-b1-bruecke-potsdamer-strasse
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-12-2025-b1_bruecke-potsdamer-strasse_vollsperrung-am-4-adventswochenende
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-11-2026-b1_potsdamer-strasse_brandenburg-adh_zusaetzliche-sperrung-fuer-fuss-und-radverkehr
 	2::inwork -44861,-1252 -45229,-992
 EOF
      },
@@ -55077,6 +55080,7 @@ EOF
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~01-07-2026-baustart-an-der-l-902-grube-grundhafte-erneuerung-zwischen-bahnhof-und-ortseingang
 #: by: https://www.potsdam.de/de/302-baumassnahmen-im-hauptstrassennetz-den-sommerferien
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5454 (bis 18.12.2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2026-l902-grube_bauarbeiten-dauern-bis-mitte-dezember-2026
 #: source_id: LS/223-P/26/086 (bis 18.12.2026)
 	2::inwork -19656,2362 -19422,2220 -19243,2246 -19106,2228 -18985,2226 -18728,2153
 EOF
@@ -55328,14 +55332,16 @@ EOF
        text  => 'Karwendelstr.: Bauarbeiten, Sperrung der Fahrbahn am Hindenburgdamm, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
+#: next_check_id: HINDENBURGDAMM-2022
 #: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 vizapi2026:722/2026 (bis 04.09.2026) (inaktiv) (bei vizapi2026 bis 23.10.2026) (bei vizapi2026 bis 27.10.2026) (bei vizapi2026 nun auch inaktiv)
 #: source_id: planb2026:13.30963347,52.43415371,01.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.09.2026) (inaktiv) (bis 23.10.2026) (inaktiv)
-#: source_id: planb2026:13.31216617,52.43399261,08.09.2025, ("Sicherung gemäß Vz.-plan", Teil der großen Baustelle am Hindenburgdamm, bis 29.11.2026)
+#: source_id: planb2026:13.30762437,52.43335341,21.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", an der Drakestr., nicht wieder aufgenommen, bis 31.03.2027)
+#: source_id: planb2026:13.31216617,52.43399261,08.09.2025, ("Sicherung gemäß Vz.-plan", Teil der großen Baustelle am Hindenburgdamm, bis 29.11.2026) (bis 31.03.2027)
 #: source_id: LMS-BR:382708/72 vizapi2026:205/2025 (Karwendelstraße ist vom Hindenburgdamm für den Kfz-Verkehr abgehängt, Sackgasse, bis 29.11.2026) (bis 31.03.2027)
 #: also_indoor: traffic (G,T,ex-H,W[noch immer länger])
 #: last_checked: 2026-11-12 (traffic)
 #: check_frequency: 30d (traffic)
-#: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2027-03-31 (VIZ-Verkehrsmeldung + planb)
 	q4::inwork 4350,3161 4387,3182 4411,3180
 # REMOVED (hier möglicherweise nicht mehr?) ---	q4::inwork 4011,2942 4350,3161
 EOF
@@ -55794,11 +55800,11 @@ EOF
        text  => 'Sommerstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<'EOF',
-#: also_indoor: traffic (ex-G,T,ex-H[later,shorter],ex-W[later,shorter])
+#: also_indoor: traffic (re-G[shorter],T,ex-H[later,shorter],ex-W[later,shorter])
 #: source_id: planb2026:-
 #: osm_watch: note 4999840 2
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-11-09 (traffic)
+#: last_checked: 2026-11-20 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 8179,18756 8257,18684 8425,18542
 EOF
@@ -57185,11 +57191,12 @@ EOF
      },
      { from  => 1792036800, # 2026-10-15 06:00
        until => $isodate2epoch->("2026-12-23 20:00:00"), # 1795201200, # 2026-11-20 20:00
-       text  => 'B5 (Berlin - Dallgow): Bauarbeiten, Sperrung des Radwegs, vom 16.10.2026 06:00 bis 23.12.2026 20:00 Uhr',
+       text  => 'B5 (Berlin - Dallgow): Bauarbeiten, mögliche Sperrung des Radwegs, vom 16.10.2026 06:00 bis 23.12.2026 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<'EOF',
 #: source_id: LS/223-P/26/127 (Gesamtmaßnahme bis 30.04.2027) (bis 18.11.2026, Gesamtmaßnahme unverändert) (Einzelmaßnahme bis 23.12.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-10-2026-erneuerung-b5-bei-dallgow-doeberitz_erste-bauphase-startet-16-10-2026 (hier keine Angaben zum Radweg)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2026-b5-bei-dallgow-doeberitz_zweite-bauphase-startet-am-20-11-2026 (wieder keine Angaben zum Radweg; Gesamtvorhaben bis Mai 2027)
 #: next_check: 2026-12-23
 	2::inwork -11037,13609 -10712,13531 -10104,13363 -9618,13338 -9613,13236 -9585,13233 -9461,13252 -9409,13332 -9210,13338 -9008,13331 -9005,13354
 EOF
@@ -57234,14 +57241,15 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2026-09-28 00:00:00"),
-       until => $isodate2epoch->("2026-11-30 23:59:59"),
-       text  => 'Kronenstr.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis Ende November 2026',
+       until => $isodate2epoch->("2027-01-31 23:59:59"), # $isodate2epoch->("2026-11-30 23:59:59"),
+#      text  => 'Kronenstr.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis Ende November 2026',
+       text  => 'Kronenstr.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis Ende Januar 2027',
        type  => 'handicap',
        data  => <<'EOF',
-#: source_id: planb2026:13.39481475,52.51151815,28.09.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 30.11.2026)
+#: source_id: planb2026:13.39481475,52.51151815,28.09.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 30.11.2026) (bis 31.01.2027)
 #: also_indoor: traffic (no-G,T,H,no-W)
 #: last_checked: 2026-11-16
-#: next_check: 2026-11-30
+#: next_check: 2027-01-31 (planb)
 Kronenstr.: Sperrung einer Fahrtrichtung	q4::inwork; 9896,11760 9692,11732
 EOF
      },
@@ -57732,7 +57740,7 @@ EOF
 #: source_id: planb2026:13.41635987,52.52663132,10.11.2026, ("Fahrstreifen-Reduzierung", bis 20.12.2026)
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_369942
 #: source_id: LMS-BR:427845/72 viz2021:13.41564,52.52676,09.11.2026,07:00 (bis 21.12.2026)
-#: source_id: LMS-BR:427846/72 viz2021:13.41537,52.52689,09.11.2026,07:00 (bis 21.12.2026) (bei vizapi2026 entfernt) (und wieder da)
+#: source_id: LMS-BR:427846/72 viz2021:13.41537,52.52689,09.11.2026,07:00 (bis 21.12.2026) (bei vizapi2026 entfernt - und wieder da - und wieder weg)
 #: source_id: LMS-BR:427844/72 viz2021:13.415369,52.526891,09.11.2026,07:00 vizapi2026:1199/2026 ("Gleisbauarbeiten", 09.11.2026 bis 21.12.2026)
 #: note: offizielle Umleitung möglicherweise über Fußgängerampel Wadzeckstr.
 #: note: Torstr. -> Prenzlauer Allee und Prenzlauer Allee -> Mollstr.: möglicherweise ist es effizienter, die Fußgängerüberwege zu benutzen
@@ -57817,9 +57825,9 @@ EOF
        data  => <<'EOF',
 #: source_id: planb2026:13.46255915,52.51080594,02.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 02.04.2027)
 #: also_indoor: traffic (no-G,T,no-H,no-W)
-#: XXX Kranaufbau, evtl. kann man danach wieder passieren? -> sieht nicht so aus
-#: last_checked: 2026-11-18
-#: check_frequency: 14d
+#: XXX Kranaufbau, evtl. kann man danach wieder passieren? -> sieht nicht so aus; evtl. zu q3- oder q4+ ändern
+#: last_checked: 2026-11-21
+#: check_frequency: 30d
 #: next_check: 2027-04-02
 	q4::inwork 14395,11753 14358,11656
 EOF
@@ -57911,7 +57919,9 @@ EOF
        type  => 'handicap',
        data  => <<'EOF',
 #: source_id: LMS-BR:428701/72 viz2021:13.38155,52.58187, vizapi2026:1243/2026 (17.11.2026 bis ?)
+#: source_id: planb2026:13.38367038,52.58249381,17.11.2026, ("Vollsperrung beider Fahrbahnen", bis 23.12.2026)
 #: last_checked: 2026-11-17 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-31 (planb)
 	q4::inwork 8710,19550 8779,19589 8956,19688
 EOF
      },
@@ -57940,12 +57950,13 @@ EOF
 EOF
      },
      { from  => 1795042800, # 2026-11-19 00:00
-       until => 1806444000, # 2027-03-31 00:00
-       text  => 'Björnsonstr. und Buggestr.: Bauarbeiten, evtl. ist auch der Radverkehr von Sperrungen betroffen, geplant bis 30.03.2027',
+       until => $isodate2epoch->("2027-03-31 23:59:59"), # 1806444000, # 2027-03-31 00:00
+#      text  => 'Björnsonstr. und Buggestr.: Bauarbeiten, evtl. ist auch der Radverkehr von Sperrungen betroffen, geplant bis 30.03.2027',
+       text  => 'Björnsonstr. und Buggestr.: Bauarbeiten, evtl. ist auch der Radverkehr von Sperrungen betroffen, geplant bis 31.03.2027',
        type  => 'handicap',
        data  => <<'EOF',
 #: also_indoor: traffic (G,T[nur Bugge],no-H,no-W)
-#: source_id: planb2026:13.31034317,52.46444887,01.06.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 30.03.2027)
+#: source_id: planb2026:13.31034317,52.46444887,01.06.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 30.03.2027) (bis 31.03.2027)
 Buggestr.	q4::inwork 4178,6507 4117,6435 4045,6402
 Björnsonstr.	q4::inwork 4221,6283 4243,6359
 EOF

@@ -12,7 +12,7 @@
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_366164
-#: last_checked: 2026-11-19
+#: last_checked: 2026-11-21
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
 #: valid: -20261221
@@ -77,7 +77,7 @@ Fredersdorfer Str.: Einfahrt verboten	q4::inwork; 13086,12186 13051,12167
 # REMOVED (Einfahrt-verboten-Schilder sind verschwunden) --- #: note: Halteverbotsschilder bis 30.06.2025 --- #: last_checked: 2025-08-05 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2025-06-30 (Halteverbotsschilder) --- Dirschauer Str.: Hochbauarbeiten, Einbahnstraßenregelung	q3::inwork; 14031,11569 13970,11366
 # 
 #: next_check_id: PETERSBURGER-2024
-#: last_checked: 2026-11-13 vvv
+#: last_checked: 2026-11-21 vvv
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
 #: source_id: planb2026:13.45274687,52.51888366,19.08.2024, ("Sperrung einer Fahrtrichtung", bis 31.12.2026) (vorfristig inaktiv) (bis 31.12.2026)
 #: source_id: viz2021:13.452029,52.520542,23.08.2024,07:00 (bis 30.09.2027) (vorfristig inaktiv)
@@ -98,7 +98,7 @@ Kochhannstr.: Überquerung der Baustelle Petersburger Str. über schmale Fußgänger
 #: note: etwa 30m lang
 Kochhannstr.: Baustelleneinrichtung	q3::inwork 13434,13234 13339,13196
 #: osm_watch: note 5191913 4
-#: last_checked: 2026-10-28 vvv
+#: last_checked: 2026-11-21 vvv
 #: check_frequency: 45d vvv
 Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q3::inwork; 13530,13014 13481,13128 13434,13234
 Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q3::inwork; 13434,13234 13383,13349
@@ -117,7 +117,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q2::inwork; 13383,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="37"
 #: osm_watch: way id="1072662717" version="41"
-#: last_checked: 2026-11-20
+#: last_checked: 2026-11-21
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -143,7 +143,7 @@ Gubener Str.: Engstelle an der Warschauer Str.	q3::inwork 13568,11560 13603,1153
 #: source_id: planb2026:13.44005683,52.52346346,15.08.2024,07:00 ("Sicherung gemäß Vz.-plan", bis 31.10.2026) (inaktiv)
 #: also_indoor: traffic (re-G,T,no-H,W[later])
 #: note: Einmündung nur halb gesperrt, eine Durchfahrt zwischen Pufendorfstr. und der südöstlichen Matthiasstr. ist möglich
-#: last_checked: 2026-11-12 (traffic)
+#: last_checked: 2026-11-21 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-12-14 (planb)
 #: valid: -20261214
@@ -185,7 +185,7 @@ Matthiasstr.: Sperrung im Einmündungsbereich Pufendorfstr.	q3::inwork 12786,1318
 #: XXX Nach Ende der Bauarbeiten prüfen, ob der Markt hier wieder zurückkommt; dann den existierenden temp-blockings-Eintrag reaktivieren.
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2026-10-10 vvv
+#: last_checked: 2026-11-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2026-12-31 (Tsp, planb) vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -242,9 +242,9 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED --- #: XXX laut fritz bis 2019-12-31 --- #: XXX außerdem noch Bauarbeiten (Leitungsarbeiten?) im südlichen Abschnitt --- #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72 --- #: also_indoor: traffic --- #: priority: #B --- #: last_checked: 2019-11-03 --- #: next_check: 2019-12-31
 # REMOVED (hier nicht mehr) --- Auerstr.: einige Meter an der Richard-Sorge-Str. und zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13273,12902 13202,12790
 # REMOVED (mitterweile hier auch für Radfahrer frei) --- Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13202,12790 13067,12583
-# REMOVED (hier Einbahnstraße für Radfahrer frei) --- Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13067,12583 13025,12523
+# REMOVED (hier Einbahnstraße für Radfahrer frei) --- Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13067,12583 13023,12526
 # REMOVED (Baustelle pünktlich beendet) --- #: source_id: 2147344858 (bis Ende März 2020) --- #: last_checked: 2020-03-08 --- #: next_check: 2020-03-23 --- #: valid: -20200323 --- Untere Kynaststr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 14805,10518 14815,10516 14832,10512 14828,10561 14843,10621 14882,10732
-# REMOVED (nicht mehr) --- #: last_checked: 2018-07-03 --- Auerstr.: zwischen Zebrastreifen und Weideweg Baustelle, Einbahnstraßenregelung	q2::inwork; 13202,12790 13067,12583 13025,12523
+# REMOVED (nicht mehr) --- #: last_checked: 2018-07-03 --- Auerstr.: zwischen Zebrastreifen und Weideweg Baustelle, Einbahnstraßenregelung	q2::inwork; 13202,12790 13067,12583 13023,12526
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
 # REMOVED --- #: source_id: LMS-BR_r_LMS-BR_106000_LMS-BR_72 --- #: last_checked: 2017-12-10 --- #: next_check: 2017-12-18 --- #: valid: -20171218 --- Palisadenstr.: Bauarbeiten, teilweise Einbahnstraße, offen Richtung Osten	q2::inwork; 12866,12582 12843,12567 12632,12630
 # REMOVED (bei fritz entfernt) --- #: last_checked: 2017-06-14 --- #: next_check: 2017-06-30 --- #: valid: -20170630 --- Auerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13273,12902 13202,12790
@@ -1082,7 +1082,7 @@ Friedrich-Krause-Ufer: Bauarbeiten, Engstelle, ggfs. Umwege	q2::inwork 7314,1459
 #: osm_watch: way id="1392961223" version="7"
 #: osm_watch: note 5390781 1
 #: also_indoor: traffic (T[basemap],re-G[later],re-W,re-H)
-#: last_checked: 2026-11-12 (traffic)
+#: last_checked: 2026-11-21 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-12-04 (VIZ-Verkehrsmeldung)
 # REMOVED --- #: next_check: 2026-11-30 (pardok)
@@ -3736,9 +3736,9 @@ Primusweg: Fußgänger, Bordstein	q4 5651,19953 5666,19926 5704,19902 5715,19888
 Neptunstr.: Fußgänger	q2 8354,17270 8352,17285 8345,17350 8324,17362 8262,17361
 #: XXX_prog BS nach Osten hin
 #: note: Parklücke ist durch Parkverbotsschilder gesichert
-Mühsamstr.: Bordstein	q2 13232,12628 13273,12649
+Mühsamstr.: Bordstein	q2 13228,12632 13267,12651
 #: note: Grünanlage mit einem modernem FH/KB-Schild, also mit Radfahren-verboten-Symbol; früher kein Eintrag
-Auerdreieck: einige Fußgänger, Radfahren nicht erlaubt	q3 13232,12628 13091,12563
+Auerdreieck: einige Fußgänger, Radfahren nicht erlaubt	q3 13228,12632 13086,12569
 (Neufährer Steig - Hennigsdorfer Str.): eng	q2 -2151,23379 -2180,23384 -2248,23409
 # REMOVED (nach dem Neubau breit genug) --- (neben dem U-Bahn-Viadukt): Fußgänger	q1 7906,10098 7928,10094 8011,10085
 (Dennewitzstr., hinterer Weg): Fußgänger	q1 8011,10085 8023,10106 8074,10292 8058,10306

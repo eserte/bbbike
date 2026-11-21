@@ -5434,7 +5434,8 @@ Waitzstr.	q4::inwork 3770,10508 3739,10495
 # REMOVED --- Rungiusstr. (südlicher Teil)	q2::inwork 13064,5953 13027,6168
 # REMOVED --- Rungiusstr. (nördlicher Teil)	q3::inwork 13027,6168 12997,6290
 # REMOVED --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/jahnstr-52.1326/ (Hochbauarbeiten hier, ist das der Grund für die Sperrung?) --- #: note: Halteverbotsschilder mittlerweile bis 07.06.2024, nun bis 28.06.2024 --- #: add_fragezeichen: Existiert die Einbahnstraßenregelung noch immer? vvv --- #: last_checked: 2024-06-22 vvv --- #: next_check: 2024-06-28 vvv --- Jahnstr.	q4::inwork; 12833,6127 13027,6168 --- Jahnstr.: Einbahnstraße schon 60m vor Mackenroder Weg	q3::inwork; 12644,6087 12833,6127 --- : next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
-#: source_id: planb2026:13.44281239,52.46101267,15.07.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 18.12.2026) (vorfristig inaktiv) (bis 12.03.2027)
+#: source_id: planb2026:13.44281239,52.46101267,15.07.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 18.12.2026) (vorfristig inaktiv) (bis 12.03.2027) (ersetzt und inaktiv)
+#: source_id: planb2026:13.44281239,52.46101267,14.07.2025,06:00 ("Sperrung einer Fahrtrichtung", bis 12.03.2027)
 #: source_id: planb2026:13.4422304,52.46092562,01.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", 01.10.2026 bis 30.11.2026)
 #: note: Halteverbotsschilder bis 18.12.2026
 #: also_indoor: traffic (no-G,ex-T[later],no-W,no-H)
@@ -9317,7 +9318,18 @@ Damaschkestr.: Einbahnstraßenregelung	q3::inwork; 3123,10504 3206,10458
          'until' => 1806530399
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2025-b1-bruecke-potsdamer-strasse
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~15-12-2025-b1_bruecke-potsdamer-strasse_vollsperrung-am-4-adventswochenende
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-11-2026-b1_potsdamer-strasse_brandenburg-adh_zusaetzliche-sperrung-fuer-fuss-und-radverkehr
+	2::inwork -44861,-1252 -45229,-992
+',
+         'from' => 1795302000,
+         'id' => 4506,
+         'text' => 'Brandenburg, Potsdamer Str.: mögliche Sperrung beider Rad- und Gehwege über der Bahnbrücke, vom 23.11.2026 bis 25.11.2026',
+         'type' => 'gesperrt',
+         'until' => 1795626000
+       },
        {
          'data' => '# REMOVED (ggfs. könnte man durchgehen, sieht aber "discouraged" aus) --- #: add_fragezeichen: Ist hier tatsächlich zeitweise oder dauerhaft gesperrt?
 #: note: hier ist allerdings eine Verbindung im Radvorrangnetz geplant
@@ -10349,6 +10361,7 @@ Fehrbelliner Str./Veteranenstr.: Gleisbauarbeiten im Kreuzungsbereich	q3::inwork
          'data' => '#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~01-07-2026-baustart-an-der-l-902-grube-grundhafte-erneuerung-zwischen-bahnhof-und-ortseingang
 #: by: https://www.potsdam.de/de/302-baumassnahmen-im-hauptstrassennetz-den-sommerferien
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5454 (bis 18.12.2026)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2026-l902-grube_bauarbeiten-dauern-bis-mitte-dezember-2026
 #: source_id: LS/223-P/26/086 (bis 18.12.2026)
 	2::inwork -19656,2362 -19422,2220 -19243,2246 -19106,2228 -18985,2226 -18728,2153
 ',
@@ -10485,14 +10498,16 @@ Fahlandgasse: provisorische Einbahnstraßenregelung	q4::inwork; 7675,17538 7675,1
          'until' => 1798671599
        },
        {
-         'data' => '#: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 vizapi2026:722/2026 (bis 04.09.2026) (inaktiv) (bei vizapi2026 bis 23.10.2026) (bei vizapi2026 bis 27.10.2026) (bei vizapi2026 nun auch inaktiv)
+         'data' => '#: next_check_id: HINDENBURGDAMM-2022
+#: source_id: LMS-BR:416160/72 viz2021:13.30729,52.43329,17.07.2026,12:00 vizapi2026:722/2026 (bis 04.09.2026) (inaktiv) (bei vizapi2026 bis 23.10.2026) (bei vizapi2026 bis 27.10.2026) (bei vizapi2026 nun auch inaktiv)
 #: source_id: planb2026:13.30963347,52.43415371,01.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.09.2026) (inaktiv) (bis 23.10.2026) (inaktiv)
-#: source_id: planb2026:13.31216617,52.43399261,08.09.2025, ("Sicherung gemäß Vz.-plan", Teil der großen Baustelle am Hindenburgdamm, bis 29.11.2026)
+#: source_id: planb2026:13.30762437,52.43335341,21.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", an der Drakestr., nicht wieder aufgenommen, bis 31.03.2027)
+#: source_id: planb2026:13.31216617,52.43399261,08.09.2025, ("Sicherung gemäß Vz.-plan", Teil der großen Baustelle am Hindenburgdamm, bis 29.11.2026) (bis 31.03.2027)
 #: source_id: LMS-BR:382708/72 vizapi2026:205/2025 (Karwendelstraße ist vom Hindenburgdamm für den Kfz-Verkehr abgehängt, Sackgasse, bis 29.11.2026) (bis 31.03.2027)
 #: also_indoor: traffic (G,T,ex-H,W[noch immer länger])
 #: last_checked: 2026-11-12 (traffic)
 #: check_frequency: 30d (traffic)
-#: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
+#: next_check: 2027-03-31 (VIZ-Verkehrsmeldung + planb)
 	q4::inwork 4350,3161 4387,3182 4411,3180
 # REMOVED (hier möglicherweise nicht mehr?) ---	q4::inwork 4011,2942 4350,3161
 ',
@@ -10735,11 +10750,11 @@ Streustr.: Einbahnstraßenregelung	q4::inwork; 13263,15930 13425,15846
          'until' => 1801263599
        },
        {
-         'data' => '#: also_indoor: traffic (ex-G,T,ex-H[later,shorter],ex-W[later,shorter])
+         'data' => '#: also_indoor: traffic (re-G[shorter],T,ex-H[later,shorter],ex-W[later,shorter])
 #: source_id: planb2026:-
 #: osm_watch: note 4999840 2
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2026-11-09 (traffic)
+#: last_checked: 2026-11-20 (traffic)
 #: check_frequency: 14d (traffic)
 	q4::inwork 8179,18756 8257,18684 8425,18542
 ',
@@ -11607,12 +11622,13 @@ Ackerstr.	q3::inwork 9048,14681 8945,14764
        {
          'data' => '#: source_id: LS/223-P/26/127 (Gesamtmaßnahme bis 30.04.2027) (bis 18.11.2026, Gesamtmaßnahme unverändert) (Einzelmaßnahme bis 23.12.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~13-10-2026-erneuerung-b5-bei-dallgow-doeberitz_erste-bauphase-startet-16-10-2026 (hier keine Angaben zum Radweg)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~19-11-2026-b5-bei-dallgow-doeberitz_zweite-bauphase-startet-am-20-11-2026 (wieder keine Angaben zum Radweg; Gesamtvorhaben bis Mai 2027)
 #: next_check: 2026-12-23
 	2::inwork -11037,13609 -10712,13531 -10104,13363 -9618,13338 -9613,13236 -9585,13233 -9461,13252 -9409,13332 -9210,13338 -9008,13331 -9005,13354
 ',
          'from' => 1792036800,
          'id' => 4804,
-         'text' => 'B5 (Berlin - Dallgow): Bauarbeiten, Sperrung des Radwegs, vom 16.10.2026 06:00 bis 23.12.2026 20:00 Uhr',
+         'text' => 'B5 (Berlin - Dallgow): Bauarbeiten, mögliche Sperrung des Radwegs, vom 16.10.2026 06:00 bis 23.12.2026 20:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1798052400
        },
@@ -11645,17 +11661,17 @@ Wolfshagener Str.: kurze Sperrung vor Amalienstr	q2::inwork 10905,18671 11220,18
        },
        undef,
        {
-         'data' => '#: source_id: planb2026:13.39481475,52.51151815,28.09.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 30.11.2026)
+         'data' => '#: source_id: planb2026:13.39481475,52.51151815,28.09.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 30.11.2026) (bis 31.01.2027)
 #: also_indoor: traffic (no-G,T,H,no-W)
 #: last_checked: 2026-11-16
-#: next_check: 2026-11-30
+#: next_check: 2027-01-31 (planb)
 Kronenstr.: Sperrung einer Fahrtrichtung	q4::inwork; 9896,11760 9692,11732
 ',
          'from' => 1790546400,
          'id' => 4808,
-         'text' => 'Kronenstr.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis Ende November 2026',
+         'text' => 'Kronenstr.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis Ende Januar 2027',
          'type' => 'handicap',
-         'until' => 1796079599
+         'until' => 1801436399
        },
        {
          'data' => '#: next_check_id: ALTHERMSDORF-2026
@@ -12086,7 +12102,7 @@ Düppelstr.	q4::inwork 5141,5744 5114,5705
 #: source_id: planb2026:13.41635987,52.52663132,10.11.2026, ("Fahrstreifen-Reduzierung", bis 20.12.2026)
 #: source_id[inactive]: bvg2024:142#HIM_FREETEXT_369942
 #: source_id: LMS-BR:427845/72 viz2021:13.41564,52.52676,09.11.2026,07:00 (bis 21.12.2026)
-#: source_id: LMS-BR:427846/72 viz2021:13.41537,52.52689,09.11.2026,07:00 (bis 21.12.2026) (bei vizapi2026 entfernt) (und wieder da)
+#: source_id: LMS-BR:427846/72 viz2021:13.41537,52.52689,09.11.2026,07:00 (bis 21.12.2026) (bei vizapi2026 entfernt - und wieder da - und wieder weg)
 #: source_id: LMS-BR:427844/72 viz2021:13.415369,52.526891,09.11.2026,07:00 vizapi2026:1199/2026 ("Gleisbauarbeiten", 09.11.2026 bis 21.12.2026)
 #: note: offizielle Umleitung möglicherweise über Fußgängerampel Wadzeckstr.
 #: note: Torstr. -> Prenzlauer Allee und Prenzlauer Allee -> Mollstr.: möglicherweise ist es effizienter, die Fußgängerüberwege zu benutzen
@@ -12178,9 +12194,9 @@ Joachim-Karnatz-Allee	q4::inwork 7077,12575 7139,12589
        {
          'data' => '#: source_id: planb2026:13.46255915,52.51080594,02.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 02.04.2027)
 #: also_indoor: traffic (no-G,T,no-H,no-W)
-#: XXX Kranaufbau, evtl. kann man danach wieder passieren? -> sieht nicht so aus
-#: last_checked: 2026-11-18
-#: check_frequency: 14d
+#: XXX Kranaufbau, evtl. kann man danach wieder passieren? -> sieht nicht so aus; evtl. zu q3- oder q4+ ändern
+#: last_checked: 2026-11-21
+#: check_frequency: 30d
 #: next_check: 2027-04-02
 	q4::inwork 14395,11753 14358,11656
 ',
@@ -12280,7 +12296,9 @@ Admiralbrücke	q4::inwork 11177,9935 11199,9993
        },
        {
          'data' => '#: source_id: LMS-BR:428701/72 viz2021:13.38155,52.58187, vizapi2026:1243/2026 (17.11.2026 bis ?)
+#: source_id: planb2026:13.38367038,52.58249381,17.11.2026, ("Vollsperrung beider Fahrbahnen", bis 23.12.2026)
 #: last_checked: 2026-11-17 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-31 (planb)
 	q4::inwork 8710,19550 8779,19589 8956,19688
 ',
          'from' => undef,
@@ -12317,15 +12335,15 @@ Admiralbrücke	q4::inwork 11177,9935 11199,9993
        },
        {
          'data' => '#: also_indoor: traffic (G,T[nur Bugge],no-H,no-W)
-#: source_id: planb2026:13.31034317,52.46444887,01.06.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 30.03.2027)
+#: source_id: planb2026:13.31034317,52.46444887,01.06.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 30.03.2027) (bis 31.03.2027)
 Buggestr.	q4::inwork 4178,6507 4117,6435 4045,6402
 Björnsonstr.	q4::inwork 4221,6283 4243,6359
 ',
          'from' => 1795042800,
          'id' => 4861,
-         'text' => 'Björnsonstr. und Buggestr.: Bauarbeiten, evtl. ist auch der Radverkehr von Sperrungen betroffen, geplant bis 30.03.2027',
+         'text' => 'Björnsonstr. und Buggestr.: Bauarbeiten, evtl. ist auch der Radverkehr von Sperrungen betroffen, geplant bis 31.03.2027',
          'type' => 'handicap',
-         'until' => 1806444000
+         'until' => 1806530399
        },
        {
          'data' => '#: next_check_id: KRUMMELANKE-SCHLACHTENSEE-2026

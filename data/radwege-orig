@@ -1876,7 +1876,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: historical_note: war als Popup-Radweg abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="1133993735" version="9"
 #: osm_watch: way id="203884042" version="28"
-#: last_checked: 2026-11-13 vvv
+#: last_checked: 2026-11-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -1897,7 +1897,7 @@ alter Asphalt, schmal	RW1; 13434,13234 13481,13128 13530,13014 13579,12904 13622
 #: osm_watch: way id="4615746" version="61"
 #: osm_watch: way id="1082929723" version="18"
 #: source_id: 2147346157 (bis 19.10.2020) (inaktiv)
-#: last_checked: 2026-11-13 vvv
+#: last_checked: 2026-11-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2027-12-23 (VIZ-Verkehrsmeldung) vvv
@@ -8679,11 +8679,12 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: by: https://www.entwicklungsstadt.de/hainwerk-in-friedrichshain-erreicht-volle-hoehe-erste-fassade-sichtbar/
 #: by: https://hamburgteam.de/presse/hamburg-team-und-henderson-park-vermieten-hainwerk-langfristig-an-jetbrains-2/ (Gesamtfertigstellung Frühjahr 2028)
 #: osm_watch: way id="278197510" version="12"
+#: osm_watch: note 4470518 1
 #: source_id: planb2026:13.4506301,52.50921422,10.02.2026,11:00 ("Vollsperrung beider Fahrbahnen", Gubener+Revaler, bis 22.10.2026) (inaktiv) (bis 30.04.2028)
 #: source_id: planb2026:13.4508501,52.50859501,06.11.2026, ("Fahrstreifen-Reduzierung", Warschauer Str., bis 30.04.2028)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-11-20
+#: last_checked: 2026-11-21
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -9376,7 +9377,7 @@ außerdem Teil einer Fahrradstraße	RW4;RW4 10713,9260 10749,9342
 	RW6;RW6 7518,19762 7578,19753 7617,19748
 Tempo 10	RW6;RW6 11039,21632 10761,21535 10126,21314
 	RW7;RW7 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
-	RW7;RW7 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
+	RW7;RW7 12891,12549 13023,12526 13177,12503 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
 	RW7;RW7 13761,12578 13991,12522 14091,12494 14133,12482 14266,12446 14451,12396 14538,12371 14748,12314 15003,12241 15104,12216
 	RW3;RW3 18596,4517 18434,4363 18374,4307
 	RW6;RW6 -8061,4274 -8123,4273 -8143,4244 -8064,4190 -8033,4231 -8009,4266 -8046,4292

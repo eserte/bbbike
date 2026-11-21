@@ -3245,7 +3245,7 @@ Thomasstr.: wird die Straße zur Fahrradstraße?	? 12185,7381 12216,7388 12368,742
 #: by: https://www.infravelo.de/projekt/weserstrasse-bauabschnitt-1/ (2. Quartal 2021 - 2. Quartal 2022) (mittlerweile 2. Quartal 2021 - 3. Quartal 2022) (2. Quartal 2021 - 4. Quartal 2022) ("abgeschlossen")
 #: by: https://www.infravelo.de/projekt/weserstrasse-bauabschnitt-2/ (zwischen Fulda- und Innstr.) (2. Quartal 2022 - 1. Quartal 2023) (mittlerweile gelöscht) (wieder da, nun bis 2. Quartal 2023) (mittlerweile 3. Quartal 2022 - 2. Quartal 2023) (mittlerweile 1. Quartal 2023 - 2. Quartal 2023) (2. Quartal 2023 - 2. Quartal 2023) (2. Quartal 2023 - 2. Quartal 2024) (3. Quartal 2023 - 3. Quartal 2024) (3. Quartal 2023 - 4. Quartal 2024)
 #: by[removed]: https://www.infravelo.de/projekt/weserstrasse-und-ederstrasse/ (hier wird auch die Ederstr. erwähnt, außerdem: modale Filter, 2. Quartal 2021 - 4. Quartal 2022) (mittlerweile Ende: 1. Quartal 2024) (mittlerweile gelöscht und durch drei Teilprojekte ersetzt, siehe unten) (1. Quartal 2025 - 4. Quartal 2025) (mittlerweile 2. Quartal 2024 - 1. Quartal 2025)
-#: by: https://www.infravelo.de/projekt/weserstrasse-und-ederstrasse-bauabschnitt-3/ (1. Quartal 2027 - 4. Quartal 2027) (mittlerweile "degradiert" von "in Bau" zu "in Planung") (2. Quartal 2026 - 2. Quartal 2027) (3. Quartal 2026 - 3. Quartal 2027) (4. Quartal 2026 - 3. Quartal 2027)
+#: by: https://www.infravelo.de/projekt/weserstrasse-und-ederstrasse-bauabschnitt-3/ (1. Quartal 2027 - 4. Quartal 2027) (mittlerweile "degradiert" von "in Bau" zu "in Planung") (2. Quartal 2026 - 2. Quartal 2027) (3. Quartal 2026 - 3. Quartal 2027) (4. Quartal 2026 - 3. Quartal 2027) (4. Quartal 2026 - 4. Quartal 2027)
 #: by: https://www.kms-sonne.de/assets/2020/06/Karlson_Ausgabe7_2020_web.pdf (Diagonalstr. an Weichsel- und Roseggerstr. geplant)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1100616.php (zwischen Pannierstraße und Fuldastraße bis Ende 2021)
 #: by: https://www.kms-sonne.de/assets/2021/06/Die-Weserstrasse-wird-zur-Fahrradstrasse_210610-web.pdf
@@ -3279,14 +3279,14 @@ Thomasstr.: wird die Straße zur Fahrradstraße?	? 12185,7381 12216,7388 12368,742
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED --- #: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr. --- #: last_checked: 2022-12-04 --- #: next_check: 2022-12-10 --- Weserstr./Weichselstr.: Modalfilter geplant	?::projected 12590,8977 12740,8862
 # REMOVED (hier fertig) --- #: osm_watch: way id="36738527" version="47"
+# REMOVED (wurde realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493
 #: osm_watch: way id="36738531" version="37"
 #: osm_watch: way id="881155244" version="16"
 #: last_checked: 2026-11-14
 #: check_frequency: 90d
 #: next_check: 2027-05-02 (planb: Ende der Bauarbeiten)
-# REMOVED --- #: next_check: 2027-09-30 (infravelo)
-# REMOVED (hier in Realisierung, andere fragezeichen-Einträge existieren) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493
-Weserstr. (Neukölln): Planung einer Fahrradstraße; Asphaltierung	?::projected 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
+# MAYBE_ACTIVATE_LATER --- #: next_check: 2027-12-31 (infravelo)
+Weserstr. (Neukölln): Planung einer Fahrradstraße; Asphaltierung	?::inwork 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
 #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (3. Bauabschnitt (Innstr. - Ederstr.): bis Ende 2025) (mittlerweile voraussichtlich bis 2027)
 #: by: https://www.berlin.de/ba-neukoelln/_assets/dokumente/abteilung-bauen/praesentation-5-mobilitaetsrat.pdf
 #: osm_watch: way id="839040274" version="9"
@@ -4552,7 +4552,7 @@ Wundtstr./Horstweg: "Qualifizierung" des Stadtplatzes; wird sich etwas für Radfa
 # REMOVED (ja) --- Rigaer Str.: hängen hier auch Vorfahrtsschilder?	? 13991,12522 14091,12494 14133,12482
 # REMOVED --- #: last_checked: 2021-11-28 vvv --- #: check_frequency: 7d vvv --- #: next_check: 2021-12-31 vvv
 # REMOVED (realisiert) --- Palisadenstr.: Ausbau zur Fahrradstraße	? 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
-# REMOVED (realisiert) --- Weidenweg: Ausbau zur Fahrradstraße	? 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
+# REMOVED (realisiert) --- Weidenweg: Ausbau zur Fahrradstraße	? 12891,12549 13023,12526 13177,12503 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
 # REMOVED (realisiert) --- Rigaer Str.: Ausbau zur Fahrradstraße	?::projected 13761,12578 13991,12522
 # REMOVED (realisiert) --- Rigaer Str.: Ausbau zur Fahrradstraße	?::projected 14133,12482 14266,12446 14451,12396
 # REMOVED (realisiert) --- #: osm_watch: way id="881927662" version="3" --- Rigaer Str.: Ausbau zur Fahrradstraße	?::inwork 14451,12396 14538,12371 14748,12314 15003,12241 15104,12216
@@ -5331,6 +5331,35 @@ Allee der Kosmonauten: Radwege zwischen Elisabethstr. und Landsberger Allee gepl
 #: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article412137418/verkehrsloesung-mahlsdorf-cdu-lenkt-ein-tram-ausbau-kommt.html
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/oeffentlicher-personennahverkehr/projekte-in-umsetzung/ortskern-mahlsdorf/
 #: by: https://www.nd-aktuell.de/artikel/1202610.bvg-berlin-mahlsdorf-zweigleisige-tram-kann-kommen.html
+#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=ab0867f6-c209-4cd9-be0e-0593f9fc408c
+#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/ab0867f6-c209-4cd9-be0e-0593f9fc408c/2024-0139_PU_TramMahlsdorf_Nov2026%2FU05_Lageplan_01.pdf
+#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/ab0867f6-c209-4cd9-be0e-0593f9fc408c/2024-0139_PU_TramMahlsdorf_Nov2026%2FU05_Lageplan_02.pdf
+#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/ab0867f6-c209-4cd9-be0e-0593f9fc408c/2024-0139_PU_TramMahlsdorf_Nov2026%2FU05_Lageplan_03.pdf
+#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/ab0867f6-c209-4cd9-be0e-0593f9fc408c/2024-0139_PU_TramMahlsdorf_Nov2026%2FU05_Lageplan_04.pdf
+#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/ab0867f6-c209-4cd9-be0e-0593f9fc408c/2024-0139_PU_TramMahlsdorf_Nov2026%2FU05_Lageplan_05.pdf
+#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/ab0867f6-c209-4cd9-be0e-0593f9fc408c/2024-0139_PU_TramMahlsdorf_Nov2026%2FU05_Lageplan_06.pdf
+#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/ab0867f6-c209-4cd9-be0e-0593f9fc408c/2024-0139_PU_TramMahlsdorf_Nov2026%2FU05_Lageplan_07.pdf
+#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/ab0867f6-c209-4cd9-be0e-0593f9fc408c/2024-0139_PU_TramMahlsdorf_Nov2026%2FU05_Lageplan_08.pdf
+#: by: https://www.uvp-verbund.de/documents-ige-ng/igc_be/ab0867f6-c209-4cd9-be0e-0593f9fc408c/2024-0139_PU_TramMahlsdorf_Nov2026%2FU14_RQ_A09_20260821.pdf
+#: XXX In den Planfeststellungsunterlagen:
+#: XXX - Radspuren beidseitig 1,85m breit, unterbrochen durch Bushaltestellen, verendet/beginnt vor der Wodanstr.
+#: XXX - ein kurzer Zweirichtungsradweg auf der östlichen Seite für den Weg von der Menzelstr. zur Fußgängerampel
+#: XXX - neue Ampel Treskowstr.
+#: XXX - neue Ampel Fritz-Reuter-Str.
+#: XXX - neue Ampel Pestalozzistr.
+#: XXX - die Pestalozzistr. bekommt anscheinend Hochbordradwege (2m breit)
+#: XXX - südlich Pestalozzistr. Kaphaltestelle Richtung Süden
+#: XXX - evtl. Signalisierung für linksabbiegende Radfahrer in den Wilhelmsmühlenweg, oder nur eine Haltebucht?
+#: XXX - südlich Zuwegung zu An der Schule Kaphaltestelle Richtung Norden
+#: XXX - Radwegführung Richtung Norden zwischen Haltestelle Alt-Mahlsdorf bis zu dieser Kaphaltestelle auf dem Hochbord, gemeinsame Führung mit dem Fußverkehr (Gehbahn, Radfahrer frei; siehe RQ_A09)
+#: XXX - Kaphaltestelle nördlich Alt-Mahlsdorf, beide Richtungen
+#: XXX - Hultschiner Damm: Richtung Süden mit Radspur, Richtung Norden auf dem Hochbord
+#: XXX - Anschluss an die neu zu bauende Straße An Der Schule; Radfahrer Richtung Norden müssen zum Hultschiner Damm links abbiegen
+#: XXX - im weiteren Verlauf nur noch Hochbord, beide Richtungen
+#: XXX - eine "Zuwegung Parkanlage" ist eingezeichnet (mit Zebrastreifen an dieser Stelle über beide Radwege), nur 20m nördlich der Zuwegung Rohrpfuhlgraben (könnte der existierende sein)
+#: XXX - ein kurzer Zweirichtungsradweg auf der westlichen Seite als Verbindung zur Rosa-Valetti-Str.
+#: XXX - vor der Rahnsdorfer Seite wird der Radverkehr nach Süden auf die gegenüberliegende Seite geführt, so dass man zwei Ampeln überqueren muss
+#: XXX - die Straßenbahn fährt nicht mehr in die Treskowstr., die Wendeschleife entfällt, die Einbahnstraßenregelung ebenso
 #: last_checked: 2026-10-20 (mapillary)
 #: check_frequency: 720d
 #: next_check: 2030-12-31 (entwicklungsstadt)
@@ -6620,7 +6649,7 @@ Kaninchenberg (Potsdam): befindet sich die Straße hier? Qualität?	? -8960,-5817 
 #: XXX_prog: wäre gut, wenn die Verlustzeit der versetzt arbeitenden Fußgängerampel hier einfließen könnte
 #: XXX_indoor von der Gubener Str. aus muss man ein kleines bisschen nach links fahren
 #: XXX_indoor halbhoher BS am Weidenweg, allerdings ist die Stelle üblicherweise zugeparkt, wobei ein paar Meter weiter nach Osten eine Absenkung ist
-Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13171,12315 13175,12362 13163,12382 13176,12500
+Gubener Str. - Weidenweg: Gehwegplatten, Fußgänger	? 13171,12315 13175,12362 13163,12382 13177,12503
 # 
 # REMOVED --- #: by: http://www.potsdam.de/cms/dokumente/10976370_1771576/2496339f/ENDFASSUNG.%20PdmStadt%2007_13.pdf --- #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf (Verlängerung?) --- #: XXX eventuell werden die beiden Abschnitte verbunden? --- Dieselstr. (Potsdam): diese Straße wird "neu gewidmet", existiert schon etwas? Qualität?	? -10350,-2358 -10258,-2380 -10273,-2445
 # 
@@ -9065,7 +9094,7 @@ Sachsendamm/Torgauer Str.: entsteht hier eine Überquerungsmöglichkeit mit Ampel?
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/mobilitaetswende/artikel.1496465.php
 #: by: https://www.tagesspiegel.de/berlin/bezirke/weniger-autos-im-kiez-am-berliner-ostkreuz-bezirksamt-errichtet-einbahnstrassen-und-baut-sperren-13228276.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1596791.php
-#: last_checked: 2026-11-12 vvv
+#: last_checked: 2026-11-21 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="563341820" version="24"
 #: note: zwischenzeitlich gar keine Einbahnstraßenregelung
@@ -9778,7 +9807,7 @@ Friedenstr.: Umbau der RVA (Protektion), Mittelinsel am Knick Platz der Vereinte
 #: by: https://www.entwicklungsstadt.de/fahrradstrasse-rigaer-strasse-einbahnstrassen-sollen-autoverkehr-reduzieren/
 #: by: https://www.entwicklungsstadt.de/neue-regeln-in-der-rigaer-strasse-was-autofahrer-jetzt-wissen-muessen/
 #: priority: #D
-#: last_checked: 2026-11-12 vvv
+#: last_checked: 2026-11-21 vvv
 #: check_frequency: 10d vvv
 # REMOVED --- #: next_check: 2026-10-16 (erste Einbahnstraßenabschnitte bereits realisiert) vvv
 # REMOVED (hier bereits realisiert) --- Rigaer Str.: Einbahnstraßenregelungen für den Autoverkehr	? 13761,12578 13991,12522
@@ -10360,6 +10389,7 @@ Schmollerplatz: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 1320
 Württembergische Str.: mögliche Einschränkungen durch den Thaimarkt?	? 4374,9409 4381,9620
 # 
 #: source_id: planb2026:13.34632036,52.4825757,23.11.2026, ("Vollsperrung beider Fahrbahnen", bis 30.03.2027)
+#: also_indoor: traffic (none)
 #: last_checked: 2026-11-20
 #: next_check: 2026-11-23 (planb)
 Fritz-Elsas-Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 6575,8469 6458,8472
@@ -10367,7 +10397,7 @@ Fritz-Elsas-Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 65
 #: source_id: planb2026:13.50060426,52.51812331,16.11.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 22.12.2026)
 #: also_indoor: traffic (none)
 #: note: Keine Halteverbotsschilder am 15.11.2026 vorbereitet
-#: last_checked: 2026-11-20  (traffic)
+#: last_checked: 2026-11-20 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-11-16 (planb)
 Gotlindestr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 16859,12613 16957,12599
@@ -10380,6 +10410,7 @@ Gotlindestr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 16859,
 Waldsteg: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 8364,19166 8337,19160 8277,19210 8166,19308 7940,19521
 # 
 #: source_id: planb2026:13.37358011,52.48770226,23.11.2026, ("Vollsperrung beider Fahrbahnen", bis 15.01.2027)
+#: also_indoor: traffic (none)
 #: XXX Sackgassenschilder bereits vorbereitet
 #: last_checked: 2026-11-20
 #: next_check: 2026-11-23 (planb)
@@ -10394,7 +10425,7 @@ Charlottenstr. (Köpenick): geplante Einbahnstraßenregelung, wird der Radverkehr 
 #: next_check: 2026-11-30 (planb)
 Gritznerstr. (mittlerer Abschnitt): geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 4555,6403 4630,6534
 # 
-#: also_indoor: traffic (no-G,T[later],no-H,no-W)
+#: also_indoor: traffic (no-G,ex-T[later],no-H,no-W)
 #: note: nur ein kurzer Abschnitt ist gesperrt
 #: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026) (inaktiv) (bis 08.01.2027)
 #: source_id: planb2026:13.38976332,52.5093633,26.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (siehe oben, vorfristig inaktiv)
@@ -10422,6 +10453,7 @@ Muthesiusstr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 4772,
 Paplitzer Str.: Kopfsteinpflaster wird abgeschliffen	? 10735,-3142 10769,-3064 10783,-3033 10831,-2919 10884,-2795 10900,-2756 10927,-2687 10949,-2635
 # 
 #: source_id: planb2026:13.43088816,52.54053279,23.11.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 02.01.2027)
+#: also_indoor: traffic (none)
 #: next_check: 2026-11-23 (planb)
 Ella-Kay-Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 12173,15040 12095,14888
 # 
@@ -13582,7 +13614,7 @@ Bebauungsplan 6-40 VE: wird hier der Park verkleinert?	? -2064,2244 -1997,2095 -
 #: osm_watch: way id="668307419" version="3"
 # REMOVED --- #: osm_watch: way id="1120450475" version="6"
 #: priority: #D
-#: last_checked: 2026-09-12
+#: last_checked: 2026-11-21
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-06-30 (Hochbau-Website + 3mo)
 Grünanlage neben dem Berghain: wann wird es hier eine benutzbare Grünfläche geben?	? 13015,11806 12971,11763 12998,11730 13037,11769 13015,11806

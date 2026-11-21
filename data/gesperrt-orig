@@ -3125,7 +3125,7 @@ tragen (31 Stufen) oder Aufzug (Storkower Str.)	0:30 14530,13269
 tragen (41 Stufen) oder Aufzug (Storkower Str.)	0:40 14481,13143
 tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35 14383,10036
 #: note: die beiden Stufengruppen sind so weit entfernt, dass ein Aufsitzen nicht lohnt
-tragen (1+3 Stufen)	0:30 13232,12628
+tragen (1+3 Stufen)	0:30 13228,12632
 tragen (34 Stufen)	0:40 14763,10987
 tragen (33 Stufen)	0:40 14738,10892
 tragen oder Aufzug benutzen	0:40 14839,10856
@@ -4179,7 +4179,7 @@ Landsberger Allee [Nebenfahrbahn]: wegen Tiefbauarbeiten gesperrt	2::inwork 1752
 #: source_id: planb2026:13.4389493,52.51163164,20.04.2026,06:00 ("Fahrstreifen-Verschwenkung", bis 31.03.2028)
 #: source_id: planb2026:13.4421069,52.5107065,24.08.2026,10:30 ("Fahrbahneinengung", bis 30.09.2026) (inaktiv)
 #: note: Manchmal kann es zu Sperrung der Fahrbahn kommen, wie z.B. am 2024-05-07 im nördlichen Strang, vermutlich für eine Kranaufstellung.
-#: last_checked: 2026-10-10 vvv
+#: last_checked: 2026-11-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2028-03-31 (entwicklungsstadt, planb) vvv
 #: osm_watch: way id="1054783030" version="11"
@@ -4365,8 +4365,8 @@ Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 #: next_check_id: PETERSBURGER-2024
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/petersburger-strasse/ (Querungsmöglichkeit Straßmannstr. bis Mitte November 2026 gesperrt)
 #: osm_watch: way id="182614432" version="30"
-#: last_checked: 2026-11-15 (osm) vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2026-11-21 vvv
+#: check_frequency: 10d vvv
 # REMOVED ---  #: next_check: 2026-11-15 (SenUVK-Seite zur Straßmannstr.) vvv
 Petersburger Str.: Überquerung in Höhe Straßmannstr. nicht möglich	3nocross::inwork 13481,13128 13530,13014 13579,12904
 Petersburger Str.: Überquerung in Höhe Kochhannstr. nicht möglich	3nocross::inwork 13481,13128 13434,13234 13383,13349
@@ -4435,15 +4435,16 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 #: by: https://www.entwicklungsstadt.de/heinrich-hertz-gymnasium-am-ostbahnhof-ist-fertig-doch-fragen-bleiben-offen/ (Umzug der Schule nach den Winterferien 2026/2027 (? gemeint vermutlich 2027?); also 08.02.2027?)
 #: osm_watch: way id="1054730129" version="9"
 #: osm_watch: way id="295548381" version="9"
+#: osm_watch: note 5642747 1
 #: source_id: planb2026:13.43684271,52.51255043,02.03.2026,06:00 ("Gehwegvollsperrung", bis 31.03.2027)
 #: source_id: planb2026:13.43631736,52.51181578,17.08.2026,08:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv) (bis 28.08.2026) (inaktiv)
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
 #: historical_note: am Anfang der Bauarbeiten war der Gehwegbereich schmaler: schmaler Gehweg, Fußgänger, Bordstein, q4+::inwork
-#: last_checked: 2026-09-24 (architektur-urbanistik)
+#: last_checked: 2026-11-21
 #: check_frequency: 60d
 #: next_check: 2027-03-31 (entwicklungsstadt, planb)
 # REMOVED --- Müncheberger Str.: Gehweg, Fußgänger, Bordstein	q3::inwork 12558,11920 12617,11888
-Müncheberger Str.: Gehweg und Fahrbahn gesperrt	2::inwork 12558,11920 12617,11888
+Müncheberger Str.: Gehweg gesperrt, Fahrbahn existiert nicht mehr	2::inwork 12558,11920 12617,11888
 # 
 #: next_check_id: NORDHAFENBRUECKE-2026
 #: osm_watch: way id="1495906089" version="1"
@@ -4523,6 +4524,7 @@ Alt-Pichelsdorf: Einbahnstraßenregelung während der Bauarbeiten	1s:q4 -3445,1150
 Schlesischer Busch - Bouchéstr.: Sperrung wegen Hochbauarbeiten	2::inwork 13513,9871 13704,9691
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~22-09-2025-b1-spatenstich-altsaedtischer-bahnhof (Freigabe 2028?)
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~20-11-2026-bim-konferenzraum (Gesamtverzeichnis bis 2029)
 #: source_id: LS/223-P/25/102 (bis 21.11.2025) (bis 14.01.2026) (inaktiv)
 #: source_id: LS/223-P/26/004 (bis 31.08.2028)
 #: osm_watch: way id="1445713753" version="3"
@@ -5160,7 +5162,7 @@ U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 # REMOVED --- #: next_check: 2027-06-30
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
-# REMOVED (offen) --- #: next_check_id: AUERDREIECK-2022 --- #: last_checked: 2023-10-08 --- #: check_frequency: 7d --- #: next_check: 2023-10-31 --- Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
+# REMOVED (offen) --- #: next_check_id: AUERDREIECK-2022 --- #: last_checked: 2023-10-08 --- #: check_frequency: 7d --- #: next_check: 2023-10-31 --- Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13228,12632 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selbst überlassen
 #: osm_watch: note 3250345 4
@@ -5203,7 +5205,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: source_id: planb2026:13.43551948,52.50901002,01.04.2026, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
-#: last_checked: 2026-10-10
+#: last_checked: 2026-11-21
 #: check_frequency: 60d
 #: next_check: 2026-12-31 (Tsp, planb)
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -5899,6 +5901,16 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: last_checked ^^^
 #: XXX ^^^
 # 
+# REMOVED --- #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
+# REMOVED --- #: last_checked: 2025-10-31 (webcam)
+# REMOVED --- #: check_frequency: 360d
+# REMOVED --- Pariser Platz: Durchfahrt gesperrt an der französischen Botschaft	3 * 8673,12315 *
+# 
+#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin/berlin-hotel-adlon-3385
+#: last_checked: 2026-11-12 (webcam)
+#: check_frequency: 360d
+Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
+# 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
@@ -5917,15 +5929,16 @@ Europaplatz: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2::inwork 8102,
 #: by: https://unternehmen.vbb.de/presse/bahnhof-fangschleuse-eingeweiht/ (offizielle Einweihung am 11.9.2026)
 #: by: https://www.youtube.com/watch?v=1Bw_OhoFu9Y
 #: by: https://www.entwicklungsstadt.de/bahnhof-fangschleuse-eroeffnet-mehr-kapazitaet-fuer-den-re1/
+#: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~18-11-2026-verkehrsfreigabe-strassenueberfuehrung-am-ehemaligen-bahnhof-fangschleuse (Freigabe am 30. November 2026, möglicherweise erst einmal ohne Radweg)
 #: url: https://www.youtube.com/@vinziger1974/videos
 # REMOVED --- #: XXX Wurde der Bahnübergang bereits für den Fußgänger- und Radverkehr gesperrt?
 # REMOVED --- #: osm_watch: way id="860486098" version="7"
-#: osm_watch: way id="1367158749" version="10"
+#: osm_watch: way id="1367158749" version="11" brb
 #: osm_watch[closed]: note 5026614 2
 #: osm_watch[closed]: note 4699893 3
 #: last_checked: 2026-11-14 (youtube)
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2026-08-16 (Verschiebung der Eröffnung)
+#: next_check: 2026-11-30 (ls.brandenburg: Freigabe)
 Bahnhof Fangschleuse: Bahnübergang wird durch eine Überführung ersetzt	2::inwork 39265,180 39244,292 39213,374 39284,437 39339,627 39281,799 39265,846
 # 
 # REMOVED (aus landstrassen-orig entfernt) --- #: next_check_id: MAHLOWUNTERFUEHRUNG-2023 --- #: next_check: 2023-12-31 --- Trebbiner Straße (Mahlow): Bahnübergang gesperrt, neue Unterführung wird gebaut	2::inwork 11065,-5338 11077,-5335 11119,-5326
@@ -5948,16 +5961,6 @@ Bahnhof Fangschleuse: Bahnübergang wird durch eine Überführung ersetzt	2::inwork
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12708,-1445 -12628,-1423
 # 
 # REMOVED --- #: next_check_id: AMALTENMARKT-2018 --- #: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz --- #: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf --- #: XXX hier wird eine neue "Schloßstr." entstehen --- bei osm "Anna-Zielenziger-Str."; bei osm mittlerweile offen --- #: osm_watch: way id="760022943" version="19" brb --- #: last_checked: 2024-07-24 (osm) --- #: check_frequency: 60d --- Alter Markt (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12790,-1560 -12780,-1558 -12719,-1542
-# 
-# REMOVED --- #: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin-hotel-adlon.html
-# REMOVED --- #: last_checked: 2025-10-31 (webcam)
-# REMOVED --- #: check_frequency: 360d
-# REMOVED --- Pariser Platz: Durchfahrt gesperrt an der französischen Botschaft	3 * 8673,12315 *
-# 
-#: also_indoor: webcam https://www.feratel.com/en/webcams/germany/berlin/berlin-hotel-adlon-3385
-#: last_checked: 2026-11-12 (webcam)
-#: check_frequency: 360d
-Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208 8705,12217
 # 
 # REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652 -12755,-1585 -12790,-1560
 # REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12812,-1490
