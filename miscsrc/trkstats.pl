@@ -4,12 +4,11 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2020,2026 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -33,12 +32,24 @@ my $BBBIKEDIR = realpath "$FindBin::RealBin/..";
 GetOptions(
 	   "destdir=s" => \my $destdir,
 	   "q|quiet"   => \my $quiet,
+	   "force-update!" => \my $force_update,
 	   "filter-vehicle=s" => \my $filter_vehicle,
+	   'inject-plugin=s@' => \my @inject_plugins,
 	  )
-    or die "usage: $0 [--quiet] --destdir directory trkfile ...\n";
+    or die qq{usage: $0 [--quiet] [--force-update] [--filter-vehicle ...] [--inject-plugin "/path/to/plugin Package::function"] --destdir directory trkfile ...\n};
 
 if (!$destdir) {
     die "Please specify --destdir for generated stats files.\n";
+}
+
+my @inject_functions;
+for my $inject_plugin (@inject_plugins) {
+    my($file, $function) = split /\s+/, $inject_plugin, 2;
+    require $file;
+    if (!defined &$function) {
+	die "$file did not provide function $function";
+    }
+    push @inject_functions, \&$function;
 }
 
 my $areas = MultiStrassen->new("$BBBIKEDIR/data/berlin_ortsteile", "$BBBIKEDIR/data/potsdam");
@@ -46,7 +57,7 @@ my $places = MultiStrassen->new("$BBBIKEDIR/data/orte", "$BBBIKEDIR/data/orte2")
 
 for my $f (@ARGV) {
     my $dest = "$destdir/" . basename($f) . '.yml';
-    next if -s $dest && -M $dest < -M $f;
+    next if !$force_update && (-s $dest && -M $dest < -M $f);
     unless ($quiet) { warn "$dest\n" }
     my $g = GPS::GpsmanData::Any->load($f);
     my $s = GPS::GpsmanData::Stats->new($g, areas => $areas, places => $places);
@@ -58,6 +69,9 @@ for my $f (@ARGV) {
     my $dump = $s->human_readable;
     if ($filter_vehicle) {
 	$dump = filter_vehicle($dump);
+    }
+    for my $inject_function (@inject_functions) {
+	$inject_function->($dump, $f);
     }
     DumpFile "$dest~", $dump;
     rename "$dest~", $dest
