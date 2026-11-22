@@ -100,6 +100,9 @@ sub filter_vehicle {
 	$new_dump->{per_vehicle_stats}->{bike} = $dump->{per_vehicle_stats}->{bike};
 	$new_dump->{per_vehicle_stats}->{bike}->{max_datetime} = $max_datetime;
 	$new_dump->{per_vehicle_stats}->{bike}->{min_datetime} = $min_datetime;
+	$new_dump->{max_datetime} = $max_datetime;
+	$new_dump->{min_datetime} = $min_datetime;
+	$new_dump->{dist} = $new_dump->{per_vehicle_stats}->{bike}->{dist};
 	# XXX vvv should also be filtered!
 	$new_dump->{route} = $dump->{route};
 	$new_dump->{route_areas} = $dump->{route_areas};
