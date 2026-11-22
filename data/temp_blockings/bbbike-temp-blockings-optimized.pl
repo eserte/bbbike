@@ -8117,7 +8117,7 @@ Merler Weg	q4::inwork 18987,13248 19027,13242 19180,13219
          'data' => '#: next_check_id: GUTENBERG-2025
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2025_39_2469_2528_online.pdf (Grundstücksnummerierung)
-#: also_indoor: traffic (G,no-T)
+#: also_indoor: traffic (ex-G,no-T)
 #: source_id: planb2026:13.33010553,52.51739967,02.06.2025,07:00 ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
 #: XXX Sperrung/Einbahnstraßenregelung im Zusammenhang mit der angrenzenden Hochbaustelle
 #: last_checked: 2026-09-02 vvv
@@ -10898,7 +10898,7 @@ Klausdorf - Zossen (Thomas-Müntzer-Straße): Sperrung des Bahnübergangs	2::inwork
 #: note: der Bürgersteig ist nicht nur eng, sondern teilweise auch unangenehm zu fahren: Charlottenburger Platten, gepflasterte Ausfahrten, unzureichende abgesenkte Bordsteine
 #: traffic_note: Etwas Ausweichverkehr via Engeldamm - illegale Überfahrt zum Mariannenplatz - Wrangelstr., evtl. wird es mit der Zeit mehr werden.
 #: source_id: LMS-BR:420723/72 viz2021:13.42828,52.50735,31.08.2026,04:00 vizapi2026:853/2026 (bis 26.10.2026) (bis 21.12.2026)
-#: last_checked: 2026-11-20 vvv
+#: last_checked: 2026-11-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung) vvv
 Köpenicker Str.: getrennter Rad- und Gehweg	q2::inwork; 12124,11280 12314,11152 12416,11084 12509,11025 12521,11016 12532,11008 12683,10896 12879,10750 12985,10665
@@ -11132,7 +11132,7 @@ Kreuzungsbereich Ellwanger Str./Biberacher Weg	q3::inwork 7324,4582 7382,4503 74
 #: also_indoor: traffic (no-G[korrekt],T[fälschlicherweise],H[fälschlicherweise],W[later,fälschlicherweise])
 #: add_fragezeichen: Ist die Rönnestr. mittlerweile gesperrt?
 #: last_checked: 2026-11-07
-#: check_frequency: 14d
+#: check_frequency: 14d (outdoor!)
 	q4::inwork 3041,10732 2774,10663 2698,10645 2673,10670
 ',
          'from' => 1790460000,
@@ -12054,7 +12054,8 @@ Am Comeniusplatz/Gubener Str.: Bauarbeiten, Sperrung im Einmündungsbereich	q3::i
        {
          'data' => '#: also_indoor: traffic (no-G,T,no-H,no-W)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
-#: last_checked: 2026-11-14 (mapillary)
+#: last_checked: 2026-11-22
+#: next_check: 2026-12-11 (Halteverbotsschilder)
 	q4::inwork; 13190,9750 13251,9829
 ',
          'from' => undef,
@@ -12195,7 +12196,7 @@ Joachim-Karnatz-Allee	q4::inwork 7077,12575 7139,12589
          'data' => '#: source_id: planb2026:13.46255915,52.51080594,02.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 02.04.2027)
 #: also_indoor: traffic (no-G,T,no-H,no-W)
 #: XXX Kranaufbau, evtl. kann man danach wieder passieren? -> sieht nicht so aus; evtl. zu q3- oder q4+ ändern
-#: last_checked: 2026-11-21
+#: last_checked: 2026-11-22
 #: check_frequency: 30d
 #: next_check: 2027-04-02
 	q4::inwork 14395,11753 14358,11656
