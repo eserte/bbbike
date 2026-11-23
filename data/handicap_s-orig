@@ -12,7 +12,7 @@
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_366164
-#: last_checked: 2026-11-21
+#: last_checked: 2026-11-23
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
 #: valid: -20261221
@@ -304,9 +304,13 @@ Mariendorfer Damm: Gehweg für Radfahrer frei, Engstellen	q2::inwork; 9621,3155 9
 # 
 #: next_check_id: ROEBLING-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mf4dnag3yg2z (nur Kfz-Verkehr, bis November 2026 geplant)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3n2xgjafs3k2u (Wasserrohrbruch)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261123
 #: also_indoor: traffic (G,T,H,W)
 #: source_id: LMS-BR:399339/72 viz2021:13.35937,52.4567,18.02.2026,07:00 vizapi2026:72/2026 (bis 13.11.2026) (bis 15.01.2027) (bis 31.12.2027)
 #: source_id: planb2026:13.36103702,52.45337263,18.02.2026, ("Sperrung einer Fahrtrichtung", bis 13.11.2026) (vorfristig inaktiv) (bis 25.01.2027)
+#: source_id: bvg2024:m76#HIM_FREETEXT_375536
+#: source_id: LMS-BR:429269/72 viz2021:13.35937,52.4567, vizapi2026:1278/2026 (Wasserrohrbruch, kein Enddatum)
 #: note: außerdem drei Fußgängerampeln mit Anforderung, nur für die Fahrbahn und damit für den Verkehr Richtung Norden relevant
 #: last_checked: 2026-11-12 (traffic)
 #: check_frequency: 120d
@@ -566,6 +570,17 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 # REMOVED --- #: note: keine große Einschränkung, Bordsteinabsenkungen existieren, Gehweg ist relativ breit --- #: last_checked: 2023-09-26 --- #: check_frequency: 14d --- Wallstr./Inselstr.: Bauarbeiten im Einmündungsbereich, einige Meter der Fahrbahn sind gesperrt	q1::inwork 10908,11908 11054,11992 11111,12027
 # REMOVED (Sperrung wurde aufgehoben) --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? --- #: also_indoor: traffic (B) --- #: last_checked: 2023-08-22 --- Krausenstr.: Hochbauarbeiten, Fahrbahn zwischen Friedrichstr. und Mauerstr. gesperrt	q4::inwork 9456,11513 9331,11497
 # 
+#: also_indoor: traffic (no-G,no-T,no-H,no-W)
+#: note: nur ein kurzer Abschnitt ist gesperrt
+#: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026) (inaktiv) (bis 08.01.2027)
+#: source_id: planb2026:13.38976332,52.5093633,26.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (siehe oben, vorfristig inaktiv)
+#: source_id: planb2026:13.38965765,52.50934715,23.11.2026, ("Vollsperrung beider Fahrbahnen", bis 18.12.2026)
+#: last_checked: 2026-11-23
+#: check_frequency: 14d
+#: next_check: 2026-12-18 (planb: Ende)
+Krausenstr.: Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
+# REMOVED (vorfristig frei gewesen) --- #: last_checked: 2026-10-27 --- #: check_frequency: 21d --- #: next_check: 2027-01-08 (planb) --- Krausenstr.: Bauarbeiten an der Friedrichstr., Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
+# 
 # REMOVED --- #: next_check_id: ROTESRATHAUS-2023
 # REMOVED --- #: also_indoor: webcam https://www.parkinn-berlin.de/en/panorama-terrace/
 # REMOVED --- #: note: Anrampung an der Spandauer Str. war am 2024-08-29 noch nicht da, am 2024-09-02 schon; 2025: 2025-06-28 war die Anrampung da
@@ -610,7 +625,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
 #: source_id: planb2026:13.38375056,52.51772337,26.11.2017, ("Fahrstreifen-Reduzierung", bis 30.04.2028)
-#: last_checked: 2026-10-27 vvv
+#: last_checked: 2026-11-23 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
@@ -749,7 +764,7 @@ Petriplatz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwo
 #: also_indoor: traffic
 #: source_id: planb2026:13.39082309,52.51741878,25.07.2023, ("Sicherung gemäß Vz.-plan", bis 31.12.2026)
 #: priority: #B vvv
-#: last_checked: 2026-11-16 vvv
+#: last_checked: 2026-11-23 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2026-12-31 (entwicklungsstadt, planb) vvv
 #: osm_watch: way id="153698394" version="19"

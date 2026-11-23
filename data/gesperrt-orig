@@ -4223,7 +4223,7 @@ Schwarzer Weg: wegen Bauarbeiten gesperrt	2::inwork 20582,-2678 20778,-2614
 # 
 #: next_check_id: GRUENANLAGEBERGHAIN-2026
 #: note: mit festen Zäunen gesperrt
-#: last_checked: 2026-11-19
+#: last_checked: 2026-11-23
 #: check_frequency: 90d
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): gesperrt	2::inwork 12944,11760 13052,11867
 # 
@@ -4376,7 +4376,7 @@ Petersburger Str.: Überquerung in Höhe Kochhannstr. nicht möglich	3nocross::inwo
 #: last_checked ^^^
 # 
 #: next_check_id: DUNCKERBRUECKE-2026
-#: last_checked: 2026-11-13
+#: last_checked: 2026-11-22 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2027-09-30 (mögliche Nutzung durch den Rad+Fußverkehr)
 Dunckerbrücke: Neubau	2::inwork 11689,15639 11654,15572
@@ -4597,7 +4597,7 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: osm_watch: way id="169067264" version="15"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
-#: last_checked: 2026-11-19 vvv
+#: last_checked: 2026-11-23 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt, MoPo) vvv
 Marx-Engels-Forum: Umbauarbeiten, Sperrungen	2::inwork 10300,12587 10363,12535 10405,12462 10416,12394
@@ -5043,7 +5043,7 @@ Ingeborg-Drewitz-Allee: wegen Bauarbeiten gesperrt	2::inwork 7542,12736 7541,127
 #: osm_watch: way id="1163350372" version="3"
 #: osm_watch: note 3644429 9
 #: source_id: planb2026:13.40104073,52.51246588,10.01.2022, (hier nur "Gehwegvollsperrung", bis 31.03.2028)
-#: last_checked: 2026-11-19
+#: last_checked: 2026-11-23
 #: check_frequency: 60d
 #: next_check: 2028-03-31 (planb)
 # REMOVED --- #: next_check: 2030-12-31 (bbr-bund website)
@@ -5506,7 +5506,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-in-berlin-bauplaene-millionenbudget-und-zeitplan-bis-2034/
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-in-berlin-534-mio-euro-fuer-planung-und-noch-keine-einzige-wohnung/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-11-16
+#: last_checked: 2026-11-23
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5515,7 +5515,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-11-16
+#: last_checked: 2026-11-23
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 
@@ -5933,7 +5933,7 @@ Pariser Platz: Sperrung vor der amerikanischen Botschaft	2 8641,12227 8643,12208
 #: url: https://www.youtube.com/@vinziger1974/videos
 # REMOVED --- #: XXX Wurde der Bahnübergang bereits für den Fußgänger- und Radverkehr gesperrt?
 # REMOVED --- #: osm_watch: way id="860486098" version="7"
-#: osm_watch: way id="1367158749" version="11" brb
+#: osm_watch: way id="1367158749" version="12" brb
 #: osm_watch[closed]: note 5026614 2
 #: osm_watch[closed]: note 4699893 3
 #: last_checked: 2026-11-14 (youtube)

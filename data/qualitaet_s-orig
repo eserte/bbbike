@@ -1133,7 +1133,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="30"
-#: last_checked: 2026-10-26 (mapillary)
+#: last_checked: 2026-11-22 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -10242,7 +10242,12 @@ Göschenplatz: Asphalt	Q0 5343,21250 5297,21243
 Göschenstr.: Kopfsteinpflaster und Asphalt	Q2+ 5297,21243 5015,21036
 Primusweg: Gehwegplatten	Q0- 5651,19953 5666,19926 5704,19902 5715,19888
 Primusweg: Asphalt	Q0- 5715,19888 5742,19840
-Tessenowstr.: Asphalt mit Schlaglöchern	Q1- 6141,19649 6033,19611 5929,19574 5823,19544 5730,19519 5700,19511
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1742655.php (Fahrbahninstandsetzung 23. bis 27. November 2026)
+#: source_id: planb2026:13.34062755,52.58246716,23.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 27.11.2026)
+#: XXX Nach den Bauarbeiten vermutlich keine Schlaglöcher + Q0
+#: next_check: 2026-11-27
+Tessenowstr.: Asphalt mit Schlaglöchern	Q1- 6141,19649 6033,19611 5929,19574
+Tessenowstr.: Asphalt mit Schlaglöchern	Q1- 5929,19574 5823,19544 5730,19519 5700,19511
 Tessenowstr.: Asphalt	Q0 5700,19511 5572,19478 5476,19450
 Sittestr.: Asphalt mit Schäden	Q2+ 5810,19244 5787,19326
 Sittestr.: Kleinsteinpflaster	Q2 5787,19326 5751,19443 5730,19519
@@ -12623,7 +12628,7 @@ Am Cleantech Business Park: Asphalt	Q0 19428,16692 19459,16767 19449,16797 19408
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_370275 (Umleitung ab 30.10.2026)
 #: source_id: vizapi2026:1158/2026 (Kraneinsatz 30.10.2026 bis 31.10.2026, hier: Sperrung für Kfz-Verkehr)
 #: XXX im Schatten der kleinen Baustelle an der Simon-Dach-Str. gab es Ausbesserungsarbeiten, so dass zwischen Warschauer Str. und Simon-Dach-Str. abschnittsweise neuer Asphalt aufgetragen wurden, im restlichen Abschnitt bis zur Gärtnerstr. sind die Schadstellen nur markiert
-#: last_checked: 2026-11-19
+#: last_checked: 2026-11-23
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2026-10-30 (planb + BVG: wird es auch für den Radverkehr eine Sperrung geben?)
 Grünberger Str.: etwas loser Asphalt	Q0-; 13352,12003 13515,11969 13696,11920 14006,11843 14127,11811 14272,11775
@@ -13828,6 +13833,7 @@ Bruno-Baum-Str.: Asphalt	Q0 19997,15122 19893,14947 19867,14886 19793,14728 1976
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/page-2#post-27248
 #: by: https://www.entwicklungsstadt.de/wohnungen-an-der-oderstrasse-neuer-baufortschritt-nahe-tempelhofer-feld/ (Fertigstellung: Februar 2027)
 #: by: https://www.entwicklungsstadt.de/richtfest-fuer-oder-so-waechst-das-wohnquartier-nahe-tempelhofer-feld/ (geplante Fertigstellung: März 2027)
+#: by: https://www.entwicklungsstadt.de/gold-fuer-die-mobilitaetsplanung-an-der-oderstrasse-in-neukoelln/ (Ersteinzug Frühjahr 2027)
 #: osm_watch: way id="933570857" version="6"
 #: XXX die Straße wird neu gemacht, wird evtl. nach den Hochbauarbeiten komplettiert
 #: last_checked: 2026-11-04

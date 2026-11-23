@@ -103,7 +103,7 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv) (bis 21.12.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026) (bis 21.12.2026)
-#: last_checked: 2026-11-21
+#: last_checked: 2026-11-23
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261221
@@ -260,7 +260,7 @@ Sellerstr./Nordhafenbrücke: provisorische Fußgängerampel	F::inwork 7733,14570
 # REMOVED --- Luisenplatz/Charlottenburger Ufer: provisorische Fußgängerampel	F::inwork 3291,12721
 # 
 #: next_check_id: BEHREN-2026
-#: last_checked: 2026-11-16
+#: last_checked: 2026-11-23
 #: next_check: 2027-01-12
 #: valid: -20270112
 Friedrichstr./Behrenstr.	X::inwork  9373,12197
@@ -613,14 +613,17 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 # 
 #: next_check_id: KIEFHOLZMOERIKE-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261123
 #: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 vizapi2026:528/2026 (bis 21.08.2026) (bis 30.10.2026) (bis 13.11.2026) (bis 25.11.2026)
 #: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv) (bis 30.10.2026) (inaktiv) (bis 18.02.2027)
+#: source_id: bvg2024:166#HIM_FREETEXT_375546 (Verlegung der Haltestelle Mosischstraße ab 24.11.2026)
+#: source_id: vizapi2026:1277/2026 (24.11.2026 bis 18.02.2027)
 #: note: siehe auch temp blocking-Eintrag
 #: last_checked: 2026-09-09
-#: next_check: 2026-11-25 (VIZ-Verkehrsmeldung)
+#: next_check: 2027-02-18 (VIZ-Verkehrsmeldung)
 # ACTIVATE_LATER --- #: next_check: 2027-02-18 (planb)
 #: valid: 20260601-20270218
-Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 16060,6850
+Kiefholzstr.: Gegenverkehrsregelung	X::inwork::alternating 15977,6942
 # 
 # REMOVED --- #: XXX Schnellerstraße (Niederschöneweide) in beiden Richtungen zwischen Rudower Straße und Köllnische Straße: Kabelschachtsanierung, Gegenverkehrsregelung durch Baustellenampel, vom 25.03.2024 11:00 bis 03.05.2024 17:00 --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1772165269927981192 --- #: by: https://pbs.twimg.com/media/GJSQEhiXwAAgVQE?format=jpg&name=large (außerdem Anbindung Rudower Str. (von Süden her) gesperrt) --- #: by[nocache]: https://twitter.com/VIZ_Berlin/status/1784806818113327427 --- #: by: https://pbs.twimg.com/media/GMGdMBjXMAAwCqG?format=jpg&name=large --- #: source_id: viz2021:13.526211,52.452649,25.03.2024,11:00 (bis 03.05.2024) (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.529,52.452235,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: source_id: viz2021:13.52392,52.45312,29.04.2024,07:00 (bis 24.05.2024) (inaktiv) --- #: next_check: 2024-05-24 --- #: valid: -20240524 --- Schnellerstr./Köllnische Str.: Gegenverkehrsregelung	X::inwork::alternating 18955,5320
 # REMOVED --- #: XXX Mariendorfer Weg/Gottlieb-Dunkel-Straße (Neukölln) in beiden Richtungen Höhe Eschersheimer Straße: Fernwärmeleitungsbau, Gegenverkehrsregelung mit Baustellenampel, Anbindung Eschersheimer Straße gesperrt, vom 06.03.2024 12:00 bis 25.10.2024 17:00 --- #: source_id: viz2021:13.422144,52.462586,06.03.2024,12:00 (bis 25.10.2024) (inaktiv) --- #: source_id: viz2021:13.424532,52.463603,13.03.2024,09:00 (Verschwenkung östlich dieser Stelle, bis 03.06.2024) (bis 15.07.2024) (bis 18.09.2024) (bis 16.10.2024) --- #: note: die Radwege in der Eschersheimer Str. sind nicht gesperrt (Stand Mitte März 2024) --- #: note: zum Carl-Weder-Park kommt man mit einem kleinen Umweg via westlicher Ampel --- #: also_indoor: traffic (ex-H,G,T,B,W) --- #: last_checked: 2024-08-31 (traffic) --- #: check_frequency: 60d --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2024-10-16 --- #: valid: -20241016 --- Mariendorfer Weg/Gottlieb-Dunkel-Str./Eschersheimer Str.: Gegenverkehrsregelung	X::inwork::alternating 11740,6338
@@ -949,7 +952,7 @@ Köpenicker Str./Irmastr.	F::inwork 21040,7872
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreianicmftuacupzy5xjktk6ung6ab3iawdmffdxn67m6xhvfmrapty (auch Sperrung des südlichen Maronensperlingwegs)
 # REMOVED --- #: note: laut Bushaltestellenaushang vermutlich erst ab 20.10.2026?
 #: note: Gilt nur auf der Fahrbahn, nicht auf dem Radweg Richtung Westen.
-#: last_checked: 2026-11-13 (mapillary) vvv
+#: last_checked: 2026-11-22 (mapillary) vvv
 #: next_check: 2026-12-11 (VIZ-Verkehrsmeldung) vvv
 #: valid: 20261020-20261211 vvv
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork::alternating 12672,20720
@@ -978,18 +981,23 @@ Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork::alternating 12723,2
 #: check_frequency: 120d
 Bahnhofstr./Briesingstr.: provisorische Ampel	?::inwork 10310,-2136
 # 
+#: next_check_id: TRAM21-2025
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25406.pdf (verkehrsrechtliche Anordnung bis Ende 2028)
+#: by: https://www.bund-berlin.de/service/presse/detail/news/unruehmliches-jubilaeum-ein-jahr-teileinstellung-der-tram-21/
+#: by: https://www.entwicklungsstadt.de/tram-21-in-berlin-seit-einem-jahr-unterbrochen-wann-endet-die-sperrung/
+#: source_id: planb2026:13.46625734,52.50861358,12.12.2025, ("geänderte Führung im Knotenpunkt", bis 31.12.2028)
+#: note: provisorische Fußgängerampel, außerdem Signalisierung für Autofahrer Richtung Südosten wegen möglicher rangierender Straßenbahnen
+#: note: Anforderungsampel
+#: last_checked: 2026-11-22
+#: check_frequency: 360d
+#: next_check: 2028-12-31 (planb)
+	F::inwork 14566,11594
+# 
 #: temporary ^^^
 #: section ^^^
 # 
 ################################################################################
 #: section: Ampeln und Bahnübergänge in Berlin vvv
-#: next_check_id: TRAM21-2025
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-25406.pdf (verkehrsrechtliche Anordnung bis Ende 2028)
-#: by: https://www.bund-berlin.de/service/presse/detail/news/unruehmliches-jubilaeum-ein-jahr-teileinstellung-der-tram-21/
-#: source_id: planb2026:13.46625734,52.50861358,12.12.2025, ("geänderte Führung im Knotenpunkt", bis 31.12.2028)
-#: note: provisorische Fußgängerampel, außerdem Signalisierung für Autofahrer Richtung Südosten wegen möglicher rangierender Straßenbahnen
-#: note: Anforderungsampel
-	F::inwork 14566,11594
 	X 9868,19023
 #: note: Anforderung
 	F 6776,5553
@@ -4366,7 +4374,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-11-16 vvv
+#: last_checked: 2026-11-23 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 4
@@ -4831,7 +4839,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by: https://bvv-pankow.berlin.de/pi-r/vo020_r.asp?VOLFDNR=7345 (Antrag)
 #: XXX Die provisorische Ampelanlage wird vielleicht in eine permanente umgebaut (bislang nur BVV-Beschluss) vvv
 #: osm_watch: note 4490020 3
-#: last_checked: 2026-11-14 (mapillary) vvv
+#: last_checked: 2026-11-22 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

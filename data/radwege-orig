@@ -1129,7 +1129,7 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 #: source_id: planb2026:13.41257309,52.54443858,28.07.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026) (vorfristig inaktiv) (bis 27.09.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.41257309,52.54443858,02.10.2026, ("Fahrstreifen-Reduzierung", bis 13.11.2026) (vorfristig inaktiv) (bis 27.11.2026)
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
-#: last_checked: 2026-11-14 (mapillary) vvv
+#: last_checked: 2026-11-22 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2026-11-27 (planb + VIZ-Verkehrsmeldung) vvv
 # # ACTIVATE_LATER --- Radspur, niedrige Protektion	RW4; 10925,15581 10917,15525 10902,15422
@@ -7414,7 +7414,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: by: https://www.entwicklungsstadt.de/bundestagsbueros-in-mitte-historische-fassade-nach-sanierung-wieder-sichtbar/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-10-31 (daf) vvv
+#: last_checked: 2026-11-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -8257,7 +8257,8 @@ im Bereich der Straßenbahnhaltestelle	RW1; 15626,13541 15653,13542 15724,13544
 	RW3; 8234,19936 8224,19977 8196,20096
 #: historical_note: früher (bis etwa Herbst 2026) Fahrradschleuse, mittlerweile Radspur am rechten Rand und getrennte Signalisierung zwischen Kfz-Rechtsabbiegern und dem Radverkehr
 	RW3; 9164,12172 9141,12320
-Fahrradschleuse	RW3; 9141,12320 9164,12172
+#: historical_note: früher (bis etwa Herbst 2026) Fahrradschleuse, mittlerweile Radspur am rechten Rand
+	RW3; 9141,12320 9164,12172
 # REMOVED (wieder aufgehoben?) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=3750&options=4 (von 2012) --- Tempo 10	RW6;RW6 16048,3378 16221,3248
 #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=5328&options=4
 #: confirmed_by: srt
