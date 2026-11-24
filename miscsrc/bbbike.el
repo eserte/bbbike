@@ -779,6 +779,7 @@
 				    "\\|https://www.bwb.de/de/baustelleninformationen.php"
 				    "\\|https://az-lichtenrade.de/aktuelle-informationen-zum-umbau-der-bahnhofstrasse/"
 				    "\\|https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php"
+				    "\\|https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/artikel.205944.php"
 				    "\\)") url))
       (setq url (concat url "?date=" (format-time-string "%Y%m%d"))))
     (beginning-of-line)
