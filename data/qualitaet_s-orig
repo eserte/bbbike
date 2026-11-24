@@ -542,7 +542,7 @@ Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,112
 #: next_check_id: REVALER-2024
 #: note: asphaltierter Radweg
 # XXX wegen Bauarbeiten ist der Radweg größtenteils nicht nutzbar, früher: Revaler Str.: Asphalt	Q0; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-11-22
+#: last_checked: 2026-11-24
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -626,7 +626,7 @@ Oderstr.: Asphalt, leicht wellig	Q0- 11472,7899 11504,7738 11521,7638 11540,7534
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraße, bis zum Eingang Tempelhofer Feld)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
-#: by: https://www.infravelo.de/projekt/oderstrasse-sued/ (Fahrradstraße, Asphaltierung) (1. Quartal 2024 - 2. Quartal 2024) (1. Quartal 2025 - 2. Quartal 2025) (1. Quartal 2026 - 4. Quartal 2026) (4. Quartal 2026 - 4. Quartal 2027) (4. Quartal 2026 - 4. Quartal 2028) (3. Quartal 2028 - 4. Quartal 2028)
+#: by: https://www.infravelo.de/projekt/oderstrasse-sued/ (Fahrradstraße, Asphaltierung) (1. Quartal 2024 - 2. Quartal 2024) (1. Quartal 2025 - 2. Quartal 2025) (1. Quartal 2026 - 4. Quartal 2026) (4. Quartal 2026 - 4. Quartal 2027) (4. Quartal 2026 - 4. Quartal 2028) (3. Quartal 2028 - 4. Quartal 2028) (1. Quartal 2029 - 4. Quartal 2029)
 #: note: früher das infravelo-Projekt "oderstrasse"
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8647 (Antrag zur Eschersheimer Str., Erwähnung der Oderstr.)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/buendnisgruene-stellen-antrag-auf-umbau-der-eschersheimer-strasse_a368051
@@ -637,7 +637,7 @@ Oderstr.: Asphalt, leicht wellig	Q0- 11472,7899 11504,7738 11521,7638 11540,7534
 #: XXX laut SGA Neukölln Baustart Mitte 2028, nach Arbeiten der BWB
 #: last_checked: 2026-11-04
 #: check_frequency: 180d
-#: next_check: 2028-12-31 (infravelo)
+#: next_check: 2029-12-31 (infravelo)
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11593,7237 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
 Friedelstr.: Asphalt	Q0 12085,9778 12074,9689 12066,9558 12054,9429 12074,9217
@@ -16227,7 +16227,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22060,10914
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/260507_fahrrat_protokoll-und-ppt.pdf (widersprüchlich: wird hier nun gefräst oder in der Mitte asphaltiert? und in der Präsentation später ist von der Paplitzer Str. die Rede?)
 #: last_checked: 2026-07-27 (fahrrat)
 #: check_frequency: 360d
-#: osm_watch: way id="152177244" version="15"
+#: osm_watch: way id="152177244" version="16"
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10510,-2642 10573,-2891 10606,-3017 10655,-3135 10735,-3142
 #: by: ^^^
 # 

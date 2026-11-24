@@ -583,7 +583,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021) (inaktiv)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: source_id: viz2021:13.401811,52.506118,11.03.2024,07:00 (Straßenbahnarbeiten Höhe Alte Jakobstr., bis 22.03.2024) (inaktiv)
-#: last_checked: 2026-11-09 vvv
+#: last_checked: 2026-11-24 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -5557,7 +5557,7 @@ Gehweg für Radfahrer frei	RW1; 22467,6135 22656,6142 22700,6138 22777,6151 22857
 # 
 # REMOVED --- #: next_check_id: ALTSTADTKOEPENICK-2024
 # REMOVED --- #: by: https://viz.berlin.de/aktuelle-meldungen/verkehrsvorschau-viz/?date=20260421
-# REMOVED --- #: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, vizapi2026:360/2026 (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026) (bis 27.11.2026)
+# REMOVED --- #: source_id: LMS-BR:378674/72 viz2021:13.57535,52.44749, vizapi2026:360/2026 (bis 20.05.2026) (bis 29.06.2026) (bis 02.09.2026) (bis 27.11.2026) (inaktiv)
 # REMOVED --- #: last_checked: 2026-09-17
 # REMOVED --- #: next_check: 2026-11-27
 # REMOVED --- #: valid: -20261127
@@ -8082,7 +8082,7 @@ Radweg teilweise aufgemalt, teilweise fehlt die Markierung völlig	RW1; 3983,2302
 Radspur teilweise hinter den parkenden Autos	RW4; 8732,14098 8607,14253
 Poller	RW4; 8607,14253 8732,14098
 #: next_check_id: CHAUSSEE-2026
-#: last_checked: 2026-11-16
+#: last_checked: 2026-11-24
 #: check_frequency: 120d
 #: next_check: 2028-05-11 (VIZ-Verkehrsmeldung)
 provisorische Radspur (Gelbmarkierung)	RW3; 8732,14098 8831,13973
@@ -8685,7 +8685,7 @@ wenige Meter Radweg am Anfang	RW0; 3337,12855 3400,13107
 #: source_id: planb2026:13.4508501,52.50859501,06.11.2026, ("Fahrstreifen-Reduzierung", Warschauer Str., bis 30.04.2028)
 #: XXX Baucontainer stehen auf dem Radweg, trotzdem ist die Einbahnstraße noch offen für Radfahrer; mittlerweile per Gelbmarkierung auch relativ offiziell
 #: XXX früher: asphaltiert	RW2; 13588,11490 13565,11492 13473,11456
-#: last_checked: 2026-11-22
+#: last_checked: 2026-11-24
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -9602,7 +9602,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (Markierung nach Leitungsbauarbeiten)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (bis Ende 2021; hier: "900m" --- ist vielleicht auch ein Teil von Alt-Tempelhof gemeint?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
-#: by: https://www.infravelo.de/projekt/schoeneberger-strasse/ (früherer Eintrag) (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...)) (mittlerweile: 3. Quartal 2021 - 4. Quartal 2022) (3. Quartal 2021 - 2. Quartal 2023) (mittlerweile ab 1. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (1. Quartal 2025 - 4. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2026) (4. Quartal 2025 - 4. Quartal 2026) (2. Quartal 2026 - 4. Quartal 2026)
+#: by: https://www.infravelo.de/projekt/schoeneberger-strasse/ (früherer Eintrag) (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...)) (mittlerweile: 3. Quartal 2021 - 4. Quartal 2022) (3. Quartal 2021 - 2. Quartal 2023) (mittlerweile ab 1. Quartal 2023) (3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (1. Quartal 2025 - 4. Quartal 2025) (3. Quartal 2025 - 4. Quartal 2026) (4. Quartal 2025 - 4. Quartal 2026) (2. Quartal 2026 - 4. Quartal 2026) (2. Quartal 2026 - 1. Quartal 2027)
 #: by[removed]: http://www.infravelo.de/projekt/schoeneberger-strasse-2/ (wurde wieder entfernt)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-dauerhaften-radweg-an-der-schoeneberger-strasse_a317109
@@ -9633,7 +9633,7 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: osm_watch: way id="354645904" version="15"
 #: last_checked: 2026-10-14 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2027-01-15 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-03-31 (infravelo) vvv
 	RW3; 8739,6701 8653,6781
 #: note: wieder aufgehoben: provisorische Radspur	RW3;
 	RW0; 8653,6781 8496,6919

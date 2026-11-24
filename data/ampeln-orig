@@ -103,7 +103,7 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv) (bis 21.12.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026) (bis 21.12.2026)
-#: last_checked: 2026-11-23
+#: last_checked: 2026-11-24
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261221
@@ -614,10 +614,12 @@ Mecklenburgische Str./Rudolf-Mosse-Str.: provisorische Ampel	F::inwork 3619,7587
 #: next_check_id: KIEFHOLZMOERIKE-2026
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260530
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261123
-#: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 vizapi2026:528/2026 (bis 21.08.2026) (bis 30.10.2026) (bis 13.11.2026) (bis 25.11.2026)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3n2zx2yz4mx2s
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreib4jnhjlc7o2keicmlgtnwzj57mxymg3sdnzu3oqn4gpadchgkpsi
+#: source_id: LMS-BR:410384/72 viz2021:13.48707,52.46559,01.06.2026,09:00 vizapi2026:528/2026 (bis 21.08.2026) (bis 30.10.2026) (bis 13.11.2026) (bis 25.11.2026) (inaktiv)
 #: source_id: planb2026:13.48700689,52.46556366,29.05.2026, ("Gegenverkehrsanlage (LZA)", bis 21.08.2026) (vorfristig inaktiv) (bis 30.10.2026) (inaktiv) (bis 18.02.2027)
 #: source_id: bvg2024:166#HIM_FREETEXT_375546 (Verlegung der Haltestelle Mosischstraße ab 24.11.2026)
-#: source_id: vizapi2026:1277/2026 (24.11.2026 bis 18.02.2027)
+#: source_id: LMS-BR:429373/72 viz2021:13.48581,52.46649,24.11.2026,07:00 vizapi2026:1277/2026 (24.11.2026 bis 18.02.2027)
 #: note: siehe auch temp blocking-Eintrag
 #: last_checked: 2026-09-09
 #: next_check: 2027-02-18 (VIZ-Verkehrsmeldung)

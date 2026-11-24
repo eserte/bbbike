@@ -4342,16 +4342,6 @@ Rolandufer: unter der Mühlendammbrücke wegen Abrissarbeiten gesperrt	2::inwork 1
 #: check_frequency: 120d
 Reiherhorst (Schulzendorf): wegen Hochbauarbeiten gesperrt	2::inwork 22814,-5119 22860,-5130
 # 
-#: source_id: LMS-BR:410555/72 viz2021:13.37994,52.52093, (bis 21.12.2028)
-#: source_id: planb2026:13.37979908,52.52088621,03.12.2025, ("Vollsperrung beider Fahrbahnen", bis 21.12.2028)
-#: osm_watch[closed]: note 2514010 15
-#: osm_watch: way id="4592739" version="36"
-#: XXX Es gibt zwar eine offizielle Umleitungsstrecke auch für Radfahrer zur Margarete-Steffin-Str., aber diese führt über eine Wiese (!)
-#: last_checked: 2026-10-06
-#: check_frequency: 120d
-#: next_check: 2028-12-21 (VIZ-Verkehrsmeldung + planb)
-Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung	2::inwork 8662,12776 8735,12780
-# 
 #: next_check_id: URBANTECHREPUBLIC-2022
 #: XXX ggfs entfernen vvv
 #: last_checked: 2026-06-07 vvv
@@ -4433,9 +4423,9 @@ Heubuder Brücke: abgebaut, Neubau geplant	2::inwork 9017,17290 8982,17299
 #: by: https://www.tagesspiegel.de/berlin/schule/berliner-bezirksamt-lehnt-nachbesserung-ab-elitegymnasium-in-friedrichshain-kampft-gegen-platznot-15996886.html
 #: by: https://www.entwicklungsstadt.de/fast-fertig-und-schon-zu-klein-neuer-streit-um-heinrich-hertz-gymnasium/
 #: by: https://www.entwicklungsstadt.de/heinrich-hertz-gymnasium-am-ostbahnhof-ist-fertig-doch-fragen-bleiben-offen/ (Umzug der Schule nach den Winterferien 2026/2027 (? gemeint vermutlich 2027?); also 08.02.2027?)
-#: osm_watch: way id="1054730129" version="9"
+#: osm_watch: way id="1054730129" version="10"
 #: osm_watch: way id="295548381" version="9"
-#: osm_watch: note 5642747 1
+#: osm_watch: note 5642747 2
 #: source_id: planb2026:13.43684271,52.51255043,02.03.2026,06:00 ("Gehwegvollsperrung", bis 31.03.2027)
 #: source_id: planb2026:13.43631736,52.51181578,17.08.2026,08:00 ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv) (bis 28.08.2026) (inaktiv)
 #: XXX Bleibt es beim Gehweg, oder wird es nach den Bauarbeiten eine andere Lösung geben?
@@ -4546,7 +4536,7 @@ Magdeburger Str. (Brandenburg)	2::inwork -48735,-304 -47897,-353
 #: osm_watch: way id="423457085" version="18"
 #: source_id: planb2026:13.36504453,52.53376599,11.08.2025,06:00 ("Fahrstreifen-Reduzierung", bis 30.07.2027)
 #: add_fragezeichen: Besteht die Einbahnstraßenregelung weiterhin? vvv
-#: last_checked: 2026-10-10 vvv
+#: last_checked: 2026-11-24 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-07-30 (planb) vvv
 #: osm_watch: way id="752856111" version="16"
@@ -5023,7 +5013,7 @@ Paul-und-Paula-Promenade: wird gebaut	2::inwork 14886,10748 14909,10732 14984,10
 # REMOVED (deleted) --- #: osm_watch: way id="256450718" version="7"
 (Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7789,12764 7649,12764
 # REMOVED (deleted) --- #: osm_watch: way id="1081702032" version="3"
-#: osm_watch: note 4771322 2
+#: osm_watch[closed]: note 4771322 3
 (Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7362,12731 7377,12729 7542,12736 7588,12734 7819,12729
 # REMOVED (deleted) --- #: osm_watch: way id="33913621" version="11"
 (Joachim-Karnatz-Allee - Ingeborg-Drewitz-Allee): wegen Bauarbeiten gesperrt	2::inwork 7418,12601 7377,12729
@@ -5302,7 +5292,7 @@ Am Osthafen: abgesperrt, vielleicht dauerhaft	2::inwork 14480,10157 14487,10199
 #: by: https://stralauer-one.com/ (Kernsanierung bis 2026) (Zertifikat mittlerweile ungültig) (wieder gültiges Zertifikat)
 #: by: https://www.studiocaspar.com/projekt/stralauer-one/ (Bauzeit bis 2026)
 #: osm_watch: note 4853760 1
-#: last_checked: 2026-11-22 vvv
+#: last_checked: 2026-11-24 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2026-12-31 vvv
 Eierkühlhaus/Stralauer One (Straßenseite): wegen Hochbauarbeiten gesperrt	2::inwork 13338,10801 13433,10759
@@ -5712,7 +5702,7 @@ Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 107
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2026-10-10 vvv
+#: last_checked: 2026-11-24 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188 (inaktiv)
 #: osm_watch: way id="593108603" version="3"

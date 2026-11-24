@@ -12,7 +12,7 @@
 # 
 #: next_check_id: STRDPARISERKOMMUNE-2026
 #: source_id[inactive]: bvg2024:240#HIM_FREETEXT_366164
-#: last_checked: 2026-11-23
+#: last_checked: 2026-11-24
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung)
 #: valid: -20261221
@@ -117,7 +117,7 @@ Petersburger Str.: gemeinsamer Rad- und Gehweg, eng, Umwege	q2::inwork; 13383,13
 #: note: für Radfahrer existiert eine offizielle Fahrgasse, allerdings schmal und mit kurzen Bordsteinrampen
 #: osm_watch: way id="1072662716" version="37"
 #: osm_watch: way id="1072662717" version="41"
-#: last_checked: 2026-11-22
+#: last_checked: 2026-11-24
 #: check_frequency: 90d
 #: next_check: 2028-04-30 (planb)
 # REMOVED --- #: next_check: 2027-12-31 (entwicklungsstadt)
@@ -309,8 +309,8 @@ Mariendorfer Damm: Gehweg für Radfahrer frei, Engstellen	q2::inwork; 9621,3155 9
 #: also_indoor: traffic (G,T,H,W)
 #: source_id: LMS-BR:399339/72 viz2021:13.35937,52.4567,18.02.2026,07:00 vizapi2026:72/2026 (bis 13.11.2026) (bis 15.01.2027) (bis 31.12.2027)
 #: source_id: planb2026:13.36103702,52.45337263,18.02.2026, ("Sperrung einer Fahrtrichtung", bis 13.11.2026) (vorfristig inaktiv) (bis 25.01.2027)
-#: source_id: bvg2024:m76#HIM_FREETEXT_375536
-#: source_id: LMS-BR:429269/72 viz2021:13.35937,52.4567, vizapi2026:1278/2026 (Wasserrohrbruch, kein Enddatum)
+#: source_id[inactive]: bvg2024:m76#HIM_FREETEXT_375536
+#: source_id: LMS-BR:429269/72 viz2021:13.35937,52.4567, vizapi2026:1278/2026 (Wasserrohrbruch, kein Enddatum) (inaktiv, bei vizapi2026 noch da)
 #: note: außerdem drei Fußgängerampeln mit Anforderung, nur für die Fahrbahn und damit für den Verkehr Richtung Norden relevant
 #: last_checked: 2026-11-12 (traffic)
 #: check_frequency: 120d
@@ -575,7 +575,7 @@ Rolandufer: Fahrbahn wegen Bauarbeiten verengt	q2::inwork 11155,12184 11278,1218
 #: source_id: planb2026:13.38976332,52.5093633,26.06.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 14.08.2026) (bis 01.10.2026) (inaktiv) (bis 08.01.2027)
 #: source_id: planb2026:13.38976332,52.5093633,26.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (siehe oben, vorfristig inaktiv)
 #: source_id: planb2026:13.38965765,52.50934715,23.11.2026, ("Vollsperrung beider Fahrbahnen", bis 18.12.2026)
-#: last_checked: 2026-11-23
+#: last_checked: 2026-11-24
 #: check_frequency: 14d
 #: next_check: 2026-12-18 (planb: Ende)
 Krausenstr.: Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
@@ -620,16 +620,28 @@ Krausenstr.: Sperrung der Fahrbahn	q3::inwork 9456,11513 9331,11497
 # REMOVED (laut osm beendet) --- #: next_check_id: CHAUSSEE-2020 --- #: source_id: 2147346552 (bis 16.7.2021) --- #: source_id: viz2021:13.38019,52.53283,29.12.2022,09:35 (bis 30.4.2023) (später am Tag wieder entfernt -> inaktiv) --- #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022) (mittlerweile kein Endedatum mehr) (bis 2.11.2022) (kein Endedatum mehr) (bis 30.4.2023) (bis 26.5.2023) (inaktiv) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11465 (Antrag) --- #: last_checked: 2023-05-18 --- #: check_frequency: 60d --- #: next_check: 2023-05-26 --- Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
 # REMOVED --- #: last_checked: 2022-07-17 (mapillary) --- # REMOVED --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2022-07-31 --- Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336,14586
 # 
+#: source_id: LMS-BR:410555/72 viz2021:13.37994,52.52093, (bis 21.12.2028)
+#: source_id: planb2026:13.37979908,52.52088621,03.12.2025, ("Vollsperrung beider Fahrbahnen", bis 21.12.2028)
+#: osm_watch[closed]: note 2514010 15
+#: osm_watch: way id="4592739" version="36"
+#: XXX Es gibt zwar eine offizielle Umleitungsstrecke auch für Radfahrer zur Margarete-Steffin-Str., aber diese führt über eine Wiese (!). Außerdem gibt es einen breiten, eher wenig frequentierten Gehweg.
+#: last_checked: 2026-11-24
+#: check_frequency: 120d
+#: next_check: 2028-12-21 (VIZ-Verkehrsmeldung + planb)
+Adele-Schreiber-Krieger-Str.: Bauarbeiten, Sperrung der Fahrbahn	q4::inwork 8662,12776 8735,12780
+# 
 #: next_check_id: DOROTHEEN-2018
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic (G,W[teilweise],T[teilweise]) vvv
 #: source_id: planb2026:13.38375056,52.51772337,26.11.2017, ("Fahrstreifen-Reduzierung", bis 30.04.2028)
-#: last_checked: 2026-11-23 vvv
+#: last_checked: 2026-11-24 vvv
 #: check_frequency: 30d (traffic) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: osm_watch: way id="24242892" version="47"
-Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489 8999,12498
+#: next_check: 2026-11-24 (ist hier die Einbahnstraßenregelung aufgehoben?)
+Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
+Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/schadowstra%C3%9Fe-4-dorotheenstra%C3%9Fe-verwaltungsgeb%C3%A4ude-bundestag.757/page-2#post-23517
 #: by: https://www.entwicklungsstadt.de/neubau-fuer-den-deutschen-bundestag-an-der-dorotheenstrasse-nimmt-gestalt-an/ (Fertigstellung 2027)
 #: osm_watch: way id="930343902" version="6"
@@ -2390,6 +2402,7 @@ Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3262,12040 3288,12061
 #: by: https://www.tagesspiegel.de/berlin/bezirke/tempelhof-schoeneberg/dauerbaustelle-berliner-hallenbader-stadtbad-schoneberg-soll-mitte-2026-wieder-offnen--verzogerungen-beim-wellenbad-am-spreewaldplatz-15470876.html
 #: by: https://www.entwicklungsstadt.de/wellenbad-am-spreewaldplatz-dach-geoeffnet-fliesen-entfernt/
 #: by: https://www.entwicklungsstadt.de/wellenbad-in-kreuzberg-zeitplan-erneut-verschoben-kosten-bei-51-millionen-euro/ (voraussichtlich bis 2028)
+#: by: https://www.entwicklungsstadt.de/nach-jahrelanger-sanierung-so-geht-es-im-wellenbad-kreuzberg-weiter/
 #: XXX: wieder aktivieren: #: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 #: XXX: wieder aktivieren: Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: note: mittlerweile mehrere Engstellen, früher nur q2, nun q3+; nun eine weitere Umfahrung, also glatt q3

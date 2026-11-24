@@ -5621,7 +5621,9 @@ Lauenburger Platz	N 6014,6160 6112,6173
 Osdorfer Str.	H 4261,1601 4370,1445 4399,1403 4450,1326 4542,1188
 Osdorfer Str.	H 4542,1188 4605,1089 4768,840 4867,690 4875,677 4937,579 5061,409 5418,-98
 Landweg	N 5061,409 4913,422 4759,436 4748,453
-Celsiusstr.	N 4505,465 4506,514 4474,563 4436,621 4424,640 4367,725 4366,764 4432,947 4456,984 4492,1013 4605,1089
+Celsiusstr.	N 4505,465 4506,514 4474,563
+Celsiusstr.	NN 4474,563 4436,621 4424,640
+Celsiusstr.	N 4424,640 4367,725 4366,764 4432,947 4456,984 4492,1013 4605,1089
 Fahrenheitstr.	N 4768,840 4510,669
 #: note: Durchfahrt frei für Fußgänger/Radfahrer/Einsatzfahrzeuge; Durchsetzung durch Poller. (by: Kay Leonhardt)
 (Fahrenheitstr. - Celsiusstr.)	NN 4510,669 4436,621
@@ -17066,7 +17068,7 @@ Juchaczweg	N 14126,3225 14180,3334
 #: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261020 (Einfahrt in das Krankenhausgelände aus der Rudower Straße nicht möglich)
 #: by: https://www.entwicklungsstadt.de/vivantes-klinikum-neukoelln-neubau-am-nordkopf-steht-vor-der-uebergabe/
 #: XXX Bebauungsplan XIV-132-1: ggfs. wird dieser Abschnitt öffentlich befahrbar werden, inklusive Verlegung der Schranke?
-#: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 vizapi2026:805/2026 (bis 24.08.2026) (bis 04.09.2026) (inaktiv) (bis 23.10.2026) (bis 25.11.2026)
+#: source_id: LMS-BR:418996/72 viz2021:13.45882,52.44023,10.08.2026,07:00 vizapi2026:805/2026 (bis 24.08.2026) (bis 04.09.2026) (inaktiv) (bis 23.10.2026) (bis 25.11.2026) (bis 31.03.2027)
 #: osm_watch: way id="721901188" version="1"
 #: osm_watch: way id="138144497" version="10"
 #: priority: #C
@@ -20218,7 +20220,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 #: by: https://berliner-abendblatt.de/berlin-news/strasse-wird-nach-schauspielerin-inge-meysel-benannt-id226034
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_40_3909_3968_online.pdf (Benennung: Inge-Meysel-Straße)
 #: XXX Benennung nach Inge Meysel; laut DPAG 12/2023: Inge-Meysel-Str., PLZ=10243 vvv
-#: last_checked: 2026-11-23 vvv
+#: last_checked: 2026-11-24 vvv
 #: check_frequency: 90d vvv
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
