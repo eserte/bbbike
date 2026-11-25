@@ -688,7 +688,7 @@ sub calculate_prio {
 	$prio += 20;
     } elsif ($desc =~ /Gehwegvollsperrung/i) {
 	$prio -= 10;
-    } elsif ($desc =~ /keine Fahrbahn-Einschr|Haltverbot/i) {
+    } elsif ($desc =~ /keine Fahrbahn-Einschr|Haltverbot|Gehwegmindestbreite/i) {
 	$prio -= 25;
     }
 
