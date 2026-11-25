@@ -220,8 +220,8 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
 #: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
-#: osm_watch: way id="29435079" version="27"
-#: osm_watch: way id="30198295" version="31"
+#: osm_watch: way id="29435079" version="28"
+#: osm_watch: way id="30198295" version="32"
 #: osm_watch: way id="211549617" version="23"
 #: source_id: 2147341149 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_93467 (inaktiv)
@@ -2697,11 +2697,12 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: by: https://www.entwicklungsstadt.de/fahrradstrasse-in-steglitz-arbeiten-am-tietzenweg-gehen-weiter/
 #: by: https://stadtrand-nachrichten.de/tietzenweg-wird-fahrradfreundliche-strecke/
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/gremien/mobilitaetsrat/20260916-protokoll-19-sitzung-mobirat.pdf
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1743490.php (1. BA: Umleitung nördlich Sophienstr., 2. BA: Umleitung südlich Sophienstr., Ende der Asphaltierungsarbeiten im Kreuzungsbereich 31.12.2026)
 #: source_id: planb2026:13.30544371,52.44209114,18.08.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 04.09.2026) (vorfristig inaktiv) (bis 17.09.2026) (inaktiv)
 #: osm_watch: way id="1423053724" version="6"
 #: osm_watch: way id="148666424" version="30"
-#: osm_watch: way id="1551261988" version="6"
-#: osm_watch: way id="1423053720" version="8"
+#: osm_watch: way id="1551261988" version="7"
+#: osm_watch: way id="1423053720" version="9"
 #: osm_watch: note 5188302 6
 #: osm_watch: note 5540226 3
 #: osm_watch[closed]: note 5500541 1
@@ -4243,8 +4244,8 @@ Ringslebenstr. (von Heideläuferweg bis Buckower Damm): Busspur geplant, evtl. nu
 #: osm_watch: way id="30956352" version="39"
 #: note: laut rbb werden die Leitungsarbeiten insgesamt bis Ende 2025 andauern
 #: last_checked: 2026-10-14
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2026-11-26 (VIZ-Verkehrsmeldung)
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2026-11-26 (VIZ-Verkehrsmeldung)
 Hindenburgdamm: Busspur geplant, evtl. auch für Radfahrer frei	?; 4411,3180 4170,2727
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11431.pdf (laut Liste nur 100m, aber die Gesamtlänge ist über 250m)
@@ -4411,6 +4412,7 @@ Grellstr.: 120m Hochbordradweg vor der Prenzlauer Allee geplant	?::projected; 12
 #: by: https://www.entwicklungsstadt.de/torstrasse-vor-dem-umbau-schafft-der-berliner-senat-jetzt-fakten/ (Baumfällungen frühestens im Januar 2027, oder doch früher?)
 #: by: https://www.tagesspiegel.de/berlin/torstrasse-kantstrasse-und-tempelhofer-damm-verkehrssenatorin-bonde-treibt-umstrittene-umbauten-weiter-voran-16279332.html
 #: by: https://www.berliner-zeitung.de/article/torstrasse-vor-dem-umbau-protest-gegen-baumfaellungen-steuert-auf-heisse-phase-zu-10613837
+#: by: https://www.entwicklungsstadt.de/umbau-der-torstrasse-stoppt-berlins-neue-regierung-die-umstrittenen-plaene/
 #: last_checked: 2026-11-24
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-10-15 (Tsp: Baubeginn)
@@ -9180,6 +9182,7 @@ Weserstr. (Friedrichshain): Einbahnstraße für Kfz in Vorbereitung	? 14475,11778 
 #: by: https://www.entwicklungsstadt.de/millionenprojekt-jahnsportpark-neue-fragen-nach-vergabe-des-stadionbaus/
 #: by: https://www.entwicklungsstadt.de/jahnsportpark-ohne-stadion-traditionsreiche-berliner-arena-ist-verschwunden/
 #: by: https://www.entwicklungsstadt.de/baustopp-im-jahnsportpark-neuer-streit-um-artenschutz/
+#: by: https://www.entwicklungsstadt.de/streit-um-jahnsportpark-pankow-will-geplanten-kunstrasenplatz-verhindern/
 #: alias: Friedrich-Ludwig-Jahn-Sportpark
 #: note: Bebauungsplan 3-87
 #: last_checked: 2026-11-13 (mapillary) vvv
@@ -9494,12 +9497,13 @@ Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrun
 #: next_check_id: ANTONKIEZBLOCK-2025
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20250707_antonkiez_anton_ruhepl_vzk_sk_web.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/vzp_prinz-eugen-str_web.pdf
-#: osm_watch: note 5164973 11
+#: osm_watch[closed]: note 5164973 11
+#: osm_watch: note 5649154 1
 #: source_id: planb2026:13.36691407,52.5464191,04.11.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026)
 #: priority: #D
 #: last_checked: 2026-11-06 (osm note: "Umsetzung findet derzeit statt")
 # REMOVED --- #: check_frequency: 30d (outdoor checks)
-#: next_check: 2026-11-30 (osm note: für Nov 2026 angesetzt, Quelle SGA + planb)
+#: next_check: 2026-11-24 (osm note: möglicherweise weitgehend fertig)
 Prinz-Eugen-Str./Adolfstr./Plantagenstr.: Modalfilter geplant	?::projected 7783,15569 7796,15600 7813,15615
 # 
 #: by: https://www.ls.brandenburg.de/ls/de/pressemitteilung/ansicht/~06-05-2025-b103-gantikow-bis-vehlow (Juli 2025 - Dezember 2026)
@@ -9837,7 +9841,7 @@ Verlängerung des Uferwegs?	? 22239,2644 22197,2612
 # 
 #: next_check_id: NAGASAKIPLATZ-2026
 #: by: https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=5398
-#: last_checked: 2026-10-27 (osm)
+#: last_checked: 2026-11-24 (osm)
 #: next_check: 2027-03-31
 Rudolf-Breitscheid-Str./August-Bebel-Str./Hiroshima-Nagasaki-Platz: Ampelanlage wird wohl verschoben	? -8483,-1530 -8469,-1541 -8447,-1553
 # 
@@ -10347,7 +10351,7 @@ Stargarder Str./Lychener Str.: geplante Bauarbeiten, wird der Radverkehr betroff
 # 
 #: source_id: planb2026:13.42547527,52.55046499,13.11.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 18.12.2026)
 #: also_indoor: traffic (no-G[ex-constr-work ohne Sperrung],no-T,no-H,no-W)
-#: last_checked: 2026-11-22 (traffic)
+#: last_checked: 2026-11-25 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED ---  #: next_check: 2026-11-13 (planb)
 Gudvanger Str./Krüger Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 11673,16003 11694,16034 11750,16116
@@ -10370,8 +10374,8 @@ Böhmische Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 1356
 #: XXX Radweg Richtung Westen wird zukünftig auf dem Gehweg geführt, zwischen Zeughaus und Universitätsstr. (bereits vorbereitet, noch nicht aktiv)
 #: source_id: LMS-BR:427397/72 viz2021:13.39803,52.5176,04.11.2026,07:00 vizapi2026:1183/2026 (04.11.2026 bis 13.08.2027)
 #: source_id: planb2026:13.39072528,52.51709824,04.11.2026, ("Sicherung gemäß Vz.-plan", bis 13.08.2027)
-#: source_id[inactive]: bvg2024:100#HIM_FREETEXT_373027
-#: source_id[inactive]: bvg2024:100#HIM_FREETEXT_373028
+#: source_id: bvg2024:100#HIM_FREETEXT_373027 (war 1x inaktiv)
+#: source_id: bvg2024:100#HIM_FREETEXT_373028 (war 1x inaktiv)
 #: last_checked: 2026-11-23
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2026-11-11 (SenUVK: Beginn Bauphase 1)
@@ -10414,7 +10418,7 @@ Gotlindestr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 16859,
 # 
 #: source_id: planb2026:13.37473978,52.57902259,16.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 02.12.2026)
 #: also_indoor: traffic (none)
-#: last_checked: 2026-11-22 (traffic)
+#: last_checked: 2026-11-25 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-11-16 (planb)
 Waldsteg: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 8364,19166 8337,19160 8277,19210 8166,19308 7940,19521
@@ -10460,13 +10464,6 @@ Paplitzer Str.: Kopfsteinpflaster wird abgeschliffen	? 10735,-3142 10769,-3064 1
 #: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-11-23 (planb)
 Ella-Kay-Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 12173,15040 12095,14888
-# 
-#: source_id: planb2026:13.46083747,52.50091848,25.11.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 19.12.2026)
-#: also_indoor: traffic (none)
-#: note: Evtl. nur Haltestelle für einen SEV?
-#: last_checked: 2026-11-22
-#: next_check: 2026-11-25 (planb)
-Bossestr.: geplante Maßnahme, wird der Radverkehr betroffen sein?	? 14265,10579 14286,10613 14312,10657
 # 
 #: source_id: planb2026:13.32730295,52.43948232,07.12.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 26.02.2027)
 #: next_check: 2026-12-07 (planb)
@@ -13331,6 +13328,7 @@ U3: Verlängerung bis Mexikoplatz geplant	?::projected -516,3967 -667,3739 -1003,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_41_2873_2920_online.pdf (FNP-Änderung 05/17)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_44_3097_3152_online.pdf (zur FNP-Änderung)
 #: by: https://www.berlin.de/sen/stadtentwicklung/_assets/planung/flaechennutzungsplanung/wirksame-aenderungen/0517.pdf
+#: by: https://bvv-neukoelln.berlin.de/pi-r/vo020_r.asp?VOLFDNR=10395 (Anfrage)
 #: note: Projektname "Britzer Terrassen"
 #: osm_watch: note 3245865 2
 #: last_checked: 2026-06-13
@@ -13893,6 +13891,7 @@ Bebauungsplan 3-43 (Brunnengalerie Buch - Süd): ein neuer Geh/Radweg in Fortsetz
 #: by: https://www.berlin-s21.de/aktuelles-reader/planfeststellungsbeschluss-fuer-den-2-bauabschnitt-liegt-vor.html
 #: by: https://www.entwicklungsstadt.de/berliner-s21-baurecht-fuer-s-bahn-tunnel-zum-potsdamer-platz-rueckt-naeher/
 #: by: https://www.entwicklungsstadt.de/s15-in-berlin-warum-wird-die-neue-s-bahn-linie-kaum-genutzt/
+#: by: https://www.berliner-zeitung.de/article/noch-ein-s-bahn-tunnel-fuer-berlin-2027-soll-die-baustelle-am-brandenburger-tor-starten-10634834
 #: XXX mögliche Sperrungen im Oberflächenverkehr (laut U-10-04_Verkehrsstudie.pdf):
 #: XXX - Ebertstr. (2030-2035), in den Phasen 1 und 3 südlich Straße des 17. Juni, in Phase 2 auch nördlich davon
 #: XXX - einige Wege im Spreebogenpark (aber nicht der Weg zur Gustav-Heinemann-Brücke), evtl. auch der Spreeuferweg?

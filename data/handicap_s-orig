@@ -473,6 +473,14 @@ Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 
 # 
 ### Mitte ###
 # 
+#: by: https://www.entwicklungsstadt.de/kalkscheune-in-mitte-historisches-gebaeude-erhaelt-eine-umfassende-sanierung/ (bis 2028)
+#: source_id: planb2026:13.38960657,52.5240045,01.07.2026,06:00 ("Sperrung einer Fahrtrichtung", bis 31.12.2028)
+#: also_indoor: traffic (none)
+#: last_checked: 2026-11-25 (entwicklungsstadt)
+#: check_frequency: 120d
+#: next_check: 2028-12-31
+Kalkscheunenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9385,13174 9401,13072
+# 
 # REMOVED (geprüft: keine Baustelle mehr) --- #: source_id: planb2026:13.3804937,52.51755219,03.08.2026, ("Vollsperrung beider Fahrbahnen", bis 21.08.2026) (vorfristig inaktiv)
 # REMOVED --- #: source_id: planb2026:13.3804937,52.51755219,18.08.2026, ("Vollsperrung beider Fahrbahnen", bis 18.09.2026)
 # REMOVED --- #: source_id: LMS-BR:420081/72 viz2021:13.3803,52.51893, vizapi2026:866/2026 (bis 18.09.2026) (kein Endedatum) (inaktiv)
@@ -664,10 +672,11 @@ Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 9011,12423 9028,123
 #: osm_watch: way id="111833186" version="18"
 Mittelstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt	q3::inwork 9011,12423 9131,12438
 #: by: https://www.entwicklungsstadt.de/vom-forschungsstandort-zur-hochschule-robert-koch-forum-auf-dem-weg-zur-neuen-nutzung/ (Abschluss 2027)
+#: by: https://www.entwicklungsstadt.de/nach-jahrelanger-sanierung-robert-koch-forum-wird-wieder-hochschulstandort/
 #: osm_watch: way id="153698413" version="24"
 #: last_checked: 2026-10-27
 #: check_frequency: 60d
-#: next_check: 2027-12-31 (entwicklungsstadt)
+#: next_check: 2026-11-25 (entwicklungsstadt)
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1175,10 +1184,10 @@ Kurfürstenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt, Gehweg für Radfah
 #: by: https://www.deutsches-architekturforum.de/thread/4119-kulturforum/?postID=748729#post748729
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="16096289" version="41"
-#: osm_watch: way id="707100249" version="33"
+#: osm_watch: way id="707100249" version="34"
 #: note: erst ab dem östlichen Strang des Matthäikirchplatzes gesperrt, allerdings gibt es an dieser Stelle nur Bordsteine
 # REMOVED (existiert nicht mehr) --- #: also_indoor: webcam https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/index.php?action=archive
-#: last_checked: 2026-11-09 (daf)
+#: last_checked: 2026-11-24 (osm)
 #: check_frequency: 180d
 #: next_check: 2029-12-31 (entwicklungsstadt)
 Sigismundstr.: Fahrbahn gesperrt	q3::inwork 7894,11288 7934,11275 8031,11249
