@@ -22,7 +22,11 @@ use BBBikeTest qw(using_bbbike_test_data xmllint_string xpath_checks);
 use BBBikeBuildUtil qw(get_pmake);
 
 my $bbd2osm = realpath("$FindBin::RealBin/../miscsrc/bbd2osm");
-ok -x $bbd2osm;
+if ($^O eq 'MSWin32') {
+    ok -e $bbd2osm;
+} else {
+    ok -x $bbd2osm;
+}
 
 SKIP: {
     skip "No pmake available, needed for building test data", 1
