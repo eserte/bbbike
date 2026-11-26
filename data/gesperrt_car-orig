@@ -3,15 +3,24 @@
 #:
 #: temporary vvv
 # 
+#: source_id: planb2026:13.37986877,52.5209144,26.08.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 30.11.2026)
+#: source_id: vizapi2026:873/2026 (Vollsperrung für den Kfz-Verkehr, bis 30.11.2026)
+#: source_id: LMS-BR:420746/72 viz2021:13.3798,52.5217,31.08.2026,07:00 vizapi2026:873/2026 (bis 30.11.2026) (bis 31.08.2028)
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mue4755mhn2q (nur Kfz-Verkehr)
+#: last_checked: 2026-11-24
+#: check_frequency: 120d
+#: next_check: 2028-08-31
+Luisenstr.: Bauarbeiten, Sperrung für den Kfz-Verkehr, Fahrgasse für den Radverkehr	2::inwork 8732,12804 8735,12780
+# 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2026/pressemitteilung.1737379.php (Fertigstellung 2028)
 #: osm_watch: way id="85255870" version="53"
 #: osm_watch: way id="4401967" version="73"
 #: osm_watch[closed]: note 5649504 3
 #: source_id: planb2026:13.38205084,52.51396559,05.12.2019, ("Fahrstreifen-Reduzierung", bis 31.12.2026)
-#: last_checked: 2026-11-23
+#: last_checked: 2026-11-26
 #: check_frequency: 180d
 #: next_check: 2028-12-31 (BA-Pressemitteilung)
-Wilhelmstr.: Bauarbeiten, Einbahnstraßenregelung	1 8901,12008 8861,12125
+Wilhelmstr.: Bauarbeiten, Einbahnstraßenregelung	1::inwork 8901,12008 8861,12125
 # 
 #: next_check_id: CHAUSSEE-2026
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mgajtghhk22z (bis Mitte 2028)
@@ -2460,12 +2469,13 @@ Melchiorstr.: Fahrradstraße ohne Freigabe für Anleiger	2 11507,11355 11542,11342
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1681029.php (bis Mitte 2027?)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-26254.pdf (mindestens bis Herbst 2026)
 #: by: https://www.entwicklungsstadt.de/langenscheidtbruecke-in-schoeneberg-neuer-zeitplan-nennt-details/
+#: by: https://www.entwicklungsstadt.de/schoeneberg-plant-neue-nutzung-langenscheidtbruecke-soll-autofrei-bleiben/
 #: note: normalerweise: Langenscheidtbrücke	1 7647,9196 7735,9121
 #: osm_watch: note 5097733 3
 #: XXX wegen Brandschaden für Kfz-Verkehr komplett gesperrt
 #: also_indoor: traffic (G,no-T,H[basemap?],no-W)
 #: priority: #C
-#: last_checked: 2026-11-14 (traffic)
+#: last_checked: 2026-11-26 (entwicklungsstadt)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2026-11-15 (pardok (Herbst 2026))
 Langenscheidtbrücke	2::inwork 7647,9196 7735,9121

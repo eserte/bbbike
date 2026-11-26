@@ -4144,6 +4144,12 @@ Tor, geschlossen	BNP:10::trailer=15 -761,16641
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: WAISENTUNNEL-2026
+#: last_checked: 2026-11-26
+#: check_frequency: 30d
+#: next_check: 2030-12-31 (entwicklungsstadt)
+Rolandufer: Fahrbahn und Bürgersteige wegen Bauarbeiten gesperrt	2::inwork 11155,12184 11278,12185
+# 
 #: next_check_id: WEISSETAUBE-2025
 #: historical_note: früher: verschmutzte Fahrbahn wegen angrenzender Hochbauarbeiten, q1-::inwork
 #: osm_watch: note 5634153 1
@@ -4584,9 +4590,10 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: by: https://www.entwicklungsstadt.de/rathausforum-in-berlin-mitte-erste-fundamente-fuer-das-neue-spreeufer-entstehen/
 #: XXX Bleiben nach den Umbauarbeiten die Wege die gleichen?
 #: osm_watch: note 4795958 5
-#: osm_watch: way id="169067264" version="15"
+#: osm_watch: way id="169067264" version="16"
 #: osm_watch: way id="202157026" version="9"
 #: osm_watch: way id="202157023" version="7"
+#: osm_watch: way id="1051153667" version="5"
 #: last_checked: 2026-11-23 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2027-12-31 (Tsp, entwicklungsstadt, MoPo) vvv
@@ -5496,7 +5503,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-in-berlin-bauplaene-millionenbudget-und-zeitplan-bis-2034/
 #: by: https://www.entwicklungsstadt.de/molkenmarkt-in-berlin-534-mio-euro-fuer-planung-und-noch-keine-einzige-wohnung/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"; im B-Plan 1-14-1 weiterhin als "Fußgängerbereich" enthalten
-#: last_checked: 2026-11-23
+#: last_checked: 2026-11-26
 #: check_frequency: 180d
 # REMOVED --- #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10746,12364 10831,12371
@@ -5505,7 +5512,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: next_check_id: MOLKENMARKT-2021
 # REMOVED (wird nicht mehr aktualisiert) --- #: also_indoor: webcam https://molkenmarkt02.hi-res-cam.com/
-#: last_checked: 2026-11-23
+#: last_checked: 2026-11-26
 #: check_frequency: 60d
 Jüdenstr.: zwischen Grunerstr. und Parochialstr. komplett gesperrt	2::inwork 10783,12502 10807,12451 10831,12371
 # 

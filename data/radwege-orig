@@ -1097,7 +1097,7 @@ Radspur, niedrige Protektion	RW4; 10887,15287 10902,15422
 #: next_check_id: BUCHHOLZER-2026
 #: last_checked: 2026-11-14 (mapillary) vvv
 #: check_frequency: 60d vvv
-#: next_check: 2026-11-27 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-12-04 (VIZ-Verkehrsmeldung) vvv
 # ACTIVATE_LATER --- Radspur, niedrige Protektion	RW4; 10902,15422 10917,15525
 provisorische Radwegführung über Hochbord	RW2; 10902,15422 10917,15525
 # ACTIVATE_LATER --- Bushaltestelle	RW5; 10917,15525 10925,15581
@@ -1131,7 +1131,7 @@ Radspur, niedrige Protektion	RW4; 10953,15787 10941,15697 10925,15581
 #: historical_note: früher (bis 2024) Hochbordradweg, neu asphaltiert
 #: last_checked: 2026-11-22 (mapillary) vvv
 #: check_frequency: 14d vvv
-#: next_check: 2026-11-27 (planb + VIZ-Verkehrsmeldung) vvv
+#: next_check: 2026-12-04 (VIZ-Verkehrsmeldung) vvv
 # # ACTIVATE_LATER --- Radspur, niedrige Protektion	RW4; 10925,15581 10917,15525 10902,15422
 provisorische Radwegführung über Hochbord	RW2; 10925,15581 10917,15525
 provisorische Radwegführung über Hochbord	RW2; 10917,15525 10902,15422
@@ -2024,14 +2024,14 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15445,9090 1
 #: by: https://www.entwicklungsstadt.de/estrel-hochhaus-baustelle/
 #: by: https://www.entwicklungsstadt.de/neukoellner-hotelhochhaus-endphase-der-fassadenarbeiten-am-estrel-tower/
 #: by: https://www.estreltower.com/webcam (alternative Webcam-URL)
-#: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 vizapi2026:83/2026 (bis 31.03.2026) (bis 31.07.2026) (bis 30.11.2026)
+#: source_id: LMS-BR:399782/72 viz2021:13.45823,52.47262,23.02.2026,07:00 vizapi2026:83/2026 vizapi2026:968/2026 (bis 31.03.2026) (bis 31.07.2026) (bis 30.11.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.4587988,52.4724106,01.10.2025,07:00 ("Fahrstreifen-Reduzierung", bis 30.11.2026)
 #: XXX zurzeit wegen Bauarbeiten am Estrel abschnittsweise kein Radweg mehr, auch die frühere Busspur scheint nicht mehr zu existieren -> mittlerweile ist der Bürgersteig + Radweg wieder offen, wird noch die Busspur kommen?
 #: XXX früher: überwiegend neues Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1;
 #: also_indoor: webcam https://portal1828.webcam-profi.de/
-#: last_checked: 2026-11-14
+#: last_checked: 2026-11-26 (webcam)
 #: check_frequency: 21d
-#: next_check: 2026-11-30 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: next_check: 2026-11-30 (ex-VIZ-Verkehrsmeldung)
 	RW1; 14174,7505 14305,7415
 #: historical_note: zwischenzeitlich (vor der A100-Eröffnung?) gab es eine Busspur mit Fahrrad frei
 neues Verbundsteinpflaster	RW2; 14305,7415 14323,7403 14334,7395 14369,7376
@@ -2429,9 +2429,21 @@ Busspur ist immer gültig	RW5; 10431,12709 10359,12634 10300,12587
 	RW2; 10300,12587 10243,12546 10176,12506
 	RW3; 10176,12506 10152,12491
 Busspur ist immer gültig	RW5; 10152,12491 10063,12438
-Radspur	RW4; 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
+	RW4; 10063,12438 10024,12431 9984,12426
+#: next_check_id: UDL-2026
+#: last_checked: 2026-11-26 vvv
+#: next_check: 2027-08-13 vvv
+#: valid: 20261126-20270813 vvv
+provisorische Radwegführung über den Gehweg, teilweise Mosaikpflaster	RW2; 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
+#: valid ^^^
+#: valid: !20261126-20270813 vvv
+	RW4; 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400
 Bushaltestelle	RW5; 9771,12400 9713,12392
-Radspur	RW4; 9713,12392 9664,12387 9613,12381 9475,12365 9429,12359 9358,12351
+	RW4; 9713,12392 9664,12387 9613,12381
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+	RW4; 9613,12381 9475,12365 9429,12359 9358,12351
 Bushaltestelle	RW5; 9358,12351 9303,12343
 Radspur	RW4; 9303,12343 9141,12320 9028,12307 8804,12280
 # 
@@ -2491,7 +2503,7 @@ Busspur ist immer gültig	RW5; 10376,11879 10391,11898 10423,11936 10460,11979 10
 #: source_id: viz2021:13.40582,52.51402,19.08.2024,07:42 (bis 25.11.2024) (bereits am nächsten Tag inaktiv)
 #: source_id: planb2026:13.40538641,52.51376419,05.11.2024, ("Sicherung gemäß Vz.-plan", bis 31.12.2029)
 #: XXX Mühlendammbrücke: geplanter Neubau --- wird es zu Einschränkungen für den Radverkehr kommen? Was ist mit dem Uferweg? Wie wird sich der geplante Umleitungsverkehr für Lkw in der Rathausstraße auswirken?
-#: last_checked: 2026-11-16 vvv
+#: last_checked: 2026-11-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2029-12-31 (planb + ex-VIZ-Verkehrsmeldung) vvv
 #: historical_note: früher: Busspur gilt Mo-Fr 7-19 Uhr, dann: Busspur ist immer gültig,	RW5;
@@ -3455,14 +3467,14 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id[inactive]: bvg2024:HIM_FREETEXT_247779
 #: source_id: viz2021:13.465013,52.498062,11.03.2024,07:00 (bis 11.02.2026) (inaktiv)
 #: source_id: LMS-BR:327915/72 viz2021:13.46554,52.49875, (bis 11.02.2026) (bis 31.07.2026) (bis 31.10.2026) (bis 19.01.2027)
-#: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026) (bis 30.11.2026)
+#: source_id: planb2026:13.46528593,52.49831993,01.02.2024,06:00 ("Fahrbahneinengung", bis 30.09.2026) (bis 30.11.2026) (bis 04.12.2026)
 #: source_id: planb2026:13.46512046,52.49807953,11.03.2024,06:00 ("Fahrstreifen-Reduzierung", bis 29.01.2027) (vorfristig inaktiv)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
 #: last_checked: 2026-11-22
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-10-31 (Halteverbotsschilder)
-#: next_check: 2027-01-29 (planb)
+#: next_check: 2026-12-04 (planb)
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
 #	RW3; 14641,10552 14608,10409
 #die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
@@ -4840,13 +4852,13 @@ die letzten Meter mit benutzungspflichtiger Radspur	RW3; 8870,14637 8692,14923
 	RW6;RW6 -2647,14532 -2652,14559 -2656,14582 -2668,14635 -2682,14681 -2688,14703 -2704,14748 -2735,14848 -2622,14876 -2591,14783 -2704,14748
 	RW1; 2669,5677 2678,5621 2717,5578
 teilweise nur mäßige Radwege	RW1;RW1 2717,5578 2746,5537 2792,5471 2835,5410 2913,5294 3072,5062 3185,4894
-#: source_id: LMS-BR:358502/72 viz2021:13.29862,52.45778, (bis 18.12.2026)
+#: source_id: LMS-BR:358502/72 viz2021:13.29862,52.45778, (bis 18.12.2026) (bis 27.05.2027)
 #: source_id: planb2026:13.29559809,52.4561845,22.01.2025, ("Sicherung gemäß Vz.-plan", bis 18.12.2026)
 #: last_checked: 2026-11-20 vvv
-#: next_check: 2026-12-18 vvv
-#: valid: -20261218
+#: next_check: 2027-05-27 (VIZ-Verkehrsmeldung) vvv
+#: valid: -20270527
 kein Radweg, Radfahrüberholverbot, 20km/h	RW0; 3707,5758 3574,5717 3489,5690 3355,5655 3160,5671
-#: valid: !-20261218 vvv
+#: valid: !-20270527 vvv
 	RW3; 3707,5758 3574,5717
 unebenes Verbundsteinpflaster, schmal	RW1; 3574,5717 3489,5690 3355,5655 3160,5671
 #: valid ^^^
@@ -6403,7 +6415,7 @@ Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17377,15
 #: next_check_id: WEISSETAUBE-2025
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/quartier-wei%C3%9Fe-taube.161/page-3#post-26792
 #: source_id: planb2026:13.51369864,52.5358353,01.05.2026, ("Sicherung gemäß Vz.-plan", bis 31.08.2026) (bis 31.10.2026) (bis 31.03.2027) (vorfristig inaktiv)
-#: source_id: planb2026:13.51369864,52.5358353,01.05.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.03.2027)
+#: source_id: planb2026:13.51369864,52.5358353,01.05.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 31.03.2027) (vorfristig inaktiv)
 #: XXX: Radweg gesperrt/aufgehoben, Tempo 20 bzw. 30 + Radfahrüberholverbot
 # ACTIVATE_LATER --- Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17638,14945 17684,14858 17693,14840 17745,14734 17768,14686 17791,14639 17824,14572
 #: last_checked: 2026-11-15
@@ -7414,7 +7426,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by: https://www.entwicklungsstadt.de/von-der-us-botschaft-zum-bundestagsbuero-ein-haus-im-wandel-in-der-neustaedtischen-kirchstrasse/
 #: by: https://www.entwicklungsstadt.de/bundestagsbueros-in-mitte-historische-fassade-nach-sanierung-wieder-sichtbar/
 #: source_id: viz2021:13.385484,52.518162,12.08.2024,07:00 (Leitungsarbeiten, Sperrung für Kfz-Verkehr, bis 23.08.2024) (inaktiv)
-#: last_checked: 2026-11-23 vvv
+#: last_checked: 2026-11-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2027-12-31 (entwicklungsstadt) vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
@@ -9624,10 +9636,10 @@ Poller	RW4; 9247,4915 9239,4980 9206,5193
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 16.12.2021) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
 #: source_id: viz2021:13.377485,52.466729,13.11.2023,06:00 (Leitungsarbeiten bis 01.12.2023) (inaktiv)
 #: source_id: LMS-BR:406426/72 viz2021:13.37196,52.46981, vizapi2026:390/2026 (Umbau Knotenpunkt und Modernisierung der LZA an der Alboinstr./A100, bis 27.10.2026) (bis 15.01.2027)
-#: source_id: LMS-BR:426671/72 viz2021:13.37412,52.46869, vizapi2026:1153/2026 (Schöneberger Str./Ringbahnstr., Fahrbahnverengung, bis 30.11.2026) (bei vizapi2026 entfernt)
+#: source_id: LMS-BR:426671/72 viz2021:13.37412,52.46869, vizapi2026:1153/2026 (Schöneberger Str./Ringbahnstr., Fahrbahnverengung, bis 30.11.2026) (bei vizapi2026 entfernt) (bis 23.12.2026)
 #: source_id: planb2026:13.37313754,52.46918969,07.04.2026, ("Sicherung gemäß Vz.-plan", an der Alboinstr./A100, bis 27.10.2026) (vorfristig inaktiv) (bis 15.01.2027)
 #: source_id: planb2026:13.37804884,52.46634064,13.07.2026, ("Sicherung gemäß Vz.-plan", Schöneberger/Borussiastr., bis 27.11.2026)
-#: source_id: planb2026:13.37429521,52.46852017,27.10.2026,06:00 ("Fahrstreifen-Reduzierung", Schöneberger Str./Ringbahnstr., bis 30.11.2026)
+#: source_id: planb2026:13.37429521,52.46852017,27.10.2026,06:00 ("Fahrstreifen-Reduzierung", Schöneberger Str./Ringbahnstr., bis 30.11.2026) (vorfristig inaktiv)
 #: osm_watch: way id="4357826" version="25"
 #: osm_watch: way id="354645907" version="21"
 #: osm_watch: way id="354645904" version="15"

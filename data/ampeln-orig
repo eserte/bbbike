@@ -103,7 +103,7 @@ Hansastr./Feldtmannstr.: provisorische Ampel	X::inwork 16460,17214
 #: note: Richtung Norden möglicherweise provisorische Radspur an der Baustelle vorbei, Richtung Süden wird der Radverkehr über den Hochbord geleitet
 #: source_id: planb2026:13.43879761,52.51259219,03.08.2026, ("Sperrung einer Fahrtrichtung", 03.08.2026 bis 14.10.2026) (vorfristig inaktiv) (bis 21.12.2026)
 #: source_id: LMS-BR:419361/72 viz2021:13.43972,52.51393,13.08.2026,07:00 vizapi2026:830/2026 (bis 15.10.2026) (bis 20.10.2026) (bis 21.12.2026)
-#: last_checked: 2026-11-24
+#: last_checked: 2026-11-26
 #: check_frequency: 21d
 #: next_check: 2026-12-21 (VIZ-Verkehrsmeldung + planb)
 #: valid: -20261221
@@ -280,7 +280,7 @@ Friedrichstr./Behrenstr.	X::inwork  9373,12197
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: source_id: planb2026:13.42219032,52.51114479,11.09.2025,07:00 ("Gegenverkehrsanlage (LZA)", bis 04.11.2026) (vorfristig inaktiv) (bis 26.02.2027)
 #: note: eigentlich zwei Fußgängerampeln
-#: last_checked: 2026-11-16
+#: last_checked: 2026-11-26
 #: check_frequency: 60d
 #: next_check: 2027-02-26 (planb)
 Michaelbrücke	F::inwork 11676,11839
@@ -416,14 +416,14 @@ Müggelheimer Str./Straßenbahnhaltestelle	F::inwork 22216,4496
 #: source_id: viz2021:13.293895,52.491271,19.05.2025,12:00 (bis 19.06.2025) (inaktiv) (bis 15.07.2025) (inaktiv)
 #: source_id: LMS-BR:374537/72 viz2021:13.293829,52.491259, (bis 05.08.2025) (bis 08.09.2025) (bis 31.12.2025) (inaktiv)
 #: source_id: vizapi2026:332/2026 (bis 31.08.2026) (bis 09.09.2026) (bis 22.10.2026)
-#: source_id: LMS-BR:420436/72 viz2021:13.29383,52.49126,28.08.2026,00:00 (bis 09.09.2026) (bis 22.10.2026) (bis 27.11.2026)
+#: source_id: LMS-BR:420436/72 viz2021:13.29383,52.49126,28.08.2026,00:00 (bis 09.09.2026) (bis 22.10.2026) (bis 27.11.2026) (bis 18.12.2026)
 #: also_indoor: traffic (ex-T,G)
 #: add_fragezeichen: Existiert die Gegenverkehrsregelung weiterhin?
 #: note: Zurzeit (April 2026) kann man als Radfahrer Richtung Südwesten weiterhin den Hochbordradweg oder optional die Fahrbahn mit Ampel benutzen
 #: last_checked: 2026-11-04 (traffic)
 #: check_frequency: 30d (traffic)
-#: next_check: 2026-11-30 (planb)
-#: valid: -20261130
+#: next_check: 2026-12-18 (VIZ-Verkehrsmeldung)
+#: valid: -20261218
 Paulsborner Str./Caspar-Theyß-Str.: Gegenverkehrsregelung	X::inwork::alternating 2953,9371
 # 
 # REMOVED --- #: source_id: viz2021:13.455034,52.559326,08.05.2025,07:00 (bis 27.06.2025) (inaktiv)
@@ -4376,7 +4376,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2026-11-23 vvv
+#: last_checked: 2026-11-26 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="5"
 #: osm_watch: note 5046015 4
@@ -4585,7 +4585,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11256,12647
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2026-10-20 (mapillary)
+#: last_checked: 2026-11-26 (webcam)
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 

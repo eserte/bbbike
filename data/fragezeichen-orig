@@ -221,7 +221,7 @@ Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4
 # 
 #: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
 #: osm_watch: way id="29435079" version="28"
-#: osm_watch: way id="30198295" version="32"
+#: osm_watch: way id="30198295" version="33"
 #: osm_watch: way id="211549617" version="23"
 #: source_id: 2147341149 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_93467 (inaktiv)
@@ -4240,12 +4240,12 @@ Ringslebenstr. (von Heideläuferweg bis Buckower Damm): Busspur geplant, evtl. nu
 #: source_id: viz2021:13.310181,52.431948,02.09.2024,07:00 (bis 20.09.2024) (inaktiv)
 #: source_id: viz2021:13.310467,52.432207,20.09.2024,07:00 (bis 10.10.2024, im Anschluss weitere Arbeiten) (bis 11.11.2024 + weitere Arbeiten) (bis 11.11.2025 + ...) (inaktiv)
 #: source_id: viz2021:13.310222,52.431819,10.10.2024,11:00 (Richtung Norden für Kfz gesperrt, bis 11.11.2025 + ...) (bis 31.01.2026) (inaktiv)
-#: source_id: LMS-BR:349057/72 viz2021:13.30981,52.43135,06.05.2025,06:46 viz2021:13.30981,52.43135, (bis 11.11.2025) (bis 31.01.2026) (bis 27.02.2026) (bis 27.03.2026) (bis 28.04.2026) (bis 26.11.2026)
+#: source_id: LMS-BR:349057/72 viz2021:13.30981,52.43135,06.05.2025,06:46 viz2021:13.30981,52.43135, (bis 11.11.2025) (bis 31.01.2026) (bis 27.02.2026) (bis 27.03.2026) (bis 28.04.2026) (bis 26.11.2026) (bis 31.03.2026)
 #: osm_watch: way id="30956352" version="39"
 #: note: laut rbb werden die Leitungsarbeiten insgesamt bis Ende 2025 andauern
 #: last_checked: 2026-10-14
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2026-11-26 (VIZ-Verkehrsmeldung)
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2027-03-31 (VIZ-Verkehrsmeldung)
 Hindenburgdamm: Busspur geplant, evtl. auch für Radfahrer frei	?; 4411,3180 4170,2727
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11431.pdf (laut Liste nur 100m, aber die Gesamtlänge ist über 250m)
@@ -5805,6 +5805,7 @@ Schleizer Str./Arendsweg: Fußgängerüberweg (Zebrastreifen?) geplant	?::projected
 #: by: https://www.entwicklungsstadt.de/neuer-fussgaengerueberweg-in-lichtenberg-bau-an-schottstrasse-hat-begonnen/
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1688574.php
 #: osm_watch: note 5410940 2
+#: source_id: planb2026:13.49021584,52.51464949,10.12.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 15.12.2026)
 #: XXX südlich der Einmündung Fanningerstr., weggedrehter Mast steht bereits
 #: last_checked: 2026-11-15
 #: check_frequency: 30d
@@ -7368,7 +7369,7 @@ Friedrich-Wilhelm-Platz: Radstreifen	?::projected 5352,7428 5357,7391 5364,7330 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile für beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2026-11-24
+#: last_checked: 2026-11-26
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -7861,7 +7862,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by[removed]: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023) (2. Quartal 2024 - 4. Quartal 2024) (entfernt)
-#: last_checked: 2026-11-24
+#: last_checked: 2026-11-26
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2024-12-31
 Wedekindstr.: geschützte Radfahrstreifen geplant	?::projected 13352,12003 13217,11936 13066,11854
@@ -8430,7 +8431,7 @@ Orankestrand: Widmung einer öffentlichen Grünanlage, wird das Radfahren hier in 
 #: by: https://berliner-abendblatt.de/2023/01/25/so-soll-der-checkpoint-charlie-in-zukunft-aussehen/
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/staedtebauliches-dialogverfahren-zum-checkpoint-charlie-beendet_a371258
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvv-beschliesst-teileinziehung-der-suedlichen-friedrichstrasse_a377366 (Erwähnung)
-#: last_checked: 2026-11-24
+#: last_checked: 2026-11-26
 #: check_frequency: 360d
 Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603,11328 9737,11349 9945,11371 10072,11384
 # 
@@ -8456,7 +8457,7 @@ Zimmerstr.: wird hier eine Fahrradstraße entstehen?	? 9155,11283 9478,11317 9603
 #: by: https://www.tagesspiegel.de/berlin/neuer-pavillon-aussichtsplattform-und-viel-grau-so-soll-der-checkpoint-charlie-kunftig-aussehen-16042973.html
 #: by: https://www.entwicklungsstadt.de/checkpoint-charlie-archaeologen-entdecken-reste-der-ddr-grenzanlagen/
 #: XXX Wie wird die Situation für Radfahrer aussehen (handicap-Eintrag?)
-#: last_checked: 2026-11-24
+#: last_checked: 2026-11-26
 #: check_frequency: 120d
 #: next_check: 2030-12-31 (entwicklungsstadt)
 Friedrichstr.: Straße soll zwischen Checkpoint Charlie und Schützenstr. "eingezogen" werden	? 9478,11317 9474,11360 9468,11412
@@ -9498,7 +9499,7 @@ Michelangelostr. - Gürtelstr.: Erneuerung der Fußwegeverbindung, wird es Sperrun
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/20250707_antonkiez_anton_ruhepl_vzk_sk_web.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/vzp_prinz-eugen-str_web.pdf
 #: osm_watch[closed]: note 5164973 11
-#: osm_watch: note 5649154 1
+#: osm_watch: note 5649154 2
 #: source_id: planb2026:13.36691407,52.5464191,04.11.2026,07:00 ("Sicherung gemäß Vz.-plan", bis 30.11.2026)
 #: priority: #D
 #: last_checked: 2026-11-06 (osm note: "Umsetzung findet derzeit statt")
@@ -9980,7 +9981,7 @@ Rathenow: nach den Bauarbeiten mit Radschutzstreifen	? -62108,21448 -62111,21747
 #: osm_watch: way id="1151333062" version="4"
 #: osm_watch: way id="23755731" version="17"
 #: osm_watch: note 3954722 7
-#: last_checked: 2026-11-24
+#: last_checked: 2026-11-26
 #: check_frequency: 120d
 #: next_check: 2027-06-30 (infravelo)
 Charlottenstr.: mögliche Fortführung der Fahrradstraße	? 9569,11631 9581,11523 9593,11424 9603,11328
@@ -10061,6 +10062,7 @@ Nord-Süd-Grünzug: Benennung in Margarete-Berent-Passage	? 8175,8815 8002,8315 79
 #: next_check: 2027-09-30 (infravelo)
 Thomasiusstr. - Wilsnacker Str.: Fahrradstraße soll realisiert werden	?::projected 6686,12768 6757,13112 6814,13349 6783,13551 6760,13714 6746,13826 6646,13951
 # 
+#: next_check_id: BHFZEHLENDORF-2026
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2023_09_0853_0928_online.pdf (Planfeststellungsverfahren)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2023/pressemitteilung.1304603.php
 #: by: https://www.eba.bund.de/SiteGlobals/Forms/Suche/Planfeststellungsverfahren/Planfeststellungsverfahren_Formular.html
@@ -10097,14 +10099,14 @@ Thomasiusstr. - Wilsnacker Str.: Fahrradstraße soll realisiert werden	?::project
 #: source_id: bvg2024:115#HIM_FREETEXT_375557 (Umleitung ab 28.11.2026)
 #: source_id: LMS-BR:427013/72 viz2021:13.25894,52.43184,31.10.2026,00:00 (Sperrung für Kfz bis 01.11.2026) (inaktiv)
 #: XXX Sperrung des östlichen Personentunnels: ab 11. September 2026. Der Radtunnel bleibt offen, Fußgänger und Radfahrer müssen sich den Weg teilen. Mittlerweile 19.10.2026 - 08.12.2026. Mittlerweile Sperrzeiten: 30.10.-2.11.2026 + 4.12.-7.12.2026.
-#: XXX Sperrung des Teltower Damms (für den Kfz-Verkehr, aber auch für den Rad+Fußgängerverkehr?): 31.10.2026 bis 01.11.2026 + 28.11.2026 bis 29.11.2026. Mittlerweile 31.10.2026 für 4 Stunden + 28.11.-29.11.2026
-#: XXX "Anpassung" der Radverkehrsführung: 29. September bis 2. November 2026 (aber wie wird es aussehen?) (am 10.14.2026 waren keine Änderungen zu sehen)
+#: XXX Sperrung des Teltower Damms (für den Kfz-Verkehr, aber auch für den Rad+Fußgängerverkehr?): 31.10.2026 bis 01.11.2026 + 28.11.2026 bis 29.11.2026. Mittlerweile 31.10.2026 für 4 Stunden + 28.11.-29.11.2026 -> eingetragen
+#: XXX "Anpassung" der Radverkehrsführung: 29. September bis 2. November 2026 (aber wie wird es aussehen?) (am 14.10.2026 waren keine Änderungen zu sehen)
 #: last_checked: 2026-10-14
 # REMOVED --- #: check_frequency: 30d (Anpassung der Radverkehrsführung?)
-#: next_check: 2026-11-28 (nächste Sperrung)
-# REMOVED --- #: check_frequency: 720d
+# REMOVED --- #: next_check: 2026-11-28 (nächste Sperrung)
+#: check_frequency: 180d
 # REMOVED (noch nicht passiert) --- #: next_check: 2026-09-29 (BA-Pressemitteilung: Radverkehrsführung wird angepasst)
-# REMOVED --- #: next_check: 2030-12-31 (BA)
+#: next_check: 2030-12-31 (BA)
 S-Bhf. Zehlendorf, Neubau der Eisenbahnüberführung: mögliche bauzeitliche Einschränkungen	?::projected 720,2718 749,2616
 # 
 #: url: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/service-und-organisationseinheiten/klima-und-internationales/gartenstrasse-rudolfplatz-1656614.php
@@ -10303,7 +10305,7 @@ Am Eichgarten: Fahrradstraße?	? 5787,4400 5865,4353 5981,4342 6007,4340
 # 
 #: source_id: planb2026:13.32129636,52.42974215,01.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 05.04.2027)
 #: also_indoor: traffic (no-G[constr-work ohne Sperrung],no-T,no-H,no-W)
-#: last_checked: 2026-11-23 (traffic)
+#: last_checked: 2026-11-26 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED ---  #: next_check: 2026-11-01 (planb)
 Marienstr. (Lichterfelde): Bauarbeiten geplant, wird der Radverkehr betroffen sein?	? 4972,2541 4968,2543 5065,2715 5115,2803 5117,2804
@@ -10357,12 +10359,13 @@ Stargarder Str./Lychener Str.: geplante Bauarbeiten, wird der Radverkehr betroff
 Gudvanger Str./Krüger Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 11673,16003 11694,16034 11750,16116
 # 
 #: source_id: planb2026:13.44918849,52.47350022,16.11.2026, ("Vollsperrung beider Fahrbahnen", bis 14.04.2027)
-#: also_indoor: traffic (no-G,ex-T,no-W,no-H)
+#: also_indoor: traffic (no-G,re-T,no-W,no-H)
 #: last_checked: 2026-11-23 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-11-16 (planb)
 Böhmische Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 13566,7649 13553,7594 13513,7532 13499,7505 13518,7477
 # 
+#: next_check_id: UDL-2026
 #: by: https://www.berliner-zeitung.de/article/unter-den-linden-der-vergessene-tunnel-von-1916-wird-abgerissen-10375394 (ab Oktober 2026; "der Fuß- und Radverkehr wird im unmittelbaren Umfeld der Baustelle umgeleitet")
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1734463.php (Rückbau Lindentunnel: Bauphase 0 ab 4.11.2026, Bauphase 1 mit separaten Radspuren + Fußgängerampeln ab 11.11.2026)
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/tunnelbau/lindentunnel/ (voraussichtliche Bauzeit: 2026 bis 2027)
@@ -10371,15 +10374,18 @@ Böhmische Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 1356
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mzg2yrdoec2z
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreicco4ac4nnyp3sxcfcecyrebq3im7juw5pdvf7xgd72ou4wqk4k6y
 #: by: https://www.tagesspiegel.de/berlin/dpa-110-jahre-alter-lindentunnel-wird-zuruckgebaut-16238274.html
-#: XXX Radweg Richtung Westen wird zukünftig auf dem Gehweg geführt, zwischen Zeughaus und Universitätsstr. (bereits vorbereitet, noch nicht aktiv)
+#: note Radweg Richtung Westen wird zukünftig auf dem Gehweg geführt, zwischen Zeughaus und Universitätsstr. (bereits vorbereitet, noch nicht aktiv) -> radwege-orig
 #: source_id: LMS-BR:427397/72 viz2021:13.39803,52.5176,04.11.2026,07:00 vizapi2026:1183/2026 (04.11.2026 bis 13.08.2027)
 #: source_id: planb2026:13.39072528,52.51709824,04.11.2026, ("Sicherung gemäß Vz.-plan", bis 13.08.2027)
 #: source_id: bvg2024:100#HIM_FREETEXT_373027 (war 1x inaktiv)
 #: source_id: bvg2024:100#HIM_FREETEXT_373028 (war 1x inaktiv)
-#: last_checked: 2026-11-23
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2026-11-11 (SenUVK: Beginn Bauphase 1)
+#: last_checked: 2026-11-26 vvv
+#: next_check: 2027-08-13 (SenUVK: Ende Bauphase 1) vvv
 Unter den Linden: Verfüllung des Straßenbahntunnels, mögliche Einschränkungen	? 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
+#: check_frequency: 7d
+Bebelplatz: mögliche Einschränkung der Zufahrt	? 9780,12401 9796,12284
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: BORNITZ-2026
 #: by: https://www.radbezirk-lichtenberg.de/wp-content/uploads/2026/02/4.-Leuchtturmprojekte.pdf
@@ -10403,7 +10409,7 @@ Württembergische Str.: mögliche Einschränkungen durch den Thaimarkt?	? 4374,9409
 # 
 #: source_id: planb2026:13.34632036,52.4825757,23.11.2026, ("Vollsperrung beider Fahrbahnen", bis 30.03.2027)
 #: also_indoor: traffic (none)
-#: last_checked: 2026-11-23 (traffic)
+#: last_checked: 2026-11-26 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-11-23 (planb)
 Fritz-Elsas-Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 6575,8469 6458,8472
@@ -10411,7 +10417,7 @@ Fritz-Elsas-Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 65
 #: source_id: planb2026:13.50060426,52.51812331,16.11.2026,06:00 ("Sicherung gemäß Vz.-plan", bis 22.12.2026)
 #: also_indoor: traffic (none)
 #: note: Keine Halteverbotsschilder am 15.11.2026 vorbereitet
-#: last_checked: 2026-11-23 (traffic)
+#: last_checked: 2026-11-26 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-11-16 (planb)
 Gotlindestr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 16859,12613 16957,12599
@@ -10426,7 +10432,7 @@ Waldsteg: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 8364,19166
 #: source_id: planb2026:13.37358011,52.48770226,23.11.2026, ("Vollsperrung beider Fahrbahnen", bis 15.01.2027)
 #: also_indoor: traffic (none)
 #: XXX Sackgassenschilder bereits vorbereitet
-#: last_checked: 2026-11-23 (traffic)
+#: last_checked: 2026-11-26 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-11-23 (planb)
 Monumentenstr./Kreuzbergstr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 8480,9080 8389,9087 8180,9099
@@ -10460,7 +10466,7 @@ Paplitzer Str.: Kopfsteinpflaster wird abgeschliffen	? 10735,-3142 10769,-3064 1
 # 
 #: source_id: planb2026:13.43088816,52.54053279,23.11.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 02.01.2027)
 #: also_indoor: traffic (none)
-#: last_checked: 2026-11-23 (traffic)
+#: last_checked: 2026-11-26 (traffic)
 #: check_frequency: 4d (traffic)
 # REMOVED --- #: next_check: 2026-11-23 (planb)
 Ella-Kay-Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 12173,15040 12095,14888
@@ -10468,6 +10474,18 @@ Ella-Kay-Str.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 12173
 #: source_id: planb2026:13.32730295,52.43948232,07.12.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 26.02.2027)
 #: next_check: 2026-12-07 (planb)
 Gärtnerstr. (Licherfelde): geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 5332,3696 5364,3605
+# 
+#: source_id: planb2026:13.35392166,52.48851858,30.11.2026, ("Vollsperrung beider Fahrbahnen", bis 23.12.2026)
+#: next_check: 2026-11-30 (planb)
+Akazienstr.: geplante Bauarbeiten, wird der Radverkehr betroffen sein?	? 7101,9027 7029,9156 7007,9220 7001,9253
+# 
+#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3n36wz57a7m2w (bis Juni 2027)
+#: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreiaetw6dynkeoljo4ukwim7uxfkoffiwky5j5vulm7iqtzvsq4jiui (unscharfer verkehrsplan)
+#: priority: #A
+#: XXX Fragen:
+#: XXX - müssen Radfahrer Richtung Südwesten eine Verschwenkung über den Bürgersteig der Tegeler Str. fahren?
+#: XXX - ist die Einfahrt in die Tegeler Str. für den Radverkehr erlaubt?
+Fennstr.: Verkehrsführung für den Radverkehr?	?; 7514,14687 7480,14660 7458,14643 7438,14627
 # 
 ######################################################################
 #
@@ -12352,7 +12370,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.luise-nord.de/spreeufer/?date=20261006
 #: also_indoor: webcam https://portal1768.webcam-profi.de/ (Seite arbeitet fehlerhaft, aber aktuelles Bild kann man sich noch anschauen) (mittlerweile 401) (401, aber: Vorschaubild -> im neuen Tab öffnen)
 #: osm_watch: way id="124182482" version="10"
-#: last_checked: 2026-10-20
+#: last_checked: 2026-11-26
 #: check_frequency: 120d
 #: next_check: 2028-12-31 (luisenstadt-mitte)
 Uferweg geplant	?::projected 11827,11720 11676,11839 11375,11994
