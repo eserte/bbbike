@@ -8,8 +8,7 @@
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 use strict;
@@ -22,8 +21,10 @@ use lib (
 use Fcntl qw(SEEK_SET);
 use File::Temp qw(tempfile);
 use Getopt::Long;
+use POSIX qw(strftime);
 use Tie::IxHash ();
 
+use BBBikeUtil qw(bbbike_root);
 use Geography::Berlin_DE ();
 use Karte::Polar;
 use Karte::Standard;
@@ -33,7 +34,7 @@ use Strassen::Strasse;
 use VectorUtil qw(get_polygon_center);
 
 use vars qw($VERSION);
-$VERSION = '1.10';
+$VERSION = '1.11';
 
 # Monkeypatch for performance reasons
 # See http://rt.cpan.org/Ticket/Display.html?id=39619
@@ -317,11 +318,11 @@ if ($single_file) {
     do_file("$datadir/rbahn", \&handle_railway_like);
 
     # Use -orig files here, because it has more information (RW? etc.)
-    if (-r "$datadir/radwege-orig") {
-	do_file("$datadir/radwege-orig", \&handle_cycleway_like);
-    }
-    if (-r "$datadir/comments_cyclepath-orig") {
-	do_file("$datadir/comments_cyclepath-orig", \&handle_cycleway_like);
+    for my $cyclepath_file ("$datadir/radwege-orig", "$datadir/comments_cyclepath-orig") {
+	if (-r $cyclepath_file) {
+	    my $tmp = file_for_date($cyclepath_file); # because it's an -orig file we have to handle the "valid" directives
+	    do_file("$tmp", \&handle_cycleway_like);
+	}
     }
 
     do_file("$datadir/berlin_ortsteile", \&handle_citypart_like);
@@ -342,6 +343,27 @@ sub do_file {
 	    die $@;
 	}
     }
+}
+
+# process "valid" directory
+sub file_for_date {
+    my($file, $for_date) = @_;
+    $for_date ||= strftime("%Y-%m-%d", localtime);
+    my $tmp = File::Temp->new(SUFFIX => '.bbd', UNLINK => 1);
+    my $grepstrassen_cmd = bbbike_root . '/miscsrc/grepstrassen';
+    if (!-e $grepstrassen_cmd) {
+	die "Unexpected error: $grepstrassen_cmd unavailable, maybe incomplete checkout?";
+    }
+    my @cmd = ($^X, $grepstrassen_cmd, '-valid', $for_date, '-preserveglobaldirectives', $file);
+    open my $fh, '-|', @cmd or die $!;
+    while(<$fh>) {
+	print $tmp $_;
+    }
+    close $fh
+	or die "Error while running @cmd: $!";
+    close $tmp
+	or die "Error while writing to $tmp: $!";
+    $tmp;
 }
 
 sub handle_blocked_node_like {
