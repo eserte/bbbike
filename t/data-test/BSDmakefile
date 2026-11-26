@@ -5,7 +5,10 @@ EMPTY_FILES=	Potsdam.coords.data gesperrt \
 		comments_route comments_trafficjam comments_tram comments_scenic plaetze \
 		upgrade_scope_hint green wasserstrassen wasserumland wasserumland2 \
 		orte orte2 orte_city \
-		inaccessible_strassen inaccessible_landstrassen
+		inaccessible_strassen inaccessible_landstrassen \
+		ubahnhof sbahnhof rbahnhof ubahn sbahn rbahn \
+		ortsschilder berlin_ortsteile nolighting flaechen \
+		strassen_bab mount
 NON_EMPTY_FILES=	strassen gesperrt
 
 CREATE_COOKED_BBD=	${PERL} ${MISCSRCDIR}/create_cooked_bbd
