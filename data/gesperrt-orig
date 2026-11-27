@@ -4363,11 +4363,11 @@ Knoten am ehemaligen Flughafen Tegel: Sperrung	2::inwork 2880,15884 2828,15903
 #: osm_watch: way id="182614432" version="30"
 #: last_checked: 2026-11-21 vvv
 #: check_frequency: 10d vvv
-# REMOVED ---  #: next_check: 2026-11-15 (SenUVK-Seite zur Straßmannstr.) vvv
+#: next_check: 2026-11-27 (SenUVK-Seite: Überquerung in Höhe Kochhannstr. möglicherweise wieder möglich) vvv
 Petersburger Str.: Überquerung in Höhe Straßmannstr. nicht möglich	3nocross::inwork 13481,13128 13530,13014 13579,12904
 Petersburger Str.: Überquerung in Höhe Kochhannstr. nicht möglich	3nocross::inwork 13481,13128 13434,13234 13383,13349
 # REMOVED --- #: last_checked: 2026-10-11 --- Petersburger Str.: Überquerung in Höhe Mühsamstr. nicht möglich	3nocross::inwork 13685,12664 13622,12806 13579,12904
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -4591,8 +4591,8 @@ Hedwig-Porschütz-Str.: Einbahnstraßenregelung	1s:q4:inwork 7757,14318 7735,14305
 #: XXX Bleiben nach den Umbauarbeiten die Wege die gleichen?
 #: osm_watch: note 4795958 5
 #: osm_watch: way id="169067264" version="16"
-#: osm_watch: way id="202157026" version="9"
-#: osm_watch: way id="202157023" version="7"
+#: osm_watch: way id="202157026" version="10"
+#: osm_watch: way id="202157023" version="8"
 #: osm_watch: way id="1051153667" version="5"
 #: last_checked: 2026-11-23 vvv
 #: check_frequency: 60d vvv
@@ -5286,7 +5286,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: by: https://www.tagesspiegel.de/berlin/bezirke/friedrichshain-kreuzberg/uferweg-an-der-spree-hat-lucken-1-kilometer-umweg-in-berlin-weil-100-meter-fehlen-16198753.html
-#: last_checked: 2026-11-22 vvv
+#: last_checked: 2026-11-27 vvv
 #: next_check: 2028-01-01 (pardok) vvv
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # REMOVED (Treppe ist frei, und dann noch 35m Uferweg) --- Treppe zum Uferweg: Zugang nicht möglich	2::inwork 14373,10046 14383,10036 14405,10027

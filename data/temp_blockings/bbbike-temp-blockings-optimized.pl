@@ -569,7 +569,7 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'data' => '#: source_id: LMS-BR:421713/72 viz2021:13.29846,52.47229,08.09.2026,07:00 (bis 27.11.2026)	
+         'data' => '#: source_id: LMS-BR:421713/72 viz2021:13.29846,52.47229,08.09.2026,07:00 (bis 27.11.2026) (bis 29.01.2027)
 #: source_id: planb2026:13.29845364,52.4716767,08.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 27.11.2026) (vorfristig inaktiv)
 #: also_indoor: traffic (G,T,H,W)
 	q4::inwork 3314,7269 3308,7193
@@ -578,9 +578,9 @@ push @temp_blocking,
 ',
          'from' => 1788818400,
          'id' => 467,
-         'text' => 'Zoppoter Str.: Bauarbeiten zwischen Heiligendammer Str. und Sylter Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 08.09.2026 07:00 bis 27.11.2026',
+         'text' => 'Zoppoter Str.: Bauarbeiten zwischen Heiligendammer Str. und Sylter Str., Sperrung, evtl. ist auch der Radverkehr betroffen, vom 08.09.2026 07:00 bis 29.01.2027',
          'type' => 'handicap',
-         'until' => 1795820399
+         'until' => 1801263599
        },
        undef,
        undef,
@@ -948,7 +948,7 @@ Londoner Str.: Richtung Müllerstr. gesperrt	q4::inwork; 5953,17131 5847,17018
          'data' => '# REMOVED --- #: source_id: IM_004175 (inaktiv (2006)) --- 1::inwork 5533,19811 5523,19746 5495,19571 5486,19515 5476,19450
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mzwpb2xn5o2e
 #: by: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:n3hodnajzex6mjxkrvd2pqpt/bafkreigxxcsho2eo3z2qht7ipmkz3ivdbqm7tdal4nnlrwidsrsft5nsye
-#: source_id: LMS-BR:427972/72 viz2021:13.33491,52.58465,10.11.2026,07:00 vizapi2026:1202/2026 (bis 30.11.2026) (bei vizapi2026 bis 23.12.2026)
+#: source_id: LMS-BR:427972/72 viz2021:13.33491,52.58465,10.11.2026,07:00 vizapi2026:1202/2026 (bis 30.11.2026) (bei vizapi2026 bis 23.12.2026) (bis 23.12.2026)
 	q4::inwork; 5422,19829 5439,19826 5533,19811
 ',
          'from' => 1794265200,
@@ -3639,6 +3639,7 @@ Brandenburger Str.	2::xmas -13556,-1140 -13525,-1131 -13410,-1101 -13289,-1071 -
 #: source_id: IM_020883 (inaktiv)
 #: source_id: 2147345257 (inaktiv)
 #: source_id: LMS-BR:393851/72 viz2021:13.49469,52.42125,20.12.2025,12:00 (bis 21.12.2025) (inaktiv)
+#: source_id: planb2026:13.49495436,52.41804754,04.12.2026,12:00 ("Vollsperrung beider Fahrbahnen", bis 06.12.2026)
 Alt-Rudow zwischen Köpenicker Str. und Krokusstr.	2::xmas 16849,1437 16805,1488 16610,1715
 Krokusstr.	2::xmas 16610,1715 16767,1831
 ',
@@ -5403,7 +5404,7 @@ Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
 #: source_id: adac:1917057020 (bis 11.10.2025) (neue ID -> inaktiv)
 #: source_id: LMS-BR:394765/72 viz2021:13.305676,52.501251,01.01.2026,07:00 (bis 30.06.2026) (bis 30.12.2026)
 #: source_id: LMS-BR:394766/72 viz2021:13.30605,52.50146,01.01.2026,07:00 (benachbarte Lewishamstr., bis 30.06.2026) (bis 30.12.2026)
-#: source_id: planb2026:13.3055892,52.50045055,01.01.2026,07:00 (hier: "keine Fahrbahn-Einschränkung", bis 30.12.2026)
+#: source_id: planb2026:13.3055892,52.50045055,01.01.2026,07:00 (hier: "keine Fahrbahn-Einschränkung", bis 30.12.2026) (vorfristig inaktiv)
 #: by: https://www.deutsches-architekturforum.de/thread/8117-wilmersdorfer-stra%C3%9Fe-neubauprojekte/?postID=760723#post760723 (Abriss Hotel Panorama)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/waitzstra%C3%9Fe-ecke-sybelstra%C3%9Fe-14-abriss-und-hotelneubau.1157/page-4#post-24084 (altes Bauvorhaben von ~2021)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-lewishamstra%C3%9Fe-4-ehem-hotel-panorama-adenauer-platz.1193/page-3#post-26359
@@ -5422,7 +5423,7 @@ Passauer Str.: Fahrbahn gesperrt	q4::inwork 6021,10405 6116,10688
 #: note: laut rbb Sperrungen in beiden Richtungen
 #: also_indoor: traffic (none)
 #: last_checked: 2026-09-02
-#: next_check: 2026-12-30 (VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-30 (VIZ-Verkehrsmeldung + ex-planb)
 # REMOVED --- Waitzstr., südlicher Abschnitt	q4::inwork; 3739,10495 3737,10322
 Waitzstr.	q4::inwork 3770,10508 3739,10495
 ',
@@ -5613,6 +5614,7 @@ Saalestr.: Fahrbahn abschnittsweise gesperrt, Bordsteine, Umwege	q4::inwork 1364
 # REMOVED --- #: next_check: 2023-07-31
 # REMOVED --- #: note: zwischenzeitlich sollten die Radfahrer absteigen, die Zusatzschilder wurden aber wieder abmontiert (?) (gesehen 2023-08-18 an der Innstraße), aber trotzdem recht eng --- #: note: eigentlich q3-::inwork --- zwischen Wildenbruchstr. und Innstr.	q3::inwork 13033,8628 13124,8562 13217,8493
 #: by: https://www.morgenpost.de/bezirke/neukoelln/article409644865/wegen-baustelle-wie-verrueckt-nach-parkmoeglichkeiten-suchen.html
+#: also_indoor: traffic (G,no-T,no-H,W[zu lang?])
 #: source_id: LMS-BR:408948/72 viz2021:13.44444,52.48166,21.05.2026,09:00 vizapi2026:499/2026 (bis 28.08.2026) (zwischenzeitlich nur noch bei vizapi2026, bis 31.10.2026) (bis 31.12.2026)
 #: source_id: planb2026:13.45012105,52.47955018,09.05.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 28.08.2026) (vorfristig inaktiv)
 #: source_id: planb2026:13.45012105,52.47955018,09.05.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.10.2026) (vorfristig inaktiv)
@@ -7147,7 +7149,7 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 #: source_id: LMS-BR:408563/72 viz2021:13.338888,52.589354,18.05.2026,07:00 (bis 12.06.2026) (inaktiv)
 #: source_id[inactive]: bvg2024:120#HIM_FREETEXT_337463
 #: source_id[inactive]: bvg2024:120#HIM_FREETEXT_343106
-#: source_id: LMS-BR:336421/72 viz2021:13.338677,52.589372, vizapi2026:534/2025 (bis 31.10.2026) (laut vizapi2026 Einbahnstraßenregelung) (bis 30.11.2026)
+#: source_id: LMS-BR:336421/72 viz2021:13.338677,52.589372, vizapi2026:534/2025 (bis 31.10.2026) (laut vizapi2026 Einbahnstraßenregelung) (bis 30.11.2026) (bis 21.01.2027)
 #: also_indoor: traffic (G,ex-H,ex-W,no-T)
 #: by[nocache]: https://x.com/VIZ_Berlin/status/1801469613617910085
 #: by: https://pbs.twimg.com/media/GP9CfHGX0AAhij2?format=jpg&name=large
@@ -7170,9 +7172,9 @@ Dolomitenstr.: etwa 60-70m der Fahrbahn	q3::inwork; 10573,17566 10466,17464
 ',
          'from' => 1779055200,
          'id' => 4089,
-         'text' => 'Alt-Wittenau: vor der Einmündung Roedernallee Bauarbeiten, Sperrung der Fahrbahn, evtl. ist auch der Radverkehr betroffen, bis Ende November 2026',
+         'text' => 'Alt-Wittenau: vor der Einmündung Roedernallee Bauarbeiten, Sperrung der Fahrbahn, evtl. ist auch der Radverkehr betroffen, bis Januar 2027',
          'type' => 'handicap',
-         'until' => 1796079599
+         'until' => 1800572399
        },
        undef,
        undef,
@@ -7638,16 +7640,16 @@ Flakenfließbrücke	q4::inwork 34250,2546 34175,2637 34152,2749
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026) (inaktiv) (bis 30.11.2026)
+         'data' => '#: source_id: LS/223-P/24/159 (bis 31.05.2026) (inaktiv) (bis 12.05.2025) (inaktiv) (bis 28.02.2026) (inaktiv) (nur noch geringfügige Einschränkungen, bis 31.05.2026) (bis 10.07.2026) (bis  31.10.2026) (inaktiv) (bis 30.11.2026) (bis 18.12.2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~05-06-2026-l91-wachow_ausbau-der-ortsdurchfahrt (bis III. Quartal 2026)
 #: by: https://www.ls.brandenburg.de/ls/de/service/presse/ansicht/~16-09-2026-l91-wachow_fertigstellung-verschiebt-sich-in-den-novemberdezember (bis Anfang Dezember 2026)
 	2::inwork -34435,12201 -34027,12437 -33697,13146
 ',
          'from' => 1752962400,
          'id' => 4199,
-         'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Dezember 2026',
+         'text' => 'L91, Wachow: Bauarbeiten, Sperrung, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Mitte Dezember 2026',
          'type' => 'gesperrt',
-         'until' => 1796929200
+         'until' => 1797620400
        },
        {
          'data' => '# REMOVED ---#: by: rbb, wurde da aber mittlerweile entfernt --- #: also_indoor: traffic (re-G,ex-W,ex-B,ex-T) --- #: note: Länge des Baustellenbereichs ca. 80m, deshalb: q4 -> q3 --- #: note: laut Baustellenschild bis 04.2025, mittlerweile bis 08.2025 --- #: add_fragezeichen: Wurden die Bauarbeiten beendet? --- #: last_checked: 2025-08-05 (traffic) --- #: check_frequency: 7d --- #: next_check: 2025-08-31 --- Grolmanstr. (nordwestlicher Abschnitt)	q3::inwork 4690,11369 4775,11203
@@ -8439,18 +8441,7 @@ Sedanstr.: Sperrung der Fahrbahn	q4::inwork 5630,4476 5658,4548 5668,4584 5691,4
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.457594,52.43103,05.05.2025,07:00 (bis 30.10.2025) (inaktiv)
-#: source_id: LMS-BR:367900/72 viz2021:13.45996,52.43191,05.05.2025,07:00 viz2021:13.45996,52.43191, (bis 30.10.2025) (bis 19.12.2025) (bis 30.03.2026) (bis 30.11.2026)
-#: source_id: planb2026:13.45461683,52.42993594,05.05.2025, ("Fahrstreifen-Reduzierung", bis 30.11.2026)
-	q4::inwork 14154,2923 14212,2865
-',
-         'from' => 1746334800,
-         'id' => 4321,
-         'text' => 'Imbuschweg: Anbindung Johannisthaler Chaussee gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Ende November 2026',
-         'type' => 'handicap',
-         'until' => 1796079599
-       },
+       undef,
        undef,
        undef,
        {
@@ -9071,7 +9062,7 @@ Kaiserdamm -> Fritschestr.: Richtung Osten/Norden	3 3159,11562 3320,11583 3287,1
 #: by: https://www.entwicklungsstadt.de/wilmersdorf-im-baustellenmodus-arbeiten-an-der-lietzenburger-strasse-dauern-an/
 #: source_id: viz2021:13.32047,52.49975, (kein Endedatum) (inaktiv)
 #: source_id: viz2021:13.31913,52.49968, (kein Endedatum) (inaktiv)
-#: source_id: LMS-BR:385513/72 viz2021:13.32149,52.49982, (bis 30.11.2025) (bis 30.11.2026)
+#: source_id: LMS-BR:385513/72 viz2021:13.32149,52.49982, (bis 30.11.2025) (bis 30.11.2026) (bis 26.02.2027)
 #: source_id: planb2026:13.31909513,52.49945665,01.06.2025, (nur "Fahrstreifen-Verschwenkung", bis 30.11.2026) (vorfristig inaktiv) (bis 30.11.2026) (vorfristig inaktiv)
 #: also_indoor: traffic (G,T,H,W)
 Lietzenburger Str.	q3::inwork 4764,10350 4659,10335 4485,10307
@@ -9079,9 +9070,9 @@ Bleibtreustr./Sächsische Str.	q3::inwork 4638,10162 4659,10335 4672,10552
 ',
          'from' => 1760725052,
          'id' => 4473,
-         'text' => 'Lietzenburger Str./Bleibtreustr.: Wasserrohrbruch, evtl. sind auch Radfahrer von der Sperrung betroffen, voraussichtlich bis Ende November 2026',
+         'text' => 'Lietzenburger Str./Bleibtreustr.: Wasserrohrbruch, evtl. sind auch Radfahrer von der Sperrung betroffen, geplant bis Ende Februar 2027',
          'type' => 'handicap',
-         'until' => 1796079599
+         'until' => 1803682799
        },
        undef,
        undef,
@@ -9152,13 +9143,13 @@ Gustav-Adolf-Str.: Sperrung der Fahrbahn und des Radwegs, Ausweichen auf holprig
 #: source_id: LMS-BR:417792/72 viz2021:13.41863,52.53319, (bis 31.12.2026)
 #: source_id: planb2026:13.41968921,52.53405441,01.11.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026) (ersetzt und inaktiv)
 #: source_id: planb2026:13.41968921,52.53405441,11.08.2025,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
-#: source_id: planb2026:13.42090569,52.53360083,25.08.2026, ("Sicherung gemäß Vz.-plan", Knaackstr. und Umgebung, bis 30.10.2026) (inaktiv) (bis 27.11.2026)
+#: source_id: planb2026:13.42090569,52.53360083,25.08.2026, ("Sicherung gemäß Vz.-plan", Knaackstr. und Umgebung, bis 30.10.2026) (inaktiv) (bis 27.11.2026) (inaktiv)
 # REMOVED (Radverkehrsführung auf der Fahrbahn entlang der Baustelle) --- #: also_indoor: traffic (ex-G[falsch],H[falsch],W[falsch],A[falsch],T) --- #: note: Halteverbotsschilder von 17.11.2025 bis März 2026 --- #: last_checked: 2025-11-19 (traffic) --- #: next_check: 2025-11-19 (do one outdoor check) --- Knaackstr.	q4::inwork 11498,14234 11418,14290 11380,14316
 #: also_indoor: traffic (G,T)
 #: last_checked: 2026-09-11
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2026-07-31 (strabag)
-#: next_check: 2026-12-31 (planb, VIZ-Verkehrsmeldung)
+#: next_check: 2026-12-31 (planb + VIZ-Verkehrsmeldung)
 Kolmarer Str.: Baustelleneinrichtungsfläche	q4::inwork 11418,14290 11354,14187
 ',
          'from' => 1761890400,
@@ -9552,15 +9543,15 @@ Dunckerstr.: Fahrbahn gesperrt	q3::inwork 11632,15530 11654,15572
        },
        undef,
        {
-         'data' => '#: source_id: LMS-BR:399141/72 viz2021:13.284481,52.470838, (bis 31.12.2026)
+         'data' => '#: source_id: LMS-BR:399141/72 viz2021:13.284481,52.470838, (bis 31.12.2026) (bis 31.12.2027)
 #: source_id: planb2026:13.28603151,52.47122021,19.01.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 31.12.2026)
 	q4::inwork 2465,6984 2360,7107
 ',
          'from' => 1771268404,
          'id' => 4535,
-         'text' => 'Bernadottestr.: Bauarbeiten zwischen Hammersteinstr. und Pücklerstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis 31.12.2026',
+         'text' => 'Bernadottestr.: Bauarbeiten zwischen Hammersteinstr. und Pücklerstr., Sperrung, evtl. sind auch Radfahrer betroffen, bis Ende 2027',
          'type' => 'handicap',
-         'until' => 1798736400
+         'until' => 1830293999
        },
        undef,
        undef,
@@ -10026,7 +10017,7 @@ Tauentzienstr.: Fernwärmeleitung gebrochen, etwa 50m der Fahrbahn sind gesperrt	
        undef,
        undef,
        {
-         'data' => '#: source_id: LMS-BR:409562/72 viz2021:13.303816,52.502718,26.05.2026,07:00 (bis 30.11.2026)
+         'data' => '#: source_id: LMS-BR:409562/72 viz2021:13.303816,52.502718,26.05.2026,07:00 (bis 30.11.2026) (bis 01.05.2027)
 #: source_id: planb2026:13.30391593,52.50204224,28.10.2025,07:00 (hier nur "Fahrstreifen-Verschwenkung", bis 30.11.2026)
 #: source_id: planb2026:13.30391973,52.5020523,01.12.2026, ("Sperrung einer Fahrtrichtung", bis 01.05.2027)
 	q4::inwork 3613,10576 3603,10765
@@ -10373,6 +10364,7 @@ Fehrbelliner Str./Veteranenstr.: Gleisbauarbeiten im Kreuzungsbereich	q3::inwork
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260710
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mqix2ixdqs2l
 #: source_id: LMS-BR:415649/72 viz2021:13.41002,52.52861,13.07.2026,07:00 vizapi2026:691/2026 (bis 22.12.2028)
+#: source_id: planb2026:13.41084184,52.52677435,28.04.2026, ("Fahrstreifen-Reduzierung", bis 22.12.2028)
 #: osm_watch[closed]: note 5394140 2
 #: osm_watch: way id="109819106" version="26"
 #: osm_watch: way id="369223457" version="20"
@@ -10381,7 +10373,7 @@ Fehrbelliner Str./Veteranenstr.: Gleisbauarbeiten im Kreuzungsbereich	q3::inwork
 #: note: die ersten drei Wochen nur gesperrt, ohne dass an der Oberfläche sichtbare Bauarbeiten wären
 #: last_checked: 2026-11-24 (daf) vvv
 #: check_frequency: 30d (am Anfang höhere Frequenz) vvv
-#: next_check: 2028-12-22 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2028-12-22 (VIZ-Verkehrsmeldung + planb) vvv
 #: priority: #A
 Rosa-Luxemburg-Str.: Fahrbahn Richtung Süden gesperrt	q4::inwork; 10741,13685 10777,13614 10797,13575 10828,13464
 Almstadtstr.: Anbindung an die Rosa-Luxemburg-Str. gesperrt, Umwege	q4::inwork 10767,13443 10797,13575
@@ -10415,7 +10407,7 @@ Almstadtstr.: Anbindung an die Rosa-Luxemburg-Str. gesperrt, Umwege	q4::inwork 1
          'data' => '#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20260714
 #: by: https://bsky.app/profile/vizberlin.bsky.social/post/3mqnwyyrur22n
 #: source_id: LMS-BR:415908/72 viz2021:13.33049,52.56254,15.07.2026,07:00 (hier nur bis 19.08.2026, evtl. der 1. BA) (inaktiv)
-#: source_id: planb2026:13.32035722,52.56030224,10.06.2026, ("Sicherung gemäß Vz.-plan", bis 27.05.2027) (vorfristig inaktiv) (bis 27.05.2027) (vorfristig inaktiv)
+#: source_id: planb2026:13.32035722,52.56030224,10.06.2026, ("Sicherung gemäß Vz.-plan", bis 27.05.2027) (vorfristig inaktiv) (bis 27.05.2027) (vorfristig inaktiv) (bis 27.05.2027)
 #: source_id: bvg2024:125#HIM_FREETEXT_348375
 #: source_id: vizapi2026:1107/2026 (bis 30.06.2027)
 #: also_indoor: traffic (re-G,T,H,re-W)
@@ -10562,7 +10554,7 @@ Am Wiesenrain: Einbahnstraßenregelung	q3::inwork; 23931,5992 24122,6007
        {
          'data' => '#: source_id: LMS-BR:416449/72 viz2021:13.4355,52.51475,20.07.2026,07:00 (bis 29.08.2026) (fälschlicherweise inaktiv)
 #: source_id: planb2026:13.43554035,52.51462551,20.07.2026,07:00 ("Vollsperrung beider Fahrbahnen", etwa 40m lang, bis 29.08.2026) (inaktiv)
-#: source_id: planb2026:13.43421234,52.51316056,14.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 11.12.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.43421234,52.51316056,14.09.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 11.12.2026) (vorfristig inaktiv) (bis 30.04.2027)
 #: source_id: LMS-BR:422267/72 viz2021:13.4355,52.51475,14.09.2026,07:00 (bis 11.12.2026) (bis 30.04.2027)
 #: also_indoor: traffic (G,T,H,W[later])
 #: note: wegen der Kürze der Baustelle: q4 -> q3
@@ -10817,6 +10809,7 @@ Kleine Lindenstr. - Business Park Berlin: Bauzäune	2::inwork 20723,-1324 20817,-
 #: by: https://www.berlin-dresden.de/bautagebuch.html?date=20260817
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-dresden/infobauarbeiten?date=20260818
 #: source_id: 267201643 (19.10.2026 bis 30.10.2026) (inaktiv)
+#: source_id: 267202321 (28.11.2026 bis 05.12.2026)
 Klausdorf - Zossen (Thomas-Müntzer-Straße): Sperrung des Bahnübergangs	2::inwork 13014,-22300 13528,-21855 13960,-21244
 ',
          'from' => 1795734000,
@@ -10949,7 +10942,7 @@ Pücklerstr. -> Köpenicker Str.	3::inwork 12272,10840 12416,11084 12314,11152
          'data' => '#: source_id: LMS-BR:420754/72 viz2021:13.37628,52.54915,31.08.2026,07:00 (bis 31.10.2026) (bis 31.12.2026)
 #: source_id: planb2026:13.37630466,52.54908701,31.08.2026, ("Vollsperrung beider Fahrbahnen", bis 31.10.2026) (bis 31.12.2026)
 #: also_indoor: traffic (G[later],T,H,W)
-#: last_checked: 2026-11-14 (traffic)
+#: last_checked: 2026-11-27 (traffic)
 #: check_frequency: 14d (traffic)
 #: next_check: 2026-12-31 (planb + VIZ-Verkehrsmeldung)
 	q4::inwork 8338,15987 8430,15901
@@ -11003,7 +10996,7 @@ L204, Uetz - Paaren: Radweg wird wegen Bauarbeiten gesperrt, Umleitung für den R
 #: by: https://www.entwicklungsstadt.de/strassenbahn-nach-ostkreuz-wuhlheide-bruecken-abriss-schafft-platz-fuer-tram-idee/
 #: by: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/brueckenbau/bruecke-an-der-wuhlheide/?date=20261010 (Juli bis Dezember 2026)
 #: source_id: LMS-BR:417247/72 viz2021:13.513758,52.469278,27.07.2026,07:00 vizapi2026:755/2026 (bis 11.11.2026) (bei vizapi2026 bis 30.11.2026) (bis 18.12.2026)
-#: source_id: planb2026:13.51817625,52.46741302,31.07.2026, ("Fahrstreifen-Reduzierung", bis 30.11.2026) (vorfristig inaktiv) (bis 18.12.2026) (vorfristig inaktiv)
+#: source_id: planb2026:13.51817625,52.46741302,31.07.2026, ("Fahrstreifen-Reduzierung", bis 30.11.2026) (vorfristig inaktiv) (bis 18.12.2026) (vorfristig inaktiv) (bis 18.12.2026)
 #: osm_watch: note 5494303 1
 #: XXX der Asphalt an der Einmündung Fontanestr. wurden durch einen breiten Mittelstreifen ersetzt --- nach den Bauarbeiten schauen, ob es eine Fußgängerfurt gibt, und wie weit versetzt sie ist
 #: last_checked: 2026-11-18 vvv
@@ -11431,7 +11424,8 @@ Adolf-Scheidt-Platz: Sperrung der Fahrbahn	q4::inwork 8731,7990 8769,7994 8783,8
          'until' => 1811800799
        },
        {
-         'data' => '#: source_id: planb2026:13.44268945,52.48997582,28.09.2026, ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (inaktiv) (bis 30.11.2026)
+         'data' => '#: source_id: planb2026:13.44268945,52.48997582,28.09.2026, ("Vollsperrung beider Fahrbahnen", bis 30.10.2026) (inaktiv) (bis 30.11.2026) (vorfristig inaktiv)
+#: also_indoor: traffic (T)
 #: note: Länge der Sperrung etwa 40m, deshalb q4 -> q3
 #: last_checked: 2026-11-07
 #: next_check: 2026-11-30 (planb)
@@ -11538,29 +11532,7 @@ An der Nordbahn: Sanierung mit Sperrung	2::inwork 7446,19522 7431,19545 7309,196
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.aktives-adlershof.de/aktuelles?date=20261007 ("Dörpfeldstraße gesperrt", 19. Oktober bis 16. Dezember 2026 in zwei Bauabschnitten)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1723358.php ("Radfahrende können die entsprechend ausgeschilderten Gehwege in Schrittgeschwindigkeit mit nutzen")
-#: by: https://viz.berlin.de/aktuelle-meldungen/baumassnahmen-in-der-dorpfeldstrasse-19.10-bis-16.12.26/
-#: by: https://www.entwicklungsstadt.de/bauarbeiten-in-adlershof-doerpfeldstrasse-wird-bis-dezember-gesperrt/
-#: by: https://bsky.app/profile/vizberlin.bsky.social/post/3my7bxsvvus2b (nur Kfz-Verkehr)
-#: by: https://www.tagesspiegel.de/berlin/bezirke/treptow-koepenick/mein-schreibtisch-wackelt-ab-7-uhr-fahrradstrasse-im-berliner-sudosten-wird-zu-schleichweg-fur-lkws-16214673.html
-#: by: https://www.entwicklungsstadt.de/doerpfeldstrasse-warum-in-adlershof-ploetzlich-laternen-fehlen/
-#: source_id: planb2026:13.54714994,52.43753519,19.10.2026, ("Vollsperrung beider Fahrbahnen", Bereich Marktplatz Adlershof, 19.10.2026 bis 16.12.2026) (vorfristig inaktiv) (bis 16.12.2026) (vorfristig inaktiv)
-#: source_id: LMS-BR:425829/72 viz2021:13.547613,52.437736,19.10.2026,07:00 vizapi2026:1082/2026 (bis 03.11.2026) (bis 13.11.2026) (bis 24.11.2026) (vorfristig inaktiv)
-#: also_indoor: traffic (ex-G,ex-T,ex-H,W[verlagert zur Anna-Seghers-Str])
-# REMOVED --- #: last_checked: 2026-10-18
-# REMOVED --- #: next_check: 2026-10-19 (planb + aktives-adlershof (1 Tag vorher))
-# REMOVED (abgesagt? schon passiert?) --- #: next_check: 2026-11-03 (VIZ-Verkehrsmeldung: möglicher nächster Bauabschnitt?)
-#REMOVED --- Dörpfeldstraße zwischen Friedenstraße - Hackenbergstraße	q3::inwork 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786
-Dörpfeldstraße zwischen Anna-Seghers-Straße - Gellertstraße	q3::inwork 20012,3532 20082,3578
-',
-         'from' => 1792274400,
-         'id' => 4793,
-         'text' => 'Dörpfeldstr.: Gleisbauarbeiten, Sperrung der Fahrbahn zwischen Anna-Seghers-Str. und Gellertstr., vorausichtlich bis 16.12.2026',
-         'type' => 'handicap',
-         'until' => 1797461999
-       },
+       undef,
        undef,
        undef,
        {
@@ -11793,16 +11765,7 @@ Zwiestädter Str.: Sperrung der Fahrbahn (ungefähr 100m)	q4::inwork 13392,7648 13
          'type' => 'handicap',
          'until' => 1796425200
        },
-       {
-         'data' => '#: source_id: 267308726 (bis 28.10.2026) (inaktiv) (bis 27.11.2026)
-	2::inwork 51148,105629 50877,104692
-',
-         'from' => 1792468800,
-         'id' => 4816,
-         'text' => 'Cremzow - Grenz: Bauarbeiten, Sperrung, 21.10.2026 06:00 Uhr bis 27.11.2026 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1795806000
-       },
+       undef,
        undef,
        undef,
        {
@@ -11948,24 +11911,12 @@ Geibelstr.	q4::inwork 10564,9755 10627,9912
          'type' => 'handicap',
          'until' => 1803855599
        },
-       {
-         'data' => '#: source_id: LMS-BR:426532/72 viz2021:13.40754,52.57388,26.10.2026,07:00 (bis 27.11.2026)
-#: source_id: planb2026:13.40422588,52.57304788,26.10.2026, ("Sicherung gemäß Vz.-plan", bis 27.11.2026)
-#: note: am Abend des 26.+29.10.+01.11.2026 noch keine Sperrung
-#: last_checked: 2026-11-01 (mapillary)
-	q4::inwork 10205,18575 10359,18646
-',
-         'from' => 1792908000,
-         'id' => 4827,
-         'text' => 'Parkstr.: Bauarbeiten zwischen Elisabethweg und Pestalozzistr., geplant vom 26.10.2026 bis 27.11.2026 (Stand 1.11.2026: noch keine Bauarbeiten)',
-         'type' => 'handicap',
-         'until' => 1795820340
-       },
+       undef,
        undef,
        undef,
        undef,
        {
-         'data' => '#: source_id: planb2026:13.28162521,52.43585692,26.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.11.2026) (vorfristig inaktiv) (bis 26.11.2026)
+         'data' => '#: source_id: planb2026:13.28162521,52.43585692,26.10.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 24.11.2026) (vorfristig inaktiv) (bis 26.11.2026) (inaktiv)
 #: source_id: planb2026:13.28273672,52.43488377,27.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", südlicher Gräfenberger Weg, bis 08.01.2027)
 #: by: https://www.morgenpost.de/bezirke/steglitz-zehlendorf/article413521562/neue-baustelle-in-lichterfelde-sperrt-anwohner-ploetzlich-aus.html ("Radfahrer frei"-Schild, aber vermutlich sind nur die Gehwege frei)
 #: also_indoor: traffic (G[later],T,H,no-W)
@@ -12379,32 +12330,19 @@ Krumme Lanke: zwischen Fischerhüttenstraße und Ottmachauer Straße	2::inwork -753
          'type' => 'gesperrt',
          'until' => 1830293999
        },
-       {
-         'data' => '#: source_id: planb2026:13.57858703,52.49893496,23.11.2026,07:00 ("Vollsperrung beider Fahrbahnen", in der Chemnitzer Str., bis 27.11.2026)
-#: source_id: LMS-BR:429273/72 viz2021:13.57785,52.49754,23.11.2026,07:00 vizapi2026:1263/2026 (Chemnitzer Str., bis 27.11.2026 14:00)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1741628.php
-#: by: https://viz.berlin.de/aktuelle-meldungen/vollsperrung-auf-der-chemnitzer-strasse-in-kaulsdorf-vom-23-bis-27-november-2026/
-#: by: https://viz.berlin.de/site/assets/files/2386/unbenannt.585x0-is.png (Radverkehr in der Chemnitzer Str. wohl nicht betroffen, aber keine Ausnahme in der Lassallestr. (Umleitungsstrecke))
-#: by: https://marzahn-hellersdorf.com/chemnitzer-strasse-in-kaulsdorf-ab-heute-voll-gesperrt/
-	q4::inwork; 22440,10658 22403,10523 22365,10386
-',
-         'from' => 1795302000,
-         'id' => 4863,
-         'text' => 'Lassallestr.: Einbahnstraßenregelung, offen Richtung Norden, 23.11.2026 bis 27.11.2026',
-         'type' => 'handicap',
-         'until' => 1795784400
-       },
+       undef,
        {
          'data' => '#: source_id: planb2026:13.46083747,52.50091848,25.11.2026,07:00 ("Vollsperrung beider Fahrbahnen", bis 19.12.2026)
 #: source_id: LMS-BR:429463/72 viz2021:13.4612,52.50101,25.11.2026,07:00 (Fahrbahnerneuerung, bis 19.12.2026)
 #: also_indoor: traffic (G,T,H,W)
+#: note: Fahrbahnerneuerung, ein Strang könnte jeweils befahrbar sein (27.11.2026: westlicher Strang offen, östlicher Strang aufgerissen, allerdings gibt es Verbotsschilder am südlichen Ende)
 # REMOVED --- #: note: Evtl. nur Haltestelle für einen SEV? --- #: last_checked: 2026-11-22 --- #: next_check: 2026-11-25 (planb)
 Bossestr.	q4::inwork 14265,10579 14286,10613 14312,10657
 Bossestr. [Nebenstrang]	q4::inwork 14286,10613 14282,10618 14289,10663
 ',
          'from' => 1795561200,
          'id' => 4864,
-         'text' => 'Bossestr.: Fahrbahnerneuerung, Sperrung, evtl. ist auch der Radverkehr betroffen, 25.11.2026 bis 19.12.2026',
+         'text' => 'Bossestr.: Bauarbeiten, Fahrbahn kann gesperrt sein, 25.11.2026 bis 19.12.2026',
          'type' => 'handicap',
          'until' => 1797721199
        },
@@ -12445,6 +12383,17 @@ Bossestr. [Nebenstrang]	q4::inwork 14286,10613 14282,10618 14289,10663
          'text' => 'Etzin - Abzweig nach Tremmen: Bauarbeiten, Sperrung, vom 07.12.2026 06:00 Uhr bis 29.01.2027 20:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1801249200
+       },
+       {
+         'data' => '#: source_id: planb2026:13.39093285,52.51567335,30.11.2026,06:00 ("Vollsperrung beider Fahrbahnen", bis 04.12.2026)
+#: by: https://viz.berlin.de/aktuelle-meldungen/viz-verkehrsvorschau/?date=20261127
+	q4::inwork 9496,12215 9509,12117
+',
+         'from' => 1795906800,
+         'id' => 4867,
+         'text' => 'Charlottenstr.: Kranarbeiten, zwischen Französische Str. und Behrenstr. gesperrt, vom 30.11.2026 bis 04.12.2026',
+         'type' => 'handicap',
+         'until' => 1796425200
        }
      
 );

@@ -386,7 +386,7 @@ asphaltiert	RW2; 13850,10612 13865,10606 13919,10583
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede --- #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert --- #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen --- #: last_checked: 2022-11-07 --- #: check_frequency: 7d --- #: next_check: 2022-12-16
 #: next_check_id: STRALAUER-2019
 #: XXX wird hier noch ein Radwegschild aufgestellt? vvv
-#: last_checked: 2026-11-20 vvv
+#: last_checked: 2026-11-27 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-12-27
 #: historical_note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt, RW1;
@@ -1491,7 +1491,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14181,9729 14089,961
 #: XXX wann kommt die nächste Verkehrsumstellung? --- lese ich die SenMVKU-Seite richtig: erst ab dem 01.07.2026?
 #: note: während der Sperrung vom 9.-11.2.2024 war zumindest am Sa die östliche Radspur für Radfahrer in beiden Richtungen frei
 #: priority: #A
-#: last_checked: 2026-11-22 vvv
+#: last_checked: 2026-11-27 vvv
 #: check_frequency: 180d vvv
 # REMOVED (kein Endedatum mehr) --- #: next_check: 2028-12-31 (VIZ-Verkehrsmeldung) vvv
 geschützte Radspur	RW4; 14405,10027 14501,10169 14558,10264
@@ -3438,7 +3438,7 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 #: note: siehe auch das ehemalige Radfahrverbot in temp_blockings
 # XXX wiederherstellen: die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 # XXX wiederherstellen:	RW3; 14608,10409 14641,10552
-#: last_checked: 2026-11-22 vvv
+#: last_checked: 2026-11-27 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2027-01-29 (planb) vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14558,10264 14608,10409
@@ -3471,7 +3471,7 @@ provisorische geschützte Radspur	RW4; 14608,10409 14641,10552
 #: source_id: planb2026:13.46512046,52.49807953,11.03.2024,06:00 ("Fahrstreifen-Reduzierung", bis 29.01.2027) (vorfristig inaktiv)
 #: note: bei rbb nur bis 23.01.2024, mittlerweile vorfristig (wie bei VIZ) entfernt
 #: note: mittlerweile gibt es etwa 50m hinter der Corinthstr. wieder eine provisorische Radspur (für eine anderen Baustelle)
-#: last_checked: 2026-11-22
+#: last_checked: 2026-11-27
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2026-10-31 (Halteverbotsschilder)
 #: next_check: 2026-12-04 (planb)
@@ -4853,9 +4853,9 @@ die letzten Meter mit benutzungspflichtiger Radspur	RW3; 8870,14637 8692,14923
 	RW1; 2669,5677 2678,5621 2717,5578
 teilweise nur mäßige Radwege	RW1;RW1 2717,5578 2746,5537 2792,5471 2835,5410 2913,5294 3072,5062 3185,4894
 #: source_id: LMS-BR:358502/72 viz2021:13.29862,52.45778, (bis 18.12.2026) (bis 27.05.2027)
-#: source_id: planb2026:13.29559809,52.4561845,22.01.2025, ("Sicherung gemäß Vz.-plan", bis 18.12.2026)
+#: source_id: planb2026:13.29559809,52.4561845,22.01.2025, ("Sicherung gemäß Vz.-plan", bis 18.12.2026) (bis 27.05.2027)
 #: last_checked: 2026-11-20 vvv
-#: next_check: 2027-05-27 (VIZ-Verkehrsmeldung) vvv
+#: next_check: 2027-05-27 (VIZ-Verkehrsmeldung + planb) vvv
 #: valid: -20270527
 kein Radweg, Radfahrüberholverbot, 20km/h	RW0; 3707,5758 3574,5717 3489,5690 3355,5655 3160,5671
 #: valid: !-20270527 vvv
